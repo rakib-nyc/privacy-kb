@@ -1,0 +1,29 @@
+id: ev.authority.002
+question: We are a national bank. The FTC has opened an inquiry into our consumer disclosures. Can the
+  FTC reach us?
+trap: The FTC Act s5 carve-outs are entity-level and decisive. A model that knows the FTC is the general
+  consumer-protection regulator will say yes. s45(a)(2) says banks are excepted.
+rubric:
+- name: the FTC carve-out list exists
+  record: us.authority.ftc
+  path: authority.excluded_from_reach
+  non_empty: true
+- name: banks are expressly carved out
+  record: us.authority.ftc
+  path: authority.excluded_from_reach
+  contains: banks
+- name: the carve-out is quoted from the statute, not asserted
+  record: us.authority.ftc
+  path: verbatim_span
+  contains: except banks
+- name: the citation is s45(a)(2)
+  record: us.authority.ftc
+  path: source.citation
+  contains: 45(a)(2)
+- name: CFPB is available as the alternative authority
+  record_exists: us.authority.cfpb
+- name: CFPB reaches consumer financial products and services
+  record: us.authority.cfpb
+  path: authority.sector_reach
+  contains: consumer financial
+all_pass: true

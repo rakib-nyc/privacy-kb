@@ -1,0 +1,109 @@
+{
+ "label": "12 U.S.C. \u00a7 3410",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3410.xml",
+ "raw_sha256": "5f92abf0c014a909b13b60decfb863eecb6d2db0a014a77aa9f44a94097a0bac",
+ "leaves": [
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": "/us/usc/t12/s3410/a/1",
+   "heading": "",
+   "text": "stating that the applicant is a customer of the financial institution from which financial records pertaining to him have been sought; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Within ten days of service or within fourteen days of mailing of a subpena, summons, or formal written request, a customer may file a motion to quash an administrative summons or judicial subpena, or an application to enjoin a Government authority from obtaining financial records pursuant to a formal written request, with copies served upon the Government authority. A motion to quash a judicial subpena shall be filed in the court which issued the subpena. A motion to quash an administrative summons or an application to enjoin a Government authority from obtaining records pursuant to a formal written request shall be filed in the appropriate United States district court. Such motion or application shall contain an affidavit or sworn statement\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t12/s3410/a"
+    },
+    {
+     "position": "follows",
+     "text": "Service shall be made under this section upon a Government authority by delivering or mailing by registered or certified mail a copy of the papers to the person, office, or department specified in the notice which the customer has received pursuant to this chapter. For the purposes of this section, \u201cdelivery\u201d has the meaning stated in rule 5(b) of the Federal Rules of Civil Procedure.",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t12/s3410/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": "/us/usc/t12/s3410/a/2",
+   "heading": "",
+   "text": "stating the applicant\u2019s reasons for believing that the financial records sought are not relevant to the legitimate law enforcement inquiry stated by the Government authority in its notice, or that there has not been substantial compliance with the provisions of this chapter.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Within ten days of service or within fourteen days of mailing of a subpena, summons, or formal written request, a customer may file a motion to quash an administrative summons or judicial subpena, or an application to enjoin a Government authority from obtaining financial records pursuant to a formal written request, with copies served upon the Government authority. A motion to quash a judicial subpena shall be filed in the court which issued the subpena. A motion to quash an administrative summons or an application to enjoin a Government authority from obtaining records pursuant to a formal written request shall be filed in the appropriate United States district court. Such motion or application shall contain an affidavit or sworn statement\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t12/s3410/a"
+    },
+    {
+     "position": "follows",
+     "text": "Service shall be made under this section upon a Government authority by delivering or mailing by registered or certified mail a copy of the papers to the person, office, or department specified in the notice which the customer has received pursuant to this chapter. For the purposes of this section, \u201cdelivery\u201d has the meaning stated in rule 5(b) of the Federal Rules of Civil Procedure.",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t12/s3410/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "/us/usc/t12/s3410/b",
+   "heading": "Filing of response; additional proceedings",
+   "text": "If the court finds that the customer has complied with subsection (a), it shall order the Government authority to file a sworn response, which may be filed in camera if the Government includes in its response the reasons which make in camera review appropriate. If the court is unable to determine the motion or application on the basis of the parties\u2019 initial allegations and response, the court may conduct such additional proceedings as it deems appropriate. All such proceedings shall be completed and the motion or application decided within seven calendar days of the filing of the Government\u2019s response.",
+   "context": []
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "/us/usc/t12/s3410/c",
+   "heading": "Decision of court",
+   "text": "If the court finds that the applicant is not the customer to whom the financial records sought by the Government authority pertain, or that there is a demonstrable reason to believe that the law enforcement inquiry is legitimate and a reasonable belief that the records sought are relevant to that inquiry, it shall deny the motion or application, and, in the case of an administrative summons or court order other than a search warrant, order such process enforced. If the court finds that the applicant is the customer to whom the records sought by the Government authority pertain, and that there is not a demonstrable reason to believe that the law enforcement inquiry is legitimate and a reasonable belief that the records sought are relevant to that inquiry, or that there has not been substantial compliance with the provisions of this chapter, it shall order the process quashed or shall enjoin the Government au\u00adthority\u2019s formal written request.",
+   "context": []
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": "/us/usc/t12/s3410/d",
+   "heading": "Appeals",
+   "text": "A court ruling denying a motion or application under this section shall not be deemed a final order and no interlocutory appeal may be taken therefrom by the customer. An appeal of a ruling denying a motion or application under this section may be taken by the customer (1) within such period of time as provided by law as part of any appeal from a final order in any legal proceeding initiated against him arising out of or based upon the financial records, or (2) within thirty days after a notification that no legal proceeding is contemplated against him. The Government authority obtaining the financial records shall promptly notify a customer when a determination has been made that no legal proceeding against him is contemplated. After one hundred and eighty days from the denial of the motion or application, if the Government authority obtaining the records has not initiated such a proceeding, a supervisory official of the Government authority shall certify to the appropriate court that no such determination has been made. The court may require that such certifications be made, at reasonable intervals thereafter, until either notification to the customer has occurred or a legal proceeding is initiated as described in clause (A).",
+   "context": []
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": "/us/usc/t12/s3410/e",
+   "heading": "Sole judicial remedy available to customer",
+   "text": "The challenge procedures of this chapter constitute the sole judicial remedy available to a customer to oppose disclosure of financial rec\u00adords pursuant to this chapter.",
+   "context": []
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": "/us/usc/t12/s3410/f",
+   "heading": "Affect on challenges by financial institutions",
+   "text": "Nothing in this chapter shall enlarge or restrict any rights of a financial institution to challenge requests for records made by a Government authority under existing law. Nothing in this chapter shall entitle a customer to assert the rights of a financial institution.",
+   "context": []
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+  - cfpb
+sector:
+  - financial
+data_types:
+  - consumer_report
+status: in_force
+effective_from: '1971-04-25'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+deadline: null
+exemptions: []
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 1681t
+  note: >-
+    FCRA preempts by ENUMERATED SUBJECT rather than across the board. § 1681t(a) is a savings clause
+    preserving state law except where inconsistent; § 1681t(b) then carves out specific subjects —
+    including the contents of consumer reports and furnisher duties — where no state requirement may
+    be imposed at all. Whether a state law survives is a subject-by-subject question, never an
+    instrument-level one.
+enforcement:
+  enforcers:
+    - ftc
+    - cfpb
+    - state_ag
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Willful noncompliance under § 1681n: actual damages or statutory damages of $100 to $1,000,
+      punitive damages, costs and attorney's fees. Negligent noncompliance under § 1681o: actual
+      damages, costs and fees.
+    range:
+      min: 100
+      unit: usd_statutory_per_violation
+    note: >-
+      FCRA is one of the few federal privacy statutes with a real private right of action, which is
+      why it generates far more litigation than GLBA or HIPAA. THE PRIVATE RIGHT IS ROLE-DEPENDENT:
+      see the furnisher atoms, where § 1681s-2(c) removes private enforcement of subsection (a)
+      entirely while leaving subsection (b) privately enforceable.
+  statute_of_limitations: >-
+    § 1681p: the earlier of two years after the plaintiff discovers the violation or five years
+    after it occurs.
+id: us.fcra.1681g.a1.file_disclosure
+source:
+  citation: 15 U.S.C. § 1681g(a)(1)
+  instrument_id: us.fcra.preemption
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681g.xml
+  raw_sha256: c2c73f3436015086c2fc1ed6a3ec649eb288f6c6924131da48cfe1a7fc97fc2e
+  text_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681g.txt
+  text_sha256: f6066241bd9d049937c49753cbe19044acfb1953a1f6856682f81907d70ba8f9
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681g.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 2230a99e20fcf716de963fa466cb920413916dea94774f4762a96b2ea2bed4a5
+verbatim_span: All information in the consumer’s file at the time of the request, except that—
+paragraph_path:
+  path:
+    - a
+    - '1'
+  anchor: /us/usc/t15/s1681g
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    15 U.S.C. § 1681g is a USLM LARGE-AND-COMPLEX section: its whole body is flat <p> with no
+    structural nesting, so depth cannot be READ. Reconstructed from the designators themselves using
+    the continuation-before-descent algorithm walk_ecfr uses, under USLM_RECONSTRUCT_FLAT.
+    derivation is reconstructed rather than structural precisely so gate 16 applies its scrutiny,
+    gate 23 refuses a collision, and gate 30 checks the path against this citation. An earlier
+    attempt read depth from the typographic indent classes and put this paragraph at ["1"] — unique
+    and wrong. See DEBT-015.
+context_not_required: The subsection is a complete, freestanding duty on the agency.
+subject:
+  domain: II.C.2
+  lifecycle:
+    - VI
+applies_to_role: processor
+applies_if:
+  all:
+    - entity.is_consumer_reporting_agency == true
+    - event.type == "consumer_file_disclosure_request"
+obligation_type: disclose
+summary: >-
+  On request and proper identification, a consumer reporting agency must clearly and accurately
+  disclose to the consumer all information in the consumer's file at the time of the request.
+requirement_detail: >-
+  THE FILE-DISCLOSURE RIGHT, and it is the practical entry point to every other FCRA remedy: a
+  consumer cannot dispute under § 1681i without first seeing the file, and cannot show a § 1681e(b)
+  accuracy failure without knowing what was reported. The word FILE is doing work — it is defined at
+  § 1681a(g) as all information on the consumer RETAINED BY the agency and available to be
+  furnished, which is broader than the report actually sent to any user. Note the truncation
+  carve-out at (a)(1)(A): the consumer may require the first five digits of a social security number
+  be withheld, which is a rare instance of a disclosure duty the consumer can narrow.
+common_errors:
+  - >-
+    Equating the file with the report. § 1681a(g) defines the file as what the agency RETAINS and
+    could furnish, which is broader than any single report.
+  - >-
+    Treating it as a standalone right. It is the predicate for the § 1681i dispute process and for
+    proving a § 1681e(b) claim.
+open_questions: []
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: Information on file; sources; report recipients
+    citation: 15 U.S.C. § 1681g(a)
+    path:
+      path:
+        - a
+      anchor: /us/usc/t15/s1681g
+      derivation: reconstructed
+      confidence: high
+      evidence: same reconstruction as the child paragraph

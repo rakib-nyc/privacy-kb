@@ -1,0 +1,184 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+related:
+  - us.cfr.45.164.502.b1.minimum_necessary
+federal_relationship: null
+interpreted_by: []
+confidence: high
+id: us.hitech.17935.b.1.a.minimum_necessary_limited_data_set
+source:
+  citation: 42 U.S.C. § 17935(b)(1)(A)
+  instrument_id: us.hitech
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hitech/raw/42-u-s-c-17935.xml
+  raw_sha256: caa08c0f4fbf122b33462a7c1b12f67f9747d58063a501882f369ba285f072a7
+  text_file: corpus/federal/domain-2-federal-privacy/hitech/raw/42-u-s-c-17935.txt
+  text_sha256: e4d18c52a0457df2238010840951d1bd7cd05f9e390a4d320bc36c7cef15cc52
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hitech/raw/42-u-s-c-17935.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 7ff901cc7fd2ca1f7768366a00692e7d142c2d483701cfc8698ee5148f79fd07
+verbatim_span: >-
+  Subject to subparagraph (B), a covered entity shall be treated as being in compliance with section
+  164.502(b)(1) of title 45, Code of Federal Regulations, with respect to the use, disclosure, or
+  request of protected health information described in such section, only if the covered entity
+  limits such protected health information, to the extent practicable, to the limited data set (as
+  defined in section 164.514(e)(2) of such title) or, if needed by such entity, to the minimum
+  necessary to accomplish the intended purpose of such use, disclosure, or request, respectively.
+paragraph_path:
+  path:
+    - b
+    - '1'
+    - A
+  anchor: /us/usc/t42/s17935/b/1/A
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element; path read from the enacted hierarchy
+exemptions: []
+common_errors:
+  - >-
+    Reading § 17935(b) as a free-standing minimum necessary rule. It operates on 45 C.F.R. §
+    164.502(b)(1), and paragraph (b)(3) carries the § 164.502(b)(2) exceptions across, so
+    disclosures to a provider for treatment remain outside the standard entirely.
+  - >-
+    Letting the requester define the minimum necessary. Paragraph (2) puts that determination on the
+    disclosing covered entity or business associate, which is why a payer's demand for a full chart
+    is not self-justifying.
+  - >-
+    Treating the limited data set as one option among equals. The statute makes it the first resort
+    and the minimum necessary the fallback, so a disclosure log that never shows a limited data set
+    is evidence of the wrong default.
+open_questions:
+  - >-
+    Subparagraph (C) makes subparagraph (A) sunset when the Secretary issues the guidance required
+    by subparagraph (B). Whether that guidance has issued cannot be determined from the fetched text
+    and is not modelled here; a query whose answer turns on the sunset should be treated as
+    unresolved until the guidance is fetched and recorded as an agency_guidance record.
+  - >-
+    effective_from is HITECH § 13423 (42 U.S.C. § 17423), referenced by § 17935(b)(3) but not
+    reproduced in the fetched span.
+operative_context:
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      Not later than 18 months after February 17, 2009 , the Secretary shall issue guidance on what
+      constitutes “minimum necessary” for purposes of subpart E of part 164 of title 45, Code of
+      Federal Regulation. In issuing such guidance the Secretary shall take into consideration the
+      guidance under section 17953(c) of this title and the information necessary to improve patient
+      outcomes and to detect, prevent, and manage chronic disease.
+    citation: 42 U.S.C. § 17935(b)(1)(B)
+    path:
+      path:
+        - b
+        - '1'
+        - B
+      anchor: /us/usc/t42/s17935/b/1/B
+      derivation: structural
+      confidence: high
+      evidence: identifier attribute on the USLM element; path read from the enacted hierarchy
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      Subparagraph (A) shall not apply on and after the effective date on which the Secretary issues
+      the guidance under subparagraph (B).
+    citation: 42 U.S.C. § 17935(b)(1)(C)
+    path:
+      path:
+        - b
+        - '1'
+        - C
+      anchor: /us/usc/t42/s17935/b/1/C
+      derivation: structural
+      confidence: high
+      evidence: identifier attribute on the USLM element; path read from the enacted hierarchy
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      For purposes of paragraph (1), in the case of the disclosure of protected health information,
+      the covered entity or business associate disclosing such information shall determine what
+      constitutes the minimum necessary to accomplish the intended purpose of such disclosure.
+    citation: 42 U.S.C. § 17935(b)(2)
+    path:
+      path:
+        - b
+        - '2'
+      anchor: /us/usc/t42/s17935/b/2
+      derivation: structural
+      confidence: high
+      evidence: identifier attribute on the USLM element; path read from the enacted hierarchy
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+effective_from: '2010-02-17'
+subject:
+  domain: II.B.2
+  lifecycle:
+    - IV
+applies_if:
+  all:
+    - data.is_phi == true
+    - any:
+        - entity.is_hipaa_covered_entity == true
+        - entity.is_hipaa_business_associate == true
+obligation_type: restrict_use
+summary: >-
+  A covered entity is treated as complying with the HIPAA minimum necessary standard only if it
+  limits the information to a limited data set to the extent practicable, and to the minimum
+  necessary only where the limited data set will not serve.
+requirement_detail: >-
+  HITECH did not restate the minimum necessary standard; it changed what SATISFIES it. Compliance
+  with 45 C.F.R. § 164.502(b)(1) is conditional — the entity is treated as compliant only if it
+  limits the information "to the extent practicable" to the limited data set defined in §
+  164.514(e)(2), and may fall back to the minimum necessary only "if needed by such entity". That
+  inverts the default: the de-identified-but-for-dates limited data set is the presumptive unit of
+  disclosure and the case-by-case minimum-necessary judgment is the exception that has to be
+  justified. Subparagraph (C) then sunsets subparagraph (A) on the effective date of the Secretary's
+  guidance under subparagraph (B), so whether this atom still operates turns on a fact the section
+  does not contain, and it is recorded in force because the sunset is conditional rather than dated.
+  Paragraph (2) settles who decides: the covered entity or business associate MAKING the disclosure,
+  not the party requesting it.
+preemption:
+  posture: floor
+  authority: 42 U.S.C. § 1320d-7; 45 C.F.R. § 160.203
+  note: >-
+    HITECH subtitle D is enforced through the HIPAA framework and inherits its preemption posture: a
+    more stringent contrary State law survives. A State law giving the patient a broader right to
+    restrict disclosure than § 17935(a) therefore runs in parallel, and compliance with the federal
+    restriction does not discharge it.
+enforcement:
+  enforcers:
+    - hhs_ocr
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil money penalties under 42 U.S.C. § 1320d-5, tiered by culpability, and criminal liability
+      under 42 U.S.C. § 1320d-6. HITECH added State attorney general civil actions on behalf of
+      State residents.
+    range: null
+    note: >-
+      No private right of action. Patients reach the same conduct through State negligence,
+      confidentiality and UDAP theories, so the State backstop never switches off.
+  statute_of_limitations: null

@@ -1,0 +1,36 @@
+{
+  "name": "privacy-kb",
+  "version": "0.1.0",
+  "private": true,
+  "description": "US federal privacy law obligation knowledge base, engine and MCP server",
+  "license": "Apache-2.0",
+  "author": "Muhammad Rakibul Islam <rakib.islam@rutgers.edu>",
+  "type": "module",
+  "scripts": {
+    "fetch": "node tools/fetch-source.mjs",
+    "validate": "node tools/validate.mjs",
+    "test-gates": "node tools/test-gates.mjs",
+    "recheck": "node tools/fetch-source.mjs --recheck",
+    "test": "node tools/test-gates.mjs && python3 tools/test-extractors.py && python3 tools/test-dual-parse.py && node tools/authority-tier.mjs --self-test && node tools/authority-tier.mjs --validate-corpus && python3 tools/scan-features.py --check && node tools/check-engine-schema.mjs && node tools/validate.mjs && node tools/ancestry-diff.mjs --check && node tools/update-coverage.mjs --check && node engine/test-engine.mjs && node mcp/test-mcp.mjs && node workflows/test-workflows.mjs",
+    "coverage": "node tools/update-coverage.mjs",
+    "ancestry": "node tools/ancestry-diff.mjs",
+    "visual": "python3 tools/visual-sample.py",
+    "evals": "node evals/runner.mjs",
+    "evals:baseline": "node evals/runner.mjs --baseline",
+    "features": "python3 tools/scan-features.py",
+    "dual-parse": "python3 tools/test-dual-parse.py",
+    "tier": "node tools/authority-tier.mjs --self-test",
+    "tier:corpus": "node tools/authority-tier.mjs --validate-corpus",
+    "engine": "node engine/test-engine.mjs",
+    "mcp": "node mcp/server.mjs",
+    "mcp:test": "node mcp/test-mcp.mjs",
+    "workflows": "node workflows/test-workflows.mjs",
+    "correspondence": "node tools/check-engine-schema.mjs",
+    "test-extractors": "python3 tools/test-extractors.py"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "js-yaml": "^5.3.0"
+  }
+}

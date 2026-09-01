@@ -1,0 +1,126 @@
+id: us.wiretap.2510.17a.electronic_storage
+schema_version: 1
+record_type: obligation
+source:
+  citation: 18 U.S.C. § 2510(17)(A)
+  instrument_id: us.ecpa_wiretap
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2510.xml
+  raw_sha256: 5dc845cda38743b58fa8224e2b6939398a1ade8b9b229820070f1b3906e89abb
+  text_file: corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2510.txt
+  text_sha256: 7f9d9b91e7e95064505bd5e7842dae5a244ce4d7cfd391d3f6084f86297e943d
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2510.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 03e314abec9a3a09e8fdd235f2038ab1cdd3b7055d9df4b43b012f8102cb6d0c
+verbatim_span: >-
+  any temporary, intermediate storage of a wire or electronic communication incidental to the
+  electronic transmission thereof; and
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - '17'
+    - A
+  anchor: /us/usc/t18/s2510/17/A
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: “electronic storage” means—
+    citation: 18 U.S.C. § 2510(17)
+    path:
+      path:
+        - '17'
+      anchor: /us/usc/t18/s2510/17
+      derivation: structural
+      confidence: high
+      evidence: USLM ancestor element; identifier read from the source
+subject:
+  domain: IV.B.3
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - doj
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '1986-10-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - practice.accesses_stored_communications == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  "Electronic storage" includes any temporary, intermediate storage of a wire or electronic
+  communication incidental to its electronic transmission.
+requirement_detail: >-
+  THE OTHER HALF OF THE ECPA BOUNDARY, and the definition on which the Stored Communications Act
+  stands. Subparagraph (A) with (B)'s backup-protection branch fixes the state a communication must
+  be in for §§ 2701–2703 to attach, and by § 2711 this definition — written into the Wiretap Act's
+  section — is the one chapter 121 uses, which is why the intercept/stored line is drawn by
+  comparing definitions rather than by comparing the two chapters' prohibitions. The words are
+  narrow on their face: TEMPORARY, INTERMEDIATE storage INCIDENTAL TO the electronic transmission.
+  That produces a real gap rather than a drafting curiosity — a message that has been delivered and
+  opened but left on the server is arguably neither in temporary intermediate storage nor held for
+  backup protection, and the courts have divided on whether it is in "electronic storage" at all.
+  Where it is not, § 2701 and § 2702 do not reach it, and the operative constraints fall back to the
+  remote-computing-service branch of § 2703(b), contract, state law and FTC Act § 5.
+deadline: null
+exemptions: []
+related:
+  - us.wiretap.2510.4.intercept_definition
+  - us.sca.2701.a1.unauthorized_access
+  - us.sca.2703.a.contents_warrant
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Assuming everything sitting on a server is in electronic storage. Subparagraph (A) reaches
+    temporary, intermediate storage incidental to transmission and (B) reaches storage for backup
+    protection; opened mail left in place fits neither cleanly, and circuits have split on it.
+  - >-
+    Concluding that a communication outside "electronic storage" is therefore unprotected. It is
+    outside §§ 2701 and 2702, which still leaves § 2703(b), contract, state law and the FTC Act § 5
+    backstop.
+  - >-
+    Reading this definition as belonging only to the Wiretap Act because of where it is printed. It
+    sits in § 2510 but governs chapter 121, which is the whole mechanism of the intercept/stored
+    boundary.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2510(17)(A)
+  note: >-
+    Recorded as floor: nothing in the extracted section displaces state law, and § 2511(2)(d) is the
+    standing proof of it — the federal one-party-consent rule coexists with the all-party consent
+    statutes of roughly a dozen states, and the stricter rule governs the same recording.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: true
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

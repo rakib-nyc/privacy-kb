@@ -1,0 +1,22 @@
+{
+ "label": "NY CVR 50",
+ "url": "https://legislation.nysenate.gov/api/3/laws/CVR/50",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/cvr-50/raw/ny-cvr-50.json",
+ "raw_sha256": "1dc4125bd76c3cc0869a35f142efb2d40e42d8c83e83519b2f57ebf86ce0f9d0",
+ "leaves": [
+  {
+   "path": [],
+   "anchor": "50",
+   "section": "50",
+   "confidence": "high",
+   "heading": "",
+   "text": "\u00a7 50. Right of privacy. A person, firm or corporation that uses for advertising purposes, or for the purposes of trade, the name, portrait, picture, likeness, or voice of any living person without having first obtained the written consent of such person, or if a minor of such minor's parent or guardian, is guilty of a misdemeanor.",
+   "context": [],
+   "section_heading": "",
+   "nb_note": null,
+   "active_date": "2024-05-03"
+  }
+ ]
+}

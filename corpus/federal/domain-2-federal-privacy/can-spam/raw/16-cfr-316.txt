@@ -1,0 +1,77 @@
+PART 316—CAN-SPAM RULE
+§ 316.1 Scope.
+This part implements the Controlling the Assault of Non-Solicited Pornography and Marketing Act of 2003 (“CAN-SPAM Act”), 15 U.S.C. 7701-7713.
+§ 316.2 Definitions.
+(a) The definition of the term “affirmative consent” is the same as the definition of that term in the CAN-SPAM Act, 15 U.S.C. 7702(1).
+(b) “Character” means an element of the American Standard Code for Information Interchange (“ASCII”) character set.
+(c) The definition of the term “commercial electronic mail message” is the same as the definition of that term in the CAN-SPAM Act, 15 U.S.C. 7702(2).
+(d) The definition of the term “electronic mail address” is the same as the definition of that term in the CAN-SPAM Act, 15 U.S.C. 7702(5).
+(e) The definition of the term “electronic mail message” is the same as the definition of that term in the CAN-SPAM Act, 15 U.S.C. 7702(6).
+(f) The definition of the term “initiate” is the same as the definition of that term in the CAN-SPAM Act, 15 U.S.C. 7702(9).
+(g) The definition of the term “Internet” is the same as the definition of that term in the CAN-SPAM Act, 15 U.S.C. 7702(10).
+(h) “Person” means any individual, group, unincorporated association, limited or general partnership, corporation, or other business entity.
+(i) The definition of the term “procure” is the same as the definition of that term in the CAN-SPAM Act, 15 U.S.C. 7702(12).
+(j) The definition of the term “protected computer” is the same as the definition of that term in the CAN-SPAM Act, 15 U.S.C. 7702(13).
+(k) The definition of the term “recipient” is the same as the definition of that term in the CAN-SPAM Act, 15 U.S.C. 7702(14).
+(l) The definition of the term “routine conveyance” is the same as the definition of that term in the CAN-SPAM Act, 15 U.S.C. 7702(15).
+(m) The definition of the term “sender” is the same as the definition of that term in the CAN-SPAM Act, 15 U.S.C. 7702(16),
+provided that
+, when more than one person's products, services, or Internet website are advertised or promoted in a single electronic mail message, each such person who is within the Act's definition will be deemed to be a “sender,” except that, only one person will be deemed to be the “sender” of that message if such person: (A) is within the Act's definition of “sender”; (B) is identified in the “from” line as the sole sender of the message; and (C) is in compliance with 15 U.S.C. 7704(a)(1), 15 U.S.C. 7704(a)(2), 15 U.S.C. 7704(a)(3)(A)(i), 15 U.S.C. 7704(a)(5)(A), and 16 CFR 316.4.
+(n) The definition of the term “sexually oriented material” is the same as the definition of that term in the CAN-SPAM Act, 15 U.S.C. 7704(d)(4).
+(o) The definition of the term “transactional or relationship messages” is the same as the definition of that term in the CAN-SPAM Act, 15 U.S.C. 7702(17).
+(p) “Valid physical postal address” means the sender's current street address, a Post Office box the sender has accurately registered with the United States Postal Service, or a private mailbox the sender has accurately registered with a commercial mail receiving agency that is established pursuant to United States Postal Service regulations.
+§ 316.3 Primary purpose.
+(a) In applying the term “commercial electronic mail message” defined in the CAN-SPAM Act, 15 U.S.C. 7702(2), the “primary purpose” of an electronic mail message shall be deemed to be commercial based on the criteria in paragraphs (a)(1) through (3) and (b) of this section:
+1
+1
+The Commission does not intend for these criteria to treat as a “commercial electronic mail message” anything that is not commercial speech.
+(1) If an electronic mail message consists exclusively of the commercial advertisement or promotion of a commercial product or service, then the “primary purpose” of the message shall be deemed to be commercial.
+(2) If an electronic mail message contains both the commercial advertisement or promotion of a commercial product or service as well as transactional or relationship content as set forth in paragraph (c) of this section, then the “primary purpose” of the message shall be deemed to be commercial if:
+(i) A recipient reasonably interpreting the subject line of the electronic mail message would likely conclude that the message contains the commercial advertisement or promotion of a commercial product or service; or
+(ii) The electronic mail message's transactional or relationship content as set forth in paragraph (c) of this section does
+not
+appear, in whole or in substantial part, at the beginning of the body of the message.
+(3) If an electronic mail message contains both the commercial advertisement or promotion of a commercial product or service as well as other content that is not transactional or relationship content as set forth in paragraph (c) of this section, then the “primary purpose” of the message shall be deemed to be commercial if:
+(i) A recipient reasonably interpreting the subject line of the electronic mail message would likely conclude that the message contains the commercial advertisement or promotion of a commercial product or service; or
+(ii) A recipient reasonably interpreting the body of the message would likely conclude that the primary purpose of the message is the commercial advertisement or promotion of a commercial product or service. Factors illustrative of those relevant to this interpretation include the placement of content that is the commercial advertisement or promotion of a commercial product or service, in whole or in substantial part, at the beginning of the body of the message; the proportion of the message dedicated to such content; and how color, graphics, type size, and style are used to highlight commercial content.
+(b) In applying the term “transactional or relationship message” defined in the CAN-SPAM Act, 15 U.S.C. 7702(17), the “primary purpose” of an electronic mail message shall be deemed to be transactional or relationship if the electronic mail message consists exclusively of transactional or relationship content as set forth in paragraph (c) of this section.
+(c) Transactional or relationship content of email messages under the CAN-SPAM Act is content:
+(1) To facilitate, complete, or confirm a commercial transaction that the recipient has previously agreed to enter into with the sender;
+(2) To provide warranty information, product recall information, or safety or security information with respect to a commercial product or service used or purchased by the recipient;
+(3) With respect to a subscription, membership, account, loan, or comparable ongoing commercial relationship involving the ongoing purchase or use by the recipient of products or services offered by the sender, to provide —
+(i) Notification concerning a change in the terms or features;
+(ii) Notification of a change in the recipient's standing or status; or
+(iii) At regular periodic intervals, account balance information or other type of account statement;
+(4) To provide information directly related to an employment relationship or related benefit plan in which the recipient is currently involved, participating, or enrolled; or
+(5) To deliver goods or services, including product updates or upgrades, that the recipient is entitled to receive under the terms of a transaction that the recipient has previously agreed to enter into with the sender.
+§ 316.4 Requirement to place warning labels on commercial electronic mail that contains sexually oriented material.
+(a) Any person who initiates, to a protected computer, the transmission of a commercial electronic mail message that includes sexually oriented material must:
+(1) Exclude sexually oriented materials from the subject heading for the electronic mail message and include in the subject heading the phrase “SEXUALLY-EXPLICIT: ” in capital letters as the first nineteen (19) characters at the beginning of the subject line;
+2
+2
+The phrase “SEXUALLY-EXPLICIT” comprises 17 characters, including the dash between the two words. The colon (:) and the space following the phrase are the 18
+th
+and 19
+th
+characters.
+(2) Provide that the content of the message that is initially viewable by the recipient, when the message is opened by any recipient and absent any further actions by the recipient, include only the following information:
+(i) The phrase “SEXUALLY-EXPLICIT: ” in a clear and conspicuous manner;
+3
+3
+This phrase consists of nineteen (19) characters and is identical to the phrase required in 316.5(a)(1) of this Rule.
+(ii) Clear and conspicuous identification that the message is an advertisement or solicitation;
+(iii) Clear and conspicuous notice of the opportunity of a recipient to decline to receive further commercial electronic mail messages from the sender;
+(iv) A functioning return electronic mail address or other Internet-based mechanism, clearly and conspicuously displayed, that
+(A) A recipient may use to submit, in a manner specified in the message, a reply electronic mail message or other form of Internet-based communication requesting not to receive future commercial electronic mail messages from that sender at the electronic mail address where the message was received; and
+(B) Remains capable of receiving such messages or communications for no less than 30 days after the transmission of the original message;
+(v) Clear and conspicuous display of a valid physical postal address of the sender; and
+(vi) Any needed instructions on how to access, or activate a mechanism to access, the sexually oriented material, preceded by a clear and conspicuous statement that to avoid viewing the sexually oriented material, a recipient should delete the email message without following such instructions.
+(b)
+Prior affirmative consent.
+Paragraph (a) does not apply to the transmission of an electronic mail message if the recipient has given prior affirmative consent to receipt of the message.
+§ 316.5 Prohibition on charging a fee or imposing other requirements on recipients who wish to opt out.
+Neither a sender nor any person acting on behalf of a sender may require that any recipient pay any fee, provide any information other than the recipient's electronic mail address and opt-out preferences, or take any other steps except sending a reply electronic mail message or visiting a single Internet Web page, in order to:
+(a) Use a return electronic mail address or other Internet-based mechanism, required by 15 U.S.C. 7704(a)(3), to submit a request not to receive future commercial electronic mail messages from a sender; or
+(b) Have such a request honored as required by 15 U.S.C. 7704(a)(3)(B) and (a)(4).
+§ 316.6 Severability.
+The provisions of this part are separate and severable from one another. If any provision is stayed or determined to be invalid, it is the Commission's intention that the remaining provisions shall continue in effect.

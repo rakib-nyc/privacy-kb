@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<DIV5 N="314" TYPE="PART" VOLUME="1" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-16/part-314&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;16 CFR Part 314&amp;quot;}">
+<HEAD>PART 314&#x2014;STANDARDS FOR SAFEGUARDING CUSTOMER INFORMATION
+</HEAD>
+<AUTH>
+<HED>Authority:</HED><PSPACE>15 U.S.C. 6801(b), 6805(b)(2).
+</PSPACE></AUTH>
+<SOURCE>
+<HED>Source:</HED><PSPACE>67 FR 36493, May 23, 2002, unless otherwise noted.
+</PSPACE></SOURCE>
+<DIV8 N="314.1" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-16/section-314.1&quot;,&quot;citation&quot;:&quot;16 CFR 314.1&quot;}">
+<HEAD>&#xA7; 314.1 Purpose and scope.</HEAD>
+<P>(a) <I>Purpose.</I> This part, which implements sections 501 and 505(b)(2) of the Gramm-Leach-Bliley Act, sets forth standards for developing, implementing, and maintaining reasonable administrative, technical, and physical safeguards to protect the security, confidentiality, and integrity of customer information.</P>
+<P>(b) <I>Scope.</I> This part applies to the handling of customer information by all financial institutions over which the Federal Trade Commission (&#x201C;FTC&#x201D; or &#x201C;Commission&#x201D;) has jurisdiction. Namely, this part applies to those &#x201C;financial institutions&#x201D; over which the Commission has rulemaking authority pursuant to section 501(b) of the Gramm-Leach-Bliley Act. An entity is a &#x201C;financial institution&#x201D; if its business is engaging in an activity that is financial in nature or incidental to such financial activities as described in section 4(k) of the Bank Holding Company Act of 1956, 12 U.S.C. 1843(k), which incorporates activities enumerated by the Federal Reserve Board in 12 CFR 225.28 and 225.86. The &#x201C;financial institutions&#x201D; subject to the Commission's enforcement authority are those that are not otherwise subject to the enforcement authority of another regulator under section 505 of the Gramm-Leach-Bliley Act, 15 U.S.C. 6805. More specifically, those entities include, but are not limited to, mortgage lenders, &#x201C;pay day&#x201D; lenders, finance companies, mortgage brokers, account servicers, check cashers, wire transferors, travel agencies operated in connection with financial services, collection agencies, credit counselors and other financial advisors, tax preparation firms, non-federally insured credit unions, investment advisors that are not required to register with the Securities and Exchange Commission, and entities acting as finders. They are referred to in this part as &#x201C;You.&#x201D; This part applies to all customer information in your possession, regardless of whether such information pertains to individuals with whom you have a customer relationship, or pertains to the customers of other financial institutions that have provided such information to you.</P>
+<CITA TYPE="N">[67 FR 36493, May 23, 2002, as amended at 86 FR 70304, Dec. 9, 2021]
+</CITA>
+</DIV8>
+
+<DIV8 N="314.2" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-16/section-314.2&quot;,&quot;citation&quot;:&quot;16 CFR 314.2&quot;}">
+<HEAD>&#xA7; 314.2 Definitions.</HEAD>
+<P>(a) <I>Authorized user</I> means any employee, contractor, agent, customer, or other person that is authorized to access any of your information systems or data.</P>
+<P>(b)(1) <I>Consumer</I> means an individual who obtains or has obtained a financial product or service from you that is to be used primarily for personal, family, or household purposes, or that individual's legal representative.</P>
+<P>(2) For example:</P>
+<P>(i) An individual who applies to you for credit for personal, family, or household purposes is a consumer of a financial service, regardless of whether the credit is extended.</P>
+<P>(ii) An individual who provides nonpublic personal information to you in order to obtain a determination about whether he or she may qualify for a loan to be used primarily for personal, family, or household purposes is a consumer of a financial service, regardless of whether the loan is extended.</P>
+<P>(iii) An individual who provides nonpublic personal information to you in connection with obtaining or seeking to obtain financial, investment, or economic advisory services is a consumer, regardless of whether you establish a continuing advisory relationship.</P>
+<P>(iv) If you hold ownership or servicing rights to an individual's loan that is used primarily for personal, family, or household purposes, the individual is your consumer, even if you hold those rights in conjunction with one or more other institutions. (The individual is also a consumer with respect to the other financial institutions involved.) An individual who has a loan in which you have ownership or servicing rights is your consumer, even if you, or another institution with those rights, hire an agent to collect on the loan.</P>
+<P>(v) An individual who is a consumer of another financial institution is not your consumer solely because you act as agent for, or provide processing or other services to, that financial institution.</P>
+<P>(vi) An individual is not your consumer solely because he or she has designated you as trustee for a trust.</P>
+<P>(vii) An individual is not your consumer solely because he or she is a beneficiary of a trust for which you are a trustee.</P>
+<P>(viii) An individual is not your consumer solely because he or she is a participant or a beneficiary of an employee benefit plan that you sponsor or for which you act as a trustee or fiduciary.</P>
+<P>(c) <I>Customer</I> means a consumer who has a customer relationship with you.</P>
+<P>(d) <I>Customer information</I> means any record containing nonpublic personal information about a customer of a financial institution, whether in paper, electronic, or other form, that is handled or maintained by or on behalf of you or your affiliates.</P>
+<P>(e)(1) <I>Customer relationship</I> means a continuing relationship between a consumer and you under which you provide one or more financial products or services to the consumer that are to be used primarily for personal, family, or household purposes.</P>
+<P>(2) For example:</P>
+<P>(i) <I>Continuing relationship.</I> A consumer has a continuing relationship with you if the consumer:</P>
+<P>(A) Has a credit or investment account with you;</P>
+<P>(B) Obtains a loan from you;</P>
+<P>(C) Purchases an insurance product from you;</P>
+<P>(D) Holds an investment product through you, such as when you act as a custodian for securities or for assets in an Individual Retirement Arrangement;</P>
+<P>(E) Enters into an agreement or understanding with you whereby you undertake to arrange or broker a home mortgage loan, or credit to purchase a vehicle, for the consumer;</P>
+<P>(F) Enters into a lease of personal property on a non-operating basis with you;</P>
+<P>(G) Obtains financial, investment, or economic advisory services from you for a fee;</P>
+<P>(H) Becomes your client for the purpose of obtaining tax preparation or credit counseling services from you;</P>
+<P>(I) Obtains career counseling while seeking employment with a financial institution or the finance, accounting, or audit department of any company (or while employed by such a financial institution or department of any company);</P>
+<P>(J) Is obligated on an account that you purchase from another financial institution, regardless of whether the account is in default when purchased, unless you do not locate the consumer or attempt to collect any amount from the consumer on the account;</P>
+<P>(K) Obtains real estate settlement services from you; or</P>
+<P>(L) Has a loan for which you own the servicing rights.</P>
+<P>(ii) <I>No continuing relationship.</I> A consumer does not, however, have a continuing relationship with you if:</P>
+<P>(A) The consumer obtains a financial product or service from you only in isolated transactions, such as using your ATM to withdraw cash from an account at another financial institution; purchasing a money order from you; cashing a check with you; or making a wire transfer through you;</P>
+<P>(B) You sell the consumer's loan and do not retain the rights to service that loan;</P>
+<P>(C) You sell the consumer airline tickets, travel insurance, or traveler's checks in isolated transactions;</P>
+<P>(D) The consumer obtains one-time personal or real property appraisal services from you; or</P>
+<P>(E) The consumer purchases checks for a personal checking account from you.</P>
+<P>(f) <I>Encryption</I> means the transformation of data into a form that results in a low probability of assigning meaning without the use of a protective process or key, consistent with current cryptographic standards and accompanied by appropriate safeguards for cryptographic key material.</P>
+<P>(g)(1) <I>Financial product or service</I> means any product or service that a financial holding company could offer by engaging in a financial activity under section 4(k) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)).</P>
+<P>(2) <I>Financial service</I> includes your evaluation or brokerage of information that you collect in connection with a request or an application from a consumer for a financial product or service.</P>
+<P>(h)(1) <I>Financial institution</I> means any institution the business of which is engaging in an activity that is financial in nature or incidental to such financial activities as described in section 4(k) of the Bank Holding Company Act of 1956, 12 U.S.C. 1843(k). An institution that is significantly engaged in financial activities, or significantly engaged in activities incidental to such financial activities, is a financial institution.</P>
+<P>(2) Examples of financial institutions are as follows:</P>
+<P>(i) A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.</P>
+<P>(ii) An automobile dealership that, as a usual part of its business, leases automobiles on a nonoperating basis for longer than 90 days is a financial institution with respect to its leasing business because leasing personal property on a nonoperating basis where the initial term of the lease is at least 90 days is a financial activity listed in 12 CFR 225.28(b)(3) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(F).</P>
+<P>(iii) A personal property or real estate appraiser is a financial institution because real and personal property appraisal is a financial activity listed in 12 CFR 225.28(b)(2)(i) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(F).</P>
+<P>(iv) A career counselor that specializes in providing career counseling services to individuals currently employed by or recently displaced from a financial organization, individuals who are seeking employment with a financial organization, or individuals who are currently employed by or seeking placement with the finance, accounting or audit departments of any company is a financial institution because such career counseling activities are financial activities listed in 12 CFR 225.28(b)(9)(iii) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(F).</P>
+<P>(v) A business that prints and sells checks for consumers, either as its sole business or as one of its product lines, is a financial institution because printing and selling checks is a financial activity that is listed in 12 CFR 225.28(b)(10)(ii) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(F).</P>
+<P>(vi) A business that regularly wires money to and from consumers is a financial institution because transferring money is a financial activity referenced in section 4(k)(4)(A) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(A), and regularly providing that service demonstrates that the business is significantly engaged in that activity.</P>
+<P>(vii) A check cashing business is a financial institution because cashing a check is exchanging money, which is a financial activity listed in section 4(k)(4)(A) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(A).</P>
+<P>(viii) An accountant or other tax preparation service that is in the business of completing income tax returns is a financial institution because tax preparation services is a financial activity listed in 12 CFR 225.28(b)(6)(vi) and referenced in section 4(k)(4)(G) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(G).</P>
+<P>(ix) A business that operates a travel agency in connection with financial services is a financial institution because operating a travel agency in connection with financial services is a financial activity listed in 12 CFR 225.86(b)(2) and referenced in section 4(k)(4)(G) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(G).</P>
+<P>(x) An entity that provides real estate settlement services is a financial institution because providing real estate settlement services is a financial activity listed in 12 CFR 225.28(b)(2)(viii) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(F).</P>
+<P>(xi) A mortgage broker is a financial institution because brokering loans is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(F).</P>
+<P>(xii) An investment advisory company and a credit counseling service are each financial institutions because providing financial and investment advisory services are financial activities referenced in section 4(k)(4)(C) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(C).</P>
+<P>(xiii) A company acting as a finder in bringing together one or more buyers and sellers of any product or service for transactions that the parties themselves negotiate and consummate is a financial institution because acting as a finder is an activity that is financial in nature or incidental to a financial activity listed in 12 CFR 225.86(d)(1).</P>
+<P>(3) <I>Financial institution</I> does not include:</P>
+<P>(i) Any person or entity with respect to any financial activity that is subject to the jurisdiction of the Commodity Futures Trading Commission under the Commodity Exchange Act (7 U.S.C. 1 <I>et seq.</I>);</P>
+<P>(ii) The Federal Agricultural Mortgage Corporation or any entity chartered and operating under the Farm Credit Act of 1971 (12 U.S.C. 2001 <I>et seq.</I>);</P>
+<P>(iii) Institutions chartered by Congress specifically to engage in securitizations, secondary market sales (including sales of servicing rights) or similar transactions related to a transaction of a consumer, as long as such institutions do not sell or transfer nonpublic personal information to a nonaffiliated third party other than as permitted by &#xA7;&#xA7; 313.14 and 313.15; or</P>
+<P>(iv) Entities that engage in financial activities but that are not significantly engaged in those financial activities, and entities that engage in activities incidental to financial activities but that are not significantly engaged in activities incidental to financial activities.</P>
+<P>(4) Examples of entities that are not significantly engaged in financial activities are as follows:</P>
+<P>(i) A retailer is not a financial institution if its only means of extending credit are occasional &#x201C;lay away&#x201D; and deferred payment plans or accepting payment by means of credit cards issued by others.</P>
+<P>(ii) A retailer is not a financial institution merely because it accepts payment in the form of cash, checks, or credit cards that it did not issue.</P>
+<P>(iii) A merchant is not a financial institution merely because it allows an individual to &#x201C;run a tab.&#x201D;</P>
+<P>(iv) A grocery store is not a financial institution merely because it allows individuals to whom it sells groceries to cash a check, or write a check for a higher amount than the grocery purchase and obtain cash in return.</P>
+<P>(i) <I>Information security program</I> means the administrative, technical, or physical safeguards you use to access, collect, distribute, process, protect, store, use, transmit, dispose of, or otherwise handle customer information.</P>
+<P>(j) <I>Information system</I> means a discrete set of electronic information resources organized for the collection, processing, maintenance, use, sharing, dissemination or disposition of electronic information containing customer information or connected to a system containing customer information, as well as any specialized system such as industrial/process controls systems, telephone switching and private branch exchange systems, and environmental controls systems that contains customer information or that is connected to a system that contains customer information.</P>
+<P>(k) <I>Multi-factor authentication</I> means authentication through verification of at least two of the following types of authentication factors:</P>
+<P>(1) Knowledge factors, such as a password;</P>
+<P>(2) Possession factors, such as a token; or</P>
+<P>(3) Inherence factors, such as biometric characteristics.</P>
+<P>(l)(1) <I>Nonpublic personal information</I> means:</P>
+<P>(i) Personally identifiable financial information; and</P>
+<P>(ii) Any list, description, or other grouping of consumers (and publicly available information pertaining to them) that is derived using any personally identifiable financial information that is not publicly available.</P>
+<P>(2) <I>Nonpublic personal information</I> does not include:</P>
+<P>(i) Publicly available information, except as included on a list described in paragraph (l)(1)(ii) of this section; or</P>
+<P>(ii) Any list, description, or other grouping of consumers (and publicly available information pertaining to them) that is derived without using any personally identifiable financial information that is not publicly available.</P>
+<P>(3) For example:</P>
+<P>(i) Nonpublic personal information includes any list of individuals' names and street addresses that is derived in whole or in part using personally identifiable financial information (that is not publicly available), such as account numbers.</P>
+<P>(ii) Nonpublic personal information does not include any list of individuals' names and addresses that contains only publicly available information, is not derived, in whole or in part, using personally identifiable financial information that is not publicly available, and is not disclosed in a manner that indicates that any of the individuals on the list is a consumer of a financial institution.</P>
+<P>(m) <I>Notification event</I> means acquisition of unencrypted customer information without the authorization of the individual to which the information pertains. Customer information is considered unencrypted for this purpose if the encryption key was accessed by an unauthorized person. Unauthorized acquisition will be presumed to include unauthorized access to unencrypted customer information unless you have reliable evidence showing that there has not been, or could not reasonably have been, unauthorized acquisition of such information.</P>
+<P>(n) <I>Penetration testing</I> means a test methodology in which assessors attempt to circumvent or defeat the security features of an information system by attempting penetration of databases or controls from outside or inside your information systems.</P>
+<P>(o)(1) <I>Personally identifiable financial information</I> means any information:</P>
+<P>(i) A consumer provides to you to obtain a financial product or service from you;</P>
+<P>(ii) About a consumer resulting from any transaction involving a financial product or service between you and a consumer; or</P>
+<P>(iii) You otherwise obtain about a consumer in connection with providing a financial product or service to that consumer.</P>
+<P>(2) For example:</P>
+<P>(i) <I>Information included.</I> Personally identifiable financial information includes:</P>
+<P>(A) Information a consumer provides to you on an application to obtain a loan, credit card, or other financial product or service;</P>
+<P>(B) Account balance information, payment history, overdraft history, and credit or debit card purchase information;</P>
+<P>(C) The fact that an individual is or has been one of your customers or has obtained a financial product or service from you;</P>
+<P>(D) Any information about your consumer if it is disclosed in a manner that indicates that the individual is or has been your consumer;</P>
+<P>(E) Any information that a consumer provides to you or that you or your agent otherwise obtain in connection with collecting on, or servicing, a credit account;</P>
+<P>(F) Any information you collect through an internet &#x201C;cookie&#x201D; (an information collecting device from a web server); and</P>
+<P>(G) Information from a consumer report.</P>
+<P>(ii) <I>Information not included.</I> Personally identifiable financial information does not include:</P>
+<P>(A) A list of names and addresses of customers of an entity that is not a financial institution; and</P>
+<P>(B) Information that does not identify a consumer, such as aggregate information or blind data that does not contain personal identifiers such as account numbers, names, or addresses.</P>
+<P>(p)(1) <I>Publicly available information</I> means any information that you have a reasonable basis to believe is lawfully made available to the general public from:</P>
+<P>(i) Federal, State, or local government records;</P>
+<P>(ii) Widely distributed media; or</P>
+<P>(iii) Disclosures to the general public that are required to be made by Federal, State, or local law.</P>
+<P>(2) You have a reasonable basis to believe that information is lawfully made available to the general public if you have taken steps to determine:</P>
+<P>(i) That the information is of the type that is available to the general public; and</P>
+<P>(ii) Whether an individual can direct that the information not be made available to the general public and, if so, that your consumer has not done so.</P>
+<P>(3) For example:</P>
+<P>(i) <I>Government records.</I> Publicly available information in government records includes information in government real estate records and security interest filings.</P>
+<P>(ii) <I>Widely distributed media.</I> Publicly available information from widely distributed media includes information from a telephone book, a television or radio program, a newspaper, or a website that is available to the general public on an unrestricted basis. A website is not restricted merely because an internet service provider or a site operator requires a fee or a password, so long as access is available to the general public.</P>
+<P>(iii) <I>Reasonable basis.</I> (A) You have a reasonable basis to believe that mortgage information is lawfully made available to the general public if you have determined that the information is of the type included on the public record in the jurisdiction where the mortgage would be recorded.</P>
+<P>(B) You have a reasonable basis to believe that an individual's telephone number is lawfully made available to the general public if you have located the telephone number in the telephone book or the consumer has informed you that the telephone number is not unlisted.</P>
+<P>(q) <I>Security event</I> means an event resulting in unauthorized access to, or disruption or misuse of, an information system, information stored on such information system, or customer information held in physical form.</P>
+<P>(r) <I>Service provider</I> means any person or entity that receives, maintains, processes, or otherwise is permitted access to customer information through its provision of services directly to a financial institution that is subject to this part.</P>
+<P>(s) <I>You</I> includes each &#x201C;financial institution&#x201D; (but excludes any &#x201C;other person&#x201D;) over which the Commission has enforcement jurisdiction pursuant to section 505(a)(7) of the Gramm-Leach-Bliley Act.</P>
+<CITA TYPE="N">[86 FR 70304, Dec. 9, 2021, as amended at 88 FR 77508, Nov. 13, 2023]
+</CITA>
+</DIV8>
+
+<DIV8 N="314.3" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-16/section-314.3&quot;,&quot;citation&quot;:&quot;16 CFR 314.3&quot;}">
+<HEAD>&#xA7; 314.3 Standards for safeguarding customer information.</HEAD>
+<P>(a) <I>Information security program.</I> You shall develop, implement, and maintain a comprehensive information security program that is written in one or more readily accessible parts and contains administrative, technical, and physical safeguards that are appropriate to your size and complexity, the nature and scope of your activities, and the sensitivity of any customer information at issue. The information security program shall include the elements set forth in &#xA7; 314.4 and shall be reasonably designed to achieve the objectives of this part, as set forth in paragraph (b) of this section.</P>
+<P>(b) <I>Objectives.</I> The objectives of section 501(b) of the Act, and of this part, are to:</P>
+<P>(1) Insure the security and confidentiality of customer information;</P>
+<P>(2) Protect against any anticipated threats or hazards to the security or integrity of such information; and</P>
+<P>(3) Protect against unauthorized access to or use of such information that could result in substantial harm or inconvenience to any customer.</P>
+<CITA TYPE="N">[67 FR 36493, May 23, 2002, as amended at 86 FR 70307, Dec. 9, 2021]
+</CITA>
+</DIV8>
+
+<DIV8 N="314.4" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-16/section-314.4&quot;,&quot;citation&quot;:&quot;16 CFR 314.4&quot;}">
+<HEAD>&#xA7; 314.4 Elements.</HEAD>
+<P>In order to develop, implement, and maintain your information security program, you shall:</P>
+<P>(a) Designate a qualified individual responsible for overseeing and implementing your information security program and enforcing your information security program (for purposes of this part, &#x201C;Qualified Individual&#x201D;). The Qualified Individual may be employed by you, an affiliate, or a service provider. To the extent the requirement in this paragraph (a) is met using a service provider or an affiliate, you shall:</P>
+<P>(1) Retain responsibility for compliance with this part;</P>
+<P>(2) Designate a senior member of your personnel responsible for direction and oversight of the Qualified Individual; and</P>
+<P>(3) Require the service provider or affiliate to maintain an information security program that protects you in accordance with the requirements of this part.</P>
+<P>(b) Base your information security program on a risk assessment that identifies reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of customer information that could result in the unauthorized disclosure, misuse, alteration, destruction, or other compromise of such information, and assesses the sufficiency of any safeguards in place to control these risks.</P>
+<P>(1) The risk assessment shall be written and shall include:</P>
+<P>(i) Criteria for the evaluation and categorization of identified security risks or threats you face;</P>
+<P>(ii) Criteria for the assessment of the confidentiality, integrity, and availability of your information systems and customer information, including the adequacy of the existing controls in the context of the identified risks or threats you face; and</P>
+<P>(iii) Requirements describing how identified risks will be mitigated or accepted based on the risk assessment and how the information security program will address the risks.</P>
+<P>(2) You shall periodically perform additional risk assessments that reexamine the reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of customer information that could result in the unauthorized disclosure, misuse, alteration, destruction, or other compromise of such information, and reassess the sufficiency of any safeguards in place to control these risks.</P>
+<P>(c) Design and implement safeguards to control the risks you identify through risk assessment, including by:</P>
+<P>(1) Implementing and periodically reviewing access controls, including technical and, as appropriate, physical controls to:</P>
+<P>(i) Authenticate and permit access only to authorized users to protect against the unauthorized acquisition of customer information; and</P>
+<P>(ii) Limit authorized users' access only to customer information that they need to perform their duties and functions, or, in the case of customers, to access their own information;</P>
+<P>(2) Identify and manage the data, personnel, devices, systems, and facilities that enable you to achieve business purposes in accordance with their relative importance to business objectives and your risk strategy;</P>
+<P>(3) Protect by encryption all customer information held or transmitted by you both in transit over external networks and at rest. To the extent you determine that encryption of customer information, either in transit over external networks or at rest, is infeasible, you may instead secure such customer information using effective alternative compensating controls reviewed and approved by your Qualified Individual;</P>
+<P>(4) Adopt secure development practices for in-house developed applications utilized by you for transmitting, accessing, or storing customer information and procedures for evaluating, assessing, or testing the security of externally developed applications you utilize to transmit, access, or store customer information;</P>
+<P>(5) Implement multi-factor authentication for any individual accessing any information system, unless your Qualified Individual has approved in writing the use of reasonably equivalent or more secure access controls;</P>
+<P>(6)(i) Develop, implement, and maintain procedures for the secure disposal of customer information in any format no later than two years after the last date the information is used in connection with the provision of a product or service to the customer to which it relates, unless such information is necessary for business operations or for other legitimate business purposes, is otherwise required to be retained by law or regulation, or where targeted disposal is not reasonably feasible due to the manner in which the information is maintained; and</P>
+<P>(ii) Periodically review your data retention policy to minimize the unnecessary retention of data;</P>
+<P>(7) Adopt procedures for change management; and</P>
+<P>(8) Implement policies, procedures, and controls designed to monitor and log the activity of authorized users and detect unauthorized access or use of, or tampering with, customer information by such users.</P>
+<P>(d)(1) Regularly test or otherwise monitor the effectiveness of the safeguards' key controls, systems, and procedures, including those to detect actual and attempted attacks on, or intrusions into, information systems.</P>
+<P>(2) For information systems, the monitoring and testing shall include continuous monitoring or periodic penetration testing and vulnerability assessments. Absent effective continuous monitoring or other systems to detect, on an ongoing basis, changes in information systems that may create vulnerabilities, you shall conduct:</P>
+<P>(i) Annual penetration testing of your information systems determined each given year based on relevant identified risks in accordance with the risk assessment; and</P>
+<P>(ii) Vulnerability assessments, including any systemic scans or reviews of information systems reasonably designed to identify publicly known security vulnerabilities in your information systems based on the risk assessment, at least every six months; and whenever there are material changes to your operations or business arrangements; and whenever there are circumstances you know or have reason to know may have a material impact on your information security program.</P>
+<P>(e) Implement policies and procedures to ensure that personnel are able to enact your information security program by:</P>
+<P>(1) Providing your personnel with security awareness training that is updated as necessary to reflect risks identified by the risk assessment;</P>
+<P>(2) Utilizing qualified information security personnel employed by you or an affiliate or service provider sufficient to manage your information security risks and to perform or oversee the information security program;</P>
+<P>(3) Providing information security personnel with security updates and training sufficient to address relevant security risks; and</P>
+<P>(4) Verifying that key information security personnel take steps to maintain current knowledge of changing information security threats and countermeasures.</P>
+<P>(f) Oversee service providers, by:</P>
+<P>(1) Taking reasonable steps to select and retain service providers that are capable of maintaining appropriate safeguards for the customer information at issue;</P>
+<P>(2) Requiring your service providers by contract to implement and maintain such safeguards; and</P>
+<P>(3) Periodically assessing your service providers based on the risk they present and the continued adequacy of their safeguards.</P>
+<P>(g) Evaluate and adjust your information security program in light of the results of the testing and monitoring required by paragraph (d) of this section; any material changes to your operations or business arrangements; the results of risk assessments performed under paragraph (b)(2) of this section; or any other circumstances that you know or have reason to know may have a material impact on your information security program.</P>
+<P>(h) Establish a written incident response plan designed to promptly respond to, and recover from, any security event materially affecting the confidentiality, integrity, or availability of customer information in your control. Such incident response plan shall address the following areas:</P>
+<P>(1) The goals of the incident response plan;</P>
+<P>(2) The internal processes for responding to a security event;</P>
+<P>(3) The definition of clear roles, responsibilities, and levels of decision-making authority;</P>
+<P>(4) External and internal communications and information sharing;</P>
+<P>(5) Identification of requirements for the remediation of any identified weaknesses in information systems and associated controls;</P>
+<P>(6) Documentation and reporting regarding security events and related incident response activities; and</P>
+<P>(7) The evaluation and revision as necessary of the incident response plan following a security event.</P>
+<P>(i) Require your Qualified Individual to report in writing, regularly and at least annually, to your board of directors or equivalent governing body. If no such board of directors or equivalent governing body exists, such report shall be timely presented to a senior officer responsible for your information security program. The report shall include the following information:</P>
+<P>(1) The overall status of the information security program and your compliance with this part; and</P>
+<P>(2) Material matters related to the information security program, addressing issues such as risk assessment, risk management and control decisions, service provider arrangements, results of testing, security events or violations and management's responses thereto, and recommendations for changes in the information security program.</P>
+<P>(j) Notify the Federal Trade Commission about notification events in accordance with paragraphs (j)(1) and (2) of this section.</P>
+<P>(1) <I>Notification requirement.</I> Upon discovery of a notification event as described in paragraph (j)(2) of this section, if the notification event involves the information of at least 500 consumers, you must notify the Federal Trade Commission as soon as possible, and no later than 30 days after discovery of the event. The notice shall be made electronically on a form to be located on the FTC's website, <I>https://www.ftc.gov.</I> The notice shall include the following:</P>
+<P>(i) The name and contact information of the reporting financial institution;</P>
+<P>(ii) A description of the types of information that were involved in the notification event;</P>
+<P>(iii) If the information is possible to determine, the date or date range of the notification event;</P>
+<P>(iv) The number of consumers affected or potentially affected by the notification event;</P>
+<P>(v) A general description of the notification event; and</P>
+<P>(vi) Whether any law enforcement official has provided you with a written determination that notifying the public of the breach would impede a criminal investigation or cause damage to national security, and a means for the Federal Trade Commission to contact the law enforcement official. A law enforcement official may request an initial delay of up to 30 days following the date when notice was provided to the Federal Trade Commission. The delay may be extended for an additional period of up to 60 days if the law enforcement official seeks such an extension in writing. Additional delay may be permitted only if the Commission staff determines that public disclosure of a security event continues to impede a criminal investigation or cause damage to national security.</P>
+<P>(2) <I>Notification event treated as discovered.</I> A notification event shall be treated as discovered as of the first day on which such event is known to you. You shall be deemed to have knowledge of a notification event if such event is known to any person, other than the person committing the breach, who is your employee, officer, or other agent.</P>
+<CITA TYPE="N">[86 FR 70307, Dec. 9, 2021, as amended at 88 FR 77508, Nov. 13, 2023]
+</CITA>
+</DIV8>
+
+<DIV8 N="314.5" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-16/section-314.5&quot;,&quot;citation&quot;:&quot;16 CFR 314.5&quot;}">
+<HEAD>&#xA7; 314.5 Effective date.</HEAD>
+<P>Section 314.4(j) is effective as of May 13, 2024.</P>
+<CITA TYPE="N">[88 FR 77509, Nov. 13, 2023]
+</CITA>
+</DIV8>
+
+<DIV8 N="314.6" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-16/section-314.6&quot;,&quot;citation&quot;:&quot;16 CFR 314.6&quot;}">
+<HEAD>&#xA7; 314.6 Exceptions.</HEAD>
+<P>Section 314.4(b)(1), (d)(2), (h), and (i) do not apply to financial institutions that maintain customer information concerning fewer than five thousand consumers.</P>
+<CITA TYPE="N">[86 FR 70308, Dec. 9, 2021]
+</CITA>
+</DIV8>
+
+</DIV5>

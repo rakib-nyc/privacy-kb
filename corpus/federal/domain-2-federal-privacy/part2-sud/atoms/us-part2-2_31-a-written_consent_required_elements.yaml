@@ -1,0 +1,233 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+related:
+  - us.part2.2_13.a.use_disclosure_prohibition
+federal_relationship: null
+interpreted_by: []
+confidence: high
+id: us.part2.2_31.a.written_consent_required_elements
+source:
+  citation: 42 C.F.R. § 2.31(a)
+  instrument_id: us.part2_sud
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-42.xml?part=2
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  raw_sha256: 5310842763c7e36481877d66979171643bfb80db54bceca2013014691623c216
+  text_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.txt
+  text_sha256: 8aa03df58a46112b21fc7b4d0972fe49d4ed8dc28481d2e409f7a8fa881e8b74
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, full XML for the part, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: aa63d8919dca4a1584c9c6c72cd33a022f525b18b167a7e90154b716819a71d0
+verbatim_span: >-
+  A written consent to a use or disclosure under the regulations in this part may be paper or
+  electronic and must include:
+paragraph_path:
+  path:
+    - a
+  anchor: '2.31'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+    exactly one provision
+exemptions:
+  - id: cfr.42.2.12.e.2.not_a_part_2_program
+    type: entity_level
+    reach: instrument
+    scope: >-
+      If the diagnosis, treatment or referral was not provided by a part 2 program, the patient's
+      record is outside part 2 altogether. CONSEQUENCE TEST: there is no part 2 compliance programme
+      to build — no consent form, no redisclosure notice, no § 2.16 policies — because the
+      instrument does not reach the entity at all, which is why reach is instrument and not
+      obligation. The trap is the second sentence: federal money reaching the PATIENT is not federal
+      assistance to the PROGRAM, so a court-placed patient whose care a federal agency pays for is
+      still outside part 2 unless the program itself is federally assisted under § 2.12(b). Note
+      what the relief does NOT do — the same records remain PHI in the hands of a covered entity, so
+      exiting part 2 routes the analysis back to the Privacy Rule rather than out of regulation.
+    source_citation: 42 C.F.R. § 2.12(e)(2)
+    verbatim_span: >-
+      If a patient's substance use disorder diagnosis, treatment, or referral for treatment is not
+      provided by a part 2 program, that patient's record is not covered by the regulations in this
+      part. Thus, it is possible for an individual patient to benefit from federal support and not
+      be covered by the confidentiality regulations because the program in which the patient is
+      enrolled is not federally assisted as defined in paragraph (b) of this section. For example,
+      if a federal court placed an individual in a private for-profit program and made a payment to
+      the program on behalf of that individual, that patient's record would not be covered by the
+      regulations in this part unless the program itself received federal assistance as defined by
+      paragraph (b) of this section.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.is_part2_program == false
+common_errors:
+  - >-
+    Reusing a § 164.508 authorization form. It will lack the person authorized to make the
+    disclosure, the intermediary designation and the part 2 redisclosure statement, and § 2.31(c)(2)
+    bars disclosure on a consent that substantially fails to conform on its face.
+  - >-
+    Believing the single treatment, payment and operations consent ends part 2 segregation. It ends
+    the need for a fresh consent each time; the record still cannot be used against the patient in a
+    proceeding, which is why § 2.31(a)(4)(iii) carves that use out of the redisclosure permission.
+  - >-
+    Treating revocation as absolute. The consent must state the right to revoke in writing EXCEPT to
+    the extent the holder has already acted in reliance on it.
+open_questions:
+  - >-
+    effective_from is the effective date of the 2024 CARES Act alignment rule and is not stated in
+    the fetched part text; the source is the eCFR snapshot for 2026-08-17.
+operative_context:
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      If the recipient is a covered entity or business associate to whom a record (or information
+      contained in a record) is disclosed for purposes of treatment, payment, or health care
+      operations, a written consent must include the statement that the patient's record (or
+      information contained in the record) may be redisclosed in accordance with the permissions
+      contained in the HIPAA regulations, except for uses and disclosures for civil, criminal,
+      administrative, and legislative proceedings against the patient.
+    citation: 42 C.F.R. § 2.31(a)(4)(iii)
+    path:
+      path:
+        - a
+        - '4'
+        - iii
+      anchor: '2.31'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      The statement, “for treatment, payment, and health care operations” is a sufficient
+      description of the purpose when a patient provides consent once for all such future uses or
+      disclosures for those purposes.
+    citation: 42 C.F.R. § 2.31(a)(5)(ii)
+    path:
+      path:
+        - a
+        - '5'
+        - ii
+      anchor: '2.31'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      The patient's right to revoke the consent in writing, except to the extent that the part 2
+      program or other lawful holder of patient identifying information that is permitted to make
+      the disclosure has already acted in reliance on it, and how the patient may revoke consent.
+    citation: 42 C.F.R. § 2.31(a)(6)
+    path:
+      path:
+        - a
+        - '6'
+      anchor: '2.31'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      The potential for the records used or disclosed pursuant to the consent to be subject to
+      redisclosure by the recipient and no longer protected by this part.
+    citation: 42 C.F.R. § 2.31(a)(10)(i)
+    path:
+      path:
+        - a
+        - '10'
+        - i
+      anchor: '2.31'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+regulator:
+  - hhs_ocr
+  - hhs_samhsa
+sector:
+  - health
+data_types:
+  - health
+effective_from: '2024-04-16'
+subject:
+  domain: II.B.3
+  lifecycle:
+    - VI
+applies_if:
+  all:
+    - data.is_sud_patient_record == true
+    - any:
+        - entity.is_part2_program == true
+        - entity.is_part2_lawful_holder == true
+    - purpose.requires_part2_consent == true
+obligation_type: obtain_consent
+summary: >-
+  A part 2 consent may be paper or electronic and must contain the enumerated elements, including
+  the recipient, each purpose, the right to revoke, an expiration date or event, and the signature
+  and date.
+requirement_detail: >-
+  A part 2 consent is not a HIPAA authorization with a different name, and the differences are the
+  ones that bite in integration work. It must identify the person or class authorized to MAKE the
+  disclosure as well as the recipient, and where the recipient is an intermediary it must name the
+  intermediary and either its member participants or a general designation limited to participants
+  with a treating provider relationship — a requirement 45 C.F.R. § 164.508 has no counterpart to
+  and the reason HIE participation needs bespoke consent language. Paragraph (a)(5)(ii) is the CARES
+  Act change: the statement "for treatment, payment, and health care operations" is a sufficient
+  description of purpose when a patient consents once for all such future uses, which is what makes
+  a single durable consent possible where part 2 previously forced per-disclosure consent. Paragraph
+  (a)(4)(iii) is the other half of that bargain — where the recipient is a covered entity or
+  business associate taking the record for those purposes, the consent must say the record may be
+  redisclosed under the HIPAA rules, EXCEPT for uses and disclosures in proceedings against the
+  patient, so the litigation bar survives the handoff into HIPAA-land. The consent must also carry
+  the revocation right subject to reliance already placed on it, and an expiration date or event.
+preemption:
+  posture: floor
+  authority: 42 C.F.R. § 2.20
+  note: >-
+    Section 2.20 states that 42 U.S.C. 290dd-2 does not preempt the field: a State law PROHIBITING a
+    use or disclosure that part 2 permits still governs, while no State law may authorize or compel
+    a use or disclosure that part 2 forbids. So the ratchet runs one way — part 2 is a floor against
+    State permission and a ceiling on nothing.
+enforcement:
+  enforcers:
+    - hhs_ocr
+    - doj
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Section 2.3(a) applies the HIPAA penalties — sections 1176 and 1177 of the Social Security
+      Act, 42 U.S.C. 1320d-5 and 1320d-6 — to violations of 42 U.S.C. 290dd-2(a)-(d), and § 2.3(c)
+      applies 45 C.F.R. part 160 subparts C, D and E to noncompliance with part 2 in the same manner
+      as to covered entities.
+    range: null
+    note: >-
+      Enforcement was formerly criminal fines under 42 U.S.C. 290dd-2(f) alone. The current text
+      routes part 2 through the HIPAA enforcement machinery, which means OCR investigation, civil
+      money penalties and the § 2.4 complaint process — a materially larger exposure than the
+      pre-alignment position.
+  statute_of_limitations: null

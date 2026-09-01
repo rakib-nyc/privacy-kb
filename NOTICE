@@ -1,0 +1,23 @@
+PRIVACY-KB
+Copyright 2026 Muhammad Rakibul Islam
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+--------------------------------------------------------------------------------
+
+QUOTED LEGAL TEXT
+
+Every verbatim_span under corpus/ is quoted from United States, New York State or
+New York City law, together with agency guidance issued by those governments.
+Edicts of government are not subject to copyright in the United States. No licence
+is needed for that material and none is granted by this project.
+
+The Apache License covers the ORIGINAL work here: the code under tools/, engine/,
+mcp/, workflows/, evals/, schemas/ and tests/, and the analytical prose in the
+corpus records and meta/ commentary.
+
+Stored copies of primary sources under corpus/**/raw/ are retained so that any
+citation can be checked rather than trusted. Each is logged in meta/sources.yaml
+with its URL, fetch date and SHA-256.
+
+Contact: Muhammad Rakibul Islam <rakib.islam@rutgers.edu>

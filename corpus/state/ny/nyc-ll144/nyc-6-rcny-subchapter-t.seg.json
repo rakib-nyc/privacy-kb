@@ -1,0 +1,900 @@
+{
+ "label": "NYC 6 RCNY Subchapter T",
+ "url": "urn:owner-supplied:nyc-dcwp-notice-of-adoption-aedt-2023-04-05.pdf",
+ "format": "pdf_single_col",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf",
+ "raw_sha256": "4ecc4463b29440f9b876b0b7319faf2d4c4710b8ad28db9cfa8ae15a123ece2c",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "An employer or employment agency may not use or continue to use an AEDT if more than one year has passed since the most recent bias audit of the AEDT.",
+   "context": [],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Where an AEDT selects candidates for employment or employees being considered for promotion to move forward in the hiring process or classifies them into groups, a bias audit must, at a minimum:",
+   "context": [],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Calculate the selection rate for each category;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT selects candidates for employment or employees being considered for promotion to move forward in the hiring process or classifies them into groups, a bias audit must, at a minimum:",
+     "path": [
+      "b"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Calculate the impact ratio for each category;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT selects candidates for employment or employees being considered for promotion to move forward in the hiring process or classifies them into groups, a bias audit must, at a minimum:",
+     "path": [
+      "b"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Ensure that the calculations required in paragraphs (1) and (2) of this subdivision separately calculate the impact of the AEDT on:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT selects candidates for employment or employees being considered for promotion to move forward in the hiring process or classifies them into groups, a bias audit must, at a minimum:",
+     "path": [
+      "b"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "i"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Sex categories (e.g., impact ratio for selection of male candidates vs female candidates),",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT selects candidates for employment or employees being considered for promotion to move forward in the hiring process or classifies them into groups, a bias audit must, at a minimum:",
+     "path": [
+      "b"
+     ],
+     "anchor": "5-301"
+    },
+    {
+     "position": "precedes",
+     "text": "Ensure that the calculations required in paragraphs (1) and (2) of this subdivision separately calculate the impact of the AEDT on:",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "ii"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Race/Ethnicity categories (e.g., impact ratio for selection of Hispanic or Latino candidates vs Black or African American [Not Hispanic or Latino] candidates), and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT selects candidates for employment or employees being considered for promotion to move forward in the hiring process or classifies them into groups, a bias audit must, at a minimum:",
+     "path": [
+      "b"
+     ],
+     "anchor": "5-301"
+    },
+    {
+     "position": "precedes",
+     "text": "Ensure that the calculations required in paragraphs (1) and (2) of this subdivision separately calculate the impact of the AEDT on:",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "iii"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "intersectional categories of sex, ethnicity, and race (e.g., impact ratio for selection of Hispanic or Latino male candidates vs. Not Hispanic or Latino Black or African American female candidates).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT selects candidates for employment or employees being considered for promotion to move forward in the hiring process or classifies them into groups, a bias audit must, at a minimum:",
+     "path": [
+      "b"
+     ],
+     "anchor": "5-301"
+    },
+    {
+     "position": "precedes",
+     "text": "Ensure that the calculations required in paragraphs (1) and (2) of this subdivision separately calculate the impact of the AEDT on:",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b",
+    "4"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Ensure that the calculations in paragraphs (1), (2), and (3) of this subdivision are performed for each group, if an AEDT classifies candidates for employment or employees being considered for promotion into specified groups (e.g., leadership styles); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT selects candidates for employment or employees being considered for promotion to move forward in the hiring process or classifies them into groups, a bias audit must, at a minimum:",
+     "path": [
+      "b"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b",
+    "5"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Indicate the number of individuals the AEDT assessed that are not included in the required calculations because they fall within an unknown category. Example: An employer wants to use an AEDT to screen resumes and schedule interviews for a job posting. To do so, the employer must ensure that a bias audit of the AEDT was conducted no more than a year before the planned use of the AEDT. This bias audit is necessary even though the employer is not using the AEDT to make the final hiring decision, but only to screen at an early point in the application process. The employer asks the vendor for a bias audit. The vendor provides historical data regarding applicant selection that the vendor has collected from multiple employers to an independent auditor who will conduct a bias audit as follows: Sex Categories # of # Selection Impact Ratio Applicants Selected Rate Male 1390 667 48% 1.00 Female 1181 555 47% 0.979 Race/Ethnicity Categories # of # Selection Impact Applicants Selected Rate Ratio Hispanic or Latino 408 204 50% 0.97 White (Not Hispanic or Latino) 797 412 52% 1.00 Black or African American (Not Hispanic or Latino) 390 170 44% 0.84 Native Hawaiian or Pacific Islander (Not Hispanic or Latino) 119 52 44% 0.85 Asian (Not Hispanic or Latino) 616 302 49% 0.95 Native American or Alaska Native (Not Hispanic or Latino) 41 18 44% 0.85 Two or More Races (Not Hispanic or Latino) 213 96 45% 0.87 Intersectional Categories # of # Selection Impact Applicants Selected Rate Ratio Male 205 90 43.9% 0.841 Hispanic or Latino Female 190 82 43.2% 0.827 White 412 215 52.2% 1.000 Black or African American 226 95 42.0% 0.806 Native Hawaiian or Pacific 87 37 42.5% 0.815 Islander Male Asian 321 167 52.0% 0.997 Native American or Alaska 24 11 45.8% 0.878 Native Non/Hispanic or Two or More Races 115 52 45.2% 0.866 Latino White 385 197 51.2% 0.981 Black or African American 164 75 45.7% 0.876 Native Hawaiian or Pacific 32 15 46.9% 0.898 Islander Female Asian 295 135 45.8% 0.877 Native American or Alaska 17 7 41.2% 0.789 Native Two or More Races 98 44 44.9% 0.860 Note: The AEDT was also used to assess 250 individuals with an unknown sex or race/ethnicity category. Data on those individuals was not included in the calculations above.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT selects candidates for employment or employees being considered for promotion to move forward in the hiring process or classifies them into groups, a bias audit must, at a minimum:",
+     "path": [
+      "b"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Where an AEDT scores candidates for employment or employees being considered for promotion, a bias audit must, at a minimum:",
+   "context": [],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Calculate the median score for the full sample of applicants;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT scores candidates for employment or employees being considered for promotion, a bias audit must, at a minimum:",
+     "path": [
+      "c"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Calculate the scoring rate for individuals in each category;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT scores candidates for employment or employees being considered for promotion, a bias audit must, at a minimum:",
+     "path": [
+      "c"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Calculate the impact ratio for each category;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT scores candidates for employment or employees being considered for promotion, a bias audit must, at a minimum:",
+     "path": [
+      "c"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "c",
+    "4"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Ensure that the calculations required in paragraphs (1), (2), and (3) of this subdivision separately calculate the impact of the AEDT on:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT scores candidates for employment or employees being considered for promotion, a bias audit must, at a minimum:",
+     "path": [
+      "c"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "i"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Sex categories (i.e., impact ratio for selection of male candidates vs female candidates),",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT scores candidates for employment or employees being considered for promotion, a bias audit must, at a minimum:",
+     "path": [
+      "c"
+     ],
+     "anchor": "5-301"
+    },
+    {
+     "position": "precedes",
+     "text": "Ensure that the calculations required in paragraphs (1), (2), and (3) of this subdivision separately calculate the impact of the AEDT on:",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "ii"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Race/Ethnicity categories (e.g., impact ratio for selection of Hispanic or Latino candidates vs Black or African American [Not Hispanic or Latino] candidates), and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT scores candidates for employment or employees being considered for promotion, a bias audit must, at a minimum:",
+     "path": [
+      "c"
+     ],
+     "anchor": "5-301"
+    },
+    {
+     "position": "precedes",
+     "text": "Ensure that the calculations required in paragraphs (1), (2), and (3) of this subdivision separately calculate the impact of the AEDT on:",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "iii"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "intersectional categories of sex, ethnicity, and race (e.g., impact ratio for selection of Hispanic or Latino male candidates vs. Not Hispanic or Latino Black or African American female candidates); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT scores candidates for employment or employees being considered for promotion, a bias audit must, at a minimum:",
+     "path": [
+      "c"
+     ],
+     "anchor": "5-301"
+    },
+    {
+     "position": "precedes",
+     "text": "Ensure that the calculations required in paragraphs (1), (2), and (3) of this subdivision separately calculate the impact of the AEDT on:",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "c",
+    "5"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Indicate the number of individuals the AEDT assessed that are not included in the required calculations because they fall within an unknown category.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an AEDT scores candidates for employment or employees being considered for promotion, a bias audit must, at a minimum:",
+     "path": [
+      "c"
+     ],
+     "anchor": "5-301"
+    }
+   ],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": "5-301",
+   "section": "5-301",
+   "confidence": "high",
+   "heading": "5-301 Bias Audit.",
+   "text": "Notwithstanding the requirements of paragraphs (2) and (3) of subdivision (b) and paragraphs (3) and (4) of subdivision (c), an independent auditor may exclude a category that represents less than 2% of the data being used for the bias audit from the required calculations for impact ratio. Where such a category is excluded, the summary of results must include the independent auditor\u2019s justification for the exclusion, as well as the number of applicants and scoring rate or selection rate for the excluded category. Example: An employer uses an AEDT to score applicants for \u201cculture fit.\u201d To do so, the employer must ensure that a bias audit of the AEDT was conducted no more than a year before the use of the AEDT. The employer provides historical data on \u201cculture fit\u201d score of applicants for each category to an independent auditor to conduct a bias audit as follows: Sex Categories # of Scoring Applicants Impact Ratio Rate Male 92 54.3% 1.00 Female 76 44.7% 0.82 Race/Ethnicity Categories # of Scoring Impact Applicants Rate Ratio Hispanic or Latino 28 64.2% 1.00 White (Not Hispanic or Latino) 40 37.5% 0.58 Black or African American (Not Hispanic or Latino) 32 50.0% 0.78 Native Hawaiian or Pacific Islander (Not Hispanic or Latino) 8 62.5% 0.97 Asian (Not Hispanic or Latino) 24 41.7% 0.65 Native American or Alaska Native (Not Hispanic or Latino) 16 62.5% 0.97 Two or More Races (Not Hispanic or Latino) 20 50.0% 0.78 Intersectional Categories # of Scoring Impact Applicants Rate Ratio Male 16 75% 1.00 Hispanic or Latino Female 12 50% 0.67 White 20 35% 0.47 Black or African American 20 50% 0.67 Native Hawaiian or Pacific Islander 4 75% 1.00 Male Asian 12 58.3% 0.78 Native American or Alaska Native 8 62.5 0.83 Non/Hispanic or Two or More Races 12 50% 0.67 Latino White 20 40% 0.53 Black or African American 12 50% .67 Native Hawaiian or Pacific Islander 4 50% 0.67 Female Asian 12 25% 0.33 Native American or Alaska Native 8 62.5% 0.83 Two or More Races 8 50% 0.67 Note: The AEDT was used to assess 15 individuals with an unknown sex or race/ethnicity category. Data on these individuals was not included in the calculations above.",
+   "context": [],
+   "section_heading": "5-301 Bias Audit.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "5-302",
+   "section": "5-302",
+   "confidence": "high",
+   "heading": "5-302 Data Requirements.",
+   "text": "Historical Data. A bias audit conducted pursuant to section 5-301 of this Chapter must use historical data of the AEDT. The historical data used to conduct a bias audit may be from one or more employers or employment agencies that use the AEDT. However, an individual employer or employment agency may rely on a bias audit of an AEDT that uses the historical data of other employers or employment agencies only in the following circumstances: if such employer or employment agency provided historical data from its own use of the AEDT to the independent auditor conducting the bias audit or if such employer or employment agency has never used the AEDT.",
+   "context": [],
+   "section_heading": "5-302 Data Requirements.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "5-302",
+   "section": "5-302",
+   "confidence": "high",
+   "heading": "5-302 Data Requirements.",
+   "text": "Test Data. Notwithstanding the requirements of subdivision (a) of this section, an employer or employment agency may rely on a bias audit that uses test data if insufficient historical data is available to conduct a statistically significant bias audit. If a bias audit uses test data, the summary of results of the bias audit must explain why historical data was not used and describe how the test data used was generated and obtained. Example 1: An employer is planning to use an AEDT for the first time. The employer may rely on a bias audit conducted using the historical data of other employers or employment agencies, or on a bias audit conducted using test data. Example 2: An employment agency has been using an AEDT for 6 months. The bias audit the employment agency relied on before its first use of the AEDT was conducted 10 months ago using test data. The employment agency will need an updated bias audit if it will continue to use the AEDT once 12 months have passed since the bias audit it first relied on was conducted. The employment agency\u2019s data from 6 months of use of the AEDT is not sufficient on its own to conduct a statistically significant bias audit. The employment agency may rely on a bias audit using the historical data of other employers and employment agencies if it provides its 6 months of historical data to the independent auditor for use and consideration. The employment agency may also rely on a bias audit that uses test data. Example 3: An employer has been using an AEDT for 3 years and will soon need an updated bias audit. The employer has statistically significant data from its 3 years of use of the AEDT. The employer may rely on a bias audit conducted using historical data from multiple employers if it provides its 3 years of historical data to the independent auditor for use and consideration. The employer may also rely on a bias audit conducted using historical data from its own use of the AEDT, without any data from other employers or employment agencies. The employer may not rely on a bias audit conducted using test data.",
+   "context": [],
+   "section_heading": "5-302 Data Requirements.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "5-303",
+   "section": "5-303",
+   "confidence": "high",
+   "heading": "5-303 Published Results.",
+   "text": "Before the use of an AEDT, an employer or employment agency in the city must make the following publicly available on the employment section of their website in a clear and conspicuous manner:",
+   "context": [],
+   "section_heading": "5-303 Published Results.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": "5-303",
+   "section": "5-303",
+   "confidence": "high",
+   "heading": "5-303 Published Results.",
+   "text": "The date of the most recent bias audit of the AEDT and a summary of the results, which shall include the source and explanation of the data used to conduct the bias audit, the number of individuals the AEDT assessed that fall within an unknown category, and the number of applicants or candidates, the selection or scoring rates, as applicable, and the impact ratios for all categories; and,",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Before the use of an AEDT, an employer or employment agency in the city must make the following publicly available on the employment section of their website in a clear and conspicuous manner:",
+     "path": [
+      "a"
+     ],
+     "anchor": "5-303"
+    }
+   ],
+   "section_heading": "5-303 Published Results.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": "5-303",
+   "section": "5-303",
+   "confidence": "high",
+   "heading": "5-303 Published Results.",
+   "text": "The distribution date of the AEDT.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Before the use of an AEDT, an employer or employment agency in the city must make the following publicly available on the employment section of their website in a clear and conspicuous manner:",
+     "path": [
+      "a"
+     ],
+     "anchor": "5-303"
+    }
+   ],
+   "section_heading": "5-303 Published Results.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "5-303",
+   "section": "5-303",
+   "confidence": "high",
+   "heading": "5-303 Published Results.",
+   "text": "The requirements of subdivision (a) of this section may be met with an active hyperlink to a website containing the required summary of results and distribution date, provided that the link is clearly identified as a link to results of the bias audit.",
+   "context": [],
+   "section_heading": "5-303 Published Results.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "5-303",
+   "section": "5-303",
+   "confidence": "high",
+   "heading": "5-303 Published Results.",
+   "text": "An employer or employment agency must keep the summary of results and distribution date posted for at least 6 months after its latest use of the AEDT for an employment decision.",
+   "context": [],
+   "section_heading": "5-303 Published Results.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "5-304",
+   "section": "5-304",
+   "confidence": "high",
+   "heading": "5-304 Notice to Candidates and Employees.",
+   "text": "The notice required by \u00a7 20-871(b)(1) of the Code must include instructions for how an individual can request an alternative selection process or a reasonable accommodation under other laws, if available. Nothing in this subchapter requires an employer or employment agency to provide an alternative selection process.",
+   "context": [],
+   "section_heading": "5-304 Notice to Candidates and Employees.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "5-304",
+   "section": "5-304",
+   "confidence": "high",
+   "heading": "5-304 Notice to Candidates and Employees.",
+   "text": "To comply with \u00a7 20-871(b)(1) and (2) of the Code, an employer or employment agency may provide notice to a candidate for employment who resides in the city by doing any of the following:",
+   "context": [],
+   "section_heading": "5-304 Notice to Candidates and Employees.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": "5-304",
+   "section": "5-304",
+   "confidence": "high",
+   "heading": "5-304 Notice to Candidates and Employees.",
+   "text": "Provide notice on the employment section of its website in a clear and conspicuous manner at least 10 business days before use of an AEDT;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "To comply with \u00a7 20-871(b)(1) and (2) of the Code, an employer or employment agency may provide notice to a candidate for employment who resides in the city by doing any of the following:",
+     "path": [
+      "b"
+     ],
+     "anchor": "5-304"
+    }
+   ],
+   "section_heading": "5-304 Notice to Candidates and Employees.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": "5-304",
+   "section": "5-304",
+   "confidence": "high",
+   "heading": "5-304 Notice to Candidates and Employees.",
+   "text": "Provide notice in a job posting at least 10 business days before use of an AEDT; or,",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "To comply with \u00a7 20-871(b)(1) and (2) of the Code, an employer or employment agency may provide notice to a candidate for employment who resides in the city by doing any of the following:",
+     "path": [
+      "b"
+     ],
+     "anchor": "5-304"
+    }
+   ],
+   "section_heading": "5-304 Notice to Candidates and Employees.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": "5-304",
+   "section": "5-304",
+   "confidence": "high",
+   "heading": "5-304 Notice to Candidates and Employees.",
+   "text": "Provide notice to candidates for employment via U.S. mail or e-mail at least 10 business days before use of an AEDT.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "To comply with \u00a7 20-871(b)(1) and (2) of the Code, an employer or employment agency may provide notice to a candidate for employment who resides in the city by doing any of the following:",
+     "path": [
+      "b"
+     ],
+     "anchor": "5-304"
+    }
+   ],
+   "section_heading": "5-304 Notice to Candidates and Employees.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "5-304",
+   "section": "5-304",
+   "confidence": "high",
+   "heading": "5-304 Notice to Candidates and Employees.",
+   "text": "To comply with \u00a7 20-871(b)(1) and (2) of the Code, an employer or employment agency may provide notice to an employee being considered for promotion who resides in the city by doing any of the following:",
+   "context": [],
+   "section_heading": "5-304 Notice to Candidates and Employees.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": "5-304",
+   "section": "5-304",
+   "confidence": "high",
+   "heading": "5-304 Notice to Candidates and Employees.",
+   "text": "Provide notice in a written policy or procedure that is provided to employees at least 10 business days before use of an AEDT;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "To comply with \u00a7 20-871(b)(1) and (2) of the Code, an employer or employment agency may provide notice to an employee being considered for promotion who resides in the city by doing any of the following:",
+     "path": [
+      "c"
+     ],
+     "anchor": "5-304"
+    }
+   ],
+   "section_heading": "5-304 Notice to Candidates and Employees.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": "5-304",
+   "section": "5-304",
+   "confidence": "high",
+   "heading": "5-304 Notice to Candidates and Employees.",
+   "text": "Provide notice in a job posting at least 10 business days before use of an AEDT; or,",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "To comply with \u00a7 20-871(b)(1) and (2) of the Code, an employer or employment agency may provide notice to an employee being considered for promotion who resides in the city by doing any of the following:",
+     "path": [
+      "c"
+     ],
+     "anchor": "5-304"
+    }
+   ],
+   "section_heading": "5-304 Notice to Candidates and Employees.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": "5-304",
+   "section": "5-304",
+   "confidence": "high",
+   "heading": "5-304 Notice to Candidates and Employees.",
+   "text": "Provide notice via U.S. mail or e-mail at least 10 business days before use of an AEDT.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "To comply with \u00a7 20-871(b)(1) and (2) of the Code, an employer or employment agency may provide notice to an employee being considered for promotion who resides in the city by doing any of the following:",
+     "path": [
+      "c"
+     ],
+     "anchor": "5-304"
+    }
+   ],
+   "section_heading": "5-304 Notice to Candidates and Employees.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": "5-304",
+   "section": "5-304",
+   "confidence": "high",
+   "heading": "5-304 Notice to Candidates and Employees.",
+   "text": "To comply with \u00a7 20-871(b)(3) of the Code, an employer or employment agency must:",
+   "context": [],
+   "section_heading": "5-304 Notice to Candidates and Employees.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": "5-304",
+   "section": "5-304",
+   "confidence": "high",
+   "heading": "5-304 Notice to Candidates and Employees.",
+   "text": "Provide information on the employment section of its website in a clear and conspicuous manner about its AEDT data retention policy, the type of data collected for the AEDT, and the source of the data;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "To comply with \u00a7 20-871(b)(3) of the Code, an employer or employment agency must:",
+     "path": [
+      "d"
+     ],
+     "anchor": "5-304"
+    }
+   ],
+   "section_heading": "5-304 Notice to Candidates and Employees.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "d",
+    "2"
+   ],
+   "anchor": "5-304",
+   "section": "5-304",
+   "confidence": "high",
+   "heading": "5-304 Notice to Candidates and Employees.",
+   "text": "Post instructions on the employment section of its website in a clear and conspicuous manner for how to make a written request for such information, and if a written request is received, provide such information within 30 days; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "To comply with \u00a7 20-871(b)(3) of the Code, an employer or employment agency must:",
+     "path": [
+      "d"
+     ],
+     "anchor": "5-304"
+    }
+   ],
+   "section_heading": "5-304 Notice to Candidates and Employees.",
+   "nb_note": null,
+   "active_date": null
+  },
+  {
+   "path": [
+    "d",
+    "3"
+   ],
+   "anchor": "5-304",
+   "section": "5-304",
+   "confidence": "high",
+   "heading": "5-304 Notice to Candidates and Employees.",
+   "text": "Provide an explanation to a candidate for employment or employee being considered for promotion why disclosure of such information would violate local, state, or federal law, or interfere with a law enforcement investigation.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "To comply with \u00a7 20-871(b)(3) of the Code, an employer or employment agency must:",
+     "path": [
+      "d"
+     ],
+     "anchor": "5-304"
+    }
+   ],
+   "section_heading": "5-304 Notice to Candidates and Employees.",
+   "nb_note": null,
+   "active_date": null
+  }
+ ]
+}

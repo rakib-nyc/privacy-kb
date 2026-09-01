@@ -1,0 +1,140 @@
+id: us.rfpa.3410.d.no_proceeding_notice
+schema_version: 1
+record_type: obligation
+source:
+  citation: 12 U.S.C. § 3410(d)
+  instrument_id: us.rfpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3410.xml
+  raw_sha256: 5f92abf0c014a909b13b60decfb863eecb6d2db0a014a77aa9f44a94097a0bac
+  text_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3410.txt
+  text_sha256: e09ef56e73640f811b0150f9f6f25f6dd13b77c70976d023c8b006b57fed123e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3410.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1 (12-u-s-c-3410)
+    result: structured_source_used
+    note: null
+  segment_sha256: e864edee79563658b4d32f0a86acdefabc536eb99bd6eda13b166605ec61c7c6
+verbatim_span: >-
+  A court ruling denying a motion or application under this section shall not be deemed a final
+  order and no interlocutory appeal may be taken therefrom by the customer. An appeal of a ruling
+  denying a motion or application under this section may be taken by the customer (1) within such
+  period of time as provided by law as part of any appeal from a final order in any legal proceeding
+  initiated against him arising out of or based upon the financial records, or (2) within thirty
+  days after a notification that no legal proceeding is contemplated against him. The Government
+  authority obtaining the financial records shall promptly notify a customer when a determination
+  has been made that no legal proceeding against him is contemplated. After one hundred and eighty
+  days from the denial of the motion or application, if the Government authority obtaining the
+  records has not initiated such a proceeding, a supervisory official of the Government authority
+  shall certify to the appropriate court that no such determination has been made. The court may
+  require that such certifications be made, at reasonable intervals thereafter, until either
+  notification to the customer has occurred or a legal proceeding is initiated as described in
+  clause (A).
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - d
+  anchor: /us/usc/t12/s3410/d
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: >-
+  The subsection carries the appeal bar, the two appeal routes, the notification duty and the
+  certification duty in one block, with no chapeau above it.
+subject:
+  domain: III.A.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - federal_agencies
+sector:
+  - financial
+data_types:
+  - financial
+status: in_force
+effective_from: '1979-03-10'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_government_authority == true
+    - data.is_financial_record == true
+applies_to_role: controller
+obligation_type: notify
+summary: >-
+  A denial of a customer challenge is not appealable when made; the Government authority that
+  obtained the records must promptly notify the customer once it determines no legal proceeding
+  against him is contemplated, and a supervisory official must certify to the court if no such
+  determination has been made within one hundred and eighty days.
+requirement_detail: >-
+  THE NOTIFICATION DUTY EXISTS BECAUSE THE APPEAL RIGHT IS OTHERWISE UNUSABLE. A ruling denying the
+  customer's motion is expressly not a final order and no interlocutory appeal lies from it, so the
+  customer has exactly two ways up: as part of an appeal from a final order in a proceeding brought
+  against him arising out of the records, or within thirty days after being told that no proceeding
+  is contemplated. If the Government never says so, the thirty-day clock never starts and the denial
+  is effectively unreviewable — which is why the duty to notify PROMPTLY is the operative privacy
+  obligation here rather than an administrative courtesy. The one hundred and eighty day
+  certification is a backstop on that duty and not a substitute for it: it runs to the COURT, states
+  only that no determination has been made, and may be repeated at intervals the court sets until
+  the customer is notified or a proceeding begins.
+deadline: null
+no_deadline_stated: >-
+  The subsection fixes no period for the notification itself — the Government authority "shall
+  promptly notify a customer when a determination has been made that no legal proceeding against him
+  is contemplated", and "promptly" is the only measure given. The other periods in § 3410 govern
+  different acts: the thirty days in this subsection is the customer's appeal window measured from
+  the notification, the one hundred and eighty days is the trigger for a supervisory certification
+  to the court rather than for the notice, the seven calendar days in § 3410(b) is the deadline for
+  deciding the motion, and the ten and fourteen days in § 3410(a) are the filing window. Checked §
+  3410(a) through (f) in the USLM source; no period attaches to this notice.
+exemptions: []
+related:
+  - us.rfpa.3410.a.customer_challenge
+  - us.rfpa.3410.e.sole_judicial_remedy
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Advising that a denial can be appealed immediately. § 3410(d) makes it non-final and bars an
+    interlocutory appeal.
+  - >-
+    Reading the one hundred and eighty day certification as the notice deadline. The certification
+    runs to the court and reports that no determination has been made; the customer notice is due
+    promptly once a determination is made.
+open_questions:
+  - >-
+    The final sentence of § 3410(d) refers to a legal proceeding "initiated as described in clause
+    (A)", but the subsection numbers its two appeal routes (1) and (2) and contains no clause (A).
+    Recorded as it appears in the USLM release-point text; whether this is a scrivener's error or a
+    survival from earlier lettering has not been checked against the Statutes at Large.
+confidence: high
+preemption:
+  posture: floor
+  authority: 12 U.S.C. § 3402
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the sections extracted. RFPA binds federal Government authorities,
+    so the ordinary state-law displacement question does not arise in the usual form: a state
+    statute restricting state investigators is not in conflict with it.
+enforcement:
+  enforcers:
+    - federal_agencies
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      12 U.S.C. § 3417 (civil penalties and liability) has not been extracted into this corpus, so
+      penalty exposure and any customer damages action are UNASSESSED rather than absent.
+      private_right_of_action is recorded false because nothing extracted establishes one, not
+      because the statute was read to withhold one.
+  statute_of_limitations: null

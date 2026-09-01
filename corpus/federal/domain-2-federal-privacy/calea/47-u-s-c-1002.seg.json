@@ -1,0 +1,294 @@
+{
+ "label": "47 U.S.C. \u00a7 1002",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/calea/raw/47-u-s-c-1002.xml",
+ "raw_sha256": "0458d2ca9cc250c59a8b70f482357e56125db94072dd484a50ca4cebd6a4985c",
+ "leaves": [
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": "/us/usc/t47/s1002/a/1",
+   "heading": "",
+   "text": "expeditiously isolating and enabling the government, pursuant to a court order or other lawful authorization, to intercept, to the exclusion of any other communications, all wire and electronic communications carried by the carrier within a service area to or from equipment, facilities, or services of a subscriber of such carrier concurrently with their transmission to or from the subscriber\u2019s equipment, facility, or service, or at such later time as may be acceptable to the government;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (b), (c), and (d) of this section and sections 1007(a) and 1008(b) and (d) of this title, a telecommunications carrier shall ensure that its equipment, facilities, or services that provide a customer or subscriber with the ability to originate, terminate, or direct communications are capable of\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t47/s1002/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s1002/a/2/A",
+   "heading": "",
+   "text": "before, during, or immediately after the transmission of a wire or electronic communication (or at such later time as may be acceptable to the government); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (b), (c), and (d) of this section and sections 1007(a) and 1008(b) and (d) of this title, a telecommunications carrier shall ensure that its equipment, facilities, or services that provide a customer or subscriber with the ability to originate, terminate, or direct communications are capable of\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t47/s1002/a"
+    },
+    {
+     "position": "precedes",
+     "text": "expeditiously isolating and enabling the government, pursuant to a court order or other lawful authorization, to access call-identifying information that is reasonably available to the carrier\u2014",
+     "path": [
+      "a",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s1002/a/2"
+    },
+    {
+     "position": "follows",
+     "text": "except that, with regard to information acquired solely pursuant to the authority for pen registers and trap and trace devices (as defined in section 3127 of title 18 ), such call-identifying information shall not include any information that may disclose the physical location of the subscriber (except to the extent that the location may be determined from the telephone number);",
+     "path": [
+      "a",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s1002/a/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s1002/a/2/B",
+   "heading": "",
+   "text": "in a manner that allows it to be associated with the communication to which it pertains,",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (b), (c), and (d) of this section and sections 1007(a) and 1008(b) and (d) of this title, a telecommunications carrier shall ensure that its equipment, facilities, or services that provide a customer or subscriber with the ability to originate, terminate, or direct communications are capable of\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t47/s1002/a"
+    },
+    {
+     "position": "precedes",
+     "text": "expeditiously isolating and enabling the government, pursuant to a court order or other lawful authorization, to access call-identifying information that is reasonably available to the carrier\u2014",
+     "path": [
+      "a",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s1002/a/2"
+    },
+    {
+     "position": "follows",
+     "text": "except that, with regard to information acquired solely pursuant to the authority for pen registers and trap and trace devices (as defined in section 3127 of title 18 ), such call-identifying information shall not include any information that may disclose the physical location of the subscriber (except to the extent that the location may be determined from the telephone number);",
+     "path": [
+      "a",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s1002/a/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3"
+   ],
+   "anchor": "/us/usc/t47/s1002/a/3",
+   "heading": "",
+   "text": "delivering intercepted communications and call-identifying information to the government, pursuant to a court order or other lawful authorization, in a format such that they may be transmitted by means of equipment, facilities, or services procured by the government to a location other than the premises of the carrier; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (b), (c), and (d) of this section and sections 1007(a) and 1008(b) and (d) of this title, a telecommunications carrier shall ensure that its equipment, facilities, or services that provide a customer or subscriber with the ability to originate, terminate, or direct communications are capable of\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t47/s1002/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "4",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s1002/a/4/A",
+   "heading": "",
+   "text": "the privacy and security of communications and call-identifying information not authorized to be intercepted; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (b), (c), and (d) of this section and sections 1007(a) and 1008(b) and (d) of this title, a telecommunications carrier shall ensure that its equipment, facilities, or services that provide a customer or subscriber with the ability to originate, terminate, or direct communications are capable of\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t47/s1002/a"
+    },
+    {
+     "position": "precedes",
+     "text": "facilitating authorized communications interceptions and access to call-identifying information unobtrusively and with a minimum of interference with any subscriber\u2019s telecommunications service and in a manner that protects\u2014",
+     "path": [
+      "a",
+      "4"
+     ],
+     "anchor": "/us/usc/t47/s1002/a/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "4",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s1002/a/4/B",
+   "heading": "",
+   "text": "information regarding the government\u2019s interception of communications and access to call-identifying information.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (b), (c), and (d) of this section and sections 1007(a) and 1008(b) and (d) of this title, a telecommunications carrier shall ensure that its equipment, facilities, or services that provide a customer or subscriber with the ability to originate, terminate, or direct communications are capable of\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t47/s1002/a"
+    },
+    {
+     "position": "precedes",
+     "text": "facilitating authorized communications interceptions and access to call-identifying information unobtrusively and with a minimum of interference with any subscriber\u2019s telecommunications service and in a manner that protects\u2014",
+     "path": [
+      "a",
+      "4"
+     ],
+     "anchor": "/us/usc/t47/s1002/a/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s1002/b/1/A",
+   "heading": "",
+   "text": "to require any specific design of equipment, facilities, services, features, or system configurations to be adopted by any provider of a wire or electronic communication service, any manufacturer of telecommunications equipment, or any provider of telecommunications support services; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "This subchapter does not authorize any law enforcement agency or officer\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s1002/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s1002/b/1/B",
+   "heading": "",
+   "text": "to prohibit the adoption of any equipment, facility, service, or feature by any provider of a wire or electronic communication service, any manufacturer of telecommunications equipment, or any provider of telecommunications support services.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "This subchapter does not authorize any law enforcement agency or officer\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s1002/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s1002/b/2/A",
+   "heading": "",
+   "text": "information services; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements of subsection (a) do not apply to\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s1002/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s1002/b/2/B",
+   "heading": "",
+   "text": "equipment, facilities, or services that support the transport or switching of communications for private networks or for the sole purpose of interconnecting telecommunications carriers.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements of subsection (a) do not apply to\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s1002/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": "/us/usc/t47/s1002/b/3",
+   "heading": "Encryption",
+   "text": "A telecommunications carrier shall not be responsible for decrypting, or ensuring the government\u2019s ability to decrypt, any communication encrypted by a subscriber or customer, unless the encryption was provided by the carrier and the carrier possesses the information necessary to decrypt the communication.",
+   "context": []
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "/us/usc/t47/s1002/c",
+   "heading": "Emergency or exigent circumstances",
+   "text": "In emergency or exigent circumstances (including those described in sections 2518(7) or (11)(b) and 3125 of title 18 and section 1805(e) of title 50 ), a carrier at its discretion may comply with subsection (a)(3) by allowing monitoring at its premises if that is the only means of accomplishing the interception or access.",
+   "context": []
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": "/us/usc/t47/s1002/d",
+   "heading": "Mobile service assistance requirements",
+   "text": "A telecommunications carrier that is a provider of commercial mobile service (as defined in section 332(d) of this title ) offering a feature or service that allows subscribers to redirect, hand off, or assign their wire or electronic communications to another service area or another service provider or to utilize facilities in another service area or of another service provider shall ensure that, when the carrier that had been providing assistance for the interception of wire or electronic communications or access to call-identifying information pursuant to a court order or lawful authorization no longer has access to the content of such communications or call-identifying information within the service area in which interception has been occurring as a result of the subscriber\u2019s use of such a feature or service, information is made available to the government (before, during, or immediately after the transfer of such communications) identifying the provider of a wire or electronic communication service that has acquired access to the communications.",
+   "context": []
+  }
+ ]
+}

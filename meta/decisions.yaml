@@ -1,0 +1,116 @@
+decisions:
+- id: DEC-001
+  date: '2026-08-19'
+  part: 0A
+  decision: meta/ny-repealed.yaml — a GENERATED table, rather than reading the repealed flag off the stored
+    document.
+  why: 'Gate 20 as first written would have been VACUOUS. The repealed flag appears only on OpenLegislation
+    LAW TREE nodes; the per-document endpoint returns null. Fetching GBS/899-CCC directly reports repealed:
+    null even though the tree marks it repealed as of 2026-06-19. A gate checking only the stored document
+    would pass every repealed section.'
+  consequence: Same pattern as positive-law-titles.yaml. An atom citing a law absent from the table FAILS
+    rather than defaulting.
+  fixtures:
+  - gate20-repealed-anchor
+  - nonvacuity20-unknown-law
+- id: DEC-002
+  date: '2026-08-19'
+  part: 0A
+  decision: Rewrote dual-parse engine A to implement the FULL JSON string escape grammar, including \uXXXX.
+  why: A toolkit bug the guard caught on itself. Engine A decoded only \n and \" and left \u00a7 undecoded,
+    so a verbatim_span could have carried the literal characters "\u00a7" where the statute has a section
+    sign. It never surfaced against the live API because that server sends UTF-8 directly — it appeared
+    only on a re-serialised document, which is the kind of variation a second engine exists to expose.
+  rule_applied: A toolkit bug found mid-instrument becomes the work.
+- id: DEC-003
+  date: '2026-08-19'
+  part: 0A
+  decision: Gate 20 also checks source.fetched against the API's activeDate.
+  why: OpenLegislation exposes activeDate per document; a record fetched before a later enacted amendment
+    would otherwise sit in the corpus looking current.
+- id: DEC-004
+  date: '2026-08-19'
+  part: 0B
+  decision: GBL § 349 finding CONFIRMED after attack. Extracted and encoded as the NY backstop.
+  why: 'Four independent lines. (1) The same section fetched at each published date: 2014 titled "Deceptive
+    acts and practices unlawful", current "Unfair, deceptive, or abusive" — a real change, not a rendering
+    difference. (2) The API law-updates feed reports three genuine update events for locationId 349. (3)
+    The current version has no asterisk and no NB note, so it is active consolidated law — unlike the
+    2025-12-26 version which ends "* NB Effective February 17, 2026". (4) The bill record: S8416/S8416A,
+    sponsor Comrie, Senate 2025-06-13, Assembly 2025-06-17, to Governor 2025-12-08, SIGNED 2025-12-19
+    CHAPTER 708, lawCode "Add Art 22-A §348, amd Art 22-A Art Head, §349, Gen Bus L".'
+  not_established: The bill behind the third update (2026-04-03) was NOT identified; Approval Memo 83
+    suggests a chapter amendment but its print number was not found. Recorded as an open question. The
+    NY OAG cross-check was INCONCLUSIVE — a generic bureau description with no § 349-specific statement
+    — and is reported as such rather than counted as corroboration.
+- id: DEC-005
+  date: '2026-08-19'
+  part: 0B
+  decision: § 349(e) media exemption typed activity_level, NOT entity_level.
+  why: 'The trailing clause "who broadcasts, publishes, or prints the advertisement" attaches the exemption
+    to a capacity, not an actor. Consequence test: a broadcaster billing its own subscribers deceptively
+    is FULLY COVERED. Typing it entity_level would exempt a media company''s entire consumer-facing business.'
+- id: DEC-006
+  date: '2026-08-19'
+  part: 0B
+  decision: Shipped the GBL 349 atoms with exemptions recorded but flagged as not engine-evaluable.
+  why: The extraction is correct and verbatim; only the engine wiring is blocked by DEBT-009. Withholding
+    would lose verified work; shipping silently would be DEBT-008 recurring. Each affected atom carries
+    an explicit open_question.
+- id: DEC-007
+  date: '2026-08-19'
+  question: When an instrument is only partially extracted, should its atoms still appear in `applicable`,
+    or be withheld until the instrument is substantively complete?
+  decision: THEY APPEAR, with a hard caveat attached to the result and a matching entry in coverage_gaps.
+    They are not withheld.
+  why: A correct preemption answer is genuinely useful. 15 U.S.C. § 1681t really does displace the state
+    law it names, and that is true whether or not the corpus also holds § 1681b. Suppressing a correct
+    answer because a neighbouring answer is missing would trade a silent void for a different silent void
+    — the reader would get nothing at all, with no way to tell that from "no federal law reaches this".
+  why_not_the_alternative: 'Withholding would also be a BEHAVIOURAL change dressed as a caution, and the
+    failure mode it creates is worse: an instrument would vanish from the analysis entirely as a side
+    effect of extraction progress, so the same query would return different law on different days for
+    reasons having nothing to do with the law.'
+  the_condition: The caveat must be structural, not prose. Each applicable entry carries instrument_completeness
+    naming the ABSENT duty categories by citation, and coverage_gaps carries a matching line. A caveat
+    that lived only in a reasoning string would be the same defect as migration 005 before the engine
+    sentence changed with the field.
+  pinned_by: engine/test-engine.mjs asserts that a query touching a partially-extracted instrument produces
+    BOTH an applicable entry AND a coverage gap naming what is missing. A future change that silently
+    drops either one turns the suite red.
+  supersedes: null
+  the_property: 'DETERMINISM WITH RESPECT TO THE LAW, NOT TO THE CORPUS STATE. Naming it, because it is
+    a stronger claim than "a correct preemption answer is useful" and it generalises past this decision.
+    Invariant I2 already says a query resolves as of a DATE: the same facts and the same as_of must give
+    the same answer. That guarantee is worthless if the answer also varies with how much of the corpus
+    happens to be extracted. Withholding a partially-extracted instrument would make it vanish from the
+    analysis as a side effect of extraction PROGRESS, so the same query would return different law on
+    different days for reasons having nothing to do with the law. Corpus growth may change what the system
+    says it CANNOT reach; it must not silently change what it says the law IS.'
+
+- id: DEC-008
+  date: '2026-08-31'
+  title: Third-party framework documents are not redistributed, and the records sourced from them go with them
+  context: 'Preparing a public 0.1. The repository carried 9 copyrighted PDFs it had no right to
+    redistribute — both the source taxonomies, the APEC Privacy Framework, the Global CBPR
+    Framework and its two Program Requirements, the OECD Privacy Guidelines, the DAA Self-Regulatory
+    Principles and the NAI Code. Publicly DOWNLOADABLE is not a licence to REDISTRIBUTE, and the
+    distinction had never been drawn because the repository had always been private.'
+  decision: 'Remove the documents, and with them the 38 records whose verbatim_span was verified
+    against them. A record cannot be verbatim_confirmed against a file the repository does not hold
+    — invariant I1 — so keeping the records while dropping the sources would have meant 38 atoms
+    suppressed by I1 and inert, which is worse than absent because it looks like coverage.'
+  what_was_kept: 'The HEW 1973 advisory committee report and its 5 principle records. It is a US
+    government publication and carries no such restriction. Structural references to the taxonomy
+    — the coordinate codes, the competency identifiers, the fact that the corpus is organised
+    against it — are retained: naming a standard is not reproducing it.'
+  cost: 'Records 286 -> 248. Principle records 39 -> 5, which discharges most of DEBT-001''s
+    moratorium as a side effect rather than by the work it asked for. Three eval scenarios retired
+    and one narrowed; gate 8''s scenario-count ratchet was rebaselined 31 -> 30 DELIBERATELY, which
+    is what this entry exists to record. Gate 12 lost 12 of its 15 visual checks.'
+  what_this_does_not_change: 'The federal and New York corpus, which is the product. Every
+    obligation record is sourced from US, New York or New York City legal text — government edicts,
+    not anyone''s copyright.'
+  residual_risk: 'Short quotations of those frameworks survive in git history in the removed
+    records. Quoting an excerpt with full citation is a materially different act from shipping the
+    document, and the history rewrite targets the binaries rather than the prose.'

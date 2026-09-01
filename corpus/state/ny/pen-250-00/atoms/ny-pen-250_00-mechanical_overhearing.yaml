@@ -1,0 +1,112 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+id: ny.penal.250_00.mechanical_overhearing_definition
+source:
+  citation: N.Y. Penal Law § 250.00(2)
+  instrument_id: ny.penal.250.05
+  url: https://legislation.nysenate.gov/api/3/laws/PEN/250.00
+  fetched: '2026-08-19'
+  raw_file: corpus/state/ny/pen-250-00/raw/ny-pen-250-00.json
+  raw_sha256: 4b3b7668a96af0d9e61bba015e2c8ea8e2c0cb30d5abab58650ec985d0107154
+  text_file: corpus/state/ny/pen-250-00/raw/ny-pen-250-00.txt
+  text_sha256: fdd6af7004eb50d677ceaf6b1897e53b8441825c3cae4925a084ecfabb22d189
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/pen-250-00/raw/ny-pen-250-00.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, ny-pen-250-00
+    result: structured_source_used
+    note: null
+  segment_sha256: ebe61c4d61640c985f1df2f64997f4ecb990a04b7fac9454675e3bdfb78ae697
+verbatim_span: >-
+  "Mechanical overhearing of a conversation" means the intentional overhearing or recording of a
+  conversation or discussion, without the consent of at least one party thereto, by a person not
+  present thereat, by means of any instrument, device or equipment.
+paragraph_path:
+  path:
+    - '2'
+  anchor: '250.00'
+  derivation: reconstructed
+  confidence: high
+  evidence: subdivision designators reconstructed from the flat text field; resolves to exactly one leaf
+context_not_required: The provision states the rule in full.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - I
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - any
+effective_from: '2021-05-29'
+federal_relationship: independent
+applies_if:
+  all:
+    - entity.nexus in ["US-NY"]
+    - practice.intercepts_communications == true
+applies_to_role: controller
+obligation_type: prohibit
+deadline: null
+exemptions: []
+related:
+  - ny.penal.250_00.wiretapping_definition
+  - ny.penal.250_05.eavesdropping
+summary: >-
+  "Mechanical overhearing of a conversation" means intentionally overhearing or recording a
+  conversation without the consent of at least one party, by a person not present at it.
+requirement_detail: >-
+  THE IN-PERSON LIMB, AND IT IS NOT A COPY OF SUBDIVISION 1. Where § 250.00(1) reaches telephonic or
+  telegraphic communication, this reaches "a conversation or discussion" — people talking in a room.
+  The consent test is the same in substance, "without the consent of at least one party thereto", so
+  New York is a one-party-consent state for in-person recording as well.
+
+
+  THE LIMB WITH NO ANALOGUE IN SUBDIVISION 1 IS THE PRESENCE REQUIREMENT. The actor must be "a
+  person not present thereat". A participant physically in the room is outside the definition
+  ALTOGETHER — not because they consented, but because they were there. That is a second,
+  independent reason a party may record, and it survives even where the consent analysis is
+  contested.
+
+
+  WHY THIS ATOM EXISTS AT ALL: the walker welded subdivisions 1 and 2 into one leaf, so this
+  definition had no citable path and the corpus answered questions about in-person recording out of
+  the telephonic definition. Recovered 2026-08-20.
+common_errors:
+  - >-
+    Reading § 250.00(1) as covering in-person conversation. It reaches telephonic or telegraphic
+    communication only; this subdivision is the conversation limb.
+  - >-
+    Treating the presence requirement as a consent question. "A person not present thereat" is a
+    separate element — a participant in the room is outside the definition however consent falls.
+  - Assuming all-party consent. The test is consent of at least one party.
+open_questions: []
+preemption:
+  posture: none
+  authority: N.Y. Penal Law § 250.00
+  note: >-
+    State criminal definitions. 18 U.S.C. § 2510 supplies the federal analogues and § 2511(2)(d) the
+    federal one-party rule; where a state requires all-party consent the stricter governs, but New
+    York does not.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: Definitional; penalties attach through § 250.05.
+    range: null
+    note: No independent penalty. Civil exposure runs through GBL § 349 and common-law theories.
+  statute_of_limitations: null

@@ -1,0 +1,162 @@
+# VALIDATION EVENTS — where the project's own instructions turned out to be wrong
+# =============================================================================
+# The gates protect the corpus from the extractor. NOTHING structurally protects the
+# corpus from the BRIEF. Every gate assumes the instruction it implements is correct,
+# so an error in BRIEF.md, PROMPTS.md or a session brief propagates into records that
+# then pass every check.
+#
+# Twice now the only thing standing between a wrong instruction and a wrong corpus was
+# a a verification pass verifying its own brief against the source instead of following it. Both
+# are recorded here, because this is the failure direction with no automated defence.
+version: 1
+
+events:
+- id: VE-001
+  date: '2026-08-19'
+  artefact: BRIEF.md, invariant I4
+  what_it_said: 'A HIPAA covered entity is exempt for PHI and NOT exempt for the wellness data
+    its consumer app collects — offered as the canonical data_level example.'
+  what_the_source_says: '16 C.F.R. § 318.1(a): "This part does not apply to HIPAA-covered
+    entities, or to any other entity to the extent that it engages in activities as a business
+    associate of a HIPAA-covered entity." The "to the extent that" qualifier scopes the SECOND
+    limb only. The first limb is unqualified, so a covered entity is outside the Health Breach
+    Notification Rule entirely — consumer wellness app included.'
+  consequence_had_it_stood: 'The rule would have been modelled with a data_level exclusion to
+    match the invariant, and the corpus would have reported a covered entity as partially subject
+    to a rule that does not reach it at all. The atom would have passed every gate: the span would
+    be verbatim, the path unique, the predicate satisfiable. Nothing checks a typing choice against
+    the grammar of the sentence it came from.'
+  how_it_was_caught: 'A a verification pass extracting 16 C.F.R. part 318 recorded the discrepancy in
+    open_questions rather than modelling the exclusion as data_level to match the brief. It was
+    told to verify every claim against the span rather than assert from memory, and applied that
+    to the instruction as well as to its own knowledge.'
+  resolution: 'BRIEF.md amended 2026-08-19. The invariant is unchanged — entity_level versus
+    data_level is still the distinction that matters. The teaching example is replaced with the
+    HIPAA covered-entity/PHI split verified in Part B2, and § 318.1(a) is added beside it as a
+    counter-example. Both are kept so the reader learns to read the exclusion''s grammar rather
+    than to pattern-match the situation.'
+  status: closed
+
+- id: VE-002
+  date: '2026-08-19'
+  artefact: Session brief for the ECPA extraction (owner-authored instruction, not a repo file)
+  what_it_said: 'That 18 U.S.C. § 2510''s definition of "intercept" requires acquisition
+    CONTEMPORANEOUS with transmission — stated as though it were statutory text, and offered as the
+    boundary between the Wiretap Act and the Stored Communications Act.'
+  what_the_source_says: 'The word "contemporaneous" appears NOWHERE in § 2510 or § 2511 —
+    grep count zero in both rendered texts. Contemporaneity is a judicial construction read against
+    § 2510(17)''s definition of electronic storage and the SCA''s existence.'
+  consequence_had_it_stood: 'An atom asserting a statutory requirement the statute does not
+    contain, in requirement_detail, where no gate reaches. Gate 3 verifies verbatim_span against
+    the source; it does not verify the ANALYSIS wrapped around it. This is the softest surface in
+    the whole schema.'
+  how_it_was_caught: 'The a verification pass grepped both rendered texts before writing the atom and
+    reframed the claim as judicial construction.'
+  resolution: 'The atom states it correctly. Recorded here because the error was in the
+    INSTRUCTION, and because it shows the same defence working twice in one session.'
+  status: closed
+
+- id: VE-003
+  date: '2026-08-20'
+  artefact: Session brief for the PPRA extraction (owner-authored instruction)
+  what_it_said: 'That 20 U.S.C. § 1232h(b) requires PRIOR WRITTEN CONSENT for surveys probing the
+    eight protected categories — stated flatly, in capitals, as the rule.'
+  what_the_source_says: 'The USLM continuation reads: without the prior consent of the student (if
+    the student is an adult or emancipated minor), or in the case of an unemancipated minor,
+    without the prior written consent of the parent. WRITTEN consent is specified only for the
+    parent of an unemancipated minor. An adult or emancipated student gives prior consent, not
+    prior written consent.'
+  consequence_had_it_stood: 'An atom overstating the formality required for the largest affected
+    population — adult and emancipated students — in requirement_detail, where no gate reaches.
+    A school told it needs signed forms it does not need is a smaller harm than the reverse, but it
+    is still the corpus asserting a requirement the statute does not impose.'
+  how_it_was_caught: 'The a verification pass read the continuation rather than the chapeau alone, noticed the
+    two-limb structure, and recorded the distinction in requirement_detail and as the first
+    common_error instead of following the brief.'
+  resolution: 'The atom states it correctly. Recorded here as the THIRD instruction error found by
+    an extractor verifying its brief against the source — after VE-001 and VE-002. Three is now
+    enough to call it a pattern rather than a run of bad luck.'
+  status: closed
+
+- id: VE-004
+  date: '2026-08-20'
+  artefact: meta/coverage.yaml and legal-domain taxonomy v2.6.1
+  what_it_said: Nothing — this is an ABSENCE rather than an error.
+  what_the_source_says: 'legal-domain v2.6.1 contains NO performance indicator naming the Privacy Act of
+    1974. Gate 6 requires every obligation to anchor to a taxonomy leaf, so the seven Privacy Act atoms
+    are filed at III.A.1, where this repo already files DPPA and RFPA, with each atom carrying an
+    open_question stating that the placement is a judgement rather than a match.'
+  why_it_matters: 'The taxonomy is used here as a COVERAGE CHECKLIST, and gate 34 now ratchets the count
+    of leaves that are neither covered nor ruled out of scope. This is the inverse problem: an
+    INSTRUMENT with no leaf to sit on. A checklist can be incomplete in two directions and only one
+    of them is currently measured.'
+  resolution: Not resolved. Recorded so the placement is visible and so the second direction of taxonomy
+    incompleteness is on the record.
+  status: open
+
+- id: VE-005
+  date: '2026-08-20'
+  artefact: Session brief for the workplace-privacy extraction (owner-authored instruction)
+  what_it_said: 'Two claims, both wrong. That NLRA § 7 "CONSTRAINS EMPLOYER MONITORING" — and that
+    SOX § 1514A "creates a CONFIDENTIALITY constraint on internal investigations".'
+  what_the_source_says: '29 U.S.C. § 157 confers a RIGHT on employees; the employer-facing
+    prohibition is § 158(a)(1), which is not in the corpus. And 18 U.S.C. § 1514A is an
+    ANTI-RETALIATION provision; it says nothing about confidentiality. The anonymity duty for
+    audit-committee complaints is Exchange Act § 10A(m)(4), elsewhere.'
+  consequence_had_it_stood: 'Two atoms describing statutes as doing something adjacent to what they
+    do — the § 7 atom implying an employer duty the section does not impose, and the § 1514A atom
+    presented as a confidentiality rule. Both would have passed every gate.'
+  how_it_was_caught: 'The a verification pass stated the correction explicitly rather than following the
+    brief, naming § 158(a)(1) and § 10A(m)(4) as sitting elsewhere and flagging NLRB work-rule
+    doctrine as agency and case law under invariant I7 rather than blending it into the statutory
+    record.'
+  resolution: 'The atoms state it correctly. This is the FOURTH and FIFTH instruction error found
+    the same way. The count is now high enough that the practice should be treated as a required
+    step rather than a good habit: an extractor that follows its brief without checking it is the
+    single largest remaining source of error in this corpus.'
+  status: closed
+
+- id: VE-006
+  date: '2026-08-20'
+  artefact: tools/extract.py, walk_openleg
+  what_it_said: 'The trailing "* NB Effective ..." note is the walker''s only signal that a section is
+    not yet in force, and it was attached to leaves on exactly one of the walker''s three exit paths —
+    the parenthesised-designator branch. The section-root exit and the bare-subdivision exit dropped it.'
+  what_the_source_says: 'Every section of GBL article 44-D ends "* NB Effective January 25, 2027". Seven
+    of the nine leave the walker by one of the two exits that discarded it: §§ 1502-1505 segment to a
+    section root, and §§ 1506-1508 through the bare-subdivision branch.'
+  consequence_had_it_stood: 'The SAFE for Kids Act would have been segmented with no trace of the fact
+    that it is not law. The atoms would still have said enacted_pending — that comes from reading the
+    statute, not from the walker — but the segmentation underneath them, which is the artifact a reader
+    goes to when they doubt an atom, would have carried nothing to check it against. For the instrument
+    the manifest names as the reference test for invariant I2, the evidence for the invariant would have
+    been the one thing missing. No gate reaches this: gates check atoms against raw bytes, and a field
+    absent from a segmentation is absent from nothing they compare.'
+  how_it_was_caught: 'Reading the segmented leaves before writing atoms from them, and noticing that
+    § 1501''s subdivision-1 chapeau carried no nb_note while its own paragraph (a) did. One section
+    disagreeing with itself was the tell.'
+  resolution: 'tools/extract.py amended 2026-08-20: section_heading, nb_note and active_date are emitted
+    on all three exit paths, and the comment at the nb_note capture says why it has to ride on every
+    leaf. All NY sources re-segmented. The general lesson is the one this file keeps recording in
+    different clothes — a field that is usually present is not a field that is checked, and the branch
+    that omits it stays invisible until an instrument exercises it.'
+  status: closed
+
+standing_risk:
+  statement: 'requirement_detail, summary and common_errors carry the corpus''s analytical value
+    and are checked by NO gate. verbatim_span is verified, paragraph_path is verified, predicates
+    are verified — the prose around them is not. Both events above landed there.'
+  current_defence: 'Two things now, one of them mechanical. tools/check-brief.py resolves every
+    citation in a brief against the corpus and prints the SOURCE''S OWN SECTION HEADING beside the
+    sentence the brief wrote around it — run it before extraction begins, because a brief''s
+    citation is a hypothesis. On the actual VE-005 brief it makes two of the three errors visible
+    at a glance: 29 U.S.C. § 157 publishes as "Right of employees as to organization, collective
+    bargaining, etc." against a claim that it constrains employers, and 18 U.S.C. § 1514A publishes
+    as "Civil action to protect against RETALIATION in fraud cases" against a claim that it is a
+    confidentiality rule. The second thing is still a practice: extractors verifying claims against
+    the span rather than asserting from memory.'
+  what_the_preflight_does_not_catch: 'VE-003, the PPRA written-consent error. The heading
+    ("Protection of pupil rights") is consistent with the claim; the error was in the DETAIL of a
+    two-limb consent rule. Headings catch mis-aimed citations, not misread provisions.'
+  not_yet_attempted: 'A check that flags factual assertions in requirement_detail which quote or
+    paraphrase statutory language absent from the cited span. Hard, and probably worth it.'

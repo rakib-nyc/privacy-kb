@@ -1,0 +1,117 @@
+id: ny.gbl.349.h.private_right
+schema_version: 1
+record_type: obligation
+source:
+  citation: N.Y. Gen. Bus. Law § 349(h)
+  instrument_id: ny.gbl.349
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/349
+  fetched: '2026-08-19'
+  raw_file: corpus/state/ny/gbl-349/raw/ny-gbs-349.json
+  raw_sha256: 2833369a40955663990347addf5f426bf6c81acc3ed827bb91045c5c5432963b
+  text_file: corpus/state/ny/gbl-349/raw/ny-gbs-349.txt
+  text_sha256: 4d8c06a7e1c66eaf96f46f04cd580956f50e508c5ed60596812d84470342be3f
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/gbl-349/raw/ny-gbs-349.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 4d84045bdad7ef3be0920087df3895d8011cb09d3f2ab192fc43b9d485c811ae
+verbatim_span: >-
+  In addition to the right of action granted to the attorney general pursuant to this section, any
+  person who has been injured by reason of any deceptive act or deceptive practice made unlawful by
+  this section may bring an action in such person's own name to enjoin such deceptive act or
+  deceptive practice, an action to recover such person's actual damages or fifty dollars, whichever
+  is greater, or both such actions. The court may, in its discretion, increase the award of damages
+  to an amount not to exceed three times the actual damages up to one thousand dollars, if the court
+  finds the defendant willfully or knowingly violated this section. The court may award reasonable
+  attorney's fees to a prevailing plaintiff.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - h
+  anchor: '349'
+  derivation: reconstructed
+  confidence: high
+  evidence: designator parsed from flat <P> siblings; sequence-tracked
+jurisdiction: US-NY
+jurisdiction_level: state
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions: []
+related: []
+federal_relationship: independent
+interpreted_by: []
+common_errors:
+  - >-
+    Assuming the private right expanded with the statute. It did not — § 349(h) is still limited to
+    deceptive acts and practices while § 349(a) now covers three prongs.
+  - >-
+    Treating the $50 floor as the exposure. The real driver is class aggregation plus discretionary
+    attorney's fees, not the per-plaintiff minimum.
+  - Overlooking that treble damages require a WILFUL OR KNOWING violation and are capped at $1,000.
+open_questions:
+  - >-
+    Whether a practice that is abusive but not deceptive can be pleaded as deceptive is a litigation
+    question this text does not answer.
+  - >-
+    Chapter 708 of the Laws of 2025 (S8416/S8416A, sponsor Comrie), signed 2025-12-19, amended the
+    Article 22-A heading and § 349 and added § 348. A further amendment took effect 2026-04-03.
+    Verified against the OpenLegislation bill record and the law updates feed.
+confidence: high
+context_not_required: No ancestor contributes governing text; this provision's operative meaning is complete on its own.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - I
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2026-04-03'
+applies_if:
+  all:
+    - entity.nexus in ['US-NY']
+    - event.type == 'deceptive_act_or_practice'
+applies_to_role: any
+obligation_type: prohibit
+summary: >-
+  Any person injured by a DECEPTIVE act or practice may sue for injunctive relief and actual damages
+  or $50, whichever is greater, with treble damages up to $1,000 for wilful or knowing violation.
+requirement_detail: >-
+  THE ASYMMETRY THAT MATTERS. The Attorney General reaches all three prongs — unfair, deceptive,
+  abusive — but the private right of action in § 349(h) reaches only DECEPTIVE acts and DECEPTIVE
+  practices. Chapter 708 expanded the AG's authority without expanding the private cause of action.
+  A plaintiff alleging only unfairness or abusiveness has no § 349(h) claim on this text.
+preemption:
+  posture: none
+  authority: N.Y. Gen. Bus. Law § 349(g)
+  note: >-
+    State UDAP. No federal statute preempts it; § 349(g) is itself a non-supersession clause
+    preserving other NY law. The FTC-compliance defence at § 349(d) is NOT preemption — it is an
+    activity-level complete defence that the defendant must establish.
+enforcement:
+  enforcers:
+    - state_ag
+    - private_litigants
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      AG: injunction and restitution. Private: actual damages or $50, whichever is greater; treble
+      up to $1,000 for wilful or knowing violation; discretionary attorney's fees.
+    range:
+      min: 50
+      unit: usd_statutory_minimum
+    note: >-
+      The private right is NARROWER than the AG's — see the deception-only asymmetry on the
+      private-action atom.
+  statute_of_limitations: null

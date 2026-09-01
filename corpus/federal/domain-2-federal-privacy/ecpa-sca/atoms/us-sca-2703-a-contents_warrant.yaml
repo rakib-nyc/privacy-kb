@@ -1,0 +1,130 @@
+id: us.sca.2703.a.contents_warrant
+schema_version: 1
+record_type: obligation
+source:
+  citation: 18 U.S.C. § 2703(a)
+  instrument_id: us.ecpa_sca
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2703.xml
+  raw_sha256: 063a2a456b9871a736c0af5cc30ec5d5a2d262753c91cffa17d0fdeee53cd88b
+  text_file: corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2703.txt
+  text_sha256: f9265249e37309b17d69798fc8e2e177328b8508de0fb0eee4ab6b58c46bcaf8
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2703.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: c59cd0be8e9cdbd07f2be99d76326d8649c03b20fbe8328bb22160eabebc7bbd
+verbatim_span: >-
+  A governmental entity may require the disclosure by a provider of electronic communication service
+  of the contents of a wire or electronic communication, that is in electronic storage in an
+  electronic communications system for one hundred and eighty days or less, only pursuant to a
+  warrant issued using the procedures described in the Federal Rules of Criminal Procedure (or, in
+  the case of a State court, issued using State warrant procedures and, in the case of a
+  court-martial or other proceeding under chapter 47 of title 10 (the Uniform Code of Military
+  Justice), issued under section 846 of that title, in accordance with regulations prescribed by the
+  President) by a court of competent jurisdiction. A governmental entity may require the disclosure
+  by a provider of electronic communications services of the contents of a wire or electronic
+  communication that has been in electronic storage in an electronic communications system for more
+  than one hundred and eighty days by the means available under subsection (b) of this section.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+  anchor: /us/usc/t18/s2703/a
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: >-
+  Subsection (a) is a free-standing two-sentence rule; nothing above it in § 2703 conditions its
+  terms, and its cross-reference to subsection (b) is inside the quoted text.
+subject:
+  domain: III.A.2
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - doj
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '1986-10-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - event.government_compels_disclosure == true
+    - entity.provides_electronic_communication_service == true
+applies_to_role: processor
+obligation_type: disclose
+summary: >-
+  A governmental entity may compel a provider of electronic communication service to disclose the
+  contents of a communication in electronic storage for one hundred and eighty days or less only
+  pursuant to a warrant; contents held longer may be obtained by the means available under
+  subsection (b).
+requirement_detail: >-
+  THE TIERING PROVISION, and the part of chapter 121 furthest out of step with practice. As written,
+  contents in electronic storage for 180 days or less require a warrant on probable cause, while
+  contents held longer fall to the lighter § 2703(b) routes — an administrative or grand jury
+  subpoena, or a § 2703(d) order, each with prior notice to the subscriber, or a warrant without
+  notice. The 180-day line was drawn in 1986, when leaving mail on a server for six months was read
+  as abandonment; it corresponds to nothing about how communications are stored now. Two
+  developments have overtaken the text without amending it: Warshak (6th Cir. 2010) held that the
+  Fourth Amendment requires a warrant for stored email contents irrespective of age, and the major
+  providers now demand a warrant for contents by policy nationwide, so the statutory subpoena route
+  for older contents is largely theoretical. Carpenter (2018) then unsettled the
+  third-party-doctrine premise on which the section's whole graduated structure rests, and the reach
+  of that holding beyond cell-site records is still being litigated. Note the direction of the duty:
+  § 2703 authorizes compulsion and § 2703(e) gives the provider a good-faith defence for complying,
+  so a complying provider is not the right defendant.
+deadline: null
+exemptions: []
+related:
+  - us.sca.2703.d.court_order_standard
+  - us.sca.2703.c1.subscriber_records
+  - us.wiretap.2510.17a.electronic_storage
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Advising that a subpoena reaches contents older than 180 days because the text permits it.
+    Warshak and uniform provider policy have made a warrant the operating rule for contents of any
+    age.
+  - >-
+    Confusing it with § 2702. This section governs COMPELLED disclosure to a governmental entity; §
+    2702 governs what a provider may volunteer, and each has exceptions the other does not.
+  - >-
+    Reading the 180-day tier as a technical or security distinction. It is a 1986 proxy for
+    abandonment and tracks nothing in modern storage practice.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2703(a)
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis; no express ceiling clause was
+    found in the section extracted. State stored-communications and eavesdropping statutes, and
+    state process rules, operate alongside chapter 121 and may be stricter — § 2703(d) expressly
+    refuses an order to a state authority where state law prohibits it.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

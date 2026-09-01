@@ -1,0 +1,121 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: local
+regulator:
+  - nyc_dcwp
+sector:
+  - employment
+status: in_force
+effective_from: '2023-04-05'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: medium
+related:
+  - ny.nyc_ll144.20_871.b.candidate_notice
+id: ny.nyc_rcny.5_304.b.candidate_notice
+source:
+  citation: 6 RCNY § 5-304(b)
+  instrument_id: nyc.local_law_144
+  url: >-
+    urn:owner-supplied:nyc-dcwp-notice-of-adoption-aedt-2023-04-05.pdf
+  fetched: '2026-08-24'
+  raw_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  raw_sha256: 4ecc4463b29440f9b876b0b7319faf2d4c4710b8ad28db9cfa8ae15a123ece2c
+  text_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.txt
+  text_sha256: 21b43190233735cdab074166a3fc9cc2c26aa24c4b5a80596656cda690abee44
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  format: pdf_single_col
+  risk_tier: medium
+  render: null
+  structured_source_check:
+    checked:
+      - amlegal.com (403 to automated requests)
+      - rules.cityofnewyork.us (carries proposal notices)
+      - owner-supplied DCWP Notice of Adoption of Final Rule
+    result: no_structured_source_exists
+    note: >-
+      No structured source serves the Rules of the City of New York. This is the ADOPTED text — a
+      Notice of Adoption carries the final rule in clean form, unlike a proposal notice — so it is
+      the right document, in the wrong format.
+  segment_sha256: c178c0f4864ee4d449080e0160ac1f19d4d1243f7911a5aed5e60946e7963666
+verbatim_span: >-
+  To comply with § 20-871(b)(1) and (2) of the Code, an employer or employment agency may provide
+  notice to a candidate for employment who resides in the city by doing any of the following:
+paragraph_path:
+  path:
+    - b
+  anchor: 5-304
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from a pdftotext -layout rendering; indentation is NOT used as
+    evidence because the PDF resets its left margin per page. Resolves to exactly one leaf.
+subject:
+  domain: IV.A.2
+  lifecycle:
+    - III
+data_types:
+  - any
+federal_relationship: gap_fills
+applies_if:
+  all:
+    - entity.uses_automated_employment_decision_tool == true
+    - entity.nexus in ["US-NY-NYC"]
+applies_to_role: controller
+obligation_type: notify
+deadline:
+  trigger_event: use of an AEDT on a candidate for employment
+  duration:
+    value: 10
+    unit: business_days
+  computation: >-
+    Each permitted method requires notice at least 10 BUSINESS days before use. Business days, not
+    calendar — a fortnight of calendar time can be short of ten business days across public
+    holidays.
+exemptions: []
+summary: >-
+  Notice to candidates may be given on the employment section of the website, in the job posting, or
+  by mail or e-mail — each at least 10 business days before use.
+requirement_detail: >-
+  THREE ROUTES, ONE CLOCK. The subdivision offers alternative methods and the naive reading is that
+  the website route is a standing notice that needs no timing — it is not: every branch carries the
+  same 10-business-day lead time. The count is in BUSINESS days, which is the detail most often got
+  wrong when a compliance calendar is built in calendar days.
+common_errors:
+  - Counting calendar days. The rule says business days.
+  - >-
+    Treating a permanent website notice as satisfying the lead time by itself. Paragraph (1) still
+    requires it to be posted at least 10 business days before use.
+open_questions:
+  - >-
+    THE DOCUMENT STATES NO EFFECTIVE DATE. effective_from is taken from the PDF's own CreationDate
+    metadata (5 April 2023), which is evidence about the FILE rather than a statement in the rule.
+    New York City rules generally take effect after publication in the City Record, which this
+    corpus does not hold. Confirm the operative date against the City Record before relying on any
+    as-of query in 2023.
+preemption:
+  posture: none
+  authority: 6 RCNY Subchapter T
+  note: >-
+    City rule implementing N.Y.C. Admin. Code § 20-870 et seq. No federal statute regulates
+    automated employment decision tools as such; Title VII reaches discriminatory OUTCOMES and says
+    nothing about auditing a tool in advance.
+enforcement:
+  enforcers:
+    - nyc_dcwp
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil penalties under N.Y.C. Admin. Code § 20-872, per violation and per day of continuing
+      violation.
+    range: null
+    note: >-
+      The penalty structure is in the Administrative Code, not this rule; see
+      nyc.ll144.20_872.b.daily_penalty.
+  statute_of_limitations: null
+context_not_required: The subdivision states the rule in full; no ancestor contributes governing text.

@@ -1,0 +1,138 @@
+id: us.nlra.157.protected_activity
+schema_version: 1
+record_type: obligation
+source:
+  citation: 29 U.S.C. § 157
+  instrument_id: us.nlra
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc29@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/nlra/raw/29-u-s-c-157.xml
+  raw_sha256: 23469142521594fd9c7a0ac415401eaf512849a3b332b5ba14374b7e5b6a761e
+  text_file: corpus/federal/domain-2-federal-privacy/nlra/raw/29-u-s-c-157.txt
+  text_sha256: fe05572467e0cccf0528c12aad181f35186d959edbb657bacffcf76672dc02c6
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/nlra/raw/29-u-s-c-157.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 9de97d12b471647066b1310066ee972dd67c9247c9f2eabde3fa18ae1e464422
+verbatim_span: >-
+  Employees shall have the right to self-organization, to form, join, or assist labor organizations,
+  to bargain collectively through representatives of their own choosing, and to engage in other
+  concerted activities for the purpose of collective bargaining or other mutual aid or protection,
+  and shall also have the right to refrain from any or all of such activities except to the extent
+  that such right may be affected by an agreement requiring membership in a labor organization as a
+  condition of employment as authorized in section 158(a)(3) of this title .
+verification_status: verbatim_confirmed
+paragraph_path:
+  path: []
+  anchor: /us/usc/t29/s157
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: IV.B.2
+  lifecycle:
+    - II
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - nlrb
+sector:
+  - employment
+data_types:
+  - personal_information
+status: in_force
+effective_from: '1947-06-23'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history:
+  - date: '1947-06-23'
+    note: >-
+      The amendments note carried with the section in the fetched source records: "1947—Act June 23,
+      1947, restated rights of employees to bargain collectively and inserted provision that they
+      have right to refrain from joining in concerted activities with their fellow employees." The
+      right to refrain, which is half of this atom, dates from that restatement. The source
+      cross-refers the effective date to section 104 of the same act, set out under 29 U.S.C. § 151,
+      which is not extracted; the date recorded here is the date of the act itself.
+    source_url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc29@119-1.zip
+applies_if:
+  all:
+    - entity.is_employer == true
+    - entity.is_private_sector == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  Employees have the right to self-organization, to bargain collectively through representatives of
+  their own choosing and to engage in other concerted activities for the purpose of collective
+  bargaining or other mutual aid or protection, and the right to refrain from those activities.
+requirement_detail: >-
+  THIS SECTION IS IN A PRIVACY CORPUS BECAUSE IT CONSTRAINS MONITORING, not because it is a privacy
+  statute, and the collision it produces is direct: the employer's interest in watching its systems
+  and the employee's § 7 right occupy the same ground, and a monitoring rule can be a genuinely
+  reasonable security measure and still be unlawful. The protected zone is wider than most policy
+  drafters assume — the right covers "other concerted activities for the purpose of collective
+  bargaining or other mutual aid or protection", which does not require that a union exist, so a
+  social-media policy, a camera in a break area or a keystroke logger in a wholly non-union
+  workplace is measured against it. Two boundaries matter and neither is in this text: § 157 confers
+  the right, while the prohibition on employer interference is 29 U.S.C. § 158(a)(1), and the
+  coverage exclusions — supervisors, public employers, agricultural laborers — sit in the
+  definitions at 29 U.S.C. § 152. Neither section is held in this corpus, so this atom states the
+  right and not the remedy, and the National Labor Relations Board's work-rule doctrine, which asks
+  whether a rule would reasonably tend to chill protected activity, is agency and case law that must
+  be surfaced as such rather than cited as this section. The same sentence also protects the right
+  "to refrain from any or all of such activities", so a policy that compels participation is exposed
+  from the opposite direction.
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Assuming § 7 only matters where there is a union. The right runs to "other concerted activities
+    for the purpose of collective bargaining or other mutual aid or protection" and does not depend
+    on one.
+  - >-
+    Citing § 157 as the prohibition. It confers rights; employer interference is an unfair labor
+    practice under 29 U.S.C. § 158(a)(1), which this corpus does not hold.
+  - >-
+    Applying it to supervisors or public-sector employees. Those exclusions live in the definitions
+    at 29 U.S.C. § 152 and are not encoded in this atom.
+open_questions:
+  - >-
+    29 U.S.C. §§ 152 and 158 are not extracted. Coverage and the unfair-labor-practice prohibition
+    therefore cannot be resolved from this atom alone.
+confidence: high
+preemption:
+  posture: field
+  authority: null
+  note: >-
+    The Act contains no express preemption clause and none appears in the section extracted. NLRA
+    preemption is judicially developed — conduct arguably protected by § 157 or arguably prohibited
+    by § 158 is for the Board rather than the states — and that doctrine is case law which this
+    corpus does not hold. Recorded as field so that a state monitoring statute is not treated as
+    freely cumulative with § 157; the posture must be confirmed against the case law before it is
+    relied on.
+enforcement:
+  enforcers:
+    - nlrb
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Charge to the Board, prosecuted by the General Counsel. There is no private right of action to
+      enforce § 157 in court; an employee files an unfair labor practice charge and the Board's
+      remedies are remedial rather than punitive.
+    range: null
+    note: >-
+      The remedial provisions at 29 U.S.C. § 160 have NOT been extracted. Treat exposure as
+      UNASSESSED rather than absent, and note that a rescission and notice-posting order against a
+      monitoring policy is the practical remedy most relevant here.
+  statute_of_limitations: >-
+    The six-month charge-filing limit is in 29 U.S.C. § 160(b), which is not extracted; do not
+    compute it from this atom.

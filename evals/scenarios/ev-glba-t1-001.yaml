@@ -1,0 +1,97 @@
+id: ev.glba.t1.001
+question: >-
+  We are a motor vehicle dealership. We extend retail credit to buyers ourselves and we hold that
+  paper — we do not routinely assign it to an outside finance source. Does the FTC's GLBA Privacy
+  Rule apply to us, and if not, are we free of GLBA privacy obligations?
+trap: >-
+  T1, in its most expensive form. Two mistakes are available and most answers make one of them.
+  The first is missing the exclusion entirely and applying 16 C.F.R. part 313 to a dealer § 313.1(b)
+  puts outside it. The second is worse: finding the exclusion and concluding the dealer has no GLBA
+  privacy obligation. It does. 12 U.S.C. 5519 hands exactly these dealers to the CFPB, so Regulation P
+  (12 C.F.R. part 1016) reaches them instead. This is a JURISDICTIONAL ALLOCATION wearing the shape
+  of an exemption, and an entity_level exemption is the easiest place in the schema to lose that.
+  The hinge is the single word "routinely", which is a fact about the dealer's practice that no
+  amount of reasoning recovers — it has to be supplied.
+rubric:
+- name: the disclosure limit exists as a real atom
+  record_exists: us.cfr.16.313.10.a1.disclosure_limit
+- name: the § 313.1(b) dealer exclusion is typed entity_level, not data_level
+  record: us.cfr.16.313.10.a1.disclosure_limit
+  path: exemptions.0.type
+  equals: entity_level
+- name: its scope says in terms that this is not relief from GLBA
+  record: us.cfr.16.313.10.a1.disclosure_limit
+  path: exemptions.0.scope
+  contains: THIS IS NOT RELIEF FROM GLBA
+- name: it names Regulation P as the instrument that reaches these dealers instead
+  record: us.cfr.16.313.10.a1.disclosure_limit
+  path: exemptions.0.scope
+  contains: 12 C.F.R. part 1016
+- name: the exclusion is quoted verbatim from § 313.1(b)
+  record: us.cfr.16.313.10.a1.disclosure_limit
+  path: exemptions.0.verbatim_span
+  contains: not routinely assigned to an unaffiliated third party finance or leasing source
+- name: the burden of establishing it sits on the entity
+  record: us.cfr.16.313.10.a1.disclosure_limit
+  path: exemptions.0.burden_of_proof
+  equals: entity
+- name: ENGINE — a non-assigning dealer is exempt from the disclosure limit
+  engine:
+    entity: {is_financial_institution: true, predominantly_motor_vehicle_sales_or_leasing: true,
+             is_motor_vehicle_dealer: true, extends_retail_credit_directly: true,
+             routinely_assigns_contracts: false, nexus: US}
+    data: {is_nonpublic_personal_information: true, subject_is_company: false, is_publicly_available: false}
+    context: {as_of: '2026-08-19'}
+  atom: us.cfr.16.313.10.a1.disclosure_limit
+  in: exempt
+- name: ENGINE — and the relief is entity_level, so the whole Part falls away
+  engine:
+    entity: {is_financial_institution: true, predominantly_motor_vehicle_sales_or_leasing: true,
+             is_motor_vehicle_dealer: true, extends_retail_credit_directly: true,
+             routinely_assigns_contracts: false, nexus: US}
+    data: {is_nonpublic_personal_information: true, subject_is_company: false, is_publicly_available: false}
+    context: {as_of: '2026-08-19'}
+  atom: us.cfr.16.313.10.a1.disclosure_limit
+  in: exempt
+  path: level
+  equals: entity_level
+- name: ENGINE — the customer notice falls away too, because the relief is entity-wide
+  engine:
+    entity: {is_financial_institution: true, predominantly_motor_vehicle_sales_or_leasing: true,
+             is_motor_vehicle_dealer: true, extends_retail_credit_directly: true,
+             routinely_assigns_contracts: false, nexus: US}
+    data: {is_nonpublic_personal_information: true, subject_is_company: false, is_publicly_available: false}
+    context: {as_of: '2026-08-19'}
+  atom: us.cfr.16.313.4.a1.initial_notice_customer
+  in: exempt
+- name: ENGINE — flip "routinely assigns" to true and the SAME dealer is back in scope
+  engine:
+    entity: {is_financial_institution: true, predominantly_motor_vehicle_sales_or_leasing: true,
+             is_motor_vehicle_dealer: true, extends_retail_credit_directly: true,
+             routinely_assigns_contracts: true, nexus: US}
+    data: {is_nonpublic_personal_information: true, subject_is_company: false, is_publicly_available: false}
+    context: {as_of: '2026-08-19'}
+  atom: us.cfr.16.313.10.a1.disclosure_limit
+  in: applicable
+- name: ENGINE — and back in scope with no carve-out of any kind
+  engine:
+    entity: {is_financial_institution: true, predominantly_motor_vehicle_sales_or_leasing: true,
+             is_motor_vehicle_dealer: true, extends_retail_credit_directly: true,
+             routinely_assigns_contracts: true, nexus: US}
+    data: {is_nonpublic_personal_information: true, subject_is_company: false, is_publicly_available: false}
+    context: {as_of: '2026-08-19'}
+  atom: us.cfr.16.313.10.a1.disclosure_limit
+  in: applicable
+  path: partial_carve_out
+  equals: null
+correct_answer: >-
+  Part 313 does not reach you, under the exclusion at 16 C.F.R. § 313.1(b) for motor vehicle dealers
+  described in 12 U.S.C. 5519(b) whose retail credit contracts are not routinely assigned to an
+  unaffiliated finance source. That is where the useful part of the answer starts, not ends. The
+  exclusion exists because 12 U.S.C. 5519 places these dealers under the CFPB rather than the FTC,
+  so the operative privacy rule is Regulation P, 12 C.F.R. part 1016, whose substance mirrors part
+  313. Two cautions. "Routinely" is doing all the work: if any meaningful share of that paper is
+  routinely assigned, the exclusion fails and part 313 applies to your whole consumer book, not just
+  the assigned contracts. And this exclusion is about the PRIVACY rule only — the GLBA Safeguards
+  Rule, 16 C.F.R. part 314, has its own scope and is not switched off by § 313.1(b).
+all_pass: true

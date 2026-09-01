@@ -1,0 +1,135 @@
+id: us.wiretap.2510.5a.device_exclusion
+schema_version: 1
+record_type: obligation
+source:
+  citation: 18 U.S.C. § 2510(5)(a)
+  instrument_id: us.ecpa_wiretap
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2510.xml
+  raw_sha256: 5dc845cda38743b58fa8224e2b6939398a1ade8b9b229820070f1b3906e89abb
+  text_file: corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2510.txt
+  text_sha256: 7f9d9b91e7e95064505bd5e7842dae5a244ce4d7cfd391d3f6084f86297e943d
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2510.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 9c75806c7b05e01213920db43825e4491022f274068555615dc1e1477f728c38
+verbatim_span: >-
+  any telephone or telegraph instrument, equipment or facility, or any component thereof, (i)
+  furnished to the subscriber or user by a provider of wire or electronic communication service in
+  the ordinary course of its business and being used by the subscriber or user in the ordinary
+  course of its business or furnished by such subscriber or user for connection to the facilities of
+  such service and used in the ordinary course of its business; or (ii) being used by a provider of
+  wire or electronic communication service in the ordinary course of its business, or by an
+  investigative or law enforcement officer in the ordinary course of his duties;
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - '5'
+    - a
+  anchor: /us/usc/t18/s2510/5/a
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      “electronic, mechanical, or other device” means any device or apparatus which can be used to
+      intercept a wire, oral, or electronic communication other than—
+    citation: 18 U.S.C. § 2510(5)
+    path:
+      path:
+        - '5'
+      anchor: /us/usc/t18/s2510/5
+      derivation: structural
+      confidence: high
+      evidence: USLM ancestor element; identifier read from the source
+subject:
+  domain: IV.B.3
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - doj
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '1968-06-19'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - practice.intercepts_communications == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  Telephone or telegraph instruments, equipment or facilities furnished by a provider or by the
+  subscriber for connection to the provider's facilities and used in the ordinary course of
+  business, or used by a provider or by an investigative or law enforcement officer in the ordinary
+  course of duties, are excluded from the term "electronic, mechanical, or other device".
+requirement_detail: >-
+  THE BUSINESS-EXTENSION ROUTE, and it works by DEFINITION rather than by exception. Because §
+  2510(4) requires acquisition "through the use of any electronic, mechanical, or other device",
+  equipment excluded here cannot produce an interception at all — the conduct never reaches §
+  2511(1), so there is no violation for a court to excuse and no burden on the employer to establish
+  an exception. Clause (i) covers instruments furnished by the provider in the ordinary course of
+  its business and used by the subscriber or user in the ordinary course of its business, or
+  furnished by the subscriber for connection to the provider's facilities; clause (ii) covers the
+  provider's own ordinary-course use and a law enforcement officer's use in the ordinary course of
+  duties. "Ordinary course" is where the litigation sits: extension monitoring for training or
+  quality has fared better than recording that continues once a call is plainly personal, and
+  separately purchased recording equipment attached for the purpose has generally not qualified. The
+  route is also narrower than it looks, because the text speaks of a TELEPHONE OR TELEGRAPH
+  instrument, equipment or facility and does not obviously reach software that copies email or chat
+  — which is why modern workplace monitoring is argued on consent under § 2511(2)(d).
+deadline: null
+exemptions: []
+related:
+  - us.wiretap.2510.4.intercept_definition
+  - us.wiretap.2511.2a.provider_exception
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating it as an affirmative defence. It is a definitional exclusion: excluded equipment is not
+    a "device", so under § 2510(4) no interception occurs in the first place.
+  - >-
+    Stretching it to general endpoint or network monitoring software. The text reaches a telephone
+    or telegraph instrument, equipment or facility and its components.
+  - >-
+    Reading "in the ordinary course of its business" as whatever the employer has decided to do. It
+    qualifies the USE of the equipment, and courts have limited it to monitoring connected to the
+    business purpose rather than to monitoring the employer finds convenient.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2510(5)(a)
+  note: >-
+    Recorded as floor: nothing in the extracted section displaces state law, and § 2511(2)(d) is the
+    standing proof of it — the federal one-party-consent rule coexists with the all-party consent
+    statutes of roughly a dozen states, and the stricter rule governs the same recording.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: true
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

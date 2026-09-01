@@ -1,0 +1,579 @@
+{
+ "label": "42 U.S.C. \u00a7 12112",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/ada-medical/raw/42-u-s-c-12112.xml",
+ "raw_sha256": "29a98620bb2f5e4e87fc2d6cdbbd4929e4a0a702c0a84c39392da991183b8f73",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "/us/usc/t42/s12112/a",
+   "heading": "General rule",
+   "text": "No covered entity shall discriminate against a qualified individual on the basis of disability in regard to job application procedures, the hiring, advancement, or discharge of employees, employee compensation, job training, and other terms, conditions, and privileges of employment.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": "/us/usc/t42/s12112/b/1",
+   "heading": "",
+   "text": "limiting, segregating, or classifying a job applicant or employee in a way that adversely affects the opportunities or status of such applicant or employee because of the disability of such applicant or employee;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in subsection (a), the term \u201cdiscriminate against a qualified individual on the basis of disability\u201d includes\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s12112/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": "/us/usc/t42/s12112/b/2",
+   "heading": "",
+   "text": "participating in a contractual or other arrangement or relationship that has the effect of subjecting a covered entity\u2019s qualified applicant or employee with a disability to the discrimination prohibited by this subchapter (such relationship includes a relationship with an employment or referral agency, labor union, an organization providing fringe benefits to an employee of the covered entity, or an organization providing training and apprenticeship programs);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in subsection (a), the term \u201cdiscriminate against a qualified individual on the basis of disability\u201d includes\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s12112/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s12112/b/3/A",
+   "heading": "",
+   "text": "that have the effect of discrimination on the basis of disability; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in subsection (a), the term \u201cdiscriminate against a qualified individual on the basis of disability\u201d includes\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s12112/b"
+    },
+    {
+     "position": "precedes",
+     "text": "utilizing standards, criteria, or methods of administration\u2014",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": "/us/usc/t42/s12112/b/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "B"
+   ],
+   "anchor": "/us/usc/t42/s12112/b/3/B",
+   "heading": "",
+   "text": "that perpetuate the discrimination of others who are subject to common administrative control;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in subsection (a), the term \u201cdiscriminate against a qualified individual on the basis of disability\u201d includes\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s12112/b"
+    },
+    {
+     "position": "precedes",
+     "text": "utilizing standards, criteria, or methods of administration\u2014",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": "/us/usc/t42/s12112/b/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4"
+   ],
+   "anchor": "/us/usc/t42/s12112/b/4",
+   "heading": "",
+   "text": "excluding or otherwise denying equal jobs or benefits to a qualified individual because of the known disability of an individual with whom the qualified individual is known to have a relationship or association;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in subsection (a), the term \u201cdiscriminate against a qualified individual on the basis of disability\u201d includes\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s12112/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s12112/b/5/A",
+   "heading": "",
+   "text": "not making reasonable accommodations to the known physical or mental limitations of an otherwise qualified individual with a disability who is an applicant or employee, unless such covered entity can demonstrate that the accommodation would impose an undue hardship on the operation of the business of such covered entity; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in subsection (a), the term \u201cdiscriminate against a qualified individual on the basis of disability\u201d includes\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s12112/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "B"
+   ],
+   "anchor": "/us/usc/t42/s12112/b/5/B",
+   "heading": "",
+   "text": "denying employment opportunities to a job applicant or employee who is an otherwise qualified individual with a disability, if such denial is based on the need of such covered entity to make reasonable accommodation to the physical or mental impairments of the employee or applicant;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in subsection (a), the term \u201cdiscriminate against a qualified individual on the basis of disability\u201d includes\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s12112/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "6"
+   ],
+   "anchor": "/us/usc/t42/s12112/b/6",
+   "heading": "",
+   "text": "using qualification standards, employment tests or other selection criteria that screen out or tend to screen out an individual with a disability or a class of individuals with disabilities unless the standard, test or other selection criteria, as used by the covered entity, is shown to be job-related for the position in question and is consistent with business necessity; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in subsection (a), the term \u201cdiscriminate against a qualified individual on the basis of disability\u201d includes\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s12112/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "7"
+   ],
+   "anchor": "/us/usc/t42/s12112/b/7",
+   "heading": "",
+   "text": "failing to select and administer tests concerning employment in the most effective manner to ensure that, when such test is administered to a job applicant or employee who has a disability that impairs sensory, manual, or speaking skills, such test results accurately reflect the skills, aptitude, or whatever other factor of such applicant or employee that such test purports to measure, rather than reflecting the impaired sensory, manual, or speaking skills of such employee or applicant (except where such skills are the factors that the test purports to measure).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in subsection (a), the term \u201cdiscriminate against a qualified individual on the basis of disability\u201d includes\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s12112/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": "/us/usc/t42/s12112/c/1",
+   "heading": "In general",
+   "text": "It shall not be unlawful under this section for a covered entity to take any action that constitutes discrimination under this section with respect to an employee in a workplace in a foreign country if compliance with this section would cause such covered entity to violate the law of the foreign country in which such workplace is located.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s12112/c/2/A",
+   "heading": "Presumption",
+   "text": "If an employer controls a corporation whose place of incorporation is a foreign country, any practice that constitutes discrimination under this section and is engaged in by such corporation shall be presumed to be engaged in by such employer.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t42/s12112/c/2/B",
+   "heading": "Exception",
+   "text": "This section shall not apply with respect to the foreign operations of an employer that is a foreign person not controlled by an American employer.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C",
+    "i"
+   ],
+   "anchor": "/us/usc/t42/s12112/c/2/C/i",
+   "heading": "",
+   "text": "the interrelation of operations;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this paragraph, the determination of whether an employer controls a corporation shall be based on\u2014",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t42/s12112/c/2/C"
+    },
+    {
+     "position": "follows",
+     "text": "of the employer and the corporation.",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t42/s12112/c/2/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C",
+    "ii"
+   ],
+   "anchor": "/us/usc/t42/s12112/c/2/C/ii",
+   "heading": "",
+   "text": "the common management;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this paragraph, the determination of whether an employer controls a corporation shall be based on\u2014",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t42/s12112/c/2/C"
+    },
+    {
+     "position": "follows",
+     "text": "of the employer and the corporation.",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t42/s12112/c/2/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C",
+    "iii"
+   ],
+   "anchor": "/us/usc/t42/s12112/c/2/C/iii",
+   "heading": "",
+   "text": "the centralized control of labor relations; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this paragraph, the determination of whether an employer controls a corporation shall be based on\u2014",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t42/s12112/c/2/C"
+    },
+    {
+     "position": "follows",
+     "text": "of the employer and the corporation.",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t42/s12112/c/2/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C",
+    "iv"
+   ],
+   "anchor": "/us/usc/t42/s12112/c/2/C/iv",
+   "heading": "",
+   "text": "the common ownership or financial control,",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this paragraph, the determination of whether an employer controls a corporation shall be based on\u2014",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t42/s12112/c/2/C"
+    },
+    {
+     "position": "follows",
+     "text": "of the employer and the corporation.",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t42/s12112/c/2/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": "/us/usc/t42/s12112/d/1",
+   "heading": "In general",
+   "text": "The prohibition against discrimination as referred to in subsection (a) shall include medical examinations and inquiries.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s12112/d/2/A",
+   "heading": "Prohibited examination or inquiry",
+   "text": "Except as provided in paragraph (3), a covered entity shall not conduct a medical examination or make inquiries of a job applicant as to whether such applicant is an individual with a disability or as to the nature or severity of such disability.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t42/s12112/d/2/B",
+   "heading": "Acceptable inquiry",
+   "text": "A covered entity may make preemployment inquiries into the ability of an applicant to perform job-related functions.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s12112/d/3/A",
+   "heading": "",
+   "text": "all entering employees are subjected to such an examination regardless of disability;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A covered entity may require a medical examination after an offer of employment has been made to a job applicant and prior to the commencement of the employment duties of such applicant, and may condition an offer of employment on the results of such examination, if\u2014",
+     "path": [
+      "d",
+      "3"
+     ],
+     "anchor": "/us/usc/t42/s12112/d/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t42/s12112/d/3/B/i",
+   "heading": "",
+   "text": "supervisors and managers may be informed regarding necessary restrictions on the work or duties of the employee and necessary accommodations;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A covered entity may require a medical examination after an offer of employment has been made to a job applicant and prior to the commencement of the employment duties of such applicant, and may condition an offer of employment on the results of such examination, if\u2014",
+     "path": [
+      "d",
+      "3"
+     ],
+     "anchor": "/us/usc/t42/s12112/d/3"
+    },
+    {
+     "position": "precedes",
+     "text": "information obtained regarding the medical condition or history of the applicant is collected and maintained on separate forms and in separate medical files and is treated as a confidential medical record, except that\u2014",
+     "path": [
+      "d",
+      "3",
+      "B"
+     ],
+     "anchor": "/us/usc/t42/s12112/d/3/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3",
+    "B",
+    "ii"
+   ],
+   "anchor": "/us/usc/t42/s12112/d/3/B/ii",
+   "heading": "",
+   "text": "first aid and safety personnel may be informed, when appropriate, if the disability might require emergency treatment; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A covered entity may require a medical examination after an offer of employment has been made to a job applicant and prior to the commencement of the employment duties of such applicant, and may condition an offer of employment on the results of such examination, if\u2014",
+     "path": [
+      "d",
+      "3"
+     ],
+     "anchor": "/us/usc/t42/s12112/d/3"
+    },
+    {
+     "position": "precedes",
+     "text": "information obtained regarding the medical condition or history of the applicant is collected and maintained on separate forms and in separate medical files and is treated as a confidential medical record, except that\u2014",
+     "path": [
+      "d",
+      "3",
+      "B"
+     ],
+     "anchor": "/us/usc/t42/s12112/d/3/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3",
+    "B",
+    "iii"
+   ],
+   "anchor": "/us/usc/t42/s12112/d/3/B/iii",
+   "heading": "",
+   "text": "government officials investigating compliance with this chapter shall be provided relevant information on request; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A covered entity may require a medical examination after an offer of employment has been made to a job applicant and prior to the commencement of the employment duties of such applicant, and may condition an offer of employment on the results of such examination, if\u2014",
+     "path": [
+      "d",
+      "3"
+     ],
+     "anchor": "/us/usc/t42/s12112/d/3"
+    },
+    {
+     "position": "precedes",
+     "text": "information obtained regarding the medical condition or history of the applicant is collected and maintained on separate forms and in separate medical files and is treated as a confidential medical record, except that\u2014",
+     "path": [
+      "d",
+      "3",
+      "B"
+     ],
+     "anchor": "/us/usc/t42/s12112/d/3/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3",
+    "C"
+   ],
+   "anchor": "/us/usc/t42/s12112/d/3/C",
+   "heading": "",
+   "text": "the results of such examination are used only in accordance with this subchapter.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A covered entity may require a medical examination after an offer of employment has been made to a job applicant and prior to the commencement of the employment duties of such applicant, and may condition an offer of employment on the results of such examination, if\u2014",
+     "path": [
+      "d",
+      "3"
+     ],
+     "anchor": "/us/usc/t42/s12112/d/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "4",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s12112/d/4/A",
+   "heading": "Prohibited examinations and inquiries",
+   "text": "A covered entity shall not require a medical examination and shall not make inquiries of an employee as to whether such employee is an individual with a disability or as to the nature or severity of the disability, unless such examination or inquiry is shown to be job-related and consistent with business necessity.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "4",
+    "B"
+   ],
+   "anchor": "/us/usc/t42/s12112/d/4/B",
+   "heading": "Acceptable examinations and inquiries",
+   "text": "A covered entity may conduct voluntary medical examinations, including voluntary medical histories, which are part of an employee health program available to employees at that work site. A covered entity may make inquiries into the ability of an employee to perform job-related functions.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "4",
+    "C"
+   ],
+   "anchor": "/us/usc/t42/s12112/d/4/C",
+   "heading": "Requirement",
+   "text": "Information obtained under subparagraph (B) regarding the medical condition or history of any employee are subject to the requirements of subparagraphs (B) and (C) of paragraph (3).",
+   "context": []
+  }
+ ]
+}

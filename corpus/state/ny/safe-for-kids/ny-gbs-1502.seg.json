@@ -1,0 +1,22 @@
+{
+ "label": "NY GBS 1502",
+ "url": "https://legislation.nysenate.gov/api/3/laws/GBS/1502",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/safe-for-kids/raw/ny-gbs-1502.json",
+ "raw_sha256": "90bdda60b0ebdf649b8374c5651b4323856a8ada4a8b6dd6729d05ffaa479296",
+ "leaves": [
+  {
+   "path": [],
+   "anchor": "1502",
+   "section": "1502",
+   "confidence": "high",
+   "heading": "",
+   "text": "* \u00a7 1502. Overnight notifications. It shall be unlawful for the covered operator of an addictive social media platform to, between the hours of 12 AM Eastern and 6 AM Eastern, send notifications concerning an addictive feed to a covered minor unless the operator has obtained verifiable parental consent to send such nighttime notifications.",
+   "context": [],
+   "section_heading": "",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  }
+ ]
+}

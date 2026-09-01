@@ -1,0 +1,52 @@
+id: us.enforcement.ftc.public_commitment_pattern
+schema_version: 1
+record_type: enforcement_action
+source:
+  citation: FTC consent orders enforcing published privacy commitments (pattern record)
+  instrument_id: us.ftc.enforcement
+  url: https://www.ftc.gov/legal-library/browse/cases-proceedings
+  fetched: null
+  raw_file: null
+  raw_sha256: null
+  format: manual
+  risk_tier: high
+  render: null
+  structured_source_check:
+    checked:
+    - ftc.gov case-library and PDF order URLs probed 2026-08-20; both returned HTTP 404 for constructed
+      paths. FTC orders have no structured source and no stable URL pattern this pipeline can derive.
+    result: no_structured_source_exists
+    note: See verification_status and open_questions.
+verbatim_span: PLACEHOLDER — no order text has been fetched. This record is unverified and is suppressed
+  from every output by invariant I1.
+verification_status: unverified
+subject:
+  domain: II.A.1
+  lifecycle:
+  - V
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_from: '2026-08-20'
+effective_to: null
+confidence: low
+doctrinal_rule: The Commission treats a published privacy representation as enforceable against the entity
+  that made it, and a material departure from it as a deceptive act or practice under FTC Act § 5 — without
+  any sectoral statute reaching the conduct. This is the enforcement pattern that gives voluntary frameworks
+  and certifications their practical force.
+parties:
+- Federal Trade Commission
+- (respondent varies — no specific order fetched)
+action_date: '2026-08-20'
+precedential_weight: agency_position
+authority_tier: enforcement_action
+common_errors:
+- Citing a consent order as though it were a holding. An order binds its parties and states the Commission's
+  position; it is not precedent.
+- Treating the absence of a sectoral statute as the end of the analysis. This pattern is why invariant
+  I6 keeps § 5 in every result set.
+open_questions:
+- 'UNVERIFIED AND SUPPRESSED BY I1. No order text has been fetched: ftc.gov returned 404 for every constructed
+  URL and the Commission publishes orders as PDFs with no derivable path. This record exists so the enforcement_action
+  TYPE has a live example and so DEBT-001''s pathway has somewhere to point — it must not be cited until
+  a specific order is fetched, hashed and quoted. That acquisition is a manual step; see meta/manual-acquisition-queue.md.'

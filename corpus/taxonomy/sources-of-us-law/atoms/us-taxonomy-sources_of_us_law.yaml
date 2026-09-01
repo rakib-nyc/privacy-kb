@@ -1,0 +1,212 @@
+id: us.taxonomy.sources_of_us_law
+schema_version: 1
+record_type: taxonomy
+source:
+  citation: 5 U.S.C. § 553(b)(A)
+  instrument_id: us.apa.rulemaking
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc05@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/taxonomy/sources-of-us-law/raw/uslm-5usc553-20260819.xml
+  raw_sha256: 1fc6e90ed6062f5aaeec8eef163ffc157db57ee2e3e2eed6c3894c050c13c6dc
+  text_file: corpus/taxonomy/sources-of-us-law/raw/uslm-5usc553-20260819.txt
+  text_sha256: bac0aef2c0ad5fd53161866a9909fb7f43f6333adef1219ef0cecfe351b31cfc
+  text_extraction_cmd: python3 tools/render-text.py corpus/taxonomy/sources-of-us-law/raw/uslm-5usc553-20260819.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1 (the authoritative structured form)
+      - govinfo USCODE per-section XML — returns HTML, not XML; unusable
+    result: structured_source_used
+    note: >-
+      USLM. Positive-law status read from the title's own <meta><property role="is-positive-law">
+      element.
+  segment_sha256: abd64c485c7ce7bae5f16a3acad16978e127eb10b30fcd874de84026ed91c04e
+verbatim_span: >-
+  to interpretative rules, general statements of policy, or rules of agency organization, procedure,
+  or practice; or
+verification_status: verbatim_confirmed
+subject:
+  domain: I.A.2
+  lifecycle:
+    - I
+paragraph_path:
+  path:
+    - b
+    - A
+  anchor: /us/usc/t5/s553/b/A
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on a <subparagraph> element inside <subsection> /us/usc/t5/s553/b
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: Except when notice or hearing is required by statute, this subsection does not apply—
+    citation: 5 U.S.C. § 553(b), flush text
+    relation_note: null
+    path:
+      path:
+        - b
+      anchor: /us/usc/t5/s553/b
+      derivation: structural
+      confidence: high
+      evidence: <continuation> element of <subsection> /us/usc/t5/s553/b
+jurisdiction: US-FED
+jurisdiction_level: federal
+status: in_force
+effective_from: '1946-06-11'
+effective_to: null
+amendment_history: []
+summary: >-
+  The provision that makes the legislative-rule/guidance distinction mechanical: notice-and-comment
+  does not apply to interpretative rules or general statements of policy, which is why those
+  instruments do not carry the force of law.
+taxonomy:
+  axes:
+    authority_tier: >-
+      What KIND of instrument this is, and how much weight it carries against other instruments. A
+      property of the INSTRUMENT.
+    sourcing_posture: >-
+      How confident we are that the text quoted IS the enacted text. A property of the SOURCE it was
+      read in.
+    status: >-
+      Whether the instrument currently operates: in_force, enacted_pending, enjoined, superseded. A
+      property of the instrument IN TIME.
+    orthogonality: >-
+      All three are independent. A stayed legislative rule is still a legislative rule. The same
+      FCRA obligation read in the Code and in the Statutes at Large has one tier and two sourcing
+      postures.
+  sources_of_law:
+    - source: constitutional
+      tier: statute
+      derives_from: null
+      note: >-
+        Supreme. Constrains every other source. Its privacy relevance here is mostly negative —
+        First Amendment and dormant Commerce Clause limits on state privacy law, and the Fourth
+        Amendment third-party doctrine.
+    - source: legislative
+      tier: statute
+      derives_from: constitutional
+      note: >-
+        Enacted by a legislature. Where a US Code title is not positive law the Code is prima facie
+        evidence of the statute rather than the statute itself — see
+        us.taxonomy.code_evidentiary_status.
+    - source: regulatory_legislative_rule
+      tier: regulation
+      derives_from: legislative
+      test: >-
+        promulgated through 5 U.S.C. § 553 notice-and-comment, under a statutory grant of rulemaking
+        authority
+      note: >-
+        Carries the force of law. The AUTH element of a CFR part names the statutory grant it rests
+        on, which makes the derivation machine-readable.
+    - source: regulatory_interpretive_or_policy
+      tier: agency_guidance
+      derives_from: regulatory_legislative_rule
+      test: exempt from notice-and-comment under 5 U.S.C. § 553(b)(A) — the quoted provision
+      note: >-
+        An interpretative rule construes an existing legislative rule or statute; a general
+        statement of policy announces how an agency intends to exercise discretion. NEITHER carries
+        the force of law, which is why both map to agency_guidance. See open_questions: the schema
+        cannot currently distinguish them.
+    - source: agency_guidance_informal
+      tier: agency_guidance
+      derives_from: regulatory_legislative_rule
+      note: >-
+        FAQs, bulletins, Dear Colleague letters. May drive enforcement in practice; practical force
+        is recorded separately and NEVER inflates the tier. Invariant I7.
+    - source: enforcement_action
+      tier: enforcement_action
+      derives_from: legislative
+      note: >-
+        Consent decrees and administrative orders bind named parties by agreement. Any doctrinal
+        rule they establish is persuasive, not generally binding — which is exactly why the FTC's §
+        5 jurisprudence has to be read out of a body of orders rather than a rulebook.
+    - source: common_law
+      tier: case_law
+      derives_from: null
+      note: >-
+        Operates WITHOUT statute or regulation: courts develop it case by case. The four privacy
+        torts are its main privacy expression — intrusion upon seclusion, appropriation of name or
+        likeness, publicity given to private life, and publicity placing a person in a false light.
+        State-by-state, and not uniformly adopted. NOT YET IN THE CORPUS: no tort record exists,
+        because each requires state case law as a primary source and the manifest reaches them at
+        Priority 3+.
+    - source: contract
+      tier: null
+      derives_from: null
+      note: >-
+        Also operates without statute or regulation, and is the mechanism by which non-binding
+        instruments acquire teeth: a self-regulatory code pulled into a vendor agreement is
+        enforceable as contract. Carries NO authority_tier — it is not a source of law but a private
+        allocation of obligation, and giving it a tier would let a contractual term rank against a
+        statute.
+    - source: self_regulatory
+      tier: self_regulatory_scheme
+      derives_from: null
+      note: >-
+        Binding on participants through their own commitment. Where the commitment is public, FTC
+        Act § 5 reaches it as a representation — see DEBT-001.
+    - source: international
+      tier: international_instrument
+      derives_from: null
+      note: >-
+        Addressed to states or member economies. No adherence mechanism for an organization, which
+        is why the certification SCHEMES are modelled separately from the framework documents.
+  the_four_privacy_torts:
+    status: documented here, not yet recorded as atoms
+    torts:
+      - intrusion upon seclusion
+      - appropriation of name or likeness
+      - publicity given to private life
+      - publicity placing a person in a false light
+    why_not_yet: >-
+      Each needs state case law as a primary source. The manifest reaches them at Priority 3 and
+      later. Listing them here without atoms is a coverage statement, not a claim to have modelled
+      them.
+decision_procedure:
+  tool: tools/authority-tier.mjs
+  self_test: node tools/authority-tier.mjs --self-test
+  corpus_validation: node tools/authority-tier.mjs --validate-corpus
+  refuses_rather_than_guesses: true
+  refusal_cases:
+    - notice_and_comment unknown for a CFR or Federal Register document
+    - host not on the source allowlist
+    - US Code title absent from meta/positive-law-titles.yaml
+    - document_type that does not map to a tier
+scope_justification: >-
+  Anchored at competency level I.A.2 ("Understand the various sources of law, including
+  constitutions, legislation, regulations and rules, case law, common law and contract law") — which
+  this record covers in full rather than at any single point within it. The leaf enumerates the
+  sources; this record models the derivation relationships between them, which is the whole leaf and
+  not a part of it.
+derived_obligations: []
+differs_from: []
+related:
+  - id: us.taxonomy.code_evidentiary_status
+    relation: sourcing_posture_rule
+source_defects: []
+common_errors:
+  - >-
+    Treating an interpretative rule as a regulation because it was published in the CFR. Publication
+    location does not confer force of law; notice-and-comment does.
+  - >-
+    Inflating an agency FAQ's tier because it drives enforcement in practice. Practical force is
+    real and is recorded separately — it never moves the tier (invariant I7).
+  - >-
+    Giving a contract an authority_tier. Contract is not a source of law; a tier would let a
+    contractual term rank against a statute.
+open_questions:
+  - >-
+    SCHEMA WANT, NOT BUILT (schema frozen at 6369d05). authority_tier's enum maps interpretative
+    rules and general statements of policy both to agency_guidance. The quoted provision treats them
+    as one category for notice-and-comment purposes, and neither carries the force of law, so the
+    collapse is defensible for APPLICABILITY. It is lossy for DEFERENCE analysis and for whether an
+    agency may change position without process. No agency-guidance records exist yet; Priority 1
+    will create many. Reported rather than absorbed.
+  - >-
+    GATE 18 TRIGGER IS UNDER-INCLUSIVE. It fires at paragraph_path depth > 1. 1 U.S.C. § 204(a) is
+    depth 1 and is governed by a SECTION-level chapeau it is meaningless without. That context was
+    recorded voluntarily on us.taxonomy.code_evidentiary_status; nothing required it. See DEBT-005.
+confidence: high

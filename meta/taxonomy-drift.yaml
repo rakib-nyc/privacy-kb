@@ -1,0 +1,249 @@
+# taxonomy DRIFT REGISTER
+# ==================
+# Two kinds of entry:
+#   STRUCTURAL — the project's own documents (BRIEF.md, CORPUS-MANIFEST.md)
+#                disagree with the fetched taxonomy. These are repo bugs.
+#   SUBJECT    — a taxonomy leaf whose underlying law may have moved since the taxonomy was
+#                approved (3 March 2025) or took effect (1 Sept. 2025).
+#
+# Per PROMPTS.md §1: FLAG ONLY. Nothing here has been acted on. Nothing here is
+# a source. Every SUBJECT item is an unverified hypothesis that must be confirmed
+# against primary text during that instrument's extraction session before it
+# influences a single field.
+
+recorded: 2026-08-18
+against:
+  domain: "2.6.1"
+  lifecycle: "4.2.0"
+
+structural:
+
+  - id: D-01
+    severity: blocker
+    finding: >-
+      BRIEF.md §2 and SCHEMA.md §1 assume a nested outline coordinate scheme
+      ("II.B.c", "II.C.h", "I.A.d.vii", "I.C.l.3"). No such scheme exists in
+      legal-domain v2.6.1, which replaced the nested outline with a flat list of
+      competencies and performance indicators.
+    consequence: >-
+      Every example coordinate in SCHEMA.md and CORPUS-MANIFEST.md is unresolvable.
+      CI gate 6 would fail every atom written against those examples.
+    resolution: >-
+      Adopted <DOMAIN>.<COMPETENCY>.<PI_ORDINAL>. Competency code is the source taxonomy’s;
+      the PI ordinal is this repo's. Documented in meta/taxonomy-versions.yaml.
+    action_required: "Update SCHEMA.md §1 example and CORPUS-MANIFEST.md headings."
+
+  - id: D-02
+    severity: major
+    finding: >-
+      Domain II is titled "Federal Privacy Laws" in v2.6.1. BRIEF.md §2 and
+      CORPUS-MANIFEST.md Priority 1 call it "Limits on Private-Sector Collection
+      and Use of Data" — a title from an earlier taxonomy edition.
+    action_required: "Rename in BRIEF.md §2 and CORPUS-MANIFEST.md."
+
+  - id: D-03
+    severity: minor
+    finding: >-
+      Domain I is "The U.S. Privacy Environment", not "Introduction to the U.S.
+      Privacy Environment" (BRIEF.md §2). Domain III is "Government and Court
+      Access to Private-sector Information" — the source taxonomy lowercases the "s" in
+      "Private-sector"; BRIEF.md capitalises it.
+    action_required: "Correct titles in BRIEF.md §2."
+
+  - id: D-04
+    severity: major
+    finding: >-
+      CORPUS-MANIFEST.md Priority 1 partitions Domain II into II.A–II.F. The taxonomy
+      has only II.A–II.E. Manifest "II.F — Data brokers, transfers, and newer
+      federal instruments" is not a taxonomy competency. Its contents map instead to
+      II.A.3 (data brokers as a stated federal enforcement priority) and I.C.6–I.C.9
+      (international transfers, DPF, SCCs, GDPR/FADP intersection), which sit in
+      Domain I, not Domain II.
+    action_required: >-
+      Re-map manifest II.F items. Note that the DPF/SCC/adequacy work the manifest
+      places in Domain II belongs to Domain I under this taxonomy.
+
+  - id: D-05
+    severity: major
+    finding: >-
+      BRIEF.md and CORPUS-MANIFEST.md treat Domain II as "the core of the product,
+      roughly 60% of total atom count". The question weighting weights it third:
+        Domain I    27–33 questions   (9 competency leaves, incl. all of info management)
+        Domain V    17–21 questions
+        Domain II   15–19 questions
+        Domain IV     4–6 questions
+        Domain III    3–5 questions
+      Domain I alone carries more weight than Domains II, III and IV combined.
+      Within Domain I, competency I.C ("principles of information management")
+      alone is 18–22 questions — the single heaviest competency in the taxonomy.
+    consequence: >-
+      The build order in BRIEF.md §5 (federal sectoral spine first, everything
+      else later) optimises for the third-heaviest domain. I.C is largely
+      operational-practice material, much of which has no single statute behind it
+      and would be modelled as `principle`, `taxonomy` and `workflow_constraint`
+      records rather than obligation atoms.
+    action_required: >-
+      OWNER DECISION. Either (a) accept the mismatch, on the ground that the KB's
+      value is statutory obligation modelling and taxonomy weighting is an exam artefact,
+      and say so explicitly in BRIEF.md; or (b) re-sequence. Do not silently leave
+      the "60%" claim standing — it is not supportable against this blueprint.
+
+  - id: D-06
+    severity: minor
+    finding: >-
+      Competency-to-PI assignment cannot be read from PDF text extraction order.
+      pdftotext emits a table row's first PI before or after the competency label
+      depending on vertical centring, which produced a wrong I.A/I.B split on the
+      first pass (I.A=7/I.B=4 instead of the correct I.A=5/I.B=6).
+    resolution: >-
+      Assignment derived from table row geometry: each competency label block is
+      vertically centred on its own PI band (fit error <6pt on every page). Split
+      rows repeat their label on the continuation page — only V.B (pp. 12–13) does.
+      All 16 legal-domain and 21 lifecycle competencies verified this way.
+    action_required: "None. Re-run tools/verify-taxonomy-geometry.py on any taxonomy version bump."
+
+  - id: D-07
+    severity: minor
+    finding: >-
+      Competency MIN/MAX values do not sum to their domain's MIN/MAX. Domain I:
+      competencies sum 26–34 vs domain 27–33. Domain II: 12–22 vs 15–19.
+      Domain IV: 3–7 vs 4–6. Domain V: 16–23 vs 17–21. Domain III: 3–7 vs 3–5.
+      Whole-exam totals: 66–84 across five domains.
+    assessment: >-
+      Reported, not reconciled, per PROMPTS.md §1 step 4. Ranges that overlap
+      rather than sum is normal blueprint construction, but it means competency
+      counts cannot be used as a coverage-weighting denominator without stating
+      the assumption.
+    action_required: "None. Do not normalise these numbers anywhere in the engine."
+
+  - id: D-08
+    severity: minor
+    finding: >-
+      BRIEF.md §2 lists lifecycle Domains III–VI as "Operational Life Cycle: X".
+      v4.2.0 titles them "Privacy Program Operational Life Cycle: X".
+    action_required: "Correct in BRIEF.md §2."
+
+  - id: D-09
+    severity: major
+    finding: >-
+      legal-domain v2.6.1 and lifecycle v4.2.0 both carry effective date 1 Sept. 2025 and
+      were approved in Jan/March 2025. Today is 2026-08-18. The taxonomy is therefore
+      between 17 and 19 months past approval. the source taxonomy states the taxonomy is "reviewed
+      and, if necessary, updated every year". A newer version may exist that is
+      not linked from the certification page fetched here.
+    action_required: >-
+      The change-watch pipeline (PROMPTS.md §7) must poll the taxonomy URLs, not only
+      instrument sources — a taxonomy bump invalidates every PI ordinal in
+      meta/coverage.yaml and meta/workflows.yaml.
+    recheck_2026_08_18: >-
+      Re-fetched the source taxonomy and the linked PDF. Same URL, byte-identical
+      (sha256 75d183ab…), and no newer taxonomy PDF is linked from the certification page.
+      v2.6.1 is what the source taxonomy currently publishes. Re-check again before Phase 1 ships.
+
+  - id: D-10
+    severity: major
+    finding: >-
+      Neither legal-domain v2.6.1 nor lifecycle v4.2.0 names the Fair Information Practice
+      Principles. A full-text search of both taxonomies for "fair information", "FIPP",
+      "OECD" and "CBPR" returns nothing. The single match across both documents is
+      "APEC principles", in leaf I.C.8.
+    consequence: >-
+      CORPUS-MANIFEST.md Priority 0 states FIPPs "are the interpretive frame the
+      whole taxonomy rests on". That is a defensible claim about US privacy law, but it
+      is not a claim the taxonomy makes. Only APEC has a taxonomy leaf naming it, so only
+      APEC records can be pinned to a performance indicator on the taxonomy's own terms.
+    resolution: >-
+      APEC records carry subject.domain I.C.8 (named expressly). OECD and 1973-Code
+      records carry I.C at competency level — "Understand the principles of
+      information management from a U.S. perspective" — which is the honest fit.
+      CI gate 6 was extended to permit competency-level coordinates for
+      non-obligation records only; obligation atoms must still land on a leaf.
+    action_required: >-
+      Soften the manifest's "the whole taxonomy rests on" phrasing, or keep it and mark
+      it explicitly as this repo's editorial position rather than the taxonomy's.
+
+subject_matter:
+  # Leaves whose underlying law may have moved since 2025-03-03. HYPOTHESES ONLY.
+  # Each must be resolved against primary text in that instrument's own session.
+  # None of these has been verified. None may be cited. None may fill a field.
+
+  - id: S-01
+    coordinate: II.A.1
+    leaf: "Major acts and regulations overseen by the FTC ... COPPA"
+    hypothesis: >-
+      CORPUS-MANIFEST.md asserts an amended COPPA Rule effective 2025-06-23,
+      which post-dates taxonomy approval (2025-03-03). If so, the taxonomy leaf predates
+      the operative Rule text.
+    verify_by: "16 C.F.R. Part 312 current text on ecfr.gov + the Federal Register amendment notice."
+    status: unverified
+
+  - id: S-02
+    coordinate: V.B.9
+    leaf: "AI bias framework ... NYC Automated Employment Decision Tool law ... Colorado"
+    hypothesis: >-
+      State AI legislation moved substantially through 2025–2026. Colorado's AI Act
+      in particular had contested effective dates. The taxonomy names instruments, not
+      dates, so the leaf itself may be stable while every instrument under it moved.
+    verify_by: "Primary session law / agency rule text for each named instrument."
+    status: unverified
+
+  - id: S-03
+    coordinate: V.B.10
+    leaf: "Comprehensive state privacy laws ... CCPA/CPRA, CA AADC, Delete Act"
+    hypothesis: >-
+      The California AADC (A.B. 2273) has been subject to First Amendment
+      litigation. Enforcement posture may not match the taxonomy's framing of it as
+      simply a law to "know the basics of". BRIEF.md invariant I3 provides
+      `enjoined` for exactly this.
+    verify_by: "Docket status + current operative text."
+    status: unverified
+
+  - id: S-04
+    coordinate: V.C.3
+    leaf: "Pennsylvania SB 696 ... Utah S.B. 127 Cybersecurity Amendments"
+    hypothesis: >-
+      Named as "significant developments" as of early 2025; both may now be
+      in force with elapsed compliance dates, changing them from "developments"
+      to operative law.
+    verify_by: "PA and UT session law."
+    status: unverified
+
+  - id: S-05
+    coordinate: II.E.1
+    leaf: "TCPA ... and the Driver’s Privacy Protection Act"
+    hypothesis: >-
+      CORPUS-MANIFEST.md flags the TCPA/FCC consent and revocation rules as an
+      area that "moves". taxonomy text is instrument-level and would not reflect an
+      FCC rule change or a vacatur.
+    verify_by: "47 C.F.R. § 64.1200 current text + FCC orders since 2025-03."
+    status: unverified
+
+  - id: S-06
+    coordinate: II.B.1
+    leaf: "HIPAA ... the use of online tracking technologies by HIPAA-covered entities and business associates"
+    hypothesis: >-
+      This leaf points at HHS OCR tracking-technologies guidance rather than at
+      rule text. That guidance has been litigated. Under invariant I7 it is
+      `authority_tier: agency_guidance` and must not be blended into a statutory
+      or regulatory citation — and if any part was vacated, it is not even that.
+    verify_by: "HHS OCR's own publication + the governing court order."
+    status: unverified
+
+  - id: S-07
+    coordinate: I.C.7
+    leaf: "Standard Contractual Clauses and the EU-U.S. Data Privacy Framework"
+    hypothesis: >-
+      DPF adequacy has been subject to challenge. Adequacy status is binary and
+      dated — exactly the kind of fact invariant I2 exists to time-index.
+    verify_by: "European Commission adequacy decision status + any CJEU judgment."
+    status: unverified
+
+  - id: S-08
+    coordinate: I.C
+    leaf: "DHS Privacy Policy Guidance Memorandum 2017-01"
+    hypothesis: >-
+      PPGM 2017-01 may amend or supersede PPGM 2008-01, the eight-principle federal
+      FIPPs statement. Both are unreachable — dhs.gov blocks automated fetch. See
+      meta/blocked-sources.yaml.
+    verify_by: "DHS Privacy Office publication, fetched manually."
+    status: unverified

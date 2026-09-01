@@ -1,0 +1,130 @@
+blocked:
+- instrument_id: us.dhs.ppgm_2008_01
+  title: DHS Privacy Policy Guidance Memorandum 2008-01 — The Fair Information Practice Principles
+  why_wanted: The canonical modern US federal articulation of FIPPs as eight principles (Transparency,
+    Individual Participation, Purpose Specification, Data Minimization, Use Limitation, Data Quality and
+    Integrity, Security, Accountability). It is the bridge between the 1973 five-principle Code and current
+    federal privacy practice.
+  urls_attempted:
+  - https://www.dhs.gov/sites/default/files/publications/privacy-policy-guidance-memorandum-2008-01.pdf
+  - https://www.dhs.gov/sites/default/files/2024-01/Fair%20Information%20Principles_12_2008.pdf
+  - https://www.dhs.gov/publication/privacy-policy-guidance-memorandum-2008-01-fair-information-practice-principles
+  - https://www.dhs.gov/xlibrary/assets/privacy/privacy_policyguide_2008-01.pdf
+  blocked_by: dhs.gov returns HTTP 403 to automated requests. Reproduced with the repo user-agent, with
+    a full browser user-agent, and with browser Accept / Accept-Language / Referer headers. This is host-level
+    bot blocking, not a dead link — the documents exist and are publicly listed.
+  attempted: 2026-08-18
+  consequence: No DHS FIPPs record exists in the corpus. Any analysis touching the eight- principle federal
+    formulation is short one framework, and must say so rather than substituting the OECD or 1973 formulations
+    for it.
+  also_note: DHS Privacy Policy Guidance Memorandum 2017-01 was found in the same search and may amend
+    or supersede 2008-01. Unknown, because it is blocked too. Resolve before recording any DHS FIPPs record
+    as in_force.
+  retry_options:
+  - Fetch manually in a browser and place the PDF under corpus/principles/fipps/raw/, then run tools/fetch-source.mjs
+    to log the hash.
+  - Check govinfo.gov for a mirrored copy under an authoritative federal host.
+  status: closed_out_of_scope
+  resolution: Ruled out of scope for v1 on 2026-08-19 rather than pursued further — see meta/out-of-scope.yaml.
+    Acquisition path retained in meta/manual-acquisition-queue.md against the re-entry trigger.
+- instrument_id: ny.statutes.all
+  title: New York consolidated statutes — the ENTIRE Priority 3 New York layer
+  why_wanted: 'Every NY instrument in CORPUS-MANIFEST.md Priority 3: SHIELD Act (GBL 899-aa, 899-bb),
+    Child Data Protection Act (GBL 899-ee et seq.), GBL 349/350 (the state UDAP backstop for invariant
+    I6), Labor Law 203-f, Education Law 2-d, Civil Rights Law 50-51, Penal Law 250.05. Roughly 260 atoms.'
+  urls_attempted:
+  - https://www.nysenate.gov/legislation/laws/GBS/349 — HTTP 403, Cloudflare interstitial
+  - https://www.nysenate.gov/legislation/laws/GBS/350 — HTTP 403
+  - https://www.nysenate.gov/legislation/laws/EXC/63 — HTTP 403
+  - https://legislation.nysenate.gov/api/3/laws/GBS/349 — HTTP 401, needs an API key
+  - https://www.nysenate.gov/legislation/laws/GBS/349?format=json — HTTP 403
+  blocked_by: 'nysenate.gov serves a Cloudflare challenge to automated requests. The NY Senate OpenLegislation
+    API returns 401 with errorCode 701: ''A valid API key is needed to fulfill this request.'' The key
+    is free but registration is a human action.'
+  attempted: '2026-08-19'
+  consequence: Priority 3 cannot start. This is the largest single blocker in the project — the NY layer
+    is one of the two things BRIEF.md names as in scope for v1, and GBL 349 is half of invariant I6's
+    backstop pair. No NY atom can be written until this is resolved, and nothing may be substituted from
+    a secondary source.
+  also_note: 'The API path is strictly BETTER than scraping the website: OpenLegislation returns structured
+    JSON with law-document trees, which would make NY a low-risk-tier source rather than an html one.
+    Get the key rather than working around the block.'
+  retry_options:
+  - Register for a free OpenLegislation API key at https://legislation.nysenate.gov/ and set NYSENATE_API_KEY.
+    This is the recommended path and takes minutes.
+  - Fetch each law document manually in a browser and drop it under corpus/state/ny/<instrument>/raw/,
+    then run the arrival procedure in meta/manual-acquisition-queue.md.
+  status: resolved
+  resolution: RESOLVED 2026-08-19. An OpenLegislation API key was supplied. tools/fetch-ny.sh now returns
+    structured JSON. The website remains Cloudflare-blocked and is not used; the API is the acquisition
+    path, and it is the better one — it carries activeDate, publishedDates and repealed flags that the
+    website does not expose.
+- instrument_id: nyc.local_law_144
+  title: NYC Local Law 144 — automated employment decision tools
+  why_wanted: The bias-audit and notice duties, and the only city-level instrument in the v1 scope.
+  urls_attempted:
+  - https://rules.cityofnewyork.us/rule/automated-employment-decision-tools-2/ — HTTP 200, 143KB, but
+    it is a PUBLIC HEARING NOTICE for the PROPOSED rule, not the adopted text. Bytes are not a source.
+  - https://codelibrary.amlegal.com/codes/newyorkcity/latest/NYCrules/... — HTTP 403. amlegal is the official
+    NYC code publisher and blocks automated requests.
+  - https://www.nyc.gov/assets/dca/downloads/pdf/about/DCWP-AEDT-FAQ.pdf — HTTP 200, 267KB, but an FAQ
+    is agency_guidance under invariant I7, not the rule.
+  blocked_by: The adopted rule (6 RCNY §§ 5-300 et seq.) is published by amlegal, which returns 403 to
+    automated requests. Same host-level shape as the DHS FIPPs blocker.
+  attempted: '2026-08-20'
+  consequence: No Local Law 144 record. Any AI-in-hiring analysis for New York City is short the one instrument
+    that directly regulates it, and must say so.
+  also_note: The DCWP FAQ is fetchable and WOULD make a legitimate agency_guidance record — but it must
+    never be blended into a statutory citation, and it cannot substitute for the rule.
+  retry_options:
+  - Fetch 6 RCNY Chapter 5 manually in a browser and drop it under corpus/state/ny/nyc-ll144/raw/, then
+    follow meta/manual-acquisition-queue.md.
+  status: resolved_by_owner_supply
+  resolution: 'RESOLVED 2026-08-20 from an owner-supplied NYC Law Department XML export. The export is
+    a BETTER source than anything that was being chased: it is the ENACTED Administrative Code text (Subchapter
+    25, §§ 20-870 to 20-874) with real <LEVEL> element nesting, so depth is READ rather than reconstructed
+    — a low-risk-tier structured source, the same class as USLM.
+
+    What was being chased instead: rules.cityofnewyork.us, which carries only the PROPOSED rule, and amlegal,
+    which returns 403 even to a full browser user-agent. The right answer was never on either.
+
+    IMPLEMENTING RULES RESOLVED 2026-08-20, AND THE OBJECTION ABOVE WAS STALE. 6 RCNY Subchapter T is
+    now in the corpus from an owner-supplied PDF of the DCWP NOTICE OF ADOPTION of 5 April 2023. The
+    note above says rules.cityofnewyork.us "carries only the PROPOSED rule" — true of the proposal
+    notices, and not true of this document: a Notice of Adoption carries the FINAL rule text as
+    adopted, in clean form with no amendatory markup. The distinction was never drawn, so a whole
+    class of city rulemaking was written off on the strength of one wrong generalisation.
+
+    WHAT IS STILL ABSENT, narrowed and declared: not the rules, but the worked EXAMPLE in § 5-301 and
+    its three impact-ratio data tables. They carry no designator and pdftotext renders the tables as
+    whitespace-aligned columns, so they are excluded from the segmentation — 44% of § 5-301 by
+    character, and the part that demonstrates impact-ratio METHODOLOGY rather than stating it. See
+    the note on meta/sources.yaml corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf.'
+- instrument_id: ny.nycrr.regulations
+  title: NYCRR instruments — 23 NYCRR Part 500 (NYDFS) and 13 NYCRR Part 700 (SAFE for Kids)
+  why_wanted: 'NYDFS cybersecurity is one of the compliance-deemed pathways § 899-bb(1) names, so the
+    corpus asserts its existence without holding it. NARROWED 2026-08-20 FOR SAFE FOR KIDS: the STATUTE
+    is no longer blocked — the Act''s operative text is consolidated at GBL article 44-D, §§ 1500–1508,
+    and all nine sections are now in the corpus as enacted_pending. What remains blocked is 13 NYCRR
+    Part 700, and it is not a detail: §§ 1501(2) and 1501(4) delegate BOTH compliance routes to it, so
+    what "commercially reasonable and technically feasible" requires, and what verifiable parental
+    consent looks like, are decided in a document no structured source serves. The instrument declares
+    that gap as its own category — see meta/instrument-coverage.yaml ny.safe_for_kids
+    age_determination_methods.'
+  urls_attempted:
+  - https://www.dfs.ny.gov/system/files/documents/2023/10/rf_fs_23NYCRR500_amend2_txt_20231101.pdf — HTTP
+    404
+  - https://www.dfs.ny.gov/industry_guidance/cybersecurity — HTTP 200 but an index page, not the regulation
+    text
+  - OpenLegislation — serves CONSOLIDATED LAW only; NYCRR is agency regulation and is not in the API at
+    all
+  blocked_by: There is no structured NYCRR source equivalent to eCFR or OpenLegislation. Westlaw hosts
+    the official NYCRR behind a paywall; DFS publishes its own part as PDFs whose URLs move between amendments.
+  attempted: '2026-08-20'
+  consequence: § 899-bb(1) names 23 NYCRR Part 500 as a compliance-deemed pathway and the corpus cannot
+    show what complying with it requires. That is a stated gap rather than a silent one — the atom says
+    so.
+  retry_options:
+  - Fetch the current DFS PDF manually from dfs.ny.gov and place under corpus/state/ny/nydfs-500/raw/.
+  - Check whether NY DOS publishes a machine-readable NYCRR feed; none was found.
+  status: open

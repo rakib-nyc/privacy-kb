@@ -1,0 +1,144 @@
+id: us.sca.2701.a1.unauthorized_access
+schema_version: 1
+record_type: obligation
+source:
+  citation: 18 U.S.C. § 2701(a)(1)
+  instrument_id: us.ecpa_sca
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2701.xml
+  raw_sha256: 2116456719a3a3adf1cb2fe7473c1f639f51a8ec1eb25bbf3dd65954afd2b0fa
+  text_file: corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2701.txt
+  text_sha256: d2a4bcb4278d027e6d7a45310854d19c3e8da722c9324b1ad916f7e30642ae6e
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2701.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 8300d7e76d4cf83fe9b4c433a828841597261ad282194ff0f3f2072c427dc3f1
+verbatim_span: >-
+  intentionally accesses without authorization a facility through which an electronic communication
+  service is provided; or
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '1'
+  anchor: /us/usc/t18/s2701/a/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: Except as provided in subsection (c) of this section whoever—
+    citation: 18 U.S.C. § 2701(a)
+    path:
+      path:
+        - a
+      anchor: /us/usc/t18/s2701/a
+      derivation: structural
+      confidence: high
+      evidence: USLM ancestor element; identifier read from the source
+  - position: follows
+    relation: concludes
+    verbatim_span: >-
+      and thereby obtains, alters, or prevents authorized access to a wire or electronic
+      communication while it is in electronic storage in such system shall be punished as provided
+      in subsection (b) of this section.
+    citation: 18 U.S.C. § 2701(a)
+    path:
+      path:
+        - a
+      anchor: /us/usc/t18/s2701/a
+      derivation: structural
+      confidence: high
+      evidence: USLM ancestor element; identifier read from the source
+subject:
+  domain: III.A.2
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - doj
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '1986-10-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - practice.accesses_stored_communications == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  Whoever intentionally accesses without authorization a facility through which an electronic
+  communication service is provided, and thereby obtains, alters or prevents authorized access to a
+  wire or electronic communication while it is in electronic storage in that system, is punished
+  under § 2701(b).
+requirement_detail: >-
+  THE ACCESS OFFENCE, and it is a different wrong from § 2702's disclosure prohibition: § 2701
+  punishes GETTING IN, § 2702 restrains GIVING OUT, and an actor can commit either without the
+  other. Three elements have to line up and each of them narrows the section. The access must be
+  INTENTIONAL; it must be to a FACILITY THROUGH WHICH AN ELECTRONIC COMMUNICATION SERVICE IS
+  PROVIDED; and the continuation requires that it thereby obtain, alter or prevent authorized access
+  to a communication IN ELECTRONIC STORAGE as § 2510(17) defines that term. The facility element
+  carries more weight than its wording suggests — a personal laptop or handset is generally not
+  itself a facility through which a service is provided, so snooping on a device is usually a
+  Computer Fraud and Abuse Act or state-law matter rather than a § 2701 one. Paragraph (2) supplies
+  the parallel exceeds-authorization branch, and the opening words send the reader to subsection
+  (c), which removes conduct authorized by the provider, by the user whose communication it is, or
+  under §§ 2703, 2704 or 2518 — that is the door most employer access walks through. The offence is
+  criminal under § 2701(b); § 2707 supplies the chapter's civil action separately.
+deadline: null
+exemptions: []
+related:
+  - us.sca.2701.c1.provider_authorization
+  - us.sca.2702.a1.divulgence_prohibition
+  - us.wiretap.2510.17a.electronic_storage
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Merging it with § 2702. This is the access offence, with different defendants, different
+    elements and different exceptions; § 2702 governs a public provider's voluntary disclosure.
+  - >-
+    Applying it to a laptop, phone or ordinary business server. The element is a facility through
+    which an electronic communication SERVICE is provided, and courts have generally declined to
+    treat an endpoint device as one.
+  - >-
+    Reading subsection (a) without subsection (c). Access authorized by the service provider, or by
+    the user whose communication it is, falls outside the offence entirely rather than being excused
+    within it.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2701(a)(1)
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis; no express ceiling clause was
+    found in the section extracted. State stored-communications and eavesdropping statutes, and
+    state process rules, operate alongside chapter 121 and may be stricter — § 2703(d) expressly
+    refuses an order to a state authority where state law prohibits it.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: true
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

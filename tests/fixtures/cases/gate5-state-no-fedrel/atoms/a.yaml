@@ -1,0 +1,69 @@
+id: ny.test.fixture.state
+schema_version: 1
+record_type: obligation
+source:
+  citation: 45 C.F.R. § 164.404(a)
+  instrument_id: us.test.instrument
+  url: https://www.ecfr.gov/current/title-45/section-164.404
+  fetched: '2026-08-18'
+  raw_file: tests/fixtures/raw/fake-source.txt
+  raw_sha256: e21f04c1cfb396a2e7052fe024be678ccd2084b1ad5d603685758a4a6eb6a925
+  format: html
+  structured_source_check:
+    checked:
+    - fixture — no acquisition performed
+    result: not_applicable
+    note: Test fixture. Exists to trip one gate, not to model a real source.
+  render: null
+  risk_tier: low
+verbatim_span: 'A covered entity shall, following the discovery of a breach of unsecured
+
+  protected health information, notify each individual'
+verification_status: verbatim_confirmed
+subject:
+  domain: II.B.1
+  lifecycle:
+  - VI
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+- hhs_ocr
+sector:
+- healthcare
+data_types:
+- phi
+status: in_force
+effective_from: '2009-09-23'
+effective_to: null
+supersedes: null
+superseded_by: null
+applies_if:
+  all:
+  - entity.hipaa_role in [covered_entity]
+applies_to_role: covered_entity
+obligation_type: notify
+summary: A covered entity must notify each affected individual after discovering a breach of unsecured PHI.
+requirement_detail: Individual notice is owed to every individual whose unsecured PHI was or is reasonably believed to have been accessed, acquired, used or disclosed in the breach.
+deadline:
+  trigger_event: discovery_of_breach
+  duration:
+    value: 60
+    unit: calendar_days
+  computation: without unreasonable delay and in no case later than
+  tolling: []
+exemptions: []
+preemption:
+  posture: floor
+  authority: 42 U.S.C. § 1320d-7
+  note: More stringent state law survives.
+enforcement:
+  enforcers:
+  - hhs_ocr
+  private_right_of_action: false
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+- Treating the 60-day outer limit as the standard rather than the ceiling.
+open_questions: []
+confidence: high

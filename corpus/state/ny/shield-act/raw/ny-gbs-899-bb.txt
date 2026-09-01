@@ -1,0 +1,81 @@
+§ 899-bb. Data security protections. 1. Definitions. (a) "Compliant
+regulated entity" shall mean any person or business that is subject to,
+and in compliance with, any of the following data security requirements:
+  (i) regulations promulgated pursuant to Title V of the federal
+Gramm-Leach-Bliley Act (15 U.S.C. 6801 to 6809), as amended from time to
+time;
+  (ii) regulations implementing the Health Insurance Portability and
+Accountability Act of 1996 (45 C.F.R. parts 160 and 164), as amended
+from time to time, and the Health Information Technology for Economic
+and Clinical Health Act, as amended from time to time;
+  (iii) part five hundred of title twenty-three of the official
+compilation of codes, rules and regulations of the state of New York, as
+amended from time to time; or
+  (iv) any other data security rules and regulations of, and the
+statutes administered by, any official department, division, commission
+or agency of the federal or New York state government as such rules,
+regulations or statutes are interpreted by such department, division,
+commission or agency or by the federal or New York state courts.
+  (b) "Private information" shall have the same meaning as defined in
+section eight hundred ninety-nine-aa of this article.
+  (c) "Small business" shall mean any person or business with (i) fewer
+than fifty employees; (ii) less than three million dollars in gross
+annual revenue in each of the last three fiscal years; or (iii) less
+than five million dollars in year-end total assets, calculated in
+accordance with generally accepted accounting principles.
+  2. Reasonable security requirement. (a) Any person or business that
+owns or licenses computerized data which includes private information of
+a resident of New York shall develop, implement and maintain reasonable
+safeguards to protect the security, confidentiality and integrity of the
+private information including, but not limited to, disposal of data.
+  (b) A person or business shall be deemed to be in compliance with
+paragraph (a) of this subdivision if it either:
+  (i) is a compliant regulated entity as defined in subdivision one of
+this section; or
+  (ii) implements a data security program that includes the following:
+  (A) reasonable administrative safeguards such as the following, in
+which the person or business:
+  (1) designates one or more employees to coordinate the security
+program;
+  (2) identifies reasonably foreseeable internal and external risks;
+  (3) assesses the sufficiency of safeguards in place to control the
+identified risks;
+  (4) trains and manages employees in the security program practices and
+procedures;
+  (5) selects service providers capable of maintaining appropriate
+safeguards, and requires those safeguards by contract; and
+  (6) adjusts the security program in light of business changes or new
+circumstances; and
+  (B) reasonable technical safeguards such as the following, in which
+the person or business:
+  (1) assesses risks in network and software design;
+  (2) assesses risks in information processing, transmission and
+storage;
+  (3) detects, prevents and responds to attacks or system failures; and
+  (4) regularly tests and monitors the effectiveness of key controls,
+systems and procedures; and
+  (C) reasonable physical safeguards such as the following, in which the
+person or business:
+  (1) assesses risks of information storage and disposal;
+  (2) detects, prevents and responds to intrusions;
+  (3) protects against unauthorized access to or use of private
+information during or after the collection, transportation and
+destruction or disposal of the information; and
+  (4) disposes of private information within a reasonable amount of time
+after it is no longer needed for business purposes by erasing electronic
+media so that the information cannot be read or reconstructed.
+  (c) A small business as defined in paragraph (c) of subdivision one of
+this section complies with subparagraph (ii) of paragraph (b) of
+subdivision two of this section if the small business's security program
+contains reasonable administrative, technical and physical safeguards
+that are appropriate for the size and complexity of the small business,
+the nature and scope of the small business's activities, and the
+sensitivity of the personal information the small business collects from
+or about consumers.
+  (d) Any person or business that fails to comply with this subdivision
+shall be deemed to have violated section three hundred forty-nine of
+this chapter, and the attorney general may bring an action in the name
+and on behalf of the people of the state of New York to enjoin such
+violations and to obtain civil penalties under section three hundred
+fifty-d of this chapter.
+  (e) Nothing in this section shall create a private right of action.

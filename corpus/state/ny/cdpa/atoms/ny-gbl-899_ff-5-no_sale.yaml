@@ -1,0 +1,110 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+- state_ag
+sector:
+- any
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by:
+- id: ny.oag.cdpa_guidance_2025.discretion
+  citation: NY OAG, New York Child Data Protection Act Implementation Guidance (19 May 2025)
+  authority_tier: agency_guidance
+  issuer: Office of the New York State Attorney General
+  issued: '2025-05-19'
+  verbatim_span: OAG advises that it will exercise discretion in pursuing enforcement actions, and will
+    take into account an operator’s good-faith efforts to comply with NYCDPA consistent with the plain
+    language of the statute and this guidance.
+  effect: enforcement_posture
+  effect_note: AN ANNOUNCED EXERCISE OF DISCRETION IS NOT A SAFE HARBOUR AND NOT A DEFENCE. It does not
+    change the duty, does not move the effective date, and binds no successor Attorney General — it describes
+    how this OAG says it will prioritise while its rules are pending. Advice that treats it as permission
+    is wrong on the law even where it is right about the near-term risk.
+  binding: false
+  source_ref:
+    raw_file: corpus/state/ny/cdpa/raw/ny-oag-cdpa-guidance-2025.pdf
+    raw_sha256: 9850ecd0273aea01702cbf7b7ded90c2626a9b2f8c6dae5a258b5e26f7600531
+    instrument_id: ny.oag.cdpa_guidance_2025
+confidence: high
+related: []
+id: ny.gbl.899_ff.5.no_sale
+source:
+  citation: N.Y. Gen. Bus. Law § 899-ff(5)
+  instrument_id: ny.gbl.899-ee
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/899-FF
+  fetched: '2026-08-20'
+  raw_file: corpus/state/ny/cdpa/raw/ny-gbs-899-ff.json
+  raw_sha256: 91a0a02424b6af8c374133d2917d4af7be24a6efd757a6a758b59671936ca3dc
+  text_file: corpus/state/ny/cdpa/raw/ny-gbs-899-ff.txt
+  text_sha256: bddd22160e0d3ac64821746ed8b7b2cd5cb4eb9e29b67303eb4c53c7e0eed270
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/cdpa/raw/ny-gbs-899-ff.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - NY Senate OpenLegislation API v3, laws/GBS/899-FF
+    result: structured_source_used
+    note: null
+  segment_sha256: 8dd0072c6be4045e8676aa08b2abefac1c72c36a95e221d4a592876bf4e6f09d
+verbatim_span: Except as provided for in section eight hundred ninety-nine-jj of this article, an operator
+  shall not purchase or sell, or allow a processor or third-party operator to purchase or sell, the personal
+  data of a covered user.
+paragraph_path:
+  path:
+  - '5'
+  anchor: 899-FF
+  derivation: reconstructed
+  confidence: high
+  evidence: subdivision designators reconstructed from the flat text field; resolves to exactly one leaf
+    (gate 23)
+context_not_required: The subdivision states the duty in full.
+subject:
+  domain: V.A.1
+  lifecycle:
+  - I
+data_types:
+- minor
+effective_from: '2025-06-20'
+federal_relationship: exceeds_floor
+applies_if:
+  all:
+  - entity.is_ny_cdpa_operator == true
+  - data.subject_is_cdpa_covered_user == true
+applies_to_role: controller
+obligation_type: prohibit
+deadline: null
+exemptions: []
+summary: An operator shall not purchase or sell, or allow a processor or third-party operator to purchase
+  or sell, the personal data of a covered user.
+requirement_detail: 'A FLAT BAN ON SALE, with no consent route out of it. That is stronger than anything
+  else in this corpus: GLBA gives an opt out, COPPA permits disclosure with verifiable parental consent,
+  and this subdivision simply forbids the transaction. It also reaches PURCHASE, so the buyer of a minor
+  dataset is liable as well as the seller — an unusual posture that puts data brokers inside a statute
+  they might read as binding only the collecting operator.'
+common_errors:
+- Looking for a consent exception. There is none in subdivision 5.
+- Assuming it binds only the seller. It reaches purchase as well.
+open_questions: []
+preemption:
+  posture: none
+  authority: N.Y. Gen. Bus. Law § 899-ff
+  note: COPPA does not preempt state law that is consistent with its treatment of the same conduct, and
+    the CDPA reaches an older cohort than COPPA does, so the two run together rather than one displacing
+    the other.
+enforcement:
+  enforcers:
+  - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: Attorney General enforcement under GBL § 899-jj.
+    range: null
+    note: Penalty detail is in § 899-jj, which is not extracted — treat exposure as UNASSESSED rather
+      than absent.
+  statute_of_limitations: null

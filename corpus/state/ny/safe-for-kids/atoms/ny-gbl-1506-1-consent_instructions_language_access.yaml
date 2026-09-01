@@ -1,0 +1,141 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+  - state_ag
+sector:
+  - any
+status: enacted_pending
+effective_from: '2027-01-25'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+id: ny.gbl.1506.1.consent_instructions_language_access
+source:
+  citation: N.Y. Gen. Bus. Law § 1506(1)
+  instrument_id: ny.safe_for_kids
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/1506
+  fetched: '2026-08-20'
+  raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1506.json
+  raw_sha256: e8c83f582acc2d620da69c7af057f65ba042529cdde8582136bbbe48dc3e178f
+  text_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1506.txt
+  text_sha256: baa03f48f2e2147aa1920721993d8b03fc986129cd76143544b4db2ec14dca15
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/safe-for-kids/raw/ny-gbs-1506.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, laws/GBS/1506
+    result: structured_source_used
+    note: null
+  segment_sha256: 6d85f741fb7938cda22b09ae3ebf449307cb3567363da6d578f6fb9fa775b5e2
+verbatim_span: >-
+  Instructions to parents on how to provide verifiable parental consent under paragraph (b) of
+  subdivision one of section fifteen hundred one of this article shall be made available in no fewer
+  than the twelve most commonly spoken languages in New York state consistent with section two
+  hundred two-a of the executive law and as further defined by regulations promulgated by the
+  attorney general.
+paragraph_path:
+  path:
+    - '1'
+  anchor: '1506'
+  derivation: reconstructed
+  confidence: high
+  evidence: subdivision designators reconstructed from the flat text field; resolves to exactly one leaf
+subject:
+  domain: V.B.2
+  lifecycle:
+    - I
+data_types:
+  - minor
+federal_relationship: gap_fills
+applies_if:
+  all:
+    - entity.is_ny_addictive_platform_operator == true
+    - practice.seeks_verifiable_parental_consent == true
+applies_to_role: controller
+obligation_type: disclose
+deadline: null
+exemptions:
+  - id: sfk.territorial
+    type: activity_level
+    scope: >-
+      Conduct occurring wholly outside New York, which § 1507(1) defines as access by a user
+      physically located outside the state.
+    source_citation: N.Y. Gen. Bus. Law § 1507(1)
+    verbatim_span: >-
+      This article shall apply to conduct that occurs in whole or in part in New York. For purposes
+      of this article, conduct takes place wholly outside of New York if the addictive social media
+      platform is accessed by a user who is physically located outside of New York.
+    burden_of_proof: >-
+      The operator, which is why the age-determination record in § 1501 matters twice: it is the
+      compliance route and it is the evidence of location.
+    applies_if:
+      all:
+        - practice.conduct_occurs_in_new_york == false
+    source_ref:
+      raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1507.json
+      raw_sha256: eef6cb32213ba1fde3acefdedc4b9633ab4b17059d373aa0e6d9f6ff11df800f
+      instrument_id: ny.safe_for_kids
+    reach: instrument
+summary: >-
+  Instructions telling parents how to give verifiable parental consent must be available in at least
+  the twelve most commonly spoken languages in New York.
+requirement_detail: >-
+  A LANGUAGE-ACCESS DUTY ON THE CONSENT MECHANISM, which matters because consent is the only route §
+  1501(1) leaves open for a user known to be a covered minor. Instructions a parent cannot read are
+  a barrier to the child's access, not merely a service defect. The twelve languages are not
+  enumerated here: the subdivision incorporates N.Y. Executive Law § 202-a, so the list moves when
+  the state's language-access determination moves, and the Attorney General may define it further by
+  regulation. Neither the Executive Law section nor the Part 700 regulations are in this corpus, so
+  the operative list is a stated gap. WHO OWES IT IS NOT STATED IN TERMS. Subdivision 1 is drafted
+  in the passive voice — instructions "shall be made available" — while subdivision 2 names the
+  Attorney General expressly for the parallel duty over public guidance. The contrast is the
+  strongest textual signal that subdivision 1 falls on the operator, which is the reading recorded
+  here, but the text does not say so and the open question is left visible.
+common_errors:
+  - >-
+    Reading "twelve" as a fixed list fixed in this statute. It is a floor — "no fewer than" — and
+    the list itself lives in the Executive Law.
+open_questions:
+  - >-
+    Whether § 1506(1) binds the covered operator or the Attorney General. Subdivision 2 names the
+    Attorney General expressly and subdivision 1 does not, which is why this record reads it as an
+    operator duty — but the sentence has no subject and the Part 700 regulations may settle it.
+  - >-
+    Which twelve languages. The list comes from N.Y. Executive Law § 202-a, which is not in this
+    corpus, and may be further defined by regulations that are not machine-readable anywhere.
+preemption:
+  posture: none
+  authority: N.Y. Gen. Bus. Law § 1507(2)
+  note: >-
+    COPPA reaches children under 13 and governs the collection of personal information; this article
+    reaches minors under 18 and governs how a feed is ORDERED, which COPPA does not address at all.
+    Subdivision 2 of § 1507 is a savings construction rather than a preemption clause — it disclaims
+    liability inconsistent with 15 U.S.C. § 6502 for operators subject to 15 U.S.C. § 6501, and says
+    nothing about anyone else. Same posture the corpus records for the CDPA, for the same reason.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Attorney General action or special proceeding under § 1508(1): injunction, restitution,
+      disgorgement (expressly including destruction of unlawfully obtained data), damages, and civil
+      penalties.
+    range: Up to $5,000 per violation.
+    note: >-
+      § 1508(1) bars the Attorney General from bringing any action until 180 days after the
+      effective date, so the first day enforcement is available is later than the first day the
+      duties bind.
+  statute_of_limitations: null
+context_not_required: >-
+  The subdivision states the requirement in full; the cross-reference to § 1501(1)(b) identifies
+  which instructions it governs.

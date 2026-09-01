@@ -1,0 +1,108 @@
+id: us.hipaa.breach.164_404.timeliness
+schema_version: 1
+record_type: obligation
+source:
+  citation: 45 C.F.R. § 164.404(b)
+  instrument_id: us.hipaa.breach_notification_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: d24e6dee925dd8efd6ebbe2822ddd766d192086ac1d18e3f20c77a43c2838903
+verbatim_span: >-
+  Implementation specification: Timeliness of notification. Except as provided in § 164.412, a
+  covered entity shall provide the notification required by paragraph (a) of this section without
+  unreasonable delay and in no case later than 60 calendar days after discovery of a breach.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+  anchor: '164.404'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+jurisdiction: US-FED
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline:
+  trigger_event: discovery_of_breach
+  duration:
+    value: 60
+    unit: calendar_days
+  computation: without unreasonable delay and in no case later than
+  tolling:
+    - § 164.412 law enforcement delay
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - Reading the rule as a 60-day deadline. It is a promptness standard WITH a 60-day ceiling.
+  - >-
+    Assuming the clock runs from the breach. It runs from DISCOVERY, and § 164.404(a)(2) deems
+    discovery to occur when the breach is known, or would have been known by exercising reasonable
+    diligence.
+open_questions: []
+confidence: high
+context_not_required: No ancestor contributes governing text; this provision's operative meaning is complete on its own.
+subject:
+  domain: II.B.1
+  lifecycle:
+    - VI
+regulator:
+  - hhs_ocr
+sector:
+  - healthcare
+data_types:
+  - phi
+status: in_force
+effective_from: '2009-09-23'
+applies_if:
+  all:
+    - entity.hipaa_role in ['covered_entity']
+    - event.type == 'breach_of_unsecured_phi'
+applies_to_role: covered_entity
+obligation_type: notify
+summary: >-
+  Individual breach notification must be made without unreasonable delay and in no case later than
+  60 calendar days after discovery.
+requirement_detail: >-
+  A dual standard, not a single deadline. 'Without unreasonable delay' is the operative obligation;
+  the 60-day figure is an outer limit that does not license delay up to it. § 164.412 permits a
+  law-enforcement delay, which is the only tolling the rule provides.
+preemption:
+  posture: floor
+  authority: 42 U.S.C. § 1320d-7
+  note: >-
+    HIPAA is a FLOOR. More stringent state law is not preempted and runs in parallel — including
+    state breach-notification statutes with shorter clocks than 60 days. Complying with HIPAA does
+    not discharge a state duty, and the shortest applicable clock governs in practice.
+enforcement:
+  enforcers:
+    - hhs_ocr
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: tiered by culpability under 42 U.S.C. § 1320d-5
+    range: null
+    note: Figures are inflation-adjusted annually by rule; verify current amounts.
+  statute_of_limitations: null

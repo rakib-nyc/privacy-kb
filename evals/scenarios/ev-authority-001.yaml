@@ -1,0 +1,30 @@
+id: ev.authority.001
+question: Our consumer wellness app collects health data. Nothing we do touches a hospital or insurer.
+  If we misrepresent our privacy practices, who enforces and what is the exposure?
+trap: 'T1-adjacent: assuming health data means HIPAA. The app is neither a covered entity nor a business
+  associate, so HHS OCR has no reach. The answer is the FTC, and the naive answer names the wrong regulator
+  and therefore the wrong remedy, the wrong penalty structure and the wrong private-action posture.'
+rubric:
+- name: FTC is in the corpus as an authority
+  record_exists: us.authority.ftc
+- name: FTC reaches consumer protection generally
+  record: us.authority.ftc
+  path: authority.sector_reach
+  contains: consumer protection
+- name: FTC has no private right of action
+  record: us.authority.ftc
+  path: authority.private_right_of_action.exists
+  equals: false
+- name: the s5 statutory grant is quoted verbatim
+  record: us.authority.ftc
+  path: verification_status
+  equals: verbatim_confirmed
+- name: HHS OCR reach is limited to covered entities and business associates
+  record: us.authority.hhs_ocr
+  path: authority.sector_reach
+  contains: HIPAA covered entities
+- name: HHS OCR records that non-HIPAA health apps are outside its reach
+  record: us.authority.hhs_ocr
+  path: authority.excluded_from_reach
+  contains: FTC territory
+all_pass: true

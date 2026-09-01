@@ -1,0 +1,177 @@
+id: us.red_flags.681_1.c.covered_account_determination
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 681.1(c)
+  instrument_id: us.red_flags
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=681
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.xml
+  raw_sha256: 7fe86c7084a6fad1ad05bad984e729c15375a3b6261f7ae11298256bb2536c36
+  text_file: corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.txt
+  text_sha256: 5b797c2f9419d08777165b7536b847eeb72d7c4b5d4c56a4322ee15f5f86f3e4
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 3475a87b47b76c2962690bcb1c764621c10cdf446148a9568f686f3bee1c0ed8
+verbatim_span: >-
+  Each financial institution or creditor must periodically determine whether it offers or maintains
+  covered accounts. As a part of this determination, a financial institution or creditor must
+  conduct a risk assessment to determine whether it offers or maintains covered accounts described
+  in paragraph (b)(3)(ii) of this section, taking into consideration:
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - c
+  anchor: '681.1'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+operative_context:
+  - position: follows
+    relation: concludes
+    verbatim_span: The methods it provides to open its accounts;
+    citation: 16 C.F.R. § 681.1(c)(1)
+    path:
+      path:
+        - c
+        - '1'
+      anchor: '681.1'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number
+        so the path is scoped to its own section — without it a path like ["a"] matches every
+        section in the part.
+  - position: follows
+    relation: concludes
+    verbatim_span: The methods it provides to access its accounts; and
+    citation: 16 C.F.R. § 681.1(c)(2)
+    path:
+      path:
+        - c
+        - '2'
+      anchor: '681.1'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number
+        so the path is scoped to its own section — without it a path like ["a"] matches every
+        section in the part.
+  - position: follows
+    relation: concludes
+    verbatim_span: Its previous experiences with identity theft.
+    citation: 16 C.F.R. § 681.1(c)(3)
+    path:
+      path:
+        - c
+        - '3'
+      anchor: '681.1'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number
+        so the path is scoped to its own section — without it a path like ["a"] matches every
+        section in the part.
+jurisdiction: US
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions: []
+related:
+  - us.red_flags.681_1.a.scope
+  - us.red_flags.681_1.d1.written_program
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Skipping the determination once the answer is "no covered accounts". The duty to determine is
+    owed by every entity in scope and is periodic, so the conclusion has to be revisited and
+    evidenced.
+  - >-
+    Reading covered accounts as consumer accounts only. § 681.1(b)(3)(ii) reaches ANY account with a
+    reasonably foreseeable identity-theft risk, including business accounts, and the risk assessment
+    in (c) exists for that limb.
+  - >-
+    Treating the three listed factors as the whole assessment. The text says the determination is
+    made "taking into consideration" them, which is a minimum rather than a checklist.
+open_questions:
+  - >-
+    effective_from is the publication date in § 681.1's own eCFR source note ("[74 FR 22645, May 14,
+    2009, as amended at 77 FR 72715, Dec. 6, 2012]"), which is when the section as quoted was
+    published in its current place. The part-level source note is earlier — "72 FR 63771, Nov. 9,
+    2007" — so an identity-theft programme duty existed before this date in a differently numbered
+    provision, and a query as of a date in 2008 will not reach this atom. Both are Federal Register
+    PUBLICATION dates, not stated effective or mandatory-compliance dates; the source does not give
+    those.
+confidence: high
+subject:
+  domain: II.C.3
+  lifecycle:
+    - III
+regulator:
+  - ftc
+sector:
+  - financial
+  - any creditor
+data_types:
+  - account_information
+status: in_force
+effective_from: '2009-05-14'
+applies_if:
+  all:
+    - entity.is_financial_institution_or_creditor == true
+    - entity.subject_to_ftc_fcra_enforcement == true
+applies_to_role: controller
+obligation_type: assess
+summary: >-
+  Every financial institution or creditor in scope must periodically determine whether it offers or
+  maintains covered accounts, and must reach that determination for § 681.1(b)(3)(ii) accounts
+  through a risk assessment considering how its accounts are opened, how they are accessed, and its
+  previous experiences with identity theft.
+requirement_detail: >-
+  THIS DUTY IS OWED BY EVERY ENTITY IN SCOPE, including one that concludes it has no covered
+  accounts, and it is the step most often skipped because it produces no programme. Two things
+  follow from the text. It is PERIODIC, so a single determination made when the rule was new has
+  expired; and the risk assessment is required specifically for the (b)(3)(ii) limb — any other
+  account carrying a reasonably foreseeable risk of identity theft — because the (b)(3)(i) limb,
+  consumer accounts permitting multiple payments or transactions, is definitional and needs no risk
+  judgement. The three enumerated factors are the floor of that assessment, not the whole of it: the
+  paragraph says "taking into consideration". The practical consequence is that a
+  business-account-only creditor is not automatically outside the rule, since (b)(3)(ii) is not
+  limited to personal, family or household accounts.
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 1681t
+  note: >-
+    This part implements FCRA § 615(e) (15 U.S.C. 1681m(e)) and sits inside the FCRA framework, so
+    the express and partial preemption map of § 1681t governs whether a given state identity-theft
+    requirement survives. Not resolved on this atom — see the FCRA preemption instrument.
+enforcement:
+  enforcers:
+    - ftc
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: FCRA administrative enforcement (15 U.S.C. 1681s) by the FTC
+    range: null
+    note: >-
+      The part states no penalty figure. § 681.1(a) fixes the enforcement channel by defining the
+      covered population as those subject to FTC administrative enforcement of the FCRA under 15
+      U.S.C. 1681s(a)(1); banks, credit unions and other institutions answer to their own
+      regulators' parallel rules instead.
+  statute_of_limitations: null

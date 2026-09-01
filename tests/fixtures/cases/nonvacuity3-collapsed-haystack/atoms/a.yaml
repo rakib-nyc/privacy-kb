@@ -1,0 +1,98 @@
+id: us.fixture.collapsed_haystack
+schema_version: 1
+record_type: certification_scheme
+source:
+  citation: FIXTURE — synthetic HTML source. Invented text.
+  instrument_id: test.fixture.collapsed_instrument
+  url: https://example.invalid/fixture/collapsed-source.html
+  fetched: '2026-08-19'
+  raw_file: tests/fixtures/raw/collapsed-source.html
+  raw_sha256: c59a307b685cfa3a05c5a2eaf646970e5db3fb7269fbdf3f4bc302af48c605d3
+  text_file: tests/fixtures/raw/collapsed-rendering.txt
+  text_sha256: 0044390d820b260b57b6bc1a08daa8de5d4b04e51feb4b191aa38eb8e2438a14
+  text_extraction_cmd: python3 tools/render-text.py corpus/schemes/cbpr/raw/apec-cbpr-prg-20260819.pdf
+  format: html
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - apec.org document library path /docs/default-source/Groups/ECSG/CBPR/
+    - apec.org publications search for the CBPR System
+    result: no_structured_source_exists
+    note: 'APEC publishes this document as PDF only — no HTML, DOCX or XML rendering is offered. US registries
+      (uscode USLM, eCFR, Federal Register) do not apply: this is a voluntary international certification
+      scheme document, not US law. Single-column layout, so risk_tier medium; gate 11 applies, gate 12
+      does not.'
+verbatim_span: Organizations that choose to participate in the CBPR System should implement privacy policies
+  and practices consistently with the CBPR program requirements for all personal information that they
+  have collected or received that is subject to cross-border transfer to other participating APEC economies10.
+  These privacy policies and practices should be evaluated by an APEC-recognized Accountability Agent
+  for compliance with the CBPR program requirements. Once an organization has been certified for participation
+  in the CBPR System, these privacy policies and practices will become binding as to that participant
+  and will be enforceable by an appropriate authority, such as a regulator to ensure compliance with the
+  CBPR program requirements.
+verification_status: verbatim_confirmed
+subject:
+  domain: I.C.7
+  lifecycle:
+  - I
+scheme:
+  id: intl.apec.cbpr_system
+  title: APEC Cross-Border Privacy Rules (CBPR) System
+  operator: APEC Electronic Commerce Steering Group, through the Cross Border Privacy Rules Joint Oversight
+    Panel
+  established: '2011'
+  certifies: Personal information controllers, for personal information subject to cross-border transfer
+    to other participating APEC economies
+  adherence_mechanism: certification
+  elements:
+  - self-assessment
+  - compliance review
+  - recognition/acceptance
+  - dispute resolution and enforcement
+  authority_tier: self_regulatory_scheme
+accountability_agent:
+  role: Assesses an organization's privacy policies and practices against the CBPR program requirements
+    and certifies compliance
+  recognised_by: APEC, against the Accountability Agent Recognition Criteria
+  own_enforcement_power: true
+  enforcement_note: Paragraph 24 provides that Accountability Agents "should be able to enforce the CBPR
+    program requirements through law or contract". That is a derived power — it runs through contract
+    with the certified organization or through domestic law — not an independent regulatory power. Privacy
+    Enforcement Authorities enforce separately under domestic law.
+adherence_mechanism: certification
+enforceability_pathway: section_5_via_public_commitment
+jurisdiction: INTL
+jurisdiction_level: international
+status: in_force
+effective_from: null
+effective_to: null
+amendment_history: []
+summary: A voluntary certification system under which an APEC-recognized Accountability Agent evaluates
+  an organization's privacy policies and practices against the CBPR program requirements; on certification
+  those policies become binding on the organization and enforceable by an appropriate authority.
+derived_from:
+  record_id: intl.apec.principle.accountability.p32
+  relationship: implementation
+  note: The CBPR System operationalises the APEC Privacy Framework. Paragraph 32 of the Framework (Accountability)
+    is the principle it gives effect to on transfer. Not a textual descendant — ancestry-diff skips implementation
+    relationships.
+derived_obligations: []
+differs_from: []
+related: []
+source_defects: []
+common_errors:
+- Treating certification as compliance with US law. It is a transfer and accountability mechanism; it
+  displaces no federal or state obligation.
+- Reading "enforceable by an appropriate authority" as APEC enforcement. APEC has no enforcement power.
+  Enforcement runs through the Accountability Agent's contract and through domestic Privacy Enforcement
+  Authorities.
+- Confusing this with the Global CBPR System, which is a separate scheme operated by a different body.
+open_questions:
+- The document states no adoption or effective date on its face, so effective_from is left null rather
+  than inferred. The APEC CBPR System is commonly dated to 2011; that date is NOT taken from this document
+  and is recorded in scheme.established as background only.
+- 'enforceability_pathway is section_5_via_public_commitment. TODO: link to the FTC Act s5 obligation
+  atoms when Priority 1 II.A lands (meta/debt.yaml).'
+confidence: high
+scope_justification: null

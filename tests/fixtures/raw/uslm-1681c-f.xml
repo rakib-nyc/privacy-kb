@@ -1,0 +1,9 @@
+<!-- FROZEN FIXTURE. 15 U.S.C. s 1681c(f), USLM, uscode.house.gov release point 119-1.
+     Kept because it is the sharpest regression test in the repo: a <note> element sits
+     INSIDE an operative sentence, and the two obvious serializers get it wrong in
+     opposite directions. A regex tag-strip leaks the editorial note into the quotation;
+     a naive ElementTree remove() deletes the element AND its .tail, which is the rest of
+     the obligation. Do not "tidy" this file. -->
+<subsection style="-uslm-lc:I19" class="indent2 firstIndent-2" id="id28846f2e-f87e-11ef-ac64-b496832bc242" identifier="/us/usc/t15/s1681c/f"><num value="f" class="bold">(f)</num><heading class="bold"> Indication of dispute by consumer</heading><content><p style="-uslm-lc:I11" class="indent0">If a consumer reporting agency is notified pursuant to <ref href="/us/usc/t15/s1681s–2/a/3">section 1681s–2(a)(3) of this title</ref> that information regarding a consumer who <ref class="footnoteRef" idref="fn002368">1</ref><note type="footnote" id="fn002368"><num>1</num> So in original. Probably should be “which”.</note> was furnished to the agency is disputed by the consumer, the agency shall indicate that fact in each consumer report that includes the disputed information.</p>
+</content>
+</subsection>

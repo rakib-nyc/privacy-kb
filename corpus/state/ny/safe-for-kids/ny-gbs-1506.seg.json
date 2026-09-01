@@ -1,0 +1,38 @@
+{
+ "label": "NY GBS 1506",
+ "url": "https://legislation.nysenate.gov/api/3/laws/GBS/1506",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/safe-for-kids/raw/ny-gbs-1506.json",
+ "raw_sha256": "e8c83f582acc2d620da69c7af057f65ba042529cdde8582136bbbe48dc3e178f",
+ "leaves": [
+  {
+   "path": [
+    "1"
+   ],
+   "anchor": "1506",
+   "section": "1506",
+   "confidence": "high",
+   "heading": "* \u00a7 1506. Language access.",
+   "text": "Instructions to parents on how to provide verifiable parental consent under paragraph (b) of subdivision one of section fifteen hundred one of this article shall be made available in no fewer than the twelve most commonly spoken languages in New York state consistent with section two hundred two-a of the executive law and as further defined by regulations promulgated by the attorney general.",
+   "context": [],
+   "section_heading": "* \u00a7 1506. Language access.",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "2"
+   ],
+   "anchor": "1506",
+   "section": "1506",
+   "confidence": "high",
+   "heading": "* \u00a7 1506. Language access.",
+   "text": "The attorney general shall ensure that any public information or guidance that it may provide concerning this chapter is available in the twelve most commonly spoken languages in New York state consistent with section two hundred two-a of the executive law and as further defined by regulations promulgated by the attorney general.",
+   "context": [],
+   "section_heading": "* \u00a7 1506. Language access.",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  }
+ ]
+}

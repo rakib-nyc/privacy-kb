@@ -1,0 +1,185 @@
+jurisdictions:
+  US-NY:
+    manifest_section: PRIORITY 3 — New York state layer
+    instruments:
+    - id: ny.gbl.899_aa
+      citation: N.Y. Gen. Bus. Law § 899-aa
+      title: SHIELD Act — breach notification
+      supplies:
+      - notify
+      note: The NY breach clock. Extraterritorial — attaches to holding a NY resident's private information
+        regardless of NY presence.
+      published_heading: Notification; person without valid authorization has acquired private information
+      verified: openleg:GBS 899-AA, heading fetched 2026-08-19
+      expected_sections:
+      - 899-AA
+    - id: ny.gbl.899_bb
+      citation: N.Y. Gen. Bus. Law § 899-bb
+      title: SHIELD Act — reasonable safeguards
+      supplies:
+      - safeguard
+      note: Carries compliance-deemed pathways for GLBA/HIPAA-regulated entities.
+      published_heading: Data security protections
+      verified: openleg:GBS 899-BB, heading fetched 2026-08-19
+      expected_sections:
+      - 899-BB
+    - id: ny.gbl.899-ee
+      citation: N.Y. Gen. Bus. Law §§ 899-ee et seq.
+      title: Child Data Protection Act
+      supplies:
+      - restrict_use
+      - notify
+      - consent
+      published_heading: Definitions
+      verified: openleg:GBS 899-EE, heading fetched 2026-08-19
+      note: 'THE CITATION IS IMPRECISE, left visible. § 899-ee publishes as "Definitions"; the Child Data
+        Protection Act''s operative duties are in the sections following it. A declaration whose supplies[]
+        lists restrict_use/notify/consent while pointing at a definitions section overstates what extracting
+        that one section would deliver. Resolve to the specific operative sections before extraction.
+        EXPECTED_SECTIONS IS NULL DELIBERATELY: the declaration names an ACT, and an act is not a section.
+        § 899-ee resolves and publishes as "Definitions", so the citation is real, the heading is real,
+        and the claim of three duty types is still wrong. Naming the instrument is not naming where the
+        duties live — resolve to the operative sections before extraction.'
+      expected_sections: null
+    - id: ny.oag.cdpa_guidance_2025
+      citation: NY OAG CDPA Implementation Guidance (19 May 2025)
+      title: CDPA implementation guidance
+      supplies:
+      - guidance
+      published_heading: New York Child Data Protection Act Implementation Guidance
+      verified: 'RESOLVED 2026-08-24 from an owner-supplied PDF. The diagnosis was right and only the
+        conclusion was wrong: NY OAG guidance really is published as a PDF with no OpenLegislation
+        identifier, so no structured resolver reaches it — but that made it unFETCHABLE by the harness,
+        not unobtainable. It is now held at corpus/state/ny/cdpa/raw/ny-oag-cdpa-guidance-2025.pdf.
+        NOT MODELLED AS AN INSTRUMENT, because it is not one. Invariant I7: it creates no obligation and
+        has no atoms. It attaches to the four CDPA atoms through interpreted_by, which carries the quoted
+        passage inline with a source_ref hashed by gate 2, its span checked by gate 3, and its file
+        required in the ledger by gate 33. supplies[] below therefore reads "guidance" and will never
+        resolve to a duty — that is correct, not a gap.'
+    - id: ny.safe_for_kids
+      citation: N.Y. Gen. Bus. Law art. 44-D, §§ 1500–1508; 13 N.Y.C.R.R. §§ 700.1–700.11
+      title: SAFE for Kids Act
+      supplies:
+      - prohibit
+      - restrict_use
+      - disclose
+      note: 'RESOLVED 2026-08-20 BY LOCATION, NOT BY NAME. The earlier entry looked for the SHORT TITLE
+        and for a NYCRR part, and neither is a thing OpenLegislation serves — but the Act''s operative
+        text is consolidated into General Business Law article 44-D, and GBS 1500 through 1508 resolve
+        one section at a time like any other. The citation above is the one that reaches the text; the
+        short title reaches nothing. Effective 25 Jan 2027, so every atom is enacted_pending with a
+        future effective_from — the reference test for invariant I2, and the corpus''s first record of
+        that status. § 1508(1) then defers the Attorney General''s remedy 180 days past the effective
+        date, so this instrument carries TWO future dates and they are not the same date. The Part 700
+        regulations, which supply what "commercially reasonable" means, remain unreachable — see
+        meta/blocked-sources.yaml.'
+      published_heading: Definitions (§ 1500); Prohibition of addictive feeds (§ 1501)
+      verified: openleg:GBS 1500–1508, headings fetched 2026-08-20
+      expected_sections:
+      - '1500'
+      - '1501'
+      - '1502'
+      - '1503'
+      - '1504'
+      - '1505'
+      - '1506'
+      - '1507'
+      - '1508'
+    - id: ny.gbl.349
+      citation: N.Y. Gen. Bus. Law § 349
+      title: Deceptive, unfair and abusive acts and practices
+      supplies:
+      - udap
+      - prohibit
+      published_heading: Unfair, deceptive, or abusive acts and practices unlawful
+      verified: openleg:GBS 349, heading fetched 2026-08-19
+      expected_sections:
+      - '349'
+    - id: ny.gbl.350
+      citation: N.Y. Gen. Bus. Law § 350
+      title: False advertising
+      supplies:
+      - udap
+      - prohibit
+      published_heading: False advertising unlawful
+      verified: openleg:GBS 350, heading fetched 2026-08-19
+      expected_sections:
+      - '350'
+    - id: ny.civil_rights.52-c
+      citation: N.Y. Civil Rights Law § 52-c
+      title: Employee electronic monitoring notice
+      supplies:
+      - notify
+      note: CITATION CORRECTED 2026-08-20. The manifest said N.Y. Labor Law § 203-f, which is "Inventions
+        made by employees". The monitoring duty is Civil Rights Law § 52-c*2 — a MULTIPLE-VERSION section,
+        which is why it resisted being found by citation and had to be located by walking the law tree
+        and matching titles. See meta/debt.yaml DEBT-016.
+      published_heading: Employers engaged in electronic monitoring; prior notice required
+      verified: openleg:CVR 52-C*2, heading fetched 2026-08-20
+      expected_sections:
+      - 52-C*2
+    - id: nyc.local_law_144
+      citation: NYC Local Law 144
+      title: Automated employment decision tools — bias audit and notice
+      supplies:
+      - notify
+      - assess
+      note: City-level, not state.
+      published_heading: Automated Employment Decision Tools (NYC Admin Code Subchapter 25)
+      verified: owner-supplied NYC Law Department XML export, 2026-08-20
+      expected_sections:
+      - 20-870
+      - 20-871
+      - 20-872
+      - 20-873
+      - 20-874
+    - id: ny.education.2-d
+      citation: N.Y. Education Law § 2-d; 8 N.Y.C.R.R. Part 121
+      title: Student data privacy
+      supplies:
+      - restrict_use
+      - notify
+      - safeguard
+      published_heading: Unauthorized release of personally identifiable information
+      verified: openleg:EDN 2-D, heading fetched 2026-08-19
+      expected_sections:
+      - 2-D
+    - id: ny.dfs.500
+      citation: 23 N.Y.C.R.R. Part 500
+      title: NYDFS Cybersecurity Requirements
+      supplies:
+      - safeguard
+      - notify
+      published_heading: null
+      verified: UNRESOLVED 2026-08-19 — 23 N.Y.C.R.R. Part 500 is a state AGENCY regulation, not a consolidated-law
+        section, and OpenLegislation does not serve NYCRR.
+    - id: ny.penal.250.05
+      citation: N.Y. Penal Law § 250.05
+      title: Eavesdropping — one-party consent posture
+      supplies:
+      - prohibit
+      published_heading: Eavesdropping
+      verified: openleg:PEN 250.05, heading fetched 2026-08-19
+      expected_sections:
+      - '250.05'
+    - id: ny.civil_rights.50_51
+      citation: N.Y. Civil Rights Law §§ 50–51
+      title: Right of publicity / use of likeness
+      supplies:
+      - prohibit
+      published_heading: Right of privacy
+      verified: openleg:CVR 50, heading fetched 2026-08-19
+      expected_sections:
+      - '50'
+      - '51'
+    excluded:
+    - id: ny.nyhipa
+      citation: A.10357 / S.9269 (2026 session)
+      why: Not law. Following the 19 Dec 2025 veto of A.2141/S.929. If unsigned it is `proposed` and can
+        appear only in the change-watch feed, never in obligations (invariant I3).
+expected_sections_note: 'expected_sections names WHERE THE DUTIES ARE, not merely which instrument they
+  belong to. § 899-ee is why: its citation resolves, its published heading is real, and it is the CDPA''s
+  DEFINITIONS section — so a declaration listing restrict_use/notify/consent against it overstates what
+  extracting that section would deliver. A citation that resolves is not the same as a citation that supplies
+  the duty claimed for it, and that is a third variety of denominator defect after "missing" and "wrong".
+  null means the sections have not been resolved yet and the entry should not be trusted for planning.'

@@ -1,0 +1,101 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - private_litigants
+sector:
+  - video
+  - streaming
+  - any provider of audiovisual materials
+data_types:
+  - personally_identifiable_information
+  - viewing_history
+status: in_force
+effective_from: '1988-11-05'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2710(f)
+  note: VPPA does not preempt more protective state video-privacy law; several states have their own.
+enforcement:
+  enforcers:
+    - private_litigants
+  private_right_of_action: true
+  penalty:
+    structure: liquidated damages, punitive damages, attorney fees and costs under § 2710(c)
+    range:
+      min: 2500
+      unit: usd_liquidated_per_person
+    note: >-
+      Liquidated damages of not less than $2,500 per aggrieved person, which is what makes class
+      exposure severe.
+  statute_of_limitations: 2 years from the date of the act complained of or the date of discovery (§ 2710(c)(3))
+applies_if:
+  all:
+    - entity.is_video_tape_service_provider == true
+    - event.type == 'disclosure_of_pii'
+    - event.knowing == true
+applies_to_role: any
+exemptions: []
+id: us.vppa.2710.c1.private_action
+source:
+  citation: 18 U.S.C. § 2710(c)(1)
+  instrument_id: us.vppa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/vppa/raw/18-u-s-c-2710.xml
+  raw_sha256: 3dd90781077d08d0621dbaefb5b60a0cf25ba158d64855af6847559dec36d7ff
+  text_file: corpus/federal/domain-2-federal-privacy/vppa/raw/18-u-s-c-2710.txt
+  text_sha256: 42eb0b751762330061d390b87eb3f578c814d599746be928a86d4edc57a403b6
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/vppa/raw/18-u-s-c-2710.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 18-u-s-c-2710 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: f3fdf221b04403bdd7c160de964e23d09aa4e8d4aad26bb8cba1f07433561d98
+verbatim_span: >-
+  Any person aggrieved by any act of a person in violation of this section may bring a civil action
+  in a United States district court.
+paragraph_path:
+  path:
+    - c
+    - '1'
+  anchor: /us/usc/t18/s2710/c/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the duty in full.
+subject:
+  domain: II.E.1
+  lifecycle:
+    - VI
+obligation_type: prohibit
+deadline: null
+summary: >-
+  Any person aggrieved by a violation of this section may bring a civil action in a United States
+  district court.
+requirement_detail: >-
+  THE REASON VPPA IS LITIGATED AT ALL. § 2710(c)(2) sets liquidated damages of $2,500 per violation,
+  which converts a pixel or SDK on a video page into class exposure without any proof of actual
+  harm. That combination — a 1988 statute, a per-violation floor, and modern web analytics — is why
+  a statute written about videotape rental records is a live risk for any site that plays video and
+  runs third-party tags.
+common_errors:
+  - Assuming actual damages must be proven. § 2710(c)(2) sets liquidated damages of $2,500.
+  - >-
+    Treating the statute as obsolete because it names videotapes. "Similar audio visual materials"
+    has carried it onto the modern web.
+open_questions: []

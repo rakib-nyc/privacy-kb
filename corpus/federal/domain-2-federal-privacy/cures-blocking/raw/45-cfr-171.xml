@@ -1,0 +1,459 @@
+<?xml version="1.0"?>
+<DIV5 N="171" TYPE="PART" VOLUME="2" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-45/part-171&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;45 CFR Part 171&amp;quot;}">
+<HEAD>PART 171&#x2014;INFORMATION BLOCKING
+</HEAD>
+<AUTH>
+<HED>Authority:</HED><PSPACE>42 U.S.C. 300jj-52; 5 U.S.C. 552.
+</PSPACE></AUTH>
+<SOURCE>
+<HED>Source:</HED><PSPACE>85 FR 25955, May 1, 2020, unless otherwise noted.
+</PSPACE></SOURCE>
+<DIV6 N="A" TYPE="SUBPART" VOLUME="2" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-45/part-171/subpart-A&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;45 CFR Part 171 Subpart A&amp;quot;}">
+<HEAD>Subpart A&#x2014;General Provisions</HEAD>
+<DIV8 N="171.100" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.100&quot;,&quot;citation&quot;:&quot;45 CFR 171.100&quot;}">
+<HEAD>&#xA7; 171.100 Statutory basis and purpose.</HEAD>
+<P>(a) <I>Basis.</I> This part implements section 3022 of the Public Health Service Act, 42 U.S.C. 300jj-52.</P>
+<P>(b) <I>Purpose.</I> The purpose of this part is to establish exceptions for reasonable and necessary activities that do not constitute information blocking as defined by section 3022(a)(1) of the Public Health Service Act, 42 U.S.C. 300jj-52.</P>
+</DIV8>
+
+<DIV8 N="171.101" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.101&quot;,&quot;citation&quot;:&quot;45 CFR 171.101&quot;}">
+<HEAD>&#xA7; 171.101 Applicability.</HEAD>
+<P>(a) This part applies to health care providers, health IT developers of certified health IT, health information exchanges, and health information networks, as those terms are defined in &#xA7; 171.102.</P>
+<P>(b) Health care providers, health IT developers of certified health IT, health information exchanges, and health information networks are subject to this part on and after April 5, 2021.</P>
+<P>(c) If any provision of this part is held to be invalid or unenforceable facially, or as applied to any person, plaintiff, or circumstance, it shall be construed to give maximum effect to the provision permitted by law, unless such holding shall be one of utter invalidity or unenforceability, in which case the provision shall be severable from this part and shall not affect the remainder thereof or the application of the provision to other persons not similarly situated or to other dissimilar circumstances.</P>
+<CITA TYPE="N">[85 FR 25955, May 1, 2020, as amended at 85 FR 70085, Nov. 4, 2020; 89 FR 101810, Dec. 16, 2024]
+</CITA>
+</DIV8>
+
+<DIV8 N="171.102" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.102&quot;,&quot;citation&quot;:&quot;45 CFR 171.102&quot;}">
+<HEAD>&#xA7; 171.102 Definitions.</HEAD>
+<P>For purposes of this part:</P>
+<P><I>Access</I> means the ability or means necessary to make electronic health information available for exchange or use.</P>
+<P><I>Actor</I> means a health care provider, health IT developer of certified health IT, health information network or health information exchange.</P>
+<P><I>API Information Source</I> is defined as it is in &#xA7; 170.404(c).</P>
+<P><I>API User</I> is defined as it is in &#xA7; 170.404(c).</P>
+<P><I>Appropriate agency</I> means a government agency that has established disincentives for health care providers that the Office of Inspector General (OIG) determines have committed information blocking.</P>
+<P><I>Business associate</I> is defined as it is in 45 CFR 160.103.</P>
+<P><I>Certified API Developer</I> is defined as it is in &#xA7; 170.404(c).</P>
+<P><I>Certified API technology</I> is defined as it is in &#xA7; 170.404(c).</P>
+<P><I>Disincentive</I> means a condition specified in &#xA7; 171.1001(a) that is imposed by an appropriate agency on a health care provider that OIG determines has committed information blocking for the purpose of deterring information blocking practices.</P>
+<P><I>Electronic health information (EHI)</I> means electronic protected health information as defined in 45 CFR 160.103 to the extent that it would be included in a designated record set as defined in 45 CFR 164.501, regardless of whether the group of records are used or maintained by or for a covered entity as defined in 45 CFR 160.103, but EHI shall not include:</P>
+<P>(1) Psychotherapy notes as defined in 45 CFR 164.501; or</P>
+<P>(2) Information compiled in reasonable anticipation of, or for use in, a civil, criminal, or administrative action or proceeding.</P>
+<P><I>Exchange</I> means the ability for electronic health information to be transmitted between and among different technologies, systems, platforms, or networks.</P>
+<P><I>Fee</I> means any present or future obligation to pay money or provide any other thing of value.</P>
+<P><I>Health care provider</I> has the same meaning as &#x201C;health care provider&#x201D; in 42 U.S.C. 300jj.</P>
+<P><I>Health information network</I> or <I>health information exchange</I> means an individual or entity that determines, controls, or has the discretion to administer any requirement, policy, or agreement that permits, enables, or requires the use of any technology or services for access, exchange, or use of electronic health information:</P>
+<P>(1) Among more than two unaffiliated individuals or entities (other than the individual or entity to which this definition might apply) that are enabled to exchange with each other; and</P>
+<P>(2) That is for a treatment, payment, or health care operations purpose, as such terms are defined in 45 CFR 164.501 regardless of whether such individuals or entities are subject to the requirements of 45 CFR parts 160 and 164.</P>
+<P><I>Health IT developer of certified health IT</I> means an individual or entity, other than a health care provider that self-develops health IT that is not offered to others, that develops or offers health information technology (as that term is defined in 42 U.S.C. 300jj(5)), and which has, at the time it engages in a practice that is the subject of an information blocking claim, one or more Health IT Modules certified under a program for the voluntary certification of health information technology that is kept or recognized by the National Coordinator pursuant to 42 U.S.C. 300jj-11(c)(5) (ONC Health IT Certification Program).</P>
+<P><I>Information blocking</I> is defined as it is in &#xA7; 171.103.</P>
+<P><I>Interfere with</I> or <I>interference</I> means to prevent, materially discourage, or otherwise inhibit.</P>
+<P><I>Interoperability element</I> means hardware, software, integrated technologies or related licenses, technical information, privileges, rights, intellectual property, upgrades, or services that:</P>
+<P>(1) May be necessary to access, exchange, or use electronic health information; and</P>
+<P>(2) Is/Are controlled by the actor, which includes the ability to confer all rights and authorizations necessary to use the element to enable the access, exchange, or use of electronic health information.</P>
+<P><I>Offer health information technology</I> or <I>offer health IT</I> means to hold out for sale, resale, license, or relicense or to sell, resell, license, relicense, or otherwise provide or supply health information technology (as that term is defined in 42 U.S.C. 300jj(5) and where such health information technology includes one or more Health IT Modules certified under the ONC Health IT Certification Program) for deployment by or for other individual(s) or entity(ies) under any arrangement except an arrangement consistent with subparagraph (3)(iii), below. Activities and arrangements described in subparagraphs (1) through (3) are considered to be excluded from what it means to offer health IT.</P>
+<P>(1) Donation and subsidized supply arrangements are not considered offerings when an individual or entity donates, gives, or otherwise makes available funding to subsidize or fully cover the costs of a health care provider's acquisition, augmentation, or upkeep of health IT, provided such individual or entity offers and makes such subsidy without condition(s) limiting the interoperability or use of the technology to access, exchange or use electronic health information for any lawful purpose.</P>
+<P>(2) Implementation and use activities conducted by an individual or entity as follows:</P>
+<P>(i) Issuing user accounts or login credentials to the individual's or entity's employees in the course of their employment or contractors within the scope of their contract in order for such employees or contractors to: use, operate, implement, configure, test, maintain, update or upgrade, or to give or receive training on, the individual's or entity's health IT system(s) or specific application(s) within such system(s).</P>
+<P>(ii) Implementing, operating, or otherwise making available production instances of application programming interface (API) technology that supports access, exchange, and use of electronic health information that the individual or entity has in its possession, custody, control, or ability to query or transmit from or across a health information network or health information exchange.</P>
+<P>(iii) Implementing, operating, and making available production instances of online portals for patients, clinicians or other health care providers, or public health entities to access, exchange, and use electronic health information that the individual or entity has in its possession, custody, control, or ability to query or transmit from or across a health information network or health information exchange.</P>
+<P>(iv) Issuing login credentials or user accounts for the individual's or entity's production, development, or testing environments to public health authorities, or such authorities' employees or contractors, as a means of accomplishing or facilitating access, exchange, and use of electronic health information for public health purposes including but not limited to syndromic surveillance.</P>
+<P>(v) Issuing login credentials or user accounts for independent healthcare professionals who furnish services in a healthcare facility to use the facility's electronic health record or other health IT system(s) in: furnishing, documenting, and accurately billing for care furnished in the facility; participating in clinical education or improvement activities conducted by or in the healthcare facility; or receiving training in use of the healthcare facility's health IT system(s).</P>
+<P>(3) Consulting and legal services arrangements as follows:</P>
+<P>(i) Legal services furnished by outside counsel&#x2014;when furnishing legal services to a client in any matter or matters pertaining to the client's seeking, assessing, selecting, or resolving disputes over contracts or other arrangements by which the client obtains use of certified health IT. Outside counsel also does not offer health IT when facilitating limited access or use of a client's health IT by independent expert witnesses engaged by the outside counsel, opposing parties' counsel and experts, and special masters and court personnel, as appropriate to legal discovery.</P>
+<P>(ii) Health IT consultant assistance with selection, implementation, and use of health IT &#x2014;furnished to a health IT customer or user to help the customer do (or to do on behalf of a customer) any or all of the following with respect to any health IT product that the consultant does not sell or resell, license or relicense, or otherwise supply to the customer under any arrangement on a commercial basis or otherwise:</P>
+<P>(A) Define the business needs of the customer or user or evaluate health IT product(s) against such business needs, or both;</P>
+<P>(B) Negotiate for the purchase, lease, license, or other arrangement under which the health IT product(s) will be used; or</P>
+<P>(C) Oversee or carry out configuration, implementation, or operation of health IT product(s).</P>
+<P>(iii) Comprehensive and predominantly non-health IT administrative or operations management services&#x2014;when an individual or entity furnishes a health care provider with administrative or operational management consultant services and the consultant acts as the agent of the provider or otherwise acts on behalf of the provider in dealings with one or more health IT developer(s) or vendor(s), or managing the day-to-day operations and administrative duties for the health IT, or both. To be consistent with this subparagraph, such services must be furnished as part of a comprehensive array of predominantly non-health IT administrative and operational functions that would otherwise be executed by the health care provider.</P>
+<P><I>Permissible purpose</I> means a purpose for which a person is authorized, permitted, or required to access, exchange, or use electronic health information under applicable law.</P>
+<P><I>Person</I> is defined as it is in 45 CFR 160.103.</P>
+<P><I>Practice</I> means an act or omission by an actor.</P>
+<P><I>Reproductive health care</I> means health care, as defined in 45 CFR 160.103, that affects the health of an individual in all matters relating to the reproductive system and to its functions and processes. This definition shall not be construed to set forth a standard of care for or regulate what constitutes clinically appropriate reproductive health care.</P>
+<P><I>Use</I> means the ability for electronic health information, once accessed or exchanged, to be understood and acted upon.</P>
+<CITA TYPE="N">[85 FR 25955, May 1, 2020, as amended at 89 FR 1435, Jan. 9, 2024; 89 FR 54717, July 1, 2024; 89 FR 102564, Dec. 17, 2024]
+</CITA>
+</DIV8>
+
+<DIV8 N="171.103" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.103&quot;,&quot;citation&quot;:&quot;45 CFR 171.103&quot;}">
+<HEAD>&#xA7; 171.103 Information blocking.</HEAD>
+<P>(a) Information blocking means a practice that except as required by law or covered by an exception set forth in subparts B, C, or D of this part, is likely to interfere with access, exchange, or use of electronic health information; and</P>
+<P>(b) If conducted by:</P>
+<P>(1) A health IT developer of certified health IT, health information network or health information exchange, such developer, network or exchange knows, or should know, that such practice is likely to interfere with access, exchange, or use of electronic health information; or</P>
+<P>(2) A health care provider, such provider knows that such practice is unreasonable and is likely to interfere with access, exchange, or use of electronic health information.</P>
+<CITA TYPE="N">[89 FR 1436, Jan. 9, 2024]
+</CITA>
+</DIV8>
+
+</DIV6>
+<DIV6 N="B" TYPE="SUBPART" VOLUME="2" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-45/part-171/subpart-B&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;45 CFR Part 171 Subpart B&amp;quot;}">
+<HEAD>Subpart B&#x2014;Exceptions That Involve Not Fulfilling Requests to Access, Exchange, or Use Electronic Health Information</HEAD>
+<DIV8 N="171.200" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.200&quot;,&quot;citation&quot;:&quot;45 CFR 171.200&quot;}">
+<HEAD>&#xA7; 171.200 Availability and effect of exceptions.</HEAD>
+<P>A practice shall not be treated as information blocking if the actor satisfies an exception to the information blocking provision as set forth in this subpart B by meeting all applicable requirements and conditions of the exception at all relevant times.</P>
+</DIV8>
+
+<DIV8 N="171.201" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.201&quot;,&quot;citation&quot;:&quot;45 CFR 171.201&quot;}">
+<HEAD>&#xA7; 171.201 Preventing harm exception&#x2014;when will an actor's practice that is likely to interfere with the access, exchange, or use of electronic health information in order to prevent harm not be considered information blocking?</HEAD>
+<P>An actor's practice that is likely to interfere with the access, exchange, or use of electronic health information in order to prevent harm will not be considered information blocking when the practice meets the conditions in paragraphs (a) and (b) of this section, satisfies at least one condition from each of paragraphs (c), (d), and (f) of this section, and also meets the condition in paragraph (e) of this section when applicable.</P>
+<P>(a) <I>Reasonable belief.</I> The actor engaging in the practice must hold a reasonable belief that the practice will substantially reduce a risk of harm to a patient or another natural person that would otherwise arise from the access, exchange, or use of electronic health information affected by the practice. For purposes of this section, &#x201C;patient&#x201D; means a natural person who is the subject of the electronic health information affected by the practice.</P>
+<P>(b) <I>Practice breadth.</I> The practice must be no broader than necessary to substantially reduce the risk of harm that the practice is implemented to reduce.</P>
+<P>(c) <I>Type of risk.</I> The risk of harm must:</P>
+<P>(1) Be determined on an individualized basis in the exercise of professional judgment by a licensed health care professional who has a current or prior clinician-patient relationship with the patient whose electronic health information is affected by the determination; <I>or</I></P>
+<P>(2) Arise from data that is known or reasonably suspected to be misidentified or mismatched, corrupt due to technical failure, or erroneous for another reason.</P>
+<P>(d) <I>Type of harm.</I> The type of harm must be one that could serve as grounds for a covered entity (as defined in &#xA7; 160.103 of this title) to deny access (as the term &#x201C;access&#x201D; is used in part 164 of this title) to an individual's protected health information under:</P>
+<P>(1) Section 164.524(a)(3)(iii) of this title where the practice is likely to, or in fact does, interfere with access, exchange, or use (as these terms are defined in &#xA7; 171.102) of the patient's electronic health information by their legal representative (including but not limited to personal representatives recognized pursuant to 45 CFR 164.502) and the practice is implemented pursuant to an individualized determination of risk of harm consistent with paragraph (c)(1) of this section;</P>
+<P>(2) Section 164.524(a)(3)(ii) of this title where the practice is likely to, or in fact does, interfere with the patient's or their legal representative's access to, use or exchange (as these terms are defined in &#xA7; 171.102) of information that references another natural person and the practice is implemented pursuant to an individualized determination of risk of harm consistent with paragraph (c)(1) of this section;</P>
+<P>(3) Section 164.524(a)(3)(i) of this title where the practice is likely to, or in fact does, interfere with the patient's access, exchange, or use (as these terms are defined in &#xA7; 171.102) of their own electronic health information, regardless of whether the risk of harm that the practice is implemented to substantially reduce is consistent with paragraph (c)(1) or (2) of this section; or</P>
+<P>(4) Section 164.524(a)(3)(i) of this title where the practice is likely to, or in fact does, interfere with a legally permissible access, exchange, or use (as these terms are defined in &#xA7; 171.102) of electronic health information not described in paragraph (d)(1), (2), or (3) of this section, and regardless of whether the risk of harm the practice is implemented to substantially reduce is consistent with paragraph (c)(1) or (2) of this section.</P>
+<P>(e) <I>Patient right to request review of individualized determination of risk of harm.</I> Where the risk of harm is consistent with paragraph (c)(1) of this section, the actor must implement the practice in a manner consistent with any rights the individual patient whose electronic health information is affected may have under &#xA7; 164.524(a)(4) of this title, or any Federal, State, or tribal law, to have the determination reviewed and potentially reversed.</P>
+<P>(f) <I>Practice implemented based on an organizational policy or a determination specific to the facts and circumstances.</I> The practice must be consistent with an organizational policy that meets paragraph (f)(1) of this section or, in the absence of an organizational policy applicable to the practice or to its use in particular circumstances, the practice must be based on a determination that meets paragraph (f)(2) of this section.</P>
+<P>(1) An organizational policy must:</P>
+<P>(i) Be in writing;</P>
+<P>(ii) Be based on relevant clinical, technical, and other appropriate expertise;</P>
+<P>(iii) Be implemented in a consistent and non-discriminatory manner; and</P>
+<P>(iv) Conform each practice to the conditions in paragraphs (a) and (b) of this section, as well as the conditions in paragraphs (c) through (e) of this section that are applicable to the practice and its use.</P>
+<P>(2) A determination must:</P>
+<P>(i) Be based on facts and circumstances known or reasonably believed by the actor at the time the determination was made and while the practice remains in use; and</P>
+<P>(ii) Be based on expertise relevant to implementing the practice consistent with the conditions in paragraphs (a) and (b) of this section, as well as the conditions in paragraphs (c) through (e) of this section that are applicable to the practice and its use in particular circumstances.</P>
+</DIV8>
+
+<DIV8 N="171.202" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.202&quot;,&quot;citation&quot;:&quot;45 CFR 171.202&quot;}">
+<HEAD>&#xA7; 171.202 Privacy exception&#x2014;When will an actor's practice of not fulfilling a request to access, exchange, or use electronic health information in order to protect an individual's privacy not be considered information blocking?</HEAD>
+<P>An actor's practice of not fulfilling a request to access, exchange, or use electronic health information in order to protect an individual's privacy will not be considered information blocking when the practice meets all of the requirements of at least one of the sub-exceptions in paragraphs (b) through (e) of this section.</P>
+<P>(a) <I>Definitions in this section.</I> (1) The term <I>HIPAA Privacy Rule</I> as used in this section means 45 CFR parts 160 and 164.</P>
+<P>(2) The term <I>individual</I> as used in this section means one or more of the following&#x2014;</P>
+<P>(i) An individual as defined by 45 CFR 160.103.</P>
+<P>(ii) Any other natural person who is the subject of the electronic health information being accessed, exchanged, or used.</P>
+<P>(iii) A person who legally acts on behalf of a person described in paragraph (a)(2)(i) of this section in making decisions related to health care as a personal representative, in accordance with 45 CFR 164.502(g).</P>
+<P>(iv) A person who is a legal representative of and can make health care decisions on behalf of any person described in paragraph (a)(2)(i) or (ii) of this section.</P>
+<P>(v) An executor, administrator, or other person having authority to act on behalf of a deceased person described in paragraph (a)(2)(i) or (ii) of this section or the individual's estate under State or other law.</P>
+<P>(b) <I>Sub-exception&#x2014;precondition not satisfied.</I> To qualify for the exception on the basis that State or Federal law requires one or more preconditions for providing access, exchange, or use of electronic health information that have not been satisfied, the following requirements must be met&#x2014;</P>
+<P>(1) The actor's practice is tailored to the applicable precondition not satisfied, is implemented in a consistent and non-discriminatory manner, and either:</P>
+<P>(i) Conforms to the actor's organizational policies and procedures that:</P>
+<P>(A) Are in writing;</P>
+<P>(B) Specify the criteria to be used by the actor to determine when the precondition would be satisfied and, as applicable, the steps that the actor will take to satisfy the precondition; and</P>
+<P>(C) Are implemented by the actor, including by providing training on the policies and procedures; or</P>
+<P>(ii) Are documented by the actor, on a case-by-case basis, identifying the criteria used by the actor to determine when the precondition would be satisfied, any criteria that were not met, and the reason why the criteria were not met.</P>
+<P>(2) If the precondition relies on the provision of a consent or authorization from an individual and the actor has received a version of such a consent or authorization that does not satisfy all elements of the precondition required under applicable law, the actor must:</P>
+<P>(i) Use reasonable efforts within its control to provide the individual with a consent or authorization form that satisfies all required elements of the precondition or provide other reasonable assistance to the individual to satisfy all required elements of the precondition; and</P>
+<P>(ii) Not improperly encourage or induce the individual to withhold the consent or authorization.</P>
+<P>(3) For purposes of determining whether the actor's privacy policies and procedures and actions satisfy the requirements of paragraphs (b)(1)(i) and (b)(2) above when the actor's operations are subject to multiple laws which have inconsistent preconditions, they shall be deemed to satisfy the requirements of the paragraphs if the actor has adopted uniform privacy policies and procedures to address the more restrictive preconditions.</P>
+<P>(c) <I>Sub-exception&#x2014;health IT developer of certified health IT not covered by HIPAA.</I> If the actor is a health IT developer of certified health IT that is not required to comply with the HIPAA Privacy Rule, when engaging in a practice that promotes the privacy interests of an individual, the actor's organizational privacy policies must have been disclosed to the individuals and entities that use the actor's product or service before they agreed to use them, and must implement the practice according to a process described in the organizational privacy policies. The actor's organizational privacy policies must:</P>
+<P>(1) Comply with State and Federal laws, as applicable;</P>
+<P>(2) Be tailored to the specific privacy risk or interest being addressed; and</P>
+<P>(3) Be implemented in a consistent and non-discriminatory manner.</P>
+<P>(d) <I>Sub-exception</I>&#x2014;<I>denial of an individual's request for their electronic health information consistent with 45 CFR 164.524(a)(1) and (2).</I> If an individual requests electronic health information under the right of access provision under 45 CFR 164.524(a)(1) from an actor that must comply with 45 CFR 164.524(a)(1), the actor's practice must be consistent with 45 CFR 164.524(a)(2).</P>
+<P>(e) <I>Sub-exception&#x2014;individual's request not to share EHI.</I> An actor may elect not to provide access, exchange, or use of an individual's electronic health information if the following requirements are met&#x2014;</P>
+<P>(1) The individual requests that the actor not provide such access, exchange, or use of electronic health information without any improper encouragement or inducement of the request by the actor;</P>
+<P>(2) The actor documents the request within a reasonable time period;</P>
+<P>(3) The actor's practice is implemented in a consistent and non-discriminatory manner; and</P>
+<P>(4) An actor may terminate an individual's request for a restriction to not provide such access, exchange, or use of the individual's electronic health information only if:</P>
+<P>(i) The individual agrees to the termination in writing or requests the termination in writing;</P>
+<P>(ii) The individual orally agrees to the termination and the oral agreement is documented by the actor; or</P>
+<P>(iii) The actor informs the individual that it is terminating its agreement to not provide such access, exchange, or use of the individual's electronic health information except that such termination is:</P>
+<P>(A) Not effective to the extent prohibited by applicable Federal or State law; and</P>
+<P>(B) Only applicable to electronic health information created or received after the actor has so informed the individual of the termination.</P>
+<CITA TYPE="N">[85 FR 25955, May 1, 2020, as amended at 89 FR 102564, Dec. 17, 2024]
+</CITA>
+</DIV8>
+
+<DIV8 N="171.203" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.203&quot;,&quot;citation&quot;:&quot;45 CFR 171.203&quot;}">
+<HEAD>&#xA7; 171.203 Security exception&#x2014;When will an actor's practice that is likely to interfere with the access, exchange, or use of electronic health information in order to protect the security of electronic health information not be considered information blocking?</HEAD>
+<P>An actor's practice that is likely to interfere with the access, exchange, or use of electronic health information in order to protect the security of electronic health information will not be considered information blocking when the practice meets the conditions in paragraphs (a), (b), and (c) of this section, and in addition meets either the condition in paragraph (d) of this section or the condition in paragraph (e) of this section.</P>
+<P>(a) The practice must be directly related to safeguarding the confidentiality, integrity, and availability of electronic health information.</P>
+<P>(b) The practice must be tailored to the specific security risk being addressed.</P>
+<P>(c) The practice must be implemented in a consistent and non-discriminatory manner.</P>
+<P>(d) If the practice implements an organizational security policy, the policy must&#x2014;</P>
+<P>(1) Be in writing;</P>
+<P>(2) Have been prepared on the basis of, and be directly responsive to, security risks identified and assessed by or on behalf of the actor;</P>
+<P>(3) Align with one or more applicable consensus-based standards or best practice guidance; and</P>
+<P>(4) Provide objective timeframes and other parameters for identifying, responding to, and addressing security incidents.</P>
+<P>(e) If the practice does not implement an organizational security policy, the actor must have made a determination in each case, based on the particularized facts and circumstances, that:</P>
+<P>(1) The practice is necessary to mitigate the security risk to electronic health information; and</P>
+<P>(2) There are no reasonable and appropriate alternatives to the practice that address the security risk that are less likely to interfere with access, exchange or use of electronic health information.</P>
+<CITA TYPE="N">[85 FR 25955, May 1, 2020, as amended at 85 FR 70085, Nov. 4, 2020]
+</CITA>
+</DIV8>
+
+<DIV8 N="171.204" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.204&quot;,&quot;citation&quot;:&quot;45 CFR 171.204&quot;}">
+<HEAD>&#xA7; 171.204 Infeasibility exception&#x2014;When will an actor's practice of not fulfilling a request to access, exchange, or use electronic health information due to the infeasibility of the request not be considered information blocking?</HEAD>
+<P>An actor's practice of not fulfilling a request to access, exchange, or use electronic health information due to the infeasibility of the request will not be considered information blocking when the practice meets one of the conditions in paragraph (a) of this section and meets the requirements in paragraph (b) of this section.</P>
+<P>(a) <I>Conditions</I>&#x2014;(1) <I>Uncontrollable events.</I> The actor cannot fulfill the request for access, exchange, or use of electronic health information because of a natural or human-made disaster, public health emergency, public safety incident, war, terrorist attack, civil insurrection, strike or other labor unrest, telecommunication or internet service interruption, or act of military, civil or regulatory authority that in fact negatively impacts the actor's ability to fulfill the request.</P>
+<P>(2) <I>Segmentation.</I> The actor cannot fulfill the request for access, exchange, or use of electronic health information because the actor cannot unambiguously segment the requested electronic health information from electronic health information that:</P>
+<P>(i) Is not permitted by applicable law to be made available; or</P>
+<P>(ii) May be withheld in accordance with 45 CFR 171.201, 171.202, or 171.206 of this part.</P>
+<P>(3) <I>Third party seeking modification use.</I> The request is to enable use of EHI in order to modify EHI provided that the request for such use is not from a health care provider requesting such use from an actor that is its business associate.</P>
+<P>(4) <I>Manner exception exhausted.</I> The actor is unable to fulfill a request for access, exchange, or use of electronic health information because paragraphs (a)(4)(i), (ii), and (iii) of this section are all true; and the actor complied with paragraph (a)(4)(iv) of this section.</P>
+<P>(i) The actor could not reach agreement with a requestor in accordance with &#xA7; 171.301(a) or was technically unable to fulfill a request for electronic health information in the manner requested.</P>
+<P>(ii) The actor offered at least two alternative manners in accordance with &#xA7; 171.301(b), one of which must use either technology certified to standard(s) adopted in part 170 (&#xA7; 171.301(b)(1)(i)) or published content and transport standards consistent with &#xA7; 171.301(b)(1)(ii).</P>
+<P>(iii) The actor does not provide the same access, exchange, or use of the requested electronic health information to a substantial number of individuals or entities that are similarly situated to the requester.</P>
+<P>(iv) In determining whether a requestor is similarly situated under paragraph (a)(4)(iii), an actor shall not discriminate based on:</P>
+<P>(A) Whether the requestor is an individual as defined in &#xA7; 171.202(a)(2)</P>
+<P>(B) The health care provider type and size; and</P>
+<P>(C) Whether the requestor is a competitor of the actor or whether providing such access, exchange, or use, would facilitate competition with the actor.</P>
+<P>(5) <I>Infeasible under the circumstances.</I> (i) The actor demonstrates, prior to responding to the request pursuant to paragraph (b) of this section, through a contemporaneous written record or other documentation, its consistent and non-discriminatory consideration of the following factors that led to its determination that complying with the request would be infeasible under the circumstances:</P>
+<P>(A) The type of electronic health information and the purposes for which it may be needed;</P>
+<P>(B) The cost to the actor of complying with the request in the manner requested;</P>
+<P>(C) The financial and technical resources available to the actor;</P>
+<P>(D) Whether the actor's practice is non-discriminatory and the actor provides the same access, exchange, or use of electronic health information to its companies or to its customers, suppliers, partners, and other persons with whom it has a business relationship;</P>
+<P>(E) Whether the actor owns or has control over a predominant technology, platform, health information exchange, or health information network through which electronic health information is accessed or exchanged; and</P>
+<P>(F) Why the actor was unable to provide access, exchange, or use of electronic health information consistent with the exception in &#xA7; 171.301.</P>
+<P>(ii) In determining whether the circumstances were infeasible under paragraph (a)(3)(i) of this section, it shall not be considered whether the manner requested would have:</P>
+<P>(A) Facilitated competition with the actor; or</P>
+<P>(B) Prevented the actor from charging a fee or resulted in a reduced fee.</P>
+<P>(b) <I>Responding to requests.</I> If an actor does not fulfill a request for access, exchange, or use of electronic health information for any of the reasons provided in paragraph (a) of this section, the actor must, within ten business days of receipt of the request, provide to the requestor in writing the reason(s) why the request is infeasible.</P>
+<CITA TYPE="N">[85 FR 25955, May 1, 2020, as amended at 89 FR 1436, Jan. 9, 2024; 89 FR 102564, Dec. 17, 2024]
+</CITA>
+</DIV8>
+
+<DIV8 N="171.205" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.205&quot;,&quot;citation&quot;:&quot;45 CFR 171.205&quot;}">
+<HEAD>&#xA7; 171.205 Health IT performance exception&#x2014;When will an actor's practice that is implemented to maintain or improve health IT performance and that is likely to interfere with the access, exchange, or use of electronic health information not be considered information blocking?</HEAD>
+<P>An actor's practice that is implemented to maintain or improve health IT performance and that is likely to interfere with the access, exchange, or use of electronic health information will not be considered information blocking when the practice meets a condition in paragraph (a), (b), (c), or (d) of this section, as applicable to the particular practice and the reason for its implementation.</P>
+<P>(a) <I>Maintenance and improvements to health IT.</I> When an actor implements a practice that makes health IT under that actor's control temporarily unavailable, or temporarily degrades the performance of health IT, in order to perform maintenance or improvements to the health IT, the actor's practice must be&#x2014;</P>
+<P>(1) Implemented for a period of time no longer than necessary to complete the maintenance or improvements for which the health IT was made unavailable or the health IT's performance degraded;</P>
+<P>(2) Implemented in a consistent and non-discriminatory manner; and</P>
+<P>(3) If the unavailability or degradation is initiated by a health IT developer of certified health IT, health information exchange, or health information network:</P>
+<P>(i) <I>Planned.</I> Consistent with existing service level agreements between the individual or entity to whom the health IT developer of certified health IT, health information exchange, or health information network supplied the health IT; or</P>
+<P>(ii) <I>Unplanned.</I> Consistent with existing service level agreements between the individual or entity; or agreed to by the individual or entity to whom the health IT developer of certified health IT, health information exchange, or health information network supplied the health IT.</P>
+<P>(b) <I>Assured level of performance.</I> An actor may take action against a third-party application that is negatively impacting the health IT's performance, provided that the practice is&#x2014;</P>
+<P>(1) For a period of time no longer than necessary to resolve any negative impacts;</P>
+<P>(2) Implemented in a consistent and non-discriminatory manner; and</P>
+<P>(3) Consistent with existing service level agreements, where applicable.</P>
+<P>(c) <I>Practices that prevent harm.</I> If the unavailability of health IT for maintenance or improvements is initiated by an actor in response to a risk of harm to a patient or another person, the actor does not need to satisfy the requirements of this section, but must comply with all requirements of &#xA7; 171.201 at all relevant times to qualify for an exception.</P>
+<P>(d) <I>Security-related practices.</I> If the unavailability of health IT for maintenance or improvements is initiated by an actor in response to a security risk to electronic health information, the actor does not need to satisfy the requirements of this section, but must comply with all requirements of &#xA7; 171.203 at all relevant times to qualify for an exception.</P>
+</DIV8>
+
+<DIV8 N="171.206" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.206&quot;,&quot;citation&quot;:&quot;45 CFR 171.206&quot;}">
+<HEAD>&#xA7; 171.206 Protecting Care Access&#x2014;When will an actor's practice that is likely to interfere with the access, exchange, or use of electronic health information in order to reduce potential exposure to legal action not be considered information blocking?</HEAD>
+<P>An actor's practice that is implemented to reduce potential exposure to legal action will not be considered information blocking when the practice satisfies the condition in paragraph (a) of this section and also satisfies the requirements of at least one of the conditions in paragraphs (b) or (c) of this section.</P>
+<P>(a) <I>Threshold condition.</I> To satisfy this condition, a practice must meet each of the following requirements:</P>
+<P>(1) <I>Belief.</I> The practice is undertaken based on the actor's good faith belief that:</P>
+<P>(i) Persons seeking, obtaining, providing, or facilitating reproductive health care are at risk of being potentially exposed to legal action that could arise as a consequence of particular access, exchange, or use of specific electronic health information; and</P>
+<P>(ii) Specific practices likely to interfere with such access, exchange, or use of such electronic health information could reduce that risk.</P>
+<P>(2) <I>Tailoring.</I> The practice is no broader than necessary to reduce the risk of potential exposure to legal action that the actor in good faith believes could arise from the particular access, exchange, or use of the specific electronic health information.</P>
+<P>(3) <I>Implementation.</I> The practice is implemented either consistent with an organizational policy that meets paragraph (a)(3)(i) of this section or pursuant to a case-by-case determination that meets paragraph (a)(3)(ii) of this section.</P>
+<P>(i) An organizational policy must:</P>
+<P>(A) Be in writing;</P>
+<P>(B) Be based on relevant clinical, technical, and other appropriate expertise;</P>
+<P>(C) Identify the connection or relationship between the interference with particular access, exchange, or use of specific electronic health information and the risk of potential exposure to legal action that the actor believes the interference could reduce;</P>
+<P>(D) Be implemented in a consistent and non-discriminatory manner; and</P>
+<P>(E) Conform to the requirements in paragraphs (a)(1) and (2) of this section and to the requirements of at least one of the conditions in paragraphs (b) or (c) of this section that are applicable to the prohibition of the access, exchange, or use of the electronic health information.</P>
+<P>(ii) A case-by-case determination:</P>
+<P>(A) Is made by the actor in the absence of an organizational policy applicable to the particular situation;</P>
+<P>(B) Is based on facts and circumstances known to, or believed in good faith by, the actor at the time of the determination;</P>
+<P>(C) Conforms to the conditions in paragraphs (a)(1) and (2) of this section; and</P>
+<P>(D) Is documented either before or contemporaneous with engaging in any practice based on the determination. Documentation of the determination must identify the connection or relationship between the interference with particular access, exchange, or use of specific electronic health information and the risk of potential exposure to legal action.</P>
+<P>(4) <I>Another actor's reliance on good faith belief.</I> For purposes of this section, an actor who is a business associate of, or otherwise maintains EHI on behalf of, another actor may rely on the good faith belief consistent with paragraph (a)(1) of the section and organizational policy or case-by-case determinations consistent with paragraph (a)(3) of this section of the actor on whose behalf relevant EHI is maintained.</P>
+<P>(b) <I>Patient protection condition.</I> When implemented for the purpose of reducing the patient's risk of potential exposure to legal action, the practice must:</P>
+<P>(1) Affect only the access, exchange, or use of specific electronic health information the actor in good faith believes could expose the patient to legal action because the electronic health information shows, or would carry a substantial risk of supporting a reasonable inference, that the patient:</P>
+<P>(i) Obtained reproductive health care;</P>
+<P>(ii) Inquired about or expressed an interest in seeking reproductive health care; or</P>
+<P>(iii) Has any health condition(s) or history for which reproductive health care is often sought, obtained, or medically indicated.</P>
+<P>(2) Be subject to nullification by an explicit request or directive from the patient that the access, exchange, or use of the specific electronic health information occur despite the risk(s) to the patient that the actor has identified.</P>
+<P>(3) For purposes of paragraph (b)(1) and (2) of this section, &#x201C;patient&#x201D; means the natural person who is the subject of the electronic health information or another natural person referenced in, or identifiable from, the EHI as a person who has sought or obtained reproductive health care.</P>
+<P>(c) <I>Care access condition.</I> When implemented for the purpose of reducing the risk of potential exposure to legal action for one or more licensed health care professionals, other health care providers, or other persons involved in providing or facilitating reproductive health care that is lawful under the circumstances in which such health care is provided, the practice must affect only access, exchange, or use of specific electronic health information that the actor believes could expose a care provider(s) and facilitator(s) to legal action because the information shows, or would carry a substantial risk of supporting a reasonable inference, that they provide or facilitate, or have provided or have facilitated, reproductive health care.</P>
+<P>(d) <I>Presumption.</I> For purposes of determining whether an actor's practice meets paragraph (b)(1)(i) or (c) of this section, care provided by someone other than the actor is presumed to have been lawful unless the actor has actual knowledge that the care was not lawful under the circumstances in which such care is provided.</P>
+<P>(e) <I>Definition of legal action.</I> As used in this section, legal action means any one or more of the following&#x2014;</P>
+<P>(1) A criminal, civil, or administrative investigation into any person for the mere act of seeking, obtaining, providing, or facilitating reproductive health care;</P>
+<P>(2) A civil or criminal action brought in a court to impose liability on any person for the mere act of seeking, obtaining, providing, or facilitating reproductive health care; or</P>
+<P>(3) An administrative action or proceeding against any person for the mere act of seeking, obtaining, providing, or facilitating reproductive health care.</P>
+<CITA TYPE="N">[89 FR 102564, Dec. 17, 2024]
+</CITA>
+</DIV8>
+
+</DIV6>
+<DIV6 N="C" TYPE="SUBPART" VOLUME="2" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-45/part-171/subpart-C&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;45 CFR Part 171 Subpart C&amp;quot;}">
+<HEAD>Subpart C&#x2014;Exceptions That Involve Procedures for Fulfilling Requests to Access, Exchange, or Use Electronic Health Information</HEAD>
+<DIV8 N="171.300" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.300&quot;,&quot;citation&quot;:&quot;45 CFR 171.300&quot;}">
+<HEAD>&#xA7; 171.300 Availability and effect of exceptions.</HEAD>
+<P>A practice shall not be treated as information blocking if the actor satisfies an exception to the information blocking provision as set forth in this subpart C by meeting all applicable requirements and conditions of the exception at all relevant times.</P>
+</DIV8>
+
+<DIV8 N="171.301" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.301&quot;,&quot;citation&quot;:&quot;45 CFR 171.301&quot;}">
+<HEAD>&#xA7; 171.301 Manner exception&#x2014;When will an actor's practice of limiting the manner in which it fulfills a request to access, exchange, or use electronic health information not be considered information blocking?</HEAD>
+<P>An actor's practice of limiting the manner in which it fulfills a request to access, exchange, or use electronic health information will not be considered information blocking when the practice follows the conditions of this section.</P>
+<P>(a) <I>Manner requested.</I> (1) An actor must fulfill a request for electronic health information in any manner requested, unless the actor is technically unable to fulfill the request or cannot reach agreeable terms with the requestor to fulfill the request in the manner requested.</P>
+<P>(2) If an actor fulfills a request for electronic health information in any manner requested:</P>
+<P>(i) Any fees charged by the actor in relation to fulfilling the request are not required to satisfy the exception in &#xA7; 171.302; and</P>
+<P>(ii) Any license of interoperability elements granted by the actor in relation to fulfilling the request is not required to satisfy the exception in &#xA7; 171.303.</P>
+<P>(b) <I>Alternative manner.</I> If an actor does not fulfill a request for electronic health information in any manner requested because it is technically unable to fulfill the request or cannot reach agreeable terms with the requestor to fulfill the request in the manner requested, the actor must fulfill the request in an alternative manner, as follows:</P>
+<P>(1) The actor must fulfill the request without unnecessary delay in the following order of priority, starting with paragraph (b)(1)(i) of this section and only proceeding to the next consecutive paragraph if the actor is technically unable to fulfill the request in the manner identified in a paragraph.</P>
+<P>(i) Using technology certified to standard(s) adopted in part 170 that is specified by the requestor.</P>
+<P>(ii) Using content and transport standards specified by the requestor and published by:</P>
+<P>(A) The Federal Government; or</P>
+<P>(B) A standards developing organization accredited by the American National Standards Institute.</P>
+<P>(iii) Using an alternative machine-readable format, including the means to interpret the electronic health information, agreed upon with the requestor.</P>
+<P>(2) Any fees charged by the actor in relation to fulfilling the request are required to satisfy the exception in &#xA7; 171.302.</P>
+<P>(3) Any license of interoperability elements granted by the actor in relation to fulfilling the request is required to satisfy the exception in &#xA7; 171.303.</P>
+<CITA TYPE="N">[89 FR 1437, Jan. 9, 2024]
+</CITA>
+</DIV8>
+
+<DIV8 N="171.302" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.302&quot;,&quot;citation&quot;:&quot;45 CFR 171.302&quot;}">
+<HEAD>&#xA7; 171.302 Fees exception&#x2014;When will an actor's practice of charging fees for accessing, exchanging, or using electronic health information not be considered information blocking?</HEAD>
+<P>An actor's practice of charging fees, including fees that result in a reasonable profit margin, for accessing, exchanging, or using electronic health information will not be considered information blocking when the practice meets the conditions in paragraph (a) of this section, does not include any of the excluded fees in paragraph (b) of this section, and, as applicable, meets the condition in paragraph (c) of this section.</P>
+<P>(a) <I>Basis for fees condition.</I> (1) The fees an actor charges must be&#x2014;</P>
+<P>(i) Based on objective and verifiable criteria that are uniformly applied for all similarly situated classes of persons or entities and requests;</P>
+<P>(ii) Reasonably related to the actor's costs of providing the type of access, exchange, or use of electronic health information to, or at the request of, the person or entity to whom the fee is charged;</P>
+<P>(iii) Reasonably allocated among all similarly situated persons or entities to whom the technology or service is supplied, or for whom the technology is supported; and</P>
+<P>(iv) Based on costs not otherwise recovered for the same instance of service to a provider and third party.</P>
+<P>(2) The fees an actor charges must not be based on&#x2014;</P>
+<P>(i) Whether the requestor or other person is a competitor, potential competitor, or will be using the electronic health information in a way that facilitates competition with the actor;</P>
+<P>(ii) Sales, profit, revenue, or other value that the requestor or other persons derive or may derive from the access, exchange, or use of the electronic health information;</P>
+<P>(iii) Costs the actor incurred due to the health IT being designed or implemented in a non-standard way, unless the requestor agreed to the fee associated with the non-standard design or implementation to access, exchange, or use the electronic health information;</P>
+<P>(iv) Costs associated with intangible assets other than the actual development or acquisition costs of such assets;</P>
+<P>(v) Opportunity costs unrelated to the access, exchange, or use of electronic health information; or</P>
+<P>(vi) Any costs that led to the creation of intellectual property, if the actor charged a royalty for that intellectual property pursuant to &#xA7; 171.303 and that royalty included the development costs for the creation of the intellectual property.</P>
+<P>(b) <I>Excluded fees condition.</I> This exception does not apply to&#x2014;</P>
+<P>(1) A fee prohibited by 45 CFR 164.524(c)(4);</P>
+<P>(2) A fee based in any part on the electronic access of an individual's EHI by the individual, their personal representative, or another person or entity designated by the individual;</P>
+<P>(3) A fee to perform an export of electronic health information via the capability of health IT certified to &#xA7; 170.315(b)(10) of this subchapter for the purposes of switching health IT or to provide patients their electronic health information; and</P>
+<P>(4) A fee to export or convert data from an EHR technology that was not agreed to in writing at the time the technology was acquired.</P>
+<P>(c) <I>Compliance with the Conditions of Certification condition.</I> Notwithstanding any other provision of this exception, if the actor is a health IT developer subject to the Conditions of Certification in &#xA7; 170.402(a)(4), &#xA7; 170.404, or both of this subchapter, the actor must comply with all requirements of such conditions for all practices and at all relevant times.</P>
+<P>(d) <I>Definition of Electronic access.</I> The following definition applies to this section:</P>
+<P><I>Electronic access</I> means an internet-based method that makes electronic health information available at the time the electronic health information is requested and where no manual effort is required to fulfill the request.</P>
+</DIV8>
+
+<DIV8 N="171.303" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.303&quot;,&quot;citation&quot;:&quot;45 CFR 171.303&quot;}">
+<HEAD>&#xA7; 171.303 Licensing exception&#x2014;When will an actor's practice to license interoperability elements in order for electronic health information to be accessed, exchanged, or used not be considered information blocking?</HEAD>
+<P>An actor's practice to license interoperability elements for electronic health information to be accessed, exchanged, or used will not be considered information blocking when the practice meets all of the following conditions.</P>
+<P>(a) <I>Negotiating a license conditions.</I> Upon receiving a request to license an interoperability element for the access, exchange, or use of electronic health information, the actor must&#x2014;</P>
+<P>(1) Begin license negotiations with the requestor within 10 business days from receipt of the request; and</P>
+<P>(2) Negotiate a license with the requestor, subject to the licensing conditions in paragraph (b) of this section, within 30 business days from receipt of the request.</P>
+<P>(b) <I>Licensing conditions.</I> The license provided for the interoperability element(s) needed to access, exchange, or use electronic health information must meet the following conditions:</P>
+<P>(1) <I>Scope of rights.</I> The license must provide all rights necessary to:</P>
+<P>(i) Enable the access, exchange, or use of electronic health information; and</P>
+<P>(ii) Achieve the intended access, exchange, or use of electronic health information via the interoperability element(s).</P>
+<P>(2) <I>Reasonable royalty.</I> If the actor charges a royalty for the use of the interoperability elements described in paragraph (a) of this section, the royalty must be reasonable and comply with the following requirements:</P>
+<P>(i) The royalty must be nondiscriminatory, consistent with paragraph (b)(3) of this section.</P>
+<P>(ii) The royalty must be based solely on the independent value of the actor's technology to the licensee's products, not on any strategic value stemming from the actor's control over essential means of accessing, exchanging, or using electronic health information.</P>
+<P>(iii) If the actor has licensed the interoperability element through a standards developing organization in accordance with such organization's policies regarding the licensing of standards-essential technologies on terms consistent with those in this exception, the actor may charge a royalty that is consistent with such policies.</P>
+<P>(iv) An actor may not charge a royalty for intellectual property if the actor recovered any development costs pursuant to &#xA7; 171.302 that led to the creation of the intellectual property.</P>
+<P>(3) <I>Non-discriminatory terms.</I> The terms (including royalty terms) on which the actor licenses and otherwise provides the interoperability elements must be non-discriminatory and comply with the following requirements:</P>
+<P>(i) The terms must be based on objective and verifiable criteria that are uniformly applied for all similarly situated classes of persons and requests.</P>
+<P>(ii) The terms must not be based in any part on&#x2014;</P>
+<P>(A) Whether the requestor or other person is a competitor, potential competitor, or will be using electronic health information obtained via the interoperability elements in a way that facilitates competition with the actor; or</P>
+<P>(B) The revenue or other value the requestor may derive from access, exchange, or use of electronic health information obtained via the interoperability elements.</P>
+<P>(4) <I>Collateral terms.</I> The actor must not require the licensee or its agents or contractors to do, or to agree to do, any of the following&#x2014;</P>
+<P>(i) Not compete with the actor in any product, service, or market.</P>
+<P>(ii) Deal exclusively with the actor in any product, service, or market.</P>
+<P>(iii) Obtain additional licenses, products, or services that are not related to or can be unbundled from the requested interoperability elements.</P>
+<P>(iv) License, grant, assign, or transfer to the actor any intellectual property of the licensee.</P>
+<P>(v) Pay a fee of any kind whatsoever, except as described in paragraph (b)(2) of this section, unless the practice meets the requirements of the exception in &#xA7; 171.302.</P>
+<P>(5) <I>Non-disclosure agreement.</I> The actor may require a reasonable non-disclosure agreement that is no broader than necessary to prevent unauthorized disclosure of the actor's trade secrets, provided&#x2014;</P>
+<P>(i) The agreement states with particularity all information the actor claims as trade secrets; and</P>
+<P>(ii) Such information meets the definition of a trade secret under applicable law.</P>
+<P>(c) <I>Additional conditions relating to the provision of interoperability elements.</I> The actor must not engage in any practice that has any of the following purposes or effects.</P>
+<P>(1) Impeding the efficient use of the interoperability elements to access, exchange, or use electronic health information for any permissible purpose.</P>
+<P>(2) Impeding the efficient development, distribution, deployment, or use of an interoperable product or service for which there is actual or potential demand.</P>
+<P>(3) Degrading the performance or interoperability of the licensee's products or services, unless necessary to improve the actor's technology and after affording the licensee a reasonable opportunity to update its technology to maintain interoperability.</P>
+<CITA TYPE="N">[85 FR 25955, May 1, 2020, as amended at 85 FR 70085, Nov. 4, 2020]
+</CITA>
+</DIV8>
+
+</DIV6>
+<DIV6 N="D" TYPE="SUBPART" VOLUME="2" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-45/part-171/subpart-D&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;45 CFR Part 171 Subpart D&amp;quot;}">
+<HEAD>Subpart D&#x2014;Exceptions That Involve Practices Related to Actors' Participation in The Trusted Exchange Framework and Common Agreement (TEFCA<E T="51">SM</E>)</HEAD>
+<SOURCE>
+<HED>Source:</HED><PSPACE>89 FR 1437, Jan. 9, 2024, unless otherwise noted.
+</PSPACE></SOURCE>
+<DIV8 N="171.400" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.400&quot;,&quot;citation&quot;:&quot;45 CFR 171.400&quot;}">
+<HEAD>&#xA7; 171.400 Availability and effect of exceptions.</HEAD>
+<P>A practice shall not be treated as information blocking if the actor satisfies an exception to the information blocking provision as set forth in this subpart D by meeting all applicable requirements and conditions of the exception at all relevant times.</P>
+</DIV8>
+
+<DIV8 N="171.401" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.401&quot;,&quot;citation&quot;:&quot;45 CFR 171.401&quot;}">
+<HEAD>&#xA7; 171.401 Definitions.</HEAD>
+<P><I>Common Agreement</I> has the meaning given to it in 45 CFR 172.102.</P>
+<P><I>Framework Agreement</I> has the meaning given to it in 45 CFR 172.102.</P>
+<P><I>Participant</I> has the meaning given to it in 45 CFR 172.102.</P>
+<P><I>Qualified Health Information Network</I> or <I>QHIN</I> has the meaning given to it in 45 CFR 172.102.</P>
+<P><I>Subparticipant</I> has the meaning given to it in 45 CFR 172.102.</P>
+<CITA TYPE="N">[89 FR 101810, Dec. 16, 2024]
+</CITA>
+</DIV8>
+
+<DIV8 N="171.402" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.402&quot;,&quot;citation&quot;:&quot;45 CFR 171.402&quot;}">
+<HEAD>&#xA7; 171.402 [Reserved]</HEAD>
+</DIV8>
+
+<DIV8 N="171.403" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.403&quot;,&quot;citation&quot;:&quot;45 CFR 171.403&quot;}">
+<HEAD>&#xA7; 171.403 TEFCA manner exception&#x2014;When will an actor's practice of limiting the manner in which it fulfills a request to access, exchange, or use electronic health information to only via TEFCA not be considered information blocking?</HEAD>
+<P>An actor's practice of limiting the manner in which it fulfills a request for access, exchange, or use of electronic health information to only via TEFCA will not be considered information blocking when the practice follows the conditions specified in paragraphs (a) through (d) of this section.</P>
+<P>(a) <I>Mutually part of TEFCA.</I> The actor and requestor are both part of TEFCA.</P>
+<P>(b) <I>Requestor capability.</I> The requestor is capable of such access, exchange, or use of the requested electronic health information from the actor via TEFCA.</P>
+<P>(c) <I>Limitation.</I> The request for access, exchange, or use of EHI is not via the standards adopted in 45 CFR 170.215, including version(s) of those standards approved pursuant to 45 CFR 170.405(b)(8).</P>
+<P>(d) <I>Fees and licensing.</I> (1) Any fees charged by the actor in relation to fulfilling the request are required to satisfy the exception in &#xA7; 171.302; and</P>
+<P>(2) Any license of interoperability elements granted by the actor in relation to fulfilling the request is required to satisfy the exception in &#xA7; 171.303.</P>
+</DIV8>
+
+</DIV6>
+<DIV6 N="E-I" TYPE="SUBPART" VOLUME="2" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-45/part-171/subpart-E-I&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;45 CFR Part 171 Subpart E-I&amp;quot;}">
+<HEAD>Subparts E-I [RESERVED]</HEAD>
+</DIV6>
+<DIV6 N="J" TYPE="SUBPART" VOLUME="2" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-45/part-171/subpart-J&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;45 CFR Part 171 Subpart J&amp;quot;}">
+<HEAD>Subpart J&#x2014;Disincentives for Information Blocking by Health Care Providers</HEAD>
+<SOURCE>
+<HED>Source:</HED><PSPACE>89 FR 54717, July 1, 2024, unless otherwise noted.
+</PSPACE></SOURCE>
+<DIV8 N="171.1000" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.1000&quot;,&quot;citation&quot;:&quot;45 CFR 171.1000&quot;}">
+<HEAD>&#xA7; 171.1000 Scope.</HEAD>
+<P>This subpart sets forth disincentives that an appropriate agency may impose on a health care provider that OIG determines has committed information blocking, and certain procedures related to those disincentives.</P>
+</DIV8>
+
+<DIV8 N="171.1001" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.1001&quot;,&quot;citation&quot;:&quot;45 CFR 171.1001&quot;}">
+<HEAD>&#xA7; 171.1001 Disincentives.</HEAD>
+<P>(a) Centers for Medicare &amp; Medicaid Services may apply the following disincentives:</P>
+<P>(1) An eligible hospital or critical access hospital (CAH) as defined in 42 CFR 495.4 is not a meaningful electronic health record (EHR) user as also defined in 42 CFR 495.4.</P>
+<P>(2) A Merit-based Incentive Payment System (MIPS) eligible clinician as defined in 42 CFR 414.1305, who is also a health care provider as defined in &#xA7; 171.102, is not a meaningful EHR user for MIPS as defined in 42 CFR 414.1305.</P>
+<P>(3) Accountable care organizations (ACOs) who are health care providers as defined in &#xA7; 171.102, ACO participants, and ACO providers/suppliers will be removed from, or denied approval to participate, in the Medicare Shared Savings Program as defined in 42 CFR part 425 for at least 1 year.</P>
+<P>(b) [Reserved]</P>
+</DIV8>
+
+<DIV8 N="171.1002" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.1002&quot;,&quot;citation&quot;:&quot;45 CFR 171.1002&quot;}">
+<HEAD>&#xA7; 171.1002 Notice of disincentive.</HEAD>
+<P>Following referral of a determination of information blocking by OIG, an appropriate agency that imposes a disincentive or disincentives specified in &#xA7; 171.1001 shall send a notice to the health care provider subject to the disincentive or disincentives, via usual methods of communication for the program or payment system under which the disincentive is applied, that includes:</P>
+<P>(a) A description of the practice or practices that formed the basis for the determination of information blocking referred by OIG;</P>
+<P>(b) The basis for the application of the disincentive or disincentives being imposed;</P>
+<P>(c) The effect of each disincentive; and</P>
+<P>(d) Any other information necessary for a health care provider to understand how each disincentive will be implemented.</P>
+</DIV8>
+
+</DIV6>
+<DIV6 N="K" TYPE="SUBPART" VOLUME="2" hierarchy_metadata="{&amp;quot;path&amp;quot;:&amp;quot;/on/_SUBSTITUTE_DATE_/title-45/part-171/subpart-K&amp;quot;,&amp;quot;citation&amp;quot;:&amp;quot;45 CFR Part 171 Subpart K&amp;quot;}">
+<HEAD>Subpart K&#x2014;Transparency for Information Blocking Determinations, Disincentives, and Penalties</HEAD>
+<AUTH>
+<HED>Authority:</HED><PSPACE>42 U.S.C. 300jj-11(c)(4).
+</PSPACE></AUTH>
+<SOURCE>
+<HED>Source:</HED><PSPACE>89 FR 54718, July 1, 2024, unless otherwise noted.
+</PSPACE></SOURCE>
+<DIV8 N="171.1100" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.1100&quot;,&quot;citation&quot;:&quot;45 CFR 171.1100&quot;}">
+<HEAD>&#xA7; 171.1100 Scope.</HEAD>
+<P>This subpart sets forth the information that will be posted on the Office of the National Coordinator for Health Information Technology's (ONC) public website about actors that have been determined by the HHS Office of Inspector General to have committed information blocking.</P>
+</DIV8>
+
+<DIV8 N="171.1101" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-45/section-171.1101&quot;,&quot;citation&quot;:&quot;45 CFR 171.1101&quot;}">
+<HEAD>&#xA7; 171.1101 Posting of information for actors found to have committed information blocking.</HEAD>
+<P>(a) <I>Health care providers.</I> (1) ONC will post on its public website the following information about health care providers that have been subject to a disincentive in &#xA7; 171.1001(a) for information blocking:</P>
+<P>(i) Health care provider name;</P>
+<P>(ii) Business address;</P>
+<P>(iii) The practice, as the term is defined in &#xA7; 171.102 and referenced in &#xA7; 171.103, found to have been information blocking, including when the practice occurred;</P>
+<P>(iv) Disincentive(s) applied; and</P>
+<P>(v) Where to find any additional information about the determination of information blocking that is publicly available via HHS or, where applicable, another part of the U.S. Government.</P>
+<P>(2) The information specified in paragraph (a)(1) of this section will not be posted prior to a disincentive being imposed or the completion of any administrative appeals process pursued by the health care provider, and will not include information about a disincentive that has not been applied.</P>
+<P>(3) Posting of the information specified in paragraph (a)(1) of this section will be conducted in accordance with existing rights to review information that may be associated with a disincentive specified in &#xA7; 171.1001.</P>
+<P>(b) <I>Health IT developers of certified health IT and health information networks or health information exchanges.</I> (1) ONC will post on its public website the following information, to the extent applicable, about health information networks/health information exchanges and health IT developers of certified health IT (actors) that have been determined by the HHS Office of Inspector General to have committed information blocking:</P>
+<P>(i) Type of actor;</P>
+<P>(ii) Actor's legal name, including any alternative or additional trade name(s) under which the actor operates;</P>
+<P>(iii) The practice, as the term is defined in &#xA7; 171.102 and referenced in &#xA7; 171.103, found to have been information blocking or alleged to be information blocking in the situation specified in paragraph (b)(2)(i) of this section, and including when the practice occurred; and</P>
+<P>(iv) Where to find any additional information about the determination (or resolution of information blocking as specified in paragraph (b)(2)(i) of this section) of information blocking that is publicly available via HHS or, where applicable, another part of the U.S. Government.</P>
+<P>(2) The information specified in paragraph (b)(1) of this section will not be posted until one of the following occurs:</P>
+<P>(i) OIG enters into a resolution of civil money penalty (CMP) liability; or</P>
+<P>(ii) A CMP imposed under subpart N of 42 CFR part 1003 has become final consistent with the procedures in subpart O of 42 CFR part 1003.</P>
+</DIV8>
+
+</DIV6>
+</DIV5>

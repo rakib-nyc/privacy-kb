@@ -1,0 +1,193 @@
+id: us.health_breach.318_3.a1.individual_notice
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 318.3(a)(1)
+  instrument_id: us.health_breach
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=318
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+  raw_sha256: 6266f7150e4734e83f9669e7d3d29429aba5885c6bb4cf72b170e48d6cde7bcb
+  text_file: corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.txt
+  text_sha256: 85091ca4bd2e2982f94c4cc078b4f55e3f653381d76f8aa6505c0fca0d427085
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 3d3fd3f8234623a670dc51bff7ee00148c4fde06a07ea40aa2b00fb51758e7d2
+verbatim_span: >-
+  Notify each individual who is a citizen or resident of the United States whose unsecured PHR
+  identifiable health information was acquired by an unauthorized person as a result of such breach
+  of security;
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '1'
+  anchor: '318.3'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+operative_context:
+  - position: precedes
+    relation: conditions
+    verbatim_span: >-
+      In accordance with §§ 318.4 (regarding timeliness of notification), 318.5 (regarding methods
+      of notice), and 318.6 (regarding content of notice), each vendor of personal health records,
+      following the discovery of a breach of security of unsecured PHR identifiable health
+      information that is in a personal health record maintained or offered by such vendor, and each
+      PHR related entity, following the discovery of a breach of security of such information that
+      is obtained through a product or service provided by such entity, shall:
+    citation: 16 C.F.R. § 318.3(a)
+    path:
+      path:
+        - a
+      anchor: '318.3'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number
+        so the path is scoped to its own section — without it a path like ["a"] matches every
+        section in the part.
+jurisdiction: US
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline:
+  trigger_event: discovery_of_breach_of_security
+  duration:
+    value: 60
+    unit: calendar_days
+  computation: >-
+    Sent without unreasonable delay and in no case later than 60 calendar days after the discovery
+    of a breach of security (§ 318.4(a)). Discovery is deemed to occur on the first day the breach
+    is known or reasonably should have been known to the entity, including through any employee,
+    officer or other agent other than the person committing it (§ 318.3(c)).
+  tolling:
+    - >-
+      § 318.4(d) delay on a law enforcement official's determination that notice would impede a
+      criminal investigation or damage national security
+exemptions:
+  - id: cfr.16.318.1.a.hipaa_covered_entity
+    type: entity_level
+    scope: >-
+      A HIPAA-covered entity is outside 16 C.F.R. part 318 ALTOGETHER; its breach duties are 45
+      C.F.R. §§ 164.400–414 instead. Note the asymmetry in the sentence: the exclusion for covered
+      entities is unqualified, while the exclusion for anyone else runs only "to the extent that" it
+      acts as a business associate — so a vendor that is a business associate for one line of
+      business remains a vendor of personal health records for its own consumer offering. THIS IS
+      NOT RELIEF FROM BREACH NOTIFICATION. It is an allocation between two regimes, and the wrong
+      one is worse than none: HHS, not the FTC, receives the notice.
+    source_citation: 16 C.F.R. § 318.1(a)
+    verbatim_span: >-
+      This part does not apply to HIPAA-covered entities, or to any other entity to the extent that
+      it engages in activities as a business associate of a HIPAA-covered entity.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.is_hipaa_covered_entity == true
+    reach: instrument
+related:
+  - us.hipaa.breach.164_404.individual_notice
+  - us.hipaa.breach.164_404.timeliness
+  - us.health_breach.318_1.a.scope
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Importing HIPAA's risk-of-harm rebuttal. § 318.3(a)(1) turns on acquisition by an unauthorized
+    person, with no four-factor assessment of the kind 45 C.F.R. § 164.402 allows.
+  - >-
+    Running the 60 days from the incident. § 318.4(a) runs it from discovery, and § 318.3(c) deems
+    discovery to occur when any employee, officer or agent other than the wrongdoer knew or
+    reasonably should have known.
+  - >-
+    Expecting a service provider to notify consumers. Under § 318.3(b) a third party service
+    provider notifies the vendor or PHR related entity it serves, and must obtain acknowledgement of
+    that notice; the consumer-facing duty stays with the vendor.
+open_questions:
+  - >-
+    effective_from is taken from the rule's own applicability date at § 318.8: "This part shall
+    apply to breaches of security that are discovered on or after September 24, 2009." The text
+    quoted here is the CURRENT text, which the part-level source note shows was amended at 89 FR
+    47054 (May 30, 2024). The source states neither that amendment's effective date nor which
+    provisions it changed, so this atom cannot distinguish the 2009 text from the amended text on a
+    date query, and any § 318.2 definition relied on downstream should be checked against the
+    amendment before being applied to a pre-2024 breach.
+confidence: high
+subject:
+  domain: II.B.3
+  lifecycle:
+    - VI
+regulator:
+  - ftc
+sector:
+  - health
+  - consumer_technology
+data_types:
+  - phr_identifiable_health_information
+  - health_information
+status: in_force
+effective_from: '2009-09-24'
+applies_if:
+  all:
+    - entity.is_phr_vendor_or_phr_related_entity == true
+    - event.type == 'breach_of_security'
+    - data.unsecured_phr_identifiable_health_information == true
+applies_to_role: controller
+obligation_type: notify
+summary: >-
+  Following discovery of a breach of security of unsecured PHR identifiable health information, a
+  vendor of personal health records or PHR related entity must notify each U.S. citizen or resident
+  whose information was acquired by an unauthorized person.
+requirement_detail: >-
+  THE INDIVIDUAL NOTICE, and the trigger differs from HIPAA's in a way that changes the analysis.
+  There is no risk-of-harm assessment here: the duty attaches when unsecured information "was
+  acquired by an unauthorized person", where 45 C.F.R. § 164.402 lets a covered entity rebut the
+  presumption of a breach through a four-factor risk assessment. Whose breach it is also differs by
+  role — a vendor notifies for information in a personal health record it maintains or offers, a PHR
+  related entity for information obtained through its product or service, and a third party service
+  provider does not notify individuals at all but notifies a designated or senior official at the
+  vendor it serves and must obtain acknowledgement (§ 318.3(b)). The clock runs from DISCOVERY,
+  which § 318.3(c) deems to be the first day the breach is known or reasonably should have been
+  known to any employee, officer or agent other than the person who committed it, and § 318.4(c)
+  puts the burden of demonstrating that every notification was made on the entity. Notice to the FTC
+  is separate and simultaneous at 500 or more individuals (§§ 318.3(a)(2), 318.4(b)); method and
+  content are prescribed by §§ 318.5 and 318.6.
+preemption:
+  posture: floor
+  authority: 16 C.F.R. § 318.1(b); 42 U.S.C. § 17951
+  note: >-
+    § 318.1(b) states only that the part preempts State law "as set forth in section 13421 of the
+    American Recovery and Reinvestment Act of 2009, 42 U.S.C 17951". The extent of that preemption
+    is fixed by a statute that is not in this corpus; § 17951 is the ARRA provision applying the
+    HIPAA contrary-and-more-stringent framework, which is why this is recorded as a floor. Treat the
+    posture as declared but unresolved, and check state breach-notification law rather than assuming
+    displacement — the NY SHIELD Act reaches the same entities.
+enforcement:
+  enforcers:
+    - ftc
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Violation treated as an unfair or deceptive act or practice in violation of a rule under FTC
+      Act § 18 (15 U.S.C. 57a), carrying civil penalties as adjusted for inflation
+    range: null
+    note: >-
+      § 318.7 states the treatment expressly, which matters because it makes civil penalties
+      available for a FIRST violation — unlike a § 5 case, where the FTC ordinarily needs an order
+      before penalties attach. The penalty amount is set by 16 C.F.R. § 1.98 as adjusted and is not
+      stated in this part.
+  statute_of_limitations: null

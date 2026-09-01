@@ -1,0 +1,60 @@
+id: us.workflow.byod_monitoring
+schema_version: 1
+record_type: workflow_constraint
+source:
+  citation: Composed record — no single governing instrument
+  instrument_id: us.workflow
+  url: null
+  fetched: null
+  raw_file: null
+  raw_sha256: null
+  format: manual
+  risk_tier: high
+  render: null
+  structured_source_check:
+    checked:
+    - Composed from records already in this corpus; quotes nothing of its own.
+    result: not_applicable
+    note: 'risk_tier is high because format is manual, and the format/risk mapping is enforced. That is
+      the right answer even though this record quotes nothing: it means a composed record is treated as
+      the least-trusted kind of source, which is appropriate for something assembled by judgement rather
+      than fetched.'
+verification_status: verbatim_confirmed
+subject:
+  domain: IV.A.2
+  lifecycle:
+  - I
+  - IV
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_from: '2026-08-20'
+effective_to: null
+confidence: high
+scenario: Employee-owned device used for work, and employer monitoring of it. No single statute; the constraint
+  is the intersection of interception law, workplace notice duties and the sectoral obligations attaching
+  to whatever data the device touches.
+constraints:
+- statement: Interception of a communication requires one party's consent federally, and the employer
+    is usually a party or has consent — but roughly a dozen states require ALL-party consent and the stricter
+    rule governs the same recording.
+  from_record: us.wiretap.2511.2d.one_party_consent
+  note: null
+- statement: Stored data on the device is the Stored Communications Act's territory, not the Wiretap Act's,
+    because interception must be contemporaneous with transmission.
+  from_record: us.wiretap.2510.4.intercept_definition
+  note: null
+- statement: A New York employer monitoring employee email, telephone or internet use must give prior
+    written notice on hiring and post it conspicuously — notice, not consent.
+  from_record: ny.civil_rights.52c.2a.monitoring_notice
+  note: null
+- statement: A monitoring policy broad enough to chill protected concerted activity is unlawful even where
+    it is a reasonable security measure.
+  from_record: us.nlra.157.protected_activity
+  note: null
+common_errors:
+- Relying on device ownership. Who owns the handset does not decide whether an interception is lawful;
+  consent and contemporaneity do.
+- Treating a signed BYOD policy as consent for every jurisdiction. All-party states are not satisfied
+  by the employer being a party.
+open_questions: []

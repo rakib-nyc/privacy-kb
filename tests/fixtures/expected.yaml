@@ -1,0 +1,106 @@
+gate1-bad-enum:
+- 1
+gate1-entity-level-no-reach:
+- 1
+gate10-dangling-xref:
+- 10
+gate11-baseline-offset:
+- 11
+- 12
+gate12-no-visual-check:
+- 12
+gate13-unanchored-no-justification:
+- 13
+gate15-apparatus-in-span:
+- 3
+- 15
+gate16-low-confidence:
+- 16
+gate16-reconstructed-on-uslm:
+- 16
+- 18
+gate17-anchored-in-notes:
+- 17
+- 18
+gate18-nested-no-context:
+- 18
+gate18-nested-with-context: []
+gate18-other-without-note:
+- 18
+gate2-exemption-source-hash:
+- 2
+gate2-hash-mismatch:
+- 2
+gate20-repealed-anchor:
+- 20
+gate21-inert-exemption:
+- 21
+- 28
+- 29
+gate21-live-exemption: []
+gate23-ambiguous-path:
+- 23
+gate23-phantom-path:
+- 23
+gate23-unique-path: []
+gate24-instrument-reach-gap:
+- 24
+gate25-undeclared-jurisdiction:
+- 25
+gate26-adhoc-concept:
+- 26
+gate26-handedited-differs:
+- 10
+- 26
+gate26-lone-definition: []
+gate27-undeclared-instrument:
+- 27
+gate28-unfilled-namespace:
+- 28
+- 29
+gate29-satisfiable-predicate: []
+gate29-unsatisfiable-predicate:
+- 29
+gate3-exemption-cross-source: []
+gate3-exemption-wrong-source:
+- 3
+gate3-fabricated-quote:
+- 3
+gate3-subtly-reworded:
+- 3
+gate30-path-citation-agree: []
+gate30-path-citation-mismatch:
+- 23
+- 30
+gate4-future-in-force:
+- 4
+gate5-state-no-fedrel:
+- 5
+gate6-legacy-coordinate:
+- 1
+gate6-nonexistent-leaf:
+- 6
+- 13
+gate7-notify-declared-absence: []
+gate7-notify-no-deadline:
+- 7
+gate7-notify-undeclared-absence:
+- 7
+gate9-binding-no-tier:
+- 9
+gate9-framework-claims-adherence:
+- 9
+gate9-principle-as-obligation:
+- 1
+nonvacuity-openleg-unescape:
+- 3
+- 14
+nonvacuity11-empty-alt-render:
+- 12
+- 14
+nonvacuity20-unknown-law:
+- 20
+nonvacuity3-collapsed-haystack:
+- 3
+- 14
+pass: []

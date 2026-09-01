@@ -1,0 +1,131 @@
+id: us.eppa.2002.2.results_use_prohibition
+schema_version: 1
+record_type: obligation
+source:
+  citation: 29 U.S.C. § 2002(2)
+  instrument_id: us.eppa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc29@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/eppa/raw/29-u-s-c-2002.xml
+  raw_sha256: 31aa3acba5e4953cd8fcd929e4bf2ca1e95568897a70d98ea4ebeb0527758a39
+  text_file: corpus/federal/domain-2-federal-privacy/eppa/raw/29-u-s-c-2002.txt
+  text_sha256: 832395daa4f11d80169370b656d51b2dc8bf7c901603fd29e0716633cbaf7108
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/eppa/raw/29-u-s-c-2002.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: da769990fb88ac33ce2ccc9791eca09953fdd7119687201e6e041c561252d74b
+verbatim_span: >-
+  to use, accept, refer to, or inquire concerning the results of any lie detector test of any
+  employee or prospective employee;
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - '2'
+  anchor: /us/usc/t29/s2002/2
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Except as provided in sections 2006 and 2007 of this title, it shall be unlawful for any
+      employer engaged in or affecting commerce or in the production of goods for commerce—
+    citation: 29 U.S.C. § 2002
+    path:
+      path: []
+      anchor: /us/usc/t29/s2002
+      derivation: structural
+      confidence: high
+      evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: IV.B.1
+  lifecycle:
+    - III
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - dol
+sector:
+  - employment
+data_types:
+  - personal_information
+status: in_force
+effective_from: '1988-12-27'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_employer == true
+    - data.is_lie_detector_result == true
+applies_to_role: controller
+obligation_type: restrict_use
+summary: >-
+  It is unlawful for a covered employer to use, accept, refer to or inquire concerning the results
+  of any lie detector test of any employee or prospective employee.
+requirement_detail: >-
+  PARAGRAPH (2) CLOSES THE LOOP PARAGRAPH (1) OPENS, and its reach is wider than most readers
+  expect. Paragraph (1) stops the employer causing the test; this one stops the employer touching
+  the result, and it covers the results of "any lie detector test of any employee or prospective
+  employee" — not merely a test the employer arranged. A result volunteered by the applicant,
+  produced for a former employer, generated in a law-enforcement setting or surfaced inside a
+  background-screening file is therefore off limits, and because the verb list includes "inquire
+  concerning the results" the question is unlawful before any answer arrives. The practical failure
+  mode is vendor management rather than testing policy: an investigative background report may
+  summarise a polygraph, and accepting it is itself the violation, so the screening contract and the
+  intake procedure are where this paragraph is complied with or breached. Read with paragraph (1),
+  EPPA regulates both the collection and the downstream use of a single category of data, which is a
+  rarer shape in federal privacy law than the use-only restrictions that surround it here.
+deadline: null
+exemptions: []
+related:
+  - us.eppa.2002.1.lie_detector_prohibition
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Limiting the paragraph to tests the employer arranged. It reaches the results of any lie
+    detector test of any employee or prospective employee.
+  - >-
+    Treating receipt of a third-party report as passive. Accepting and referring to the results are
+    prohibited in the same terms as using them.
+  - >-
+    Asking an applicant about a past test during an interview. The text makes it unlawful to
+    "inquire concerning the results", so the inquiry is the violation.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: null
+  note: >-
+    EPPA's savings clause is 29 U.S.C. § 2009, which has not been extracted. Nothing in the section
+    quoted here displaces state law, and the exceptions cross-referenced in the chapeau are federal
+    permissions rather than a bar on stricter state rules — several states prohibit employer
+    polygraph testing more broadly than EPPA does. Recorded as floor on that basis, pending
+    extraction of § 2009.
+enforcement:
+  enforcers:
+    - dol
+    - private_litigants
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Civil money penalties assessed by the Secretary of Labor, plus a private civil action by the
+      employee or prospective employee for legal and equitable relief including employment,
+      reinstatement, promotion and lost wages and benefits.
+    range: null
+    note: >-
+      The enforcement section, 29 U.S.C. § 2005, has NOT been extracted; the penalty ceiling and the
+      terms of the private action cannot be quoted from this atom. Treat the quantum as UNASSESSED
+      rather than absent.
+  statute_of_limitations: >-
+    The three-year period for the private action is in 29 U.S.C. § 2005(c)(2), which is not
+    extracted; do not compute it here.

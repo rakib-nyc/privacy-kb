@@ -1,0 +1,224 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - financial
+data_types:
+  - financial
+status: in_force
+effective_from: '2000-11-13'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline:
+  trigger_event: continuation of the customer relationship
+  duration:
+    value: 12
+    unit: months
+  computation: >-
+    At least once in any period of 12 consecutive months during which the relationship exists. The
+    institution may define the 12-consecutive-month period but must apply it to the customer on a
+    consistent basis, so the deadline is recurring rather than a single due date.
+related: []
+applies_if:
+  all:
+    - entity.is_financial_institution == true
+    - entity.predominantly_motor_vehicle_sales_or_leasing == true
+    - data.is_nonpublic_personal_information == true
+federal_relationship: null
+interpreted_by: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 15 U.S.C. § 6807
+  note: >-
+    GLBA subtitle A sets a floor: 15 U.S.C. § 6807 preserves State law that affords greater
+    protection, with inconsistency determined by the FTC. Recorded as floor rather than none because
+    the statute speaks to the question directly.
+enforcement:
+  enforcers:
+    - ftc
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Enforced under the FTC Act, 15 U.S.C. § 6805(a)(7). GLBA subtitle A carries no private right
+      of action.
+    range: null
+    note: >-
+      15 U.S.C. § 6805(a)(7) allocates enforcement to the FTC for any financial institution not
+      under paragraphs (1)-(6); § 6805(a)(8) allocates to the CFPB those institutions subject to its
+      jurisdiction under the Consumer Financial Protection Act. Which of the two reaches a given
+      motor vehicle dealer is the same question as the § 313.1(b) exclusion.
+  statute_of_limitations: null
+id: us.cfr.16.313.5.a1.annual_notice
+source:
+  citation: 16 C.F.R. § 313.5(a)(1)
+  instrument_id: us.cfr.16.313
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=313
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+  raw_sha256: d15f22051009593a5210d7d3bf1f8e8af542214d78f12fc333b9f0a2e852a67a
+  text_file: corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.txt
+  text_sha256: e82d7dc8e83a38f83ca95113eb64d54dc94556c0b0786b595bc452473d05ba1f
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-16 XML, part 313, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: 140607660702db8afdb685c24af32e450da812deaf0792ac068f66253dd1365b
+verbatim_span: >-
+  Except as provided by paragraph (e) of this section, you must provide a clear and conspicuous
+  notice to customers that accurately reflects your privacy policies and practices not less than
+  annually during the continuation of the customer relationship. Annually means at least once in any
+  period of 12 consecutive months during which that relationship exists. You may define the
+  12-consecutive-month period, but you must apply it to the customer on a consistent basis.
+paragraph_path:
+  path:
+    - a
+    - '1'
+  anchor: '313.5'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from flat <P> siblings. This level was RECOVERED by the run-in heading
+    fix: the italic heading "In general" had absorbed the (1), and the provision previously sat at
+    path ["a"]. Resolves to exactly one leaf (gate 23).
+context_not_required: >-
+  The paragraph is a complete obligation on its own; the (a) level contributes only the run-in
+  heading "In general".
+subject:
+  domain: II.C.1
+  lifecycle:
+    - III
+obligation_type: notify
+summary: >-
+  You must give customers a clear and conspicuous privacy notice at least once in every 12
+  consecutive months for as long as the customer relationship continues.
+requirement_detail: >-
+  Owed to customers only — never to consumers who are not customers. Two carve-outs run in opposite
+  directions and are typed differently for that reason: § 313.5(b)(1) drops a class of DATA SUBJECTS
+  out of the duty while the dealer keeps owing it to everyone else, and § 313.5(e)(1) switches the
+  duty off for the DEALER entirely, on condition of its own conduct.
+exemptions:
+  - id: cfr.16.313.1.b.retail_credit_dealer
+    type: entity_level
+    scope: >-
+      A motor vehicle dealer described in 12 U.S.C. 5519(b) — one that directly extends retail
+      credit or retail leases whose contracts are NOT routinely assigned to an unaffiliated finance
+      or leasing source — is outside 16 C.F.R. part 313 entirely. CONSEQUENCE TEST: if the dealer
+      routinely assigns even part of that paper to an unaffiliated finance source, it falls back
+      INSIDE the Part for its whole consumer book. The hinge word is "routinely", which is a fact
+      about the dealer's practice that the engine cannot infer and must be told. THIS IS NOT RELIEF
+      FROM GLBA. It is a jurisdictional allocation: 12 U.S.C. 5519 hands these dealers to the CFPB,
+      so Regulation P (12 C.F.R. part 1016) reaches them instead. Reading this exemption as "no
+      privacy obligation" is the error it most invites.
+    source_citation: 16 C.F.R. § 313.1(b)
+    verbatim_span: >-
+      Excluded from the coverage of this part are motor vehicle dealers described in 12 U.S.C.
+      5519(b) that directly extend to consumers retail credit or retail leases involving motor
+      vehicles in which the contract governing such extension of retail credit or retail leases is
+      not routinely assigned to an unaffiliated third party finance or leasing source.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.is_motor_vehicle_dealer == true
+        - entity.extends_retail_credit_directly == true
+        - entity.routinely_assigns_contracts == false
+    reach: instrument
+  - id: cfr.16.313.1.b.business_purpose
+    type: data_level
+    scope: >-
+      Information about companies, and about individuals who obtain the financial product or service
+      for business, commercial or agricultural purposes, is outside the Part. CONSEQUENCE TEST: a
+      dealer that finances a landscaping company's fleet truck is out for THAT data and fully in for
+      every personal-use customer on the same lot, on the same day, in the same system. This is the
+      entity-level/data-level divider in its plainest form: nothing about the dealer changes, only
+      which records are reached.
+    source_citation: 16 C.F.R. § 313.1(b)
+    verbatim_span: >-
+      This part does not apply to information about companies or about individuals who obtain
+      financial products or services for business, commercial, or agricultural purposes.
+    burden_of_proof: entity
+    applies_if:
+      any:
+        - data.subject_is_company == true
+        - data.purpose_of_product in ["business","commercial","agricultural"]
+  - id: cfr.16.313.3.n2i.publicly_available
+    type: data_level
+    scope: >-
+      Publicly available information is not nonpublic personal information, so the Part's duties do
+      not attach to it — EXCEPT where it appears on a list derived using personally identifiable
+      financial information that is not itself publicly available. CONSEQUENCE TEST: a name and
+      street address taken from a phone book is out; the same name and address on a list of
+      customers 90 days delinquent is back in, because the derivation is what makes the list
+      revealing. The carve-out is therefore not a property of the datum, and a predicate that tests
+      only "is it public?" would apply it in exactly the case the rule exists to catch.
+    source_citation: 16 C.F.R. § 313.3(n)(2)(i)
+    verbatim_span: >-
+      Publicly available information, except as included on a list described in paragraph (n)(1)(ii)
+      of this section; or
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - data.is_publicly_available == true
+        - data.on_derived_list == false
+  - id: cfr.16.313.5.b1.former_customer
+    type: data_level
+    scope: >-
+      No annual notice is owed to a FORMER customer. CONSEQUENCE TEST: the dealer keeps owing the
+      annual notice to every current customer; only the records of individuals whose relationship
+      has ended fall out. Typed data_level rather than temporal because the trigger is the status of
+      the data subject, not the passage of time or a dated grant of relief — the same calendar day
+      produces both answers for two individuals in the same file.
+    source_citation: 16 C.F.R. § 313.5(b)(1)
+    verbatim_span: You are not required to provide an annual notice to a former customer.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - data.subject_is_former_customer == true
+  - id: cfr.16.313.5.e1.no_disclosure_no_change
+    type: entity_level
+    scope: >-
+      An institution that discloses nonpublic personal information ONLY under §§ 313.13, 313.14 or
+      313.15, and has not changed the policies disclosed in its most recent notice, owes no annual
+      notice at all. CONSEQUENCE TEST: this is the one carve-out here an entity can lose by acting:
+      a single disclosure outside those exceptions, or one policy change, restores the duty — and §
+      313.5(e)(2) then sets a deadline measured from the change rather than from the anniversary.
+      REACH: obligation. This switches off THIS DUTY and nothing else. The dealer stays inside part
+      313 and still owes the initial customer notice, the consumer notice, the opt out and the reuse
+      limits — which is the opposite posture from the § 313.1(b) exclusion, whose reach is the whole
+      instrument. Both are entity_level; only reach separates them.
+    source_citation: 16 C.F.R. § 313.5(e)(1)
+    verbatim_span: 'You are not required to deliver an annual privacy notice if you:'
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - practice.discloses_only_under_exceptions == true
+        - practice.policies_unchanged_since_last_notice == true
+    reach: obligation
+common_errors:
+  - >-
+    POST-DODD-FRANK, 16 C.F.R. PART 313 REACHES ESSENTIALLY ONLY MOTOR VEHICLE DEALERS. § 313.1(b)
+    narrows the FTC privacy rule to persons under 12 U.S.C. 5519 predominantly engaged in the sale
+    or leasing and servicing of motor vehicles. Rulemaking for the rest of the financial sector
+    moved to the CFPB, and Regulation P at 12 C.F.R. part 1016 is the operative privacy rule for
+    banks, credit unions, brokers and insurers. Citing part 313 at a bank is the single most common
+    error about this instrument, and the § 313.1(b) dealer exclusion invites its mirror image: it is
+    a JURISDICTIONAL ALLOCATION to the CFPB, not relief from GLBA.
+  - Sending the annual notice to former customers. § 313.5(b)(1) says it is not required.
+  - >-
+    Assuming the § 313.5(e) exception is permanent. It is contingent on continuing conduct and is
+    lost by a single out-of-exception disclosure.
+open_questions: []

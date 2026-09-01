@@ -1,0 +1,101 @@
+id: us.authority.eeoc
+schema_version: 1
+record_type: authority
+source:
+  citation: 42 U.S.C. § 2000e-5(a)
+  instrument_id: us.usc.t42
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/authorities/raw/42-u-s-c-2000e-5.xml
+  raw_sha256: 09873af2196d183331fd98b4a60c2908e10a9f71d822588822f5ed30e2aa0d44
+  text_file: corpus/federal/authorities/raw/42-u-s-c-2000e-5.txt
+  text_sha256: 73a879974ec762dfe89ce05de00415177d1639823be20d051ba387e1f6a6dca9
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/authorities/raw/42-u-s-c-2000e-5.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: Title 42. Positive-law status from the title's own <property role="is-positive-law"> element.
+  segment_sha256: 8e5bde131304e4b5df814a09adddeed52597bd0780f260c3392017ef92d62b0b
+verbatim_span: >-
+  The Commission is empowered, as hereinafter provided, to prevent any person from engaging in any
+  unlawful employment practice as set forth in section 2000e–2 or 2000e–3 of this title.
+verification_status: verbatim_confirmed
+subject:
+  domain: IV.A.2
+  lifecycle:
+    - I
+paragraph_path:
+  path:
+    - a
+  anchor: /us/usc/t42/s2000e–5/a
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element
+jurisdiction: US-FED
+jurisdiction_level: federal
+status: in_force
+effective_from: null
+effective_to: null
+amendment_history: []
+summary: >-
+  The Commission is empowered to prevent any person from engaging in any unlawful employment
+  practice.
+authority:
+  id: us.authority.eeoc
+  name: Equal Employment Opportunity Commission
+  short_name: EEOC
+  kind: federal_agency
+  statutory_source:
+    - 42 U.S.C. § 2000e-5 — enforcement (Title VII)
+    - 42 U.S.C. § 12112(d) — ADA medical inquiries and confidentiality
+    - 42 U.S.C. § 2000ff — GINA
+  jurisdiction: US-FED
+  sector_reach:
+    - employers within Title VII coverage thresholds
+    - employment screening and selection
+    - medical and genetic information in employment
+    - automated employment decision tools as they bear on discrimination
+  enforcement_powers:
+    - charge investigation and conciliation
+    - civil actions
+    - right-to-sue letters enabling private suit
+  rulemaking_authority:
+    has: true
+    basis: 42 U.S.C. § 2000e-12
+    procedure: APA § 553 notice-and-comment
+    note: >-
+      Much EEOC output is guidance rather than legislative rule — classify each document, do not
+      assume.
+  penalty_authority:
+    structure: compensatory and punitive damages via litigation; caps by employer size
+    range: null
+    inflation_adjusted: false
+    note: null
+  private_right_of_action:
+    exists: true
+    basis: 42 U.S.C. § 2000e-5(f) after exhaustion
+    note: >-
+      Administrative exhaustion first — a charge must be filed before suit. That sequencing is
+      itself a compliance fact worth surfacing.
+    drives_litigation_risk: true
+  own_enforcement_power: true
+  operates_through: null
+derived_obligations: []
+differs_from: []
+related: []
+source_defects: []
+common_errors:
+  - >-
+    Treating EEOC guidance as a legislative rule. Much of its AI-in-hiring output is guidance
+    without force of law — I7 applies.
+  - Missing the exhaustion requirement. A private plaintiff must file a charge before suing.
+  - >-
+    Assuming the ADA's confidentiality duty for medical records is a privacy statute obligation. It
+    sits inside an anti-discrimination statute, which changes both the enforcer and the remedy.
+open_questions: []
+confidence: high
+context_not_required: 'No ancestor contributes governing text: this element''s operative meaning is complete on its own.'

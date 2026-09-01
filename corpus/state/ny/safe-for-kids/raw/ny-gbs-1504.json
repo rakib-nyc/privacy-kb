@@ -1,0 +1,56 @@
+{
+  "success" : true,
+  "message" : "Law document for location 1504 in GBS law.",
+  "responseType" : "law-doc-info-detail",
+  "result" : {
+    "lawId" : "GBS",
+    "lawName" : "General Business",
+    "locationId" : "1504",
+    "title" : "Nondiscrimination",
+    "docType" : "SECTION",
+    "publishedDates" : [ "2024-06-28", "2026-07-31" ],
+    "docLevelId" : "1504",
+    "activeDate" : "2026-07-31",
+    "text" : "  * § 1504. Nondiscrimination. A covered operator shall not withhold,\\ndegrade, lower the quality, or increase the price of any product,\\nservice, or feature, other than as necessary for compliance with the\\nprovisions of this article or any rules or regulations promulgated\\npursuant to this article, to a covered user due to the covered operator\\nnot being permitted to provide an addictive feed to such covered user\\nunder subdivision one of section fifteen hundred one of this article.\\n  * NB Effective January 25, 2027\\n",
+    "parentLocationIds" : [ "-CH20", "A45" ],
+    "parents" : [ {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "-CH20",
+      "title" : "General Business",
+      "docType" : "CHAPTER",
+      "publishedDates" : [ "2014-09-22", "2014-11-28", "2016-04-15", "2018-04-20", "2018-04-27", "2019-09-20", "2019-12-27", "2020-04-17", "2020-04-24", "2020-10-16", "2020-11-13", "2021-04-23", "2021-07-09", "2021-10-15", "2021-12-17", "2021-12-31", "2022-03-04", "2022-06-10", "2023-10-27", "2024-02-09", "2024-03-08", "2024-06-28", "2024-07-19", "2024-10-11", "2024-11-29", "2024-12-27", "2025-02-21", "2025-05-16", "2025-06-13", "2025-12-19", "2025-12-26", "2026-02-27", "2026-03-20", "2026-04-03", "2026-05-29" ],
+      "docLevelId" : "20",
+      "activeDate" : "2026-05-29"
+    }, {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "A45",
+      "title" : "Safe For Kids Act",
+      "docType" : "ARTICLE",
+      "publishedDates" : [ "2024-06-28", "2026-07-31" ],
+      "docLevelId" : "45",
+      "activeDate" : "2026-07-31"
+    } ],
+    "prevSibling" : {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "1503",
+      "title" : "Parental control",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2024-06-28", "2026-07-31" ],
+      "docLevelId" : "1503",
+      "activeDate" : "2026-07-31"
+    },
+    "nextSibling" : {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "1505",
+      "title" : "Rulemaking authority",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2024-06-28", "2026-07-31" ],
+      "docLevelId" : "1505",
+      "activeDate" : "2026-07-31"
+    }
+  }
+}

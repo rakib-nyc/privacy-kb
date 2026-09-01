@@ -1,0 +1,129 @@
+id: us.common_rule.46_109.a.irb_review_authority
+schema_version: 1
+record_type: obligation
+source:
+  citation: 45 C.F.R. § 46.109(a)
+  instrument_id: us.common_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=46
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  raw_sha256: cfe25d02a8ade401b1350f591c4654b85ab03c47f66297047feb0a6e1f0e543d
+  text_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+  text_sha256: 2e9f64e48744208a67bbad88f993394ee3ae928f07e1396d552d5a6c8d574fa1
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 45 part 46, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: 7152b5840de6347b4e58eeb87d56fabc09952250dfb7da665280fe541fafdb94
+verbatim_span: >-
+  An IRB shall review and have authority to approve, require modifications in (to secure approval),
+  or disapprove all research activities covered by this policy, including exempt research activities
+  under § 46.104 for which limited IRB review is a condition of exemption (under §
+  46.104(d)(2)(iii), (d)(3)(i)(C), and (d)(7), and (8)).
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+  anchor: '46.109'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from flat <P> siblings by tools/extract.py; resolves to exactly one
+    leaf inside the section
+subject:
+  domain: II.B.3
+  lifecycle:
+    - III
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ohrp
+  - federal_agencies
+sector:
+  - health
+data_types:
+  - personal_information
+  - health
+status: in_force
+effective_from: '2019-01-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_irb == true
+    - law.research_subject_to_common_rule == true
+applies_to_role: processor
+obligation_type: assess
+summary: >-
+  An IRB reviews and has authority to approve, require modifications in, or disapprove all research
+  activities covered by the policy, including exempt activities for which limited IRB review is a
+  condition of the exemption.
+requirement_detail: >-
+  THIS PARAGRAPH IS WHY THE COMMON RULE HAS TEETH AT ALL: the IRB's power is not advisory but a
+  power to disapprove, and the § 46.111 criteria — privacy and confidentiality among them — are what
+  it exercises that power against. The reach is broader than the word exempt suggests. The paragraph
+  extends review to exempt research "for which limited IRB review is a condition of exemption",
+  which is the trap in § 46.104(d)(2)(iii), (d)(3)(i)(C), (d)(7) and (d)(8): those categories are
+  exempt from the policy generally and still require an IRB to make the § 46.111(a)(7) privacy and
+  confidentiality determination, so a self-declared exemption there is not a route around privacy
+  review. The distinction to keep is institutional rather than legal: the IRB is a body the
+  institution constitutes, so its determination binds through the institution's assurance with the
+  funding agency, not through any duty owed directly to the subject.
+deadline: null
+exemptions: []
+related:
+  - us.common_rule.46_111.a7.privacy_and_confidentiality
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Assuming exempt research never sees an IRB. Limited IRB review is a condition of several §
+    46.104(d) categories, and this paragraph extends the IRB's authority to them.
+  - >-
+    Describing IRB review as advisory. The paragraph gives authority to require modifications or to
+    disapprove.
+  - >-
+    Expecting the IRB to enforce against the investigator on the subject's behalf. It acts through
+    the institution's assurance with the funding agency; the subject has no private right of action
+    under this part.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 45 C.F.R. § 46.101(f)
+  note: >-
+    Section 46.101(f) states that the policy does not affect state or local laws or regulations,
+    including tribal law, that provide additional protections for human subjects, and 46.101(e)
+    requires compliance with more protective federal law. The Common Rule is therefore a floor in
+    both directions, which is why a HIPAA authorisation and an IRB-approved consent are cumulative
+    rather than alternative.
+enforcement:
+  enforcers:
+    - hhs_ohrp
+    - federal_agencies
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Administrative, through the funding relationship. The federal department or agency conducting
+      or supporting the research enforces against the institution's assurance; for HHS-supported
+      research this is the Office for Human Research Protections, whose sanctions run from a
+      determination letter and corrective action plan to restriction or withdrawal of the assurance,
+      which stops federally supported research at the institution.
+    range: null
+    note: >-
+      NO PRIVATE RIGHT OF ACTION under the Common Rule. A subject's own remedy is a state-law claim
+      in negligence or battery, or a state research-consent statute preserved by § 46.101(f); the
+      regulation supplies the standard of care rather than the cause of action.
+  statute_of_limitations: null
+context_not_required: >-
+  Section 46.109(a) is a subsection-level statement of the IRB's authority; no section-level chapeau
+  precedes it and no continuation follows it in the source.

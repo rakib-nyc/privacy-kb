@@ -1,0 +1,67 @@
+{
+ "label": "gate23 fixture",
+ "url": "https://example.invalid/fixture",
+ "format": "ecfr_xml",
+ "raw_file": "tests/fixtures/raw/gate23-source.txt",
+ "leaves": [
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "Annual privacy notice to customers required",
+   "context": [],
+   "text": "Exception to annual privacy notice requirement \u2014(1) When exception available. You are not required to deliver an annual privacy notice if you:"
+  },
+  {
+   "path": [
+    "e",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "",
+   "context": [],
+   "text": "Provide nonpublic personal information to nonaffiliated third parties only in accordance with an exception; and"
+  },
+  {
+   "path": [
+    "e",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "",
+   "context": [],
+   "text": "Have not changed your policies and practices with regard to disclosing nonpublic personal information."
+  },
+  {
+   "path": [
+    "e",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "",
+   "context": [],
+   "text": "If a revised privacy notice was required, you must provide an annual privacy notice."
+  },
+  {
+   "path": [
+    "e",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "",
+   "context": [],
+   "text": "If a revised privacy notice was not required, you must provide an annual privacy notice within 100 days."
+  }
+ ]
+}

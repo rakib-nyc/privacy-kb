@@ -1,0 +1,56 @@
+{
+  "success" : true,
+  "message" : "Law document for location 52-C*2 in CVR law.",
+  "responseType" : "law-doc-info-detail",
+  "result" : {
+    "lawId" : "CVR",
+    "lawName" : "Civil Rights",
+    "locationId" : "52-C*2",
+    "title" : "Employers engaged in electronic monitoring; prior notice required",
+    "docType" : "SECTION",
+    "publishedDates" : [ "2021-11-12", "2022-05-13" ],
+    "docLevelId" : "52-C*2",
+    "activeDate" : "2022-05-13",
+    "text" : "  *§ 52-c. Employers engaged in electronic monitoring; prior notice\\nrequired. 1. For purposes of this section, employer means any\\nindividual, corporation, partnership, firm, or association with a place\\nof business in the state. It shall not include the state or any\\npolitical subdivision of the state.\\n  2. (a) Any employer who monitors or otherwise intercepts telephone\\nconversations or transmissions, electronic mail or transmissions, or\\ninternet access or usage of or by an employee by any electronic device\\nor system, including but not limited to the use of a computer,\\ntelephone, wire, radio, or electromagnetic, photoelectronic or\\nphoto-optical systems, shall give prior written notice upon hiring to\\nall employees who are subject to electronic monitoring. The notice\\nrequired by this subdivision shall be in writing, in an electronic\\nrecord, or in another electronic form and acknowledged by the employee\\neither in writing or electronically. Each employer shall also post the\\nnotice of electronic monitoring in a conspicuous place which is readily\\navailable for viewing by its employees who are subject to electronic\\nmonitoring.\\n  (b) For purposes of written notice required by paragraph (a) of this\\nsubdivision, an employee shall be advised that any and all telephone\\nconversations or transmissions, electronic mail or transmissions, or\\ninternet access or usage by an employee by any electronic device or\\nsystem, including but not limited to the use of a computer, telephone,\\nwire, radio or electromagnetic, photoelectronic or photo-optical systems\\nmay be subject to monitoring at any and all times and by any lawful\\nmeans.\\n  3. The attorney general may enforce the provisions of this section.\\nAny employer found to be in violation of this section shall be subject\\nto a maximum civil penalty of five hundred dollars for the first\\noffense, one thousand dollars for the second offense and three thousand\\ndollars for the third and each subsequent offense.\\n  4. The provisions of this section shall not apply to processes that\\nare designed to manage the type or volume of incoming or outgoing\\nelectronic mail or telephone voice mail or internet usage, that are not\\ntargeted to monitor or intercept the electronic mail or telephone voice\\nmail or internet usage of a particular individual, and that are\\nperformed solely for the purpose of computer system maintenance and/or\\nprotection.\\n  * NB There are 2 § 52-c's\\n",
+    "parentLocationIds" : [ "-CH6", "A5" ],
+    "parents" : [ {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "-CH6",
+      "title" : "Civil Rights",
+      "docType" : "CHAPTER",
+      "publishedDates" : [ "2014-09-22", "2017-08-25", "2019-07-26", "2019-09-20", "2020-06-19", "2020-12-04", "2021-07-02", "2022-04-22", "2023-01-06", "2026-05-29" ],
+      "docLevelId" : "6",
+      "activeDate" : "2026-05-29"
+    }, {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "A5",
+      "title" : "Right of Privacy",
+      "docType" : "ARTICLE",
+      "publishedDates" : [ "2014-09-22", "2017-08-25", "2019-07-26", "2020-06-19", "2020-12-04", "2021-11-12", "2023-01-06", "2023-11-17" ],
+      "docLevelId" : "5",
+      "activeDate" : "2023-11-17"
+    } ],
+    "prevSibling" : {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "52-C",
+      "title" : "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2020-12-04", "2021-06-04", "2021-11-12", "2024-05-03" ],
+      "docLevelId" : "52-C",
+      "activeDate" : "2024-05-03"
+    },
+    "nextSibling" : {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "52-D",
+      "title" : "Private right of action for unlawful dissemination or publication of a personal image",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2023-01-06", "2023-03-03", "2023-03-10" ],
+      "docLevelId" : "52-D",
+      "activeDate" : "2023-03-10"
+    }
+  }
+}

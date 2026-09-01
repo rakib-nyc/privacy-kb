@@ -1,0 +1,47 @@
+{
+  "success" : true,
+  "message" : "Law document for location 1500 in GBS law.",
+  "responseType" : "law-doc-info-detail",
+  "result" : {
+    "lawId" : "GBS",
+    "lawName" : "General Business",
+    "locationId" : "1500",
+    "title" : "Definitions",
+    "docType" : "SECTION",
+    "publishedDates" : [ "2024-06-28", "2026-07-31" ],
+    "docLevelId" : "1500",
+    "activeDate" : "2026-07-31",
+    "text" : "  * § 1500. Definitions. For the purposes of this article, the following\\nterms shall have the following meanings:\\n  1. \"Addictive feed\" shall mean a website, online service, online\\napplication, or mobile application, or a portion thereof, in which\\nmultiple pieces of media generated or shared by users of a website,\\nonline service, online application, or mobile application, either\\nconcurrently or sequentially, are recommended, selected, or prioritized\\nfor display to a user based, in whole or in part, on information\\nassociated with the user or the user's device, unless any of the\\nfollowing conditions are met, alone or in combination with one another:\\n  (a) the recommendation, prioritization, or selection is based on\\ninformation that is not persistently associated with the user or user's\\ndevice, and does not concern the user's previous interactions with media\\ngenerated or shared by other users;\\n  (b) the recommendation, prioritization, or selection is based on\\nuser-selected privacy or accessibility settings, or technical\\ninformation concerning the user's device;\\n  (c) the user expressly and unambiguously requested the specific media,\\nmedia by the author, creator, or poster of media the user has subscribed\\nto, or media shared by users to a page or group the user has subscribed\\nto, provided that the media is not recommended, selected, or prioritized\\nfor display based, in whole or in part, on other information associated\\nwith the user or the user's device that is not otherwise permissible\\nunder this subdivision;\\n  (d) the user expressly and unambiguously requested that specific\\nmedia, media by a specified author, creator, or poster of media the user\\nhas subscribed to, or media shared by users to a page or group the user\\nhas subscribed to pursuant to paragraph (c) of this subdivision, be\\nblocked, prioritized or deprioritized for display, provided that the\\nmedia is not recommended, selected, or prioritized for display based, in\\nwhole or in part, on other information associated with the user or the\\nuser's device that is not otherwise permissible under this subdivision;\\n  (e) the media are direct and private communications;\\n  (f) the media are recommended, selected, or prioritized only in\\nresponse to a specific search inquiry by the user;\\n  (g) the media recommended, selected, or prioritized for display is\\nexclusively next in a pre-existing sequence from the same author,\\ncreator, poster, or source; or\\n  (h) the recommendation, prioritization, or selection is necessary to\\ncomply with the provisions of this article and any regulations\\npromulgated pursuant to this article.\\n  2. \"Addictive social media platform\" shall mean a website, online\\nservice, online application, or mobile application, that offers or\\nprovides users an addictive feed as a significant part of the services\\nprovided by such website, online service, online application, or mobile\\napplication.\\n  3. \"Covered minor\" shall mean a user of a website, online service,\\nonline application, or mobile application in New York when the operator\\nhas actual knowledge the user is a minor.\\n  4. \"Covered user\" shall mean a user of a website, online service,\\nonline application, or mobile application in New York, not acting as an\\noperator, or agent or affiliate of the operator, of such website, online\\nservice, online application, or mobile application, or any portion\\nthereof.\\n  5. \"Media\" shall mean text, an image, or a video.\\n  6. \"Minor\" shall mean an individual under the age of eighteen.\\n  7. \"Covered operator\" shall mean any person, business, or other legal\\nentity, who operates or provides an addictive social media platform.\\n  8. \"Parent\" shall mean parent or legal guardian.\\n  * NB Effective January 25, 2027\\n",
+    "parentLocationIds" : [ "-CH20", "A45" ],
+    "parents" : [ {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "-CH20",
+      "title" : "General Business",
+      "docType" : "CHAPTER",
+      "publishedDates" : [ "2014-09-22", "2014-11-28", "2016-04-15", "2018-04-20", "2018-04-27", "2019-09-20", "2019-12-27", "2020-04-17", "2020-04-24", "2020-10-16", "2020-11-13", "2021-04-23", "2021-07-09", "2021-10-15", "2021-12-17", "2021-12-31", "2022-03-04", "2022-06-10", "2023-10-27", "2024-02-09", "2024-03-08", "2024-06-28", "2024-07-19", "2024-10-11", "2024-11-29", "2024-12-27", "2025-02-21", "2025-05-16", "2025-06-13", "2025-12-19", "2025-12-26", "2026-02-27", "2026-03-20", "2026-04-03", "2026-05-29" ],
+      "docLevelId" : "20",
+      "activeDate" : "2026-05-29"
+    }, {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "A45",
+      "title" : "Safe For Kids Act",
+      "docType" : "ARTICLE",
+      "publishedDates" : [ "2024-06-28", "2026-07-31" ],
+      "docLevelId" : "45",
+      "activeDate" : "2026-07-31"
+    } ],
+    "prevSibling" : null,
+    "nextSibling" : {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "1501",
+      "title" : "Prohibition of addictive feeds",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2024-06-28", "2026-07-31" ],
+      "docLevelId" : "1501",
+      "activeDate" : "2026-07-31"
+    }
+  }
+}

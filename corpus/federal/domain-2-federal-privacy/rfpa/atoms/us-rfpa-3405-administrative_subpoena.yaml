@@ -1,0 +1,103 @@
+id: us.rfpa.3405.administrative_subpoena
+schema_version: 1
+record_type: obligation
+source:
+  citation: 12 U.S.C. § 3405
+  instrument_id: us.rfpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3405.xml
+  raw_sha256: 601e142db72b13eef887eddb5357db38427ab094e8d6bd89140a9232be55987d
+  text_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3405.txt
+  text_sha256: 7b6ffac481c782fb4aeb9f2299c90862cefe1470279f09abbb647965abb3049e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3405.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1 (12-u-s-c-3405)
+    result: structured_source_used
+    note: null
+verbatim_span: A Government authority may obtain financial records under section 3402(2) of this title pursuant
+  to an administrative subpena or summons otherwise authorized by law only if—
+verification_status: verbatim_confirmed
+paragraph_path:
+  path: []
+  anchor: /us/usc/t12/s3405
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The span is the section-level chapeau itself, so nothing sits above it; the three conditions
+  it governs are recorded as § 3405(3) and in requirement_detail.
+subject:
+  domain: III.A.1
+  lifecycle:
+  - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+- federal_agencies
+sector:
+- financial
+data_types:
+- financial
+status: in_force
+effective_from: '1979-03-10'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+  - entity.is_government_authority == true
+  - data.is_financial_record == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: A Government authority may obtain financial records by administrative subpoena or summons only if all
+  three conditions in § 3405(1)–(3) are satisfied.
+requirement_detail: 'THE FIRST OF THE THREE COMPELLED-PRODUCTION ROUTES § 3402 LEAVES OPEN, and the one that shows
+  the statute''s procedural character most plainly. § 3405 confers no subpoena power: the subpoena or summons
+  must be "otherwise authorized by law", and this section only conditions its use. The three conditions are conjunctive
+  — reason to believe the records are relevant to a legitimate law enforcement inquiry, service or mailing of
+  a copy of the process on the customer together with the statutory notice on or before the date it is served
+  on the bank, and expiry of the ten or fourteen day window without a motion to quash. Notice is therefore CONTEMPORANEOUS
+  with the demand on the financial institution rather than after production, which is what converts a filing requirement
+  into a privacy right: the customer learns of the demand while there is still something to challenge. Nothing
+  in the section addresses the bank; the duty runs against the Government authority, and the financial institution
+  is a stakeholder rather than the regulated party.'
+deadline: null
+exemptions: []
+related:
+- us.rfpa.3402.access_prohibition
+- us.rfpa.3405.3.challenge_window
+- us.rfpa.3410.a.customer_challenge
+federal_relationship: null
+interpreted_by: []
+common_errors:
+- Reading § 3405 as a grant of subpoena authority. It grants none — the process must be "otherwise authorized
+  by law"; § 3405 only conditions its use.
+- Treating conditions (1), (2) and (3) as alternative routes. They are conjunctive; all three must be met before
+  the records may be obtained.
+- Assuming the customer is notified after the fact. Under this route the copy and notice go to the customer on
+  or before the date the subpoena is served on the financial institution.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 12 U.S.C. § 3402
+  note: 'Recorded as floor pending a provision-level preemption analysis for this instrument; no express ceiling
+    clause was found in the sections extracted. RFPA binds federal Government authorities, so the ordinary state-law
+    displacement question does not arise in the usual form: a state statute restricting state investigators is
+    not in conflict with it.'
+enforcement:
+  enforcers:
+  - federal_agencies
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: 12 U.S.C. § 3417 (civil penalties and liability) has not been extracted into this corpus, so penalty
+      exposure and any customer damages action are UNASSESSED rather than absent. private_right_of_action is recorded
+      false because nothing extracted establishes one, not because the statute was read to withhold one.
+  statute_of_limitations: null

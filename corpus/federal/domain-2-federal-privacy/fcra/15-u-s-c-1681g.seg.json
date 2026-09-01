@@ -1,0 +1,3983 @@
+{
+ "label": "15 U.S.C. \u00a7 1681g",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681g.xml",
+ "raw_sha256": "c2c73f3436015086c2fc1ed6a3ec649eb288f6c6924131da48cfe1a7fc97fc2e",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Information on file; sources; report recipients",
+   "context": [],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "All information in the consumer\u2019s file at the time of the request, except that\u2014",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "if the consumer to whom the file relates requests that the first 5 digits of the social security number (or similar identification number) of the consumer not be included in the disclosure and the consumer reporting agency has received appropriate proof of the identity of the requester, the consumer reporting agency shall so truncate such number in such disclosure; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "All information in the consumer\u2019s file at the time of the request, except that\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "nothing in this paragraph shall be construed to require a consumer reporting agency to disclose to a consumer any information concerning credit scores or any other risk scores or predictors relating to the consumer.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "All information in the consumer\u2019s file at the time of the request, except that\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "The sources of the information; except that the sources of information acquired solely for use in preparing an investigative consumer report and actually used for no other purpose need not be disclosed: Provided , That in the event an action is brought under this subchapter, such sources shall be available to the plaintiff under appropriate discovery procedures in the court in which the action is brought.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Identification of each person (including each end-user identified under section 1681e(e)(1) of this title ) that procured a consumer report\u2014",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "for employment purposes, during the 2-year period preceding the date on which the request is made; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Identification of each person (including each end-user identified under section 1681e(e)(1) of this title ) that procured a consumer report\u2014",
+     "path": [
+      "a",
+      "3",
+      "A"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "for any other purpose, during the 1-year period preceding the date on which the request is made.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Identification of each person (including each end-user identified under section 1681e(e)(1) of this title ) that procured a consumer report\u2014",
+     "path": [
+      "a",
+      "3",
+      "A"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "An identification of a person under subparagraph (A) shall include\u2014",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the name of the person or, if applicable, the trade name (written in full) under which such person conducts business; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "An identification of a person under subparagraph (A) shall include\u2014",
+     "path": [
+      "a",
+      "3",
+      "B"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "B",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "upon request of the consumer, the address and telephone number of the person.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "An identification of a person under subparagraph (A) shall include\u2014",
+     "path": [
+      "a",
+      "3",
+      "B"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Subparagraph (A) does not apply if\u2014",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "C",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the end user is an agency or department of the United States Government that procures the report from the person for purposes of determining the eligibility of the consumer to whom the report relates to receive access or continued access to classified information (as defined in section 1681b(b)(4)(E)(i) of this title); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Subparagraph (A) does not apply if\u2014",
+     "path": [
+      "a",
+      "3",
+      "C"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "C",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the head of the agency or department makes a written finding as prescribed under section 1681b(b)(4)(A) of this title .",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Subparagraph (A) does not apply if\u2014",
+     "path": [
+      "a",
+      "3",
+      "C"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "4"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "The dates, original payees, and amounts of any checks upon which is based any adverse characterization of the consumer, included in the file at the time of the disclosure.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "5"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "A record of all inquiries received by the agency during the 1-year period preceding the request that identified the consumer in connection with a credit or insurance transaction that was not initiated by the consumer.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "a",
+    "6"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "If the consumer requests the credit file and not the credit score, a statement that the consumer may request and obtain a credit score.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information on file; sources; report recipients Every consumer reporting agency shall, upon request, and subject to section 1681h(a)(1) of this title , clearly and accurately disclose to the consumer:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Exempt information",
+   "context": [],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+   "context": [],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Commission summary of rights required",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "In general",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Commission summary of rights required",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Content of summary",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Commission summary of rights required",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the right of a consumer to obtain a copy of a consumer report under subsection (a) from each consumer reporting agency;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Commission summary of rights required",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Content of summary The summary of rights prepared under subparagraph (A) shall include a description of\u2014",
+     "path": [
+      "c",
+      "1",
+      "B"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the frequency and circumstances under which a consumer is entitled to receive a consumer report without charge under section 1681j of this title ;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Commission summary of rights required",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Content of summary The summary of rights prepared under subparagraph (A) shall include a description of\u2014",
+     "path": [
+      "c",
+      "1",
+      "B"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B",
+    "iii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the right of a consumer to dispute information in the file of the consumer under section 1681i of this title ;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Commission summary of rights required",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Content of summary The summary of rights prepared under subparagraph (A) shall include a description of\u2014",
+     "path": [
+      "c",
+      "1",
+      "B"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B",
+    "iv"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the right of a consumer to obtain a credit score from a consumer reporting agency, and a description of how to obtain a credit score;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Commission summary of rights required",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Content of summary The summary of rights prepared under subparagraph (A) shall include a description of\u2014",
+     "path": [
+      "c",
+      "1",
+      "B"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B",
+    "v"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the method by which a consumer can contact, and obtain a consumer report from, a consumer reporting agency without charge, as provided in the regulations of the Bureau prescribed under section 211(c) 1 of the Fair and Accurate Credit Transactions Act of 2003; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Commission summary of rights required",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Content of summary The summary of rights prepared under subparagraph (A) shall include a description of\u2014",
+     "path": [
+      "c",
+      "1",
+      "B"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B",
+    "vi"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the method by which a consumer can contact, and obtain a consumer report from, a consumer reporting agency described in section 1681a(w) 1 of this title, as provided in the regulations of the Bureau prescribed under section 1681j(a)(1)(C) of this title .",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Commission summary of rights required",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Content of summary The summary of rights prepared under subparagraph (A) shall include a description of\u2014",
+     "path": [
+      "c",
+      "1",
+      "B"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Availability of summary of rights",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Commission summary of rights required",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "C",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "actively publicize the availability of the summary of rights prepared under this paragraph;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Commission summary of rights required",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Availability of summary of rights The Commission 2 shall\u2014",
+     "path": [
+      "c",
+      "1",
+      "C"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "C",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "conspicuously post on its Internet website the availability of such summary of rights; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Commission summary of rights required",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Availability of summary of rights The Commission 2 shall\u2014",
+     "path": [
+      "c",
+      "1",
+      "C"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "C",
+    "iii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "promptly make such summary of rights available to consumers, on request.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Commission summary of rights required",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Availability of summary of rights The Commission 2 shall\u2014",
+     "path": [
+      "c",
+      "1",
+      "C"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Summary of rights required to be included with agency disclosures",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the summary of rights prepared by the Bureau under paragraph (1);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Summary of rights required to be included with agency disclosures A consumer reporting agency shall provide to a consumer, with each written disclosure by the agency to the consumer under this section\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "in the case of a consumer reporting agency described in section 1681a(p) of this title , a toll-free telephone number established by the agency, at which personnel are accessible to consumers during normal business hours;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Summary of rights required to be included with agency disclosures A consumer reporting agency shall provide to a consumer, with each written disclosure by the agency to the consumer under this section\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "a list of all Federal agencies responsible for enforcing any provision of this subchapter, and the address and any appropriate phone number of each such agency, in a form that will assist the consumer in selecting the appropriate agency;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Summary of rights required to be included with agency disclosures A consumer reporting agency shall provide to a consumer, with each written disclosure by the agency to the consumer under this section\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "D"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "a statement that the consumer may have additional rights under State law, and that the consumer may wish to contact a State or local consumer protection agency or a State attorney general (or the equivalent thereof) to learn of those rights; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Summary of rights required to be included with agency disclosures A consumer reporting agency shall provide to a consumer, with each written disclosure by the agency to the consumer under this section\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "E"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "a statement that a consumer reporting agency is not required to remove accurate derogatory information from the file of a consumer, unless the information is outdated under section 1681c of this title or cannot be verified.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights to obtain and dispute information in consumer reports and to obtain credit scores",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Summary of rights required to be included with agency disclosures A consumer reporting agency shall provide to a consumer, with each written disclosure by the agency to the consumer under this section\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Summary of rights of identity theft victims",
+   "context": [],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "In general",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights of identity theft victims",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "d",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Summary of rights and contact information",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Summary of rights of identity theft victims",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Information available to victims",
+   "context": [],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "1"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "In general",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the victim;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general For the purpose of documenting fraudulent transactions resulting from identity theft, not later than 30 days after the date of receipt of a request from a victim in accordance with paragraph (3), and subject to verification of the identity of the victim and the claim of identity theft in accordance with paragraph (2), a business entity that has provided credit to, provided for consideration products, goods, or services to, accepted payment from, or otherwise entered into a commercial transaction for consideration with, a person who has allegedly made unauthorized use of the means of identification of the victim, shall provide a copy of application and business transaction records in the control of the business entity, whether maintained by the business entity or by another person on behalf of the business entity, evidencing any transaction alleged to be a result of identity theft to\u2014",
+     "path": [
+      "e",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "any Federal, State, or local government law enforcement agency or officer specified by the victim in such a request; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general For the purpose of documenting fraudulent transactions resulting from identity theft, not later than 30 days after the date of receipt of a request from a victim in accordance with paragraph (3), and subject to verification of the identity of the victim and the claim of identity theft in accordance with paragraph (2), a business entity that has provided credit to, provided for consideration products, goods, or services to, accepted payment from, or otherwise entered into a commercial transaction for consideration with, a person who has allegedly made unauthorized use of the means of identification of the victim, shall provide a copy of application and business transaction records in the control of the business entity, whether maintained by the business entity or by another person on behalf of the business entity, evidencing any transaction alleged to be a result of identity theft to\u2014",
+     "path": [
+      "e",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "1",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "any law enforcement agency investigating the identity theft and authorized by the victim to take receipt of records provided under this subsection.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general For the purpose of documenting fraudulent transactions resulting from identity theft, not later than 30 days after the date of receipt of a request from a victim in accordance with paragraph (3), and subject to verification of the identity of the victim and the claim of identity theft in accordance with paragraph (2), a business entity that has provided credit to, provided for consideration products, goods, or services to, accepted payment from, or otherwise entered into a commercial transaction for consideration with, a person who has allegedly made unauthorized use of the means of identification of the victim, shall provide a copy of application and business transaction records in the control of the business entity, whether maintained by the business entity or by another person on behalf of the business entity, evidencing any transaction alleged to be a result of identity theft to\u2014",
+     "path": [
+      "e",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Verification of identity and claim",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "as proof of positive identification of the victim, at the election of the business entity\u2014",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Verification of identity and claim Before a business entity provides any information under paragraph (1), unless the business entity, at its discretion, otherwise has a high degree of confidence that it knows the identity of the victim making a request under paragraph (1), the victim shall provide to the business entity\u2014",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the presentation of a government-issued identification card;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Verification of identity and claim Before a business entity provides any information under paragraph (1), unless the business entity, at its discretion, otherwise has a high degree of confidence that it knows the identity of the victim making a request under paragraph (1), the victim shall provide to the business entity\u2014",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "as proof of positive identification of the victim, at the election of the business entity\u2014",
+     "path": [
+      "e",
+      "2",
+      "A"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "personally identifying information of the same type as was provided to the business entity by the unauthorized person; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Verification of identity and claim Before a business entity provides any information under paragraph (1), unless the business entity, at its discretion, otherwise has a high degree of confidence that it knows the identity of the victim making a request under paragraph (1), the victim shall provide to the business entity\u2014",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "as proof of positive identification of the victim, at the election of the business entity\u2014",
+     "path": [
+      "e",
+      "2",
+      "A"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "A",
+    "iii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "personally identifying information that the business entity typically requests from new applicants or for new transactions, at the time of the victim\u2019s request for information, including any documentation described in clauses (i) and (ii); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Verification of identity and claim Before a business entity provides any information under paragraph (1), unless the business entity, at its discretion, otherwise has a high degree of confidence that it knows the identity of the victim making a request under paragraph (1), the victim shall provide to the business entity\u2014",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "as proof of positive identification of the victim, at the election of the business entity\u2014",
+     "path": [
+      "e",
+      "2",
+      "A"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "as proof of a claim of identity theft, at the election of the business entity\u2014",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Verification of identity and claim Before a business entity provides any information under paragraph (1), unless the business entity, at its discretion, otherwise has a high degree of confidence that it knows the identity of the victim making a request under paragraph (1), the victim shall provide to the business entity\u2014",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "a copy of a police report evidencing the claim of the victim of identity theft; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Verification of identity and claim Before a business entity provides any information under paragraph (1), unless the business entity, at its discretion, otherwise has a high degree of confidence that it knows the identity of the victim making a request under paragraph (1), the victim shall provide to the business entity\u2014",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "as proof of a claim of identity theft, at the election of the business entity\u2014",
+     "path": [
+      "e",
+      "2",
+      "B"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "B",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "a properly completed\u2014",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Verification of identity and claim Before a business entity provides any information under paragraph (1), unless the business entity, at its discretion, otherwise has a high degree of confidence that it knows the identity of the victim making a request under paragraph (1), the victim shall provide to the business entity\u2014",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "as proof of a claim of identity theft, at the election of the business entity\u2014",
+     "path": [
+      "e",
+      "2",
+      "B"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "I"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "copy of a standardized affidavit of identity theft developed and made available by the Bureau; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Verification of identity and claim Before a business entity provides any information under paragraph (1), unless the business entity, at its discretion, otherwise has a high degree of confidence that it knows the identity of the victim making a request under paragraph (1), the victim shall provide to the business entity\u2014",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "3"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Procedures",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "be in writing;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Procedures The request of a victim under paragraph (1) shall\u2014",
+     "path": [
+      "e",
+      "3"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "3",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "be mailed to an address specified by the business entity, if any; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Procedures The request of a victim under paragraph (1) shall\u2014",
+     "path": [
+      "e",
+      "3"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "3",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "if asked by the business entity, include relevant information about any transaction alleged to be a result of identity theft to facilitate compliance with this section including\u2014",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Procedures The request of a victim under paragraph (1) shall\u2014",
+     "path": [
+      "e",
+      "3"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "3",
+    "C",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "if known by the victim (or if readily obtainable by the victim), the date of the application or transaction; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Procedures The request of a victim under paragraph (1) shall\u2014",
+     "path": [
+      "e",
+      "3"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "if asked by the business entity, include relevant information about any transaction alleged to be a result of identity theft to facilitate compliance with this section including\u2014",
+     "path": [
+      "e",
+      "3",
+      "C"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "3",
+    "C",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "if known by the victim (or if readily obtainable by the victim), any other identifying information such as an account or transaction number.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Procedures The request of a victim under paragraph (1) shall\u2014",
+     "path": [
+      "e",
+      "3"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "if asked by the business entity, include relevant information about any transaction alleged to be a result of identity theft to facilitate compliance with this section including\u2014",
+     "path": [
+      "e",
+      "3",
+      "C"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "4"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "No charge to victim",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "5"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Authority to decline to provide information",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "5",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "this subsection does not require disclosure of the information;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Authority to decline to provide information A business entity may decline to provide information under paragraph (1) if, in the exercise of good faith, the business entity determines that\u2014",
+     "path": [
+      "e",
+      "5"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "5",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "after reviewing the information provided pursuant to paragraph (2), the business entity does not have a high degree of confidence in knowing the true identity of the individual requesting the information;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Authority to decline to provide information A business entity may decline to provide information under paragraph (1) if, in the exercise of good faith, the business entity determines that\u2014",
+     "path": [
+      "e",
+      "5"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "5",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the request for the information is based on a misrepresentation of fact by the individual requesting the information relevant to the request for information; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Authority to decline to provide information A business entity may decline to provide information under paragraph (1) if, in the exercise of good faith, the business entity determines that\u2014",
+     "path": [
+      "e",
+      "5"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "5",
+    "D"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the information requested is Internet navigational data or similar information about a person\u2019s visit to a website or online service.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Authority to decline to provide information A business entity may decline to provide information under paragraph (1) if, in the exercise of good faith, the business entity determines that\u2014",
+     "path": [
+      "e",
+      "5"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "6"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Limitation on liability",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "7"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Limitation on civil liability",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "8"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "No new recordkeeping obligation",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "9"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Rule of construction",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "9",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "In general",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Rule of construction",
+     "path": [
+      "e",
+      "9"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "9",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Limitation",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Rule of construction",
+     "path": [
+      "e",
+      "9"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "10"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Affirmative defense",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "10",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the business entity has made a reasonably diligent search of its available business records; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Affirmative defense In any civil action brought to enforce this subsection, it is an affirmative defense (which the defendant must establish by a preponderance of the evidence) for a business entity to file an affidavit or answer stating that\u2014",
+     "path": [
+      "e",
+      "10"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "10",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the records requested under this subsection do not exist or are not reasonably available.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Affirmative defense In any civil action brought to enforce this subsection, it is an affirmative defense (which the defendant must establish by a preponderance of the evidence) for a business entity to file an affidavit or answer stating that\u2014",
+     "path": [
+      "e",
+      "10"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "11"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Definition of victim",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "12"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Effective date",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "e",
+    "13"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Effectiveness study",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Information available to victims",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Disclosure of credit scores",
+   "context": [],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "1"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "In general",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the current credit score of the consumer or the most recent credit score of the consumer that was previously calculated by the credit reporting agency for a purpose related to the extension of credit;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Upon the request of a consumer for a credit score, a consumer reporting agency shall supply to the consumer a statement indicating that the information and credit scoring model may be different than the credit score that may be used by the lender, and a notice which shall include\u2014",
+     "path": [
+      "f",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the range of possible credit scores under the model used;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Upon the request of a consumer for a credit score, a consumer reporting agency shall supply to the consumer a statement indicating that the information and credit scoring model may be different than the credit score that may be used by the lender, and a notice which shall include\u2014",
+     "path": [
+      "f",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "1",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "all of the key factors that adversely affected the credit score of the consumer in the model used, the total number of which shall not exceed 4, subject to paragraph (9);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Upon the request of a consumer for a credit score, a consumer reporting agency shall supply to the consumer a statement indicating that the information and credit scoring model may be different than the credit score that may be used by the lender, and a notice which shall include\u2014",
+     "path": [
+      "f",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "1",
+    "D"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the date on which the credit score was created; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Upon the request of a consumer for a credit score, a consumer reporting agency shall supply to the consumer a statement indicating that the information and credit scoring model may be different than the credit score that may be used by the lender, and a notice which shall include\u2014",
+     "path": [
+      "f",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "1",
+    "E"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "the name of the person or entity that provided the credit score or credit file upon which the credit score was created.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Upon the request of a consumer for a credit score, a consumer reporting agency shall supply to the consumer a statement indicating that the information and credit scoring model may be different than the credit score that may be used by the lender, and a notice which shall include\u2014",
+     "path": [
+      "f",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Definitions",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Credit score",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Definitions For purposes of this subsection, the following definitions shall apply:",
+     "path": [
+      "f",
+      "2"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "2",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "means a numerical value or a categorization derived from a statistical tool or modeling system used by a person who makes or arranges a loan to predict the likelihood of certain credit behaviors, including default (and the numerical value or the categorization derived from such analysis may also be referred to as a \u201crisk predictor\u201d or \u201crisk score\u201d); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Definitions For purposes of this subsection, the following definitions shall apply:",
+     "path": [
+      "f",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Credit score The term \u201ccredit score\u201d\u2014",
+     "path": [
+      "f",
+      "2",
+      "A"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "2",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "does not include\u2014",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Definitions For purposes of this subsection, the following definitions shall apply:",
+     "path": [
+      "f",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Credit score The term \u201ccredit score\u201d\u2014",
+     "path": [
+      "f",
+      "2",
+      "A"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "2",
+    "I"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "any mortgage score or rating of an automated underwriting system that considers one or more factors in addition to credit information, including the loan to value ratio, the amount of down payment, or the financial assets of a consumer; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Definitions For purposes of this subsection, the following definitions shall apply:",
+     "path": [
+      "f",
+      "2"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Key factors",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Definitions For purposes of this subsection, the following definitions shall apply:",
+     "path": [
+      "f",
+      "2"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "3"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Timeframe and manner of disclosure",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "4"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Applicability to certain uses",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "4",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "distribute scores that are used in connection with residential real property loans; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Applicability to certain uses This subsection shall not be construed so as to compel a consumer reporting agency to develop or disclose a score if the agency does not\u2014",
+     "path": [
+      "f",
+      "4"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "4",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "develop scores that assist credit providers in understanding the general credit behavior of a consumer and predicting the future credit behavior of the consumer.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Applicability to certain uses This subsection shall not be construed so as to compel a consumer reporting agency to develop or disclose a score if the agency does not\u2014",
+     "path": [
+      "f",
+      "4"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "5"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Applicability to credit scores developed by another person",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "5",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "In general",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Applicability to credit scores developed by another person",
+     "path": [
+      "f",
+      "5"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "5",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Exception",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Applicability to credit scores developed by another person",
+     "path": [
+      "f",
+      "5"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "6"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Maintenance of credit scores not required",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "7"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Compliance in certain cases",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "7",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "supply the consumer with a credit score that is derived from a credit scoring model that is widely distributed to users by that consumer reporting agency in connection with residential real property loans or with a credit score that assists the consumer in understanding the credit scoring assessment of the credit behavior of the consumer and predictions about the future credit behavior of the consumer; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Compliance in certain cases In complying with this subsection, a consumer reporting agency shall\u2014",
+     "path": [
+      "f",
+      "7"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "7",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "a statement indicating that the information and credit scoring model may be different than that used by the lender.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Compliance in certain cases In complying with this subsection, a consumer reporting agency shall\u2014",
+     "path": [
+      "f",
+      "7"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "8"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Fair and reasonable fee",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "f",
+    "9"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Use of enquiries as a key factor",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Disclosure of credit scores by certain mortgage lenders",
+   "context": [],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "In general",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Information required under subsection (f)",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "In general",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Information required under subsection (f)",
+     "path": [
+      "g",
+      "1",
+      "A"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Notice under subparagraph (D)",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Information required under subsection (f)",
+     "path": [
+      "g",
+      "1",
+      "A"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Disclosures in case of automated underwriting system",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "In general",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Disclosures in case of automated underwriting system",
+     "path": [
+      "g",
+      "1",
+      "B"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "B",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Numerical credit score",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Disclosures in case of automated underwriting system",
+     "path": [
+      "g",
+      "1",
+      "B"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "B",
+    "iii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Enterprise defined",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Disclosures in case of automated underwriting system",
+     "path": [
+      "g",
+      "1",
+      "B"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Disclosures of credit scores not obtained from a consumer reporting agency",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "D"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Notice to home loan applicants",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "E"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Actions not required under this subsection",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "E",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "explain the information provided pursuant to subsection (f);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Actions not required under this subsection This subsection shall not require any person to\u2014",
+     "path": [
+      "g",
+      "1",
+      "E"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "E",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "disclose any information other than a credit score or key factors, as defined in subsection (f);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Actions not required under this subsection This subsection shall not require any person to\u2014",
+     "path": [
+      "g",
+      "1",
+      "E"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "E",
+    "iii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "disclose any credit score or related information obtained by the user after a loan has closed;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Actions not required under this subsection This subsection shall not require any person to\u2014",
+     "path": [
+      "g",
+      "1",
+      "E"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "E",
+    "iv"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "provide more than 1 disclosure per loan transaction; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Actions not required under this subsection This subsection shall not require any person to\u2014",
+     "path": [
+      "g",
+      "1",
+      "E"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "E",
+    "v"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "provide the disclosure required by this subsection when another person has made the disclosure to the consumer for that loan transaction.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Actions not required under this subsection This subsection shall not require any person to\u2014",
+     "path": [
+      "g",
+      "1",
+      "E"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "F"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "No obligation for content",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "F",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "In general",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "No obligation for content",
+     "path": [
+      "g",
+      "1",
+      "F"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "F",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Limit on liability",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "No obligation for content",
+     "path": [
+      "g",
+      "1",
+      "F"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "1",
+    "G"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Person defined as excluding enterprise",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In general Any person who makes or arranges loans and who uses a consumer credit score, as defined in subsection (f), in connection with an application initiated or sought by a consumer for a closed end loan or the establishment of an open end loan for a consumer purpose that is secured by 1 to 4 units of residential real property (hereafter in this subsection referred to as the \u201clender\u201d) shall provide the following to the consumer as soon as reasonably practicable:",
+     "path": [
+      "g",
+      "1"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "Prohibition on disclosure clauses null and void",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "In general",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Prohibition on disclosure clauses null and void",
+     "path": [
+      "g",
+      "2"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  },
+  {
+   "path": [
+    "g",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681g",
+   "section": null,
+   "confidence": "high",
+   "heading": "Disclosures to consumers",
+   "text": "No liability for disclosure under this subsection",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Disclosure of credit scores by certain mortgage lenders",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Prohibition on disclosure clauses null and void",
+     "path": [
+      "g",
+      "2"
+     ],
+     "anchor": null
+    }
+   ],
+   "derivation": "reconstructed"
+  }
+ ]
+}

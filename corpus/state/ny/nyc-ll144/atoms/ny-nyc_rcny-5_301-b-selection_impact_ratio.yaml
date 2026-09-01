@@ -1,0 +1,115 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: local
+regulator:
+  - nyc_dcwp
+sector:
+  - employment
+status: in_force
+effective_from: '2023-04-05'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: medium
+related:
+  - ny.nyc_rcny.5_301.b.3.intersectional_categories
+id: ny.nyc_rcny.5_301.b.selection_impact_ratio
+source:
+  citation: 6 RCNY § 5-301(b)
+  instrument_id: nyc.local_law_144
+  url: >-
+    urn:owner-supplied:nyc-dcwp-notice-of-adoption-aedt-2023-04-05.pdf
+  fetched: '2026-08-24'
+  raw_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  raw_sha256: 4ecc4463b29440f9b876b0b7319faf2d4c4710b8ad28db9cfa8ae15a123ece2c
+  text_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.txt
+  text_sha256: 21b43190233735cdab074166a3fc9cc2c26aa24c4b5a80596656cda690abee44
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  format: pdf_single_col
+  risk_tier: medium
+  render: null
+  structured_source_check:
+    checked:
+      - amlegal.com (403 to automated requests)
+      - rules.cityofnewyork.us (carries proposal notices)
+      - owner-supplied DCWP Notice of Adoption of Final Rule
+    result: no_structured_source_exists
+    note: >-
+      No structured source serves the Rules of the City of New York. This is the ADOPTED text — a
+      Notice of Adoption carries the final rule in clean form, unlike a proposal notice — so it is
+      the right document, in the wrong format.
+  segment_sha256: 20b6ee2f981c9d66b1bf8c0a110af622bb83ce6204c126d6a081407bdac01937
+verbatim_span: >-
+  Where an AEDT selects candidates for employment or employees being considered for promotion to
+  move forward in the hiring process or classifies them into groups, a bias audit must, at a
+  minimum:
+paragraph_path:
+  path:
+    - b
+  anchor: 5-301
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from a pdftotext -layout rendering; indentation is NOT used as
+    evidence because the PDF resets its left margin per page. Resolves to exactly one leaf.
+subject:
+  domain: IV.A.2
+  lifecycle:
+    - III
+data_types:
+  - any
+federal_relationship: gap_fills
+applies_if:
+  all:
+    - entity.uses_automated_employment_decision_tool == true
+    - entity.nexus in ["US-NY-NYC"]
+applies_to_role: controller
+obligation_type: assess
+deadline: null
+exemptions: []
+summary: >-
+  For an AEDT that selects or classifies candidates, the independent auditor must calculate
+  selection rates and impact ratios for each category.
+requirement_detail: >-
+  THIS IS THE METHODOLOGY THE ADMINISTRATIVE CODE DOES NOT CONTAIN. § 20-870 defines a "bias audit"
+  as an impartial evaluation including testing for disparate impact, and stops there — what must
+  actually be computed lives here, and nowhere else. The chapeau sets the SELECTION branch: it
+  governs tools that move candidates forward or classify them, as distinct from subdivision (c),
+  which governs tools that SCORE. An employer that applies the wrong branch computes the wrong
+  statistic.
+common_errors:
+  - >-
+    Applying this to a scoring tool. Scoring is subdivision (c), which computes a median and a
+    scoring rate rather than a selection rate.
+open_questions:
+  - >-
+    THE DOCUMENT STATES NO EFFECTIVE DATE. effective_from is taken from the PDF's own CreationDate
+    metadata (5 April 2023), which is evidence about the FILE rather than a statement in the rule.
+    New York City rules generally take effect after publication in the City Record, which this
+    corpus does not hold. Confirm the operative date against the City Record before relying on any
+    as-of query in 2023.
+preemption:
+  posture: none
+  authority: 6 RCNY Subchapter T
+  note: >-
+    City rule implementing N.Y.C. Admin. Code § 20-870 et seq. No federal statute regulates
+    automated employment decision tools as such; Title VII reaches discriminatory OUTCOMES and says
+    nothing about auditing a tool in advance.
+enforcement:
+  enforcers:
+    - nyc_dcwp
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil penalties under N.Y.C. Admin. Code § 20-872, per violation and per day of continuing
+      violation.
+    range: null
+    note: >-
+      The penalty structure is in the Administrative Code, not this rule; see
+      nyc.ll144.20_872.b.daily_penalty.
+  statute_of_limitations: null
+context_not_required: The subdivision states the rule in full; no ancestor contributes governing text.

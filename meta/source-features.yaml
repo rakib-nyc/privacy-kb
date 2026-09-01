@@ -1,0 +1,55 @@
+# SOURCE FEATURE INVENTORY
+# ========================
+purpose: Extraction-hostile features per pdf_* source and per span. Drives gate 12 sampling, which selects
+  by FEATURE rather than by risk tier — tier proved not to predict where renderer faults appear.
+generated: '2026-08-19'
+sources:
+- raw_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  instrument_id: nyc.local_law_144
+  format: pdf_single_col
+  risk_tier: medium
+  pages_in_scope: all
+  features:
+    subparagraph_marker:
+      present: true
+      count: 31
+    footnote_ref:
+      present: false
+      count: 0
+    table:
+      present: true
+      count: 9
+    multi_column:
+      present: false
+      count: 0
+    hyphenation:
+      present: true
+      count: 1
+    non_ascii:
+      present: true
+      count: 110
+  hostile_features:
+  - subparagraph_marker
+  - table
+  - hyphenation
+  - non_ascii
+spans:
+- record_id: ny.nyc_rcny.5_301.a.audit_currency
+  instrument_id: nyc.local_law_144
+  features: []
+- record_id: ny.nyc_rcny.5_301.b.3.intersectional_categories
+  instrument_id: nyc.local_law_144
+  features: []
+- record_id: ny.nyc_rcny.5_301.b.selection_impact_ratio
+  instrument_id: nyc.local_law_144
+  features: []
+- record_id: ny.nyc_rcny.5_302.a.historical_data
+  instrument_id: nyc.local_law_144
+  features: []
+- record_id: ny.nyc_rcny.5_303.a.published_results
+  instrument_id: nyc.local_law_144
+  features: []
+- record_id: ny.nyc_rcny.5_304.b.candidate_notice
+  instrument_id: nyc.local_law_144
+  features:
+  - non_ascii

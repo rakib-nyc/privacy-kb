@@ -1,0 +1,161 @@
+id: us.tcpa.64_1200.c2.national_dnc_registry
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 C.F.R. § 64.1200(c)(2)
+  instrument_id: us.tcpa
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: 2169993041db729baae5700bb491103e8e2b9869e23e5977f7d7c0ea30d4d116
+verbatim_span: >-
+  A residential telephone subscriber who has registered his or her telephone number on the national
+  do-not-call registry of persons who do not wish to receive telephone solicitations that is
+  maintained by the Federal Government. Such do-not-call registrations must be honored indefinitely,
+  or until the registration is cancelled by the consumer or the telephone number is removed by the
+  database administrator. Any person or entity making telephone solicitations (or on whose behalf
+  telephone solicitations are made) will not be liable for violating this requirement if:
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - c
+    - '2'
+  anchor: '64.1200'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator run reconstructed from flat <P> siblings; resolves to exactly one leaf within the
+    section (gate 23)
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'No person or entity shall initiate any telephone solicitation to:'
+    citation: null
+    path:
+      path:
+        - c
+      anchor: null
+      derivation: reconstructed
+      confidence: high
+      evidence: designator sequence reconstructed from flat <P> siblings
+subject:
+  domain: II.E.2
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+  - state_ag
+sector:
+  - telemarketing
+  - telecom
+data_types:
+  - contact_data
+status: in_force
+effective_from: '2003-07-25'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history:
+  - date: '2003-07-25'
+    note: >-
+      Source note printed with the section: "[68 FR 44177, July 25, 2003, as amended ...]", running
+      through 90 FR 42138, Aug. 29, 2025. July 25, 2003 is the earliest date the fetched source
+      itself asserts for 47 C.F.R. § 64.1200 as codified.
+    source_url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+applies_if:
+  all:
+    - practice.makes_telephone_solicitations == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  No person or entity may initiate a telephone solicitation to a residential subscriber registered
+  on the national do-not-call registry; registrations are honoured indefinitely until cancelled or
+  removed, subject to the safe harbour and the permission and personal relationship exceptions in
+  (c)(2)(i)–(iii).
+requirement_detail: >-
+  THIS IS THE ENFORCEABLE HALF OF THE NATIONAL REGISTRY — 47 U.S.C. § 227(c)(3)(F) only tells the
+  Commission to write it — and its structure is a strict prohibition with a compliance-based escape
+  rather than a reasonableness standard. Paragraph (c)(2)(i) is a genuine safe harbour: the caller
+  must show the violation was the result of error AND that its routine business practice meets all
+  five enumerated standards, which include written procedures, trained personnel, a maintained
+  internal list, and a registry-scrubbing process. The 2003 sunset of the
+  established-business-relationship exception for registry calls is the most consequential change
+  practitioners forget: an EBR no longer excuses a call to a registered residential number, and only
+  prior express invitation or permission evidenced by a signed writing under (c)(2)(ii), or a
+  personal relationship under (c)(2)(iii), does. Note the reach is RESIDENTIAL subscribers; wireless
+  numbers are treated as presumptively residential by FCC policy rather than by the text of this
+  paragraph, which is why the wireless question is litigated rather than looked up. Compliance here
+  does not dispose of the FTC's parallel registry rule at 16 C.F.R. § 310.4(b)(1)(iii), whose
+  exemptions differ.
+deadline: null
+exemptions:
+  - id: us.tcpa.64_1200.c2ii.prior_express_invitation
+    type: activity_level
+    scope: >-
+      Calls to a registered residential subscriber who has given prior express invitation or
+      permission evidenced by a signed, written agreement naming the seller and the number.
+    source_citation: 47 C.F.R. § 64.1200(c)(2)(ii)
+    verbatim_span: >-
+      It has obtained the subscriber's prior express invitation or permission. Such permission must
+      be evidenced by a signed, written agreement between the consumer and seller which states that
+      the consumer agrees to be contacted by this seller and includes the telephone number to which
+      the calls may be placed; or
+    burden_of_proof: >-
+      On the caller: the paragraph requires the permission to be evidenced by a signed, written
+      agreement, so the writing is the proof.
+    applies_if:
+      all:
+        - practice.has_signed_written_solicitation_permission == true
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Relying on an established business relationship to call a registered residential number. The EBR
+    exception to the registry prohibition was withdrawn; (c)(2)(ii) requires a signed writing.
+  - >-
+    Treating (c)(2)(i) as a reasonableness defence. It is a five-part safe harbour and the caller
+    must satisfy every element, including registry scrubbing and written procedures.
+  - >-
+    Assuming registry compliance answers the whole call. The internal company-specific list under §
+    64.1200(d) and the FTC Telemarketing Sales Rule apply independently.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 227(f)(1)
+  note: >-
+    § 227(f)(1)(D) preserves more restrictive intrastate State law on the making of telephone
+    solicitations, so State do-not-call statutes survive. § 227(f)(2) is the exception: once the
+    Commission requires a national database, a State may not require its own separate one for
+    intrastate solicitations.
+enforcement:
+  enforcers:
+    - fcc
+    - state_ag
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Private action under 47 U.S.C. § 227(c)(5) for violation of the subsection (c) regulations;
+      FCC forfeiture under § 503(b); State AG action under § 227(g).
+    range: >-
+      Actual monetary loss or up to $500 per violation, whichever is greater, trebled for a wilful
+      or knowing violation.
+    note: >-
+      The § 227(c)(5) action requires more than one call within a 12-month period and is subject to
+      the statutory due-care affirmative defence.
+  statute_of_limitations: null

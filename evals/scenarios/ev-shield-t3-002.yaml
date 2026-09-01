@@ -1,0 +1,107 @@
+id: ev.shield.t3.002
+question: >-
+  We are a HIPAA covered entity. We discovered a breach on 1 August 2026 and notified the Secretary
+  of HHS on 5 August, inside the federal window. Some of the affected people are New York
+  residents. What is our next deadline?
+trap: >-
+  T3, and this is the case a general model gets backwards. Every instinct says the federal clock
+  is the binding one and the state layer is a slower parallel duty to handle afterwards. The
+  opposite is true, and the reason is structural rather than arithmetic: N.Y. Gen. Bus. Law
+  § 899-aa(9) is triggered BY the act of notifying the Secretary, not by discovery. Doing the
+  federal thing correctly on 5 August starts a five-BUSINESS-day New York clock that expires on
+  12 August, while the § 899-aa(2) resident-notice clock — thirty days from discovery on 1 August
+  — does not expire until 31 August. So the next deadline is a state one, it exists only because
+  federal compliance occurred, and an entity that files the federal notice and then turns to "the
+  state layer" next quarter has already missed it. Compounding the trap, § 899-aa(9) expressly
+  reaches breaches of information that is NOT "private information" under § 899-aa(1)(b), so a
+  clinical-data breach with no covered data element still triggers the Albany filing.
+rubric:
+- name: the § 899-aa(9) duty is triggered by the HHS notification, not by discovery
+  record: ny.gbl.899_aa.9.hipaa_ag_notice
+  path: deadline.trigger_event
+  equals: notification to the Secretary of Health and Human Services
+- name: its clock is five BUSINESS days
+  record: ny.gbl.899_aa.9.hipaa_ag_notice
+  path: deadline.duration.value
+  equals: 5
+- name: business days, not calendar days
+  record: ny.gbl.899_aa.9.hipaa_ag_notice
+  path: deadline.duration.unit
+  equals: business_days
+- name: it reaches information that is not "private information"
+  record: ny.gbl.899_aa.9.hipaa_ag_notice
+  path: requirement_detail
+  contains: expressly reaches breaches of information that is NOT
+- name: it is recorded as exceeding the federal floor
+  record: ny.gbl.899_aa.9.hipaa_ag_notice
+  path: federal_relationship
+  equals: exceeds_floor
+- name: ENGINE — the state AG deadline computes to 12 August 2026
+  engine: &breach
+    entity: {is_hipaa_covered_entity: true, holds_as_employer: false,
+             owns_or_licenses_computerized_data: true, in_or_affecting_commerce: true, nexus: US}
+    data: {is_phi: true, in_employment_record: false, includes_ny_private_information: true}
+    context:
+      as_of: '2026-08-19'
+      state_layers: [US-NY]
+      event:
+        type: breach_of_security_of_the_system
+        discovery of the breach: '2026-08-01'
+        notification to the Secretary of Health and Human Services: '2026-08-05'
+      practice: {notified_hhs_secretary_of_breach: true}
+  atom: ny.gbl.899_aa.9.hipaa_ag_notice
+  in: deadlines
+  path: computed
+  equals: '2026-08-12'
+- name: ENGINE — and it runs from the HHS notification date, not from discovery
+  engine: *breach
+  atom: ny.gbl.899_aa.9.hipaa_ag_notice
+  in: deadlines
+  path: trigger_date
+  equals: '2026-08-05'
+- name: ENGINE — the resident-notice deadline is LATER, on 31 August
+  engine: *breach
+  atom: ny.gbl.899_aa.2.notify_residents
+  in: deadlines
+  path: computed
+  equals: '2026-08-31'
+- name: ENGINE — which runs from discovery, a different trigger entirely
+  engine: *breach
+  atom: ny.gbl.899_aa.2.notify_residents
+  in: deadlines
+  path: trigger_date
+  equals: '2026-08-01'
+- name: ENGINE — the resident notice is not a bare deadline; promptness applies alongside it
+  engine: *breach
+  atom: ny.gbl.899_aa.2.notify_residents
+  in: deadlines
+  path: also_requires_promptness
+  equals: true
+- name: ENGINE — both HIPAA obligations remain applicable, since HIPAA is a floor
+  engine: *breach
+  atom: us.cfr.45.164.502.a.use_disclosure_general
+  in: applicable
+- name: HIPAA's posture is floor, so the state duty is not displaced
+  record: us.cfr.45.164.502.a.use_disclosure_general
+  path: preemption.posture
+  equals: floor
+- name: SHIELD preempts local ordinances only, never federal law
+  record: ny.gbl.899_aa.9.hipaa_ag_notice
+  path: preemption.note
+  contains: says nothing about federal law
+correct_answer: >-
+  12 August 2026 — a New York deadline, and it exists only because you complied with the federal
+  rule. N.Y. Gen. Bus. Law § 899-aa(9) requires a covered entity that notifies the Secretary of
+  HHS to notify the New York attorney general within five BUSINESS days of doing so. You notified
+  on 5 August, so the AG filing is due 12 August. The resident-notice duty under § 899-aa(2) runs
+  thirty days from DISCOVERY, expiring 31 August, and is subject in addition to "the most expedient
+  time possible and without unreasonable delay" — thirty days is a ceiling on that standard, not a
+  safe harbour. Three things follow. The next deadline is a state one even though the federal
+  notice went out first. § 899-aa(9) expressly reaches breaches of information that is not
+  "private information" under § 899-aa(1)(b), so a clinical-data breach with no covered data
+  element still triggers it. And HIPAA does not displace any of this: 45 C.F.R. § 160.203 makes it
+  a floor, and § 899-aa(10) preempts only local ordinances. If notice to affected persons already
+  went out under the HIPAA breach rule, § 899-aa(2)(b) removes the duty to notify those same
+  people again — but it expressly preserves the attorney general, department of state and state
+  police notices under § 899-aa(8)(a).
+all_pass: true

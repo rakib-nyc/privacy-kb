@@ -1,0 +1,689 @@
+{
+ "label": "18 U.S.C. \u00a7 2710",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": true,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/vppa/raw/18-u-s-c-2710.xml",
+ "raw_sha256": "3dd90781077d08d0621dbaefb5b60a0cf25ba158d64855af6847559dec36d7ff",
+ "leaves": [
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": "/us/usc/t18/s2710/a/1",
+   "heading": "",
+   "text": "the term \u201cconsumer\u201d means any renter, purchaser, or subscriber of goods or services from a video tape service provider;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2710/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": "/us/usc/t18/s2710/a/2",
+   "heading": "",
+   "text": "the term \u201cordinary course of business\u201d means only debt collection activities, order fulfillment, request processing, and the transfer of ownership;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2710/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3"
+   ],
+   "anchor": "/us/usc/t18/s2710/a/3",
+   "heading": "",
+   "text": "the term \u201cpersonally identifiable information\u201d includes information which identifies a person as having requested or obtained specific video materials or services from a video tape service provider; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2710/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "4"
+   ],
+   "anchor": "/us/usc/t18/s2710/a/4",
+   "heading": "",
+   "text": "the term \u201cvideo tape service provider\u201d means any person, engaged in the business, in or affecting interstate or foreign commerce, of rental, sale, or delivery of prerecorded video cassette tapes or similar audio visual materials, or any person or other entity to whom a disclosure is made under subparagraph (D) or (E) of subsection (b)(2), but only with respect to the information contained in the disclosure.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2710/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": "/us/usc/t18/s2710/b/1",
+   "heading": "",
+   "text": "A video tape service provider who knowingly discloses, to any person, personally identifiable information concerning any consumer of such provider shall be liable to the aggrieved person for the relief provided in subsection (d).",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s2710/b/2/A",
+   "heading": "",
+   "text": "to the consumer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A video tape service provider may disclose personally identifiable information concerning any consumer\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "follows",
+     "text": "If an order is granted pursuant to subparagraph (C) or (F), the court shall impose appropriate safeguards against unauthorized disclosure.",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t18/s2710/b/2/B/i",
+   "heading": "",
+   "text": "is in a form distinct and separate from any form setting forth other legal or financial obligations of the consumer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A video tape service provider may disclose personally identifiable information concerning any consumer\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "follows",
+     "text": "If an order is granted pursuant to subparagraph (C) or (F), the court shall impose appropriate safeguards against unauthorized disclosure.",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "to any person with the informed, written consent (including through an electronic means using the Internet) of the consumer that\u2014",
+     "path": [
+      "b",
+      "2",
+      "B"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "B",
+    "ii",
+    "I"
+   ],
+   "anchor": "/us/usc/t18/s2710/b/2/B/ii/I",
+   "heading": "",
+   "text": "is given at the time the disclosure is sought; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A video tape service provider may disclose personally identifiable information concerning any consumer\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "follows",
+     "text": "If an order is granted pursuant to subparagraph (C) or (F), the court shall impose appropriate safeguards against unauthorized disclosure.",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "to any person with the informed, written consent (including through an electronic means using the Internet) of the consumer that\u2014",
+     "path": [
+      "b",
+      "2",
+      "B"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2/B"
+    },
+    {
+     "position": "precedes",
+     "text": "at the election of the consumer\u2014",
+     "path": [
+      "b",
+      "2",
+      "B",
+      "ii"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2/B/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "B",
+    "ii",
+    "II"
+   ],
+   "anchor": "/us/usc/t18/s2710/b/2/B/ii/II",
+   "heading": "",
+   "text": "is given in advance for a set period of time, not to exceed 2 years or until consent is withdrawn by the consumer, whichever is sooner; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A video tape service provider may disclose personally identifiable information concerning any consumer\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "follows",
+     "text": "If an order is granted pursuant to subparagraph (C) or (F), the court shall impose appropriate safeguards against unauthorized disclosure.",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "to any person with the informed, written consent (including through an electronic means using the Internet) of the consumer that\u2014",
+     "path": [
+      "b",
+      "2",
+      "B"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2/B"
+    },
+    {
+     "position": "precedes",
+     "text": "at the election of the consumer\u2014",
+     "path": [
+      "b",
+      "2",
+      "B",
+      "ii"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2/B/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "B",
+    "iii"
+   ],
+   "anchor": "/us/usc/t18/s2710/b/2/B/iii",
+   "heading": "",
+   "text": "the video tape service provider has provided an opportunity, in a clear and conspicuous manner, for the consumer to withdraw on a case-by-case basis or to withdraw from ongoing disclosures, at the consumer\u2019s election;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A video tape service provider may disclose personally identifiable information concerning any consumer\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "follows",
+     "text": "If an order is granted pursuant to subparagraph (C) or (F), the court shall impose appropriate safeguards against unauthorized disclosure.",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "to any person with the informed, written consent (including through an electronic means using the Internet) of the consumer that\u2014",
+     "path": [
+      "b",
+      "2",
+      "B"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "C"
+   ],
+   "anchor": "/us/usc/t18/s2710/b/2/C",
+   "heading": "",
+   "text": "to a law enforcement agency pursuant to a warrant issued under the Federal Rules of Criminal Procedure, an equivalent State warrant, a grand jury subpoena, or a court order;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A video tape service provider may disclose personally identifiable information concerning any consumer\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "follows",
+     "text": "If an order is granted pursuant to subparagraph (C) or (F), the court shall impose appropriate safeguards against unauthorized disclosure.",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "D",
+    "i"
+   ],
+   "anchor": "/us/usc/t18/s2710/b/2/D/i",
+   "heading": "",
+   "text": "the video tape service provider has provided the consumer with the opportunity, in a clear and conspicuous manner, to prohibit such disclosure; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A video tape service provider may disclose personally identifiable information concerning any consumer\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "follows",
+     "text": "If an order is granted pursuant to subparagraph (C) or (F), the court shall impose appropriate safeguards against unauthorized disclosure.",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "to any person if the disclosure is solely of the names and addresses of consumers and if\u2014",
+     "path": [
+      "b",
+      "2",
+      "D"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2/D"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "D",
+    "ii"
+   ],
+   "anchor": "/us/usc/t18/s2710/b/2/D/ii",
+   "heading": "",
+   "text": "the disclosure does not identify the title, description, or subject matter of any video tapes or other audio visual material; however, the subject matter of such materials may be disclosed if the disclosure is for the exclusive use of marketing goods and services directly to the consumer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A video tape service provider may disclose personally identifiable information concerning any consumer\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "follows",
+     "text": "If an order is granted pursuant to subparagraph (C) or (F), the court shall impose appropriate safeguards against unauthorized disclosure.",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "to any person if the disclosure is solely of the names and addresses of consumers and if\u2014",
+     "path": [
+      "b",
+      "2",
+      "D"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2/D"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "E"
+   ],
+   "anchor": "/us/usc/t18/s2710/b/2/E",
+   "heading": "",
+   "text": "to any person if the disclosure is incident to the ordinary course of business of the video tape service provider; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A video tape service provider may disclose personally identifiable information concerning any consumer\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "follows",
+     "text": "If an order is granted pursuant to subparagraph (C) or (F), the court shall impose appropriate safeguards against unauthorized disclosure.",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "F",
+    "i"
+   ],
+   "anchor": "/us/usc/t18/s2710/b/2/F/i",
+   "heading": "",
+   "text": "the consumer is given reasonable notice, by the person seeking the disclosure, of the court proceeding relevant to the issuance of the court order; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A video tape service provider may disclose personally identifiable information concerning any consumer\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "follows",
+     "text": "If an order is granted pursuant to subparagraph (C) or (F), the court shall impose appropriate safeguards against unauthorized disclosure.",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "pursuant to a court order, in a civil proceeding upon a showing of compelling need for the information that cannot be accommodated by any other means, if\u2014",
+     "path": [
+      "b",
+      "2",
+      "F"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2/F"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "F",
+    "ii"
+   ],
+   "anchor": "/us/usc/t18/s2710/b/2/F/ii",
+   "heading": "",
+   "text": "the consumer is afforded the opportunity to appear and contest the claim of the person seeking the disclosure.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A video tape service provider may disclose personally identifiable information concerning any consumer\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "follows",
+     "text": "If an order is granted pursuant to subparagraph (C) or (F), the court shall impose appropriate safeguards against unauthorized disclosure.",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "pursuant to a court order, in a civil proceeding upon a showing of compelling need for the information that cannot be accommodated by any other means, if\u2014",
+     "path": [
+      "b",
+      "2",
+      "F"
+     ],
+     "anchor": "/us/usc/t18/s2710/b/2/F"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": "/us/usc/t18/s2710/b/3",
+   "heading": "",
+   "text": "Court orders authorizing disclosure under subparagraph (C) shall issue only with prior notice to the consumer and only if the law enforcement agency shows that there is probable cause to believe that the records or other information sought are relevant to a legitimate law enforcement inquiry. In the case of a State government authority, such a court order shall not issue if prohibited by the law of such State. A court issuing an order pursuant to this section, on a motion made promptly by the video tape service provider, may quash or modify such order if the information or records requested are unreasonably voluminous in nature or if compliance with such order otherwise would cause an unreasonable burden on such provider.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": "/us/usc/t18/s2710/c/1",
+   "heading": "",
+   "text": "Any person aggrieved by any act of a person in violation of this section may bring a civil action in a United States district court.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s2710/c/2/A",
+   "heading": "",
+   "text": "actual damages but not less than liquidated damages in an amount of $2,500;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The court may award\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/c/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s2710/c/2/B",
+   "heading": "",
+   "text": "punitive damages;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The court may award\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/c/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C"
+   ],
+   "anchor": "/us/usc/t18/s2710/c/2/C",
+   "heading": "",
+   "text": "reasonable attorneys\u2019 fees and other litigation costs reasonably incurred; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The court may award\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/c/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "D"
+   ],
+   "anchor": "/us/usc/t18/s2710/c/2/D",
+   "heading": "",
+   "text": "such other preliminary and equitable relief as the court determines to be appropriate.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The court may award\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2710/c/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": "/us/usc/t18/s2710/c/3",
+   "heading": "",
+   "text": "No action may be brought under this subsection unless such action is begun within 2 years from the date of the act complained of or the date of discovery.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "4"
+   ],
+   "anchor": "/us/usc/t18/s2710/c/4",
+   "heading": "",
+   "text": "No liability shall result from lawful disclosure permitted by this section.",
+   "context": []
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": "/us/usc/t18/s2710/d",
+   "heading": "Personally Identifiable Information .\u2014",
+   "text": "Personally identifiable information obtained in any manner other than as provided in this section shall not be received in evidence in any trial, hearing, arbitration, or other proceeding in or before any court, grand jury, department, officer, agency, regulatory body, legislative committee, or other authority of the United States, a State, or a political subdivision of a State.",
+   "context": []
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": "/us/usc/t18/s2710/e",
+   "heading": "Destruction of Old Records .\u2014",
+   "text": "A person subject to this section shall destroy personally identifiable information as soon as practicable, but no later than one year from the date the information is no longer necessary for the purpose for which it was collected and there are no pending requests or orders for access to such information under subsection (b)(2) or (c)(2) or pursuant to a court order.",
+   "context": []
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": "/us/usc/t18/s2710/f",
+   "heading": "Preemption .\u2014",
+   "text": "The provisions of this section preempt only the provisions of State or local law that require disclosure prohibited by this section.",
+   "context": []
+  }
+ ]
+}

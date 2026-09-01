@@ -1,0 +1,144 @@
+id: us.cpni.64_2011.b.law_enforcement_breach_notice
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 C.F.R. § 64.2011(b)
+  instrument_id: us.cpni
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: 8b0b9d38fc6c7d15024e501454ba7a98d093d040ffdb966d46ab6d049854b2e4
+verbatim_span: >-
+  As soon as practicable, and in no event later than seven (7) business days, after reasonable
+  determination of the breach, the telecommunications carrier shall electronically notify the United
+  States Secret Service (USSS) and the Federal Bureau of Investigation (FBI) through a central
+  reporting facility. The Commission will maintain a link to the reporting facility at
+  http://www.fcc.gov/eb/cpni.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+  anchor: '64.2011'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator run reconstructed from flat <P> siblings; resolves to exactly one leaf within the
+    section (gate 23)
+context_not_required: >-
+  Paragraph (b) states its trigger, its recipients and its outer period in full, and the
+  segmentation records no ancestor text governing it. The related bar in paragraph (a) is a
+  freestanding duty at the same level, not a chapeau; it is cross-referenced in requirement_detail
+  rather than quoted as context.
+subject:
+  domain: II.E.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - cpni
+status: in_force
+effective_from: '2017-09-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history:
+  - date: '2017-09-21'
+    note: >-
+      Source note printed at the head of subpart U — Privacy of Customer Information: "82 FR 44419,
+      Sept. 21, 2017, unless otherwise noted." The section carries no separate CITA, so 2017-09-21
+      is the earliest date the fetched source itself asserts for this text.
+    source_url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+applies_if:
+  all:
+    - entity.is_telecommunications_carrier == true
+    - data.is_cpni == true
+    - event.is_security_breach == true
+applies_to_role: controller
+obligation_type: notify
+summary: >-
+  A telecommunications carrier must electronically notify the United States Secret Service and the
+  Federal Bureau of Investigation through the central reporting facility as soon as practicable and
+  in no event later than seven business days after reasonable determination of a CPNI breach.
+requirement_detail: >-
+  THE CPNI BREACH RULE INVERTS THE ORDER EVERY STATE BREACH STATUTE USES: LAW ENFORCEMENT FIRST,
+  CUSTOMERS SECOND, AND CUSTOMERS ONLY AFTER A MANDATORY WAIT. Paragraph (a) forbids customer or
+  public notice until the (b) process is complete, and (b)(1) then bars customer notice
+  "notwithstanding any state law to the contrary" until seven full business days have passed after
+  the USSS and FBI filings. A carrier that runs its ordinary state breach playbook will therefore
+  violate the federal rule by notifying customers on time. The clock here starts at "reasonable
+  determination of the breach", not at discovery of the incident, so the investigation that
+  establishes whether CPNI was accessed sits before the seven days rather than inside them — and the
+  "as soon as practicable" clause means the seven days is a ceiling a carrier can still breach by
+  sitting on a determination it has already made. Scope is narrower than instinct suggests:
+  paragraph (e) defines a breach as intentional unauthorised access, use or disclosure, so a
+  negligent exposure with no intentional access is outside this section while remaining squarely
+  inside most state statutes. Paragraphs (b)(2) and (b)(3) are the two release valves — urgent
+  customer notice to avoid immediate irreparable harm, and law-enforcement-directed delay.
+deadline:
+  trigger_event: Reasonable determination by the carrier that a breach of customers' CPNI has occurred
+  duration:
+    value: 7
+    unit: business_days
+  computation: >-
+    Counted in business days from the carrier's reasonable determination of the breach, not from
+    discovery of the underlying incident. "As soon as practicable" governs independently, so seven
+    business days is the outer limit rather than the permitted period. A separate
+    seven-full-business-day waiting period then runs from the USSS and FBI notifications before
+    customers may be told (paragraph (b)(1)).
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Notifying customers on the state-law schedule. Paragraph (a) and (b)(1) bar customer or public
+    notice until law enforcement has been notified and seven full business days have passed.
+  - >-
+    Starting the clock at discovery. The rule runs from reasonable determination of the breach, and
+    "as soon as practicable" still binds a carrier that determines early.
+  - >-
+    Applying the rule to every CPNI exposure. Paragraph (e) defines breach as INTENTIONAL
+    unauthorised access, use or disclosure, which is narrower than the state-law definitions running
+    in parallel.
+open_questions: []
+confidence: high
+preemption:
+  posture: express_partial
+  authority: 47 C.F.R. § 64.2011(f)
+  note: >-
+    Paragraph (f) states that the section does not supersede any State statute, regulation, order or
+    interpretation except to the extent of an inconsistency, and then only to that extent. Paragraph
+    (b)(1) supplies the concrete inconsistency: it displaces contrary State law on the timing of
+    customer notice for the duration of the waiting period. Everywhere else the section behaves as a
+    floor.
+enforcement:
+  enforcers:
+    - fcc
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      FCC forfeiture under 47 U.S.C. § 503(b), and consent decrees with compliance plans, which is
+      how the Enforcement Bureau has resolved most CPNI matters.
+    range: null
+    note: >-
+      FTC Act § 5 does not backstop this conduct: 15 U.S.C. § 45(a)(2) excludes common carriers
+      acting as such from FTC jurisdiction. State UDAP and State breach statutes remain available
+      subject to paragraph (f).
+  statute_of_limitations: null

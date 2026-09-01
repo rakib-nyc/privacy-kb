@@ -1,0 +1,115 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: local
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+id: ny.nyc_ll144.20_871.a.bias_audit
+source:
+  citation: N.Y.C. Admin. Code § 20-871(a)
+  instrument_id: nyc.local_law_144
+  url: urn:owner-supplied:nyc-law-department-xml-export-0-0-0-234799.xml
+  fetched: '2026-08-20'
+  raw_file: corpus/state/ny/nyc-ll144/raw/nyc-admin-title20-sub25.xml
+  raw_sha256: f1e6b5ea19d6082309a041668a527a776f832bea39e5f3504b4e2ad6361b3832
+  text_file: corpus/state/ny/nyc-ll144/raw/nyc-admin-title20-sub25.txt
+  text_sha256: 75677f2e2c186a8d8e5bef668bc3b6460ac7c7c89abdb2608a50f9ee757e7aab
+  text_extraction_cmd: tag-strip of the NYC XML export
+  format: nyc_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - >-
+        NYC Law Department XML export; official structured source with LEVEL nesting, so depth is
+        READ rather than reconstructed
+    result: structured_source_used
+    note: >-
+      The url is a file: URI because this is an owner-supplied official XML export rather than a
+      fetched document — amlegal returns 403 to automated requests and rules.cityofnewyork.us
+      carries only the PROPOSED rule. Recording the local path keeps the provenance honest: it says
+      where the bytes came from rather than dressing them up with a public URL they were not
+      retrieved from.
+  segment_sha256: 0d7050aeb247ea02bd2add271847b51fd86933286149fa03d6bcb4ffb8434cc5
+verbatim_span: >-
+  In the city, it shall be unlawful for an employer or an employment agency to use an automated
+  employment decision tool to screen a candidate or employee for an employment decision unless:
+paragraph_path:
+  path:
+    - a
+  anchor: 20-871
+  derivation: structural
+  confidence: high
+  evidence: NYC XML LEVEL nesting; section number read from the HEADING, designator from the paragraph.
+context_not_required: The provision states the duty in full.
+subject:
+  domain: IV.A.2
+  lifecycle:
+    - V
+regulator:
+  - state_ag
+sector:
+  - employment
+data_types:
+  - any
+effective_from: '2023-01-01'
+federal_relationship: gap_fills
+applies_if:
+  all:
+    - entity.uses_automated_employment_decision_tool == true
+    - entity.nexus in ["US-NY-NYC"]
+applies_to_role: controller
+obligation_type: assess
+deadline: null
+exemptions: []
+related: []
+summary: >-
+  It is unlawful to use an automated employment decision tool unless it has been the subject of a
+  bias audit conducted no more than one year before its use, and a summary of the results has been
+  made publicly available.
+requirement_detail: >-
+  THE FIRST US LAW REQUIRING AN ALGORITHMIC AUDIT AS A PRECONDITION OF USE, and the structure is
+  unusual: it does not prohibit discriminatory outcomes — Title VII already does — it prohibits USE
+  WITHOUT AN AUDIT. An employer whose tool is perfectly fair still violates this paragraph by
+  deploying it unaudited, and an employer with a poor audit result does not violate it by publishing
+  that result. The audit must be by an independent auditor and no more than one year old, which
+  makes it recurring rather than a one-time clearance.
+common_errors:
+  - >-
+    Reading it as a discrimination prohibition. It is a process precondition; Title VII governs the
+    outcome.
+  - Treating the audit as one-time. It must be no more than one year old at the time of use.
+  - >-
+    Assuming a poor result is itself a violation. The violation is using the tool without an audit,
+    or without publishing the summary.
+open_questions:
+  - >-
+    The DCWP implementing rules at 6 RCNY §§ 5-300 et seq. define HOW a bias audit is computed and
+    are not in the corpus — amlegal returns 403 to automated requests. An employer asking how to
+    audit reaches this atom and learns the answer is one level down. See meta/blocked-sources.yaml.
+preemption:
+  posture: none
+  authority: N.Y.C. Admin. Code § 20-870 et seq.
+  note: >-
+    City law. No federal or New York State statute reaches automated employment decision tools
+    directly, so this fills a gap rather than exceeding a floor — Title VII reaches the
+    DISCRIMINATION such a tool may produce, not the tool's use.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil penalties under § 20-872; each day of unlawful use is a separate violation and each
+      failure to give notice is a separate violation.
+    range: null
+    note: >-
+      § 20-874 preserves other rights of action, so the absence of a private right under this
+      subchapter does not foreclose a Title VII or state-law claim.
+  statute_of_limitations: null

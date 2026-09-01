@@ -1,0 +1,120 @@
+id: us.canspam.7707.b1.state_law_preemption
+schema_version: 1
+record_type: obligation
+source:
+  citation: 15 U.S.C. § 7707(b)(1)
+  instrument_id: us.can_spam
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7707.xml
+  raw_sha256: 015b217014ffa5435d4348ed853d0e910ba675a4e8336bfef8dc22a76a4dfa2a
+  text_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7707.txt
+  text_sha256: ae40342eca1e298dd1529957d19a91fda4b5bfc5858e1a0cf57d0934f95c26d0
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7707.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 4cc4f9f044955c54b609afcbc918624f483f209d870dae1f61c396711a515198
+verbatim_span: >-
+  This chapter supersedes any statute, regulation, or rule of a State or political subdivision of a
+  State that expressly regulates the use of electronic mail to send commercial messages, except to
+  the extent that any such statute, regulation, or rule prohibits falsity or deception in any
+  portion of a commercial electronic mail message or information attached thereto.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+    - '1'
+  anchor: /us/usc/t15/s7707/b/1
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element
+context_not_required: >-
+  The paragraph states the supersession rule and its falsity-or-deception carve-out in one sentence;
+  paragraph (2) is a separate savings clause, not a governing chapeau.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2004-01-01'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - law.federal_instrument == 'us.can_spam'
+    - law.state_requirement_subject == 'commercial_email'
+applies_to_role: any
+obligation_type: prohibit
+summary: >-
+  CAN-SPAM supersedes any state statute, regulation or rule that expressly regulates the use of
+  electronic mail to send commercial messages, except to the extent it prohibits falsity or
+  deception in any portion of the message or information attached to it.
+requirement_detail: >-
+  THIS IS THE PROVISION THAT MAKES THE UNITED STATES AN OPT-OUT JURISDICTION FOR COMMERCIAL EMAIL,
+  and the exception is where all the surviving state law lives. Preemption is express and PARTIAL: a
+  state may not impose a consent requirement or its own unsubscribe regime, but a state prohibition
+  on falsity or deception in a commercial message survives untouched — which is why California
+  Business and Professions Code § 17529.5 has withstood repeated preemption challenges and generates
+  most of the private commercial-email litigation in the country, CAN-SPAM itself giving consumers
+  no action. Paragraph (2), quoted in the sibling leaves, preserves two further categories: state
+  laws not specific to electronic mail (trespass, contract, tort) and state law on fraud or computer
+  crime, so an ordinary common-law claim is not preempted merely because the conduct travelled by
+  email. The practical test is subject-matter plus theory: is the state provision aimed at
+  commercial email as such, and does it turn on falsity or deception? Recording this as field
+  preemption — the standard error — makes the tool tell a client there is no state exposure when the
+  largest real exposure is state.
+deadline: null
+exemptions: []
+related:
+  - us.canspam.7704.a3a.opt_out_mechanism
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating CAN-SPAM as field preemption of state email law. It is express and partial;
+    falsity-or-deception provisions survive, and paragraph (2) saves non-email-specific state law.
+  - >-
+    Concluding that no private claim can arise from a commercial email. CAN-SPAM has no consumer
+    private right of action, but the surviving state deception statutes do.
+  - >-
+    Assuming a state may add an opt-in consent requirement for commercial email. That is precisely
+    what (b)(1) displaces.
+open_questions: []
+confidence: high
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 7707(b)(1)
+  note: >-
+    Express and subject-specific. State statutes that expressly regulate commercial email are
+    superseded; state provisions prohibiting falsity or deception in such messages are not, and §
+    7707(b)(2) separately saves state laws that are not email-specific and state law on fraud or
+    computer crime.
+enforcement:
+  enforcers:
+    - ftc
+  private_right_of_action: false
+  penalty:
+    structure: n/a — a preemption rule
+    range: null
+    note: >-
+      Sets the boundary of state authority; imposes no conduct duty and carries no penalty of its
+      own.
+  statute_of_limitations: null

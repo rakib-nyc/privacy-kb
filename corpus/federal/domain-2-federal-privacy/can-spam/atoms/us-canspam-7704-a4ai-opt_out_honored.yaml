@@ -1,0 +1,142 @@
+id: us.canspam.7704.a4ai.opt_out_honored
+schema_version: 1
+record_type: obligation
+source:
+  citation: 15 U.S.C. § 7704(a)(4)(A)(i)
+  instrument_id: us.can_spam
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7704.xml
+  raw_sha256: cc5b9acbbbd7b838a5526ed4fe4b736558bb9d98d7192bce2b54c46729afddfc
+  text_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7704.txt
+  text_sha256: d3e08ec6e6ef3d8779351f957bd184eaafbf48d7f51e3182537721238a9ed8ed
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7704.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: dcaa8044bafc5865c3ede547bbfdce166273802613f0b84f45aeb6816a65f91e
+verbatim_span: >-
+  for the sender to initiate the transmission to the recipient, more than 10 business days after the
+  receipt of such request, of a commercial electronic mail message that falls within the scope of
+  the request;
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '4'
+    - A
+    - i
+  anchor: /us/usc/t15/s7704/a/4/A/i
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element
+operative_context:
+  - position: precedes
+    relation: conditions
+    verbatim_span: >-
+      If a recipient makes a request using a mechanism provided pursuant to paragraph (3) not to
+      receive some or any commercial electronic mail messages from such sender, then it is unlawful—
+    citation: null
+    relation_note: null
+    path:
+      path:
+        - a
+        - '4'
+        - A
+      anchor: /us/usc/t15/s7704/a/4/A
+      derivation: structural
+      confidence: high
+      evidence: USLM element hierarchy
+subject:
+  domain: II.E.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2004-01-01'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - practice.sends_commercial_email == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  Once a recipient uses the paragraph (3) mechanism to ask to stop, it is unlawful for the sender to
+  transmit a commercial electronic mail message within the scope of that request more than 10
+  business days after the request is received.
+requirement_detail: >-
+  TEN BUSINESS DAYS IS A CEILING, NOT A GRACE PERIOD, and the clock runs from RECEIPT of the request
+  rather than from whenever the suppression file next syncs — a weekly manual export between an ESP
+  and a CRM is already out of time if the eleventh business day arrives first. The prohibition is
+  drafted against the sender and then extended: clauses (ii) and (iii) reach persons acting on the
+  sender's behalf who send, or who supply the addresses for sending, with actual or constructive
+  knowledge, which is what puts the agency and the list broker inside the statute. Clause (iv)
+  forbids selling, leasing, exchanging or otherwise transferring the address of a recipient who has
+  opted out, so the opted-out address must be SUPPRESSED and retained, not deleted — deletion both
+  destroys the proof and guarantees the address is re-acquired on the next list purchase.
+  Subparagraph (B) lifts the prohibition only on affirmative consent given by the recipient AFTER
+  the opt-out request, so a pre-existing consent record does not revive the relationship. What the
+  sender may require of the recipient to make the request stick is capped by 16 C.F.R. § 316.5(b).
+deadline:
+  trigger_event: receipt of the recipient's request not to receive further commercial email
+  duration:
+    value: 10
+    unit: business_days
+  computation: >-
+    Counted in business days from receipt of the request. Transmitting a commercial message within
+    the scope of the request after the tenth business day is the violation; the period is an outer
+    limit on processing, not a permitted delay.
+exemptions: []
+related:
+  - us.canspam.7704.a3a.opt_out_mechanism
+  - us.canspam.316_5.a.no_fee_or_extra_steps
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Reading 10 business days as a grace period during which sending is fine. It is the outer limit
+    for stopping, and a suppression process that syncs weekly can breach it without anyone noticing.
+  - >-
+    Deleting the opted-out address instead of suppressing it. Clause (iv) makes transferring that
+    address unlawful, and only a retained suppression list proves the request was honoured.
+  - >-
+    Assuming the sender may resume on the strength of the original signup. Subparagraph (B) requires
+    affirmative consent given after the opt-out request.
+open_questions: []
+confidence: high
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 7707(b)(1)
+  note: >-
+    CAN-SPAM expressly preempts state statutes regulating commercial email EXCEPT to the extent they
+    prohibit falsity or deception. A state opt-in requirement is displaced; a state
+    deceptive-subject-line prohibition is not. See us.canspam.7707.b1.state_law_preemption.
+enforcement:
+  enforcers:
+    - ftc
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section (15 U.S.C. § 7706) has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent. State attorneys general and, narrowly, providers of internet
+      access service also enforce, and neither route is in the corpus yet.
+  statute_of_limitations: null

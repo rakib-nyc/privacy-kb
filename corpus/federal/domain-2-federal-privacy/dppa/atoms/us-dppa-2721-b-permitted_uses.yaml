@@ -1,0 +1,93 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &id001
+- doj
+sector:
+- government
+data_types:
+- any
+status: in_force
+effective_from: '1994-09-13'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2721(a)
+  note: Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the section extracted.
+enforcement:
+  enforcers: *id001
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null
+applies_if:
+  all:
+  - entity.is_state_dmv == true
+  - data.from_motor_vehicle_record == true
+applies_to_role: controller
+exemptions: []
+id: us.dppa.2721.b.permitted_uses
+source:
+  citation: 18 U.S.C. § 2721(b)
+  instrument_id: us.dppa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.xml
+  raw_sha256: 6fdc322897cf479e3c6caaef69b90aedcef608b7f1b91769c502097670b17a21
+  text_file: corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.txt
+  text_sha256: 21041cee8cd7cc31df512db82226e25b537644bc9e56b74d990bb7bb4e562d92
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - 18-u-s-c-2721 structured source
+    result: structured_source_used
+    note: null
+verbatim_span: 'Personal information referred to in subsection (a) shall be disclosed for use in connection
+  with matters of motor vehicle or driver safety and theft, motor vehicle emissions, motor vehicle product
+  alterations, recalls, or advisories, performance monitoring of motor vehicles and dealers by motor vehicle
+  manufacturers, and removal of non-owner records from the original owner records of motor vehicle manufacturers
+  to carry out the purposes of titles I and IV of the Anti Car Theft Act of 1992, the Automobile Information
+  Disclosure Act ( 15 U.S.C. 1231 et seq.), the Clean Air Act ( 42 U.S.C. 7401 et seq.), and chapters
+  301, 305, and 321–331 of title 49, and, subject to subsection (a)(2), may be disclosed as follows:'
+paragraph_path:
+  path:
+  - b
+  anchor: /us/usc/t18/s2721/b
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the duty in full.
+subject:
+  domain: III.A.1
+  lifecycle:
+  - I
+obligation_type: restrict_use
+deadline: null
+summary: Personal information from a motor vehicle record shall be disclosed for matters of motor vehicle
+  and driver safety and theft, emissions, product recalls and related purposes, and may be disclosed for
+  the fourteen enumerated permissible uses.
+requirement_detail: 'A CLOSED LIST WITH A MANDATORY CORE. The chapeau distinguishes disclosures that SHALL
+  be made — safety, theft, emissions, recalls — from the fourteen that MAY be, and the distinction is
+  routinely lost. Two of the permissible uses do most of the practical work and most of the litigation:
+  (b)(4) for use in connection with civil, criminal or arbitral proceedings, and (b)(12) for bulk marketing,
+  which alone requires express consent. Reno v. Condon upheld the scheme against a Tenth Amendment challenge.'
+common_errors:
+- Treating all fourteen uses as optional. The chapeau makes the safety and theft purposes mandatory.
+- Assuming marketing is generally permitted. (b)(12) requires express consent, unlike the others.
+open_questions: []

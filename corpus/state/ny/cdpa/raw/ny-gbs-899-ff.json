@@ -1,0 +1,56 @@
+{
+  "success" : true,
+  "message" : "Law document for location 899-FF in GBS law.",
+  "responseType" : "law-doc-info-detail",
+  "result" : {
+    "lawId" : "GBS",
+    "lawName" : "General Business",
+    "locationId" : "899-FF",
+    "title" : "Privacy protection by default",
+    "docType" : "SECTION",
+    "publishedDates" : [ "2024-06-28", "2025-06-27" ],
+    "docLevelId" : "899-FF",
+    "activeDate" : "2025-06-27",
+    "text" : "  § 899-ff. Privacy protection by default. 1. Except as provided for in\\nsubdivision six of this section and section eight hundred ninety-nine-jj\\nof this article, an operator shall not process, or allow a processor to\\nprocess, the personal data of a covered user collected through the use\\nof a website, online service, online application, mobile application, or\\nconnected device, or allow a third-party operator to collect the\\npersonal data of a covered user collected through the operator's\\nwebsite, online service, online application, mobile application, or\\nconnected device unless and to the extent:\\n  (a) the covered user is twelve years of age or younger and processing\\nis permitted under 15 U.S.C. § 6502 and its implementing regulations; or\\n  (b) the covered user is thirteen years of age or older and processing\\nis strictly necessary for an activity set forth in subdivision two of\\nthis section, or informed consent has been obtained as set forth in\\nsubdivision three of this section.\\n  2. For the purposes of paragraph (b) of subdivision one of this\\nsection, the processing of personal data of a covered user is\\npermissible where it is strictly necessary for the following permissible\\npurposes:\\n  (a) providing or maintaining a specific product or service requested\\nby the covered user;\\n  (b) conducting the operator's internal business operations. For\\npurposes of this paragraph, such internal business operations shall not\\ninclude any activities related to marketing, advertising, research and\\ndevelopment, providing products or services to third parties, or\\nprompting covered users to use the website, online service, online\\napplication, mobile application, or connected device when it is not in\\nuse;\\n  (c) identifying and repairing technical errors that impair existing or\\nintended functionality;\\n  (d) protecting against malicious, fraudulent, or illegal activity;\\n  (e) investigating, establishing, exercising, preparing for, or\\ndefending legal claims;\\n  (f) complying with federal, state, or local laws, rules, or\\nregulations;\\n  (g) complying with a civil, criminal, or regulatory inquiry,\\ninvestigation, subpoena, or summons by federal, state, local, or other\\ngovernmental authorities;\\n  (h) detecting, responding to, or preventing security incidents or\\nthreats; or\\n  (i) protecting the vital interests of a natural person.\\n  3. (a) For the purposes of paragraph (b) of subdivision one of this\\nsection, to process personal data of a covered user where such\\nprocessing is not strictly necessary under subdivision two of this\\nsection, informed consent must be obtained from the covered user either\\nthrough a device communication or signal pursuant to the provisions of\\nsubdivision two of section eight hundred ninety-nine-ii of this article\\nor through a request. Requests for such informed consent shall:\\n  (i) be made separately from any other transaction or part of a\\ntransaction;\\n  (ii) be made in the absence of any mechanism that has the purpose or\\nsubstantial effect of obscuring, subverting, or impairing a covered\\nuser's decision-making regarding authorization for the processing;\\n  (iii) clearly and conspicuously state that the processing for which\\nthe consent is requested is not strictly necessary, and that the covered\\nuser may decline without preventing continued use of the website, online\\nservice, online application, mobile application, or connected device;\\nand\\n  (iv) clearly present an option to refuse to provide consent as the\\nmost prominent option.\\n  (b) Such informed consent, once given, shall be freely revocable at\\nany time, and shall be at least as easy to revoke as it was to provide.\\n  (c) If a covered user declines to provide or revokes informed consent\\nfor processing, another request may not be made for such processing for\\nthe following calendar year, however an operator may make available a\\nmechanism that a covered user can use unprompted and at the user's\\ndiscretion to provide informed consent.\\n  (d) If a covered user's device communicates or signals that the\\ncovered user declines to provide informed consent for processing\\npursuant to the provisions of subdivision two of section eight hundred\\nninety-nine-ii of this article, an operator shall not request informed\\nconsent for such processing, however an operator may make available a\\nmechanism that a covered user can use unprompted and at the user's\\ndiscretion to provide informed consent.\\n  4. Except where processing is strictly necessary to provide a product,\\nservice, or feature, an operator may not withhold, degrade, lower the\\nquality, or increase the price of any product, service, or feature to a\\ncovered user due to the operator not obtaining verifiable parental\\nconsent under 15 U.S.C. § 6502 and its implementing regulations or\\ninformed consent under subdivision three of this section.\\n  5. Except as provided for in section eight hundred ninety-nine-jj of\\nthis article, an operator shall not purchase or sell, or allow a\\nprocessor or third-party operator to purchase or sell, the personal data\\nof a covered user.\\n  6. Within thirty days of determining or being informed that a user is\\na covered user, an operator shall:\\n  (a) dispose of, destroy, or delete and direct all of its processors to\\ndispose of, destroy, or delete all personal data of such covered user\\nthat it maintains, unless processing such personal data is permitted\\nunder 15 U.S.C. § 6502 and its implementing regulations, is strictly\\nnecessary for an activity listed in subdivision two of this section, or\\ninformed consent is obtained as set forth in subdivision three of this\\nsection; and\\n  (b) notify any third-party operators to whom it knows it disclosed\\npersonal data of that covered user, and any third-party operators it\\nknows it allowed to process the personal data that may include the\\npersonal data of that user, that the user is a covered user.\\n  7. Except as provided for in section eight hundred ninety-nine-jj of\\nthis article, prior to disclosing personal data to a third-party\\noperator, or permitting a third-party operator to collect personal data\\nfrom the operator's website, online service, online application, mobile\\napplication, connected device, or portion thereof, the operator shall\\ndisclose to the third-party operator:\\n  (a) when their website, online service, online application, mobile\\napplication, connected device, or portion thereof, is primarily directed\\nto minors; or\\n  (b) when the personal data concerns a covered user.\\n",
+    "parentLocationIds" : [ "-CH20", "A39-FF" ],
+    "parents" : [ {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "-CH20",
+      "title" : "General Business",
+      "docType" : "CHAPTER",
+      "publishedDates" : [ "2014-09-22", "2014-11-28", "2016-04-15", "2018-04-20", "2018-04-27", "2019-09-20", "2019-12-27", "2020-04-17", "2020-04-24", "2020-10-16", "2020-11-13", "2021-04-23", "2021-07-09", "2021-10-15", "2021-12-17", "2021-12-31", "2022-03-04", "2022-06-10", "2023-10-27", "2024-02-09", "2024-03-08", "2024-06-28", "2024-07-19", "2024-10-11", "2024-11-29", "2024-12-27", "2025-02-21", "2025-05-16", "2025-06-13", "2025-12-19", "2025-12-26", "2026-02-27", "2026-03-20", "2026-04-03", "2026-05-29" ],
+      "docLevelId" : "20",
+      "activeDate" : "2026-05-29"
+    }, {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "A39-FF",
+      "title" : "New York Child Data Protection Act",
+      "docType" : "ARTICLE",
+      "publishedDates" : [ "2024-06-28", "2025-06-27" ],
+      "docLevelId" : "39-FF",
+      "activeDate" : "2025-06-27"
+    } ],
+    "prevSibling" : {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "899-EE",
+      "title" : "Definitions",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2024-06-28", "2025-06-27" ],
+      "docLevelId" : "899-EE",
+      "activeDate" : "2025-06-27"
+    },
+    "nextSibling" : {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "899-GG",
+      "title" : "Processors",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2024-06-28", "2025-06-27" ],
+      "docLevelId" : "899-GG",
+      "activeDate" : "2025-06-27"
+    }
+  }
+}

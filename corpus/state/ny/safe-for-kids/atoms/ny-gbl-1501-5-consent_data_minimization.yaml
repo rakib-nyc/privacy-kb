@@ -1,0 +1,153 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+  - state_ag
+sector:
+  - any
+status: enacted_pending
+effective_from: '2027-01-25'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+id: ny.gbl.1501.5.consent_data_minimization
+source:
+  citation: N.Y. Gen. Bus. Law § 1501(5)
+  instrument_id: ny.safe_for_kids
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/1501
+  fetched: '2026-08-20'
+  raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1501.json
+  raw_sha256: d83a82154840f03752e38951f172dd3f2fdd80cfb6f8bd81bbc05bc4a59d354a
+  text_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1501.txt
+  text_sha256: 2a0947807e6da0beb8950fd164e380afafe50c791ee81e084006ce1e10fa4f79
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/safe-for-kids/raw/ny-gbs-1501.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, laws/GBS/1501
+    result: structured_source_used
+    note: null
+  segment_sha256: c7eda36a90a5e7a80b1d2e3fe263c0b6668fb64a330ee167f7a38cf8ab367069
+verbatim_span: >-
+  Information collected for the purpose of obtaining such verifiable parental consent shall not be
+  used for any purpose other than obtaining verifiable parental consent and shall be deleted
+  immediately after an attempt to obtain verifiable parental consent, except where necessary for
+  compliance with any applicable provisions of New York state or federal law or regulation.
+paragraph_path:
+  path:
+    - '5'
+  anchor: '1501'
+  derivation: reconstructed
+  confidence: high
+  evidence: subdivision designators reconstructed from the flat text field; resolves to exactly one leaf
+subject:
+  domain: V.B.3
+  lifecycle:
+    - I
+data_types:
+  - minor
+federal_relationship: gap_fills
+applies_if:
+  all:
+    - entity.is_ny_addictive_platform_operator == true
+    - practice.collects_parental_consent_data == true
+applies_to_role: controller
+obligation_type: restrict_use
+deadline:
+  trigger_event: an attempt to obtain verifiable parental consent
+  duration:
+    value: 0
+    unit: calendar_days
+  computation: >-
+    "immediately after an attempt" — a zero-elapsed-time duty, running from the attempt rather than
+    from a successful consent.
+exemptions:
+  - id: sfk.compliance_retention.1501(5)
+    type: activity_level
+    scope: >-
+      Retention or use that is necessary for compliance with another New York or federal legal
+      requirement. It suspends the deletion clock; it does not widen the permitted purpose.
+    source_citation: N.Y. Gen. Bus. Law § 1501(5)
+    verbatim_span: >-
+      Information collected for the purpose of obtaining such verifiable parental consent shall not
+      be used for any purpose other than obtaining verifiable parental consent and shall be deleted
+      immediately after an attempt to obtain verifiable parental consent, except where necessary for
+      compliance with any applicable provisions of New York state or federal law or regulation.
+    burden_of_proof: The operator must identify the provision that makes retention necessary.
+    applies_if:
+      all:
+        - practice.retention_required_by_other_law == true
+    source_ref: null
+    reach: obligation
+  - id: sfk.territorial
+    type: activity_level
+    scope: >-
+      Conduct occurring wholly outside New York, which § 1507(1) defines as access by a user
+      physically located outside the state.
+    source_citation: N.Y. Gen. Bus. Law § 1507(1)
+    verbatim_span: >-
+      This article shall apply to conduct that occurs in whole or in part in New York. For purposes
+      of this article, conduct takes place wholly outside of New York if the addictive social media
+      platform is accessed by a user who is physically located outside of New York.
+    burden_of_proof: >-
+      The operator, which is why the age-determination record in § 1501 matters twice: it is the
+      compliance route and it is the evidence of location.
+    applies_if:
+      all:
+        - practice.conduct_occurs_in_new_york == false
+    source_ref:
+      raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1507.json
+      raw_sha256: eef6cb32213ba1fde3acefdedc4b9633ab4b17059d373aa0e6d9f6ff11df800f
+      instrument_id: ny.safe_for_kids
+    reach: instrument
+summary: >-
+  Information collected to obtain verifiable parental consent may be used only for that purpose and
+  must be deleted immediately after the attempt.
+requirement_detail: >-
+  The mirror of subdivision 3, for the other compliance route. Obtaining verifiable parental consent
+  means collecting information about a person who is not the user at all — a parent — and often
+  information capable of identifying them, so the article confines it to the consent transaction and
+  requires deletion on the same immediate clock. READ IT WITH SUBDIVISION 6, which is easy to miss:
+  consenting does not buy the parent any access to or control over the child's account or data. The
+  consent is a permission the operator needs, not a right the parent acquires.
+common_errors:
+  - >-
+    Keeping the parent's identity document as proof of consent. The proof the operator may keep is
+    that consent was obtained; the material collected to verify it must go.
+  - >-
+    Assuming a parent who grants consent gains access to the child's account. § 1501(6) says the
+    opposite in terms.
+open_questions: []
+preemption:
+  posture: none
+  authority: N.Y. Gen. Bus. Law § 1507(2)
+  note: >-
+    COPPA reaches children under 13 and governs the collection of personal information; this article
+    reaches minors under 18 and governs how a feed is ORDERED, which COPPA does not address at all.
+    Subdivision 2 of § 1507 is a savings construction rather than a preemption clause — it disclaims
+    liability inconsistent with 15 U.S.C. § 6502 for operators subject to 15 U.S.C. § 6501, and says
+    nothing about anyone else. Same posture the corpus records for the CDPA, for the same reason.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Attorney General action or special proceeding under § 1508(1): injunction, restitution,
+      disgorgement (expressly including destruction of unlawfully obtained data), damages, and civil
+      penalties.
+    range: Up to $5,000 per violation.
+    note: >-
+      § 1508(1) bars the Attorney General from bringing any action until 180 days after the
+      effective date, so the first day enforcement is available is later than the first day the
+      duties bind.
+  statute_of_limitations: null
+context_not_required: The subdivision states the restriction and its exception in full.

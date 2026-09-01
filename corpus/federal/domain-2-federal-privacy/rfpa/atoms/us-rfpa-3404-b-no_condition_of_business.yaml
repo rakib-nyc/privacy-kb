@@ -1,0 +1,122 @@
+id: us.rfpa.3404.b.no_condition_of_business
+schema_version: 1
+record_type: obligation
+source:
+  citation: 12 U.S.C. § 3404(b)
+  instrument_id: us.rfpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3404.xml
+  raw_sha256: 7c707de8e99ad4f0802619066c3b14ca7014deb9bbb7e7e04e530597d5f2f17a
+  text_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3404.txt
+  text_sha256: 23e5dc30b025bff973a1edbc254a68393923d09200b9b25cf376e07113a8911e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3404.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1 (12-u-s-c-3404)
+    result: structured_source_used
+    note: null
+  segment_sha256: f9a90d48f8929dcfcbbd37ff6c6fcb9deca3142df9acf319f87bf102a203dec7
+verbatim_span: >-
+  No such authorization shall be required as a condition of doing business with any financial
+  institution.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+  anchor: /us/usc/t12/s3404/b
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      A customer may authorize disclosure under section 3402(1) of this title if he furnishes to the
+      financial institution and to the Government authority seeking to obtain such disclosure a
+      signed and dated statement which—
+    citation: 12 U.S.C. § 3404(a)
+    relation_note: null
+    path:
+      path:
+        - a
+      anchor: /us/usc/t12/s3404/a
+      derivation: structural
+      confidence: high
+      evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: III.A.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - federal_agencies
+sector:
+  - financial
+data_types:
+  - financial
+status: in_force
+effective_from: '1979-03-10'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_financial_institution == true
+    - data.is_financial_record == true
+applies_to_role: processor
+obligation_type: prohibit
+summary: >-
+  A financial institution may not require a customer authorization for disclosure to a Government
+  authority as a condition of doing business.
+requirement_detail: >-
+  THE ANTI-COERCION RULE, and the only sentence in § 3404 that binds the bank rather than the
+  Government. "Such authorization" is the § 3404(a) statement, so the prohibition is specific: a
+  financial institution cannot make signing a standing consent to government disclosure a term of
+  opening or keeping an account. Without it the § 3404(a) consent route would swallow §§ 3405 to
+  3408 entirely, because every customer would have signed away the notice and challenge apparatus at
+  account opening — which is exactly what happens under statutes that require consent to be freely
+  given but do not say what a refusal may cost. The provision is short and absolute; it admits no
+  materiality, proportionality or "necessary for the service" qualifier of the kind that GLBA and
+  the state comprehensive statutes use.
+deadline: null
+exemptions: []
+related:
+  - us.rfpa.3404.a.customer_authorization
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Reading § 3404 as regulating only the Government. Subsection (b) is addressed to the financial
+    institution.
+  - >-
+    Assuming a customer who signed at account opening has consented. If the authorization was
+    required as a condition of doing business, § 3404(b) forbids it.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 12 U.S.C. § 3402
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the sections extracted. RFPA binds federal Government authorities,
+    so the ordinary state-law displacement question does not arise in the usual form: a state
+    statute restricting state investigators is not in conflict with it.
+enforcement:
+  enforcers:
+    - federal_agencies
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      12 U.S.C. § 3417 (civil penalties and liability) has not been extracted into this corpus, so
+      penalty exposure and any customer damages action are UNASSESSED rather than absent.
+      private_right_of_action is recorded false because nothing extracted establishes one, not
+      because the statute was read to withhold one.
+  statute_of_limitations: null

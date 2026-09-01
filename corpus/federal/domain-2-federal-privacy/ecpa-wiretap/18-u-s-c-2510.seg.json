@@ -1,0 +1,868 @@
+{
+ "label": "18 U.S.C. \u00a7 2510",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": true,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2510.xml",
+ "raw_sha256": "5dc845cda38743b58fa8224e2b6939398a1ade8b9b229820070f1b3906e89abb",
+ "leaves": [
+  {
+   "path": [
+    "1"
+   ],
+   "anchor": "/us/usc/t18/s2510/1",
+   "heading": "",
+   "text": "\u201cwire communication\u201d means any aural transfer made in whole or in part through the use of facilities for the transmission of communications by the aid of wire, cable, or other like connection between the point of origin and the point of reception (including the use of such connection in a switching station) furnished or operated by any person engaged in providing or operating such facilities for the transmission of interstate or foreign communications or communications affecting interstate or foreign commerce;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2"
+   ],
+   "anchor": "/us/usc/t18/s2510/2",
+   "heading": "",
+   "text": "\u201coral communication\u201d means any oral communication uttered by a person exhibiting an expectation that such communication is not subject to interception under circumstances justifying such expectation, but such term does not include any electronic communication;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    }
+   ]
+  },
+  {
+   "path": [
+    "3"
+   ],
+   "anchor": "/us/usc/t18/s2510/3",
+   "heading": "",
+   "text": "\u201cState\u201d means any State of the United States, the District of Columbia, the Commonwealth of Puerto Rico, and any territory or possession of the United States;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    }
+   ]
+  },
+  {
+   "path": [
+    "4"
+   ],
+   "anchor": "/us/usc/t18/s2510/4",
+   "heading": "",
+   "text": "\u201cintercept\u201d means the aural or other acquisition of the contents of any wire, electronic, or oral communication through the use of any electronic, mechanical, or other device.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    }
+   ]
+  },
+  {
+   "path": [
+    "5",
+    "a"
+   ],
+   "anchor": "/us/usc/t18/s2510/5/a",
+   "heading": "",
+   "text": "any telephone or telegraph instrument, equipment or facility, or any component thereof, (i) furnished to the subscriber or user by a provider of wire or electronic communication service in the ordinary course of its business and being used by the subscriber or user in the ordinary course of its business or furnished by such subscriber or user for connection to the facilities of such service and used in the ordinary course of its business; or (ii) being used by a provider of wire or electronic communication service in the ordinary course of its business, or by an investigative or law enforcement officer in the ordinary course of his duties;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201celectronic, mechanical, or other device\u201d means any device or apparatus which can be used to intercept a wire, oral, or electronic communication other than\u2014",
+     "path": [
+      "5"
+     ],
+     "anchor": "/us/usc/t18/s2510/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "5",
+    "b"
+   ],
+   "anchor": "/us/usc/t18/s2510/5/b",
+   "heading": "",
+   "text": "a hearing aid or similar device being used to correct subnormal hearing to not better than normal;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201celectronic, mechanical, or other device\u201d means any device or apparatus which can be used to intercept a wire, oral, or electronic communication other than\u2014",
+     "path": [
+      "5"
+     ],
+     "anchor": "/us/usc/t18/s2510/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "6"
+   ],
+   "anchor": "/us/usc/t18/s2510/6",
+   "heading": "",
+   "text": "\u201cperson\u201d means any employee, or agent of the United States or any State or political subdivision thereof, and any individual, partnership, association, joint stock company, trust, or corporation;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    }
+   ]
+  },
+  {
+   "path": [
+    "7"
+   ],
+   "anchor": "/us/usc/t18/s2510/7",
+   "heading": "",
+   "text": "\u201cInvestigative or law enforcement officer\u201d means any officer of the United States or of a State or political subdivision thereof, who is empowered by law to conduct investigations of or to make arrests for offenses enumerated in this chapter, and any attorney authorized by law to prosecute or participate in the prosecution of such offenses;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    }
+   ]
+  },
+  {
+   "path": [
+    "8"
+   ],
+   "anchor": "/us/usc/t18/s2510/8",
+   "heading": "",
+   "text": "\u201ccontents\u201d, when used with respect to any wire, oral, or electronic communication, includes any information concerning the substance, purport, or meaning of that communication;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    }
+   ]
+  },
+  {
+   "path": [
+    "9",
+    "a"
+   ],
+   "anchor": "/us/usc/t18/s2510/9/a",
+   "heading": "",
+   "text": "a judge of a United States district court or a United States court of appeals; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201cJudge of competent jurisdiction\u201d means\u2014",
+     "path": [
+      "9"
+     ],
+     "anchor": "/us/usc/t18/s2510/9"
+    }
+   ]
+  },
+  {
+   "path": [
+    "9",
+    "b"
+   ],
+   "anchor": "/us/usc/t18/s2510/9/b",
+   "heading": "",
+   "text": "a judge of any court of general criminal jurisdiction of a State who is authorized by a statute of that State to enter orders authorizing interceptions of wire, oral, or electronic communications;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201cJudge of competent jurisdiction\u201d means\u2014",
+     "path": [
+      "9"
+     ],
+     "anchor": "/us/usc/t18/s2510/9"
+    }
+   ]
+  },
+  {
+   "path": [
+    "10"
+   ],
+   "anchor": "/us/usc/t18/s2510/10",
+   "heading": "",
+   "text": "\u201ccommunication common carrier\u201d has the meaning given that term in section 3 of the Communications Act of 1934;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    }
+   ]
+  },
+  {
+   "path": [
+    "11"
+   ],
+   "anchor": "/us/usc/t18/s2510/11",
+   "heading": "",
+   "text": "\u201caggrieved person\u201d means a person who was a party to any intercepted wire, oral, or electronic communication or a person against whom the interception was directed;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    }
+   ]
+  },
+  {
+   "path": [
+    "12",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s2510/12/A",
+   "heading": "",
+   "text": "any wire or oral communication;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201celectronic communication\u201d means any transfer of signs, signals, writing, images, sounds, data, or intelligence of any nature transmitted in whole or in part by a wire, radio, electromagnetic, photoelectronic or photooptical system that affects interstate or foreign commerce, but does not include\u2014",
+     "path": [
+      "12"
+     ],
+     "anchor": "/us/usc/t18/s2510/12"
+    }
+   ]
+  },
+  {
+   "path": [
+    "12",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s2510/12/B",
+   "heading": "",
+   "text": "any communication made through a tone-only paging device;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201celectronic communication\u201d means any transfer of signs, signals, writing, images, sounds, data, or intelligence of any nature transmitted in whole or in part by a wire, radio, electromagnetic, photoelectronic or photooptical system that affects interstate or foreign commerce, but does not include\u2014",
+     "path": [
+      "12"
+     ],
+     "anchor": "/us/usc/t18/s2510/12"
+    }
+   ]
+  },
+  {
+   "path": [
+    "12",
+    "C"
+   ],
+   "anchor": "/us/usc/t18/s2510/12/C",
+   "heading": "",
+   "text": "any communication from a tracking device (as defined in section 3117 of this title ); or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201celectronic communication\u201d means any transfer of signs, signals, writing, images, sounds, data, or intelligence of any nature transmitted in whole or in part by a wire, radio, electromagnetic, photoelectronic or photooptical system that affects interstate or foreign commerce, but does not include\u2014",
+     "path": [
+      "12"
+     ],
+     "anchor": "/us/usc/t18/s2510/12"
+    }
+   ]
+  },
+  {
+   "path": [
+    "12",
+    "D"
+   ],
+   "anchor": "/us/usc/t18/s2510/12/D",
+   "heading": "",
+   "text": "electronic funds transfer information stored by a financial institution in a communications system used for the electronic storage and transfer of funds;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201celectronic communication\u201d means any transfer of signs, signals, writing, images, sounds, data, or intelligence of any nature transmitted in whole or in part by a wire, radio, electromagnetic, photoelectronic or photooptical system that affects interstate or foreign commerce, but does not include\u2014",
+     "path": [
+      "12"
+     ],
+     "anchor": "/us/usc/t18/s2510/12"
+    }
+   ]
+  },
+  {
+   "path": [
+    "13",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s2510/13/A",
+   "heading": "",
+   "text": "uses an electronic communication service; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201cuser\u201d means any person or entity who\u2014",
+     "path": [
+      "13"
+     ],
+     "anchor": "/us/usc/t18/s2510/13"
+    }
+   ]
+  },
+  {
+   "path": [
+    "13",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s2510/13/B",
+   "heading": "",
+   "text": "is duly authorized by the provider of such service to engage in such use;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201cuser\u201d means any person or entity who\u2014",
+     "path": [
+      "13"
+     ],
+     "anchor": "/us/usc/t18/s2510/13"
+    }
+   ]
+  },
+  {
+   "path": [
+    "14"
+   ],
+   "anchor": "/us/usc/t18/s2510/14",
+   "heading": "",
+   "text": "\u201celectronic communications system\u201d means any wire, radio, electromagnetic, photooptical or photoelectronic facilities for the transmission of wire or electronic communications, and any computer facilities or related electronic equipment for the electronic storage of such communications;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    }
+   ]
+  },
+  {
+   "path": [
+    "15"
+   ],
+   "anchor": "/us/usc/t18/s2510/15",
+   "heading": "",
+   "text": "\u201celectronic communication service\u201d means any service which provides to users thereof the ability to send or receive wire or electronic communications;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    }
+   ]
+  },
+  {
+   "path": [
+    "16",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s2510/16/A",
+   "heading": "",
+   "text": "scrambled or encrypted;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201creadily accessible to the general public\u201d means, with respect to a radio communication, that such communication is not\u2014",
+     "path": [
+      "16"
+     ],
+     "anchor": "/us/usc/t18/s2510/16"
+    }
+   ]
+  },
+  {
+   "path": [
+    "16",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s2510/16/B",
+   "heading": "",
+   "text": "transmitted using modulation techniques whose essential parameters have been withheld from the public with the intention of preserving the privacy of such communication;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201creadily accessible to the general public\u201d means, with respect to a radio communication, that such communication is not\u2014",
+     "path": [
+      "16"
+     ],
+     "anchor": "/us/usc/t18/s2510/16"
+    }
+   ]
+  },
+  {
+   "path": [
+    "16",
+    "C"
+   ],
+   "anchor": "/us/usc/t18/s2510/16/C",
+   "heading": "",
+   "text": "carried on a subcarrier or other signal subsidiary to a radio transmission;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201creadily accessible to the general public\u201d means, with respect to a radio communication, that such communication is not\u2014",
+     "path": [
+      "16"
+     ],
+     "anchor": "/us/usc/t18/s2510/16"
+    }
+   ]
+  },
+  {
+   "path": [
+    "16",
+    "D"
+   ],
+   "anchor": "/us/usc/t18/s2510/16/D",
+   "heading": "",
+   "text": "transmitted over a communication system provided by a common carrier, unless the communication is a tone only paging system communication; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201creadily accessible to the general public\u201d means, with respect to a radio communication, that such communication is not\u2014",
+     "path": [
+      "16"
+     ],
+     "anchor": "/us/usc/t18/s2510/16"
+    }
+   ]
+  },
+  {
+   "path": [
+    "16",
+    "E"
+   ],
+   "anchor": "/us/usc/t18/s2510/16/E",
+   "heading": "",
+   "text": "transmitted on frequencies allocated under part 25, subpart D, E, or F of part 74, or part 94 of the Rules of the Federal Communications Commission, unless, in the case of a communication transmitted on a frequency allocated under part 74 that is not exclusively allocated to broadcast auxiliary services, the communication is a two-way voice communication by radio;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201creadily accessible to the general public\u201d means, with respect to a radio communication, that such communication is not\u2014",
+     "path": [
+      "16"
+     ],
+     "anchor": "/us/usc/t18/s2510/16"
+    }
+   ]
+  },
+  {
+   "path": [
+    "17",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s2510/17/A",
+   "heading": "",
+   "text": "any temporary, intermediate storage of a wire or electronic communication incidental to the electronic transmission thereof; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201celectronic storage\u201d means\u2014",
+     "path": [
+      "17"
+     ],
+     "anchor": "/us/usc/t18/s2510/17"
+    }
+   ]
+  },
+  {
+   "path": [
+    "17",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s2510/17/B",
+   "heading": "",
+   "text": "any storage of such communication by an electronic communication service for purposes of backup protection of such communication;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201celectronic storage\u201d means\u2014",
+     "path": [
+      "17"
+     ],
+     "anchor": "/us/usc/t18/s2510/17"
+    }
+   ]
+  },
+  {
+   "path": [
+    "18"
+   ],
+   "anchor": "/us/usc/t18/s2510/18",
+   "heading": "",
+   "text": "\u201caural transfer\u201d means a transfer containing the human voice at any point between and including the point of origin and the point of reception;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    }
+   ]
+  },
+  {
+   "path": [
+    "19",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t18/s2510/19/A/i",
+   "heading": "",
+   "text": "actual or potential attack or other grave hostile acts of a foreign power or an agent of a foreign power;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201cforeign intelligence information\u201d, for purposes of section 2517(6) of this title , means\u2014",
+     "path": [
+      "19"
+     ],
+     "anchor": "/us/usc/t18/s2510/19"
+    },
+    {
+     "position": "precedes",
+     "text": "information, whether or not concerning a United States person, that relates to the ability of the United States to protect against\u2014",
+     "path": [
+      "19",
+      "A"
+     ],
+     "anchor": "/us/usc/t18/s2510/19/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "19",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t18/s2510/19/A/ii",
+   "heading": "",
+   "text": "sabotage or international terrorism by a foreign power or an agent of a foreign power; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201cforeign intelligence information\u201d, for purposes of section 2517(6) of this title , means\u2014",
+     "path": [
+      "19"
+     ],
+     "anchor": "/us/usc/t18/s2510/19"
+    },
+    {
+     "position": "precedes",
+     "text": "information, whether or not concerning a United States person, that relates to the ability of the United States to protect against\u2014",
+     "path": [
+      "19",
+      "A"
+     ],
+     "anchor": "/us/usc/t18/s2510/19/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "19",
+    "A",
+    "iii"
+   ],
+   "anchor": "/us/usc/t18/s2510/19/A/iii",
+   "heading": "",
+   "text": "clandestine intelligence activities by an intelligence service or network of a foreign power or by an agent of a foreign power; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201cforeign intelligence information\u201d, for purposes of section 2517(6) of this title , means\u2014",
+     "path": [
+      "19"
+     ],
+     "anchor": "/us/usc/t18/s2510/19"
+    },
+    {
+     "position": "precedes",
+     "text": "information, whether or not concerning a United States person, that relates to the ability of the United States to protect against\u2014",
+     "path": [
+      "19",
+      "A"
+     ],
+     "anchor": "/us/usc/t18/s2510/19/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "19",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t18/s2510/19/B/i",
+   "heading": "",
+   "text": "the national defense or the security of the United States; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201cforeign intelligence information\u201d, for purposes of section 2517(6) of this title , means\u2014",
+     "path": [
+      "19"
+     ],
+     "anchor": "/us/usc/t18/s2510/19"
+    },
+    {
+     "position": "precedes",
+     "text": "information, whether or not concerning a United States person, with respect to a foreign power or foreign territory that relates to\u2014",
+     "path": [
+      "19",
+      "B"
+     ],
+     "anchor": "/us/usc/t18/s2510/19/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "19",
+    "B",
+    "ii"
+   ],
+   "anchor": "/us/usc/t18/s2510/19/B/ii",
+   "heading": "",
+   "text": "the conduct of the foreign affairs of the United States;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201cforeign intelligence information\u201d, for purposes of section 2517(6) of this title , means\u2014",
+     "path": [
+      "19"
+     ],
+     "anchor": "/us/usc/t18/s2510/19"
+    },
+    {
+     "position": "precedes",
+     "text": "information, whether or not concerning a United States person, with respect to a foreign power or foreign territory that relates to\u2014",
+     "path": [
+      "19",
+      "B"
+     ],
+     "anchor": "/us/usc/t18/s2510/19/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "20"
+   ],
+   "anchor": "/us/usc/t18/s2510/20",
+   "heading": "",
+   "text": "\u201cprotected computer\u201d has the meaning set forth in section 1030; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    }
+   ]
+  },
+  {
+   "path": [
+    "21",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s2510/21/A",
+   "heading": "",
+   "text": "means a person who accesses a protected computer without authorization and thus has no reasonable expectation of privacy in any communication transmitted to, through, or from the protected computer; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201ccomputer trespasser\u201d\u2014",
+     "path": [
+      "21"
+     ],
+     "anchor": "/us/usc/t18/s2510/21"
+    }
+   ]
+  },
+  {
+   "path": [
+    "21",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s2510/21/B",
+   "heading": "",
+   "text": "does not include a person known by the owner or operator of the protected computer to have an existing contractual relationship with the owner or operator of the protected computer for access to all or part of the protected computer.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this chapter\u2014",
+     "path": [],
+     "anchor": "/us/usc/t18/s2510"
+    },
+    {
+     "position": "precedes",
+     "text": "\u201ccomputer trespasser\u201d\u2014",
+     "path": [
+      "21"
+     ],
+     "anchor": "/us/usc/t18/s2510/21"
+    }
+   ]
+  }
+ ]
+}

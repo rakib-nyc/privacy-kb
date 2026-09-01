@@ -1,0 +1,133 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+  - state_ag
+sector:
+  - any
+status: enacted_pending
+effective_from: '2027-01-25'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+id: ny.gbl.1504.nondiscrimination
+source:
+  citation: N.Y. Gen. Bus. Law § 1504
+  instrument_id: ny.safe_for_kids
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/1504
+  fetched: '2026-08-20'
+  raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1504.json
+  raw_sha256: 65b9a3bb069b667eddc4c9c871af9867961919f8a9109d484d96314dff967b26
+  text_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1504.txt
+  text_sha256: a0f41d86b4a27b1deaad7e1e9905da04dec0e05a3c481073ed97f9895d2c0174
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/safe-for-kids/raw/ny-gbs-1504.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, laws/GBS/1504
+    result: structured_source_used
+    note: null
+  segment_sha256: b224d8e808dfe9396ec9e40fdd4551144e960bea4e83973f1ee3437bea71fd0b
+verbatim_span: >-
+  A covered operator shall not withhold, degrade, lower the quality, or increase the price of any
+  product, service, or feature, other than as necessary for compliance with the provisions of this
+  article or any rules or regulations promulgated pursuant to this article, to a covered user due to
+  the covered operator not being permitted to provide an addictive feed to such covered user under
+  subdivision one of section fifteen hundred one of this article.
+paragraph_path:
+  path: []
+  anchor: '1504'
+  derivation: structural
+  confidence: high
+  evidence: the section root; paragraph_path [] cites the section itself and is unique by construction
+subject:
+  domain: V.B.1
+  lifecycle:
+    - I
+data_types:
+  - minor
+federal_relationship: gap_fills
+applies_if:
+  all:
+    - entity.is_ny_addictive_platform_operator == true
+    - practice.provides_addictive_feed == true
+applies_to_role: controller
+obligation_type: prohibit
+deadline: null
+exemptions:
+  - id: sfk.territorial
+    type: activity_level
+    scope: >-
+      Conduct occurring wholly outside New York, which § 1507(1) defines as access by a user
+      physically located outside the state.
+    source_citation: N.Y. Gen. Bus. Law § 1507(1)
+    verbatim_span: >-
+      This article shall apply to conduct that occurs in whole or in part in New York. For purposes
+      of this article, conduct takes place wholly outside of New York if the addictive social media
+      platform is accessed by a user who is physically located outside of New York.
+    burden_of_proof: >-
+      The operator, which is why the age-determination record in § 1501 matters twice: it is the
+      compliance route and it is the evidence of location.
+    applies_if:
+      all:
+        - practice.conduct_occurs_in_new_york == false
+    source_ref:
+      raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1507.json
+      raw_sha256: eef6cb32213ba1fde3acefdedc4b9633ab4b17059d373aa0e6d9f6ff11df800f
+      instrument_id: ny.safe_for_kids
+    reach: instrument
+summary: >-
+  An operator may not withhold, degrade, lower the quality of, or raise the price of any product,
+  service or feature because it is not permitted to give that user an addictive feed.
+requirement_detail: >-
+  THE ANTI-RETALIATION PROVISION, and it is what stops § 1501 from being optional in practice.
+  Without it an operator could comply with the feed prohibition and then charge for the
+  non-personalised experience, or degrade it until the user supplied an age or a parent supplied
+  consent — which would convert a prohibition into a price. The exception is drawn tightly to
+  compliance: differences that are NECESSARY for compliance with this article or its regulations are
+  permitted, which is what allows the non-feed experience to differ from the feed experience at all.
+  It does not permit differences that are merely a consequence of the user being outside the feed.
+  Note the trigger is the operator "not being permitted to provide an addictive feed" under §
+  1501(1) — so the protection follows the prohibition. A user who is outside § 1501(1) gets nothing
+  from this section.
+common_errors:
+  - >-
+    Reading it as a general non-discrimination rule for minors. It is tied to one cause: the
+    operator not being permitted to provide an addictive feed under § 1501(1).
+  - >-
+    Assuming any difference between the feed and non-feed experience violates it. Differences
+    necessary for compliance are expressly permitted.
+open_questions: []
+preemption:
+  posture: none
+  authority: N.Y. Gen. Bus. Law § 1507(2)
+  note: >-
+    COPPA reaches children under 13 and governs the collection of personal information; this article
+    reaches minors under 18 and governs how a feed is ORDERED, which COPPA does not address at all.
+    Subdivision 2 of § 1507 is a savings construction rather than a preemption clause — it disclaims
+    liability inconsistent with 15 U.S.C. § 6502 for operators subject to 15 U.S.C. § 6501, and says
+    nothing about anyone else. Same posture the corpus records for the CDPA, for the same reason.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Attorney General action or special proceeding under § 1508(1): injunction, restitution,
+      disgorgement (expressly including destruction of unlawfully obtained data), damages, and civil
+      penalties.
+    range: Up to $5,000 per violation.
+    note: >-
+      § 1508(1) bars the Attorney General from bringing any action until 180 days after the
+      effective date, so the first day enforcement is available is later than the first day the
+      duties bind.
+  statute_of_limitations: null
+context_not_required: The section states the prohibition and its single exception in one sentence.

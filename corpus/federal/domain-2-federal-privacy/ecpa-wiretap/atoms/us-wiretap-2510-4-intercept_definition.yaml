@@ -1,0 +1,124 @@
+id: us.wiretap.2510.4.intercept_definition
+schema_version: 1
+record_type: obligation
+source:
+  citation: 18 U.S.C. § 2510(4)
+  instrument_id: us.ecpa_wiretap
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2510.xml
+  raw_sha256: 5dc845cda38743b58fa8224e2b6939398a1ade8b9b229820070f1b3906e89abb
+  text_file: corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2510.txt
+  text_sha256: 7f9d9b91e7e95064505bd5e7842dae5a244ce4d7cfd391d3f6084f86297e943d
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2510.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 78db8586815e40d48817738e83f3bcb01d357e7c2ee927a13d89caffca33f8f3
+verbatim_span: >-
+  “intercept” means the aural or other acquisition of the contents of any wire, electronic, or oral
+  communication through the use of any electronic, mechanical, or other device.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - '4'
+  anchor: /us/usc/t18/s2510/4
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: As used in this chapter—
+    citation: 18 U.S.C. § 2510
+    path:
+      path: []
+      anchor: /us/usc/t18/s2510
+      derivation: structural
+      confidence: high
+      evidence: USLM ancestor element; identifier read from the source
+subject:
+  domain: IV.B.3
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - doj
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '1968-06-19'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - practice.intercepts_communications == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  "Intercept" means the aural or other acquisition of the contents of any wire, electronic or oral
+  communication through the use of any electronic, mechanical or other device.
+requirement_detail: >-
+  THIS DEFINITION IS THE BOUNDARY BETWEEN THE TWO HALVES OF ECPA, and it is worth reading for what
+  it does not say. The text requires ACQUISITION OF CONTENTS THROUGH A DEVICE; the word
+  "contemporaneous" appears nowhere in § 2510 or § 2511. The contemporaneity requirement is a
+  judicial construction, drawn from reading this definition against § 2510(17)'s separate definition
+  of "electronic storage" and against the existence of chapter 121 — if acquiring a stored copy were
+  an interception, the Stored Communications Act would be redundant. The courts of appeals have read
+  it that way consistently since Steve Jackson Games and Konop, which is why retrieving an email
+  from a mailbox or reading a saved chat log is a § 2701 question and not a § 2511 one. Two
+  consequences for practice: the same monitoring product falls on either side of the line depending
+  on WHEN it takes its copy, and "we intercept nothing, we only read stored data" relocates the
+  analysis rather than concluding it. Note also that "contents" is separately defined at § 2510(8),
+  so acquiring addressing and signalling data is generally a pen-register question under chapter 206
+  rather than a Wiretap Act one.
+deadline: null
+exemptions: []
+related:
+  - us.wiretap.2511.1a.interception_prohibition
+  - us.wiretap.2510.17a.electronic_storage
+  - us.sca.2701.a1.unauthorized_access
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating contemporaneity as statutory text. It is a construction of this definition read against
+    § 2510(17) and the existence of the SCA; the word does not appear in the section.
+  - >-
+    Applying the Wiretap Act to stored messages. Acquisition of a stored copy is 18 U.S.C. § 2701
+    territory, with different elements, different exceptions and a different defendant.
+  - >-
+    Assuming any acquisition qualifies. The definition requires acquisition of CONTENTS through an
+    electronic, mechanical or other device — and § 2510(5) then removes a class of ordinary-course
+    equipment from that term entirely.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2510(4)
+  note: >-
+    Recorded as floor: nothing in the extracted section displaces state law, and § 2511(2)(d) is the
+    standing proof of it — the federal one-party-consent rule coexists with the all-party consent
+    statutes of roughly a dozen states, and the stricter rule governs the same recording.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: true
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

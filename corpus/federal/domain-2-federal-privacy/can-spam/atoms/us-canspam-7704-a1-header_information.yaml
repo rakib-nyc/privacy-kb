@@ -1,0 +1,91 @@
+id: us.canspam.7704.a1.header_information
+schema_version: 1
+record_type: obligation
+source:
+  citation: 15 U.S.C. § 7704(a)(1)
+  instrument_id: us.can_spam
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7704.xml
+  raw_sha256: cc5b9acbbbd7b838a5526ed4fe4b736558bb9d98d7192bce2b54c46729afddfc
+  text_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7704.txt
+  text_sha256: d3e08ec6e6ef3d8779351f957bd184eaafbf48d7f51e3182537721238a9ed8ed
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7704.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: It is unlawful for any person to initiate the transmission, to a protected computer, of
+  a commercial electronic mail message, or a transactional or relationship message, that contains, or
+  is accompanied by, header information that is materially false or materially misleading. For purposes
+  of this paragraph—
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+  - a
+  - '1'
+  anchor: /us/usc/t15/s7704/a/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the prohibition and its exception clause in full.
+subject:
+  domain: II.E.1
+  lifecycle:
+  - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &id001
+- ftc
+sector:
+- any
+data_types:
+- any
+status: in_force
+effective_from: '2004-01-01'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+  - practice.sends_commercial_email == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: It is unlawful to initiate the transmission of a commercial or transactional electronic mail
+  message containing materially false or materially misleading header information.
+requirement_detail: CAN-SPAM IS AN OPT-OUT STATUTE THAT PREEMPTS OPT-IN STATE LAW, which is the opposite
+  posture from most of this corpus and the reason its name is misleading — it does not ban spam, it regulates
+  it. § 7707(b)(1) expressly preempts state statutes regulating commercial email except as to falsity
+  or deception, so a state cannot impose a consent requirement. There is no general private right of action;
+  enforcement runs to the FTC, state AGs and, narrowly, providers of internet access service under § 7706(g).
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+- Reading it as requiring consent. It requires an opt-out mechanism, not opt-in.
+- Assuming state law can add a consent requirement. § 7707(b)(1) preempts it except as to falsity or deception.
+- Expecting a consumer private action. There is none; providers of internet access service have a narrow
+  one.
+open_questions: []
+confidence: high
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 7707(b)(1)
+  note: CAN-SPAM expressly preempts state statutes regulating commercial email EXCEPT to the extent they
+    prohibit falsity or deception. A state opt-in requirement is displaced.
+enforcement:
+  enforcers: *id001
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: The enforcement section has not been extracted; treat penalty exposure as UNASSESSED rather
+      than absent.
+  statute_of_limitations: null

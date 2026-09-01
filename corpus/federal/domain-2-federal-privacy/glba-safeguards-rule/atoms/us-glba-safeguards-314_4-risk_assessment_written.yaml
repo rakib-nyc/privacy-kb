@@ -1,0 +1,123 @@
+id: us.glba.safeguards.314_4.risk_assessment_written
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 314.4(b)(1)
+  instrument_id: us.glba.safeguards_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=314
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  raw_sha256: 3ba7ecc3463953a1db1ccf38f4b0ade4182e36c7e24e111eb8869910e271d41a
+  text_file: corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.txt
+  text_sha256: be8a0b1e03c4b14f6ed56fbf365d871a4fe112856a8013ebcf25fbc2f9aefec9
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 88ffd12851e77a1e2fcd55085f454bd0f1a2e2da720e232432508ff033a50055
+verbatim_span: 'The risk assessment shall be written and shall include:'
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+    - '1'
+  anchor: '314.4'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+jurisdiction: US-FED
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating a risk assessment as satisfying the rule without writing it down. § 314.4(b)(1) says
+    'shall be written'.
+  - >-
+    Overlooking that (b)(1)(i)-(iii) are mandatory CONTENTS, not suggestions — unlike § 682.3(b)'s
+    examples, these are required elements.
+open_questions:
+  - >-
+    The paragraph's operative force depends on its stem at (b), recorded in operative_context: the
+    risk assessment is the base of the whole program.
+confidence: high
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Base your information security program on a risk assessment that identifies reasonably
+      foreseeable internal and external risks to the security, confidentiality, and integrity of
+      customer information that could result in the unauthorized disclosure, misuse, alteration,
+      destruction, or other compromise of such information, and assesses the sufficiency of any
+      safeguards in place to control these risks.
+    citation: null
+    relation_note: null
+    path:
+      path:
+        - b
+      anchor: null
+      derivation: reconstructed
+      confidence: high
+      evidence: designator sequence over flat <P> siblings
+subject:
+  domain: II.C.2
+  lifecycle:
+    - IV
+regulator:
+  - ftc
+sector:
+  - financial_services
+  - non_bank_financial_institutions
+data_types:
+  - npi
+  - customer_information
+status: in_force
+effective_from: '2023-06-09'
+applies_if:
+  all:
+    - entity.glba_financial_institution == true
+applies_to_role: any
+obligation_type: assess
+summary: >-
+  The risk assessment underpinning the information security program must be written, and must
+  include stated criteria for evaluating, categorising and mitigating risk.
+requirement_detail: >-
+  The writing requirement is the operative bite: an unwritten risk assessment does not satisfy §
+  314.4(b) however thorough. The three required contents are enumerated at (b)(1)(i)-(iii) —
+  evaluation and categorisation criteria, confidentiality/integrity/availability assessment
+  criteria, and requirements describing how risks will be mitigated or accepted.
+preemption:
+  posture: floor
+  authority: 15 U.S.C. § 6807
+  note: >-
+    GLBA § 507 preserves more protective state law: a state statute or regulation is preempted only
+    to the extent it is INCONSISTENT with the subtitle, and a more protective provision is not
+    inconsistent. So state security requirements run in parallel. NY SHIELD's compliance-deemed
+    pathway for GLBA-regulated entities is the practical expression of that, and is a Priority 3
+    atom.
+enforcement:
+  enforcers:
+    - ftc
+  private_right_of_action: false
+  penalty:
+    structure: FTC Act remedies; no penalty figure in the rule itself
+    range: null
+    note: GLBA carries no private right of action; plaintiffs use state UDAP and negligence.
+  statute_of_limitations: null

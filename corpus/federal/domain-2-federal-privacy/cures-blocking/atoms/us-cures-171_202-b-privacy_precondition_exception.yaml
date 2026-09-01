@@ -1,0 +1,223 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+related:
+  - us.part2.2_31.a.written_consent_required_elements
+federal_relationship: null
+interpreted_by: []
+confidence: high
+id: us.cures.171_202.b.privacy_precondition_exception
+source:
+  citation: 45 C.F.R. § 171.202(b)
+  instrument_id: us.cures_blocking
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=171
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+  raw_sha256: 881f03c2034c1a6b4d49e9cde4adf70a84182f5890eb1be66f4026f4c601e023
+  text_file: corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.txt
+  text_sha256: ff9534f2201bb086974f3d4fbe95b9d3a5deb972e36d1e6889a93e3d534a088f
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, full XML for the part, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: 5908c170aa7bb4bc3893a4c81ba9a9493ca9c74a2e155fd92e8f9111ebad5f5b
+verbatim_span: >-
+  To qualify for the exception on the basis that State or Federal law requires one or more
+  preconditions for providing access, exchange, or use of electronic health information that have
+  not been satisfied, the following requirements must be met—
+paragraph_path:
+  path:
+    - b
+  anchor: '171.202'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+    exactly one provision
+exemptions: []
+common_errors:
+  - >-
+    Invoking the exception without the affirmative steps. Identifying an unsatisfied precondition is
+    the beginning of the analysis; the tailoring, the policy or case-by-case documentation and the
+    assistance under paragraph (b)(2) are all conditions, and failing one loses the whole exception.
+  - >-
+    Using the privacy exception where no law imposes a precondition. An internal policy, a
+    contractual restriction or a general privacy concern is not a State or Federal legal
+    precondition, and a practice resting on one belongs in a different exception or nowhere.
+  - >-
+    Steering the individual away from consenting. Paragraph (b)(2)(ii) forbids improper
+    encouragement or inducement to withhold, so a consent script that emphasises risk in order to
+    reduce sharing converts a compliant refusal into information blocking.
+open_questions:
+  - >-
+    The source is the eCFR snapshot for 2026-08-17; part 171 has been amended since 2021 and
+    intervening versions are not modelled as separate time slices.
+operative_context:
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      The actor's practice is tailored to the applicable precondition not satisfied, is implemented
+      in a consistent and non-discriminatory manner, and either:
+    citation: 45 C.F.R. § 171.202(b)(1)
+    path:
+      path:
+        - b
+        - '1'
+      anchor: '171.202'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      If the precondition relies on the provision of a consent or authorization from an individual
+      and the actor has received a version of such a consent or authorization that does not satisfy
+      all elements of the precondition required under applicable law, the actor must:
+    citation: 45 C.F.R. § 171.202(b)(2)
+    path:
+      path:
+        - b
+        - '2'
+      anchor: '171.202'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      Use reasonable efforts within its control to provide the individual with a consent or
+      authorization form that satisfies all required elements of the precondition or provide other
+      reasonable assistance to the individual to satisfy all required elements of the precondition;
+      and
+    citation: 45 C.F.R. § 171.202(b)(2)(i)
+    path:
+      path:
+        - b
+        - '2'
+        - i
+      anchor: '171.202'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+  - position: follows
+    relation: conditions
+    verbatim_span: Not improperly encourage or induce the individual to withhold the consent or authorization.
+    citation: 45 C.F.R. § 171.202(b)(2)(ii)
+    path:
+      path:
+        - b
+        - '2'
+        - ii
+      anchor: '171.202'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      For purposes of determining whether the actor's privacy policies and procedures and actions
+      satisfy the requirements of paragraphs (b)(1)(i) and (b)(2) above when the actor's operations
+      are subject to multiple laws which have inconsistent preconditions, they shall be deemed to
+      satisfy the requirements of the paragraphs if the actor has adopted uniform privacy policies
+      and procedures to address the more restrictive preconditions.
+    citation: 45 C.F.R. § 171.202(b)(3)
+    path:
+      path:
+        - b
+        - '3'
+      anchor: '171.202'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+regulator:
+  - hhs_oig
+  - cms
+sector:
+  - health
+data_types:
+  - health
+effective_from: '2021-04-05'
+subject:
+  domain: II.B.3
+  lifecycle:
+    - IV
+applies_if:
+  all:
+    - entity.is_information_blocking_actor == true
+    - data.is_electronic_health_information == true
+    - law.privacy_precondition_unsatisfied == true
+obligation_type: assess
+summary: >-
+  An actor that declines to fulfil a request because a State or Federal privacy precondition is
+  unsatisfied is within the privacy exception only if the practice is tailored and documented and
+  the actor helps the individual satisfy the precondition.
+requirement_detail: >-
+  This is the hinge between the privacy corpus and the duty to share. Where another State or Federal
+  law imposes a precondition on access, exchange or use — the part 2 written consent is the paradigm
+  case — an actor may decline the request without committing information blocking, but only on
+  conditions, and they are conjunctive. The practice must be tailored to the precondition not
+  satisfied and applied in a consistent and non-discriminatory manner, and it must either conform to
+  written organisational policies specifying the criteria for satisfying the precondition and the
+  steps the actor will take, or be documented case by case with the criteria used, those not met,
+  and why. Paragraph (b)(2) is the part that surprises people: where the precondition is a consent
+  or authorization and the actor holds a defective one, the actor must use reasonable efforts within
+  its control to give the individual a conforming form or other assistance, and must not "improperly
+  encourage or induce the individual to withhold the consent" — so the lawful response to a part 2
+  record request is not silence, it is going and getting the consent. Paragraph (b)(3) handles the
+  multi-law case by deeming uniform policies addressed to the more restrictive preconditions
+  sufficient, which is what makes a single national consent workflow defensible.
+preemption:
+  posture: none
+  authority: 45 C.F.R. § 171.103(a); 45 C.F.R. § 171.202(b)
+  note: >-
+    Part 171 contains no express preemption provision and displaces no State privacy law. It runs in
+    the opposite direction from every other instrument here: a State law that REQUIRES withholding
+    takes the practice outside the definition of information blocking entirely, because § 171.103(a)
+    excepts what is required by law. A State law that merely PERMITS withholding does not, since
+    permission is not requirement — and that gap is where actors get caught, because the practice is
+    then information blocking unless it fits an exception in full.
+enforcement:
+  enforcers:
+    - hhs_oig
+    - cms
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Health IT developers of certified health IT, health information networks and health
+      information exchanges face civil money penalties under section 3022 of the Public Health
+      Service Act, 42 U.S.C. 300jj-52, which § 171.100(a) names as the authority for this part.
+      Health care providers face disincentives instead: subpart E provides that an appropriate
+      agency may impose disincentives on a provider OIG determines has committed information
+      blocking, and § 171.1001 sets out the CMS disincentives, including loss of meaningful EHR user
+      status and removal from the Medicare Shared Savings Program for at least one year.
+    range: null
+    note: >-
+      The CMP amount is fixed by statute and by 42 C.F.R. part 1003, neither of which is in the
+      fetched part; do not state a figure from this record.
+  statute_of_limitations: null

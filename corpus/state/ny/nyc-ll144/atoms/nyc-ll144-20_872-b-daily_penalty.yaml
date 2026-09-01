@@ -1,0 +1,104 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: local
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+id: ny.nyc_ll144.20_872.b.daily_violation
+source:
+  citation: N.Y.C. Admin. Code § 20-872(b)
+  instrument_id: nyc.local_law_144
+  url: urn:owner-supplied:nyc-law-department-xml-export-0-0-0-234799.xml
+  fetched: '2026-08-20'
+  raw_file: corpus/state/ny/nyc-ll144/raw/nyc-admin-title20-sub25.xml
+  raw_sha256: f1e6b5ea19d6082309a041668a527a776f832bea39e5f3504b4e2ad6361b3832
+  text_file: corpus/state/ny/nyc-ll144/raw/nyc-admin-title20-sub25.txt
+  text_sha256: 75677f2e2c186a8d8e5bef668bc3b6460ac7c7c89abdb2608a50f9ee757e7aab
+  text_extraction_cmd: tag-strip of the NYC XML export
+  format: nyc_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - >-
+        NYC Law Department XML export; official structured source with LEVEL nesting, so depth is
+        READ rather than reconstructed
+    result: structured_source_used
+    note: >-
+      The url is a file: URI because this is an owner-supplied official XML export rather than a
+      fetched document — amlegal returns 403 to automated requests and rules.cityofnewyork.us
+      carries only the PROPOSED rule. Recording the local path keeps the provenance honest: it says
+      where the bytes came from rather than dressing them up with a public URL they were not
+      retrieved from.
+  segment_sha256: f92b668dd7ebeee35fd6726746a8a932d0a19824826ad7b60ec968f39fe93cba
+verbatim_span: >-
+  Each day on which an automated employment decision tool is used in violation of this section shall
+  give rise to a separate violation of subdivision a of section 20-871 .
+paragraph_path:
+  path:
+    - b
+  anchor: 20-872
+  derivation: structural
+  confidence: high
+  evidence: NYC XML LEVEL nesting; section number read from the HEADING, designator from the paragraph.
+context_not_required: The provision states the duty in full.
+subject:
+  domain: IV.A.2
+  lifecycle:
+    - V
+regulator:
+  - state_ag
+sector:
+  - employment
+data_types:
+  - any
+effective_from: '2023-01-01'
+federal_relationship: gap_fills
+applies_if:
+  all:
+    - entity.uses_automated_employment_decision_tool == true
+    - entity.nexus in ["US-NY-NYC"]
+applies_to_role: controller
+obligation_type: prohibit
+deadline: null
+exemptions: []
+related: []
+summary: >-
+  Each day on which an automated employment decision tool is used in violation of the subchapter
+  gives rise to a separate violation.
+requirement_detail: >-
+  THE PER-DAY STRUCTURE IS WHAT MAKES THIS ENFORCEABLE AGAINST A LARGE EMPLOYER. An unaudited tool
+  left running accrues a violation every day it operates, so exposure scales with the delay in
+  fixing it rather than with the number of candidates affected — the opposite of the per-contact
+  model in TCPA and VPPA. § 20-872(c) then makes each failure to give notice its own separate
+  violation, so audit failures and notice failures accumulate on different axes.
+common_errors:
+  - Modelling exposure per candidate. Use accrues per DAY; notice failures accrue per candidate.
+  - Assuming remediation caps historical exposure. Each prior day already gave rise to a violation.
+open_questions: []
+preemption:
+  posture: none
+  authority: N.Y.C. Admin. Code § 20-870 et seq.
+  note: >-
+    City law. No federal or New York State statute reaches automated employment decision tools
+    directly, so this fills a gap rather than exceeding a floor — Title VII reaches the
+    DISCRIMINATION such a tool may produce, not the tool's use.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil penalties under § 20-872; each day of unlawful use is a separate violation and each
+      failure to give notice is a separate violation.
+    range: null
+    note: >-
+      § 20-874 preserves other rights of action, so the absence of a private right under this
+      subchapter does not foreclose a Title VII or state-law claim.
+  statute_of_limitations: null

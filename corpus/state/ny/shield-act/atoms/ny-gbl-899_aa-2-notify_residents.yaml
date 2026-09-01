@@ -1,0 +1,185 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2025-03-28'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+interpreted_by: []
+confidence: high
+related: []
+preemption:
+  posture: ceiling
+  authority: N.Y. Gen. Bus. Law § 899-aa(10)
+  note: >-
+    CEILING as to LOCAL law only. Subdivision 10 makes § 899-aa exclusive and preempts local
+    ordinances, forbidding a locality from imposing anything more restrictive. It says nothing about
+    federal law and does not displace it — federal breach regimes run alongside, which is what
+    subdivision 2(b) is about.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      AG injunction, plus damages for actual costs or losses including consequential financial
+      losses. For a knowing or reckless violation, a civil penalty of the greater of $5,000 or up to
+      $20 per instance of failed notification, capped at $250,000.
+    range:
+      min: 5000
+      unit: usd_civil_penalty_floor_knowing
+    note: >-
+      NO PRIVATE RIGHT OF ACTION. § 899-aa(6)(a) gives the action to the attorney general. Private
+      plaintiffs reach breach conduct through GBL § 349 and common-law theories instead, which is
+      why the two NY instruments are read together.
+  statute_of_limitations: >-
+    Three years from the earlier of the AG becoming aware of the violation or the date notice was
+    sent under § 899-aa(8)(a); never more than six years from discovery of the breach by the
+    company, unless the company took steps to hide it.
+id: ny.gbl.899_aa.2.notify_residents
+source:
+  citation: N.Y. Gen. Bus. Law § 899-aa(2)
+  instrument_id: ny.gbl.899_aa
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/899-AA
+  fetched: '2026-08-19'
+  raw_file: corpus/state/ny/shield-act/raw/ny-gbs-899-aa.json
+  raw_sha256: cb912ca3a2a1da483cfbc51c28abeb69b8a93b39fb31ae73a355ce1f5003f4c0
+  text_file: corpus/state/ny/shield-act/raw/ny-gbs-899-aa.txt
+  text_sha256: 9995a916100685826810e2bc5e3b1fac4ef3fe7dfc3750f223663bb9b3abfb47
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/shield-act/raw/ny-gbs-899-aa.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, laws/GBS/899-AA, full=true
+    result: structured_source_used
+    note: null
+  segment_sha256: 59cf913d0f0960f2d0d07fbd45f3178722eba57857c12a6bfcf64765d75e9492
+verbatim_span: >-
+  Any person or business which owns or licenses computerized data which includes private information
+  shall disclose any breach of the security of the system following discovery or notification of the
+  breach in the security of the system to any resident of New York state whose private information
+  was, or is reasonably believed to have been, accessed or acquired by a person without valid
+  authorization. The disclosure shall be made in the most expedient time possible and without
+  unreasonable delay, provided that such notification shall be made within thirty days after the
+  breach has been discovered, except for the legitimate needs of law enforcement, as provided in
+  subdivision four of this section.
+paragraph_path:
+  path:
+    - '2'
+  anchor: 899-AA
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    subdivision and paragraph designators reconstructed from the flat text field — OpenLegislation
+    exposes no structure below section level. Resolves to exactly one leaf (gate 23).
+context_not_required: Subdivision 2 states the duty, the population and the clock in full.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - VI
+federal_relationship: gap_fills
+applies_if:
+  all:
+    - entity.owns_or_licenses_computerized_data == true
+    - data.includes_ny_private_information == true
+    - event.type == "breach_of_security_of_the_system"
+obligation_type: notify
+deadline:
+  trigger_event: discovery of the breach
+  duration:
+    value: 30
+    unit: calendar_days
+  computation: >-
+    "In the most expedient time possible and without unreasonable delay", and in any event within
+    thirty days after the breach has been DISCOVERED — not after it occurred. The thirty days is an
+    outer limit on a reasonableness standard, not a safe harbour: a delay that is unreasonable at
+    day ten violates the subdivision even though day thirty has not arrived. Tolled only for the
+    legitimate needs of law enforcement under subdivision 4.
+summary: >-
+  A person or business that owns or licenses computerized data including the private information of
+  a New York resident must disclose any breach of the security of the system to that resident,
+  within thirty days of discovery.
+requirement_detail: >-
+  EXTRATERRITORIAL BY DESIGN. The duty attaches to holding a New York RESIDENT'S private
+  information, not to doing business in New York — there is no nexus, revenue or headcount threshold
+  anywhere in the subdivision. A company with no New York office and one New York customer is
+  covered. This is the single most commonly missed feature of the SHIELD Act and it is why a
+  federal-only breach analysis is incomplete for almost any consumer-facing business.
+exemptions:
+  - id: ny.gbl.899_aa.2.a.inadvertent_no_harm
+    type: activity_level
+    scope: >-
+      No notice to affected persons where the exposure was an INADVERTENT disclosure by persons
+      authorised to access private information AND the business reasonably determines it will not
+      likely result in misuse, financial harm, or emotional harm in the online-credential case.
+      CONSEQUENCE TEST: the carve-out is EARNED and documented — the determination must be in
+      writing and kept five years, and if over 500 New York residents are affected it must go to the
+      attorney general within ten days. So an entity that reaches the right conclusion and writes
+      nothing down has not qualified; and invoking it at scale actively creates a filing duty rather
+      than removing one.
+    source_citation: N.Y. Gen. Bus. Law § 899-aa(2)(a)
+    verbatim_span: >-
+      Notice to affected persons under this section is not required if the exposure of private
+      information was an inadvertent disclosure by persons authorized to access private information,
+      and the person or business reasonably determines such exposure will not likely result in
+      misuse of such information, or financial harm to the affected persons or emotional harm in the
+      case of unknown disclosure of online credentials as found in subparagraph (ii) of paragraph
+      (b) of subdivision one of this section. Such a determination must be documented in writing and
+      maintained for at least five years. If the incident affects over five hundred residents of New
+      York, the person or business shall provide the written determination to the state attorney
+      general within ten days after the determination.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - event.disclosure_was_inadvertent == true
+        - event.authorized_persons_only == true
+        - practice.risk_determination_documented == true
+  - id: ny.gbl.899_aa.2.b.other_regime_notice
+    type: activity_level
+    scope: >-
+      If affected persons were notified under GLBA, HIPAA/HITECH, or 23 NYCRR Part 500, no
+      ADDITIONAL notice to those persons is required. CONSEQUENCE TEST: this is the narrowest kind
+      of compliance-deemed pathway and reading it as an exemption from § 899-aa is the classic
+      error. It switches off ONE duty — notice to affected persons — and expressly preserves notice
+      to the attorney general, the department of state and the division of state police under
+      subdivision 8(a), and to consumer reporting agencies under 8(b). A GLBA-regulated entity that
+      notifies its customers and tells nobody in Albany has complied with the federal rule and
+      violated this one. Typed activity_level rather than entity_level for exactly that reason: the
+      entity stays covered, and only the act of re-notifying the same people falls away.
+    source_citation: N.Y. Gen. Bus. Law § 899-aa(2)(b)
+    verbatim_span: >-
+      If notice of the breach of the security of the system is made to affected persons pursuant to
+      the breach notification requirements under any of the following laws, nothing in this section
+      shall require any additional notice to those affected persons, but notice still shall be
+      provided to the state attorney general, the department of state and the division of state
+      police pursuant to paragraph (a) of subdivision eight of this section and to consumer
+      reporting agencies pursuant to paragraph
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - practice.notified_under_other_breach_regime == true
+common_errors:
+  - >-
+    Treating the thirty days as a safe harbour. The primary standard is "most expedient time
+    possible and without unreasonable delay"; thirty days is the ceiling on top of it.
+  - Running the clock from the breach. It runs from DISCOVERY.
+  - >-
+    Requiring a New York presence. The trigger is the residency of the data subject — a business
+    with no New York operations and one New York customer is covered.
+  - >-
+    Reading § 899-aa(2)(b) as an exemption. It removes only notice to affected persons and expressly
+    preserves the regulator and CRA notices under subdivision 8.
+open_questions: []

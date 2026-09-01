@@ -1,0 +1,2053 @@
+{
+ "label": "15 U.S.C. \u00a7 1681a",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681a.xml",
+ "raw_sha256": "ccb87a373752c5cb2024879c40932b66fb305b1bfa5ff1ef211d4eb985d1eed1",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "/us/usc/t15/s1681a/a",
+   "heading": "",
+   "text": "Definitions and rules of construction set forth in this section are applicable for the purposes of this subchapter.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "/us/usc/t15/s1681a/b",
+   "heading": "",
+   "text": "The term \u201cperson\u201d means any individual, partnership, corporation, trust, estate, cooperative, association, government or governmental subdivision or agency, or other entity.",
+   "context": []
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "/us/usc/t15/s1681a/c",
+   "heading": "",
+   "text": "The term \u201cconsumer\u201d means an individual.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681a/d/1/A",
+   "heading": "",
+   "text": "credit or insurance to be used primarily for personal, family, or household purposes;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cconsumer report\u201d means any written, oral, or other communication of any information by a consumer reporting agency bearing on a consumer\u2019s credit worthiness, credit standing, credit capacity, character, general reputation, personal characteristics, or mode of living which is used or expected to be used or collected in whole or in part for the purpose of serving as a factor in establishing the consumer\u2019s eligibility for\u2014",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681a/d/1/B",
+   "heading": "",
+   "text": "employment purposes; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cconsumer report\u201d means any written, oral, or other communication of any information by a consumer reporting agency bearing on a consumer\u2019s credit worthiness, credit standing, credit capacity, character, general reputation, personal characteristics, or mode of living which is used or expected to be used or collected in whole or in part for the purpose of serving as a factor in establishing the consumer\u2019s eligibility for\u2014",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681a/d/1/C",
+   "heading": "",
+   "text": "any other purpose authorized under section 1681b of this title .",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cconsumer report\u201d means any written, oral, or other communication of any information by a consumer reporting agency bearing on a consumer\u2019s credit worthiness, credit standing, credit capacity, character, general reputation, personal characteristics, or mode of living which is used or expected to be used or collected in whole or in part for the purpose of serving as a factor in establishing the consumer\u2019s eligibility for\u2014",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681a/d/2/A/i",
+   "heading": "",
+   "text": "report containing information solely as to transactions or experiences between the consumer and the person making the report;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in paragraph (3), the term \u201cconsumer report\u201d does not include\u2014",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/2"
+    },
+    {
+     "position": "precedes",
+     "text": "subject to section 1681s\u20133 of this title , any\u2014",
+     "path": [
+      "d",
+      "2",
+      "A"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/2/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681a/d/2/A/ii",
+   "heading": "",
+   "text": "communication of that information among persons related by common ownership or affiliated by corporate control; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in paragraph (3), the term \u201cconsumer report\u201d does not include\u2014",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/2"
+    },
+    {
+     "position": "precedes",
+     "text": "subject to section 1681s\u20133 of this title , any\u2014",
+     "path": [
+      "d",
+      "2",
+      "A"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/2/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "A",
+    "iii"
+   ],
+   "anchor": "/us/usc/t15/s1681a/d/2/A/iii",
+   "heading": "",
+   "text": "communication of other information among persons related by common ownership or affiliated by corporate control, if it is clearly and conspicuously disclosed to the consumer that the information may be communicated among such persons and the consumer is given the opportunity, before the time that the information is initially communicated, to direct that such information not be communicated among such persons;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in paragraph (3), the term \u201cconsumer report\u201d does not include\u2014",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/2"
+    },
+    {
+     "position": "precedes",
+     "text": "subject to section 1681s\u20133 of this title , any\u2014",
+     "path": [
+      "d",
+      "2",
+      "A"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/2/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681a/d/2/B",
+   "heading": "",
+   "text": "any authorization or approval of a specific extension of credit directly or indirectly by the issuer of a credit card or similar device;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in paragraph (3), the term \u201cconsumer report\u201d does not include\u2014",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681a/d/2/C",
+   "heading": "",
+   "text": "any report in which a person who has been requested by a third party to make a specific extension of credit directly or indirectly to a consumer conveys his or her decision with respect to such request, if the third party advises the consumer of the name and address of the person to whom the request was made, and such person makes the disclosures to the consumer required under section 1681m of this title ; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in paragraph (3), the term \u201cconsumer report\u201d does not include\u2014",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "D"
+   ],
+   "anchor": "/us/usc/t15/s1681a/d/2/D",
+   "heading": "",
+   "text": "a communication described in subsection ( o ) or (x).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in paragraph (3), the term \u201cconsumer report\u201d does not include\u2014",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681a/d/3/A",
+   "heading": "",
+   "text": "medical information;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except for information or any communication of information disclosed as provided in section 1681b(g)(3) of this title , the exclusions in paragraph (2) shall not apply with respect to information disclosed to any person related by common ownership or affiliated by corporate control, if the information is\u2014",
+     "path": [
+      "d",
+      "3"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681a/d/3/B",
+   "heading": "",
+   "text": "an individualized list or description based on the payment transactions of the consumer for medical products or services; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except for information or any communication of information disclosed as provided in section 1681b(g)(3) of this title , the exclusions in paragraph (2) shall not apply with respect to information disclosed to any person related by common ownership or affiliated by corporate control, if the information is\u2014",
+     "path": [
+      "d",
+      "3"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681a/d/3/C",
+   "heading": "",
+   "text": "an aggregate list of identified consumers based on payment transactions for medical products or services.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except for information or any communication of information disclosed as provided in section 1681b(g)(3) of this title , the exclusions in paragraph (2) shall not apply with respect to information disclosed to any person related by common ownership or affiliated by corporate control, if the information is\u2014",
+     "path": [
+      "d",
+      "3"
+     ],
+     "anchor": "/us/usc/t15/s1681a/d/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": "/us/usc/t15/s1681a/e",
+   "heading": "",
+   "text": "The term \u201cinvestigative consumer report\u201d means a consumer report or portion thereof in which information on a consumer\u2019s character, general reputation, personal characteristics, or mode of living is obtained through personal interviews with neighbors, friends, or associates of the consumer reported on or with others with whom he is acquainted or who may have knowledge concerning any such items of information. However, such information shall not include specific factual information on a consumer\u2019s credit record obtained directly from a creditor of the consumer or from a consumer reporting agency when such information was obtained directly from a creditor of the consumer or from the consumer.",
+   "context": []
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": "/us/usc/t15/s1681a/f",
+   "heading": "",
+   "text": "The term \u201cconsumer reporting agency\u201d means any person which, for monetary fees, dues, or on a cooperative nonprofit basis, regularly engages in whole or in part in the practice of assembling or evaluating consumer credit information or other information on consumers for the purpose of furnishing consumer reports to third parties, and which uses any means or facility of interstate commerce for the purpose of preparing or furnishing consumer reports.",
+   "context": []
+  },
+  {
+   "path": [
+    "g"
+   ],
+   "anchor": "/us/usc/t15/s1681a/g",
+   "heading": "",
+   "text": "The term \u201cfile\u201d, when used in connection with information on any consumer, means all of the information on that consumer recorded and retained by a consumer reporting agency regardless of how the information is stored.",
+   "context": []
+  },
+  {
+   "path": [
+    "h"
+   ],
+   "anchor": "/us/usc/t15/s1681a/h",
+   "heading": "",
+   "text": "The term \u201cemployment purposes\u201d when used in connection with a consumer report means a report used for the purpose of evaluating a consumer for employment, promotion, reassignment or retention as an employee.",
+   "context": []
+  },
+  {
+   "path": [
+    "i",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681a/i/1/A",
+   "heading": "",
+   "text": "the past, present, or future physical, mental, or behavioral health or condition of an individual;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cmedical information\u201d\u2014",
+     "path": [
+      "i"
+     ],
+     "anchor": "/us/usc/t15/s1681a/i"
+    },
+    {
+     "position": "precedes",
+     "text": "means information or data, whether oral or recorded, in any form or medium, created by or derived from a health care provider or the consumer, that relates to\u2014",
+     "path": [
+      "i",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/i/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681a/i/1/B",
+   "heading": "",
+   "text": "the provision of health care to an individual; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cmedical information\u201d\u2014",
+     "path": [
+      "i"
+     ],
+     "anchor": "/us/usc/t15/s1681a/i"
+    },
+    {
+     "position": "precedes",
+     "text": "means information or data, whether oral or recorded, in any form or medium, created by or derived from a health care provider or the consumer, that relates to\u2014",
+     "path": [
+      "i",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/i/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "1",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681a/i/1/C",
+   "heading": "",
+   "text": "the payment for the provision of health care to an individual.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cmedical information\u201d\u2014",
+     "path": [
+      "i"
+     ],
+     "anchor": "/us/usc/t15/s1681a/i"
+    },
+    {
+     "position": "precedes",
+     "text": "means information or data, whether oral or recorded, in any form or medium, created by or derived from a health care provider or the consumer, that relates to\u2014",
+     "path": [
+      "i",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/i/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681a/i/2",
+   "heading": "",
+   "text": "does not include the age or gender of a consumer, demographic information about the consumer, including a consumer\u2019s residence address or e-mail address, or any other information about a consumer that does not relate to the physical, mental, or behavioral health or condition of a consumer, including the existence or value of any insurance policy.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cmedical information\u201d\u2014",
+     "path": [
+      "i"
+     ],
+     "anchor": "/us/usc/t15/s1681a/i"
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "1"
+   ],
+   "anchor": "/us/usc/t15/s1681a/j/1",
+   "heading": "Overdue support .\u2014",
+   "text": "The term \u201coverdue support\u201d has the meaning given to such term in section 666(e) of title 42 .",
+   "context": []
+  },
+  {
+   "path": [
+    "j",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681a/j/2",
+   "heading": "State or local child support enforcement agency .\u2014",
+   "text": "The term \u201cState or local child support enforcement agency\u201d means a State or local agency which administers a State or local program for establishing and enforcing child support obligations.",
+   "context": []
+  },
+  {
+   "path": [
+    "k",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681a/k/1/A",
+   "heading": "",
+   "text": "has the same meaning as in section 1691(d)(6) of this title ; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cadverse action\u201d\u2014",
+     "path": [
+      "k",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/k/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "k",
+    "1",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681a/k/1/B/i",
+   "heading": "",
+   "text": "a denial or cancellation of, an increase in any charge for, or a reduction or other adverse or unfavorable change in the terms of coverage or amount of, any insurance, existing or applied for, in connection with the underwriting of insurance;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cadverse action\u201d\u2014",
+     "path": [
+      "k",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/k/1"
+    },
+    {
+     "position": "precedes",
+     "text": "means\u2014",
+     "path": [
+      "k",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t15/s1681a/k/1/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "k",
+    "1",
+    "B",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681a/k/1/B/ii",
+   "heading": "",
+   "text": "a denial of employment or any other decision for employment purposes that adversely affects any current or prospective employee;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cadverse action\u201d\u2014",
+     "path": [
+      "k",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/k/1"
+    },
+    {
+     "position": "precedes",
+     "text": "means\u2014",
+     "path": [
+      "k",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t15/s1681a/k/1/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "k",
+    "1",
+    "B",
+    "iii"
+   ],
+   "anchor": "/us/usc/t15/s1681a/k/1/B/iii",
+   "heading": "",
+   "text": "a denial or cancellation of, an increase in any charge for, or any other adverse or unfavorable change in the terms of, any license or benefit described in section 1681b(a)(3)(D) of this title ; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cadverse action\u201d\u2014",
+     "path": [
+      "k",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/k/1"
+    },
+    {
+     "position": "precedes",
+     "text": "means\u2014",
+     "path": [
+      "k",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t15/s1681a/k/1/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "k",
+    "1",
+    "B",
+    "iv",
+    "I"
+   ],
+   "anchor": "/us/usc/t15/s1681a/k/1/B/iv/I",
+   "heading": "",
+   "text": "made in connection with an application that was made by, or a transaction that was initiated by, any consumer, or in connection with a review of an account under section 1681b(a)(3)(F)(ii) of this title ; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cadverse action\u201d\u2014",
+     "path": [
+      "k",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/k/1"
+    },
+    {
+     "position": "precedes",
+     "text": "means\u2014",
+     "path": [
+      "k",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t15/s1681a/k/1/B"
+    },
+    {
+     "position": "precedes",
+     "text": "an action taken or determination that is\u2014",
+     "path": [
+      "k",
+      "1",
+      "B",
+      "iv"
+     ],
+     "anchor": "/us/usc/t15/s1681a/k/1/B/iv"
+    }
+   ]
+  },
+  {
+   "path": [
+    "k",
+    "1",
+    "B",
+    "iv",
+    "II"
+   ],
+   "anchor": "/us/usc/t15/s1681a/k/1/B/iv/II",
+   "heading": "",
+   "text": "adverse to the interests of the consumer.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cadverse action\u201d\u2014",
+     "path": [
+      "k",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/k/1"
+    },
+    {
+     "position": "precedes",
+     "text": "means\u2014",
+     "path": [
+      "k",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t15/s1681a/k/1/B"
+    },
+    {
+     "position": "precedes",
+     "text": "an action taken or determination that is\u2014",
+     "path": [
+      "k",
+      "1",
+      "B",
+      "iv"
+     ],
+     "anchor": "/us/usc/t15/s1681a/k/1/B/iv"
+    }
+   ]
+  },
+  {
+   "path": [
+    "k",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681a/k/2",
+   "heading": "Applicable findings, decisions, commentary, and orders .\u2014",
+   "text": "For purposes of any determination of whether an action is an adverse action under paragraph (1)(A), all appropriate final findings, decisions, commentary, and orders issued under section 1691(d)(6) of this title by the Bureau or any court shall apply.",
+   "context": []
+  },
+  {
+   "path": [
+    "l",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681a/l/1/A",
+   "heading": "",
+   "text": "before selection of the consumer for the offer; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cfirm offer of credit or insurance\u201d means any offer of credit or insurance to a consumer that will be honored if the consumer is determined, based on information in a consumer report on the consumer, to meet the specific criteria used to select the consumer for the offer, except that the offer may be further conditioned on one or more of the following:",
+     "path": [
+      "l"
+     ],
+     "anchor": "/us/usc/t15/s1681a/l"
+    },
+    {
+     "position": "precedes",
+     "text": "The consumer being determined, based on information in the consumer\u2019s application for the credit or insurance, to meet specific criteria bearing on credit worthiness or insurability, as applicable, that are established\u2014",
+     "path": [
+      "l",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/l/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "l",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681a/l/1/B",
+   "heading": "",
+   "text": "for the purpose of determining whether to extend credit or insurance pursuant to the offer.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cfirm offer of credit or insurance\u201d means any offer of credit or insurance to a consumer that will be honored if the consumer is determined, based on information in a consumer report on the consumer, to meet the specific criteria used to select the consumer for the offer, except that the offer may be further conditioned on one or more of the following:",
+     "path": [
+      "l"
+     ],
+     "anchor": "/us/usc/t15/s1681a/l"
+    },
+    {
+     "position": "precedes",
+     "text": "The consumer being determined, based on information in the consumer\u2019s application for the credit or insurance, to meet specific criteria bearing on credit worthiness or insurability, as applicable, that are established\u2014",
+     "path": [
+      "l",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/l/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "l",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681a/l/2/A",
+   "heading": "",
+   "text": "that the consumer continues to meet the specific criteria used to select the consumer for the offer, by using information in a consumer report on the consumer, information in the consumer\u2019s application for the credit or insurance, or other information bearing on the credit worthiness or insurability of the consumer; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cfirm offer of credit or insurance\u201d means any offer of credit or insurance to a consumer that will be honored if the consumer is determined, based on information in a consumer report on the consumer, to meet the specific criteria used to select the consumer for the offer, except that the offer may be further conditioned on one or more of the following:",
+     "path": [
+      "l"
+     ],
+     "anchor": "/us/usc/t15/s1681a/l"
+    },
+    {
+     "position": "precedes",
+     "text": "Verification\u2014",
+     "path": [
+      "l",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681a/l/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "l",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681a/l/2/B",
+   "heading": "",
+   "text": "of the information in the consumer\u2019s application for the credit or insurance, to determine that the consumer meets the specific criteria bearing on credit worthiness or insurability.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cfirm offer of credit or insurance\u201d means any offer of credit or insurance to a consumer that will be honored if the consumer is determined, based on information in a consumer report on the consumer, to meet the specific criteria used to select the consumer for the offer, except that the offer may be further conditioned on one or more of the following:",
+     "path": [
+      "l"
+     ],
+     "anchor": "/us/usc/t15/s1681a/l"
+    },
+    {
+     "position": "precedes",
+     "text": "Verification\u2014",
+     "path": [
+      "l",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681a/l/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "l",
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681a/l/3/A",
+   "heading": "",
+   "text": "established before selection of the consumer for the offer of credit or insurance; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cfirm offer of credit or insurance\u201d means any offer of credit or insurance to a consumer that will be honored if the consumer is determined, based on information in a consumer report on the consumer, to meet the specific criteria used to select the consumer for the offer, except that the offer may be further conditioned on one or more of the following:",
+     "path": [
+      "l"
+     ],
+     "anchor": "/us/usc/t15/s1681a/l"
+    },
+    {
+     "position": "precedes",
+     "text": "The consumer furnishing any collateral that is a requirement for the extension of the credit or insurance that was\u2014",
+     "path": [
+      "l",
+      "3"
+     ],
+     "anchor": "/us/usc/t15/s1681a/l/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "l",
+    "3",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681a/l/3/B",
+   "heading": "",
+   "text": "disclosed to the consumer in the offer of credit or insurance.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cfirm offer of credit or insurance\u201d means any offer of credit or insurance to a consumer that will be honored if the consumer is determined, based on information in a consumer report on the consumer, to meet the specific criteria used to select the consumer for the offer, except that the offer may be further conditioned on one or more of the following:",
+     "path": [
+      "l"
+     ],
+     "anchor": "/us/usc/t15/s1681a/l"
+    },
+    {
+     "position": "precedes",
+     "text": "The consumer furnishing any collateral that is a requirement for the extension of the credit or insurance that was\u2014",
+     "path": [
+      "l",
+      "3"
+     ],
+     "anchor": "/us/usc/t15/s1681a/l/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "m",
+    "1"
+   ],
+   "anchor": "/us/usc/t15/s1681a/m/1",
+   "heading": "",
+   "text": "reviewing the account or insurance policy; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201ccredit or insurance transaction that is not initiated by the consumer\u201d does not include the use of a consumer report by a person with which the consumer has an account or insurance policy, for purposes of\u2014",
+     "path": [
+      "m"
+     ],
+     "anchor": "/us/usc/t15/s1681a/m"
+    }
+   ]
+  },
+  {
+   "path": [
+    "m",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681a/m/2",
+   "heading": "",
+   "text": "collecting the account.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201ccredit or insurance transaction that is not initiated by the consumer\u201d does not include the use of a consumer report by a person with which the consumer has an account or insurance policy, for purposes of\u2014",
+     "path": [
+      "m"
+     ],
+     "anchor": "/us/usc/t15/s1681a/m"
+    }
+   ]
+  },
+  {
+   "path": [
+    "n"
+   ],
+   "anchor": "/us/usc/t15/s1681a/n",
+   "heading": "State .\u2014",
+   "text": "The term \u201cState\u201d means any State, the Commonwealth of Puerto Rico, the District of Columbia, and any territory or possession of the United States.",
+   "context": []
+  },
+  {
+   "path": [
+    "o",
+    "1"
+   ],
+   "anchor": "/us/usc/t15/s1681a/o/1",
+   "heading": "",
+   "text": "that, but for subsection (d)(2)(D), would be an investigative consumer report;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if it is a communication\u2014",
+     "path": [
+      "o"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o"
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681a/o/2/A",
+   "heading": "",
+   "text": "procuring an employee for the employer; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if it is a communication\u2014",
+     "path": [
+      "o"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o"
+    },
+    {
+     "position": "precedes",
+     "text": "that is made to a prospective employer for the purpose of\u2014",
+     "path": [
+      "o",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681a/o/2/B",
+   "heading": "",
+   "text": "procuring an opportunity for a natural person to work for the employer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if it is a communication\u2014",
+     "path": [
+      "o"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o"
+    },
+    {
+     "position": "precedes",
+     "text": "that is made to a prospective employer for the purpose of\u2014",
+     "path": [
+      "o",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "3"
+   ],
+   "anchor": "/us/usc/t15/s1681a/o/3",
+   "heading": "",
+   "text": "that is made by a person who regularly performs such procurement;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if it is a communication\u2014",
+     "path": [
+      "o"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o"
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "4"
+   ],
+   "anchor": "/us/usc/t15/s1681a/o/4",
+   "heading": "",
+   "text": "that is not used by any person for any purpose other than a purpose described in subparagraph (A) or (B) of paragraph (2); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if it is a communication\u2014",
+     "path": [
+      "o"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o"
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "5",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681a/o/5/A/i",
+   "heading": "",
+   "text": "consents orally or in writing to the nature and scope of the communication, before the collection of any information for the purpose of making the communication;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if it is a communication\u2014",
+     "path": [
+      "o"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to which\u2014",
+     "path": [
+      "o",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o/5"
+    },
+    {
+     "position": "precedes",
+     "text": "the consumer who is the subject of the communication\u2014",
+     "path": [
+      "o",
+      "5",
+      "A"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o/5/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "5",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681a/o/5/A/ii",
+   "heading": "",
+   "text": "consents orally or in writing to the making of the communication to a prospective employer, before the making of the communication; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if it is a communication\u2014",
+     "path": [
+      "o"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to which\u2014",
+     "path": [
+      "o",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o/5"
+    },
+    {
+     "position": "precedes",
+     "text": "the consumer who is the subject of the communication\u2014",
+     "path": [
+      "o",
+      "5",
+      "A"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o/5/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "5",
+    "A",
+    "iii"
+   ],
+   "anchor": "/us/usc/t15/s1681a/o/5/A/iii",
+   "heading": "",
+   "text": "in the case of consent under clause (i) or (ii) given orally, is provided written confirmation of that consent by the person making the communication, not later than 3 business days after the receipt of the consent by that person;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if it is a communication\u2014",
+     "path": [
+      "o"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to which\u2014",
+     "path": [
+      "o",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o/5"
+    },
+    {
+     "position": "precedes",
+     "text": "the consumer who is the subject of the communication\u2014",
+     "path": [
+      "o",
+      "5",
+      "A"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o/5/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "5",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681a/o/5/B",
+   "heading": "",
+   "text": "the person who makes the communication does not, for the purpose of making the communication, make any inquiry that if made by a prospective employer of the consumer who is the subject of the communication would violate any applicable Federal or State equal employment opportunity law or regulation; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if it is a communication\u2014",
+     "path": [
+      "o"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to which\u2014",
+     "path": [
+      "o",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "5",
+    "C",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681a/o/5/C/i",
+   "heading": "",
+   "text": "discloses in writing to the consumer who is the subject of the communication, not later than 5 business days after receiving any request from the consumer for such disclosure, the nature and substance of all information in the consumer\u2019s file at the time of the request, except that the sources of any information that is acquired solely for use in making the communication and is actually used for no other purpose, need not be disclosed other than under appropriate discovery procedures in any court of competent jurisdiction in which an action is brought; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if it is a communication\u2014",
+     "path": [
+      "o"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to which\u2014",
+     "path": [
+      "o",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o/5"
+    },
+    {
+     "position": "precedes",
+     "text": "the person who makes the communication\u2014",
+     "path": [
+      "o",
+      "5",
+      "C"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o/5/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "5",
+    "C",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681a/o/5/C/ii",
+   "heading": "",
+   "text": "notifies the consumer who is the subject of the communication, in writing, of the consumer\u2019s right to request the information described in clause (i).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if it is a communication\u2014",
+     "path": [
+      "o"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to which\u2014",
+     "path": [
+      "o",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o/5"
+    },
+    {
+     "position": "precedes",
+     "text": "the person who makes the communication\u2014",
+     "path": [
+      "o",
+      "5",
+      "C"
+     ],
+     "anchor": "/us/usc/t15/s1681a/o/5/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "1"
+   ],
+   "anchor": "/us/usc/t15/s1681a/p/1",
+   "heading": "",
+   "text": "Public record information.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cconsumer reporting agency that compiles and maintains files on consumers on a nationwide basis\u201d means a consumer reporting agency that regularly engages in the practice of assembling or evaluating, and maintaining, for the purpose of furnishing consumer reports to third parties bearing on a consumer\u2019s credit worthiness, credit standing, or credit capacity, each of the following regarding consumers residing nationwide:",
+     "path": [
+      "p"
+     ],
+     "anchor": "/us/usc/t15/s1681a/p"
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681a/p/2",
+   "heading": "",
+   "text": "Credit account information from persons who furnish that information regularly and in the ordinary course of business.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cconsumer reporting agency that compiles and maintains files on consumers on a nationwide basis\u201d means a consumer reporting agency that regularly engages in the practice of assembling or evaluating, and maintaining, for the purpose of furnishing consumer reports to third parties bearing on a consumer\u2019s credit worthiness, credit standing, or credit capacity, each of the following regarding consumers residing nationwide:",
+     "path": [
+      "p"
+     ],
+     "anchor": "/us/usc/t15/s1681a/p"
+    }
+   ]
+  },
+  {
+   "path": [
+    "q",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681a/q/1/A",
+   "heading": "",
+   "text": "is on active duty (as defined in section 101(d)(1) of title 10 ) or is a reservist performing duty under a call or order to active duty under a provision of law referred to in section 101(a)(13) of title 10 ; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cactive duty military consumer\u201d means a consumer in military service who\u2014",
+     "path": [
+      "q",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/q/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "q",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681a/q/1/B",
+   "heading": "",
+   "text": "is assigned to service away from the usual duty station of the consumer.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cactive duty military consumer\u201d means a consumer in military service who\u2014",
+     "path": [
+      "q",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/q/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "q",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681a/q/2/A",
+   "heading": "",
+   "text": "notifies all prospective users of a consumer report relating to the consumer that the consumer may be a victim of fraud, including identity theft, or is an active duty military consumer, as applicable; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The terms \u201cfraud alert\u201d and \u201cactive duty alert\u201d mean a statement in the file of a consumer that\u2014",
+     "path": [
+      "q",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681a/q/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "q",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681a/q/2/B",
+   "heading": "",
+   "text": "is presented in a manner that facilitates a clear and conspicuous view of the statement described in subparagraph (A) by any person requesting such consumer report.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The terms \u201cfraud alert\u201d and \u201cactive duty alert\u201d mean a statement in the file of a consumer that\u2014",
+     "path": [
+      "q",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681a/q/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "q",
+    "3"
+   ],
+   "anchor": "/us/usc/t15/s1681a/q/3",
+   "heading": "Identity theft .\u2014",
+   "text": "The term \u201cidentity theft\u201d means a fraud committed using the identifying information of another person, subject to such further definition as the Bureau may prescribe, by regulation.",
+   "context": []
+  },
+  {
+   "path": [
+    "q",
+    "4",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681a/q/4/A",
+   "heading": "",
+   "text": "that alleges an identity theft;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cidentity theft report\u201d has the meaning given that term by rule of the Bureau, and means, at a minimum, a report\u2014",
+     "path": [
+      "q",
+      "4"
+     ],
+     "anchor": "/us/usc/t15/s1681a/q/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "q",
+    "4",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681a/q/4/B",
+   "heading": "",
+   "text": "that is a copy of an official, valid report filed by a consumer with an appropriate Federal, State, or local law enforcement agency, including the United States Postal Inspection Service, or such other government agency deemed appropriate by the Bureau; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cidentity theft report\u201d has the meaning given that term by rule of the Bureau, and means, at a minimum, a report\u2014",
+     "path": [
+      "q",
+      "4"
+     ],
+     "anchor": "/us/usc/t15/s1681a/q/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "q",
+    "4",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681a/q/4/C",
+   "heading": "",
+   "text": "the filing of which subjects the person filing the report to criminal penalties relating to the filing of false information if, in fact, the information in the report is false.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cidentity theft report\u201d has the meaning given that term by rule of the Bureau, and means, at a minimum, a report\u2014",
+     "path": [
+      "q",
+      "4"
+     ],
+     "anchor": "/us/usc/t15/s1681a/q/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "q",
+    "5"
+   ],
+   "anchor": "/us/usc/t15/s1681a/q/5",
+   "heading": "New credit plan .\u2014",
+   "text": "The term \u201cnew credit plan\u201d means a new account under an open end credit plan (as defined in section 1602(i) 1 of this title) or a new credit transaction not under an open end credit plan.",
+   "context": []
+  },
+  {
+   "path": [
+    "r",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681a/r/1/A",
+   "heading": "",
+   "text": "a credit card issuer, in the case of a credit card; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201ccard issuer\u201d means\u2014",
+     "path": [
+      "r",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/r/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "r",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681a/r/1/B",
+   "heading": "",
+   "text": "a debit card issuer, in the case of a debit card.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201ccard issuer\u201d means\u2014",
+     "path": [
+      "r",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/r/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "r",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681a/r/2",
+   "heading": "Credit card .\u2014",
+   "text": "The term \u201ccredit card\u201d has the same meaning as in section 1602 of this title .",
+   "context": []
+  },
+  {
+   "path": [
+    "r",
+    "3"
+   ],
+   "anchor": "/us/usc/t15/s1681a/r/3",
+   "heading": "Debit card .\u2014",
+   "text": "The term \u201cdebit card\u201d means any card issued by a financial institution to a consumer for use in initiating an electronic fund transfer from the account of the consumer at such financial institution, for the purpose of transferring money between accounts or obtaining money, property, labor, or services.",
+   "context": []
+  },
+  {
+   "path": [
+    "r",
+    "4"
+   ],
+   "anchor": "/us/usc/t15/s1681a/r/4",
+   "heading": "Account and electronic fund transfer .\u2014",
+   "text": "The terms \u201caccount\u201d and \u201celectronic fund transfer\u201d have the same meanings as in section 1693a of this title .",
+   "context": []
+  },
+  {
+   "path": [
+    "r",
+    "5"
+   ],
+   "anchor": "/us/usc/t15/s1681a/r/5",
+   "heading": "Credit and creditor .\u2014",
+   "text": "The terms \u201ccredit\u201d and \u201ccreditor\u201d have the same meanings as in section 1691a of this title .",
+   "context": []
+  },
+  {
+   "path": [
+    "s"
+   ],
+   "anchor": "/us/usc/t15/s1681a/s",
+   "heading": "Federal Banking Agency .\u2014",
+   "text": "The term \u201cFederal banking agency\u201d has the same meaning as in section 1813 of title 12 .",
+   "context": []
+  },
+  {
+   "path": [
+    "t"
+   ],
+   "anchor": "/us/usc/t15/s1681a/t",
+   "heading": "Financial Institution .\u2014",
+   "text": "The term \u201cfinancial institution\u201d means a State or National bank, a State or Federal savings and loan association, a mutual savings bank, a State or Federal credit union, or any other person that, directly or indirectly, holds a transaction account (as defined in section 461(b) of title 12 ) belonging to a consumer.",
+   "context": []
+  },
+  {
+   "path": [
+    "u",
+    "1"
+   ],
+   "anchor": "/us/usc/t15/s1681a/u/1",
+   "heading": "",
+   "text": "assembles and merges information contained in the database of another consumer reporting agency or multiple consumer reporting agencies concerning any consumer for purposes of furnishing such information to any third party, to the extent of such activities; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201creseller\u201d means a consumer reporting agency that\u2014",
+     "path": [
+      "u"
+     ],
+     "anchor": "/us/usc/t15/s1681a/u"
+    }
+   ]
+  },
+  {
+   "path": [
+    "u",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681a/u/2",
+   "heading": "",
+   "text": "does not maintain a database of the assembled or merged information from which new consumer reports are produced.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201creseller\u201d means a consumer reporting agency that\u2014",
+     "path": [
+      "u"
+     ],
+     "anchor": "/us/usc/t15/s1681a/u"
+    }
+   ]
+  },
+  {
+   "path": [
+    "v"
+   ],
+   "anchor": "/us/usc/t15/s1681a/v",
+   "heading": "Commission .\u2014",
+   "text": "The term \u201cCommission\u201d means the Bureau.",
+   "context": []
+  },
+  {
+   "path": [
+    "w"
+   ],
+   "anchor": "/us/usc/t15/s1681a/w",
+   "heading": "",
+   "text": "The term \u201cBureau\u201d means the Bureau of Consumer Financial Protection.",
+   "context": []
+  },
+  {
+   "path": [
+    "x",
+    "1"
+   ],
+   "anchor": "/us/usc/t15/s1681a/x/1",
+   "heading": "",
+   "text": "medical records or payments;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cnationwide specialty consumer reporting agency\u201d means a consumer reporting agency that compiles and maintains files on consumers on a nationwide basis relating to\u2014",
+     "path": [
+      "x"
+     ],
+     "anchor": "/us/usc/t15/s1681a/x"
+    }
+   ]
+  },
+  {
+   "path": [
+    "x",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681a/x/2",
+   "heading": "",
+   "text": "residential or tenant history;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cnationwide specialty consumer reporting agency\u201d means a consumer reporting agency that compiles and maintains files on consumers on a nationwide basis relating to\u2014",
+     "path": [
+      "x"
+     ],
+     "anchor": "/us/usc/t15/s1681a/x"
+    }
+   ]
+  },
+  {
+   "path": [
+    "x",
+    "3"
+   ],
+   "anchor": "/us/usc/t15/s1681a/x/3",
+   "heading": "",
+   "text": "check writing history;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cnationwide specialty consumer reporting agency\u201d means a consumer reporting agency that compiles and maintains files on consumers on a nationwide basis relating to\u2014",
+     "path": [
+      "x"
+     ],
+     "anchor": "/us/usc/t15/s1681a/x"
+    }
+   ]
+  },
+  {
+   "path": [
+    "x",
+    "4"
+   ],
+   "anchor": "/us/usc/t15/s1681a/x/4",
+   "heading": "",
+   "text": "employment history; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cnationwide specialty consumer reporting agency\u201d means a consumer reporting agency that compiles and maintains files on consumers on a nationwide basis relating to\u2014",
+     "path": [
+      "x"
+     ],
+     "anchor": "/us/usc/t15/s1681a/x"
+    }
+   ]
+  },
+  {
+   "path": [
+    "x",
+    "5"
+   ],
+   "anchor": "/us/usc/t15/s1681a/x/5",
+   "heading": "",
+   "text": "insurance claims.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cnationwide specialty consumer reporting agency\u201d means a consumer reporting agency that compiles and maintains files on consumers on a nationwide basis relating to\u2014",
+     "path": [
+      "x"
+     ],
+     "anchor": "/us/usc/t15/s1681a/x"
+    }
+   ]
+  },
+  {
+   "path": [
+    "y",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681a/y/1/A",
+   "heading": "",
+   "text": "but for subsection (d)(2)(D), the communication would be a consumer report;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if\u2014",
+     "path": [
+      "y",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "y",
+    "1",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681a/y/1/B/i",
+   "heading": "",
+   "text": "suspected misconduct relating to employment; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if\u2014",
+     "path": [
+      "y",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1"
+    },
+    {
+     "position": "precedes",
+     "text": "the communication is made to an employer in connection with an investigation of\u2014",
+     "path": [
+      "y",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "y",
+    "1",
+    "B",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681a/y/1/B/ii",
+   "heading": "",
+   "text": "compliance with Federal, State, or local laws and regulations, the rules of a self-regulatory organization, or any preexisting written policies of the employer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if\u2014",
+     "path": [
+      "y",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1"
+    },
+    {
+     "position": "precedes",
+     "text": "the communication is made to an employer in connection with an investigation of\u2014",
+     "path": [
+      "y",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "y",
+    "1",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681a/y/1/C",
+   "heading": "",
+   "text": "the communication is not made for the purpose of investigating a consumer\u2019s credit worthiness, credit standing, or credit capacity; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if\u2014",
+     "path": [
+      "y",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "y",
+    "1",
+    "D",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681a/y/1/D/i",
+   "heading": "",
+   "text": "to the employer or an agent of the employer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if\u2014",
+     "path": [
+      "y",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1"
+    },
+    {
+     "position": "precedes",
+     "text": "the communication is not provided to any person except\u2014",
+     "path": [
+      "y",
+      "1",
+      "D"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1/D"
+    }
+   ]
+  },
+  {
+   "path": [
+    "y",
+    "1",
+    "D",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681a/y/1/D/ii",
+   "heading": "",
+   "text": "to any Federal or State officer, agency, or department, or any officer, agency, or department of a unit of general local government;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if\u2014",
+     "path": [
+      "y",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1"
+    },
+    {
+     "position": "precedes",
+     "text": "the communication is not provided to any person except\u2014",
+     "path": [
+      "y",
+      "1",
+      "D"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1/D"
+    }
+   ]
+  },
+  {
+   "path": [
+    "y",
+    "1",
+    "D",
+    "iii"
+   ],
+   "anchor": "/us/usc/t15/s1681a/y/1/D/iii",
+   "heading": "",
+   "text": "to any self-regulatory organization with regulatory authority over the activities of the employer or employee;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if\u2014",
+     "path": [
+      "y",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1"
+    },
+    {
+     "position": "precedes",
+     "text": "the communication is not provided to any person except\u2014",
+     "path": [
+      "y",
+      "1",
+      "D"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1/D"
+    }
+   ]
+  },
+  {
+   "path": [
+    "y",
+    "1",
+    "D",
+    "iv"
+   ],
+   "anchor": "/us/usc/t15/s1681a/y/1/D/iv",
+   "heading": "",
+   "text": "as otherwise required by law; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if\u2014",
+     "path": [
+      "y",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1"
+    },
+    {
+     "position": "precedes",
+     "text": "the communication is not provided to any person except\u2014",
+     "path": [
+      "y",
+      "1",
+      "D"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1/D"
+    }
+   ]
+  },
+  {
+   "path": [
+    "y",
+    "1",
+    "D",
+    "v"
+   ],
+   "anchor": "/us/usc/t15/s1681a/y/1/D/v",
+   "heading": "",
+   "text": "pursuant to section 1681f of this title .",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A communication is described in this subsection if\u2014",
+     "path": [
+      "y",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1"
+    },
+    {
+     "position": "precedes",
+     "text": "the communication is not provided to any person except\u2014",
+     "path": [
+      "y",
+      "1",
+      "D"
+     ],
+     "anchor": "/us/usc/t15/s1681a/y/1/D"
+    }
+   ]
+  },
+  {
+   "path": [
+    "y",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681a/y/2",
+   "heading": "Subsequent disclosure .\u2014",
+   "text": "After taking any adverse action based in whole or in part on a communication described in paragraph (1), the employer shall disclose to the consumer a summary containing the nature and substance of the communication upon which the adverse action is based, except that the sources of information acquired solely for use in preparing what would be but for subsection (d)(2)(D) an investigative consumer report need not be disclosed.",
+   "context": []
+  },
+  {
+   "path": [
+    "y",
+    "3"
+   ],
+   "anchor": "/us/usc/t15/s1681a/y/3",
+   "heading": "Self-regulatory organization defined .\u2014",
+   "text": "For purposes of this subsection, the term \u201cself-regulatory organization\u201d includes any self-regulatory organization (as defined in section 78c(a)(26) of this title ), any entity established under title I of the Sarbanes-Oxley Act of 2002 [ 15 U.S.C. 7211 et seq.], any board of trade designated by the Commodity Futures Trading Commission, and any futures association registered with such Commission.",
+   "context": []
+  },
+  {
+   "path": [
+    "z"
+   ],
+   "anchor": "/us/usc/t15/s1681a/z",
+   "heading": "Veteran .\u2014",
+   "text": "The term \u201cveteran\u201d has the meaning given the term in section 101 of title 38 .",
+   "context": []
+  },
+  {
+   "path": [
+    "aa",
+    "1"
+   ],
+   "anchor": "/us/usc/t15/s1681a/aa/1",
+   "heading": "",
+   "text": "means a medical collection debt of a veteran owed to a non-Department of Veterans Affairs health care provider that was submitted to the Department for payment for health care authorized by the Department of Veterans Affairs; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cveteran\u2019s medical debt\u201d\u2014",
+     "path": [
+      "aa"
+     ],
+     "anchor": "/us/usc/t15/s1681a/aa"
+    }
+   ]
+  },
+  {
+   "path": [
+    "aa",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681a/aa/2",
+   "heading": "",
+   "text": "includes medical collection debt that the Department of Veterans Affairs has wrongfully charged a veteran.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The term \u201cveteran\u2019s medical debt\u201d\u2014",
+     "path": [
+      "aa"
+     ],
+     "anchor": "/us/usc/t15/s1681a/aa"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "label": "NY GBS 350",
+ "url": "https://legislation.nysenate.gov/api/3/laws/GBS/350",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/gbl-350/raw/ny-gbs-350.json",
+ "raw_sha256": "0a37e6fb3a3e6b7e17ee076430da5b0cb3681218d8b95bd63a045053e5dad801",
+ "leaves": [
+  {
+   "path": [],
+   "anchor": "350",
+   "section": "350",
+   "confidence": "high",
+   "heading": "",
+   "text": "\u00a7 350. False advertising unlawful. False advertising in the conduct of any business, trade or commerce or in the furnishing of any service in this state is hereby declared unlawful.",
+   "context": [],
+   "section_heading": "",
+   "nb_note": null,
+   "active_date": "2014-09-22"
+  }
+ ]
+}

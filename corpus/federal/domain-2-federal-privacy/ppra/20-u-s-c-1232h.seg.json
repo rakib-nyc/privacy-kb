@@ -1,0 +1,1434 @@
+{
+ "label": "20 U.S.C. \u00a7 1232h",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc20@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/ppra/raw/20-u-s-c-1232h.xml",
+ "raw_sha256": "eb42d939529b064174f294c66050424507909fa3644becd81e90102800dd62f4",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "/us/usc/t20/s1232h/a",
+   "heading": "Inspection of instructional materials by parents or guardians",
+   "text": "All instructional materials, including teacher\u2019s manuals, films, tapes, or other supplementary material which will be used in connection with any survey, analysis, or evaluation as part of any applicable program shall be available for inspection by the parents or guardians of the children.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": "/us/usc/t20/s1232h/b/1",
+   "heading": "",
+   "text": "political affiliations or beliefs of the student or the student\u2019s parent;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No student shall be required, as part of any applicable program, to submit to a survey, analysis, or evaluation that reveals information concerning\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    },
+    {
+     "position": "follows",
+     "text": "without the prior consent of the student (if the student is an adult or emancipated minor), or in the case of an unemancipated minor, without the prior written consent of the parent.",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": "/us/usc/t20/s1232h/b/2",
+   "heading": "",
+   "text": "mental or psychological problems of the student or the student\u2019s family;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No student shall be required, as part of any applicable program, to submit to a survey, analysis, or evaluation that reveals information concerning\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    },
+    {
+     "position": "follows",
+     "text": "without the prior consent of the student (if the student is an adult or emancipated minor), or in the case of an unemancipated minor, without the prior written consent of the parent.",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": "/us/usc/t20/s1232h/b/3",
+   "heading": "",
+   "text": "sex behavior or attitudes;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No student shall be required, as part of any applicable program, to submit to a survey, analysis, or evaluation that reveals information concerning\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    },
+    {
+     "position": "follows",
+     "text": "without the prior consent of the student (if the student is an adult or emancipated minor), or in the case of an unemancipated minor, without the prior written consent of the parent.",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4"
+   ],
+   "anchor": "/us/usc/t20/s1232h/b/4",
+   "heading": "",
+   "text": "illegal, anti-social, self-incriminating, or demeaning behavior;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No student shall be required, as part of any applicable program, to submit to a survey, analysis, or evaluation that reveals information concerning\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    },
+    {
+     "position": "follows",
+     "text": "without the prior consent of the student (if the student is an adult or emancipated minor), or in the case of an unemancipated minor, without the prior written consent of the parent.",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5"
+   ],
+   "anchor": "/us/usc/t20/s1232h/b/5",
+   "heading": "",
+   "text": "critical appraisals of other individuals with whom respondents have close family relationships;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No student shall be required, as part of any applicable program, to submit to a survey, analysis, or evaluation that reveals information concerning\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    },
+    {
+     "position": "follows",
+     "text": "without the prior consent of the student (if the student is an adult or emancipated minor), or in the case of an unemancipated minor, without the prior written consent of the parent.",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "6"
+   ],
+   "anchor": "/us/usc/t20/s1232h/b/6",
+   "heading": "",
+   "text": "legally recognized privileged or analogous relationships, such as those of lawyers, physicians, and ministers;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No student shall be required, as part of any applicable program, to submit to a survey, analysis, or evaluation that reveals information concerning\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    },
+    {
+     "position": "follows",
+     "text": "without the prior consent of the student (if the student is an adult or emancipated minor), or in the case of an unemancipated minor, without the prior written consent of the parent.",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "7"
+   ],
+   "anchor": "/us/usc/t20/s1232h/b/7",
+   "heading": "",
+   "text": "religious practices, affiliations, or beliefs of the student or student\u2019s parent; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No student shall be required, as part of any applicable program, to submit to a survey, analysis, or evaluation that reveals information concerning\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    },
+    {
+     "position": "follows",
+     "text": "without the prior consent of the student (if the student is an adult or emancipated minor), or in the case of an unemancipated minor, without the prior written consent of the parent.",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "8"
+   ],
+   "anchor": "/us/usc/t20/s1232h/b/8",
+   "heading": "",
+   "text": "income (other than that required by law to determine eligibility for participation in a program or for receiving financial assistance under such program),",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No student shall be required, as part of any applicable program, to submit to a survey, analysis, or evaluation that reveals information concerning\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    },
+    {
+     "position": "follows",
+     "text": "without the prior consent of the student (if the student is an adult or emancipated minor), or in the case of an unemancipated minor, without the prior written consent of the parent.",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t20/s1232h/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/A/i",
+   "heading": "",
+   "text": "The right of a parent of a student to inspect, upon the request of the parent, a survey created by a third party before the survey is administered or distributed by a school to a student; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/A/ii",
+   "heading": "",
+   "text": "any applicable procedures for granting a request by a parent for reasonable access to such survey within a reasonable period of time after the request is received.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/B/i",
+   "heading": "",
+   "text": "Political affiliations or beliefs of the student or the student\u2019s parent.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    },
+    {
+     "position": "precedes",
+     "text": "Arrangements to protect student privacy that are provided by the agency in the event of the administration or distribution of a survey to a student containing one or more of the following items (including the right of a parent of a student to inspect, upon the request of the parent, any survey containing one or more of such items):",
+     "path": [
+      "c",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B",
+    "ii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/B/ii",
+   "heading": "",
+   "text": "Mental or psychological problems of the student or the student\u2019s family.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    },
+    {
+     "position": "precedes",
+     "text": "Arrangements to protect student privacy that are provided by the agency in the event of the administration or distribution of a survey to a student containing one or more of the following items (including the right of a parent of a student to inspect, upon the request of the parent, any survey containing one or more of such items):",
+     "path": [
+      "c",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B",
+    "iii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/B/iii",
+   "heading": "",
+   "text": "Sex behavior or attitudes.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    },
+    {
+     "position": "precedes",
+     "text": "Arrangements to protect student privacy that are provided by the agency in the event of the administration or distribution of a survey to a student containing one or more of the following items (including the right of a parent of a student to inspect, upon the request of the parent, any survey containing one or more of such items):",
+     "path": [
+      "c",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B",
+    "iv"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/B/iv",
+   "heading": "",
+   "text": "Illegal, anti-social, self-incriminating, or demeaning behavior.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    },
+    {
+     "position": "precedes",
+     "text": "Arrangements to protect student privacy that are provided by the agency in the event of the administration or distribution of a survey to a student containing one or more of the following items (including the right of a parent of a student to inspect, upon the request of the parent, any survey containing one or more of such items):",
+     "path": [
+      "c",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B",
+    "v"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/B/v",
+   "heading": "",
+   "text": "Critical appraisals of other individuals with whom respondents have close family relationships.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    },
+    {
+     "position": "precedes",
+     "text": "Arrangements to protect student privacy that are provided by the agency in the event of the administration or distribution of a survey to a student containing one or more of the following items (including the right of a parent of a student to inspect, upon the request of the parent, any survey containing one or more of such items):",
+     "path": [
+      "c",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B",
+    "vi"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/B/vi",
+   "heading": "",
+   "text": "Legally recognized privileged or analogous relationships, such as those of lawyers, physicians, and ministers.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    },
+    {
+     "position": "precedes",
+     "text": "Arrangements to protect student privacy that are provided by the agency in the event of the administration or distribution of a survey to a student containing one or more of the following items (including the right of a parent of a student to inspect, upon the request of the parent, any survey containing one or more of such items):",
+     "path": [
+      "c",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B",
+    "vii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/B/vii",
+   "heading": "",
+   "text": "Religious practices, affiliations, or beliefs of the student or the student\u2019s parent.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    },
+    {
+     "position": "precedes",
+     "text": "Arrangements to protect student privacy that are provided by the agency in the event of the administration or distribution of a survey to a student containing one or more of the following items (including the right of a parent of a student to inspect, upon the request of the parent, any survey containing one or more of such items):",
+     "path": [
+      "c",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B",
+    "viii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/B/viii",
+   "heading": "",
+   "text": "Income (other than that required by law to determine eligibility for participation in a program or for receiving financial assistance under such program).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    },
+    {
+     "position": "precedes",
+     "text": "Arrangements to protect student privacy that are provided by the agency in the event of the administration or distribution of a survey to a student containing one or more of the following items (including the right of a parent of a student to inspect, upon the request of the parent, any survey containing one or more of such items):",
+     "path": [
+      "c",
+      "1",
+      "B"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "C",
+    "i"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/C/i",
+   "heading": "",
+   "text": "The right of a parent of a student to inspect, upon the request of the parent, any instructional material used as part of the educational curriculum for the student; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "C",
+    "ii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/C/ii",
+   "heading": "",
+   "text": "any applicable procedures for granting a request by a parent for reasonable access to instructional material within a reasonable period of time after the request is received.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "D"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/D",
+   "heading": "",
+   "text": "The administration of physical examinations or screenings that the school or agency may administer to a student.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "E"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/E",
+   "heading": "",
+   "text": "The collection, disclosure, or use of personal information collected from students for the purpose of marketing or for selling that information (or otherwise providing that information to others for that purpose), including arrangements to protect student privacy that are provided by the agency in the event of such collection, disclosure, or use.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "F",
+    "i"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/F/i",
+   "heading": "",
+   "text": "The right of a parent of a student to inspect, upon the request of the parent, any instrument used in the collection of personal information under subparagraph (E) before the instrument is administered or distributed to a student; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "F",
+    "ii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/1/F/ii",
+   "heading": "",
+   "text": "any applicable procedures for granting a request by a parent for reasonable access to such instrument within a reasonable period of time after the request is received.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsections (a) and (b), a local educational agency that receives funds under any applicable program shall develop and adopt policies, in consultation with parents, regarding the following:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/2/A/i",
+   "heading": "",
+   "text": "provide such notice at least annually, at the beginning of the school year, and within a reasonable period of time after any substantive change in such policies; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The policies developed by a local educational agency under paragraph (1) shall provide for reasonable notice of the adoption or continued use of such policies directly to the parents of students enrolled in schools served by that agency. At a minimum, the agency shall\u2014",
+     "path": [
+      "c",
+      "2",
+      "A"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/2/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/2/A/ii",
+   "heading": "",
+   "text": "offer an opportunity for the parent (and for purposes of an activity described in subparagraph (C)(i), in the case of a student of an appropriate age, the student) to opt the student out of participation in an activity described in subparagraph (C).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The policies developed by a local educational agency under paragraph (1) shall provide for reasonable notice of the adoption or continued use of such policies directly to the parents of students enrolled in schools served by that agency. At a minimum, the agency shall\u2014",
+     "path": [
+      "c",
+      "2",
+      "A"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/2/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/2/B",
+   "heading": "Notification of specific events",
+   "text": "The local educational agency shall directly notify the parent of a student, at least annually at the beginning of the school year, of the specific or approximate dates during the school year when activities described in subparagraph (C) are scheduled, or expected to be scheduled.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C",
+    "i"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/2/C/i",
+   "heading": "",
+   "text": "Activities involving the collection, disclosure, or use of personal information collected from students for the purpose of marketing or for selling that information (or otherwise providing that information to others for that purpose).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The following activities require notification under this paragraph:",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/2/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C",
+    "ii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/2/C/ii",
+   "heading": "",
+   "text": "The administration of any survey containing one or more items described in clauses (i) through (viii) of paragraph (1)(B).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The following activities require notification under this paragraph:",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/2/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C",
+    "iii",
+    "I"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/2/C/iii/I",
+   "heading": "",
+   "text": "required as a condition of attendance;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The following activities require notification under this paragraph:",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/2/C"
+    },
+    {
+     "position": "precedes",
+     "text": "Any nonemergency, invasive physical examination or screening that is\u2014",
+     "path": [
+      "c",
+      "2",
+      "C",
+      "iii"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/2/C/iii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C",
+    "iii",
+    "II"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/2/C/iii/II",
+   "heading": "",
+   "text": "administered by the school and scheduled by the school in advance; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The following activities require notification under this paragraph:",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/2/C"
+    },
+    {
+     "position": "precedes",
+     "text": "Any nonemergency, invasive physical examination or screening that is\u2014",
+     "path": [
+      "c",
+      "2",
+      "C",
+      "iii"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/2/C/iii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C",
+    "iii",
+    "III"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/2/C/iii/III",
+   "heading": "",
+   "text": "not necessary to protect the immediate health and safety of the student, or of other students.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The following activities require notification under this paragraph:",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/2/C"
+    },
+    {
+     "position": "precedes",
+     "text": "Any nonemergency, invasive physical examination or screening that is\u2014",
+     "path": [
+      "c",
+      "2",
+      "C",
+      "iii"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/2/C/iii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/3",
+   "heading": "Existing policies",
+   "text": "A local educational agency need not develop and adopt new policies if the State educational agency or local educational agency has in place, on January 8, 2002 , policies covering the requirements of paragraph (1). The agency shall provide reasonable notice of such existing policies to parents and guardians of students, in accordance with paragraph (2).",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/4/A/i",
+   "heading": "",
+   "text": "College or other postsecondary education recruitment, or military recruitment.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Paragraph (1)(E) does not apply to the collection, disclosure, or use of personal information collected from students for the exclusive purpose of developing, evaluating, or providing educational products or services for, or to, students or educational institutions, such as the following:",
+     "path": [
+      "c",
+      "4",
+      "A"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/4/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/4/A/ii",
+   "heading": "",
+   "text": "Book clubs, magazines, and programs providing access to low-cost literary products.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Paragraph (1)(E) does not apply to the collection, disclosure, or use of personal information collected from students for the exclusive purpose of developing, evaluating, or providing educational products or services for, or to, students or educational institutions, such as the following:",
+     "path": [
+      "c",
+      "4",
+      "A"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/4/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "A",
+    "iii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/4/A/iii",
+   "heading": "",
+   "text": "Curriculum and instructional materials used by elementary schools and secondary schools.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Paragraph (1)(E) does not apply to the collection, disclosure, or use of personal information collected from students for the exclusive purpose of developing, evaluating, or providing educational products or services for, or to, students or educational institutions, such as the following:",
+     "path": [
+      "c",
+      "4",
+      "A"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/4/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "A",
+    "iv"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/4/A/iv",
+   "heading": "",
+   "text": "Tests and assessments used by elementary schools and secondary schools to provide cognitive, evaluative, diagnostic, clinical, aptitude, or achievement information about students (or to generate other statistically useful data for the purpose of securing such tests and assessments) and the subsequent analysis and public release of the aggregate data from such tests and assessments.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Paragraph (1)(E) does not apply to the collection, disclosure, or use of personal information collected from students for the exclusive purpose of developing, evaluating, or providing educational products or services for, or to, students or educational institutions, such as the following:",
+     "path": [
+      "c",
+      "4",
+      "A"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/4/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "A",
+    "v"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/4/A/v",
+   "heading": "",
+   "text": "The sale by students of products or services to raise funds for school-related or education-related activities.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Paragraph (1)(E) does not apply to the collection, disclosure, or use of personal information collected from students for the exclusive purpose of developing, evaluating, or providing educational products or services for, or to, students or educational institutions, such as the following:",
+     "path": [
+      "c",
+      "4",
+      "A"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/4/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "A",
+    "vi"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/4/A/vi",
+   "heading": "",
+   "text": "Student recognition programs.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Paragraph (1)(E) does not apply to the collection, disclosure, or use of personal information collected from students for the exclusive purpose of developing, evaluating, or providing educational products or services for, or to, students or educational institutions, such as the following:",
+     "path": [
+      "c",
+      "4",
+      "A"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/4/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/4/B/i",
+   "heading": "",
+   "text": "shall not be construed to preempt applicable provisions of State law that require parental notification; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The provisions of this subsection\u2014",
+     "path": [
+      "c",
+      "4",
+      "B"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/4/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "B",
+    "ii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/4/B/ii",
+   "heading": "",
+   "text": "do not apply to any physical examination or screening that is permitted or required by an applicable State law, including physical examinations or screenings that are permitted without parental notification.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The provisions of this subsection\u2014",
+     "path": [
+      "c",
+      "4",
+      "B"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/4/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "5",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/5/A/i",
+   "heading": "",
+   "text": "This section does not supersede section 1232g of this title .",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "5",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/5/A/ii",
+   "heading": "",
+   "text": "Paragraph (1)(D) does not apply to a survey administered to a student in accordance with the Individuals with Disabilities Education Act ( 20 U.S.C. 1400 et seq.).",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "5",
+    "B"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/5/B",
+   "heading": "Student rights",
+   "text": "The rights provided to parents under this section transfer to the student when the student turns 18 years old, or is an emancipated minor (under an applicable State law) at any age.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "5",
+    "C"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/5/C",
+   "heading": "Information activities",
+   "text": "The Secretary shall annually inform each State educational agency and each local educational agency of the educational agency\u2019s obligations under this section and section 1232g of this title .",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "5",
+    "D"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/5/D",
+   "heading": "Funding",
+   "text": "A State educational agency or local educational agency may use funds provided under part A of title IV of the Elementary and Secondary Education Act of 1965 [ 20 U.S.C. 7101 et seq.] to enhance parental involvement in areas affecting the in-school privacy of students.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "A"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/6/A",
+   "heading": "Instructional material",
+   "text": "The term \u201cinstructional material\u201d means instructional content that is provided to a student, regardless of its format, including printed or representational materials, audio-visual materials, and materials in electronic or digital formats (such as materials accessible through the Internet). The term does not include academic tests or academic assessments.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this subsection:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/6"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "B"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/6/B",
+   "heading": "Invasive physical examination",
+   "text": "The term \u201cinvasive physical examination\u201d means any medical examination that involves the exposure of private body parts, or any act during such examination that includes incision, insertion, or injection into the body, but does not include a hearing, vision, or scoliosis screening.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this subsection:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/6"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "C"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/6/C",
+   "heading": "Local educational agency",
+   "text": "The term \u201clocal educational agency\u201d means an elementary school, secondary school, school district, or local board of education that is the recipient of funds under an applicable program, but does not include a postsecondary institution.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this subsection:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/6"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "D"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/6/D",
+   "heading": "Parent",
+   "text": "The term \u201cparent\u201d includes a legal guardian or other person standing in loco parentis (such as a grandparent or stepparent with whom the child lives, or a person who is legally responsible for the welfare of the child).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this subsection:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/6"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "E",
+    "i"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/6/E/i",
+   "heading": "",
+   "text": "a student or parent\u2019s first and last name;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this subsection:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/6"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201cpersonal information\u201d means individually identifiable information including\u2014",
+     "path": [
+      "c",
+      "6",
+      "E"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/6/E"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "E",
+    "ii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/6/E/ii",
+   "heading": "",
+   "text": "a home or other physical address (including street name and the name of the city or town);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this subsection:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/6"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201cpersonal information\u201d means individually identifiable information including\u2014",
+     "path": [
+      "c",
+      "6",
+      "E"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/6/E"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "E",
+    "iii"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/6/E/iii",
+   "heading": "",
+   "text": "a telephone number; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this subsection:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/6"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201cpersonal information\u201d means individually identifiable information including\u2014",
+     "path": [
+      "c",
+      "6",
+      "E"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/6/E"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "E",
+    "iv"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/6/E/iv",
+   "heading": "",
+   "text": "a Social Security identification number.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this subsection:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/6"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201cpersonal information\u201d means individually identifiable information including\u2014",
+     "path": [
+      "c",
+      "6",
+      "E"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/6/E"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "F"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/6/F",
+   "heading": "Student",
+   "text": "The term \u201cstudent\u201d means any elementary school or secondary school student.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this subsection:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/6"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "G"
+   ],
+   "anchor": "/us/usc/t20/s1232h/c/6/G",
+   "heading": "Survey",
+   "text": "The term \u201csurvey\u201d includes an evaluation.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this subsection:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": "/us/usc/t20/s1232h/c/6"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": "/us/usc/t20/s1232h/d",
+   "heading": "Notice",
+   "text": "Educational agencies and institutions shall give parents and students effective notice of their rights under this section.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "1"
+   ],
+   "anchor": "/us/usc/t20/s1232h/e/1",
+   "heading": "",
+   "text": "there has been a failure to comply with such section; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Secretary shall take such action as the Secretary determines appropriate to enforce this section, except that action to terminate assistance provided under an applicable program shall be taken only if the Secretary determines that\u2014",
+     "path": [
+      "e"
+     ],
+     "anchor": "/us/usc/t20/s1232h/e"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2"
+   ],
+   "anchor": "/us/usc/t20/s1232h/e/2",
+   "heading": "",
+   "text": "compliance with such section cannot be secured by voluntary means.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Secretary shall take such action as the Secretary determines appropriate to enforce this section, except that action to terminate assistance provided under an applicable program shall be taken only if the Secretary determines that\u2014",
+     "path": [
+      "e"
+     ],
+     "anchor": "/us/usc/t20/s1232h/e"
+    }
+   ]
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": "/us/usc/t20/s1232h/f",
+   "heading": "Office and review board",
+   "text": "The Secretary shall establish or designate an office and review board within the Department of Education to investigate, process, review, and adjudicate violations of the rights established under this section.",
+   "context": []
+  }
+ ]
+}

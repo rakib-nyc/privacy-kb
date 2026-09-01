@@ -1,0 +1,128 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+- ftc
+sector:
+- any
+data_types:
+- any
+status: in_force
+effective_from: '1938-03-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: any
+deadline: null
+federal_relationship: null
+interpreted_by: []
+confidence: high
+preemption:
+  posture: none
+  authority: 15 U.S.C. § 45
+  note: § 5 displaces nothing. It is the floor beneath the sectoral statutes and it runs alongside every
+    state UDAP statute — which is why invariant I6 pairs the two and why neither ever switches off.
+enforcement:
+  enforcers:
+  - ftc
+  private_right_of_action: false
+  penalty:
+    structure: Administrative cease-and-desist and injunctive relief. Civil penalties under 15 U.S.C.
+      § 45(l) for violating a final order, and under § 45(m) for knowingly violating a rule. AMG Capital
+      Management v. FTC (2021) held § 13(b) does NOT authorise equitable monetary relief, so redress now
+      runs through § 19 and § 45(m) rather than § 13(b).
+    range: null
+    note: NO PRIVATE RIGHT OF ACTION under the FTC Act. Private plaintiffs reach the same conduct through
+      state UDAP statutes, which is the other half of invariant I6.
+  statute_of_limitations: null
+id: us.test.gate27_undeclared_instrument
+source:
+  citation: 15 U.S.C. § 45(a)(1)
+  instrument_id: us.unregistered.instrument
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ftc-act-5/raw/15-u-s-c-45.xml
+  raw_sha256: d29a4cc1ef8b8b6e297d95e258214598047635c113920ef95407e76c2c6b7df8
+  text_file: corpus/federal/domain-2-federal-privacy/ftc-act-5/raw/15-u-s-c-45.txt
+  text_sha256: 4a5fdadfe59afce881b810666145730d387792e38a40f6a42454e9aaff5e8df4
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/ftc-act-5/raw/15-u-s-c-45.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: Unfair methods of competition in or affecting commerce, and unfair or deceptive acts or
+  practices in or affecting commerce, are hereby declared unlawful.
+paragraph_path:
+  path:
+  - a
+  - '1'
+  anchor: /us/usc/t15/s45/a/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The paragraph is a freestanding declaration; no ancestor contributes governing text.
+subject:
+  domain: II.A.1
+  lifecycle:
+  - I
+applies_if:
+  all:
+  - entity.in_or_affecting_commerce == true
+obligation_type: prohibit
+summary: Unfair or deceptive acts or practices in or affecting commerce are unlawful. This is the general
+  federal privacy backstop.
+requirement_detail: 'THE BACKSTOP THAT NEVER SWITCHES OFF (invariant I6). § 5 has no sector, no data type,
+  no size threshold and no notice trigger: it reaches any person, partnership or corporation in or affecting
+  commerce, subject only to the § 45(a)(2) carve-outs. In privacy it operates mainly through DECEPTION
+  — a material misrepresentation or omission about privacy practices, judged from the perspective of a
+  reasonable consumer. Its most important property for this system is that a published privacy notice
+  becomes an enforceable commitment through it: the promise is not law, and departing from the promise
+  is.'
+exemptions:
+- id: usc.15.45.a2.jurisdictional_carveouts
+  type: entity_level
+  reach: instrument
+  scope: '§ 45(a)(2) removes whole classes of actor from the Commissions reach: banks, savings and loan
+    institutions, Federal credit unions, common carriers subject to the Acts to regulate commerce, air
+    carriers, and packers and stockyards entities. CONSEQUENCE TEST: this is the ONLY way an entity escapes
+    invariant I6s federal half, and it is decisive rather than partial — if the entity is inside a carve-out,
+    § 5 does not reach it and its prudential or sectoral regulator does instead. It is NOT relief from
+    the conduct standard: a banks deceptive privacy claim is still actionable, by the OCC or the CFPB
+    rather than the FTC. The common-carrier carve-out is ACTIVITY-SENSITIVE in practice and the hardest
+    of the set — it has been litigated over whether it follows the entity or the common-carriage activity,
+    so an entity that is a carrier for some services and not others must be assessed on the specific conduct,
+    not the corporate label.'
+  source_citation: 15 U.S.C. § 45(a)(2)
+  verbatim_span: The Commission is hereby empowered and directed to prevent persons, partnerships, or
+    corporations, except banks, savings and loan institutions described in section 57a(f)(3) of this title
+    , Federal credit unions described in section 57a(f)(4) of this title , common carriers subject to
+    the Acts to regulate commerce, air carriers and foreign air carriers subject to part A of subtitle
+    VII of title 49, and persons, partnerships, or corporations insofar as they are subject to the Packers
+    and Stockyards Act, 1921, as amended [ 7 U.S.C. 181 et seq.], except as provided in section 406(b)
+    of said Act [ 7 U.S.C. 227(b) ], from using unfair methods of competition in or affecting commerce
+    and unfair or deceptive acts or practices in or affecting commerce.
+  burden_of_proof: entity
+  applies_if:
+    any:
+    - entity.is_bank == true
+    - entity.is_savings_and_loan == true
+    - entity.is_federal_credit_union == true
+    - entity.is_common_carrier == true
+    - entity.is_air_carrier == true
+    - entity.is_packers_and_stockyards_entity == true
+related: []
+common_errors:
+- Assuming § 5 needs a sectoral hook. It has none; it is what fills the space when no sectoral statute
+  applies.
+- Assuming a private plaintiff can sue under § 5. There is no private right of action — the state UDAP
+  statute is the private vehicle, and its elements differ.
+- Citing FTC v. Wyndham or § 13(b) for monetary relief without noting AMG Capital Management v. FTC (2021),
+  which held § 13(b) does not authorise equitable monetary relief.
+open_questions: []

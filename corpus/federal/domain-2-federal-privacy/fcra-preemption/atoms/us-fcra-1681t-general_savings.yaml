@@ -1,0 +1,106 @@
+id: us.fcra.1681t.general_savings
+schema_version: 1
+record_type: obligation
+source:
+  citation: 15 U.S.C. § 1681t(a)
+  instrument_id: us.fcra.preemption
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/fcra-preemption/raw/15-u-s-c-1681t.xml
+  raw_sha256: 5c20b842e91b5d0aa63b2564c2bedd47f11f7b7973e1e764ff34c1de861f99f8
+  text_file: corpus/federal/domain-2-federal-privacy/fcra-preemption/raw/15-u-s-c-1681t.txt
+  text_sha256: 6b77781fa8612078560807a63678067687d3f210e8facdef1bc62541aa7b1015
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/fcra-preemption/raw/15-u-s-c-1681t.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: ae1ada7374a811702a4e10122691f4fedd44049e55cf4918169519d2425b415f
+verbatim_span: >-
+  Except as provided in subsections (b) and (c), this subchapter does not annul, alter, affect, or
+  exempt any person subject to the provisions of this subchapter from complying with the laws of any
+  State with respect to the collection, distribution, or use of any information on consumers, or for
+  the prevention or mitigation of identity theft, except to the extent that those laws are
+  inconsistent with any provision of this subchapter, and then only to the extent of the
+  inconsistency.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+  anchor: /us/usc/t15/s1681t/a
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element
+jurisdiction: US-FED
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Describing FCRA as 'preemptive'. Its default is a savings clause; preemption is the exception,
+    confined to the § 1681t(b) list.
+  - >-
+    Applying § 1681t(b) preemption to a subject area not on the list. The carve-outs are specific
+    statutory cross-references, not a general field.
+open_questions: []
+confidence: high
+context_not_required: No ancestor contributes governing text; this provision's operative meaning is complete on its own.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - I
+regulator:
+  - ftc
+  - cfpb
+  - state_ag
+sector:
+  - consumer_reporting
+data_types:
+  - consumer_report
+status: in_force
+effective_from: '1970-10-26'
+applies_if:
+  all:
+    - law.federal_instrument == 'us.fcra'
+    - law.state_instrument != null
+applies_to_role: any
+obligation_type: prohibit
+summary: >-
+  FCRA does not annul or affect state law except to the extent of inconsistency, and then only to
+  the extent of the inconsistency — the general savings clause that makes FCRA a floor before the §
+  1681t(b) carve-outs are applied.
+requirement_detail: >-
+  This is the DEFAULT rule and it is a floor: state law survives unless inconsistent, and survives
+  even then to the extent it is not inconsistent. Everything preemptive in FCRA is an EXCEPTION to
+  this subsection, enumerated in (b) and (c). Reading § 1681t as broadly preemptive inverts its
+  structure.
+preemption:
+  posture: floor
+  authority: 15 U.S.C. § 1681t(a)
+  note: >-
+    The general rule. Subsections (b) and (c) carve specific subject areas OUT of it into express
+    preemption.
+enforcement:
+  enforcers:
+    - ftc
+    - cfpb
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: n/a — a preemption rule, not a duty
+    range: null
+    note: null
+  statute_of_limitations: null

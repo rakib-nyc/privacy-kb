@@ -1,0 +1,107 @@
+id: us.glba.safeguards.314_4.penetration_testing
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 314.4(d)(2)
+  instrument_id: us.glba.safeguards_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=314
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  raw_sha256: 3ba7ecc3463953a1db1ccf38f4b0ade4182e36c7e24e111eb8869910e271d41a
+  text_file: corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.txt
+  text_sha256: be8a0b1e03c4b14f6ed56fbf365d871a4fe112856a8013ebcf25fbc2f9aefec9
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: d64cafb236239f1262f379b9f07d3c2cc831da4a41810fcf26c0f47976ba9b7e
+verbatim_span: >-
+  For information systems, the monitoring and testing shall include continuous monitoring or
+  periodic penetration testing and vulnerability assessments. Absent effective continuous monitoring
+  or other systems to detect, on an ongoing basis, changes in information systems that may create
+  vulnerabilities, you shall conduct:
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - d
+    - '2'
+  anchor: '314.4'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+jurisdiction: US-FED
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Reading annual penetration testing as unconditional. It is required only where continuous
+    monitoring is NOT implemented.
+  - >-
+    Missing the biannual vulnerability assessment, which runs alongside the annual penetration test
+    rather than instead of it.
+open_questions: []
+confidence: high
+context_not_required: No ancestor contributes governing text; this provision's operative meaning is complete on its own.
+subject:
+  domain: II.C.2
+  lifecycle:
+    - IV
+regulator:
+  - ftc
+sector:
+  - financial_services
+  - non_bank_financial_institutions
+data_types:
+  - npi
+  - customer_information
+status: in_force
+effective_from: '2023-06-09'
+applies_if:
+  all:
+    - entity.glba_financial_institution == true
+    - entity.has_information_systems == true
+applies_to_role: any
+obligation_type: assess
+summary: >-
+  For information systems, monitoring and testing must include either continuous monitoring, or
+  annual penetration testing plus biannual vulnerability assessments.
+requirement_detail: >-
+  A genuine either/or, and the alternative chosen changes the compliance calendar entirely.
+  Continuous monitoring displaces the periodic testing regime; absent it, § 314.4(d)(2)(i)-(ii)
+  require annual penetration testing and vulnerability assessments at least every six months.
+preemption:
+  posture: floor
+  authority: 15 U.S.C. § 6807
+  note: >-
+    GLBA § 507 preserves more protective state law: a state statute or regulation is preempted only
+    to the extent it is INCONSISTENT with the subtitle, and a more protective provision is not
+    inconsistent. So state security requirements run in parallel. NY SHIELD's compliance-deemed
+    pathway for GLBA-regulated entities is the practical expression of that, and is a Priority 3
+    atom.
+enforcement:
+  enforcers:
+    - ftc
+  private_right_of_action: false
+  penalty:
+    structure: FTC Act remedies; no penalty figure in the rule itself
+    range: null
+    note: GLBA carries no private right of action; plaintiffs use state UDAP and negligence.
+  statute_of_limitations: null

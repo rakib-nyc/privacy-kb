@@ -1,0 +1,136 @@
+id: us.canspam.316_5.a.no_fee_or_extra_steps
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 316.5(a)
+  instrument_id: us.can_spam
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=316
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/16-cfr-316.xml
+  raw_sha256: 45bf26b68a06dc81f55388a06eb4e376ceb061a490e3858fb6105143d1d583b0
+  text_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/16-cfr-316.txt
+  text_sha256: 0fb06913475d5f82e29a3c611039df9c11747a5b2235b48a9fa6bebf81ff26ce
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/can-spam/raw/16-cfr-316.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 792423a1cfe7abe45edae10b4d8f11e6ab87eda93c85d1960b787c6dcae39d9f
+verbatim_span: >-
+  Use a return electronic mail address or other Internet-based mechanism, required by 15 U.S.C.
+  7704(a)(3), to submit a request not to receive future commercial electronic mail messages from a
+  sender; or
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+  anchor: '316.5'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked, and resolves to exactly one leaf
+    within the section (gate 23)
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Neither a sender nor any person acting on behalf of a sender may require that any recipient
+      pay any fee, provide any information other than the recipient's electronic mail address and
+      opt-out preferences, or take any other steps except sending a reply electronic mail message or
+      visiting a single Internet Web page, in order to:
+    citation: null
+    relation_note: null
+    path:
+      path: []
+      anchor: '316.5'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        section-level stem preceding the designated targets (a) and (b); eCFR publishes it as an
+        undesignated <P> sibling, so it carries the section root path
+subject:
+  domain: II.E.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2008-07-07'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - practice.sends_commercial_email == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  Neither a sender nor anyone acting for a sender may require a recipient to pay a fee, to give
+  information beyond an email address and opt-out preferences, or to take any step beyond sending a
+  reply message or visiting a single web page, in order to use the opt-out mechanism required by 15
+  U.S.C. § 7704(a)(3).
+requirement_detail: >-
+  THE RULE, NOT THE STATUTE, IS WHERE UNSUBSCRIBE UX IS ACTUALLY REGULATED. Section 7704(a)(3)
+  requires a mechanism; § 316.5 caps what the sender may make the recipient do to use it — no fee,
+  no information beyond the email address and opt-out preferences, and nothing beyond a reply
+  message or a visit to a SINGLE web page. That single-page limit is the operative constraint: a
+  login wall, an account-preferences flow behind authentication, or a confirm-then-confirm-again
+  sequence violates the rule even though the link technically works and the address is eventually
+  suppressed. Paragraph (b) applies the same cap to having the request HONOURED, which forecloses
+  the pattern of accepting the click and then demanding a survey or a reason before processing it.
+  The part was issued under the CAN-SPAM Act itself (the authority note to part 316 cites 15 U.S.C.
+  7701-7713), so this is a legislative rule with the force of the statute, not FTC guidance under
+  invariant I7. The same 2008 rulemaking fixed the multi-advertiser "sender" rule in § 316.2(m) and
+  the definition of a valid physical postal address in § 316.2(p); both are definitional records and
+  are not yet in this corpus.
+deadline: null
+exemptions: []
+related:
+  - us.canspam.7704.a3a.opt_out_mechanism
+  - us.canspam.7704.a4ai.opt_out_honored
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - Requiring a login to unsubscribe. § 316.5(a) permits at most a reply email or a single web page.
+  - >-
+    Asking the recipient why they are leaving before processing the request. Collecting anything
+    beyond the email address and opt-out preferences is prohibited.
+  - >-
+    Treating the CAN-SPAM Rule as FTC guidance rather than law. It is a legislative rule under the
+    Act; the guidance/statute distinction in invariant I7 does not downgrade it.
+open_questions:
+  - >-
+    The fetched part carries only the source credit "73 FR 29677, May 21, 2008"; the 7 July 2008
+    effective date is taken from the adopting release, which is not in the fetched text. If a query
+    turns on mid-2008 timing, fetch 73 FR 29654 before relying on effective_from.
+confidence: high
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 7707(b)(1)
+  note: >-
+    CAN-SPAM expressly preempts state statutes regulating commercial email EXCEPT to the extent they
+    prohibit falsity or deception. A state opt-in requirement is displaced; a state
+    deceptive-subject-line prohibition is not. See us.canspam.7707.b1.state_law_preemption.
+enforcement:
+  enforcers:
+    - ftc
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section (15 U.S.C. § 7706) has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent. State attorneys general and, narrowly, providers of internet
+      access service also enforce, and neither route is in the corpus yet.
+  statute_of_limitations: null

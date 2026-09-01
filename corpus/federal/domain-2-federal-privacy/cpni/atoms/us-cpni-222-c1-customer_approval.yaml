@@ -1,0 +1,102 @@
+id: us.cpni.222.c1.customer_approval
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 U.S.C. § 222(c)(1)
+  instrument_id: us.cpni
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/cpni/raw/47-u-s-c-222.xml
+  raw_sha256: 9d301f80fe41a4a75775e6cd1fa72fc7402917d64245168190697be032dbddbb
+  text_file: corpus/federal/domain-2-federal-privacy/cpni/raw/47-u-s-c-222.txt
+  text_sha256: 7360ef24010c54585ec26cba5824d93253a34a88d13b59e8b967609385209653
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/cpni/raw/47-u-s-c-222.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 911de497f2d87e03ad9734f174aecd62ab5623c20133847d0bf36b993267da7b
+verbatim_span: >-
+  Except as required by law or with the approval of the customer, a telecommunications carrier that
+  receives or obtains customer proprietary network information by virtue of its provision of a
+  telecommunications service shall only use, disclose, or permit access to individually identifiable
+  customer proprietary network information in its provision of (A) the telecommunications service
+  from which such information is derived, or (B) services necessary to, or used in, the provision of
+  such telecommunications service, including the publishing of directories.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - c
+    - '1'
+  anchor: /us/usc/t47/s222/c/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the prohibition and its exception clause in full.
+subject:
+  domain: II.E.1
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - fcc
+sector:
+  - telecom
+data_types:
+  - cpni
+status: in_force
+effective_from: '1996-02-08'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_telecommunications_carrier == true
+    - data.is_cpni == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  A telecommunications carrier that obtains customer proprietary network information by virtue of
+  providing a telecommunications service may use, disclose or permit access to it only as required
+  by law, with customer approval, or in providing the service from which it is derived.
+requirement_detail: >-
+  CPNI IS A SEPARATE REGIME FROM EVERYTHING ELSE IN THIS CORPUS, and its default is the opposite of
+  the FTC's. § 222(c)(1) permits use only in three named circumstances rather than prohibiting
+  unfair or deceptive use, so a carrier needs an affirmative basis rather than an absence of
+  deception. The FCC rather than the FTC enforces it, and FTC Act § 45(a)(2) excludes common
+  carriers from Commission jurisdiction — which is why the § 5 backstop does NOT reach carrier
+  conduct in its common-carriage capacity.
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - Assuming the FTC enforces it. § 45(a)(2) carves common carriers out; the FCC enforces § 222.
+  - >-
+    Reading it as a deception standard. It is a permission-based rule: use requires an affirmative
+    basis.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 222(c)(1)
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the section extracted.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

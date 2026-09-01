@@ -1,0 +1,99 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+id: ny.civil_rights.50.prohibition
+source:
+  citation: N.Y. Civil Rights Law § 50
+  instrument_id: ny.civil_rights.50_51
+  url: https://legislation.nysenate.gov/api/3/laws/CVR/50
+  fetched: '2026-08-19'
+  raw_file: corpus/state/ny/cvr-50/raw/ny-cvr-50.json
+  raw_sha256: 1dc4125bd76c3cc0869a35f142efb2d40e42d8c83e83519b2f57ebf86ce0f9d0
+  text_file: corpus/state/ny/cvr-50/raw/ny-cvr-50.txt
+  text_sha256: 2a1c49ffe81383651d5f62a92194d8d3ed23b4d2a30aa4ca75befe125702f87f
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/cvr-50/raw/ny-cvr-50.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, ny-cvr-50
+    result: structured_source_used
+    note: null
+  segment_sha256: 1d7040bd1648923094e7d64e11da7df8db3070a55475bcd128ee26b550424d77
+verbatim_span: >-
+  § 50. Right of privacy. A person, firm or corporation that uses for advertising purposes, or for
+  the purposes of trade, the name, portrait, picture, likeness, or voice of any living person
+  without having first obtained the written consent of such person, or if a minor of such minor's
+  parent or guardian, is guilty of a misdemeanor.
+paragraph_path:
+  path: []
+  anchor: '50'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    the section has no subdivisions; the empty path cites the section itself and is unique by
+    construction
+context_not_required: The provision states the rule in full.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - I
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - any
+effective_from: '2021-05-29'
+federal_relationship: independent
+applies_if:
+  all:
+    - entity.nexus in ["US-NY"]
+    - practice.uses_likeness_for_advertising == true
+applies_to_role: controller
+obligation_type: prohibit
+deadline: null
+exemptions: []
+related: []
+summary: >-
+  A person, firm or corporation that uses a living person's name, portrait, picture, likeness or
+  voice for advertising or trade purposes without prior written consent is guilty of a misdemeanor.
+requirement_detail: >-
+  THE PROHIBITION THE CIVIL ACTION RESTS ON, and holding both is what makes the pair legible. § 50
+  is criminal and § 51 civil, they share the same elements, and a § 51 claim therefore rises or
+  falls on whether the § 50 conduct occurred. The consent requirement is the operative constraint in
+  practice: WRITTEN, and obtained in advance. That is stricter than most publicity statutes and is
+  why release paperwork rather than platform terms is the controlling document in a New York
+  likeness dispute.
+common_errors:
+  - Reading § 51 without § 50. The civil action tracks the criminal elements.
+  - >-
+    Accepting platform terms of service as consent. § 50 requires prior WRITTEN consent from the
+    person or, for a minor, a parent or guardian.
+open_questions: []
+preemption:
+  posture: none
+  authority: N.Y. Civil Rights Law § 50
+  note: >-
+    State statutory right; the First Amendment supplies the operative limit through the
+    newsworthiness and public-interest defences rather than federal preemption.
+enforcement:
+  enforcers:
+    - state_ag
+    - private_litigants
+  private_right_of_action: true
+  penalty:
+    structure: Misdemeanor under § 50; the civil remedy is in § 51.
+    range: null
+    note: Criminal prosecution under § 50 is rare; the practical vehicle is the § 51 action.
+  statute_of_limitations: null

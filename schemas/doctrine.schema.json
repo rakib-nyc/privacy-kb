@@ -1,0 +1,458 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://privacy-kb/schemas/doctrine.schema.json",
+ "title": "Doctrine",
+ "description": "A constitutional or common-law rule that constrains what other instruments may do. It carries NO paragraph_path, because there is no paragraph \u2014 which is precisely why it is a separate type rather than an obligation with fields left null. It also carries no obligation_type: a doctrine is not a duty, and letting it wear one would put Carpenter in an obligations list.",
+ "$defs": {
+  "paragraph_path": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "path",
+    "derivation",
+    "confidence",
+    "evidence"
+   ],
+   "description": "Where this text sits in the enacted hierarchy. In USLM the path is READ from identifier attributes; in eCFR it is RECONSTRUCTED from designators parsed out of flat <P> siblings, because eCFR carries no element nesting below the section. Same field, incomparable reliability \u2014 which is why derivation is recorded rather than assumed.",
+   "properties": {
+    "path": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 0,
+     "description": "Designators outermost-first, relative to the section: subsection (a) is [\"a\"], (a)(6)(A) is [\"a\",\"6\",\"A\"]. An EMPTY array is the section root itself, which is what a section-level chapeau has \u2014 see DEBT-005. minItems is 0 for exactly that reason."
+    },
+    "anchor": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "The source's own element identifier, where it has one (USLM identifier=, eCFR N=). Gate 17 checks this against the non-operative regions of the source."
+    },
+    "derivation": {
+     "enum": [
+      "structural",
+      "reconstructed"
+     ],
+     "description": "structural = transcribed from a publisher assertion. reconstructed = inferred by this repo from designator text; eCFR only."
+    },
+    "confidence": {
+     "enum": [
+      "high",
+      "low"
+     ],
+     "description": "structural is always high. reconstructed is low wherever a designator's level is ambiguous in context \u2014 the eCFR (i) case, where (i) is both letter-nine and roman-one. Low REFUSES the atom (gate 16)."
+    },
+    "evidence": {
+     "type": "string",
+     "minLength": 10,
+     "description": "How the path was determined. For structural, the attribute and element type. For reconstructed, the sequence reasoning."
+    }
+   }
+  },
+  "operative_context_entry": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "position",
+    "relation",
+    "verbatim_span",
+    "path"
+   ],
+   "properties": {
+    "position": {
+     "enum": [
+      "precedes",
+      "follows"
+     ],
+     "description": "Context is bidirectional. USLM <continuation> puts the operative consequence AFTER the enumerated list \u2014 the chapeau is the 'if' and the continuation is the 'then'. 468 instances in title 15 alone."
+    },
+    "relation": {
+     "enum": [
+      "scopes",
+      "excepts",
+      "concludes",
+      "conditions",
+      "other"
+     ]
+    },
+    "relation_note": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Required when relation is 'other'. A missing enum value should be a recorded gap, not a silent mis-fit."
+    },
+    "verbatim_span": {
+     "type": "string",
+     "minLength": 1,
+     "description": "Context is quoted law, not annotation. Gate 3 verifies it in its own right."
+    },
+    "citation": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "path": {
+     "$ref": "#/$defs/paragraph_path"
+    }
+   }
+  }
+ },
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "id",
+  "schema_version",
+  "record_type",
+  "source",
+  "verification_status",
+  "subject",
+  "jurisdiction",
+  "jurisdiction_level",
+  "status",
+  "effective_from",
+  "effective_to",
+  "confidence",
+  "doctrine_statement",
+  "source_authority",
+  "constrains"
+ ],
+ "properties": {
+  "id": {
+   "type": "string",
+   "pattern": "^[a-z]{2}(\\.[a-z0-9_]+)+$"
+  },
+  "schema_version": {
+   "type": "integer",
+   "const": 1
+  },
+  "record_type": {
+   "const": "doctrine"
+  },
+  "source": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "citation",
+    "instrument_id",
+    "url",
+    "fetched",
+    "raw_file",
+    "raw_sha256",
+    "format",
+    "risk_tier",
+    "structured_source_check"
+   ],
+   "properties": {
+    "citation": {
+     "type": "string",
+     "minLength": 3
+    },
+    "instrument_id": {
+     "type": "string"
+    },
+    "url": {
+     "type": "string",
+     "format": "uri"
+    },
+    "fetched": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "raw_file": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "raw_sha256": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "text_file": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Deterministic text rendering of raw_file, for binary sources (PDF). Gate 3 checks verbatim_span against this when present."
+    },
+    "text_sha256": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "pattern": "^[0-9a-f]{64}$"
+    },
+    "text_extraction_cmd": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "format": {
+     "enum": [
+      "uslm_xml",
+      "ecfr_xml",
+      "openleg_json",
+      "html",
+      "pdf_single_col",
+      "pdf_multi_col",
+      "nyc_xml",
+      "manual"
+     ],
+     "description": "How the primary text was obtained. Structured formats are a HARD preference: a PDF is a rendering of a document, and every transformation of a rendering is a place a quotation can silently drift. See risk_tier."
+    },
+    "risk_tier": {
+     "enum": [
+      "low",
+      "medium",
+      "high"
+     ],
+     "description": "Derived from format: xml/json/html low, pdf_single_col medium, pdf_multi_col high, manual high. CI recomputes it; a mismatch is a gate-1 failure. High tier triggers gate 12 sampling."
+    },
+    "structured_source_check": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "checked",
+      "result"
+     ],
+     "description": "Recorded result of looking for a structured source BEFORE falling back to PDF. A negative result is a finding worth keeping \u2014 it stops the next session repeating the search.",
+     "properties": {
+      "checked": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "minItems": 1
+      },
+      "result": {
+       "enum": [
+        "structured_source_used",
+        "no_structured_source_exists",
+        "structured_source_incomplete",
+        "not_applicable"
+       ]
+      },
+      "note": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     }
+    },
+    "render": {
+     "type": [
+      "object",
+      "null"
+     ],
+     "additionalProperties": false,
+     "description": "Structured render parameters. Present for pdf_* sources so gate 11 can drive an INDEPENDENT renderer with identical parameters. Kept structured rather than parsed back out of text_extraction_cmd, which would be fragile.",
+     "properties": {
+      "column": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "pages": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "min_height": {
+       "type": [
+        "number",
+        "null"
+       ]
+      },
+      "drop_re": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "segment_sha256": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "pattern": "^([0-9a-f]{64})$",
+     "description": "sha256 of the SEGMENTATION LEAF this record is anchored to, normalised for whitespace. Not the raw file \u2014 raw_sha256 already covers that, and it does not move when a WALKER changes. This does. A walker fix re-cuts the leaves under every atom over that source, and an atom whose leaf was re-cut is no longer verified against the thing it quotes: N.Y. Penal Law s 250.00 welded subdivisions 1 and 2 into one leaf, and the atom quoting it cited s 250.00(1) while carrying the words of s 250.00(2). Gate 38 compares this against the current segmentation. null means not yet baselined and is skipped with a declared reason."
+    }
+   },
+   "description": "A doctrine has no fetched document: Supreme Court opinions are not published in USLM or eCFR, and this record type quotes no text at all. raw_file, raw_sha256 and fetched are therefore nullable HERE and nowhere else. That is a real reduction in provenance, which is why every doctrine record is verification_status: unverified and is suppressed from output by invariant I1. It exists so the corpus can say a constitutional question is separate from the statutory one \u2014 not so it can be cited."
+  },
+  "verification_status": {
+   "enum": [
+    "verbatim_confirmed",
+    "secondary_only",
+    "unverified"
+   ]
+  },
+  "jurisdiction": {
+   "type": "string"
+  },
+  "jurisdiction_level": {
+   "enum": [
+    "federal",
+    "state",
+    "local"
+   ]
+  },
+  "status": {
+   "enum": [
+    "in_force",
+    "enacted_pending",
+    "proposed",
+    "vetoed",
+    "superseded",
+    "enjoined"
+   ]
+  },
+  "effective_from": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "format": "date"
+  },
+  "effective_to": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "format": "date"
+  },
+  "supersedes": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "superseded_by": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "amendment_history": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "date",
+     "note",
+     "source_url"
+    ],
+    "properties": {
+     "date": {
+      "type": "string",
+      "format": "date"
+     },
+     "note": {
+      "type": "string"
+     },
+     "source_url": {
+      "type": "string",
+      "format": "uri"
+     }
+    }
+   }
+  },
+  "regulator": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "sector": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "data_types": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "confidence": {
+   "enum": [
+    "high",
+    "medium",
+    "low"
+   ]
+  },
+  "related": {
+   "type": "array"
+  },
+  "common_errors": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "open_questions": {
+   "type": "array"
+  },
+  "scope_justification": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "minLength": 20,
+   "description": "Required (gate 13) when subject.domain is competency-level or absent. Without it the taxonomy-as-coverage-checklist discipline erodes one reasonable exception at a time."
+  },
+  "doctrine_statement": {
+   "type": "string",
+   "minLength": 40
+  },
+  "source_authority": {
+   "type": "string",
+   "description": "The case or constitutional clause. Carpenter v. United States; U.S. Const. amend. IV; the dormant Commerce Clause."
+  },
+  "constrains": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Instrument ids this doctrine limits. Gate 37 resolves them \u2014 a doctrine that constrains nothing in the corpus is an assertion with no reach."
+  },
+  "authority_tier": {
+   "const": "case_law"
+  },
+  "subject": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "domain"
+   ],
+   "properties": {
+    "domain": {
+     "type": "string",
+     "pattern": "^(I|II|III|IV|V)\\.[A-E]\\.[0-9]+$"
+    },
+    "lifecycle": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

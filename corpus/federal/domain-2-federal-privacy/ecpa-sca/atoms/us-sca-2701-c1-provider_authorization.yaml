@@ -1,0 +1,124 @@
+id: us.sca.2701.c1.provider_authorization
+schema_version: 1
+record_type: obligation
+source:
+  citation: 18 U.S.C. § 2701(c)(1)
+  instrument_id: us.ecpa_sca
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2701.xml
+  raw_sha256: 2116456719a3a3adf1cb2fe7473c1f639f51a8ec1eb25bbf3dd65954afd2b0fa
+  text_file: corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2701.txt
+  text_sha256: d2a4bcb4278d027e6d7a45310854d19c3e8da722c9324b1ad916f7e30642ae6e
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2701.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: cdbc073d8ac26d5efc184cc0c94404bced209d3432c88bada798cc1a896cc9a3
+verbatim_span: by the person or entity providing a wire or electronic communications service;
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - c
+    - '1'
+  anchor: /us/usc/t18/s2701/c/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: excepts
+    verbatim_span: Subsection (a) of this section does not apply with respect to conduct authorized—
+    citation: 18 U.S.C. § 2701(c)
+    path:
+      path:
+        - c
+      anchor: /us/usc/t18/s2701/c
+      derivation: structural
+      confidence: high
+      evidence: USLM ancestor element; identifier read from the source
+subject:
+  domain: IV.B.3
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - doj
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '1986-10-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - practice.accesses_stored_communications == true
+    - entity.provides_electronic_communication_service == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  Section 2701(a) does not apply to conduct authorized by the person or entity providing the wire or
+  electronic communications service.
+requirement_detail: >-
+  THE EMPLOYER'S DOOR OUT OF § 2701, and the reason internal mail systems generate so little Stored
+  Communications Act liability. An employer that operates its own mail or messaging system IS the
+  provider of that service, so its access to messages stored on it is conduct authorized by the
+  provider and the offence does not apply — this is a scope limit that removes the conduct from §
+  2701(a), not a defence to be weighed against the employee's expectation of privacy. The limit is
+  that it turns on WHO PROVIDES THE SERVICE, never on who owns the device or pays the bill: an
+  employer whose staff use a third-party webmail or messaging account is not that service's
+  provider, and reaching into those accounts with credentials taken from an employee is the fact
+  pattern that actually produces § 2701 liability. Paragraph (2)'s user branch is correspondingly
+  narrow — it reaches communications of or intended for that user, so one employee's authorization
+  does not open a colleague's mailbox. Being outside § 2701 also settles nothing else: the Wiretap
+  Act, state eavesdropping and monitoring statutes, and the employer's own published notice all
+  continue to apply to the same programme.
+deadline: null
+exemptions: []
+related:
+  - us.sca.2701.a1.unauthorized_access
+  - us.wiretap.2511.2d.one_party_consent
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Reading it as an employer exception. It is a PROVIDER exception, and an employer that has
+    outsourced mail or messaging to a third party is not the provider of that service.
+  - >-
+    Assuming it also authorizes disclosure. § 2701(c) removes the ACCESS offence only; a public
+    provider's voluntary disclosure is governed by § 2702 and its own exceptions.
+  - >-
+    Treating provider authorization as user consent. § 2701(c)(2) is the separate user branch and
+    reaches only a communication of or intended for that user.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2701(c)(1)
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis; no express ceiling clause was
+    found in the section extracted. State stored-communications and eavesdropping statutes, and
+    state process rules, operate alongside chapter 121 and may be stricter — § 2703(d) expressly
+    refuses an order to a state authority where state law prohibits it.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: true
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

@@ -1,0 +1,134 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+  - state_ag
+sector:
+  - education
+data_types:
+  - education_record
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: exceeds_floor
+id: ny.education.2d.6.contractor_breach
+source:
+  citation: N.Y. Education Law § 2-d(6)
+  instrument_id: ny.education.2-d
+  url: https://legislation.nysenate.gov/api/3/laws/EDN/2-D
+  fetched: '2026-08-20'
+  raw_file: corpus/state/ny/edn-2d/raw/ny-edn-2-d.json
+  raw_sha256: 7bd3e93b1cdc44a600ed20dbe90b01e7b9dcf92caa6edc37bde7cede80c37413
+  text_file: corpus/state/ny/edn-2d/raw/ny-edn-2-d.txt
+  text_sha256: 3edf25eb4284866dbd4428909bdfeccf319516914032b8176d48b5f4065aa479
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/edn-2d/raw/ny-edn-2-d.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ny-edn-2-d
+    result: structured_source_used
+    note: null
+  segment_sha256: d6aa4e7ecd623fd736dad5feefa0217e833e771027cc7db5ba3d6058900b2999
+verbatim_span: >-
+  Breach and unauthorized release of personally identifiable information. a. Each third party
+  contractor that receives student data or teacher or principal data pursuant to a contract or other
+  written agreement with an educational agency shall be required to notify such educational agency
+  of any breach of security resulting in an unauthorized release of such data by the third party
+  contractor or its assignees in violation of applicable state or federal law, the parents bill of
+  rights for student data privacy and security, the data privacy and security policies of the
+  educational agency and/or binding contractual obligations relating to data privacy and security,
+  in the most expedient way possible and without unreasonable delay. The educational agency shall,
+  upon notification by the third party contractor, be required to report to the chief privacy
+  officer any such breach of security and unauthorized release of such data. The chief privacy
+  officer shall, upon belief that such breach and unauthorized release constitutes criminal conduct,
+  report such breach and unauthorized release to law enforcement in the most expedient way possible
+  and without unreasonable delay. b. In the case of an unauthorized release of student data, the
+  educational agency shall notify the parent or eligible student of the unauthorized release of
+  student data that includes personally identifiable information from the student records of such
+  student in the most expedient way possible and without unreasonable delay. In the case of an
+  unauthorized release of teacher or principal data, the educational agency shall notify each
+  affected teacher or principal of the unauthorized release of data that includes personally
+  identifiable information from the teacher or principal's annual professional performance review in
+  the most expedient way possible and without unreasonable delay. c. In the case of notification to
+  a parent, eligible student, teacher or principal under paragraph b of this subdivision due to the
+  unauthorized release of student data by a third-party contractor or its assignee, the third-party
+  contractor shall promptly reimburse the educational agency for the full cost of such notification.
+  d. Each violation of a third party contractor pursuant to paragraph a of this subdivision shall be
+  punishable by a civil penalty of the greater of five thousand dollars or up to ten dollars per
+  student, teacher, and principal whose data was released, provided that the latter amount shall not
+  exceed the maximum penalty under paragraph (a) of subdivision six of section eight hundred
+  ninety-nine-aa of the general business law. e. If the chief privacy officer determines that a
+  third party contractor or its assignee, in violation of applicable state or federal law, the data
+  privacy and security policies of the educational agency provided by such educational agency to the
+  third party contractor and/or binding contractual obligations relating to data privacy and
+  security, has released any student data or teacher or principal data received from an educational
+  agency to any person or entity not authorized by law to receive such data pursuant to a lawful
+  subpoena or otherwise, the chief privacy officer, after affording the third party contractor with
+  notice and an opportunity to be heard, shall be authorized to:
+paragraph_path:
+  path:
+    - '6'
+  anchor: 2-D
+  derivation: reconstructed
+  confidence: high
+  evidence: subdivision designators reconstructed from the flat text field
+context_not_required: The provision states the rule in full.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - VI
+effective_from: '2020-01-29'
+applies_if:
+  all:
+    - entity.is_ny_educational_agency == true
+applies_to_role: controller
+obligation_type: notify
+deadline: null
+exemptions: []
+summary: >-
+  Each third party contractor that receives student data or teacher or principal data must comply
+  with the breach and unauthorized-release duties in subdivision 6.
+requirement_detail: >-
+  THE SUBDIVISION THAT REACHES THE VENDOR DIRECTLY. § 2-d(3) reaches contractors through the
+  contract an educational agency must give them; subdivision 6 imposes duties on the contractor
+  itself and supplies the civil penalties. So an edtech vendor outside FERPA — not being an
+  educational agency — has direct New York exposure here, which is the practical answer to why a
+  FERPA-only analysis under-serves a New York district.
+common_errors:
+  - >-
+    Assuming a vendor has no direct exposure because FERPA binds only institutions. Subdivision 6
+    binds the contractor.
+  - >-
+    Treating the § 2-d(3) contract as the whole vendor obligation. It is the entry point, not the
+    duty set.
+open_questions:
+  - >-
+    8 N.Y.C.R.R. Part 121 is not in the corpus — NYCRR has no structured source. See
+    meta/blocked-sources.yaml.
+preemption:
+  posture: none
+  authority: N.Y. Education Law § 2-d
+  note: >-
+    FERPA is a funding condition rather than a preemptive scheme, so state student-privacy law
+    coexists with it.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: Civil penalties against third party contractors under subdivision 6.
+    range: null
+    note: Enforcement runs through the department and the chief privacy officer.
+  statute_of_limitations: null
+no_deadline_stated: >-
+  Subdivision states a duty without a period. Checked the subdivision in full; the timing for breach
+  notification by contractors is set by cross-reference to § 899-aa rather than stated here.

@@ -1,0 +1,103 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - healthcare
+data_types:
+  - phi
+status: in_force
+effective_from: '2009-09-23'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+preemption:
+  posture: floor
+  authority: 42 U.S.C. § 1320d-7
+  note: >-
+    HIPAA is a FLOOR. More stringent state law is not preempted and runs in parallel — including
+    state breach-notification statutes with shorter clocks than 60 days. Complying with HIPAA does
+    not discharge a state duty, and the shortest applicable clock governs in practice.
+enforcement:
+  enforcers:
+    - hhs_ocr
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: tiered by culpability under 42 U.S.C. § 1320d-5
+    range: null
+    note: Figures are inflation-adjusted annually by rule; verify current amounts.
+  statute_of_limitations: null
+applies_if:
+  all:
+    - entity.hipaa_role in ['covered_entity']
+    - event.type == 'breach_of_unsecured_phi'
+applies_to_role: covered_entity
+exemptions: []
+id: us.hipaa.breach.164_402.breach_definition
+source:
+  citation: 45 C.F.R. § 164.402
+  instrument_id: us.hipaa.breach_notification_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 45-cfr-164 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: f3ac080ad5614cb70595b1e926a064e5331d68cee2d810c5364fd43e09368958
+verbatim_span: >-
+  means the acquisition, access, use, or disclosure of protected health information in a manner not
+  permitted under subpart E of this part which compromises the security or privacy of the protected
+  health information.
+paragraph_path:
+  path:
+    - Breach
+  anchor: '164.402'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    Term-keyed root: eCFR publishes part 164 definitions as undesignated <P> elements whose only
+    marker is the italicised term, so the term is the path. Resolves to exactly one leaf (gate 23).
+context_not_required: The provision states the duty in full.
+subject:
+  domain: II.B.1
+  lifecycle:
+    - VI
+obligation_type: assess
+deadline: null
+summary: >-
+  Breach means the acquisition, access, use or disclosure of protected health information not
+  permitted under subpart E which compromises the security or privacy of the information.
+requirement_detail: >-
+  THE FOUR-FACTOR RISK ASSESSMENT IS WHERE HIPAA BREACH ANALYSIS ACTUALLY HAPPENS. The definition
+  creates a PRESUMPTION — an impermissible use or disclosure is a breach unless the covered entity
+  demonstrates a low probability of compromise through the assessment at § 164.402(2). The burden
+  runs to the entity, so "we concluded it was not a breach" is only an answer if the four factors
+  were documented. Note also that this is the gate every downstream duty passes through: no breach,
+  no § 164.404 individual notice, no § 164.408 Secretary notice, and therefore no New York §
+  899-aa(9) five-business-day clock either.
+common_errors:
+  - >-
+    Treating an impermissible disclosure as automatically notifiable. It is presumed a breach,
+    rebuttable by a documented four-factor assessment.
+  - Treating "no breach" as a conclusion rather than a demonstration. The burden is on the entity.
+open_questions: []

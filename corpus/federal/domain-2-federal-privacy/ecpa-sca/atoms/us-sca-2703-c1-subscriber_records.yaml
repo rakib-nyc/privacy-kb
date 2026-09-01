@@ -1,0 +1,105 @@
+id: us.sca.2703.c1.subscriber_records
+schema_version: 1
+record_type: obligation
+source:
+  citation: 18 U.S.C. § 2703(c)(1)
+  instrument_id: us.ecpa_sca
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2703.xml
+  raw_sha256: 063a2a456b9871a736c0af5cc30ec5d5a2d262753c91cffa17d0fdeee53cd88b
+  text_file: corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2703.txt
+  text_sha256: f9265249e37309b17d69798fc8e2e177328b8508de0fb0eee4ab6b58c46bcaf8
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2703.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: A governmental entity may require a provider of electronic communication service or remote computing
+  service to disclose a record or other information pertaining to a subscriber to or customer of such service (not
+  including the contents of communications) only when the governmental entity—
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+  - c
+  - '1'
+  anchor: /us/usc/t18/s2703/c/1
+  derivation: structural
+  confidence: high
+  evidence: USLM ancestor element; identifier read from the source
+context_not_required: The quoted text is itself the chapeau of § 2703(c)(1); it states the rule and the closed list
+  follows it in subparagraphs (A) to (E), which the summary and analysis enumerate.
+subject:
+  domain: III.A.2
+  lifecycle:
+  - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &id001
+- doj
+sector:
+- any
+data_types:
+- any
+status: in_force
+effective_from: '1986-10-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+  - event.government_compels_disclosure == true
+applies_to_role: processor
+obligation_type: disclose
+summary: A governmental entity may require a provider of electronic communication service or remote computing service
+  to disclose a record or other information pertaining to a subscriber or customer, not including the contents of
+  communications, only by warrant, by a § 2703(d) order, with the subscriber's consent, by a formal written request
+  in a telemarketing-fraud investigation, or under § 2703(c)(2).
+requirement_detail: 'THE NON-CONTENT TIER, and the parenthetical is the whole of its scope: this paragraph reaches
+  records "not including the contents of communications", which is why its routes are lighter than the warrant §
+  2703(a) demands for contents. The list is closed — the chapeau says ONLY WHEN — but it is wide, running from a
+  warrant through a § 2703(d) order and subscriber consent down to the basic-subscriber-information subpoena at
+  paragraph (2). Paragraph (3) then confirms that no notice to the subscriber or customer is required for any of
+  it, which is what makes this the quiet workhorse of digital investigations and what makes the subscriber unlikely
+  ever to learn of the request. Carpenter is the crack in the structure: historical cell-site location information
+  is non-content and was routinely obtained on a § 2703(d) order until the Court held its acquisition a Fourth Amendment
+  search, and the boundaries of that holding for other categories of non-content records remain unsettled. The safe
+  statement is that satisfying this paragraph is necessary and is no longer always sufficient.'
+deadline: null
+exemptions: []
+related:
+- us.sca.2703.d.court_order_standard
+- us.sca.2703.a.contents_warrant
+federal_relationship: null
+interpreted_by: []
+common_errors:
+- Assuming a § 2703(d) order suffices for any non-content record. Carpenter requires a warrant for historical cell-site
+  location information, and how far that reasoning travels is unresolved.
+- Treating the paragraph as a general subscriber-records subpoena power. The subpoena route is § 2703(c)(2) and
+  is confined to the enumerated basic subscriber information — name, address, connection records, length and types
+  of service, subscriber number and means of payment.
+- Expecting a notice duty to the subscriber. § 2703(c)(3) states that none is required for records obtained under
+  this subsection.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2703(c)(1)
+  note: Recorded as floor pending a provision-level preemption analysis; no express ceiling clause was found in
+    the section extracted. State stored-communications and eavesdropping statutes, and state process rules, operate
+    alongside chapter 121 and may be stricter — § 2703(d) expressly refuses an order to a state authority where
+    state law prohibits it.
+enforcement:
+  enforcers: *id001
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: The enforcement section of this instrument has not been extracted; treat penalty exposure as UNASSESSED
+      rather than absent.
+  statute_of_limitations: null

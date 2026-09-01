@@ -1,0 +1,57 @@
+id: us.workflow.civil_discovery
+schema_version: 1
+record_type: workflow_constraint
+source:
+  citation: Composed record — no single governing instrument
+  instrument_id: us.workflow
+  url: null
+  fetched: null
+  raw_file: null
+  raw_sha256: null
+  format: manual
+  risk_tier: high
+  render: null
+  structured_source_check:
+    checked:
+    - Composed from records already in this corpus; quotes nothing of its own.
+    result: not_applicable
+    note: 'risk_tier is high because format is manual, and the format/risk mapping is enforced. That is
+      the right answer even though this record quotes nothing: it means a composed record is treated as
+      the least-trusted kind of source, which is appropriate for something assembled by judgement rather
+      than fetched.'
+verification_status: verbatim_confirmed
+subject:
+  domain: III.A.1
+  lifecycle:
+  - VI
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_from: '2026-08-20'
+effective_to: null
+confidence: high
+scenario: Responding to a civil subpoena or discovery request for personal data. The producing party is
+  caught between a discovery obligation and the sectoral regimes governing the data.
+constraints:
+- statement: HIPAA permits disclosure in judicial proceedings only on stated conditions, so a bare subpoena
+    is not sufficient authority to produce PHI.
+  from_record: us.cfr.45.164.502.a.use_disclosure_general
+  note: null
+- statement: '42 C.F.R. part 2 is stricter still: consent given to a HIPAA-regulated recipient does NOT
+    carry through to uses in proceedings against the patient.'
+  from_record: us.part2.2_13.a.use_disclosure_prohibition
+  note: null
+- statement: Where the Government is the requester and the records are financial, the Right to Financial
+    Privacy Act supplies a procedure with customer notice and a chance to challenge before production.
+  from_record: us.rfpa.3402.access_prohibition
+  note: null
+- statement: A provider of electronic communication service to the public may not divulge contents voluntarily,
+    so civil process alone does not reach stored communications held by a third party.
+  from_record: us.sca.2702.a1.divulgence_prohibition
+  note: null
+common_errors:
+- Treating a subpoena as authority to produce regulated data. Several regimes require more than process
+  — HIPAA requires stated conditions and part 2 requires consent.
+- Assuming a protective order cures a part 2 problem. The bar on uses in proceedings against the patient
+  is not a confidentiality question.
+open_questions: []

@@ -1,0 +1,47 @@
+{
+  "success" : true,
+  "message" : "Law document for location 1508 in GBS law.",
+  "responseType" : "law-doc-info-detail",
+  "result" : {
+    "lawId" : "GBS",
+    "lawName" : "General Business",
+    "locationId" : "1508",
+    "title" : "Remedies",
+    "docType" : "SECTION",
+    "publishedDates" : [ "2024-06-28", "2026-07-31" ],
+    "docLevelId" : "1508",
+    "activeDate" : "2026-07-31",
+    "text" : "  * § 1508. Remedies. 1. No earlier than one hundred eighty days after\\nthe effective date of this article, whenever it appears to the attorney\\ngeneral, either upon complaint or otherwise, that any person, within or\\noutside the state, has engaged in or is about to engage in any of the\\nacts or practices stated to be unlawful in this article, the attorney\\ngeneral may bring an action or special proceeding in the name and on\\nbehalf of the people of the state of New York to enjoin any violation of\\nthis article, to obtain restitution of any moneys or property obtained\\ndirectly or indirectly by any such violation, to obtain disgorgement of\\nany profits or gains obtained directly or indirectly by any such\\nviolation, including but not limited to the destruction of unlawfully\\nobtained data, to obtain damages caused directly or indirectly by any\\nsuch violation, to obtain civil penalties of up to five thousand dollars\\nper violation, and to obtain any such other and further relief as the\\ncourt may deem proper, including preliminary relief.\\n  2. The attorney general shall maintain a website to receive\\ncomplaints, information or referrals from members of the public\\nconcerning a covered operator's or social media platform's alleged\\ncompliance or non-compliance with the provisions of this article.\\n  * NB Effective January 25, 2027\\n",
+    "parentLocationIds" : [ "-CH20", "A45" ],
+    "parents" : [ {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "-CH20",
+      "title" : "General Business",
+      "docType" : "CHAPTER",
+      "publishedDates" : [ "2014-09-22", "2014-11-28", "2016-04-15", "2018-04-20", "2018-04-27", "2019-09-20", "2019-12-27", "2020-04-17", "2020-04-24", "2020-10-16", "2020-11-13", "2021-04-23", "2021-07-09", "2021-10-15", "2021-12-17", "2021-12-31", "2022-03-04", "2022-06-10", "2023-10-27", "2024-02-09", "2024-03-08", "2024-06-28", "2024-07-19", "2024-10-11", "2024-11-29", "2024-12-27", "2025-02-21", "2025-05-16", "2025-06-13", "2025-12-19", "2025-12-26", "2026-02-27", "2026-03-20", "2026-04-03", "2026-05-29" ],
+      "docLevelId" : "20",
+      "activeDate" : "2026-05-29"
+    }, {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "A45",
+      "title" : "Safe For Kids Act",
+      "docType" : "ARTICLE",
+      "publishedDates" : [ "2024-06-28", "2026-07-31" ],
+      "docLevelId" : "45",
+      "activeDate" : "2026-07-31"
+    } ],
+    "prevSibling" : {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "1507",
+      "title" : "Scope",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2024-06-28", "2026-07-31" ],
+      "docLevelId" : "1507",
+      "activeDate" : "2026-07-31"
+    },
+    "nextSibling" : null
+  }
+}

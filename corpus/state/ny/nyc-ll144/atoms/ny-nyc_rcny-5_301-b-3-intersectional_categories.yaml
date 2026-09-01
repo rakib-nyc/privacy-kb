@@ -1,0 +1,138 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: local
+regulator:
+  - nyc_dcwp
+sector:
+  - employment
+status: in_force
+effective_from: '2023-04-05'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: medium
+related: []
+id: ny.nyc_rcny.5_301.b.3.intersectional_categories
+source:
+  citation: 6 RCNY § 5-301(b)(3)
+  instrument_id: nyc.local_law_144
+  url: >-
+    urn:owner-supplied:nyc-dcwp-notice-of-adoption-aedt-2023-04-05.pdf
+  fetched: '2026-08-24'
+  raw_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  raw_sha256: 4ecc4463b29440f9b876b0b7319faf2d4c4710b8ad28db9cfa8ae15a123ece2c
+  text_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.txt
+  text_sha256: 21b43190233735cdab074166a3fc9cc2c26aa24c4b5a80596656cda690abee44
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  format: pdf_single_col
+  risk_tier: medium
+  render: null
+  structured_source_check:
+    checked:
+      - amlegal.com (403 to automated requests)
+      - rules.cityofnewyork.us (carries proposal notices)
+      - owner-supplied DCWP Notice of Adoption of Final Rule
+    result: no_structured_source_exists
+    note: >-
+      No structured source serves the Rules of the City of New York. This is the ADOPTED text — a
+      Notice of Adoption carries the final rule in clean form, unlike a proposal notice — so it is
+      the right document, in the wrong format.
+  segment_sha256: 406a42ed2bb392c6bc1931265db26a5d4363dac5deb14a082af4b8a293c8e9ae
+verbatim_span: >-
+  Ensure that the calculations required in paragraphs (1) and (2) of this subdivision separately
+  calculate the impact of the AEDT on:
+paragraph_path:
+  path:
+    - b
+    - '3'
+  anchor: 5-301
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from a pdftotext -layout rendering; indentation is NOT used as
+    evidence because the PDF resets its left margin per page. Resolves to exactly one leaf.
+subject:
+  domain: IV.A.2
+  lifecycle:
+    - III
+data_types:
+  - any
+federal_relationship: gap_fills
+applies_if:
+  all:
+    - entity.uses_automated_employment_decision_tool == true
+    - entity.nexus in ["US-NY-NYC"]
+applies_to_role: controller
+obligation_type: assess
+deadline: null
+exemptions: []
+summary: >-
+  The calculations must separately compute impact on sex categories, race/ethnicity categories, and
+  intersectional categories of sex, ethnicity and race.
+requirement_detail: >-
+  THE INTERSECTIONAL REQUIREMENT IS THE SUBSTANTIVE CORE OF THE AUDIT, and it is the requirement
+  most likely to be missed, because sex and race/ethnicity can each look clean while their
+  intersection does not. Paragraph (iii) requires the impact ratio for combinations — the rule's own
+  illustration compares Hispanic or Latino male candidates against Not Hispanic or Latino Black or
+  African American female candidates — so a tool passing both single-axis tests can still fail here.
+
+
+  THIS PROVISION HAD NO CITABLE PATH UNTIL 2026-08-20. The walker treated bare roman numerals as
+  prose and absorbed (i), (ii) and (iii) into this paragraph, so nothing in the corpus could cite
+  the intersectional requirement separately. It was recovered by the first nested-PDF extraction;
+  see meta/extractor-assumptions.yaml bare-roman-designators.
+common_errors:
+  - >-
+    Auditing sex and race/ethnicity only. Paragraph (iii) requires the intersection, and it is where
+    single-axis testing hides disparate impact.
+open_questions:
+  - >-
+    THE DOCUMENT STATES NO EFFECTIVE DATE. effective_from is taken from the PDF's own CreationDate
+    metadata (5 April 2023), which is evidence about the FILE rather than a statement in the rule.
+    New York City rules generally take effect after publication in the City Record, which this
+    corpus does not hold. Confirm the operative date against the City Record before relying on any
+    as-of query in 2023.
+  - >-
+    The worked EXAMPLE demonstrating these computations, and its three data tables, are NOT in the
+    corpus — they carry no designator and the tables do not survive linearisation. The rule states
+    the method here; the demonstration of it is absent. See meta/sources.yaml for the raw file.
+preemption:
+  posture: none
+  authority: 6 RCNY Subchapter T
+  note: >-
+    City rule implementing N.Y.C. Admin. Code § 20-870 et seq. No federal statute regulates
+    automated employment decision tools as such; Title VII reaches discriminatory OUTCOMES and says
+    nothing about auditing a tool in advance.
+enforcement:
+  enforcers:
+    - nyc_dcwp
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil penalties under N.Y.C. Admin. Code § 20-872, per violation and per day of continuing
+      violation.
+    range: null
+    note: >-
+      The penalty structure is in the Administrative Code, not this rule; see
+      nyc.ll144.20_872.b.daily_penalty.
+  statute_of_limitations: null
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Where an AEDT selects candidates for employment or employees being considered for promotion to
+      move forward in the hiring process or classifies them into groups, a bias audit must, at a
+      minimum:
+    citation: 6 RCNY § 5-301(b)
+    relation_note: null
+    path:
+      path:
+        - b
+      anchor: 5-301
+      derivation: reconstructed
+      confidence: high
+      evidence: ancestor designator from the same reconstruction

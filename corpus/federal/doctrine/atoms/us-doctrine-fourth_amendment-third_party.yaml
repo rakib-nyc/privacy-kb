@@ -1,0 +1,50 @@
+id: us.doctrine.fourth_amendment.third_party
+schema_version: 1
+record_type: doctrine
+source:
+  citation: Carpenter v. United States, 585 U.S. 296 (2018)
+  instrument_id: us.doctrine.fourth_amendment
+  url: https://www.supremecourt.gov/opinions/17pdf/16-402_h315.pdf
+  fetched: null
+  raw_file: null
+  raw_sha256: null
+  format: manual
+  risk_tier: high
+  render: null
+  structured_source_check:
+    checked:
+    - 'No structured source: Supreme Court opinions are not published in USLM or eCFR, and this record
+      deliberately quotes nothing.'
+    result: no_structured_source_exists
+    note: See verification_status.
+verification_status: unverified
+subject:
+  domain: III.A.1
+  lifecycle:
+  - I
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_from: '2018-06-22'
+effective_to: null
+confidence: medium
+common_errors:
+- Citing Carpenter as though it abolished the third-party doctrine. It declined to extend it to historical
+  cell-site location information and expressly reserved other applications.
+- Treating a statutory access route as constitutionally sufficient. RFPA and the SCA supply procedure;
+  the Fourth Amendment question is separate and can be stricter.
+open_questions:
+- UNVERIFIED under invariant I1 and therefore MUST NOT be surfaced in any output. Supreme Court opinions
+  have no structured source in this pipeline and this record quotes no text. It exists so the corpus can
+  say the constitutional question is separate from the statutory one — not so it can be cited.
+doctrine_statement: Information voluntarily conveyed to a third party has historically carried no reasonable
+  expectation of privacy, and Carpenter declined to extend that reasoning to historical cell-site location
+  records — holding their acquisition a Fourth Amendment search. The boundary between the two is unsettled
+  and is decided case by case.
+source_authority: U.S. Const. amend. IV; Carpenter v. United States, 585 U.S. 296 (2018); United States
+  v. Miller, 425 U.S. 435 (1976); Smith v. Maryland, 442 U.S. 735 (1979)
+constrains:
+- us.rfpa
+- us.ecpa_sca
+- us.dppa
+authority_tier: case_law

@@ -1,0 +1,218 @@
+{
+ "label": "NY PEN 250.00",
+ "url": "https://legislation.nysenate.gov/api/3/laws/PEN/250.00",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/pen-250-00/raw/ny-pen-250-00.json",
+ "raw_sha256": "4b3b7668a96af0d9e61bba015e2c8ea8e2c0cb30d5abab58650ec985d0107154",
+ "leaves": [
+  {
+   "path": [
+    "1"
+   ],
+   "anchor": "250.00",
+   "section": "250.00",
+   "confidence": "high",
+   "heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "text": "\"Wiretapping\" means the intentional overhearing or recording of a telephonic or telegraphic communication by a person other than a sender or receiver thereof, without the consent of either the sender or receiver, by means of any instrument, device or equipment. The normal operation of a telephone or telegraph corporation and the normal use of the services and facilities furnished by such corporation pursuant to its tariffs or necessary to protect the rights or property of said corporation shall not be deemed \"wiretapping.\"",
+   "context": [],
+   "section_heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "nb_note": null,
+   "active_date": "2014-09-22"
+  },
+  {
+   "path": [
+    "2"
+   ],
+   "anchor": "250.00",
+   "section": "250.00",
+   "confidence": "high",
+   "heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "text": "\"Mechanical overhearing of a conversation\" means the intentional overhearing or recording of a conversation or discussion, without the consent of at least one party thereto, by a person not present thereat, by means of any instrument, device or equipment.",
+   "context": [],
+   "section_heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "nb_note": null,
+   "active_date": "2014-09-22"
+  },
+  {
+   "path": [
+    "3"
+   ],
+   "anchor": "250.00",
+   "section": "250.00",
+   "confidence": "high",
+   "heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "text": "\"Telephonic communication\" means any aural transfer made in whole or in part through the use of facilities for the transmission of communications by the aid of wire, cable or other like connection between the point of origin and the point of reception (including the use of such connection in a switching station) furnished or operated by any person engaged in providing or operating such facilities for the transmission of communications and such term includes any electronic storage of such communications.",
+   "context": [],
+   "section_heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "nb_note": null,
+   "active_date": "2014-09-22"
+  },
+  {
+   "path": [
+    "4"
+   ],
+   "anchor": "250.00",
+   "section": "250.00",
+   "confidence": "high",
+   "heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "text": "\"Aural transfer\" means a transfer containing the human voice at any point between and including the point of origin and the point of reception.",
+   "context": [],
+   "section_heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "nb_note": null,
+   "active_date": "2014-09-22"
+  },
+  {
+   "path": [
+    "5"
+   ],
+   "anchor": "250.00",
+   "section": "250.00",
+   "confidence": "high",
+   "heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "text": "\"Electronic communication\" means any transfer of signs, signals, writing, images, sounds, data, or intelligence of any nature transmitted in whole or in part by a wire, radio, electromagnetic, photoelectronic or photo-optical system, but does not include:",
+   "context": [],
+   "section_heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "nb_note": null,
+   "active_date": "2014-09-22"
+  },
+  {
+   "path": [
+    "5",
+    "a"
+   ],
+   "anchor": "250.00",
+   "section": "250.00",
+   "confidence": "high",
+   "heading": "Eavesdropping; definitions of terms",
+   "text": "any telephonic or telegraphic communication; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Electronic communication\" means any transfer of signs, signals, writing, images, sounds, data, or intelligence of any nature transmitted in whole or in part by a wire, radio, electromagnetic, photoelectronic or photo-optical system, but does not include:",
+     "path": [
+      "5"
+     ],
+     "anchor": "250.00"
+    }
+   ],
+   "section_heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "nb_note": null,
+   "active_date": "2014-09-22"
+  },
+  {
+   "path": [
+    "5",
+    "b"
+   ],
+   "anchor": "250.00",
+   "section": "250.00",
+   "confidence": "high",
+   "heading": "Eavesdropping; definitions of terms",
+   "text": "any communication made through a tone only paging device; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Electronic communication\" means any transfer of signs, signals, writing, images, sounds, data, or intelligence of any nature transmitted in whole or in part by a wire, radio, electromagnetic, photoelectronic or photo-optical system, but does not include:",
+     "path": [
+      "5"
+     ],
+     "anchor": "250.00"
+    }
+   ],
+   "section_heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "nb_note": null,
+   "active_date": "2014-09-22"
+  },
+  {
+   "path": [
+    "5",
+    "c"
+   ],
+   "anchor": "250.00",
+   "section": "250.00",
+   "confidence": "high",
+   "heading": "Eavesdropping; definitions of terms",
+   "text": "any communication made through a tracking device consisting of an electronic or mechanical device which permits the tracking of the movement of a person or object; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Electronic communication\" means any transfer of signs, signals, writing, images, sounds, data, or intelligence of any nature transmitted in whole or in part by a wire, radio, electromagnetic, photoelectronic or photo-optical system, but does not include:",
+     "path": [
+      "5"
+     ],
+     "anchor": "250.00"
+    }
+   ],
+   "section_heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "nb_note": null,
+   "active_date": "2014-09-22"
+  },
+  {
+   "path": [
+    "5",
+    "d"
+   ],
+   "anchor": "250.00",
+   "section": "250.00",
+   "confidence": "high",
+   "heading": "Eavesdropping; definitions of terms",
+   "text": "any communication that is disseminated by the sender through a method of transmission that is configured so that such communication is readily accessible to the general public.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Electronic communication\" means any transfer of signs, signals, writing, images, sounds, data, or intelligence of any nature transmitted in whole or in part by a wire, radio, electromagnetic, photoelectronic or photo-optical system, but does not include:",
+     "path": [
+      "5"
+     ],
+     "anchor": "250.00"
+    }
+   ],
+   "section_heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "nb_note": null,
+   "active_date": "2014-09-22"
+  },
+  {
+   "path": [
+    "6"
+   ],
+   "anchor": "250.00",
+   "section": "250.00",
+   "confidence": "high",
+   "heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "text": "\"Intercepting or accessing of an electronic communication\" and \"intentionally intercepted or accessed\" mean the intentional acquiring, receiving, collecting, overhearing, or recording of an electronic communication, without the consent of the sender or intended receiver thereof, by means of any instrument, device or equipment, except when used by a telephone company in the ordinary course of its business or when necessary to protect the rights or property of such company.",
+   "context": [],
+   "section_heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "nb_note": null,
+   "active_date": "2014-09-22"
+  },
+  {
+   "path": [
+    "7"
+   ],
+   "anchor": "250.00",
+   "section": "250.00",
+   "confidence": "high",
+   "heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "text": "\"Electronic communication service\" means any service which provides to users thereof the ability to send or receive wire or electronic communications.",
+   "context": [],
+   "section_heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "nb_note": null,
+   "active_date": "2014-09-22"
+  },
+  {
+   "path": [
+    "8"
+   ],
+   "anchor": "250.00",
+   "section": "250.00",
+   "confidence": "high",
+   "heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "text": "\"Unlawfully\" means not specifically authorized pursuant to article seven hundred or seven hundred five of the criminal procedure law for the purposes of this section and sections 250.05, 250.10, 250.15, 250.20, 250.25, 250.30 and 250.35 of this article.",
+   "context": [],
+   "section_heading": "\u00a7 250.00 Eavesdropping; definitions of terms.\n  The following definitions are applicable to this article:",
+   "nb_note": null,
+   "active_date": "2014-09-22"
+  }
+ ]
+}

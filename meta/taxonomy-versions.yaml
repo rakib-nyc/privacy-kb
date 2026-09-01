@@ -1,0 +1,72 @@
+# Taxonomy versions in force for this corpus.
+# Populated by Phase 0, step 1. Do not edit by hand — re-run tools/fetch-source.mjs
+# against the certification pages and update deliberately, in its own commit.
+
+domain:
+  designation: legal-domain
+  title: "legal-domain taxonomy"
+  version: "2.6.1"
+  supersedes: "2.6"
+  approved_by: "legal-domain EDB"
+  approved_on: 2025-03-03
+  effective_date: 2025-09-01
+  source_url: null   # publisher document, not redistributed
+  linked_from: null
+  fetched: 2026-08-18
+  raw_file: meta/raw/legal-domain-taxonomy-v2.6.1.pdf
+  raw_sha256: "75d183abd7adef122c9f6f5e6dc71e5b120505b36e4d3f9f238634166ff186a2"
+  text_file: meta/raw/legal-domain-taxonomy-v2.6.1.txt
+  text_sha256: "b78ec54a027d51256e5ae528ca8abe5e3d0a7d68a3f155c6af2f39a6ea14a11c"
+  pages: 13
+  # The taxonomy PDF and the question weighting are ONE document for legal-domain. The MIN/MAX
+  # question counts are printed in the left margin of each domain and competency
+  # row. There is no separate blueprint PDF linked from the certification page.
+  blueprint_separate_document: false
+  maps_to: meta/coverage.yaml
+
+lifecycle:
+  designation: lifecycle
+  title: "lifecycle taxonomy"
+  version: "4.2.0"
+  supersedes: "4.1.0"
+  approved_by: "lifecycle EDB"
+  approved_on: 2025-01-16
+  effective_date: 2025-09-01
+  source_url: null   # publisher document, not redistributed
+  linked_from: null
+  fetched: 2026-08-18
+  raw_file: meta/raw/lifecycle-taxonomy-v4.2.0.pdf
+  raw_sha256: "41d6edba5460d33102acb5b296574ac7d58889de0bd1b90f9a2514ab5d621ec8"
+  text_file: meta/raw/lifecycle-taxonomy-v4.2.0.txt
+  text_sha256: "5c1a35426dc893ae4fe02a97e6c4788e7b0e1ed65ca3a8fa73bfae7c9d510919"
+  pages: 10
+  blueprint_separate_document: false   # filename "the publisher PDF" — taxonomy + question weighting combined
+  maps_to: meta/workflows.yaml
+
+# ---------------------------------------------------------------------------
+# COORDINATE SCHEME — read this before assigning any atom a taxonomy coordinate.
+#
+# the source taxonomy v2.6.1 / v4.2.0 do NOT use the nested outline format (e.g. "II.C.h",
+# "I.A.d.vii") that BRIEF.md and CORPUS-MANIFEST.md assume. Per the legal-domain taxonomy
+# page 2: "Instead of the former outline format we used for our bodies of
+# knowledge, we now represent the taxonomy content as a series of competencies and
+# performance indicators."
+#
+# the source taxonomy numbers COMPETENCIES only (I.A, I.B, II.C ...). Performance indicators are
+# unnumbered bullets beneath each competency.
+#
+# This repo therefore uses:   <DOMAIN>.<COMPETENCY>.<PI-ORDINAL>     e.g. II.C.4
+#
+#   - "II.C"  is the source taxonomy’s own competency code. Authoritative.
+#   - ".4"    is OUR ordinal, assigned by the PI's order of appearance in the
+#             PDF. NOT authoritative. It is stable only against this taxonomy version.
+#
+# On any taxonomy version bump, PI ordinals MUST be re-derived and every atom's
+# subject.domain coordinate re-validated. tools/validate.mjs gate 6 checks presence,
+# not semantic stability — that check is human.
+# ---------------------------------------------------------------------------
+coordinate_scheme:
+  format: "<DOMAIN>.<COMPETENCY>.<PI_ORDINAL>"
+  competency_code_authoritative: true
+  pi_ordinal_authoritative: false
+  pi_ordinal_stable_for_version_only: true

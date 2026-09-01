@@ -1,0 +1,53 @@
+# OUT OF SCOPE
+# ===========
+# BRIEF.md §2: every taxonomy leaf either maps to atoms or appears here with a stated
+# reason. This file also carries INSTRUMENTS deliberately excluded, so that a gap
+# is a decision on the record rather than an omission nobody noticed.
+#
+# Every entry needs a re_entry_trigger. "Out of scope" is a judgement about this
+# product at this version, not a claim that the material is unimportant.
+
+instruments:
+  - id: us.dhs.ppgm_2008_01
+    title: "DHS Privacy Policy Guidance Memorandum 2008-01 — The Fair Information Practice Principles"
+    decided: 2026-08-19
+    decision: out_of_scope_v1
+    reason: >-
+      It is a federal agency's internal privacy policy, issued by the DHS Chief Privacy
+      Officer under the Homeland Security Act and binding on DHS components. This product
+      is private-sector US privacy law with a New York layer (BRIEF.md §1, §8). PPGM
+      2008-01 imposes no obligation on any private-sector entity and displaces none.
+    dependency_check: >-
+      Verified by search: no item in CORPUS-MANIFEST.md cites it. The only reference
+      anywhere in the repo is the note recording that it was blocked. Nothing downstream
+      breaks by excluding it.
+    what_is_lost: >-
+      The eight-principle federal FIPPs formulation (Transparency, Individual
+      Participation, Purpose Specification, Data Minimization, Use Limitation, Data
+      Quality and Integrity, Security, Accountability). The corpus already carries four
+      FIPPs framework families — the 1973 Code, OECD, APEC and Global CBPR — none of
+      which binds a private-sector entity either. A fifth non-binding formulation that is
+      additionally inapplicable to the customer would be coverage without value.
+    re_entry_trigger: >-
+      EntityFacts carries `government_contractor: boolean`. If the engine is ever asked
+      what applies to a DHS contractor, DHS privacy requirements reach that entity
+      through its contract, and this becomes in scope as a contractual-flow-down
+      question. That is a real hook, not a hypothetical — but it is a Priority 4/5
+      workplace-and-government question, not a Priority 0 principles question.
+    was_blocked: true
+    see: meta/manual-acquisition-queue.md
+
+  - id: us.dhs.ppgm_2017_01
+    title: "DHS Privacy Policy Guidance Memorandum 2017-01"
+    decided: 2026-08-19
+    decision: out_of_scope_v1
+    reason: >-
+      Same reasoning. It was sought only because it may amend or supersede PPGM 2008-01;
+      with 2008-01 out of scope that question no longer needs answering.
+    dependency_check: "No manifest item cites it."
+    re_entry_trigger: "Same as PPGM 2008-01."
+    was_blocked: true
+
+bok_leaves: []
+# No taxonomy leaf has yet been declared out of scope. Every one of the 69 legal-domain
+# performance indicators remains a coverage obligation.

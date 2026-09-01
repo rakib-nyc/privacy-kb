@@ -1,0 +1,100 @@
+id: us.authority.ftc.unfairness_test
+schema_version: 1
+record_type: authority
+source:
+  citation: 15 U.S.C. § 45(n)
+  instrument_id: us.usc.t15
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/authorities/raw/15-u-s-c-45.xml
+  raw_sha256: d29a4cc1ef8b8b6e297d95e258214598047635c113920ef95407e76c2c6b7df8
+  text_file: corpus/federal/authorities/raw/15-u-s-c-45.txt
+  text_sha256: 4a5fdadfe59afce881b810666145730d387792e38a40f6a42454e9aaff5e8df4
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/authorities/raw/15-u-s-c-45.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: Title 15. Positive-law status from the title's own <property role="is-positive-law"> element.
+  segment_sha256: 625e8580044f949f7ca891670292eebf04f051219cbaa2cc6bcb22a814bccf45
+verbatim_span: >-
+  The Commission shall have no authority under this section or section 57a of this title to declare
+  unlawful an act or practice on the grounds that such act or practice is unfair unless the act or
+  practice causes or is likely to cause substantial injury to consumers which is not reasonably
+  avoidable by consumers themselves and not outweighed by countervailing benefits to consumers or to
+  competition. In determining whether an act or practice is unfair, the Commission may consider
+  established public policies as evidence to be considered with all other evidence. Such public
+  policy considerations may not serve as a primary basis for such determination.
+verification_status: verbatim_confirmed
+subject:
+  domain: I.B.1
+  lifecycle:
+    - I
+paragraph_path:
+  path:
+    - 'n'
+  anchor: /us/usc/t15/s45/n
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element
+jurisdiction: US-FED
+jurisdiction_level: federal
+status: in_force
+effective_from: null
+effective_to: null
+amendment_history: []
+summary: >-
+  The three-part unfairness test: substantial injury to consumers, not reasonably avoidable by
+  consumers themselves, and not outweighed by countervailing benefits to consumers or to
+  competition. Public policy may be considered as evidence but may not be the primary basis.
+authority:
+  id: us.authority.ftc.unfairness
+  name: FTC unfairness authority — statutory test
+  short_name: FTC § 45(n)
+  kind: federal_agency
+  statutory_source:
+    - 15 U.S.C. § 45(n)
+  jurisdiction: US-FED
+  sector_reach:
+    - all commerce within § 45(a)(2)
+  enforcement_powers:
+    - constrains every unfairness theory the FTC may assert under § 5 or § 57a
+  rulemaking_authority:
+    has: false
+    basis: null
+    procedure: null
+    note: Not a grant of rulemaking power — a limit on the substantive theory.
+  penalty_authority: null
+  private_right_of_action:
+    exists: false
+    basis: null
+    note: Same as § 5 generally.
+    drives_litigation_risk: false
+  own_enforcement_power: true
+  operates_through: null
+derived_obligations: []
+differs_from: []
+related: []
+source_defects: []
+common_errors:
+  - >-
+    Treating unfairness as an open-ended standard. § 45(n) makes it a three-part test and each
+    element is a real limit.
+  - >-
+    Leading with public policy. The statute says public policy considerations 'may not serve as a
+    primary basis' for an unfairness determination.
+  - >-
+    Conflating unfairness with deception. Deception is a separate theory, developed through the
+    Commission's Deception Policy Statement and its orders rather than defined in the statute.
+open_questions:
+  - >-
+    DECEPTION HAS NO STATUTORY TEST. § 45(a)(1) declares deceptive acts unlawful but nowhere defines
+    deception; the operative standard is the Commission's own policy statement and its enforcement
+    record. That is an authority_tier: agency_guidance and enforcement_action question, not a
+    statute question, and it is why the deception standard cannot be extracted as a statutory atom.
+    Flagged for the Priority 1 II.A session.
+confidence: high
+context_not_required: 'No ancestor contributes governing text: this element''s operative meaning is complete on its own.'

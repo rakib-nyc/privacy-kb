@@ -1,0 +1,120 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+- ftc
+- cfpb
+sector:
+- financial
+data_types:
+- consumer_report
+status: in_force
+effective_from: '1971-04-25'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+exemptions: []
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 1681t
+  note: FCRA preempts by ENUMERATED SUBJECT rather than across the board. § 1681t(a) is a savings clause
+    preserving state law except where inconsistent; § 1681t(b) then carves out specific subjects — including
+    the contents of consumer reports and furnisher duties — where no state requirement may be imposed
+    at all. Whether a state law survives is a subject-by-subject question, never an instrument-level one.
+enforcement:
+  enforcers:
+  - ftc
+  - cfpb
+  - state_ag
+  private_right_of_action: true
+  penalty:
+    structure: 'Willful noncompliance under § 1681n: actual damages or statutory damages of $100 to $1,000,
+      punitive damages, costs and attorney''s fees. Negligent noncompliance under § 1681o: actual damages,
+      costs and fees.'
+    range:
+      min: 100
+      unit: usd_statutory_per_violation
+    note: 'FCRA is one of the few federal privacy statutes with a real private right of action, which
+      is why it generates far more litigation than GLBA or HIPAA. THE PRIVATE RIGHT IS ROLE-DEPENDENT:
+      see the furnisher atoms, where § 1681s-2(c) removes private enforcement of subsection (a) entirely
+      while leaving subsection (b) privately enforceable.'
+  statute_of_limitations: '§ 1681p: the earlier of two years after the plaintiff discovers the violation
+    or five years after it occurs.'
+id: us.test.gate7_notify_no_reason
+source:
+  citation: 15 U.S.C. § 1681m(a)(1)
+  instrument_id: us.fcra.preemption
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681m.xml
+  raw_sha256: 418f0596437cd54fa4856037dc7319981a3bcebc032fca3749e4ec6cac9041c8
+  text_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681m.txt
+  text_sha256: b5c94b26dfad36c9e9fab13bc77281b72f6a8b7b18d94df65fdac1e99f43ca2f
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681m.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: provide oral, written, or electronic notice of the adverse action to the consumer;
+paragraph_path:
+  path:
+  - a
+  - '1'
+  anchor: /us/usc/t15/s1681m/a/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+- position: precedes
+  relation: conditions
+  verbatim_span: If any person takes any adverse action with respect to any consumer that is based in
+    whole or in part on any information contained in a consumer report, the person shall—
+  citation: 15 U.S.C. § 1681m(a)
+  path:
+    path: []
+    anchor: /us/usc/t15/s1681m/a
+    derivation: structural
+    confidence: high
+    evidence: USLM ancestor chapeau; identifier read from the source
+subject:
+  domain: II.C.2
+  lifecycle:
+  - VI
+applies_to_role: controller
+applies_if:
+  all:
+  - entity.uses_consumer_reports == true
+  - event.type == "adverse_action_taken"
+obligation_type: notify
+deadline: null
+summary: A person who takes adverse action against a consumer based in whole or in part on a consumer
+  report must give the consumer notice of the adverse action.
+requirement_detail: 'THE DUTY THAT BINDS THE USER, not the agency, and it is the FCRA obligation most
+  often missed by entities that do not think of themselves as being in the credit business. The trigger
+  is broad on both sides: "any adverse action" and "based in whole OR IN PART" on a consumer report —
+  a report that contributed to a decision triggers it even if other factors dominated. Employers, landlords
+  and insurers are all users, and the employment path additionally requires the pre-adverse-action disclosure
+  under § 1681b(b)(3), which this atom does not carry.'
+common_errors:
+- Reading "based on" as "solely based on". The statute says in whole OR IN PART, so a report that contributed
+  at all triggers the notice.
+- Assuming only lenders are users. Employers, landlords and insurers take adverse actions on consumer
+  reports routinely and owe this notice.
+- Confusing this with the CRA-side duties. § 1681m binds the USER of the report; §§ 1681e and 1681i bind
+  the agency.
+open_questions:
+- § 1681b(b)(3) imposes an additional PRE-adverse-action disclosure in the employment context. It is not
+  extracted, so an employment-screening analysis built on this atom alone is incomplete — the instrument-coverage
+  report names permissible_purposes as present, which does not imply the employment sub-procedure within
+  it is.

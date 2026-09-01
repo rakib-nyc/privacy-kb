@@ -1,0 +1,125 @@
+id: us.sca.2703.d.court_order_standard
+schema_version: 1
+record_type: obligation
+source:
+  citation: 18 U.S.C. § 2703(d)
+  instrument_id: us.ecpa_sca
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2703.xml
+  raw_sha256: 063a2a456b9871a736c0af5cc30ec5d5a2d262753c91cffa17d0fdeee53cd88b
+  text_file: corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2703.txt
+  text_sha256: f9265249e37309b17d69798fc8e2e177328b8508de0fb0eee4ab6b58c46bcaf8
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2703.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: ce43d7865fb805fa29f222f6b4b84c97196b6ffc1b85280120436c85efb61897
+verbatim_span: >-
+  A court order for disclosure under subsection (b) or (c) may be issued by any court that is a
+  court of competent jurisdiction and shall issue only if the governmental entity offers specific
+  and articulable facts showing that there are reasonable grounds to believe that the contents of a
+  wire or electronic communication, or the records or other information sought, are relevant and
+  material to an ongoing criminal investigation. In the case of a State governmental authority, such
+  a court order shall not issue if prohibited by the law of such State. A court issuing an order
+  pursuant to this section, on a motion made promptly by the service provider, may quash or modify
+  such order, if the information or records requested are unusually voluminous in nature or
+  compliance with such order otherwise would cause an undue burden on such provider.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - d
+  anchor: /us/usc/t18/s2703/d
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: >-
+  Subsection (d) is a free-standing rule stating the issuing standard, the state-law limit and the
+  motion to quash in three sentences; nothing above it in § 2703 conditions its terms.
+subject:
+  domain: III.A.2
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - doj
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '1986-10-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - event.government_compels_disclosure == true
+applies_to_role: processor
+obligation_type: disclose
+summary: >-
+  A § 2703(d) order issues only if the governmental entity offers specific and articulable facts
+  showing reasonable grounds to believe the contents or records sought are relevant and material to
+  an ongoing criminal investigation; it may not issue to a state authority where state law prohibits
+  it, and the provider may move to quash or modify for undue burden.
+requirement_detail: >-
+  THE MIDDLE TIER OF PROCESS, above a subpoena and below a warrant, and the only point in § 2703
+  where a judge makes a substantive finding before non-content records move. The standard — SPECIFIC
+  AND ARTICULABLE FACTS showing reasonable grounds to believe the material is RELEVANT AND MATERIAL
+  to an ONGOING CRIMINAL INVESTIGATION — is deliberately below probable cause and is not a warrant
+  standard, however often a d-order is loosely described as one. Two features matter operationally.
+  The provider has an express right to move promptly to quash or modify where the request is
+  unusually voluminous or compliance would otherwise be an undue burden, which is the statutory hook
+  for the pushback large providers routinely make. And a state authority's order cannot issue if the
+  law of that state prohibits it, so state process rules bite as a stricter overlay rather than
+  being displaced. Since Carpenter the d-order is no longer a safe default for location data, and
+  the choice between a d-order and a warrant has become a constitutional question rather than a
+  purely statutory one.
+deadline: null
+exemptions: []
+related:
+  - us.sca.2703.a.contents_warrant
+  - us.sca.2703.c1.subscriber_records
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Describing it as a probable-cause or warrant standard. It requires specific and articulable
+    facts and relevance and materiality to an ongoing criminal investigation, which is a lower
+    threshold.
+  - >-
+    Treating a d-order as unchallengeable. The subsection gives the provider a motion to quash or
+    modify on volume or undue-burden grounds.
+  - >-
+    Overlooking the state-law limit. An order sought by a state governmental authority shall not
+    issue if the law of that state prohibits it, so the federal standard is a floor and not the
+    operative test everywhere.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2703(d)
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis; no express ceiling clause was
+    found in the section extracted. State stored-communications and eavesdropping statutes, and
+    state process rules, operate alongside chapter 121 and may be stricter — § 2703(d) expressly
+    refuses an order to a state authority where state law prohibits it.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

@@ -1,0 +1,56 @@
+{
+  "success" : true,
+  "message" : "Law document for location 52-C in CVR law.",
+  "responseType" : "law-doc-info-detail",
+  "result" : {
+    "lawId" : "CVR",
+    "lawName" : "Civil Rights",
+    "locationId" : "52-C",
+    "title" : "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+    "docType" : "SECTION",
+    "publishedDates" : [ "2020-12-04", "2021-06-04", "2021-11-12", "2024-05-03" ],
+    "docLevelId" : "52-C",
+    "activeDate" : "2024-05-03",
+    "text" : "  * § 52-c. Private right of action for unlawful dissemination or\\npublication of a sexually explicit depiction of an individual. 1. For\\nthe purposes of this section:\\n  a. \"depicted individual\" means an individual who appears, as a result\\nof digitization, to be giving a performance they did not actually\\nperform or to be performing in a performance that was actually performed\\nby the depicted individual but was subsequently altered to be in\\nviolation of this section.\\n  b. \"digitization\" means to realistically depict the nude body parts of\\nanother human being as the nude body parts of the depicted individual,\\ncomputer-generated nude body parts as the nude body parts of the\\ndepicted individual or the depicted individual engaging in sexual\\nconduct, as defined in subdivision ten of section 130.00 of the penal\\nlaw, in which the depicted individual did not engage. \"Digitization\" may\\nalso mean the use of software, machine learning, artificial\\nintelligence, or any other computer-generated or technological means,\\nincluding adapting, modifying, manipulating, or altering a realistic\\ndepiction.\\n  c. \"individual\" means a natural person.\\n  d. \"person\" means a human being or legal entity.\\n  e. \"sexually explicit material\" means any portion of an audio visual\\nwork that shows the depicted individual:\\n  i. performing in the nude, meaning with an unclothed or exposed\\nintimate part, as defined in section 245.15 of the penal law;\\n  ii. appearing to engage in, or being subjected to, sexual conduct, as\\ndefined in subdivision ten of section 130.00 of the penal law; or\\n  iii. posed in a manner intended to elicit sexual arousal or\\ngratification and where a person would have a reasonable expectation of\\nprivacy.\\n  2. a. A depicted individual shall have a cause of action against a\\nperson who, discloses, disseminates or publishes sexually explicit\\nmaterial related to the depicted individual, and the person knows or\\nreasonably should have known the depicted individual in that material\\ndid not consent to its creation, disclosure, dissemination, or\\npublication.\\n  b. It shall not be a defense to an action under this section that\\nthere is a disclaimer in the sexually explicit material that\\ncommunicates that the inclusion of the depicted individual in the\\nsexually explicit material was unauthorized or that the depicted\\nindividual did not participate in the creation or development of the\\nmaterial.\\n  3. a. A depicted individual may only consent to the creation,\\ndisclosure, dissemination, or publication of sexually explicit material\\nby knowingly and voluntarily signing an agreement written in plain\\nlanguage that includes a general description of the sexually explicit\\nmaterial and the audiovisual work in which it will be incorporated.\\n  b. A depicted individual may rescind consent by delivering written\\nnotice within three business days from the date consent was given to the\\nperson in whose favor consent was made, unless one of the following\\nrequirements is satisfied:\\n  i. the depicted individual is given at least three business days to\\nreview the terms of the agreement before signing it; or\\n  ii. if the depicted individual is represented, the attorney, talent\\nagent, or personal manager authorized to represent the depicted\\nindividual provides additional written approval of the signed agreement.\\n  4. a. A person is not liable under this section if:\\n  i. the person discloses, disseminates or publishes the sexually\\nexplicit material in the course of reporting unlawful activity,\\nexercising the person's law enforcement duties, or hearings, trials or\\nother legal proceedings; or\\n  ii. the sexually explicit material is a matter of legitimate public\\nconcern, a work of political or newsworthy value or similar work, or\\ncommentary, criticism or disclosure that is otherwise protected by the\\nconstitution of this state or the United States; provided that sexually\\nexplicit material shall not be considered of newsworthy value solely\\nbecause the depicted individual is a public figure.\\n  5. In any action commenced pursuant to this section, the finder of\\nfact, in its discretion, may award injunctive relief, punitive damages,\\ncompensatory damages, and reasonable court costs and attorney's fees.\\n  6. A cause of action or special proceeding under this section shall be\\ncommenced the later of either:\\n  a. three years after the dissemination or publication of sexually\\nexplicit material; or\\n  b. one year from the date a person discovers, or reasonably should\\nhave discovered, the dissemination or publication of such sexually\\nexplicit material.\\n  7. Nothing in this section shall be read to require a prior criminal\\ncomplaint, prosecution or conviction to establish the elements of the\\ncause of action provided for in this section.\\n  8. The provisions of this section including the remedies are in\\naddition to, and shall not supersede, any other rights or remedies\\navailable in law or equity.\\n  9. If any provision of this section or its application to any person\\nor circumstance is held invalid, the invalidity shall not affect other\\nprovisions or applications of this section which can be given effect\\nwithout the invalid provision or application, and to this end the\\nprovisions of this section are severable.\\n  10. Nothing in this section shall be construed to limit, or to\\nenlarge, the protections that 47 U.S.C. § 230 confers on an interactive\\ncomputer service for content provided by another information content\\nprovider, as such terms are defined in 47 U.S.C. § 230.\\n  * NB There are 2 § 52-c's\\n",
+    "parentLocationIds" : [ "-CH6", "A5" ],
+    "parents" : [ {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "-CH6",
+      "title" : "Civil Rights",
+      "docType" : "CHAPTER",
+      "publishedDates" : [ "2014-09-22", "2017-08-25", "2019-07-26", "2019-09-20", "2020-06-19", "2020-12-04", "2021-07-02", "2022-04-22", "2023-01-06", "2026-05-29" ],
+      "docLevelId" : "6",
+      "activeDate" : "2026-05-29"
+    }, {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "A5",
+      "title" : "Right of Privacy",
+      "docType" : "ARTICLE",
+      "publishedDates" : [ "2014-09-22", "2017-08-25", "2019-07-26", "2020-06-19", "2020-12-04", "2021-11-12", "2023-01-06", "2023-11-17" ],
+      "docLevelId" : "5",
+      "activeDate" : "2023-11-17"
+    } ],
+    "prevSibling" : {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "52-B",
+      "title" : "Private right of action for unlawful dissemination or publication of an intimate image",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2019-07-26", "2019-09-27", "2024-05-03" ],
+      "docLevelId" : "52-B",
+      "activeDate" : "2024-05-03"
+    },
+    "nextSibling" : {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "52-C*2",
+      "title" : "Employers engaged in electronic monitoring; prior notice required",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2021-11-12", "2022-05-13" ],
+      "docLevelId" : "52-C*2",
+      "activeDate" : "2022-05-13"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+id: us.workflow.ma_diligence
+schema_version: 1
+record_type: workflow_constraint
+source:
+  citation: Composed record — no single governing instrument
+  instrument_id: us.workflow
+  url: null
+  fetched: null
+  raw_file: null
+  raw_sha256: null
+  format: manual
+  risk_tier: high
+  render: null
+  structured_source_check:
+    checked:
+    - Composed from records already in this corpus; quotes nothing of its own.
+    result: not_applicable
+    note: 'risk_tier is high because format is manual, and the format/risk mapping is enforced. That is
+      the right answer even though this record quotes nothing: it means a composed record is treated as
+      the least-trusted kind of source, which is appropriate for something assembled by judgement rather
+      than fetched.'
+verification_status: verbatim_confirmed
+subject:
+  domain: I.C.8
+  lifecycle:
+  - I
+  - III
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_from: '2026-08-20'
+effective_to: null
+confidence: high
+scenario: Merger, acquisition or divestiture where personal data transfers with the business. No single
+  statute governs it; the constraint is assembled from the notice commitments the target made, the sectoral
+  regimes it sits in, and the transfer permissions each of those grants.
+constraints:
+- statement: GLBA permits disclosure of nonpublic personal information in connection with a proposed or
+    actual sale, merger, transfer or exchange of a business unit ONLY where the information concerns solely
+    consumers of that unit — so a buyer acquiring one division does not thereby acquire the seller's wider
+    customer data.
+  from_record: us.cfr.16.313.10.a1.disclosure_limit
+  note: The permission is § 313.15(a)(6); this atom carries the prohibition it excepts.
+- statement: HIPAA has no merger exception. A covered entity transferring PHI in a transaction relies
+    on the health care operations permission or on a business associate relationship, and neither survives
+    the target ceasing to be a covered entity.
+  from_record: us.cfr.45.164_506.c_1
+  note: null
+- statement: 'The target''s own published privacy notice binds the buyer in practice: a material departure
+    from what the target promised is deception under FTC Act § 5, and the promise does not lapse on closing.'
+  from_record: us.usc.15.45.a1.public_commitment_deception
+  note: null
+- statement: Where the target holds New York residents' private information the safeguards duty is continuous
+    and transfers with the data — there is no diligence-period suspension.
+  from_record: ny.gbl.899_bb.2.reasonable_safeguards
+  note: null
+common_errors:
+- Treating a data room as outside the regimes. Diligence disclosure IS disclosure, and the GLBA merger
+  exception is limited to consumers of the unit being sold.
+- Assuming the target's privacy notice dies at closing. § 5 exposure runs to the acquirer.
+open_questions: []

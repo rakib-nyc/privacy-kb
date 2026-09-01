@@ -1,0 +1,173 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+related: []
+federal_relationship: null
+interpreted_by: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 45 C.F.R. § 160.203
+  note: >-
+    HIPAA is a FLOOR, not a ceiling. A contrary State law that is MORE STRINGENT than the Privacy
+    Rule is not preempted, so state duties run in parallel and the shorter clock governs in
+    practice. Treating HIPAA compliance as discharging state obligations is the standard error.
+enforcement:
+  enforcers:
+    - hhs_ocr
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil money penalties under 42 U.S.C. § 1320d-5, tiered by culpability. Criminal liability for
+      knowing wrongful disclosure under 42 U.S.C. § 1320d-6.
+    range: null
+    note: >-
+      No private right of action under HIPAA. Plaintiffs reach the same conduct through state
+      negligence and UDAP theories, which is why the state backstop never switches off.
+  statute_of_limitations: null
+id: us.cfr.45.164.502.a.use_disclosure_general
+source:
+  citation: 45 C.F.R. § 164.502(a)
+  instrument_id: us.cfr.45.164
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-45 XML, part 164, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: e74bed8d63c66be9efbe466085cd2504b0006029d05427e53201478737839508
+verbatim_span: >-
+  A covered entity or business associate may not use or disclose protected health information,
+  except as permitted or required by this subpart or by subpart C of part 160 of this subchapter.
+paragraph_path:
+  path:
+    - a
+  anchor: '164.502'
+  derivation: reconstructed
+  confidence: high
+  evidence: designators reconstructed from flat <P> siblings; resolves to exactly one leaf (gate 23)
+context_not_required: >-
+  The paragraph is a complete prohibition with its own exception clause. No ancestor contributes
+  governing text.
+subject:
+  domain: II.B.1
+  lifecycle:
+    - I
+applies_if:
+  all:
+    - entity.is_hipaa_covered_entity == true
+    - data.is_phi == true
+obligation_type: prohibit
+summary: >-
+  A covered entity or business associate may not use or disclose protected health information except
+  as permitted or required by the Privacy Rule or by the enforcement subpart.
+requirement_detail: >-
+  THE DEFAULT IS PROHIBITION. Everything a covered entity does with PHI must be traced to an
+  affirmative permission in subpart E or a required disclosure under § 164.502(a)(2). The whole
+  analysis therefore turns on two independent questions that are constantly conflated — is this a
+  COVERED ENTITY, and is this PHI — and a "no" to either is not the same answer. A covered entity
+  holding non-PHI is unregulated by this Rule while remaining fully covered for everything else it
+  holds.
+exemptions:
+  - id: cfr.45.160.103.phi.employment_records
+    type: data_level
+    scope: >-
+      Individually identifiable health information in EMPLOYMENT RECORDS held by the covered entity
+      in its role as employer is not protected health information. CONSEQUENCE TEST: the hospital
+      remains a covered entity in full. The same nurse's chart, held because she is a patient, is
+      PHI; her pre-employment physical and her FMLA paperwork, held because she is an employee, are
+      not — same entity, same person, same clinical facts, different capacity. THIS IS THE CANONICAL
+      entity-level/data-level divider, and the error it invites is symmetrical: reading it as
+      entity_level would exempt the hospital from HIPAA outright, and ignoring it treats every HR
+      file in a health system as PHI. Note also what it does NOT do — the records are unprotected by
+      HIPAA, not unregulated: the ADA, GINA and state law reach them, and HIPAA saying nothing is
+      not the same as permission.
+    source_citation: 45 C.F.R. § 160.103 (definition of "protected health information") (2)(iii)
+    verbatim_span: In employment records held by a covered entity in its role as employer; and
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - data.in_employment_record == true
+        - entity.holds_as_employer == true
+    source_ref:
+      raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+      raw_sha256: 9916d549267c2f3f629b2157d6e0887b73570f9eddace67b626c40f51a6c9c72
+      instrument_id: us.cfr.45.160
+  - id: cfr.45.160.103.phi.ferpa_education_records
+    type: data_level
+    scope: >-
+      Health information in education records covered by FERPA is not PHI. CONSEQUENCE TEST: a
+      university health plan stays a covered entity for its plan records while the same student's
+      treatment records held by the student health service as education records fall outside HIPAA
+      and inside FERPA. The carve-out routes the data to a DIFFERENT regime rather than out of
+      regulation, which is why an analysis that stops at "not PHI" answers the wrong question.
+    source_citation: 45 C.F.R. § 160.103 (definition of "protected health information") (2)(i)
+    verbatim_span: >-
+      In education records covered by the Family Educational Rights and Privacy Act, as amended, 20
+      U.S.C. 1232g;
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - data.is_ferpa_education_record == true
+    source_ref:
+      raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+      raw_sha256: 9916d549267c2f3f629b2157d6e0887b73570f9eddace67b626c40f51a6c9c72
+      instrument_id: us.cfr.45.160
+  - id: cfr.45.160.103.phi.deceased_over_50_years
+    type: data_level
+    scope: >-
+      Information regarding a person deceased more than 50 years is not PHI. CONSEQUENCE TEST: the
+      covered entity stays covered and every other record stays protected; only that decedent's
+      information leaves. Typed data_level and NOT temporal even though a clock decides it: temporal
+      relief in this schema means the instrument does not reach the entity as of the queried date,
+      and here the instrument reaches the entity fully — a single archive can hold records on both
+      sides of the 50-year line at the same instant.
+    source_citation: 45 C.F.R. § 160.103 (definition of "protected health information") (2)(iv)
+    verbatim_span: Regarding a person who has been deceased for more than 50 years.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - data.subject_deceased_more_than_50_years == true
+    source_ref:
+      raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+      raw_sha256: 9916d549267c2f3f629b2157d6e0887b73570f9eddace67b626c40f51a6c9c72
+      instrument_id: us.cfr.45.160
+common_errors:
+  - >-
+    Treating "not PHI" as "not regulated". The PHI exclusions route data to FERPA, the ADA, GINA,
+    state law or the FTC Act; none of them leave it unregulated.
+  - >-
+    Reading an exclusion from the PHI definition as an exemption for the entity. The hospital does
+    not stop being a covered entity because it also holds employment records.
+  - >-
+    Assuming HIPAA preempts state health-privacy law. § 160.203 preserves more stringent State law,
+    so state duties run in parallel.
+open_questions: []

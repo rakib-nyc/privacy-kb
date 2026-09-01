@@ -1,0 +1,549 @@
+{
+ "label": "42 U.S.C. \u00a7 1320d-5",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/authorities/raw/42-u-s-c-1320d-5.xml",
+ "raw_sha256": "c274a010be4669bfb71f440a0fbad5a81df1b6f753acf61a4b978b3fc5ff552b",
+ "leaves": [
+  {
+   "path": [
+    "a",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/a/1/A",
+   "heading": "",
+   "text": "in the case of a violation of such provision in which it is established that the person did not know (and by exercising reasonable diligence would not have known) that such person violated such provision, a penalty for each such violation of an amount that is at least the amount described in paragraph (3)(A) but not to exceed the amount described in paragraph (3)(D);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsection (b), the Secretary shall impose on any person who violates a provision of this part\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/a/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/a/1/B",
+   "heading": "",
+   "text": "in the case of a violation of such provision in which it is established that the violation was due to reasonable cause and not to willful neglect, a penalty for each such violation of an amount that is at least the amount described in paragraph (3)(B) but not to exceed the amount described in paragraph (3)(D); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsection (b), the Secretary shall impose on any person who violates a provision of this part\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/a/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "C",
+    "i"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/a/1/C/i",
+   "heading": "",
+   "text": "if the violation is corrected as described in subsection (b)(3)(A), a penalty in an amount that is at least the amount described in paragraph (3)(C) but not to exceed the amount described in paragraph (3)(D); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsection (b), the Secretary shall impose on any person who violates a provision of this part\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/a/1"
+    },
+    {
+     "position": "precedes",
+     "text": "in the case of a violation of such provision in which it is established that the violation was due to willful neglect\u2014",
+     "path": [
+      "a",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/a/1/C"
+    },
+    {
+     "position": "follows",
+     "text": "In determining the amount of a penalty under this section for a violation, the Secretary shall base such determination on the nature and extent of the violation and the nature and extent of the harm resulting from such violation.",
+     "path": [
+      "a",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/a/1/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "C",
+    "ii"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/a/1/C/ii",
+   "heading": "",
+   "text": "if the violation is not corrected as described in such subsection, a penalty in an amount that is at least the amount described in paragraph (3)(D).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsection (b), the Secretary shall impose on any person who violates a provision of this part\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/a/1"
+    },
+    {
+     "position": "precedes",
+     "text": "in the case of a violation of such provision in which it is established that the violation was due to willful neglect\u2014",
+     "path": [
+      "a",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/a/1/C"
+    },
+    {
+     "position": "follows",
+     "text": "In determining the amount of a penalty under this section for a violation, the Secretary shall base such determination on the nature and extent of the violation and the nature and extent of the harm resulting from such violation.",
+     "path": [
+      "a",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/a/1/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/a/2",
+   "heading": "Procedures",
+   "text": "The provisions of section 1320a\u20137a of this title (other than subsections (a) and (b) and the second sentence of subsection (f)) shall apply to the imposition of a civil money penalty under this subsection in the same manner as such provisions apply to the imposition of a penalty under such section 1320a\u20137a of this title .",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/a/3/A",
+   "heading": "",
+   "text": "the amount described in this subparagraph is $100 for each such violation, except that the total amount imposed on the person for all such violations of an identical requirement or prohibition during a calendar year may not exceed $25,000;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of paragraph (1), with respect to a violation by a person of a provision of this part\u2014",
+     "path": [
+      "a",
+      "3"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/a/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "B"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/a/3/B",
+   "heading": "",
+   "text": "the amount described in this subparagraph is $1,000 for each such violation, except that the total amount imposed on the person for all such violations of an identical requirement or prohibition during a calendar year may not exceed $100,000;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of paragraph (1), with respect to a violation by a person of a provision of this part\u2014",
+     "path": [
+      "a",
+      "3"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/a/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "C"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/a/3/C",
+   "heading": "",
+   "text": "the amount described in this subparagraph is $10,000 for each such violation, except that the total amount imposed on the person for all such violations of an identical requirement or prohibition during a calendar year may not exceed $250,000; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of paragraph (1), with respect to a violation by a person of a provision of this part\u2014",
+     "path": [
+      "a",
+      "3"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/a/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "D"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/a/3/D",
+   "heading": "",
+   "text": "the amount described in this subparagraph is $50,000 for each such violation, except that the total amount imposed on the person for all such violations of an identical requirement or prohibition during a calendar year may not exceed $1,500,000.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of paragraph (1), with respect to a violation by a person of a provision of this part\u2014",
+     "path": [
+      "a",
+      "3"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/a/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/b/1",
+   "heading": "Offenses otherwise punishable",
+   "text": "No penalty may be imposed under subsection (a) and no damages obtained under subsection (d) with respect to an act if a penalty has been imposed under section 1320d\u20136 of this title with respect to such act.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/b/2/A",
+   "heading": "In general",
+   "text": "Except as provided in subparagraph (B) or subsection (a)(1)(C), no penalty may be imposed under subsection (a) and no damages obtained under subsection (d) if the failure to comply is corrected during the 30-day period beginning on the first date the person liable for the penalty or damages knew, or by exercising reasonable diligence would have known, that the failure to comply occurred.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/b/2/B/i",
+   "heading": "No penalty",
+   "text": "With respect to the imposition of a penalty by the Secretary under subsection (a), the period referred to in subparagraph (A) may be extended as determined appropriate by the Secretary based on the nature and extent of the failure to comply.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "B",
+    "ii"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/b/2/B/ii",
+   "heading": "Assistance",
+   "text": "If the Secretary determines that a person failed to comply because the person was unable to comply, the Secretary may provide technical assistance to the person during the period described in subparagraph (A). Such assistance shall be provided in any manner determined appropriate by the Secretary.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/b/3",
+   "heading": "Reduction",
+   "text": "In the case of a failure to comply which is due to reasonable cause and not to willful neglect, any penalty under subsection (a) and any damages under subsection (d) that is not entirely waived under paragraph (3) may be waived to the extent that the payment of such penalty would be excessive relative to the compliance failure involved.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/c/1",
+   "heading": "In general",
+   "text": "A violation of a provision of this part due to willful neglect is a violation for which the Secretary is required to impose a penalty under subsection (a)(1).",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/c/2",
+   "heading": "Required investigation",
+   "text": "For purposes of paragraph (1), the Secretary shall formally investigate any complaint of a violation of a provision of this part if a preliminary investigation of the facts of the complaint indicate such a possible violation due to willful neglect.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/1/A",
+   "heading": "",
+   "text": "to enjoin further such violation by the defendant; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsection (b), in any case in which the attorney general of a State has reason to believe that an interest of one or more of the residents of that State has been or is threatened or adversely affected by any person who violates a provision of this part, the attorney general of the State, as parens patriae, may bring a civil action on behalf of such residents of the State in a district court of the United States of appropriate jurisdiction\u2014",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/d/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/1/B",
+   "heading": "",
+   "text": "to obtain damages on behalf of such residents of the State, in an amount equal to the amount determined under paragraph (2).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsection (b), in any case in which the attorney general of a State has reason to believe that an interest of one or more of the residents of that State has been or is threatened or adversely affected by any person who violates a provision of this part, the attorney general of the State, as parens patriae, may bring a civil action on behalf of such residents of the State in a district court of the United States of appropriate jurisdiction\u2014",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/d/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/2/A",
+   "heading": "In general",
+   "text": "For purposes of paragraph (1)(B), the amount determined under this paragraph is the amount calculated by multiplying the number of violations by up to $100. For purposes of the preceding sentence, in the case of a continuing violation, the number of violations shall be determined consistent with the HIPAA privacy regulations (as defined in section 1320d\u20139(b)(3) of this title ) for violations of subsection (a).",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/2/B",
+   "heading": "Limitation",
+   "text": "The total amount of damages imposed on the person for all violations of an identical requirement or prohibition during a calendar year may not exceed $25,000.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "C"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/2/C",
+   "heading": "Reduction of damages",
+   "text": "In assessing damages under subparagraph (A), the court may consider the factors the Secretary may consider in determining the amount of a civil money penalty under subsection (a) under the HIPAA privacy regulations.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "3"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/3",
+   "heading": "Attorney fees",
+   "text": "In the case of any successful action under paragraph (1), the court, in its discretion, may award the costs of the action and reasonable attorney fees to the State.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "4",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/4/A",
+   "heading": "",
+   "text": "to intervene in the action;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The State shall serve prior written notice of any action under paragraph (1) upon the Secretary and provide the Secretary with a copy of its complaint, except in any case in which such prior notice is not feasible, in which case the State shall serve such notice immediately upon instituting such action. The Secretary shall have the right\u2014",
+     "path": [
+      "d",
+      "4"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/d/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "4",
+    "B"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/4/B",
+   "heading": "",
+   "text": "upon so intervening, to be heard on all matters arising therein; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The State shall serve prior written notice of any action under paragraph (1) upon the Secretary and provide the Secretary with a copy of its complaint, except in any case in which such prior notice is not feasible, in which case the State shall serve such notice immediately upon instituting such action. The Secretary shall have the right\u2014",
+     "path": [
+      "d",
+      "4"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/d/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "4",
+    "C"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/4/C",
+   "heading": "",
+   "text": "to file petitions for appeal.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The State shall serve prior written notice of any action under paragraph (1) upon the Secretary and provide the Secretary with a copy of its complaint, except in any case in which such prior notice is not feasible, in which case the State shall serve such notice immediately upon instituting such action. The Secretary shall have the right\u2014",
+     "path": [
+      "d",
+      "4"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/d/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "5"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/5",
+   "heading": "Construction",
+   "text": "For purposes of bringing any civil action under paragraph (1), nothing in this section shall be construed to prevent an attorney general of a State from exercising the powers conferred on the attorney general by the laws of that State.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "6",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/6/A",
+   "heading": "Venue",
+   "text": "Any action brought under paragraph (1) may be brought in the district court of the United States that meets applicable requirements relating to venue under section 1391 of title 28 .",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "6",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/6/B/i",
+   "heading": "",
+   "text": "is an inhabitant; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In an action brought under paragraph (1), process may be served in any district in which the defendant\u2014",
+     "path": [
+      "d",
+      "6",
+      "B"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/d/6/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "6",
+    "B",
+    "ii"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/6/B/ii",
+   "heading": "",
+   "text": "maintains a physical place of business.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In an action brought under paragraph (1), process may be served in any district in which the defendant\u2014",
+     "path": [
+      "d",
+      "6",
+      "B"
+     ],
+     "anchor": "/us/usc/t42/s1320d\u20135/d/6/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "7"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/7",
+   "heading": "Limitation on State action while Federal action is pending",
+   "text": "If the Secretary has instituted an action against a person under subsection (a) with respect to a specific violation of this part, no State attorney general may bring an action under this subsection against the person with respect to such violation during the pendency of that action.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "8"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/d/8",
+   "heading": "Application of CMP statute of limitation",
+   "text": "A civil action may not be instituted with respect to a violation of this part unless an action to impose a civil money penalty may be instituted under subsection (a) with respect to such violation consistent with the second sentence of section 1320a\u20137a(c)(1) of this title .",
+   "context": []
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": "/us/usc/t42/s1320d\u20135/e",
+   "heading": "Allowing continued use of corrective action",
+   "text": "Nothing in this section shall be construed as preventing the Office for Civil Rights of the Department of Health and Human Services from continuing, in its discretion, to use corrective action without a penalty in cases where the person did not know (and by exercising reasonable diligence would not have known) of the violation involved.",
+   "context": []
+  }
+ ]
+}

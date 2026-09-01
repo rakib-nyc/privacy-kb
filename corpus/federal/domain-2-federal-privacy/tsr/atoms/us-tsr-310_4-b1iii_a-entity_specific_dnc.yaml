@@ -1,0 +1,190 @@
+id: us.tsr.310_4.b1iii_a.entity_specific_dnc
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 310.4(b)(1)(iii)(A)
+  instrument_id: us.tsr
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=310
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  raw_sha256: 0374ac69f516b67c40fb05bf7a8482af5e2be0d258616f8faee7615bfc966917
+  text_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.txt
+  text_sha256: 7e1270d836ac4d86c1831b2f61d398afff5a07cca625841ea5334e93a3e6d314
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 6fda8e9dd50c24af4529edd17caf4d1d0d790e8964c5050f269ee5cf8663d4fd
+verbatim_span: >-
+  That person previously has stated that he or she does not wish to receive an outbound telephone
+  call made by or on behalf of the seller whose goods or services are being offered or made on
+  behalf of the charitable organization for which a charitable contribution is being solicited; or
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+    - '1'
+    - iii
+    - A
+  anchor: '310.4'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      It is an abusive telemarketing act or practice and a violation of this part for a telemarketer
+      to engage in, or for a seller to cause a telemarketer to engage in, the following conduct:
+    citation: 16 C.F.R. § 310.4(b)(1)
+    path:
+      path:
+        - b
+        - '1'
+      anchor: '310.4'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number
+        so the path is scoped to its own section — without it a path like ["a"] matches every
+        section in the part.
+  - position: precedes
+    relation: conditions
+    verbatim_span: 'Initiating any outbound telephone call to a person when:'
+    citation: 16 C.F.R. § 310.4(b)(1)(iii)
+    path:
+      path:
+        - b
+        - '1'
+        - iii
+      anchor: '310.4'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number
+        so the path is scoped to its own section — without it a path like ["a"] matches every
+        section in the part.
+jurisdiction: US
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions:
+  - id: cfr.16.310.6.b7.business_to_business
+    type: activity_level
+    scope: >-
+      A call between a telemarketer and a BUSINESS to induce that business to buy goods or services,
+      or to give a charitable contribution, is exempt from the part — with two carve-backs stated in
+      the same paragraph: the misrepresentation prohibitions of § 310.3(a)(2) and (4) still apply,
+      and calls inducing the retail sale of nondurable office or cleaning supplies are not exempt
+      (for those, § 310.6(b)(7) instead disapplies § 310.4(b)(1)(iii)(B) and § 310.5). The exemption
+      turns on WHO IS CALLED and for what, not on the caller's own status, which is why it is
+      activity-level and not entity-level.
+    source_citation: 16 C.F.R. § 310.6(b)(7)
+    verbatim_span: >-
+      Telephone calls between a telemarketer and any business to induce the purchase of goods or
+      services or a charitable contribution by the business, provided, however that this exemption
+      does not apply to:
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.call_recipient_is_business == true
+        - purpose.induce_business_purchase == true
+related:
+  - us.tsr.310_4.b1iii_b.dnc_registry
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating the National Registry scrub as satisfying this provision. The registry does not carry
+    entity-specific requests; a number absent from the registry is still off limits once the person
+    has asked the seller not to call.
+  - >-
+    Assuming charities are outside the do-not-call rules. § 310.6(a) exempts charitable solicitation
+    from the REGISTRY prong only; the entity-specific request in (A) names charitable organizations
+    expressly.
+  - >-
+    Filing the request against the call centre rather than the seller. The prohibition is framed
+    around calls made by or ON BEHALF OF the seller, so the suppression must follow the seller
+    across every vendor it uses.
+open_questions:
+  - >-
+    effective_from is the publication date in the part-level source note the eCFR carries for 16
+    C.F.R. part 310 ("75 FR 48516, Aug. 10, 2010, unless otherwise noted"), which is also the first
+    date in this section's own source note. That is a Federal Register PUBLICATION date, not
+    necessarily an effective date, and the do-not-call provisions are older than this codification —
+    the source does not state when they first took effect. A query as of a date before 2010-08-10
+    will not reach this atom even though the rule existed.
+confidence: high
+subject:
+  domain: II.E.2
+  lifecycle:
+    - VI
+regulator:
+  - ftc
+sector:
+  - telemarketing
+  - any
+data_types:
+  - telephone_number
+status: in_force
+effective_from: '2010-08-10'
+applies_if:
+  all:
+    - entity.is_seller_or_telemarketer == true
+    - practice.initiates_outbound_telephone_calls == true
+    - event.person_stated_entity_specific_do_not_call == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  Once a person has said he or she does not wish to receive calls made by or on behalf of a
+  particular seller or charitable organization, initiating an outbound call to that person on that
+  seller's or organization's behalf is an abusive telemarketing practice.
+requirement_detail: >-
+  THE ENTITY-SPECIFIC DO-NOT-CALL DUTY, which is where the internal suppression list comes from, and
+  it is independent of the National Registry in three ways that matter. First, it has NO
+  established-business-relationship exception — the EBR route in (B)(2) is written against the
+  registry prong and is itself defeated by a request made under this one. Second, it reaches
+  charitable solicitation: (A) speaks of calls made on behalf of the charitable organization for
+  which a contribution is solicited, and the § 310.6(a) carve-out disapplies only the registry prong
+  at (B). Third, it is triggered by the person's own statement, so it binds from the moment of the
+  request rather than from the next registry download. § 310.4(b)(1)(ii) polices the request channel
+  itself, making it a violation to hang up on, charge for, condition or otherwise obstruct such a
+  request; and the § 310.4(b)(3) safe harbour requires a written procedure and a list maintained
+  under (b)(3)(iii) before an isolated error can be excused.
+preemption:
+  posture: floor
+  authority: 16 C.F.R. § 310.7(b)
+  note: >-
+    § 310.7(b) states that nothing in that section prohibits a state official from proceeding in
+    state court on an alleged violation of any civil or criminal statute of that state, and the part
+    contains no express preemption clause. Recorded as floor on that basis. The enabling Act (15
+    U.S.C. 6101–6108) is not in this corpus, so any preemptive effect it carries is unresolved here.
+    The TCPA and its FCC rules run in parallel and are a separate instrument.
+enforcement:
+  enforcers:
+    - ftc
+    - state_ag
+    - private_person
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      FTC Act civil penalties for rule violations; state and private actions under the Telemarketing
+      and Consumer Fraud and Abuse Prevention Act
+    range: null
+    note: >-
+      The part states no penalty figure. § 310.7(a) requires a State or private plaintiff suing
+      under the Act to serve written notice on the Commission before filing, which is where the
+      private route is visible in the rule text itself; the Act (15 U.S.C. 6101–6108) is not in this
+      corpus, so the damages threshold is not recorded here.
+  statute_of_limitations: null

@@ -1,0 +1,86 @@
+id: ev.safekids.defs.001
+question: >-
+  We are building one New York compliance flow for minors. Both the Child Data Protection Act and
+  the SAFE for Kids Act use the term "covered user". Can we implement it once and reuse it?
+trap: >-
+  NO, AND THE COLLISION IS INSIDE A SINGLE CHAPTER OF A SINGLE STATE'S LAW. GBL § 899-ee(1) defines
+  "Covered user" as a user in New York whom the operator actually knows to be a minor, or who is
+  using a service primarily directed to minors — a minority-gated term. GBL § 1500(4) defines the
+  same two words as a user in New York who is not the operator or its agent or affiliate, which is
+  very nearly everybody, adults included. The only element the two share is being in New York. The
+  usual defence against this failure — "different statutes use words differently" — does not fire,
+  because a reader sees one state, one chapter, one phrase, and reasonably assumes one meaning. The
+  minor-specific term in the SAFE for Kids Act is a DIFFERENT one, "covered minor" at § 1500(3),
+  and § 1501(1) is deliberately drafted against covered USER so the duty attaches before the
+  operator knows who is a minor. Implement it once and the age-determination route stops making
+  sense.
+rubric:
+- name: both definitions exist as records, not as a note in someone's prose
+  record_exists: ny.def.covered_user.cdpa
+- name: and the SAFE for Kids one too
+  record_exists: ny.def.covered_user.safe_for_kids
+- name: they normalise to the SAME term, which is what makes them comparable
+  record: ny.def.covered_user.cdpa
+  path: term
+  equals: covered user
+- name: and the drafters really did use identical words
+  record: ny.def.covered_user.safe_for_kids
+  path: term_as_defined
+  equals: Covered user
+- name: the CDPA term REQUIRES minority
+  record: ny.def.covered_user.cdpa
+  path: elements.1.concept
+  equals: subject_is_minor
+- name: the SAFE for Kids term does not — its only carve-out is the operator itself
+  record: ny.def.covered_user.safe_for_kids
+  path: elements.1.concept
+  equals: carveout_operator_and_affiliates
+- name: the divergence is COMPUTED, not asserted — minority is only on the CDPA side
+  record: ny.def.covered_user.safe_for_kids
+  path: differs_from.0.computed.only_there
+  contains: requires:subject_is_minor
+- name: the only thing the two share is being in New York
+  record: ny.def.covered_user.safe_for_kids
+  path: differs_from.0.computed.shared
+  equals: [requires:located_in_new_york]
+- name: the generated sentence disambiguates by CITATION, because the terms are identical
+  record: ny.def.covered_user.safe_for_kids
+  path: differs_from.0.difference
+  contains: Only Covered user (N.Y. Gen. Bus. Law § 899-ee(1))
+- name: the SAFE for Kids record warns against reading its term as meaning a minor
+  record: ny.def.covered_user.safe_for_kids
+  path: common_errors
+  contains: The minor-specific term in this article is "covered minor" at § 1500(3)
+- name: and the CDPA record warns in the other direction
+  record: ny.def.covered_user.cdpa
+  path: common_errors
+  contains: uses the same two words for a different set of people
+- name: the CDPA one is in force; the SAFE for Kids one is not
+  record: ny.def.covered_user.cdpa
+  path: status
+  equals: in_force
+- name: which matters, because a shared implementation would silently import a future rule
+  record: ny.def.covered_user.safe_for_kids
+  path: status
+  equals: enacted_pending
+- name: the fact keys were separated too — no atom predicates on an unqualified "covered user"
+  record: ny.gbl.1501.1.addictive_feed_prohibition
+  path: applies_if.all.0
+  equals: entity.is_ny_addictive_platform_operator == true
+correct_answer: >-
+  No. New York defines "covered user" twice, in the same chapter of the General Business Law, and
+  the two definitions barely overlap. Under the Child Data Protection Act, GBL § 899-ee(1), a
+  covered user is a user in New York whom the operator actually knows to be a minor, or who is
+  using a service primarily directed to minors — minority is a requirement of the term. Under the
+  SAFE for Kids Act, GBL § 1500(4), a covered user is any user in New York who is not the operator
+  or its agent or affiliate. Adults are covered users under the second and can never be covered
+  users under the first; the only element the two share is being in New York. The SAFE for Kids
+  Act's minor-gated term is "covered minor" at § 1500(3), which adds an actual-knowledge
+  requirement — and § 1501(1) is written against covered USER precisely so the prohibition attaches
+  before you know which of your users is a minor. That is what makes the age-determination route in
+  § 1501(1)(a) necessary rather than optional; a shared "is this a covered user" check built on the
+  CDPA definition would answer false for every user you have not already identified as a minor, and
+  the § 1501 duty would silently never fire. Build two predicates. Note also that only the CDPA one
+  is in force today — the SAFE for Kids definition takes effect 25 January 2027 — so a merged
+  implementation would import a future rule into a present decision as well.
+all_pass: true

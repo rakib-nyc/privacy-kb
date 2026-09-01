@@ -1,0 +1,114 @@
+id: us.authority.fcc
+schema_version: 1
+record_type: authority
+source:
+  citation: 47 U.S.C. § 222(a)
+  instrument_id: us.usc.t47
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/authorities/raw/47-u-s-c-222.xml
+  raw_sha256: 9d301f80fe41a4a75775e6cd1fa72fc7402917d64245168190697be032dbddbb
+  text_file: corpus/federal/authorities/raw/47-u-s-c-222.txt
+  text_sha256: 7360ef24010c54585ec26cba5824d93253a34a88d13b59e8b967609385209653
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/authorities/raw/47-u-s-c-222.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: Title 47. Positive-law status from the title's own <property role="is-positive-law"> element.
+  segment_sha256: 065da8cb3d07ac9221045875390eb68e5b6850bc29a7312db3038375b913a2a4
+verbatim_span: >-
+  Every telecommunications carrier has a duty to protect the confidentiality of proprietary
+  information of, and relating to, other telecommunication carriers, equipment manufacturers, and
+  customers, including telecommunication carriers reselling telecommunications services provided by
+  a telecommunications carrier.
+verification_status: verbatim_confirmed
+subject:
+  domain: I.A.4
+  lifecycle:
+    - I
+paragraph_path:
+  path:
+    - a
+  anchor: /us/usc/t47/s222/a
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element
+jurisdiction: US-FED
+jurisdiction_level: federal
+status: in_force
+effective_from: null
+effective_to: null
+amendment_history: []
+summary: >-
+  Every telecommunications carrier has a duty to protect the confidentiality of proprietary
+  information of and relating to customers.
+authority:
+  id: us.authority.fcc
+  name: Federal Communications Commission
+  short_name: FCC
+  kind: federal_agency
+  statutory_source:
+    - 47 U.S.C. § 222 — customer proprietary network information
+    - 47 U.S.C. § 227 — Telephone Consumer Protection Act
+    - 47 U.S.C. § 503(b) — forfeiture penalties
+  jurisdiction: US-FED
+  sector_reach:
+    - telecommunications carriers
+    - interconnected VoIP
+    - CPNI
+    - telemarketing and robocalls under the TCPA
+    - cable operators under 47 U.S.C. § 551
+  excluded_from_reach:
+    - >-
+      entities that are not carriers and not otherwise within the Communications Act — the FTC's
+      common-carrier carve-out is the mirror image of this reach
+  enforcement_powers:
+    - forfeiture penalties under § 503(b)
+    - cease-and-desist and revocation
+    - consent decrees
+  rulemaking_authority:
+    has: true
+    basis: 47 U.S.C. § 201(b) and § 222
+    procedure: APA § 553 notice-and-comment
+    note: >-
+      The CPNI rules at 47 C.F.R. §§ 64.2001–64.2011 and the TCPA rules at 47 C.F.R. § 64.1200 are
+      legislative rules.
+  penalty_authority:
+    structure: forfeiture per violation, per day for continuing violations
+    range: null
+    inflation_adjusted: true
+    note: § 503(b) figures are inflation-adjusted.
+  private_right_of_action:
+    exists: true
+    basis: 47 U.S.C. § 227(b)(3) and § 227(c)(5) — TCPA
+    note: >-
+      THE TCPA PRIVATE RIGHT OF ACTION IS THE DOMINANT LITIGATION RISK IN THIS AREA, with statutory
+      damages per call or message and no cap. It drives far more exposure than FCC enforcement does.
+      § 222 CPNI, by contrast, has no private right of action.
+    drives_litigation_risk: true
+  own_enforcement_power: true
+  operates_through: null
+derived_obligations: []
+differs_from: []
+related: []
+source_defects: []
+common_errors:
+  - >-
+    Treating the FCC's privacy authority as uniform. § 227 (TCPA) carries a private right of action
+    with statutory damages; § 222 (CPNI) does not. The exposure profiles are completely different.
+  - >-
+    Assuming the FTC can reach a common carrier. § 45(a)(2) carves them out; the FCC is the
+    enforcer.
+  - >-
+    Overlooking that the TCPA private right of action, not FCC enforcement, is what generates most
+    real-world liability.
+open_questions:
+  - >-
+    The status of FCC CPNI and TCPA rules moves. CORPUS-MANIFEST.md flags the TCPA area as one that
+    changes; verify current rule text at extraction time rather than relying on this record.
+confidence: high
+context_not_required: 'No ancestor contributes governing text: this element''s operative meaning is complete on its own.'

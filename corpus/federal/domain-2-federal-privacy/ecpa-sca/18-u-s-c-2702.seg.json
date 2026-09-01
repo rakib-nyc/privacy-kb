@@ -1,0 +1,596 @@
+{
+ "label": "18 U.S.C. \u00a7 2702",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": true,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2702.xml",
+ "raw_sha256": "46f1490abbc475f035109ed9f548d435aebe5695803fd5b2f36101ea16bfbf4e",
+ "leaves": [
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": "/us/usc/t18/s2702/a/1",
+   "heading": "",
+   "text": "a person or entity providing an electronic communication service to the public shall not knowingly divulge to any person or entity the contents of a communication while in electronic storage by that service; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsection (b) or (c)\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2702/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s2702/a/2/A",
+   "heading": "",
+   "text": "on behalf of, and received by means of electronic transmission from (or created by means of computer processing of communications received by means of electronic transmission from), a subscriber or customer of such service;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsection (b) or (c)\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2702/a"
+    },
+    {
+     "position": "precedes",
+     "text": "a person or entity providing remote computing service to the public shall not knowingly divulge to any person or entity the contents of any communication which is carried or maintained on that service\u2014",
+     "path": [
+      "a",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2702/a/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s2702/a/2/B",
+   "heading": "",
+   "text": "solely for the purpose of providing storage or computer processing services to such subscriber or customer, if the provider is not authorized to access the contents of any such communications for purposes of providing any services other than storage or computer processing; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsection (b) or (c)\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2702/a"
+    },
+    {
+     "position": "precedes",
+     "text": "a person or entity providing remote computing service to the public shall not knowingly divulge to any person or entity the contents of any communication which is carried or maintained on that service\u2014",
+     "path": [
+      "a",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2702/a/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3"
+   ],
+   "anchor": "/us/usc/t18/s2702/a/3",
+   "heading": "",
+   "text": "a provider of remote computing service or electronic communication service to the public shall not knowingly divulge a record or other information pertaining to a subscriber to or customer of such service (not including the contents of communications covered by paragraph (1) or (2)) to any governmental entity.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsection (b) or (c)\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2702/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": "/us/usc/t18/s2702/b/1",
+   "heading": "",
+   "text": "to an addressee or intended recipient of such communication or an agent of such addressee or intended recipient;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge the contents of a communication\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2702/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": "/us/usc/t18/s2702/b/2",
+   "heading": "",
+   "text": "as otherwise authorized in section 2517, 2511(2)(a), or 2703 of this title;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge the contents of a communication\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2702/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": "/us/usc/t18/s2702/b/3",
+   "heading": "",
+   "text": "with the lawful consent of the originator or an addressee or intended recipient of such communication, or the subscriber in the case of remote computing service;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge the contents of a communication\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2702/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4"
+   ],
+   "anchor": "/us/usc/t18/s2702/b/4",
+   "heading": "",
+   "text": "to a person employed or authorized or whose facilities are used to forward such communication to its destination;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge the contents of a communication\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2702/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5"
+   ],
+   "anchor": "/us/usc/t18/s2702/b/5",
+   "heading": "",
+   "text": "as may be necessarily incident to the rendition of the service or to the protection of the rights or property of the provider of that service;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge the contents of a communication\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2702/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "6"
+   ],
+   "anchor": "/us/usc/t18/s2702/b/6",
+   "heading": "",
+   "text": "to the National Center for Missing and Exploited Children, in connection with a report submitted thereto under section 2258A;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge the contents of a communication\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2702/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "7",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t18/s2702/b/7/A/i",
+   "heading": "",
+   "text": "were inadvertently obtained by the service provider; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge the contents of a communication\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2702/b"
+    },
+    {
+     "position": "precedes",
+     "text": "to a law enforcement agency\u2014",
+     "path": [
+      "b",
+      "7"
+     ],
+     "anchor": "/us/usc/t18/s2702/b/7"
+    },
+    {
+     "position": "precedes",
+     "text": "if the contents\u2014",
+     "path": [
+      "b",
+      "7",
+      "A"
+     ],
+     "anchor": "/us/usc/t18/s2702/b/7/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "7",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t18/s2702/b/7/A/ii",
+   "heading": "",
+   "text": "appear to pertain to the commission of a crime; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge the contents of a communication\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2702/b"
+    },
+    {
+     "position": "precedes",
+     "text": "to a law enforcement agency\u2014",
+     "path": [
+      "b",
+      "7"
+     ],
+     "anchor": "/us/usc/t18/s2702/b/7"
+    },
+    {
+     "position": "precedes",
+     "text": "if the contents\u2014",
+     "path": [
+      "b",
+      "7",
+      "A"
+     ],
+     "anchor": "/us/usc/t18/s2702/b/7/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "7",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s2702/b/7/B",
+   "heading": "",
+   "text": "Repealed. Pub. L. 108\u201321, title V, \u00a7 508(b)(1)(A) , Apr. 30, 2003 , 117 Stat. 684 ]",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge the contents of a communication\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2702/b"
+    },
+    {
+     "position": "precedes",
+     "text": "to a law enforcement agency\u2014",
+     "path": [
+      "b",
+      "7"
+     ],
+     "anchor": "/us/usc/t18/s2702/b/7"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "8"
+   ],
+   "anchor": "/us/usc/t18/s2702/b/8",
+   "heading": "",
+   "text": "to a governmental entity, if the provider, in good faith, believes that an emergency involving danger of death or serious physical injury to any person requires disclosure without delay of communications relating to the emergency; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge the contents of a communication\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2702/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "9"
+   ],
+   "anchor": "/us/usc/t18/s2702/b/9",
+   "heading": "",
+   "text": "to a foreign government pursuant to an order from a foreign government that is subject to an executive agreement that the Attorney General has determined and certified to Congress satisfies section 2523.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge the contents of a communication\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2702/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": "/us/usc/t18/s2702/c/1",
+   "heading": "",
+   "text": "as otherwise authorized in section 2703;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge a record or other information pertaining to a subscriber to or customer of such service (not including the contents of communications covered by subsection (a)(1) or (a)(2))\u2014",
+     "path": [
+      "c"
+     ],
+     "anchor": "/us/usc/t18/s2702/c"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": "/us/usc/t18/s2702/c/2",
+   "heading": "",
+   "text": "with the lawful consent of the customer or subscriber;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge a record or other information pertaining to a subscriber to or customer of such service (not including the contents of communications covered by subsection (a)(1) or (a)(2))\u2014",
+     "path": [
+      "c"
+     ],
+     "anchor": "/us/usc/t18/s2702/c"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": "/us/usc/t18/s2702/c/3",
+   "heading": "",
+   "text": "as may be necessarily incident to the rendition of the service or to the protection of the rights or property of the provider of that service;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge a record or other information pertaining to a subscriber to or customer of such service (not including the contents of communications covered by subsection (a)(1) or (a)(2))\u2014",
+     "path": [
+      "c"
+     ],
+     "anchor": "/us/usc/t18/s2702/c"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4"
+   ],
+   "anchor": "/us/usc/t18/s2702/c/4",
+   "heading": "",
+   "text": "to a governmental entity, if the provider, in good faith, believes that an emergency involving danger of death or serious physical injury to any person requires disclosure without delay of information relating to the emergency;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge a record or other information pertaining to a subscriber to or customer of such service (not including the contents of communications covered by subsection (a)(1) or (a)(2))\u2014",
+     "path": [
+      "c"
+     ],
+     "anchor": "/us/usc/t18/s2702/c"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "5"
+   ],
+   "anchor": "/us/usc/t18/s2702/c/5",
+   "heading": "",
+   "text": "to the National Center for Missing and Exploited Children, in connection with a report submitted thereto under section 2258A;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge a record or other information pertaining to a subscriber to or customer of such service (not including the contents of communications covered by subsection (a)(1) or (a)(2))\u2014",
+     "path": [
+      "c"
+     ],
+     "anchor": "/us/usc/t18/s2702/c"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6"
+   ],
+   "anchor": "/us/usc/t18/s2702/c/6",
+   "heading": "",
+   "text": "to any person other than a governmental entity; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge a record or other information pertaining to a subscriber to or customer of such service (not including the contents of communications covered by subsection (a)(1) or (a)(2))\u2014",
+     "path": [
+      "c"
+     ],
+     "anchor": "/us/usc/t18/s2702/c"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "7"
+   ],
+   "anchor": "/us/usc/t18/s2702/c/7",
+   "heading": "",
+   "text": "to a foreign government pursuant to an order from a foreign government that is subject to an executive agreement that the Attorney General has determined and certified to Congress satisfies section 2523.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A provider described in subsection (a) may divulge a record or other information pertaining to a subscriber to or customer of such service (not including the contents of communications covered by subsection (a)(1) or (a)(2))\u2014",
+     "path": [
+      "c"
+     ],
+     "anchor": "/us/usc/t18/s2702/c"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": "/us/usc/t18/s2702/d/1",
+   "heading": "",
+   "text": "the number of accounts from which the Department of Justice has received voluntary disclosures under subsection (b)(8);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "On an annual basis, the Attorney General shall submit to the Committee on the Judiciary of the House of Representatives and the Committee on the Judiciary of the Senate a report containing\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t18/s2702/d"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s2702/d/2/A",
+   "heading": "",
+   "text": "voluntary disclosures under subsection (b)(8) were made to the Department of Justice; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "On an annual basis, the Attorney General shall submit to the Committee on the Judiciary of the House of Representatives and the Committee on the Judiciary of the Senate a report containing\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t18/s2702/d"
+    },
+    {
+     "position": "precedes",
+     "text": "a summary of the basis for disclosure in those instances where\u2014",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2702/d/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s2702/d/2/B",
+   "heading": "",
+   "text": "the investigation pertaining to those disclosures was closed without the filing of criminal charges; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "On an annual basis, the Attorney General shall submit to the Committee on the Judiciary of the House of Representatives and the Committee on the Judiciary of the Senate a report containing\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t18/s2702/d"
+    },
+    {
+     "position": "precedes",
+     "text": "a summary of the basis for disclosure in those instances where\u2014",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2702/d/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3"
+   ],
+   "anchor": "/us/usc/t18/s2702/d/3",
+   "heading": "",
+   "text": "the number of accounts from which the Department of Justice has received voluntary disclosures under subsection (c)(4).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "On an annual basis, the Attorney General shall submit to the Committee on the Judiciary of the House of Representatives and the Committee on the Judiciary of the Senate a report containing\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t18/s2702/d"
+    }
+   ]
+  }
+ ]
+}

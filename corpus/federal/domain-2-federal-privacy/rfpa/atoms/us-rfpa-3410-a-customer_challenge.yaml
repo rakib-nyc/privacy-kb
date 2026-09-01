@@ -1,0 +1,166 @@
+id: us.rfpa.3410.a.customer_challenge
+schema_version: 1
+record_type: obligation
+source:
+  citation: 12 U.S.C. § 3410(a)
+  instrument_id: us.rfpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3410.xml
+  raw_sha256: 5f92abf0c014a909b13b60decfb863eecb6d2db0a014a77aa9f44a94097a0bac
+  text_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3410.txt
+  text_sha256: e09ef56e73640f811b0150f9f6f25f6dd13b77c70976d023c8b006b57fed123e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3410.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1 (12-u-s-c-3410)
+    result: structured_source_used
+    note: null
+verbatim_span: Within ten days of service or within fourteen days of mailing of a subpena, summons, or formal
+  written request, a customer may file a motion to quash an administrative summons or judicial subpena, or an
+  application to enjoin a Government authority from obtaining financial records pursuant to a formal written request,
+  with copies served upon the Government authority. A motion to quash a judicial subpena shall be filed in the
+  court which issued the subpena. A motion to quash an administrative summons or an application to enjoin a Government
+  authority from obtaining records pursuant to a formal written request shall be filed in the appropriate United
+  States district court. Such motion or application shall contain an affidavit or sworn statement—
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+  - a
+  anchor: /us/usc/t12/s3410/a
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+- position: follows
+  relation: conditions
+  verbatim_span: stating that the applicant is a customer of the financial institution from which financial records
+    pertaining to him have been sought; and
+  citation: 12 U.S.C. § 3410(a)(1)
+  relation_note: null
+  path:
+    path:
+    - a
+    - '1'
+    anchor: /us/usc/t12/s3410/a/1
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+- position: follows
+  relation: conditions
+  verbatim_span: stating the applicant’s reasons for believing that the financial records sought are not relevant
+    to the legitimate law enforcement inquiry stated by the Government authority in its notice, or that there
+    has not been substantial compliance with the provisions of this chapter.
+  citation: 12 U.S.C. § 3410(a)(2)
+  relation_note: null
+  path:
+    path:
+    - a
+    - '2'
+    anchor: /us/usc/t12/s3410/a/2
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+- position: follows
+  relation: concludes
+  verbatim_span: Service shall be made under this section upon a Government authority by delivering or mailing
+    by registered or certified mail a copy of the papers to the person, office, or department specified in the
+    notice which the customer has received pursuant to this chapter. For the purposes of this section, “delivery”
+    has the meaning stated in rule 5(b) of the Federal Rules of Civil Procedure.
+  citation: 12 U.S.C. § 3410(a)
+  relation_note: null
+  path:
+    path:
+    - a
+    anchor: /us/usc/t12/s3410/a
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: III.A.1
+  lifecycle:
+  - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+- federal_agencies
+sector:
+- financial
+data_types:
+- financial
+status: in_force
+effective_from: '1979-03-10'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+  - entity.is_government_authority == true
+  - data.is_financial_record == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: Within ten days of service or fourteen days of mailing, the customer may file a motion to quash the summons
+  or subpoena, or an application to enjoin a formal written request, supported by a sworn statement of customer
+  status and of the reasons the records are not relevant or the chapter was not substantially complied with.
+requirement_detail: 'THIS IS THE PROVISION THAT ANSWERS UNITED STATES v. MILLER. Miller held the customer had
+  no Fourth Amendment interest in records held by his bank, and therefore no standing to object when the Government
+  subpoenaed them; § 3410 manufactures that standing by statute and puts the challenge in the CUSTOMER''S hands
+  rather than the institution''s. The pleading burden on its face is light — an affidavit stating that the applicant
+  is the customer and giving reasons for believing the records are not relevant to the stated inquiry or that
+  the chapter was not substantially complied with — but § 3410(c) sets the standard the court then applies, and
+  it is deferential: the motion must be DENIED if there is a demonstrable reason to believe the inquiry is legitimate
+  and a reasonable belief that the records are relevant. Venue turns on the route: a judicial subpoena is challenged
+  in the issuing court, an administrative summons or a formal written request in the appropriate district court.
+  The window is short and it is load-bearing — §§ 3405(3) and 3407(3) release the records once it lapses with
+  nothing on file, so the effect of the provision on the Government is a temporary bar on obtaining them. It is
+  what makes RFPA a privacy statute rather than a filing requirement.'
+deadline:
+  trigger_event: service or mailing of the subpoena, summons, or formal written request on the customer
+  duration:
+    value: 10
+    unit: calendar_days
+  computation: Ten days from SERVICE, fourteen days from MAILING. The recorded duration is the service limb; a
+    mailed process gets fourteen days. The period is measured from the process reaching the customer, not from
+    the Government's demand on the financial institution, though §§ 3405(2) and 3407(2) require those to be simultaneous
+    or the customer copy to come first. Service on the Government authority of the customer's papers is separately
+    governed by the concluding sentence of § 3410(a), which requires delivery or registered or certified mail.
+exemptions: []
+related:
+- us.rfpa.3405.3.challenge_window
+- us.rfpa.3407.judicial_subpoena
+- us.rfpa.3410.d.no_proceeding_notice
+- us.rfpa.3410.e.sole_judicial_remedy
+federal_relationship: null
+interpreted_by: []
+common_errors:
+- Expecting the bank to raise the objection. The challenge belongs to the customer, and § 3410(f) says nothing
+  in the chapter entitles a customer to assert the rights of a financial institution or enlarges the institution's
+  own.
+- Filing in the wrong court. A judicial subpoena is challenged where it issued; an administrative summons or formal
+  written request in the district court.
+- Assuming the low pleading burden means a low standard of review. § 3410(c) requires denial wherever there is
+  a demonstrable reason to believe the inquiry is legitimate and the records relevant.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 12 U.S.C. § 3402
+  note: 'Recorded as floor pending a provision-level preemption analysis for this instrument; no express ceiling
+    clause was found in the sections extracted. RFPA binds federal Government authorities, so the ordinary state-law
+    displacement question does not arise in the usual form: a state statute restricting state investigators is
+    not in conflict with it.'
+enforcement:
+  enforcers:
+  - federal_agencies
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: 12 U.S.C. § 3417 (civil penalties and liability) has not been extracted into this corpus, so penalty
+      exposure and any customer damages action are UNASSESSED rather than absent. private_right_of_action is recorded
+      false because nothing extracted establishes one, not because the statute was read to withhold one.
+  statute_of_limitations: null

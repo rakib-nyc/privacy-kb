@@ -1,0 +1,77 @@
+id: us.test.gate23.phantom
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 313.5(e)(iv)
+  instrument_id: us.test.instrument
+  url: https://www.ecfr.gov/current/title-45/section-164.404
+  fetched: '2026-08-18'
+  raw_file: tests/fixtures/raw/gate23-source.txt
+  raw_sha256: 3a4cc663a31311e00c64d20d7afe2846dffdc0f30adcf92c8f121aafb808f753
+  format: ecfr_xml
+  structured_source_check:
+    checked:
+    - fixture — no acquisition performed
+    result: not_applicable
+    note: Test fixture. Exists to trip one gate, not to model a real source.
+  render: null
+  risk_tier: low
+verbatim_span: Have not changed your policies and practices with regard to disclosing nonpublic personal
+  information.
+verification_status: verbatim_confirmed
+subject:
+  domain: II.B.1
+  lifecycle:
+  - VI
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+- hhs_ocr
+sector:
+- healthcare
+data_types:
+- phi
+status: in_force
+effective_from: '2009-09-23'
+effective_to: null
+supersedes: null
+superseded_by: null
+applies_if:
+  all:
+  - entity.hipaa_role in [covered_entity]
+applies_to_role: covered_entity
+obligation_type: notify
+summary: Cites a path no leaf carries. The citation points at nothing at all.
+requirement_detail: Cites a path no leaf carries. The citation points at nothing at all.
+deadline:
+  trigger_event: discovery_of_breach
+  duration:
+    value: 60
+    unit: calendar_days
+  computation: without unreasonable delay and in no case later than
+  tolling: []
+exemptions: []
+preemption:
+  posture: floor
+  authority: 42 U.S.C. § 1320d-7
+  note: More stringent state law survives.
+enforcement:
+  enforcers:
+  - hhs_ocr
+  private_right_of_action: false
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+- Treating the 60-day outer limit as the standard rather than the ceiling.
+open_questions: []
+confidence: high
+paragraph_path:
+  path:
+  - e
+  - iv
+  anchor: '313.5'
+  derivation: reconstructed
+  confidence: high
+  evidence: 'fixture: designators reconstructed from flat <P> siblings'
+context_not_required: 'Fixture: exists to exercise gate 23 only.'

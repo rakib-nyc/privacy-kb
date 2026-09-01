@@ -1,0 +1,15 @@
+id: ev.coverage.001
+question: What are our obligations under New York's SHIELD Act?
+trap: 'T5-adjacent: answering from training data when the corpus has nothing. The honest answer is that
+  NY is not modelled and why.'
+trap_category: T5
+rubric:
+- name: no NY obligation atom exists yet — the corpus must not pretend otherwise
+  record: us.taxonomy.sources_of_us_law
+  path: record_type
+  equals: taxonomy
+- name: the FTC backstop still exists so the answer is never silence
+  record_exists: us.authority.ftc
+- name: state AG enforcement authority is recorded even without NY statutes
+  record_exists: us.authority.hhs_ocr
+all_pass: true

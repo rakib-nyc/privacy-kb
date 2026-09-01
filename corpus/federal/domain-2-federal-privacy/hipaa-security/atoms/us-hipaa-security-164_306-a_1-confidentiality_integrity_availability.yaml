@@ -1,0 +1,161 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2005-04-20'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+related:
+  - us.hipaa.security.164_306.b_1.flexibility_of_approach
+federal_relationship: null
+interpreted_by: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 45 C.F.R. § 160.203
+  note: >-
+    HIPAA is a FLOOR, not a ceiling. A contrary State law that is MORE STRINGENT than the Security
+    Rule survives, so state data-security duties — the NY SHIELD Act's reasonable safeguards among
+    them — run in parallel and the stricter one governs. Reading a Security Rule risk analysis as
+    discharging a state security-programme statute is the standard error; the Security Rule's own
+    flexibility language makes it especially tempting, because an entity that has "addressed" a
+    specification may still fall below a state floor that names the control outright.
+enforcement:
+  enforcers:
+    - hhs_ocr
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil money penalties under 42 U.S.C. § 1320d-5, tiered by culpability, with the tiers turning
+      on whether the entity knew or was wilfully neglectful. State attorneys general may sue under
+      42 U.S.C. § 1320d-5(d) (HITECH).
+    range: null
+    note: >-
+      No private right of action. The Security Rule nonetheless drives private exposure indirectly:
+      plaintiffs plead it as the standard of care in negligence, and state UDAP and
+      breach-notification claims reach the same conduct.
+  statute_of_limitations: null
+id: us.hipaa.security.164_306.a_1.confidentiality_integrity_availability
+source:
+  citation: 45 C.F.R. § 164.306(a)(1)
+  instrument_id: us.hipaa.security_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-security/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-security/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-security/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-45 XML, part 164, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: 90db359982f788d55169deedef9ceb4a8a180e08c488e6eb5a89c12853be51d8
+verbatim_span: >-
+  Ensure the confidentiality, integrity, and availability of all electronic protected health
+  information the covered entity or business associate creates, receives, maintains, or transmits.
+paragraph_path:
+  path:
+    - a
+    - '1'
+  anchor: '164.306'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from flat <P> siblings; resolves to exactly one leaf in
+    45-cfr-164.seg.json (gate 23)
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'Covered entities and business associates must do the following:'
+    citation: null
+    relation_note: null
+    path:
+      path:
+        - a
+      anchor: '164.306'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designators reconstructed from flat <P> siblings; resolves to exactly one leaf in
+        45-cfr-164.seg.json (gate 23)
+subject:
+  domain: II.B.1
+  lifecycle:
+    - IV
+applies_if:
+  all:
+    - any:[entity.is_hipaa_covered_entity == true, entity.is_hipaa_business_associate == true]
+    - data.is_ephi == true
+obligation_type: secure
+summary: >-
+  Covered entities and business associates must ensure the confidentiality, integrity and
+  availability of all electronic protected health information they create, receive, maintain or
+  transmit.
+requirement_detail: >-
+  This is the general requirement the rest of subpart C implements; §§ 164.308, 164.310, 164.312,
+  164.314 and 164.316 are the means, and § 164.306(a) is the end they are measured against. Three
+  points are load-bearing. First, the duty names business associates alongside covered entities, so
+  a vendor owes the Security Rule directly and not merely through its business associate agreement.
+  Second, the verbs "creates, receives, maintains, or transmits" reach data in motion and data held
+  on someone else's infrastructure, so an entity cannot scope its programme to the systems it
+  happens to own. Third, AVAILABILITY is a named objective on equal footing with confidentiality —
+  ransomware that locks records without exfiltrating them is a failure of this paragraph even if no
+  one outside ever reads the data. The subpart reaches electronic PHI only; paper records are
+  covered by the Privacy Rule's safeguard standard at § 164.530(c), which is a different obligation
+  with a different text.
+exemptions:
+  - id: cfr.45.160.103.phi.employment_records
+    type: data_level
+    scope: >-
+      Electronic protected health information is defined at 45 C.F.R. § 160.103 as information
+      within paragraphs (1)(i) or (1)(ii) of the definition of protected health information, so
+      every carve-out from PHI is also a carve-out from ePHI and from this subpart. Individually
+      identifiable health information held by the covered entity in its role as EMPLOYER is not PHI
+      and therefore not ePHI. CONSEQUENCE TEST: the entity remains fully bound by the Security Rule
+      for its clinical systems; the HRIS holding the same employees' occupational-health files is
+      outside subpart C. This is data_level, not entity_level — a hospital does not stop owing risk
+      analysis because it also runs a payroll system. The carve-out is also not deregulation: the
+      ADA, GINA, state law and FTC Act § 5 still reach those records, and a security incident in the
+      HR system is a state breach-notification question rather than a § 164.308(a)(6) question.
+    source_citation: 45 C.F.R. § 160.103 (definition of "protected health information") (2)(iii)
+    verbatim_span: In employment records held by a covered entity in its role as employer; and
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - data.in_employment_record == true
+        - entity.holds_as_employer == true
+    source_ref:
+      raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+      raw_sha256: 9916d549267c2f3f629b2157d6e0887b73570f9eddace67b626c40f51a6c9c72
+      instrument_id: us.cfr.45.160
+common_errors:
+  - >-
+    Treating the Privacy Rule's administrative-safeguard standard as satisfying subpart C. They are
+    separate obligations and OCR charges them separately.
+  - >-
+    Scoping the programme to stored data. "Creates, receives, maintains, or transmits" also captures
+    transmission and data resident in a vendor environment.
+  - >-
+    Reading security as confidentiality only, and so treating an availability failure — ransomware,
+    destroyed backups — as outside HIPAA.
+open_questions: []

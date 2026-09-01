@@ -1,0 +1,156 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+related:
+- us.cfr.45.164.502.a.use_disclosure_general
+federal_relationship: null
+interpreted_by: []
+confidence: high
+id: us.hitech.17935.a.restriction_paid_out_of_pocket
+source:
+  citation: 42 U.S.C. § 17935(a)
+  instrument_id: us.hitech
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hitech/raw/42-u-s-c-17935.xml
+  raw_sha256: caa08c0f4fbf122b33462a7c1b12f67f9747d58063a501882f369ba285f072a7
+  text_file: corpus/federal/domain-2-federal-privacy/hitech/raw/42-u-s-c-17935.txt
+  text_sha256: e4d18c52a0457df2238010840951d1bd7cd05f9e390a4d320bc36c7cef15cc52
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/hitech/raw/42-u-s-c-17935.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: In the case that an individual requests under paragraph (a)(1)(i)(A) of section 164.522
+  of title 45, Code of Federal Regulations, that a covered entity restrict the disclosure of the protected
+  health information of the individual, notwithstanding paragraph (a)(1)(ii) of such section, the covered
+  entity must comply with the requested restriction if—
+paragraph_path:
+  path:
+  - a
+  anchor: /us/usc/t42/s17935/a
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element; path read from the enacted hierarchy
+exemptions:
+- id: usc.42.17935.a.1.otherwise_required_by_law
+  type: activity_level
+  scope: 'Where other law compels the disclosure, the mandatory restriction does not reach it. CONSEQUENCE
+    TEST: the covered entity stays bound for every voluntary payment or operations disclosure to the plan;
+    only the compelled disclosure escapes. Typed activity_level rather than data_level because it carves
+    out a class of CONDUCT, not a class of record — the same self-paid encounter is restricted when the
+    provider bills the plan and unrestricted when a State mandate requires the report.'
+  source_citation: 42 U.S.C. § 17935(a)(1)
+  verbatim_span: except as otherwise required by law, the disclosure is to a health plan for purposes
+    of carrying out payment or health care operations (and is not for purposes of carrying out treatment);
+    and
+  burden_of_proof: entity
+  applies_if:
+    all:
+    - law.disclosure_required_by_other_law == true
+common_errors:
+- Reading this as a general right to restrict. The right to REQUEST a restriction under 45 C.F.R. § 164.522(a)(1)(i)(A)
+  is unchanged and the covered entity may still refuse it; only the out-of-pocket-in-full disclosure to
+  a health plan became mandatory.
+- Applying the restriction to treatment disclosures. Paragraph (a)(1) reaches a disclosure to a health
+  plan for payment or health care operations and expressly excludes one carried out for treatment, so
+  a referral to a treating specialist is outside it.
+- Treating the restriction as attaching to the whole record. It attaches only where the information pertains
+  solely to the item or service paid in full, so bundled encounters and downstream summaries that mix
+  restricted and unrestricted services are the operational failure point.
+open_questions:
+- effective_from is HITECH § 13423 (42 U.S.C. § 17423), the subtitle D effective date of 12 months after
+  the 17 February 2009 enactment. Section 17935(b)(3) references § 13423 but the fetched span does not
+  contain the date itself. Fetch 42 U.S.C. § 17423 before relying on any query that turns on 2009-2010
+  timing.
+operative_context:
+- position: follows
+  relation: conditions
+  verbatim_span: except as otherwise required by law, the disclosure is to a health plan for purposes
+    of carrying out payment or health care operations (and is not for purposes of carrying out treatment);
+    and
+  citation: 42 U.S.C. § 17935(a)(1)
+  path:
+    path:
+    - a
+    - '1'
+    anchor: /us/usc/t42/s17935/a/1
+    derivation: structural
+    confidence: high
+    evidence: identifier attribute on the USLM element; path read from the enacted hierarchy
+- position: follows
+  relation: conditions
+  verbatim_span: the protected health information pertains solely to a health care item or service for
+    which the health care provider involved has been paid out of pocket in full.
+  citation: 42 U.S.C. § 17935(a)(2)
+  path:
+    path:
+    - a
+    - '2'
+    anchor: /us/usc/t42/s17935/a/2
+    derivation: structural
+    confidence: high
+    evidence: identifier attribute on the USLM element; path read from the enacted hierarchy
+regulator:
+- hhs_ocr
+sector:
+- health
+data_types:
+- health
+effective_from: '2010-02-17'
+subject:
+  domain: II.B.2
+  lifecycle:
+  - VI
+applies_if:
+  all:
+  - entity.is_hipaa_covered_entity == true
+  - data.is_phi == true
+  - event.type == 'individual_restriction_request'
+obligation_type: restrict_use
+summary: A covered entity must comply with an individual's requested restriction on disclosing protected
+  health information to a health plan for payment or health care operations where the item or service
+  was paid out of pocket in full.
+requirement_detail: 'This is the rare provision where the individual, not the covered entity, decides.
+  Under 45 C.F.R. § 164.522(a)(1)(ii) a covered entity is ordinarily free to refuse a requested restriction,
+  and § 17935(a) removes that discretion — "notwithstanding paragraph (a)(1)(ii) of such section" — for
+  one fact pattern only. The two conditions are cumulative: the disclosure must be to a health plan for
+  payment or health care operations and not for treatment, AND the information must pertain solely to
+  an item or service paid out of pocket in full. That makes it an engineering duty rather than a paperwork
+  one, because the provider has to segregate the self-paid encounter in the record and suppress it on
+  claims and on any plan-directed disclosure while continuing to disclose everything else. The carve-out
+  "except as otherwise required by law" in paragraph (a)(1) leaves compelled disclosures untouched, so
+  a State reporting mandate still overrides the restriction the patient bought.'
+preemption:
+  posture: floor
+  authority: 42 U.S.C. § 1320d-7; 45 C.F.R. § 160.203
+  note: 'HITECH subtitle D is enforced through the HIPAA framework and inherits its preemption posture:
+    a more stringent contrary State law survives. A State law giving the patient a broader right to restrict
+    disclosure than § 17935(a) therefore runs in parallel, and compliance with the federal restriction
+    does not discharge it.'
+enforcement:
+  enforcers:
+  - hhs_ocr
+  - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: Civil money penalties under 42 U.S.C. § 1320d-5, tiered by culpability, and criminal liability
+      under 42 U.S.C. § 1320d-6. HITECH added State attorney general civil actions on behalf of State
+      residents.
+    range: null
+    note: No private right of action. Patients reach the same conduct through State negligence, confidentiality
+      and UDAP theories, so the State backstop never switches off.
+  statute_of_limitations: null

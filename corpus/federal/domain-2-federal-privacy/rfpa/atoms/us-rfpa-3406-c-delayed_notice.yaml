@@ -1,0 +1,128 @@
+id: us.rfpa.3406.c.delayed_notice
+schema_version: 1
+record_type: obligation
+source:
+  citation: 12 U.S.C. § 3406(c)
+  instrument_id: us.rfpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3406.xml
+  raw_sha256: b2f2da6d9a0217992aa311c40b31aeb73c6ca09f7d3181c6e035e2c8c409a251
+  text_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3406.txt
+  text_sha256: d3627d748203c737d2da866ba7880d2ac1a93a2eb32263332dec5b3391c52f9d
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3406.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1 (12-u-s-c-3406)
+    result: structured_source_used
+    note: null
+  segment_sha256: 3f99228bddf4a792d73b8ea3e51c5d6e17e84d2845e04e77267bc15d595891bb
+verbatim_span: >-
+  Upon application of the Government authority, a court may grant a delay in the mailing of the
+  notice required in subsection (b), which delay shall not exceed one hundred and eighty days
+  following the service of the warrant, if the court makes the findings required in section 3409(a)
+  of this title . If the court so finds, it shall enter an ex parte order granting the requested
+  delay and an order prohibiting the financial institution from disclosing that records have been
+  obtained or that a search warrant for such records has been executed. Additional delays of up to
+  ninety days may be granted by the court upon application, but only in accordance with this
+  subsection. Upon expiration of the period of delay of notification of the customer, the following
+  notice shall be mailed to the customer along with a copy of the search warrant: “Records or
+  information concerning your transactions held by the financial institution named in the attached
+  search warrant were obtained by this (agency or department) on (date). Notification was delayed
+  beyond the statutory ninety-day delay period pursuant to a determination by the court that such
+  notice would seriously jeopardize an investigation concerning . You may have rights under the
+  Right to Financial Privacy Act of 1978 [ 12 U.S.C. 3401 et seq.].”.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - c
+  anchor: /us/usc/t12/s3406/c
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: >-
+  The subsection states the delay authority, its outer bound, the nondisclosure order and the
+  substitute notice in full; the notice it delays is § 3406(b), recorded as a separate atom.
+subject:
+  domain: III.A.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - federal_agencies
+sector:
+  - financial
+data_types:
+  - financial
+status: in_force
+effective_from: '1979-03-10'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_government_authority == true
+    - data.is_financial_record == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  On the § 3409(a) findings a court may delay the § 3406(b) warrant notice — not beyond one hundred
+  and eighty days from service, with further ninety-day extensions — and may order the financial
+  institution not to disclose that the records were obtained.
+requirement_detail: >-
+  THE GAG ORDER IS THE PART THAT MATTERS TO THE BANK. Everything else in RFPA regulates the
+  Government; this subsection is the one place a court is authorised to command the FINANCIAL
+  INSTITUTION, and what it commands is silence — an order "prohibiting the financial institution
+  from disclosing that records have been obtained or that a search warrant for such records has been
+  executed". The delay itself is ex parte and is measured from service of the warrant rather than
+  from the ordinary ninety-day due date: the delay "shall not exceed one hundred and eighty days
+  following the service of the warrant", and further delays of up to ninety days each may then be
+  granted on application, so the one hundred and eighty days bounds the first delay and not the
+  total. When the delay finally lapses the customer gets a different notice from the § 3406(b) one:
+  it states that notification was delayed by court determination that notice would seriously
+  jeopardize an investigation, which tells the customer something the ordinary notice does not.
+deadline: null
+exemptions: []
+related:
+  - us.rfpa.3406.a.search_warrant
+  - us.rfpa.3406.b.warrant_notice
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Reading one hundred and eighty days as an absolute ceiling. Additional delays of up to ninety
+    days may be granted on further application under the same subsection.
+  - >-
+    Overlooking that this is the provision that binds the bank. The nondisclosure order runs against
+    the financial institution, unlike the rest of the chapter.
+  - >-
+    Sending the ordinary § 3406(b) notice when the delay expires. The subsection prescribes a
+    different notice that discloses the delay and its basis.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 12 U.S.C. § 3402
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the sections extracted. RFPA binds federal Government authorities,
+    so the ordinary state-law displacement question does not arise in the usual form: a state
+    statute restricting state investigators is not in conflict with it.
+enforcement:
+  enforcers:
+    - federal_agencies
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      12 U.S.C. § 3417 (civil penalties and liability) has not been extracted into this corpus, so
+      penalty exposure and any customer damages action are UNASSESSED rather than absent.
+      private_right_of_action is recorded false because nothing extracted establishes one, not
+      because the statute was read to withhold one.
+  statute_of_limitations: null

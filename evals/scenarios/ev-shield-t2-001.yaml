@@ -1,0 +1,98 @@
+id: ev.shield.t2.001
+question: >-
+  We are a Delaware-incorporated telehealth company operating out of Texas. No New York office, no
+  New York employees, one New York patient. We are a HIPAA covered entity and we have just notified
+  the Secretary of HHS of a breach. Do we have any New York obligation?
+trap: >-
+  T2 and T3 at once, and the honest answer is the opposite of the intuitive one twice over. T2:
+  SHIELD attaches to holding a New York RESIDENT'S private information — there is no nexus, revenue
+  or headcount threshold anywhere in § 899-aa, so one patient is enough and the absence of New York
+  operations is irrelevant. T3: the entity has done the federal thing correctly, and doing it is
+  what STARTED the state clock. § 899-aa(9) gives a covered entity five BUSINESS days from
+  notifying the Secretary to notify the New York attorney general, and it expressly reaches
+  breaches of information that is not even "private information" under § 899-aa(1)(b). The naive
+  answer — "HIPAA-regulated, HIPAA preempts, we're done" — fails the obligation precisely because
+  the federal step was performed. And the compliance-deemed pathway at § 899-aa(2)(b) does not
+  rescue it: that provision removes only notice to affected PERSONS and expressly preserves the
+  notices to the attorney general and the state police.
+rubric:
+- name: the SHIELD notification duty exists as a real atom
+  record_exists: ny.gbl.899_aa.2.notify_residents
+- name: nothing in its predicate mentions New York presence, only the data
+  record: ny.gbl.899_aa.2.notify_residents
+  path: applies_if.all.1
+  equals: data.includes_ny_private_information == true
+- name: extraterritorial reach is stated in terms
+  record: ny.gbl.899_aa.2.notify_residents
+  path: requirement_detail
+  contains: EXTRATERRITORIAL BY DESIGN
+- name: the thirty days runs from DISCOVERY and is a ceiling, not a safe harbour
+  record: ny.gbl.899_aa.2.notify_residents
+  path: deadline.computation
+  contains: not a safe harbour
+- name: the compliance-deemed pathway is typed activity_level, not entity_level
+  record: ny.gbl.899_aa.2.notify_residents
+  path: exemptions.1.type
+  equals: activity_level
+- name: and it records that regulator notice survives it
+  record: ny.gbl.899_aa.2.notify_residents
+  path: exemptions.1.scope
+  contains: has complied with the federal rule and violated this one
+- name: the § 899-aa(9) AG duty exists
+  record_exists: ny.gbl.899_aa.9.hipaa_ag_notice
+- name: it is triggered BY notifying HHS, not by discovery
+  record: ny.gbl.899_aa.9.hipaa_ag_notice
+  path: deadline.trigger_event
+  equals: notification to the Secretary of Health and Human Services
+- name: and the clock is five BUSINESS days
+  record: ny.gbl.899_aa.9.hipaa_ag_notice
+  path: deadline.duration.unit
+  equals: business_days
+- name: it is recorded as exceeding the federal floor, not mirroring it
+  record: ny.gbl.899_aa.9.hipaa_ag_notice
+  path: federal_relationship
+  equals: exceeds_floor
+- name: the record names the exact wrong answer
+  record: ny.gbl.899_aa.9.hipaa_ag_notice
+  path: common_errors
+  contains: Federal compliance is the TRIGGER, not a defence.
+- name: ENGINE — an out-of-state covered entity holding one NY resident's data is covered
+  engine: &tele
+    entity: {owns_or_licenses_computerized_data: true, is_hipaa_covered_entity: true, nexus: US}
+    data: {includes_ny_private_information: true}
+    context:
+      as_of: '2026-08-19'
+      event: {type: breach_of_security_of_the_system}
+      practice: {notified_hhs_secretary_of_breach: true}
+  atom: ny.gbl.899_aa.2.notify_residents
+  in: applicable
+- name: ENGINE — and the § 899-aa(9) attorney-general duty applies too
+  engine: *tele
+  atom: ny.gbl.899_aa.9.hipaa_ag_notice
+  in: applicable
+- name: SHIELD preempts LOCAL law only, never federal
+  record: ny.gbl.899_aa.2.notify_residents
+  path: preemption.posture
+  equals: ceiling
+- name: and the note says so explicitly
+  record: ny.gbl.899_aa.2.notify_residents
+  path: preemption.note
+  contains: says nothing about federal law
+- name: no private right of action, so GBL § 349 is the private vehicle
+  record: ny.gbl.899_aa.2.notify_residents
+  path: enforcement.private_right_of_action
+  equals: false
+correct_answer: >-
+  Yes, two of them, and the second was created by the step you just took. § 899-aa(2) requires you
+  to notify the New York resident within thirty days of discovering the breach — the duty attaches
+  to holding a New York resident's private information, with no nexus, revenue or headcount
+  threshold, so one patient and no New York presence is enough. And § 899-aa(9) requires a covered
+  entity that notifies the Secretary of HHS to notify the New York attorney general within five
+  BUSINESS days of doing so, expressly including breaches of information that is not "private
+  information" under § 899-aa(1)(b). That is the earlier of the two deadlines in practice. If you
+  notified affected persons under the HIPAA breach rule, § 899-aa(2)(b) means you need not notify
+  those same people again — but it preserves the notices to the attorney general, the department
+  of state and the division of state police under § 899-aa(8)(a), and to consumer reporting
+  agencies where more than 5,000 residents are involved. HIPAA does not preempt any of this;
+  45 C.F.R. § 160.203 makes it a floor, and § 899-aa(10) preempts only local ordinances.
+all_pass: true

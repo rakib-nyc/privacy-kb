@@ -1,0 +1,96 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2020-03-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: gap_fills
+preemption:
+  posture: none
+  authority: N.Y. Gen. Bus. Law § 899-bb
+  note: >-
+    No preemption clause. The section coexists with federal security regimes and expressly builds on
+    them through the compliant-regulated-entity route rather than yielding to them.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Failure to comply is DEEMED a violation of GBL § 349 under § 899-bb(2)(d); the attorney
+      general may enjoin and obtain civil penalties.
+    range: null
+    note: >-
+      § 899-bb(2)(e): nothing in the section creates a private right of action. The § 349 deeming is
+      an AG enforcement route and does not open the § 349(h) private action.
+  statute_of_limitations: null
+applies_if:
+  all:
+    - entity.owns_or_licenses_computerized_data == true
+    - data.includes_ny_private_information == true
+applies_to_role: controller
+exemptions: []
+id: ny.gbl.899_bb.1.compliant_regulated_entity
+source:
+  citation: N.Y. Gen. Bus. Law § 899-bb(1)
+  instrument_id: ny.gbl.899_bb
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/899-BB
+  fetched: '2026-08-19'
+  raw_file: corpus/state/ny/shield-act/raw/ny-gbs-899-bb.json
+  raw_sha256: 9520cf42bbee2479a6222f20788cda30b8ec4f294796aae141446efb9601a4dc
+  text_file: corpus/state/ny/shield-act/raw/ny-gbs-899-bb.txt
+  text_sha256: 096fb01847608947a9ad5a682632a0d43a48022b2d77343828da916b8d925e51
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/shield-act/raw/ny-gbs-899-bb.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ny-gbs-899-bb structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: 9334632e10a016b7e0028c699192d4950d97efb223fed227e721f618127688de
+verbatim_span: >-
+  Definitions. (a) "Compliant regulated entity" shall mean any person or business that is subject
+  to, and in compliance with, any of the following data security requirements:
+paragraph_path:
+  path:
+    - '1'
+  anchor: 899-BB
+  derivation: reconstructed
+  confidence: high
+  evidence: designators reconstructed from the flat text field; resolves to exactly one leaf (gate 23)
+context_not_required: The provision states the duty in full.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - IV
+obligation_type: secure
+deadline: null
+summary: >-
+  "Compliant regulated entity" means a person or business subject to and in compliance with GLBA
+  regulations, HIPAA/HITECH, 23 NYCRR Part 500, or other federal or New York data security rules.
+requirement_detail: >-
+  THE DEFINITION THE COMPLIANCE-DEEMED PATHWAY TURNS ON, and the operative words are SUBJECT TO AND
+  IN COMPLIANCE WITH. Being regulated is not enough; an entity in breach of its GLBA Safeguards
+  obligations is not a compliant regulated entity and gets nothing from § 899-bb(2)(b)(i). That
+  makes the New York safeguards duty conditional on federal compliance rather than displaced by
+  federal regulation — the inverse of how a preemption analysis would frame it.
+common_errors:
+  - Reading "subject to" as sufficient. The definition requires actual compliance.
+  - Assuming it covers breach notification too. § 899-aa(2)(b) has its own, narrower, deemed route.
+open_questions: []

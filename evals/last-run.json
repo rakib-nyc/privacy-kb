@@ -1,0 +1,309 @@
+{
+  "ran": "2026-09-01",
+  "scenarios": 30,
+  "all_pass": 30,
+  "all_pass_rate": 1,
+  "criteria_total": 229,
+  "results": [
+    {
+      "id": "ev.authority.001",
+      "file": "ev-authority-001.yaml",
+      "question": "Our consumer wellness app collects health data. Nothing we do touches a hospital or insurer. If we misrepresent our privacy practices, who enforces and what is the exposure?",
+      "trap": "T1-adjacent: assuming health data means HIPAA. The app is neither a covered entity nor a business associate, so HHS OCR has no reach. The answer is the FTC, and the naive answer names the wrong regulator and therefore the wrong remedy, the wrong penalty structure and the wrong private-action posture.",
+      "criteria": 6,
+      "passed": 6,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.authority.002",
+      "file": "ev-authority-002.yaml",
+      "question": "We are a national bank. The FTC has opened an inquiry into our consumer disclosures. Can the FTC reach us?",
+      "trap": "The FTC Act s5 carve-outs are entity-level and decisive. A model that knows the FTC is the general consumer-protection regulator will say yes. s45(a)(2) says banks are excepted.",
+      "criteria": 6,
+      "passed": 6,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.authority.003",
+      "file": "ev-authority-003.yaml",
+      "question": "A telecom carrier mishandled customer network information and also sent unsolicited marketing texts. Where is the real exposure?",
+      "trap": "Treating one regulator as one exposure profile. CPNI under s222 has no private right of action; the TCPA under s227 has one with statutory damages per message. The litigation risk is overwhelmingly the texts, not the CPNI.",
+      "criteria": 6,
+      "passed": 6,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.authority.004",
+      "file": "ev-authority-004.yaml",
+      "question": "A school district's edtech vendor exposed student records. What penalty does the district face under FERPA?",
+      "trap": "Expecting a monetary penalty. FERPA is a funding condition with no penalty regime and no private right of action, which is the opposite of what a model primed on GDPR-style fines will say.",
+      "criteria": 6,
+      "passed": 6,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.authority.006",
+      "file": "ev-authority-006.yaml",
+      "question": "We violated a HIPAA rule. HHS is investigating. Can anyone else come after us, and can our patients sue?",
+      "trap": "Two errors at once: assuming HHS is the only enforcer, and assuming patients can sue under HIPAA. State AGs got HIPAA enforcement authority under HITECH, and HIPAA has no private right of action.",
+      "criteria": 6,
+      "passed": 6,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.context.001",
+      "file": "ev-context-001.yaml",
+      "question": "Does 16 C.F.R. § 682.3(b)(3) require us to conduct due diligence on our shredding vendor and contract with them?",
+      "trap": "THE HEADLINE FAILURE CLASS. Quoted alone the paragraph reads as a mandate. Its stem says the enumerated items are 'illustrative only and are not exclusive or exhaustive'. Verbatim and substantively wrong.",
+      "criteria": 6,
+      "passed": 6,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.coppa.001",
+      "file": "ev-coppa-001.yaml",
+      "question": "We obtained verifiable parental consent. Can we now require children to give us their full address to enter a contest?",
+      "trap": "Assuming consent cures over-collection. s312.3(d) is a separate prohibition that consent does not satisfy.",
+      "criteria": 5,
+      "passed": 5,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.coppa.002",
+      "file": "ev-coppa-002.yaml",
+      "question": "Our service is not directed to children, but a user told us they are 11. Does COPPA apply?",
+      "trap": "T4: signal/knowledge triggers. Actual knowledge is an independent trigger -- the service need not be child-directed.",
+      "criteria": 4,
+      "passed": 4,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.coverage.001",
+      "file": "ev-coverage-001.yaml",
+      "question": "What are our obligations under New York's SHIELD Act?",
+      "trap": "T5-adjacent: answering from training data when the corpus has nothing. The honest answer is that NY is not modelled and why.",
+      "criteria": 3,
+      "passed": 3,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.deadline.001",
+      "file": "ev-deadline-001.yaml",
+      "question": "We discovered a HIPAA breach on 1 August. We plan to notify individuals on day 58. Are we compliant?",
+      "trap": "Reading 60 days as an allowance. The rule is 'without unreasonable delay AND in no case later than' — day 58 with no reason can still violate it.",
+      "criteria": 5,
+      "passed": 5,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.deadline.002",
+      "file": "ev-deadline-002.yaml",
+      "question": "A GLBA notification event affected 400 consumers. When must we notify the FTC?",
+      "trap": "The 500-consumer threshold. Below it the rule imposes no FTC notice at all, and a model primed on 'breach means notify' will invent a duty.",
+      "criteria": 5,
+      "passed": 5,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.defs.t9.001",
+      "file": "ev-defs-t9-001.yaml",
+      "question": "Our platform holds what our engineers call \"personal information\" in one warehouse: account balances, payment history, some health-plan data from our benefits product, and a scoring model we sell to landlords. Counsel keeps asking whether \"personal information\" is regulated. Is that one question?",
+      "trap": "T9. It is three questions wearing one phrase, and the phrase is not a legal term in any of the three regimes. FCRA defines \"consumer report\", GLBA defines \"nonpublic personal information\", HIPAA defines \"protected health information\", and they do not overlap the way a data map suggests. The trap is answering at the level of the column name. Two divergences do the most damage in practice. FCRA is defined by PURPOSE — the landlord-scoring product can make the very same rows a consumer report while the identical rows used for the firm's own servicing are not. And GLBA and HIPAA share NO structural element at all: one is keyed to a customer relationship, the other to who holds the record, and a control designed against one satisfies nothing in the other.",
+      "criteria": 12,
+      "passed": 12,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.ftc.t6.002",
+      "file": "ev-ftc-t6-002.yaml",
+      "question": "We are CBPR-certified and we say so on our website. Our counsel says CBPR is a voluntary framework with no force of law in the United States, so certification creates no binding obligation. Is that right?",
+      "trap": "T6, and it is the trap that produces a confidently wrong \"you're fine\". The premise is correct and the conclusion does not follow. The framework binds nobody by itself — every principle record in this corpus carries enforceability_pathway: none, because those documents are addressed to states and member economies and offer an organisation nothing to join. But an organisation CAN claim adherence, and a public claim of adherence is a representation about privacy practices. Materially departing from it is deception under FTC Act § 5. The obligation is not in the scheme; it is in § 5, triggered by the claim. A system that answers \"no binding obligation\" and stops has found the right fact and given the wrong advice. SCOPE NARROWED 2026-08-31: criteria asserting over the APEC and Global CBPR scheme records were removed with those records, which were sourced from documents this repository no longer redistributes. The § 5 backstop this scenario exists to pin is untouched.",
+      "criteria": 10,
+      "passed": 10,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.glba.t1.001",
+      "file": "ev-glba-t1-001.yaml",
+      "question": "We are a motor vehicle dealership. We extend retail credit to buyers ourselves and we hold that paper — we do not routinely assign it to an outside finance source. Does the FTC's GLBA Privacy Rule apply to us, and if not, are we free of GLBA privacy obligations?",
+      "trap": "T1, in its most expensive form. Two mistakes are available and most answers make one of them. The first is missing the exclusion entirely and applying 16 C.F.R. part 313 to a dealer § 313.1(b) puts outside it. The second is worse: finding the exclusion and concluding the dealer has no GLBA privacy obligation. It does. 12 U.S.C. 5519 hands exactly these dealers to the CFPB, so Regulation P (12 C.F.R. part 1016) reaches them instead. This is a JURISDICTIONAL ALLOCATION wearing the shape of an exemption, and an entity_level exemption is the easiest place in the schema to lose that. The hinge is the single word \"routinely\", which is a fact about the dealer's practice that no amount of reasoning recovers — it has to be supplied.",
+      "criteria": 11,
+      "passed": 11,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.glba.t1.002",
+      "file": "ev-glba-t1-002.yaml",
+      "question": "Same dealership, and we do routinely assign our retail paper, so part 313 applies to us. This morning we sold a fleet pickup to a landscaping company on commercial terms, and this afternoon we sold a sedan to a retail buyer. Are we exempt for the landscaping deal? What does that exemption actually take out of scope?",
+      "trap": "T1 in the direction that costs coverage rather than accuracy. The § 313.1(b) business-purpose carve-out is real, and the naive move is to let it settle at the level of the ENTITY — \"commercial dealer, commercial deal, we are outside the rule\" — when it removes only the records. The two deals sit in the same DMS, on the same day, under the same policies, and the rule reaches one and not the other. This is the exact shape BRIEF.md names as the expert/novice divider: an exemption that is about the data being answered as though it were about the actor. Collapsing it produces a dealer that believes it owes no privacy notices at all.",
+      "criteria": 10,
+      "passed": 10,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.glba.t1.003",
+      "file": "ev-glba-t1-003.yaml",
+      "question": "We are a covered dealership. We send customer contact and payment data to an outside marketing firm that runs our service-reminder campaigns, under a contract that forbids them using it for anything else, and we gave every customer the initial privacy notice. Someone told us that once we are inside the §§ 313.13–313.15 exceptions we can stop sending privacy notices. Is that right?",
+      "trap": "T1 against a moving target: these exceptions carve out a DISCLOSURE, not a duty set, and they name the paragraphs they suspend. § 313.14 and § 313.15 suspend the initial notice at § 313.4(a)(2) by its paragraph number — and say nothing about § 313.4(a)(1), the customer notice. The naive answer collapses \"the initial notice\" into one obligation and switches off a duty that is still owed to every customer on the lot. The second trap is that § 313.13 is EARNED, not held: strip the contract and the disclosure is not partially exempt, it is a bare violation of § 313.10(a)(1). The third is § 313.5(e), which does relieve the annual notice for this dealer, but is contingent on continuing conduct and is lost by a single out-of-exception disclosure.",
+      "criteria": 13,
+      "passed": 13,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.hipaa.t1.001",
+      "file": "ev-hipaa-t1-001.yaml",
+      "question": "We are a hospital and therefore a HIPAA covered entity. Our HR department holds pre-employment physicals, FMLA paperwork and workers' comp files on our own nursing staff — including on nurses who are also our patients. Is that PHI, and are we exempt as to it?",
+      "trap": "T1, the case BRIEF.md names as the divider between expert and novice analysis, and it is available to be got wrong in both directions. Answer \"we're a covered entity, so it's all PHI\" and every HR file in the health system is over-protected and the HIPAA analysis crowds out the ADA and GINA analysis that actually governs. Answer \"employment records are exempt, so we're exempt\" and the hospital reads an exclusion from the DEFINITION OF THE DATA as an exemption for the ENTITY, which is the failure mode the typed exemption exists to prevent. The same nurse generates both answers on the same day: her chart is PHI because she is a patient, her pre-employment physical is not because the hospital holds it as employer. What changes is the capacity in which the record is held, not the clinical content and not the entity.",
+      "criteria": 12,
+      "passed": 12,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.hipaa.t8.001",
+      "file": "ev-hipaa-t8-001.yaml",
+      "question": "We are a HIPAA covered entity operating in New York. We have a full HIPAA compliance programme. Does complying with the Privacy Rule discharge our New York obligations, and does HIPAA preempt the state law?",
+      "trap": "T8. HIPAA is a FLOOR, not a ceiling. 45 C.F.R. § 160.203 preserves contrary State law that is MORE STRINGENT, so state duties run in parallel rather than being displaced, and where clocks differ the shorter one governs in practice. The naive answer treats a federal sectoral statute as occupying the field and tells the client they are done. Compounding it, this corpus does NOT yet hold New York's breach or safeguards statutes, so the honest answer has to say which state duties it cannot assess rather than reporting a clean bill — the system must distinguish \"no state duty applies\" from \"this corpus cannot see the state duties\".",
+      "criteria": 6,
+      "passed": 6,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.pra.001",
+      "file": "ev-pra-001.yaml",
+      "question": "A streaming service disclosed our viewing history. Which regulator do we complain to?",
+      "trap": "Assuming a regulator exists. VPPA has NO agency enforcer at all -- it runs entirely on a private right of action with liquidated damages.",
+      "criteria": 6,
+      "passed": 6,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.safekids.defs.001",
+      "file": "ev-safekids-defs-001.yaml",
+      "question": "We are building one New York compliance flow for minors. Both the Child Data Protection Act and the SAFE for Kids Act use the term \"covered user\". Can we implement it once and reuse it?",
+      "trap": "NO, AND THE COLLISION IS INSIDE A SINGLE CHAPTER OF A SINGLE STATE'S LAW. GBL § 899-ee(1) defines \"Covered user\" as a user in New York whom the operator actually knows to be a minor, or who is using a service primarily directed to minors — a minority-gated term. GBL § 1500(4) defines the same two words as a user in New York who is not the operator or its agent or affiliate, which is very nearly everybody, adults included. The only element the two share is being in New York. The usual defence against this failure — \"different statutes use words differently\" — does not fire, because a reader sees one state, one chapter, one phrase, and reasonably assumes one meaning. The minor-specific term in the SAFE for Kids Act is a DIFFERENT one, \"covered minor\" at § 1500(3), and § 1501(1) is deliberately drafted against covered USER so the duty attaches before the operator knows who is a minor. Implement it once and the age-determination route stops making sense.",
+      "criteria": 14,
+      "passed": 14,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.safekids.pending.001",
+      "file": "ev-safekids-pending-001.yaml",
+      "question": "We run a social media app with a personalised feed. We have New York users, some of them teenagers. New York passed the SAFE for Kids Act. What do we have to do, and by when?",
+      "trap": "THE PENDING-LAW TRAP, and it is the one BRIEF.md § 7 names second because training data is dense with coverage of this Act from the year it was signed. Every duty in it is real, final and quotable — and none of it binds anyone on the date of this query. The article takes effect 25 January 2027, and § 1508(1) then bars the attorney general from bringing any action for a further 180 days, so there are TWO future dates and confusing them is the second error. The naive answer states the § 1501 prohibition as a present obligation; the over-corrected answer reads the 180 days as a compliance grace period, which it is not — the duties bind on the effective date and only the remedy is deferred. Invariant I3 exists for exactly this.",
+      "criteria": 13,
+      "passed": 13,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.shield.t2.001",
+      "file": "ev-shield-t2-001.yaml",
+      "question": "We are a Delaware-incorporated telehealth company operating out of Texas. No New York office, no New York employees, one New York patient. We are a HIPAA covered entity and we have just notified the Secretary of HHS of a breach. Do we have any New York obligation?",
+      "trap": "T2 and T3 at once, and the honest answer is the opposite of the intuitive one twice over. T2: SHIELD attaches to holding a New York RESIDENT'S private information — there is no nexus, revenue or headcount threshold anywhere in § 899-aa, so one patient is enough and the absence of New York operations is irrelevant. T3: the entity has done the federal thing correctly, and doing it is what STARTED the state clock. § 899-aa(9) gives a covered entity five BUSINESS days from notifying the Secretary to notify the New York attorney general, and it expressly reaches breaches of information that is not even \"private information\" under § 899-aa(1)(b). The naive answer — \"HIPAA-regulated, HIPAA preempts, we're done\" — fails the obligation precisely because the federal step was performed. And the compliance-deemed pathway at § 899-aa(2)(b) does not rescue it: that provision removes only notice to affected PERSONS and expressly preserves the notices to the attorney general and the state police.",
+      "criteria": 16,
+      "passed": 16,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.shield.t3.002",
+      "file": "ev-shield-t3-002.yaml",
+      "question": "We are a HIPAA covered entity. We discovered a breach on 1 August 2026 and notified the Secretary of HHS on 5 August, inside the federal window. Some of the affected people are New York residents. What is our next deadline?",
+      "trap": "T3, and this is the case a general model gets backwards. Every instinct says the federal clock is the binding one and the state layer is a slower parallel duty to handle afterwards. The opposite is true, and the reason is structural rather than arithmetic: N.Y. Gen. Bus. Law § 899-aa(9) is triggered BY the act of notifying the Secretary, not by discovery. Doing the federal thing correctly on 5 August starts a five-BUSINESS-day New York clock that expires on 12 August, while the § 899-aa(2) resident-notice clock — thirty days from discovery on 1 August — does not expire until 31 August. So the next deadline is a state one, it exists only because federal compliance occurred, and an entity that files the federal notice and then turns to \"the state layer\" next quarter has already missed it. Compounding the trap, § 899-aa(9) expressly reaches breaches of information that is NOT \"private information\" under § 899-aa(1)(b), so a clinical-data breach with no covered data element still triggers the Albany filing.",
+      "criteria": 13,
+      "passed": 13,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.sourcing.001",
+      "file": "ev-sourcing-001.yaml",
+      "question": "Quote us the FTC Act's unfairness test.",
+      "trap": "Reconstructing statutory text from memory. Every span must be traceable to a fetched source with a hash.",
+      "criteria": 4,
+      "passed": 4,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.sourcing.002",
+      "file": "ev-sourcing-002.yaml",
+      "question": "Is the US Code the law?",
+      "trap": "For a non-positive-law title it is prima facie EVIDENCE of the law, not the law. Title 15 -- FCRA, GLBA, the FTC Act -- is non-positive-law.",
+      "criteria": 6,
+      "passed": 6,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.tier.001",
+      "file": "ev-tier-001.yaml",
+      "question": "An agency published guidance in the CFR. Is it a regulation?",
+      "trap": "Publication location does not confer force of law -- notice-and-comment does. 5 USC 553(b)(A) exempts interpretative rules and policy statements.",
+      "criteria": 6,
+      "passed": 6,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.trap.t10.002",
+      "file": "ev-trap-t10-002.yaml",
+      "question": "What is the civil penalty for violating an FTC order? The statute says $10,000.",
+      "trap": "T10: the statutory figure is not the operative one. s45(l) and s45(m) are inflation-adjusted by rule and the real number is far higher.",
+      "criteria": 4,
+      "passed": 4,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.trap.t6.001",
+      "file": "ev-trap-t6-001.yaml",
+      "question": "We run a florist's website. No sectoral privacy statute reaches us. Are we unregulated?",
+      "trap": "T6: silence read as permission. A tool that returns nothing when no sectoral statute matches is worse than useless.",
+      "criteria": 4,
+      "passed": 4,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.trap.t8.001",
+      "file": "ev-trap-t8-001.yaml",
+      "question": "Does FCRA preempt our state's consumer reporting law?",
+      "trap": "T8: treating FCRA as broadly preemptive. Its default is a SAVINGS clause; preemption is the exception.",
+      "criteria": 6,
+      "passed": 6,
+      "all_pass": true,
+      "failures": []
+    },
+    {
+      "id": "ev.trap.t8.002",
+      "file": "ev-trap-t8-002.yaml",
+      "question": "We comply with HIPAA's 60-day breach notification. Does that discharge our state obligations?",
+      "trap": "T8/T3: HIPAA is a FLOOR. Complying with it does not discharge parallel state duties, and state clocks are often shorter.",
+      "criteria": 5,
+      "passed": 5,
+      "all_pass": true,
+      "failures": []
+    }
+  ]
+}

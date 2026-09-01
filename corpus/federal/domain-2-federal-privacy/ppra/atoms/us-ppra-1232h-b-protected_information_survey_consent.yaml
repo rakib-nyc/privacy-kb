@@ -1,0 +1,123 @@
+id: us.ppra.1232h.b.protected_information_survey_consent
+schema_version: 1
+record_type: obligation
+source:
+  citation: 20 U.S.C. § 1232h(b)
+  instrument_id: us.ppra
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc20@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ppra/raw/20-u-s-c-1232h.xml
+  raw_sha256: eb42d939529b064174f294c66050424507909fa3644becd81e90102800dd62f4
+  text_file: corpus/federal/domain-2-federal-privacy/ppra/raw/20-u-s-c-1232h.txt
+  text_sha256: c33faac33c7129e6e5eec3d8be18632846ea25016c67f4c39fe58b09d35b3720
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/ppra/raw/20-u-s-c-1232h.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: No student shall be required, as part of any applicable program, to submit to a survey, analysis,
+  or evaluation that reveals information concerning—
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+  - b
+  anchor: /us/usc/t20/s1232h/b
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source; the subsection has a chapeau and a continuation,
+    which are the two halves of one provision
+subject:
+  domain: II.D.1
+  lifecycle:
+  - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+- ed
+sector:
+- education
+data_types:
+- personal_information
+status: in_force
+effective_from: '2002-01-08'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+  - entity.receives_federal_education_funds == true
+  - practice.administers_student_survey == true
+  - data.reveals_ppra_protected_category == true
+applies_to_role: controller
+obligation_type: obtain_consent
+summary: A student may not be required, as part of an applicable program, to submit to a survey, analysis or evaluation
+  revealing any of the eight enumerated categories without prior consent — written consent of the parent where
+  the student is an unemancipated minor.
+requirement_detail: 'THIS IS THE OPT-IN HALF OF PPRA AND IT COVERS WHAT FERPA DOES NOT. FERPA governs the education
+  record a school already holds; this subsection governs the act of collecting from the student in the first place,
+  through a survey, analysis or evaluation, and it bites on eight enumerated subjects — political beliefs, mental
+  or psychological problems, sex behaviour, illegal or demeaning behaviour, critical appraisals of close family,
+  privileged relationships, religious belief and income. The consent standard is asymmetric and this is where
+  the statute is routinely misdescribed: for an unemancipated minor the requirement is "the prior written consent
+  of the parent", but where the student is an adult or an emancipated minor the text asks only for "the prior
+  consent of the student" and does not say written. Two limits matter as much as the trigger. The prohibition
+  attaches to a survey a student is REQUIRED to submit to as part of an applicable program, so a genuinely voluntary
+  instrument falls outside this subsection and into the notice-and-opt-out regime of subsection (c); and the income
+  category is qualified on its face, excluding income information required by law to determine programme eligibility.
+  Under (c)(5)(A)(i) this section does not supersede FERPA, so the two run together rather than one displacing
+  the other.'
+deadline: null
+exemptions: []
+related:
+- us.ppra.1232h.c2ai.annual_policy_notice
+- us.ppra.1232h.c2aii.opt_out_opportunity
+federal_relationship: null
+interpreted_by: []
+common_errors:
+- Saying PPRA always requires prior WRITTEN consent. Written consent is specified for the parent of an unemancipated
+  minor; for an adult or emancipated student the text requires prior consent without saying written.
+- Applying subsection (b) to every school survey. It reaches a survey a student is required to submit to as part
+  of an applicable program and that reveals one of the eight listed categories; anything else is governed by the
+  subsection (c) notice and opt-out regime.
+- Treating PPRA as displaced by FERPA, or as covering the same ground. FERPA governs records the school holds;
+  PPRA governs collection from students, and (c)(5)(A)(i) says this section does not supersede FERPA.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 20 U.S.C. § 1232h(c)(4)(B)(i)
+  note: Subsection (c)(4)(B)(i) states that the provisions of subsection (c) shall not be construed to preempt
+    applicable provisions of State law that require parental notification, so a stricter state student-privacy
+    notice regime survives. New York's Education Law § 2-d is the live example in this corpus's state layer.
+enforcement:
+  enforcers:
+  - ed
+  private_right_of_action: false
+  penalty:
+    structure: Administrative. Subsection (f) directs the Secretary to establish or designate an office and review
+      board within the Department of Education to investigate, process, review and adjudicate violations; subsection
+      (e) conditions the Secretary's enforcement action on a failure to comply that cannot be secured by voluntary
+      means. The ultimate sanction is withdrawal of federal education funds, as with FERPA.
+    range: null
+    note: NO PRIVATE RIGHT OF ACTION. Like FERPA, PPRA is a spending-clause condition enforced administratively,
+      so a parent's route is a complaint to the Department's Student Privacy Policy Office, not a lawsuit.
+  statute_of_limitations: null
+operative_context:
+- position: follows
+  relation: concludes
+  verbatim_span: without the prior consent of the student (if the student is an adult or emancipated minor), or
+    in the case of an unemancipated minor, without the prior written consent of the parent.
+  citation: 20 U.S.C. § 1232h(b)
+  path:
+    path:
+    - b
+    anchor: /us/usc/t20/s1232h/b
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source; USLM continuation carrying the consent condition
+      after the enumerated categories

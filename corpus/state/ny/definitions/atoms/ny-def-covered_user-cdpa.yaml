@@ -1,0 +1,115 @@
+schema_version: 1
+record_type: definition
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+status: in_force
+effective_from: '2025-06-20'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: high
+id: ny.def.covered_user.cdpa
+term: covered user
+term_as_defined: Covered user
+instrument_id: ny.gbl.899-ee
+source:
+  citation: N.Y. Gen. Bus. Law § 899-ee(1)
+  instrument_id: ny.gbl.899-ee
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/899-EE
+  fetched: '2026-08-20'
+  raw_file: corpus/state/ny/cdpa/raw/ny-gbs-899-ee.json
+  raw_sha256: d8ea0c1e4456c24686eaa1b78ecc3dc786fc4102cded60a11615c4121a49c52e
+  text_file: corpus/state/ny/cdpa/raw/ny-gbs-899-ee.txt
+  text_sha256: bf5c7f746f5ba5b2512a9dc7363b5c8e34f8c5ef7f69f1ee69440c688baf6566
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/cdpa/raw/ny-gbs-899-ee.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, laws/GBS/899-EE
+    result: structured_source_used
+    note: null
+  segment_sha256: 92f208cf1cae27f3a4400f172b64691e16c6163497e432bd6d365590234ffad3
+verbatim_span: >-
+  "Covered user" shall mean a user of a website, online service, online application, mobile
+  application, or connected device, or portion thereof, in the state of New York who is:
+paragraph_path:
+  path:
+    - '1'
+  anchor: 899-EE
+  derivation: reconstructed
+  confidence: high
+  evidence: subdivision designators reconstructed from the flat text field; resolves to exactly one leaf
+context_not_required: >-
+  The chapeau and its two lettered paragraphs are quoted as elements below; nothing outside
+  subdivision 1 governs the term.
+subject:
+  domain: V.B.1
+  lifecycle:
+    - III
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - minor
+elements:
+  - id: cdpa.u1
+    kind: requires
+    concept: located_in_new_york
+    verbatim_span: in the state of New York
+    gloss: The user must be in New York. Nothing about where the operator is.
+    condition: null
+  - id: cdpa.u2
+    kind: requires
+    concept: subject_is_minor
+    verbatim_span: to be a minor
+    gloss: >-
+      Both routes into the term run through minority — (a) directly, (b) by the character of the
+      service. An adult is never a covered user under this article.
+    condition: null
+  - id: cdpa.u3
+    kind: includes
+    concept: trigger_actual_knowledge
+    verbatim_span: >-
+      actually known by the operator of such website, online service, online application, mobile
+      application, or connected device to be a minor; or
+    gloss: 'Route one: the operator actually knows.'
+    condition: null
+  - id: cdpa.u4
+    kind: includes
+    concept: trigger_service_directed_to_minors
+    verbatim_span: >-
+      using a website, online service, online application, mobile application, or connected device
+      primarily directed to minors.
+    gloss: >-
+      Route two: the service is primarily directed to minors, and then the operator's knowledge of
+      the individual user is irrelevant.
+    condition: null
+differs_from:
+  - id: ny.def.covered_user.safe_for_kids
+    difference: >-
+      "Covered user" (N.Y. Gen. Bus. Law § 899-ee(1)) vs "Covered user" (N.Y. Gen. Bus. Law §
+      1500(4)). Only Covered user (N.Y. Gen. Bus. Law § 899-ee(1)): includes trigger actual
+      knowledge; includes trigger service directed to minors; requires subject is minor. Only
+      Covered user (N.Y. Gen. Bus. Law § 1500(4)): excludes carveout operator and affiliates.
+      Shared: requires located in new york.
+    computed:
+      only_here:
+        - includes:trigger_actual_knowledge
+        - includes:trigger_service_directed_to_minors
+        - requires:subject_is_minor
+      only_there:
+        - excludes:carveout_operator_and_affiliates
+      shared:
+        - requires:located_in_new_york
+related:
+  - ny.def.covered_user.safe_for_kids
+common_errors:
+  - >-
+    Carrying this definition into the SAFE for Kids Act, which uses the same two words for a
+    different set of people. See ny.def.covered_user.safe_for_kids.
+open_questions: []

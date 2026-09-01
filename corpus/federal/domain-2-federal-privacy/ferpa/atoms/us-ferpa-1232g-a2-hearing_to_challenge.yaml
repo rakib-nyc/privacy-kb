@@ -1,0 +1,126 @@
+id: us.ferpa.1232g.a2.hearing_to_challenge
+schema_version: 1
+record_type: obligation
+source:
+  citation: 20 U.S.C. § 1232g(a)(2)
+  instrument_id: us.ferpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc20@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  raw_sha256: d9eb0b65a1acac5602e55cef5941f4e79a13824f23e8f78b141be5f1d1624e7b
+  text_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.txt
+  text_sha256: 6a51713f2648ca5674640dc9e871fdc9304de0055007e798298d216e99630681
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: f158134203e833549715f09e032d9048d499ad45a38afc1b0323077576adafa8
+verbatim_span: >-
+  No funds shall be made available under any applicable program to any educational agency or
+  institution unless the parents of students who are or have been in attendance at a school of such
+  agency or at such institution are provided an opportunity for a hearing by such agency or
+  institution, in accordance with regulations of the Secretary, to challenge the content of such
+  student’s education records, in order to insure that the records are not inaccurate, misleading,
+  or otherwise in violation of the privacy rights of students, and to provide an opportunity for the
+  correction or deletion of any such inaccurate, misleading or otherwise inappropriate data
+  contained therein and to insert into such records a written explanation of the parents respecting
+  the content of such records.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '2'
+  anchor: /us/usc/t20/s1232g/a/2
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element
+context_not_required: >-
+  The paragraph carries the whole funding condition — hearing, correction or deletion, and the right
+  to insert a written explanation — in a single sentence with no governing stem above it.
+subject:
+  domain: II.D.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ed
+sector:
+  - education
+data_types:
+  - education_record
+status: in_force
+effective_from: '1974-11-19'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_educational_agency_or_institution == true
+    - data.is_education_record == true
+applies_to_role: controller
+obligation_type: assess
+summary: >-
+  Federal funds are conditioned on the institution giving parents an opportunity for a hearing to
+  challenge the content of a student's education records as inaccurate, misleading or in violation
+  of privacy rights, to correct or delete such data, and to insert a written explanation into the
+  record.
+requirement_detail: >-
+  THE AMENDMENT RIGHT IS A HEARING RIGHT, AND IT IS NARROWER THAN CLIENTS EXPECT. The grounds are
+  fixed by the text — inaccurate, misleading, or otherwise in violation of the privacy rights of the
+  student — so a challenge to the substance of a grade or a disciplinary finding fails, while a
+  challenge to whether the record accurately reports the grade that was given succeeds; courts have
+  policed that line consistently, and it is where most FERPA amendment requests die. The procedure
+  is not in the statute: 34 C.F.R. §§ 99.20 to 99.22 supply the request, the hearing before an
+  official without a direct interest, and the written decision. The remedy on refusal is the third
+  limb of this paragraph and the one institutions forget — the parent may place a written
+  explanation in the record, and under 34 C.F.R. § 99.21(c) it must be kept with the contested part
+  of the record and disclosed whenever that part is disclosed. Because Gonzaga University v. Doe
+  (2002) foreclosed private enforcement, a parent whose hearing is denied complains to the
+  Department rather than suing, which is why the practical leverage in edtech disputes is the
+  school's contract with the vendor rather than the statute.
+deadline: null
+exemptions: []
+related:
+  - us.ferpa.1232g.a1a.inspect_and_review
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Using the hearing to relitigate a grade or a discipline decision. The grounds are accuracy,
+    misleading content, and privacy-rights violations, not substantive disagreement.
+  - >-
+    Closing the file when amendment is refused. The parent's written explanation must then be placed
+    in the record and disclosed with the contested part (34 C.F.R. § 99.21(c)).
+  - >-
+    Assuming a court will hear the challenge. Gonzaga v. Doe foreclosed § 1983; the route is a
+    complaint to the Department of Education.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 20 U.S.C. § 1232g
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis; no express ceiling clause was
+    found in the sections extracted. State student-privacy statutes that bind edtech vendors
+    directly — which FERPA does not — coexist with it.
+enforcement:
+  enforcers:
+    - ed
+  private_right_of_action: false
+  penalty:
+    structure: Withdrawal of Department of Education funding. No civil penalty regime.
+    range: null
+    note: >-
+      Gonzaga University v. Doe (2002) foreclosed § 1983 enforcement, so there is no private action.
+      Enforcement is administrative, through the Department's Student Privacy Policy Office, and in
+      practice runs to voluntary compliance rather than defunding.
+  statute_of_limitations: null

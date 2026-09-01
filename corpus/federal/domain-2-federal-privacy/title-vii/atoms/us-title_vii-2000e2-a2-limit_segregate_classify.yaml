@@ -1,0 +1,149 @@
+id: us.title_vii.2000e2.a2.limit_segregate_classify
+schema_version: 1
+record_type: obligation
+source:
+  citation: 42 U.S.C. § 2000e-2(a)(2)
+  instrument_id: us.title_vii
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/title-vii/raw/42-u-s-c-2000e-2.xml
+  raw_sha256: 2b073971f72865a8696fff2c8175b7413170db515e34adb2166aba4f0165f5fb
+  text_file: corpus/federal/domain-2-federal-privacy/title-vii/raw/42-u-s-c-2000e-2.txt
+  text_sha256: e6b8b91739365fe9e0677ff9392ddba8348bf5c40ebe7bd307a109e9ab552664
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/title-vii/raw/42-u-s-c-2000e-2.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: bce2901f4147fd01bdc697f3db73d993797dd530376ef46c93a98bff4e0c82ca
+verbatim_span: >-
+  to limit, segregate, or classify his employees or applicants for employment in any way which would
+  deprive or tend to deprive any individual of employment opportunities or otherwise adversely
+  affect his status as an employee, because of such individual’s race, color, religion, sex, or
+  national origin.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '2'
+  anchor: /us/usc/t42/s2000e–2/a/2
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: It shall be an unlawful employment practice for an employer—
+    citation: 42 U.S.C. § 2000e-2(a)
+    path:
+      path:
+        - a
+      anchor: /us/usc/t42/s2000e–2/a
+      derivation: structural
+      confidence: high
+      evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: IV.B.1
+  lifecycle:
+    - III
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - eeoc
+  - doj
+sector:
+  - employment
+data_types:
+  - personal_information
+status: in_force
+effective_from: '1972-03-24'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history:
+  - date: '1972-03-24'
+    note: >-
+      The amendments note carried with the section in the fetched source records: "1972—Subsec.
+      (a)(2). Pub. L. 92–261, § 8(a), inserted 'or applicants for employment' after 'his
+      employees'." Pub. L. 92–261 is the Equal Employment Opportunity Act of 1972, approved 24 March
+      1972; the paragraph as quoted here dates from that amendment, and case law about applicants
+      decided before it was decided on the narrower text.
+    source_url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+applies_if:
+  all:
+    - entity.is_employer == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  It is an unlawful employment practice for an employer to limit, segregate or classify employees or
+  applicants for employment in any way that would deprive or tend to deprive any individual of
+  employment opportunities or otherwise adversely affect their status as an employee, because of
+  race, color, religion, sex or national origin.
+requirement_detail: >-
+  THIS IS THE LIMB AN ALGORITHMIC SCREEN ACTUALLY LANDS ON, and confusing it with (a)(1) changes the
+  analysis. Paragraph (a)(1) is about refusing a person; this paragraph is about a practice that
+  classifies, and a model that ranks or filters a pool is a classification in the ordinary sense of
+  the word. The phrase "deprive or tend to deprive any individual of employment opportunities" is
+  doing the work: the tendency of the practice is enough, so exposure exists before any particular
+  applicant can be shown to have been rejected, which is the argument for validating a tool before
+  deployment rather than auditing it afterwards. Practitioners then misplace the burden — showing
+  impact is one thing, and the employer's job-relatedness and business-necessity answer is framed by
+  42 U.S.C. § 2000e-2(k), which this corpus does not hold, not by this paragraph. Finally, the words
+  about applicants were added in 1972; the paragraph as originally enacted named only employees,
+  which is why some older authority reads oddly against the current text.
+deadline: null
+exemptions: []
+related:
+  - us.title_vii.2000e2.a1.discrimination
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Analysing an automated screen only under (a)(1). Refusal to hire is (a)(1); a practice that
+    classifies a pool and tends to deprive individuals of opportunities is (a)(2).
+  - >-
+    Assuming intent must be shown. The paragraph turns on what the practice would do, and the
+    disparate-impact framework sits at 42 U.S.C. § 2000e-2(k).
+  - >-
+    Accepting a vendor's fairness certificate as the defence. The statutory answer to a demonstrated
+    impact is job-relatedness and business necessity under § 2000e-2(k), which is not extracted here
+    and cannot be confirmed from this atom.
+open_questions:
+  - >-
+    42 U.S.C. § 2000e-2(k), the disparate-impact burden framework added in 1991, is not extracted.
+    Any impact analysis run from this atom is incomplete without it.
+confidence: high
+preemption:
+  posture: floor
+  authority: null
+  note: >-
+    Title VII's savings clause is 42 U.S.C. § 2000e-7, which has not been extracted; nothing in the
+    section quoted here displaces state law, and state fair-employment statutes with lower employee
+    thresholds or additional protected classes are the ordinary case. Recorded as floor on that
+    basis, pending extraction of § 2000e-7.
+enforcement:
+  enforcers:
+    - eeoc
+    - doj
+    - private_litigants
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Administrative charge first, then private suit. A charge is filed with the EEOC, which
+      investigates, may conciliate and may sue; for state and local government respondents the
+      litigating authority is the Department of Justice. An individual sues after receiving a notice
+      of right to sue.
+    range: null
+    note: >-
+      The remedial provisions — 42 U.S.C. § 2000e-5(g) and the compensatory and punitive damages
+      caps at 42 U.S.C. § 1981a — have NOT been extracted. Treat the quantum of exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: >-
+    Charge-filing periods run from 42 U.S.C. § 2000e-5(e), which has not been extracted; do not
+    compute a deadline from this atom.

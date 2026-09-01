@@ -1,0 +1,18 @@
+{
+ "label": "29 U.S.C. \u00a7 157",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc29@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/nlra/raw/29-u-s-c-157.xml",
+ "raw_sha256": "23469142521594fd9c7a0ac415401eaf512849a3b332b5ba14374b7e5b6a761e",
+ "leaves": [
+  {
+   "path": [],
+   "anchor": "/us/usc/t29/s157",
+   "heading": "Right of employees as to organization, collective bargaining, etc.",
+   "text": "Employees shall have the right to self-organization, to form, join, or assist labor organizations, to bargain collectively through representatives of their own choosing, and to engage in other concerted activities for the purpose of collective bargaining or other mutual aid or protection, and shall also have the right to refrain from any or all of such activities except to the extent that such right may be affected by an agreement requiring membership in a labor organization as a condition of employment as authorized in section 158(a)(3) of this title .",
+   "context": [],
+   "confidence": "high"
+  }
+ ]
+}

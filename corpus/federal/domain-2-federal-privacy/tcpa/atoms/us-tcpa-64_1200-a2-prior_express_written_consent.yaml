@@ -1,0 +1,145 @@
+id: us.tcpa.64_1200.a2.prior_express_written_consent
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 C.F.R. § 64.1200(a)(2)
+  instrument_id: us.tcpa
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: c070f76ed10faf1be5b71b822c67cb54e7b3dd346c3a28465e6c9536815aaa00
+verbatim_span: >-
+  Initiate, or cause to be initiated, any telephone call that includes or introduces an
+  advertisement or constitutes telemarketing, using an automatic telephone dialing system or an
+  artificial or prerecorded voice, to any of the lines or telephone numbers described in paragraphs
+  (a)(1)(i) through (iii) of this section, other than a call made with the prior express written
+  consent of the called party or the prior express consent of the called party when the call is made
+  by or on behalf of a tax-exempt nonprofit organization, or a call that delivers a “health care”
+  message made by, or on behalf of, a “covered entity” or its “business associate,” as those terms
+  are defined in the HIPAA Privacy Rule, 45 CFR 160.103.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '2'
+  anchor: '64.1200'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator run reconstructed from flat <P> siblings; resolves to exactly one leaf within the
+    section (gate 23)
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'No person or entity may:'
+    citation: null
+    path:
+      path:
+        - a
+      anchor: null
+      derivation: reconstructed
+      confidence: high
+      evidence: designator sequence reconstructed from flat <P> siblings
+subject:
+  domain: II.E.1
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+  - state_ag
+sector:
+  - telemarketing
+  - telecom
+data_types:
+  - contact_data
+status: in_force
+effective_from: '2003-07-25'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history:
+  - date: '2003-07-25'
+    note: >-
+      Source note printed with the section: "[68 FR 44177, July 25, 2003, as amended ...]", running
+      through 90 FR 42138, Aug. 29, 2025. July 25, 2003 is the earliest date the fetched source
+      itself asserts for 47 C.F.R. § 64.1200 as codified.
+    source_url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+applies_if:
+  all:
+    - practice.makes_automated_calls == true
+    - purpose.is_marketing == true
+applies_to_role: controller
+obligation_type: obtain_consent
+summary: >-
+  A call that includes or introduces an advertisement or constitutes telemarketing may not be made
+  to the lines and numbers listed in § 64.1200(a)(1)(i)–(iii) using an autodialer or an artificial
+  or prerecorded voice without prior express WRITTEN consent, subject to narrow nonprofit and HIPAA
+  health-care carve-outs.
+requirement_detail: >-
+  THIS IS THE PROVISION THAT MAKES "PRIOR EXPRESS CONSENT" A TWO-STANDARD REGIME, and the split is
+  invisible in the statute. 47 U.S.C. § 227(b)(1)(A) says only "prior express consent"; the
+  Commission raised the bar for marketing content in the 2012 order codified here, so the same call
+  to the same wireless number needs oral consent if it is informational and a signed writing if it
+  advertises. The writing is defined at § 64.1200(f)(9) and is more demanding than practitioners
+  expect: it must bear the signature of the person called, identify the number, clearly authorise
+  autodialed or prerecorded marketing to that number, and — under (f)(9)(i)(B) — disclose that
+  signing is not a condition of purchase. Consent is also revocable: paragraphs (a)(10) through
+  (a)(12) let a called party revoke by any reasonable means and cap the caller's response, which
+  means a consent file is a live record rather than a one-time artefact. Because this is a rule
+  rather than the statute, its two carve-outs (tax-exempt nonprofits, and HIPAA health-care messages
+  by a covered entity or business associate) are FCC creations that a court reads as part of the
+  prohibition, not as defences the defendant must prove.
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Relying on a checkbox or a call recording for marketing consent. Paragraph (a)(2) requires prior
+    express WRITTEN consent as defined in § 64.1200(f)(9), including the disclosure that agreement
+    is not a condition of purchase.
+  - >-
+    Treating consent as permanent. Paragraphs (a)(10)–(a)(12) make revocation available by any
+    reasonable means and put the caller on a clock to honour it.
+  - >-
+    Reading the health-care carve-out as covering any health-related message. It is limited to a
+    "health care" message by or on behalf of a covered entity or business associate as those terms
+    are defined in the HIPAA Privacy Rule at 45 C.F.R. § 160.103.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 227(f)(1)
+  note: >-
+    The rule is prescribed under § 227, so the statutory savings clause governs it: § 227(f)(1)(B)
+    and (C) preserve more restrictive intrastate State law on autodialers and on artificial or
+    prerecorded voice messages.
+enforcement:
+  enforcers:
+    - fcc
+    - state_ag
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      FCC forfeiture under 47 U.S.C. § 503(b); State AG action under § 227(g); private action under
+      § 227(b)(3) for violation of the statute the rule implements.
+    range: $500 per call under § 227(b)(3), trebled for a wilful or knowing violation.
+    note: >-
+      Consent is an affirmative defence in practice, and the burden of proving it rests on the
+      caller — which is why the § 64.1200(f)(9) writing is retained.
+  statute_of_limitations: null

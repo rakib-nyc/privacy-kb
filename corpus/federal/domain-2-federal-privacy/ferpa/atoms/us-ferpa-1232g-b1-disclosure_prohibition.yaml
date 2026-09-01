@@ -1,0 +1,99 @@
+id: us.ferpa.1232g.b1.disclosure_prohibition
+schema_version: 1
+record_type: obligation
+source:
+  citation: 20 U.S.C. § 1232g(b)(1)
+  instrument_id: us.ferpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc20@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  raw_sha256: d9eb0b65a1acac5602e55cef5941f4e79a13824f23e8f78b141be5f1d1624e7b
+  text_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.txt
+  text_sha256: 6a51713f2648ca5674640dc9e871fdc9304de0055007e798298d216e99630681
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: No funds shall be made available under any applicable program to any educational agency
+  or institution which has a policy or practice of permitting the release of education records (or personally
+  identifiable information contained therein other than directory information, as defined in paragraph
+  (5) of subsection (a)) of students without the written consent of their parents to any individual, agency,
+  or organization, other than to the following—
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+  - b
+  - '1'
+  anchor: /us/usc/t20/s1232g/b/1
+  derivation: structural
+  confidence: high
+  evidence: USLM chapeau element; identifier read from the source. The path carries both a chapeau and
+    a continuation, which are two halves of one provision rather than two provisions (gate 23).
+context_not_required: The chapeau carries the entire funding condition; the enumerated recipients follow
+  it.
+subject:
+  domain: II.D.1
+  lifecycle:
+  - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+- ed
+sector:
+- education
+data_types:
+- education_record
+status: in_force
+effective_from: '1974-11-19'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+  - entity.is_educational_agency_or_institution == true
+  - data.is_education_record == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: No funds shall be made available to an educational agency or institution that has a policy or
+  practice of releasing education records, or personally identifiable information other than directory
+  information, without written consent, except to the enumerated recipients.
+requirement_detail: FERPA IS A FUNDING CONDITION, NOT A PROHIBITION, and the whole statute follows from
+  that. It reaches only institutions receiving Department of Education funds; the sanction is withdrawal
+  of funds; and it targets a POLICY OR PRACTICE rather than an individual disclosure, so one improper
+  release is not a violation in the way a single HIPAA disclosure is. There is no private right of action
+  — Gonzaga University v. Doe (2002) foreclosed § 1983 enforcement — which is why FERPA litigation is
+  rare despite its breadth, and why the practical constraint on an edtech vendor is usually the school's
+  contract rather than FERPA itself.
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+- Treating a single improper release as a violation. The statute targets a policy or practice.
+- Assuming a private right of action. Gonzaga v. Doe foreclosed it.
+- Applying it to a vendor directly. FERPA binds the institution; vendors are reached through the school-official
+  exception and their contracts.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 20 U.S.C. § 1232g
+  note: Recorded as floor pending a provision-level preemption analysis; no express ceiling clause was
+    found in the section extracted.
+enforcement:
+  enforcers:
+  - ed
+  private_right_of_action: false
+  penalty:
+    structure: Withdrawal of Department of Education funding. No civil penalty regime.
+    range: null
+    note: Gonzaga University v. Doe (2002) foreclosed § 1983 enforcement, so there is no private action.
+      Enforcement is administrative.
+  statute_of_limitations: null

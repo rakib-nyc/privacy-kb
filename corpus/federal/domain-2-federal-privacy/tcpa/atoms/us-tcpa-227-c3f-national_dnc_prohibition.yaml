@@ -1,0 +1,139 @@
+id: us.tcpa.227.c3f.national_dnc_prohibition
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 U.S.C. § 227(c)(3)(F)
+  instrument_id: us.tcpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  raw_sha256: bc0202f0682c43acd483fb4bf598db62d4157704024776425acfebf27c63e018
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.txt
+  text_sha256: 0aeb8fd90520ec4506ed3e1138f1c4e9b7331ed7e27e727734afa93b39f279e4
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 0e23f094a502e882c39bd7570c98c80dee845cf01fc043a4800acba8cc40ec7d
+verbatim_span: >-
+  prohibit any person from making or transmitting a telephone solicitation to the telephone number
+  of any subscriber included in such database;
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - c
+    - '3'
+    - F
+  anchor: /us/usc/t47/s227/c/3/F
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute read from the USLM element
+operative_context:
+  - position: precedes
+    relation: conditions
+    verbatim_span: >-
+      The regulations required by paragraph (2) may require the establishment and operation of a
+      single national database to compile a list of telephone numbers of residential subscribers who
+      object to receiving telephone solicitations, and to make that compiled list and parts thereof
+      available for purchase. If the Commission determines to require such a database, such
+      regulations shall—
+    citation: null
+    path:
+      path:
+        - c
+        - '3'
+      anchor: /us/usc/t47/s227/c/3
+      derivation: structural
+      confidence: high
+      evidence: identifier attribute on the enclosing USLM element
+subject:
+  domain: II.E.2
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+  - state_ag
+sector:
+  - telemarketing
+  - telecom
+data_types:
+  - contact_data
+status: in_force
+effective_from: '1991-12-20'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - practice.makes_telephone_solicitations == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  Where the Commission requires a national do-not-call database, its regulations must prohibit any
+  person from making or transmitting a telephone solicitation to the number of any subscriber
+  included in that database.
+requirement_detail: >-
+  THIS IS THE STATUTORY AUTHORITY FOR THE NATIONAL DO NOT CALL REGISTRY, AND IT IS WRITTEN AS A
+  DIRECTION TO THE COMMISSION RATHER THAN AS A DUTY ON A CALLER — which is why practitioners
+  searching § 227 for the registry prohibition often conclude it is not there. The operative
+  prohibition a defendant actually violates lives in 47 C.F.R. § 64.1200(c)(2), and the liability
+  theory runs § 227(c)(5) → "the regulations prescribed under this subsection" → § 64.1200(c)(2).
+  Two consequences follow that generic tools miss. First, subsection (c) reaches "telephone
+  solicitations" as defined in § 227(a)(4) — calls encouraging the purchase of goods or services —
+  so it does NOT reach informational, debt-collection or transactional calls, which is the opposite
+  of subsection (b), where content is irrelevant and the dialing technology is everything. Second,
+  because (c) liability is a regulatory violation rather than a statutory one, the FCC's safe
+  harbour and its exemptions are part of the cause of action rather than affirmative defences bolted
+  on afterwards. Note also that the registry is jointly administered with the FTC's parallel
+  Telemarketing Sales Rule regime at 16 C.F.R. § 310.4(b)(1)(iii), so the same call routinely
+  presents two federal claims with different enforcers and different exemptions.
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Citing § 227(c)(3)(F) as the provision a telemarketer violated. It directs the Commission; the
+    enforceable prohibition is 47 C.F.R. § 64.1200(c)(2).
+  - >-
+    Applying the registry to non-solicitation calls. Subsection (c) reaches telephone solicitations
+    only, unlike subsection (b), which turns on dialing technology regardless of call content.
+  - >-
+    Assuming FCC registry compliance disposes of the matter. The FTC's Telemarketing Sales Rule
+    imposes a parallel registry duty with its own exemptions and its own enforcer.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 227(f)(1)
+  note: >-
+    § 227(f)(1) preserves more restrictive intrastate State law on telephone solicitations and on
+    the technologies listed in (f)(1)(A)–(C). It is a floor with two carve-outs: the technical
+    standards prescribed under subsection (d), and § 227(f)(2), which bars a State from requiring
+    its own separate database once the Commission requires a national one.
+enforcement:
+  enforcers:
+    - fcc
+    - state_ag
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      FCC forfeiture under 47 U.S.C. § 503(b); State AG parens patriae action under § 227(g);
+      private action under § 227(c)(5).
+    range: >-
+      Up to $500 per violation in a private action under § 227(c)(5)(B), trebled under the §
+      227(c)(5) continuation for a wilful or knowing violation.
+    note: >-
+      The § 227(c)(5) continuation also supplies an affirmative defence for a defendant with
+      due-care compliance practices — a defence that has no counterpart in the § 227(b) private
+      action.
+  statute_of_limitations: null

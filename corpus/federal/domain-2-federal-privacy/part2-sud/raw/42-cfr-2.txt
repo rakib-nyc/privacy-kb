@@ -1,0 +1,852 @@
+PART 2—CONFIDENTIALITY OF SUBSTANCE USE DISORDER PATIENT RECORDS
+Subpart A—Introduction
+§ 2.1 Statutory authority for confidentiality of substance use disorder patient records.
+Title 42, United States Code, section 290dd-2(g) authorizes the Secretary to prescribe regulations to carry out the purposes of section 290dd-2. Such regulations may contain such definitions, and may provide for such safeguards and procedures, including procedures and criteria for the issuance and scope of orders under subsection 290dd-2(b)(2)(C), as in the judgment of the Secretary are necessary or proper to effectuate the purposes of section 290dd-2, to prevent circumvention or evasion thereof, or to facilitate compliance therewith.
+§ 2.2 Purpose and effect.
+(a)
+Purpose.
+Pursuant to 42 U.S.C. 290dd-2(g), the regulations in this part impose restrictions upon the use and disclosure of substance use disorder patient records (“records,” as defined in this part) which are maintained in connection with the performance of any part 2 program. The regulations in this part include the following subparts:
+(1) Subpart B: General Provisions, including definitions, applicability, and general restrictions;
+(2) Subpart C: Uses and Disclosures With Patient Consent, including uses and disclosures that require patient consent and the consent form requirements;
+(3) Subpart D: Uses and Disclosures Without Patient Consent, including uses and disclosures which do not require patient consent or an authorizing court order; and
+(4) Subpart E: Court Orders Authorizing Use and Disclosure, including uses and disclosures of records which may be made with an authorizing court order and the procedures and criteria for the entry and scope of those orders.
+(b)
+Effect.
+(1) The regulations in this part prohibit the use and disclosure of records unless certain circumstances exist. If any circumstance exists under which use or disclosure is permitted, that circumstance acts to remove the prohibition on use and disclosure but it does not compel the use or disclosure. Thus, the regulations in this part do not require use or disclosure under any circumstance other than when disclosure is required by the Secretary to investigate or determine a person's compliance with this part pursuant to § 2.3(c).
+(2) The regulations in this part are not intended to direct the manner in which substantive functions such as research, treatment, and evaluation are carried out. They are intended to ensure that a patient receiving treatment for a substance use disorder in a part 2 program is not made more vulnerable by reason of the availability of their record than an individual with a substance use disorder who does not seek treatment.
+(3) The regulations in this part shall not be construed to limit:
+(i) A patient's right, as described in 45 CFR 164.522, to request a restriction on the use or disclosure of a record for purposes of treatment, payment, or health care operations.
+(ii) A covered entity's choice, as described in 45 CFR 164.506, to obtain the consent of the patient to use or disclose a record to carry out treatment, payment, or health care operations.
+§ 2.3 Civil and criminal penalties for violations.
+(a)
+Penalties.
+Any person who violates any provision of 42 U.S.C. 290dd-2(a)-(d), shall be subject to the applicable penalties under sections 1176 and 1177 of the Social Security Act, 42 U.S.C. 1320d-5 and 1320d-6.
+(b)
+Limitation on criminal or civil liability.
+A person who is acting on behalf of an investigative agency having jurisdiction over the activities of a part 2 program or other person holding records under this part (or employees or agents of that part 2 program or person holding the records) shall not incur civil or criminal liability under 42 U.S.C. 290dd-2(f) for use or disclosure of such records inconsistent with this part that occurs while acting within the scope of their employment in the course of investigating or prosecuting a part 2 program or person holding the record, if the person or investigative agency demonstrates that the following conditions are met:
+(1) Before presenting a request, subpoena, or other demand for records, or placing an undercover agent or informant in a health care practice or provider, as applicable, such person acted with reasonable diligence to determine whether the regulations in this part apply to the records, part 2 program, or other person holding records under this part. Reasonable diligence means taking all of the following actions where it is reasonable to believe that the practice or provider provides substance use disorder diagnostic, treatment, or referral for treatment services:
+(i) Searching for the practice or provider among the substance use disorder treatment facilities in the online treatment locator maintained by the Substance Abuse and Mental Health Services Administration.
+(ii) Searching in a similar state database of treatment facilities where available.
+(iii) Checking a provider's publicly available website, where available, or its physical location to determine whether in fact such services are provided.
+(iv) Viewing the provider's Patient Notice or the Health Insurance Portability and Accountability Act (HIPAA) Notice of Privacy Practices (NPP) if it is available online or at the physical location.
+(v) Taking all these actions within a reasonable period of time (no more than 60 days) before requesting records from, or placing an undercover agent or informant in, a health care practice or provider.
+(2) The person followed all of the applicable provisions in this part for any use or disclosure of the received records under this part that occurred, or will occur, after the person or investigative agency knew, or by exercising reasonable diligence would have known, that it received records under this part.
+(c)
+Enforcement.
+The provisions of 45 CFR part 160, subparts C, D, and E, shall apply to noncompliance with this part in the same manner as they apply to covered entities and business associates for noncompliance with 45 CFR parts 160 and 164.
+§ 2.4 Complaints of noncompliance.
+(a)
+Receipt of complaints.
+A part 2 program must provide a process to receive complaints concerning the program's compliance with the requirements of this part.
+(b)
+Right to file a complaint.
+A person may file a complaint to the Secretary for a violation of this part by a part 2 program, covered entity, business associate, qualified service organization, or lawful holder in the same manner as a person may file a complaint under 45 CFR 160.306 for a violation of the administrative simplification provisions of the Health Insurance Portability and Accountability Act (HIPAA) of 1996.
+(c)
+Refraining from intimidating or retaliatory acts.
+A part 2 program may not intimidate, threaten, coerce, discriminate against, or take other retaliatory action against any patient for the exercise by the patient of any right established, or for participation in any process provided for, by this part, including the filing of a complaint under this section or § 2.3(c).
+(d)
+Waiver of rights.
+A part 2 program may not require patients to waive their right to file a complaint under this section or § 2.3 as a condition of the provision of treatment, payment, enrollment, or eligibility for any program subject to this part.
+Subpart B—General Provisions
+§ 2.11 Definitions.
+For purposes of the regulations in this part:
+Breach
+has the same meaning given that term in 45 CFR 164.402.
+Business associate
+has the same meaning given that term in 45 CFR 160.103.
+Central registry
+means an organization which obtains from two or more member programs patient identifying information about individuals applying for withdrawal management or maintenance treatment for the purpose of avoiding an individual's concurrent enrollment in more than one treatment program.
+Covered entity
+has the same meaning given that term in 45 CFR 160.103.
+Diagnosis
+means any reference to an individual's substance use disorder or to a condition which is identified as having been caused by that substance use disorder which is made for the purpose of treatment or referral for treatment.
+Disclose
+means to communicate any information identifying a patient as being or having been diagnosed with a substance use disorder, having or having had a substance use disorder, or being or having been referred for treatment of a substance use disorder either directly, by reference to publicly available information, or through verification of such identification by another person.
+Federally assisted
+—see § 2.12(b).
+Health care operations
+has the same meaning given that term in 45 CFR 164.501.
+HIPAA
+means the Health Insurance Portability and Accountability Act of 1996, Public Law 104-191, as amended by the privacy and security provisions in subtitle D of title XIII of the Health Information Technology for Economic and Clinical Health Act, Public Law 111-5 (“HITECH Act”).
+HIPAA regulations
+means the regulations at 45 CFR parts 160 and 164 (commonly known as the HIPAA Privacy, Security, Breach Notification, and Enforcement Rules or “HIPAA Rules”).
+Informant
+means a person:
+(1) Who is a patient or employee of a part 2 program or who becomes a patient or employee of a part 2 program at the request of a law enforcement agency or official; and
+(2) Who at the request of a law enforcement agency or official observes one or more patients or employees of the part 2 program for the purpose of reporting the information obtained to the law enforcement agency or official.
+Intermediary
+means a person, other than a part 2 program, covered entity, or business associate, who has received records under a general designation in a written patient consent to be disclosed to one or more of its member participant(s) who has a treating provider relationship with the patient.
+Investigative agency
+means a Federal, state, Tribal, territorial, or local administrative, regulatory, supervisory, investigative, law enforcement, or prosecutorial agency having jurisdiction over the activities of a part 2 program or other person
+holding records under this part.
+Lawful holder
+means a person who is bound by this part because they have received records as the result of one of the following:
+(1) Written consent in accordance with § 2.31 with an accompanying notice of disclosure.
+(2) One of the exceptions to the written consent requirements in 42 U.S.C. 290dd-2 or this part.
+Maintenance treatment
+means long-term pharmacotherapy for individuals with substance use disorders that reduces the pathological pursuit of reward and/or relief and supports remission of substance use disorder-related symptoms.
+Member program
+means a withdrawal management or maintenance treatment program which reports patient identifying information to a central registry and which is in the same state as that central registry or is in a state that participates in data sharing with the central registry of the program in question.
+Minor,
+as used in the regulations in this part, means an individual who has not attained the age of majority specified in the applicable state law, or if no age of majority is specified in the applicable state law, the age of 18 years.
+Part 2 program
+means a federally assisted program (federally assisted as defined in § 2.12(b) and program as defined in this section). See § 2.12(e)(1) for examples.
+Part 2 program director
+means:
+(1) In the case of a part 2 program that is a natural person, that person.
+(2) In the case of a part 2 program that is an entity, the person designated as director or managing director, or person otherwise vested with authority to act as chief executive officer of the part 2 program.
+Patient
+means any individual who has applied for or been given diagnosis, treatment, or referral for treatment for a substance use disorder at a part 2 program.
+Patient
+includes any individual who, after arrest on a criminal charge, is identified as an individual with a substance use disorder in order to determine that individual's eligibility to participate in a part 2 program. This definition includes both current and former patients. In this part where the HIPAA regulations apply,
+patient
+means an individual as that term is defined in 45 CFR 160.103.
+Patient identifying information
+means the name, address, Social Security number, fingerprints, photograph, or similar information by which the identity of a patient, as defined in this section, can be determined with reasonable accuracy either directly or by reference to other information.
+Payment
+has the same meaning given that term in 45 CFR 164.501.
+Person
+has the same meaning given that term in 45 CFR 160.103.
+Personal representative
+means a person who has authority under applicable law to act on behalf of a patient who is an adult or an emancipated minor in making decisions related to health care. Within this part, a personal representative would have authority only with respect to patient records relevant to such personal representation.
+Program
+means:
+(1) A person (other than a general medical facility) that holds itself out as providing, and provides, substance use disorder diagnosis, treatment, or referral for treatment; or
+(2) An identified unit within a general medical facility that holds itself out as providing, and provides, substance use disorder diagnosis, treatment, or referral for treatment; or
+(3) Medical personnel or other staff in a general medical facility whose primary function is the provision of substance use disorder diagnosis, treatment, or referral for treatment and who are identified as such providers.
+Public health authority
+has the same meaning given that term in 45 CFR 164.501.
+Qualified service organization
+means a person who:
+(1) Provides services to a part 2 program, such as data processing, bill collecting, dosage preparation, laboratory analyses, or legal, accounting, population health management, medical staffing, or other professional services, or services to prevent or treat child abuse or neglect, including training on nutrition and child care and individual and group therapy, and
+(2) Has entered into a written agreement with a part 2 program under which that person:
+(i) Acknowledges that in receiving, storing, processing, or otherwise dealing with any patient records from the part 2 program, it is fully bound by the regulations in this part; and
+(ii) If necessary, will resist in judicial proceedings any efforts to obtain access to patient identifying information related to substance use disorder diagnosis, treatment, or referral for treatment except as permitted by the regulations in this part.
+(3)
+Qualified service organization
+includes a person who meets the definition of
+business associate
+in 45 CFR 160.103, paragraphs (1), (2), and (3), for a part 2 program that is also a covered entity, with respect to the use and disclosure of protected health information that also constitutes a “record” as defined by this section.
+Records
+means any information, whether recorded or not, created by, received, or acquired by a part 2 program relating to a patient (
+e.g.,
+diagnosis, treatment and referral for treatment information, billing information, emails, voice mails, and texts), and including patient identifying information, provided, however, that information conveyed orally by a part 2 program to a provider who is not subject to this part for treatment purposes with the consent of the patient does not become a record subject to this part in the possession of the provider who is not subject to this part merely because that information is reduced to writing by that provider who is not subject to this part. Records otherwise transmitted by a part 2 program to a provider who is not subject to this part retain their characteristic as records in the hands of the provider who is not subject to this part, but may be segregated by that provider.
+Substance use disorder (SUD)
+means a cluster of cognitive, behavioral, and physiological symptoms indicating that the individual continues using the substance despite significant substance-related problems such as impaired control, social impairment, risky use, and pharmacological tolerance and withdrawal. For the purposes of the regulations in this part, this definition does not include tobacco or caffeine use.
+Substance use disorder (SUD) counseling notes
+means notes recorded (in any medium) by a part 2 program provider who is a SUD or mental health professional documenting or analyzing the contents of conversation during a private SUD counseling session or a group, joint, or family SUD counseling session and that are separated from the rest of the patient's SUD and medical record.
+SUD counseling notes
+excludes medication prescription and monitoring, counseling session start and stop times, the modalities and frequencies of treatment furnished, results of clinical tests, and any summary of the following items: diagnosis, functional status, the treatment plan, symptoms, prognosis, and progress to date.
+Third-party payer
+means a person, other than a health plan as defined at 45 CFR 160.103, who pays or agrees to pay for diagnosis or treatment furnished to a patient on the basis of a contractual relationship with the patient or a member of the patient's family or on the basis of the patient's eligibility for Federal, state, or local governmental benefits.
+Treating provider relationship
+means that, regardless of whether there has been an actual in-person encounter:
+(1) A patient is, agrees to be, or is legally required to be diagnosed, evaluated, or treated, or agrees to accept consultation, for any condition by a person; and
+(2) The person undertakes or agrees to undertake diagnosis, evaluation, or treatment of the patient, or consultation with the patient, for any condition.
+Treatment
+has the same meaning given that term in 45 CFR 164.501.
+Undercover agent
+means any federal, state, or local law enforcement agency or official who enrolls in or becomes an employee of a part 2 program for the purpose of investigating a suspected violation of law or who pursues that purpose after enrolling or becoming employed for other purposes.
+Unsecured protected health information
+has the same meaning given that term in 45 CFR 164.402.
+Unsecured record
+means any record, as defined in this part, that is not rendered unusable, unreadable, or indecipherable to unauthorized persons through the use of a technology or methodology specified by the Secretary in the guidance issued under Public Law 111-5, section 13402(h)(2).
+Use
+means, with respect to records, the sharing, employment, application, utilization, examination, or analysis of the information contained in such records that occurs either within an entity that maintains such information or in the course of civil, criminal, administrative, or legislative proceedings as described at 42 U.S.C. 290dd-2(c).
+Withdrawal management
+means the use of pharmacotherapies to treat or attenuate the problematic signs and symptoms arising when heavy and/or prolonged substance use is reduced or discontinued.
+§ 2.12 Applicability.
+(a)
+General
+— (1)
+Restrictions on use and disclosure.
+The restrictions on use and disclosure in the regulations in this part apply to any records which:
+(i) Would identify a patient as having or having had a substance use disorder either directly, by reference to publicly available information, or through verification of such identification by another person; and
+(ii) Contain substance use disorder information obtained by a federally assisted substance use disorder program after March 20, 1972 (part 2 program), or contain alcohol use disorder information obtained by a federally assisted alcohol use disorder or substance use disorder program after May 13, 1974 (part 2 program); or if obtained before the pertinent date, is maintained by a part 2 program after that date as part of an ongoing treatment episode which extends past that date; for the purpose of treating a substance use disorder, making a diagnosis for that treatment, or making a referral for that treatment.
+(2)
+Restriction on use or disclosure.
+The restriction on use or disclosure of information to initiate or substantiate any criminal charges against a patient or to conduct any criminal investigation of a patient (42 U.S.C. 290dd-2(c)) applies to any information, whether or not recorded, which is substance use disorder information obtained by a federally assisted substance use disorder program after March 20, 1972 (part 2 program), or is alcohol use disorder information obtained by a federally assisted alcohol use disorder or substance use disorder program after May 13, 1974 (part 2 program); or if obtained before the pertinent date, is maintained by a part 2 program after that date as part of an ongoing treatment episode which extends past that date; for the purpose of treating a substance use disorder, making a diagnosis for the treatment, or making a referral for the treatment.
+(b)
+Federal assistance.
+A program is considered to be federally assisted if:
+(1) It is conducted in whole or in part, whether directly or by contract or otherwise by any department or agency of the United States (but see paragraphs (c)(1) and (2) of this section relating to the Department of Veterans Affairs and the Uniformed Services);
+(2) It is being carried out under a license, certification, registration, or other authorization granted by any department or agency of the United States including but not limited to:
+(i) Participating provider in the Medicare program;
+(ii) Authorization to conduct maintenance treatment or withdrawal management; or
+(iii) Registration to dispense a substance under the Controlled Substances Act to the extent the controlled substance is used in the treatment of substance use disorders;
+(3) It is supported by funds provided by any department or agency of the United States by being:
+(i) A recipient of federal financial assistance in any form, including financial assistance which does not directly pay for the substance use disorder diagnosis, treatment, or referral for treatment; or
+(ii) Conducted by a state or local government unit which, through general or special revenue sharing or other forms of assistance, receives federal funds which could be (but are not necessarily) spent for the substance use disorder program; or
+(4) It is assisted by the Internal Revenue Service of the Department of the Treasury through the allowance of income tax deductions for contributions to the program or through the granting of tax exempt status to the program.
+(c)
+Exceptions
+— (1)
+Department of Veterans Affairs.
+These regulations do not apply to information on substance use disorder patients maintained in connection with the Department of Veterans Affairs' provision of hospital care, nursing home care, domiciliary care, and medical services under Title 38, U.S.C. Those records are governed by 38 U.S.C. 7332 and regulations issued under that authority by the Secretary of Veterans Affairs.
+(2)
+Uniformed Services.
+The regulations in this part apply to any information described in paragraph (a) of this section which was obtained by any component of the Uniformed Services during a period when the patient was subject to the Uniform Code of Military Justice except:
+(i) Any interchange of that information within the Uniformed Services and within those components of the Department of Veterans Affairs furnishing health care to veterans; and
+(ii) Any interchange of that information between such components and the Uniformed Services.
+(3)
+Communication within a part 2 program or between a part 2 program and an entity having direct administrative control over that part 2 program.
+The restrictions on use and disclosure in the regulations in this part do not apply to communications of information between or among personnel having a need for the information in connection with their duties that arise out of the provision of diagnosis, treatment, or referral for treatment of patients with substance use disorders if the communications are:
+(i) Within a part 2 program; or
+(ii) Between a part 2 program and an entity that has direct administrative control over the program.
+(4)
+Qualified service organizations.
+The restrictions on use and disclosure in the regulations in this part do not apply to the communications between a part 2 program and a qualified service organization of information needed by the qualified service organization to provide services to or on behalf of the program.
+(5)
+Crimes on part 2 program premises or against part 2 program personnel.
+The restrictions on use and disclosure in the regulations in this part do not apply to communications from part 2 program personnel to law enforcement agencies or officials which:
+(i) Are directly related to a patient's commission of a crime on the premises of the part 2 program or against part 2 program personnel or to a threat to commit such a crime; and
+(ii) Are limited to the circumstances of the incident, including the patient status of the individual committing or threatening to commit the crime, that individual's name and address, and that individual's last known whereabouts.
+(6)
+Reports of suspected child abuse and neglect.
+The restrictions on use and disclosure in the regulations in this part do not apply to the reporting under state law of incidents of suspected child abuse and neglect to the appropriate state or local authorities. However, the restrictions continue to apply to the original substance use disorder patient records maintained by the part 2 program including their use and disclosure for civil or criminal proceedings which may arise out of the report of suspected child abuse and neglect.
+(d)
+Applicability to recipients of information
+—
+(1)
+Restriction on use and disclosure of records.
+The restriction on the use and disclosure of any record subject to the regulations in this part to initiate or substantiate criminal charges against a patient or to conduct any criminal investigation of a patient, or to use in any civil, criminal, administrative, or legislative proceedings against a patient, applies to any person who obtains the record from a part 2 program, covered entity, business associate, intermediary, or other lawful holder, regardless of the status of the person obtaining the record or whether the record was obtained in accordance with subpart E of this part. This restriction on use and disclosure bars, among other things, the introduction into evidence of a record or testimony in any criminal prosecution or civil action before a Federal or state court, reliance on the record or testimony to inform any decision or otherwise be taken into account in any proceeding before a Federal, state, or local agency, the use of such record or testimony by any Federal, state, or local agency for a law enforcement purpose or to conduct any law enforcement investigation, and the use of such record or testimony in any application for a warrant, absent patient consent or a court order in accordance with subpart E of this part. Records obtained by undercover agents or informants, § 2.17, or through patient access, § 2.23, are subject to the restrictions on uses and disclosures.
+(2)
+Restrictions on uses and disclosures
+—(i)
+Third-party payers, administrative entities, and others.
+The restrictions on use and disclosure in the regulations in this part apply to:
+(A) Third-party payers, as defined in this part, with regard to records disclosed to them by part 2 programs or under § 2.31(a)(4)(i);
+(B) Persons having direct administrative control over part 2 programs with regard to information that is subject to the regulations in this part communicated to them by the part 2 program under paragraph (c)(3) of this section; and
+(C) Persons who receive records directly from a part 2 program, covered entity, business associate, intermediary, or other lawful holder of patient identifying information and who are notified of the prohibition on redisclosure in accordance with § 2.32. A part 2 program, covered entity, or business associate that receives records based on a single consent for all treatment, payment, and health care operations is not required to segregate or segment such records.
+(ii)
+Documentation of SUD treatment by providers who are not part 2 programs.
+Notwithstanding paragraph (d)(2)(i)(C) of this section, a treating provider who is not subject to this part may record information about a SUD and its treatment that identifies a patient. This is permitted and does not constitute a record that has been redisclosed under this part. The act of recording information about a SUD and its treatment does not by itself render a medical record which is created by a treating provider who is not subject to this part, subject to the restrictions of this part.
+(e)
+Explanation of applicability
+—(1)
+Coverage.
+These regulations cover any information (including information on referral and intake) about patients receiving diagnosis, treatment, or referral for treatment for a substance use disorder created by a part 2 program. Coverage includes, but is not limited to, those treatment or rehabilitation programs, employee assistance programs, programs within general hospitals, school-based programs, and private practitioners who hold themselves out as providing, and provide substance use disorder diagnosis, treatment, or referral for treatment. However, the regulations in this part would not apply, for example, to emergency room personnel who refer a patient to the intensive care unit for an apparent overdose, unless the primary function of such personnel is the provision of substance use disorder diagnosis, treatment, or referral for treatment and they are identified as providing such services or the emergency room has promoted itself to the community as a provider of such services.
+(2)
+Federal assistance to program required.
+If a patient's substance use disorder diagnosis, treatment, or referral for treatment is not provided by a part 2 program, that patient's record is not covered by the regulations in this part. Thus, it is possible for an individual patient to benefit from federal support and not be covered by the confidentiality regulations because the program in which the patient is enrolled is not federally assisted as defined in paragraph (b) of this section. For example, if a federal court placed an individual in a private for-profit program and made a payment to the program on behalf of that individual, that patient's record would not be covered by the regulations in this part unless the program itself received federal assistance as defined by paragraph (b) of this section.
+(3)
+Information to which restrictions are applicable.
+Whether a restriction applies to the use or disclosure of a record affects the type of records which may be disclosed. The restrictions on use and disclosure apply to any records which would identify a specified patient as having or having had a substance use disorder. The restriction on use and disclosure of records to bring a civil action or criminal charges against a patient in any civil, criminal, administrative, or legislative proceedings applies to any records obtained by the part 2 program for the purpose of diagnosis, treatment, or referral for treatment of patients with substance use disorders. (Restrictions on use and disclosure apply to recipients of records as specified under paragraph (d) of this section.)
+(4)
+How type of diagnosis affects coverage.
+These regulations cover any record reflecting a diagnosis identifying a patient as having or having had a substance use disorder which is initially prepared by a part 2 program in connection with the treatment or referral for treatment of a patient with a substance use disorder. A diagnosis prepared by a part 2 program for the purpose of treatment or referral for treatment, but which is not so used, is covered by the regulations in this part. The following are not covered by the regulations in this part:
+(i) Diagnosis which is made on behalf of and at the request of a law enforcement agency or official or a court of competent jurisdiction solely for the purpose of providing evidence; or
+(ii) A diagnosis of drug overdose or alcohol intoxication which clearly shows that the individual involved does not have a substance use disorder (
+e.g.,
+involuntary ingestion of alcohol or drugs or reaction to a prescribed dosage of one or more drugs).
+§ 2.13 Confidentiality restrictions and safeguards.
+(a)
+General.
+The patient records subject to the regulations in this part may be used or disclosed only as permitted by the regulations in this part and may not otherwise be used or disclosed in any civil, criminal, administrative, or legislative proceedings conducted by any Federal, state, or local authority. Any use or disclosure made under the regulations in this part must be limited to that information which is necessary to carry out the purpose of the use or disclosure.
+(b)
+Unconditional compliance required.
+The restrictions on use and disclosure in the regulations in this part apply whether or not the part 2 program or other lawful holder of the patient identifying information believes that the person seeking the information already has it, has other means of obtaining it, is a law enforcement agency or official or other government official, has obtained a subpoena, or asserts any other justification for a use or disclosure which is not permitted by the regulations in this part.
+(c)
+Acknowledging the presence of patients: Responding to requests.
+(1) The presence of an identified patient in a health care facility or component of a health care facility that is publicly identified as a place where only substance use disorder diagnosis, treatment, or referral for treatment is provided may be acknowledged only if the patient's written consent is obtained in accordance with subpart C of this part or if an authorizing court order is entered in accordance with subpart E of this part. The regulations permit acknowledgment of the presence of an identified patient in a health care facility or part of a health care facility if the health care facility is not publicly identified as only a substance use disorder diagnosis, treatment, or referral for treatment facility, and if the acknowledgment does not reveal that the patient has a substance use disorder.
+(2) Any answer to a request for a disclosure of patient records which is not permissible under the regulations in this part must be made in a way that will not affirmatively reveal that an identified individual has been, or is being, diagnosed or treated for a substance use disorder. An inquiring party may be provided a copy of the regulations in this part and advised that they restrict the disclosure of substance use disorder patient records, but may not be told affirmatively that the regulations restrict the disclosure of the records of an identified patient.
+§ 2.14 Minor patients.
+(a)
+State law not requiring parental consent to treatment.
+If a minor patient acting alone has the legal capacity under the applicable state law to apply for and obtain substance use disorder treatment, any written consent for use or disclosure authorized under subpart C of this part may be given only by the minor patient. This restriction includes, but is not limited to, any disclosure of patient identifying information to the parent or guardian of a minor patient for the purpose of obtaining financial reimbursement. The regulations in this paragraph (a) do not prohibit a part 2 program from refusing to provide treatment until the minor patient consents to a use or disclosure that is necessary to obtain reimbursement, but refusal to provide treatment may be prohibited under a state or local law requiring the program to furnish the service irrespective of ability to pay.
+(b)
+State law requiring parental consent to treatment.
+(1) Where state law requires consent of a parent, guardian, or other person for a minor to obtain treatment for a substance use disorder, any written consent for use or disclosure authorized under subpart C of this part must be given by both the minor and their parent, guardian, or other person authorized under state law to act on the minor's behalf.
+(2) Where state law requires parental consent to treatment, the fact of a minor's application for treatment may be communicated to the minor's parent, guardian, or other person authorized under state law to act on the minor's behalf only if:
+(i) The minor has given written consent to the disclosure in accordance with subpart C of this part; or
+(ii) The minor lacks the capacity to make a rational choice regarding such consent as determined by the part 2 program director under paragraph (c) of this section.
+(c)
+Minor applicant for services lacks capacity for rational choice.
+Facts relevant to reducing a substantial threat to the life or physical well-being of the minor applicant or any other person may be disclosed to the parent, guardian, or other person authorized under state law to act on the minor's behalf if the part 2 program director determines that:
+(1) A minor applicant for services lacks capacity because of extreme youth or mental or physical condition to make a rational decision on whether to consent to a disclosure under subpart C of this part to their parent, guardian, or other person authorized under state law to act on the minor's behalf; and
+(2) The minor applicant's situation poses a substantial threat to the life or physical well-being of the minor applicant or any other person which may be reduced by communicating relevant facts to the minor's parent, guardian, or other person authorized under state law to act on the minor's behalf.
+§ 2.15 Patients who lack capacity and deceased patients.
+(a)
+Adult patients who lack capacity to make health care decisions
+—(1)
+Adjudication by a court.
+In the case of a patient who has been adjudicated as lacking the capacity, for any reason other than insufficient age, to make their own health care decisions, any consent which is required under the regulations in this part may be given by the personal representative.
+(2)
+No adjudication by a court.
+In the case of a patient, other than a minor or one who has been adjudicated as lacking the capacity to make health care decisions, that for any period suffers from a medical condition that prevents knowing or effective action on their own behalf, the part 2 program director may exercise the right of the patient to consent to a use or disclosure under subpart C of this part for the sole purpose of obtaining payment for services from a third-party payer or health plan.
+(b)
+Deceased patients
+—(1)
+Vital statistics.
+These regulations do not restrict the disclosure of patient identifying information relating to the cause of death of a patient under laws requiring the collection of death or other vital statistics or permitting inquiry into the cause of death.
+(2)
+Consent by personal representative.
+Any other use or disclosure of information identifying a deceased patient as having a substance use disorder is subject to the regulations in this part. If a written consent to the use or disclosure is required, that consent may be given by the personal representative.
+§ 2.16 Security for records and notification of breaches.
+(a) The part 2 program or other lawful holder of patient identifying information must have in place formal policies and procedures to reasonably protect against unauthorized uses and disclosures of patient identifying information and to protect against reasonably anticipated threats or hazards to the security of patient identifying information.
+(1)
+Requirements for formal policies and procedures.
+These policies and procedures must address all of the following:
+(i) Paper records, including:
+(A) Transferring and removing such records;
+(B) Destroying such records, including sanitizing the hard copy media associated with the paper printouts, to render the patient identifying information non-retrievable;
+(C) Maintaining such records in a secure room, locked file cabinet, safe, or other similar container, or storage facility when not in use;
+(D) Using and accessing workstations, secure rooms, locked file cabinets, safes, or other similar containers, and storage facilities that use or store such information; and
+(E) Rendering patient identifying information de-identified in accordance with the requirements of 45 CFR 164.514(b) such that there is no reasonable basis to believe that the information can be used to identify a particular patient.
+(ii) Electronic records, including:
+(A) Creating, receiving, maintaining, and transmitting such records;
+(B) Destroying such records, including sanitizing the electronic media on which such records are stored, to render the patient identifying information non-retrievable;
+(C) Using and accessing electronic records or other electronic media containing patient identifying information; and
+(D) Rendering the patient identifying information de-identified in accordance with the requirements of 45 CFR 164.514(b) such that there is no reasonable basis to believe that the information can be used to identify a patient.
+(2)
+Exception for certain lawful holders.
+Family, friends, and other informal caregivers who are lawful holders as defined in this part are not required to comply with paragraph (a) of this section.
+(b) The provisions of 45 CFR part 160 and subpart D of 45 CFR part 164 shall apply to part 2 programs with respect to breaches of unsecured records in the same manner as those provisions apply to a covered entity with respect to breaches of unsecured protected health information.
+§ 2.17 Undercover agents and informants.
+(a)
+Restrictions on placement.
+Except as specifically authorized by a court order granted under § 2.67, no part 2 program may knowingly employ, or enroll as a patient, any undercover agent or informant.
+(b)
+Restriction on use and disclosure of information.
+No information obtained by an undercover agent or informant, whether or not that undercover agent or informant is placed in a part 2 program pursuant to an authorizing court order, may be used or disclosed to criminally investigate or prosecute any patient.
+§ 2.18 Restrictions on the use of identification cards.
+No person may require any patient to carry in their immediate possession while away from the part 2 program premises any card or other object which would identify the patient as having a substance use disorder. This section does not prohibit a person from requiring patients to use or carry cards or other identification objects on the premises of a part 2 program.
+§ 2.19 Disposition of records by discontinued programs.
+(a)
+General.
+If a part 2 program discontinues operations or is taken over or acquired by another program, it must remove patient identifying information from its records or destroy its records, including sanitizing any associated hard copy or electronic media, to render the patient identifying information non-retrievable in a manner consistent with the policies and procedures established under § 2.16, unless:
+(1) The patient who is the subject of the records gives written consent (meeting the requirements of § 2.31) to a transfer of the records to the acquiring program or to any other program designated in the consent (the manner of obtaining this consent must minimize the likelihood of a disclosure of patient identifying information to a third party);
+(2) There is a legal requirement that the records be kept for a period specified by law which does not expire until after the discontinuation or acquisition of the part 2 program; or
+(3) The part 2 program is transferred, retroceded, or reassumed pursuant to the Indian Self-Determination and Education Assistance Act (ISDEAA), 25 U.S.C. 5301
+et seq.,
+and its implementing regulations in 25 CFR part 900.
+(b)
+Special procedure where retention period required by law.
+If paragraph (a)(2) of this section applies:
+(1) Records in non-electronic (
+e.g.,
+paper) form must be:
+(i) Sealed in envelopes or other containers labeled as follows: “Records of [insert name of program] required to be maintained under [insert citation to statute, regulation, court order or other legal authority requiring that records be kept] until a date not later than [insert appropriate date]”.
+(A) All hard copy media from which the paper records were produced, such as printer and facsimile ribbons, drums, etc., must be sanitized to render the data non-retrievable.
+(B) [Reserved]
+(ii) Held under the restrictions of the regulations in this part by a responsible person who must, as soon as practicable after the end of the required retention period specified on the label, destroy the records and sanitize any associated hard copy media to render the patient identifying information non-retrievable in a manner consistent with the discontinued program's or acquiring program's policies and procedures established under § 2.16.
+(2) All of the following requirements apply to records in electronic form:
+(i) Records must be:
+(A) Transferred to a portable electronic device with implemented encryption to encrypt the data at rest so that there is a low probability of assigning meaning without the use of a confidential process or key and implemented access controls for the confidential process or key; or
+(B) Transferred, along with a backup copy, to separate electronic media, so that both the records and the backup copy have implemented encryption to encrypt the data at rest so that there is a low probability of assigning meaning without the use of a confidential process or key and implemented access controls for the confidential process or key.
+(ii) Within one year of the discontinuation or acquisition of the program, all electronic media on which the patient records or patient identifying information resided prior to being transferred to the device specified in paragraph (b)(2)(i)(A) of this section or the original and backup electronic media specified in paragraph (b)(2)(i)(B) of this section, including email and other electronic communications, must be sanitized to render the patient identifying information non-retrievable in a manner consistent with the discontinued program's or acquiring program's policies and procedures established under § 2.16.
+(iii) The portable electronic device or the original and backup electronic media must be:
+(A) Sealed in a container along with any equipment needed to read or access the information, and labeled as follows: “Records of [insert name of program] required to be maintained under [insert citation to statute, regulation, court order or other legal authority requiring that records be kept] until a date not later than [insert appropriate date];” and
+(B) Held under the restrictions of the regulations in this part by a responsible person who must store the container in a manner that will protect the information (
+e.g.,
+climate-controlled environment).
+(iv) The responsible person must be included on the access control list and be provided a means for decrypting the data. The responsible person must store the decryption tools on a device or at a location separate from the data they are used to encrypt or decrypt.
+(v) As soon as practicable after the end of the required retention period specified on the label, the portable electronic device or the original and backup electronic media must be sanitized to render the patient identifying information non-retrievable consistent with the policies established under § 2.16.
+§ 2.20 Relationship to state laws.
+The statute authorizing the regulations in this part (42 U.S.C. 290dd-2) does not preempt the field of law which they cover to the exclusion of all state laws in that field. If a use or disclosure permitted under the regulations in this part is prohibited under state law, neither the regulations in this part nor the authorizing statute may be construed to authorize any violation of that state law. However, no state law may either authorize or compel any use or disclosure prohibited by the regulations in this part.
+§ 2.21 Relationship to federal statutes protecting research subjects against compulsory disclosure of their identity.
+(a)
+Research privilege description.
+There may be concurrent coverage of patient identifying information by the regulations in this part and by administrative action taken under section 502(c) of the Controlled Substances Act (21 U.S.C. 872(c) and the implementing regulations at 21 CFR part 1316); or section 301(d) of the Public Health Service Act (42 U.S.C. 241(d) and the implementing regulations at 42 CFR part 2a). These research privilege statutes confer on the Secretary of Health and Human Services and on the Attorney General, respectively, the power to authorize researchers conducting certain types of research to withhold from all persons not connected with the research the names and other identifying information concerning individuals who are the subjects of the research.
+(b)
+Effect of concurrent coverage.
+The regulations in this part restrict the use and disclosure of information about patients, while administrative action taken under the research privilege statutes and implementing regulations in paragraph (a) of this section protects a person engaged in applicable research from being compelled to disclose any identifying characteristics of the individuals who are the subjects of that research. The issuance under subpart E of this part of a court order authorizing a disclosure of information about a patient does not affect an exercise of authority under these research privilege statutes.
+§ 2.22 Notice to patients of Federal confidentiality requirements.
+(a)
+Notice required.
+At the time of admission to a part 2 program or, in the case that a patient does not have capacity upon admission to understand their medical status, as soon thereafter as the patient attains such capacity, each part 2 program shall inform the patient that Federal law protects the confidentiality of substance use disorder patient records.
+(b)
+Content of notice.
+In addition to the communication required in paragraph (a) of this section, a part 2 program shall provide notice, written in plain language, of the program's legal duties and privacy practices, as specified in this paragraph (b).
+(1)
+Required elements.
+The notice must include the following content:
+(i)
+Header.
+The notice must contain the following statement as a header or otherwise prominently displayed.
+Notice of Privacy Practices of [Name of Part 2 Program]
+This notice describes:
+• HOW HEALTH INFORMATION ABOUT YOU MAY BE USED AND DISCLOSED
+• YOUR RIGHTS WITH RESPECT TO YOUR HEALTH INFORMATION
+• HOW TO FILE A COMPLAINT CONCERNING A VIOLATION OF THE PRIVACY OR SECURITY OF YOUR HEALTH INFORMATION, OR OF YOUR RIGHTS CONCERNING YOUR INFORMATION
+YOU HAVE A RIGHT TO A COPY OF THIS NOTICE (IN PAPER OR ELECTRONIC FORM) AND TO DISCUSS IT WITH [ENTER NAME OR TITLE] AT [PHONE AND EMAIL] IF YOU HAVE ANY QUESTIONS.
+(ii)
+Uses and disclosures.
+The notice must contain:
+(A) A description of each of the purposes for which the part 2 program is permitted or required by this part to use or disclose records without the patient's written consent.
+(B) If a use or disclosure for any purpose described in paragraph (b)(1)(ii)(A) of this section is prohibited or materially limited by other applicable law, the description of such use or disclosure must reflect the more stringent law.
+(C) For each purpose described in accordance with paragraphs (b)(1)(ii)(A) and (B) of this section, the description must include sufficient detail to place the patient on notice of the uses and disclosures that are permitted or required by this part and other applicable law.
+(D) A description, including at least one example, of the types of uses and disclosures that require written consent under this part.
+(E) A statement that a patient may provide a single consent for all future uses or disclosures for treatment, payment, and health care operations purposes.
+(F) A statement that the part 2 program will make uses and disclosures not described in the notice only with the patient's written consent.
+(G) A statement that the patient may revoke written consent as provided by §§ 2.31 and 2.35.
+(H) A statement that includes the following information:
+(
+1
+) Records, or testimony relaying the content of such records, shall not be used or disclosed in any civil, administrative, criminal, or legislative proceedings against the patient unless based on specific written consent or a court order;
+(
+2
+) Records shall only be used or disclosed based on a court order after notice and an opportunity to be heard is provided to the patient or the holder of the record, where required by 42 U.S.C. 290dd-2 and this part; and
+(
+3
+) A court order authorizing use or disclosure must be accompanied by a subpoena or other similar legal mandate compelling disclosure before the record is used or disclosed.
+(iii)
+Separate statements for certain uses or disclosures.
+If the part 2 program intends to engage in any of the following activities, the description required by paragraph (b)(1)(ii)(D) of this section must include a separate statement as follows:
+(A) Records that are disclosed to a part 2 program, covered entity, or business associate pursuant to the patient's written consent for treatment, payment, and health care operations may be further disclosed by that part 2 program, covered entity, or business associate, without the patient's written consent, to the extent the HIPAA regulations permit such disclosure.
+(B) A part 2 program may use or disclose records to fundraise for the benefit of the part 2 program only if the patient is first provided with a clear and conspicuous opportunity to elect not to receive fundraising communications.
+(iv)
+Patient rights.
+The notice must contain a statement of the patient's rights with respect to their records and a brief description of how the patient may exercise these rights, as follows:
+(A) Right to request restrictions of disclosures made with prior consent for purposes of treatment, payment, and health care operations, as provided in § 2.26.
+(B) Right to request and obtain restrictions of disclosures of records under this part to the patient's health plan for those services for which the patient has paid in full, in the same manner as 45 CFR 164.522 applies to disclosures of protected health information.
+(C) Right to an accounting of disclosures of electronic records under this part for the past 3 years, as provided in § 2.25, and a right to an accounting of disclosures that meets the requirements of 45 CFR 164.528(a)(2) and (b) through (d) for all other disclosures made with consent.
+(D) Right to a list of disclosures by an intermediary for the past 3 years as provided in § 2.24.
+(E) Right to obtain a paper or electronic copy of the notice from the part 2 program upon request.
+(F) Right to discuss the notice with a designated contact person or office identified by the part 2 program pursuant to paragraph (b)(1)(vii) of this section.
+(G) Right to elect not to receive fundraising communications.
+(v)
+Part 2 program's duties.
+The notice must contain:
+(A) A statement that the part 2 program is required by law to maintain the privacy of records, to provide patients with notice of its legal duties and privacy practices with respect to records, and to notify affected patients following a breach of unsecured records;
+(B) A statement that the part 2 program is required to abide by the terms of the notice currently in effect; and
+(C) For the part 2 program to apply a change in a privacy practice that is described in the notice to records that the part 2 program created or received prior to issuing a revised notice, a statement that it reserves the right to change the terms of its notice and to make the new notice provisions effective for records that it maintains. The statement must also describe how it will provide patients with a revised notice.
+(vi)
+Complaints.
+The notice must contain a statement that patients may complain to the part 2 program and to the Secretary if they believe their privacy rights have been violated, a brief description of how the patient may file a complaint with the program, and a statement that the patient will not be retaliated against for filing a complaint.
+(vii)
+Contact.
+The notice must contain the name, or title, telephone number, and email address of a person or office to contact for further information about the notice.
+(viii)
+Effective date.
+The notice must contain the date on which the notice is first in effect, which may not be earlier than the date on which the notice is printed or otherwise published.
+(2)
+Optional elements.
+(i) In addition to the content required by paragraph (b)(1) of this section, if a part 2 program elects to limit the uses or disclosures that it is permitted to make under this part, the part 2 program may describe its more limited uses or disclosures in its notice, provided that the part 2 program may not include in its notice a limitation affecting its right to make a use or disclosure that is required by law or permitted to be made for emergency treatment.
+(ii) For the part 2 program to apply a change in its more limited uses and disclosures to records created or received prior to issuing a revised notice, the notice must include the statements required by paragraph (b)(1)(v)(C) of this section.
+(3)
+Revisions to the notice.
+The part 2 program must promptly revise and distribute its notice whenever there is a material change to the uses or disclosures, the patient's rights, the part 2 program's legal duties, or other privacy practices stated in the notice. Except when required by law, a material change to any term of the notice may not be implemented prior to the effective date of the notice in which such material change is reflected.
+(c)
+Implementation specifications: Provision of notice.
+A part 2 program must make the notice required by this section available upon request to any person and to any patient; and
+(1) A part 2 program must provide the notice:
+(i) No later than the date of the first service delivery, including service delivered electronically, to such patient after the compliance date for the part 2 program; or
+(ii) In an emergency treatment situation, as soon as reasonably practicable after the emergency treatment situation.
+(2) If the part 2 program maintains a physical service delivery site:
+(i) Have the notice available at the service delivery site for patients to request to take with them; and
+(ii) Post the notice in a clear and prominent location where it is reasonable to expect patients seeking service from the part 2 program to be able to read the notice in a manner that does not identify the patient as receiving treatment or services for substance use disorder; and
+(iii) Whenever the notice is revised, make the notice available upon request on or after the effective date of the revision and promptly comply with the requirements of paragraph (c)(2)(ii) of this section, if applicable.
+(3) Specific requirements for electronic notice include all the following:
+(i) A part 2 program that maintains a website that provides information about the part 2 program's customer services or benefits must prominently post its notice on the website and make the notice available electronically through the website.
+(ii) A part 2 program may provide the notice required by this section to a patient by email, if the patient agrees to electronic notice and such agreement has not been withdrawn. If the part 2 program knows that the email transmission has failed, a paper copy of the notice must be provided to the patient. Provision of electronic notice by the part 2 program will satisfy the provision requirements of this paragraph (c) when timely made in accordance with paragraph (c)(1) or (2) of this section.
+(iii) For purposes of paragraph (c)(2)(i) of this section, if the first service delivery to an individual is delivered electronically, the part 2 program must provide electronic notice automatically and contemporaneously in response to the individual's first request for service. The requirements in paragraph (c)(2)(ii) of this section apply to electronic notice.
+(iv) The patient who is the recipient of electronic notice retains the right to obtain a paper copy of the notice from a part 2 program upon request.
+§ 2.23 Patient access and restrictions on use and disclosure.
+(a)
+Patient access not prohibited.
+These regulations do not prohibit a part 2 program from giving a patient access to their own records, including the opportunity to inspect and copy any records that the part 2 program maintains about the patient. The part 2 program is not required to obtain a patient's written consent or other authorization under the regulations in this part in order to provide such access to the patient.
+(b)
+Restriction on use and disclosure of information.
+Information obtained by patient access to their record is subject to the restriction on use and disclosure of records to initiate or substantiate any criminal charges against the patient or to conduct any criminal investigation of the patient as provided for under § 2.12(d)(1).
+§ 2.24 Requirements for intermediaries.
+Upon request, an intermediary must provide to patients who have consented to the disclosure of their records using a general designation, pursuant to § 2.31(a)(4)(ii)(B), a list of persons to which their records have been disclosed pursuant to the general designation.
+(a) Under this section, patient requests:
+(1) Must be made in writing; and
+(2) Are limited to disclosures made within the past 3 years.
+(b) Under this section, the entity named on the consent form that discloses information pursuant to a patient's general designation (the entity that serves as an intermediary) must:
+(1) Respond in 30 or fewer days of receipt of the written request; and
+(2) Provide, for each disclosure, the name(s) of the entity(ies) to which the disclosure was made, the date of the disclosure, and a brief description of the patient identifying information disclosed.
+§ 2.25 Accounting of disclosures.
+(a)
+General rule.
+Subject to the limitations in paragraph (b) of this section, a part 2 program must provide to a patient, upon request, an accounting of all disclosures made with consent under § 2.31 in the 3 years prior to the date of the request (or a shorter time period chosen by the patient). The accounting of disclosures must meet the requirements of 45 CFR 164.528(a)(2) and (b) through (d).
+(b)
+Accounting of disclosures for treatment, payment, and health care operations.
+(1) A part 2 program must provide a patient with an accounting of disclosures of records for treatment, payment, and health care operations only where such disclosures are made through an electronic health record.
+(2) A patient has a right to receive an accounting of disclosures described in paragraph (b)(1) of this section during only the 3 years prior to the date on which the accounting is requested.
+§ 2.26 Right to request privacy protection for records.
+(a)(1) A part 2 program must permit a patient to request that the part 2 program restrict uses or disclosures of records about the patient to carry out treatment, payment, or health care operations, including when the patient has signed written consent for such disclosures.
+(2) Except as provided in paragraph (a)(6) of this section, a part 2 program is not required to agree to a restriction.
+(3) A part 2 program that agrees to a restriction under paragraph (a)(1) of this section may not use or disclose records in violation of such restriction, except that, if the patient who requested the restriction is in need of emergency treatment and the restricted record is needed to provide the emergency treatment, the part 2 program may use the restricted record, or may disclose information derived from the record to a health care provider, to provide such treatment to the patient.
+(4) If information from a restricted record is disclosed to a health care provider for emergency treatment under paragraph (a)(3) of this section, the part 2 program must request that such health care provider not further use or disclose the information.
+(5) A restriction agreed to by a part 2 program under paragraph (a) of this section is not effective under this subpart to prevent uses or disclosures required by law or permitted by this part for purposes other than treatment, payment, and health care operations.
+(6) A part 2 program must agree to the request of a patient to restrict disclosure of records about the patient to a health plan if:
+(i) The disclosure is for the purpose of carrying out payment or health care operations and is not otherwise required by law; and
+(ii) The record pertains solely to a health care item or service for which the patient, or person other than the health plan on behalf of the patient, has paid the part 2 program in full.
+(b) A part 2 program may terminate a restriction, if one of the following applies:
+(1) The patient agrees to or requests the termination in writing.
+(2) The patient orally agrees to the termination and the oral agreement is documented.
+(3) The part 2 program informs the patient that it is terminating its agreement to a restriction, except that such termination is:
+(i) Not effective for records restricted under paragraph (a)(6) of this section; and
+(ii) Only effective with respect to records created or received after it has so informed the patient.
+Subpart C—Uses and Disclosures With Patient Consent
+§ 2.31 Consent requirements.
+(a)
+Required elements for written consent.
+A written consent to a use or disclosure under the regulations in this part may be paper or electronic and must include:
+(1) The name of the patient.
+(2) The name or other specific identification of the person(s), or class of persons, authorized to make the requested use or disclosure.
+(3) A description of the information to be used or disclosed that identifies the information in a specific and meaningful fashion.
+(4)(i)
+General requirement for designating recipients.
+The name(s) of the person(s), or class of persons, to which a disclosure is to be made (“recipient(s)”). For a single consent for all future uses and disclosures for treatment, payment, and health care operations, the recipient may be described as “my treating providers, health plans, third-party payers, and people helping to operate this program” or a similar statement.
+(ii)
+Special instructions for intermediaries.
+Notwithstanding paragraph (a)(4)(i) of this section, if the recipient entity is an intermediary, a written consent must include the name(s) of the intermediary(ies) and:
+(A) The name(s) of the member participants of the intermediary; or
+(B) A general designation of a participant(s) or class of participants, which must be limited to a participant(s) who has a treating provider relationship with the patient whose information is being used or disclosed.
+(iii)
+Special instructions when designating certain recipients.
+If the recipient is a covered entity or business associate to whom a record (or information contained in a record) is disclosed for purposes of treatment, payment, or health care operations, a written consent must include the statement that the patient's record (or information contained in the record) may be redisclosed in accordance with the permissions contained in the HIPAA regulations, except for uses and disclosures for civil, criminal, administrative, and legislative proceedings against the patient.
+(5) A description of each purpose of the requested use or disclosure.
+(i) The statement “at the request of the patient” is a sufficient description of the purpose when a patient initiates the consent and does not, or elects not to, provide a statement of the purpose.
+(ii) The statement, “for treatment, payment, and health care operations” is a sufficient description of the purpose when a patient provides consent once for all such future uses or disclosures for those purposes.
+(iii) If a part 2 program intends to use or disclose records to fundraise on its own behalf, a statement about the patient's right to elect not to receive any fundraising communications.
+(6) The patient's right to revoke the consent in writing, except to the extent that the part 2 program or other lawful holder of patient identifying information that is permitted to make the disclosure has already acted in reliance on it, and how the patient may revoke consent.
+(7) An expiration date or an expiration event that relates to the individual patient or the purpose of the use or disclosure. The statement “end of the treatment,” “none,” or similar language is sufficient if the consent is for a use or disclosure for treatment, payment, or health care operations. The statement “end of the research study” or similar language is sufficient if the consent is for a use or disclosure for research, including for the creation and maintenance of a research database or research repository.
+(8) The signature of the patient and, when required for a patient who is a minor, the signature of a person authorized to give consent under § 2.14; or, when required for a patient who has been adjudicated as lacking the capacity to make their own health care decisions or is deceased, the signature of a person authorized to sign under § 2.15. Electronic signatures are permitted to the extent that they are not prohibited by any applicable law.
+(9) The date on which the consent is signed.
+(10) A patient's written consent to use or disclose records for treatment, payment, or health care operations must include all of the following statements:
+(i) The potential for the records used or disclosed pursuant to the consent to be subject to redisclosure by the recipient and no longer protected by this part.
+(ii) The consequences to the patient of a refusal to sign the consent.
+(b)
+Consent required: SUD counseling notes.
+(1) Notwithstanding any provision of this subpart, a part 2 program must obtain consent for any use or disclosure of SUD counseling notes, except:
+(i) To carry out the following treatment, payment, or health care operations:
+(A) Use by the originator of the SUD counseling notes for treatment;
+(B) Use or disclosure by the part 2 program for its own training programs in which students, trainees, or practitioners in SUD treatment or mental health learn under supervision to practice or improve their skills in group, joint, family, or individual SUD counseling; or
+(C) Use or disclosure by the part 2 program to defend itself in a legal action or other proceeding brought by the patient;
+(ii) A use or disclosure that is required by § 2.2(b) or permitted by § 2.15(b); § 2.53 with respect to the oversight of the originator of the SUD counseling notes; § 2.63(a); § 2.64.
+(2) A written consent for a use or disclosure of SUD counseling notes may only be combined with another written consent for a use or disclosure of SUD counseling notes.
+(3) A part 2 program may not condition the provision to a patient of treatment, payment, enrollment in a health plan, or eligibility for benefits on the provision of a written consent for a use or disclosure of SUD counseling notes.
+(c)
+Expired, deficient, or false consent.
+A disclosure may not be made on the basis of a consent which:
+(1) Has expired;
+(2) On its face substantially fails to conform to any of the requirements set forth in paragraph (a) of this section;
+(3) Is known to have been revoked; or
+(4) Is known, or through reasonable diligence could be known, by the person holding the records to be materially false.
+(d)
+Consent for use and disclosure of records in civil, criminal, administrative, or legislative proceedings.
+Patient consent for use and disclosure of records (or testimony relaying information contained in a record) in a civil, criminal, administrative, or legislative investigation or proceeding cannot be combined with a consent to use and disclose a record for any other purpose.
+§ 2.32 Notice and copy of consent to accompany disclosure.
+(a) Each disclosure made with the patient's written consent must be accompanied by one of the following written statements (
+i.e.,
+paragraph (a)(1) or (2) of this section):
+(1)
+Statement 1.
+This record which has been disclosed to you is protected by Federal confidentiality rules (42 CFR part 2). These rules prohibit you from using or disclosing this record, or testimony that describes the information contained in this record, in any civil, criminal, administrative, or legislative proceedings by any Federal, State, or local authority, against the patient, unless authorized by the consent of the patient, except as provided at 42 CFR 2.12(c)(5) or as authorized by a court in accordance with 42 CFR 2.64 or 2.65. In addition, the Federal rules prohibit you from making any other use or disclosure of this record unless at least one of the following applies:
+(i) Further use or disclosure is expressly permitted by the written consent of the individual whose information is being disclosed in this record or as otherwise permitted by 42 CFR part 2.
+(ii) You are a covered entity or business associate and have received the record for treatment, payment, or health care operations, or
+(iii) You have received the record from a covered entity or business associate as permitted by 45 CFR part 164, subparts A and E.
+A general authorization for the release of medical or other information is NOT sufficient to meet the required elements of written consent to further use or redisclose the record (see 42 CFR 2.31).
+(2)
+Statement 2.
+“42 CFR part 2 prohibits unauthorized use or disclosure of these records.”
+(b) Each disclosure made with the patient's written consent must be accompanied by a copy of the consent or a clear explanation of the scope of the consent provided.
+§ 2.33 Uses and disclosures permitted with written consent.
+(a) If a patient consents to a use or disclosure of their records consistent with § 2.31, the following uses and disclosures are permitted, as applicable:
+(1) A part 2 program may use and disclose those records in accordance with that consent to any person or category of persons identified or generally designated in the consent, except that disclosures to central registries and in connection with criminal justice referrals must meet the requirements of §§ 2.34 and 2.35, respectively.
+(2) When the consent provided is a single consent for all future uses and disclosures for treatment, payment, and health care operations, a part 2 program, covered entity, or business associate may use and disclose those records for treatment, payment, and health care operations as permitted by the HIPAA regulations, until such time as the patient revokes such consent in writing.
+(b) If a patient consents to a use or disclosure of their records consistent with § 2.31, the recipient may further disclose such records as provided in subpart E of this part, and as follows:
+(1) When disclosed for treatment, payment, and health care operations activities to a covered entity or business associate, such recipient may further disclose those records in accordance with the HIPAA regulations, except for uses and disclosures for civil, criminal, administrative, and legislative proceedings against the patient.
+(2) When disclosed with consent given once for all future treatment, payment, and health care operations activities to a part 2 program that is not a covered entity or business associate, the recipient may further disclose those records consistent with the consent.
+(3) When disclosed for payment or health care operations activities to a lawful holder that is not a covered entity or business associate, the recipient may further disclose those records as may be necessary for its contractors, subcontractors, or legal representatives to carry out the payment or health care operations specified in the consent on behalf of such lawful holders.
+(c) Lawful holders, other than covered entities and business associates, who wish to redisclose patient identifying information pursuant to paragraph (b)(3) of this section must have in place a written contract or comparable legal instrument with the contractor or voluntary legal representative, which provides that the contractor, subcontractor, or voluntary legal representative is fully bound by the provisions of this part upon receipt of the patient identifying information. In making any such redisclosures, the lawful holder must furnish such recipients with the notice required under § 2.32; require such recipients to implement appropriate safeguards to prevent unauthorized uses and disclosures; and require such recipients to report any unauthorized uses, disclosures, or breaches of patient identifying information to the lawful holder. The lawful holder may only redisclose information to the contractor or subcontractor or voluntary legal representative that is necessary for the contractor, subcontractor, or voluntary legal representative to perform its duties under the contract or comparable legal instrument. Contracts may not permit a contractor, subcontractor, or voluntary legal representative to redisclose information to a third party unless that third party is a contract agent of the contractor or subcontractor, helping them provide services described in the contract, and only as long as the agent only further discloses the information back to the contractor or lawful holder from which the information originated.
+§ 2.34 Uses and Disclosures to prevent multiple enrollments.
+(a)
+Restrictions on disclosure.
+A part 2 program, as defined in § 2.11, may disclose patient records to a central registry or to any withdrawal management or maintenance treatment program not more than 200 miles away for the purpose of preventing the multiple enrollment of a patient only if:
+(1) The disclosure is made when:
+(i) The patient is accepted for treatment;
+(ii) The type or dosage of the drug is changed; or
+(iii) The treatment is interrupted, resumed or terminated.
+(2) The disclosure is limited to:
+(i) Patient identifying information;
+(ii) Type and dosage of the drug; and
+(iii) Relevant dates.
+(3) The disclosure is made with the patient's written consent meeting the requirements of § 2.31, except that:
+(i) The consent must list the name and address of each central registry and each known withdrawal management or maintenance treatment program to which a disclosure will be made; and
+(ii) The consent may authorize a disclosure to any withdrawal management or maintenance treatment program established within 200 miles of the program, but does not need to individually name all programs.
+(b)
+Use of information in records limited to prevention of multiple enrollments.
+A central registry and any withdrawal management or maintenance treatment program to which information is disclosed to prevent multiple enrollments may not use or redisclose patient identifying information for any purpose other than the prevention of multiple enrollments or to ensure appropriate coordinated care with a treating provider that is not a part 2 program unless authorized by a court order under subpart E of this part.
+(c)
+Permitted disclosure by a central registry to prevent a multiple enrollment.
+When a member program asks a central registry if an identified patient is enrolled in another member program and the registry determines that the patient is so enrolled, the registry may disclose:
+(1) The name, address, and telephone number of the member program(s) in which the patient is already enrolled to the inquiring member program; and
+(2) The name, address, and telephone number of the inquiring member program to the member program(s) in which the patient is already enrolled. The member programs may communicate as necessary to verify that no error has been made and to prevent or eliminate any multiple enrollments.
+(d)
+Permitted disclosure by a central registry to a non-member treating provider, to prevent a multiple enrollment.
+When, for the purpose of preventing multiple program enrollments or duplicative prescriptions, or to inform prescriber decision making regarding prescribing of opioid medication(s) or other prescribed substances, a provider with a treating provider relationship that is not a member program asks a central registry if an identified patient is enrolled in a member program, the registry may disclose:
+(1) The name, address, and telephone number of the member program(s) in which the patient is enrolled;
+(2) Type and dosage of any medication for substance use disorder being administered or prescribed to the patient by the member program(s); and
+(3) Relevant dates of any such administration or prescription. The central registry and non-member program treating prescriber may communicate as necessary to verify that no error has been made and to prevent or eliminate any multiple enrollments or improper prescribing.
+(e)
+Permitted disclosure by a withdrawal management or maintenance treatment program to prevent a multiple enrollment.
+A withdrawal management or maintenance treatment program which has received a disclosure under this section and has determined that the patient is already enrolled may communicate as necessary with the program making the disclosure to verify that no error has been made and to prevent or eliminate any multiple enrollments.
+§ 2.35 Disclosures to elements of the criminal justice system which have referred patients.
+(a)
+Consent for criminal justice referrals.
+A part 2 program may disclose information from a record about a patient to those persons within the criminal justice system who have made participation in the part 2 program a condition of the disposition of any criminal proceedings against the patient or of the patient's parole or other release from custody if:
+(1) The disclosure is made only to those persons within the criminal justice system who have a need for the information in connection with their duty to monitor the patient's progress (
+e.g.,
+a prosecuting attorney who is withholding charges against the patient, a court granting pretrial or post-trial release, probation or parole officers responsible for supervision of the patient); and
+(2) The patient has signed a written consent meeting the requirements of § 2.31 (except paragraph (a)(6) of this section which is inconsistent with the revocation provisions of paragraph (c) of this section) and the requirements of paragraphs (b) and (c) of this section.
+(b)
+Duration of consent.
+The written consent must state the period during which it remains in effect. This period must be reasonable, taking into account:
+(1) The anticipated length of the treatment;
+(2) The type of criminal proceeding involved, the need for the information in connection with the final disposition of that proceeding, and when the final disposition will occur; and
+(3) Such other factors as the part 2 program, the patient, and the person(s) within the criminal justice system who will receive the disclosure consider pertinent.
+(c)
+Revocation of consent.
+The written consent must state that it is revocable upon the passage of a specified amount of time or the occurrence of a specified, ascertainable event. The time or occurrence upon which consent becomes revocable may be no later than the final disposition of the conditional release or other action in connection with which consent was given.
+(d)
+Restrictions on use and redisclosure.
+Any persons within the criminal justice system who receive patient information under this section may use and redisclose it only to carry out official duties with regard to the patient's conditional release or other action in connection with which the consent was given.
+§ 2.36 Disclosures to prescription drug monitoring programs.
+A part 2 program or other lawful holder is permitted to report any SUD medication prescribed or dispensed by the part 2 program to the applicable state prescription drug monitoring program if required by applicable state law. A part 2 program or other lawful holder must obtain patient consent to a disclosure of records to a prescription drug monitoring program under § 2.31 prior to reporting of such information.
+Subpart D—Uses and Disclosures Without Patient Consent
+§ 2.51 Medical emergencies.
+(a)
+General rule.
+Under the procedures required by paragraph (c) of this section, patient identifying information may be disclosed to medical personnel to the extent necessary to:
+(1) Meet a bona fide medical emergency in which the patient's prior written consent cannot be obtained; or
+(2) Meet a bona fide medical emergency in which a part 2 program is closed and unable to provide services or obtain the prior written consent of the patient, during a temporary state of emergency declared by a state or federal authority as the result of a natural or major disaster, until such time that the part 2 program resumes operations.
+(b)
+Special rule.
+Patient identifying information may be disclosed to medical personnel of the Food and Drug Administration (FDA) who assert a reason to believe that the health of any individual may be threatened by an error in the manufacture, labeling, or sale of a product under FDA jurisdiction, and that the information will be used for the exclusive purpose of notifying patients or their physicians of potential dangers.
+(c)
+Procedures.
+Immediately following disclosure, the part 2 program shall document, in writing, the disclosure in the patient's records, including:
+(1) The name of the medical personnel to whom disclosure was made and their affiliation with any health care facility;
+(2) The name of the person making the disclosure;
+(3) The date and time of the disclosure; and
+(4) The nature of the emergency (or error, if the report was to FDA).
+§ 2.52 Scientific research.
+(a)
+Use and disclosure of patient identifying information.
+Notwithstanding other provisions of this part, including paragraph (b)(2) of this section, patient identifying information may be used or disclosed for the purposes of the recipient conducting scientific research if:
+(1) The person designated as director or managing director, or person otherwise vested with authority to act as chief executive officer or their designee, of a part 2 program or other lawful holder of data under this part, makes a determination that the recipient of the patient identifying information is:
+(i) A HIPAA covered entity or business associate that has obtained and documented authorization from the patient, or a waiver or alteration of authorization, consistent with 45 CFR 164.508 or 164.512(i), as applicable;
+(ii) Subject to the HHS regulations regarding the protection of human subjects (45 CFR part 46), and provides documentation either that the researcher is in compliance with the requirements of 45 CFR part 46, including the requirements related to informed consent or a waiver of consent (45 CFR 46.111 and 46.116) or that the research qualifies for exemption under the HHS regulations (45 CFR 46.104) or any successor regulations;
+(iii) Subject to the FDA regulations regarding the protection of human subjects (21 CFR parts 50 and 56) and provides documentation that the research is in compliance with the requirements of the FDA regulations, including the requirements related to informed consent or an exception to, or waiver of, consent (21 CFR part 50) and any successor regulations; or
+(iv) Any combination of a HIPAA covered entity or business associate, and/or subject to the HHS regulations regarding the protection of human subjects, and/or subject to the FDA regulations regarding the protection of human subjects; and has met the requirements of paragraph (a)(1)(i), (ii) (iii), and/or (iv) of this section, as applicable.
+(2) The part 2 program or other lawful holder of data under this part is a HIPAA covered entity or business associate, and the use or disclosure is made in accordance with the requirements at 45 CFR 164.512(i).
+(3) If neither paragraph (a)(1) or (2) of this section apply to the receiving or disclosing party, this section does not apply.
+(b)
+Requirements for researchers.
+Any person conducting scientific research using patient identifying information obtained under paragraph (a) of this section:
+(1) Is fully bound by the regulations in this part and, if necessary, will resist in judicial proceedings any efforts to obtain access to patient records except as permitted by the regulations in this part.
+(2) Must not redisclose patient identifying information except back to the person from whom that patient identifying information was obtained or as permitted under paragraph (c) of this section.
+(3) May include data under this part in research reports only in aggregate form in which patient identifying information has been de-identified in accordance with the requirements of 45 CFR 164.514(b) such that there is no reasonable basis to believe that the information can be used to identify a patient.
+(4) Must maintain and destroy patient identifying information in accordance with the security policies and procedures established under § 2.16.
+(5) Must retain records in compliance with applicable federal, state, and local record retention laws.
+(c)
+Data linkages
+—(1)
+Researchers.
+Any person conducting scientific research using patient identifying information obtained under paragraph (a) of this section that requests linkages to data sets from a data repository(ies) holding patient identifying information must:
+(i) Have the request reviewed and approved by an Institutional Review Board (IRB) registered with the Department of Health and Human Services, Office for Human Research Protections in accordance with 45 CFR part 46 to ensure that patient privacy is considered and the need for identifiable data is justified. Upon request, the researcher may be required to provide evidence of the IRB approval of the research project that contains the data linkage component.
+(ii) Ensure that patient identifying information obtained under paragraph (a) of this section is not provided to law enforcement agencies or officials.
+(iii) Ensure that patient identifying information is not redisclosed for data linkage purposes other than as provided in this paragraph (c).
+(2)
+Data repositories.
+For purposes of this section, a data repository is fully bound by the provisions of part 2 upon receipt of the patient identifying data and must:
+(i) After providing the researcher with the linked data, destroy or delete the linked data from its records, including sanitizing any associated hard copy or electronic media, to render the patient identifying information non-retrievable in a manner consistent with the policies and procedures established under § 2.16 Security for records.
+(ii) Ensure that patient identifying information obtained under paragraph (a) of this section is not provided to law enforcement agencies or officials.
+§ 2.53 Management audits, financial audits, and program evaluation.
+(a)
+Records not copied or removed.
+If patient records are not downloaded, copied or removed from the premises of a part 2 program or other lawful holder, or forwarded electronically to another electronic system or device, patient identifying information, as defined in § 2.11, may be disclosed in the course of a review of records on the premises of a part 2 program or other lawful holder to any person who agrees in writing to comply with the limitations on use and redisclosure in paragraph (f) of this section and who:
+(1) Performs the audit or evaluation on behalf of:
+(i) Any federal, state, or local governmental agency that provides financial assistance to a part 2 program or other lawful holder, or is authorized by law to regulate the activities of the part 2 program or other lawful holder;
+(ii) Any person which provides financial assistance to the part 2 program or other lawful holder, which is a third-party payer or health plan covering patients in the part 2 program, or which is a quality improvement organization (QIO) performing a QIO review, or the contractors, subcontractors, or legal representatives of such person or quality improvement organization; or
+(iii) An entity with direct administrative control over the part 2 program or lawful holder.
+(2) Is determined by the part 2 program or other lawful holder to be qualified to conduct an audit or evaluation of the part 2 program or other lawful holder.
+(b)
+Copying, removing, downloading, or forwarding patient records.
+Records containing patient identifying information, as defined in § 2.11, may be copied or removed from the premises of a part 2 program or other lawful holder or downloaded or forwarded to another electronic system or device from the part 2 program's or other lawful holder's electronic records by any person who:
+(1) Agrees in writing to:
+(i) Maintain and destroy the patient identifying information in a manner consistent with the policies and procedures established under § 2.16;
+(ii) Retain records in compliance with applicable federal, state, and local record retention laws; and
+(iii) Comply with the limitations on use and disclosure in paragraph (f) of this section; and
+(2) Performs the audit or evaluation on behalf of:
+(i) Any federal, state, or local governmental agency that provides financial assistance to the part 2 program or other lawful holder, or is authorized by law to regulate the activities of the part 2 program or other lawful holder; or
+(ii) Any person which provides financial assistance to the part 2 program or other lawful holder, which is a third-party payer or health plan covering patients in the part 2 program, or which is a quality improvement organization performing a QIO review, or the contractors, subcontractors, or legal representatives of such person or quality improvement organization; or
+(iii) An entity with direct administrative control over the part 2 program or lawful holder.
+(c)
+Activities included.
+Audits and evaluations under this section may include, but are not limited to:
+(1) Activities undertaken by a Federal, state, or local governmental agency, or a third-party payer or health plan, in order to:
+(i) Identify actions the agency or third-party payer or health plan can make, such as changes to its policies or procedures, to improve care and outcomes for patients with substance use disorders who are treated by part 2 programs;
+(ii) Ensure that resources are managed effectively to care for patients; or
+(iii) Determine the need for adjustments to payment policies to enhance care or coverage for patients with SUD.
+(2) Reviews of appropriateness of medical care, medical necessity, and utilization of services.
+(d)
+Quality assurance entities included.
+Entities conducting audits or evaluations in accordance with paragraphs (a) and (b) of this section may include accreditation or similar types of organizations focused on quality assurance.
+(e)
+Medicare, Medicaid, Children's Health Insurance Program (CHIP), or related audit or evaluation.
+(1) Patient identifying information, as defined in § 2.11, may be disclosed under paragraph (e) of this section to any person for the purpose of conducting a Medicare, Medicaid, or CHIP audit or evaluation, including an audit or evaluation necessary to meet the requirements for a Centers for Medicare & Medicaid Services (CMS)-regulated accountable care organization (CMS-regulated ACO) or similar CMS-regulated organization (including a CMS-regulated Qualified Entity (QE)), if the person agrees in writing to comply with the following:
+(i) Maintain and destroy the patient identifying information in a manner consistent with the policies and procedures established under § 2.16;
+(ii) Retain records in compliance with applicable federal, state, and local record retention laws; and
+(iii) Comply with the limitations on use and disclosure in paragraph (f) of this section.
+(2) A Medicare, Medicaid, or CHIP audit or evaluation under this section includes a civil or administrative investigation of a part 2 program by any federal, state, or local government agency with oversight responsibilities for Medicare, Medicaid, or CHIP and includes administrative enforcement, against the part 2 program by the government agency, of any remedy authorized by law to be imposed as a result of the findings of the investigation.
+(3) An audit or evaluation necessary to meet the requirements for a CMS-regulated ACO or similar CMS-regulated organization (including a CMS-regulated QE) must be conducted in accordance with the following:
+(i) A CMS-regulated ACO or similar CMS-regulated organization (including a CMS-regulated QE) must:
+(A) Have in place administrative and/or clinical systems; and
+(B) Have in place a leadership and management structure, including a governing body and chief executive officer with responsibility for oversight of the organization's management and for ensuring compliance with and adherence to the terms and conditions of the Participation Agreement or similar documentation with CMS; and
+(ii) A CMS-regulated ACO or similar CMS-regulated organization (including a CMS-regulated QE) must have a signed Participation Agreement or similar documentation with CMS, which provides that the CMS-regulated ACO or similar CMS-regulated organization (including a CMS-regulated QE):
+(A) Is subject to periodic evaluations by CMS or its agents, or is required by CMS to evaluate participants in the CMS-regulated ACO or similar CMS-regulated organization (including a CMS-regulated QE) relative to CMS-defined or approved quality and/or cost measures;
+(B) Must designate an executive who has the authority to legally bind the organization to ensure compliance with 42 U.S.C. 290dd-2 and this part and the terms and conditions of the Participation Agreement in order to receive patient identifying information from CMS or its agents;
+(C) Agrees to comply with all applicable provisions of 42 U.S.C. 290dd-2 and this part;
+(D) Must ensure that any audit or evaluation involving patient identifying information occurs in a confidential and controlled setting approved by the designated executive;
+(E) Must ensure that any communications or reports or other documents resulting from an audit or evaluation under this section do not allow for the direct or indirect identification (
+e.g.,
+through the use of codes) of a patient as having or having had a substance use disorder; and
+(F) Must establish policies and procedures to protect the confidentiality of the patient identifying information consistent with this part, the terms and conditions of the Participation Agreement, and the requirements set forth in paragraph (e)(1) of this section.
+(4) Program, as defined in § 2.11, includes an employee of, or provider of medical services under the program when the employee or provider is the subject of a civil investigation or administrative remedy, as those terms are used in paragraph (e)(2) of this section.
+(5) If a disclosure to a person is authorized under this section for a Medicare, Medicaid, or CHIP audit or evaluation, including a civil investigation or administrative remedy, as those terms are used in paragraph (e)(2) of this section, the person may further use or disclose the patient identifying information that is received for such purposes to its contractor(s), subcontractor(s), or legal representative(s), to carry out the audit or evaluation, and a quality improvement organization which obtains such information under paragraph (a) or (b) of this section may use or disclose the information to that person (or, to such person's contractors, subcontractors, or legal representatives, but only for the purposes of this section).
+(6) The provisions of this paragraph (e) do not authorize the part 2 program, the Federal, state, or local government agency, or any other person to use or disclose patient identifying information obtained during the audit or evaluation for any purposes other than those necessary to complete the audit or evaluation as specified in this paragraph (e).
+(f)
+Limitations on use and disclosure.
+Except as provided in paragraph (e) of this section, patient identifying information disclosed under this section may be disclosed only back to the part 2 program or other lawful holder from which it was obtained and may be used only to carry out an audit or evaluation purpose or to investigate or prosecute criminal or other activities, as authorized by a court order entered under § 2.66.
+(g)
+Audits and evaluations mandated by statute or regulation.
+Patient identifying information may be disclosed to federal, state, or local government agencies, and the contractors, subcontractors, and legal representatives of such agencies, in the course of conducting audits or evaluations mandated by statute or regulation, if those audits or evaluations cannot be carried out using deidentified information.
+(h)
+Disclosures for health care operations.
+With respect to activities described in paragraphs (c) and (d) of this section, a part 2 program, covered entity, or business associate may disclose records in accordance with a consent that includes health care operations, and the recipient may redisclose such records as permitted under the HIPAA regulations if the recipient is a covered entity or business associate.
+§ 2.54 Disclosures for public health.
+A part 2 program may disclose records for public health purposes without patient consent so long as:
+(a) The disclosure is made to a public health authority as defined in this part; and
+(b) The content of the information from the record disclosed has been de-identified in accordance with the requirements of 45 CFR 164.514(b) such that there is no reasonable basis to believe that the information can be used to identify a patient.
+Subpart E—Court Orders Authorizing Use and Disclosure
+§ 2.61 Legal effect of order.
+(a)
+Effect.
+An order of a court of competent jurisdiction entered under this subpart is a unique kind of court order. Its only purpose is to authorize a use or disclosure of patient information which would otherwise be prohibited by 42 U.S.C. 290dd-2 and the regulations in this part. Such an order does not compel use or disclosure. A subpoena or a similar legal mandate must be issued to compel use or disclosure. This mandate may be entered at the same time as and accompany an authorizing court order entered under the regulations in this part.
+(b)
+Examples.
+(1) A person holding records subject to the regulations in this part receives a subpoena for those records. The person may not use or disclose the records in response to the subpoena unless a court of competent jurisdiction enters an authorizing order under the regulations in this part.
+(2) An authorizing court order is entered under the regulations in this part, but the person holding the records does not want to make the use or disclosure. If there is no subpoena or other compulsory process or a subpoena for the records has expired or been quashed, that person may refuse to make the use or disclosure. Upon the entry of a valid subpoena or other compulsory process the person holding the records must use or disclose, unless there is a valid legal defense to the process other than the confidentiality restrictions of the regulations in this part.
+§ 2.62 Order not applicable to records disclosed without consent to researchers, auditors, and evaluators.
+A court order under the regulations in this part may not authorize persons who meet the criteria specified in §§ 2.52(a)(1)(i) through (iii) and 2.53, who have received patient identifying information without consent for the purpose of conducting research, audit, or evaluation, to disclose that information or use it to conduct any criminal investigation or prosecution of a patient. However, a court order under § 2.66 may authorize use and disclosure of records to investigate or prosecute such persons who are holding the records.
+§ 2.63 Confidential communications.
+(a) A court order under the regulations in this part may authorize disclosure of confidential communications made by a patient to a part 2 program in the course of diagnosis, treatment, or referral for treatment only if:
+(1) The disclosure is necessary to protect against an existing threat to life or of serious bodily injury, including circumstances which constitute suspected child abuse and neglect and verbal threats against third parties;
+(2) The disclosure is necessary in connection with investigation or prosecution of an extremely serious crime, such as one which directly threatens loss of life or serious bodily injury, including homicide, rape, kidnapping, armed robbery, assault with a deadly weapon, or child abuse and neglect; or
+(3) The disclosure is in connection with a civil, criminal, administrative, or legislative proceeding in which the patient offers testimony or other evidence pertaining to the content of the confidential communications.
+(b) [Reserved]
+§ 2.64 Procedures and criteria for orders authorizing uses and disclosures for noncriminal purposes.
+(a)
+Application.
+An order authorizing the use or disclosure of patient records or testimony relaying the information contained in the records for purposes other than criminal investigation or prosecution may be applied for by any person having a legally recognized interest in the use or disclosure which is sought in the course of a civil, administrative, or legislative proceeding. The application may be filed separately or as part of a pending civil action in which the applicant asserts that the patient records or testimony relaying the information contained in the records are needed to provide evidence. An application must use a fictitious name, such as John Doe, to refer to any patient and may not contain or otherwise disclose any patient identifying information unless the patient is the applicant or has given written consent (meeting the requirements of the regulations in this part) to disclosure or the court has ordered the record of the proceeding sealed from public scrutiny.
+(b)
+Notice.
+A court order under this section is only valid when the patient and the person holding the records from whom disclosure is sought have received:
+(1) Adequate notice in a manner which does not disclose patient identifying information to other persons; and
+(2) An opportunity to file a written response to the application, or to appear in person, for the limited purpose of providing evidence on the statutory and regulatory criteria for the issuance of the court order as described in
+§ 2.64(d).
+(c)
+Review of evidence: Conduct of hearing.
+Any oral argument, review of evidence, or hearing on the application must be held in the judge's chambers or in some manner which ensures that patient identifying information is not disclosed to anyone other than a party to the proceeding, the patient, or the person holding the record, unless the patient requests an open hearing in a manner which meets the written consent requirements of the regulations in this part. The proceeding may include an examination by the judge of the patient records referred to in the application.
+(d)
+Criteria for entry of order.
+An order under this section may be entered only if the court determines that good cause exists. To make this determination the court must find that:
+(1) Other ways of obtaining the information are not available or would not be effective; and
+(2) The public interest and need for the use or disclosure outweigh the potential injury to the patient, the physician-patient relationship and the treatment services.
+(e)
+Content of order.
+An order authorizing a use or disclosure must:
+(1) Limit use or disclosure to only those parts of the patient's record, or testimony relaying those parts of the patient's record, which are essential to fulfill the objective of the order;
+(2) Limit use or disclosure to those persons whose need for information is the basis for the order; and
+(3) Include such other measures as are necessary to limit use or disclosure for the protection of the patient, the physician-patient relationship and the treatment services; for example, sealing from public scrutiny the record of any proceeding for which use or disclosure of a patient's record, or testimony relaying the contents of the record, has been ordered.
+§ 2.65 Procedures and criteria for orders authorizing use and disclosure of records to criminally investigate or prosecute patients.
+(a)
+Application.
+An order authorizing the use or disclosure of patient records, or testimony relaying the information contained in those records, to investigate or prosecute a patient in connection with a criminal proceeding may be applied for by the person holding the records or by any law enforcement or prosecutorial official who is responsible for conducting investigative or prosecutorial activities with respect to the enforcement of criminal laws, including administrative and legislative criminal proceedings. The application may be filed separately, as part of an application for a subpoena or other compulsory process, or in a pending criminal action. An application must use a fictitious name such as John Doe, to refer to any patient and may not contain or otherwise use or disclose patient identifying information unless the court has ordered the record of the proceeding sealed from public scrutiny.
+(b)
+Notice and hearing.
+Unless an order under § 2.66 is sought in addition to an order under this section, an order under this section is valid only when the person holding the records has received:
+(1) Adequate notice (in a manner which will not disclose patient identifying information to other persons) of an application by a law enforcement agency or official;
+(2) An opportunity to appear and be heard for the limited purpose of providing evidence on the statutory and regulatory criteria for the issuance of the court order as described in § 2.65(d); and
+(3) An opportunity to be represented by counsel independent of counsel for an applicant who is a law enforcement agency or official.
+(c)
+Review of evidence: Conduct of hearings.
+Any oral argument, review of evidence, or hearing on the application shall be held in the judge's chambers or in some other manner which ensures that patient identifying information is not disclosed to anyone other than a party to the proceedings, the patient, or the person holding the records. The proceeding may include an examination by the judge of the patient records referred to in the application.
+(d)
+Criteria.
+A court may authorize the use and disclosure of patient records, or testimony relaying the information contained in those records, for the purpose of conducting a criminal investigation or prosecution of a patient only if the court finds that all of the following criteria are met:
+(1) The crime involved is extremely serious, such as one which causes or directly threatens loss of life or serious bodily injury including homicide, rape, kidnapping, armed robbery, assault with a deadly weapon, and child abuse and neglect.
+(2) There is a reasonable likelihood that the records or testimony will disclose information of substantial value in the investigation or prosecution.
+(3) Other ways of obtaining the information are not available or would not be effective.
+(4) The potential injury to the patient, to the physician-patient relationship and to the ability of the part 2 program to provide services to other patients is outweighed by the public interest and the need for the disclosure.
+(5) If the applicant is a law enforcement agency or official, that:
+(i) The person holding the records has been afforded the opportunity to be represented by independent counsel; and
+(ii) Any person holding the records which is an entity within federal, state, or local government has in fact been represented by counsel independent of the applicant.
+(e)
+Content of order.
+Any order authorizing a use or disclosure of patient records subject to this part, or testimony relaying the information contained in those records, under this section must:
+(1) Limit use and disclosure to those parts of the patient's record, or testimony relaying the information contained in those records, which are essential to fulfill the objective of the order;
+(2) Limit disclosure to those law enforcement and prosecutorial officials who are responsible for, or are conducting, the investigation or prosecution, and limit their use of the records or testimony to investigation and prosecution of the extremely serious crime or suspected crime specified in the application; and
+(3) Include such other measures as are necessary to limit use and disclosure to the fulfillment of only that public interest and need found by the court.
+§ 2.66 Procedures and criteria for orders authorizing use and disclosure of records to investigate or prosecute a part 2 program or the person holding the records.
+(a)
+Application.
+(1) An order authorizing the use or disclosure of patient records subject to this part to investigate or prosecute a part 2 program or the person holding the records (or employees or agents of that part 2 program or person holding the records) in connection with a criminal or administrative matter may be applied for by any investigative agency having jurisdiction over the program's or person's activities.
+(2) The application may be filed separately or as part of a pending civil or criminal action against a part 2 program or the person holding the records (or agents or employees of the part 2 program or person holding the records) in which the applicant asserts that the patient records are needed to provide material evidence. The application must use a fictitious name, such as John Doe, to refer to any patient and may not contain or otherwise disclose any patient identifying information unless the court has ordered the record of the proceeding sealed from public scrutiny or the patient has provided written consent (meeting the requirements of § 2.31) to that disclosure.
+(3) Upon discovering in good faith that it received records under this part in the course of investigating or prosecuting a part 2 program or the person holding the records (or employees or agents of that part 2 program or person holding the records), an investigative agency must do the following:
+(i) Secure the records in accordance with § 2.16; and
+(ii) Immediately cease using and disclosing the records until the investigative agency obtains a court order consistent with paragraph (c) of this section authorizing the use and disclosure of the records and any records later obtained. The application for the court order must occur within a reasonable period of time, but not more than 120 days after discovering it received records under this part; or
+(iii) If the agency does not seek a court order in accordance with paragraph (a)(3)(ii) of this section, the agency must either return the records to the part 2 program or person holding the records, if it is legally permissible to do so, within a reasonable period of time, but not more than 120 days after discovering it received records under this part; or
+(iv) If the agency does not seek a court order or return the records, the agency must destroy the records in a manner that renders the patient identifying information non-retrievable, within a reasonable period of time, but not more than 120 days after discovering it received records under this part.
+(v) If the agency's application for a court order is rejected by the court and no longer subject to appeal, the agency must return the records to the part 2 program or person holding the records, if it is legally permissible to do so, or destroy the records immediately after notice from the court.
+(b)
+Notice not required.
+An application under this section may, in the discretion of the court, be granted without notice. Although no express notice is required to the part 2 program, to the person holding the records, or to any patient whose records are to be disclosed, upon implementation of an order so granted any of those persons must be afforded an opportunity to seek revocation or amendment of that order, limited to the presentation of evidence on the statutory and regulatory criteria for the issuance of the court order in accordance with paragraph (c) of this section. If a court finds that individualized contact is impractical under the circumstances, patients may be informed of the opportunity through a substitute form of notice that the court determines is reasonably calculated to reach the patients, such as conspicuous notice in major print or broadcast media in geographic areas where the affected patients likely reside.
+(c)
+Requirements for order.
+An order under this section must be entered in accordance with, and comply with the requirements of § 2.64(e). In addition, an order under this section may be entered only if the court determines that good cause exists. To make such good cause determination, the court must find that:
+(1) Other ways of obtaining the information are not available, would not be effective, or would yield incomplete information;
+(2) The public interest and need for the use or disclosure outweigh the potential injury to the patient, the physician-patient relationship, and the treatment services; and
+(3) For an application being submitted pursuant to paragraph (a)(3)(ii) of this section, the investigative agency has satisfied the conditions at § 2.3(b). Information from records obtained in violation of this part, including § 2.12(d), cannot be used in an application for a court order to obtain such records.
+(d)
+Limitations on use and disclosure of patient identifying information.
+(1) An order entered under this section must require the deletion or removal of patient identifying information from any documents or oral testimony made available to the public.
+(2) No information obtained under this section may be used or disclosed to conduct any investigation or prosecution of a patient in connection with a criminal matter, or be used or disclosed as the basis for an application for an order under § 2.65.
+§ 2.67 Orders authorizing the use of undercover agents and informants to investigate employees or agents of a part 2 program in connection with a criminal matter.
+(a)
+Application.
+A court order authorizing the placement of an undercover agent or informant in a part 2 program as an employee or patient may be applied for by any investigative agency which has reason to believe that employees or agents of the part 2 program are engaged in criminal misconduct.
+(b)
+Notice.
+The part 2 program director must be given adequate notice of the application and an opportunity to appear and be heard (for the limited purpose of providing evidence on the statutory and regulatory criteria for the issuance of the court order in accordance with § 2.67(c)), unless the application asserts that:
+(1) The part 2 program director is involved in the suspected criminal activities to be investigated by the undercover agent or informant; or
+(2) The part 2 program director will intentionally or unintentionally disclose the proposed placement of an undercover agent or informant to the employees or agents of the program who are suspected of criminal activities.
+(c)
+Criteria.
+An order under this section may be entered only if the court determines that good cause exists. To make such good cause determination, the court must find all of the following:
+(1) There is reason to believe that an employee or agent of the part 2 program is engaged in criminal activity;
+(2) Other ways of obtaining evidence of the suspected criminal activity are not available, would not be effective, or would yield incomplete evidence;
+(3) The public interest and need for the placement of an undercover agent or informant in the part 2 program outweigh the potential injury to patients of the part 2 program, physician-patient relationships, and the treatment services; and
+(4) For an application submitted after the placement of an undercover agent or informant has already occurred, that the investigative agency has satisfied the conditions at § 2.3(b) and only discovered that a court order was necessary after such placement occurred. Information from records obtained in violation of this part, including § 2.12(d), cannot be used in an application for a court order to obtain such records.
+(d)
+Content of order.
+An order authorizing the placement of an undercover agent or informant in a part 2 program must:
+(1) Specifically authorize the placement of an undercover agent or an informant;
+(2) Limit the total period of the placement to twelve months, starting on the date that the undercover agent or informant is placed on site within the program. The placement of an undercover agent or informant must end after 12 months, unless a new court order is issued to extend the period of placement;
+(3) Prohibit the undercover agent or informant from using or disclosing any patient identifying information obtained from the placement except as necessary to investigate or prosecute employees or agents of the part 2 program in connection with the suspected criminal activity; and
+(4) Include any other measures which are appropriate to limit any potential disruption of the part 2 program by the placement and any potential for a real or apparent breach of patient confidentiality; for example, sealing from public scrutiny the record of any proceeding for which disclosure of a patient's record has been ordered.
+(e)
+Limitation on use and disclosure of information.
+No information obtained by an undercover agent or informant placed in a part 2 program under this section may be used or disclosed to investigate or prosecute any patient in connection with a criminal matter or as the basis for an application for an order under § 2.65.
+§ 2.68 Report to the Secretary.
+(a) Any investigative agency covered by this part shall report to the Secretary, not later than 60 days after the end of each calendar year, to the extent applicable and practicable, on:
+(1) The number of applications made under §§ 2.66(a)(3)(ii) and 2.67(c)(4) during the calendar year;
+(2) The number of instances in which such applications were denied, due to findings by the court of violations of this part during the calendar year; and
+(3) The number of instances in which records under this part were returned or destroyed following unknowing receipt without a court order, in compliance with § 2.66(a)(3)(iii), (iv), or (v), respectively during the calendar year.
+(b) [Reserved]

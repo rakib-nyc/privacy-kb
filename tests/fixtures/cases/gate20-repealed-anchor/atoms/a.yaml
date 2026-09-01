@@ -1,0 +1,71 @@
+id: ny.fixture.repealed_anchor
+schema_version: 1
+record_type: obligation
+source:
+  citation: N.Y. Gen. Bus. Law § 899-ccc [FIXTURE — REPEALED](a)
+  instrument_id: ny.gbl.349
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/349
+  fetched: '2026-08-19'
+  raw_file: tests/fixtures/raw/ny-gbs-899ccc-repealed.json
+  raw_sha256: db58bd028deb0e7718f1ccffe6adc6ccbf1565b58f4defe2856487240f4054ee
+  text_file: tests/fixtures/raw/ny-gbs-899ccc-repealed.txt
+  text_sha256: d9feda59dd626b5fe456f8613561e11706e5791364c82352be23d2f65a96b94d
+  text_extraction_cmd: python3 tools/render-text.py tests/fixtures/raw/ny-gbs-899ccc-repealed.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - NY Senate OpenLegislation API
+    result: structured_source_used
+    note: fixture
+verbatim_span: '* § 899-ccc. Definitions. As used in this article, the following terms shall have the
+  following meanings: 1. "Advertise" means publishing or disseminating any written, oral, electronic or
+  printed comm'
+verification_status: verbatim_confirmed
+subject:
+  domain: V.A.1
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+- state_ag
+sector:
+- any
+data_types:
+- any
+status: in_force
+effective_from: '2026-04-03'
+effective_to: null
+supersedes: null
+superseded_by: null
+applies_if:
+  all:
+  - entity.nexus in ['US-NY']
+applies_to_role: any
+obligation_type: prohibit
+summary: Fixture summary, long enough for the schema minimum length.
+requirement_detail: Fixture detail, long enough for the schema minimum length.
+deadline: null
+exemptions: []
+preemption:
+  posture: none
+  authority: null
+  note: fixture
+enforcement:
+  enforcers:
+  - state_ag
+  private_right_of_action: true
+related: []
+federal_relationship: independent
+interpreted_by: []
+common_errors: []
+open_questions: []
+confidence: high
+paragraph_path:
+  path:
+  - a
+  anchor: 899-CCC
+  derivation: reconstructed
+  confidence: high
+  evidence: designator (a) parsed from the flat text field
+context_not_required: 'Fixture: the subsection is self-contained.'

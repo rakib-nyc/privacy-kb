@@ -1,0 +1,88 @@
+id: ev.hipaa.t1.001
+question: >-
+  We are a hospital and therefore a HIPAA covered entity. Our HR department holds pre-employment
+  physicals, FMLA paperwork and workers' comp files on our own nursing staff — including on nurses
+  who are also our patients. Is that PHI, and are we exempt as to it?
+trap: >-
+  T1, the case BRIEF.md names as the divider between expert and novice analysis, and it is
+  available to be got wrong in both directions. Answer "we're a covered entity, so it's all PHI"
+  and every HR file in the health system is over-protected and the HIPAA analysis crowds out the
+  ADA and GINA analysis that actually governs. Answer "employment records are exempt, so we're
+  exempt" and the hospital reads an exclusion from the DEFINITION OF THE DATA as an exemption for
+  the ENTITY, which is the failure mode the typed exemption exists to prevent. The same nurse
+  generates both answers on the same day: her chart is PHI because she is a patient, her
+  pre-employment physical is not because the hospital holds it as employer. What changes is the
+  capacity in which the record is held, not the clinical content and not the entity.
+rubric:
+- name: the operative prohibition exists as a real atom
+  record_exists: us.cfr.45.164.502.a.use_disclosure_general
+- name: the employment-records exclusion is typed data_level, never entity_level
+  record: us.cfr.45.164.502.a.use_disclosure_general
+  path: exemptions.0.type
+  equals: data_level
+- name: it is quoted verbatim from the PHI definition
+  record: us.cfr.45.164.502.a.use_disclosure_general
+  path: exemptions.0.verbatim_span
+  equals: In employment records held by a covered entity in its role as employer; and
+- name: the span is sourced to part 160, not to the part that carries the obligation
+  record: us.cfr.45.164.502.a.use_disclosure_general
+  path: exemptions.0.source_ref.instrument_id
+  equals: us.cfr.45.160
+- name: its scope states the same-nurse consequence explicitly
+  record: us.cfr.45.164.502.a.use_disclosure_general
+  path: exemptions.0.scope
+  contains: same entity, same person, same clinical facts, different capacity
+- name: and warns that not-PHI is not unregulated
+  record: us.cfr.45.164.502.a.use_disclosure_general
+  path: exemptions.0.scope
+  contains: the ADA, GINA and state law reach them
+- name: ENGINE — a covered entity holding a patient chart is applicable with no carve-out
+  engine:
+    entity: {is_hipaa_covered_entity: true, holds_as_employer: false, nexus: US}
+    data: {is_phi: true, in_employment_record: false}
+    context: {as_of: '2026-08-19'}
+  atom: us.cfr.45.164.502.a.use_disclosure_general
+  in: applicable
+  path: partial_carve_out
+  equals: null
+- name: ENGINE — the SAME entity holding an employment record is STILL APPLICABLE, never exempt
+  engine: &employer
+    entity: {is_hipaa_covered_entity: true, holds_as_employer: true, nexus: US}
+    data: {is_phi: true, in_employment_record: true}
+    context: {as_of: '2026-08-19'}
+  atom: us.cfr.45.164.502.a.use_disclosure_general
+  in: applicable
+- name: ENGINE — what it gets is a data_level carve-out
+  engine: *employer
+  atom: us.cfr.45.164.502.a.use_disclosure_general
+  in: applicable
+  path: partial_carve_out.level
+  equals: data_level
+- name: ENGINE — and the engine says the entity remains in scope for everything else
+  engine: *employer
+  atom: us.cfr.45.164.502.a.use_disclosure_general
+  in: applicable
+  path: partial_carve_out.note
+  contains: The entity remains in scope for everything else under this instrument
+- name: ENGINE — minimum necessary carves out on the same data and stays applicable too
+  engine: *employer
+  atom: us.cfr.45.164.502.b1.minimum_necessary
+  in: applicable
+  path: partial_carve_out.level
+  equals: data_level
+- name: the atom names the collapse as a common error in terms
+  record: us.cfr.45.164.502.a.use_disclosure_general
+  path: common_errors
+  contains: The hospital does not stop being a covered entity
+correct_answer: >-
+  The employment records are not PHI, and you are not exempt. 45 C.F.R. § 160.103 excludes from
+  the definition of protected health information "individually identifiable health information ...
+  In employment records held by a covered entity in its role as employer." That removes the
+  RECORDS, not the hospital: you remain a covered entity in full, and § 164.502(a) still governs
+  everything you hold as a provider — including the chart of the very same nurse, held because she
+  is a patient. The practical consequences run in two directions. HIPAA's individual rights,
+  minimum necessary and accounting duties do not attach to the HR file. And the file is
+  unprotected by HIPAA, not unregulated: the ADA's confidentiality rules for medical examinations,
+  GINA, workers' compensation law and state law all reach it, and a programme that files it under
+  "HIPAA doesn't apply" has answered the wrong question.
+all_pass: true

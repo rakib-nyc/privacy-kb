@@ -1,0 +1,147 @@
+id: us.ppra.1232h.c2ai.annual_policy_notice
+schema_version: 1
+record_type: obligation
+source:
+  citation: 20 U.S.C. § 1232h(c)(2)(A)(i)
+  instrument_id: us.ppra
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc20@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ppra/raw/20-u-s-c-1232h.xml
+  raw_sha256: eb42d939529b064174f294c66050424507909fa3644becd81e90102800dd62f4
+  text_file: corpus/federal/domain-2-federal-privacy/ppra/raw/20-u-s-c-1232h.txt
+  text_sha256: c33faac33c7129e6e5eec3d8be18632846ea25016c67f4c39fe58b09d35b3720
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/ppra/raw/20-u-s-c-1232h.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: bb94bfc090a065e52398c4f2878b5d4aeff02c1c5ca6cf4ad5f5308c42a9e188
+verbatim_span: >-
+  provide such notice at least annually, at the beginning of the school year, and within a
+  reasonable period of time after any substantive change in such policies; and
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - c
+    - '2'
+    - A
+    - i
+  anchor: /us/usc/t20/s1232h/c/2/A/i
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: II.D.1
+  lifecycle:
+    - V
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ed
+sector:
+  - education
+data_types:
+  - personal_information
+status: in_force
+effective_from: '2002-01-08'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_local_educational_agency == true
+    - entity.receives_federal_education_funds == true
+applies_to_role: controller
+obligation_type: notify
+summary: >-
+  A local educational agency must give parents notice of its student-privacy policies at least
+  annually at the beginning of the school year, and within a reasonable period after any substantive
+  change to them.
+requirement_detail: >-
+  THE ANNUAL NOTICE IS THE OPERATIONAL SPINE OF SUBSECTION (c) AND IT HAS TWO CLOCKS, not one. The
+  recurring clock is fixed and auditable — the notice goes out "at least annually, at the beginning
+  of the school year" — while the second is event-driven and deliberately unquantified, running from
+  a substantive change in the policies. Schools reliably build the first and forget the second, so a
+  mid-year change to a survey or marketing practice goes out with no notice at all, and that is the
+  finding an auditor should look for. The duty attaches to a local educational agency, which
+  subsection (c)(6)(C) defines to exclude postsecondary institutions, so a university is outside
+  this notice regime entirely. Note also that this obligation is about the POLICIES adopted under
+  (c)(1); the separate duty in (c)(2)(B) to notify parents of the specific dates on which the listed
+  activities are scheduled is a different notice with its own annual clock, and satisfying one does
+  not satisfy the other.
+deadline:
+  trigger_event: >-
+    the beginning of each school year, and any substantive change in the policies adopted under 20
+    U.S.C. § 1232h(c)(1)
+  duration:
+    value: 1
+    unit: years
+  computation: >-
+    Notice at least once per year, timed to "the beginning of the school year". A substantive change
+    starts a second, separate obligation which the statute times only as a reasonable period after
+    the change and does not reduce to a number of days.
+exemptions: []
+related:
+  - us.ppra.1232h.c2aii.opt_out_opportunity
+  - us.ppra.1232h.b.protected_information_survey_consent
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Running the annual notice and treating the job as done. A substantive change in the policies
+    triggers a separate notice within a reasonable period.
+  - >-
+    Applying subsection (c) to colleges. The definition of local educational agency in (c)(6)(C)
+    excludes postsecondary institutions.
+  - >-
+    Collapsing this notice with the scheduled-activity notification in (c)(2)(B). They are different
+    notices about different things and both are owed.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 20 U.S.C. § 1232h(c)(4)(B)(i)
+  note: >-
+    Subsection (c)(4)(B)(i) states that the provisions of subsection (c) shall not be construed to
+    preempt applicable provisions of State law that require parental notification, so a stricter
+    state student-privacy notice regime survives. New York's Education Law § 2-d is the live example
+    in this corpus's state layer.
+enforcement:
+  enforcers:
+    - ed
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Administrative. Subsection (f) directs the Secretary to establish or designate an office and
+      review board within the Department of Education to investigate, process, review and adjudicate
+      violations; subsection (e) conditions the Secretary's enforcement action on a failure to
+      comply that cannot be secured by voluntary means. The ultimate sanction is withdrawal of
+      federal education funds, as with FERPA.
+    range: null
+    note: >-
+      NO PRIVATE RIGHT OF ACTION. Like FERPA, PPRA is a spending-clause condition enforced
+      administratively, so a parent's route is a complaint to the Department's Student Privacy
+      Policy Office, not a lawsuit.
+  statute_of_limitations: null
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      The policies developed by a local educational agency under paragraph (1) shall provide for
+      reasonable notice of the adoption or continued use of such policies directly to the parents of
+      students enrolled in schools served by that agency. At a minimum, the agency shall—
+    citation: 20 U.S.C. § 1232h(c)(2)(A)
+    path:
+      path:
+        - c
+        - '2'
+        - A
+      anchor: /us/usc/t20/s1232h/c/2/A
+      derivation: structural
+      confidence: high
+      evidence: USLM element nesting; identifier read from the source

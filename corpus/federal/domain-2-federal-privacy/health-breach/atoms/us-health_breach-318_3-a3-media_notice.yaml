@@ -1,0 +1,199 @@
+id: us.health_breach.318_3.a3.media_notice
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 318.3(a)(3)
+  instrument_id: us.health_breach
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=318
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+  raw_sha256: 6266f7150e4734e83f9669e7d3d29429aba5885c6bb4cf72b170e48d6cde7bcb
+  text_file: corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.txt
+  text_sha256: 85091ca4bd2e2982f94c4cc078b4f55e3f653381d76f8aa6505c0fca0d427085
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 2ab6291477f3ed81d79159c5928a3dc68df218eab75385bb313310849c17e934
+verbatim_span: >-
+  Notify prominent media outlets serving a State or jurisdiction, following the discovery of a
+  breach of security, if the unsecured PHR identifiable health information of 500 or more residents
+  of such State or jurisdiction is, or is reasonably believed to have been, acquired during such
+  breach.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '3'
+  anchor: '318.3'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+operative_context:
+  - position: precedes
+    relation: conditions
+    verbatim_span: >-
+      In accordance with §§ 318.4 (regarding timeliness of notification), 318.5 (regarding methods
+      of notice), and 318.6 (regarding content of notice), each vendor of personal health records,
+      following the discovery of a breach of security of unsecured PHR identifiable health
+      information that is in a personal health record maintained or offered by such vendor, and each
+      PHR related entity, following the discovery of a breach of security of such information that
+      is obtained through a product or service provided by such entity, shall:
+    citation: 16 C.F.R. § 318.3(a)
+    path:
+      path:
+        - a
+      anchor: '318.3'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number
+        so the path is scoped to its own section — without it a path like ["a"] matches every
+        section in the part.
+jurisdiction: US
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline:
+  trigger_event: discovery_of_breach_of_security
+  duration:
+    value: 60
+    unit: calendar_days
+  computation: >-
+    Sent without unreasonable delay and in no case later than 60 calendar days after the discovery
+    of a breach of security (§ 318.4(a)). Discovery is deemed to occur on the first day the breach
+    is known or reasonably should have been known to the entity, including through any employee,
+    officer or other agent other than the person committing it (§ 318.3(c)).
+  tolling:
+    - >-
+      § 318.4(d) delay on a law enforcement official's determination that notice would impede a
+      criminal investigation or damage national security
+exemptions:
+  - id: cfr.16.318.1.a.hipaa_covered_entity
+    type: entity_level
+    scope: >-
+      A HIPAA-covered entity is outside 16 C.F.R. part 318 ALTOGETHER; its breach duties are 45
+      C.F.R. §§ 164.400–414 instead. Note the asymmetry in the sentence: the exclusion for covered
+      entities is unqualified, while the exclusion for anyone else runs only "to the extent that" it
+      acts as a business associate — so a vendor that is a business associate for one line of
+      business remains a vendor of personal health records for its own consumer offering. THIS IS
+      NOT RELIEF FROM BREACH NOTIFICATION. It is an allocation between two regimes, and the wrong
+      one is worse than none: HHS, not the FTC, receives the notice.
+    source_citation: 16 C.F.R. § 318.1(a)
+    verbatim_span: >-
+      This part does not apply to HIPAA-covered entities, or to any other entity to the extent that
+      it engages in activities as a business associate of a HIPAA-covered entity.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.is_hipaa_covered_entity == true
+    reach: instrument
+related:
+  - us.hipaa.breach.164_406.a.media_notice
+  - us.health_breach.318_3.a1.individual_notice
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Counting 500 across the whole breach. The text counts residents of a State or jurisdiction, so
+    the test is applied state by state.
+  - >-
+    Confusing this threshold with the FTC-notice threshold. § 318.4(b) uses 500 or more INDIVIDUALS
+    to decide whether FTC notice is contemporaneous or annual; this paragraph uses 500 residents of
+    one State to decide whether media notice is owed.
+  - >-
+    Carrying HIPAA's threshold across. 45 C.F.R. § 164.406 says MORE THAN 500 residents; this
+    paragraph says 500 OR MORE, and the difference decides a breach affecting exactly 500 residents
+    of a state.
+  - >-
+    Waiting for a confirmed count. The paragraph is triggered where the information "is, or is
+    reasonably believed to have been, acquired", and the 60-day ceiling in § 318.4(a) keeps running
+    while the investigation continues.
+open_questions:
+  - >-
+    effective_from is taken from the rule's own applicability date at § 318.8: "This part shall
+    apply to breaches of security that are discovered on or after September 24, 2009." The text
+    quoted here is the CURRENT text, which the part-level source note shows was amended at 89 FR
+    47054 (May 30, 2024). The source states neither that amendment's effective date nor which
+    provisions it changed, so this atom cannot distinguish the 2009 text from the amended text on a
+    date query, and any § 318.2 definition relied on downstream should be checked against the
+    amendment before being applied to a pre-2024 breach.
+confidence: high
+subject:
+  domain: II.B.3
+  lifecycle:
+    - VI
+regulator:
+  - ftc
+sector:
+  - health
+  - consumer_technology
+data_types:
+  - phr_identifiable_health_information
+  - health_information
+status: in_force
+effective_from: '2009-09-24'
+applies_if:
+  all:
+    - entity.is_phr_vendor_or_phr_related_entity == true
+    - event.type == 'breach_of_security'
+    - data.unsecured_phr_identifiable_health_information == true
+    - event.residents_of_one_state_affected >= 500
+applies_to_role: controller
+obligation_type: notify
+summary: >-
+  Where the unsecured PHR identifiable health information of 500 or more residents of a State or
+  jurisdiction is, or is reasonably believed to have been, acquired in a breach, the vendor or PHR
+  related entity must also notify prominent media outlets serving that State or jurisdiction.
+requirement_detail: >-
+  THE 500 IS COUNTED PER STATE OR JURISDICTION, not across the breach, which is the arithmetic most
+  often got wrong: a breach affecting 5,000 users spread thinly over fifty states may trigger no
+  media notice, while one affecting 500 users in a single state does. The threshold is also met on
+  reasonable BELIEF — "is, or is reasonably believed to have been, acquired" — so uncertainty about
+  the exact figure does not defer the duty. This is a per-state obligation layered on top of the
+  individual notice in (a)(1), never a substitute for it, and § 318.5(b) requires it to be given by
+  notice to prominent media outlets serving that State or jurisdiction. Note that a DIFFERENT 500
+  threshold governs the FTC notice: under § 318.4(b), FTC notice for a breach involving 500 or more
+  INDIVIDUALS is contemporaneous with the individual notice, while breaches under that figure may be
+  logged and sent annually. The shape resembles HIPAA's media notice at 45 C.F.R. § 164.406, but the
+  triggers are NOT identical: § 164.406 reads "more than 500 residents" while this paragraph reads
+  "500 or more residents", so a breach touching exactly 500 residents of one state requires media
+  notice here and would not under HIPAA. The regulator differs too — these notices run to the FTC,
+  not to HHS.
+preemption:
+  posture: floor
+  authority: 16 C.F.R. § 318.1(b); 42 U.S.C. § 17951
+  note: >-
+    § 318.1(b) states only that the part preempts State law "as set forth in section 13421 of the
+    American Recovery and Reinvestment Act of 2009, 42 U.S.C 17951". The extent of that preemption
+    is fixed by a statute that is not in this corpus; § 17951 is the ARRA provision applying the
+    HIPAA contrary-and-more-stringent framework, which is why this is recorded as a floor. Treat the
+    posture as declared but unresolved, and check state breach-notification law rather than assuming
+    displacement — the NY SHIELD Act reaches the same entities.
+enforcement:
+  enforcers:
+    - ftc
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Violation treated as an unfair or deceptive act or practice in violation of a rule under FTC
+      Act § 18 (15 U.S.C. 57a), carrying civil penalties as adjusted for inflation
+    range: null
+    note: >-
+      § 318.7 states the treatment expressly, which matters because it makes civil penalties
+      available for a FIRST violation — unlike a § 5 case, where the FTC ordinarily needs an order
+      before penalties attach. The penalty amount is set by 16 C.F.R. § 1.98 as adjusted and is not
+      stated in this part.
+  statute_of_limitations: null

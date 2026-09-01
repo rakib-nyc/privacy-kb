@@ -1,0 +1,131 @@
+id: us.red_flags.681_1.a.scope
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 681.1(a)
+  instrument_id: us.red_flags
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=681
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.xml
+  raw_sha256: 7fe86c7084a6fad1ad05bad984e729c15375a3b6261f7ae11298256bb2536c36
+  text_file: corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.txt
+  text_sha256: 5b797c2f9419d08777165b7536b847eeb72d7c4b5d4c56a4322ee15f5f86f3e4
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 9b6211608f0a7bc3abc73529c2e10a95fd3909e6235d7607d3231440f9f5d855
+verbatim_span: >-
+  This section applies to financial institutions and creditors that are subject to administrative
+  enforcement of the FCRA by the Federal Trade Commission pursuant to 15 U.S.C. 1681s(a)(1).
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+  anchor: '681.1'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+context_not_required: A scope sentence complete on its own; no ancestor in § 681.1 qualifies it.
+jurisdiction: US
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions: []
+related:
+  - us.red_flags.681_1.c.covered_account_determination
+  - us.red_flags.681_1.d1.written_program
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Reading "creditor" at large. § 681.1(b)(5) imports 15 U.S.C. 1681m(e)(4), which excludes a
+    person who advances funds only for expenses incidental to a service that person provides — the
+    point of the 2010 clarification after the FTC's broader reading.
+  - >-
+    Applying this part to banks and credit unions. They are outside FTC administrative enforcement
+    of the FCRA and owe the materially identical rule issued by their own prudential regulator
+    instead.
+  - >-
+    Treating scope as the whole test. Coverage under (a) plus covered accounts under (b)(3) is what
+    triggers the written programme; scope alone triggers only the (c) determination.
+open_questions:
+  - >-
+    effective_from is the publication date in § 681.1's own eCFR source note ("[74 FR 22645, May 14,
+    2009, as amended at 77 FR 72715, Dec. 6, 2012]"), which is when the section as quoted was
+    published in its current place. The part-level source note is earlier — "72 FR 63771, Nov. 9,
+    2007" — so an identity-theft programme duty existed before this date in a differently numbered
+    provision, and a query as of a date in 2008 will not reach this atom. Both are Federal Register
+    PUBLICATION dates, not stated effective or mandatory-compliance dates; the source does not give
+    those.
+confidence: high
+subject:
+  domain: II.C.3
+  lifecycle:
+    - I
+regulator:
+  - ftc
+sector:
+  - financial
+  - any creditor
+data_types:
+  - consumer_information
+  - account_information
+status: in_force
+effective_from: '2009-05-14'
+applies_if:
+  all:
+    - entity.is_financial_institution_or_creditor == true
+    - entity.subject_to_ftc_fcra_enforcement == true
+applies_to_role: controller
+obligation_type: secure
+summary: >-
+  16 C.F.R. § 681.1 applies to financial institutions and creditors that are subject to
+  administrative enforcement of the FCRA by the Federal Trade Commission under 15 U.S.C.
+  1681s(a)(1).
+requirement_detail: >-
+  WHO OWES THE PROGRAMME IS THE LIVE QUESTION, and this sentence answers half of it. Coverage is
+  drawn by ENFORCEMENT CHANNEL, not by industry: a person is inside this part only if the FTC
+  administratively enforces the FCRA against it, which is why a bank or federal credit union —
+  supervised by a banking agency — complies with that agency's parallel red flags rule and not with
+  16 C.F.R. part 681. "Creditor" is not left at large either: § 681.1(b)(5) takes it from 15 U.S.C.
+  1681m(e)(4), the definition Congress narrowed by the Red Flag Program Clarification Act of 2010
+  after the FTC read the earlier text to sweep in doctors, lawyers and other professionals who bill
+  after service. The second half of the question is in § 681.1(c) and (d)(1): being a financial
+  institution or creditor is necessary but not sufficient, because the written programme is owed
+  only by one that offers or maintains COVERED ACCOUNTS. An entity that is in scope here and holds
+  no covered account owes the periodic determination in (c) and nothing further.
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 1681t
+  note: >-
+    This part implements FCRA § 615(e) (15 U.S.C. 1681m(e)) and sits inside the FCRA framework, so
+    the express and partial preemption map of § 1681t governs whether a given state identity-theft
+    requirement survives. Not resolved on this atom — see the FCRA preemption instrument.
+enforcement:
+  enforcers:
+    - ftc
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: FCRA administrative enforcement (15 U.S.C. 1681s) by the FTC
+    range: null
+    note: >-
+      The part states no penalty figure. § 681.1(a) fixes the enforcement channel by defining the
+      covered population as those subject to FTC administrative enforcement of the FCRA under 15
+      U.S.C. 1681s(a)(1); banks, credit unions and other institutions answer to their own
+      regulators' parallel rules instead.
+  statute_of_limitations: null

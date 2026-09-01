@@ -1,0 +1,124 @@
+id: us.rfpa.3406.b.warrant_notice
+schema_version: 1
+record_type: obligation
+source:
+  citation: 12 U.S.C. § 3406(b)
+  instrument_id: us.rfpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3406.xml
+  raw_sha256: b2f2da6d9a0217992aa311c40b31aeb73c6ca09f7d3181c6e035e2c8c409a251
+  text_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3406.txt
+  text_sha256: d3627d748203c737d2da866ba7880d2ac1a93a2eb32263332dec5b3391c52f9d
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3406.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1 (12-u-s-c-3406)
+    result: structured_source_used
+    note: null
+  segment_sha256: 1e3d191b829038a0bbc9ac84ad6682f70c6ab784400f9f3da6ebdf4b0e092bac
+verbatim_span: >-
+  No later than ninety days after the Government authority serves the search warrant, it shall mail
+  to the customer’s last known address a copy of the search warrant together with the following
+  notice: “Records or information concerning your transactions held by the financial institution
+  named in the attached search warrant were obtained by this (agency or department) on (date) for
+  the following purpose: . You may have rights under the Right to Financial Privacy Act of 1978 [ 12
+  U.S.C. 3401 et seq.].”.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+  anchor: /us/usc/t12/s3406/b
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: >-
+  The subsection carries the whole duty and the statutory notice text; the warrant requirement it
+  presupposes is § 3406(a), recorded as a separate atom.
+subject:
+  domain: III.A.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - federal_agencies
+sector:
+  - financial
+data_types:
+  - financial
+status: in_force
+effective_from: '1979-03-10'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_government_authority == true
+    - data.is_financial_record == true
+applies_to_role: controller
+obligation_type: notify
+summary: >-
+  No later than ninety days after serving a search warrant for financial records, the Government
+  authority must mail the customer a copy of the warrant together with the statutory notice.
+requirement_detail: >-
+  THIS IS WHERE THE WARRANT ROUTE PAYS FOR ITS SILENCE. Because § 3406(a) allows production without
+  telling the customer, § 3406(b) supplies notice afterwards, and the statute prescribes the words:
+  the mailing must include a copy of the warrant and the quoted notice naming the agency, the date
+  and the purpose, and pointing the customer to the Right to Financial Privacy Act. The duty is to
+  MAIL to the last known address, not to achieve actual notice, so a stale address discharges it.
+  Ninety days is an outer limit rather than a target, and § 3406(c) lets a court push it out further
+  on the § 3409(a) findings. Note what the notice does not do: by the time it arrives the records
+  are already in the Government's hands, so it supports a post hoc remedy rather than the
+  pre-production challenge that §§ 3405 and 3407 preserve.
+deadline:
+  trigger_event: service of the search warrant by the Government authority
+  duration:
+    value: 90
+    unit: calendar_days
+  computation: >-
+    The period runs from SERVICE of the warrant, not from receipt of the records or from the close
+    of the investigation, and it is an outer bound — "no later than ninety days". Compliance is
+    measured at mailing to the customer's last known address. § 3406(c) is the only extension: a
+    court may delay the mailing, and the delay may not exceed one hundred and eighty days following
+    service of the warrant, with additional delays of up to ninety days available on further
+    application.
+exemptions: []
+related:
+  - us.rfpa.3406.a.search_warrant
+  - us.rfpa.3406.c.delayed_notice
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - Running the ninety days from receipt of the records. It runs from service of the search warrant.
+  - >-
+    Drafting the notice freehand. § 3406(b) prescribes the text, including the reference to the
+    Right to Financial Privacy Act of 1978.
+  - Assuming the customer must actually receive it. The duty is to mail to the last known address.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 12 U.S.C. § 3402
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the sections extracted. RFPA binds federal Government authorities,
+    so the ordinary state-law displacement question does not arise in the usual form: a state
+    statute restricting state investigators is not in conflict with it.
+enforcement:
+  enforcers:
+    - federal_agencies
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      12 U.S.C. § 3417 (civil penalties and liability) has not been extracted into this corpus, so
+      penalty exposure and any customer damages action are UNASSESSED rather than absent.
+      private_right_of_action is recorded false because nothing extracted establishes one, not
+      because the statute was read to withhold one.
+  statute_of_limitations: null

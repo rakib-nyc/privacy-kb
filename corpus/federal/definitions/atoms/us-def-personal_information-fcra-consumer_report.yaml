@@ -1,0 +1,190 @@
+schema_version: 1
+record_type: definition
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: high
+term: personal information
+differs_from:
+  - id: us.def.personal_information.glba.npi
+    difference: >-
+      "consumer report" (15 U.S.C. § 1681a(d)(1)) vs "nonpublic personal information" (16 C.F.R. §
+      313.3(n)(1)). Only consumer report: excludes carveout affiliate sharing; excludes carveout
+      first party experience; excludes carveout medical from report; includes media agnostic;
+      includes subject credit character; requires purpose eligibility use; requires source consumer
+      reporting agency. Only nonpublic personal information: excludes carveout business purpose;
+      excludes carveout publicly available; includes derived list inclusion; includes subject
+      financial; requires source customer relationship. Shared: requires natural person only.
+    computed:
+      only_here:
+        - excludes:carveout_affiliate_sharing
+        - excludes:carveout_first_party_experience
+        - excludes:carveout_medical_from_report
+        - includes:media_agnostic
+        - includes:subject_credit_character
+        - requires:purpose_eligibility_use
+        - requires:source_consumer_reporting_agency
+      only_there:
+        - excludes:carveout_business_purpose
+        - excludes:carveout_publicly_available
+        - includes:derived_list_inclusion
+        - includes:subject_financial
+        - requires:source_customer_relationship
+      shared:
+        - requires:natural_person_only
+  - id: us.def.personal_information.hipaa.phi
+    difference: >-
+      "consumer report" (15 U.S.C. § 1681a(d)(1)) vs "protected health information" (45 C.F.R. §
+      160.103). Only consumer report: excludes carveout affiliate sharing; excludes carveout first
+      party experience; excludes carveout medical from report; includes subject credit character;
+      requires natural person only; requires purpose eligibility use; requires source consumer
+      reporting agency. Only protected health information: excludes carveout education record;
+      excludes carveout employment record; excludes carveout long deceased; includes subject health;
+      requires identifies individual; requires source covered actor. Shared: includes media
+      agnostic.
+    computed:
+      only_here:
+        - excludes:carveout_affiliate_sharing
+        - excludes:carveout_first_party_experience
+        - excludes:carveout_medical_from_report
+        - includes:subject_credit_character
+        - requires:natural_person_only
+        - requires:purpose_eligibility_use
+        - requires:source_consumer_reporting_agency
+      only_there:
+        - excludes:carveout_education_record
+        - excludes:carveout_employment_record
+        - excludes:carveout_long_deceased
+        - includes:subject_health
+        - requires:identifies_individual
+        - requires:source_covered_actor
+      shared:
+        - includes:media_agnostic
+related: []
+open_questions: []
+id: us.def.personal_information.fcra.consumer_report
+source:
+  citation: 15 U.S.C. § 1681a(d)(1)
+  instrument_id: us.usc.15.1681a
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681a.xml
+  raw_sha256: ccb87a373752c5cb2024879c40932b66fb305b1bfa5ff1ef211d4eb985d1eed1
+  text_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681a.txt
+  text_sha256: 28703630c5874c3b2b5d5460c00aacad881907d5ae6db9ecfd0a1a6bb313b975
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681a.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 15 U.S.C. 1681a structured source
+    result: structured_source_used
+    note: null
+instrument_id: us.usc.15.1681a
+term_as_defined: consumer report
+verbatim_span: >-
+  The term “consumer report” means any written, oral, or other communication of any information by a
+  consumer reporting agency bearing on a consumer’s credit worthiness, credit standing, credit
+  capacity, character, general reputation, personal characteristics, or mode of living which is used
+  or expected to be used or collected in whole or in part for the purpose of serving as a factor in
+  establishing the consumer’s eligibility for—
+paragraph_path:
+  path:
+    - d
+    - '1'
+  anchor: /us/usc/t15/s1681a/d/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The chapeau carries the whole operative definition; the enumerated purposes follow it.
+subject:
+  domain: II.C.2
+  lifecycle:
+    - III
+regulator:
+  - ftc
+  - cfpb
+sector:
+  - financial
+data_types:
+  - consumer_report
+effective_from: '1971-04-25'
+elements:
+  - id: fcra.e1
+    kind: includes
+    concept: subject_credit_character
+    verbatim_span: >-
+      The term “consumer report” means any written, oral, or other communication of any information
+      by a consumer reporting agency bearing on a consumer’s credit worthiness, credit standing,
+      credit capacity, character, general reputation, personal characteristics, or mode of living
+      which is used or expected to be used or collected in whole or in part for the purpose of
+      serving as a factor in establishing the consumer’s eligibility for—
+    gloss: >-
+      Far broader subject matter than GLBA: character, general reputation and mode of living are not
+      financial facts.
+    condition: null
+  - id: fcra.e2
+    kind: requires
+    concept: source_consumer_reporting_agency
+    verbatim_span: communication of any information by a consumer reporting agency
+    gloss: >-
+      The same words from a non-CRA are not a consumer report. This is the most consequential
+      element in the definition.
+    condition: null
+  - id: fcra.e3
+    kind: requires
+    concept: purpose_eligibility_use
+    verbatim_span: >-
+      which is used or expected to be used or collected in whole or in part for the purpose of
+      serving as a factor in establishing the consumer’s eligibility for—
+    gloss: >-
+      FCRA is the only one of the three defined by PURPOSE. Identical content is or is not a
+      consumer report depending on what it is used for.
+    condition: null
+  - id: fcra.e4
+    kind: includes
+    concept: media_agnostic
+    verbatim_span: any written, oral, or other communication
+    gloss: null
+    condition: null
+  - id: fcra.e5
+    kind: excludes
+    concept: carveout_first_party_experience
+    verbatim_span: >-
+      report containing information solely as to transactions or experiences between the consumer
+      and the person making the report;
+    gloss: null
+    condition: null
+  - id: fcra.e6
+    kind: excludes
+    concept: carveout_affiliate_sharing
+    verbatim_span: >-
+      communication of other information among persons related by common ownership or affiliated by
+      corporate control, if it is clearly and conspicuously disclosed to the consumer that the
+      information may be communicated among such persons and the consumer is given the opportunity,
+      before the time that the information is initially communicated, to direct that such
+      information not be communicated among such persons;
+    gloss: null
+    condition: >-
+      only if disclosed clearly and conspicuously and the consumer is given an opportunity to opt
+      out
+  - id: fcra.e7
+    kind: excludes
+    concept: carveout_medical_from_report
+    verbatim_span: medical information;
+    gloss: >-
+      Medical information is excluded from consumer reports on stated conditions — the inverse
+      posture from HIPAA, where health content is the subject.
+    condition: subject to the conditions in § 1681a(d)(3)
+  - id: fcra.e8
+    kind: requires
+    concept: natural_person_only
+    verbatim_span: The term “consumer” means an individual.
+    gloss: null
+    condition: null

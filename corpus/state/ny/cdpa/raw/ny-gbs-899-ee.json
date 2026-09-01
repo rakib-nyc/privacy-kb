@@ -1,0 +1,47 @@
+{
+  "success" : true,
+  "message" : "Law document for location 899-EE in GBS law.",
+  "responseType" : "law-doc-info-detail",
+  "result" : {
+    "lawId" : "GBS",
+    "lawName" : "General Business",
+    "locationId" : "899-EE",
+    "title" : "Definitions",
+    "docType" : "SECTION",
+    "publishedDates" : [ "2024-06-28", "2025-06-27" ],
+    "docLevelId" : "899-EE",
+    "activeDate" : "2025-06-27",
+    "text" : "  § 899-ee. Definitions. For purposes of this article, the following\\nterms shall have the following meanings:\\n  1. \"Covered user\" shall mean a user of a website, online service,\\nonline application, mobile application, or connected device, or portion\\nthereof, in the state of New York who is:\\n  (a) actually known by the operator of such website, online service,\\nonline application, mobile application, or connected device to be a\\nminor; or\\n  (b) using a website, online service, online application, mobile\\napplication, or connected device primarily directed to minors.\\n  2. \"Minor\" shall mean a natural person under the age of eighteen.\\n  3. \"Operator\" shall mean any person who operates or provides a website\\non the internet, online service, online application, mobile application,\\nor connected device, and who, alone or jointly with others, controls the\\npurposes and means of processing personal data. A person that acts as\\nboth an operator and processor shall comply with the applicable\\nobligations of an operator and the obligations of a processor, depending\\non its role with respect to each specific processing of personal data.\\n  4. \"Personal data\" shall mean any data that identifies or could\\nreasonably be linked, directly or indirectly, with a specific natural\\nperson or device.\\n  5. \"Process\" or \"processing\" shall mean an operation or set of\\noperations performed on personal data, including but not limited to the\\ncollection, use, access, sharing, sale, monetization, analysis,\\nretention, creation, generation, derivation, recording, organization,\\nstructuring, storage, disclosure, transmission, disposal, licensing,\\ndestruction, deletion, modification, or deidentification of personal\\ndata.\\n  6. \"Primarily directed to minors\" shall mean a website, online\\nservice, online application, mobile application, or connected device, or\\na portion thereof, that is targeted to minors. A website, online\\nservice, online application, mobile application, or connected device, or\\nportion thereof, shall not be deemed directed primarily to minors solely\\nbecause such website, online service, online application, mobile\\napplication, or connected device, or portion thereof refers or links to\\nany other website, online service, online application, mobile\\napplication, or connected device directed to minors by using information\\nlocation tools, including a directory, index, reference, pointer, or\\nhypertext link. A website, online service, online application, mobile\\napplication, or connected device, or portion thereof, shall be deemed\\ndirected to minors when it has actual knowledge that it is collecting\\npersonal data of users directly from users of another website, online\\nservice, online application, mobile application, or connected device\\nprimarily directed to minors.\\n  7. \"Sell\" shall mean to share personal data for monetary or other\\nvaluable consideration. \"Selling\" shall not include the sharing of\\npersonal data for monetary or other valuable consideration to another\\nperson as an asset that is part of a merger, acquisition, bankruptcy, or\\nother transaction in which that person assumes control of all or part of\\nthe operator's assets or the sharing of personal data with a processor.\\n  8. \"Processor\" shall mean any person who processes data on behalf of\\nthe operator. A person that acts as both an operator and processor shall\\ncomply with the applicable obligations of an operator and the\\nobligations of a processor, depending on its role with respect to each\\nspecific processing of personal data.\\n  9. \"Third-party operator\" shall mean an operator who is not the\\noperator:\\n  (a) with whom the user intentionally and directly interacts; or\\n  (b) that collects personal data from the direct and current\\ninteractions with the user.\\n",
+    "parentLocationIds" : [ "-CH20", "A39-FF" ],
+    "parents" : [ {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "-CH20",
+      "title" : "General Business",
+      "docType" : "CHAPTER",
+      "publishedDates" : [ "2014-09-22", "2014-11-28", "2016-04-15", "2018-04-20", "2018-04-27", "2019-09-20", "2019-12-27", "2020-04-17", "2020-04-24", "2020-10-16", "2020-11-13", "2021-04-23", "2021-07-09", "2021-10-15", "2021-12-17", "2021-12-31", "2022-03-04", "2022-06-10", "2023-10-27", "2024-02-09", "2024-03-08", "2024-06-28", "2024-07-19", "2024-10-11", "2024-11-29", "2024-12-27", "2025-02-21", "2025-05-16", "2025-06-13", "2025-12-19", "2025-12-26", "2026-02-27", "2026-03-20", "2026-04-03", "2026-05-29" ],
+      "docLevelId" : "20",
+      "activeDate" : "2026-05-29"
+    }, {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "A39-FF",
+      "title" : "New York Child Data Protection Act",
+      "docType" : "ARTICLE",
+      "publishedDates" : [ "2024-06-28", "2025-06-27" ],
+      "docLevelId" : "39-FF",
+      "activeDate" : "2025-06-27"
+    } ],
+    "prevSibling" : null,
+    "nextSibling" : {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "899-FF",
+      "title" : "Privacy protection by default",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2024-06-28", "2025-06-27" ],
+      "docLevelId" : "899-FF",
+      "activeDate" : "2025-06-27"
+    }
+  }
+}

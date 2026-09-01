@@ -1,0 +1,284 @@
+{
+ "label": "uslm-5usc553-20260819",
+ "url": "(segmented from the stored raw file)",
+ "format": "uslm_xml",
+ "raw_file": "corpus/taxonomy/sources-of-us-law/raw/uslm-5usc553-20260819.xml",
+ "raw_sha256": "1fc6e90ed6062f5aaeec8eef163ffc157db57ee2e3e2eed6c3894c050c13c6dc",
+ "leaves": [
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": "/us/usc/t5/s553/a/1",
+   "heading": "",
+   "text": "a military or foreign affairs function of the United States; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "This section applies, according to the provisions thereof, except to the extent that there is involved\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t5/s553/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": "/us/usc/t5/s553/a/2",
+   "heading": "",
+   "text": "a matter relating to agency management or personnel or to public property, loans, grants, benefits, or contracts.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "This section applies, according to the provisions thereof, except to the extent that there is involved\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t5/s553/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": "/us/usc/t5/s553/b/1",
+   "heading": "",
+   "text": "a statement of the time, place, and nature of public rule making proceedings;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "General notice of proposed rule making shall be published in the Federal Register, unless persons subject thereto are named and either personally served or otherwise have actual notice thereof in accordance with law. The notice shall include\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t5/s553/b"
+    },
+    {
+     "position": "follows",
+     "text": "Except when notice or hearing is required by statute, this subsection does not apply\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t5/s553/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": "/us/usc/t5/s553/b/2",
+   "heading": "",
+   "text": "reference to the legal authority under which the rule is proposed;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "General notice of proposed rule making shall be published in the Federal Register, unless persons subject thereto are named and either personally served or otherwise have actual notice thereof in accordance with law. The notice shall include\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t5/s553/b"
+    },
+    {
+     "position": "follows",
+     "text": "Except when notice or hearing is required by statute, this subsection does not apply\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t5/s553/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": "/us/usc/t5/s553/b/3",
+   "heading": "",
+   "text": "either the terms or substance of the proposed rule or a description of the subjects and issues involved; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "General notice of proposed rule making shall be published in the Federal Register, unless persons subject thereto are named and either personally served or otherwise have actual notice thereof in accordance with law. The notice shall include\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t5/s553/b"
+    },
+    {
+     "position": "follows",
+     "text": "Except when notice or hearing is required by statute, this subsection does not apply\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t5/s553/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4"
+   ],
+   "anchor": "/us/usc/t5/s553/b/4",
+   "heading": "",
+   "text": "the Internet address of a summary of not more than 100 words in length of the proposed rule, in plain language, that shall be posted on the Internet website under section 206(d) of the E-Government Act of 2002 ( 44 U.S.C. 3501 note) (commonly known as regulations.gov).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "General notice of proposed rule making shall be published in the Federal Register, unless persons subject thereto are named and either personally served or otherwise have actual notice thereof in accordance with law. The notice shall include\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t5/s553/b"
+    },
+    {
+     "position": "follows",
+     "text": "Except when notice or hearing is required by statute, this subsection does not apply\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t5/s553/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "A"
+   ],
+   "anchor": "/us/usc/t5/s553/b/A",
+   "heading": "",
+   "text": "to interpretative rules, general statements of policy, or rules of agency organization, procedure, or practice; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "General notice of proposed rule making shall be published in the Federal Register, unless persons subject thereto are named and either personally served or otherwise have actual notice thereof in accordance with law. The notice shall include\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t5/s553/b"
+    },
+    {
+     "position": "follows",
+     "text": "Except when notice or hearing is required by statute, this subsection does not apply\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t5/s553/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "B"
+   ],
+   "anchor": "/us/usc/t5/s553/b/B",
+   "heading": "",
+   "text": "when the agency for good cause finds (and incorporates the finding and a brief statement of reasons therefor in the rules issued) that notice and public procedure thereon are impracticable, unnecessary, or contrary to the public interest.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "General notice of proposed rule making shall be published in the Federal Register, unless persons subject thereto are named and either personally served or otherwise have actual notice thereof in accordance with law. The notice shall include\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t5/s553/b"
+    },
+    {
+     "position": "follows",
+     "text": "Except when notice or hearing is required by statute, this subsection does not apply\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t5/s553/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "/us/usc/t5/s553/c",
+   "heading": "",
+   "text": "After notice required by this section, the agency shall give interested persons an opportunity to participate in the rule making through submission of written data, views, or arguments with or without opportunity for oral presentation. After consideration of the relevant matter presented, the agency shall incorporate in the rules adopted a concise general statement of their basis and purpose. When rules are required by statute to be made on the record after opportunity for an agency hearing, sections 556 and 557 of this title apply instead of this subsection.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": "/us/usc/t5/s553/d/1",
+   "heading": "",
+   "text": "a substantive rule which grants or recognizes an exemption or relieves a restriction;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The required publication or service of a substantive rule shall be made not less than 30 days before its effective date, except\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t5/s553/d"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2"
+   ],
+   "anchor": "/us/usc/t5/s553/d/2",
+   "heading": "",
+   "text": "interpretative rules and statements of policy; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The required publication or service of a substantive rule shall be made not less than 30 days before its effective date, except\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t5/s553/d"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3"
+   ],
+   "anchor": "/us/usc/t5/s553/d/3",
+   "heading": "",
+   "text": "as otherwise provided by the agency for good cause found and published with the rule.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The required publication or service of a substantive rule shall be made not less than 30 days before its effective date, except\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t5/s553/d"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": "/us/usc/t5/s553/e",
+   "heading": "",
+   "text": "Each agency shall give an interested person the right to petition for the issuance, amendment, or repeal of a rule.",
+   "context": []
+  }
+ ]
+}

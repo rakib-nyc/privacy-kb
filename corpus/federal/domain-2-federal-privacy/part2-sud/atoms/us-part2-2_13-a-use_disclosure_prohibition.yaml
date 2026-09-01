@@ -1,0 +1,265 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+related:
+  - us.cfr.45.164.502.a.use_disclosure_general
+federal_relationship: null
+interpreted_by: []
+confidence: high
+id: us.part2.2_13.a.use_disclosure_prohibition
+source:
+  citation: 42 C.F.R. § 2.13(a)
+  instrument_id: us.part2_sud
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-42.xml?part=2
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  raw_sha256: 5310842763c7e36481877d66979171643bfb80db54bceca2013014691623c216
+  text_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.txt
+  text_sha256: 8aa03df58a46112b21fc7b4d0972fe49d4ed8dc28481d2e409f7a8fa881e8b74
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, full XML for the part, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: 287ff5bb25d8bd1a996c5c9e1d03451db584f23446268ad637e3ecebd03b6f52
+verbatim_span: >-
+  The patient records subject to the regulations in this part may be used or disclosed only as
+  permitted by the regulations in this part and may not otherwise be used or disclosed in any civil,
+  criminal, administrative, or legislative proceedings conducted by any Federal, state, or local
+  authority. Any use or disclosure made under the regulations in this part must be limited to that
+  information which is necessary to carry out the purpose of the use or disclosure.
+paragraph_path:
+  path:
+    - a
+  anchor: '2.13'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+    exactly one provision
+exemptions:
+  - id: cfr.42.2.12.c.3.internal_program_communications
+    type: activity_level
+    scope: >-
+      Communications among personnel who need the information for duties arising out of diagnosis,
+      treatment or referral, within a part 2 program or between the program and an entity with
+      direct administrative control over it, are outside the restrictions. CONSEQUENCE TEST: the
+      program stays fully covered and every outbound disclosure still needs consent; only this
+      internal traffic is relieved. Typed activity_level because the relief attaches to the
+      communication, not to the record — the identical record disclosed one step further, to the
+      parent organisation's marketing function, is prohibited again.
+    source_citation: 42 C.F.R. § 2.12(c)(3)
+    verbatim_span: >-
+      The restrictions on use and disclosure in the regulations in this part do not apply to
+      communications of information between or among personnel having a need for the information in
+      connection with their duties that arise out of the provision of diagnosis, treatment, or
+      referral for treatment of patients with substance use disorders if the communications are:
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - practice.is_internal_part2_program_communication == true
+  - id: cfr.42.2.12.c.4.qualified_service_organization
+    type: activity_level
+    scope: >-
+      Communications between a part 2 program and a qualified service organization, of information
+      the QSO needs to provide services to or on behalf of the program, are outside the
+      restrictions. This is part 2's analogue to the HIPAA business associate route and it is
+      narrower: the relief is limited to what the QSO NEEDS for the services, and the QSO agreement
+      itself binds the organisation back into part 2 for anything else. CONSEQUENCE TEST: no consent
+      is needed for the vendor feed; consent is still needed for everything the vendor is not
+      performing.
+    source_citation: 42 C.F.R. § 2.12(c)(4)
+    verbatim_span: >-
+      The restrictions on use and disclosure in the regulations in this part do not apply to the
+      communications between a part 2 program and a qualified service organization of information
+      needed by the qualified service organization to provide services to or on behalf of the
+      program.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - practice.is_qualified_service_organization_communication == true
+  - id: cfr.42.2.12.c.6.child_abuse_reporting
+    type: activity_level
+    scope: >-
+      Reporting suspected child abuse and neglect under State law is outside the restrictions.
+      CONSEQUENCE TEST — and this is the half that gets dropped: the relief covers the REPORT and
+      nothing else. The original records stay fully restricted, including for the civil or criminal
+      proceedings that grow out of the report, so a programme that treats the mandatory report as
+      unlocking the file for the ensuing custody case has misread the exception.
+    source_citation: 42 C.F.R. § 2.12(c)(6)
+    verbatim_span: >-
+      The restrictions on use and disclosure in the regulations in this part do not apply to the
+      reporting under state law of incidents of suspected child abuse and neglect to the appropriate
+      state or local authorities. However, the restrictions continue to apply to the original
+      substance use disorder patient records maintained by the part 2 program including their use
+      and disclosure for civil or criminal proceedings which may arise out of the report of
+      suspected child abuse and neglect.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - practice.is_state_child_abuse_report == true
+  - id: cfr.42.2.12.c.1.va_title_38_records
+    type: data_level
+    scope: >-
+      Information on substance use disorder patients maintained in connection with the Department of
+      Veterans Affairs' provision of care under Title 38 is not governed by part 2; 38 U.S.C. 7332
+      and the VA's own regulations govern instead. CONSEQUENCE TEST: the records are not
+      unregulated, they are regulated elsewhere, and 38 U.S.C. 7332 is in several respects stricter
+      still. Typed data_level because the VA remains capable of holding part 2 records in other
+      capacities.
+    source_citation: 42 C.F.R. § 2.12(c)(1)
+    verbatim_span: >-
+      These regulations do not apply to information on substance use disorder patients maintained in
+      connection with the Department of Veterans Affairs' provision of hospital care, nursing home
+      care, domiciliary care, and medical services under Title 38, U.S.C. Those records are governed
+      by 38 U.S.C. 7332 and regulations issued under that authority by the Secretary of Veterans
+      Affairs.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - data.is_va_title_38_record == true
+  - id: cfr.42.2.12.e.2.not_a_part_2_program
+    type: entity_level
+    reach: instrument
+    scope: >-
+      If the diagnosis, treatment or referral was not provided by a part 2 program, the patient's
+      record is outside part 2 altogether. CONSEQUENCE TEST: there is no part 2 compliance programme
+      to build — no consent form, no redisclosure notice, no § 2.16 policies — because the
+      instrument does not reach the entity at all, which is why reach is instrument and not
+      obligation. The trap is the second sentence: federal money reaching the PATIENT is not federal
+      assistance to the PROGRAM, so a court-placed patient whose care a federal agency pays for is
+      still outside part 2 unless the program itself is federally assisted under § 2.12(b). Note
+      what the relief does NOT do — the same records remain PHI in the hands of a covered entity, so
+      exiting part 2 routes the analysis back to the Privacy Rule rather than out of regulation.
+    source_citation: 42 C.F.R. § 2.12(e)(2)
+    verbatim_span: >-
+      If a patient's substance use disorder diagnosis, treatment, or referral for treatment is not
+      provided by a part 2 program, that patient's record is not covered by the regulations in this
+      part. Thus, it is possible for an individual patient to benefit from federal support and not
+      be covered by the confidentiality regulations because the program in which the patient is
+      enrolled is not federally assisted as defined in paragraph (b) of this section. For example,
+      if a federal court placed an individual in a private for-profit program and made a payment to
+      the program on behalf of that individual, that patient's record would not be covered by the
+      regulations in this part unless the program itself received federal assistance as defined by
+      paragraph (b) of this section.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.is_part2_program == false
+common_errors:
+  - >-
+    Accepting a HIPAA authorization for a part 2 record. Subpart C consent carries elements §
+    164.508 does not require, and § 2.31(c)(2) bars disclosure on a consent that on its face
+    substantially fails to conform to § 2.31(a).
+  - >-
+    Reading the CARES Act alignment as putting part 2 records on HIPAA's treatment, payment and
+    operations footing. It permits ONE consent for those purposes; it does not permit disclosure
+    without one.
+  - >-
+    Producing records under a subpoena, or under a court order that is not an authorizing court
+    order under subpart E. Section 2.13(a) bars use in any proceeding conducted by any federal,
+    state or local authority, and § 2.13(b) applies the restriction whatever justification the
+    requester asserts.
+open_questions:
+  - >-
+    effective_from is the effective date of the 2024 final rule implementing section 3221 of the
+    CARES Act, which is not stated in the fetched part text. The fetched source is the eCFR snapshot
+    for 2026-08-17. Confirm against the Federal Register adopting release before relying on any
+    query that turns on 2024-2026 timing.
+operative_context:
+  - position: follows
+    relation: scopes
+    verbatim_span: >-
+      The restrictions on use and disclosure in the regulations in this part apply whether or not
+      the part 2 program or other lawful holder of the patient identifying information believes that
+      the person seeking the information already has it, has other means of obtaining it, is a law
+      enforcement agency or official or other government official, has obtained a subpoena, or
+      asserts any other justification for a use or disclosure which is not permitted by the
+      regulations in this part.
+    citation: 42 C.F.R. § 2.13(b)
+    path:
+      path:
+        - b
+      anchor: '2.13'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+regulator:
+  - hhs_ocr
+  - hhs_samhsa
+sector:
+  - health
+data_types:
+  - health
+effective_from: '2024-04-16'
+subject:
+  domain: II.B.3
+  lifecycle:
+    - IV
+applies_if:
+  all:
+    - data.is_sud_patient_record == true
+    - any:
+        - entity.is_part2_program == true
+        - entity.is_part2_lawful_holder == true
+obligation_type: prohibit
+summary: >-
+  Records subject to part 2 may be used or disclosed only as part 2 permits, may not be used or
+  disclosed in any proceeding conducted by any federal, state or local authority, and any permitted
+  use or disclosure must be limited to the information necessary for its purpose.
+requirement_detail: >-
+  This is the provision that makes part 2 STRICTER than HIPAA on the same underlying record. The
+  Privacy Rule permits a covered entity to use or disclose PHI for treatment, payment and health
+  care operations without the individual's authorization; § 2.13(a) permits a use or disclosure of a
+  part 2 record only as the regulations in this part allow, and subpart C routes those same three
+  purposes through the patient's written consent under § 2.31. The CARES Act alignment visible in
+  the current text did NOT remove that consent requirement: it permits a single consent to cover all
+  future uses and disclosures for treatment, payment and health care operations (§ 2.31(a)(5)(ii))
+  and lets a HIPAA-regulated recipient redisclose under the HIPAA rules (§ 2.31(a)(4)(iii)), which
+  changes the FORM and the DURABILITY of consent, not its necessity. The second sentence adds a
+  minimum-necessary rule of its own — every permitted use or disclosure must be "limited to that
+  information which is necessary to carry out the purpose of the use or disclosure" — and the first
+  sentence carries a litigation bar the Privacy Rule has no analogue for, which is why a subpoena
+  that would satisfy 45 C.F.R. § 164.512(e) does not reach a part 2 record. An entity subject to
+  both regimes satisfies the stricter one or it is not compliant.
+preemption:
+  posture: floor
+  authority: 42 C.F.R. § 2.20
+  note: >-
+    Section 2.20 states that 42 U.S.C. 290dd-2 does not preempt the field: a State law PROHIBITING a
+    use or disclosure that part 2 permits still governs, while no State law may authorize or compel
+    a use or disclosure that part 2 forbids. So the ratchet runs one way — part 2 is a floor against
+    State permission and a ceiling on nothing.
+enforcement:
+  enforcers:
+    - hhs_ocr
+    - doj
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Section 2.3(a) applies the HIPAA penalties — sections 1176 and 1177 of the Social Security
+      Act, 42 U.S.C. 1320d-5 and 1320d-6 — to violations of 42 U.S.C. 290dd-2(a)-(d), and § 2.3(c)
+      applies 45 C.F.R. part 160 subparts C, D and E to noncompliance with part 2 in the same manner
+      as to covered entities.
+    range: null
+    note: >-
+      Enforcement was formerly criminal fines under 42 U.S.C. 290dd-2(f) alone. The current text
+      routes part 2 through the HIPAA enforcement machinery, which means OCR investigation, civil
+      money penalties and the § 2.4 complaint process — a materially larger exposure than the
+      pre-alignment position.
+  statute_of_limitations: null

@@ -1,0 +1,70 @@
+id: ny.fixture.unknown_law
+schema_version: 1
+record_type: obligation
+source:
+  citation: N.Y. Gen. Bus. Law § 349(a) [FIXTURE](a)
+  instrument_id: ny.gbl.349
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/349
+  fetched: '2026-08-19'
+  raw_file: tests/fixtures/raw/ny-zzz-unknown-law.json
+  raw_sha256: 185c3b158d3a9180699fbf627b3c5ede9793056a5198f942ebb188a022ce9188
+  text_file: tests/fixtures/raw/ny-zzz-unknown-law.txt
+  text_sha256: 4d8c06a7e1c66eaf96f46f04cd580956f50e508c5ed60596812d84470342be3f
+  text_extraction_cmd: python3 tools/render-text.py tests/fixtures/raw/ny-gbs-349.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - NY Senate OpenLegislation API
+    result: structured_source_used
+    note: fixture
+verbatim_span: Unfair, deceptive, or abusive acts or practices in the conduct of any business, trade or
+  commerce or in the furnishing of any service in this state are hereby declared unlawful.
+verification_status: verbatim_confirmed
+subject:
+  domain: V.A.1
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+- state_ag
+sector:
+- any
+data_types:
+- any
+status: in_force
+effective_from: '2026-04-03'
+effective_to: null
+supersedes: null
+superseded_by: null
+applies_if:
+  all:
+  - entity.nexus in ['US-NY']
+applies_to_role: any
+obligation_type: prohibit
+summary: Fixture summary, long enough for the schema minimum length.
+requirement_detail: Fixture detail, long enough for the schema minimum length.
+deadline: null
+exemptions: []
+preemption:
+  posture: none
+  authority: null
+  note: fixture
+enforcement:
+  enforcers:
+  - state_ag
+  private_right_of_action: true
+related: []
+federal_relationship: independent
+interpreted_by: []
+common_errors: []
+open_questions: []
+confidence: high
+paragraph_path:
+  path:
+  - a
+  anchor: '349'
+  derivation: reconstructed
+  confidence: high
+  evidence: designator (a) parsed from the flat text field
+context_not_required: 'Fixture: the subsection is self-contained.'

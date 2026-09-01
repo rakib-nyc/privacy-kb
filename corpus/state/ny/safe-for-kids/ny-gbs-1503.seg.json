@@ -1,0 +1,22 @@
+{
+ "label": "NY GBS 1503",
+ "url": "https://legislation.nysenate.gov/api/3/laws/GBS/1503",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/safe-for-kids/raw/ny-gbs-1503.json",
+ "raw_sha256": "a1b500bf747e1821a752912de737677e10ba8e7ff33eebeb650efad261b5677d",
+ "leaves": [
+  {
+   "path": [],
+   "anchor": "1503",
+   "section": "1503",
+   "confidence": "high",
+   "heading": "",
+   "text": "* \u00a7 1503. Parental control. Nothing in this article shall be construed as requiring the operator of an addictive social media platform to give a parent any additional or special access to or control over the data or accounts of their child.",
+   "context": [],
+   "section_heading": "",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  }
+ ]
+}

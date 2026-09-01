@@ -1,0 +1,96 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - doj
+sector:
+  - government
+data_types:
+  - any
+status: in_force
+effective_from: '1994-09-13'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2721(a)
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the section extracted.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null
+applies_if:
+  all:
+    - entity.is_state_dmv == true
+    - data.from_motor_vehicle_record == true
+applies_to_role: controller
+exemptions: []
+id: us.dppa.2722.a.downstream_liability
+source:
+  citation: 18 U.S.C. § 2722(a)
+  instrument_id: us.dppa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2722.xml
+  raw_sha256: efc28d268a28a98931b41f513a8b387d3c57d221e4f6348ae537d9dd2e8a30ac
+  text_file: corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2722.txt
+  text_sha256: 7c4cd627223097b565bb4bb52869858183b6d59adeaf9ac338b2f66df37edebb
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2722.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 18-u-s-c-2722 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: e21ffd19cdf81a493646c110f3b95feb7750e4755b511f842c9ef15f481f44d4
+verbatim_span: >-
+  It shall be unlawful for any person knowingly to obtain or disclose personal information, from a
+  motor vehicle record, for any use not permitted under section 2721(b) of this title .
+paragraph_path:
+  path:
+    - a
+  anchor: /us/usc/t18/s2722/a
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the duty in full.
+subject:
+  domain: III.A.1
+  lifecycle:
+    - I
+obligation_type: prohibit
+deadline: null
+summary: >-
+  It is unlawful for ANY person knowingly to obtain or disclose personal information from a motor
+  vehicle record for a use not permitted under § 2721(b).
+requirement_detail: >-
+  THIS IS WHAT MAKES THE DPPA REACH THE PRIVATE SECTOR. § 2721(a) binds the DMV; § 2722(a) binds any
+  person, so a data broker, an investigator or a marketer that obtains DMV-sourced data for an
+  impermissible use is liable without ever being a government body. § 2724 supplies a private action
+  with liquidated damages of $2,500, which is why DPPA litigation targets downstream recipients
+  rather than states.
+common_errors:
+  - Assuming only the DMV is liable. § 2722(a) reaches any person.
+  - >-
+    Treating lawful acquisition as the end of it. The prohibition is on obtaining OR disclosing for
+    an impermissible USE, so a permitted-purpose acquisition followed by an impermissible use is
+    still a violation.
+open_questions: []

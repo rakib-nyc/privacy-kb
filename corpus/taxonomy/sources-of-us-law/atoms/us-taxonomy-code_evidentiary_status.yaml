@@ -1,0 +1,133 @@
+id: us.taxonomy.code_evidentiary_status
+schema_version: 1
+record_type: taxonomy
+source:
+  citation: 1 U.S.C. § 204, chapeau and subsection (a)
+  instrument_id: us.code.evidentiary_status
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc01@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/taxonomy/sources-of-us-law/raw/uslm-1usc204-20260819.xml
+  raw_sha256: 39465295d110a5e80c55e7e667113022daa125f6918826c820cb00d32baf682a
+  text_file: corpus/taxonomy/sources-of-us-law/raw/uslm-1usc204-20260819.txt
+  text_sha256: 556e6f7448f6e796d0c3a91946da5937d408349ff60a6ef3dbcfcde8a4051f93
+  text_extraction_cmd: python3 tools/render-text.py corpus/taxonomy/sources-of-us-law/raw/uslm-1usc204-20260819.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1 (the authoritative structured form)
+      - govinfo USCODE per-section XML — returns HTML, not XML; unusable
+    result: structured_source_used
+    note: >-
+      USLM. Positive-law status read from the title's own <meta><property role="is-positive-law">
+      element.
+  segment_sha256: 7acd73c40c8a589c2f342b0e053a461605123dcb7b0c2162b09de9ff80df890e
+verbatim_span: >-
+  In all courts, tribunals, and public offices of the United States, at home or abroad, of the
+  District of Columbia, and of each State, Territory, or insular possession of the United States—
+  (a) United States Code.— The matter set forth in the edition of the Code of Laws of the United
+  States current at any time shall, together with the then current supplement, if any, establish
+  prima facie the laws of the United States, general and permanent in their nature, in force on the
+  day preceding the commencement of the session following the last session the legislation of which
+  is included: Provided, however , That whenever titles of such Code shall have been enacted into
+  positive law the text thereof shall be legal evidence of the laws therein contained, in all the
+  courts of the United States, the several States, and the Territories and insular possessions of
+  the United States.
+verification_status: verbatim_confirmed
+subject:
+  domain: I.A.2
+  lifecycle:
+    - I
+paragraph_path:
+  path:
+    - a
+  anchor: /us/usc/t1/s204/a
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on a <subsection> element
+jurisdiction: US-FED
+jurisdiction_level: federal
+status: in_force
+effective_from: '1947-07-30'
+effective_to: null
+amendment_history: []
+summary: >-
+  The US Code establishes the laws prima facie; only where a title has been enacted into positive
+  law is the Code text legal evidence of the law. This is what makes sourcing_posture a real
+  distinction rather than a bookkeeping one.
+taxonomy:
+  rule:
+    non_positive_law_title: the Code text is PRIMA FACIE evidence; the enacted text is in the Statutes at Large
+    positive_law_title: the Code text is LEGAL EVIDENCE of the law in all courts
+  table: >-
+    meta/positive-law-titles.yaml, generated from USLM's own <property role="is-positive-law">
+    element
+  why_it_matters_here: >-
+    Six of the eight US Code titles carrying Priority 1 are NOT positive law: titles 12, 15, 20, 42
+    and 47 — which is FCRA, GLBA, the FTC Act, COPPA, CAN-SPAM, FERPA, HIPAA, HITECH, TCPA and CPNI.
+    Only titles 18 (VPPA, DPPA, ECPA) and 5 (Privacy Act, FOIA) are positive law. The prima facie
+    posture is this corpus's default, not its edge case.
+  sourcing_policy:
+    decision: >-
+      The USLM Code is the default primary source for statutory text, including for non-positive-law
+      titles.
+    trigger_for_pulling_the_enrolled_act:
+      - >-
+        OLRC flags the Code text editorially — a <note type="footnote"> saying "So in original",
+        "Probably should be", or a codification note recording that the Code departs from the act
+      - the flagged text falls INSIDE a verbatim_span, not merely nearby
+      - an adversarial verification session identifies a substantive discrepancy
+    what_is_accepted: >-
+      That a Code-sourced atom from a non-positive-law title quotes prima facie evidence of the law
+      rather than the law itself, and that in the rare case of divergence the Statutes at Large
+      governs.
+decision_procedure:
+  tool: tools/authority-tier.mjs
+  function: sourcingPosture
+  outputs:
+    - legal_evidence
+    - prima_facie_evidence
+    - unknown_refuses
+    - not_us_code
+  refuses_rather_than_guesses: true
+  refusal_case: >-
+    a US Code title absent from meta/positive-law-titles.yaml — guessing positive-law status is
+    guessing whether the text quoted is the law or evidence of it
+scope_justification: >-
+  Anchored at competency level I.A.2 for the same reason as us.taxonomy.sources_of_us_law: it
+  governs how EVERY statutory source in the corpus is read, rather than sitting under any one
+  performance indicator.
+derived_obligations: []
+differs_from: []
+related:
+  - id: us.taxonomy.sources_of_us_law
+    relation: sourcing_posture_rule
+source_defects: []
+common_errors:
+  - >-
+    Assuming the US Code is the law. For a non-positive-law title it is prima facie evidence of the
+    law; the Statutes at Large is the law.
+  - >-
+    Treating positive-law status as an authority_tier question. It is a SOURCING property — it says
+    how confident you are that the text you quoted is the enacted text, not how much the instrument
+    binds.
+open_questions:
+  - >-
+    meta/positive-law-titles.yaml covers 8 titles, chosen because the manifest reaches them. It is
+    deliberately partial: an atom citing an uncovered title FAILS rather than defaulting. Extend it
+    with tools/scan-positive-law.py before extracting from a new title.
+  - >-
+    CONTEXT ENCODING. The section-level chapeau ("In all courts, tribunals, and public offices...")
+    governs subsection (a) and is captured here by SPAN BOUNDARY rather than by operative_context,
+    because chapeau and (a) are contiguous in the source. That is what the apparatus policy prefers
+    — boundary selection over auxiliary fields. It does NOT generalise: the same chapeau also
+    governs (c), (d) and (e), which are not contiguous with it, and a section-level context entry
+    cannot be recorded because paragraph_path.path has minItems 1 and a section root has an empty
+    path. See DEBT-005.
+confidence: high
+context_not_required: >-
+  The governing section-level chapeau is INSIDE verbatim_span. Chapeau and subsection (a) are
+  contiguous in the source, so span boundary selection captures the whole operative provision —
+  which the apparatus policy prefers over auxiliary fields. Recording it again as operative_context
+  would duplicate text already quoted.

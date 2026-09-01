@@ -1,0 +1,86 @@
+id: ev.glba.t1.002
+question: >-
+  Same dealership, and we do routinely assign our retail paper, so part 313 applies to us. This
+  morning we sold a fleet pickup to a landscaping company on commercial terms, and this afternoon we
+  sold a sedan to a retail buyer. Are we exempt for the landscaping deal? What does that exemption
+  actually take out of scope?
+trap: >-
+  T1 in the direction that costs coverage rather than accuracy. The § 313.1(b) business-purpose
+  carve-out is real, and the naive move is to let it settle at the level of the ENTITY — "commercial
+  dealer, commercial deal, we are outside the rule" — when it removes only the records. The two deals
+  sit in the same DMS, on the same day, under the same policies, and the rule reaches one and not the
+  other. This is the exact shape BRIEF.md names as the expert/novice divider: an exemption that is
+  about the data being answered as though it were about the actor. Collapsing it produces a dealer
+  that believes it owes no privacy notices at all.
+rubric:
+- name: the business-purpose carve-out is typed data_level, not entity_level
+  record: us.cfr.16.313.10.a1.disclosure_limit
+  path: exemptions.1.type
+  equals: data_level
+- name: its scope states the consequence in operational terms
+  record: us.cfr.16.313.10.a1.disclosure_limit
+  path: exemptions.1.scope
+  contains: fully in for every personal-use customer on the same lot
+- name: it is quoted verbatim from § 313.1(b)
+  record: us.cfr.16.313.10.a1.disclosure_limit
+  path: exemptions.1.verbatim_span
+  contains: business, commercial, or agricultural purposes
+- name: ENGINE — with commercial-purpose data the dealer is still APPLICABLE, never exempt
+  engine: &commercial
+    entity: {is_financial_institution: true, predominantly_motor_vehicle_sales_or_leasing: true,
+             is_motor_vehicle_dealer: true, routinely_assigns_contracts: true, nexus: US}
+    data: {is_nonpublic_personal_information: true, subject_is_company: false,
+           is_publicly_available: false, purpose_of_product: commercial}
+    context: {as_of: '2026-08-19'}
+  atom: us.cfr.16.313.10.a1.disclosure_limit
+  in: applicable
+- name: ENGINE — what it gets is a data_level carve-out, not relief from the instrument
+  engine: *commercial
+  atom: us.cfr.16.313.10.a1.disclosure_limit
+  in: applicable
+  path: partial_carve_out.level
+  equals: data_level
+- name: ENGINE — the engine says in terms that the entity remains in scope for everything else
+  engine: *commercial
+  atom: us.cfr.16.313.10.a1.disclosure_limit
+  in: applicable
+  path: partial_carve_out.note
+  contains: The entity remains in scope for everything else under this instrument
+- name: ENGINE — the customer notice is likewise applicable, carved out only as to that data
+  engine: *commercial
+  atom: us.cfr.16.313.4.a1.initial_notice_customer
+  in: applicable
+  path: partial_carve_out.level
+  equals: data_level
+- name: ENGINE — for the retail buyer on the same day there is no carve-out at all
+  engine: &retail
+    entity: {is_financial_institution: true, predominantly_motor_vehicle_sales_or_leasing: true,
+             is_motor_vehicle_dealer: true, routinely_assigns_contracts: true, nexus: US}
+    data: {is_nonpublic_personal_information: true, subject_is_company: false,
+           is_publicly_available: false, purpose_of_product: personal}
+    context: {as_of: '2026-08-19'}
+  atom: us.cfr.16.313.10.a1.disclosure_limit
+  in: applicable
+  path: partial_carve_out
+  equals: null
+- name: ENGINE — and the retail buyer's customer notice is owed in full
+  engine: *retail
+  atom: us.cfr.16.313.4.a1.initial_notice_customer
+  in: applicable
+  path: partial_carve_out
+  equals: null
+- name: the atom warns against merging the two initial-notice duties
+  record: us.cfr.16.313.4.a2.initial_notice_consumer
+  path: common_errors
+  contains: different triggers, different populations and different
+correct_answer: >-
+  You are not exempt. The landscaping company's records are out of scope under § 313.1(b), which
+  excludes information about companies and about individuals who obtain the product for business,
+  commercial or agricultural purposes — but that carve-out removes RECORDS, not you. Part 313 applies
+  to the dealership in full, and every duty in it is owed as to the sedan buyer: the initial customer
+  notice under § 313.4(a)(1), the annual notice under § 313.5(a)(1), and the notice-and-opt-out
+  conditions in § 313.10(a)(1) before any disclosure of that buyer's nonpublic personal information
+  to a nonaffiliated third party. Practically, the exemption is a field on a record, not a status for
+  the business, and a compliance programme built on the second reading fails for every retail
+  customer on the lot.
+all_pass: true

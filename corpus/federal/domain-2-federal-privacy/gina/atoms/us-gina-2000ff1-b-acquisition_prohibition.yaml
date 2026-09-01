@@ -1,0 +1,89 @@
+id: us.gina.2000ff1.b.acquisition_prohibition
+schema_version: 1
+record_type: obligation
+source:
+  citation: 42 U.S.C. § 2000ff-1(b)
+  instrument_id: us.gina
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/gina/raw/42-u-s-c-2000ff-1.xml
+  raw_sha256: 8707a8165d5eda02d36221d2ee297b50ff5cce92b6b52e4c978deab75613c508
+  text_file: corpus/federal/domain-2-federal-privacy/gina/raw/42-u-s-c-2000ff-1.txt
+  text_sha256: be76de69977d190863f6b9953df5e66715cc83a6dcecd42aa85dc2d6386c0448
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/gina/raw/42-u-s-c-2000ff-1.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: It shall be an unlawful employment practice for an employer to request, require, or purchase
+  genetic information with respect to an employee or a family member of the employee except—
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+  - b
+  anchor: /us/usc/t42/s2000ff–1/b
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the prohibition and its exception clause in full.
+subject:
+  domain: IV.A.2
+  lifecycle:
+  - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &id001
+- eeoc
+sector:
+- employment
+data_types:
+- genetic
+status: in_force
+effective_from: '2009-11-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+  - entity.is_employer == true
+  - data.is_genetic_information == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: It is an unlawful employment practice for an employer to request, require or purchase genetic
+  information with respect to an employee or a family member, subject to enumerated exceptions.
+requirement_detail: GINA PROHIBITS ACQUISITION, NOT MERELY USE, which makes it structurally unlike Title
+  VII and unlike most of this corpus. An employer that requests genetic information and never acts on
+  it has still violated § 2000ff-1(b). "Genetic information" includes FAMILY MEDICAL HISTORY, so the most
+  common violation is not a genetic test at all — it is a wellness questionnaire or a fitness-for-duty
+  exam that asks about relatives' conditions. The inadvertent-acquisition exception at (b)(1) is narrow
+  and is the reason employer instructions to providers matter.
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+- Reading it as a use restriction. The prohibition is on requesting, requiring or purchasing.
+- Thinking it is about genetic tests. Family medical history is genetic information, and asking for it
+  is the usual violation.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 42 U.S.C. § 2000ff-1(b)
+  note: Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the section extracted.
+enforcement:
+  enforcers: *id001
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

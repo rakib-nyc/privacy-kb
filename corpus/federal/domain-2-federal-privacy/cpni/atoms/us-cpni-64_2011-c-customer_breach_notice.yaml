@@ -1,0 +1,134 @@
+id: us.cpni.64_2011.c.customer_breach_notice
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 C.F.R. § 64.2011(c)
+  instrument_id: us.cpni
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: 95d4c66441835b73d3f9063104e4e2b5bad80b45c4c56907f3801690a510099d
+verbatim_span: >-
+  After a telecommunications carrier has completed the process of notifying law enforcement pursuant
+  to paragraph (b) of this section, it shall notify its customers of a breach of those customers'
+  CPNI.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - c
+  anchor: '64.2011'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator run reconstructed from flat <P> siblings; resolves to exactly one leaf within the
+    section (gate 23)
+context_not_required: >-
+  Paragraph (c) states the duty and its precondition in full, and the segmentation records no
+  ancestor text governing it. Paragraphs (a) and (b) sit at the same level rather than above it; (b)
+  is recorded as its own atom and (a) is cross-referenced in requirement_detail.
+subject:
+  domain: II.E.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - cpni
+status: in_force
+effective_from: '2017-09-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history:
+  - date: '2017-09-21'
+    note: >-
+      Source note printed at the head of subpart U — Privacy of Customer Information: "82 FR 44419,
+      Sept. 21, 2017, unless otherwise noted." The section carries no separate CITA, so 2017-09-21
+      is the earliest date the fetched source itself asserts for this text.
+    source_url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+applies_if:
+  all:
+    - entity.is_telecommunications_carrier == true
+    - data.is_cpni == true
+    - event.is_security_breach == true
+applies_to_role: controller
+obligation_type: notify
+summary: >-
+  After completing the law-enforcement notification process in § 64.2011(b), a telecommunications
+  carrier must notify its customers of a breach of those customers' CPNI.
+requirement_detail: >-
+  CUSTOMER NOTICE UNDER THIS SECTION IS SEQUENCED, NOT SCHEDULED, and that is the single most
+  important operational fact about it. Paragraph (c) supplies no period at all: the only clock in
+  the section runs the other way, as the seven-full-business-day bar in (b)(1) on telling customers
+  anything. A carrier reading (c) for a deadline and finding none often concludes it has time, when
+  the real risk is the opposite — the State breach statutes that paragraph (f) leaves standing do
+  impose outer deadlines, and the federal waiting period can consume most of a thirty-day State
+  clock before customer notice becomes lawful. The rule also fixes no content and no delivery method
+  for the customer notice, so State law supplies both in practice. Read with paragraph (a), the
+  sequence is absolute: no customer notice and no public disclosure of any kind, voluntary or
+  state-mandated, until the paragraph (b) law-enforcement process is complete, with (b)(2) the only
+  route to earlier notice and it requires an extraordinarily urgent need to avoid immediate and
+  irreparable harm.
+deadline: null
+no_deadline_stated: >-
+  The rule fixes a WAITING PERIOD before customer notice and no outer limit after it. Checked every
+  paragraph of § 64.2011 as published in the fetched eCFR text of 47 C.F.R. part 64 (versioner
+  snapshot 2026-08-17): (a) bars notice until the law-enforcement process is complete, (b)(1)
+  imposes the seven-full-business-day wait, (b)(2) and (b)(3) address early notice and
+  law-enforcement-directed delay, (c) states the duty with no period, (d) is recordkeeping, (e) is
+  the breach definition and (f) is the State-law clause. No period is stated anywhere in the section
+  for the customer notice itself.
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Reading the seven-business-day figure as the customer notice deadline. It is the outer limit for
+    notifying the USSS and FBI under (b), and separately a minimum wait before customers may be told
+    under (b)(1).
+  - >-
+    Concluding that no federal deadline means no deadline. State breach statutes run in parallel
+    and, outside the paragraph (b)(1) waiting period, paragraph (f) leaves them operative.
+  - >-
+    Notifying customers before the (b) process is complete. Paragraph (a) prohibits it, whether the
+    carrier acts voluntarily or under state or local law.
+open_questions: []
+confidence: high
+preemption:
+  posture: express_partial
+  authority: 47 C.F.R. § 64.2011(f)
+  note: >-
+    Paragraph (f) preserves State law except to the extent of an inconsistency. Because (c) fixes no
+    period, a State outer deadline is not inconsistent with it and continues to govern — subject to
+    the (b)(1) waiting period, which is inconsistent with any State rule requiring earlier customer
+    notice and displaces it for that period.
+enforcement:
+  enforcers:
+    - fcc
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      FCC forfeiture under 47 U.S.C. § 503(b); Enforcement Bureau consent decrees with compliance
+      plans.
+    range: null
+    note: >-
+      15 U.S.C. § 45(a)(2) removes common carriers acting as such from FTC jurisdiction, so the § 5
+      backstop does not reach this conduct.
+  statute_of_limitations: null

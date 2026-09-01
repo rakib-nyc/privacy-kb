@@ -1,0 +1,18 @@
+{
+ "label": "18 U.S.C. \u00a7 2713",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": true,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/cloud-act/raw/18-u-s-c-2713.xml",
+ "raw_sha256": "0eddc0a0ad69a71541aaa3465ddcf4c43c6e5364ecdbc6df6d213ca1a959c023",
+ "leaves": [
+  {
+   "path": [],
+   "anchor": "/us/usc/t18/s2713",
+   "heading": "Required preservation and disclosure of communications and records",
+   "text": "A provider of electronic communication service or remote computing service shall comply with the obligations of this chapter to preserve, backup, or disclose the contents of a wire or electronic communication and any record or other information pertaining to a customer or subscriber within such provider\u2019s possession, custody, or control, regardless of whether such communication, record, or other information is located within or outside of the United States.",
+   "context": [],
+   "confidence": "high"
+  }
+ ]
+}

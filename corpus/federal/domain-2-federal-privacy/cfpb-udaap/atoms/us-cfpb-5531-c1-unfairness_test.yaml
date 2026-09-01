@@ -1,0 +1,154 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+- cfpb
+sector:
+- financial
+data_types:
+- any
+status: in_force
+effective_from: '2010-07-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: any
+deadline: null
+federal_relationship: null
+interpreted_by: []
+confidence: high
+preemption:
+  posture: floor
+  authority: null
+  note: 'Title X of Dodd-Frank operates as a floor: it does not displace state consumer-protection law
+    that gives greater protection, and state attorneys general may enforce Title X itself. The savings
+    provision that establishes this sits outside § 5531 and is NOT extracted in this corpus, so the posture
+    is recorded here and its text is not quoted. New York GBL § 349 is the live example — it reaches the
+    same conduct, adds a private right of action the Bureau statute does not have, and since 2025 carries
+    its own abusive prong.'
+enforcement:
+  enforcers:
+  - cfpb
+  - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: Cease-and-desist and civil actions under Title X, with restitution, disgorgement, rescission,
+      damages and injunctive relief, plus tiered daily civil money penalties that escalate for reckless
+      and for knowing violations. The remedial and penalty sections sit outside § 5531 and are not extracted
+      in this corpus.
+    range: null
+    note: NO PRIVATE RIGHT OF ACTION under § 5531. A consumer reaches the same conduct through the state
+      UDAP statute — which is invariant I6's other half, and in New York that statute now carries an abusive
+      prong of its own.
+  statute_of_limitations: null
+id: us.cfpb.5531.c1.unfairness_test
+source:
+  citation: 12 U.S.C. § 5531(c)(1)
+  instrument_id: us.cfpb_udaap
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/cfpb-udaap/raw/12-u-s-c-5531.xml
+  raw_sha256: c00d0c0594aa4472ac0339520dca0c2e09445dd7c23604f2cba9fb04192d8bf6
+  text_file: corpus/federal/domain-2-federal-privacy/cfpb-udaap/raw/12-u-s-c-5531.txt
+  text_sha256: 136a006a5ddd6c16944b75f956ab1a3d2f8057dc32562bb844ec0b1b47b248d9
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/cfpb-udaap/raw/12-u-s-c-5531.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: The Bureau shall have no authority under this section to declare an act or practice in
+  connection with a transaction with a consumer for a consumer financial product or service, or the offering
+  of a consumer financial product or service, to be unlawful on the grounds that such act or practice
+  is unfair, unless the Bureau has a reasonable basis to conclude that—
+paragraph_path:
+  path:
+  - c
+  - '1'
+  anchor: /us/usc/t12/s5531/c/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+- position: follows
+  relation: conditions
+  verbatim_span: the act or practice causes or is likely to cause substantial injury to consumers which
+    is not reasonably avoidable by consumers; and
+  citation: 12 U.S.C. § 5531(c)(1)(A)
+  path:
+    path:
+    - c
+    - '1'
+    - A
+    anchor: /us/usc/t12/s5531/c/1/A
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+- position: follows
+  relation: conditions
+  verbatim_span: such substantial injury is not outweighed by countervailing benefits to consumers or
+    to competition.
+  citation: 12 U.S.C. § 5531(c)(1)(B)
+  path:
+    path:
+    - c
+    - '1'
+    - B
+    anchor: /us/usc/t12/s5531/c/1/B
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: II.C.4
+  lifecycle:
+  - I
+applies_if:
+  all:
+  - any:
+    - entity.is_cfpb_covered_person == true
+    - entity.is_cfpb_service_provider == true
+  - practice.offers_consumer_financial_product_or_service == true
+obligation_type: prohibit
+summary: The Bureau may declare an act or practice unfair only where it has a reasonable basis to conclude
+  that the act causes or is likely to cause substantial injury to consumers that is not reasonably avoidable
+  and is not outweighed by countervailing benefits.
+requirement_detail: 'THE BUREAU''S UNFAIRNESS TEST IS THE FTC''S, WITH TWO TEXTUAL DIFFERENCES. The substantive
+  limbs track 15 U.S.C. § 45(n) closely: substantial injury "not reasonably avoidable by consumers" in
+  (c)(1)(A), and injury "not outweighed by countervailing benefits to consumers or to competition" in
+  (c)(1)(B), both of which must hold. First difference: § 45(n) requires injury not reasonably avoidable
+  by consumers themselves, and (c)(1)(A) omits that word — whether the omission does any work is unsettled,
+  but the texts are not identical and FTC precedent should be checked against the Bureau''s wording rather
+  than assumed to carry over. Second and larger: § 45(n) conditions the Commission''s authority on what
+  the act or practice does, while (c)(1) conditions the Bureau''s on whether it "has a reasonable basis
+  to conclude that" the limbs are met, which is a standard addressed to the agency''s own record rather
+  than to the conduct. The reach is also sectoral rather than general — the test bites only on acts "in
+  connection with a transaction with a consumer for a consumer financial product or service", where §
+  45(n) reaches any act in or affecting commerce.'
+exemptions: []
+related:
+- us.usc.15.45.n.unfairness_test
+- ny.gbl.349.a1.unfairness
+common_errors:
+- Treating § 5531(c)(1) and 15 U.S.C. § 45(n) as one test. The Bureau's version turns on whether it "has
+  a reasonable basis to conclude that" the limbs hold, and it drops the word 'themselves' that § 45(n)
+  attaches to reasonable avoidability.
+- 'Calling unfairness the Bureau''s broadest tool. It is the narrowest prong in this section: it alone
+  requires substantial injury and a balance against countervailing benefits, neither of which appears
+  in the abusive standard at § 5531(d).'
+- Applying the test to any business. It reaches only acts "in connection with a transaction with a consumer
+  for a consumer financial product or service", and Title X removes whole classes of actor from the Bureau's
+  authority in sections not extracted here.
+open_questions:
+- Coverage exclusions from the Bureau's authority (merchants and retailers, motor-vehicle dealers and
+  others) sit outside § 5531 and are NOT extracted in this corpus, so this atom models no entity-level
+  exemption. Treat any question about whether the Bureau reaches a given entity as unanswered until those
+  sections are fetched and verified.
+- The section's source credit shows Pub. L. 111-203, July 21, 2010, and no amendment. effective_from records
+  that date. Dodd-Frank made subtitle C operative on the designated transfer date, which is fixed in a
+  different section and is not in this source.

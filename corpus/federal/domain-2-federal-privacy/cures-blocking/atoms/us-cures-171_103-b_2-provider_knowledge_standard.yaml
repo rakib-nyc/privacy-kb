@@ -1,0 +1,179 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+related:
+  - us.cures.171_103.a.information_blocking_definition
+federal_relationship: null
+interpreted_by: []
+confidence: high
+id: us.cures.171_103.b_2.provider_knowledge_standard
+source:
+  citation: 45 C.F.R. § 171.103(b)(2)
+  instrument_id: us.cures_blocking
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=171
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+  raw_sha256: 881f03c2034c1a6b4d49e9cde4adf70a84182f5890eb1be66f4026f4c601e023
+  text_file: corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.txt
+  text_sha256: ff9534f2201bb086974f3d4fbe95b9d3a5deb972e36d1e6889a93e3d534a088f
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, full XML for the part, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: f6f35c510509e4b595f221879832cd65c12274df3634a6233bee5379de931166
+verbatim_span: >-
+  A health care provider, such provider knows that such practice is unreasonable and is likely to
+  interfere with access, exchange, or use of electronic health information.
+paragraph_path:
+  path:
+    - b
+    - '2'
+  anchor: '171.103'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+    exactly one provision
+exemptions: []
+common_errors:
+  - >-
+    Applying the constructive knowledge standard to providers. Paragraph (b)(1) applies knows or
+    should know to developers, networks and exchanges; paragraph (b)(2) requires a provider to know.
+  - >-
+    Dropping the unreasonableness element. For a provider, knowing that a practice is likely to
+    interfere is not enough — the provider must know the practice is unreasonable as well, which is
+    why a documented legal basis for withholding matters even when it is later rejected.
+  - >-
+    Assuming a provider that also develops or operates health IT gets the provider standard for
+    everything. The standard follows the capacity in which the actor engaged in the practice, and an
+    organisation can be more than one type of actor under § 171.102.
+open_questions:
+  - >-
+    The source is the eCFR snapshot for 2026-08-17; intervening amendments to part 171 are not
+    modelled as separate time slices.
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Information blocking means a practice that except as required by law or covered by an
+      exception set forth in subparts B, C, or D of this part, is likely to interfere with access,
+      exchange, or use of electronic health information; and
+    citation: 45 C.F.R. § 171.103(a)
+    path:
+      path:
+        - a
+      anchor: '171.103'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'If conducted by:'
+    citation: 45 C.F.R. § 171.103(b)
+    path:
+      path:
+        - b
+      anchor: '171.103'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+  - position: precedes
+    relation: conditions
+    verbatim_span: >-
+      A health IT developer of certified health IT, health information network or health information
+      exchange, such developer, network or exchange knows, or should know, that such practice is
+      likely to interfere with access, exchange, or use of electronic health information; or
+    citation: 45 C.F.R. § 171.103(b)(1)
+    path:
+      path:
+        - b
+        - '1'
+      anchor: '171.103'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+regulator:
+  - hhs_oig
+  - cms
+sector:
+  - health
+data_types:
+  - health
+effective_from: '2021-04-05'
+subject:
+  domain: II.B.3
+  lifecycle:
+    - IV
+applies_if:
+  all:
+    - entity.is_health_care_provider == true
+    - data.is_electronic_health_information == true
+    - practice.interferes_with_access_exchange_or_use == true
+obligation_type: prohibit
+summary: >-
+  A health care provider commits information blocking only where it knows that the practice is
+  unreasonable and is likely to interfere with access, exchange or use of electronic health
+  information.
+requirement_detail: >-
+  The knowledge standards are deliberately asymmetric and the asymmetry decides most real cases. A
+  provider is reached only where it "knows that such practice is unreasonable and is likely to
+  interfere" — actual knowledge, and an unreasonableness element on top — while paragraph (b)(1)
+  reaches a developer, network or exchange where it knows OR SHOULD KNOW that the practice is likely
+  to interfere, with no unreasonableness element at all. So a provider that withholds on a
+  colourable reading of 42 C.F.R. part 2 or of State minor-consent law is unlikely to meet the
+  standard even if the reading turns out to be wrong, while a developer that ships a default
+  configuration suppressing results is exposed without any intent to block. The two also land
+  differently on the enforcement side: OIG determinations against providers route to agency
+  disincentives under subpart E, whereas developers, networks and exchanges face civil money
+  penalties. Advice that states one standard for all four actor types is wrong for three of them.
+preemption:
+  posture: none
+  authority: 45 C.F.R. § 171.103(a); 45 C.F.R. § 171.202(b)
+  note: >-
+    Part 171 contains no express preemption provision and displaces no State privacy law. It runs in
+    the opposite direction from every other instrument here: a State law that REQUIRES withholding
+    takes the practice outside the definition of information blocking entirely, because § 171.103(a)
+    excepts what is required by law. A State law that merely PERMITS withholding does not, since
+    permission is not requirement — and that gap is where actors get caught, because the practice is
+    then information blocking unless it fits an exception in full.
+enforcement:
+  enforcers:
+    - hhs_oig
+    - cms
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Health IT developers of certified health IT, health information networks and health
+      information exchanges face civil money penalties under section 3022 of the Public Health
+      Service Act, 42 U.S.C. 300jj-52, which § 171.100(a) names as the authority for this part.
+      Health care providers face disincentives instead: subpart E provides that an appropriate
+      agency may impose disincentives on a provider OIG determines has committed information
+      blocking, and § 171.1001 sets out the CMS disincentives, including loss of meaningful EHR user
+      status and removal from the Medicare Shared Savings Program for at least one year.
+    range: null
+    note: >-
+      The CMP amount is fixed by statute and by 42 C.F.R. part 1003, neither of which is in the
+      fetched part; do not state a figure from this record.
+  statute_of_limitations: null

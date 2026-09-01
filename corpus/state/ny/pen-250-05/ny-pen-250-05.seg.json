@@ -1,0 +1,22 @@
+{
+ "label": "NY PEN 250.05",
+ "url": "https://legislation.nysenate.gov/api/3/laws/PEN/250.05",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/pen-250-05/raw/ny-pen-250-05.json",
+ "raw_sha256": "113f2524c4344b52d5300142b89cfb9ec2c9a37b266d95ed00bd0eaecb3af74f",
+ "leaves": [
+  {
+   "path": [],
+   "anchor": "250.05",
+   "section": "250.05",
+   "confidence": "high",
+   "heading": "",
+   "text": "\u00a7 250.05 Eavesdropping. A person is guilty of eavesdropping when he unlawfully engages in wiretapping, mechanical overhearing of a conversation, or intercepting or accessing of an electronic communication. Eavesdropping is a class E felony.",
+   "context": [],
+   "section_heading": "",
+   "nb_note": null,
+   "active_date": "2014-09-22"
+  }
+ ]
+}

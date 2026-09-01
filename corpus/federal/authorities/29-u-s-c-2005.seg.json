@@ -1,0 +1,88 @@
+{
+ "label": "29 U.S.C. \u00a7 2005",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc29@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/authorities/raw/29-u-s-c-2005.xml",
+ "raw_sha256": "fba49933ad3073f6ef2e42b427fb8772f17d547fcab9e5dec9a088ee3dbae35f",
+ "leaves": [
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": "/us/usc/t29/s2005/a/1",
+   "heading": "In general",
+   "text": "Subject to paragraph (2), any employer who violates any provision of this chapter may be assessed a civil penalty of not more than $10,000.",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": "/us/usc/t29/s2005/a/2",
+   "heading": "Determination of amount",
+   "text": "In determining the amount of any penalty under paragraph (1), the Secretary shall take into account the previous record of the person in terms of compliance with this chapter and the gravity of the violation.",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "3"
+   ],
+   "anchor": "/us/usc/t29/s2005/a/3",
+   "heading": "Collection",
+   "text": "Any civil penalty assessed under this subsection shall be collected in the same manner as is required by subsections (b) through (e) of section 1853 of this title with respect to civil penalties assessed under subsection (a) of such section.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "/us/usc/t29/s2005/b",
+   "heading": "Injunctive actions by Secretary",
+   "text": "The Secretary may bring an action under this section to restrain violations of this chapter. The Solicitor of Labor may appear for and represent the Secretary in any litigation brought under this chapter. In any action brought under this section, the district courts of the United States shall have jurisdiction, for cause shown, to issue temporary or permanent restraining orders and injunctions to require compliance with this chapter, including such legal or equitable relief incident thereto as may be appropriate, including, but not limited to, employment, reinstatement, promotion, and the payment of lost wages and benefits.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": "/us/usc/t29/s2005/c/1",
+   "heading": "Liability",
+   "text": "An employer who violates this chapter shall be liable to the employee or prospective employee affected by such violation. Such employer shall be liable for such legal or equitable relief as may be appropriate, including, but not limited to, employment, reinstatement, promotion, and the payment of lost wages and benefits.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": "/us/usc/t29/s2005/c/2",
+   "heading": "Court",
+   "text": "An action to recover the liability prescribed in paragraph (1) may be maintained against the employer in any Federal or State court of competent jurisdiction by an employee or prospective employee for or on behalf of such employee, prospective employee, and other employees or prospective employees similarly situated. No such action may be commenced more than 3 years after the date of the alleged violation.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": "/us/usc/t29/s2005/c/3",
+   "heading": "Costs",
+   "text": "The court, in its discretion, may allow the prevailing party (other than the United States) reasonable costs, including attorney\u2019s fees.",
+   "context": []
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": "/us/usc/t29/s2005/d",
+   "heading": "Waiver of rights prohibited",
+   "text": "The rights and procedures provided by this chapter may not be waived by contract or otherwise, unless such waiver is part of a written settlement agreed to and signed by the parties to the pending action or complaint under this chapter.",
+   "context": []
+  }
+ ]
+}

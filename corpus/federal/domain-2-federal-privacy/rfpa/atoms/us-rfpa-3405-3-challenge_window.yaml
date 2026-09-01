@@ -1,0 +1,136 @@
+id: us.rfpa.3405.3.challenge_window
+schema_version: 1
+record_type: obligation
+source:
+  citation: 12 U.S.C. § 3405(3)
+  instrument_id: us.rfpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3405.xml
+  raw_sha256: 601e142db72b13eef887eddb5357db38427ab094e8d6bd89140a9232be55987d
+  text_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3405.txt
+  text_sha256: 7b6ffac481c782fb4aeb9f2299c90862cefe1470279f09abbb647965abb3049e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3405.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1 (12-u-s-c-3405)
+    result: structured_source_used
+    note: null
+  segment_sha256: 7418fd9e86080360759ea715f8972fb1471ae9a24ac381d61842e61e7de111e2
+verbatim_span: >-
+  ten days have expired from the date of service of the notice or fourteen days have expired from
+  the date of mailing the notice to the customer and within such time period the customer has not
+  filed a sworn statement and motion to quash in an appropriate court, or the customer challenge
+  provisions of section 3410 of this title have been complied with.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - '3'
+  anchor: /us/usc/t12/s3405/3
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: conditions
+    verbatim_span: >-
+      A Government authority may obtain financial records under section 3402(2) of this title
+      pursuant to an administrative subpena or summons otherwise authorized by law only if—
+    citation: 12 U.S.C. § 3405
+    relation_note: null
+    path:
+      path: []
+      anchor: /us/usc/t12/s3405
+      derivation: structural
+      confidence: high
+      evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: III.A.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - federal_agencies
+sector:
+  - financial
+data_types:
+  - financial
+status: in_force
+effective_from: '1979-03-10'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_government_authority == true
+    - data.is_financial_record == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  Records may not be obtained under the administrative-subpoena route until ten days from service or
+  fourteen days from mailing of the customer notice have expired with no motion to quash filed, or
+  the § 3410 challenge procedure has been complied with.
+requirement_detail: >-
+  THE WAITING PERIOD IS THE OPERATIVE PRIVACY MECHANISM, not a customer deadline. Read with its
+  chapeau, this paragraph is a bar on the Government authority: the records may not be obtained at
+  all while the window is open. Two clocks run, ten days from the DATE OF SERVICE of the notice and
+  fourteen from the DATE OF MAILING, and the applicable one is fixed by how the customer was reached
+  rather than by the Government's choice. The window closes in one of two ways — it lapses with no
+  sworn statement and motion to quash on file, or the § 3410 challenge procedures "have been
+  complied with", which means litigated to a ruling rather than merely commenced. § 3407(3) is the
+  same paragraph for judicial subpoenas, and § 3406 has no counterpart at all, because the warrant
+  route substitutes after-the-fact notice for a pre-production challenge.
+deadline:
+  trigger_event: service or mailing of the § 3405(2) notice on the customer
+  duration:
+    value: 10
+    unit: calendar_days
+  computation: >-
+    Ten days runs from the DATE OF SERVICE; fourteen days runs from the DATE OF MAILING. The
+    recorded duration is the service limb, which is the shorter of the two and the one that governs
+    personally served notice; a mailed notice gets fourteen. Either way the period is a bar on the
+    Government rather than a duty of the customer, and it does not close the matter — if a motion to
+    quash is filed within it, production waits on compliance with § 3410.
+exemptions: []
+related:
+  - us.rfpa.3405.administrative_subpoena
+  - us.rfpa.3410.a.customer_challenge
+  - us.rfpa.3407.judicial_subpoena
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Reading it as a customer filing deadline only. It is equally a bar on the Government: the
+    records may not be obtained while the window is open.
+  - Applying ten days to a mailed notice. Mailing gets fourteen days, service gets ten.
+  - >-
+    Treating a filed motion to quash as merely tolling the clock. The paragraph requires that the §
+    3410 challenge provisions "have been complied with", which means the challenge is resolved.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 12 U.S.C. § 3402
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the sections extracted. RFPA binds federal Government authorities,
+    so the ordinary state-law displacement question does not arise in the usual form: a state
+    statute restricting state investigators is not in conflict with it.
+enforcement:
+  enforcers:
+    - federal_agencies
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      12 U.S.C. § 3417 (civil penalties and liability) has not been extracted into this corpus, so
+      penalty exposure and any customer damages action are UNASSESSED rather than absent.
+      private_right_of_action is recorded false because nothing extracted establishes one, not
+      because the statute was read to withhold one.
+  statute_of_limitations: null

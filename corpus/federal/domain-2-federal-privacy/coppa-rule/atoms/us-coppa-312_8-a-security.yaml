@@ -1,0 +1,102 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - ftc
+  - state_ag
+sector:
+  - childrens_online_services
+data_types:
+  - minor_data
+  - personal_information
+status: in_force
+effective_from: '2000-04-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 6502(d)
+  note: >-
+    COPPA expressly preempts inconsistent state law on its subject matter. State law on children's
+    data that is not inconsistent survives — NY's Child Data Protection Act is the live test and is
+    a Priority 3 atom.
+enforcement:
+  enforcers:
+    - ftc
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: FTC Act § 5(m) civil penalties for rule violations
+    range: null
+    note: >-
+      Per-violation penalties, inflation-adjusted. COPPA is enforced as a trade regulation rule,
+      which is why § 45(m) applies.
+  statute_of_limitations: null
+applies_if:
+  all:
+    - entity.is_coppa_operator == true
+    - any:[data.service_directed_to_children == true, entity.actual_knowledge_of_child_data == true]
+applies_to_role: any
+exemptions: []
+id: us.coppa.312_8.a.security
+source:
+  citation: 16 C.F.R. § 312.8(a)
+  instrument_id: us.coppa.rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=312
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  raw_sha256: 5a29d13e4512092a2d064a62a581031dc75aa99998540e6c2ef24f0dbfc66df9
+  text_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.txt
+  text_sha256: 269dbc8c79e682a08e9686846439239d7f57ec49f501070957ff738370189425
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 16-cfr-312 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: 9965174ea02c5b1b4ef637968f3c99024eae0fcee4be374819a57b0dd363bbfa
+verbatim_span: >-
+  The operator must establish and maintain reasonable procedures to protect the confidentiality,
+  security, and integrity of personal information collected from children.
+paragraph_path:
+  path:
+    - a
+  anchor: '312.8'
+  derivation: reconstructed
+  confidence: high
+  evidence: designators reconstructed from flat <P> siblings; resolves to exactly one leaf (gate 23)
+context_not_required: The paragraph states the duty in full.
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+obligation_type: secure
+deadline: null
+summary: >-
+  An operator must establish and maintain reasonable procedures to protect the confidentiality,
+  security and integrity of personal information collected from children.
+requirement_detail: >-
+  COPPA CARRIES ITS OWN SECURITY DUTY, which matters because operators reaching children are
+  frequently outside every other federal security regime — not financial institutions under GLBA,
+  not covered entities under HIPAA. For those operators this section and FTC Act § 5 are the whole
+  of federal data-security law, and § 312.8(b) extends the duty to releasing information to third
+  parties only where the operator has taken reasonable steps to ensure they can protect it.
+common_errors:
+  - >-
+    Assuming a child-directed app has no federal security obligation absent GLBA or HIPAA. § 312.8
+    is one.
+  - Reading it as internal only. § 312.8(b) reaches onward disclosure to service providers.
+open_questions: []

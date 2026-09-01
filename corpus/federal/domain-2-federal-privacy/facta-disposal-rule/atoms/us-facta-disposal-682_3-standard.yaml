@@ -1,0 +1,114 @@
+id: us.facta.disposal.682_3.standard
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 682.3(a)
+  instrument_id: us.facta.disposal_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=682
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/facta-disposal-rule/raw/16-cfr-682.xml
+  raw_sha256: 921ba44717404d57c5b20d3c6e93e2c502e0e2ea94b87ed39639eef5961e2348
+  text_file: corpus/federal/domain-2-federal-privacy/facta-disposal-rule/raw/16-cfr-682.txt
+  text_sha256: 6f792b0ce13b5842d4177357f2fa44eea2fff21be45f1ba8d5386803ac898266
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/facta-disposal-rule/raw/16-cfr-682.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 933d9b0a5155b766c10ff7015bf3d32cff0b9d1e3f6085a5520cc1f253676a06
+verbatim_span: >-
+  Standard. Any person who maintains or otherwise possesses consumer information for a business
+  purpose must properly dispose of such information by taking reasonable measures to protect against
+  unauthorized access to or use of the information in connection with its disposal.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+  anchor: '682.3'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+jurisdiction: US-FED
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Reading § 682.3(b)'s five examples as a compliance checklist. The stem says they are
+    'illustrative only and are not exclusive or exhaustive methods'; doing all five is not
+    automatically reasonable, and doing none of them is not automatically unreasonable.
+  - >-
+    Treating this as a general data-security duty. It reaches disposal specifically — the Safeguards
+    Rule is where the ongoing security obligation lives.
+  - >-
+    Assuming it applies only to consumer reporting agencies. It reaches ANY person who maintains
+    consumer information for a business purpose, which is far broader.
+open_questions:
+  - >-
+    'Reasonable measures' is a standard, not a rule, and the text supplies no threshold. That
+    indeterminacy is in the source and is not resolved here.
+confidence: high
+context_not_required: No ancestor contributes governing text; this provision's operative meaning is complete on its own.
+subject:
+  domain: II.C.1
+  lifecycle:
+    - IV
+regulator:
+  - ftc
+sector:
+  - consumer_reporting
+  - any business holding consumer report information
+data_types:
+  - consumer_report
+  - consumer_information
+status: in_force
+effective_from: '2005-06-01'
+applies_if:
+  all:
+    - entity.maintains_or_possesses_consumer_information == true
+    - purpose.business_purpose == true
+    - event.type == 'disposal_of_consumer_information'
+applies_to_role: any
+obligation_type: secure
+summary: >-
+  Any person who maintains or possesses consumer information for a business purpose must properly
+  dispose of it by taking reasonable measures to protect against unauthorized access or use in
+  connection with its disposal.
+requirement_detail: >-
+  The duty attaches on disposal, not on collection or storage. Its standard is 'reasonable measures'
+  against unauthorized access to or use of the information IN CONNECTION WITH ITS DISPOSAL — a
+  narrower target than general data security. The rule states no method; § 682.3(b) supplies
+  examples that are expressly illustrative rather than exhaustive.
+preemption:
+  posture: floor
+  authority: 15 U.S.C. § 1681t
+  note: >-
+    FCRA preemption is express and partial. This rule implements FACTA § 216 and sits inside the
+    FCRA framework, so the § 1681t carve-out map governs whether a given state disposal requirement
+    survives. Not resolved on this atom — see the preemption instrument record.
+enforcement:
+  enforcers:
+    - ftc
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: FTC Act remedies; FCRA administrative enforcement
+    range: null
+    note: No penalty figure appears in the rule itself.
+  statute_of_limitations: null

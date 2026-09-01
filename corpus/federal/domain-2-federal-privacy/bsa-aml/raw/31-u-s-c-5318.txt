@@ -1,0 +1,891 @@
+§ 5318.
+Compliance, exemptions, and summons authority
+(a)
+General Powers of Secretary
+.—
+The Secretary of the Treasury may (except under
+section 5315 of this title
+and regulations prescribed under section 5315)—
+(1)
+except as provided in subsections (b)(2) and (h)(4), delegate duties and powers under this subchapter to an appropriate supervising agency and the United States Postal Service;
+(2)
+require a class of domestic financial institutions or nonfinancial trades or businesses to maintain appropriate procedures, including the collection and reporting of certain information as the Secretary of the Treasury may prescribe by regulation, to ensure compliance with this subchapter and regulations prescribed under this subchapter or to guard against money laundering, the financing of terrorism, or other forms of illicit finance;
+(3)
+examine any books, papers, records, or other data of domestic financial institutions or nonfinancial trades or businesses relevant to the recordkeeping or reporting requirements of this subchapter;
+(4)
+summon a financial institution or nonfinancial trade or business, an officer or employee of a financial institution or nonfinancial trade or business (including a former officer or employee), or any person having possession, custody, or care of the reports and records required under this subchapter, to appear before the Secretary of the Treasury or his delegate at a time and place named in the summons and to produce such books, papers, records, or other data, and to give testimony, under oath, as may be relevant or material to an investigation described in subsection (b);
+(5)
+exempt from the requirements of this subchapter any class of transactions within any State if the Secretary determines that—
+(A)
+under the laws of such State, that class of transactions is subject to requirements substantially similar to those imposed under this subchapter; and
+(B)
+there is adequate provision for the enforcement of such requirements;
+(6)
+rely on examinations conducted by a State supervisory agency of a category of financial institution, if the Secretary determines that—
+(A)
+the category of financial institution is required to comply with this subchapter and regulations prescribed under this subchapter; or
+(B)
+the State supervisory agency examines the category of financial institution for compliance with this subchapter and regulations prescribed under this subchapter; and
+(7)
+prescribe an appropriate exemption from a requirement under this subchapter and regulations prescribed under this subchapter. The Secretary may revoke an exemption under this paragraph or paragraph (5) by actually or constructively notifying the parties affected. A revocation is effective during judicial review.
+(b)
+Limitations on Summons Power.—
+(1)
+Scope of power
+.—
+The Secretary of the Treasury may take any action described in paragraph (3) or (4) of subsection (a) only in connection with investigations for the purpose of civil enforcement of violations of this subchapter, section 21 of the Federal Deposit Insurance Act, section 411  of the National Housing Act, or chapter 2 of
+Public Law 91–508
+(
+12 U.S.C. 1951
+et seq.) or any regulation under any such provision.
+(2)
+Authority to issue
+.—
+A summons may be issued under subsection (a)(4) only by, or with the approval of, the Secretary of the Treasury or a supervisory level delegate of the Secretary of the Treasury.
+(c)
+Administrative Aspects of Summons.—
+(1)
+Production at designated site
+.—
+A summons issued pursuant to this section may require that books, papers, records, or other data stored or maintained at any place be produced at any designated location in any State or in any territory or other place subject to the jurisdiction of the United States not more than 500 miles distant from any place where the financial institution or nonfinancial trade or business operates or conducts business in the United States.
+(2)
+Fees and travel expenses
+.—
+Persons summoned under this section shall be paid the same fees and mileage for travel in the United States that are paid witnesses in the courts of the United States.
+(3)
+No liability for expenses
+.—
+The United States shall not be liable for any expense, other than an expense described in paragraph (2), incurred in connection with the production of books, papers, records, or other data under this section.
+(d)
+Service of Summons
+.—
+Service of a summons issued under this section may be by registered mail or in such other manner calculated to give actual notice as the Secretary may prescribe by regulation.
+(e)
+Contumacy or Refusal.—
+(1)
+Referral to attorney general
+.—
+In case of contumacy by a person issued a summons under paragraph (3) or (4) of subsection (a) or a refusal by such person to obey such summons, the Secretary of the Treasury shall refer the matter to the Attorney General.
+(2)
+Jurisdiction of court
+.—
+The Attorney General may invoke the aid of any court of the United States within the jurisdiction of which—
+(A)
+the investigation which gave rise to the summons is being or has been carried on;
+(B)
+the person summoned is an inhabitant; or
+(C)
+the person summoned carries on business or may be found,
+to compel compliance with the summons.
+(3)
+Court order
+.—
+The court may issue an order requiring the person summoned to appear before the Secretary or his delegate to produce books, papers, records, and other data, to give testimony as may be necessary to explain how such material was compiled and maintained, and to pay the costs of the proceeding.
+(4)
+Failure to comply with order
+.—
+Any failure to obey the order of the court may be punished by the court as a contempt thereof.
+(5)
+Service of process
+.—
+All process in any case under this subsection may be served in any judicial district in which such person may be found.
+(f)
+Written and Signed Statement Required
+.—
+No person shall qualify for an exemption under subsection (a)(5)
+1
+unless the relevant financial institution or nonfinancial trade or business prepares and maintains a statement which—
+(1)
+describes in detail the reasons why such person is qualified for such exemption; and
+(2)
+contains the signature of such person.
+(g)
+Reporting of Suspicious Transactions.—
+(1)
+In general
+.—
+The Secretary may require any financial institution, and any director, officer, employee, or agent of any financial institution, to report any suspicious transaction relevant to a possible violation of law or regulation.
+(2)
+Notification prohibited.—
+(A)
+In general
+.—
+If a financial institution or any director, officer, employee, or agent of any financial institution, voluntarily or pursuant to this section or any other authority, reports a suspicious transaction to a government agency—
+(i)
+neither the financial institution, director, officer, employee, or agent of such institution (whether or not any such person is still employed by the institution), nor any other current or former director, officer, or employee of, or contractor for, the financial institution or other reporting person, may notify any person involved in the transaction that the transaction has been reported or otherwise reveal any information that would reveal that the transaction has been reported,;  and
+(ii)
+no current or former officer or employee of or contractor for the Federal Government or of or for any State, local, tribal, or territorial government within the United States, who has any knowledge that such report was made may disclose to any person involved in the transaction that the transaction has been reported, or otherwise reveal any information that would reveal that the transaction has been reported, other than as necessary to fulfill the official duties of such officer or employee.
+(B)
+Disclosures in certain employment references.—
+(i)
+Rule of construction
+.—
+Notwithstanding the application of subparagraph (A) in any other context, subparagraph (A) shall not be construed as prohibiting any financial institution, or any director, officer, employee, or agent of such institution, from including information that was included in a report to which subparagraph (A) applies—
+(I)
+in a written employment reference that is provided in accordance with section 18(w) of the Federal Deposit Insurance Act in response to a request from another financial institution; or
+(II)
+in a written termination notice or employment reference that is provided in accordance with the rules of a self-regulatory organization registered with the Securities and Exchange Commission or the Commodity Futures Trading Commission,
+except that such written reference or notice may not disclose that such information was also included in any such report, or that such report was made.
+(ii)
+Information not required
+.—
+Clause (i) shall not be construed, by itself, to create any affirmative duty to include any information described in clause (i) in any employment reference or termination notice referred to in clause (i).
+(3)
+Liability for disclosures.—
+(A)
+In general
+.—
+Any financial institution that makes a voluntary disclosure of any possible violation of law or regulation to a government agency or makes a disclosure pursuant to this subsection or any other authority, and any director, officer, employee, or agent of such institution who makes, or requires another to make any such disclosure, shall not be liable to any person under any law or regulation of the United States, any constitution, law, or regulation of any State or political subdivision of any State, or under any contract or other legally enforceable agreement (including any arbitration agreement), for such disclosure or for any failure to provide notice of such disclosure to the person who is the subject of such disclosure or any other person identified in the disclosure.
+(B)
+Rule of construction
+.—
+Subparagraph (A) shall not be construed as creating—
+(i)
+any inference that the term “person”, as used in such subparagraph, may be construed more broadly than its ordinary usage so as to include any government or agency of government; or
+(ii)
+any immunity against, or otherwise affecting, any civil or criminal action brought by any government or agency of government to enforce any constitution, law, or regulation of such government or agency.
+(4)
+Single designee for reporting suspicious transactions.—
+(A)
+In general
+.—
+In requiring reports under paragraph (1) of suspicious transactions, the Secretary of the Treasury shall designate, to the extent practicable and appropriate, a single officer or agency of the United States to whom such reports shall be made.
+(B)
+Duty of designee
+.—
+The officer or agency of the United States designated by the Secretary of the Treasury pursuant to subparagraph (A) shall refer any report of a suspicious transaction to any appropriate law enforcement, supervisory agency, or United States intelligence agency for use in the conduct of intelligence or counterintelligence activities, including analysis, to protect against international terrorism.
+(C)
+Coordination with other reporting requirements
+.—
+Subparagraph (A) shall not be construed as precluding any supervisory agency for any financial institution from requiring the financial institution to submit any information or report to the agency or another agency pursuant to any other applicable provision of law.
+(5)
+Considerations in imposing reporting requirements.—
+(A)
+Definitions
+.—
+In this paragraph, the terms “Bank Secrecy Act”, “Federal functional regulator”, “State bank supervisor”, and “State credit union supervisor” have the meanings given the terms in section 6003 of the Anti-Money Laundering Act of 2020.
+(B)
+Requirements
+.—
+In imposing any requirement to report any suspicious transaction under this subsection, the Secretary of the Treasury, in consultation with the Attorney General, appropriate representatives of State bank supervisors, State credit union supervisors, and the Federal functional regulators, shall consider items that include—
+(i)
+the national priorities established by the Secretary;
+(ii)
+the purposes described in section 5311; and
+(iii)
+the means by or form in which the Secretary shall receive such reporting, including the burdens imposed by such means or form of reporting on persons required to provide such reporting, the efficiency of the means or form, and the benefits derived by the means or form of reporting by Federal law enforcement agencies and the intelligence community in countering financial crime, including money laundering and the financing of terrorism.
+(C)
+Compliance program
+.—
+Reports filed under this subsection shall be guided by the compliance program of a covered financial institution with respect to the Bank Secrecy Act, including the risk assessment processes of the covered institution that should include a consideration of priorities established by the Secretary of the Treasury under section 5318.
+(D)
+Streamlined data and real-time reporting.—
+(i)
+Requirement to establish system
+.—
+In considering the means by or form in which the Secretary of the Treasury shall receive reporting pursuant to subparagraph (B)(iii), the Secretary of the Treasury, acting through the Director of the Financial Crimes Enforcement Network, and in consultation with appropriate representatives of the State bank supervisors, State credit union supervisors, and Federal functional regulators, shall—
+(I)
+establish streamlined, including automated, processes to, as appropriate, permit the filing of noncomplex categories of reports that—
+(aa)
+reduce burdens imposed on persons required to report; and
+(bb)
+do not diminish the usefulness of the reporting to Federal law enforcement agencies, national security officials, and the intelligence community in combating financial crime, including the financing of terrorism;
+(II)
+subject to clause (ii)—
+(aa)
+permit streamlined, including automated, reporting for the categories described in subclause (I); and
+(bb)
+establish the conditions under which the reporting described in item (aa) is permitted; and
+(III)
+establish additional systems and processes as necessary to allow for the reporting described in subclause (II)(aa).
+(ii)
+Standards
+.—
+The Secretary of the Treasury—
+(I)
+in carrying out clause (i), shall establish standards to ensure that streamlined reports relate to suspicious transactions relevant to potential violations of law (including regulations); and
+(II)
+in establishing the standards under subclause (I), shall consider transactions, including structured transactions, designed to evade any regulation promulgated under this subchapter, certain fund and asset transfers with little or no apparent economic or business purpose, transactions without lawful purposes, and any other transaction that the Secretary determines to be appropriate.
+(iii)
+Rule of construction
+.—
+Nothing in this subparagraph may be construed to preclude the Secretary of the Treasury from—
+(I)
+requiring reporting as provided for in subparagraphs (B) and (C); or
+(II)
+notifying Federal law enforcement with respect to any transaction that the Secretary has determined implicates a national priority established by the Secretary.
+(6)
+Sharing of threat pattern and trend information.—
+(A)
+Definitions
+.—
+In this paragraph—
+(i)
+the terms “Bank Secrecy Act” and “Federal functional regulator” have the meanings given the terms in section 6003 of the Anti-Money Laundering Act of 2020; and
+(ii)
+the term “typology” means a technique to launder money or finance terrorism.
+(B)
+Suspicious activity report activity review
+.—
+Not less frequently than semiannually, the Director of the Financial Crimes Enforcement Network shall publish threat pattern and trend information to provide meaningful information about the preparation, use, and value of reports filed under this subsection by financial institutions, as well as other reports filed by financial institutions under the Bank Secrecy Act.
+(C)
+Inclusion of typologies
+.—
+In each publication published under subparagraph (B), the Director shall provide financial institutions and the Federal functional regulators with typologies, including data that can be adapted in algorithms if appropriate, relating to emerging money laundering and terrorist financing threat patterns and trends.
+(7)
+Rules of construction
+.—
+Nothing in this subsection may be construed as precluding the Secretary of the Treasury from—
+(A)
+requiring reporting as provided under subparagraphs (A) and (B) of paragraph (6); or
+(B)
+notifying a Federal law enforcement agency with respect to any transaction that the Secretary has determined directly implicates a national priority established by the Secretary.
+(8)
+Pilot program on sharing with foreign branches, subsidiaries, and affiliates.—
+(A)
+In general.—
+(i)
+Issuance of rules
+.—
+Not later than 1 year after the date of enactment of this paragraph, the Secretary of the Treasury shall issue rules, in coordination with the Director of the Financial Crimes Enforcement Network, establishing the pilot program described in subparagraph (B).
+(ii)
+Considerations
+.—
+In issuing the rules required under clause (i), the Secretary shall ensure that the sharing of information described in subparagraph (B)—
+(I)
+is limited by the requirements of Federal and State law enforcement operations;
+(II)
+takes into account potential concerns of the intelligence community; and
+(III)
+is subject to appropriate standards and requirements regarding data security and the confidentiality of personally identifiable information.
+(B)
+Pilot program described
+.—
+The pilot program described in this paragraph shall—
+(i)
+permit a financial institution with a reporting obligation under this subsection to share information related to reports under this subsection, including that such a report has been filed, with the institution’s foreign branches, subsidiaries, and affiliates for the purpose of combating illicit finance risks, notwithstanding any other provision of law except subparagraph (A) or (C);
+(ii)
+permit the Secretary to consider, implement, and enforce provisions that would hold a foreign affiliate of a United States financial institution liable for the disclosure of information related to reports under this section;
+(iii)
+terminate on the date that is 3 years after the date of enactment of this paragraph, except that the Secretary of the Treasury may extend the pilot program for not more than 2 years upon submitting to the Committee on Banking, Housing, and Urban Affairs of the Senate and the Committee on Financial Services of the House of Representatives a report that includes—
+(I)
+a certification that the extension is in the national interest of the United States, with a detailed explanation of the reasons that the extension is in the national interest of the United States;
+(II)
+after appropriate consultation by the Secretary with participants in the pilot program, an evaluation of the usefulness of the pilot program, including a detailed analysis of any illicit activity identified or prevented as a result of the program; and
+(III)
+a detailed legislative proposal providing for a long-term extension of activities under the pilot program, measures to ensure data security, and confidentiality of personally identifiable information, including expected budgetary resources for those activities, if the Secretary of the Treasury determines that a long-term extension is appropriate.
+(C)
+Prohibition involving certain jurisdictions.—
+(i)
+In general
+.—
+In issuing the rules required under subparagraph (A), the Secretary of the Treasury may not permit a financial institution to share information on reports under this subsection with a foreign branch, subsidiary, or affiliate located in—
+(I)
+the People’s Republic of China;
+(II)
+the Russian Federation; or
+(III)
+a jurisdiction that—
+(aa)
+is a state sponsor of terrorism;
+(bb)
+is subject to sanctions imposed by the Federal Government; or
+(cc)
+the Secretary has determined cannot reasonably protect the security and confidentiality of such information.
+(ii)
+Exceptions
+.—
+The Secretary is authorized to make exceptions, on a case-by-case basis, for a financial institution located in a jurisdiction listed in subclause (I) or (II) of clause (i), if the Secretary notifies the Committee on Banking, Housing, and Urban Affairs of the Senate and the Committee on Financial Services of the House of Representatives that such an exception is in the national security interest of the United States.
+(D)
+Implementation updates
+.—
+Not later than 360 days after the date on which rules are issued under subparagraph (A), and annually thereafter for 3 years, the Secretary of the Treasury, or the designee of the Secretary, shall brief the Committee on Banking, Housing, and Urban Affairs of the Senate and the Committee on Financial Services of the House of Representatives on—
+(i)
+the degree of any information sharing permitted under the pilot program and a description of criteria used by the Secretary to evaluate the appropriateness of the information sharing;
+(ii)
+the effectiveness of the pilot program in identifying or preventing the violation of a United States law or regulation and mechanisms that may improve that effectiveness; and
+(iii)
+any recommendations to amend the design of the pilot program.
+(9)
+Treatment of foreign jurisdiction-originated reports
+.—
+Information related to a report received by a financial institution from a foreign affiliate with respect to a suspicious transaction relevant to a possible violation of law or regulation shall be subject to the same confidentiality requirements provided under this subsection for a report of a suspicious transaction described in paragraph (1).
+(10)
+No offshoring compliance
+.—
+No financial institution may establish or maintain any operation located outside of the United States the primary purpose of which is to ensure compliance with the Bank Secrecy Act as a result of the sharing granted under this subsection.
+(11)
+Definitions
+.—
+In this subsection:
+(A)
+Affiliate
+.—
+The term “affiliate” means an entity that controls, is controlled by, or is under common control with another entity.
+(B)
+Bank secrecy act; state bank supervisor; state credit union supervisor
+.—
+The terms “Bank Secrecy Act”, “State bank supervisor”, and “State credit union supervisor” have the meanings given the terms in section 6003 of the Anti-Money Laundering Act of 2020.
+(h)
+Anti-Money Laundering Programs.—
+(1)
+In general
+.—
+In order to guard against money laundering and the financing of terrorism through financial institutions, each financial institution shall establish anti-money laundering and countering the financing of terrorism programs, including, at a minimum—
+(A)
+the development of internal policies, procedures, and controls;
+(B)
+the designation of a compliance officer;
+(C)
+an ongoing employee training program; and
+(D)
+an independent audit function to test programs.
+(2)
+Regulations
+.—
+(A)
+In general
+.—
+The Secretary of the Treasury, after consultation with the appropriate Federal functional regulator (as defined in section 509 of the Gramm-Leach-Bliley Act), may prescribe minimum standards for programs established under paragraph (1), and may exempt from the application of those standards any financial institution that is not subject to the provisions of the rules contained in part 103 of title 31, of the Code of Federal Regulations, or any successor rule thereto, for so long as such financial institution is not subject to the provisions of such rules.
+(B)
+Factors
+.—
+In prescribing the minimum standards under subparagraph (A), and in supervising and examining compliance with those standards, the Secretary of the Treasury, and the appropriate Federal functional regulator (as defined in section 509 of the Gramm-Leach-Bliley Act (
+12 U.S.C. 6809
+)) shall take into account the following:
+(i)
+Financial institutions are spending private compliance funds for a public and private benefit, including protecting the United States financial system from illicit finance risks.
+(ii)
+The extension of financial services to the underbanked and the facilitation of financial transactions, including remittances, coming from the United States and abroad in ways that simultaneously prevent criminal persons from abusing formal or informal financial services networks are key policy goals of the United States.
+(iii)
+Effective anti-money laundering and countering the financing of terrorism programs safeguard national security and generate significant public benefits by preventing the flow of illicit funds in the financial system and by assisting law enforcement and national security agencies with the identification and prosecution of persons attempting to launder money and undertake other illicit activity through the financial system.
+(iv)
+Anti-money laundering and countering the financing of terrorism programs described in paragraph (1) should be—
+(I)
+reasonably designed to assure and monitor compliance with the requirements of this subchapter and regulations promulgated under this subchapter; and
+(II)
+risk-based, including ensuring that more attention and resources of financial institutions should be directed toward higher-risk customers and activities, consistent with the risk profile of a financial institution, rather than toward lower-risk customers and activities.
+(3)
+Concentration accounts
+.—
+The Secretary may prescribe regulations under this subsection that govern maintenance of concentration accounts by financial institutions, in order to ensure that such accounts are not used to prevent association of the identity of an individual customer with the movement of funds of which the customer is the direct or beneficial owner, which regulations shall, at a minimum—
+(A)
+prohibit financial institutions from allowing clients to direct transactions that move their funds into, out of, or through the concentration accounts of the financial institution;
+(B)
+prohibit financial institutions and their employees from informing customers of the existence of, or the means of identifying, the concentration accounts of the institution; and
+(C)
+require each financial institution to establish written procedures governing the documentation of all transactions involving a concentration account, which procedures shall ensure that, any time a transaction involving a concentration account commingles funds belonging to 1 or more customers, the identity of, and specific amount belonging to, each customer is documented.
+(4)
+Priorities.—
+(A)
+In general
+.—
+Not later than 180 days after the date of enactment of this paragraph, the Secretary of the Treasury, in consultation with the Attorney General, Federal functional regulators (as defined in section 509 of the Gramm-Leach-Bliley Act (
+15 U.S.C. 6809
+)), relevant State financial regulators, and relevant national security agencies, shall establish and make public priorities for anti-money laundering and countering the financing of terrorism policy.
+(B)
+Updates
+.—
+Not less frequently than once every 4 years, the Secretary of the Treasury, in consultation with the Attorney General, Federal functional regulators (as defined in section 509 of the Gramm-Leach-Bliley Act (
+15 U.S.C. 6809
+)), relevant State financial regulators, and relevant national security agencies, shall update the priorities established under subparagraph (A).
+(C)
+Relation to national strategy
+.—
+The Secretary of the Treasury shall ensure that the priorities established under subparagraph (A) are consistent with the national strategy for countering the financing of terrorism and related forms of illicit finance developed under section 261 of the Countering Russian Influence in Europe and Eurasia Act of 2017 (
+Public Law 115–44
+;
+131 Stat. 934
+).
+(D)
+Rulemaking
+.—
+Not later than 180 days after the date on which the Secretary of the Treasury establishes the priorities under subparagraph (A), the Secretary of the Treasury, acting through the Director of the Financial Crimes Enforcement Network and in consultation with the Federal functional regulators (as defined in section 509 of the Gramm-Leach-Bliley Act (
+15 U.S.C. 6809
+)) and relevant State financial regulators, shall, as appropriate, promulgate regulations to carry out this paragraph.
+(E)
+Supervision and examination
+.—
+The review by a financial institution of the priorities established under subparagraph (A) and the incorporation of those priorities, as appropriate, into the risk-based programs established by the financial institution to meet obligations under this subchapter, the USA PATRIOT Act (
+Public Law 107–56
+;
+115 Stat. 272
+), and other anti-money laundering and countering the financing of terrorism laws and regulations shall be included as a measure on which a financial institution is supervised and examined for compliance with those obligations.
+(5)
+Duty
+.—
+The duty to establish, maintain and enforce an anti-money laundering and countering the financing of terrorism program as required by this subsection shall remain the responsibility of, and be performed by, persons in the United States who are accessible to, and subject to oversight and supervision by, the Secretary of the Treasury and the appropriate Federal functional regulator (as defined in section 509 of the Gramm-Leach-Bliley Act (
+15 U.S.C. 6809
+)).
+(i)
+Due Diligence for United States Private Banking and Correspondent Bank Accounts Involving Foreign Persons.—
+(1)
+In general
+.—
+Each financial institution that establishes, maintains, administers, or manages a private banking account or a correspondent account in the United States for a non-United States person, including a foreign individual visiting the United States, or a representative of a non-United States person shall establish appropriate, specific, and, where necessary, enhanced, due diligence policies, procedures, and controls that are reasonably designed to detect and report instances of money laundering through those accounts.
+(2)
+Additional standards for certain correspondent accounts.—
+(A)
+In general
+.—
+Subparagraph (B) shall apply if a correspondent account is requested or maintained by, or on behalf of, a foreign bank operating—
+(i)
+under an offshore banking license; or
+(ii)
+under a banking license issued by a foreign country that has been designated—
+(I)
+as noncooperative with international anti-money laundering principles or procedures by an intergovernmental group or organization of which the United States is a member, with which designation the United States representative to the group or organization concurs; or
+(II)
+by the Secretary of the Treasury as warranting special measures due to money laundering concerns.
+(B)
+Policies, procedures, and controls
+.—
+The enhanced due diligence policies, procedures, and controls required under paragraph (1) shall, at a minimum, ensure that the financial institution in the United States takes reasonable steps—
+(i)
+to ascertain for any such foreign bank, the shares of which are not publicly traded, the identity of each of the owners of the foreign bank, and the nature and extent of the ownership interest of each such owner;
+(ii)
+to conduct enhanced scrutiny of such account to guard against money laundering and report any suspicious transactions under subsection (g); and
+(iii)
+to ascertain whether such foreign bank provides correspondent accounts to other foreign banks and, if so, the identity of those foreign banks and related due diligence information, as appropriate under paragraph (1).
+(3)
+Minimum standards for private banking accounts
+.—
+If a private banking account is requested or maintained by, or on behalf of, a non-United States person, then the due diligence policies, procedures, and controls required under paragraph (1) shall, at a minimum, ensure that the financial institution takes reasonable steps—
+(A)
+to ascertain the identity of the nominal and beneficial owners of, and the source of funds deposited into, such account as needed to guard against money laundering and report any suspicious transactions under subsection (g); and
+(B)
+to conduct enhanced scrutiny of any such account that is requested or maintained by, or on behalf of, a senior foreign political figure, or any immediate family member or close associate of a senior foreign political figure, that is reasonably designed to detect and report transactions that may involve the proceeds of foreign corruption.
+(4)
+Definitions
+.—
+For purposes of this subsection, the following definitions shall apply:
+(A)
+Offshore banking license
+.—
+The term “offshore banking license” means a license to conduct banking activities which, as a condition of the license, prohibits the licensed entity from conducting banking activities with the citizens of, or with the local currency of, the country which issued the license.
+(B)
+Private banking account
+.—
+The term “private banking account” means an account (or any combination of accounts) that—
+(i)
+requires a minimum aggregate deposits of funds or other assets of not less than $1,000,000;
+(ii)
+is established on behalf of 1 or more individuals who have a direct or beneficial ownership interest in the account; and
+(iii)
+is assigned to, or is administered or managed by, in whole or in part, an officer, employee, or agent of a financial institution acting as a liaison between the financial institution and the direct or beneficial owner of the account.
+(j)
+Prohibition on United States Correspondent Accounts With Foreign Shell Banks.—
+(1)
+In general
+.—
+A financial institution described in subparagraphs (A) through (G) of section 5312(a)(2) (in this subsection referred to as a “covered financial institution”) shall not establish, maintain, administer, or manage a correspondent account in the United States for, or on behalf of, a foreign bank that does not have a physical presence in any country.
+(2)
+Prevention of indirect service to foreign shell banks
+.—
+A covered financial institution shall take reasonable steps to ensure that any correspondent account established, maintained, administered, or managed by that covered financial institution in the United States for a foreign bank is not being used by that foreign bank to indirectly provide banking services to another foreign bank that does not have a physical presence in any country. The Secretary of the Treasury shall, by regulation, delineate the reasonable steps necessary to comply with this paragraph.
+(3)
+Exception
+.—
+Paragraphs (1) and (2) do not prohibit a covered financial institution from providing a correspondent account to a foreign bank, if the foreign bank—
+(A)
+is an affiliate of a depository institution, credit union, or foreign bank that maintains a physical presence in the United States or a foreign country, as applicable; and
+(B)
+is subject to supervision by a banking authority in the country regulating the affiliated depository institution, credit union, or foreign bank described in subparagraph (A), as applicable.
+(4)
+Definitions
+.—
+For purposes of this subsection—
+(A)
+the term “affiliate” means a foreign bank that is controlled by or is under common control with a depository institution, credit union, or foreign bank; and
+(B)
+the term “physical presence” means a place of business that—
+(i)
+is maintained by a foreign bank;
+(ii)
+is located at a fixed address (other than solely an electronic address) in a country in which the foreign bank is authorized to conduct banking activities, at which location the foreign bank—
+(I)
+employs 1 or more individuals on a full-time basis; and
+(II)
+maintains operating records related to its banking activities; and
+(iii)
+is subject to inspection by the banking authority which licensed the foreign bank to conduct banking activities.
+(k)
+Bank Records Related to Anti-Money Laundering Programs.—
+(1)
+Definitions
+.—
+For purposes of this subsection, the following definitions shall apply:
+(A)
+Appropriate federal banking agency
+.—
+The term “appropriate Federal banking agency” has the same meaning as in section 3 of the Federal Deposit Insurance Act (
+12 U.S.C. 1813
+).
+(B)
+Covered financial institution
+.—
+The term “covered financial institution” means an institution referred to in subsection (j)(1).
+(C)
+Incorporated term
+.—
+The term “correspondent account” has the same meaning as in section 5318A(e)(1)(B).
+(2)
+120-
+hour rule
+.—
+Not later than 120 hours after receiving a request by an appropriate Federal banking agency for information related to anti-money laundering compliance by a covered financial institution or a customer of such institution, a covered financial institution shall provide to the appropriate Federal banking agency, or make available at a location specified by the representative of the appropriate Federal banking agency, information and account documentation for any account opened, maintained, administered or managed in the United States by the covered financial institution.
+(3)
+Foreign bank records.—
+(A)
+Subpoena of records.—
+(i)
+In general
+.—
+Notwithstanding subsection (b), the Secretary of the Treasury or the Attorney General may issue a subpoena to any foreign bank that maintains a correspondent account in the United States and request any records relating to the correspondent account or any account at the foreign bank, including records maintained outside of the United States, that are the subject of—
+(I)
+any investigation of a violation of a criminal law of the United States;
+(II)
+any investigation of a violation of this subchapter;
+(III)
+a civil forfeiture action; or
+(IV)
+an investigation pursuant to section 5318A.
+(ii)
+Production of records
+.—
+The foreign bank on which a subpoena described in clause (i) is served shall produce all requested records and authenticate all requested records with testimony in the manner described in—
+(I)
+rule 902(12) of the Federal Rules of Evidence; or
+(II)
+section 3505 of title 18
+.
+(iii)
+Issuance and service of subpoena
+.—
+A subpoena described in clause (i)—
+(I)
+shall designate—
+(aa)
+a return date; and
+(bb)
+the judicial district in which the related investigation is proceeding; and
+(II)
+may be served—
+(aa)
+in person;
+(bb)
+by mail or fax in the United States if the foreign bank has a representative in the United States; or
+(cc)
+if applicable, in a foreign country under any mutual legal assistance treaty, multilateral agreement, or other request for international legal or law enforcement assistance.
+(iv)
+Relief from subpoena.—
+(I)
+In general
+.—
+At any time before the return date of a subpoena described in clause (i), the foreign bank on which the subpoena is served may petition the district court of the United States for the judicial district in which the related investigation is proceeding, as designated in the subpoena, to modify or quash—
+(aa)
+the subpoena; or
+(bb)
+the prohibition against disclosure described in subparagraph (C).
+(II)
+Conflict with foreign secrecy or confidentiality
+.—
+An assertion that compliance with a subpoena described in clause (i) would conflict with a provision of foreign secrecy or confidentiality law shall not be a sole basis for quashing or modifying the subpoena.
+(B)
+Acceptance of service.—
+(i)
+Maintaining records in the united states
+.—
+Any covered financial institution that maintains a correspondent account in the United States for a foreign bank shall maintain records in the United States identifying—
+(I)
+the owners of record and the beneficial owners of the foreign bank; and
+(II)
+the name and address of a person who—
+(aa)
+resides in the United States; and
+(bb)
+is authorized to accept service of legal process for records covered under this subsection.
+(ii)
+Law enforcement request
+.—
+Upon receipt of a written request from a Federal law enforcement officer for information required to be maintained under this paragraph, a covered financial institution shall provide the information to the requesting officer not later than 7 days after receipt of the request.
+(C)
+Nondisclosure of subpoena.—
+(i)
+In general
+.—
+No officer, director, partner, employee, or shareholder of, or agent or attorney for, a foreign bank on which a subpoena is served under this paragraph shall, directly or indirectly, notify any account holder involved or any person named in the subpoena issued under subparagraph (A)(i) and served on the foreign bank about the existence or contents of the subpoena.
+(ii)
+Damages
+.—
+Upon application by the Attorney General for a violation of this subparagraph, a foreign bank on which a subpoena is served under this paragraph shall be liable to the United States Government for a civil penalty in an amount equal to—
+(I)
+double the amount of the suspected criminal proceeds sent through the correspondent account of the foreign bank in the related investigation; or
+(II)
+if no such proceeds can be identified, not more than $250,000.
+(D)
+Enforcement.—
+(i)
+In general
+.—
+If a foreign bank fails to obey a subpoena issued under subparagraph (A)(i), the Attorney General may invoke the aid of the district court of the United States for the judicial district in which the investigation or related proceeding is occurring to compel compliance with the subpoena.
+(ii)
+Court orders and contempt of court
+.—
+A court described in clause (i) may—
+(I)
+issue an order requiring the foreign bank to appear before the Secretary of the Treasury or the Attorney General to produce—
+(aa)
+certified records, in accordance with—
+(AA)
+rule 902(12) of the Federal Rules of Evidence; or
+(BB)
+section 3505 of title 18
+; or
+(bb)
+testimony regarding the production of the certified records; and
+(II)
+punish any failure to obey an order issued under subclause (I) as contempt of court.
+(iii)
+Service of process
+.—
+All process in a case under this subparagraph shall be served on the foreign bank in the same manner as described in subparagraph (A)(iii).
+(E)
+Termination of correspondent relationship.—
+(i)
+Termination upon receipt of notice
+.—
+A covered financial institution shall terminate any correspondent relationship with a foreign bank not later than 10 business days after the date on which the covered financial institution receives written notice from the Secretary of the Treasury or the Attorney General if, after consultation with the other, the Secretary of the Treasury or the Attorney General, as applicable, determines that the foreign bank has failed—
+(I)
+to comply with a subpoena issued under subparagraph (A)(i); or
+(II)
+to prevail in proceedings before—
+(aa)
+the appropriate district court of the United States after challenging a subpoena described in subclause (I) under subparagraph (A)(iv)(I); or
+(bb)
+a court of appeals of the United States after appealing a decision of a district court of the United States under item (aa).
+(ii)
+Limitation on liability
+.—
+A covered financial institution shall not be liable to any person in any court or arbitration proceeding for—
+(I)
+terminating a correspondent relationship under this subparagraph; or
+(II)
+complying with a nondisclosure order under subparagraph (C).
+(iii)
+Failure to terminate relationship or failure to comply with a subpoena.—
+(I)
+Failure to terminate relationship
+.—
+A covered financial institution that fails to terminate a correspondent relationship under clause (i) shall be liable for a civil penalty in an amount that is not more than $25,000 for each day that the covered financial institution fails to terminate the relationship.
+(II)
+Failure to comply with a subpoena.—
+(aa)
+In general
+.—
+Upon failure to comply with a subpoena under subparagraph (A)(i), a foreign bank may be liable for a civil penalty assessed by the issuing agency in an amount that is not more than $50,000 for each day that the foreign bank fails to comply with the terms of a subpoena.
+(bb)
+Additional penalties
+.—
+Beginning after the date that is 60 days after a foreign bank fails to comply with a subpoena under subparagraph (A)(i), the Secretary of the Treasury or the Attorney General may seek additional penalties and compel compliance with the subpoena in the appropriate district court of the United States.
+(cc)
+Venue for relief
+.—
+A foreign bank may seek review in the appropriate district court of the United States of any penalty assessed under this clause and the issuance of a subpoena under subparagraph (A)(i).
+(F)
+Enforcement of civil penalties
+.—
+Upon application by the United States, any funds held in the correspondent account of a foreign bank that is maintained in the United States with a covered financial institution may be seized by the United States to satisfy any civil penalties that are imposed—
+(i)
+under subparagraph (C)(ii);
+(ii)
+by a court for contempt under subparagraph (D); or
+(iii)
+under subparagraph (E)(iii)(II).
+(l)
+Identification and Verification of Accountholders.—
+(1)
+In general
+.—
+Subject to the requirements of this subsection, the Secretary of the Treasury shall prescribe regulations setting forth the minimum standards for financial institutions and their customers regarding the identity of the customer that shall apply in connection with the opening of an account at a financial institution.
+(2)
+Minimum requirements
+.—
+The regulations shall, at a minimum, require financial institutions to implement, and customers (after being given adequate notice) to comply with, reasonable procedures for—
+(A)
+verifying the identity of any person seeking to open an account to the extent reasonable and practicable;
+(B)
+maintaining records of the information used to verify a person’s identity, including name, address, and other identifying information; and
+(C)
+consulting lists of known or suspected terrorists or terrorist organizations provided to the financial institution by any government agency to determine whether a person seeking to open an account appears on any such list.
+(3)
+Factors to be considered
+.—
+In prescribing regulations under this subsection, the Secretary shall take into consideration the various types of accounts maintained by various types of financial institutions, the various methods of opening accounts, and the various types of identifying information available.
+(4)
+Certain financial institutions
+.—
+In the case of any financial institution the business of which is engaging in financial activities described in section 4(k) of the Bank Holding Company Act of 1956 (including financial activities subject to the jurisdiction of the Commodity Futures Trading Commission), the regulations prescribed by the Secretary under paragraph (1) shall be prescribed jointly with each Federal functional regulator (as defined in section 509 of the Gramm-Leach-Bliley Act, including the Commodity Futures Trading Commission) appropriate for such financial institution.
+(5)
+Exemptions
+.—
+The Secretary (and, in the case of any financial institution described in paragraph (4), any Federal agency described in such paragraph) may, by regulation or order, exempt any financial institution or type of account from the requirements of any regulation prescribed under this subsection in accordance with such standards and procedures as the Secretary may prescribe.
+(6)
+Effective date
+.—
+Final regulations prescribed under this subsection shall take effect before the end of the 1-year period beginning on the date of enactment of the International Money Laundering Abatement and Financial Anti-Terrorism Act of 2001.
+(m)
+Applicability of Rules
+.—
+Any rules promulgated pursuant to the authority contained in section 21 of the Federal Deposit Insurance Act (
+12 U.S.C. 1829b
+) shall apply, in addition to any other financial institution to which such rules apply, to any person that engages as a business in the transmission of funds, including any person who engages as a business in an informal money transfer system or any network of people who engage as a business in facilitating the transfer of money domestically or internationally outside of the conventional financial institutions system.
+(n)
+Reporting of Certain Cross-Border Transmittals of Funds.—
+(1)
+In general
+.—
+Subject to paragraphs (3) and (4), the Secretary shall prescribe regulations requiring such financial institutions as the Secretary determines to be appropriate to report to the Financial Crimes Enforcement Network certain cross-border electronic transmittals of funds, if the Secretary determines that reporting of such transmittals is reasonably necessary to conduct the efforts of the Secretary against money laundering and terrorist financing.
+(2)
+Limitation on reporting requirements
+.—
+Information required to be reported by the regulations prescribed under paragraph (1) shall not exceed the information required to be retained by the reporting financial institution pursuant to section 21 of the Federal Deposit Insurance Act and the regulations promulgated thereunder, unless—
+(A)
+the Board of Governors of the Federal Reserve System and the Secretary jointly determine that a particular item or items of information are not currently required to be retained under such section or such regulations; and
+(B)
+the Secretary determines, after consultation with the Board of Governors of the Federal Reserve System, that the reporting of such information is reasonably necessary to conduct the efforts of the Secretary to identify cross-border money laundering and terrorist financing.
+(3)
+Form and manner of reports
+.—
+In prescribing the regulations required under paragraph (1), the Secretary shall, subject to paragraph (2), determine the appropriate form, manner, content, and frequency of filing of the required reports.
+(4)
+Feasibility report.—
+(A)
+In general
+.—
+Before prescribing the regulations required under paragraph (1), and as soon as is practicable after the date of enactment of the Intelligence Reform and Terrorism Prevention Act of 2004, the Secretary shall submit a report to the Committee on Banking, Housing, and Urban Affairs of the Senate and the Committee on Financial Services of the House of Representatives that—
+(i)
+identifies the information in cross-border electronic transmittals of funds that may be found in particular cases to be reasonably necessary to conduct the efforts of the Secretary to identify money laundering and terrorist financing, and outlines the criteria to be used by the Secretary to select the situations in which reporting under this subsection may be required;
+(ii)
+outlines the appropriate form, manner, content, and frequency of filing of the reports that may be required under such regulations;
+(iii)
+identifies the technology necessary for the Financial Crimes Enforcement Network to receive, keep, exploit, protect the security of, and disseminate information from reports of cross-border electronic transmittals of funds to law enforcement and other entities engaged in efforts against money laundering and terrorist financing; and
+(iv)
+discusses the information security protections required by the exercise of the Secretary’s authority under this subsection.
+(B)
+Consultation
+.—
+In reporting the feasibility report under subparagraph (A), the Secretary may consult with the Bank Secrecy Act Advisory Group established by the Secretary, and any other group considered by the Secretary to be relevant.
+(5)
+Regulations.—
+(A)
+In general
+.—
+Subject to subparagraph (B), the regulations required by paragraph (1) shall be prescribed in final form by the Secretary, in consultation with the Board of Governors of the Federal Reserve System, before the end of the 3-year period beginning on the date of enactment of the National Intelligence Reform Act of 2004.
+(B)
+Technological feasibility
+.—
+No regulations shall be prescribed under this subsection before the Secretary certifies to the Congress that the Financial Crimes Enforcement Network has the technological systems in place to effectively and efficiently receive, keep, exploit, protect the security of, and disseminate information from reports of cross-border electronic transmittals of funds to law enforcement and other entities engaged in efforts against money laundering and terrorist financing.
+(o)
+Testing.—
+(1)
+In general
+.—
+The Secretary of the Treasury, in consultation with the head of each agency to which the Secretary has delegated duties or powers under subsection (a), shall issue a rule to specify with respect to technology and related technology internal processes designed to facilitate compliance with the requirements under this subchapter, the standards by which financial institutions are to test the technology and related technology internal processes.
+(2)
+Standards
+.—
+The standards described in paragraph (1) may include—
+(A)
+an emphasis on using innovative approaches such as machine learning or other enhanced data analytics processes;
+(B)
+risk-based testing, oversight, and other risk management approaches of the regime, prior to and after implementation, to facilitate calibration of relevant systems and prudently evaluate and monitor the effectiveness of their implementation;
+(C)
+specific criteria for when and how risk-based testing against existing processes should be considered to test and validate the effectiveness of relevant systems and situations and standards for when other risk management processes, including those developed by or through third party risk and compliance management systems, and oversight may be more appropriate;
+(D)
+specific standards for a risk governance framework for financial institutions to provide oversight and to prudently evaluate and monitor systems and testing processes both pre- and post-implementation;
+(E)
+requirements for appropriate data privacy and information security; and
+(F)
+a requirement that the system configurations, including any applicable algorithms and any validation of those configurations used by the regime be disclosed to the Financial Crimes Enforcement Network and the appropriate Federal functional regulator upon request.
+(3)
+Confidentiality of algorithms.—
+(A)
+In general
+.—
+If a financial institution or any director, officer, employee, or agent of any financial institution, voluntarily or pursuant to this subsection or any other authority, discloses the algorithms of the financial institution to a government agency, the algorithms and any materials associated with the creation or adaption of such algorithms shall be considered confidential and not subject to public disclosure.
+(B)
+Freedom of information act
+.—
+Section 552(a)(3) of title 5
+(commonly known as the “Freedom of Information Act”) shall not apply to any request for algorithms described in subparagraph (A) and any materials associated with the creation or adaptation of the algorithms.
+(4)
+Definition
+.—
+In this subsection, the term “Federal functional regulator” means—
+(A)
+the Board of Governors of the Federal Reserve System;
+(B)
+the Office of the Comptroller of the Currency;
+(C)
+the Federal Deposit Insurance Corporation;
+(D)
+the National Credit Union Administration;
+(E)
+the Securities and Exchange Commission; and
+(F)
+the Commodity Futures Trading Commission.
+(p)
+Sharing of Compliance Resources.—
+(1)
+Sharing permitted
+.—
+In order to more efficiently comply with the requirements of this subchapter, 2 or more financial institutions may enter into collaborative arrangements, as described in the statement entitled “Interagency Statement on Sharing Bank Secrecy Act Resources”, published on
+October 3, 2018
+, by the Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, the Financial Crimes Enforcement Network, the National Credit Union Administration, and the Office of the Comptroller of the Currency.
+(2)
+Outreach
+.—
+The Secretary of the Treasury and the appropriate supervising agencies shall carry out an outreach program to provide financial institutions with information, including best practices, with respect to the collaborative arrangements described in paragraph (1).
+(q)
+Interagency Coordination and Consultation.—
+(1)
+In general
+.—
+The Secretary of the Treasury shall, as appropriate, invite an appropriate State bank supervisor and an appropriate State credit union supervisor to participate in the interagency consultation and coordination with the Federal depository institution regulators regarding the development or modification of any rule or regulation carrying out this subchapter.
+(2)
+Rules of construction
+.—
+Nothing in this subsection may be construed to—
+(A)
+affect, modify, or limit the discretion of the Secretary of the Treasury with respect to the methods or forms of interagency consultation and coordination; or
+(B)
+require the Secretary of the Treasury or a Federal depository institution regulator to coordinate or consult with an appropriate State bank supervisor or to invite such supervisor to participate in interagency consultation and coordination with respect to a matter, including a rule or regulation, specifically affecting only Federal depository institutions or Federal credit unions.
+(3)
+Definitions
+.—
+In this subsection:
+(A)
+Appropriate state bank supervisor
+.—
+The term “appropriate State bank supervisor” means the Chairman or members of the State Liaison Committee of the Financial Institutions Examination Council.
+(B)
+Appropriate state credit union supervisor
+.—
+The term “appropriate State credit union supervisor” means the Chairman or members of the State Liaison Committee of the Financial Institutions Examination Council.
+(C)
+Federal credit union
+.—
+The term “Federal credit union” has the meaning given the term in section 101 of the Federal Credit Union Act (
+12 U.S.C. 1752
+).
+(D)
+Federal depository institution
+.—
+The term “Federal depository institution” has the meaning given the term in section 3 of the Federal Deposit Insurance Act (
+12 U.S.C. 1813
+).
+(E)
+Federal depository institution regulators
+.—
+The term “Federal depository institution regulator” means a member of the Financial Institutions Examination Council to which is delegated any authority of the Secretary under subsection (a)(1).

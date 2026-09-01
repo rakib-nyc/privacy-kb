@@ -1,0 +1,184 @@
+id: us.tcpa.227.b1ci.fax_established_business_relationship
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 U.S.C. § 227(b)(1)(C)(i)
+  instrument_id: us.tcpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  raw_sha256: bc0202f0682c43acd483fb4bf598db62d4157704024776425acfebf27c63e018
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.txt
+  text_sha256: 0aeb8fd90520ec4506ed3e1138f1c4e9b7331ed7e27e727734afa93b39f279e4
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: a5127171d6db20f9b8beb9044a877dd7a26e9cf54de847ff95958482cc48efc2
+verbatim_span: >-
+  the unsolicited advertisement is from a sender with an established business relationship with the
+  recipient;
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+    - '1'
+    - C
+    - i
+  anchor: /us/usc/t47/s227/b/1/C/i
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute read from the USLM element
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      It shall be unlawful for any person within the United States, or any person outside the United
+      States if the recipient is within the United States—
+    citation: null
+    path:
+      path:
+        - b
+        - '1'
+      anchor: /us/usc/t47/s227/b/1
+      derivation: structural
+      confidence: high
+      evidence: identifier attribute on the enclosing USLM element
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      to use any telephone facsimile machine, computer, or other device to send, to a telephone
+      facsimile machine, an unsolicited advertisement, unless—
+    citation: null
+    path:
+      path:
+        - b
+        - '1'
+        - C
+      anchor: /us/usc/t47/s227/b/1/C
+      derivation: structural
+      confidence: high
+      evidence: identifier attribute on the enclosing USLM element
+  - position: follows
+    relation: excepts
+    verbatim_span: >-
+      except that this clause shall not apply in the case of an unsolicited advertisement that is
+      sent based on an established business relationship with the recipient that was in existence
+      before July 9, 2005 , if the sender possessed the facsimile machine number of the recipient
+      before July 9, 2005 ; and
+    citation: null
+    path:
+      path:
+        - b
+        - '1'
+        - C
+      anchor: /us/usc/t47/s227/b/1/C
+      derivation: structural
+      confidence: high
+      evidence: identifier attribute on the enclosing USLM element
+  - position: follows
+    relation: excepts
+    verbatim_span: >-
+      except that the exception under clauses (i) and (ii) shall not apply with respect to an
+      unsolicited advertisement sent to a telephone facsimile machine by a sender to whom a request
+      has been made not to send future unsolicited advertisements to such telephone facsimile
+      machine that complies with the requirements under paragraph (2)(E); or
+    citation: null
+    path:
+      path:
+        - b
+        - '1'
+        - C
+      anchor: /us/usc/t47/s227/b/1/C
+      derivation: structural
+      confidence: high
+      evidence: identifier attribute on the enclosing USLM element
+subject:
+  domain: II.E.1
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+  - state_ag
+sector:
+  - telemarketing
+  - telecom
+data_types:
+  - contact_data
+status: in_force
+effective_from: '2005-07-09'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - practice.sends_fax_advertisements == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  Sending an unsolicited advertisement to a telephone facsimile machine is unlawful unless the
+  advertisement is from a sender with an established business relationship with the recipient, and
+  the number was obtained and the opt-out notice given as (ii) and (iii) require.
+requirement_detail: >-
+  THE ESTABLISHED BUSINESS RELATIONSHIP IS A THREE-PART CONDITION, NOT A STANDALONE EXCUSE, and
+  reading clause (i) alone is how junk-fax defendants lose. The Junk Fax Prevention Act of 2005
+  wrote the EBR into the statute, but it made the exception conjunctive: the sender needs the
+  relationship under (i), a permitted route to the number under (ii), AND a conforming opt-out
+  notice under (iii). The second continuation to subparagraph (C) then removes the exception
+  entirely once the recipient has made a compliant opt-out request under paragraph (2)(E), so an EBR
+  does not survive an opt-out. Note what subparagraph (C) does NOT depend on: unlike subparagraphs
+  (A) and (B), it says nothing about dialling technology, so Facebook v. Duguid left it untouched —
+  a manually transmitted fax advertisement is squarely within it. The operative meaning also sits
+  partly in the definition of "unsolicited advertisement" in § 227(a)(5), which is why a fax
+  containing no commercial content is generally outside the prohibition regardless of any
+  relationship. The parallel FCC rule is 47 C.F.R. § 64.1200(a)(4), which carries the detailed
+  notice mechanics and a separate EBR definition at § 64.1200(f)(6) that differs from the
+  solicitation EBR at § 64.1200(f)(5).
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating the established business relationship as sufficient on its own. Clauses (i), (ii) and
+    (iii) are conjunctive, and a missing or non-conforming opt-out notice defeats the exception.
+  - >-
+    Assuming an EBR survives an opt-out request. The continuation to subparagraph (C) withdraws the
+    clause (i) and (ii) exception once a compliant paragraph (2)(E) request has been made.
+  - >-
+    Reading Facebook v. Duguid onto the fax prong. Subparagraph (C) has no autodialer element; the
+    decision construed the definition of automatic telephone dialing system, which (C) never uses.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 227(f)(1)
+  note: >-
+    § 227(f)(1)(A) expressly preserves more restrictive intrastate State law on the use of telephone
+    facsimile machines to send unsolicited advertisements. State junk-fax statutes therefore coexist
+    with, rather than yield to, § 227(b)(1)(C).
+enforcement:
+  enforcers:
+    - fcc
+    - state_ag
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Private action under § 227(b)(3); FCC forfeiture under 47 U.S.C. § 503(b); State AG action
+      under § 227(g).
+    range: >-
+      $500 per fax under § 227(b)(3), trebled for a wilful or knowing violation, with no statutory
+      cap.
+    note: >-
+      The § 227(b)(3) action has no due-care affirmative defence, unlike the do-not-call action
+      under § 227(c)(5).
+  statute_of_limitations: null

@@ -1,0 +1,28 @@
+{
+ "label": "18 U.S.C. \u00a7 2722",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": true,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2722.xml",
+ "raw_sha256": "efc28d268a28a98931b41f513a8b387d3c57d221e4f6348ae537d9dd2e8a30ac",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "/us/usc/t18/s2722/a",
+   "heading": "Procurement for Unlawful Purpose .\u2014",
+   "text": "It shall be unlawful for any person knowingly to obtain or disclose personal information, from a motor vehicle record, for any use not permitted under section 2721(b) of this title .",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "/us/usc/t18/s2722/b",
+   "heading": "False Representation .\u2014",
+   "text": "It shall be unlawful for any person to make false representation to obtain any personal information from an individual\u2019s motor vehicle record.",
+   "context": []
+  }
+ ]
+}

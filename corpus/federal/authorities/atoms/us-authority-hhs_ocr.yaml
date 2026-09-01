@@ -1,0 +1,131 @@
+id: us.authority.hhs_ocr
+schema_version: 1
+record_type: authority
+source:
+  citation: 42 U.S.C. § 1320d-5(a)(1)(A)
+  instrument_id: us.usc.t42
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/authorities/raw/42-u-s-c-1320d-5.xml
+  raw_sha256: c274a010be4669bfb71f440a0fbad5a81df1b6f753acf61a4b978b3fc5ff552b
+  text_file: corpus/federal/authorities/raw/42-u-s-c-1320d-5.txt
+  text_sha256: 82bcc60e02fb16e4a147a554fbf16972a61065c4ca8140c6e4606c23cf86d7cd
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/authorities/raw/42-u-s-c-1320d-5.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: Title 42. Positive-law status from the title's own <property role="is-positive-law"> element.
+  segment_sha256: 2093b9e74aba5b71495fc94c5954fc0a8cc31709a3bad77eed2f844deb158419
+verbatim_span: >-
+  in the case of a violation of such provision in which it is established that the person did not
+  know (and by exercising reasonable diligence would not have known) that such person violated such
+  provision, a penalty for each such violation of an amount that is at least the amount described in
+  paragraph (3)(A) but not to exceed the amount described in paragraph (3)(D);
+verification_status: verbatim_confirmed
+subject:
+  domain: I.A.4
+  lifecycle:
+    - I
+paragraph_path:
+  path:
+    - a
+    - '1'
+    - A
+  anchor: /us/usc/t42/s1320d–5/a/1/A
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element
+jurisdiction: US-FED
+jurisdiction_level: federal
+status: in_force
+effective_from: null
+effective_to: null
+amendment_history: []
+summary: >-
+  HHS may impose civil money penalties on a person who violates a HIPAA administrative
+  simplification provision, tiered by the person's culpability.
+authority:
+  id: us.authority.hhs_ocr
+  name: U.S. Department of Health and Human Services, Office for Civil Rights
+  short_name: HHS OCR
+  kind: federal_agency
+  statutory_source:
+    - 42 U.S.C. § 1320d-5 — civil money penalties
+    - 42 U.S.C. § 1320d-6 — criminal penalties (referred to DOJ)
+    - 42 U.S.C. § 1320d-2 — standards
+  jurisdiction: US-FED
+  sector_reach:
+    - HIPAA covered entities
+    - HIPAA business associates
+    - protected health information
+  excluded_from_reach:
+    - >-
+      entities that are neither covered entities nor business associates — a consumer health app
+      outside HIPAA is FTC territory, not OCR's
+  enforcement_powers:
+    - civil money penalties tiered by culpability
+    - corrective action plans and resolution agreements
+    - compliance reviews and complaint investigations
+  rulemaking_authority:
+    has: true
+    basis: 42 U.S.C. § 1320d-2 and HITECH
+    procedure: APA § 553 notice-and-comment
+    note: >-
+      The Privacy, Security and Breach Notification Rules are legislative rules with the force of
+      law.
+  penalty_authority:
+    structure: >-
+      tiered by culpability — did not know / reasonable cause / wilful neglect corrected / wilful
+      neglect uncorrected
+    range: null
+    inflation_adjusted: true
+    note: >-
+      Statutory figures in § 1320d-5(a)(3) are annually inflation-adjusted by rule. Verify the
+      current figures; never quote the statutory number as operative.
+  private_right_of_action:
+    exists: false
+    basis: null
+    note: >-
+      HIPAA confers no private right of action. Plaintiffs reach the same conduct through state
+      negligence and state UDAP, sometimes using HIPAA as the standard of care — which is a
+      different thing from enforcing HIPAA.
+    drives_litigation_risk: false
+  own_enforcement_power: true
+  operates_through: null
+derived_obligations: []
+differs_from: []
+related: []
+source_defects: []
+common_errors:
+  - >-
+    Assuming HIPAA gives patients a private right of action. It does not; state law claims are the
+    private vehicle.
+  - >-
+    Treating state Attorneys General as unable to enforce HIPAA. HITECH gave state AGs authority to
+    bring civil actions on behalf of residents.
+  - Quoting the statutory penalty figures as current. They are inflation-adjusted annually by rule.
+open_questions:
+  - >-
+    Criminal enforcement under § 1320d-6 is prosecuted by DOJ, not OCR. The authority record for
+    DOJ's role is not yet written.
+confidence: high
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Except as provided in subsection (b), the Secretary shall impose on any person who violates a
+      provision of this part—
+    citation: null
+    relation_note: null
+    path:
+      path:
+        - a
+        - '1'
+      anchor: /us/usc/t42/s1320d–5/a/1
+      derivation: structural
+      confidence: high
+      evidence: USLM element hierarchy

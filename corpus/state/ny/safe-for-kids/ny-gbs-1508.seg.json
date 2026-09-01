@@ -1,0 +1,38 @@
+{
+ "label": "NY GBS 1508",
+ "url": "https://legislation.nysenate.gov/api/3/laws/GBS/1508",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/safe-for-kids/raw/ny-gbs-1508.json",
+ "raw_sha256": "e3ce2f85ee4fde3b551e574fd483194094e28108c27edb95c15f1c26984a10e7",
+ "leaves": [
+  {
+   "path": [
+    "1"
+   ],
+   "anchor": "1508",
+   "section": "1508",
+   "confidence": "high",
+   "heading": "* \u00a7 1508. Remedies.",
+   "text": "No earlier than one hundred eighty days after the effective date of this article, whenever it appears to the attorney general, either upon complaint or otherwise, that any person, within or outside the state, has engaged in or is about to engage in any of the acts or practices stated to be unlawful in this article, the attorney general may bring an action or special proceeding in the name and on behalf of the people of the state of New York to enjoin any violation of this article, to obtain restitution of any moneys or property obtained directly or indirectly by any such violation, to obtain disgorgement of any profits or gains obtained directly or indirectly by any such violation, including but not limited to the destruction of unlawfully obtained data, to obtain damages caused directly or indirectly by any such violation, to obtain civil penalties of up to five thousand dollars per violation, and to obtain any such other and further relief as the court may deem proper, including preliminary relief.",
+   "context": [],
+   "section_heading": "* \u00a7 1508. Remedies.",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "2"
+   ],
+   "anchor": "1508",
+   "section": "1508",
+   "confidence": "high",
+   "heading": "* \u00a7 1508. Remedies.",
+   "text": "The attorney general shall maintain a website to receive complaints, information or referrals from members of the public concerning a covered operator's or social media platform's alleged compliance or non-compliance with the provisions of this article.",
+   "context": [],
+   "section_heading": "* \u00a7 1508. Remedies.",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  }
+ ]
+}

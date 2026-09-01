@@ -1,0 +1,952 @@
+{
+ "label": "16 CFR 681",
+ "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=681",
+ "format": "ecfr_xml",
+ "positive_law": null,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.xml",
+ "raw_sha256": "7fe86c7084a6fad1ad05bad984e729c15375a3b6261f7ae11298256bb2536c36",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "This section applies to financial institutions and creditors that are subject to administrative enforcement of the FCRA by the Federal Trade Commission pursuant to 15 U.S.C. 1681s(a)(1).",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "means a continuing relationship established by a person with a financial institution or creditor to obtain a product or service for personal, family, household or business purposes. Account includes:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "An extension of credit, such as the purchase of property or services involving a deferred payment; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "means a continuing relationship established by a person with a financial institution or creditor to obtain a product or service for personal, family, household or business purposes. Account includes:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "A deposit account.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "means a continuing relationship established by a person with a financial institution or creditor to obtain a product or service for personal, family, household or business purposes. Account includes:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "The term board of directors includes:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "In the case of a branch or agency of a foreign bank, the managing official in charge of the branch or agency; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "The term board of directors includes:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "In the case of any other creditor that does not have a board of directors, a designated employee at the level of senior management.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "The term board of directors includes:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "means:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "i"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "An account that a financial institution or creditor offers or maintains, primarily for personal, family, or household purposes, that involves or is designed to permit multiple payments or transactions, such as a credit card account, mortgage loan, automobile loan, margin account, cell phone account, utility account, checking account, or savings account; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "means:",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "Any other account that the financial institution or creditor offers or maintains for which there is a reasonably foreseeable risk to customers or to the safety and soundness of the financial institution or creditor from identity theft, including financial, operational, compliance, reputation, or litigation risks.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "means:",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "has the same meaning as in 15 U.S.C. 1681a(r)(5).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "has the same meaning as in 15 U.S.C. 1681m(e)(4).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "6"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "means a person that has a covered account with a financial institution or creditor.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "7"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "has the same meaning as in 15 U.S.C. 1681a(t).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "8"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "has the same meaning as in 16 CFR 603.2(a).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "9"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "means a pattern, practice, or specific activity that indicates the possible existence of identity theft.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "10"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "means a person that provides a service directly to the financial institution or creditor.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, and Appendix A, the following definitions apply:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "Each financial institution or creditor must periodically determine whether it offers or maintains covered accounts. As a part of this determination, a financial institution or creditor must conduct a risk assessment to determine whether it offers or maintains covered accounts described in paragraph (b)(3)(ii) of this section, taking into consideration:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "The methods it provides to open its accounts;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each financial institution or creditor must periodically determine whether it offers or maintains covered accounts. As a part of this determination, a financial institution or creditor must conduct a risk assessment to determine whether it offers or maintains covered accounts described in paragraph (b)(3)(ii) of this section, taking into consideration:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "The methods it provides to access its accounts; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each financial institution or creditor must periodically determine whether it offers or maintains covered accounts. As a part of this determination, a financial institution or creditor must conduct a risk assessment to determine whether it offers or maintains covered accounts described in paragraph (b)(3)(ii) of this section, taking into consideration:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "Its previous experiences with identity theft.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each financial institution or creditor must periodically determine whether it offers or maintains covered accounts. As a part of this determination, a financial institution or creditor must conduct a risk assessment to determine whether it offers or maintains covered accounts described in paragraph (b)(3)(ii) of this section, taking into consideration:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "Each financial institution or creditor that offers or maintains one or more covered accounts must develop and implement a written Identity Theft Prevention Program (Program) that is designed to detect, prevent, and mitigate identity theft in connection with the opening of a covered account or any existing covered account. The Program must be appropriate to the size and complexity of the financial institution or creditor and the nature and scope of its activities.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "2"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "The Program must include reasonable policies and procedures to:",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "Identify relevant Red Flags for the covered accounts that the financial institution or creditor offers or maintains, and incorporate those Red Flags into its Program;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Program must include reasonable policies and procedures to:",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "Detect Red Flags that have been incorporated into the Program of the financial institution or creditor;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Program must include reasonable policies and procedures to:",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "Respond appropriately to any Red Flags that are detected pursuant to paragraph (d)(2)(ii) of this section to prevent and mitigate identity theft; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Program must include reasonable policies and procedures to:",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "Ensure the Program (including the Red Flags determined to be relevant) is updated periodically, to reflect changes in risks to customers and to the safety and soundness of the financial institution or creditor from identity theft.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Program must include reasonable policies and procedures to:",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "Each financial institution or creditor that is required to implement a Program must provide for the continued administration of the Program and must:",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "1"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "Obtain approval of the initial written Program from either its board of directors or an appropriate committee of the board of directors;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each financial institution or creditor that is required to implement a Program must provide for the continued administration of the Program and must:",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "Involve the board of directors, an appropriate committee thereof, or a designated employee at the level of senior management in the oversight, development, implementation and administration of the Program;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each financial institution or creditor that is required to implement a Program must provide for the continued administration of the Program and must:",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "3"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "Train staff, as necessary, to effectively implement the Program; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each financial institution or creditor that is required to implement a Program must provide for the continued administration of the Program and must:",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "4"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "Exercise appropriate and effective oversight of service provider arrangements.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each financial institution or creditor that is required to implement a Program must provide for the continued administration of the Program and must:",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": null,
+   "section": "681.1",
+   "confidence": "high",
+   "heading": "&#xA7; 681.1 Duties regarding the detection, prevention, and mitigation of identity theft.",
+   "text": "Each financial institution or creditor that is required to implement a Program must consider the guidelines in appendix A of this part and include in its Program those guidelines that are appropriate.",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "681.2",
+   "confidence": "high",
+   "heading": "&#xA7; 681.2 Duties of card issuers regarding changes of address.",
+   "text": "This section applies to a person described in \u00a7 681.1(a) that issues a debit or credit card (card issuer).",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "681.2",
+   "confidence": "high",
+   "heading": "&#xA7; 681.2 Duties of card issuers regarding changes of address.",
+   "text": "For purposes of this section:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "681.2",
+   "confidence": "high",
+   "heading": "&#xA7; 681.2 Duties of card issuers regarding changes of address.",
+   "text": "means a consumer who has been issued a credit or debit card.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "681.2",
+   "confidence": "high",
+   "heading": "&#xA7; 681.2 Duties of card issuers regarding changes of address.",
+   "text": "means reasonably understandable and designed to call attention to the nature and significance of the information presented.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "681.2",
+   "confidence": "high",
+   "heading": "&#xA7; 681.2 Duties of card issuers regarding changes of address.",
+   "text": "A card issuer must establish and implement reasonable policies and procedures to assess the validity of a change of address if it receives notification of a change of address for a consumer's debit or credit card account and, within a short period of time afterwards (during at least the first 30 days after it receives such notification), the card issuer receives a request for an additional or replacement card for the same account. Under these circumstances, the card issuer may not issue an additional or replacement card, until, in accordance with its reasonable policies and procedures and for the purpose of assessing the validity of the change of address, the card issuer:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "681.2",
+   "confidence": "high",
+   "heading": "&#xA7; 681.2 Duties of card issuers regarding changes of address.",
+   "text": "Notifies the cardholder of the request:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A card issuer must establish and implement reasonable policies and procedures to assess the validity of a change of address if it receives notification of a change of address for a consumer's debit or credit card account and, within a short period of time afterwards (during at least the first 30 days after it receives such notification), the card issuer receives a request for an additional or replacement card for the same account. Under these circumstances, the card issuer may not issue an additional or replacement card, until, in accordance with its reasonable policies and procedures and for the purpose of assessing the validity of the change of address, the card issuer:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "i",
+    "A"
+   ],
+   "anchor": null,
+   "section": "681.2",
+   "confidence": "high",
+   "heading": "&#xA7; 681.2 Duties of card issuers regarding changes of address.",
+   "text": "At the cardholder's former address; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A card issuer must establish and implement reasonable policies and procedures to assess the validity of a change of address if it receives notification of a change of address for a consumer's debit or credit card account and, within a short period of time afterwards (during at least the first 30 days after it receives such notification), the card issuer receives a request for an additional or replacement card for the same account. Under these circumstances, the card issuer may not issue an additional or replacement card, until, in accordance with its reasonable policies and procedures and for the purpose of assessing the validity of the change of address, the card issuer:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Notifies the cardholder of the request:",
+     "path": [
+      "c",
+      "1",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "i",
+    "B"
+   ],
+   "anchor": null,
+   "section": "681.2",
+   "confidence": "high",
+   "heading": "&#xA7; 681.2 Duties of card issuers regarding changes of address.",
+   "text": "By any other means of communication that the card issuer and the cardholder have previously agreed to use; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A card issuer must establish and implement reasonable policies and procedures to assess the validity of a change of address if it receives notification of a change of address for a consumer's debit or credit card account and, within a short period of time afterwards (during at least the first 30 days after it receives such notification), the card issuer receives a request for an additional or replacement card for the same account. Under these circumstances, the card issuer may not issue an additional or replacement card, until, in accordance with its reasonable policies and procedures and for the purpose of assessing the validity of the change of address, the card issuer:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Notifies the cardholder of the request:",
+     "path": [
+      "c",
+      "1",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "681.2",
+   "confidence": "high",
+   "heading": "&#xA7; 681.2 Duties of card issuers regarding changes of address.",
+   "text": "Provides to the cardholder a reasonable means of promptly reporting incorrect address changes; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A card issuer must establish and implement reasonable policies and procedures to assess the validity of a change of address if it receives notification of a change of address for a consumer's debit or credit card account and, within a short period of time afterwards (during at least the first 30 days after it receives such notification), the card issuer receives a request for an additional or replacement card for the same account. Under these circumstances, the card issuer may not issue an additional or replacement card, until, in accordance with its reasonable policies and procedures and for the purpose of assessing the validity of the change of address, the card issuer:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": null,
+   "section": "681.2",
+   "confidence": "high",
+   "heading": "&#xA7; 681.2 Duties of card issuers regarding changes of address.",
+   "text": "Otherwise assesses the validity of the change of address in accordance with the policies and procedures the card issuer has established pursuant to \u00a7 681.1 of this part.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A card issuer must establish and implement reasonable policies and procedures to assess the validity of a change of address if it receives notification of a change of address for a consumer's debit or credit card account and, within a short period of time afterwards (during at least the first 30 days after it receives such notification), the card issuer receives a request for an additional or replacement card for the same account. Under these circumstances, the card issuer may not issue an additional or replacement card, until, in accordance with its reasonable policies and procedures and for the purpose of assessing the validity of the change of address, the card issuer:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": null,
+   "section": "681.2",
+   "confidence": "high",
+   "heading": "&#xA7; 681.2 Duties of card issuers regarding changes of address.",
+   "text": "A card issuer may satisfy the requirements of paragraph (c) of this section if it validates an address pursuant to the methods in paragraph (c)(1) or (c)(2) of this section when it receives an address change notification, before it receives a request for an additional or replacement card.",
+   "context": []
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": null,
+   "section": "681.2",
+   "confidence": "high",
+   "heading": "&#xA7; 681.2 Duties of card issuers regarding changes of address.",
+   "text": "Any written or electronic notice that the card issuer provides under this paragraph must be clear and conspicuous and provided separately from its regular correspondence with the cardholder.",
+   "context": []
+  }
+ ]
+}

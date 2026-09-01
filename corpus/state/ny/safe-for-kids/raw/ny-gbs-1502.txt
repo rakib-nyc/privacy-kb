@@ -1,0 +1,6 @@
+* § 1502. Overnight notifications. It shall be unlawful for the
+covered operator of an addictive social media platform to, between the
+hours of 12 AM Eastern and 6 AM Eastern, send notifications concerning
+an addictive feed to a covered minor unless the operator has obtained
+verifiable parental consent to send such nighttime notifications.
+  * NB Effective January 25, 2027

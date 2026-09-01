@@ -1,0 +1,29 @@
+id: ev.authority.006
+question: We violated a HIPAA rule. HHS is investigating. Can anyone else come after us, and can our patients
+  sue?
+trap: 'Two errors at once: assuming HHS is the only enforcer, and assuming patients can sue under HIPAA.
+  State AGs got HIPAA enforcement authority under HITECH, and HIPAA has no private right of action.'
+rubric:
+- name: HHS OCR is in the corpus
+  record_exists: us.authority.hhs_ocr
+- name: HIPAA confers no private right of action
+  record: us.authority.hhs_ocr
+  path: authority.private_right_of_action.exists
+  equals: false
+- name: the note explains the state-law route patients actually use
+  record: us.authority.hhs_ocr
+  path: authority.private_right_of_action.note
+  contains: standard of care
+- name: state AG enforcement is recorded as a common error to miss
+  record: us.authority.hhs_ocr
+  path: common_errors
+  contains: state Attorneys General
+- name: penalties are tiered by culpability
+  record: us.authority.hhs_ocr
+  path: authority.penalty_authority.structure
+  contains: culpability
+- name: the inflation-adjustment trap is recorded
+  record: us.authority.hhs_ocr
+  path: authority.penalty_authority.note
+  contains: inflation-adjusted
+all_pass: true

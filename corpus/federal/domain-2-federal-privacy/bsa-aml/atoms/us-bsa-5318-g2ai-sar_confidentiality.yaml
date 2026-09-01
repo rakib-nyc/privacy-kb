@@ -1,0 +1,181 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fincen
+  - treasury
+sector:
+  - financial
+data_types:
+  - financial
+  - account_information
+status: in_force
+effective_from: '2021-01-01'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+federal_relationship: null
+interpreted_by: []
+confidence: high
+preemption:
+  posture: express_partial
+  authority: 31 U.S.C. § 5318(g)(3)(A)
+  note: >-
+    The safe harbour in (g)(3)(A) immunises the institution against liability under any law or
+    regulation of the United States, any constitution, law or regulation of any State, and any
+    contract or other legally enforceable agreement, both for the disclosure and for the failure to
+    notify its subject. So a state notice duty or a contractual promise to tell the customer cannot
+    be enforced against the institution for staying silent here. It is express and partial, not
+    field: every other state or federal privacy duty the institution owes survives untouched.
+enforcement:
+  enforcers:
+    - fincen
+    - federal_agencies
+    - doj
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil money penalties and criminal penalties under the Bank Secrecy Act's own penalty
+      sections, plus supervisory enforcement by the institution's Federal functional regulator.
+      Those penalty sections are not extracted in this corpus.
+    range: null
+    note: >-
+      No private right of action, and the safe harbour in § 5318(g)(3)(A) cuts the other way too: a
+      customer suing over the non-disclosure is met with an express immunity.
+  statute_of_limitations: null
+id: us.bsa.5318.g2ai.sar_confidentiality
+source:
+  citation: 31 U.S.C. § 5318(g)(2)(A)(i)
+  instrument_id: us.bsa_aml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc31@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/bsa-aml/raw/31-u-s-c-5318.xml
+  raw_sha256: a320d0d41eaa99edb45a25939fb506e6a595646bc84e13ab056a6588b3027562
+  text_file: corpus/federal/domain-2-federal-privacy/bsa-aml/raw/31-u-s-c-5318.txt
+  text_sha256: e9d27ea61c0e94ee7c497e73532b4fcfaf72008adb3865115f5b3be2937bed07
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/bsa-aml/raw/31-u-s-c-5318.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: ba798dab2ae4f57b0db3cd5a1a7660d07a9d22ad1b05cabfbafb5eb6672a723b
+verbatim_span: >-
+  neither the financial institution, director, officer, employee, or agent of such institution
+  (whether or not any such person is still employed by the institution), nor any other current or
+  former director, officer, or employee of, or contractor for, the financial institution or other
+  reporting person, may notify any person involved in the transaction that the transaction has been
+  reported or otherwise reveal any information that would reveal that the transaction has been
+  reported,; and
+paragraph_path:
+  path:
+    - g
+    - '2'
+    - A
+    - i
+  anchor: /us/usc/t31/s5318/g/2/A/i
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: conditions
+    verbatim_span: >-
+      If a financial institution or any director, officer, employee, or agent of any financial
+      institution, voluntarily or pursuant to this section or any other authority, reports a
+      suspicious transaction to a government agency—
+    citation: 31 U.S.C. § 5318(g)(2)(A)
+    path:
+      path:
+        - g
+        - '2'
+        - A
+      anchor: /us/usc/t31/s5318/g/2/A
+      derivation: structural
+      confidence: high
+      evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: III.A.1
+  lifecycle:
+    - VI
+applies_if:
+  all:
+    - entity.is_financial_institution == true
+    - event.type == 'suspicious_transaction_reported'
+obligation_type: prohibit
+summary: >-
+  Once a suspicious transaction has been reported, the institution and its people may not notify
+  anyone involved in the transaction that the report was made, or reveal any information that would
+  reveal it.
+requirement_detail: >-
+  A PRIVACY CONSTRAINT CONFLICT, NOT A PRIVACY DUTY, AND THAT IS WHY IT SITS IN THIS CORPUS. §
+  5318(g)(1) lets the Secretary compel a financial institution to report any suspicious transaction;
+  this paragraph then makes the existence of that report secret from the person it is about, so that
+  neither the institution nor any current or former director, officer, employee or contractor "may
+  notify any person involved in the transaction that the transaction has been reported" or
+  "otherwise reveal any information that would reveal that the transaction has been reported". The
+  silence runs both ways: (g)(2)(A)(ii) imposes the same bar on government personnel who learn of
+  the report. § 5318(g)(3)(A) then immunises the institution both for the disclosure and for the
+  failure to notify its subject, which is the tell — conduct that every other instrument here would
+  treat as a notice failure is affirmatively protected. OPERATIONAL CONSEQUENCE: where this applies
+  it overrides the transparency the rest of this corpus assumes. A subject access response, an
+  explanation of an account freeze or closure, an incident notification, even the phrasing of a
+  privacy notice must not reveal that a report exists; the only compliant answer neither confirms
+  nor denies. It removes one specific disclosure from the set of permitted answers — it does not
+  relieve the institution of any other privacy duty.
+exemptions:
+  - id: usc.31.5318.g2Bi.employment_reference
+    type: activity_level
+    scope: >-
+      (g)(2)(B)(i) is the one place the bar gives way. Notwithstanding subparagraph (A) in any other
+      context, the institution may include information that was included in a report in a written
+      employment reference provided under section 18(w) of the Federal Deposit Insurance Act, or in
+      a written termination notice or employment reference provided under the rules of an SRO
+      registered with the SEC or the CFTC. The relief is over the UNDERLYING INFORMATION only: the
+      continuation to (g)(2)(B) provides that such a reference or notice may not disclose that the
+      information was also in a report or that a report was made, so the secrecy of the report
+      itself is never lifted. (g)(2)(B)(ii) adds that clause (i) creates no affirmative duty to
+      include anything.
+    source_citation: 31 U.S.C. § 5318(g)(2)(B)(i)
+    verbatim_span: >-
+      Notwithstanding the application of subparagraph (A) in any other context, subparagraph (A)
+      shall not be construed as prohibiting any financial institution, or any director, officer,
+      employee, or agent of such institution, from including information that was included in a
+      report to which subparagraph (A) applies—
+    burden_of_proof: entity
+    applies_if:
+      any:
+        - practice.provides_written_employment_reference == true
+        - practice.provides_written_termination_notice == true
+related: []
+common_errors:
+  - >-
+    Reading § 5318(g) as a privacy protection for the customer. It is the opposite: (g)(1) compels
+    the report and (g)(2)(A)(i) forbids telling the customer it exists.
+  - >-
+    Answering an access or explanation request as fully as the customer asks. The bar covers not
+    only saying that a report was filed but any information that "would reveal that the transaction
+    has been reported", so a partial or hedged answer can violate it as readily as an explicit one.
+  - >-
+    Treating the bar as absolute. (g)(2)(B)(i) lets the underlying information go into a written
+    employment reference or termination notice — but never the fact that a report was made.
+open_questions:
+  - >-
+    effective_from records 1 Jan 2021, the date of the most recent public law in this section's
+    source credit (Pub. L. 116-283). The confidentiality bar itself is older; per-clause amendment
+    tracing was not performed in this pass, so do not rely on this date for conduct before 2021
+    without checking the amendment notes.
+  - >-
+    The implementing SAR-confidentiality regulations issued by FinCEN and by the Federal functional
+    regulators are agency-level instruments under invariant I7 and are not extracted here. They are
+    where the operational detail (what may be shared within a corporate group, and with whom) lives.

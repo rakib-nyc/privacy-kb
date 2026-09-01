@@ -1,0 +1,191 @@
+id: us.common_rule.46_116.a1.informed_consent
+schema_version: 1
+record_type: obligation
+source:
+  citation: 45 C.F.R. § 46.116(a)(1)
+  instrument_id: us.common_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=46
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  raw_sha256: cfe25d02a8ade401b1350f591c4654b85ab03c47f66297047feb0a6e1f0e543d
+  text_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+  text_sha256: 2e9f64e48744208a67bbad88f993394ee3ae928f07e1396d552d5a6c8d574fa1
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 45 part 46, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: 60aa95faba86ba3c22a9f5ab31c21a4d7ba91875615eaaaf5f1242cd0b400e22
+verbatim_span: >-
+  Before involving a human subject in research covered by this policy, an investigator shall obtain
+  the legally effective informed consent of the subject or the subject's legally authorized
+  representative.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '1'
+  anchor: '46.116'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from flat <P> siblings by tools/extract.py; resolves to exactly one
+    leaf inside the section
+subject:
+  domain: II.B.3
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ohrp
+  - federal_agencies
+sector:
+  - health
+data_types:
+  - personal_information
+  - health
+status: in_force
+effective_from: '2019-01-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.conducts_human_subjects_research == true
+    - law.research_subject_to_common_rule == true
+applies_to_role: controller
+obligation_type: obtain_consent
+summary: >-
+  Before involving a human subject in covered research, an investigator must obtain the legally
+  effective informed consent of the subject or the subject's legally authorized representative.
+requirement_detail: >-
+  RESEARCH-CONTEXT PRIVACY LIVES HERE, NOT IN HIPAA, and the two are cumulative rather than
+  alternative. HIPAA reaches a covered entity's protected health information; this policy reaches
+  the research activity itself, whoever runs it, once the institution is engaged in research
+  conducted or supported by a federal department or agency that has adopted the policy. The
+  requirement is "legally effective informed consent", which imports state law on capacity and on
+  who may act as a legally authorized representative — so the same protocol can be compliant in one
+  state and defective in another, and this is the point non-specialists miss. Consent must be
+  obtained BEFORE involvement, which makes retrospective consent for data already collected
+  impossible under this paragraph; the routes for existing data are the § 46.116(f) waiver or a §
+  46.104 exemption, and each has to be reached deliberately rather than assumed. Note finally what §
+  46.116(f)(2) protects: an IRB may alter or omit elements of consent, but it may not alter the
+  general requirements in paragraph (a) themselves.
+deadline: null
+exemptions:
+  - id: cfr.45.46_116.f1.irb_waiver_of_consent
+    type: activity_level
+    scope: >-
+      An IRB may waive the requirement to obtain informed consent for research under paragraphs (a)
+      through (c), but only where it finds and documents the five criteria in (f)(3) — minimal risk,
+      impracticability without the waiver, impracticability without identifiable data, no adverse
+      effect on subjects' rights and welfare, and debriefing where appropriate. This is a
+      determination the IRB must make and record, not a status the investigator can assert, and it
+      is the correct route for secondary use of existing identifiable data.
+    source_citation: 45 C.F.R. § 46.116(f)(1)
+    verbatim_span: >-
+      An IRB may waive the requirement to obtain informed consent for research under paragraphs (a)
+      through (c) of this section, provided the IRB satisfies the requirements of paragraph (f)(3)
+      of this section. If an individual was asked to provide broad consent for the storage,
+      maintenance, and secondary research use of identifiable private information or identifiable
+      biospecimens in accordance with the requirements at paragraph (d) of this section, and refused
+      to consent, an IRB cannot waive consent for the storage, maintenance, or secondary research
+      use of the identifiable private information or identifiable biospecimens.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - event.irb_waived_informed_consent == true
+  - id: cfr.45.46_104.d.exempt_research_categories
+    type: activity_level
+    scope: >-
+      Section 46.104(d) removes eight categories of human-subjects research from the policy
+      altogether, including much educational, survey, benign behavioural and secondary-use research.
+      This is relief from the POLICY, not merely from the consent section, so an exempt project owes
+      neither IRB review nor consent under this part — which is why the exemption determination is
+      the highest-leverage decision in the whole framework, and why several of the categories in
+      (d)(7) and (d)(8) are conditioned on broad consent and a limited IRB review despite being
+      called exempt.
+    source_citation: 45 C.F.R. § 46.104(d)
+    verbatim_span: >-
+      Except as described in paragraph (a) of this section, the following categories of human
+      subjects research are exempt from this policy:
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - practice.research_is_46_104_exempt_category == true
+related:
+  - us.common_rule.46_116.b5.confidentiality_statement
+  - us.common_rule.46_111.a7.privacy_and_confidentiality
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Assuming a HIPAA authorization discharges the Common Rule. They are separate instruments with
+    separate elements, and § 46.101(e) requires compliance with the more protective federal rule.
+  - >-
+    Reading the consent requirement as federal-law-only. It requires consent that is legally
+    effective, which imports state rules on capacity and on legally authorized representatives.
+  - >-
+    Consenting subjects after enrolment or after the data were collected. Consent is owed before
+    involvement; existing data go through the § 46.116(f) waiver or a § 46.104 exemption.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 45 C.F.R. § 46.101(f)
+  note: >-
+    Section 46.101(f) states that the policy does not affect state or local laws or regulations,
+    including tribal law, that provide additional protections for human subjects, and 46.101(e)
+    requires compliance with more protective federal law. The Common Rule is therefore a floor in
+    both directions, which is why a HIPAA authorisation and an IRB-approved consent are cumulative
+    rather than alternative.
+enforcement:
+  enforcers:
+    - hhs_ohrp
+    - federal_agencies
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Administrative, through the funding relationship. The federal department or agency conducting
+      or supporting the research enforces against the institution's assurance; for HHS-supported
+      research this is the Office for Human Research Protections, whose sanctions run from a
+      determination letter and corrective action plan to restriction or withdrawal of the assurance,
+      which stops federally supported research at the institution.
+    range: null
+    note: >-
+      NO PRIVATE RIGHT OF ACTION under the Common Rule. A subject's own remedy is a state-law claim
+      in negligence or battery, or a state research-consent statute preserved by § 46.101(f); the
+      regulation supplies the standard of care rather than the cause of action.
+  statute_of_limitations: null
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      General requirements for informed consent, whether written or oral, are set forth in this
+      paragraph and apply to consent obtained in accordance with the requirements set forth in
+      paragraphs (b) through (d) of this section. Broad consent may be obtained in lieu of informed
+      consent obtained in accordance with paragraphs (b) and (c) of this section only with respect
+      to the storage, maintenance, and secondary research uses of identifiable private information
+      and identifiable biospecimens. Waiver or alteration of consent in research involving public
+      benefit and service programs conducted by or subject to the approval of state or local
+      officials is described in paragraph (e) of this section. General waiver or alteration of
+      informed consent is described in paragraph (f) of this section. Except as provided elsewhere
+      in this policy:
+    citation: 45 C.F.R. § 46.116(a)
+    path:
+      path:
+        - a
+      anchor: '46.116'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designators reconstructed from flat <P> siblings by tools/extract.py; resolves to exactly
+        one leaf inside the section

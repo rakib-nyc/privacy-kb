@@ -1,0 +1,177 @@
+id: us.rfpa.3404.a.customer_authorization
+schema_version: 1
+record_type: obligation
+source:
+  citation: 12 U.S.C. § 3404(a)
+  instrument_id: us.rfpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3404.xml
+  raw_sha256: 7c707de8e99ad4f0802619066c3b14ca7014deb9bbb7e7e04e530597d5f2f17a
+  text_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3404.txt
+  text_sha256: 23e5dc30b025bff973a1edbc254a68393923d09200b9b25cf376e07113a8911e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3404.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1 (12-u-s-c-3404)
+    result: structured_source_used
+    note: null
+verbatim_span: A customer may authorize disclosure under section 3402(1) of this title if he furnishes to the
+  financial institution and to the Government authority seeking to obtain such disclosure a signed and dated statement
+  which—
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+  - a
+  anchor: /us/usc/t12/s3404/a
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+- position: follows
+  relation: conditions
+  verbatim_span: authorizes such disclosure for a period not in excess of three months;
+  citation: 12 U.S.C. § 3404(a)(1)
+  relation_note: null
+  path:
+    path:
+    - a
+    - '1'
+    anchor: /us/usc/t12/s3404/a/1
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+- position: follows
+  relation: conditions
+  verbatim_span: states that the customer may revoke such authorization at any time before the financial records
+    are disclosed;
+  citation: 12 U.S.C. § 3404(a)(2)
+  relation_note: null
+  path:
+    path:
+    - a
+    - '2'
+    anchor: /us/usc/t12/s3404/a/2
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+- position: follows
+  relation: conditions
+  verbatim_span: identifies the financial records which are authorized to be disclosed;
+  citation: 12 U.S.C. § 3404(a)(3)
+  relation_note: null
+  path:
+    path:
+    - a
+    - '3'
+    anchor: /us/usc/t12/s3404/a/3
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+- position: follows
+  relation: conditions
+  verbatim_span: specifies the purposes for which, and the Government authority to which, such records may be
+    disclosed; and
+  citation: 12 U.S.C. § 3404(a)(4)
+  relation_note: null
+  path:
+    path:
+    - a
+    - '4'
+    anchor: /us/usc/t12/s3404/a/4
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+- position: follows
+  relation: conditions
+  verbatim_span: states the customer’s rights under this chapter.
+  citation: 12 U.S.C. § 3404(a)(5)
+  relation_note: null
+  path:
+    path:
+    - a
+    - '5'
+    anchor: /us/usc/t12/s3404/a/5
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: III.A.1
+  lifecycle:
+  - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+- federal_agencies
+sector:
+- financial
+data_types:
+- financial
+status: in_force
+effective_from: '1979-03-10'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+  - entity.is_government_authority == true
+  - data.is_financial_record == true
+applies_to_role: controller
+obligation_type: obtain_consent
+summary: Customer authorization is a valid route to financial records only if the customer furnishes both the
+  financial institution and the Government authority a signed and dated statement that runs no more than three
+  months, is revocable, identifies the records, specifies the purposes and the recipient authority, and states
+  the customer's rights under the chapter.
+requirement_detail: RFPA FORMALISES CONSENT TO A DEGREE MOST MODERN PRIVACY STATUTES DO NOT. The authorization
+  must be signed AND dated, and it must be furnished to two recipients — the financial institution and the Government
+  authority seeking disclosure — so a statement given only to the investigator does not qualify. Paragraph (1)
+  caps its life at three months, which makes a standing or open-ended consent legally impossible rather than merely
+  disfavoured; paragraph (2) requires the statement itself to recite revocability at any time before disclosure;
+  paragraphs (3) and (4) require it to identify the records and to name both the purposes and the Government authority,
+  so a blanket authorization covering unspecified future requests fails on its face. Paragraph (5) then requires
+  the statement to state the customer's rights under the chapter, which makes the consent instrument itself a
+  notice instrument. Read with § 3404(b), which forbids conditioning banking services on giving one, this is a
+  markedly stronger consent standard than the FCRA or GLBA analogues.
+deadline: null
+exemptions: []
+related:
+- us.rfpa.3402.access_prohibition
+- us.rfpa.3404.b.no_condition_of_business
+- us.rfpa.3404.c.disclosure_record_access
+federal_relationship: null
+interpreted_by: []
+common_errors:
+- Treating a general consent buried in an account agreement as an RFPA authorization. § 3404(a) requires a separate
+  signed and dated statement with specified contents, and § 3404(b) forbids requiring it as a condition of doing
+  business.
+- Relying on an authorization more than three months old. Paragraph (1) caps the authorized period at three months.
+- Giving the statement only to the Government authority. It must be furnished to the financial institution as
+  well.
+- Expecting a general RFPA notice from the bank. As enacted the chapter also contained § 3404(d), requiring financial
+  institutions to notify all of their customers of their rights under it; the amendment note in the USLM source
+  records that Pub. L. 96-3 struck that subsection in 1979, leaving only the demand-specific notices in §§ 3405(2),
+  3406(b) and 3407(2).
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 12 U.S.C. § 3402
+  note: 'Recorded as floor pending a provision-level preemption analysis for this instrument; no express ceiling
+    clause was found in the sections extracted. RFPA binds federal Government authorities, so the ordinary state-law
+    displacement question does not arise in the usual form: a state statute restricting state investigators is
+    not in conflict with it.'
+enforcement:
+  enforcers:
+  - federal_agencies
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: 12 U.S.C. § 3417 (civil penalties and liability) has not been extracted into this corpus, so penalty
+      exposure and any customer damages action are UNASSESSED rather than absent. private_right_of_action is recorded
+      false because nothing extracted establishes one, not because the statute was read to withhold one.
+  statute_of_limitations: null

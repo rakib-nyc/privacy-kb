@@ -1,0 +1,121 @@
+id: us.cpni.64_2008.c.notification_content
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 C.F.R. § 64.2008(c)
+  instrument_id: us.cpni
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: 57e22266e9a3168cbebbc441e5b7bc2f8c27ad64788a324b91d14cd762d4c476
+verbatim_span: >-
+  Customer notification must provide sufficient information to enable the customer to make an
+  informed decision as to whether to permit a carrier to use, disclose, or permit access to, the
+  customer's CPNI.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - c
+  anchor: '64.2008'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator run reconstructed from flat <P> siblings; resolves to exactly one leaf within the
+    section (gate 23)
+context_not_required: Paragraph (c) is itself the chapeau governing (c)(1)-(c)(10); no ancestor text qualifies it.
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - cpni
+status: in_force
+effective_from: '2017-09-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history:
+  - date: '2017-09-21'
+    note: >-
+      Source note printed at the head of subpart U — Privacy of Customer Information: "82 FR 44419,
+      Sept. 21, 2017, unless otherwise noted." The section carries no separate CITA, so 2017-09-21
+      is the earliest date the fetched source itself asserts for this text.
+    source_url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+applies_if:
+  all:
+    - entity.is_telecommunications_carrier == true
+    - data.is_cpni == true
+applies_to_role: controller
+obligation_type: disclose
+summary: >-
+  Customer notification soliciting CPNI approval must provide sufficient information to enable the
+  customer to make an informed decision whether to permit the carrier to use, disclose or permit
+  access to that customer's CPNI.
+requirement_detail: >-
+  THIS PARAGRAPH IS THE STANDARD, AND (c)(1) THROUGH (c)(10) ARE ITS FLOOR RATHER THAN ITS CEILING —
+  a notice that recites all ten items and still leaves the customer unable to decide fails paragraph
+  (c). The enumerated items are more prescriptive than an ordinary privacy notice: (c)(1) requires
+  the notice to state that the carrier has a DUTY under federal law to protect CPNI confidentiality,
+  (c)(3) requires it to say that denying approval will not affect the provision of service, and
+  (c)(8) affirmatively PROHIBITS language discouraging a customer from freezing third-party access.
+  That last one is the reason a marketing-drafted CPNI notice so often fails: the rule regulates
+  persuasion, not just content. The 30-day opt-out waiting period and the biennial re-notice sit in
+  paragraph (d), the opt-in route in (e), and the one-time oral route in (f), so paragraph (c) is
+  the content standard common to all three approval mechanisms rather than a rule about any one of
+  them. Because § 222(c)(1) permits use only with customer approval or within the enumerated
+  purposes, a defective notice does not merely breach § 64.2008 — it invalidates the approval and
+  converts every downstream use into a statutory violation.
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating (c)(1)–(c)(10) as a checklist that discharges paragraph (c). The enumerated items are
+    minimums under a sufficiency standard.
+  - >-
+    Adding language that encourages the customer not to freeze third-party access. Paragraph (c)(8)
+    prohibits it outright.
+  - >-
+    Scoping the duty to opt-out notices. Paragraph (c) governs the content of every CPNI approval
+    notification, including the opt-in route under (e) and the one-time oral route under (f).
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 222
+  note: >-
+    Subpart U implements 47 U.S.C. § 222 and states no express preemption outside § 64.2011(f).
+    Recorded as a floor pending a provision-level analysis; the Communications Act's own limits on
+    State regulation of interstate service, not this rule, are what constrain a more demanding State
+    notice requirement.
+enforcement:
+  enforcers:
+    - fcc
+  private_right_of_action: false
+  penalty:
+    structure: FCC forfeiture under 47 U.S.C. § 503(b); Enforcement Bureau consent decrees.
+    range: null
+    note: >-
+      A defective notice also undermines the approval it solicits, exposing the carrier to a §
+      222(c)(1) use-and-disclosure violation for every downstream use.
+  statute_of_limitations: null
