@@ -1,0 +1,134 @@
+id: us.facta.disposal.682_3.examples_are_not_requirements
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 682.3(b)(3)
+  instrument_id: us.facta.disposal_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=682
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/facta-disposal-rule/raw/16-cfr-682.xml
+  raw_sha256: 921ba44717404d57c5b20d3c6e93e2c502e0e2ea94b87ed39639eef5961e2348
+  text_file: corpus/federal/domain-2-federal-privacy/facta-disposal-rule/raw/16-cfr-682.txt
+  text_sha256: 6f792b0ce13b5842d4177357f2fa44eea2fff21be45f1ba8d5386803ac898266
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/facta-disposal-rule/raw/16-cfr-682.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 52b490945ec37dc47a548149109cd839e8069a6d400f334879e55a7ba758c092
+verbatim_span: >-
+  After due diligence, entering into and monitoring compliance with a contract with another party
+  engaged in the business of record destruction to dispose of material, specifically identified as
+  consumer information, in a manner consistent with this rule. In this context, due diligence could
+  include reviewing an independent audit of the disposal company's operations and/or its compliance
+  with this rule, obtaining information about the disposal company from several references or other
+  reliable sources, requiring that the disposal company be certified by a recognized trade
+  association or similar third party, reviewing and evaluating the disposal company's information
+  security policies or procedures, or taking other appropriate measures to determine the competency
+  and integrity of the potential disposal company.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+    - '3'
+  anchor: '682.3'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+jurisdiction: US-FED
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Citing this paragraph as a due-diligence REQUIREMENT. It is an example. The requirement is §
+    682.3(a)'s reasonable-measures standard.
+  - >-
+    Assuming that following this example is sufficient. The stem says the examples are not
+    exclusive; reasonableness is still judged against the standard.
+open_questions:
+  - >-
+    This atom exists partly as a worked demonstration of the operative_context mechanism: without
+    its stem it is verbatim and substantively wrong, and it passed every gate in the C0 spike before
+    gate 18 existed.
+  - >-
+    PREDICATE CORRECTED 2026-08-19. This atom predicated on a "disposal" namespace the engine has
+    never known, so it was valid, evaluable and incapable of ever being true — it could not have
+    applied to any query. Moved to practice.disposal_method, which is where conduct facts live for
+    every other atom in the corpus. Found by gate 28, not by a failing test.
+confidence: high
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Examples. Reasonable measures to protect against unauthorized access to or use of consumer
+      information in connection with its disposal include the following examples. These examples are
+      illustrative only and are not exclusive or exhaustive methods for complying with the rule in
+      this part.
+    citation: null
+    relation_note: null
+    path:
+      path:
+        - b
+      anchor: null
+      derivation: reconstructed
+      confidence: high
+      evidence: designator sequence over flat <P> siblings
+subject:
+  domain: II.C.1
+  lifecycle:
+    - IV
+regulator:
+  - ftc
+sector:
+  - consumer_reporting
+data_types:
+  - consumer_report
+  - consumer_information
+status: in_force
+effective_from: '2005-06-01'
+applies_if:
+  all:
+    - entity.maintains_or_possesses_consumer_information == true
+    - practice.disposal_method == 'third_party_record_destruction_contract'
+applies_to_role: any
+obligation_type: contract
+summary: >-
+  An illustrative — NOT mandatory — example of reasonable disposal: due diligence on, and a contract
+  with, a record-destruction company, with ongoing monitoring of its compliance.
+requirement_detail: >-
+  This is NOT a freestanding obligation. Its governing stem, recorded in operative_context, states
+  that the enumerated items 'are illustrative only and are not exclusive or exhaustive methods for
+  complying with the rule in this part.' Quoted alone this paragraph reads as a mandate to conduct
+  due diligence and contract with a destruction vendor; that reading is wrong. It describes ONE way
+  the § 682.3(a) standard can be met.
+preemption:
+  posture: floor
+  authority: 15 U.S.C. § 1681t
+  note: As § 682.3(a).
+enforcement:
+  enforcers:
+    - ftc
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: none of its own — this is an example, not a requirement
+    range: null
+    note: null
+  statute_of_limitations: null

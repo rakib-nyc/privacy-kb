@@ -1,0 +1,3497 @@
+{
+ "label": "47 U.S.C. \u00a7 227",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml",
+ "raw_sha256": "bc0202f0682c43acd483fb4bf598db62d4157704024776425acfebf27c63e018",
+ "leaves": [
+  {
+   "path": [
+    "a",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/a/1/A",
+   "heading": "",
+   "text": "to store or produce telephone numbers to be called, using a random or sequential number generator; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t47/s227/a"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201cautomatic telephone dialing system\u201d means equipment which has the capacity\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/a/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/a/1/B",
+   "heading": "",
+   "text": "to dial such numbers.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t47/s227/a"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201cautomatic telephone dialing system\u201d means equipment which has the capacity\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/a/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/a/2/A",
+   "heading": "",
+   "text": "such term shall include a relationship between a person or entity and a business subscriber subject to the same terms applicable under such section to a relationship between a person or entity and a residential subscriber; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t47/s227/a"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201cestablished business relationship\u201d, for purposes only of subsection (b)(1)(C)(i), shall have the meaning given the term in section 64.1200 of title 47, Code of Federal Regulations, as in effect on January 1, 2003 , except that\u2014",
+     "path": [
+      "a",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/a/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/a/2/B",
+   "heading": "",
+   "text": "an established business relationship shall be subject to any time limitation established pursuant to paragraph (2)(G)).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t47/s227/a"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201cestablished business relationship\u201d, for purposes only of subsection (b)(1)(C)(i), shall have the meaning given the term in section 64.1200 of title 47, Code of Federal Regulations, as in effect on January 1, 2003 , except that\u2014",
+     "path": [
+      "a",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/a/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3"
+   ],
+   "anchor": "/us/usc/t47/s227/a/3",
+   "heading": "",
+   "text": "The term \u201ctelephone facsimile machine\u201d means equipment which has the capacity (A) to transcribe text or images, or both, from paper into an electronic signal and to transmit that signal over a regular telephone line, or (B) to transcribe text or images (or both) from an electronic signal received over a regular telephone line onto paper.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t47/s227/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "4"
+   ],
+   "anchor": "/us/usc/t47/s227/a/4",
+   "heading": "",
+   "text": "The term \u201ctelephone solicitation\u201d means the initiation of a telephone call or message for the purpose of encouraging the purchase or rental of, or investment in, property, goods, or services, which is transmitted to any person, but such term does not include a call or message (A) to any person with that person\u2019s prior express invitation or permission, (B) to any person with whom the caller has an established business relationship, or (C) by a tax exempt nonprofit organization.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t47/s227/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "5"
+   ],
+   "anchor": "/us/usc/t47/s227/a/5",
+   "heading": "",
+   "text": "The term \u201cunsolicited advertisement\u201d means any material advertising the commercial availability or quality of any property, goods, or services which is transmitted to any person without that person\u2019s prior express invitation or permission, in writing or otherwise.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t47/s227/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/b/1/A/i",
+   "heading": "",
+   "text": "to any emergency telephone line (including any \u201c911\u201d line and any emergency line of a hospital, medical physician or service office, health care facility, poison control center, or fire protection or law enforcement agency);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be unlawful for any person within the United States, or any person outside the United States if the recipient is within the United States\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1"
+    },
+    {
+     "position": "precedes",
+     "text": "to make any call (other than a call made for emergency purposes or made with the prior express consent of the called party) using any automatic telephone dialing system or an artificial or prerecorded voice\u2014",
+     "path": [
+      "b",
+      "1",
+      "A"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t47/s227/b/1/A/ii",
+   "heading": "",
+   "text": "to the telephone line of any guest room or patient room of a hospital, health care facility, elderly home, or similar establishment; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be unlawful for any person within the United States, or any person outside the United States if the recipient is within the United States\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1"
+    },
+    {
+     "position": "precedes",
+     "text": "to make any call (other than a call made for emergency purposes or made with the prior express consent of the called party) using any automatic telephone dialing system or an artificial or prerecorded voice\u2014",
+     "path": [
+      "b",
+      "1",
+      "A"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "A",
+    "iii"
+   ],
+   "anchor": "/us/usc/t47/s227/b/1/A/iii",
+   "heading": "",
+   "text": "to any telephone number assigned to a paging service, cellular telephone service, specialized mobile radio service, or other radio common carrier service, or any service for which the called party is charged for the call, unless such call is made solely to collect a debt owed to or guaranteed by the United States;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be unlawful for any person within the United States, or any person outside the United States if the recipient is within the United States\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1"
+    },
+    {
+     "position": "precedes",
+     "text": "to make any call (other than a call made for emergency purposes or made with the prior express consent of the called party) using any automatic telephone dialing system or an artificial or prerecorded voice\u2014",
+     "path": [
+      "b",
+      "1",
+      "A"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/b/1/B",
+   "heading": "",
+   "text": "to initiate any telephone call to any residential telephone line using an artificial or prerecorded voice to deliver a message without the prior express consent of the called party, unless the call is initiated for emergency purposes, is made solely pursuant to the collection of a debt owed to or guaranteed by the United States, or is exempted by rule or order by the Commission under paragraph (2)(B);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be unlawful for any person within the United States, or any person outside the United States if the recipient is within the United States\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "C",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/b/1/C/i",
+   "heading": "",
+   "text": "the unsolicited advertisement is from a sender with an established business relationship with the recipient;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be unlawful for any person within the United States, or any person outside the United States if the recipient is within the United States\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1"
+    },
+    {
+     "position": "precedes",
+     "text": "to use any telephone facsimile machine, computer, or other device to send, to a telephone facsimile machine, an unsolicited advertisement, unless\u2014",
+     "path": [
+      "b",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/C"
+    },
+    {
+     "position": "follows",
+     "text": "except that this clause shall not apply in the case of an unsolicited advertisement that is sent based on an established business relationship with the recipient that was in existence before July 9, 2005 , if the sender possessed the facsimile machine number of the recipient before July 9, 2005 ; and",
+     "path": [
+      "b",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/C"
+    },
+    {
+     "position": "follows",
+     "text": "except that the exception under clauses (i) and (ii) shall not apply with respect to an unsolicited advertisement sent to a telephone facsimile machine by a sender to whom a request has been made not to send future unsolicited advertisements to such telephone facsimile machine that complies with the requirements under paragraph (2)(E); or",
+     "path": [
+      "b",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "C",
+    "ii",
+    "I"
+   ],
+   "anchor": "/us/usc/t47/s227/b/1/C/ii/I",
+   "heading": "",
+   "text": "the voluntary communication of such number, within the context of such established business relationship, from the recipient of the unsolicited advertisement, or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be unlawful for any person within the United States, or any person outside the United States if the recipient is within the United States\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1"
+    },
+    {
+     "position": "precedes",
+     "text": "to use any telephone facsimile machine, computer, or other device to send, to a telephone facsimile machine, an unsolicited advertisement, unless\u2014",
+     "path": [
+      "b",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/C"
+    },
+    {
+     "position": "follows",
+     "text": "except that this clause shall not apply in the case of an unsolicited advertisement that is sent based on an established business relationship with the recipient that was in existence before July 9, 2005 , if the sender possessed the facsimile machine number of the recipient before July 9, 2005 ; and",
+     "path": [
+      "b",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/C"
+    },
+    {
+     "position": "follows",
+     "text": "except that the exception under clauses (i) and (ii) shall not apply with respect to an unsolicited advertisement sent to a telephone facsimile machine by a sender to whom a request has been made not to send future unsolicited advertisements to such telephone facsimile machine that complies with the requirements under paragraph (2)(E); or",
+     "path": [
+      "b",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/C"
+    },
+    {
+     "position": "precedes",
+     "text": "the sender obtained the number of the telephone facsimile machine through\u2014",
+     "path": [
+      "b",
+      "1",
+      "C",
+      "ii"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/C/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "C",
+    "ii",
+    "II"
+   ],
+   "anchor": "/us/usc/t47/s227/b/1/C/ii/II",
+   "heading": "",
+   "text": "a directory, advertisement, or site on the Internet to which the recipient voluntarily agreed to make available its facsimile number for public distribution,",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be unlawful for any person within the United States, or any person outside the United States if the recipient is within the United States\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1"
+    },
+    {
+     "position": "precedes",
+     "text": "to use any telephone facsimile machine, computer, or other device to send, to a telephone facsimile machine, an unsolicited advertisement, unless\u2014",
+     "path": [
+      "b",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/C"
+    },
+    {
+     "position": "follows",
+     "text": "except that this clause shall not apply in the case of an unsolicited advertisement that is sent based on an established business relationship with the recipient that was in existence before July 9, 2005 , if the sender possessed the facsimile machine number of the recipient before July 9, 2005 ; and",
+     "path": [
+      "b",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/C"
+    },
+    {
+     "position": "follows",
+     "text": "except that the exception under clauses (i) and (ii) shall not apply with respect to an unsolicited advertisement sent to a telephone facsimile machine by a sender to whom a request has been made not to send future unsolicited advertisements to such telephone facsimile machine that complies with the requirements under paragraph (2)(E); or",
+     "path": [
+      "b",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/C"
+    },
+    {
+     "position": "precedes",
+     "text": "the sender obtained the number of the telephone facsimile machine through\u2014",
+     "path": [
+      "b",
+      "1",
+      "C",
+      "ii"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/C/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "C",
+    "iii"
+   ],
+   "anchor": "/us/usc/t47/s227/b/1/C/iii",
+   "heading": "",
+   "text": "the unsolicited advertisement contains a notice meeting the requirements under paragraph (2)(D),",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be unlawful for any person within the United States, or any person outside the United States if the recipient is within the United States\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1"
+    },
+    {
+     "position": "precedes",
+     "text": "to use any telephone facsimile machine, computer, or other device to send, to a telephone facsimile machine, an unsolicited advertisement, unless\u2014",
+     "path": [
+      "b",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/C"
+    },
+    {
+     "position": "follows",
+     "text": "except that this clause shall not apply in the case of an unsolicited advertisement that is sent based on an established business relationship with the recipient that was in existence before July 9, 2005 , if the sender possessed the facsimile machine number of the recipient before July 9, 2005 ; and",
+     "path": [
+      "b",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/C"
+    },
+    {
+     "position": "follows",
+     "text": "except that the exception under clauses (i) and (ii) shall not apply with respect to an unsolicited advertisement sent to a telephone facsimile machine by a sender to whom a request has been made not to send future unsolicited advertisements to such telephone facsimile machine that complies with the requirements under paragraph (2)(E); or",
+     "path": [
+      "b",
+      "1",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "D"
+   ],
+   "anchor": "/us/usc/t47/s227/b/1/D",
+   "heading": "",
+   "text": "to use an automatic telephone dialing system in such a way that two or more telephone lines of a multi-line business are engaged simultaneously.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be unlawful for any person within the United States, or any person outside the United States if the recipient is within the United States\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/A",
+   "heading": "",
+   "text": "shall consider prescribing regulations to allow businesses to avoid receiving calls made using an artificial or prerecorded voice to which they have not given their prior express consent;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/B/i",
+   "heading": "",
+   "text": "calls that are not made for a commercial purpose; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "may, by rule or order, exempt from the requirements of paragraph (1)(B) of this subsection, subject to such conditions as the Commission may prescribe\u2014",
+     "path": [
+      "b",
+      "2",
+      "B"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "B",
+    "ii",
+    "I"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/B/ii/I",
+   "heading": "",
+   "text": "will not adversely affect the privacy rights that this section is intended to protect; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "may, by rule or order, exempt from the requirements of paragraph (1)(B) of this subsection, subject to such conditions as the Commission may prescribe\u2014",
+     "path": [
+      "b",
+      "2",
+      "B"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/B"
+    },
+    {
+     "position": "precedes",
+     "text": "such classes or categories of calls made for commercial purposes as the Commission determines\u2014",
+     "path": [
+      "b",
+      "2",
+      "B",
+      "ii"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/B/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "B",
+    "ii",
+    "II"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/B/ii/II",
+   "heading": "",
+   "text": "do not include the transmission of any unsolicited advertisement;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "may, by rule or order, exempt from the requirements of paragraph (1)(B) of this subsection, subject to such conditions as the Commission may prescribe\u2014",
+     "path": [
+      "b",
+      "2",
+      "B"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/B"
+    },
+    {
+     "position": "precedes",
+     "text": "such classes or categories of calls made for commercial purposes as the Commission determines\u2014",
+     "path": [
+      "b",
+      "2",
+      "B",
+      "ii"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/B/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "C"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/C",
+   "heading": "",
+   "text": "may, by rule or order, exempt from the requirements of paragraph (1)(A)(iii) of this subsection calls to a telephone number assigned to a cellular telephone service that are not charged to the called party, subject to such conditions as the Commission may prescribe as necessary in the interest of the privacy rights this section is intended to protect;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "D",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/D/i",
+   "heading": "",
+   "text": "the notice is clear and conspicuous and on the first page of the unsolicited advertisement;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "shall provide that a notice contained in an unsolicited advertisement complies with the requirements under this subparagraph only if\u2014",
+     "path": [
+      "b",
+      "2",
+      "D"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/D"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "D",
+    "ii"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/D/ii",
+   "heading": "",
+   "text": "the notice states that the recipient may make a request to the sender of the unsolicited advertisement not to send any future unsolicited advertisements to a telephone facsimile machine or machines and that failure to comply, within the shortest reasonable time, as determined by the Commission, with such a request meeting the requirements under subparagraph (E) is unlawful;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "shall provide that a notice contained in an unsolicited advertisement complies with the requirements under this subparagraph only if\u2014",
+     "path": [
+      "b",
+      "2",
+      "D"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/D"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "D",
+    "iii"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/D/iii",
+   "heading": "",
+   "text": "the notice sets forth the requirements for a request under subparagraph (E);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "shall provide that a notice contained in an unsolicited advertisement complies with the requirements under this subparagraph only if\u2014",
+     "path": [
+      "b",
+      "2",
+      "D"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/D"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "D",
+    "iv",
+    "I"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/D/iv/I",
+   "heading": "",
+   "text": "a domestic contact telephone and facsimile machine number for the recipient to transmit such a request to the sender; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "shall provide that a notice contained in an unsolicited advertisement complies with the requirements under this subparagraph only if\u2014",
+     "path": [
+      "b",
+      "2",
+      "D"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/D"
+    },
+    {
+     "position": "precedes",
+     "text": "the notice includes\u2014",
+     "path": [
+      "b",
+      "2",
+      "D",
+      "iv"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/D/iv"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "D",
+    "iv",
+    "II"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/D/iv/II",
+   "heading": "",
+   "text": "a cost-free mechanism for a recipient to transmit a request pursuant to such notice to the sender of the unsolicited advertisement; the Commission shall by rule require the sender to provide such a mechanism and may, in the discretion of the Commission and subject to such conditions as the Commission may prescribe, exempt certain classes of small business senders, but only if the Commission determines that the costs to such class are unduly burdensome given the revenues generated by such small businesses;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "shall provide that a notice contained in an unsolicited advertisement complies with the requirements under this subparagraph only if\u2014",
+     "path": [
+      "b",
+      "2",
+      "D"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/D"
+    },
+    {
+     "position": "precedes",
+     "text": "the notice includes\u2014",
+     "path": [
+      "b",
+      "2",
+      "D",
+      "iv"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/D/iv"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "D",
+    "v"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/D/v",
+   "heading": "",
+   "text": "the telephone and facsimile machine numbers and the cost-free mechanism set forth pursuant to clause (iv) permit an individual or business to make such a request at any time on any day of the week; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "shall provide that a notice contained in an unsolicited advertisement complies with the requirements under this subparagraph only if\u2014",
+     "path": [
+      "b",
+      "2",
+      "D"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/D"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "D",
+    "vi"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/D/vi",
+   "heading": "",
+   "text": "the notice complies with the requirements of subsection (d);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "shall provide that a notice contained in an unsolicited advertisement complies with the requirements under this subparagraph only if\u2014",
+     "path": [
+      "b",
+      "2",
+      "D"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/D"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "E",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/E/i",
+   "heading": "",
+   "text": "the request identifies the telephone number or numbers of the telephone facsimile machine or machines to which the request relates;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "shall provide, by rule, that a request not to send future unsolicited advertisements to a telephone facsimile machine complies with the requirements under this subparagraph only if\u2014",
+     "path": [
+      "b",
+      "2",
+      "E"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/E"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "E",
+    "ii"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/E/ii",
+   "heading": "",
+   "text": "the request is made to the telephone or facsimile number of the sender of such an unsolicited advertisement provided pursuant to subparagraph (D)(iv) or by any other method of communication as determined by the Commission; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "shall provide, by rule, that a request not to send future unsolicited advertisements to a telephone facsimile machine complies with the requirements under this subparagraph only if\u2014",
+     "path": [
+      "b",
+      "2",
+      "E"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/E"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "E",
+    "iii"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/E/iii",
+   "heading": "",
+   "text": "the person making the request has not, subsequent to such request, provided express invitation or permission to the sender, in writing or otherwise, to send such advertisements to such person at such telephone facsimile machine;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "shall provide, by rule, that a request not to send future unsolicited advertisements to a telephone facsimile machine complies with the requirements under this subparagraph only if\u2014",
+     "path": [
+      "b",
+      "2",
+      "E"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/E"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "F",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/F/i",
+   "heading": "",
+   "text": "by regulation issued after public notice and opportunity for public comment; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "may, in the discretion of the Commission and subject to such conditions as the Commission may prescribe, allow professional or trade associations that are tax-exempt nonprofit organizations to send unsolicited advertisements to their members in furtherance of the association\u2019s tax-exempt purpose that do not contain the notice required by paragraph (1)(C)(iii), except that the Commission may take action under this subparagraph only\u2014",
+     "path": [
+      "b",
+      "2",
+      "F"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/F"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "F",
+    "ii"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/F/ii",
+   "heading": "",
+   "text": "if the Commission determines that such notice required by paragraph (1)(C)(iii) is not necessary to protect the ability of the members of such associations to stop such associations from sending any future unsolicited advertisements;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "may, in the discretion of the Commission and subject to such conditions as the Commission may prescribe, allow professional or trade associations that are tax-exempt nonprofit organizations to send unsolicited advertisements to their members in furtherance of the association\u2019s tax-exempt purpose that do not contain the notice required by paragraph (1)(C)(iii), except that the Commission may take action under this subparagraph only\u2014",
+     "path": [
+      "b",
+      "2",
+      "F"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/F"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "G",
+    "i",
+    "I"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/G/i/I",
+   "heading": "",
+   "text": "determine whether the existence of the exception under paragraph (1)(C) relating to an established business relationship has resulted in a significant number of complaints to the Commission regarding the sending of unsolicited advertisements to telephone facsimile machines;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "may, consistent with clause (ii), limit the duration of the existence of an established business relationship, however, before establishing any such limits, the Commission shall\u2014",
+     "path": [
+      "b",
+      "2",
+      "G",
+      "i"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/G/i"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "G",
+    "i",
+    "II"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/G/i/II",
+   "heading": "",
+   "text": "determine whether a significant number of any such complaints involve unsolicited advertisements that were sent on the basis of an established business relationship that was longer in duration than the Commission believes is consistent with the reasonable expectations of consumers;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "may, consistent with clause (ii), limit the duration of the existence of an established business relationship, however, before establishing any such limits, the Commission shall\u2014",
+     "path": [
+      "b",
+      "2",
+      "G",
+      "i"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/G/i"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "G",
+    "i",
+    "III"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/G/i/III",
+   "heading": "",
+   "text": "evaluate the costs to senders of demonstrating the existence of an established business relationship within a specified period of time and the benefits to recipients of establishing a limitation on such established business relationship; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "may, consistent with clause (ii), limit the duration of the existence of an established business relationship, however, before establishing any such limits, the Commission shall\u2014",
+     "path": [
+      "b",
+      "2",
+      "G",
+      "i"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/G/i"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "G",
+    "i",
+    "IV"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/G/i/IV",
+   "heading": "",
+   "text": "determine whether with respect to small businesses, the costs would not be unduly burdensome; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "may, consistent with clause (ii), limit the duration of the existence of an established business relationship, however, before establishing any such limits, the Commission shall\u2014",
+     "path": [
+      "b",
+      "2",
+      "G",
+      "i"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/G/i"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "G",
+    "ii"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/G/ii",
+   "heading": "",
+   "text": "may not commence a proceeding to determine whether to limit the duration of the existence of an established business relationship before the expiration of the 3-month period that begins on July 9, 2005 ;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "H"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/H",
+   "heading": "",
+   "text": "may restrict or limit the number and duration of calls made to a telephone number assigned to a cellular telephone service to collect a debt owed to or guaranteed by the United States; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "I",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/I/i",
+   "heading": "",
+   "text": "the classes of parties that may make such calls;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "shall ensure that any exemption under subparagraph (B) or (C) contains requirements for calls made in reliance on the exemption with respect to\u2014",
+     "path": [
+      "b",
+      "2",
+      "I"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/I"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "I",
+    "ii"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/I/ii",
+   "heading": "",
+   "text": "the classes of parties that may be called; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "shall ensure that any exemption under subparagraph (B) or (C) contains requirements for calls made in reliance on the exemption with respect to\u2014",
+     "path": [
+      "b",
+      "2",
+      "I"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/I"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "I",
+    "iii"
+   ],
+   "anchor": "/us/usc/t47/s227/b/2/I/iii",
+   "heading": "",
+   "text": "the number of such calls that a calling party may make to a particular called party.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe regulations to implement the requirements of this subsection. In implementing the requirements of this subsection, the Commission\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2"
+    },
+    {
+     "position": "precedes",
+     "text": "shall ensure that any exemption under subparagraph (B) or (C) contains requirements for calls made in reliance on the exemption with respect to\u2014",
+     "path": [
+      "b",
+      "2",
+      "I"
+     ],
+     "anchor": "/us/usc/t47/s227/b/2/I"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/b/3/A",
+   "heading": "",
+   "text": "an action based on a violation of this subsection or the regulations prescribed under this subsection to enjoin such violation,",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person or entity may, if otherwise permitted by the laws or rules of court of a State, bring in an appropriate court of that State\u2014",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/b/3"
+    },
+    {
+     "position": "follows",
+     "text": "If the court finds that the defendant willfully or knowingly violated this subsection or the regulations prescribed under this subsection, the court may, in its discretion, increase the amount of the award to an amount equal to not more than 3 times the amount available under subparagraph (B) of this paragraph.",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/b/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/b/3/B",
+   "heading": "",
+   "text": "an action to recover for actual monetary loss from such a violation, or to receive $500 in damages for each such violation, whichever is greater, or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person or entity may, if otherwise permitted by the laws or rules of court of a State, bring in an appropriate court of that State\u2014",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/b/3"
+    },
+    {
+     "position": "follows",
+     "text": "If the court finds that the defendant willfully or knowingly violated this subsection or the regulations prescribed under this subsection, the court may, in its discretion, increase the amount of the award to an amount equal to not more than 3 times the amount available under subparagraph (B) of this paragraph.",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/b/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "C"
+   ],
+   "anchor": "/us/usc/t47/s227/b/3/C",
+   "heading": "",
+   "text": "both such actions.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person or entity may, if otherwise permitted by the laws or rules of court of a State, bring in an appropriate court of that State\u2014",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/b/3"
+    },
+    {
+     "position": "follows",
+     "text": "If the court finds that the defendant willfully or knowingly violated this subsection or the regulations prescribed under this subsection, the court may, in its discretion, increase the amount of the award to an amount equal to not more than 3 times the amount available under subparagraph (B) of this paragraph.",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/b/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/b/4/A",
+   "heading": "In general",
+   "text": "Any person that is determined by the Commission, in accordance with paragraph (3) or (4) of section 503(b) of this title , to have violated this subsection shall be liable to the United States for a forfeiture penalty pursuant to section 503(b)(1) of this title . Paragraph (5) of section 503(b) of this title shall not apply in the case of a violation of this subsection. A forfeiture penalty under this subparagraph shall be in addition to any other penalty provided for by this chapter. The amount of the forfeiture penalty determined under this subparagraph shall be determined in accordance with subparagraphs (A) through (F) of section 503(b)(2) of this title .",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "4",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/b/4/B",
+   "heading": "Violation with intent",
+   "text": "Any person that is determined by the Commission, in accordance with paragraph (3) or (4) of section 503(b) of this title , to have violated this subsection with the intent to cause such violation shall be liable to the United States for a forfeiture penalty pursuant to section 503(b)(1) of this title . Paragraph (5) of section 503(b) of this title shall not apply in the case of a violation of this subsection. A forfeiture penalty under this subparagraph shall be in addition to any other penalty provided for by this chapter. The amount of the forfeiture penalty determined under this subparagraph shall be equal to an amount determined in accordance with subparagraphs (A) through (F) of section 503(b)(2) of this title plus an additional penalty not to exceed $10,000.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "4",
+    "C"
+   ],
+   "anchor": "/us/usc/t47/s227/b/4/C",
+   "heading": "Recovery",
+   "text": "Any forfeiture penalty determined under subparagraph (A) or (B) shall be recoverable under section 504(a) of this title .",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "4",
+    "D"
+   ],
+   "anchor": "/us/usc/t47/s227/b/4/D",
+   "heading": "Procedure",
+   "text": "No forfeiture liability shall be determined under subparagraph (A) or (B) against any person unless such person receives the notice required by section 503(b)(3) of this title or section 503(b)(4) of this title .",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "4",
+    "E",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/b/4/E/i",
+   "heading": "",
+   "text": "under subparagraph (A) if the violation charged occurred more than 1 year prior to the date of issuance of the required notice or notice of apparent liability; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Notwithstanding paragraph (6) of section 503(b) of this title , no forfeiture penalty shall be determined or imposed against any person\u2014",
+     "path": [
+      "b",
+      "4",
+      "E"
+     ],
+     "anchor": "/us/usc/t47/s227/b/4/E"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4",
+    "E",
+    "ii"
+   ],
+   "anchor": "/us/usc/t47/s227/b/4/E/ii",
+   "heading": "",
+   "text": "under subparagraph (B) if the violation charged occurred more than 4 years prior to the date of issuance of the required notice or notice of apparent liability.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Notwithstanding paragraph (6) of section 503(b) of this title , no forfeiture penalty shall be determined or imposed against any person\u2014",
+     "path": [
+      "b",
+      "4",
+      "E"
+     ],
+     "anchor": "/us/usc/t47/s227/b/4/E"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4",
+    "F"
+   ],
+   "anchor": "/us/usc/t47/s227/b/4/F",
+   "heading": "Rule of construction",
+   "text": "Notwithstanding any law to the contrary, the Commission may not determine or impose a forfeiture penalty on a person under both subparagraphs (A) and (B) based on the same conduct.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/c/1/A",
+   "heading": "",
+   "text": "compare and evaluate alternative methods and procedures (including the use of electronic databases, telephone network technologies, special directory markings, industry-based or company-specific \u201cdo not call\u201d systems, and any other alternatives, individually or in combination) for their effectiveness in protecting such privacy rights, and in terms of their cost and other advantages and disadvantages;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Within 120 days after December 20, 1991 , the Commission shall initiate a rulemaking proceeding concerning the need to protect residential telephone subscribers\u2019 privacy rights to avoid receiving telephone solicitations to which they object. The proceeding shall\u2014",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/c/1/B",
+   "heading": "",
+   "text": "evaluate the categories of public and private entities that would have the capacity to establish and administer such methods and procedures;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Within 120 days after December 20, 1991 , the Commission shall initiate a rulemaking proceeding concerning the need to protect residential telephone subscribers\u2019 privacy rights to avoid receiving telephone solicitations to which they object. The proceeding shall\u2014",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "C"
+   ],
+   "anchor": "/us/usc/t47/s227/c/1/C",
+   "heading": "",
+   "text": "consider whether different methods and procedures may apply for local telephone solicitations, such as local telephone solicitations of small businesses or holders of second class mail permits;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Within 120 days after December 20, 1991 , the Commission shall initiate a rulemaking proceeding concerning the need to protect residential telephone subscribers\u2019 privacy rights to avoid receiving telephone solicitations to which they object. The proceeding shall\u2014",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "D"
+   ],
+   "anchor": "/us/usc/t47/s227/c/1/D",
+   "heading": "",
+   "text": "consider whether there is a need for additional Commission authority to further restrict telephone solicitations, including those calls exempted under subsection (a)(3) of this section, and, if such a finding is made and supported by the record, propose specific restrictions to the Congress; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Within 120 days after December 20, 1991 , the Commission shall initiate a rulemaking proceeding concerning the need to protect residential telephone subscribers\u2019 privacy rights to avoid receiving telephone solicitations to which they object. The proceeding shall\u2014",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "E"
+   ],
+   "anchor": "/us/usc/t47/s227/c/1/E",
+   "heading": "",
+   "text": "develop proposed regulations to implement the methods and procedures that the Commission determines are most effective and efficient to accomplish the purposes of this section.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Within 120 days after December 20, 1991 , the Commission shall initiate a rulemaking proceeding concerning the need to protect residential telephone subscribers\u2019 privacy rights to avoid receiving telephone solicitations to which they object. The proceeding shall\u2014",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": "/us/usc/t47/s227/c/2",
+   "heading": "Regulations",
+   "text": "Not later than 9 months after December 20, 1991 , the Commission shall conclude the rulemaking proceeding initiated under paragraph (1) and shall prescribe regulations to implement methods and procedures for protecting the privacy rights described in such paragraph in an efficient, effective, and economic manner and without the imposition of any additional charge to telephone subscribers.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/c/3/A",
+   "heading": "",
+   "text": "specify a method by which the Commission will select an entity to administer such database;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The regulations required by paragraph (2) may require the establishment and operation of a single national database to compile a list of telephone numbers of residential subscribers who object to receiving telephone solicitations, and to make that compiled list and parts thereof available for purchase. If the Commission determines to require such a database, such regulations shall\u2014",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/c/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/c/3/B",
+   "heading": "",
+   "text": "require each common carrier providing telephone exchange service, in accordance with regulations prescribed by the Commission, to inform subscribers for telephone exchange service of the opportunity to provide notification, in accordance with regulations established under this paragraph, that such subscriber objects to receiving telephone solicitations;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The regulations required by paragraph (2) may require the establishment and operation of a single national database to compile a list of telephone numbers of residential subscribers who object to receiving telephone solicitations, and to make that compiled list and parts thereof available for purchase. If the Commission determines to require such a database, such regulations shall\u2014",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/c/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "C"
+   ],
+   "anchor": "/us/usc/t47/s227/c/3/C",
+   "heading": "",
+   "text": "specify the methods by which each telephone subscriber shall be informed, by the common carrier that provides local exchange service to that subscriber, of (i) the subscriber\u2019s right to give or revoke a notification of an objection under subparagraph (A), and (ii) the methods by which such right may be exercised by the subscriber;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The regulations required by paragraph (2) may require the establishment and operation of a single national database to compile a list of telephone numbers of residential subscribers who object to receiving telephone solicitations, and to make that compiled list and parts thereof available for purchase. If the Commission determines to require such a database, such regulations shall\u2014",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/c/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "D"
+   ],
+   "anchor": "/us/usc/t47/s227/c/3/D",
+   "heading": "",
+   "text": "specify the methods by which such objections shall be collected and added to the database;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The regulations required by paragraph (2) may require the establishment and operation of a single national database to compile a list of telephone numbers of residential subscribers who object to receiving telephone solicitations, and to make that compiled list and parts thereof available for purchase. If the Commission determines to require such a database, such regulations shall\u2014",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/c/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "E"
+   ],
+   "anchor": "/us/usc/t47/s227/c/3/E",
+   "heading": "",
+   "text": "prohibit any residential subscriber from being charged for giving or revoking such notification or for being included in a database compiled under this section;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The regulations required by paragraph (2) may require the establishment and operation of a single national database to compile a list of telephone numbers of residential subscribers who object to receiving telephone solicitations, and to make that compiled list and parts thereof available for purchase. If the Commission determines to require such a database, such regulations shall\u2014",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/c/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "F"
+   ],
+   "anchor": "/us/usc/t47/s227/c/3/F",
+   "heading": "",
+   "text": "prohibit any person from making or transmitting a telephone solicitation to the telephone number of any subscriber included in such database;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The regulations required by paragraph (2) may require the establishment and operation of a single national database to compile a list of telephone numbers of residential subscribers who object to receiving telephone solicitations, and to make that compiled list and parts thereof available for purchase. If the Commission determines to require such a database, such regulations shall\u2014",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/c/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "G"
+   ],
+   "anchor": "/us/usc/t47/s227/c/3/G",
+   "heading": "",
+   "text": "specify (i) the methods by which any person desiring to make or transmit telephone solicitations will obtain access to the database, by area code or local exchange prefix, as required to avoid calling the telephone numbers of subscribers included in such database; and (ii) the costs to be recovered from such persons;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The regulations required by paragraph (2) may require the establishment and operation of a single national database to compile a list of telephone numbers of residential subscribers who object to receiving telephone solicitations, and to make that compiled list and parts thereof available for purchase. If the Commission determines to require such a database, such regulations shall\u2014",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/c/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "H"
+   ],
+   "anchor": "/us/usc/t47/s227/c/3/H",
+   "heading": "",
+   "text": "specify the methods for recovering, from persons accessing such database, the costs involved in identifying, collecting, updating, disseminating, and selling, and other activities relating to, the operations of the database that are incurred by the entities carrying out those activities;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The regulations required by paragraph (2) may require the establishment and operation of a single national database to compile a list of telephone numbers of residential subscribers who object to receiving telephone solicitations, and to make that compiled list and parts thereof available for purchase. If the Commission determines to require such a database, such regulations shall\u2014",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/c/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "I"
+   ],
+   "anchor": "/us/usc/t47/s227/c/3/I",
+   "heading": "",
+   "text": "specify the frequency with which such database will be updated and specify the method by which such updating will take effect for purposes of compliance with the regulations prescribed under this subsection;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The regulations required by paragraph (2) may require the establishment and operation of a single national database to compile a list of telephone numbers of residential subscribers who object to receiving telephone solicitations, and to make that compiled list and parts thereof available for purchase. If the Commission determines to require such a database, such regulations shall\u2014",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/c/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "J"
+   ],
+   "anchor": "/us/usc/t47/s227/c/3/J",
+   "heading": "",
+   "text": "be designed to enable States to use the database mechanism selected by the Commission for purposes of administering or enforcing State law;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The regulations required by paragraph (2) may require the establishment and operation of a single national database to compile a list of telephone numbers of residential subscribers who object to receiving telephone solicitations, and to make that compiled list and parts thereof available for purchase. If the Commission determines to require such a database, such regulations shall\u2014",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/c/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "K"
+   ],
+   "anchor": "/us/usc/t47/s227/c/3/K",
+   "heading": "",
+   "text": "prohibit the use of such database for any purpose other than compliance with the requirements of this section and any such State law and specify methods for protection of the privacy rights of persons whose numbers are included in such database; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The regulations required by paragraph (2) may require the establishment and operation of a single national database to compile a list of telephone numbers of residential subscribers who object to receiving telephone solicitations, and to make that compiled list and parts thereof available for purchase. If the Commission determines to require such a database, such regulations shall\u2014",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/c/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "L"
+   ],
+   "anchor": "/us/usc/t47/s227/c/3/L",
+   "heading": "",
+   "text": "require each common carrier providing services to any person for the purpose of making telephone solicitations to notify such person of the requirements of this section and the regulations thereunder.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The regulations required by paragraph (2) may require the establishment and operation of a single national database to compile a list of telephone numbers of residential subscribers who object to receiving telephone solicitations, and to make that compiled list and parts thereof available for purchase. If the Commission determines to require such a database, such regulations shall\u2014",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/c/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/c/4/A",
+   "heading": "",
+   "text": "in developing procedures for gaining access to the database, consider the different needs of telemarketers conducting business on a national, regional, State, or local level;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If the Commission determines to require the database mechanism described in paragraph (3), the Commission shall\u2014",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": "/us/usc/t47/s227/c/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/c/4/B/i",
+   "heading": "",
+   "text": "reflect the relative costs of providing a national, regional, State, or local list of phone numbers of subscribers who object to receiving telephone solicitations;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If the Commission determines to require the database mechanism described in paragraph (3), the Commission shall\u2014",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": "/us/usc/t47/s227/c/4"
+    },
+    {
+     "position": "precedes",
+     "text": "develop a fee schedule or price structure for recouping the cost of such database that recognizes such differences and\u2014",
+     "path": [
+      "c",
+      "4",
+      "B"
+     ],
+     "anchor": "/us/usc/t47/s227/c/4/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "B",
+    "ii"
+   ],
+   "anchor": "/us/usc/t47/s227/c/4/B/ii",
+   "heading": "",
+   "text": "reflect the relative costs of providing such lists on paper or electronic media; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If the Commission determines to require the database mechanism described in paragraph (3), the Commission shall\u2014",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": "/us/usc/t47/s227/c/4"
+    },
+    {
+     "position": "precedes",
+     "text": "develop a fee schedule or price structure for recouping the cost of such database that recognizes such differences and\u2014",
+     "path": [
+      "c",
+      "4",
+      "B"
+     ],
+     "anchor": "/us/usc/t47/s227/c/4/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "B",
+    "iii"
+   ],
+   "anchor": "/us/usc/t47/s227/c/4/B/iii",
+   "heading": "",
+   "text": "not place an unreasonable financial burden on small businesses; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If the Commission determines to require the database mechanism described in paragraph (3), the Commission shall\u2014",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": "/us/usc/t47/s227/c/4"
+    },
+    {
+     "position": "precedes",
+     "text": "develop a fee schedule or price structure for recouping the cost of such database that recognizes such differences and\u2014",
+     "path": [
+      "c",
+      "4",
+      "B"
+     ],
+     "anchor": "/us/usc/t47/s227/c/4/B"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "C"
+   ],
+   "anchor": "/us/usc/t47/s227/c/4/C",
+   "heading": "",
+   "text": "consider (i) whether the needs of telemarketers operating on a local basis could be met through special markings of area white pages directories, and (ii) if such directories are needed as an adjunct to database lists prepared by area code and local exchange prefix.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If the Commission determines to require the database mechanism described in paragraph (3), the Commission shall\u2014",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": "/us/usc/t47/s227/c/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "5",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/c/5/A",
+   "heading": "",
+   "text": "an action based on a violation of the regulations prescribed under this subsection to enjoin such violation,",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person who has received more than one telephone call within any 12-month period by or on behalf of the same entity in violation of the regulations prescribed under this subsection may, if otherwise permitted by the laws or rules of court of a State bring in an appropriate court of that State\u2014",
+     "path": [
+      "c",
+      "5"
+     ],
+     "anchor": "/us/usc/t47/s227/c/5"
+    },
+    {
+     "position": "follows",
+     "text": "It shall be an affirmative defense in any action brought under this paragraph that the defendant has established and implemented, with due care, reasonable practices and procedures to effectively prevent telephone solicitations in violation of the regulations prescribed under this subsection. If the court finds that the defendant willfully or knowingly violated the regulations prescribed under this subsection, the court may, in its discretion, increase the amount of the award to an amount equal to not more than 3 times the amount available under subparagraph (B) of this paragraph.",
+     "path": [
+      "c",
+      "5"
+     ],
+     "anchor": "/us/usc/t47/s227/c/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "5",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/c/5/B",
+   "heading": "",
+   "text": "an action to recover for actual monetary loss from such a violation, or to receive up to $500 in damages for each such violation, whichever is greater, or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person who has received more than one telephone call within any 12-month period by or on behalf of the same entity in violation of the regulations prescribed under this subsection may, if otherwise permitted by the laws or rules of court of a State bring in an appropriate court of that State\u2014",
+     "path": [
+      "c",
+      "5"
+     ],
+     "anchor": "/us/usc/t47/s227/c/5"
+    },
+    {
+     "position": "follows",
+     "text": "It shall be an affirmative defense in any action brought under this paragraph that the defendant has established and implemented, with due care, reasonable practices and procedures to effectively prevent telephone solicitations in violation of the regulations prescribed under this subsection. If the court finds that the defendant willfully or knowingly violated the regulations prescribed under this subsection, the court may, in its discretion, increase the amount of the award to an amount equal to not more than 3 times the amount available under subparagraph (B) of this paragraph.",
+     "path": [
+      "c",
+      "5"
+     ],
+     "anchor": "/us/usc/t47/s227/c/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "5",
+    "C"
+   ],
+   "anchor": "/us/usc/t47/s227/c/5/C",
+   "heading": "",
+   "text": "both such actions.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person who has received more than one telephone call within any 12-month period by or on behalf of the same entity in violation of the regulations prescribed under this subsection may, if otherwise permitted by the laws or rules of court of a State bring in an appropriate court of that State\u2014",
+     "path": [
+      "c",
+      "5"
+     ],
+     "anchor": "/us/usc/t47/s227/c/5"
+    },
+    {
+     "position": "follows",
+     "text": "It shall be an affirmative defense in any action brought under this paragraph that the defendant has established and implemented, with due care, reasonable practices and procedures to effectively prevent telephone solicitations in violation of the regulations prescribed under this subsection. If the court finds that the defendant willfully or knowingly violated the regulations prescribed under this subsection, the court may, in its discretion, increase the amount of the award to an amount equal to not more than 3 times the amount available under subparagraph (B) of this paragraph.",
+     "path": [
+      "c",
+      "5"
+     ],
+     "anchor": "/us/usc/t47/s227/c/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6"
+   ],
+   "anchor": "/us/usc/t47/s227/c/6",
+   "heading": "Relation to subsection (b)",
+   "text": "The provisions of this subsection shall not be construed to permit a communication prohibited by subsection (b).",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/d/1/A",
+   "heading": "",
+   "text": "to initiate any communication using a telephone facsimile machine, or to make any telephone call using any automatic telephone dialing system, that does not comply with the technical and procedural standards prescribed under this subsection, or to use any telephone facsimile machine or automatic telephone dialing system in a manner that does not comply with such standards; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be unlawful for any person within the United States\u2014",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/d/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/d/1/B",
+   "heading": "",
+   "text": "to use a computer or other electronic device to send any message via a telephone facsimile machine unless such person clearly marks, in a margin at the top or bottom of each transmitted page of the message or on the first page of the transmission, the date and time it is sent and an identification of the business, other entity, or individual sending the message and the telephone number of the sending machine or of such business, other entity, or individual.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be unlawful for any person within the United States\u2014",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/d/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2"
+   ],
+   "anchor": "/us/usc/t47/s227/d/2",
+   "heading": "Telephone facsimile machines",
+   "text": "The Commission shall revise the regulations setting technical and procedural standards for telephone facsimile machines to require that any such machine which is manufactured after one year after December 20, 1991 , clearly marks, in a margin at the top or bottom of each transmitted page or on the first page of each transmission, the date and time sent, an identification of the business, other entity, or individual sending the message, and the telephone number of the sending machine or of such business, other entity, or individual.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/d/3/A",
+   "heading": "",
+   "text": "all artificial or prerecorded telephone messages (i) shall, at the beginning of the message, state clearly the identity of the business, individual, or other entity initiating the call, and (ii) shall, during or after the message, state clearly the telephone number or address of such business, other entity, or individual; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe technical and procedural standards for systems that are used to transmit any artificial or prerecorded voice message via telephone. Such standards shall require that\u2014",
+     "path": [
+      "d",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/d/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/d/3/B",
+   "heading": "",
+   "text": "any such system will automatically release the called party\u2019s line within 5 seconds of the time notification is transmitted to the system that the called party has hung up, to allow the called party\u2019s line to be used to make or receive other calls.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Commission shall prescribe technical and procedural standards for systems that are used to transmit any artificial or prerecorded voice message via telephone. Such standards shall require that\u2014",
+     "path": [
+      "d",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s227/d/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "1"
+   ],
+   "anchor": "/us/usc/t47/s227/e/1",
+   "heading": "In general",
+   "text": "It shall be unlawful for any person within the United States, or any person outside the United States if the recipient is within the United States, in connection with any voice service or text messaging service, to cause any caller identification service to knowingly transmit misleading or inaccurate caller identification information with the intent to defraud, cause harm, or wrongfully obtain anything of value, unless such transmission is exempted pursuant to paragraph (3)(B).",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "2"
+   ],
+   "anchor": "/us/usc/t47/s227/e/2",
+   "heading": "Protection for blocking caller identification information",
+   "text": "Nothing in this subsection may be construed to prevent or restrict any person from blocking the capability of any caller identification service to transmit caller identification information.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/e/3/A",
+   "heading": "In general",
+   "text": "The Commission shall prescribe regulations to implement this subsection.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "3",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/e/3/B/i",
+   "heading": "In general",
+   "text": "The regulations required under subparagraph (A) shall include such exemptions from the prohibition under paragraph (1) as the Commission determines is appropriate.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "3",
+    "B",
+    "ii",
+    "I"
+   ],
+   "anchor": "/us/usc/t47/s227/e/3/B/ii/I",
+   "heading": "",
+   "text": "any authorized activity of a law enforcement agency; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The regulations required under subparagraph (A) shall exempt from the prohibition under paragraph (1) transmissions in connection with\u2014",
+     "path": [
+      "e",
+      "3",
+      "B",
+      "ii"
+     ],
+     "anchor": "/us/usc/t47/s227/e/3/B/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "3",
+    "B",
+    "ii",
+    "II"
+   ],
+   "anchor": "/us/usc/t47/s227/e/3/B/ii/II",
+   "heading": "",
+   "text": "a court order that specifically authorizes the use of caller identification manipulation.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The regulations required under subparagraph (A) shall exempt from the prohibition under paragraph (1) transmissions in connection with\u2014",
+     "path": [
+      "e",
+      "3",
+      "B",
+      "ii"
+     ],
+     "anchor": "/us/usc/t47/s227/e/3/B/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "4"
+   ],
+   "anchor": "/us/usc/t47/s227/e/4",
+   "heading": "Repealed. Pub. L. 115\u2013141, div. P, title IV, \u00a7 402(i)(3) , Mar. 23, 2018 , 132 Stat. 1089",
+   "text": "",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "5",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/e/5/A/i",
+   "heading": "In general",
+   "text": "Any person that is determined by the Commission, in accordance with paragraphs (3) and (4) of section 503(b) of this title , to have violated this subsection shall be liable to the United States for a forfeiture penalty. A forfeiture penalty under this paragraph shall be in addition to any other penalty provided for by this chapter. The amount of the forfeiture penalty determined under this paragraph shall not exceed $10,000 for each violation, or 3 times that amount for each day of a continuing violation, except that the amount assessed for any continuing violation shall not exceed a total of $1,000,000 for any single act or failure to act.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "5",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t47/s227/e/5/A/ii",
+   "heading": "Recovery",
+   "text": "Any forfeiture penalty determined under clause (i) shall be recoverable pursuant to section 504(a) of this title . Paragraph (5) of section 503(b) of this title shall not apply in the case of a violation of this subsection.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "5",
+    "A",
+    "iii"
+   ],
+   "anchor": "/us/usc/t47/s227/e/5/A/iii",
+   "heading": "Procedure",
+   "text": "No forfeiture liability shall be determined under clause (i) against any person unless such person receives the notice required by section 503(b)(3) of this title or section 503(b)(4) of this title .",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "5",
+    "A",
+    "iv"
+   ],
+   "anchor": "/us/usc/t47/s227/e/5/A/iv",
+   "heading": "4-year statute of limitations",
+   "text": "No forfeiture penalty shall be determined or imposed against any person under clause (i) if the violation charged occurred more than 4 years prior to the date of issuance of the required notice or notice or apparent liability.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "5",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/e/5/B",
+   "heading": "Criminal fine",
+   "text": "Any person who willfully and knowingly violates this subsection shall upon conviction thereof be fined not more than $10,000 for each violation, or 3 times that amount for each day of a continuing violation, in lieu of the fine provided by section 501 of this title for such a violation. This subparagraph does not supersede the provisions of section 501 of this title relating to imprisonment or the imposition of a penalty of both fine and imprisonment.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "6",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/e/6/A",
+   "heading": "In general",
+   "text": "The chief legal officer of a State, or any other State officer authorized by law to bring actions on behalf of the residents of a State, may bring a civil action, as parens patriae, on behalf of the residents of that State in an appropriate district court of the United States to enforce this subsection or to impose the civil penalties for violation of this subsection, whenever the chief legal officer or other State officer has reason to believe that the interests of the residents of the State have been or are being threatened or adversely affected by a violation of this subsection or a regulation under this subsection.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "6",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/e/6/B",
+   "heading": "Notice",
+   "text": "The chief legal officer or other State officer shall serve written notice on the Commission of any civil action under subparagraph (A) prior to initiating such civil action. The notice shall include a copy of the complaint to be filed to initiate such civil action, except that if it is not feasible for the State to provide such prior notice, the State shall provide such notice immediately upon instituting such civil action.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "6",
+    "C",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/e/6/C/i",
+   "heading": "",
+   "text": "to intervene in the action;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Upon receiving the notice required by subparagraph (B), the Commission shall have the right\u2014",
+     "path": [
+      "e",
+      "6",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/e/6/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "6",
+    "C",
+    "ii"
+   ],
+   "anchor": "/us/usc/t47/s227/e/6/C/ii",
+   "heading": "",
+   "text": "upon so intervening, to be heard on all matters arising therein; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Upon receiving the notice required by subparagraph (B), the Commission shall have the right\u2014",
+     "path": [
+      "e",
+      "6",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/e/6/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "6",
+    "C",
+    "iii"
+   ],
+   "anchor": "/us/usc/t47/s227/e/6/C/iii",
+   "heading": "",
+   "text": "to file petitions for appeal.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Upon receiving the notice required by subparagraph (B), the Commission shall have the right\u2014",
+     "path": [
+      "e",
+      "6",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/e/6/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "6",
+    "D"
+   ],
+   "anchor": "/us/usc/t47/s227/e/6/D",
+   "heading": "Construction",
+   "text": "For purposes of bringing any civil action under subparagraph (A), nothing in this paragraph shall prevent the chief legal officer or other State officer from exercising the powers conferred on that officer by the laws of such State to conduct investigations or to administer oaths or affirmations or to compel the attendance of witnesses or the production of documentary and other evidence.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "6",
+    "E",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/e/6/E/i",
+   "heading": "Venue",
+   "text": "An action brought under subparagraph (A) shall be brought in a district court of the United States that meets applicable requirements relating to venue under section 1391 of title 28 .",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "6",
+    "E",
+    "ii",
+    "I"
+   ],
+   "anchor": "/us/usc/t47/s227/e/6/E/ii/I",
+   "heading": "",
+   "text": "process may be served without regard to the territorial limits of the district or of the State in which the action is instituted; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In an action brought under subparagraph (A)\u2014",
+     "path": [
+      "e",
+      "6",
+      "E",
+      "ii"
+     ],
+     "anchor": "/us/usc/t47/s227/e/6/E/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "6",
+    "E",
+    "ii",
+    "II"
+   ],
+   "anchor": "/us/usc/t47/s227/e/6/E/ii/II",
+   "heading": "",
+   "text": "a person who participated in an alleged violation that is being litigated in the civil action may be joined in the civil action without regard to the residence of the person.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In an action brought under subparagraph (A)\u2014",
+     "path": [
+      "e",
+      "6",
+      "E",
+      "ii"
+     ],
+     "anchor": "/us/usc/t47/s227/e/6/E/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "7"
+   ],
+   "anchor": "/us/usc/t47/s227/e/7",
+   "heading": "Effect on other laws",
+   "text": "This subsection does not prohibit any lawfully authorized investigative, protective, or intelligence activity of a law enforcement agency of the United States, a State, or a political subdivision of a State, or of an intelligence agency of the United States.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "8",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/e/8/A",
+   "heading": "Caller identification information",
+   "text": "The term \u201ccaller identification information\u201d means information provided by a caller identification service regarding the telephone number of, or other information regarding the origination of, a call made using a voice service or a text message sent using a text messaging service.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this subsection:",
+     "path": [
+      "e",
+      "8"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "8",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/e/8/B",
+   "heading": "Caller identification service",
+   "text": "The term \u201ccaller identification service\u201d means any service or device designed to provide the user of the service or device with the telephone number of, or other information regarding the origination of, a call made using a voice service or a text message sent using a text messaging service. Such term includes automatic number identification services.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this subsection:",
+     "path": [
+      "e",
+      "8"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "8",
+    "C",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/e/8/C/i",
+   "heading": "",
+   "text": "means a message consisting of text, images, sounds, or other information that is transmitted to or from a device that is identified as the receiving or transmitting device by means of a 10-digit telephone number or N11 service code;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this subsection:",
+     "path": [
+      "e",
+      "8"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201ctext message\u201d\u2014",
+     "path": [
+      "e",
+      "8",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "8",
+    "C",
+    "ii"
+   ],
+   "anchor": "/us/usc/t47/s227/e/8/C/ii",
+   "heading": "",
+   "text": "includes a short message service (commonly referred to as \u201cSMS\u201d) message and a multimedia message service (commonly referred to as \u201cMMS\u201d) message; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this subsection:",
+     "path": [
+      "e",
+      "8"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201ctext message\u201d\u2014",
+     "path": [
+      "e",
+      "8",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "8",
+    "C",
+    "iii",
+    "I"
+   ],
+   "anchor": "/us/usc/t47/s227/e/8/C/iii/I",
+   "heading": "",
+   "text": "a real-time, two-way voice or video communication; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this subsection:",
+     "path": [
+      "e",
+      "8"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201ctext message\u201d\u2014",
+     "path": [
+      "e",
+      "8",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8/C"
+    },
+    {
+     "position": "precedes",
+     "text": "does not include\u2014",
+     "path": [
+      "e",
+      "8",
+      "C",
+      "iii"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8/C/iii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "8",
+    "C",
+    "iii",
+    "II"
+   ],
+   "anchor": "/us/usc/t47/s227/e/8/C/iii/II",
+   "heading": "",
+   "text": "a message sent over an IP-enabled messaging service to another user of the same messaging service, except a message described in clause (ii).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this subsection:",
+     "path": [
+      "e",
+      "8"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201ctext message\u201d\u2014",
+     "path": [
+      "e",
+      "8",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8/C"
+    },
+    {
+     "position": "precedes",
+     "text": "does not include\u2014",
+     "path": [
+      "e",
+      "8",
+      "C",
+      "iii"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8/C/iii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "8",
+    "D"
+   ],
+   "anchor": "/us/usc/t47/s227/e/8/D",
+   "heading": "Text messaging service",
+   "text": "The term \u201ctext messaging service\u201d means a service that enables the transmission or receipt of a text message, including a service provided as part of or in connection with a voice service.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this subsection:",
+     "path": [
+      "e",
+      "8"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "8",
+    "E",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/e/8/E/i",
+   "heading": "",
+   "text": "means any service that is interconnected with the public switched telephone network and that furnishes voice communications to an end user using resources from the North American Numbering Plan or any successor to the North American Numbering Plan adopted by the Commission under section 251(e)(1) of this title ; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this subsection:",
+     "path": [
+      "e",
+      "8"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201cvoice service\u201d\u2014",
+     "path": [
+      "e",
+      "8",
+      "E"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8/E"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "8",
+    "E",
+    "ii"
+   ],
+   "anchor": "/us/usc/t47/s227/e/8/E/ii",
+   "heading": "",
+   "text": "includes transmissions from a telephone facsimile machine, computer, or other device to a telephone facsimile machine.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this subsection:",
+     "path": [
+      "e",
+      "8"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201cvoice service\u201d\u2014",
+     "path": [
+      "e",
+      "8",
+      "E"
+     ],
+     "anchor": "/us/usc/t47/s227/e/8/E"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "9"
+   ],
+   "anchor": "/us/usc/t47/s227/e/9",
+   "heading": "Limitation",
+   "text": "Notwithstanding any other provision of this section, subsection (f) shall not apply to this subsection or to the regulations under this subsection.",
+   "context": []
+  },
+  {
+   "path": [
+    "f",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/f/1/A",
+   "heading": "",
+   "text": "the use of telephone facsimile machines or other electronic devices to send unsolicited advertisements;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except for the standards prescribed under subsection (d) and subject to paragraph (2) of this subsection, nothing in this section or in the regulations prescribed under this section shall preempt any State law that imposes more restrictive intrastate requirements or regulations on, or which prohibits\u2014",
+     "path": [
+      "f",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/f/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "f",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/f/1/B",
+   "heading": "",
+   "text": "the use of automatic telephone dialing systems;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except for the standards prescribed under subsection (d) and subject to paragraph (2) of this subsection, nothing in this section or in the regulations prescribed under this section shall preempt any State law that imposes more restrictive intrastate requirements or regulations on, or which prohibits\u2014",
+     "path": [
+      "f",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/f/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "f",
+    "1",
+    "C"
+   ],
+   "anchor": "/us/usc/t47/s227/f/1/C",
+   "heading": "",
+   "text": "the use of artificial or prerecorded voice messages; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except for the standards prescribed under subsection (d) and subject to paragraph (2) of this subsection, nothing in this section or in the regulations prescribed under this section shall preempt any State law that imposes more restrictive intrastate requirements or regulations on, or which prohibits\u2014",
+     "path": [
+      "f",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/f/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "f",
+    "1",
+    "D"
+   ],
+   "anchor": "/us/usc/t47/s227/f/1/D",
+   "heading": "",
+   "text": "the making of telephone solicitations.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except for the standards prescribed under subsection (d) and subject to paragraph (2) of this subsection, nothing in this section or in the regulations prescribed under this section shall preempt any State law that imposes more restrictive intrastate requirements or regulations on, or which prohibits\u2014",
+     "path": [
+      "f",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/f/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "f",
+    "2"
+   ],
+   "anchor": "/us/usc/t47/s227/f/2",
+   "heading": "State use of databases",
+   "text": "If, pursuant to subsection (c)(3), the Commission requires the establishment of a single national database of telephone numbers of subscribers who object to receiving telephone solicitations, a State or local authority may not, in its regulation of telephone solicitations, require the use of any database, list, or listing system that does not include the part of such single national database that relates to such State.",
+   "context": []
+  },
+  {
+   "path": [
+    "g",
+    "1"
+   ],
+   "anchor": "/us/usc/t47/s227/g/1",
+   "heading": "Authority of States",
+   "text": "Whenever the attorney general of a State, or an official or agency designated by a State, has reason to believe that any person has engaged or is engaging in a pattern or practice of telephone calls or other transmissions to residents of that State in violation of this section or the regulations prescribed under this section, the State may bring a civil action on behalf of its residents to enjoin such calls, an action to recover for actual monetary loss or receive $500 in damages for each violation, or both such actions. If the court finds the defendant willfully or knowingly violated such regulations, the court may, in its discretion, increase the amount of the award to an amount equal to not more than 3 times the amount available under the preceding sentence.",
+   "context": []
+  },
+  {
+   "path": [
+    "g",
+    "2"
+   ],
+   "anchor": "/us/usc/t47/s227/g/2",
+   "heading": "Exclusive jurisdiction of Federal courts",
+   "text": "The district courts of the United States, the United States courts of any territory, and the District Court of the United States for the District of Columbia shall have exclusive jurisdiction over all civil actions brought under this subsection. Upon proper application, such courts shall also have jurisdiction to issue writs of mandamus, or orders affording like relief, commanding the defendant to comply with the provisions of this section or regulations prescribed under this section, including the requirement that the defendant take such action as is necessary to remove the danger of such violation. Upon a proper showing, a permanent or temporary injunction or restraining order shall be granted without bond.",
+   "context": []
+  },
+  {
+   "path": [
+    "g",
+    "3"
+   ],
+   "anchor": "/us/usc/t47/s227/g/3",
+   "heading": "Rights of Commission",
+   "text": "The State shall serve prior written notice of any such civil action upon the Commission and provide the Commission with a copy of its complaint, except in any case where such prior notice is not feasible, in which case the State shall serve such notice immediately upon instituting such action. The Commission shall have the right (A) to intervene in the action, (B) upon so intervening, to be heard on all matters arising therein, and (C) to file petitions for appeal.",
+   "context": []
+  },
+  {
+   "path": [
+    "g",
+    "4"
+   ],
+   "anchor": "/us/usc/t47/s227/g/4",
+   "heading": "Venue; service of process",
+   "text": "Any civil action brought under this subsection in a district court of the United States may be brought in the district wherein the defendant is found or is an inhabitant or transacts business or wherein the violation occurred or is occurring, and process in such cases may be served in any district in which the defendant is an inhabitant or where the defendant may be found.",
+   "context": []
+  },
+  {
+   "path": [
+    "g",
+    "5"
+   ],
+   "anchor": "/us/usc/t47/s227/g/5",
+   "heading": "Investigatory powers",
+   "text": "For purposes of bringing any civil action under this subsection, nothing in this section shall prevent the attorney general of a State, or an official or agency designated by a State, from exercising the powers conferred on the attorney general or such official by the laws of such State to conduct investigations or to administer oaths or affirmations or to compel the attendance of witnesses or the production of documentary and other evidence.",
+   "context": []
+  },
+  {
+   "path": [
+    "g",
+    "6"
+   ],
+   "anchor": "/us/usc/t47/s227/g/6",
+   "heading": "Effect on State court proceedings",
+   "text": "Nothing contained in this subsection shall be construed to prohibit an authorized State official from proceeding in State court on the basis of an alleged violation of any general civil or criminal statute of such State.",
+   "context": []
+  },
+  {
+   "path": [
+    "g",
+    "7"
+   ],
+   "anchor": "/us/usc/t47/s227/g/7",
+   "heading": "Limitation",
+   "text": "Whenever the Commission has instituted a civil action for violation of regulations prescribed under this section, no State may, during the pendency of such action instituted by the Commission, subsequently institute a civil action against any defendant named in the Commission\u2019s complaint for any violation as alleged in the Commission\u2019s complaint.",
+   "context": []
+  },
+  {
+   "path": [
+    "g",
+    "8"
+   ],
+   "anchor": "/us/usc/t47/s227/g/8",
+   "heading": "\u201cAttorney general\u201d defined",
+   "text": "As used in this subsection, the term \u201cattorney general\u201d means the chief legal officer of a State.",
+   "context": []
+  },
+  {
+   "path": [
+    "h",
+    "1"
+   ],
+   "anchor": "/us/usc/t47/s227/h/1",
+   "heading": "Report required",
+   "text": "Not later than 1 year after December 30, 2019 , and annually thereafter, the Commission, after consultation with the Federal Trade Commission, shall submit to Congress a report regarding enforcement by the Commission of subsections (b), (c), (d), and (e) during the preceding calendar year.",
+   "context": []
+  },
+  {
+   "path": [
+    "h",
+    "2",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/h/2/A/i",
+   "heading": "",
+   "text": "Complaints alleging that a consumer received a call in violation of subsection (b) or (c).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each report required by paragraph (1) shall include the following:",
+     "path": [
+      "h",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/h/2"
+    },
+    {
+     "position": "precedes",
+     "text": "The number of complaints received by the Commission during each of the preceding 5 calendar years, for each of the following categories:",
+     "path": [
+      "h",
+      "2",
+      "A"
+     ],
+     "anchor": "/us/usc/t47/s227/h/2/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "2",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t47/s227/h/2/A/ii",
+   "heading": "",
+   "text": "Complaints alleging that a consumer received a call in violation of the standards prescribed under subsection (d).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each report required by paragraph (1) shall include the following:",
+     "path": [
+      "h",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/h/2"
+    },
+    {
+     "position": "precedes",
+     "text": "The number of complaints received by the Commission during each of the preceding 5 calendar years, for each of the following categories:",
+     "path": [
+      "h",
+      "2",
+      "A"
+     ],
+     "anchor": "/us/usc/t47/s227/h/2/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "2",
+    "A",
+    "iii"
+   ],
+   "anchor": "/us/usc/t47/s227/h/2/A/iii",
+   "heading": "",
+   "text": "Complaints alleging that a consumer received a call in connection with which misleading or inaccurate caller identification information was transmitted in violation of subsection (e).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each report required by paragraph (1) shall include the following:",
+     "path": [
+      "h",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/h/2"
+    },
+    {
+     "position": "precedes",
+     "text": "The number of complaints received by the Commission during each of the preceding 5 calendar years, for each of the following categories:",
+     "path": [
+      "h",
+      "2",
+      "A"
+     ],
+     "anchor": "/us/usc/t47/s227/h/2/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/h/2/B",
+   "heading": "",
+   "text": "The number of citations issued by the Commission pursuant to section 503(b) of this title during the preceding calendar year to enforce subsection (d), and details of each such citation.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each report required by paragraph (1) shall include the following:",
+     "path": [
+      "h",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/h/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "2",
+    "C"
+   ],
+   "anchor": "/us/usc/t47/s227/h/2/C",
+   "heading": "",
+   "text": "The number of notices of apparent liability issued by the Commission pursuant to section 503(b) of this title during the preceding calendar year to enforce subsections (b), (c), (d), and (e), and details of each such notice including any proposed forfeiture amount.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each report required by paragraph (1) shall include the following:",
+     "path": [
+      "h",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/h/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "2",
+    "D"
+   ],
+   "anchor": "/us/usc/t47/s227/h/2/D",
+   "heading": "",
+   "text": "The number of final orders imposing forfeiture penalties issued pursuant to section 503(b) of this title during the preceding calendar year to enforce such subsections, and details of each such order including the forfeiture imposed.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each report required by paragraph (1) shall include the following:",
+     "path": [
+      "h",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/h/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "2",
+    "E"
+   ],
+   "anchor": "/us/usc/t47/s227/h/2/E",
+   "heading": "",
+   "text": "The amount of forfeiture penalties or criminal fines collected, during the preceding calendar year, by the Commission or the Attorney General for violations of such subsections, and details of each case in which such a forfeiture penalty or criminal fine was collected.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each report required by paragraph (1) shall include the following:",
+     "path": [
+      "h",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/h/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "2",
+    "F"
+   ],
+   "anchor": "/us/usc/t47/s227/h/2/F",
+   "heading": "",
+   "text": "Proposals for reducing the number of calls made in violation of such subsections.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each report required by paragraph (1) shall include the following:",
+     "path": [
+      "h",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/h/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "2",
+    "G"
+   ],
+   "anchor": "/us/usc/t47/s227/h/2/G",
+   "heading": "",
+   "text": "An analysis of the contribution by providers of interconnected VoIP service and non-interconnected VoIP service that discount high-volume, unlawful, short-duration calls to the total number of calls made in violation of such subsections, and recommendations on how to address such contribution in order to decrease the total number of calls made in violation of such subsections.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Each report required by paragraph (1) shall include the following:",
+     "path": [
+      "h",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s227/h/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "3"
+   ],
+   "anchor": "/us/usc/t47/s227/h/3",
+   "heading": "No additional reporting required",
+   "text": "The Commission shall prepare the report required by paragraph (1) without requiring the provision of additional information from providers of telecommunications service or voice service (as defined in section 227b(a) of this title ).",
+   "context": []
+  },
+  {
+   "path": [
+    "i",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s227/i/1/A",
+   "heading": "",
+   "text": "a call made or a text message sent in violation of subsection (b); or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Not later than 18 months after December 30, 2019 , the Commission shall prescribe regulations to establish a process that streamlines the ways in which a private entity may voluntarily share with the Commission information relating to\u2014",
+     "path": [
+      "i",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/i/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/i/1/B",
+   "heading": "",
+   "text": "a call or text message for which misleading or inaccurate caller identification information was caused to be transmitted in violation of subsection (e).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Not later than 18 months after December 30, 2019 , the Commission shall prescribe regulations to establish a process that streamlines the ways in which a private entity may voluntarily share with the Commission information relating to\u2014",
+     "path": [
+      "i",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/i/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "2"
+   ],
+   "anchor": "/us/usc/t47/s227/i/2",
+   "heading": "Text message defined",
+   "text": "In this subsection, the term \u201ctext message\u201d has the meaning given such term in subsection (e)(8).",
+   "context": []
+  },
+  {
+   "path": [
+    "j",
+    "1",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s227/j/1/A/i",
+   "heading": "",
+   "text": "consumers; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Not later than 1 year after December 30, 2019 , the Commission shall take a final agency action to ensure the robocall blocking services provided on an opt-out or opt-in basis pursuant to the Declaratory Ruling of the Commission in the matter of Advanced Methods to Target and Eliminate Unlawful Robocalls (CG Docket No. 17\u201359; FCC 19\u201351; adopted on June 6, 2019 )\u2014",
+     "path": [
+      "j",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/j/1"
+    },
+    {
+     "position": "precedes",
+     "text": "are provided with transparency and effective redress options for both\u2014",
+     "path": [
+      "j",
+      "1",
+      "A"
+     ],
+     "anchor": "/us/usc/t47/s227/j/1/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "1",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t47/s227/j/1/A/ii",
+   "heading": "",
+   "text": "callers; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Not later than 1 year after December 30, 2019 , the Commission shall take a final agency action to ensure the robocall blocking services provided on an opt-out or opt-in basis pursuant to the Declaratory Ruling of the Commission in the matter of Advanced Methods to Target and Eliminate Unlawful Robocalls (CG Docket No. 17\u201359; FCC 19\u201351; adopted on June 6, 2019 )\u2014",
+     "path": [
+      "j",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/j/1"
+    },
+    {
+     "position": "precedes",
+     "text": "are provided with transparency and effective redress options for both\u2014",
+     "path": [
+      "j",
+      "1",
+      "A"
+     ],
+     "anchor": "/us/usc/t47/s227/j/1/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s227/j/1/B",
+   "heading": "",
+   "text": "are provided with no additional line item charge to consumers and no additional charge to callers for resolving complaints related to erroneously blocked calls; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Not later than 1 year after December 30, 2019 , the Commission shall take a final agency action to ensure the robocall blocking services provided on an opt-out or opt-in basis pursuant to the Declaratory Ruling of the Commission in the matter of Advanced Methods to Target and Eliminate Unlawful Robocalls (CG Docket No. 17\u201359; FCC 19\u201351; adopted on June 6, 2019 )\u2014",
+     "path": [
+      "j",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/j/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "1",
+    "C"
+   ],
+   "anchor": "/us/usc/t47/s227/j/1/C",
+   "heading": "",
+   "text": "make all reasonable efforts to avoid blocking emergency public safety calls.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Not later than 1 year after December 30, 2019 , the Commission shall take a final agency action to ensure the robocall blocking services provided on an opt-out or opt-in basis pursuant to the Declaratory Ruling of the Commission in the matter of Advanced Methods to Target and Eliminate Unlawful Robocalls (CG Docket No. 17\u201359; FCC 19\u201351; adopted on June 6, 2019 )\u2014",
+     "path": [
+      "j",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s227/j/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "2"
+   ],
+   "anchor": "/us/usc/t47/s227/j/2",
+   "heading": "Text message defined",
+   "text": "In this subsection, the term \u201ctext message\u201d has the meaning given such term in subsection (e)(8).",
+   "context": []
+  }
+ ]
+}

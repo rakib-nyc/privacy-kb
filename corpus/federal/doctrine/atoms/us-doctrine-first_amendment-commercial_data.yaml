@@ -1,0 +1,45 @@
+id: us.doctrine.first_amendment.commercial_data
+schema_version: 1
+record_type: doctrine
+source:
+  citation: Sorrell v. IMS Health Inc., 564 U.S. 552 (2011)
+  instrument_id: us.doctrine.first_amendment
+  url: https://www.supremecourt.gov/opinions/10pdf/10-779.pdf
+  fetched: null
+  raw_file: null
+  raw_sha256: null
+  format: manual
+  risk_tier: high
+  render: null
+  structured_source_check:
+    checked:
+    - No structured source for Supreme Court opinions.
+    result: no_structured_source_exists
+    note: See verification_status.
+verification_status: unverified
+subject:
+  domain: V.A.1
+  lifecycle:
+  - I
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_from: '2011-06-23'
+effective_to: null
+confidence: medium
+common_errors:
+- Reading Sorrell as making data privacy law unconstitutional. It struck a statute that discriminated
+  by speaker and content; general privacy rules are analysed differently.
+- Ignoring it when drafting sector-specific rules. Speaker-based distinctions are where the risk concentrates.
+open_questions:
+- UNVERIFIED under invariant I1 — must not be surfaced. Recorded so the corpus can flag that a proposed
+  restriction has a First Amendment dimension, not so it can be cited.
+doctrine_statement: Restrictions on the sale, disclosure and use of data may be treated as regulating
+  speech, and a restriction that discriminates by speaker or by content faces heightened scrutiny. This
+  constrains how narrowly a privacy statute may target particular users of information.
+source_authority: U.S. Const. amend. I; Sorrell v. IMS Health Inc., 564 U.S. 552 (2011)
+constrains:
+- ny.gbl.349
+- us.usc.15.45
+- us.dppa
+authority_tier: case_law

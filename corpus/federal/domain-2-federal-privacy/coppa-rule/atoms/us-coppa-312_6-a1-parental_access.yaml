@@ -1,0 +1,102 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - ftc
+  - state_ag
+sector:
+  - childrens_online_services
+data_types:
+  - minor_data
+  - personal_information
+status: in_force
+effective_from: '2000-04-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 6502(d)
+  note: >-
+    COPPA expressly preempts inconsistent state law on its subject matter. State law on children's
+    data that is not inconsistent survives — NY's Child Data Protection Act is the live test and is
+    a Priority 3 atom.
+enforcement:
+  enforcers:
+    - ftc
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: FTC Act § 5(m) civil penalties for rule violations
+    range: null
+    note: >-
+      Per-violation penalties, inflation-adjusted. COPPA is enforced as a trade regulation rule,
+      which is why § 45(m) applies.
+  statute_of_limitations: null
+id: us.coppa.312_6.a1.parental_access
+source:
+  citation: 16 C.F.R. § 312.6(a)(1)
+  instrument_id: us.coppa.rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=312
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  raw_sha256: 5a29d13e4512092a2d064a62a581031dc75aa99998540e6c2ef24f0dbfc66df9
+  text_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.txt
+  text_sha256: 269dbc8c79e682a08e9686846439239d7f57ec49f501070957ff738370189425
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 16-cfr-312 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: 29da4928e77e225027ad8fe677c51e34013f0f9ec2e81038552b5b2e6f33d106
+verbatim_span: >-
+  A description of the specific types or categories of personal information collected from children
+  by the operator, such as name, address, telephone number, email address, hobbies, and
+  extracurricular activities;
+paragraph_path:
+  path:
+    - a
+    - '1'
+  anchor: '312.6'
+  derivation: reconstructed
+  confidence: high
+  evidence: designators reconstructed from flat <P> siblings; resolves to exactly one leaf
+context_not_required: The paragraph states the duty in full.
+subject:
+  domain: II.E.1
+  lifecycle:
+    - I
+applies_to_role: controller
+obligation_type: disclose
+deadline: null
+summary: >-
+  On request, an operator must give a parent a description of the specific types or categories of
+  personal information collected from children.
+requirement_detail: >-
+  THE PARENTAL ACCESS RIGHT, and it sits alongside a deletion right and a right to refuse further
+  collection in the rest of § 312.6. It is the closest thing in US federal privacy law to a general
+  subject-access right, and it is exercisable by the parent rather than the data subject.
+common_errors:
+  - Assuming the child exercises it. The right runs to the parent.
+  - >-
+    Reading it as access to the records themselves. The paragraph requires a description of types or
+    categories.
+open_questions: []
+exemptions: []
+applies_if:
+  all:
+    - entity.is_coppa_operator == true
+    - data.subject_is_child_under_13 == true

@@ -1,0 +1,60 @@
+* § 1500. Definitions. For the purposes of this article, the following
+terms shall have the following meanings:
+  1. "Addictive feed" shall mean a website, online service, online
+application, or mobile application, or a portion thereof, in which
+multiple pieces of media generated or shared by users of a website,
+online service, online application, or mobile application, either
+concurrently or sequentially, are recommended, selected, or prioritized
+for display to a user based, in whole or in part, on information
+associated with the user or the user's device, unless any of the
+following conditions are met, alone or in combination with one another:
+  (a) the recommendation, prioritization, or selection is based on
+information that is not persistently associated with the user or user's
+device, and does not concern the user's previous interactions with media
+generated or shared by other users;
+  (b) the recommendation, prioritization, or selection is based on
+user-selected privacy or accessibility settings, or technical
+information concerning the user's device;
+  (c) the user expressly and unambiguously requested the specific media,
+media by the author, creator, or poster of media the user has subscribed
+to, or media shared by users to a page or group the user has subscribed
+to, provided that the media is not recommended, selected, or prioritized
+for display based, in whole or in part, on other information associated
+with the user or the user's device that is not otherwise permissible
+under this subdivision;
+  (d) the user expressly and unambiguously requested that specific
+media, media by a specified author, creator, or poster of media the user
+has subscribed to, or media shared by users to a page or group the user
+has subscribed to pursuant to paragraph (c) of this subdivision, be
+blocked, prioritized or deprioritized for display, provided that the
+media is not recommended, selected, or prioritized for display based, in
+whole or in part, on other information associated with the user or the
+user's device that is not otherwise permissible under this subdivision;
+  (e) the media are direct and private communications;
+  (f) the media are recommended, selected, or prioritized only in
+response to a specific search inquiry by the user;
+  (g) the media recommended, selected, or prioritized for display is
+exclusively next in a pre-existing sequence from the same author,
+creator, poster, or source; or
+  (h) the recommendation, prioritization, or selection is necessary to
+comply with the provisions of this article and any regulations
+promulgated pursuant to this article.
+  2. "Addictive social media platform" shall mean a website, online
+service, online application, or mobile application, that offers or
+provides users an addictive feed as a significant part of the services
+provided by such website, online service, online application, or mobile
+application.
+  3. "Covered minor" shall mean a user of a website, online service,
+online application, or mobile application in New York when the operator
+has actual knowledge the user is a minor.
+  4. "Covered user" shall mean a user of a website, online service,
+online application, or mobile application in New York, not acting as an
+operator, or agent or affiliate of the operator, of such website, online
+service, online application, or mobile application, or any portion
+thereof.
+  5. "Media" shall mean text, an image, or a video.
+  6. "Minor" shall mean an individual under the age of eighteen.
+  7. "Covered operator" shall mean any person, business, or other legal
+entity, who operates or provides an addictive social media platform.
+  8. "Parent" shall mean parent or legal guardian.
+  * NB Effective January 25, 2027

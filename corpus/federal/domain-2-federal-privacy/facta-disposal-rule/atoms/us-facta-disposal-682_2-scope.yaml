@@ -1,0 +1,99 @@
+id: us.facta.disposal.682_2.scope
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 682.2(b)
+  instrument_id: us.facta.disposal_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=682
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/facta-disposal-rule/raw/16-cfr-682.xml
+  raw_sha256: 921ba44717404d57c5b20d3c6e93e2c502e0e2ea94b87ed39639eef5961e2348
+  text_file: corpus/federal/domain-2-federal-privacy/facta-disposal-rule/raw/16-cfr-682.txt
+  text_sha256: 6f792b0ce13b5842d4177357f2fa44eea2fff21be45f1ba8d5386803ac898266
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/facta-disposal-rule/raw/16-cfr-682.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 87dd35a0b3202308318d3ce88165e6994631d16051d314432fe0161b4796749d
+verbatim_span: >-
+  Scope. This rule applies to any person over which the Federal Trade Commission has jurisdiction,
+  that, for a business purpose, maintains or otherwise possesses consumer information.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+  anchor: '682.2'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+jurisdiction: US-FED
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Overlooking that FTC jurisdiction is a precondition. The § 45(a)(2) carve-outs — banks, common
+    carriers, air carriers — mean this rule does not reach every holder of consumer information.
+  - >-
+    Reading 'business purpose' as decorative. A person holding consumer information for a
+    non-business purpose is outside scope.
+open_questions: []
+confidence: high
+context_not_required: No ancestor contributes governing text; this provision's operative meaning is complete on its own.
+subject:
+  domain: II.C.1
+  lifecycle:
+    - I
+regulator:
+  - ftc
+sector:
+  - any
+data_types:
+  - consumer_information
+status: in_force
+effective_from: '2005-06-01'
+applies_if:
+  all:
+    - entity.within_ftc_jurisdiction == true
+    - entity.maintains_or_possesses_consumer_information == true
+    - purpose.business_purpose == true
+applies_to_role: any
+obligation_type: disclose
+summary: >-
+  The rule applies to any person over which the FTC has jurisdiction that, for a business purpose,
+  maintains or otherwise possesses consumer information.
+requirement_detail: >-
+  Scope provision. Applicability turns on TWO conditions that must both hold: FTC jurisdiction over
+  the person, and maintaining or possessing consumer information for a business purpose. The first
+  incorporates the FTC Act § 45(a)(2) carve-outs by reference — a bank possessing consumer
+  information is outside THIS rule and inside the banking agencies' parallel disposal rules.
+preemption:
+  posture: none
+  authority: null
+  note: A scope provision imposes no duty and displaces no state law.
+enforcement:
+  enforcers:
+    - ftc
+  private_right_of_action: false
+  penalty:
+    structure: n/a — scope provision
+    range: null
+    note: null
+  statute_of_limitations: null

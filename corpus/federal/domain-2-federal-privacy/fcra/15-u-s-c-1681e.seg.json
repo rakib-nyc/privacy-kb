@@ -1,0 +1,308 @@
+{
+ "label": "15 U.S.C. \u00a7 1681e",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681e.xml",
+ "raw_sha256": "160bef20935c9559927e43e9964399c2bb2ed5af086885a01f1f75ff46f92927",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "/us/usc/t15/s1681e/a",
+   "heading": "Identity and purposes of credit users",
+   "text": "Every consumer reporting agency shall maintain reasonable procedures designed to avoid violations of section 1681c of this title and to limit the furnishing of consumer reports to the purposes listed under section 1681b of this title . These procedures shall require that prospective users of the information identify themselves, certify the purposes for which the information is sought, and certify that the information will be used for no other purpose. Every consumer reporting agency shall make a reasonable effort to verify the identity of a new prospective user and the uses certified by such prospective user prior to furnishing such user a consumer report. No consumer reporting agency may furnish a consumer report to any person if it has reasonable grounds for believing that the consumer report will not be used for a purpose listed in section 1681b of this title .",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "/us/usc/t15/s1681e/b",
+   "heading": "Accuracy of report",
+   "text": "Whenever a consumer reporting agency prepares a consumer report it shall follow reasonable procedures to assure maximum possible accuracy of the information concerning the individual about whom the report relates.",
+   "context": []
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "/us/usc/t15/s1681e/c",
+   "heading": "Disclosure of consumer reports by users allowed",
+   "text": "A consumer reporting agency may not prohibit a user of a consumer report furnished by the agency on a consumer from disclosing the contents of the report to the consumer, if adverse action against the consumer has been taken by the user based in whole or in part on the report.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681e/d/1/A",
+   "heading": "",
+   "text": "who regularly and in the ordinary course of business furnishes information to the agency with respect to any consumer; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A consumer reporting agency shall provide to any person\u2014",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681e/d/1"
+    },
+    {
+     "position": "follows",
+     "text": "a notice of such person\u2019s responsibilities under this subchapter.",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681e/d/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681e/d/1/B",
+   "heading": "",
+   "text": "to whom a consumer report is provided by the agency;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A consumer reporting agency shall provide to any person\u2014",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681e/d/1"
+    },
+    {
+     "position": "follows",
+     "text": "a notice of such person\u2019s responsibilities under this subchapter.",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681e/d/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681e/d/2",
+   "heading": "Content of notice",
+   "text": "The Bureau shall prescribe the content of notices under paragraph (1), and a consumer reporting agency shall be in compliance with this subsection if it provides a notice under paragraph (1) that is substantially similar to the Bureau prescription under this paragraph.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681e/e/1/A",
+   "heading": "",
+   "text": "the identity of the end-user of the report (or information); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person may not procure a consumer report for purposes of reselling the report (or any information in the report) unless the person discloses to the consumer reporting agency that originally furnishes the report\u2014",
+     "path": [
+      "e",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681e/e/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681e/e/1/B",
+   "heading": "",
+   "text": "each permissible purpose under section 1681b of this title for which the report is furnished to the end-user of the report (or information).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person may not procure a consumer report for purposes of reselling the report (or any information in the report) unless the person discloses to the consumer reporting agency that originally furnishes the report\u2014",
+     "path": [
+      "e",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681e/e/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "A",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681e/e/2/A/i",
+   "heading": "",
+   "text": "identifies each end user of the resold report (or information);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person who procures a consumer report for purposes of reselling the report (or any information in the report) shall\u2014",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681e/e/2"
+    },
+    {
+     "position": "precedes",
+     "text": "establish and comply with reasonable procedures designed to ensure that the report (or information) is resold by the person only for a purpose for which the report may be furnished under section 1681b of this title , including by requiring that each person to which the report (or information) is resold and that resells or provides the report (or information) to any other person\u2014",
+     "path": [
+      "e",
+      "2",
+      "A"
+     ],
+     "anchor": "/us/usc/t15/s1681e/e/2/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "A",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681e/e/2/A/ii",
+   "heading": "",
+   "text": "certifies each purpose for which the report (or information) will be used; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person who procures a consumer report for purposes of reselling the report (or any information in the report) shall\u2014",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681e/e/2"
+    },
+    {
+     "position": "precedes",
+     "text": "establish and comply with reasonable procedures designed to ensure that the report (or information) is resold by the person only for a purpose for which the report may be furnished under section 1681b of this title , including by requiring that each person to which the report (or information) is resold and that resells or provides the report (or information) to any other person\u2014",
+     "path": [
+      "e",
+      "2",
+      "A"
+     ],
+     "anchor": "/us/usc/t15/s1681e/e/2/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "A",
+    "iii"
+   ],
+   "anchor": "/us/usc/t15/s1681e/e/2/A/iii",
+   "heading": "",
+   "text": "certifies that the report (or information) will be used for no other purpose; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person who procures a consumer report for purposes of reselling the report (or any information in the report) shall\u2014",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681e/e/2"
+    },
+    {
+     "position": "precedes",
+     "text": "establish and comply with reasonable procedures designed to ensure that the report (or information) is resold by the person only for a purpose for which the report may be furnished under section 1681b of this title , including by requiring that each person to which the report (or information) is resold and that resells or provides the report (or information) to any other person\u2014",
+     "path": [
+      "e",
+      "2",
+      "A"
+     ],
+     "anchor": "/us/usc/t15/s1681e/e/2/A"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681e/e/2/B",
+   "heading": "",
+   "text": "before reselling the report, make reasonable efforts to verify the identifications and certifications made under subparagraph (A).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person who procures a consumer report for purposes of reselling the report (or any information in the report) shall\u2014",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": "/us/usc/t15/s1681e/e/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681e/e/3/A",
+   "heading": "",
+   "text": "the end user is an agency or department of the United States Government which procures the report from the person for purposes of determining the eligibility of the consumer concerned to receive access or continued access to classified information (as defined in section 1681b(b)(4)(E)(i) of this title); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Notwithstanding paragraph (1) or (2), a person who procures a consumer report for purposes of reselling the report (or any information in the report) shall not disclose the identity of the end-user of the report under paragraph (1) or (2) if\u2014",
+     "path": [
+      "e",
+      "3"
+     ],
+     "anchor": "/us/usc/t15/s1681e/e/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "3",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681e/e/3/B",
+   "heading": "",
+   "text": "the agency or department certifies in writing to the person reselling the report that nondisclosure is necessary to protect classified information or the safety of persons employed by or contracting with, or undergoing investigation for work or contracting with the agency or department.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Notwithstanding paragraph (1) or (2), a person who procures a consumer report for purposes of reselling the report (or any information in the report) shall not disclose the identity of the end-user of the report under paragraph (1) or (2) if\u2014",
+     "path": [
+      "e",
+      "3"
+     ],
+     "anchor": "/us/usc/t15/s1681e/e/3"
+    }
+   ]
+  }
+ ]
+}

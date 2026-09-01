@@ -1,0 +1,134 @@
+id: us.cpni.64_2009.e.annual_compliance_certificate
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 C.F.R. § 64.2009(e)
+  instrument_id: us.cpni
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: 57fe210ebb07c8c2ba617fc13aa83af98c193183c19d300cd69a8456ec2535bc
+verbatim_span: >-
+  A telecommunications carrier must have an officer, as an agent of the carrier, sign and file with
+  the Commission a compliance certificate on an annual basis. The officer must state in the
+  certification that he or she has personal knowledge that the company has established operating
+  procedures that are adequate to ensure compliance with the rules in this subpart. The carrier must
+  provide a statement accompanying the certificate explaining how its operating procedures ensure
+  that it is or is not in compliance with the rules in this subpart. In addition, the carrier must
+  include an explanation of any actions taken against data brokers and a summary of all customer
+  complaints received in the past year concerning the unauthorized release of CPNI. This filing must
+  be made annually with the Enforcement Bureau on or before March 1 in EB Docket No. 06-36, for data
+  pertaining to the previous calendar year.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - e
+  anchor: '64.2009'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator run reconstructed from flat <P> siblings; resolves to exactly one leaf within the
+    section (gate 23)
+context_not_required: >-
+  Paragraph (e) states the certifying officer, the content and the filing venue and date in full; no
+  ancestor text qualifies it.
+subject:
+  domain: II.E.1
+  lifecycle:
+    - V
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - cpni
+status: in_force
+effective_from: '2017-09-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history:
+  - date: '2017-09-21'
+    note: >-
+      Source note printed at the head of subpart U — Privacy of Customer Information: "82 FR 44419,
+      Sept. 21, 2017, unless otherwise noted." The section carries no separate CITA, so 2017-09-21
+      is the earliest date the fetched source itself asserts for this text.
+    source_url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+applies_if:
+  all:
+    - entity.is_telecommunications_carrier == true
+applies_to_role: controller
+obligation_type: assess
+summary: >-
+  An officer of a telecommunications carrier must sign and file an annual CPNI compliance
+  certificate with the Enforcement Bureau on or before March 1 in EB Docket No. 06-36, stating
+  personal knowledge that adequate operating procedures exist, with an explanatory statement, any
+  actions taken against data brokers, and a summary of unauthorised-release complaints.
+requirement_detail: >-
+  THE ANNUAL CERTIFICATE IS THE MOST FREQUENTLY ENFORCED CPNI OBLIGATION IN THE CORPUS, AND IT IS
+  ENFORCED FOR NON-FILING RATHER THAN FOR THE UNDERLYING PRIVACY FAILURE — the Enforcement Bureau
+  has issued omnibus forfeiture orders against hundreds of carriers in a single proceeding for
+  missing the March 1 date. Two features make it unusually exposed. First, it is signed by an
+  OFFICER as agent of the carrier and asserts PERSONAL KNOWLEDGE, so a certificate filed on the
+  strength of a subordinate's assurance is a defective filing rather than a late one, and a
+  knowingly false certificate is a separate violation. Second, the accompanying statement must
+  explain how the procedures ensure compliance "or is not in compliance" — the rule contemplates a
+  carrier certifying non-compliance, which means the honest filing and the clean filing are not the
+  same document. The certificate also carries two disclosures nothing else in subpart U requires:
+  actions taken against data brokers, and a summary of every customer complaint about unauthorised
+  CPNI release in the past year, which turns the annual filing into the Commission's standing intake
+  for pretexting intelligence. It covers the PREVIOUS calendar year, so the March 1 filing reports
+  on a period already closed.
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Filing a bare certificate. The rule also requires the explanatory statement, the data-broker
+    actions and the complaint summary, and an incomplete filing is treated as a violation.
+  - >-
+    Having counsel or a compliance manager sign. The rule requires an officer acting as agent of the
+    carrier and asserting personal knowledge.
+  - >-
+    Assuming the duty falls only on large carriers. It runs to every telecommunications carrier
+    subject to subpart U, and the Enforcement Bureau's omnibus orders have overwhelmingly hit small
+    ones.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 222
+  note: >-
+    Subpart U implements 47 U.S.C. § 222 and contains no express preemption clause outside §
+    64.2011(f). Recorded as a floor: a State may impose additional safeguards on carrier handling of
+    customer information, subject to the Communications Act's own limits on State regulation of
+    interstate service.
+enforcement:
+  enforcers:
+    - fcc
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      FCC forfeiture under 47 U.S.C. § 503(b), typically by omnibus notice of apparent liability
+      against non-filers.
+    range: null
+    note: >-
+      Historically assessed as a fixed per-carrier forfeiture for failure to file rather than as a
+      per-record penalty.
+  statute_of_limitations: null

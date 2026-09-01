@@ -1,0 +1,135 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+  - cfpb
+sector:
+  - financial
+data_types:
+  - consumer_report
+status: in_force
+effective_from: '1971-04-25'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+deadline: null
+exemptions: []
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 1681t
+  note: >-
+    FCRA preempts by ENUMERATED SUBJECT rather than across the board. § 1681t(a) is a savings clause
+    preserving state law except where inconsistent; § 1681t(b) then carves out specific subjects —
+    including the contents of consumer reports and furnisher duties — where no state requirement may
+    be imposed at all. Whether a state law survives is a subject-by-subject question, never an
+    instrument-level one.
+enforcement:
+  enforcers:
+    - ftc
+    - cfpb
+    - state_ag
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Willful noncompliance under § 1681n: actual damages or statutory damages of $100 to $1,000,
+      punitive damages, costs and attorney's fees. Negligent noncompliance under § 1681o: actual
+      damages, costs and fees.
+    range:
+      min: 100
+      unit: usd_statutory_per_violation
+    note: >-
+      FCRA is one of the few federal privacy statutes with a real private right of action, which is
+      why it generates far more litigation than GLBA or HIPAA. THE PRIVATE RIGHT IS ROLE-DEPENDENT:
+      see the furnisher atoms, where § 1681s-2(c) removes private enforcement of subsection (a)
+      entirely while leaving subsection (b) privately enforceable.
+  statute_of_limitations: >-
+    § 1681p: the earlier of two years after the plaintiff discovers the violation or five years
+    after it occurs.
+id: us.fcra.1681s_2.b1a.furnisher_investigation
+source:
+  citation: 15 U.S.C. § 1681s-2(b)(1)(A)
+  instrument_id: us.fcra.preemption
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681s-2.xml
+  raw_sha256: 608a8beb6e3836abb5a0d4fd5651ab8a1986cad7e848ba8ab29ba63ebde5c052
+  text_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681s-2.txt
+  text_sha256: 1db5b3b56913ab7b0b1fe5e7de7bbe4be3de640aafbae336760a8b001b40ebfd
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681s-2.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 2f96313513df2a12219122554a0370fd103a0448e351880c30664745881585e7
+verbatim_span: conduct an investigation with respect to the disputed information;
+paragraph_path:
+  path:
+    - b
+    - '1'
+    - A
+  anchor: /us/usc/t15/s1681s–2/b/1/A
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: conditions
+    verbatim_span: >-
+      After receiving notice pursuant to section 1681i(a)(2) of this title of a dispute with regard
+      to the completeness or accuracy of any information provided by a person to a consumer
+      reporting agency, the person shall—
+    citation: 15 U.S.C. § 1681s-2(b)(1)
+    path:
+      path:
+        - b
+        - '1'
+      anchor: /us/usc/t15/s1681s–2/b/1
+      derivation: structural
+      confidence: high
+      evidence: USLM ancestor element; identifier read from the source
+subject:
+  domain: II.C.2
+  lifecycle:
+    - VI
+applies_to_role: controller
+applies_if:
+  all:
+    - entity.is_furnisher == true
+    - event.type == "cra_dispute_notice_received"
+obligation_type: assess
+summary: >-
+  On receiving notice of a dispute from a consumer reporting agency under § 1681i(a)(2), a furnisher
+  must conduct an investigation with respect to the disputed information.
+requirement_detail: >-
+  THE PRIVATELY ENFORCEABLE FURNISHER DUTY, and the reason the trigger matters so much. It arises
+  only on notice FROM A CONSUMER REPORTING AGENCY — a consumer complaining directly to the furnisher
+  does not start it. That single fact decides most furnisher cases: a consumer who writes to the
+  creditor rather than disputing through the CRA has not triggered the only furnisher obligation
+  they can personally enforce. Contrast subsection (a), which imposes a broader accuracy duty that
+  no private plaintiff may enforce at all.
+common_errors:
+  - >-
+    THE TRIGGER IS NOTICE FROM THE CRA, NOT FROM THE CONSUMER. § 1681s-2(b) arises only on notice
+    under § 1681i(a)(2), so a consumer who writes to the creditor rather than disputing through a
+    consumer reporting agency has not triggered the ONLY furnisher duty they can personally enforce.
+    This single fact decides most furnisher litigation, and it is the thing consumers and their
+    counsel get wrong most often. If this obligation shows as undetermined, the missing fact is the
+    CRA dispute notice — it is NOT a finding that the furnisher is outside the statute.
+  - >-
+    Merging the two furnisher subsections. (a) is broader and not privately enforceable; (b) is
+    narrower, trigger-dependent, and is the one a consumer can sue on.
+open_questions: []

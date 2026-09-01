@@ -1,0 +1,105 @@
+id: us.cable.551.c1.disclosure_prohibition
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 U.S.C. § 551(c)(1)
+  instrument_id: us.cable_act
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.xml
+  raw_sha256: 3b7792e5ec31fc28ddaeeb563fc631678a31eafcaf87e6bcc83c7605f93e015b
+  text_file: corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.txt
+  text_sha256: fb926fae4fc7b9f67be65456b0ef3f00522d0824c1eb5057383af817f036e3dc
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 1dfd8ad2ab08f456d7c2dafbe6b521ff5b802409a019c2664872d31601dc8c43
+verbatim_span: >-
+  Except as provided in paragraph (2), a cable operator shall not disclose personally identifiable
+  information concerning any subscriber without the prior written or electronic consent of the
+  subscriber concerned and shall take such actions as are necessary to prevent unauthorized access
+  to such information by a person other than the subscriber or cable operator.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - c
+    - '1'
+  anchor: /us/usc/t47/s551/c/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the prohibition and its exception clause in full.
+subject:
+  domain: II.E.1
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - fcc
+sector:
+  - telecom
+data_types:
+  - any
+status: in_force
+effective_from: '1984-10-30'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_cable_operator == true
+    - data.is_subscriber_pii == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  A cable operator shall not disclose personally identifiable information concerning a subscriber
+  without prior written or electronic consent.
+requirement_detail: >-
+  ONE OF THE FEW FEDERAL PRIVACY STATUTES WITH AN OPT-IN DEFAULT. Where GLBA and FCRA build on
+  notice-and-opt-out, § 551(c)(1) requires PRIOR consent, and § 551(f) supplies a private right of
+  action with statutory damages — a combination that made the Cable Act a template for the VPPA two
+  years later. The two statutes should be read together: their structures are near-identical and
+  their case law cross-pollinates.
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - Treating it as opt-out. It requires prior written or electronic consent.
+  - Assuming no private enforcement. § 551(f) provides one, with liquidated damages.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 551(c)(1)
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the section extracted.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Civil action by any person aggrieved, in a United States district court, under 47 U.S.C. §
+      551(f)(1); the court may award actual damages subject to a liquidated floor, punitive damages,
+      and reasonable attorneys' fees and litigation costs under § 551(f)(2)(A)-(C).
+    range:
+      min: 1000
+      unit: usd_liquidated_floor_per_action
+    note: >-
+      § 551(f)(1) opens the action for a violation of THIS SECTION, so it reaches this duty and not
+      only the § 551(c) disclosure prohibition. The liquidated floor is the higher of $100 for each
+      day of violation or $1,000; the recorded minimum is the fixed limb. See
+      us.cable.551.f1.private_action and us.cable.551.f2a.liquidated_damages.
+  statute_of_limitations: null

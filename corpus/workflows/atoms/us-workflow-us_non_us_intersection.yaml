@@ -1,0 +1,59 @@
+id: us.workflow.us_non_us_intersection
+schema_version: 1
+record_type: workflow_constraint
+source:
+  citation: Composed record — no single governing instrument
+  instrument_id: us.workflow
+  url: null
+  fetched: null
+  raw_file: null
+  raw_sha256: null
+  format: manual
+  risk_tier: high
+  render: null
+  structured_source_check:
+    checked:
+    - Composed from records already in this corpus; quotes nothing of its own.
+    result: not_applicable
+    note: 'risk_tier is high because format is manual, and the format/risk mapping is enforced. That is
+      the right answer even though this record quotes nothing: it means a composed record is treated as
+      the least-trusted kind of source, which is appropriate for something assembled by judgement rather
+      than fetched.'
+verification_status: verbatim_confirmed
+subject:
+  domain: I.C.8
+  lifecycle:
+  - I
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_from: '2026-08-20'
+effective_to: null
+confidence: high
+scenario: A US entity subject to both US law and a non-US regime, typically the GDPR. The constraint is
+  that US instruments create obligations a transfer analysis must contend with rather than rights that
+  satisfy it.
+constraints:
+- statement: A US provider must produce data in its possession, custody or control REGARDLESS of where
+    it is stored, so data localisation does not answer US process.
+  from_record: us.cloud_act.2713.extraterritorial_production
+  note: null
+- statement: FISA § 702 authorises acquisition subject to limitations, and those limitations rather than
+    the grant are what an adequacy assessment examines.
+  from_record: us.fisa_702.1881a.b.limitations
+  note: null
+- statement: A public claim of adherence to a transfer framework is a representation, so the framework
+    binds through FTC Act § 5 rather than of its own force.
+  from_record: us.usc.15.45.a1.public_commitment_deception
+  note: null
+common_errors:
+- Treating a certification as self-executing. It binds because § 5 attaches to the claim.
+- Offering data localisation as a transfer safeguard against US process. § 2713 makes location irrelevant.
+open_questions:
+- The EU-US Data Privacy Framework itself is not recorded. It is an adequacy decision plus a self-certification
+  scheme, and the certification half would be a certification_scheme record whose commitments are only
+  fetchable from the Department of Commerce — not attempted.
+scope_justification: 'Anchored at I.C.8 rather than at a leaf naming the US/non-US intersection, because
+  legal-domain v2.6.1 has no such leaf. Same shape as VE-004, where the Privacy Act had no indicator at all:
+  the taxonomy checklist can be incomplete in the INSTRUMENT direction as well as the leaf direction, and gate
+  34 measures only the second.'

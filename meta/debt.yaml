@@ -1,0 +1,555 @@
+debt:
+- id: DEBT-001
+  title: FTC Act § 5 attaches to a public claim of adherence to ANY framework
+  registered: 2026-08-19
+  raised_by: Session 4, Part A′1 (enforceability ruling)
+  the_rule: An entity that publicly claims to adhere to a voluntary privacy framework, code or certification
+    scheme has made a representation. A material misrepresentation about privacy practices is deception
+    under FTC Act § 5. The exposure comes from the claim, not from the framework — which is why it must
+    not be modelled as a property of each framework record.
+  why_not_now: This is a doctrinal rule ABOUT § 5, so it belongs in the § 5 atoms as an enforcement-theory
+    record. Duplicating it onto every framework would state the same proposition N times and let the copies
+    drift. There are no § 5 atoms yet.
+  trigger: Priority 1, Domain II.A — FTC Act § 5 extraction session.
+  on_trigger:
+  - Create the § 5 deception atom covering representations about privacy practices.
+  - Add an enforcement-theory record for the public-commitment pathway.
+  - 'Wire every record carrying enforceability_pathway: section_5_via_public_commitment to it via related[].'
+  currently_affects:
+  - intl.apec.scheme.cbpr_system
+  - intl.cbpr.scheme.global_system
+  note: 'As of the A′1 ruling the 39 principle records carry enforceability_pathway: none — the framework
+    documents are addressed to states and member economies and offer an organization nothing to join.
+    Only the two certification_scheme records carry the § 5 pathway, because certification is the thing
+    an organization actually claims.'
+  risk_if_forgotten: The KB would say a CBPR-certified organization has "no binding obligation" and stop
+    there, which is the wrong answer. The obligation is not in the scheme; it is in § 5, triggered by
+    the certification claim.
+  status: closed
+  resolution: 'Closed 2026-08-19 by D1. Three FTC Act § 5 atoms exist: § 45(a)(1) deception, § 45(n) as
+    the three-part unfairness TEST rather than an open standard, and us.usc.15.45.a1.public_commitment_deception
+    for the pathway. All three on_trigger steps done — the atom exists, the doctrinal rule is stated once
+    on § 5 rather than copied onto every framework, and both certification_scheme records now link to
+    it via related[] with their TODO cleared. The § 45(a)(2) jurisdictional carve-outs are typed entity_level
+    with reach=instrument, so a bank is reported outside § 5 with the engine adding that this is not relief
+    from the underlying law. ev.ftc.t6.002 asserts the whole chain, including that the naive "voluntary
+    framework, no binding obligation" answer is the one it exists to prevent.'
+- id: DEBT-002
+  title: The 41 principle and scheme records are inert until wired to obligations
+  registered: '2026-08-19'
+  raised_by: Session 6, Part B3
+  the_problem: 'derived_obligations[] is empty on all 41 records. A principle that instantiates no obligation
+    is a quotation, not knowledge: the engine cannot reach it from any query, and nothing in an AnalysisResult
+    would ever cite it. The records are currently well-verified and load-bearing on nothing.'
+  why_not_now: The links point from a principle to the statutory obligations that instantiate it. Those
+    obligations do not exist yet — the corpus holds zero obligation atoms. Writing the links first would
+    mean inventing the targets, which is the failure mode the whole verification apparatus exists to prevent.
+  trigger: Priority 1, Domain II — as each instrument lands, wire the principles it instantiates.
+  phase_1_exit_criterion: EVERY principle and certification_scheme record has at least one entry in derived_obligations[],
+    or is demoted to meta/out-of-scope.yaml with a stated reason. No record survives Phase 1 on the strength
+    of being correctly quoted.
+  enforcement: Not yet a gate. It must not become one before Domain II atoms exist, or it would fail every
+    commit for no reason. Add it as a gate at the Phase 1 exit review, not before.
+  moratorium: No further principle records until this is discharged. The corpus does not need a fifth
+    or sixth non-binding framework; it needs the statutes that give the four it has something to attach
+    to.
+  currently_affects: 41 records — 39 principle, 2 certification_scheme
+  risk_if_forgotten: A KB that looks well-populated and answers nothing. Coverage counted in records rather
+    than in questions answerable is the metric that lets that happen.
+  status: open
+- id: DEBT-003
+  title: Positive-law status is a SOURCING policy question, not an authority_tier value
+  registered: '2026-08-19'
+  raised_by: Session 7 C0-bis spike; carried to C1 by direction
+  the_question: For a NON-POSITIVE-LAW title, the Statutes at Large is the law and the US Code is prima
+    facie evidence of it only. Title 15 (FCRA, GLBA, FTC Act) is non-positive law. So where the Code and
+    the enrolled act could diverge, I1 — "verbatim or nothing, from the primary source" — arguably requires
+    the enrolled act, not the Code.
+  why_it_is_not_a_tier_value: It looks like an authority_tier question and is not. It determines WHICH
+    DOCUMENT the corpus quotes, and whether a Code-sourced atom needs a defeasibility marker saying "this
+    is prima facie evidence and could be rebutted by the Statutes at Large". A tier value would record
+    the conclusion while leaving the sourcing policy undecided.
+  also: USLM does not expose positive-law status as machine-readable metadata in the title header — checked.
+    It must come from elsewhere (1 U.S.C. s 204 and the OLRC listing), which is itself a sourcing decision.
+  trigger: C1 — sources of US law taxonomy.
+  decide_deliberately: Do not default. The cheap answer (quote the Code, tier it as statute) is probably
+    right for a v1 product and is defensible — but it should be a recorded decision with its limits stated,
+    not an accident of what was easiest to fetch.
+  status: open
+- id: DEBT-004
+  title: Gate 18 does not trigger on an atom with no paragraph_path at all
+  registered: '2026-08-19'
+  raised_by: Session 7 B-round self-report
+  the_hole: Gate 18 triggers on paragraph_path.path depth > 1. An atom that records no paragraph_path
+    has depth 0 and escapes the context requirement entirely, even if its text is in fact a nested leaf
+    that means nothing without its stem.
+  currently_closed_for: XML. Gate 16 requires a paragraph_path on uslm_xml and ecfr_xml sources, so an
+    XML atom cannot reach depth 0 by omission — it fails gate 16 first.
+  currently_open_for: Nested statutes or regulations published only as PDF or HTML, where gate 16 is declared
+    INAPPLICABLE-BY-DESIGN because those formats carry no enacted hierarchy. That declaration is true
+    of the four framework PDFs held today. It will stop being true the moment a hierarchical instrument
+    arrives in one of those formats.
+  re_entry_trigger: Before Priority 3 (NY session law, which is published as PDF) and Priority 4/5 (older
+    agency PDFs). At that point either gate 16 must require paragraph_path for those formats too, or gate
+    18 needs a second trigger that does not depend on paragraph_path.
+  why_not_now: Fixing it would mean either a schema change or widening gate 16 to formats that genuinely
+    have no enacted hierarchy, which would force a meaningless paragraph_path onto 41 records. The hole
+    is real but unreachable by any source now in the corpus.
+  risk_if_forgotten: The C0b failure — verbatim and substantively wrong — reopens silently for the first
+    hierarchical PDF instrument. That is exactly the class this whole apparatus exists to close.
+  status: open
+- id: DEBT-005
+  title: operative_context cannot represent a SECTION-level chapeau, and gate 18 does not ask for one
+  registered: '2026-08-19'
+  raised_by: C1 — encoding 1 U.S.C. § 204(a)
+  two_related_defects:
+  - 'REPRESENTATION. paragraph_path.path has minItems 1. Under this repo''s convention the path is relative
+    to the section, so subsection (a) is ["a"] and the SECTION ROOT is []. A section-level chapeau therefore
+    has no representable path, and operative_context requires one. Concrete case: 1 U.S.C. § 204''s chapeau
+    governs (a) through (e). For (a) it is contiguous and boundary selection captures it. For (c), (d)
+    and (e) it is not contiguous, and there is no way to record it.'
+  - TRIGGER. Gate 18 fires at path depth > 1. A depth-1 subsection governed by a section-level chapeau
+    escapes it entirely — 1 U.S.C. § 204(a) is exactly that shape. The context was recorded voluntarily;
+    nothing required it.
+  why_not_fixed_now: The schema is frozen at 6369d05. Both fixes are schema or gate changes and this is
+    a checkpoint decision, not a session decision.
+  candidate_fixes:
+  - Relax paragraph_path.path to minItems 0, so a section root is representable as [].
+  - Change gate 18 to fire at depth >= 1 when the source has a section-level chapeau, which USLM exposes
+    as a <chapeau> child of <section>.
+  trigger: Before the first Priority 1 extraction that records a non-contiguous section-level chapeau.
+    1 U.S.C. § 204(c) is a live example today; 15 U.S.C. § 1681b(a) is the shape that will recur constantly.
+  risk_if_forgotten: 'The C0b failure class reopening one level up: a depth-1 subsection quoted without
+    the chapeau that governs it, verbatim and substantively incomplete, passing every gate.'
+  status: open
+- id: DEBT-006
+  title: 'Breadth: 54 of 76 manifest instruments are not started'
+  registered: '2026-08-19'
+  raised_by: Build session
+  the_position: 'The build went DEPTH-first: a working vertical slice through every layer — corpus, engine,
+    MCP, workflows, evals — over 22 instruments, rather than shallow coverage of all 76. That was a deliberate
+    choice, because the architecture is what needed proving and an unproven architecture with 900 atoms
+    in it is a rewrite, not a corpus.'
+  what_is_proven: Both source formats (eCFR, USLM) extract correctly including the hard cases; the gates
+    catch real defects repeatedly; the engine is total and explainable; the MCP surface refuses rather
+    than improvises; workflows refuse to present incomplete artifacts as finished.
+  what_remains: 'Priority 1: 30+ instruments including the HIPAA Privacy and Security Rules, the rest
+    of FCRA, GLBA Privacy Rule, TCPA, CAN-SPAM, TSR, CPNI, Cable Act, DPPA, FERPA/PPRA, ECPA, Dodd-Frank.
+    Priority 3: all of NY (blocked). Priority 4: workplace privacy. Priority 5: government access.'
+  estimate: BRIEF.md says one instrument per session and ~76 sessions. That estimate still looks right.
+  trigger: Ongoing. Each instrument now costs materially less than the first, because the toolkit exists.
+  status: open
+- id: DEBT-007
+  title: 'Definition records: zero exist, and privacy_definition therefore answers nothing'
+  registered: '2026-08-19'
+  raised_by: MCP surface build
+  the_problem: SCHEMA.md §2 singles out definition records as where disproportionate expert value lives
+    — "personal information" means five different things across FCRA, GLBA, HIPAA, COPPA and NY SHIELD,
+    and differs_from is the field that captures it. The corpus has NONE. privacy_definition currently
+    returns a coverage-gap note for every term.
+  why_not_yet: Definitions were not extracted alongside the obligation atoms. PROMPTS.md §2 C4 requires
+    a definition record for every defined term in an instrument, and that step was skipped in favour of
+    obligations. It is the clearest quality gap in what was built.
+  trigger: Before any further obligation extraction. Each instrument already in the corpus has defined
+    terms that should have been captured with it.
+  risk_if_forgotten: The KB answers "what must I do" but not "what does this word mean here", which is
+    where cross-instrument errors actually originate.
+  status: open_mitigated
+  resolution: 'Partly closed 2026-08-19. Three definition records now exist — the "personal information"
+    triple across FCRA, GLBA and HIPAA — with a definition schema, a declared concept vocabulary in meta/definition-concepts.yaml,
+    and differs_from COMPUTED by tools/compute-differs.mjs rather than written by hand. Gate 26 recomputes
+    it and fails on disagreement, so the comparison cannot drift from the elements justifying it. Remaining:
+    COPPA and NY SHIELD complete the five that SCHEMA.md names, and privacy_definition still answers only
+    for this one term.'
+- id: DEBT-008
+  title: 'Exemptions: no atom carries one, so invariant I4 is untested against real text'
+  registered: '2026-08-19'
+  raised_by: Engine build
+  the_problem: engine/exemptions.mjs implements the entity_level / data_level distinction that BRIEF.md
+    calls the expert-novice divider, and the property tests exercise it — but NO ATOM IN THE CORPUS HAS
+    AN exemptions[] ENTRY. The logic is correct against synthetic input and unproven against real law.
+  the_case_that_would_prove_it: 'The canonical one is in BRIEF.md itself: a HIPAA covered entity is exempt
+    for PHI and NOT exempt for the wellness data its consumer app collects. Extracting GLBA § 314.6 or
+    the HIPAA definitions with their exemptions would exercise it against real text.'
+  trigger: The next instrument extraction that has a real exemption provision.
+  risk_if_forgotten: I4 is the invariant BRIEF.md says makes the tool worthless if wrong, and it is currently
+    the least evidenced.
+  status: closed
+  resolution: 'Closed 2026-08-19. I4 is exercised against real statutory text in both directions and in
+    the canonical case BRIEF.md names: a hospital holding a patient chart is applicable with no carve-out,
+    and the SAME hospital holding the same nurse''s pre-employment physical is still applicable with a
+    data_level carve-out. The entity never drops out. 30 typed exemptions across GLBA, HIPAA and NY, and
+    29 engine criteria in the eval suite assert on what analyze() returns rather than on what the records
+    say.'
+- id: DEBT-009
+  title: Exemptions cannot carry a predicate, so invariant I4 is structurally inert
+  registered: '2026-08-19'
+  raised_by: Part B, extracting GBL § 349
+  the_defect: 'The exemption object is defined with additionalProperties: false and no field for a predicate.
+    engine/exemptions.mjs line 13 reads ex.applies_if. Both cannot be right, and the schema wins: any
+    exemption carrying applies_if fails gate 1.'
+  the_consequence: 'EVERY exemption evaluates to UNKNOWN and is never applied. Demonstrated directly:
+    an entity_level exemption over matching facts returns exempt=false, reasoning "exemption has no predicate".
+    I4 is not merely unproven against real text — it cannot fire at all.'
+  why_property_tests_missed_it: They exercised applyExemptions() with hand-built objects carrying applies_if
+    — objects the schema would reject. They proved the FUNCTION works on input the corpus can never contain.
+    That is the gap between a property test and a gate.
+  blocks: DEBT-008, and therefore Part B of this milestone.
+  status: closed
+  resolution: 'Closed 2026-08-19 by migration 003. applies_if is now REQUIRED on the exemption object
+    across all five schemas. I4 fires against real text: GBL 349(e) matches for a broadcaster carrying
+    a third-party advertisement (activity_level, residual scope, entity still covered) and matches nothing
+    for the same broadcaster''s own billing. Gate 21 catches a predicate the engine refuses; gate 22 catches
+    the general class -- any field the engine reads that the schema does not define.'
+- id: DEBT-010
+  title: Nine reconstructed paragraph_paths in eCFR sources are still ambiguous
+  registered: '2026-08-19'
+  raised_by: Part B1, extracting 16 CFR 313
+  the_defect: eCFR publishes CFR body text as flat <P> siblings with NO depth attribute of any kind --
+    the only tags are P, I, E, HEAD. Depth is therefore reconstructed from textual designators, and the
+    reconstruction was silently producing paths that were not unique. In 45 CFR 160.103 the single path
+    ("1") was shared by TWENTY distinct provisions, one per defined term. A path that resolves to twenty
+    provisions is not a citation, and nothing in the repo said so.
+  the_cause: 'Two defects with one root: the designator scan was anchored at the start of the string,
+    so an italic run-in heading hid everything after it. "<I>Exception to annual privacy notice requirement</I>
+    -(1) When exception available" lost its (1), and (e)(1)(i) and (e)(2)(i) both came out ["e","i"].
+    An undesignated definition entry -- "<I>Business associate</I> means:" -- was appended to whatever
+    level happened to be open, so its (1),(2) children landed on a stale stack.'
+  what_was_fixed: The scan now consumes designators and italic headings together, reading the italic runs
+    off the ELEMENT because once <I> is flattened the string cannot tell a heading from the sentence it
+    introduces; definition entries open a term-keyed root, which is how the CFR cites itself ("paragraphs
+    (1)(i) or (1)(ii) of the definition of protected health information"); and a term root closes at the
+    next lettered subsection. Repo-wide colliding paths went 124 -> 9, and 45 CFR 164 gained 133 provisions
+    that had been silently swallowed into their predecessors' text.
+  what_remains: 'Nine, all the same irreducible ambiguity: "(i)" is both letter-9 and roman-1, and the
+    source carries nothing to break the tie. 16 CFR 314.2 (4) and 45 CFR 164.514 (3), plus 2 in 45 CFR
+    160.103. None are in corpus/ -- all nine are in spike/ sources not yet promoted.'
+  why_not_chased_further: More parsing cannot recover information the source does not contain. The honest
+    move is to stop pretending reconstruction is sound and make unsoundness loud, which is what gate 23
+    does.
+  mitigation: Gate 23. An atom's paragraph_path must resolve to EXACTLY ONE leaf in its source's segmentation.
+    Zero means the citation points at nothing; more than one means it points at several, which is worse
+    because it looks precise. The gate does not demand perfect segmentation -- it demands that no atom
+    ever cite an ambiguous path.
+  trigger: Promoting 16 CFR 314 or 45 CFR 164 into corpus/ for the Safeguards and HIPAA work.
+  risk_if_forgotten: Low now that gate 23 exists -- the failure mode is a blocked commit, not a wrong
+    citation. Before gate 23 it was a wrong citation that nothing would have caught.
+  status: open_mitigated
+- id: DEBT-011
+  title: An exemption cannot name its own source, so cross-instrument exclusions cannot be recorded
+  registered: '2026-08-19'
+  raised_by: Part B2, extracting the HIPAA covered-entity/PHI split
+  the_defect: The exemption object carries source_citation (a string) and verbatim_span, but no pointer
+    to the raw file the span came from. Gate 3 therefore verifies every exemption span against the ATOM's
+    source.raw_file. That silently assumes an exemption is always quoted from the same document as the
+    obligation it qualifies.
+  the_consequence: US law is not written that way. 45 C.F.R. § 164.502(a) is the operative HIPAA prohibition;
+    the three exclusions that decide most real questions -- employment records held as employer, FERPA
+    education records, decedents over 50 years -- are in the definition of "protected health information"
+    at 45 C.F.R. § 160.103. All six spans (three exclusions across two atoms) are present in 45-cfr-160.txt
+    and absent from 45-cfr-164.txt. The canonical entity-level/data-level case that BRIEF.md names as
+    the headline failure mode CANNOT BE RECORDED AT ALL.
+  what_gate_3_did: 'Refused all six, by name, with the offending span quoted. This is the opposite of
+    DEBT-009: there the schema and the engine disagreed and three green signals hid it; here the schema
+    is too narrow and a gate said so on the first attempt. The gate is working. The schema is wrong.'
+  why_not_worked_around: Three workarounds present themselves and all three are worse than the defect.
+    Pointing the atom at part 160 misstates where the obligation lives. Concatenating the two raw files
+    fabricates a source artifact no publisher issued and breaks the hash chain to ecfr.gov. Loosening
+    gate 3 to search every raw file in the corpus would let a span match an unrelated instrument by coincidence
+    and turn source_citation back into unverified prose -- which is the exact property gate 3 exists to
+    destroy.
+  proposed_fix: Migration 004. Add an optional source_ref to the exemption object naming the raw_file
+    its span was quoted from, defaulting to the atom's own source when absent, and teach gate 3 to verify
+    against it. Additive, so every existing exemption stays valid.
+  blocks: null
+  status: closed
+  resolution: Closed 2026-08-19 by migration 004. source_ref added to the exemption object; gate 3 resolves
+    each exemption span against it and gate 2 hashes it. The two HIPAA atoms moved from staging back into
+    the corpus with all six exclusions pointing at 45-cfr-160.xml.
+- id: DEBT-012
+  title: entity_level cannot distinguish "outside the instrument" from "does not owe this duty"
+  registered: '2026-08-19'
+  raised_by: Part B3, the type-adequacy verdict on 16 C.F.R. part 313
+  the_defect: Two exemptions in the same instrument are both entity_level and mean materially different
+    things. 16 C.F.R. § 313.1(b) puts a motor vehicle dealer outside part 313 entirely. 16 C.F.R. § 313.5(e)(1)
+    removes ONE obligation -- the annual notice -- from a dealer that remains fully covered by every other
+    provision. The type enum cannot tell them apart.
+  the_consequence: engine/exemptions.mjs reports both as "the instrument does not reach this entity at
+    all", which is true of the first and false of the second. Because atoms are one-per- obligation (PROMPTS.md
+    C1), obligation-scoped relief is common and will get more common, not less. Every such exemption currently
+    produces a correct verdict on its own atom and an over-broad SENTENCE explaining it.
+  what_holds_it_together_for_now: Atom granularity. Because the exemption sits on the annual-notice atom
+    and nowhere else, the ENGINE's verdict per obligation is right -- § 313.5(e) exempts the annual notice
+    and leaves the other four obligations applicable, which is exactly what the corpus shows. Only the
+    explanatory text over-claims. That is a real defect in an artifact whose whole purpose is explaining
+    itself, but it is not a wrong answer.
+  proposed_fix: Migration 005. Add reach to the exemption object with values instrument and obligation,
+    required for entity_level and size_threshold, and make the engine phrase its reasoning from it. Alternatively
+    split the enum. The first is smaller and does not invalidate existing records.
+  the_case_that_would_prove_it: 'Already in the corpus and already recorded: the open_questions of us.cfr.16.313.5.a1.annual_notice
+    states it against the two live exemptions.'
+  status: closed
+  resolution: Closed 2026-08-19 by migration 005. reach added, required for entity_level and size_threshold,
+    and the ENGINE REASONING VARIES WITH IT rather than the field being recorded and the string staying
+    generic. Gate 24 catches instrument-wide relief that appears on one obligation and not its siblings.
+    The type-adequacy open_question on the annual-notice atom is cleared.
+- id: DEBT-013
+  title: 'Coverage-by-presence: three audited sites, two of them live defects'
+  registered: '2026-08-19'
+  raised_by: Audit prompted by the breach-timeline state-layer defect
+  the_pattern: Completeness measured by "we have something for this bucket" rather than by "the required
+    duty is satisfied". It fails silently and asymmetrically, and the corpus GROWING is what triggers
+    it — the gap disappears exactly when the first unrelated record for that bucket lands.
+  sites_found:
+  - 'workflows/index.mjs breach timeline (FIXED earlier): asked whether a requested state layer had any
+    atoms. Three GBL 349 UDAP atoms satisfied it while GBL 899-aa was absent.'
+  - 'engine/applicability.mjs findGaps (FIXED): the same test, and worse, because coverage_gaps is the
+    engine''s own honesty channel — the thing that says UNAVAILABLE rather than empty. One UDAP atom silenced
+    the gap report for all thirteen declared New York instruments.'
+  - 'engine/backstops.mjs (FIXED): the INVERSE failure. Resolved the state UDAP statute by testing /udap|deceptive/
+    against the atom id. GBL 349 landed as ny.gbl.349.a.unlawful, matching neither word, so the corpus
+    HELD the New York UDAP statute while invariant I6''s state half reported it unavailable and blamed
+    an API-key blocker resolved in August. A false gap is quieter than a false all-clear and just as wrong.'
+  sites_cleared:
+  - 'engine/applicability.mjs preemption pairing: looks up a state atom by an explicit `related` link
+    and, finding none, emits state_id null with outcome both_apply and a note that more stringent state
+    law runs in parallel. Declared, not inferred, and it does not claim absence.'
+  the_fix: Coverage is DECLARED in meta/jurisdiction-coverage.yaml, transcribed from CORPUS-MANIFEST.md,
+    and engine/coverage.mjs compares the declaration against what the corpus holds. Missing instruments
+    are named, with the duty classes they would have supplied. The engine and the workflows share that
+    one implementation so they cannot drift apart on what "covered" means, and the UDAP backstop resolves
+    through the same declaration instead of a regex over identifiers.
+  the_structural_guard: Gate 25. A subnational jurisdiction with atoms MUST have a coverage declaration
+    listing expected instruments. The denominator has to exist before the numerator can look complete,
+    so atoms for a new jurisdiction cannot be added without stating what that jurisdiction needs.
+  residual_risk: The declaration itself can be wrong or stale. It is transcribed from CORPUS-MANIFEST.md
+    by hand and nothing yet checks the two against each other. Registered rather than solved.
+  status: open_mitigated
+- id: DEBT-014
+  title: Instrument-granularity coverage, and the two defects found while closing it
+  registered: '2026-08-19'
+  raised_by: Milestone 1 review — the FCRA asymmetry
+  the_pattern: The fifth instance of absence-assessed-by-presence, and the only one no gate could have
+    caught before it was declared. New York's incompleteness is DECLARED and therefore self-reporting;
+    FCRA's was merely TRUE. The corpus held 15 U.S.C. 1681t and nothing else, so a consumer-reporting-agency
+    query returned confident, correct preemption analysis over a substantive void with nothing in the
+    output signalling it. Every atom correct, every gate passing, the engine behaving exactly as designed
+    — the corpus simply did not know that "has preemption atoms" and "can answer questions about this
+    instrument" are different claims.
+  the_fix: 'meta/instrument-coverage.yaml, 11 instruments and 41 duty categories, declared per CATEGORY
+    rather than as a per-instrument boolean: "FCRA is incomplete" sends a reader elsewhere, "FCRA: preemption
+    present, permissible purposes absent, accuracy absent, disputes absent, furnisher duties absent" tells
+    them what to look for. Presence is computed by matching citation_prefix against obligation citations,
+    never hand-asserted.'
+  behavioural_decision: DEC-007. A partially-extracted instrument still ANSWERS, with a structural caveat
+    on the applicable entry and a matching coverage gap — not a reasoning string, which would be migration
+    005's mistake repeated. Pinned by five engine assertions.
+  found_while_fixing:
+  - 'THE `law` NAMESPACE WAS NEVER POPULATED. engine/applicability.mjs hardcoded `law: {}` while two FCRA
+    preemption atoms predicated on law.federal_instrument and law.state_requirement_subject. The expressions
+    were grammatical and evaluable, so gate 21 passed them; they simply could never be TRUE. The FCRA
+    preemption analysis this whole finding was about did not merely lack substance — it could not fire
+    at all.'
+  - A FACTA atom predicated on a `disposal` namespace the engine has never known, so it could not have
+    applied to any query. Corrected to practice.disposal_method. Found by gate 28 on its first run, not
+    by a failing test.
+  new_gates:
+  - 'Gate 27: an instrument with obligations must declare its duty categories.'
+  - 'Gate 28: an atom may only predicate on a namespace analyze() actually fills — catching both an unknown
+    namespace and, more quietly, a known one that is never populated.'
+  residual_risk: instrument-coverage.yaml is transcribed by hand like jurisdiction-coverage.yaml, and
+    nothing checks either against CORPUS-MANIFEST.md. Same residual as DEBT-013.
+  status: open_mitigated
+- id: DEBT-015
+  title: USLM large-and-complex sections are flat and cannot be segmented
+  registered: '2026-08-19'
+  raised_by: FCRA § 1681g extraction
+  the_defect: USLM marks some sections -uslm-lc and publishes the entire body as flat <p class="indentN">
+    inside one <content>, with NO subsection or paragraph elements. walk_uslm found no structure and returned
+    ZERO leaves — writing a valid, hashed, dual-parse-agreeing segmentation containing nothing, which
+    reads exactly like a section with no provisions.
+  why_indent_does_not_save_it: The classes look hierarchical and are typographic. In § 1681g the heading
+    line "(a) Information on file" carries indent2 while its own body carries indent0. Reconstructing
+    depth from them put paragraph (1) at path ["1"] instead of ["a","1"] — a path that is UNIQUE and WRONG,
+    which gate 23 cannot catch, and which would produce a confident citation to the wrong provision. Worse
+    than no extraction.
+  what_was_done: Two refusals rather than a guess. The extractor now exits non-zero if any walker produces
+    zero leaves, and walk_uslm raises explicitly on a flat -uslm-lc section naming the reason. § 1681g
+    stays absent, and meta/instrument-coverage.yaml keeps reporting consumer_disclosures as a category
+    FCRA cannot reach.
+  affected: 15 U.S.C. § 1681g (FCRA consumer disclosures) confirmed. Other large sections are likely —
+    § 1681b extracted structurally, so the variant is per-section, not per-title.
+  the_real_fix: 'Reconstruct from designators using the same continuation-before-descent algorithm walk_ecfr
+    uses, with derivation reconstructed and confidence set accordingly, so gate 16 and gate 23 apply their
+    normal scrutiny. Deferred rather than rushed: a wrong-but-unique path is the one defect shape this
+    repo has no gate for.'
+  status: closed
+  resolution: 'RESOLVED 2026-08-20. Reconstructed from the DESIGNATORS using the continuation-before-descent
+    algorithm walk_ecfr already uses, not from the typographic indent classes. 129 leaves, zero collisions,
+    and paragraph (1) now sits at ["a","1"] where the earlier attempt put it at ["1"] — unique and wrong.
+    The difference is not a better algorithm, it is an honest derivation flag: reconstructed rather than
+    structural, so gate 16 applies its scrutiny, gate 23 refuses a collision and gate 30 checks the path
+    against its own citation. Gated behind USLM_RECONSTRUCT_FLAT so the refusal remains the default and
+    reconstruction is a deliberate act.'
+- id: DEBT-016
+  title: CORPUS-MANIFEST.md cites the wrong section for NY electronic monitoring notice
+  registered: '2026-08-19'
+  raised_by: Priority 3 acquisition, fetching the declared NY instruments
+  the_defect: CORPUS-MANIFEST.md Priority 3 lists "N.Y. Labor Law § 203-f — electronic monitoring notice.
+    Domain IV." N.Y. Labor Law § 203-f is titled "Inventions made by employees" and is about invention-assignment
+    agreements. It is not the monitoring statute and has nothing to do with privacy notices.
+  what_was_checked: 'Fetched LAB 203-F from OpenLegislation (activeDate 2023-09-22, 1008 chars, title
+    "Inventions made by employees"). Then checked Civil Rights Law 52-a, 52-b and 52-c, none of which
+    is employee monitoring: they are residential video imaging, intimate-image dissemination, and sexually
+    explicit depictions respectively.'
+  not_resolved: The correct citation is NOT recorded here, because it has not been established from a
+    structured source. The § 52-c document came back with a leading asterisk — "* § 52-c" — which in the
+    NY consolidated text marks a MULTIPLE-VERSION section, so at least two § 52-c provisions exist and
+    OpenLegislation returned one of them. Resolving which, if either, is the monitoring statute needs
+    the law tree rather than a guess.
+  why_it_matters: meta/jurisdiction-coverage.yaml declares ny.labor.203-f as an expected US-NY instrument
+    supplying a notify duty, so the coverage report currently names a citation that cannot supply it.
+    A declared denominator with a wrong entry is a quieter version of the same defect the declaration
+    exists to prevent.
+  interim: The declaration entry is annotated rather than deleted, so the gap stays visible and stays
+    wrong-in-a-stated-way rather than silently corrected.
+  status: closed
+  resolution: 'RESOLVED 2026-08-20. The correct citation is N.Y. Civil Rights Law § 52-c*2, "Employers
+    engaged in electronic monitoring; prior notice required", found by walking the CVR law tree and matching
+    section TITLES rather than by search — the OpenLegislation search endpoint returned unrelated LLC-law
+    results for every phrasing tried. The *2 suffix confirms the earlier finding that § 52-c is a multiple-version
+    section: two distinct provisions share the number and only the suffix separates them, which is exactly
+    where a mis-remembered citation would land. Labor Law § 203-f remains what it always was, "Inventions
+    made by employees", and the manifest entry is corrected rather than deleted.'
+- id: DEBT-017
+  title: 'Two walkers, one unstated premise: the § 314.6 silent loss'
+  registered: '2026-08-19'
+  raised_by: Completing the GLBA Safeguards Rule
+  the_defect: 16 C.F.R. part 314 extracted sections 314.1 through 314.4 and stopped. The raw XML has six.
+    Sections 314.5 and 314.6 are each a single undesignated paragraph and walk_ecfr required a designator
+    to emit anything, so the part extracted, every gate passed, and two sections were not there. Section
+    314.6 is the Safeguards Rule SIZE-THRESHOLD EXEMPTION, silently absent from a corpus whose headline
+    invariant is typed exemptions.
+  the_consequence: An analysis of a financial institution holding information on fewer than 5,000 consumers
+    would have returned four obligations it does not owe -- written risk assessment, penetration testing,
+    written incident response plan, annual board report -- with NO GAP REPORTED, because the exemption
+    relieving it had never been extracted. Nothing in the corpus can see a provision that was never emitted.
+  the_real_lesson: 'The same premise -- "a paragraph needs a designator" -- was independently encoded
+    in walk_openleg and walk_ecfr. It was found and fixed in the openleg walker for N.Y. GBL 350 two days
+    earlier. Fixing one did not fix the other because the assumption was never written down anywhere.
+    This is a distinct sub-shape of cross-session drift: not a component assuming an interface another
+    session never delivered, but two components independently inventing the same wrong premise.'
+  the_fix: 'meta/extractor-assumptions.yaml declares nine premises a legal-text walker must not hold,
+    each with the witnesses that disproved it and the cost of getting it wrong. tools/test-extractors.py
+    asserts every walker against them and is wired into npm test. A new walker is not finished until it
+    passes that file. Writing it immediately produced a failure: the hard-wrapped cross-reference guard
+    handled only the self-repeating case, not the general one, and now handles both.'
+  residual: Six of the nine assumptions have executable tests. The three that do not -- designators-are-not-always-hierarchical,
+    real-provisions-can-be-very-short, roman-and-letter-designators-collide -- are listed as not-yet-executable
+    by the suite rather than quietly omitted.
+  status: open_mitigated
+- id: DEBT-018
+  title: Gate 23 was blind to half its input for its entire existence
+  registered: '2026-08-19'
+  raised_by: Auditing whether any gate can be silently scoped out of the corpus
+  the_defect: Gate 23 resolves a paragraph_path against the segmentation beside the atom raw file, and
+    silently skipped every record whose segmentation had never been promoted into the corpus. Fourteen
+    atoms were invisible to it. The moment their files arrived it found COPPA 312.3 ["a"] resolving to
+    SIX different provisions and two HIPAA breach paths resolving to nothing.
+  the_shape: Coverage-by-presence one level up, applied to the gates themselves. The gate reported a number
+    the whole time; g23:34 and g23:69 look equally healthy if you do not know the denominator. The gate
+    own coverage was never declared, so its silence read as approval.
+  the_fix: A skip ledger. A gate that declines to examine a record records a reason, and gate 32 splits
+    reasons into accepted-in-advance (a principle has no paragraph to cite) and gate-is-blind (no-segmentation-beside-source).
+    The second fails the build. It fired immediately on sixteen more records and gate 23 went from 34
+    examinations to 69.
+  residual: Only gate 23 is instrumented. Other gates with per-record preconditions -- 11, 12, 14 -- could
+    still be scoped out silently. The ledger exists; the instrumentation does not.
+  status: open_mitigated
+- id: DEBT-019
+  title: FERPA 1232g(b)(1) chapeau is not uniquely addressable
+  registered: '2026-08-19'
+  raised_by: Opening FERPA
+  the_defect: The funding-condition sentence that IS FERPA -- "No funds shall be made available ... to
+    any educational agency or institution which has a policy or practice of permitting the release of
+    education records" -- sits at a chapeau whose path ["b","1"] resolves to TWO provisions in the segmentation.
+    Gate 23 refused it.
+  what_was_done: 'The atom was written, refused, and DELETED rather than re-anchored to a subparagraph
+    that does not say what the record says. Same decision as 15 U.S.C. 1681g: a citation that does not
+    identify one provision is not a citation, and FERPA''s central sentence deserves a correct one.'
+  consequence: FERPA has sources acquired and dual-parse verified, an instrument declaration naming three
+    duty categories, and ZERO atoms. The coverage report says so.
+  the_fix: Determine why two chapeaux share the path -- most likely a continuation being read as a second
+    (b)(1) -- and either disambiguate in the walker or anchor the atom by USLM identifier rather than
+    by reconstructed path. FERPA is structural USLM, so the identifier exists.
+  status: open
+- id: DEBT-020
+  title: extract.py cannot fetch a multiple-version NY section
+  registered: '2026-08-20'
+  raised_by: Closing DEBT-016
+  the_defect: A NY locationId can contain an asterisk — CVR 52-C*2 — and tools/fetch-ny.sh and tools/extract.py
+    --openleg do not accept it, so the section had to be fetched with curl and logged into meta/sources.yaml
+    by hand.
+  why_it_matters: Multiple-version sections are precisely where a mis-remembered citation lands, so they
+    are the ones most worth being able to fetch cleanly. Doing it by hand also bypasses the ledger logging
+    that gate 33 depends on, which is how this was noticed.
+  the_fix: URL-encode the locationId in tools/fetch-ny.sh and accept the suffix in the extractor CLI.
+  update_2026_08_20: 'MOSTLY OVERTAKEN, and the reason is worth recording. The API accepts CVR/52-C-2
+    — a hyphen where the locationId has an asterisk — and returns the same document, whose own
+    locationId field still reads 52-C*2. So the section now goes through tools/fetch-ny.sh and
+    tools/extract.py --openleg like any other, and the ledger logging that gate 33 depends on happens
+    automatically; the hand-written meta/sources.yaml row is gone. The atoms record the hyphen URL,
+    which is the one actually fetched, and paragraph_path.anchor keeps the asterisk, which is what the
+    document calls itself. What is NOT fixed is the general case: nothing in the tooling knows that the
+    two spellings name one section, and nothing would catch a suffix the API happens not to alias.'
+  status: open_mitigated
+- id: DEBT-021
+  title: The enforcement_action type has no verified example
+  registered: '2026-08-20'
+  raised_by: Migration 006
+  the_defect: us.enforcement.ftc.public_commitment_pattern states a real doctrinal rule and quotes NOTHING.
+    ftc.gov returned 404 for every constructed order URL; the Commission publishes orders as PDFs with
+    no derivable path.
+  why_it_is_recorded_anyway: 'So the type has a live example and DEBT-001''s public-commitment pathway
+    has somewhere to point. It is verification_status: unverified and invariant I1 suppresses it from
+    every output, so it cannot be cited by accident.'
+  the_fix: Fetch one specific order manually, hash it, and replace the placeholder span with quoted text
+    — at which point the record becomes verbatim_confirmed and gate 2 requires the file.
+  status: open
+- id: DEBT-022
+  title: A defined term can collide inside one jurisdiction, and the fact keys did not know it
+  registered: '2026-08-20'
+  raised_by: Extracting the SAFE for Kids Act
+  the_defect: 'New York defines "Covered user" TWICE in the General Business Law. Under the Child Data
+    Protection Act, GBL § 899-ee(1), it means a user in New York whom the operator actually knows to be
+    a minor, or who is using a service primarily directed to minors. Under the SAFE for Kids Act, GBL
+    § 1500(4), it means a user in New York who is not the operator or its agent or affiliate — which is
+    very nearly everybody, adults included. Same two words, same chapter of the same law, and the only
+    element they share is being in New York. The corpus expressed the CDPA version as the fact key
+    data.subject_is_covered_user, unqualified, and expressed the CDPA operator as
+    entity.is_ny_covered_operator — a term the CDPA does not define at all (§ 899-ee(3) defines
+    "Operator"), while SAFE for Kids DOES define "Covered operator" at § 1500(7).'
+  why_it_matters: 'The keys were not merely vague, they were pointed at the wrong statute. A SAFE for
+    Kids atom written naturally against entity.is_ny_covered_operator would have inherited the Child Data
+    Protection Act''s duties, and one written against data.subject_is_covered_user would have pulled
+    adults into a minor-protection regime or kept minors out of a general one. Every gate would have
+    passed: the spans are verbatim, the paths unique, the predicates satisfiable and on filled
+    namespaces. Nothing in the system compares a fact key against the definition it stands for.'
+  what_was_done: 'Three things, in the order they matter. (1) The CDPA keys were renamed to
+    entity.is_ny_cdpa_operator and data.subject_is_cdpa_covered_user, so no key claims a term its
+    instrument does not use. (2) SAFE for Kids uses entity.is_ny_addictive_platform_operator, which
+    describes what § 1500(7) says rather than borrowing the colliding label. (3) The collision itself is
+    now a checked artifact rather than a note: ny.def.covered_user.cdpa and
+    ny.def.covered_user.safe_for_kids are definition records whose differs_from is COMPUTED from their
+    elements and recomputed by gate 26, so the divergence cannot drift from the words that justify it.
+    tools/compute-differs.mjs also had to learn to label each side by CITATION when both drafters used
+    the same phrase — it had been labelling by term, which fails precisely on this class.'
+  what_is_still_open: 'Nothing connects a fact key to a definition record. The renaming above is a
+    convention held by hand, and the next colliding term will be caught the same way this one was — by
+    someone reading two statutes at once. A gate that required every entity./data. key used by an
+    instrument''s atoms to resolve against a definition record for that instrument would close it, and
+    would need a definition corpus far larger than three federal and two New York records.'
+  trigger: The next instrument that defines a term another instrument in the corpus already defines.
+    Comprehensive state privacy laws will do this constantly.
+  risk_if_forgotten: Medium and quiet. The failure is a correct-looking answer about the wrong population.
+  status: open_mitigated

@@ -1,0 +1,21 @@
+id: ev.coppa.002
+question: Our service is not directed to children, but a user told us they are 11. Does COPPA apply?
+trap: 'T4: signal/knowledge triggers. Actual knowledge is an independent trigger -- the service need not
+  be child-directed.'
+trap_category: T4
+rubric:
+- name: the consent atom exists
+  record_exists: us.coppa.312_3.verifiable_parental_consent
+- name: actual knowledge is a disjunctive trigger in the predicate
+  record: us.coppa.312_3.verifiable_parental_consent
+  path: applies_if.all
+  contains: actual_knowledge_of_child_data
+- name: the trigger is disjunctive, not conjunctive
+  record: us.coppa.312_3.verifiable_parental_consent
+  path: applies_if.all
+  contains: 'any:'
+- name: consent must be prior, not retrospective
+  record: us.coppa.312_3.verifiable_parental_consent
+  path: requirement_detail
+  contains: PRIOR consent
+all_pass: true

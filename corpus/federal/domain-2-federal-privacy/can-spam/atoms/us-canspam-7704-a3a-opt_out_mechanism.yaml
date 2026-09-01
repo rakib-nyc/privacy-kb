@@ -1,0 +1,141 @@
+id: us.canspam.7704.a3a.opt_out_mechanism
+schema_version: 1
+record_type: obligation
+source:
+  citation: 15 U.S.C. § 7704(a)(3)(A)
+  instrument_id: us.can_spam
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7704.xml
+  raw_sha256: cc5b9acbbbd7b838a5526ed4fe4b736558bb9d98d7192bce2b54c46729afddfc
+  text_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7704.txt
+  text_sha256: d3e08ec6e6ef3d8779351f957bd184eaafbf48d7f51e3182537721238a9ed8ed
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7704.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: It is unlawful for any person to initiate the transmission to a protected computer of a
+  commercial electronic mail message that does not contain a functioning return electronic mail address
+  or other Internet-based mechanism, clearly and conspicuously displayed, that—
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+  - a
+  - '3'
+  - A
+  anchor: /us/usc/t15/s7704/a/3/A
+  derivation: structural
+  confidence: high
+  evidence: USLM chapeau element; identifier read from the source. The chapeau carries the duty and clauses
+    (i)-(ii) state what the mechanism must do, so the path resolves through the leaves' context rather
+    than to a leaf of its own (gate 23).
+operative_context:
+- position: follows
+  relation: conditions
+  verbatim_span: a recipient may use to submit, in a manner specified in the message, a reply electronic
+    mail message or other form of Internet-based communication requesting not to receive future commercial
+    electronic mail messages from that sender at the electronic mail address where the message was received;
+    and
+  citation: null
+  relation_note: null
+  path:
+    path:
+    - a
+    - '3'
+    - A
+    - i
+    anchor: /us/usc/t15/s7704/a/3/A/i
+    derivation: structural
+    confidence: high
+    evidence: USLM element hierarchy
+- position: follows
+  relation: conditions
+  verbatim_span: remains capable of receiving such messages or communications for no less than 30 days
+    after the transmission of the original message.
+  citation: null
+  relation_note: null
+  path:
+    path:
+    - a
+    - '3'
+    - A
+    - ii
+    anchor: /us/usc/t15/s7704/a/3/A/ii
+    derivation: structural
+    confidence: high
+    evidence: USLM element hierarchy
+subject:
+  domain: II.E.1
+  lifecycle:
+  - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+- ftc
+sector:
+- any
+data_types:
+- any
+status: in_force
+effective_from: '2004-01-01'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+  - practice.sends_commercial_email == true
+applies_to_role: controller
+obligation_type: disclose
+summary: A commercial electronic mail message must carry a functioning, clearly and conspicuously displayed
+  return email address or other Internet-based mechanism the recipient can use to ask to stop receiving
+  messages, and it must keep working for at least 30 days after the message was sent.
+requirement_detail: THE OPT-OUT MECHANISM IS A PROPERTY OF THE MESSAGE, NOT OF THE PROGRAMME. Every commercial
+  message must carry its own working unsubscribe address or link, and clause (ii) requires it to keep
+  functioning for at least 30 days after transmission — the half practitioners miss most often, because
+  campaign infrastructure and landing pages are routinely torn down the week the campaign ends. Subparagraph
+  (B) permits a preference menu in place of a single global unsubscribe, but only if the menu includes
+  an option to stop ALL commercial email from the sender; a preference centre with no all-off switch does
+  not satisfy (A)(i). The duty attaches only to commercial messages, so whether a mixed message is commercial
+  is decided upstream by the primary-purpose test in 16 C.F.R. § 316.3, not by how the sender labels it.
+  Subparagraph (C) forgives an unexpected, temporary technical failure corrected within a reasonable time
+  — a defence to a broken mechanism, never to an absent one. What the recipient may be made to DO to use
+  the mechanism is capped separately by 16 C.F.R. § 316.5.
+deadline: null
+exemptions: []
+related:
+- us.canspam.7704.a4ai.opt_out_honored
+- us.canspam.316_5.a.no_fee_or_extra_steps
+federal_relationship: null
+interpreted_by: []
+common_errors:
+- Decommissioning the unsubscribe endpoint when the campaign ends. Clause (ii) requires it to remain capable
+  of receiving requests for at least 30 days after the message was sent.
+- Offering only a topic preference centre. Subparagraph (B) allows a menu only where it includes an option
+  to receive no commercial email at all from the sender.
+- Applying the duty to every message the company sends. It reaches commercial messages; the primary-purpose
+  test in 16 C.F.R. § 316.3 decides mixed transactional-and-commercial mail.
+open_questions: []
+confidence: high
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 7707(b)(1)
+  note: CAN-SPAM expressly preempts state statutes regulating commercial email EXCEPT to the extent they
+    prohibit falsity or deception. A state opt-in requirement is displaced; a state deceptive-subject-line
+    prohibition is not. See us.canspam.7707.b1.state_law_preemption.
+enforcement:
+  enforcers:
+  - ftc
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: The enforcement section (15 U.S.C. § 7706) has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent. State attorneys general and, narrowly, providers of internet access
+      service also enforce, and neither route is in the corpus yet.
+  statute_of_limitations: null

@@ -1,0 +1,178 @@
+id: us.tsr.310_3.a1.material_disclosures
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 310.3(a)(1)
+  instrument_id: us.tsr
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=310
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  raw_sha256: 0374ac69f516b67c40fb05bf7a8482af5e2be0d258616f8faee7615bfc966917
+  text_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.txt
+  text_sha256: 7e1270d836ac4d86c1831b2f61d398afff5a07cca625841ea5334e93a3e6d314
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 28959fcff3871b29223992e06c8d4d75a140102f84db3ccb0bf87b46bdb527dc
+verbatim_span: >-
+  Before a customer consents to pay for goods or services offered, failing to disclose truthfully,
+  in a clear and conspicuous manner, the following material information:
+span_interruptions:
+  - offset: 33
+    excluded_text: ' 1'
+    kind: footnote_ref
+    note: >-
+      Footnote 1 to § 310.3(a)(1), on courier-transported payment, is rendered as a bare digit
+      inside the sentence. Excluded by offset so the operative words are quoted unbroken; CI
+      re-inserts it and matches the source.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '1'
+  anchor: '310.3'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      It is a deceptive telemarketing act or practice and a violation of this part for any seller or
+      telemarketer to engage in the following conduct:
+    citation: 16 C.F.R. § 310.3(a)
+    path:
+      path:
+        - a
+      anchor: '310.3'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number
+        so the path is scoped to its own section — without it a path like ["a"] matches every
+        section in the part.
+jurisdiction: US
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions:
+  - id: cfr.16.310.6.b7.business_to_business
+    type: activity_level
+    scope: >-
+      A call between a telemarketer and a BUSINESS to induce that business to buy goods or services,
+      or to give a charitable contribution, is exempt from the part — with two carve-backs stated in
+      the same paragraph: the misrepresentation prohibitions of § 310.3(a)(2) and (4) still apply,
+      and calls inducing the retail sale of nondurable office or cleaning supplies are not exempt
+      (for those, § 310.6(b)(7) instead disapplies § 310.4(b)(1)(iii)(B) and § 310.5). The exemption
+      turns on WHO IS CALLED and for what, not on the caller's own status, which is why it is
+      activity-level and not entity-level.
+    source_citation: 16 C.F.R. § 310.6(b)(7)
+    verbatim_span: >-
+      Telephone calls between a telemarketer and any business to induce the purchase of goods or
+      services or a charitable contribution by the business, provided, however that this exemption
+      does not apply to:
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.call_recipient_is_business == true
+        - purpose.induce_business_purchase == true
+related:
+  - us.usc.15.45.a1.deception
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Collapsing this into the § 310.4(d) call-opening disclosures. § 310.4(d) is about identifying
+    the seller and the purpose promptly on an outbound call; § 310.3(a)(1) is about the price and
+    terms before consent to pay, and both can be owed on one call.
+  - >-
+    Disclosing the material terms in a written confirmation. The text fixes the moment as before the
+    customer consents to pay, so a post-sale document is late by construction.
+  - >-
+    Assuming a business-to-business call carries no disclosure duty at all. § 310.6(b)(7) exempts
+    such calls from this paragraph but expressly preserves § 310.3(a)(2) and (4), so
+    misrepresentation liability survives.
+open_questions:
+  - >-
+    effective_from is the publication date in the part-level source note the eCFR carries for 16
+    C.F.R. part 310 ("75 FR 48516, Aug. 10, 2010, unless otherwise noted"), which is also the first
+    date in this section's own source note. That is a Federal Register PUBLICATION date, not
+    necessarily an effective date, and the do-not-call provisions are older than this codification —
+    the source does not state when they first took effect. A query as of a date before 2010-08-10
+    will not reach this atom even though the rule existed.
+confidence: high
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+regulator:
+  - ftc
+sector:
+  - telemarketing
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2010-08-10'
+applies_if:
+  all:
+    - entity.is_seller_or_telemarketer == true
+    - practice.conducts_telemarketing == true
+    - event.type == 'telemarketing_sales_offer'
+applies_to_role: controller
+obligation_type: disclose
+summary: >-
+  Before a customer consents to pay for goods or services offered in a telemarketing transaction,
+  the seller or telemarketer must truthfully disclose, clearly and conspicuously, the material
+  information listed in § 310.3(a)(1)(i) through (viii).
+requirement_detail: >-
+  THE TIMING IS THE OBLIGATION. The disclosures must land BEFORE the customer consents to pay, which
+  puts them ahead of the point of sale rather than in a confirmation sent afterwards, and the
+  failure to make them is itself defined as a deceptive practice by the chapeau — no proof of
+  intent, reliance or injury is required. The enumerated items are total cost and quantity, material
+  restrictions, any no-refund policy, prize-promotion odds and conditions, the material terms of any
+  negative option feature, and specified debt-relief disclosures. Two neighbouring provisions are
+  routinely confused with this one: § 310.4(d) requires a PROMPT identification disclosure at the
+  top of an outbound call (seller identity, sales purpose, nature of the goods, prize-promotion
+  no-purchase statement), which is a different duty with a different trigger; and § 310.3(a)(2)
+  prohibits misrepresenting the same subject matter, so silence is caught here and a false statement
+  is caught there. The FTC Act § 5 deception standard sits underneath all of it and does not switch
+  off.
+preemption:
+  posture: floor
+  authority: 16 C.F.R. § 310.7(b)
+  note: >-
+    § 310.7(b) states that nothing in that section prohibits a state official from proceeding in
+    state court on an alleged violation of any civil or criminal statute of that state, and the part
+    contains no express preemption clause. Recorded as floor on that basis. The enabling Act (15
+    U.S.C. 6101–6108) is not in this corpus, so any preemptive effect it carries is unresolved here.
+    The TCPA and its FCC rules run in parallel and are a separate instrument.
+enforcement:
+  enforcers:
+    - ftc
+    - state_ag
+    - private_person
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      FTC Act civil penalties for rule violations; state and private actions under the Telemarketing
+      and Consumer Fraud and Abuse Prevention Act
+    range: null
+    note: >-
+      The part states no penalty figure. § 310.7(a) requires a State or private plaintiff suing
+      under the Act to serve written notice on the Commission before filing, which is where the
+      private route is visible in the rule text itself; the Act (15 U.S.C. 6101–6108) is not in this
+      corpus, so the damages threshold is not recorded here.
+  statute_of_limitations: null

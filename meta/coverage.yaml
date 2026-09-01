@@ -1,0 +1,768 @@
+# unaccounted_allowance: taxonomy performance indicators neither covered nor ruled out of
+# scope. BRIEF.md § 2 requires every leaf be one or the other; 49 of 69 were neither and
+# nothing said so. Gate 34 ratchets this — it may only go down.
+# RAISED 36 -> 38 ON 2026-08-31, deliberately and once: removing the third-party
+# framework records under DEC-008 left two leaves with no atoms. That is the ratchet
+# working, not failing — it refused to let the regression pass unnoticed. The number
+# resumes falling from here.
+unaccounted_allowance: 38
+# legal-domain COVERAGE CHECKLIST
+# ==========================
+# Keyed to the legal-domain taxonomy, v2.6.1, approved 3 March 2025,
+# effective 1 Sept. 2025. Coordinates are the taxonomy's; the wording is not reproduced.
+# Source document: the source taxonomy — fetch it yourself; this repository
+# does not redistribute it. See meta/decisions.yaml DEC-008.
+#
+# This file is the completeness argument for the whole project. Every leaf either
+# maps to atom IDs or carries an out_of_scope_reason. Nothing else is permitted.
+#
+# THE FIVE DOMAIN LABELS ARE KEPT; the competency and performance-indicator wording
+# is not. A domain name is an identifier one needs in order to say which domain is
+# meant; 90 performance-indicator descriptions are the substance of the source taxonomy’s outline.
+# That is the line drawn here, and it is a judgement rather than a rule.
+#
+# COORDINATES: <DOMAIN>.<COMPETENCY>.<PI_ORDINAL>. The competency part is the source taxonomy’s.
+# The PI ordinal is ours and is stable for v2.6.1 ONLY. See meta/taxonomy-versions.yaml.
+#
+# status: not_started | in_progress | covered | out_of_scope
+
+# THE SOURCE TAXONOMY’S WORDING IS NOT REPRODUCED HERE.
+# This file used to carry the taxonomy's own competency and performance-indicator titles
+# verbatim — about 15,000 characters across 90 strings, which is effectively the whole
+# outline. The COORDINATES are identifiers and are retained, because naming a standard
+# is not reproducing it; the prose behind them is the source taxonomy’s and has been removed. Fetch the
+# current taxonomy from the source taxonomy to read the titles alongside this file.
+# Every `title: null` below is a deliberate hole, not a transcription that failed.
+# See meta/decisions.yaml DEC-008.
+source_taxonomy:
+  designation: legal-domain
+  version: 2.6.1
+  effective_date: '2025-09-01'
+  transcribed: '2026-08-18'
+domains:
+  - domain: I
+    title: The U.S. Privacy Environment
+    blueprint_q:
+      min: 27
+      max: 33
+    description: null
+    competencies:
+      - coordinate: I.A
+        title: null
+        blueprint_q:
+          min: 3
+          max: 5
+        performance_indicators:
+          - coordinate: I.A.1
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: I.A.2
+            title: null
+            atoms:
+              - us.taxonomy.code_evidentiary_status
+              - us.taxonomy.sources_of_us_law
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: I.A.3
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: I.A.4
+            title: null
+            atoms:
+              - us.authority.cfpb
+              - us.authority.fcc
+              - us.authority.ftc
+              - us.authority.hhs_ocr
+              - us.authority.sec
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: I.A.5
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+      - coordinate: I.B
+        title: null
+        blueprint_q:
+          min: 5
+          max: 7
+        performance_indicators:
+          - coordinate: I.B.1
+            title: null
+            atoms:
+              - us.authority.ftc.unfairness_test
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: I.B.2
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: I.B.3
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: I.B.4
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: I.B.5
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: I.B.6
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+      - coordinate: I.C
+        title: null
+        blueprint_q:
+          min: 18
+          max: 22
+        performance_indicators:
+          - coordinate: I.C.1
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: I.C.2
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: I.C.3
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: I.C.4
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: I.C.5
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: I.C.6
+            title: null
+            atoms:
+              - us.doj_bulk_data.202_101.a.scope
+              - us.doj_bulk_data.202_301.a.data_brokerage_prohibition
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: I.C.7
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: I.C.8
+            title: null
+            atoms:
+              - us.workflow.ma_diligence
+              - us.workflow.us_non_us_intersection
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: I.C.9
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+        atoms:
+          - us.fipps.hew1973.principle.correction
+          - us.fipps.hew1973.principle.individual_access
+          - us.fipps.hew1973.principle.no_secondary_use_without_consent
+          - us.fipps.hew1973.principle.no_secret_systems
+          - us.fipps.hew1973.principle.reliability_and_misuse_prevention
+        status: in_progress
+  - domain: II
+    title: Federal Privacy Laws
+    blueprint_q:
+      min: 15
+      max: 19
+    description: null
+    competencies:
+      - coordinate: II.A
+        title: null
+        blueprint_q:
+          min: 3
+          max: 5
+        performance_indicators:
+          - coordinate: II.A.1
+            title: null
+            atoms:
+              - us.coppa.312_3.no_conditioning
+              - us.coppa.312_3.notice
+              - us.coppa.312_3.security
+              - us.coppa.312_3.verifiable_parental_consent
+              - us.enforcement.ftc.public_commitment_pattern
+              - us.usc.15.45.a1.deception
+              - us.usc.15.45.a1.public_commitment_deception
+              - us.usc.15.45.n.unfairness_test
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: II.A.2
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: II.A.3
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+      - coordinate: II.B
+        title: null
+        blueprint_q:
+          min: 3
+          max: 5
+        performance_indicators:
+          - coordinate: II.B.1
+            title: null
+            atoms:
+              - us.cfr.45.164.502.a.use_disclosure_general
+              - us.cfr.45.164.502.b1.minimum_necessary
+              - us.cfr.45.164_504.e_2
+              - us.cfr.45.164_506.c_1
+              - us.cfr.45.164_508.a_1
+              - us.cfr.45.164_520.a_1
+              - us.cfr.45.164_524.b_2_i
+              - us.cfr.45.164_526.a_1
+              - us.def.personal_information.hipaa.phi
+              - us.hipaa.breach.164_402.breach_definition
+              - us.hipaa.breach.164_404.individual_notice
+              - us.hipaa.breach.164_404.timeliness
+              - us.hipaa.breach.164_406.a.media_notice
+              - us.hipaa.breach.164_408.a.secretary_notice
+              - us.hipaa.security.164_306.a_1.confidentiality_integrity_availability
+              - us.hipaa.security.164_306.b_1.flexibility_of_approach
+              - us.hipaa.security.164_306.d_2.required_implementation_specifications
+              - us.hipaa.security.164_306.d_3.addressable_implementation_specifications
+              - us.hipaa.security.164_308.a_1_ii_a.risk_analysis
+              - us.hipaa.security.164_308.a_6_ii.security_incident_response_and_reporting
+              - us.hipaa.security.164_310.a_1.facility_access_controls
+              - us.hipaa.security.164_312.a_2_iv.encryption_and_decryption
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: II.B.2
+            title: null
+            atoms:
+              - us.hitech.17935.a.restriction_paid_out_of_pocket
+              - us.hitech.17935.b.1.a.minimum_necessary_limited_data_set
+              - us.hitech.17935.c.1.b.ehr_accounting_three_years
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: II.B.3
+            title: null
+            atoms:
+              - us.common_rule.46_109.a.irb_review_authority
+              - us.common_rule.46_111.a7.privacy_and_confidentiality
+              - us.common_rule.46_116.a1.informed_consent
+              - us.common_rule.46_116.b5.confidentiality_statement
+              - us.cures.171_103.a.information_blocking_definition
+              - us.cures.171_103.b_2.provider_knowledge_standard
+              - us.cures.171_201.a.preventing_harm_reasonable_belief
+              - us.cures.171_202.b.privacy_precondition_exception
+              - us.health_breach.318_1.a.scope
+              - us.health_breach.318_3.a1.individual_notice
+              - us.health_breach.318_3.a3.media_notice
+              - us.part2.2_13.a.use_disclosure_prohibition
+              - us.part2.2_13.c_2.non_affirmative_response
+              - us.part2.2_31.a.written_consent_required_elements
+              - us.part2.2_31.b_1.sud_counseling_notes_consent
+            status: in_progress
+            out_of_scope_reason: null
+      - coordinate: II.C
+        title: null
+        blueprint_q:
+          min: 3
+          max: 5
+        performance_indicators:
+          - coordinate: II.C.1
+            title: null
+            atoms:
+              - us.cfr.16.313.10.a1.disclosure_limit
+              - us.cfr.16.313.11.a1.reuse_limit_received_under_exception
+              - us.cfr.16.313.4.a1.initial_notice_customer
+              - us.cfr.16.313.4.a2.initial_notice_consumer
+              - us.cfr.16.313.5.a1.annual_notice
+              - us.cfr.16.313.7.a1.opt_out_notice
+              - us.def.personal_information.glba.npi
+              - us.facta.disposal.682_2.scope
+              - us.facta.disposal.682_3.examples_are_not_requirements
+              - us.facta.disposal.682_3.standard
+              - us.glba.safeguards.314_1.b.scope
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: II.C.2
+            title: null
+            atoms:
+              - us.def.personal_information.fcra.consumer_report
+              - us.fcra.1681b.a.permissible_purpose
+              - us.fcra.1681e.b.maximum_possible_accuracy
+              - us.fcra.1681g.a1.file_disclosure
+              - us.fcra.1681i.a1a.reinvestigation
+              - us.fcra.1681i.a3b.frivolous_notice
+              - us.fcra.1681m.a.adverse_action_notice
+              - us.fcra.1681s_2.a1a.furnisher_accuracy
+              - us.fcra.1681s_2.b1a.furnisher_investigation
+              - us.glba.safeguards.314_4.ftc_notification
+              - us.glba.safeguards.314_4.incident_response_plan
+              - us.glba.safeguards.314_4.penetration_testing
+              - us.glba.safeguards.314_4.qualified_individual
+              - us.glba.safeguards.314_4.risk_assessment_written
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: II.C.3
+            title: null
+            atoms:
+              - us.red_flags.681_1.a.scope
+              - us.red_flags.681_1.c.covered_account_determination
+              - us.red_flags.681_1.d1.written_program
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: II.C.4
+            title: null
+            atoms:
+              - us.cfpb.5531.c1.unfairness_test
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: II.C.5
+            title: null
+            atoms:
+              - us.cfpb.5531.d.abusive_standard
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: II.C.6
+            title: null
+            atoms:
+              - us.open_banking.5533.a.consumer_data_access
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: II.C.7
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+      - coordinate: II.D
+        title: null
+        blueprint_q:
+          min: 1
+          max: 3
+        performance_indicators:
+          - coordinate: II.D.1
+            title: null
+            atoms:
+              - us.authority.ed
+              - us.ferpa.1232g.a1a.inspect_and_review
+              - us.ferpa.1232g.a2.hearing_to_challenge
+              - us.ferpa.1232g.b1.disclosure_prohibition
+              - us.ferpa.99_31.a1ia.school_official_exception
+              - us.ferpa.99_37.a.directory_information_notice
+              - us.ppra.1232h.b.protected_information_survey_consent
+              - us.ppra.1232h.c2ai.annual_policy_notice
+              - us.ppra.1232h.c2aii.opt_out_opportunity
+              - us.workflow.edtech_vendor
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: II.D.2
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+      - coordinate: II.E
+        title: null
+        blueprint_q:
+          min: 2
+          max: 4
+        performance_indicators:
+          - coordinate: II.E.1
+            title: null
+            atoms:
+              - us.cable.551.a1.privacy_notice
+              - us.cable.551.c1.disclosure_prohibition
+              - us.cable.551.e.destruction
+              - us.cable.551.f1.private_action
+              - us.cable.551.f2a.liquidated_damages
+              - us.canspam.316_5.a.no_fee_or_extra_steps
+              - us.canspam.7704.a1.header_information
+              - us.canspam.7704.a3a.opt_out_mechanism
+              - us.canspam.7704.a4ai.opt_out_honored
+              - us.coppa.312_11.a.safe_harbor
+              - us.coppa.312_4.a.notice_content
+              - us.coppa.312_5.a1.verifiable_consent
+              - us.coppa.312_5.b1.consent_methods
+              - us.coppa.312_6.a1.parental_access
+              - us.coppa.312_8.a.security
+              - us.cpni.222.a.confidentiality_duty
+              - us.cpni.222.c1.customer_approval
+              - us.cpni.64_2008.c.notification_content
+              - us.cpni.64_2009.e.annual_compliance_certificate
+              - us.cpni.64_2011.b.law_enforcement_breach_notice
+              - us.cpni.64_2011.c.customer_breach_notice
+              - us.tcpa.227.b1a.autodialer_prohibition
+              - us.tcpa.227.b1ci.fax_established_business_relationship
+              - us.tcpa.64_1200.a2.prior_express_written_consent
+              - us.tsr.310_3.a1.material_disclosures
+              - us.vppa.2710.b1.disclosure_prohibition
+              - us.vppa.2710.b2b.informed_written_consent
+              - us.vppa.2710.c1.private_action
+              - us.vppa.2710.e.destruction
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: II.E.2
+            title: null
+            atoms:
+              - us.tcpa.227.c3f.national_dnc_prohibition
+              - us.tcpa.227.c5b.dnc_private_action
+              - us.tcpa.64_1200.c2.national_dnc_registry
+              - us.tcpa.64_1200.d3.internal_dnc_honor
+              - us.tsr.310_4.b1iii_a.entity_specific_dnc
+              - us.tsr.310_4.b1iii_b.dnc_registry
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: II.E.3
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: II.E.4
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: II.E.5
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+  - domain: III
+    title: Government and Court Access to Private-sector Information
+    blueprint_q:
+      min: 3
+      max: 5
+    description: null
+    competencies:
+      - coordinate: III.A
+        title: null
+        blueprint_q:
+          min: 1
+          max: 2
+        performance_indicators:
+          - coordinate: III.A.1
+            title: null
+            atoms:
+              - us.bsa.5318.g2ai.sar_confidentiality
+              - us.calea.1002.a.assistance_capability
+              - us.cloud_act.2713.extraterritorial_production
+              - us.doctrine.fourth_amendment.third_party
+              - us.dppa.2721.a.disclosure_prohibition
+              - us.dppa.2721.b.permitted_uses
+              - us.dppa.2722.a.downstream_liability
+              - us.fisa_702.1881a.b.limitations
+              - us.foia.552.b6.personal_privacy_exemption
+              - us.privacy_act.552a.b.disclosure_prohibition
+              - us.privacy_act.552a.b3.routine_use
+              - us.privacy_act.552a.d1.access_right
+              - us.privacy_act.552a.d2a.amendment_acknowledgment
+              - us.privacy_act.552a.e10.safeguards
+              - us.privacy_act.552a.e4.system_of_records_notice
+              - us.privacy_act.552a.e4d.routine_use_publication
+              - us.rfpa.3402.access_prohibition
+              - us.rfpa.3404.a.customer_authorization
+              - us.rfpa.3404.b.no_condition_of_business
+              - us.rfpa.3404.c.disclosure_record_access
+              - us.rfpa.3405.3.challenge_window
+              - us.rfpa.3405.administrative_subpoena
+              - us.rfpa.3406.a.search_warrant
+              - us.rfpa.3406.b.warrant_notice
+              - us.rfpa.3406.c.delayed_notice
+              - us.rfpa.3407.judicial_subpoena
+              - us.rfpa.3410.a.customer_challenge
+              - us.rfpa.3410.d.no_proceeding_notice
+              - us.rfpa.3410.e.sole_judicial_remedy
+              - us.sca.2702.a1.divulgence_prohibition
+              - us.wiretap.2511.1a.interception_prohibition
+              - us.workflow.civil_discovery
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: III.A.2
+            title: null
+            atoms:
+              - us.sca.2701.a1.unauthorized_access
+              - us.sca.2703.a.contents_warrant
+              - us.sca.2703.c1.subscriber_records
+              - us.sca.2703.d.court_order_standard
+            status: in_progress
+            out_of_scope_reason: null
+      - coordinate: III.B
+        title: null
+        blueprint_q:
+          min: 1
+          max: 3
+        performance_indicators:
+          - coordinate: III.B.1
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: III.B.2
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: III.B.3
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+      - coordinate: III.C
+        title: null
+        blueprint_q:
+          min: 1
+          max: 2
+        performance_indicators:
+          - coordinate: III.C.1
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: III.C.2
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+  - domain: IV
+    title: Workplace Privacy
+    blueprint_q:
+      min: 4
+      max: 6
+    description: null
+    competencies:
+      - coordinate: IV.A
+        title: null
+        blueprint_q:
+          min: 1
+          max: 3
+        performance_indicators:
+          - coordinate: IV.A.1
+            title: null
+            atoms:
+              - us.fcra.1681b.b2ai.standalone_disclosure
+              - us.title_vii.2000e2.a1.discrimination
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: IV.A.2
+            title: null
+            atoms:
+              - ny.civil_rights.52c.2a.monitoring_notice
+              - ny.civil_rights.52c.3.enforcement
+              - ny.nyc_ll144.20_871.a.bias_audit
+              - ny.nyc_ll144.20_871.b.candidate_notice
+              - ny.nyc_ll144.20_872.b.daily_violation
+              - ny.nyc_rcny.5_301.a.audit_currency
+              - ny.nyc_rcny.5_301.b.3.intersectional_categories
+              - ny.nyc_rcny.5_301.b.selection_impact_ratio
+              - ny.nyc_rcny.5_302.a.historical_data
+              - ny.nyc_rcny.5_303.a.published_results
+              - ny.nyc_rcny.5_304.b.candidate_notice
+              - us.ada.12112.d3b.separate_files
+              - us.ada.12112.d4a.employee_inquiry
+              - us.authority.dol
+              - us.authority.eeoc
+              - us.gina.2000ff1.a1.discrimination
+              - us.gina.2000ff1.b.acquisition_prohibition
+              - us.gina.2000ff5.a.confidentiality
+              - us.workflow.byod_monitoring
+            status: in_progress
+            out_of_scope_reason: null
+      - coordinate: IV.B
+        title: null
+        blueprint_q:
+          min: 2
+          max: 4
+        performance_indicators:
+          - coordinate: IV.B.1
+            title: null
+            atoms:
+              - us.dot_drug_testing.40_321.b.specific_written_consent
+              - us.dot_drug_testing.40_323.b.legal_proceeding_release
+              - us.dot_drug_testing.40_323.d.employee_notification
+              - us.eppa.2002.1.lie_detector_prohibition
+              - us.eppa.2002.2.results_use_prohibition
+              - us.title_vii.2000e2.a2.limit_segregate_classify
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: IV.B.2
+            title: null
+            atoms:
+              - us.nlra.157.protected_activity
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: IV.B.3
+            title: null
+            atoms:
+              - us.sca.2701.c1.provider_authorization
+              - us.wiretap.2510.17a.electronic_storage
+              - us.wiretap.2510.4.intercept_definition
+              - us.wiretap.2510.5a.device_exclusion
+              - us.wiretap.2511.2a.provider_exception
+              - us.wiretap.2511.2d.one_party_consent
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: IV.B.4
+            title: null
+            atoms:
+              - us.sox_whistleblower.1514a.a1c.internal_report
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: IV.B.5
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+  - domain: V
+    title: State Privacy Laws
+    blueprint_q:
+      min: 17
+      max: 21
+    description: null
+    competencies:
+      - coordinate: V.A
+        title: null
+        blueprint_q:
+          min: 1
+          max: 2
+        performance_indicators:
+          - coordinate: V.A.1
+            title: null
+            atoms:
+              - ny.civil_rights.50.prohibition
+              - ny.civil_rights.51.action
+              - ny.education.2d.3.parents_bill_of_rights
+              - ny.education.2d.5.standards
+              - ny.education.2d.6.contractor_breach
+              - ny.gbl.349.a.unlawful
+              - ny.gbl.349.a1.unfairness
+              - ny.gbl.349.h.private_right
+              - ny.gbl.350.false_advertising
+              - ny.gbl.899_aa.2.notify_residents
+              - ny.gbl.899_aa.3.notify_owner
+              - ny.gbl.899_aa.7.notice_content
+              - ny.gbl.899_aa.9.hipaa_ag_notice
+              - ny.gbl.899_bb.1.compliant_regulated_entity
+              - ny.gbl.899_bb.2.reasonable_safeguards
+              - ny.gbl.899_ee.1.covered_user
+              - ny.gbl.899_ff.1.processing_prohibition
+              - ny.gbl.899_ff.5.no_sale
+              - ny.gbl.899_ff.6.thirty_day_duties
+              - ny.penal.250_00.mechanical_overhearing_definition
+              - ny.penal.250_00.wiretapping_definition
+              - ny.penal.250_05.eavesdropping
+              - us.canspam.7707.b1.state_law_preemption
+              - us.doctrine.dormant_commerce_clause
+              - us.doctrine.first_amendment.commercial_data
+              - us.fcra.1681t.b1e_report_contents
+              - us.fcra.1681t.general_savings
+            status: in_progress
+            out_of_scope_reason: null
+      - coordinate: V.B
+        title: null
+        blueprint_q:
+          min: 13
+          max: 17
+        performance_indicators:
+          - coordinate: V.B.1
+            title: null
+            atoms:
+              - ny.def.covered_user.cdpa
+              - ny.def.covered_user.safe_for_kids
+              - ny.gbl.1501.1.addictive_feed_prohibition
+              - ny.gbl.1502.overnight_notifications
+              - ny.gbl.1504.nondiscrimination
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: V.B.2
+            title: null
+            atoms:
+              - ny.gbl.1506.1.consent_instructions_language_access
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: V.B.3
+            title: null
+            atoms:
+              - ny.gbl.1501.3.age_data_minimization
+              - ny.gbl.1501.5.consent_data_minimization
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: V.B.4
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: V.B.5
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: V.B.6
+            title: null
+            atoms:
+              - ny.gbl.1508.1.ag_enforcement
+            status: in_progress
+            out_of_scope_reason: null
+          - coordinate: V.B.7
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: V.B.8
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: V.B.9
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: V.B.10
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: V.B.11
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+      - coordinate: V.C
+        title: null
+        blueprint_q:
+          min: 2
+          max: 4
+        performance_indicators:
+          - coordinate: V.C.1
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: V.C.2
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null
+          - coordinate: V.C.3
+            title: null
+            atoms: []
+            status: not_started
+            out_of_scope_reason: null

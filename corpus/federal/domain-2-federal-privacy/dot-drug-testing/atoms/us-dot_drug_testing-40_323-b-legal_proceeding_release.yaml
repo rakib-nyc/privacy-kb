@@ -1,0 +1,150 @@
+id: us.dot_drug_testing.40_323.b.legal_proceeding_release
+schema_version: 1
+record_type: obligation
+source:
+  citation: 49 C.F.R. § 40.323(b)
+  instrument_id: us.dot_drug_testing
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-49.xml?part=40
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+  raw_sha256: 37446484793816750245fc98a2b73a94e655895dcfb889d18ddc00c23339e0df
+  text_file: corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.txt
+  text_sha256: 1d4fa6885696bfab98499a9a5b506aa6b85460b41a65d945739fb236b747bdc5
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 49 part 40, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: d3ac39d98009bf22ab879c0c505446d72a5b793be591569b25125302f5daf2f8
+verbatim_span: >-
+  In such a proceeding, you may release the information to the decisionmaker in the proceeding (
+  e.g., the court in a lawsuit). You may release the information only with a binding stipulation
+  that the decisionmaker to whom it is released will make it available only to parties to the
+  proceeding.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+  anchor: '40.323'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from flat <P> siblings by tools/extract.py; resolves to exactly one
+    leaf inside the section
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      As an employer, you may release information pertaining to an employee's drug or alcohol test
+      without the employee's consent in certain legal proceedings.
+    citation: 49 C.F.R. § 40.323(a)
+    path:
+      path:
+        - a
+      anchor: '40.323'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designators reconstructed from flat <P> siblings by tools/extract.py; resolves to exactly
+        one leaf inside the section
+subject:
+  domain: IV.B.1
+  lifecycle:
+    - IV
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - dot
+sector:
+  - employment
+  - transportation
+data_types:
+  - health
+  - personal_information
+status: in_force
+effective_from: '2000-12-19'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history:
+  - date: '2000-12-19'
+    note: >-
+      Part 40 carries a part-level source note in the fetched source: "Source: 65 FR 79526, Dec. 19,
+      2000, unless otherwise noted." Neither § 40.321 nor § 40.323 carries its own citation note, so
+      19 December 2000 is the earliest date the fetched source itself asserts for this text.
+    source_url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-49.xml?part=40
+applies_if:
+  all:
+    - entity.is_employer == true
+    - data.is_dot_test_result == true
+    - event.type == 'legal_proceeding_disclosure'
+applies_to_role: controller
+obligation_type: restrict_use
+summary: >-
+  Where the employer releases test information without the employee's consent in a legal proceeding,
+  it may release the information only to the decisionmaker in that proceeding, and only with a
+  binding stipulation that the decisionmaker will make it available only to parties to the
+  proceeding.
+requirement_detail: >-
+  THE CONSENT-FREE ROUTE IS NARROWER THAN THE PERMISSION IT SITS UNDER, and that is the point of
+  this paragraph. Paragraph (a) allows release without consent in certain legal proceedings; this
+  paragraph then confines the release to "the decisionmaker in the proceeding" and conditions it on
+  "a binding stipulation that the decisionmaker to whom it is released will make it available only
+  to parties to the proceeding". So the employer's own litigation counsel does not become a general
+  distribution point, and handing the laboratory data package to opposing counsel or to an insurer
+  without the stipulation is outside the permission even where the proceeding plainly qualifies. The
+  error practitioners make is reading (a) as a self-contained exception and stopping there — (a) is
+  a permission to release and (b) is the condition on which it may be exercised, and the two must be
+  quoted together. Note also that the stipulation is placed on the recipient rather than on the
+  employer, so obtaining it is an active step in the litigation and not a clause in an internal
+  policy.
+deadline: null
+exemptions: []
+related:
+  - us.dot_drug_testing.40_321.b.specific_written_consent
+  - us.dot_drug_testing.40_323.d.employee_notification
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Reading paragraph (a) alone as the exception. The permission to release without consent is
+    conditioned by this paragraph, which limits the recipient and requires a stipulation.
+  - >-
+    Circulating the file to insurers, opposing counsel or an internal distribution list. The release
+    runs to the decisionmaker in the proceeding.
+  - >-
+    Treating the stipulation as boilerplate the employer signs. It binds the decisionmaker to limit
+    onward availability to parties to the proceeding, so it has to be obtained.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: null
+  note: >-
+    No preemption clause appears anywhere in part 40 as fetched. Whether a DOT testing rule
+    displaces a contrary state requirement is governed by the operating administrations' authorizing
+    statutes and rules — 49 U.S.C. § 31306 and the DOT agency regulations — none of which is held in
+    this corpus. Recorded as floor because the part contains no express ceiling, NOT as a finding
+    that stricter state law survives. Do not answer a state-conflict question from this atom.
+enforcement:
+  enforcers:
+    - dot
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Administrative, through the DOT operating administration that regulates the employer, and for
+      service agents through the public interest exclusion procedures of subpart R of this part,
+      which can bar a service agent from providing services in the DOT testing programme.
+    range: null
+    note: >-
+      Subpart R and the operating administrations' penalty rules have NOT been extracted. Part 40
+      confers no private right of action in terms; an employee's own remedy for an unauthorised
+      release is ordinarily a state-law claim, which this corpus does not model. Treat exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

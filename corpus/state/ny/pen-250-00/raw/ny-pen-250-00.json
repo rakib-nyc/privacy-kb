@@ -1,0 +1,65 @@
+{
+  "success" : true,
+  "message" : "Law document for location 250.00 in PEN law.",
+  "responseType" : "law-doc-info-detail",
+  "result" : {
+    "lawId" : "PEN",
+    "lawName" : "Penal",
+    "locationId" : "250.00",
+    "title" : "Eavesdropping; definitions of terms",
+    "docType" : "SECTION",
+    "publishedDates" : [ "2014-09-22" ],
+    "docLevelId" : "250.00",
+    "activeDate" : "2014-09-22",
+    "text" : "§ 250.00 Eavesdropping; definitions of terms.\\n  The following definitions are applicable to this article:\\n  1. \"Wiretapping\" means the intentional overhearing or recording of a\\ntelephonic or telegraphic communication by a person other than a sender\\nor receiver thereof, without the consent of either the sender or\\nreceiver, by means of any instrument, device or equipment. The normal\\noperation of a telephone or telegraph corporation and the normal use of\\nthe services and facilities furnished by such corporation pursuant to\\nits tariffs or necessary to protect the rights or property of said\\ncorporation shall not be deemed \"wiretapping.\"\\n  2. \"Mechanical overhearing of a conversation\" means the intentional\\noverhearing or recording of a conversation or discussion, without the\\nconsent of at least one party thereto, by a person not present thereat,\\nby means of any instrument, device or equipment.\\n  3. \"Telephonic communication\" means any aural transfer made in whole\\nor in part through the use of facilities for the transmission of\\ncommunications by the aid of wire, cable or other like connection\\nbetween the point of origin and the point of reception (including the\\nuse of such connection in a switching station) furnished or operated by\\nany person engaged in providing or operating such facilities for the\\ntransmission of communications and such term includes any electronic\\nstorage of such communications.\\n  4. \"Aural transfer\" means a transfer containing the human voice at any\\npoint between and including the point of origin and the point of\\nreception.\\n  5. \"Electronic communication\" means any transfer of signs, signals,\\nwriting, images, sounds, data, or intelligence of any nature transmitted\\nin whole or in part by a wire, radio, electromagnetic, photoelectronic\\nor photo-optical system, but does not include:\\n  (a) any telephonic or telegraphic communication; or\\n  (b) any communication made through a tone only paging device; or\\n  (c) any communication made through a tracking device consisting of an\\nelectronic or mechanical device which permits the tracking of the\\nmovement of a person or object; or\\n  (d) any communication that is disseminated by the sender through a\\nmethod of transmission that is configured so that such communication is\\nreadily accessible to the general public.\\n  6. \"Intercepting or accessing of an electronic communication\" and\\n\"intentionally intercepted or accessed\" mean the intentional acquiring,\\nreceiving, collecting, overhearing, or recording of an electronic\\ncommunication, without the consent of the sender or intended receiver\\nthereof, by means of any instrument, device or equipment, except when\\nused by a telephone company in the ordinary course of its business or\\nwhen necessary to protect the rights or property of such company.\\n  7. \"Electronic communication service\" means any service which provides\\nto users thereof the ability to send or receive wire or electronic\\ncommunications.\\n  8. \"Unlawfully\" means not specifically authorized pursuant to article\\nseven hundred or seven hundred five of the criminal procedure law for\\nthe purposes of this section and sections 250.05, 250.10, 250.15,\\n250.20, 250.25, 250.30 and 250.35 of this article.\\n",
+    "parentLocationIds" : [ "-CH40", "P3", "P3TN", "P3TNA250" ],
+    "parents" : [ {
+      "lawId" : "PEN",
+      "lawName" : "Penal",
+      "locationId" : "-CH40",
+      "title" : "Penal",
+      "docType" : "CHAPTER",
+      "publishedDates" : [ "2014-09-22", "2019-07-26", "2019-08-02", "2019-08-16", "2021-04-02", "2021-07-30", "2021-11-05", "2022-06-10", "2022-07-08", "2023-01-06", "2023-03-10", "2025-11-07", "2026-06-19" ],
+      "docLevelId" : "40",
+      "activeDate" : "2026-06-19"
+    }, {
+      "lawId" : "PEN",
+      "lawName" : "Penal",
+      "locationId" : "P3",
+      "title" : "Specific Offenses",
+      "docType" : "PART",
+      "publishedDates" : [ "2014-09-22" ],
+      "docLevelId" : "3",
+      "activeDate" : "2014-09-22"
+    }, {
+      "lawId" : "PEN",
+      "lawName" : "Penal",
+      "locationId" : "P3TN",
+      "title" : "Offenses Against Public Order, Public Sensibilities and the Right to Privacy",
+      "docType" : "TITLE",
+      "publishedDates" : [ "2014-09-22" ],
+      "docLevelId" : "N",
+      "activeDate" : "2014-09-22"
+    }, {
+      "lawId" : "PEN",
+      "lawName" : "Penal",
+      "locationId" : "P3TNA250",
+      "title" : "Offenses Against the Right to Privacy",
+      "docType" : "ARTICLE",
+      "publishedDates" : [ "2014-09-22", "2023-01-06", "2023-03-10" ],
+      "docLevelId" : "250",
+      "activeDate" : "2023-03-10"
+    } ],
+    "prevSibling" : null,
+    "nextSibling" : {
+      "lawId" : "PEN",
+      "lawName" : "Penal",
+      "locationId" : "250.05",
+      "title" : "Eavesdropping",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2014-09-22" ],
+      "docLevelId" : "250.05",
+      "activeDate" : "2014-09-22"
+    }
+  }
+}

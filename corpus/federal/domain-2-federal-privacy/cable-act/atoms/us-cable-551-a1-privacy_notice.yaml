@@ -1,0 +1,102 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &id001
+- fcc
+sector:
+- telecom
+data_types:
+- any
+status: in_force
+effective_from: '1984-10-30'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 551(c)(1)
+  note: Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the section extracted.
+enforcement:
+  enforcers: *id001
+  private_right_of_action: true
+  penalty:
+    structure: Civil action by any person aggrieved, in a United States district court, under 47 U.S.C.
+      § 551(f)(1); the court may award actual damages subject to a liquidated floor, punitive damages,
+      and reasonable attorneys' fees and litigation costs under § 551(f)(2)(A)-(C).
+    range:
+      min: 1000
+      unit: usd_liquidated_floor_per_action
+    note: § 551(f)(1) opens the action for a violation of THIS SECTION, so it reaches this duty and not
+      only the § 551(c) disclosure prohibition. The liquidated floor is the higher of $100 for each day
+      of violation or $1,000; the recorded minimum is the fixed limb. See us.cable.551.f1.private_action
+      and us.cable.551.f2a.liquidated_damages.
+  statute_of_limitations: null
+applies_if:
+  all:
+  - entity.is_cable_operator == true
+  - data.is_subscriber_pii == true
+applies_to_role: controller
+exemptions: []
+id: us.cable.551.a1.privacy_notice
+source:
+  citation: 47 U.S.C. § 551(a)(1)
+  instrument_id: us.cable_act
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.xml
+  raw_sha256: 3b7792e5ec31fc28ddaeeb563fc631678a31eafcaf87e6bcc83c7605f93e015b
+  text_file: corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.txt
+  text_sha256: fb926fae4fc7b9f67be65456b0ef3f00522d0824c1eb5057383af817f036e3dc
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - 47-u-s-c-551 structured source
+    result: structured_source_used
+    note: null
+verbatim_span: At the time of entering into an agreement to provide any cable service or other service
+  to a subscriber and at least once a year thereafter, a cable operator shall provide notice in the form
+  of a separate, written statement to such subscriber which clearly and conspicuously informs the subscriber
+  of—
+paragraph_path:
+  path:
+  - a
+  - '1'
+  anchor: /us/usc/t47/s551/a/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the duty in full.
+subject:
+  domain: II.E.1
+  lifecycle:
+  - III
+obligation_type: notify
+deadline:
+  trigger_event: entering into an agreement to provide cable or other service
+  duration:
+    value: 12
+    unit: months
+  computation: 'Two triggers, not one: the notice is due AT THE TIME of entering the agreement, and then
+    at least once in every twelve months thereafter. The recurring limb is what the duration records;
+    the at-agreement limb is a zero-elapsed-time obligation on the same provision.'
+summary: At the time of entering an agreement to provide service and at least once a year thereafter,
+  a cable operator must provide a separate, written privacy notice to the subscriber.
+requirement_detail: 'A STATUTORY ANNUAL PRIVACY NOTICE, and it predates GLBA by fifteen years. The requirement
+  that it be SEPARATE and WRITTEN is the operative constraint: it cannot be folded into the service agreement,
+  which is exactly where a modern operator would put it. § 551(a)(1)(A)-(E) then fixes the content, including
+  the retention period and the subscriber''s access rights.'
+common_errors:
+- Folding the notice into the subscriber agreement. § 551(a)(1) requires a separate written notice.
+- Providing it once. It is required at agreement AND at least annually.
+open_questions: []

@@ -1,0 +1,109 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - ftc
+  - state_ag
+sector:
+  - childrens_online_services
+data_types:
+  - minor_data
+  - personal_information
+status: in_force
+effective_from: '2000-04-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 6502(d)
+  note: >-
+    COPPA expressly preempts inconsistent state law on its subject matter. State law on children's
+    data that is not inconsistent survives — NY's Child Data Protection Act is the live test and is
+    a Priority 3 atom.
+enforcement:
+  enforcers:
+    - ftc
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: FTC Act § 5(m) civil penalties for rule violations
+    range: null
+    note: >-
+      Per-violation penalties, inflation-adjusted. COPPA is enforced as a trade regulation rule,
+      which is why § 45(m) applies.
+  statute_of_limitations: null
+applies_if:
+  all:
+    - entity.is_coppa_operator == true
+    - any:[data.service_directed_to_children == true, entity.actual_knowledge_of_child_data == true]
+applies_to_role: any
+exemptions: []
+id: us.coppa.312_11.a.safe_harbor
+source:
+  citation: 16 C.F.R. § 312.11(a)
+  instrument_id: us.coppa.rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=312
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  raw_sha256: 5a29d13e4512092a2d064a62a581031dc75aa99998540e6c2ef24f0dbfc66df9
+  text_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.txt
+  text_sha256: 269dbc8c79e682a08e9686846439239d7f57ec49f501070957ff738370189425
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 16-cfr-312 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: c999656d014df2c43bb50f22fecbe2274fee799d233554b718d86a345e6004df
+verbatim_span: >-
+  Industry groups or other persons may apply to the Commission for approval of self-regulatory
+  program guidelines (“safe harbor programs”). The application shall be filed with the Commission's
+  Office of the Secretary. The Commission will publish in the Federal Register a document seeking
+  public comment on the application. The Commission shall issue a written determination within 180
+  days of the filing of the application.
+paragraph_path:
+  path:
+    - a
+  anchor: '312.11'
+  derivation: reconstructed
+  confidence: high
+  evidence: designators reconstructed from flat <P> siblings; resolves to exactly one leaf (gate 23)
+context_not_required: The paragraph states the duty in full.
+subject:
+  domain: II.E.1
+  lifecycle:
+    - V
+obligation_type: register
+deadline: null
+summary: >-
+  Industry groups or other persons may apply to the Commission for approval of self-regulatory
+  program guidelines, known as safe harbor programs.
+requirement_detail: >-
+  THE ONLY APPROVED SELF-REGULATORY SAFE HARBOUR IN US FEDERAL PRIVACY LAW, and it is genuinely
+  protective rather than presentational: § 312.11(c) provides that an operator in full compliance
+  with approved guidelines is subject to review and disciplinary procedures IN LIEU OF Commission
+  enforcement. That makes it the sharpest contrast in this corpus with the CBPR position, where a
+  certification claim creates § 5 EXPOSURE rather than relief. Here the scheme is approved by the
+  regulator and substitutes for its enforcement; there the scheme binds nobody and the public claim
+  is what binds.
+common_errors:
+  - >-
+    Equating it with voluntary certification generally. This one is FTC-approved and substitutes for
+    Commission enforcement; a CBPR claim does the opposite and creates § 5 exposure.
+  - >-
+    Assuming safe harbour means immunity. It substitutes the programme's disciplinary process, and
+    only for an operator in FULL compliance.
+open_questions: []

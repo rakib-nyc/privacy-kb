@@ -1,0 +1,148 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+id: ny.gbl.899_bb.2.reasonable_safeguards
+source:
+  citation: N.Y. Gen. Bus. Law § 899-bb(2)
+  instrument_id: ny.gbl.899_bb
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/899-BB
+  fetched: '2026-08-19'
+  raw_file: corpus/state/ny/shield-act/raw/ny-gbs-899-bb.json
+  raw_sha256: 9520cf42bbee2479a6222f20788cda30b8ec4f294796aae141446efb9601a4dc
+  text_file: corpus/state/ny/shield-act/raw/ny-gbs-899-bb.txt
+  text_sha256: 096fb01847608947a9ad5a682632a0d43a48022b2d77343828da916b8d925e51
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/shield-act/raw/ny-gbs-899-bb.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, laws/GBS/899-BB
+    result: structured_source_used
+    note: null
+  segment_sha256: d604ce8d9eccf321217dfc70795542eac876e66f5d385e5ccf7960145eea6eb1
+verbatim_span: >-
+  Reasonable security requirement. (a) Any person or business that owns or licenses computerized
+  data which includes private information of a resident of New York shall develop, implement and
+  maintain reasonable safeguards to protect the security, confidentiality and integrity of the
+  private information including, but not limited to, disposal of data.
+paragraph_path:
+  path:
+    - '2'
+  anchor: 899-BB
+  derivation: reconstructed
+  confidence: high
+  evidence: subdivision designators reconstructed from the flat text field; resolves to exactly one leaf
+context_not_required: Subdivision 2 states the duty and its subject in full.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - IV
+effective_from: '2020-03-21'
+federal_relationship: gap_fills
+applies_to_role: controller
+obligation_type: secure
+deadline: null
+applies_if:
+  all:
+    - entity.owns_or_licenses_computerized_data == true
+    - data.includes_ny_private_information == true
+summary: >-
+  A person or business that owns or licenses computerized data including the private information of
+  a New York resident must develop, implement and maintain reasonable administrative, technical and
+  physical safeguards.
+requirement_detail: >-
+  THE STANDING SECURITY DUTY, and unlike § 899-aa it needs no breach to bite. Same extraterritorial
+  trigger — holding a New York resident's private information, with no nexus or size threshold — so
+  an out-of-state business owes reasonable safeguards continuously. The enforcement route is unusual
+  and worth stating: § 899-bb(2)(d) deems a failure to comply a violation of GBL § 349, which is how
+  the safeguards duty borrows the UDAP machinery. But § 899-bb(2)(e) says nothing in the section
+  creates a private right of action, so the § 349 deeming runs to the attorney general and does NOT
+  hand a consumer the § 349(h) private action.
+exemptions:
+  - id: ny.gbl.899_bb.2.b.i.compliant_regulated_entity
+    type: entity_level
+    reach: obligation
+    scope: >-
+      A "compliant regulated entity" — one already subject to and in compliance with GLBA,
+      HIPAA/HITECH, 23 NYCRR Part 500, or other state or federal data security regulations — is
+      DEEMED compliant with the reasonable-safeguards duty. CONSEQUENCE TEST: reach is obligation,
+      not instrument. The entity remains fully covered by § 899-aa breach notification and by every
+      other New York duty; only this safeguards obligation is satisfied by the other regime. And it
+      is conditional on ACTUAL compliance with that regime, not on being subject to it — an entity
+      in breach of its GLBA Safeguards obligations is not a compliant regulated entity and gets
+      nothing from this paragraph.
+    source_citation: N.Y. Gen. Bus. Law § 899-bb(2)(b)(i)
+    verbatim_span: is a compliant regulated entity as defined in subdivision one of this section; or
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.is_compliant_regulated_entity == true
+  - id: ny.gbl.899_bb.2.c.small_business
+    type: size_threshold
+    reach: obligation
+    scope: >-
+      A small business satisfies the program requirement if its safeguards are APPROPRIATE FOR ITS
+      SIZE AND COMPLEXITY, the nature and scope of its activities, and the sensitivity of the
+      information. CONSEQUENCE TEST: this scales the standard rather than switching it off — a small
+      business still owes reasonable safeguards and is still fully covered by § 899-aa. Typed
+      size_threshold with reach obligation for exactly that reason: nothing about the entity leaves
+      the statute.
+    source_citation: N.Y. Gen. Bus. Law § 899-bb(2)(c)
+    verbatim_span: >-
+      A small business as defined in paragraph (c) of subdivision one of this section complies with
+      subparagraph (ii) of paragraph (b) of subdivision two of this section if the small business's
+      security program contains reasonable administrative, technical and physical safeguards that
+      are appropriate for the size and complexity of the small business, the nature and scope of the
+      small business's activities, and the sensitivity of the personal information the small
+      business collects from or about consumers.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.is_ny_small_business == true
+preemption:
+  posture: none
+  authority: N.Y. Gen. Bus. Law § 899-bb
+  note: >-
+    No preemption clause. The section coexists with federal security regimes and expressly builds on
+    them through the compliant-regulated-entity route rather than yielding to them.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Failure to comply is DEEMED a violation of GBL § 349 under § 899-bb(2)(d); the attorney
+      general may enjoin and obtain civil penalties.
+    range: null
+    note: >-
+      § 899-bb(2)(e): nothing in the section creates a private right of action. The § 349 deeming is
+      an AG enforcement route and does not open the § 349(h) private action.
+  statute_of_limitations: null
+common_errors:
+  - >-
+    Reading the § 349 deeming as giving consumers a private claim. § 899-bb(2)(e) forecloses it; the
+    deeming runs to the attorney general.
+  - >-
+    Treating the compliant-regulated-entity route as an exemption from SHIELD. It satisfies the
+    safeguards duty only — § 899-aa breach notification is untouched.
+  - >-
+    Assuming being subject to GLBA or HIPAA is enough. The paragraph requires being IN COMPLIANCE
+    with it.
+open_questions: []

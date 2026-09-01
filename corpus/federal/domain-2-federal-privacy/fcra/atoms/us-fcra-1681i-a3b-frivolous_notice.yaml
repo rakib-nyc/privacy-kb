@@ -1,0 +1,123 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+  - cfpb
+sector:
+  - financial
+data_types:
+  - consumer_report
+status: in_force
+effective_from: '1971-04-25'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+exemptions: []
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 1681t
+  note: >-
+    FCRA preempts by ENUMERATED SUBJECT rather than across the board. § 1681t(a) is a savings clause
+    preserving state law except where inconsistent; § 1681t(b) then carves out specific subjects —
+    including the contents of consumer reports and furnisher duties — where no state requirement may
+    be imposed at all. Whether a state law survives is a subject-by-subject question, never an
+    instrument-level one.
+enforcement:
+  enforcers:
+    - ftc
+    - cfpb
+    - state_ag
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Willful noncompliance under § 1681n: actual damages or statutory damages of $100 to $1,000,
+      punitive damages, costs and attorney's fees. Negligent noncompliance under § 1681o: actual
+      damages, costs and fees.
+    range:
+      min: 100
+      unit: usd_statutory_per_violation
+    note: >-
+      FCRA is one of the few federal privacy statutes with a real private right of action, which is
+      why it generates far more litigation than GLBA or HIPAA. THE PRIVATE RIGHT IS ROLE-DEPENDENT:
+      see the furnisher atoms, where § 1681s-2(c) removes private enforcement of subsection (a)
+      entirely while leaving subsection (b) privately enforceable.
+  statute_of_limitations: >-
+    § 1681p: the earlier of two years after the plaintiff discovers the violation or five years
+    after it occurs.
+id: us.fcra.1681i.a3b.frivolous_notice
+source:
+  citation: 15 U.S.C. § 1681i(a)(3)(B)
+  instrument_id: us.fcra.preemption
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681i.xml
+  raw_sha256: 13c0889ce6df93054277967f563124c77ce7cea82dc04c47b3647f23ce8d6075
+  text_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681i.txt
+  text_sha256: 3327b59244f2bbfbb5ba93693be92c71fd56107852572c9ea18739c64c951cbc
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681i.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 85542c4805381059f3f8873a6c4ec4588c142e258bf7dd7e1ee22c90b14ee97c
+verbatim_span: >-
+  Upon making any determination in accordance with subparagraph (A) that a dispute is frivolous or
+  irrelevant, a consumer reporting agency shall notify the consumer of such determination not later
+  than 5 business days after making such determination, by mail or, if authorized by the consumer
+  for that purpose, by any other means available to the agency.
+paragraph_path:
+  path:
+    - a
+    - '3'
+    - B
+  anchor: /us/usc/t15/s1681i/a/3/B
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The subparagraph states the trigger, the duty and the period in full.
+subject:
+  domain: II.C.2
+  lifecycle:
+    - VI
+applies_to_role: processor
+applies_if:
+  all:
+    - entity.is_consumer_reporting_agency == true
+    - event.type == "frivolous_dispute_determination"
+obligation_type: notify
+deadline:
+  trigger_event: determination that the dispute is frivolous or irrelevant
+  duration:
+    value: 5
+    unit: business_days
+  computation: >-
+    Five BUSINESS days after MAKING the determination — not after receiving the dispute. An agency
+    that terminates a reinvestigation on day 28 and notifies on day 40 has met the 30-day
+    reinvestigation period and missed this one.
+summary: >-
+  An agency that determines a dispute is frivolous or irrelevant must notify the consumer of that
+  determination within five business days of making it.
+requirement_detail: >-
+  THE ESCAPE FROM THE REINVESTIGATION DUTY HAS ITS OWN CLOCK, and it runs from a different event. §
+  1681i(a)(3)(A) lets an agency terminate a reinvestigation it reasonably determines is frivolous or
+  irrelevant — including where the consumer failed to supply enough information to investigate. But
+  terminating starts a five-business-day notice obligation measured from the DETERMINATION, so the
+  two clocks in this section run from different triggers and can be missed independently.
+common_errors:
+  - Running the five days from receipt of the dispute. It runs from the DETERMINATION.
+  - >-
+    Treating termination as the end of the matter. It substitutes one duty for another rather than
+    removing both.
+open_questions: []

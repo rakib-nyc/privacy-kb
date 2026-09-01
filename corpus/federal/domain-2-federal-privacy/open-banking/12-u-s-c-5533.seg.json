@@ -1,0 +1,170 @@
+{
+ "label": "12 U.S.C. \u00a7 5533",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/open-banking/raw/12-u-s-c-5533.xml",
+ "raw_sha256": "d309caacc695dd92a91c5fdbbb6e1140b56efad042f289a5473d042e0411c98a",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "/us/usc/t12/s5533/a",
+   "heading": "In general",
+   "text": "Subject to rules prescribed by the Bureau, a covered person shall make available to a consumer, upon request, information in the control or possession of the covered person concerning the consumer financial product or service that the consumer obtained from such covered person, including information relating to any transaction, series of transactions, or to the account including costs, charges and usage data. The information shall be made available in an electronic form usable by consumers.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": "/us/usc/t12/s5533/b/1",
+   "heading": "",
+   "text": "any confidential commercial information, including an algorithm used to derive credit scores or other risk scores or predictors;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A covered person may not be required by this section to make available to the consumer\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t12/s5533/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": "/us/usc/t12/s5533/b/2",
+   "heading": "",
+   "text": "any information collected by the covered person for the purpose of preventing fraud or money laundering, or detecting, or making any report regarding other unlawful or potentially unlawful conduct;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A covered person may not be required by this section to make available to the consumer\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t12/s5533/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": "/us/usc/t12/s5533/b/3",
+   "heading": "",
+   "text": "any information required to be kept confidential by any other provision of law; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A covered person may not be required by this section to make available to the consumer\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t12/s5533/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4"
+   ],
+   "anchor": "/us/usc/t12/s5533/b/4",
+   "heading": "",
+   "text": "any information that the covered person cannot retrieve in the ordinary course of its business with respect to that information.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A covered person may not be required by this section to make available to the consumer\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t12/s5533/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "/us/usc/t12/s5533/c",
+   "heading": "No duty to maintain records",
+   "text": "Nothing in this section shall be construed to impose any duty on a covered person to maintain or keep any information about a consumer.",
+   "context": []
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": "/us/usc/t12/s5533/d",
+   "heading": "Standardized formats for data",
+   "text": "The Bureau, by rule, shall prescribe standards applicable to covered persons to promote the development and use of standardized formats for information, including through the use of machine readable files, to be made available to consumers under this section.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "1"
+   ],
+   "anchor": "/us/usc/t12/s5533/e/1",
+   "heading": "",
+   "text": "impose substantively similar requirements on covered persons;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Bureau shall, when prescribing any rule under this section, consult with the Federal banking agencies and the Federal Trade Commission to ensure, to the extent appropriate, that the rules\u2014",
+     "path": [
+      "e"
+     ],
+     "anchor": "/us/usc/t12/s5533/e"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2"
+   ],
+   "anchor": "/us/usc/t12/s5533/e/2",
+   "heading": "",
+   "text": "take into account conditions under which covered persons do business both in the United States and in other countries; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Bureau shall, when prescribing any rule under this section, consult with the Federal banking agencies and the Federal Trade Commission to ensure, to the extent appropriate, that the rules\u2014",
+     "path": [
+      "e"
+     ],
+     "anchor": "/us/usc/t12/s5533/e"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "3"
+   ],
+   "anchor": "/us/usc/t12/s5533/e/3",
+   "heading": "",
+   "text": "do not require or promote the use of any particular technology in order to develop systems for compliance.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Bureau shall, when prescribing any rule under this section, consult with the Federal banking agencies and the Federal Trade Commission to ensure, to the extent appropriate, that the rules\u2014",
+     "path": [
+      "e"
+     ],
+     "anchor": "/us/usc/t12/s5533/e"
+    }
+   ]
+  }
+ ]
+}

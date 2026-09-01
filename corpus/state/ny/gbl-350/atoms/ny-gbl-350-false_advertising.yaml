@@ -1,0 +1,102 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+deadline: null
+applies_to_role: any
+id: ny.gbl.350.false_advertising
+source:
+  citation: N.Y. Gen. Bus. Law § 350
+  instrument_id: ny.gbl.350
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/350
+  fetched: '2026-08-19'
+  raw_file: corpus/state/ny/gbl-350/raw/ny-gbs-350.json
+  raw_sha256: 0a37e6fb3a3e6b7e17ee076430da5b0cb3681218d8b95bd63a045053e5dad801
+  text_file: corpus/state/ny/gbl-350/raw/ny-gbs-350.txt
+  text_sha256: 26144e3acc44263993d54886d8c8c77efadec012d689f4aa1811ea9d555d098c
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/gbl-350/raw/ny-gbs-350.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, laws/GBS/350
+    result: structured_source_used
+    note: null
+  segment_sha256: da72062c260a40aa4462d59974a4f62a1369fcbff5875b78dbd30eb70bb6fe57
+verbatim_span: >-
+  False advertising in the conduct of any business, trade or commerce or in the furnishing of any
+  service in this state is hereby declared unlawful.
+paragraph_path:
+  path: []
+  anchor: '350'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    The section has no subdivisions; the empty path cites the section itself and is unique by
+    construction.
+context_not_required: The section is a single sentence and complete on its own.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - I
+effective_from: '2014-09-22'
+federal_relationship: independent
+obligation_type: prohibit
+applies_if:
+  all:
+    - entity.nexus in ["US-NY"]
+exemptions: []
+summary: >-
+  False advertising in the conduct of any business, trade or commerce, or in the furnishing of any
+  service in New York, is unlawful.
+requirement_detail: >-
+  THE OTHER HALF OF THE NY UDAP PAIR, and it is narrower than § 349 in subject and identical in
+  reach. § 349 covers unfair, deceptive and abusive acts generally; § 350 covers false ADVERTISING
+  specifically, and privacy claims are pleaded under both because a privacy notice is an
+  advertisement when it appears in marketing material. § 350-e supplies the private action, on the
+  same terms as § 349(h). The practical reason to carry both: § 350 reaches a representation made to
+  the public at large, where § 349 litigation often turns on whether the plaintiff saw the
+  statement.
+preemption:
+  posture: none
+  authority: N.Y. Gen. Bus. Law § 350
+  note: State UDAP. No federal statute preempts it; it runs alongside FTC Act § 5 under invariant I6.
+enforcement:
+  enforcers:
+    - state_ag
+    - private_litigants
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      AG injunction and restitution. Private action under § 350-e: actual damages or $500, whichever
+      is greater, with treble damages up to $10,000 for a wilful violation.
+    range:
+      min: 500
+      unit: usd_statutory_minimum
+    note: The § 350-e private action is broader in damages than § 349(h) and is pleaded alongside it.
+  statute_of_limitations: null
+related:
+  - ny.gbl.349.a.unlawful
+common_errors:
+  - >-
+    Treating § 350 as redundant with § 349. It is narrower in subject — false advertising — and its
+    private action under § 350-e carries a higher statutory floor and treble cap.
+  - >-
+    Assuming a privacy notice cannot be advertising. Where it appears in marketing material it is,
+    and both sections reach it.
+open_questions: []

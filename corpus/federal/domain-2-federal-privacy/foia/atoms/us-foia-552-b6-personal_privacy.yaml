@@ -1,0 +1,106 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related:
+  - us.sca.2701.c1.provider_authorization
+  - us.sca.2702.a1.divulgence_prohibition
+  - us.wiretap.2510.17a.electronic_storage
+federal_relationship: null
+id: us.foia.552.b6.personal_privacy_exemption
+source:
+  citation: 5 U.S.C. § 552(b)(6)
+  instrument_id: us.foia
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc05@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.xml
+  raw_sha256: d4c06f60a9741b07b3eccca530f8b5e361ca4a4f4cd2cd9a82b2d9b65767e093
+  text_file: corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.txt
+  text_sha256: ad4133ff673d3a14564fc33c0ab6d32209965d12bac8c15147a923b6f488562e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: a62290bae87ae1165deddbaec39822c15f3c88eb0d8bc279e3f031799a19b5ad
+verbatim_span: >-
+  personnel and medical files and similar files the disclosure of which would constitute a clearly
+  unwarranted invasion of personal privacy;
+paragraph_path:
+  path:
+    - b
+    - '6'
+  anchor: /us/usc/t5/s552/b/6
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the rule in full.
+subject:
+  domain: III.A.1
+  lifecycle:
+    - VI
+regulator: &ref_0
+  - federal_agencies
+sector:
+  - government
+data_types:
+  - any
+effective_from: '1967-07-04'
+applies_if:
+  all:
+    - entity.is_federal_agency == true
+    - event.type == "foia_request_received"
+applies_to_role: controller
+obligation_type: prohibit
+deadline: null
+exemptions: []
+summary: >-
+  FOIA does not apply to personnel and medical files and similar files the disclosure of which would
+  constitute a clearly unwarranted invasion of personal privacy.
+requirement_detail: >-
+  THE PROVISION THAT STOPS FOIA BEING A UNIVERSAL DISCLOSURE MECHANISM. Exemption 6 is the privacy
+  limit on a statute whose default is release, and the word doing the work is CLEARLY — the invasion
+  must be clearly unwarranted, which tilts the balance toward disclosure. Exemption 7(C) covers
+  law-enforcement records on a different and lower standard, so the same record can be protected
+  under one and not the other. Note the direction of the duty: this is a limit on an agency's
+  obligation to release, not a duty owed to the data subject, and FOIA supplies the requester with a
+  cause of action while the person whose privacy is at stake has none under it.
+common_errors:
+  - >-
+    Reading Exemption 6 and 7(C) as the same standard. Exemption 6 requires the invasion be CLEARLY
+    unwarranted; the law-enforcement exemption is worded differently.
+  - >-
+    Assuming the data subject can enforce it. FOIA gives the REQUESTER a remedy; the third party
+    whose privacy is at issue must look elsewhere.
+open_questions:
+  - >-
+    Exemption 7(C) is inline within the § 552(b)(7) leaf rather than separately addressable in the
+    segmentation, so it cannot carry its own paragraph_path. Its standard is described here rather
+    than cited directly.
+preemption:
+  posture: none
+  authority: 5 U.S.C. § 552(b)(6)
+  note: >-
+    Federal disclosure statute. The Privacy Act of 1974 governs the same records from the other
+    direction, and 5 U.S.C. § 552a(b)(2) makes FOIA-required disclosure an exception to the Privacy
+    Act prohibition — the two are read together.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: false
+  penalty:
+    structure: Not extracted for this instrument.
+    range: null
+    note: The enforcement provisions are not extracted; treat exposure as UNASSESSED rather than absent.
+  statute_of_limitations: null

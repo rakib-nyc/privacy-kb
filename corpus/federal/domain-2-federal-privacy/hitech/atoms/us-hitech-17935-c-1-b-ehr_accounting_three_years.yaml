@@ -1,0 +1,194 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+related: []
+federal_relationship: null
+interpreted_by: []
+confidence: high
+id: us.hitech.17935.c.1.b.ehr_accounting_three_years
+source:
+  citation: 42 U.S.C. § 17935(c)(1)(B)
+  instrument_id: us.hitech
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hitech/raw/42-u-s-c-17935.xml
+  raw_sha256: caa08c0f4fbf122b33462a7c1b12f67f9747d58063a501882f369ba285f072a7
+  text_file: corpus/federal/domain-2-federal-privacy/hitech/raw/42-u-s-c-17935.txt
+  text_sha256: e4d18c52a0457df2238010840951d1bd7cd05f9e390a4d320bc36c7cef15cc52
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hitech/raw/42-u-s-c-17935.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 06212a7bbbc5db81cff52c326bf565e65b8cb935472f800db475c45f83e41bdc
+verbatim_span: >-
+  an individual shall have a right to receive an accounting of disclosures described in such
+  paragraph of such information made by such covered entity during only the three years prior to the
+  date on which the accounting is requested.
+paragraph_path:
+  path:
+    - c
+    - '1'
+    - B
+  anchor: /us/usc/t42/s17935/c/1/B
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element; path read from the enacted hierarchy
+exemptions: []
+common_errors:
+  - >-
+    Applying the six-year accounting period to EHR disclosures. Subparagraph (c)(1)(B) fixes three
+    years for the disclosures whose exclusion (c)(1)(A) removes.
+  - >-
+    Dating the duty from HITECH's general subtitle D effective date. Paragraph (4) sets
+    entity-specific dates turned on EHR acquisition and lets the Secretary set later ones, so two
+    covered entities can owe this duty from different years.
+  - >-
+    Building an accounting log from the statute alone. Paragraph (2) leaves what is collected about
+    each disclosure to regulations, so the field list is not derivable from § 17935.
+open_questions:
+  - >-
+    Whether the Secretary has promulgated the regulations required by paragraph (c)(2), and whether
+    any later effective date was set under paragraph (c)(4)(C), cannot be determined from the
+    fetched text. Both bear directly on whether this duty is operable, so an accounting query should
+    surface this as unresolved rather than answered.
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      In applying section 164.528 of title 45, Code of Federal Regulations, in the case that a
+      covered entity uses or maintains an electronic health record with respect to protected health
+      information—
+    citation: 42 U.S.C. § 17935(c)(1)
+    path:
+      path:
+        - c
+        - '1'
+      anchor: /us/usc/t42/s17935/c/1
+      derivation: structural
+      confidence: high
+      evidence: identifier attribute on the USLM element; path read from the enacted hierarchy
+  - position: precedes
+    relation: conditions
+    verbatim_span: >-
+      the exception under paragraph (a)(1)(i) of such section shall not apply to disclosures through
+      an electronic health record made by such entity of such information; and
+    citation: 42 U.S.C. § 17935(c)(1)(A)
+    path:
+      path:
+        - c
+        - '1'
+        - A
+      anchor: /us/usc/t42/s17935/c/1/A
+      derivation: structural
+      confidence: high
+      evidence: identifier attribute on the USLM element; path read from the enacted hierarchy
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      The Secretary shall promulgate regulations on what information shall be collected about each
+      disclosure referred to in paragraph (1), not later than 6 months after the date on which the
+      Secretary adopts standards on accounting for disclosure described in the section
+      300jj–12(b)(2)(B)(iv) of this title , as added by section 13101. 2 Such regulations shall only
+      require such information to be collected through an electronic health record in a manner that
+      takes into account the interests of the individuals in learning the circumstances under which
+      their protected health information is being disclosed and takes into account the
+      administrative burden of accounting for such disclosures.
+    citation: 42 U.S.C. § 17935(c)(2)
+    path:
+      path:
+        - c
+        - '2'
+      anchor: /us/usc/t42/s17935/c/2
+      derivation: structural
+      confidence: high
+      evidence: identifier attribute on the USLM element; path read from the enacted hierarchy
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      In the case of a covered entity insofar as it acquired an electronic health record as of
+      January 1, 2009 , paragraph (1) shall apply to disclosures, with respect to protected health
+      information, made by the covered entity from such a record on and after January 1, 2014 .
+    citation: 42 U.S.C. § 17935(c)(4)(A)
+    path:
+      path:
+        - c
+        - '4'
+        - A
+      anchor: /us/usc/t42/s17935/c/4/A
+      derivation: structural
+      confidence: high
+      evidence: identifier attribute on the USLM element; path read from the enacted hierarchy
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+effective_from: '2011-01-01'
+subject:
+  domain: II.B.2
+  lifecycle:
+    - VI
+applies_if:
+  all:
+    - entity.is_hipaa_covered_entity == true
+    - data.is_phi == true
+    - entity.uses_or_maintains_electronic_health_record == true
+    - event.type == 'individual_accounting_request'
+obligation_type: disclose
+summary: >-
+  Where a covered entity uses or maintains an electronic health record, treatment, payment and
+  operations disclosures lose their exclusion from the accounting of disclosures, and the individual
+  may obtain an accounting of them for the three years before the request.
+requirement_detail: >-
+  45 C.F.R. § 164.528 excludes disclosures to carry out treatment, payment and health care
+  operations from the accounting an individual can demand, which is what makes the accounting right
+  narrow in practice. Subparagraph (c)(1)(A) withdraws that exclusion for disclosures made through
+  an electronic health record, and (c)(1)(B) sets the price of doing so: the window for those EHR
+  disclosures is "only the three years prior to the date on which the accounting is requested",
+  against the six years § 164.528 otherwise runs. One request can therefore produce two accountings
+  over two windows, and the entity must be able to distinguish an EHR disclosure from any other in
+  its logs to answer at all. Paragraph (2) makes the CONTENT of each entry depend on regulations the
+  Secretary is directed to promulgate, and paragraph (4) keys application to when the covered entity
+  acquired an electronic health record — 1 January 2014 for entities that had one as of 1 January
+  2009, the later of 1 January 2011 or acquisition for everyone else, with (4)(C) letting the
+  Secretary push both dates back.
+preemption:
+  posture: floor
+  authority: 42 U.S.C. § 1320d-7; 45 C.F.R. § 160.203
+  note: >-
+    HITECH subtitle D is enforced through the HIPAA framework and inherits its preemption posture: a
+    more stringent contrary State law survives. A State law giving the patient a broader right to
+    restrict disclosure than § 17935(a) therefore runs in parallel, and compliance with the federal
+    restriction does not discharge it.
+enforcement:
+  enforcers:
+    - hhs_ocr
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil money penalties under 42 U.S.C. § 1320d-5, tiered by culpability, and criminal liability
+      under 42 U.S.C. § 1320d-6. HITECH added State attorney general civil actions on behalf of
+      State residents.
+    range: null
+    note: >-
+      No private right of action. Patients reach the same conduct through State negligence,
+      confidentiality and UDAP theories, so the State backstop never switches off.
+  statute_of_limitations: null

@@ -1,0 +1,616 @@
+{
+ "label": "47 U.S.C. \u00a7 551",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.xml",
+ "raw_sha256": "3b7792e5ec31fc28ddaeeb563fc631678a31eafcaf87e6bcc83c7605f93e015b",
+ "leaves": [
+  {
+   "path": [
+    "a",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s551/a/1/A",
+   "heading": "",
+   "text": "the nature of personally identifiable information collected or to be collected with respect to the subscriber and the nature of the use of such information;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "At the time of entering into an agreement to provide any cable service or other service to a subscriber and at least once a year thereafter, a cable operator shall provide notice in the form of a separate, written statement to such subscriber which clearly and conspicuously informs the subscriber of\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s551/a/1"
+    },
+    {
+     "position": "follows",
+     "text": "In the case of subscribers who have entered into such an agreement before the effective date of this section, such notice shall be provided within 180 days of such date and at least once a year thereafter.",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s551/a/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s551/a/1/B",
+   "heading": "",
+   "text": "the nature, frequency, and purpose of any disclosure which may be made of such information, including an identification of the types of persons to whom the disclosure may be made;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "At the time of entering into an agreement to provide any cable service or other service to a subscriber and at least once a year thereafter, a cable operator shall provide notice in the form of a separate, written statement to such subscriber which clearly and conspicuously informs the subscriber of\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s551/a/1"
+    },
+    {
+     "position": "follows",
+     "text": "In the case of subscribers who have entered into such an agreement before the effective date of this section, such notice shall be provided within 180 days of such date and at least once a year thereafter.",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s551/a/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "C"
+   ],
+   "anchor": "/us/usc/t47/s551/a/1/C",
+   "heading": "",
+   "text": "the period during which such information will be maintained by the cable operator;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "At the time of entering into an agreement to provide any cable service or other service to a subscriber and at least once a year thereafter, a cable operator shall provide notice in the form of a separate, written statement to such subscriber which clearly and conspicuously informs the subscriber of\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s551/a/1"
+    },
+    {
+     "position": "follows",
+     "text": "In the case of subscribers who have entered into such an agreement before the effective date of this section, such notice shall be provided within 180 days of such date and at least once a year thereafter.",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s551/a/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "D"
+   ],
+   "anchor": "/us/usc/t47/s551/a/1/D",
+   "heading": "",
+   "text": "the times and place at which the subscriber may have access to such information in accordance with subsection (d); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "At the time of entering into an agreement to provide any cable service or other service to a subscriber and at least once a year thereafter, a cable operator shall provide notice in the form of a separate, written statement to such subscriber which clearly and conspicuously informs the subscriber of\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s551/a/1"
+    },
+    {
+     "position": "follows",
+     "text": "In the case of subscribers who have entered into such an agreement before the effective date of this section, such notice shall be provided within 180 days of such date and at least once a year thereafter.",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s551/a/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "E"
+   ],
+   "anchor": "/us/usc/t47/s551/a/1/E",
+   "heading": "",
+   "text": "the limitations provided by this section with respect to the collection and disclosure of information by a cable operator and the right of the subscriber under subsections (f) and (h) to enforce such limitations.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "At the time of entering into an agreement to provide any cable service or other service to a subscriber and at least once a year thereafter, a cable operator shall provide notice in the form of a separate, written statement to such subscriber which clearly and conspicuously informs the subscriber of\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s551/a/1"
+    },
+    {
+     "position": "follows",
+     "text": "In the case of subscribers who have entered into such an agreement before the effective date of this section, such notice shall be provided within 180 days of such date and at least once a year thereafter.",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s551/a/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s551/a/2/A",
+   "heading": "",
+   "text": "the term \u201cpersonally identifiable information\u201d does not include any record of aggregate data which does not identify particular persons;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, other than subsection (h)\u2014",
+     "path": [
+      "a",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s551/a/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s551/a/2/B",
+   "heading": "",
+   "text": "the term \u201cother service\u201d includes any wire or radio communications service provided using any of the facilities of a cable operator that are used in the provision of cable service; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, other than subsection (h)\u2014",
+     "path": [
+      "a",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s551/a/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "C"
+   ],
+   "anchor": "/us/usc/t47/s551/a/2/C",
+   "heading": "",
+   "text": "the term \u201ccable operator\u201d includes, in addition to persons within the definition of cable operator in section 522 of this title , any person who (i) is owned or controlled by, or under common ownership or control with, a cable operator, and (ii) provides any wire or radio communications service.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of this section, other than subsection (h)\u2014",
+     "path": [
+      "a",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s551/a/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": "/us/usc/t47/s551/b/1",
+   "heading": "",
+   "text": "Except as provided in paragraph (2), a cable operator shall not use the cable system to collect personally identifiable information concerning any subscriber without the prior written or electronic consent of the subscriber concerned.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s551/b/2/A",
+   "heading": "",
+   "text": "obtain information necessary to render a cable service or other service provided by the cable operator to the subscriber; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A cable operator may use the cable system to collect such information in order to\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s551/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s551/b/2/B",
+   "heading": "",
+   "text": "detect unauthorized reception of cable communications.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A cable operator may use the cable system to collect such information in order to\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s551/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": "/us/usc/t47/s551/c/1",
+   "heading": "",
+   "text": "Except as provided in paragraph (2), a cable operator shall not disclose personally identifiable information concerning any subscriber without the prior written or electronic consent of the subscriber concerned and shall take such actions as are necessary to prevent unauthorized access to such information by a person other than the subscriber or cable operator.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s551/c/2/A",
+   "heading": "",
+   "text": "necessary to render, or conduct a legitimate business activity related to, a cable service or other service provided by the cable operator to the subscriber;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A cable operator may disclose such information if the disclosure is\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s551/c/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s551/c/2/B",
+   "heading": "",
+   "text": "subject to subsection (h), made pursuant to a court order authorizing such disclosure, if the subscriber is notified of such order by the person to whom the order is directed;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A cable operator may disclose such information if the disclosure is\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s551/c/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C",
+    "i"
+   ],
+   "anchor": "/us/usc/t47/s551/c/2/C/i",
+   "heading": "",
+   "text": "the cable operator has provided the subscriber the opportunity to prohibit or limit such disclosure, and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A cable operator may disclose such information if the disclosure is\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s551/c/2"
+    },
+    {
+     "position": "precedes",
+     "text": "a disclosure of the names and addresses of subscribers to any cable service or other service, if\u2014",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s551/c/2/C"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C",
+    "ii",
+    "I"
+   ],
+   "anchor": "/us/usc/t47/s551/c/2/C/ii/I",
+   "heading": "",
+   "text": "extent of any viewing or other use by the subscriber of a cable service or other service provided by the cable operator, or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A cable operator may disclose such information if the disclosure is\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s551/c/2"
+    },
+    {
+     "position": "precedes",
+     "text": "a disclosure of the names and addresses of subscribers to any cable service or other service, if\u2014",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s551/c/2/C"
+    },
+    {
+     "position": "precedes",
+     "text": "the disclosure does not reveal, directly or indirectly, the\u2014",
+     "path": [
+      "c",
+      "2",
+      "C",
+      "ii"
+     ],
+     "anchor": "/us/usc/t47/s551/c/2/C/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C",
+    "ii",
+    "II"
+   ],
+   "anchor": "/us/usc/t47/s551/c/2/C/ii/II",
+   "heading": "",
+   "text": "the nature of any transaction made by the subscriber over the cable system of the cable operator; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A cable operator may disclose such information if the disclosure is\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s551/c/2"
+    },
+    {
+     "position": "precedes",
+     "text": "a disclosure of the names and addresses of subscribers to any cable service or other service, if\u2014",
+     "path": [
+      "c",
+      "2",
+      "C"
+     ],
+     "anchor": "/us/usc/t47/s551/c/2/C"
+    },
+    {
+     "position": "precedes",
+     "text": "the disclosure does not reveal, directly or indirectly, the\u2014",
+     "path": [
+      "c",
+      "2",
+      "C",
+      "ii"
+     ],
+     "anchor": "/us/usc/t47/s551/c/2/C/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "D"
+   ],
+   "anchor": "/us/usc/t47/s551/c/2/D",
+   "heading": "",
+   "text": "to a government entity as authorized under chapters 119, 121, or 206 of title 18, except that such disclosure shall not include records revealing cable subscriber selection of video programming from a cable operator.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A cable operator may disclose such information if the disclosure is\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s551/c/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": "/us/usc/t47/s551/d",
+   "heading": "Subscriber access to information",
+   "text": "A cable subscriber shall be provided access to all personally identifiable information regarding that subscriber which is collected and maintained by a cable operator. Such information shall be made available to the subscriber at reasonable times and at a convenient place designated by such cable operator. A cable subscriber shall be provided reasonable opportunity to correct any error in such information.",
+   "context": []
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": "/us/usc/t47/s551/e",
+   "heading": "Destruction of information",
+   "text": "A cable operator shall destroy personally identifiable information if the information is no longer necessary for the purpose for which it was collected and there are no pending requests or orders for access to such information under subsection (d) or pursuant to a court order.",
+   "context": []
+  },
+  {
+   "path": [
+    "f",
+    "1"
+   ],
+   "anchor": "/us/usc/t47/s551/f/1",
+   "heading": "",
+   "text": "Any person aggrieved by any act of a cable operator in violation of this section may bring a civil action in a United States district court.",
+   "context": []
+  },
+  {
+   "path": [
+    "f",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s551/f/2/A",
+   "heading": "",
+   "text": "actual damages but not less than liquidated damages computed at the rate of $100 a day for each day of violation or $1,000, whichever is higher;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The court may award\u2014",
+     "path": [
+      "f",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s551/f/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "f",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s551/f/2/B",
+   "heading": "",
+   "text": "punitive damages; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The court may award\u2014",
+     "path": [
+      "f",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s551/f/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "f",
+    "2",
+    "C"
+   ],
+   "anchor": "/us/usc/t47/s551/f/2/C",
+   "heading": "",
+   "text": "reasonable attorneys\u2019 fees and other litigation costs reasonably incurred.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The court may award\u2014",
+     "path": [
+      "f",
+      "2"
+     ],
+     "anchor": "/us/usc/t47/s551/f/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "f",
+    "3"
+   ],
+   "anchor": "/us/usc/t47/s551/f/3",
+   "heading": "",
+   "text": "The remedy provided by this section shall be in addition to any other lawful remedy available to a cable subscriber.",
+   "context": []
+  },
+  {
+   "path": [
+    "g"
+   ],
+   "anchor": "/us/usc/t47/s551/g",
+   "heading": "Regulation by States or franchising authorities",
+   "text": "Nothing in this subchapter shall be construed to prohibit any State or any franchising authority from enacting or enforcing laws consistent with this section for the protection of subscriber privacy.",
+   "context": []
+  },
+  {
+   "path": [
+    "h",
+    "1"
+   ],
+   "anchor": "/us/usc/t47/s551/h/1",
+   "heading": "",
+   "text": "such entity offers clear and convincing evidence that the subject of the information is reasonably suspected of engaging in criminal activity and that the information sought would be material evidence in the case; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsection (c)(2)(D), a governmental entity may obtain personally identifiable information concerning a cable subscriber pursuant to a court order only if, in the court proceeding relevant to such court order\u2014",
+     "path": [
+      "h"
+     ],
+     "anchor": "/us/usc/t47/s551/h"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "2"
+   ],
+   "anchor": "/us/usc/t47/s551/h/2",
+   "heading": "",
+   "text": "the subject of the information is afforded the opportunity to appear and contest such entity\u2019s claim.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsection (c)(2)(D), a governmental entity may obtain personally identifiable information concerning a cable subscriber pursuant to a court order only if, in the court proceeding relevant to such court order\u2014",
+     "path": [
+      "h"
+     ],
+     "anchor": "/us/usc/t47/s551/h"
+    }
+   ]
+  }
+ ]
+}

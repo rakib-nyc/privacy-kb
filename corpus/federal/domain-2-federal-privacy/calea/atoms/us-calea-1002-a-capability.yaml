@@ -1,0 +1,96 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related:
+- us.sca.2701.c1.provider_authorization
+- us.sca.2702.a1.divulgence_prohibition
+- us.wiretap.2510.17a.electronic_storage
+federal_relationship: null
+id: us.calea.1002.a.assistance_capability
+source:
+  citation: 47 U.S.C. § 1002(a)
+  instrument_id: us.calea
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/calea/raw/47-u-s-c-1002.xml
+  raw_sha256: 0458d2ca9cc250c59a8b70f482357e56125db94072dd484a50ca4cebd6a4985c
+  text_file: corpus/federal/domain-2-federal-privacy/calea/raw/47-u-s-c-1002.txt
+  text_sha256: bf2b0765a6cf3b1b213a21a90b3ca1b0739af8f754f45ef1d45f57ede29b36b8
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/calea/raw/47-u-s-c-1002.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: Except as provided in subsections (b), (c), and (d) of this section and sections 1007(a)
+  and 1008(b) and (d) of this title, a telecommunications carrier shall ensure that its equipment, facilities,
+  or services that provide a customer or subscriber with the ability to originate, terminate, or direct
+  communications are capable of—
+paragraph_path:
+  path:
+  - a
+  anchor: /us/usc/t47/s1002/a
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the rule in full.
+subject:
+  domain: III.A.1
+  lifecycle:
+  - IV
+regulator: &id001
+- fcc
+sector:
+- telecom
+data_types:
+- any
+effective_from: '1994-10-25'
+applies_if:
+  all:
+  - entity.is_telecommunications_carrier == true
+applies_to_role: controller
+obligation_type: secure
+deadline: null
+exemptions: []
+summary: A telecommunications carrier must ensure its equipment, facilities and services are capable of
+  isolating and delivering intercepted communications and call-identifying information to the government
+  pursuant to lawful authorization.
+requirement_detail: 'SURVEILLANCE CAPABILITY AS A DESIGN MANDATE, which is the opposite posture from every
+  privacy-by-design obligation in this corpus. § 1002(a) does not regulate what a carrier may do with
+  data; it requires the network to be BUILT so interception is possible. The privacy consequence is structural
+  rather than conduct-based: a capability built for lawful access exists for unlawful access too, and
+  no provision of this section conditions the duty on the volume or likelihood of actual interception
+  requests.'
+common_errors:
+- Reading it as an interception authority. It is a capability requirement; the authority to intercept
+  comes from Title III or FISA.
+- Assuming it reaches information services. The section is addressed to telecommunications carriers, and
+  the scope question is contested.
+open_questions:
+- § 1002(b) contains limitations, including on decryption and on information services, which are not extracted.
+  An analysis of what a carrier need NOT deliver is incomplete without them.
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 1002(a)
+  note: No preemption clause in the section. It coexists with the Wiretap Act, which supplies the authority
+    CALEA assumes.
+enforcement:
+  enforcers: *id001
+  private_right_of_action: false
+  penalty:
+    structure: Not extracted for this instrument.
+    range: null
+    note: The enforcement provisions are not extracted; treat exposure as UNASSESSED rather than absent.
+  statute_of_limitations: null

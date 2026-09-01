@@ -1,0 +1,476 @@
+{
+ "label": "42 U.S.C. \u00a7 2000ff-1",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/gina/raw/42-u-s-c-2000ff-1.xml",
+ "raw_sha256": "8707a8165d5eda02d36221d2ee297b50ff5cce92b6b52e4c978deab75613c508",
+ "leaves": [
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/a/1",
+   "heading": "",
+   "text": "to fail or refuse to hire, or to discharge, any employee, or otherwise to discriminate against any employee with respect to the compensation, terms, conditions, or privileges of employment of the employee, because of genetic information with respect to the employee; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/a/2",
+   "heading": "",
+   "text": "to limit, segregate, or classify the employees of the employer in any way that would deprive or tend to deprive any employee of employment opportunities or otherwise adversely affect the status of the employee as an employee, because of genetic information with respect to the employee.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/1",
+   "heading": "",
+   "text": "where an employer inadvertently requests or requires family medical history of the employee or family member of the employee;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/2/A",
+   "heading": "",
+   "text": "health or genetic services are offered by the employer, including such services offered as part of a wellness program;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    },
+    {
+     "position": "precedes",
+     "text": "where\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/2/B",
+   "heading": "",
+   "text": "the employee provides prior, knowing, voluntary, and written authorization;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    },
+    {
+     "position": "precedes",
+     "text": "where\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "C"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/2/C",
+   "heading": "",
+   "text": "only the employee (or family member if the family member is receiving genetic services) and the licensed health care professional or board certified genetic counselor involved in providing such services receive individually identifiable information concerning the results of such services; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    },
+    {
+     "position": "precedes",
+     "text": "where\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "D"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/2/D",
+   "heading": "",
+   "text": "any individually identifiable genetic information provided under subparagraph (C) in connection with the services provided under subparagraph (A) is only available for purposes of such services and shall not be disclosed to the employer except in aggregate terms that do not disclose the identity of specific employees;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    },
+    {
+     "position": "precedes",
+     "text": "where\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/3",
+   "heading": "",
+   "text": "where an employer requests or requires family medical history from the employee to comply with the certification provisions of section 2613 of title 29 or such requirements under State family and medical leave laws;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/4",
+   "heading": "",
+   "text": "where an employer purchases documents that are commercially and publicly available (including newspapers, magazines, periodicals, and books, but not including medical databases or court records) that include family medical history;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "A"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/5/A",
+   "heading": "",
+   "text": "the employer provides written notice of the genetic monitoring to the employee;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    },
+    {
+     "position": "precedes",
+     "text": "where the information involved is to be used for genetic monitoring of the biological effects of toxic substances in the workplace, but only if\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "B",
+    "i"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/5/B/i",
+   "heading": "",
+   "text": "the employee provides prior, knowing, voluntary, and written authorization; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    },
+    {
+     "position": "precedes",
+     "text": "where the information involved is to be used for genetic monitoring of the biological effects of toxic substances in the workplace, but only if\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "B",
+    "ii"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/5/B/ii",
+   "heading": "",
+   "text": "the genetic monitoring is required by Federal or State law;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    },
+    {
+     "position": "precedes",
+     "text": "where the information involved is to be used for genetic monitoring of the biological effects of toxic substances in the workplace, but only if\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "C"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/5/C",
+   "heading": "",
+   "text": "the employee is informed of individual monitoring results;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    },
+    {
+     "position": "precedes",
+     "text": "where the information involved is to be used for genetic monitoring of the biological effects of toxic substances in the workplace, but only if\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "D",
+    "i"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/5/D/i",
+   "heading": "",
+   "text": "any Federal genetic monitoring regulations, including any such regulations that may be promulgated by the Secretary of Labor pursuant to the Occupational Safety and Health Act of 1970 ( 29 U.S.C. 651 et seq.), the Federal Mine Safety and Health Act of 1977 ( 30 U.S.C. 801 et seq.), or the Atomic Energy Act of 1954 ( 42 U.S.C. 2011 et seq.); or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    },
+    {
+     "position": "precedes",
+     "text": "where the information involved is to be used for genetic monitoring of the biological effects of toxic substances in the workplace, but only if\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b/5"
+    },
+    {
+     "position": "precedes",
+     "text": "the monitoring is in compliance with\u2014",
+     "path": [
+      "b",
+      "5",
+      "D"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b/5/D"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "D",
+    "ii"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/5/D/ii",
+   "heading": "",
+   "text": "State genetic monitoring regulations, in the case of a State that is implementing genetic monitoring regulations under the authority of the Occupational Safety and Health Act of 1970 ( 29 U.S.C. 651 et seq.); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    },
+    {
+     "position": "precedes",
+     "text": "where the information involved is to be used for genetic monitoring of the biological effects of toxic substances in the workplace, but only if\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b/5"
+    },
+    {
+     "position": "precedes",
+     "text": "the monitoring is in compliance with\u2014",
+     "path": [
+      "b",
+      "5",
+      "D"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b/5/D"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "E"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/5/E",
+   "heading": "",
+   "text": "the employer, excluding any licensed health care professional or board certified genetic counselor that is involved in the genetic monitoring program, receives the results of the monitoring only in aggregate terms that do not disclose the identity of specific employees; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    },
+    {
+     "position": "precedes",
+     "text": "where the information involved is to be used for genetic monitoring of the biological effects of toxic substances in the workplace, but only if\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "6"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/b/6",
+   "heading": "",
+   "text": "where the employer conducts DNA analysis for law enforcement purposes as a forensic laboratory or for purposes of human remains identification, and requests or requires genetic information of such employer\u2019s employees, but only to the extent that such genetic information is used for analysis of DNA identification markers for quality control to detect sample contamination.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall be an unlawful employment practice for an employer to request, require, or purchase genetic information with respect to an employee or a family member of the employee except\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t42/s2000ff\u20131/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "/us/usc/t42/s2000ff\u20131/c",
+   "heading": "Preservation of protections",
+   "text": "In the case of information to which any of paragraphs (1) through (6) of subsection (b) applies, such information may not be used in violation of paragraph (1) or (2) of subsection (a) or treated or disclosed in a manner that violates section 2000ff\u20135 of this title .",
+   "context": []
+  }
+ ]
+}

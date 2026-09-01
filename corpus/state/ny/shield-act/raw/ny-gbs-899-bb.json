@@ -1,0 +1,47 @@
+{
+  "success" : true,
+  "message" : "Law document for location 899-BB in GBS law.",
+  "responseType" : "law-doc-info-detail",
+  "result" : {
+    "lawId" : "GBS",
+    "lawName" : "General Business",
+    "locationId" : "899-BB",
+    "title" : "Data security protections",
+    "docType" : "SECTION",
+    "publishedDates" : [ "2019-08-02", "2020-03-27" ],
+    "docLevelId" : "899-BB",
+    "activeDate" : "2020-03-27",
+    "text" : "  § 899-bb. Data security protections. 1. Definitions. (a) \"Compliant\\nregulated entity\" shall mean any person or business that is subject to,\\nand in compliance with, any of the following data security requirements:\\n  (i) regulations promulgated pursuant to Title V of the federal\\nGramm-Leach-Bliley Act (15 U.S.C. 6801 to 6809), as amended from time to\\ntime;\\n  (ii) regulations implementing the Health Insurance Portability and\\nAccountability Act of 1996 (45 C.F.R. parts 160 and 164), as amended\\nfrom time to time, and the Health Information Technology for Economic\\nand Clinical Health Act, as amended from time to time;\\n  (iii) part five hundred of title twenty-three of the official\\ncompilation of codes, rules and regulations of the state of New York, as\\namended from time to time; or\\n  (iv) any other data security rules and regulations of, and the\\nstatutes administered by, any official department, division, commission\\nor agency of the federal or New York state government as such rules,\\nregulations or statutes are interpreted by such department, division,\\ncommission or agency or by the federal or New York state courts.\\n  (b) \"Private information\" shall have the same meaning as defined in\\nsection eight hundred ninety-nine-aa of this article.\\n  (c) \"Small business\" shall mean any person or business with (i) fewer\\nthan fifty employees; (ii) less than three million dollars in gross\\nannual revenue in each of the last three fiscal years; or (iii) less\\nthan five million dollars in year-end total assets, calculated in\\naccordance with generally accepted accounting principles.\\n  2. Reasonable security requirement. (a) Any person or business that\\nowns or licenses computerized data which includes private information of\\na resident of New York shall develop, implement and maintain reasonable\\nsafeguards to protect the security, confidentiality and integrity of the\\nprivate information including, but not limited to, disposal of data.\\n  (b) A person or business shall be deemed to be in compliance with\\nparagraph (a) of this subdivision if it either:\\n  (i) is a compliant regulated entity as defined in subdivision one of\\nthis section; or\\n  (ii) implements a data security program that includes the following:\\n  (A) reasonable administrative safeguards such as the following, in\\nwhich the person or business:\\n  (1) designates one or more employees to coordinate the security\\nprogram;\\n  (2) identifies reasonably foreseeable internal and external risks;\\n  (3) assesses the sufficiency of safeguards in place to control the\\nidentified risks;\\n  (4) trains and manages employees in the security program practices and\\nprocedures;\\n  (5) selects service providers capable of maintaining appropriate\\nsafeguards, and requires those safeguards by contract; and\\n  (6) adjusts the security program in light of business changes or new\\ncircumstances; and\\n  (B) reasonable technical safeguards such as the following, in which\\nthe person or business:\\n  (1) assesses risks in network and software design;\\n  (2) assesses risks in information processing, transmission and\\nstorage;\\n  (3) detects, prevents and responds to attacks or system failures; and\\n  (4) regularly tests and monitors the effectiveness of key controls,\\nsystems and procedures; and\\n  (C) reasonable physical safeguards such as the following, in which the\\nperson or business:\\n  (1) assesses risks of information storage and disposal;\\n  (2) detects, prevents and responds to intrusions;\\n  (3) protects against unauthorized access to or use of private\\ninformation during or after the collection, transportation and\\ndestruction or disposal of the information; and\\n  (4) disposes of private information within a reasonable amount of time\\nafter it is no longer needed for business purposes by erasing electronic\\nmedia so that the information cannot be read or reconstructed.\\n  (c) A small business as defined in paragraph (c) of subdivision one of\\nthis section complies with subparagraph (ii) of paragraph (b) of\\nsubdivision two of this section if the small business's security program\\ncontains reasonable administrative, technical and physical safeguards\\nthat are appropriate for the size and complexity of the small business,\\nthe nature and scope of the small business's activities, and the\\nsensitivity of the personal information the small business collects from\\nor about consumers.\\n  (d) Any person or business that fails to comply with this subdivision\\nshall be deemed to have violated section three hundred forty-nine of\\nthis chapter, and the attorney general may bring an action in the name\\nand on behalf of the people of the state of New York to enjoin such\\nviolations and to obtain civil penalties under section three hundred\\nfifty-d of this chapter.\\n  (e) Nothing in this section shall create a private right of action.\\n",
+    "parentLocationIds" : [ "-CH20", "A39-F" ],
+    "parents" : [ {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "-CH20",
+      "title" : "General Business",
+      "docType" : "CHAPTER",
+      "publishedDates" : [ "2014-09-22", "2014-11-28", "2016-04-15", "2018-04-20", "2018-04-27", "2019-09-20", "2019-12-27", "2020-04-17", "2020-04-24", "2020-10-16", "2020-11-13", "2021-04-23", "2021-07-09", "2021-10-15", "2021-12-17", "2021-12-31", "2022-03-04", "2022-06-10", "2023-10-27", "2024-02-09", "2024-03-08", "2024-06-28", "2024-07-19", "2024-10-11", "2024-11-29", "2024-12-27", "2025-02-21", "2025-05-16", "2025-06-13", "2025-12-19", "2025-12-26", "2026-02-27", "2026-03-20", "2026-04-03", "2026-05-29" ],
+      "docLevelId" : "20",
+      "activeDate" : "2026-05-29"
+    }, {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "A39-F",
+      "title" : "Notification of Unauthorized Acquisition of Private Information; Data Security Protections",
+      "docType" : "ARTICLE",
+      "publishedDates" : [ "2014-09-22", "2019-08-02", "2019-11-01" ],
+      "docLevelId" : "39-F",
+      "activeDate" : "2019-11-01"
+    } ],
+    "prevSibling" : {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "899-AA",
+      "title" : "Notification; person without valid authorization has acquired private information",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2014-09-22", "2019-08-02", "2019-11-01", "2024-12-27", "2025-02-21", "2025-03-28" ],
+      "docLevelId" : "899-AA",
+      "activeDate" : "2025-03-28"
+    },
+    "nextSibling" : null
+  }
+}

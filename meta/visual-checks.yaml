@@ -1,0 +1,235 @@
+# VISUAL SPOT-CHECKS
+# ==================
+purpose: Gate 12. Every other check reads a transformation of the document — poppler's text layer, pdfminer's
+  text layer, a regex over either. They can agree and still all be wrong about the same thing, because
+  they start from the same content stream. These checks rasterise the page and read the passage back
+  off the image.
+selection: 'FEATURE-BASED, across every pdf_* source regardless of risk tier. Tier does not predict
+  where renderer faults appear: the APEC and Global CBPR Frameworks are the same shape and the same
+  tier and only one exposed the baseline-offset bug, and a medium-tier single-column document then produced
+  the footnote divergence. Selection follows meta/source-features.yaml — every feature present among
+  an instrument''s spans must be covered by at least one check, plus a floor of three checks per instrument,
+  capped at the number of spans that exist.'
+method: 'python3 tools/visual-sample.py <record_id>   # renders the page at 200dpi, prints the span
+  beside it'
+span_hash: sha256 of the whitespace-normalised verbatim_span, first 16 hex. Editing a span moves the
+  hash and gate 12 demands a fresh check.
+checks:
+- record_id: intl.apec.principle.uses_of_personal_information.p25
+  instrument_id: intl.apec.privacy_framework
+  raw_file: corpus/principles/fipps/raw/apec-privacy-framework-2015-20260818.pdf
+  page: 15
+  dpi: 200
+  covers:
+  - subparagraph_marker
+  checked: '2026-08-19'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: 67f47c651021b7d0
+  note: Span matches character for character. The a)/b)/c) markers each lead their own item on the page
+    — the exact construct the column extractor previously mis-ordered.
+- record_id: intl.apec.principle.collection_limitation.p24
+  instrument_id: intl.apec.privacy_framework
+  raw_file: corpus/principles/fipps/raw/apec-privacy-framework-2015-20260818.pdf
+  page: 14
+  dpi: 200
+  covers:
+  - prose
+  checked: '2026-08-19'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: 46ca9208a18f2b13
+  note: Single unbroken prose paragraph in the left column; span matches character for character.
+- record_id: intl.apec.principle.security_safeguards.p28
+  instrument_id: intl.apec.privacy_framework
+  raw_file: corpus/principles/fipps/raw/apec-privacy-framework-2015-20260818.pdf
+  page: 18
+  dpi: 200
+  covers:
+  - prose
+  checked: '2026-08-19'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: 9b9bb1344c60195b
+  note: Span matches character for character, including the trailing "subject to periodic review and
+    reassessment".
+- record_id: intl.apec.principle.access_and_correction.p30
+  instrument_id: intl.apec.privacy_framework
+  raw_file: corpus/principles/fipps/raw/apec-privacy-framework-2015-20260818.pdf
+  page: 19
+  dpi: 200
+  covers:
+  - non_ascii
+  - subparagraph_marker
+  checked: '2026-08-19'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: c2bcc2040f57ca8c
+  note: Span matches character for character. Confirms the curly apostrophe in "the individual's privacy"
+    is a typographic apostrophe in the source, not a transcription artefact, and that the (i)/(ii)/(iii)
+    markers lead their items.
+- record_id: intl.cbpr.principle.uses_of_personal_information.p22
+  instrument_id: intl.cbpr.framework
+  raw_file: corpus/principles/fipps/raw/global-cbpr-framework-2023-20260818.pdf
+  page: 13
+  dpi: 200
+  covers:
+  - subparagraph_marker
+  checked: '2026-08-19'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: 67f47c651021b7d0
+  note: Span matches character for character, a)/b)/c) correctly leading their items. This is the paragraph
+    that first exposed the baseline-offset bug — the primary regression sample.
+- record_id: intl.cbpr.principle.access_and_correction.p28
+  instrument_id: intl.cbpr.framework
+  raw_file: corpus/principles/fipps/raw/global-cbpr-framework-2023-20260818.pdf
+  page: 17
+  dpi: 200
+  covers:
+  - subparagraph_marker
+  checked: '2026-08-19'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: ce6e7d9fdbe9f7b5
+  note: 'Span matches character for character. Also confirms source_defects[0] visually: paragraph 27''s
+    exceptions are lettered a)/b)/c) immediately above, and paragraph 28 nonetheless refers to "25(a)",
+    "25(b)", "25(c)". Paragraph 25 is Security Safeguards, on an earlier page, with no lettered subparagraphs.'
+- record_id: intl.cbpr.principle.access_and_correction.p27
+  instrument_id: intl.cbpr.framework
+  raw_file: corpus/principles/fipps/raw/global-cbpr-framework-2023-20260818.pdf
+  page: 16
+  dpi: 200
+  covers:
+  - non_ascii
+  - subparagraph_marker
+  checked: '2026-08-19'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: 38920f2ad6c17632
+  note: Paragraph 27 opens on page 16 and its a)/b)/c) exceptions run onto page 17 (both read). Span
+    matches character for character, including the curly apostrophe in "the individual's personal information
+    and privacy".
+- record_id: intl.cbpr.principle.preventing_harm.p17
+  instrument_id: intl.cbpr.framework
+  raw_file: corpus/principles/fipps/raw/global-cbpr-framework-2023-20260818.pdf
+  page: 9
+  dpi: 200
+  covers:
+  - prose
+  checked: '2026-08-19'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: d015930f2e7ffa0e
+  note: Span matches character for character, including "expectations of data protection and privacy"
+    — the insertion recorded in differs_from against APEC paragraph 20. Footnote 1 is visibly separated
+    at the page foot and correctly excluded.
+- record_id: intl.apec.scheme.cbpr_system
+  instrument_id: intl.apec.cbpr_system
+  raw_file: corpus/schemes/cbpr/raw/apec-cbpr-prg-20260819.pdf
+  page: 4
+  dpi: 200
+  covers:
+  - footnote_ref
+  checked: '2026-08-19'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: d6395fe720052e98
+  note: 'Span matches character for character. Confirms the apparatus finding: the source sets a superscript
+    10 after "participating APEC economies", which poppler flattens into the text stream as ordinary
+    digits. It is recorded in span_interruptions, not deleted. Footnote 10''s text is visibly separated
+    at the page foot.'
+- record_id: intl.cbpr.scheme.global_system
+  instrument_id: intl.cbpr.global_system
+  raw_file: corpus/schemes/cbpr/raw/global-cbpr-prg-20260819.pdf
+  page: 4
+  dpi: 200
+  covers:
+  - footnote_ref
+  checked: '2026-08-19'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: 71a08b32260b8d7c
+  note: Span matches character for character across the whole of paragraph 8. Confirms the superscript
+    1 after "within the scope of its certification" is a footnote reference, recorded in span_interruptions.
+    Footnote 1's text is visibly separated at the page foot.
+- record_id: us.authority.nai
+  instrument_id: us.authority.nai
+  raw_file: corpus/federal/authorities/raw/nai-framework-2025-03.pdf
+  page: 3
+  dpi: 200
+  covers:
+  - prose
+  checked: '2026-08-19'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: 0ddd5c44e9f14d71
+  note: 'Read back off the rendered page. Span matches character for character. The same page independently
+    confirms the currency finding, in bold: "The NAI Framework set forth in this document supersedes
+    and replaces the 2020 NAI Code of Conduct."'
+- record_id: us.authority.daa
+  instrument_id: us.authority.daa
+  raw_file: corpus/federal/authorities/raw/daa-seven-principles-2009.pdf
+  page: 8
+  dpi: 200
+  covers:
+  - prose
+  checked: '2026-08-19'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: 19d1cd6305274077
+  note: 'Read back off the rendered page. Span matches character for character. The following paragraph
+    independently confirms the referral mechanism recorded in this authority''s enforcement_powers:
+    "Programs will also publicly report instances of uncorrected violations to the appropriate government
+    agencies."'
+- record_id: ny.nyc_rcny.5_301.b.3.intersectional_categories
+  instrument_id: nyc.local_law_144
+  raw_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  page: 5
+  dpi: 200
+  covers:
+  - subparagraph_marker
+  checked: '2026-08-24'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: 406a42ed2bb392c6
+  note: 'Span matches character for character. THE PAGE CONFIRMS THE COMMA-DELIMITED LIST FINDING that
+    drove the walker fix: paragraph (i) ends ''vs female candidates),'' on a comma, and (ii) ends ''candidates),
+    and'' — which is why (ii) was absorbed into (i) and only (iii) survived under the old terminal-punctuation
+    rule. All three roman markers lead their own item on the page. The whole subchapter is underscored
+    because it is NEW MATTER added by this Notice of Adoption; there is no bracketed deleted matter
+    anywhere, so the text is clean rather than amendatory.'
+- record_id: ny.nyc_rcny.5_302.a.historical_data
+  instrument_id: nyc.local_law_144
+  raw_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  page: 8
+  dpi: 200
+  covers:
+  - prose
+  checked: '2026-08-24'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: 7f1cd1378ee8d1ec
+  note: 'Span matches character for character. THE VISUAL CHECK CAUGHT A SUBSTANTIVE ERROR IN THE ANALYSIS,
+    not in the span: an earlier draft read the subdivision as requiring the employer''s OWN historical
+    data. The page shows the opposite — data ''may be from one or more employers or employment agencies
+    that use the AEDT'', and the own-data condition governs only RELIANCE on another''s audit. Gate
+    3 could never have caught that; the span was correct throughout. Also visible: the Intersectional
+    Categories table, real 2-D data, excluded from the segmentation by design.'
+- record_id: ny.nyc_rcny.5_304.b.candidate_notice
+  instrument_id: nyc.local_law_144
+  raw_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  page: 9
+  dpi: 200
+  covers:
+  - non_ascii
+  - subparagraph_marker
+  checked: '2026-08-24'
+  checked_by: visual read of rendered page
+  result: match
+  span_sha256_16: c178c0f4864ee4d4
+  note: 'Span matches character for character, including the section sign in ''to comply with § 20-871(b)(1)
+    and (2) of the Code''. All three lettered routes in (1)-(3) carry the same ''10 business days before
+    use of an AEDT'' clock, confirming the deadline applies to every branch rather than only the mail
+    route. Also visible and NOT yet modelled: (b) reaches a candidate ''who resides in the city'', a
+    residency limit distinct from the employer''s own nexus.'

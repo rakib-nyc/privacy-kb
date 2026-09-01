@@ -1,0 +1,147 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - financial_services
+  - non_bank_financial_institutions
+data_types:
+  - npi
+  - customer_information
+status: in_force
+effective_from: '2023-06-09'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+preemption:
+  posture: floor
+  authority: 15 U.S.C. § 6807
+  note: >-
+    GLBA § 507 preserves more protective state law: a state statute or regulation is preempted only
+    to the extent it is INCONSISTENT with the subtitle, and a more protective provision is not
+    inconsistent. So state security requirements run in parallel. NY SHIELD's compliance-deemed
+    pathway for GLBA-regulated entities is the practical expression of that, and is a Priority 3
+    atom.
+enforcement:
+  enforcers:
+    - ftc
+  private_right_of_action: false
+  penalty:
+    structure: FTC Act remedies; no penalty figure in the rule itself
+    range: null
+    note: GLBA carries no private right of action; plaintiffs use state UDAP and negligence.
+  statute_of_limitations: null
+id: us.glba.safeguards.314_1.b.scope
+source:
+  citation: 16 C.F.R. § 314.1(b)
+  instrument_id: us.glba.safeguards_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=314
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  raw_sha256: 3ba7ecc3463953a1db1ccf38f4b0ade4182e36c7e24e111eb8869910e271d41a
+  text_file: corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.txt
+  text_sha256: be8a0b1e03c4b14f6ed56fbf365d871a4fe112856a8013ebcf25fbc2f9aefec9
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-16 XML, part 314
+    result: structured_source_used
+    note: null
+  segment_sha256: f6f59e44017a69e86fa350196945cad79474aa95882a5b6572c36ada1443cc38
+verbatim_span: >-
+  This part applies to the handling of customer information by all financial institutions over which
+  the Federal Trade Commission (“FTC” or “Commission”) has jurisdiction. Namely, this part applies
+  to those “financial institutions” over which the Commission has rulemaking authority pursuant to
+  section 501(b) of the Gramm-Leach-Bliley Act. An entity is a “financial institution” if its
+  business is engaging in an activity that is financial in nature or incidental to such financial
+  activities as described in section 4(k) of the Bank Holding Company Act of 1956, 12 U.S.C.
+  1843(k), which incorporates activities enumerated by the Federal Reserve Board in 12 CFR 225.28
+  and 225.86. The “financial institutions” subject to the Commission's enforcement authority are
+  those that are not otherwise subject to the enforcement authority of another regulator under
+  section 505 of the Gramm-Leach-Bliley Act, 15 U.S.C. 6805. More specifically, those entities
+  include, but are not limited to, mortgage lenders, “pay day” lenders, finance companies, mortgage
+  brokers, account servicers, check cashers, wire transferors, travel agencies operated in
+  connection with financial services, collection agencies, credit counselors and other financial
+  advisors, tax preparation firms, non-federally insured credit unions, investment advisors that are
+  not required to register with the Securities and Exchange Commission, and entities acting as
+  finders. They are referred to in this part as “You.” This part applies to all customer information
+  in your possession, regardless of whether such information pertains to individuals with whom you
+  have a customer relationship, or pertains to the customers of other financial institutions that
+  have provided such information to you.
+paragraph_path:
+  path:
+    - b
+  anchor: '314.1'
+  derivation: reconstructed
+  confidence: high
+  evidence: designators reconstructed from flat <P> siblings; resolves to exactly one leaf
+context_not_required: The paragraph states the scope in full.
+subject:
+  domain: II.C.1
+  lifecycle:
+    - IV
+applies_to_role: controller
+obligation_type: secure
+deadline: null
+applies_if:
+  all:
+    - entity.is_financial_institution == true
+    - entity.within_ftc_jurisdiction == true
+exemptions:
+  - id: cfr.16.314.6.under_5000_consumers
+    type: size_threshold
+    reach: obligation
+    scope: >-
+      A financial institution maintaining customer information concerning FEWER THAN 5,000 consumers
+      is excused from four specific requirements: the written risk assessment (§ 314.4(b)(1)),
+      continuous monitoring or annual penetration testing plus biannual vulnerability assessments (§
+      314.4(d)(2)), the written incident response plan (§ 314.4(h)), and the annual report to the
+      board (§ 314.4(i)). CONSEQUENCE TEST: reach is obligation and the list is exhaustive.
+      Everything else in § 314.4 still applies — a qualified individual, access controls,
+      encryption, MFA, training, service-provider oversight. An institution reading this as "the
+      Safeguards Rule does not apply to small firms" has misread a four-item carve-out as an
+      exemption. And the threshold counts CONSUMERS whose information is MAINTAINED, not customers
+      or annual transactions, so it moves as data accumulates rather than as the business grows.
+    source_citation: 16 C.F.R. § 314.6
+    verbatim_span: >-
+      Section 314.4(b)(1), (d)(2), (h), and (i) do not apply to financial institutions that maintain
+      customer information concerning fewer than five thousand consumers.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.consumers_with_information_maintained < 5000
+summary: >-
+  The Safeguards Rule applies to the handling of customer information by all financial institutions
+  over which the FTC has jurisdiction.
+requirement_detail: >-
+  SCOPE IS WHERE THE SAFEGUARDS RULE AND THE PRIVACY RULE DIVERGE, and confusing them is the most
+  consequential GLBA error in this corpus. 16 C.F.R. part 313 was narrowed by Dodd-Frank to motor
+  vehicle dealers; part 314 was NOT. The Safeguards Rule still reaches every financial institution
+  under FTC jurisdiction — mortgage brokers, payday lenders, tax preparers, collection agencies,
+  investment advisers not SEC-registered, and since 2021 entities engaged in finder activities. So
+  an entity can be outside the FTC privacy rule and squarely inside the FTC security rule, and the §
+  313.1(b) dealer exclusion says nothing about part 314.
+common_errors:
+  - >-
+    Assuming the Dodd-Frank narrowing of part 313 also narrowed part 314. It did not — the
+    Safeguards Rule still reaches every financial institution under FTC jurisdiction.
+  - >-
+    Reading § 314.6 as a small-business exemption from the rule. It removes FOUR named requirements
+    and leaves the rest of § 314.4 in force.
+  - >-
+    Counting customers or revenue for the 5,000 threshold. It counts consumers whose information is
+    MAINTAINED.
+open_questions: []

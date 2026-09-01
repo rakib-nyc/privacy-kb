@@ -1,0 +1,102 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related:
+  - us.sca.2701.c1.provider_authorization
+  - us.sca.2702.a1.divulgence_prohibition
+  - us.wiretap.2510.17a.electronic_storage
+federal_relationship: null
+id: us.cloud_act.2713.extraterritorial_production
+source:
+  citation: 18 U.S.C. § 2713
+  instrument_id: us.cloud_act
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/cloud-act/raw/18-u-s-c-2713.xml
+  raw_sha256: 0eddc0a0ad69a71541aaa3465ddcf4c43c6e5364ecdbc6df6d213ca1a959c023
+  text_file: corpus/federal/domain-2-federal-privacy/cloud-act/raw/18-u-s-c-2713.txt
+  text_sha256: 2fd744ff7e389381ce4c49139afc1d485e8bc6dc1605152c9d214bca7e2d5a88
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/cloud-act/raw/18-u-s-c-2713.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 21e318c20b79cb7db52ade4756c4dbf0e37c2f7eb3bde0ed331e3739686b8f2c
+verbatim_span: >-
+  A provider of electronic communication service or remote computing service shall comply with the
+  obligations of this chapter to preserve, backup, or disclose the contents of a wire or electronic
+  communication and any record or other information pertaining to a customer or subscriber within
+  such provider’s possession, custody, or control, regardless of whether such communication, record,
+  or other information is located within or outside of the United States.
+paragraph_path:
+  path: []
+  anchor: /us/usc/t18/s2713
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the rule in full.
+subject:
+  domain: III.A.1
+  lifecycle:
+    - VI
+regulator: &ref_0
+  - doj
+sector:
+  - any
+data_types:
+  - any
+effective_from: '2018-03-23'
+applies_if:
+  all:
+    - entity.provides_electronic_communication_service_to_public == true
+    - event.type == "lawful_process_received"
+applies_to_role: controller
+obligation_type: disclose
+deadline: null
+exemptions: []
+summary: >-
+  A provider must comply with obligations to preserve, back up or disclose the contents of a
+  communication and any record in its possession, custody or control, regardless of whether the
+  material is located within or outside the United States.
+requirement_detail: >-
+  THE CONFLICT-OF-LAWS PROVISION, and it is one sentence. § 2713 makes location irrelevant to a US
+  provider's obligation, which is precisely what a GDPR transfer analysis has to contend with: a
+  provider subject to US process cannot answer an EU regulator by pointing at where the servers sit.
+  It resolved Microsoft Ireland by legislation rather than by doctrine, and it is the reason the
+  Article 48 question about foreign judgments is live for US cloud services in a way it is not for
+  purely local ones.
+common_errors:
+  - Treating data localisation as an answer to US process. § 2713 makes storage location irrelevant.
+  - >-
+    Assuming it creates new authority to compel. It extends the reach of obligations that already
+    exist under this chapter rather than adding a new one.
+open_questions: []
+preemption:
+  posture: none
+  authority: 18 U.S.C. § 2713
+  note: >-
+    No preemption of state law; the conflict this provision creates is with FOREIGN law, which the
+    CLOUD Act addresses through executive agreements rather than through preemption.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: false
+  penalty:
+    structure: Not extracted for this instrument.
+    range: null
+    note: The enforcement provisions are not extracted; treat exposure as UNASSESSED rather than absent.
+  statute_of_limitations: null

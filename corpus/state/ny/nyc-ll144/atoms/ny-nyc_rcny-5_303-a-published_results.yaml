@@ -1,0 +1,111 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: local
+regulator:
+  - nyc_dcwp
+sector:
+  - employment
+status: in_force
+effective_from: '2023-04-05'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: medium
+related: []
+id: ny.nyc_rcny.5_303.a.published_results
+source:
+  citation: 6 RCNY § 5-303(a)
+  instrument_id: nyc.local_law_144
+  url: >-
+    urn:owner-supplied:nyc-dcwp-notice-of-adoption-aedt-2023-04-05.pdf
+  fetched: '2026-08-24'
+  raw_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  raw_sha256: 4ecc4463b29440f9b876b0b7319faf2d4c4710b8ad28db9cfa8ae15a123ece2c
+  text_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.txt
+  text_sha256: 21b43190233735cdab074166a3fc9cc2c26aa24c4b5a80596656cda690abee44
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  format: pdf_single_col
+  risk_tier: medium
+  render: null
+  structured_source_check:
+    checked:
+      - amlegal.com (403 to automated requests)
+      - rules.cityofnewyork.us (carries proposal notices)
+      - owner-supplied DCWP Notice of Adoption of Final Rule
+    result: no_structured_source_exists
+    note: >-
+      No structured source serves the Rules of the City of New York. This is the ADOPTED text — a
+      Notice of Adoption carries the final rule in clean form, unlike a proposal notice — so it is
+      the right document, in the wrong format.
+  segment_sha256: 9ef86591601c102886e3e967ceed5d97724db753686a005463653b7b7eaab0bb
+verbatim_span: >-
+  Before the use of an AEDT, an employer or employment agency in the city must make the following
+  publicly available on the employment section of their website in a clear and conspicuous manner:
+paragraph_path:
+  path:
+    - a
+  anchor: 5-303
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from a pdftotext -layout rendering; indentation is NOT used as
+    evidence because the PDF resets its left margin per page. Resolves to exactly one leaf.
+subject:
+  domain: IV.A.2
+  lifecycle:
+    - III
+data_types:
+  - any
+federal_relationship: gap_fills
+applies_if:
+  all:
+    - entity.uses_automated_employment_decision_tool == true
+    - entity.nexus in ["US-NY-NYC"]
+applies_to_role: controller
+obligation_type: disclose
+deadline: null
+exemptions: []
+summary: >-
+  Before using an AEDT, an employer or employment agency in the city must publish the date and a
+  summary of the most recent bias audit, and the tool's distribution date.
+requirement_detail: >-
+  PUBLICATION IS A PRECONDITION ON USE, NOT A FOLLOW-UP. The duty attaches BEFORE the tool is used,
+  so an employer that deploys first and posts later has already violated it. Subdivision (b) allows
+  the requirement to be met by an active hyperlink, and subdivision (c) requires the posting to be
+  kept up for at least 6 MONTHS after the latest use of the AEDT for an employment decision — so the
+  obligation outlives the use that triggered it.
+common_errors:
+  - Publishing after deployment. The subdivision says "Before the use of an AEDT".
+  - Taking the posting down once use begins. Subdivision (c) requires it to stay up.
+open_questions:
+  - >-
+    THE DOCUMENT STATES NO EFFECTIVE DATE. effective_from is taken from the PDF's own CreationDate
+    metadata (5 April 2023), which is evidence about the FILE rather than a statement in the rule.
+    New York City rules generally take effect after publication in the City Record, which this
+    corpus does not hold. Confirm the operative date against the City Record before relying on any
+    as-of query in 2023.
+preemption:
+  posture: none
+  authority: 6 RCNY Subchapter T
+  note: >-
+    City rule implementing N.Y.C. Admin. Code § 20-870 et seq. No federal statute regulates
+    automated employment decision tools as such; Title VII reaches discriminatory OUTCOMES and says
+    nothing about auditing a tool in advance.
+enforcement:
+  enforcers:
+    - nyc_dcwp
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil penalties under N.Y.C. Admin. Code § 20-872, per violation and per day of continuing
+      violation.
+    range: null
+    note: >-
+      The penalty structure is in the Administrative Code, not this rule; see
+      nyc.ll144.20_872.b.daily_penalty.
+  statute_of_limitations: null
+context_not_required: The subdivision states the rule in full; no ancestor contributes governing text.

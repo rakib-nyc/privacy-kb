@@ -1,0 +1,184 @@
+id: us.sox_whistleblower.1514a.a1c.internal_report
+schema_version: 1
+record_type: obligation
+source:
+  citation: 18 U.S.C. § 1514A(a)(1)(C)
+  instrument_id: us.sox_whistleblower
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/sox-whistleblower/raw/18-u-s-c-1514a.xml
+  raw_sha256: 8eddb8a50a6d62efbdff864bc7fc3358051f0759c63631a16ed5e0319ade1544
+  text_file: corpus/federal/domain-2-federal-privacy/sox-whistleblower/raw/18-u-s-c-1514a.txt
+  text_sha256: dee2ef124f82c2889845345028b0f660bb7eaf804f7dd0a4249e2f9f17e17b92
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/sox-whistleblower/raw/18-u-s-c-1514a.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 649affb71aaac329ab9c21518013d23703af009ee566ad81373171a032defa67
+verbatim_span: >-
+  a person with supervisory authority over the employee (or such other person working for the
+  employer who has the authority to investigate, discover, or terminate misconduct); or
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '1'
+    - C
+  anchor: /us/usc/t18/s1514A/a/1/C
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      No company with a class of securities registered under section 12 of the Securities Exchange
+      Act of 1934 ( 15 U.S.C. 78 l ), or that is required to file reports under section 15(d) of the
+      Securities Exchange Act of 1934 ( 15 U.S.C. 78 o (d)) including any subsidiary or affiliate
+      whose financial information is included in the consolidated financial statements of such
+      company, or nationally recognized statistical rating organization (as defined in section 3(a)
+      of the Securities Exchange Act of 1934 ( 15 U.S.C. 78c ), or any officer, employee,
+      contractor, subcontractor, or agent of such company or nationally recognized statistical
+      rating organization, may discharge, demote, suspend, threaten, harass, or in any other manner
+      discriminate against an employee in the terms and conditions of employment because of any
+      lawful act done by the employee—
+    citation: 18 U.S.C. § 1514A(a)
+    path:
+      path:
+        - a
+      anchor: /us/usc/t18/s1514A/a
+      derivation: structural
+      confidence: high
+      evidence: USLM element nesting; identifier read from the source
+  - position: precedes
+    relation: conditions
+    verbatim_span: >-
+      to provide information, cause information to be provided, or otherwise assist in an
+      investigation regarding any conduct which the employee reasonably believes constitutes a
+      violation of section 1341, 1343, 1344, or 1348, any rule or regulation of the Securities and
+      Exchange Commission, or any provision of Federal law relating to fraud against shareholders,
+      when the information or assistance is provided to or the investigation is conducted by—
+    citation: 18 U.S.C. § 1514A(a)(1)
+    path:
+      path:
+        - a
+        - '1'
+      anchor: /us/usc/t18/s1514A/a/1
+      derivation: structural
+      confidence: high
+      evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: IV.B.4
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - dol
+  - private_litigants
+sector:
+  - employment
+  - financial
+data_types:
+  - personal_information
+status: in_force
+effective_from: '2002-07-30'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history:
+  - date: '2010-07-22'
+    note: >-
+      The amendments note carried with the section in the fetched source records that Pub. L.
+      111–203 (Dodd-Frank) amended the introductory provisions of subsection (a) in 2010, inserting
+      the subsidiary-and-affiliate language and the references to a nationally recognized
+      statistical rating organization. Those words appear in the operative_context quoted here but
+      not in subparagraph (C), which is unamended since enactment. The source's effective-date note
+      for that amendment is one day after the 21 July 2010 enactment of Pub. L. 111–203.
+    source_url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+applies_if:
+  all:
+    - entity.is_public_company == true
+    - event.type == 'internal_misconduct_report'
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  A covered issuer may not discharge, demote, suspend, threaten, harass or otherwise discriminate
+  against an employee because the employee provided information about conduct the employee
+  reasonably believes violates the enumerated fraud provisions to a person with supervisory
+  authority over the employee, or to another person working for the employer with authority to
+  investigate, discover or terminate misconduct.
+requirement_detail: >-
+  THE PRIVACY CONSEQUENCE OF § 1514A IS AN INVESTIGATION-HANDLING CONSTRAINT, and it is routinely
+  stated backwards. Subparagraph (C) protects information given to "a person with supervisory
+  authority over the employee" and to any "other person working for the employer who has the
+  authority to investigate, discover, or terminate misconduct", so the protected population is full
+  of people who never contacted a regulator — and the internal case file is exactly where their
+  identity is written down. The section does not, in terms, impose confidentiality; what it does is
+  make disclosure of the reporter's identity to the business unit under investigation the
+  evidentiary bridge between the report and any later adverse action, which is why controlling
+  circulation of the file is a litigation-exposure decision and not a housekeeping one.
+  Practitioners then tell employees the hotline is anonymous as a matter of law: the
+  anonymous-submission requirement for accounting complaints is in section 10A(m)(4) of the
+  Securities Exchange Act, not here, and this section protects named reporters rather than
+  concealing them. Note the standard in the chapeau — conduct "which the employee reasonably
+  believes constitutes a violation" — so a report that proves unfounded is still protected, and an
+  investigation memo recording that the allegation failed does not withdraw the protection.
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Citing § 1514A as a confidentiality rule. It is an anti-retaliation provision; the
+    anonymous-submission requirement for accounting complaints sits in the Securities Exchange Act
+    and not in this section.
+  - >-
+    Assuming only reports to the SEC or to law enforcement are protected. Subparagraph (C) covers a
+    report to "a person with supervisory authority over the employee".
+  - >-
+    Withdrawing protection once the allegation is found unsubstantiated. The chapeau turns on what
+    the employee reasonably believes, not on whether a violation occurred.
+open_questions:
+  - >-
+    18 U.S.C. § 1514A(b) and (c) — the complaint procedure, the de novo district court route and the
+    remedies — are not extracted as atoms, so procedure and quantum cannot be resolved from this
+    record.
+confidence: high
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 1514A(d)
+  note: >-
+    Subsection (d), headed Rights Retained by Employee in the fetched source, preserves the rights,
+    privileges and remedies of an employee under other federal or state law and under any collective
+    bargaining agreement. State whistleblower statutes and common-law wrongful-discharge claims
+    therefore run alongside this section rather than being displaced by it. Subsection (d) has not
+    been extracted as its own atom.
+enforcement:
+  enforcers:
+    - dol
+    - private_litigants
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Complaint to the Secretary of Labor, administered by OSHA, with a right to bring a de novo
+      action in federal district court if the Secretary has not issued a final decision within 180
+      days and the delay is not the claimant's bad faith. Relief is make-whole: reinstatement with
+      seniority, back pay with interest, and special damages including litigation costs and fees.
+    range: null
+    note: >-
+      The remedies at 18 U.S.C. § 1514A(c) and the procedure at (b) have NOT been extracted as
+      atoms. Treat the description above as a pointer to those subsections and the quantum as
+      UNASSESSED.
+  statute_of_limitations: >-
+    180 days after the violation occurs or after the employee became aware of it, under 18 U.S.C. §
+    1514A(b)(2)(D); the period was raised from 90 days by Pub. L. 111–203 in 2010. That subparagraph
+    is not extracted as an atom.

@@ -1,0 +1,180 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - financial
+data_types:
+  - financial
+status: in_force
+effective_from: '2000-11-13'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+related: []
+applies_if:
+  all:
+    - entity.is_financial_institution == true
+    - entity.predominantly_motor_vehicle_sales_or_leasing == true
+    - data.is_nonpublic_personal_information == true
+federal_relationship: null
+interpreted_by: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 15 U.S.C. § 6807
+  note: >-
+    GLBA subtitle A sets a floor: 15 U.S.C. § 6807 preserves State law that affords greater
+    protection, with inconsistency determined by the FTC. Recorded as floor rather than none because
+    the statute speaks to the question directly.
+enforcement:
+  enforcers:
+    - ftc
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Enforced under the FTC Act, 15 U.S.C. § 6805(a)(7). GLBA subtitle A carries no private right
+      of action.
+    range: null
+    note: >-
+      15 U.S.C. § 6805(a)(7) allocates enforcement to the FTC for any financial institution not
+      under paragraphs (1)-(6); § 6805(a)(8) allocates to the CFPB those institutions subject to its
+      jurisdiction under the Consumer Financial Protection Act. Which of the two reaches a given
+      motor vehicle dealer is the same question as the § 313.1(b) exclusion.
+  statute_of_limitations: null
+id: us.cfr.16.313.11.a1.reuse_limit_received_under_exception
+source:
+  citation: 16 C.F.R. § 313.11(a)(1)
+  instrument_id: us.cfr.16.313
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=313
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+  raw_sha256: d15f22051009593a5210d7d3bf1f8e8af542214d78f12fc333b9f0a2e852a67a
+  text_file: corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.txt
+  text_sha256: e82d7dc8e83a38f83ca95113eb64d54dc94556c0b0786b595bc452473d05ba1f
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-16 XML, part 313, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: 73b057925b190f0d590cc403603006c1ea24549f759bc89bcb81661b443cc8ef
+verbatim_span: >-
+  If you receive nonpublic personal information from a nonaffiliated financial institution under an
+  exception in § 313.14 or § 313.15 of this part, your disclosure and use of that information is
+  limited as follows:
+paragraph_path:
+  path:
+    - a
+    - '1'
+  anchor: '313.11'
+  derivation: reconstructed
+  confidence: high
+  evidence: designators reconstructed from flat <P> siblings; resolves to exactly one leaf (gate 23)
+context_not_required: >-
+  The paragraph states its own condition and consequence in full. The (a) level contributes only the
+  run-in heading "Information you receive under an exception".
+subject:
+  domain: II.C.1
+  lifecycle:
+    - I
+obligation_type: restrict_use
+summary: >-
+  Nonpublic personal information received from a nonaffiliated financial institution under a §
+  313.14 or § 313.15 exception may be disclosed and used only within the narrow channels listed in §
+  313.11(a)(1).
+requirement_detail: >-
+  THE EXCEPTIONS TRAVEL WITH THE DATA. Information handed over under a §§ 313.14/313.15 exception
+  arrives pre-restricted: the recipient may use it only to carry out the activity the exception
+  covered. This is what stops the transaction-processing exception from becoming a laundering route
+  — the servicer that receives a payment history to service a loan cannot then market from it, and
+  neither can its affiliates, because § 313.11(a)(1)(ii) caps them at the recipient's own
+  permissions.
+exemptions:
+  - id: cfr.16.313.1.b.retail_credit_dealer
+    type: entity_level
+    scope: >-
+      A motor vehicle dealer described in 12 U.S.C. 5519(b) — one that directly extends retail
+      credit or retail leases whose contracts are NOT routinely assigned to an unaffiliated finance
+      or leasing source — is outside 16 C.F.R. part 313 entirely. CONSEQUENCE TEST: if the dealer
+      routinely assigns even part of that paper to an unaffiliated finance source, it falls back
+      INSIDE the Part for its whole consumer book. The hinge word is "routinely", which is a fact
+      about the dealer's practice that the engine cannot infer and must be told. THIS IS NOT RELIEF
+      FROM GLBA. It is a jurisdictional allocation: 12 U.S.C. 5519 hands these dealers to the CFPB,
+      so Regulation P (12 C.F.R. part 1016) reaches them instead. Reading this exemption as "no
+      privacy obligation" is the error it most invites.
+    source_citation: 16 C.F.R. § 313.1(b)
+    verbatim_span: >-
+      Excluded from the coverage of this part are motor vehicle dealers described in 12 U.S.C.
+      5519(b) that directly extend to consumers retail credit or retail leases involving motor
+      vehicles in which the contract governing such extension of retail credit or retail leases is
+      not routinely assigned to an unaffiliated third party finance or leasing source.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.is_motor_vehicle_dealer == true
+        - entity.extends_retail_credit_directly == true
+        - entity.routinely_assigns_contracts == false
+    reach: instrument
+  - id: cfr.16.313.1.b.business_purpose
+    type: data_level
+    scope: >-
+      Information about companies, and about individuals who obtain the financial product or service
+      for business, commercial or agricultural purposes, is outside the Part. CONSEQUENCE TEST: a
+      dealer that finances a landscaping company's fleet truck is out for THAT data and fully in for
+      every personal-use customer on the same lot, on the same day, in the same system. This is the
+      entity-level/data-level divider in its plainest form: nothing about the dealer changes, only
+      which records are reached.
+    source_citation: 16 C.F.R. § 313.1(b)
+    verbatim_span: >-
+      This part does not apply to information about companies or about individuals who obtain
+      financial products or services for business, commercial, or agricultural purposes.
+    burden_of_proof: entity
+    applies_if:
+      any:
+        - data.subject_is_company == true
+        - data.purpose_of_product in ["business","commercial","agricultural"]
+  - id: cfr.16.313.3.n2i.publicly_available
+    type: data_level
+    scope: >-
+      Publicly available information is not nonpublic personal information, so the Part's duties do
+      not attach to it — EXCEPT where it appears on a list derived using personally identifiable
+      financial information that is not itself publicly available. CONSEQUENCE TEST: a name and
+      street address taken from a phone book is out; the same name and address on a list of
+      customers 90 days delinquent is back in, because the derivation is what makes the list
+      revealing. The carve-out is therefore not a property of the datum, and a predicate that tests
+      only "is it public?" would apply it in exactly the case the rule exists to catch.
+    source_citation: 16 C.F.R. § 313.3(n)(2)(i)
+    verbatim_span: >-
+      Publicly available information, except as included on a list described in paragraph (n)(1)(ii)
+      of this section; or
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - data.is_publicly_available == true
+        - data.on_derived_list == false
+common_errors:
+  - >-
+    POST-DODD-FRANK, 16 C.F.R. PART 313 REACHES ESSENTIALLY ONLY MOTOR VEHICLE DEALERS. § 313.1(b)
+    narrows the FTC privacy rule to persons under 12 U.S.C. 5519 predominantly engaged in the sale
+    or leasing and servicing of motor vehicles. Rulemaking for the rest of the financial sector
+    moved to the CFPB, and Regulation P at 12 C.F.R. part 1016 is the operative privacy rule for
+    banks, credit unions, brokers and insurers. Citing part 313 at a bank is the single most common
+    error about this instrument, and the § 313.1(b) dealer exclusion invites its mirror image: it is
+    a JURISDICTIONAL ALLOCATION to the CFPB, not relief from GLBA.
+  - >-
+    Assuming data received under an exception is unrestricted in the recipient's hands. It is more
+    restricted than data received outside one — compare § 313.11(b)(1), which lets the recipient
+    redisclose anywhere the source institution lawfully could.
+open_questions: []

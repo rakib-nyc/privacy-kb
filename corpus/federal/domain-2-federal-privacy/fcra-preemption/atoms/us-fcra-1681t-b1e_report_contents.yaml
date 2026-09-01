@@ -1,0 +1,134 @@
+id: us.fcra.1681t.b1e_report_contents
+schema_version: 1
+record_type: obligation
+source:
+  citation: 15 U.S.C. § 1681t(b)(1)(E)
+  instrument_id: us.fcra.preemption
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/fcra-preemption/raw/15-u-s-c-1681t.xml
+  raw_sha256: 5c20b842e91b5d0aa63b2564c2bedd47f11f7b7973e1e764ff34c1de861f99f8
+  text_file: corpus/federal/domain-2-federal-privacy/fcra-preemption/raw/15-u-s-c-1681t.txt
+  text_sha256: 6b77781fa8612078560807a63678067687d3f210e8facdef1bc62541aa7b1015
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/fcra-preemption/raw/15-u-s-c-1681t.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 482b090c1f1f3c7d780af09d96f2f0386690b8d1ba3f18fd3d90eff123689d48
+verbatim_span: >-
+  section 1681c of this title , relating to information contained in consumer reports, except that
+  this subparagraph shall not apply to any State law in effect on September 30, 1996 ;
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+    - '1'
+    - E
+  anchor: /us/usc/t15/s1681t/b/1/E
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element
+jurisdiction: US-FED
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating FCRA preemption as field preemption. It is express and partial — a list of specific
+    subject areas.
+  - >-
+    Ignoring the 30 September 1996 grandfather. State laws in effect on that date can survive
+    preemption that would otherwise apply.
+  - >-
+    Applying (b)(1)(E) to state data-security or breach law. It reaches the CONTENTS of consumer
+    reports.
+open_questions:
+  - >-
+    Whether a post-1996 amendment to a grandfathered state provision forfeits the grandfather is not
+    answered by this text. Ambiguity in the source, recorded rather than resolved.
+confidence: high
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: No requirement or prohibition may be imposed under the laws of any State—
+    citation: null
+    relation_note: null
+    path:
+      path:
+        - b
+      anchor: /us/usc/t15/s1681t/b
+      derivation: structural
+      confidence: high
+      evidence: USLM element hierarchy
+  - position: precedes
+    relation: scopes
+    verbatim_span: with respect to any subject matter regulated under—
+    citation: null
+    relation_note: null
+    path:
+      path:
+        - b
+        - '1'
+      anchor: /us/usc/t15/s1681t/b/1
+      derivation: structural
+      confidence: high
+      evidence: USLM element hierarchy
+subject:
+  domain: V.A.1
+  lifecycle:
+    - I
+regulator:
+  - ftc
+  - cfpb
+sector:
+  - consumer_reporting
+data_types:
+  - consumer_report
+status: in_force
+effective_from: '1996-09-30'
+applies_if:
+  all:
+    - law.federal_instrument == 'us.fcra'
+    - law.state_requirement_subject == 'contents_of_consumer_reports'
+applies_to_role: any
+obligation_type: prohibit
+summary: >-
+  State law relating to information contained in consumer reports is expressly preempted, subject to
+  a carve-back for state laws in effect on 30 September 1996.
+requirement_detail: >-
+  The reference implementation for invariant I5. Preemption here is EXPRESS and SUBJECT-SPECIFIC: it
+  reaches state law on the contents of consumer reports (the § 1681c subject matter) and nothing
+  else, and it grandfathers state law in effect on a fixed date. A preemption engine that models
+  FCRA as a single posture cannot express this — the carve-out map has to be per-subject, with
+  dates.
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 1681t(b)(1)(E)
+  note: >-
+    Express, subject-specific, and date-limited. The grandfather clause means the SAME state
+    provision can be preempted or preserved depending on when it was in effect — which is why every
+    preemption resolution must be time-indexed (invariant I2), not just subject-indexed.
+enforcement:
+  enforcers:
+    - ftc
+    - cfpb
+  private_right_of_action: false
+  penalty:
+    structure: n/a — a preemption rule
+    range: null
+    note: null
+  statute_of_limitations: null

@@ -1,0 +1,188 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - doj
+sector:
+  - any
+data_types:
+  - personal_information
+  - biometric
+  - genetic
+  - health
+  - financial
+  - precise_geolocation
+status: in_force
+effective_from: '2025-04-08'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+federal_relationship: null
+interpreted_by: []
+confidence: high
+preemption:
+  posture: none
+  authority: 28 C.F.R. § 202.1301
+  note: >-
+    Part 202 displaces nothing. It is an IEEPA prohibition that runs ALONGSIDE every privacy duty in
+    this corpus and every state privacy statute: complying with it satisfies no notice, consent or
+    security obligation, and complying with those satisfies nothing here. The practical effect is
+    additive exposure rather than a preemption question, and § 202.1301(e) says as much — violations
+    may also be subject to other applicable laws.
+enforcement:
+  enforcers:
+    - doj
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      § 202.1301 applies section 206 of IEEPA, 50 U.S.C. 1705. Civil penalty up to the greater of
+      the IEEPA maximum stated in § 202.1301(a)(2) or twice the amount of the transaction,
+      inflation-adjusted; willful violation carries a criminal fine and, for a natural person,
+      imprisonment. False statements in submissions are separately reachable under 18 U.S.C. 1001
+      per § 202.1301(d).
+    range: >-
+      Civil: greater of the adjusted IEEPA maximum or twice the transaction amount. Criminal
+      (willful): fine and, for a natural person, imprisonment.
+    note: >-
+      NO PRIVATE RIGHT OF ACTION and no data-subject remedy of any kind. This is a national security
+      enforcement regime, so the exposure is to the Department of Justice, not to the individuals
+      whose data moved. Criminal exposure for a data transfer is unique in this corpus.
+  statute_of_limitations: null
+id: us.doj_bulk_data.202_301.a.data_brokerage_prohibition
+source:
+  citation: 28 C.F.R. § 202.301(a)
+  instrument_id: us.doj_bulk_data
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-28.xml?part=202
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+  raw_sha256: f029a81bfc5a7a33418fd0bd757b0c8c0e431cd570a5c46ec7a3085964796418
+  text_file: corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.txt
+  text_sha256: c8ef3eab97ed7c77065c998a739c0f32aab75ee4a9b78daf920198b02172ac66
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 0541622a44de5fd4d424f69a2f1978fd395f7f19f5506d50ec5e79e909b09a43
+verbatim_span: >-
+  Except as otherwise authorized pursuant to subparts E or H of this part or any other provision of
+  this part, no U.S. person, on or after the effective date, may knowingly engage in a covered data
+  transaction involving data brokerage with a country of concern or covered person.
+paragraph_path:
+  path:
+    - a
+  anchor: '202.301'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+context_not_required: >-
+  The paragraph states the prohibition in full; no ancestor in the section contributes governing
+  text. Its operative content sits in the defined terms it uses, which are separate sections of
+  subpart B rather than ancestors of this paragraph.
+subject:
+  domain: I.C.6
+  lifecycle:
+    - III
+applies_if:
+  all:
+    - entity.is_us_person == true
+    - practice.engages_in_data_brokerage == true
+    - data.is_bulk_us_sensitive_personal_data == true
+    - entity.counterparty_is_country_of_concern_or_covered_person == true
+obligation_type: prohibit
+summary: >-
+  No U.S. person may knowingly engage in a covered data transaction involving data brokerage with a
+  country of concern or covered person.
+requirement_detail: >-
+  A NATIONAL-SECURITY PROHIBITION THAT LANDS ON ORDINARY COMMERCIAL DATA FLOWS. The rule bars a U.S.
+  person from knowingly engaging in "a covered data transaction involving data brokerage with a
+  country of concern or covered person": there is no consumer, no notice, no consent and no request
+  behind it, only a counterparty test and a data test. THE ENTITY IT CATCHES OFTEN HAS NO OTHER
+  PRIVACY OBLIGATION AT ALL — a data broker, adtech intermediary or analytics vendor outside HIPAA,
+  GLBA and FCRA can satisfy every sectoral statute in this corpus and still breach this rule,
+  because the trigger is where the data goes rather than how it was collected. Two definitional
+  dependencies decide most cases and are not in this atom: whether the data is bulk U.S. sensitive
+  personal data (§ 202.249, with the volume thresholds at § 202.205) and whether the counterparty is
+  a covered person (§ 202.211, which reaches foreign entities 50% or more owned by a country of
+  concern and their employees and contractors wherever located, not merely entities sitting in one).
+  Knowledge is defined at § 202.230, so this is not strict liability — but consent is irrelevant,
+  because a data subject cannot authorise a transaction the rule prohibits. Enforcement is by the
+  Department of Justice under IEEPA, with civil penalties and criminal exposure for willful
+  violations, which is a posture no other instrument in this corpus carries.
+exemptions:
+  - id: cfr.28.202.219.exempt_transaction
+    type: activity_level
+    scope: >-
+      Subpart E exempts whole classes of data transaction from the prohibitions of this part, and §
+      202.219 is the definitional hook: an exempt transaction is one subject to one or more of those
+      exemptions. THIS IS THE FIRST THING TO CHECK, because the subpart E classes (personal
+      communications, financial services, corporate group transactions, federal government activity
+      and others) cover a large share of ordinary cross-border business. The exemption is
+      ACTIVITY-scoped, not entity-scoped: it relieves the transaction, so the same U.S. person can
+      be exempt on one data flow and prohibited on the next.
+    source_citation: 28 C.F.R. § 202.219
+    verbatim_span: >-
+      The term exempt transaction means a data transaction that is subject to one or more exemptions
+      described in subpart E of this part.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - practice.is_exempt_transaction_under_subpart_e == true
+  - id: cfr.28.202.249.b2.public_data
+    type: data_level
+    scope: >-
+      Data lawfully available to the public from a Federal, State or local government record, or in
+      widely distributed media, is excluded from sensitive personal data at the time of the
+      transaction. DATA-LEVEL, NOT ENTITY-LEVEL: it removes the data from the definition, so a
+      broker dealing in public-record data is outside the prohibition for that data and fully inside
+      it for anything else it moves. The timing qualifier matters — the test is applied at the time
+      of the transaction, so data that was public when acquired but is not public now does not
+      qualify.
+    source_citation: 28 C.F.R. § 202.249(b)(2)
+    verbatim_span: >-
+      Data that is, at the time of the transaction, lawfully available to the public from a Federal,
+      State, or local government record (such as court records) or in widely distributed media (such
+      as sources that are generally available to the public through unrestricted and open-access
+      repositories);
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - data.lawfully_available_to_the_public == true
+related:
+  - us.doj_bulk_data.202_101.a.scope
+common_errors:
+  - >-
+    Treating consent as a cure. Nothing in § 202.301 turns on the data subject's permission; the
+    prohibition runs against the U.S. person whatever the individual agreed to.
+  - >-
+    Assuming it only reaches entities located in a country of concern. Covered person at § 202.211
+    also reaches foreign entities 50% or more owned by such a country, and individuals who are their
+    employees or contractors, wherever they are.
+  - >-
+    Reading it as a security-controls requirement. The security requirements at § 202.248 govern
+    RESTRICTED transactions under subpart J; a prohibited data-brokerage transaction is not cured by
+    controls, and § 202.201 provides that access is determined without regard to the application or
+    effect of any security requirements.
+open_questions:
+  - >-
+    The defined terms that do the work here — data brokerage (§ 202.214), covered data transaction
+    (§ 202.210), covered person (§ 202.211), bulk (§ 202.205), sensitive personal data (§ 202.249)
+    and knowingly (§ 202.230) — are in the same fetched source but are NOT yet extracted as atoms.
+    Until they are, an applicability answer from this atom depends on facts the engine cannot check.
+  - >-
+    The general and specific licensing regime and the advisory-opinion process may authorise an
+    otherwise prohibited transaction. Neither is extracted here.

@@ -1,0 +1,93 @@
+id: us.fixture.vacuous_alt_render
+schema_version: 1
+record_type: certification_scheme
+source:
+  citation: FIXTURE — synthetic control page, markers on their baselines. Invented text.
+  instrument_id: test.fixture.vacuous_instrument
+  url: https://example.invalid/fixture/baseline-clean.pdf
+  fetched: '2026-08-19'
+  raw_file: tests/fixtures/raw/baseline-clean.pdf
+  raw_sha256: b1355e25635110f1a0aa93f37cebdba2b6df8d09afea094fe826a1d66316e4eb
+  text_file: tests/fixtures/raw/baseline-clean.txt
+  text_sha256: 4504866efb8ea09ca9d65fe56a4720bb72889b5d073f45bb9a59090c7877b298
+  text_extraction_cmd: python3 tests/fixtures/make-baseline-offset-fixture.py
+  format: pdf_single_col
+  risk_tier: medium
+  render:
+    column: left:10
+    pages: null
+    min_height: null
+    drop_re: []
+  structured_source_check:
+    checked:
+    - n/a — synthetic fixture
+    result: not_applicable
+    note: Invented content; see meta/decisions.yaml DEC-008.
+verbatim_span: a) with the consent of the individual whose information is collected; b) when necessary
+  to supply a product the individual has requested; or c) by the authority of law and other legal instruments
+  of legal effect.
+verification_status: verbatim_confirmed
+subject:
+  domain: I.C.7
+  lifecycle:
+  - I
+scheme:
+  id: intl.apec.cbpr_system
+  title: APEC Cross-Border Privacy Rules (CBPR) System
+  operator: APEC Electronic Commerce Steering Group, through the Cross Border Privacy Rules Joint Oversight
+    Panel
+  established: '2011'
+  certifies: Personal information controllers, for personal information subject to cross-border transfer
+    to other participating APEC economies
+  adherence_mechanism: certification
+  elements:
+  - self-assessment
+  - compliance review
+  - recognition/acceptance
+  - dispute resolution and enforcement
+  authority_tier: self_regulatory_scheme
+accountability_agent:
+  role: Assesses an organization's privacy policies and practices against the CBPR program requirements
+    and certifies compliance
+  recognised_by: APEC, against the Accountability Agent Recognition Criteria
+  own_enforcement_power: true
+  enforcement_note: Paragraph 24 provides that Accountability Agents "should be able to enforce the CBPR
+    program requirements through law or contract". That is a derived power — it runs through contract
+    with the certified organization or through domestic law — not an independent regulatory power. Privacy
+    Enforcement Authorities enforce separately under domestic law.
+adherence_mechanism: certification
+enforceability_pathway: section_5_via_public_commitment
+jurisdiction: INTL
+jurisdiction_level: international
+status: in_force
+effective_from: null
+effective_to: null
+amendment_history: []
+summary: A voluntary certification system under which an APEC-recognized Accountability Agent evaluates
+  an organization's privacy policies and practices against the CBPR program requirements; on certification
+  those policies become binding on the organization and enforceable by an appropriate authority.
+derived_from:
+  record_id: intl.apec.principle.accountability.p32
+  relationship: implementation
+  note: The CBPR System operationalises the APEC Privacy Framework. Paragraph 32 of the Framework (Accountability)
+    is the principle it gives effect to on transfer. Not a textual descendant — ancestry-diff skips implementation
+    relationships.
+derived_obligations: []
+differs_from: []
+related: []
+source_defects: []
+common_errors:
+- Treating certification as compliance with US law. It is a transfer and accountability mechanism; it
+  displaces no federal or state obligation.
+- Reading "enforceable by an appropriate authority" as APEC enforcement. APEC has no enforcement power.
+  Enforcement runs through the Accountability Agent's contract and through domestic Privacy Enforcement
+  Authorities.
+- Confusing this with the Global CBPR System, which is a separate scheme operated by a different body.
+open_questions:
+- The document states no adoption or effective date on its face, so effective_from is left null rather
+  than inferred. The APEC CBPR System is commonly dated to 2011; that date is NOT taken from this document
+  and is recorded in scheme.established as background only.
+- 'enforceability_pathway is section_5_via_public_commitment. TODO: link to the FTC Act s5 obligation
+  atoms when Priority 1 II.A lands (meta/debt.yaml).'
+confidence: high
+scope_justification: null

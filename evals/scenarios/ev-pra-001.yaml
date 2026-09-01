@@ -1,0 +1,29 @@
+id: ev.pra.001
+question: A streaming service disclosed our viewing history. Which regulator do we complain to?
+trap: Assuming a regulator exists. VPPA has NO agency enforcer at all -- it runs entirely on a private
+  right of action with liquidated damages.
+trap_category: null
+rubric:
+- name: the VPPA atom exists
+  record_exists: us.vppa.2710.b1.disclosure_prohibition
+- name: it carries a private right of action
+  record: us.vppa.2710.b1.disclosure_prohibition
+  path: enforcement.private_right_of_action
+  equals: true
+- name: the enforcer is private litigants, not an agency
+  record: us.vppa.2710.b1.disclosure_prohibition
+  path: enforcement.enforcers
+  contains: private_litigants
+- name: liquidated damages are recorded
+  record: us.vppa.2710.b1.disclosure_prohibition
+  path: enforcement.penalty.note
+  contains: 2,500
+- name: common_errors warns the statute is not obsolete
+  record: us.vppa.2710.b1.disclosure_prohibition
+  path: common_errors
+  contains: obsolete
+- name: the pixel question is recorded as unsettled, not resolved
+  record: us.vppa.2710.b1.disclosure_prohibition
+  path: open_questions
+  contains: unsettled
+all_pass: true

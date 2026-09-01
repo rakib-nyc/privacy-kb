@@ -1,0 +1,25 @@
+id: ev.deadline.002
+question: A GLBA notification event affected 400 consumers. When must we notify the FTC?
+trap: The 500-consumer threshold. Below it the rule imposes no FTC notice at all, and a model primed on
+  'breach means notify' will invent a duty.
+trap_category: null
+rubric:
+- name: the GLBA notification atom exists
+  record_exists: us.glba.safeguards.314_4.ftc_notification
+- name: the 500-consumer threshold is a predicate, not prose
+  record: us.glba.safeguards.314_4.ftc_notification
+  path: applies_if.all
+  contains: '500'
+- name: the clock runs from discovery
+  record: us.glba.safeguards.314_4.ftc_notification
+  path: deadline.trigger_event
+  equals: discovery_of_notification_event
+- name: 30 calendar days
+  record: us.glba.safeguards.314_4.ftc_notification
+  path: deadline.duration.value
+  equals: 30
+- name: the record warns the threshold does not travel to state duties
+  record: us.glba.safeguards.314_4.ftc_notification
+  path: open_questions
+  contains: state notification duties
+all_pass: true

@@ -1,0 +1,104 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - ftc
+  - state_ag
+sector:
+  - childrens_online_services
+data_types:
+  - minor_data
+  - personal_information
+status: in_force
+effective_from: '2000-04-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 6502(d)
+  note: >-
+    COPPA expressly preempts inconsistent state law on its subject matter. State law on children's
+    data that is not inconsistent survives — NY's Child Data Protection Act is the live test and is
+    a Priority 3 atom.
+enforcement:
+  enforcers:
+    - ftc
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: FTC Act § 5(m) civil penalties for rule violations
+    range: null
+    note: >-
+      Per-violation penalties, inflation-adjusted. COPPA is enforced as a trade regulation rule,
+      which is why § 45(m) applies.
+  statute_of_limitations: null
+id: us.coppa.312_4.a.notice_content
+source:
+  citation: 16 C.F.R. § 312.4(a)
+  instrument_id: us.coppa.rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=312
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  raw_sha256: 5a29d13e4512092a2d064a62a581031dc75aa99998540e6c2ef24f0dbfc66df9
+  text_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.txt
+  text_sha256: 269dbc8c79e682a08e9686846439239d7f57ec49f501070957ff738370189425
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 16-cfr-312 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: c5314342e8b2067932ca465a42018e7d0bf24883d287b1d3a60e8ba9f26452b5
+verbatim_span: >-
+  It shall be the obligation of the operator to provide notice and obtain verifiable parental
+  consent prior to collecting, using, or disclosing personal information from children. Such notice
+  must be clearly and understandably written, complete, and must contain no unrelated, confusing, or
+  contradictory materials.
+paragraph_path:
+  path:
+    - a
+  anchor: '312.4'
+  derivation: reconstructed
+  confidence: high
+  evidence: designators reconstructed from flat <P> siblings; resolves to exactly one leaf
+context_not_required: The paragraph states the duty in full.
+subject:
+  domain: II.E.1
+  lifecycle:
+    - I
+applies_to_role: controller
+obligation_type: disclose
+deadline: null
+summary: >-
+  An operator must provide notice and obtain verifiable parental consent before collecting, using or
+  disclosing personal information from children, and the notice must be clearly and understandably
+  written.
+requirement_detail: >-
+  THE NOTICE AND THE CONSENT ARE ONE SEQUENCE, not two independent duties: § 312.4(a) states them
+  together and puts both BEFORE collection. An operator that collects first and notifies after has
+  violated the section even if consent eventually arrives. The clarity requirement is substantive —
+  a notice that is accurate but not understandable to a parent does not satisfy it.
+common_errors:
+  - >-
+    Treating notice and consent as separable. § 312.4(a) requires both, in that order, before
+    collection.
+  - Reading the clarity requirement as cosmetic. It is a condition of the notice being adequate.
+open_questions: []
+exemptions: []
+applies_if:
+  all:
+    - entity.is_coppa_operator == true
+    - data.subject_is_child_under_13 == true

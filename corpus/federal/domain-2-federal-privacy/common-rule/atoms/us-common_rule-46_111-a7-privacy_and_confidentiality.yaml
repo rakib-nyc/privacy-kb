@@ -1,0 +1,142 @@
+id: us.common_rule.46_111.a7.privacy_and_confidentiality
+schema_version: 1
+record_type: obligation
+source:
+  citation: 45 C.F.R. § 46.111(a)(7)
+  instrument_id: us.common_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=46
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  raw_sha256: cfe25d02a8ade401b1350f591c4654b85ab03c47f66297047feb0a6e1f0e543d
+  text_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+  text_sha256: 2e9f64e48744208a67bbad88f993394ee3ae928f07e1396d552d5a6c8d574fa1
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 45 part 46, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: 8546795bbafff257c9de1b72c7e89f0d8bfaa3fe238c0d35c76e14a7dfecb4cf
+verbatim_span: >-
+  When appropriate, there are adequate provisions to protect the privacy of subjects and to maintain
+  the confidentiality of data.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '7'
+  anchor: '46.111'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from flat <P> siblings by tools/extract.py; resolves to exactly one
+    leaf inside the section
+subject:
+  domain: II.B.3
+  lifecycle:
+    - III
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ohrp
+  - federal_agencies
+sector:
+  - health
+data_types:
+  - personal_information
+  - health
+status: in_force
+effective_from: '2019-01-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_irb == true
+    - law.research_subject_to_common_rule == true
+applies_to_role: processor
+obligation_type: assess
+summary: >-
+  An IRB may approve research only if it determines that, when appropriate, there are adequate
+  provisions to protect the privacy of subjects and to maintain the confidentiality of data.
+requirement_detail: >-
+  PRIVACY IS AN APPROVAL CRITERION, WHICH MAKES THE IRB A PRIVACY REGULATOR. The chapeau of §
+  46.111(a) requires the IRB to determine that ALL of the listed requirements are satisfied before
+  it may approve, so a protocol with weak data handling is not merely criticised — it cannot
+  lawfully be approved. The criterion draws a distinction practitioners collapse: privacy OF
+  SUBJECTS is about the circumstances of the interaction, such as where an interview happens and who
+  can overhear it, while confidentiality OF DATA is about what happens to the records afterwards. A
+  protocol that encrypts its database and recruits subjects in an open ward has satisfied the second
+  and failed the first. Two qualifiers do real work. When appropriate concedes that some research
+  raises no privacy question at all, so this is not a universal encryption mandate. And adequate is
+  not defined here: § 46.111(a)(7)(i) commits the Secretary of HHS to issue guidance on what counts
+  as adequate, which under invariant I7 is guidance and not regulation — the binding text is the
+  sentence in (a)(7) itself.
+deadline: null
+exemptions: []
+related:
+  - us.common_rule.46_109.a.irb_review_authority
+  - us.common_rule.46_116.b5.confidentiality_statement
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating privacy and confidentiality as one criterion. Privacy concerns the interaction with the
+    subject; confidentiality concerns the records, and the provision requires both.
+  - >-
+    Reading the criterion as advisory. The chapeau requires the IRB to determine that all the listed
+    requirements are satisfied in order to approve, so this is a condition of approval.
+  - >-
+    Citing HHS guidance under (a)(7)(i) as the standard. Guidance assists the IRB; the binding
+    requirement is the sentence in (a)(7).
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 45 C.F.R. § 46.101(f)
+  note: >-
+    Section 46.101(f) states that the policy does not affect state or local laws or regulations,
+    including tribal law, that provide additional protections for human subjects, and 46.101(e)
+    requires compliance with more protective federal law. The Common Rule is therefore a floor in
+    both directions, which is why a HIPAA authorisation and an IRB-approved consent are cumulative
+    rather than alternative.
+enforcement:
+  enforcers:
+    - hhs_ohrp
+    - federal_agencies
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Administrative, through the funding relationship. The federal department or agency conducting
+      or supporting the research enforces against the institution's assurance; for HHS-supported
+      research this is the Office for Human Research Protections, whose sanctions run from a
+      determination letter and corrective action plan to restriction or withdrawal of the assurance,
+      which stops federally supported research at the institution.
+    range: null
+    note: >-
+      NO PRIVATE RIGHT OF ACTION under the Common Rule. A subject's own remedy is a state-law claim
+      in negligence or battery, or a state research-consent statute preserved by § 46.101(f); the
+      regulation supplies the standard of care rather than the cause of action.
+  statute_of_limitations: null
+operative_context:
+  - position: precedes
+    relation: conditions
+    verbatim_span: >-
+      In order to approve research covered by this policy the IRB shall determine that all of the
+      following requirements are satisfied:
+    citation: 45 C.F.R. § 46.111(a)
+    path:
+      path:
+        - a
+      anchor: '46.111'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designators reconstructed from flat <P> siblings by tools/extract.py; resolves to exactly
+        one leaf inside the section

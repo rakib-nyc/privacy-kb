@@ -1,0 +1,52 @@
+id: us.doctrine.dormant_commerce_clause
+schema_version: 1
+record_type: doctrine
+source:
+  citation: U.S. Const. art. I, § 8, cl. 3 (dormant aspect); National Pork Producers Council v. Ross,
+    598 U.S. 356 (2023)
+  instrument_id: us.doctrine.commerce_clause
+  url: https://www.supremecourt.gov/opinions/22pdf/21-468_5if6.pdf
+  fetched: null
+  raw_file: null
+  raw_sha256: null
+  format: manual
+  risk_tier: high
+  render: null
+  structured_source_check:
+    checked:
+    - No structured source for Supreme Court opinions or for constitutional text in this pipeline; this
+      record quotes nothing.
+    result: no_structured_source_exists
+    note: See verification_status.
+verification_status: unverified
+subject:
+  domain: V.A.1
+  lifecycle:
+  - I
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_from: '2023-05-11'
+effective_to: null
+confidence: medium
+doctrine_statement: A state law that discriminates against or unduly burdens interstate commerce may be
+  invalid even absent federal legislation. For state privacy statutes the live question is extraterritorial
+  reach — a statute attaching to the residency of a data subject regulates conduct wholly outside the
+  state — though National Pork Producers narrowed the extraterritoriality theory considerably.
+source_authority: U.S. Const. art. I, § 8, cl. 3; National Pork Producers Council v. Ross, 598 U.S. 356
+  (2023); Pike v. Bruce Church, Inc., 397 U.S. 137 (1970)
+constrains:
+- ny.gbl.899_aa
+- ny.gbl.899_bb
+- ny.gbl.349
+- ny.civil_rights.52-c
+authority_tier: case_law
+common_errors:
+- Assuming a residency-based trigger is per se extraterritorial. National Pork Producers rejected a broad
+  extraterritoriality principle, leaving Pike balancing.
+- Reading it as a preemption doctrine. It constrains states in the ABSENCE of federal action, which is
+  the opposite posture from preemption.
+open_questions:
+- UNVERIFIED under invariant I1 and suppressed from every output. Recorded so the corpus can flag that
+  SHIELD's extraterritorial trigger — which attaches to holding a New York resident's data with no nexus
+  requirement — has a constitutional dimension the statute itself does not mention.

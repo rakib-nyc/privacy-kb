@@ -1,0 +1,107 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - private_litigants
+sector:
+  - video
+  - streaming
+  - any provider of audiovisual materials
+data_types:
+  - personally_identifiable_information
+  - viewing_history
+status: in_force
+effective_from: '1988-11-05'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2710(f)
+  note: VPPA does not preempt more protective state video-privacy law; several states have their own.
+enforcement:
+  enforcers:
+    - private_litigants
+  private_right_of_action: true
+  penalty:
+    structure: liquidated damages, punitive damages, attorney fees and costs under § 2710(c)
+    range:
+      min: 2500
+      unit: usd_liquidated_per_person
+    note: >-
+      Liquidated damages of not less than $2,500 per aggrieved person, which is what makes class
+      exposure severe.
+  statute_of_limitations: 2 years from the date of the act complained of or the date of discovery (§ 2710(c)(3))
+exemptions: []
+id: us.vppa.2710.e.destruction
+source:
+  citation: 18 U.S.C. § 2710(e)
+  instrument_id: us.vppa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/vppa/raw/18-u-s-c-2710.xml
+  raw_sha256: 3dd90781077d08d0621dbaefb5b60a0cf25ba158d64855af6847559dec36d7ff
+  text_file: corpus/federal/domain-2-federal-privacy/vppa/raw/18-u-s-c-2710.txt
+  text_sha256: 42eb0b751762330061d390b87eb3f578c814d599746be928a86d4edc57a403b6
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/vppa/raw/18-u-s-c-2710.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 18-u-s-c-2710 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: cf892cc4bc09759b0125168f37c4860eb9d8e784b0eb10e5068ee125e9421778
+verbatim_span: >-
+  A person subject to this section shall destroy personally identifiable information as soon as
+  practicable, but no later than one year from the date the information is no longer necessary for
+  the purpose for which it was collected and there are no pending requests or orders for access to
+  such information under subsection (b)(2) or (c)(2) or pursuant to a court order.
+paragraph_path:
+  path:
+    - e
+  anchor: /us/usc/t18/s2710/e
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The subsection states the duty and the period in full.
+subject:
+  domain: II.E.1
+  lifecycle:
+    - V
+applies_to_role: controller
+obligation_type: delete
+deadline:
+  trigger_event: the date the information is no longer necessary for the purpose for which it was collected
+  duration:
+    value: 1
+    unit: years
+  computation: >-
+    As soon as practicable, and no later than ONE YEAR from the date the information stops being
+    necessary — not one year from collection. The clock starts on a fact about purpose, so an
+    operator with no retention analysis cannot know when it began.
+summary: >-
+  A video tape service provider must destroy personally identifiable information as soon as
+  practicable, and no later than one year after it is no longer necessary for its purpose.
+requirement_detail: >-
+  A RARE FEDERAL RETENTION LIMIT. Most US federal privacy law regulates disclosure and says nothing
+  about how long data may be kept; VPPA § 2710(e) is one of the few provisions that sets an outer
+  bound. The trigger is purpose exhaustion rather than collection, which means the obligation cannot
+  be operationalised without a documented purpose for each record.
+common_errors:
+  - Running the year from collection. It runs from the end of the purpose.
+  - >-
+    Treating one year as the standard. The standard is "as soon as practicable"; one year is the
+    ceiling.
+open_questions: []
+applies_if:
+  all:
+    - entity.is_video_tape_service_provider == true

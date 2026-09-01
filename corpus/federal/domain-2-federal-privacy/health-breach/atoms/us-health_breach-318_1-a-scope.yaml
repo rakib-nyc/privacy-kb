@@ -1,0 +1,186 @@
+id: us.health_breach.318_1.a.scope
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 318.1(a)
+  instrument_id: us.health_breach
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=318
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+  raw_sha256: 6266f7150e4734e83f9669e7d3d29429aba5885c6bb4cf72b170e48d6cde7bcb
+  text_file: corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.txt
+  text_sha256: 85091ca4bd2e2982f94c4cc078b4f55e3f653381d76f8aa6505c0fca0d427085
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: e578e85231a4fb7cdb7973c1bc8bda51d422e910ff0797b167e43979bbc28a00
+verbatim_span: >-
+  This part, which shall be called the “Health Breach Notification Rule,” implements section 13407
+  of the American Recovery and Reinvestment Act of 2009, 42 U.S.C. 17937. This part applies to
+  foreign and domestic vendors of personal health records, PHR related entities, and third party
+  service providers, irrespective of any jurisdictional tests in the Federal Trade Commission (FTC)
+  Act, that maintain information of U.S. citizens or residents. This part does not apply to
+  HIPAA-covered entities, or to any other entity to the extent that it engages in activities as a
+  business associate of a HIPAA-covered entity.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+  anchor: '318.1'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+context_not_required: >-
+  The paragraph states the rule's purpose, its covered population and its HIPAA exclusion in full;
+  nothing above it in § 318.1 qualifies it.
+jurisdiction: US
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+no_deadline_stated: >-
+  § 318.1(a) is a purpose-and-scope provision and fixes no period. The clock for every notice this
+  part requires is in § 318.4: without unreasonable delay and no later than 60 calendar days after
+  discovery for individuals, media and third party service providers (§ 318.4(a)), contemporaneous
+  FTC notice at 500 or more individuals and an annual log below that (§ 318.4(b)).
+exemptions:
+  - id: cfr.16.318.1.a.hipaa_covered_entity
+    type: entity_level
+    scope: >-
+      A HIPAA-covered entity is outside 16 C.F.R. part 318 ALTOGETHER; its breach duties are 45
+      C.F.R. §§ 164.400–414 instead. Note the asymmetry in the sentence: the exclusion for covered
+      entities is unqualified, while the exclusion for anyone else runs only "to the extent that" it
+      acts as a business associate — so a vendor that is a business associate for one line of
+      business remains a vendor of personal health records for its own consumer offering. THIS IS
+      NOT RELIEF FROM BREACH NOTIFICATION. It is an allocation between two regimes, and the wrong
+      one is worse than none: HHS, not the FTC, receives the notice.
+    source_citation: 16 C.F.R. § 318.1(a)
+    verbatim_span: >-
+      This part does not apply to HIPAA-covered entities, or to any other entity to the extent that
+      it engages in activities as a business associate of a HIPAA-covered entity.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.is_hipaa_covered_entity == true
+    reach: instrument
+related:
+  - us.hipaa.breach.164_404.individual_notice
+  - us.health_breach.318_3.a1.individual_notice
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Concluding that a health app is unregulated because it is not a HIPAA covered entity. That is
+    precisely the population § 318.1(a) names, and the FTC — not HHS — takes the notice.
+  - >-
+    Applying FTC Act jurisdictional limits to this part. § 318.1(a) says it applies "irrespective of
+    any jurisdictional tests in the Federal Trade Commission (FTC) Act", so foreign vendors and
+    entities outside ordinary FTC reach are covered.
+  - >-
+    Reading the HIPAA carve-out as data-level. For a covered entity the exclusion is flat and
+    entity-level on this text; the "to the extent that" qualifier attaches only to business
+    associate activities, so an entity that is a business associate in one line of business is still
+    a PHR vendor in another.
+open_questions:
+  - >-
+    effective_from is taken from the rule's own applicability date at § 318.8: "This part shall
+    apply to breaches of security that are discovered on or after September 24, 2009." The text
+    quoted here is the CURRENT text, which the part-level source note shows was amended at 89 FR
+    47054 (May 30, 2024). The source states neither that amendment's effective date nor which
+    provisions it changed, so this atom cannot distinguish the 2009 text from the amended text on a
+    date query, and any § 318.2 definition relied on downstream should be checked against the
+    amendment before being applied to a pre-2024 breach.
+  - >-
+    Invariant I4's worked example — a HIPAA covered entity exempt for PHI but not for the wellness
+    data its consumer app collects — does not follow from this sentence as written. § 318.1(a)
+    excludes HIPAA-covered entities without a "to the extent" qualifier, and the § 318.2 definitions
+    of "vendor of personal health records" and "PHR related entity" repeat the same unqualified
+    exclusion. Recorded as an entity-level exemption on that text. The app-side data of a covered
+    entity would then fall to FTC Act § 5 and state law rather than to this part; that reading is
+    not resolved against FTC guidance here.
+confidence: high
+subject:
+  domain: II.B.3
+  lifecycle:
+    - I
+regulator:
+  - ftc
+sector:
+  - health
+  - consumer_technology
+data_types:
+  - phr_identifiable_health_information
+  - health_information
+status: in_force
+effective_from: '2009-09-24'
+applies_if:
+  all:
+    - entity.offers_or_maintains_personal_health_records == true
+    - data.types_include_phr_identifiable_health_information == true
+applies_to_role: controller
+obligation_type: notify
+summary: >-
+  The Health Breach Notification Rule applies to foreign and domestic vendors of personal health
+  records, PHR related entities and third party service providers that maintain information of U.S.
+  citizens or residents, and does not apply to HIPAA-covered entities or to any entity to the extent
+  it acts as a business associate.
+requirement_detail: >-
+  THIS IS THE RULE THAT COVERS THE GAP HIPAA LEAVES. A consumer health app — a period tracker, a
+  fitness or sleep tracker, a direct-to-consumer test — collects information that would be PHI in a
+  clinical setting, but its developer is not a covered entity under 45 C.F.R. § 160.103 and is not a
+  business associate of one, so nothing in 45 C.F.R. parts 160 or 164 reaches it. Part 318 does, and
+  the trigger is what the entity OFFERS rather than what sector it says it is in: the § 318.2
+  definitions turn on offering or maintaining a personal health record, and § 318.2 defines "health
+  care services or supplies" as any online service such as a website, mobile application or
+  internet-connected device providing mechanisms to track diseases, health conditions, treatment,
+  medications, vital signs, fitness, fertility, sexual health, sleep, mental health, diet or other
+  health-related tools. Follow the § 318.2 chain before calling an app a VENDOR, though: a personal
+  health record must have the technical capacity to draw information from MULTIPLE SOURCES, so a
+  single-source app may instead be a PHR related entity, which owes the same notices by a different
+  route. Two further points a legal-domain-trained reader should hold onto. First, the jurisdictional reach
+  is unusual — the part applies "irrespective of any jurisdictional tests in the Federal Trade
+  Commission (FTC) Act", so the § 45(a)(2) carve-outs that limit the Disposal Rule and the
+  Safeguards Rule do not limit this one, and foreign vendors holding data on U.S. citizens or
+  residents are in. Second, "breach of security" is defined in § 318.2 as acquisition without the
+  individual's authorization and expressly includes an unauthorized acquisition resulting from an
+  unauthorized DISCLOSURE, with unauthorized access presumed to be unauthorized acquisition unless
+  the entity has reliable evidence otherwise. Sharing identifiable health data with an advertising
+  platform without authorisation is therefore reached; it does not take an intrusion.
+preemption:
+  posture: floor
+  authority: 16 C.F.R. § 318.1(b); 42 U.S.C. § 17951
+  note: >-
+    § 318.1(b) states only that the part preempts State law "as set forth in section 13421 of the
+    American Recovery and Reinvestment Act of 2009, 42 U.S.C 17951". The extent of that preemption
+    is fixed by a statute that is not in this corpus; § 17951 is the ARRA provision applying the
+    HIPAA contrary-and-more-stringent framework, which is why this is recorded as a floor. Treat the
+    posture as declared but unresolved, and check state breach-notification law rather than assuming
+    displacement — the NY SHIELD Act reaches the same entities.
+enforcement:
+  enforcers:
+    - ftc
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Violation treated as an unfair or deceptive act or practice in violation of a rule under FTC
+      Act § 18 (15 U.S.C. 57a), carrying civil penalties as adjusted for inflation
+    range: null
+    note: >-
+      § 318.7 states the treatment expressly, which matters because it makes civil penalties
+      available for a FIRST violation — unlike a § 5 case, where the FTC ordinarily needs an order
+      before penalties attach. The penalty amount is set by 16 C.F.R. § 1.98 as adjusted and is not
+      stated in this part.
+  statute_of_limitations: null

@@ -1,0 +1,217 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2005-04-20'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+related:
+  - us.hipaa.security.164_306.d_3.addressable_implementation_specifications
+federal_relationship: null
+interpreted_by: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 45 C.F.R. § 160.203
+  note: >-
+    HIPAA is a FLOOR, not a ceiling. A contrary State law that is MORE STRINGENT than the Security
+    Rule survives, so state data-security duties — the NY SHIELD Act's reasonable safeguards among
+    them — run in parallel and the stricter one governs. Reading a Security Rule risk analysis as
+    discharging a state security-programme statute is the standard error; the Security Rule's own
+    flexibility language makes it especially tempting, because an entity that has "addressed" a
+    specification may still fall below a state floor that names the control outright.
+enforcement:
+  enforcers:
+    - hhs_ocr
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil money penalties under 42 U.S.C. § 1320d-5, tiered by culpability, with the tiers turning
+      on whether the entity knew or was wilfully neglectful. State attorneys general may sue under
+      42 U.S.C. § 1320d-5(d) (HITECH).
+    range: null
+    note: >-
+      No private right of action. The Security Rule nonetheless drives private exposure indirectly:
+      plaintiffs plead it as the standard of care in negligence, and state UDAP and
+      breach-notification claims reach the same conduct.
+  statute_of_limitations: null
+id: us.hipaa.security.164_306.b_1.flexibility_of_approach
+source:
+  citation: 45 C.F.R. § 164.306(b)(1)
+  instrument_id: us.hipaa.security_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-security/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-security/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-security/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-45 XML, part 164, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: 4e2299ba5193b9af9bed1cecbd9310b643985ba4c412188af93632dfd57af778
+verbatim_span: >-
+  Covered entities and business associates may use any security measures that allow the covered
+  entity or business associate to reasonably and appropriately implement the standards and
+  implementation specifications as specified in this subpart.
+paragraph_path:
+  path:
+    - b
+    - '1'
+  anchor: '164.306'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from flat <P> siblings; resolves to exactly one leaf in
+    45-cfr-164.seg.json (gate 23)
+operative_context:
+  - position: precedes
+    relation: other
+    verbatim_span: Flexibility of approach.
+    citation: null
+    relation_note: >-
+      The specification's own title, which carries its Required/Addressable status. Not a separate
+      duty — it is the switch that decides whether s 164.306(d)(2) or s 164.306(d)(3) governs the
+      paragraph below it.
+    path:
+      path:
+        - b
+        - '1'
+      anchor: '164.306'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        run-in heading printed immediately above the paragraph in the rendered source; it carries
+        the Required/Addressable designator that s 164.306(d)(1) provides for
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      In deciding which security measures to use, a covered entity or business associate must take
+      into account the following factors:
+    citation: null
+    relation_note: >-
+      The factors are not optional considerations: (b)(2) says the entity MUST take them into
+      account when choosing measures under (b)(1).
+    path:
+      path:
+        - b
+        - '2'
+      anchor: '164.306'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designators reconstructed from flat <P> siblings; resolves to exactly one leaf in
+        45-cfr-164.seg.json (gate 23)
+  - position: follows
+    relation: conditions
+    verbatim_span: The size, complexity, and capabilities of the covered entity or business associate.
+    citation: null
+    relation_note: The first factor, and the one that makes the rule scalable.
+    path:
+      path:
+        - b
+        - '2'
+        - i
+      anchor: '164.306'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designators reconstructed from flat <P> siblings; resolves to exactly one leaf in
+        45-cfr-164.seg.json (gate 23)
+  - position: follows
+    relation: conditions
+    verbatim_span: The costs of security measures.
+    citation: null
+    relation_note: >-
+      Cost is a listed factor. It sits alongside risk criticality at (b)(2)(iv) and does not outrank
+      it.
+    path:
+      path:
+        - b
+        - '2'
+        - iii
+      anchor: '164.306'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designators reconstructed from flat <P> siblings; resolves to exactly one leaf in
+        45-cfr-164.seg.json (gate 23)
+subject:
+  domain: II.B.1
+  lifecycle:
+    - IV
+applies_if:
+  all:
+    - any:[entity.is_hipaa_covered_entity == true, entity.is_hipaa_business_associate == true]
+    - data.is_ephi == true
+obligation_type: secure
+summary: >-
+  An entity may use any security measures that let it reasonably and appropriately implement the
+  standards and implementation specifications of subpart C.
+requirement_detail: >-
+  Flexibility of approach is what makes the Security Rule technology-neutral and scalable, and it is
+  routinely over-read. The permission is about MEANS, not about ends: the measures chosen must still
+  "reasonably and appropriately implement the standards and implementation specifications", and §
+  164.306(c) separately requires compliance with the applicable standards for all ePHI. So a
+  two-physician practice and a national payer owe the same standards; what may differ is how each is
+  met. Paragraph (b)(2) makes the scaling explicit by requiring the entity to take account of its
+  size, complexity and capabilities, its technical infrastructure, the cost of measures, and the
+  probability and criticality of potential risks. Cost is a factor and never a defence standing
+  alone — it is listed beside risk criticality, and an entity that declines a control on cost
+  grounds without recording the risk side of that trade has not applied the paragraph, it has
+  skipped it. In practice flexibility converts into a documentation burden: the freer the choice,
+  the more the file has to show why the choice was reasonable.
+exemptions:
+  - id: cfr.45.160.103.phi.employment_records
+    type: data_level
+    scope: >-
+      Electronic protected health information is defined at 45 C.F.R. § 160.103 as information
+      within paragraphs (1)(i) or (1)(ii) of the definition of protected health information, so
+      every carve-out from PHI is also a carve-out from ePHI and from this subpart. Individually
+      identifiable health information held by the covered entity in its role as EMPLOYER is not PHI
+      and therefore not ePHI. CONSEQUENCE TEST: the entity remains fully bound by the Security Rule
+      for its clinical systems; the HRIS holding the same employees' occupational-health files is
+      outside subpart C. This is data_level, not entity_level — a hospital does not stop owing risk
+      analysis because it also runs a payroll system. The carve-out is also not deregulation: the
+      ADA, GINA, state law and FTC Act § 5 still reach those records, and a security incident in the
+      HR system is a state breach-notification question rather than a § 164.308(a)(6) question.
+    source_citation: 45 C.F.R. § 160.103 (definition of "protected health information") (2)(iii)
+    verbatim_span: In employment records held by a covered entity in its role as employer; and
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - data.in_employment_record == true
+        - entity.holds_as_employer == true
+    source_ref:
+      raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+      raw_sha256: 9916d549267c2f3f629b2157d6e0887b73570f9eddace67b626c40f51a6c9c72
+      instrument_id: us.cfr.45.160
+common_errors:
+  - Reading (b) as a small-entity exemption. Size changes the measures, not the standards.
+  - >-
+    Treating cost as dispositive. § 164.306(b)(2) makes cost one of four factors, weighed against
+    the probability and criticality of the risk.
+  - >-
+    Using flexibility as a reason not to document. The looser the rule, the more the reasoning is
+    the only evidence of compliance.
+open_questions: []

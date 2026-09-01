@@ -1,0 +1,1099 @@
+{
+ "label": "18 U.S.C. \u00a7 2511",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": true,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2511.xml",
+ "raw_sha256": "ec7314f1868f20a98a0bcffff899cb099c3b86cf13b4c0c31a76464678744c9f",
+ "leaves": [
+  {
+   "path": [
+    "1",
+    "a"
+   ],
+   "anchor": "/us/usc/t18/s2511/1/a",
+   "heading": "",
+   "text": "intentionally intercepts, endeavors to intercept, or procures any other person to intercept or endeavor to intercept, any wire, oral, or electronic communication;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise specifically provided in this chapter any person who\u2014",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    },
+    {
+     "position": "follows",
+     "text": "shall be punished as provided in subsection (4) or shall be subject to suit as provided in subsection (5).",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "1",
+    "b",
+    "i"
+   ],
+   "anchor": "/us/usc/t18/s2511/1/b/i",
+   "heading": "",
+   "text": "such device is affixed to, or otherwise transmits a signal through, a wire, cable, or other like connection used in wire communication; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise specifically provided in this chapter any person who\u2014",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    },
+    {
+     "position": "follows",
+     "text": "shall be punished as provided in subsection (4) or shall be subject to suit as provided in subsection (5).",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    },
+    {
+     "position": "precedes",
+     "text": "intentionally uses, endeavors to use, or procures any other person to use or endeavor to use any electronic, mechanical, or other device to intercept any oral communication when\u2014",
+     "path": [
+      "1",
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2511/1/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "1",
+    "b",
+    "ii"
+   ],
+   "anchor": "/us/usc/t18/s2511/1/b/ii",
+   "heading": "",
+   "text": "such device transmits communications by radio, or interferes with the transmission of such communication; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise specifically provided in this chapter any person who\u2014",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    },
+    {
+     "position": "follows",
+     "text": "shall be punished as provided in subsection (4) or shall be subject to suit as provided in subsection (5).",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    },
+    {
+     "position": "precedes",
+     "text": "intentionally uses, endeavors to use, or procures any other person to use or endeavor to use any electronic, mechanical, or other device to intercept any oral communication when\u2014",
+     "path": [
+      "1",
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2511/1/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "1",
+    "b",
+    "iii"
+   ],
+   "anchor": "/us/usc/t18/s2511/1/b/iii",
+   "heading": "",
+   "text": "such person knows, or has reason to know, that such device or any component thereof has been sent through the mail or transported in interstate or foreign commerce; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise specifically provided in this chapter any person who\u2014",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    },
+    {
+     "position": "follows",
+     "text": "shall be punished as provided in subsection (4) or shall be subject to suit as provided in subsection (5).",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    },
+    {
+     "position": "precedes",
+     "text": "intentionally uses, endeavors to use, or procures any other person to use or endeavor to use any electronic, mechanical, or other device to intercept any oral communication when\u2014",
+     "path": [
+      "1",
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2511/1/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "1",
+    "b",
+    "iv"
+   ],
+   "anchor": "/us/usc/t18/s2511/1/b/iv",
+   "heading": "",
+   "text": "such use or endeavor to use (A) takes place on the premises of any business or other commercial establishment the operations of which affect interstate or foreign commerce; or (B) obtains or is for the purpose of obtaining information relating to the operations of any business or other commercial establishment the operations of which affect interstate or foreign commerce; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise specifically provided in this chapter any person who\u2014",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    },
+    {
+     "position": "follows",
+     "text": "shall be punished as provided in subsection (4) or shall be subject to suit as provided in subsection (5).",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    },
+    {
+     "position": "precedes",
+     "text": "intentionally uses, endeavors to use, or procures any other person to use or endeavor to use any electronic, mechanical, or other device to intercept any oral communication when\u2014",
+     "path": [
+      "1",
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2511/1/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "1",
+    "b",
+    "v"
+   ],
+   "anchor": "/us/usc/t18/s2511/1/b/v",
+   "heading": "",
+   "text": "such person acts in the District of Columbia, the Commonwealth of Puerto Rico, or any territory or possession of the United States;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise specifically provided in this chapter any person who\u2014",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    },
+    {
+     "position": "follows",
+     "text": "shall be punished as provided in subsection (4) or shall be subject to suit as provided in subsection (5).",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    },
+    {
+     "position": "precedes",
+     "text": "intentionally uses, endeavors to use, or procures any other person to use or endeavor to use any electronic, mechanical, or other device to intercept any oral communication when\u2014",
+     "path": [
+      "1",
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2511/1/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "1",
+    "c"
+   ],
+   "anchor": "/us/usc/t18/s2511/1/c",
+   "heading": "",
+   "text": "intentionally discloses, or endeavors to disclose, to any other person the contents of any wire, oral, or electronic communication, knowing or having reason to know that the information was obtained through the interception of a wire, oral, or electronic communication in violation of this subsection;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise specifically provided in this chapter any person who\u2014",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    },
+    {
+     "position": "follows",
+     "text": "shall be punished as provided in subsection (4) or shall be subject to suit as provided in subsection (5).",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "1",
+    "d"
+   ],
+   "anchor": "/us/usc/t18/s2511/1/d",
+   "heading": "",
+   "text": "intentionally uses, or endeavors to use, the contents of any wire, oral, or electronic communication, knowing or having reason to know that the information was obtained through the interception of a wire, oral, or electronic communication in violation of this subsection; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise specifically provided in this chapter any person who\u2014",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    },
+    {
+     "position": "follows",
+     "text": "shall be punished as provided in subsection (4) or shall be subject to suit as provided in subsection (5).",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "1",
+    "e"
+   ],
+   "anchor": "/us/usc/t18/s2511/1/e",
+   "heading": "",
+   "text": "(i) intentionally discloses, or endeavors to disclose, to any other person the contents of any wire, oral, or electronic communication, intercepted by means authorized by sections 2511(2)(a)(ii), 2511(2)(b)\u2013(c), 2511(2)(e), 2516, and 2518 of this chapter, (ii) knowing or having reason to know that the information was obtained through the interception of such a communication in connection with a criminal investigation, (iii) having obtained or received the information in connection with a criminal investigation, and (iv) with intent to improperly obstruct, impede, or interfere with a duly authorized criminal investigation,",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise specifically provided in this chapter any person who\u2014",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    },
+    {
+     "position": "follows",
+     "text": "shall be punished as provided in subsection (4) or shall be subject to suit as provided in subsection (5).",
+     "path": [
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2511/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "a"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/a",
+   "heading": "",
+   "text": "(i) It shall not be unlawful under this chapter for an operator of a switchboard, or an officer, employee, or agent of a provider of wire or electronic communication service, whose facilities are used in the transmission of a wire or electronic communication, to intercept, disclose, or use that communication in the normal course of his employment while engaged in any activity which is a necessary incident to the rendition of his service or to the protection of the rights or property of the provider of that service, except that a provider of wire communication service to the public shall not utilize service observing or random monitoring except for mechanical or service quality control checks.",
+   "context": []
+  },
+  {
+   "path": [
+    "2",
+    "ii",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/ii/A",
+   "heading": "",
+   "text": "a court order directing such assistance or a court order pursuant to section 704 of the Foreign Intelligence Surveillance Act of 1978 signed by the authorizing judge, or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Notwithstanding any other law, providers of wire or electronic communication service, their officers, employees, and agents, landlords, custodians, or other persons, are authorized to provide information, facilities, or technical assistance to persons authorized by law to intercept wire, oral, or electronic communications or to conduct electronic surveillance, as defined in section 101 of the Foreign Intelligence Surveillance Act of 1978, if such provider, its officers, employees, or agents, landlord, custodian, or other specified person, has been provided with\u2014",
+     "path": [
+      "2",
+      "ii"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/ii"
+    },
+    {
+     "position": "follows",
+     "text": "setting forth the period of time during which the provision of the information, facilities, or technical assistance is authorized and specifying the information, facilities, or technical assistance required. No provider of wire or electronic communication service, officer, employee, or agent thereof, or landlord, custodian, or other specified person shall disclose the existence of any interception or surveillance or the device used to accomplish the interception or surveillance with respect to which the person has been furnished a court order or certification under this chapter, except as may otherwise be required by legal process and then only after prior notification to the Attorney General or to the principal prosecuting attorney of a State or any political subdivision of a State, as may be appropriate. Any such disclosure, shall render such person liable for the civil damages provided for in section 2520. No cause of action shall lie in any court against any provider of wire or electronic communication service, its officers, employees, or agents, landlord, custodian, or other specified person for providing information, facilities, or assistance in accordance with the terms of a court order, statutory authorization, or certification under this chapter.",
+     "path": [
+      "2",
+      "ii"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "ii",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/ii/B",
+   "heading": "",
+   "text": "a certification in writing by a person specified in section 2518(7) of this title or the Attorney General of the United States that no warrant or court order is required by law, that all statutory requirements have been met, and that the specified assistance is required,",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Notwithstanding any other law, providers of wire or electronic communication service, their officers, employees, and agents, landlords, custodians, or other persons, are authorized to provide information, facilities, or technical assistance to persons authorized by law to intercept wire, oral, or electronic communications or to conduct electronic surveillance, as defined in section 101 of the Foreign Intelligence Surveillance Act of 1978, if such provider, its officers, employees, or agents, landlord, custodian, or other specified person, has been provided with\u2014",
+     "path": [
+      "2",
+      "ii"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/ii"
+    },
+    {
+     "position": "follows",
+     "text": "setting forth the period of time during which the provision of the information, facilities, or technical assistance is authorized and specifying the information, facilities, or technical assistance required. No provider of wire or electronic communication service, officer, employee, or agent thereof, or landlord, custodian, or other specified person shall disclose the existence of any interception or surveillance or the device used to accomplish the interception or surveillance with respect to which the person has been furnished a court order or certification under this chapter, except as may otherwise be required by legal process and then only after prior notification to the Attorney General or to the principal prosecuting attorney of a State or any political subdivision of a State, as may be appropriate. Any such disclosure, shall render such person liable for the civil damages provided for in section 2520. No cause of action shall lie in any court against any provider of wire or electronic communication service, its officers, employees, or agents, landlord, custodian, or other specified person for providing information, facilities, or assistance in accordance with the terms of a court order, statutory authorization, or certification under this chapter.",
+     "path": [
+      "2",
+      "ii"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "iii"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/iii",
+   "heading": "",
+   "text": "If a certification under subparagraph (ii)(B) for assistance to obtain foreign intelligence information is based on statutory authority, the certification shall identify the specific statutory provision and shall certify that the statutory requirements have been met.",
+   "context": []
+  },
+  {
+   "path": [
+    "2",
+    "b"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/b",
+   "heading": "",
+   "text": "It shall not be unlawful under this chapter for an officer, employee, or agent of the Federal Communications Commission, in the normal course of his employment and in discharge of the monitoring responsibilities exercised by the Commission in the enforcement of chapter 5 of title 47 of the United States Code, to intercept a wire or electronic communication, or oral communication transmitted by radio, or to disclose or use the information thereby obtained.",
+   "context": []
+  },
+  {
+   "path": [
+    "2",
+    "c"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/c",
+   "heading": "",
+   "text": "It shall not be unlawful under this chapter for a person acting under color of law to intercept a wire, oral, or electronic communication, where such person is a party to the communication or one of the parties to the communication has given prior consent to such interception.",
+   "context": []
+  },
+  {
+   "path": [
+    "2",
+    "d"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/d",
+   "heading": "",
+   "text": "It shall not be unlawful under this chapter for a person not acting under color of law to intercept a wire, oral, or electronic communication where such person is a party to the communication or where one of the parties to the communication has given prior consent to such interception unless such communication is intercepted for the purpose of committing any criminal or tortious act in violation of the Constitution or laws of the United States or of any State.",
+   "context": []
+  },
+  {
+   "path": [
+    "2",
+    "e"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/e",
+   "heading": "",
+   "text": "Notwithstanding any other provision of this title or section 705 or 706 of the Communications Act of 1934, it shall not be unlawful for an officer, employee, or agent of the United States in the normal course of his official duty to conduct electronic surveillance, as defined in section 101 of the Foreign Intelligence Surveillance Act of 1978, as authorized by that Act.",
+   "context": []
+  },
+  {
+   "path": [
+    "2",
+    "f"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/f",
+   "heading": "",
+   "text": "Nothing contained in this chapter or chapter 121 or 206 of this title, or section 705 of the Communications Act of 1934, shall be deemed to affect the acquisition by the United States Government of foreign intelligence information from international or foreign communications, or foreign intelligence activities conducted in accordance with otherwise applicable Federal law involving a foreign electronic communications system, utilizing a means other than electronic surveillance as defined in section 101 of the Foreign Intelligence Surveillance Act of 1978, and procedures in this chapter or chapter 121 and the Foreign Intelligence Surveillance Act of 1978 shall be the exclusive means by which electronic surveillance, as defined in section 101 of such Act, and the interception of domestic wire, oral, and electronic communications may be conducted.",
+   "context": []
+  },
+  {
+   "path": [
+    "2",
+    "g",
+    "i"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/g/i",
+   "heading": "",
+   "text": "to intercept or access an electronic communication made through an electronic communication system that is configured so that such electronic communication is readily accessible to the general public;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter or chapter 121 of this title for any person\u2014",
+     "path": [
+      "2",
+      "g"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "g",
+    "ii",
+    "I"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/g/ii/I",
+   "heading": "",
+   "text": "by any station for the use of the general public, or that relates to ships, aircraft, vehicles, or persons in distress;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter or chapter 121 of this title for any person\u2014",
+     "path": [
+      "2",
+      "g"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g"
+    },
+    {
+     "position": "precedes",
+     "text": "to intercept any radio communication which is transmitted\u2014",
+     "path": [
+      "2",
+      "g",
+      "ii"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "g",
+    "ii",
+    "II"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/g/ii/II",
+   "heading": "",
+   "text": "by any governmental, law enforcement, civil defense, private land mobile, or public safety communications system, including police and fire, readily accessible to the general public;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter or chapter 121 of this title for any person\u2014",
+     "path": [
+      "2",
+      "g"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g"
+    },
+    {
+     "position": "precedes",
+     "text": "to intercept any radio communication which is transmitted\u2014",
+     "path": [
+      "2",
+      "g",
+      "ii"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "g",
+    "ii",
+    "III"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/g/ii/III",
+   "heading": "",
+   "text": "by a station operating on an authorized frequency within the bands allocated to the amateur, citizens band, or general mobile radio services; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter or chapter 121 of this title for any person\u2014",
+     "path": [
+      "2",
+      "g"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g"
+    },
+    {
+     "position": "precedes",
+     "text": "to intercept any radio communication which is transmitted\u2014",
+     "path": [
+      "2",
+      "g",
+      "ii"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "g",
+    "ii",
+    "IV"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/g/ii/IV",
+   "heading": "",
+   "text": "by any marine or aeronautical communications system;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter or chapter 121 of this title for any person\u2014",
+     "path": [
+      "2",
+      "g"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g"
+    },
+    {
+     "position": "precedes",
+     "text": "to intercept any radio communication which is transmitted\u2014",
+     "path": [
+      "2",
+      "g",
+      "ii"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "g",
+    "iii",
+    "I"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/g/iii/I",
+   "heading": "",
+   "text": "is prohibited by section 633 of the Communications Act of 1934; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter or chapter 121 of this title for any person\u2014",
+     "path": [
+      "2",
+      "g"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g"
+    },
+    {
+     "position": "precedes",
+     "text": "to engage in any conduct which\u2014",
+     "path": [
+      "2",
+      "g",
+      "iii"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g/iii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "g",
+    "iii",
+    "II"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/g/iii/II",
+   "heading": "",
+   "text": "is excepted from the application of section 705(a) of the Communications Act of 1934 by section 705(b) of that Act;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter or chapter 121 of this title for any person\u2014",
+     "path": [
+      "2",
+      "g"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g"
+    },
+    {
+     "position": "precedes",
+     "text": "to engage in any conduct which\u2014",
+     "path": [
+      "2",
+      "g",
+      "iii"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g/iii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "g",
+    "iv"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/g/iv",
+   "heading": "",
+   "text": "to intercept any wire or electronic communication the transmission of which is causing harmful interference to any lawfully operating station or consumer electronic equipment, to the extent necessary to identify the source of such interference; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter or chapter 121 of this title for any person\u2014",
+     "path": [
+      "2",
+      "g"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "g",
+    "v"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/g/v",
+   "heading": "",
+   "text": "for other users of the same frequency to intercept any radio communication made through a system that utilizes frequencies monitored by individuals engaged in the provision or the use of such system, if such communication is not scrambled or encrypted.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter or chapter 121 of this title for any person\u2014",
+     "path": [
+      "2",
+      "g"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/g"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "h",
+    "i"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/h/i",
+   "heading": "",
+   "text": "to use a pen register or a trap and trace device (as those terms are defined for the purposes of chapter 206 (relating to pen registers and trap and trace devices) of this title); or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter\u2014",
+     "path": [
+      "2",
+      "h"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/h"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "h",
+    "ii"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/h/ii",
+   "heading": "",
+   "text": "for a provider of electronic communication service to record the fact that a wire or electronic communication was initiated or completed in order to protect such provider, another provider furnishing service toward the completion of the wire or electronic communication, or a user of that service, from fraudulent, unlawful or abusive use of such service.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter\u2014",
+     "path": [
+      "2",
+      "h"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/h"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "i",
+    "I"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/i/I",
+   "heading": "",
+   "text": "the owner or operator of the protected computer authorizes the interception of the computer trespasser\u2019s communications on the protected computer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter for a person acting under color of law to intercept the wire or electronic communications of a computer trespasser transmitted to, through, or from the protected computer, if\u2014",
+     "path": [
+      "2",
+      "i"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/i"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "i",
+    "II"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/i/II",
+   "heading": "",
+   "text": "the person acting under color of law is lawfully engaged in an investigation;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter for a person acting under color of law to intercept the wire or electronic communications of a computer trespasser transmitted to, through, or from the protected computer, if\u2014",
+     "path": [
+      "2",
+      "i"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/i"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "i",
+    "III"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/i/III",
+   "heading": "",
+   "text": "the person acting under color of law has reasonable grounds to believe that the contents of the computer trespasser\u2019s communications will be relevant to the investigation; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter for a person acting under color of law to intercept the wire or electronic communications of a computer trespasser transmitted to, through, or from the protected computer, if\u2014",
+     "path": [
+      "2",
+      "i"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/i"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "i",
+    "IV"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/i/IV",
+   "heading": "",
+   "text": "such interception does not acquire communications other than those transmitted to or from the computer trespasser.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "It shall not be unlawful under this chapter for a person acting under color of law to intercept the wire or electronic communications of a computer trespasser transmitted to, through, or from the protected computer, if\u2014",
+     "path": [
+      "2",
+      "i"
+     ],
+     "anchor": "/us/usc/t18/s2511/2/i"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2",
+    "j"
+   ],
+   "anchor": "/us/usc/t18/s2511/2/j",
+   "heading": "",
+   "text": "It shall not be unlawful under this chapter for a provider of electronic communication service to the public or remote computing service to intercept or disclose the contents of a wire or electronic communication in response to an order from a foreign government that is subject to an executive agreement that the Attorney General has determined and certified to Congress satisfies section 2523.",
+   "context": []
+  },
+  {
+   "path": [
+    "3",
+    "a"
+   ],
+   "anchor": "/us/usc/t18/s2511/3/a",
+   "heading": "",
+   "text": "Except as provided in paragraph (b) of this subsection, a person or entity providing an electronic communication service to the public shall not intentionally divulge the contents of any communication (other than one to such person or entity, or an agent thereof) while in transmission on that service to any person or entity other than an addressee or intended recipient of such communication or an agent of such addressee or intended recipient.",
+   "context": []
+  },
+  {
+   "path": [
+    "3",
+    "b",
+    "i"
+   ],
+   "anchor": "/us/usc/t18/s2511/3/b/i",
+   "heading": "",
+   "text": "as otherwise authorized in section 2511(2)(a) or 2517 of this title;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person or entity providing electronic communication service to the public may divulge the contents of any such communication\u2014",
+     "path": [
+      "3",
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2511/3/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "3",
+    "b",
+    "ii"
+   ],
+   "anchor": "/us/usc/t18/s2511/3/b/ii",
+   "heading": "",
+   "text": "with the lawful consent of the originator or any addressee or intended recipient of such communication;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person or entity providing electronic communication service to the public may divulge the contents of any such communication\u2014",
+     "path": [
+      "3",
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2511/3/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "3",
+    "b",
+    "iii"
+   ],
+   "anchor": "/us/usc/t18/s2511/3/b/iii",
+   "heading": "",
+   "text": "to a person employed or authorized, or whose facilities are used, to forward such communication to its destination; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person or entity providing electronic communication service to the public may divulge the contents of any such communication\u2014",
+     "path": [
+      "3",
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2511/3/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "3",
+    "b",
+    "iv"
+   ],
+   "anchor": "/us/usc/t18/s2511/3/b/iv",
+   "heading": "",
+   "text": "which were inadvertently obtained by the service provider and which appear to pertain to the commission of a crime, if such divulgence is made to a law enforcement agency.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person or entity providing electronic communication service to the public may divulge the contents of any such communication\u2014",
+     "path": [
+      "3",
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2511/3/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "4",
+    "a"
+   ],
+   "anchor": "/us/usc/t18/s2511/4/a",
+   "heading": "",
+   "text": "Except as provided in paragraph (b) of this subsection or in subsection (5), whoever violates subsection (1) of this section shall be fined under this title or imprisoned not more than five years, or both.",
+   "context": []
+  },
+  {
+   "path": [
+    "4",
+    "b",
+    "i"
+   ],
+   "anchor": "/us/usc/t18/s2511/4/b/i",
+   "heading": "",
+   "text": "to a broadcasting station for purposes of retransmission to the general public; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Conduct otherwise an offense under this subsection that consists of or relates to the interception of a satellite transmission that is not encrypted or scrambled and that is transmitted\u2014",
+     "path": [
+      "4",
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2511/4/b"
+    },
+    {
+     "position": "follows",
+     "text": "is not an offense under this subsection unless the conduct is for the purposes of direct or indirect commercial advantage or private financial gain.",
+     "path": [
+      "4",
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2511/4/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "4",
+    "b",
+    "ii"
+   ],
+   "anchor": "/us/usc/t18/s2511/4/b/ii",
+   "heading": "",
+   "text": "as an audio subcarrier intended for redistribution to facilities open to the public, but not including data transmissions or telephone calls,",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Conduct otherwise an offense under this subsection that consists of or relates to the interception of a satellite transmission that is not encrypted or scrambled and that is transmitted\u2014",
+     "path": [
+      "4",
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2511/4/b"
+    },
+    {
+     "position": "follows",
+     "text": "is not an offense under this subsection unless the conduct is for the purposes of direct or indirect commercial advantage or private financial gain.",
+     "path": [
+      "4",
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2511/4/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "5",
+    "a",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s2511/5/a/A",
+   "heading": "",
+   "text": "a private satellite video communication that is not scrambled or encrypted and the conduct in violation of this chapter is the private viewing of that communication and is not for a tortious or illegal purpose or for purposes of direct or indirect commercial advantage or private commercial gain; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "(i) If the communication is\u2014",
+     "path": [
+      "5",
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2511/5/a"
+    },
+    {
+     "position": "follows",
+     "text": "then the person who engages in such conduct shall be subject to suit by the Federal Government in a court of competent jurisdiction.",
+     "path": [
+      "5",
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2511/5/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "5",
+    "a",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s2511/5/a/B",
+   "heading": "",
+   "text": "a radio communication that is transmitted on frequencies allocated under subpart D of part 74 of the rules of the Federal Communications Commission that is not scrambled or encrypted and the conduct in violation of this chapter is not for a tortious or illegal purpose or for purposes of direct or indirect commercial advantage or private commercial gain,",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "(i) If the communication is\u2014",
+     "path": [
+      "5",
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2511/5/a"
+    },
+    {
+     "position": "follows",
+     "text": "then the person who engages in such conduct shall be subject to suit by the Federal Government in a court of competent jurisdiction.",
+     "path": [
+      "5",
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2511/5/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "5",
+    "ii",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s2511/5/ii/A",
+   "heading": "",
+   "text": "if the violation of this chapter is a first offense for the person under paragraph (a) of subsection (4) and such person has not been found liable in a civil action under section 2520 of this title , the Federal Government shall be entitled to appropriate injunctive relief; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In an action under this subsection\u2014",
+     "path": [
+      "5",
+      "ii"
+     ],
+     "anchor": "/us/usc/t18/s2511/5/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "5",
+    "ii",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s2511/5/ii/B",
+   "heading": "",
+   "text": "if the violation of this chapter is a second or subsequent offense under paragraph (a) of subsection (4) or such person has been found liable in any prior civil action under section 2520, the person shall be subject to a mandatory $500 civil fine.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In an action under this subsection\u2014",
+     "path": [
+      "5",
+      "ii"
+     ],
+     "anchor": "/us/usc/t18/s2511/5/ii"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "/us/usc/t18/s2511/b",
+   "heading": "",
+   "text": "The court may use any means within its authority to enforce an injunction issued under paragraph (ii)(A), and shall impose a civil fine of not less than $500 for each violation of such an injunction.",
+   "context": []
+  }
+ ]
+}

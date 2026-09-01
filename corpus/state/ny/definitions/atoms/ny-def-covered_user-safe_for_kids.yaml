@@ -1,0 +1,103 @@
+schema_version: 1
+record_type: definition
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+status: enacted_pending
+effective_from: '2027-01-25'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: high
+id: ny.def.covered_user.safe_for_kids
+term: covered user
+term_as_defined: Covered user
+instrument_id: ny.safe_for_kids
+source:
+  citation: N.Y. Gen. Bus. Law § 1500(4)
+  instrument_id: ny.safe_for_kids
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/1500
+  fetched: '2026-08-20'
+  raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1500.json
+  raw_sha256: 272e895ac96b798d6db5c8e61f9864168f14420033b1181e338873c80393675e
+  text_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1500.txt
+  text_sha256: 92daa72cc375140e5d9f0c0ff877b210a54be4be77d6140adc2bbeeebe7d3f73
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/safe-for-kids/raw/ny-gbs-1500.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, laws/GBS/1500
+    result: structured_source_used
+    note: null
+  segment_sha256: 7a1f4ca2b98d7995dec84d99ceaa774a2bc56dd7abe91326f9647e97d21e6c09
+verbatim_span: >-
+  "Covered user" shall mean a user of a website, online service, online application, or mobile
+  application in New York, not acting as an operator, or agent or affiliate of the operator, of such
+  website, online service, online application, or mobile application, or any portion thereof.
+paragraph_path:
+  path:
+    - '4'
+  anchor: '1500'
+  derivation: reconstructed
+  confidence: high
+  evidence: subdivision designators reconstructed from the flat text field; resolves to exactly one leaf
+context_not_required: The subdivision defines the term in one sentence.
+subject:
+  domain: V.B.1
+  lifecycle:
+    - III
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - any
+elements:
+  - id: sfk.u1
+    kind: requires
+    concept: located_in_new_york
+    verbatim_span: in New York
+    gloss: >-
+      The only thing this term has in common with the Child Data Protection Act's term of the same
+      name.
+    condition: null
+  - id: sfk.u2
+    kind: excludes
+    concept: carveout_operator_and_affiliates
+    verbatim_span: not acting as an operator, or agent or affiliate of the operator
+    gloss: >-
+      The single carve-out. Everyone else in New York who uses the service is a covered user —
+      adults included.
+    condition: null
+differs_from:
+  - id: ny.def.covered_user.cdpa
+    difference: >-
+      "Covered user" (N.Y. Gen. Bus. Law § 1500(4)) vs "Covered user" (N.Y. Gen. Bus. Law §
+      899-ee(1)). Only Covered user (N.Y. Gen. Bus. Law § 1500(4)): excludes carveout operator and
+      affiliates. Only Covered user (N.Y. Gen. Bus. Law § 899-ee(1)): includes trigger actual
+      knowledge; includes trigger service directed to minors; requires subject is minor. Shared:
+      requires located in new york.
+    computed:
+      only_here:
+        - excludes:carveout_operator_and_affiliates
+      only_there:
+        - includes:trigger_actual_knowledge
+        - includes:trigger_service_directed_to_minors
+        - requires:subject_is_minor
+      shared:
+        - requires:located_in_new_york
+related:
+  - ny.def.covered_user.cdpa
+common_errors:
+  - >-
+    Reading "covered user" here as a minor. It is not. The minor-specific term in this article is
+    "covered minor" at § 1500(3), which additionally requires actual knowledge. § 1501(1) is drafted
+    against COVERED USER precisely so the duty attaches before the operator knows who is a minor —
+    that is what makes the age-determination route necessary.
+  - >-
+    Carrying this definition into the Child Data Protection Act. Same two words, same chapter of the
+    General Business Law, different people. See ny.def.covered_user.cdpa.
+open_questions: []

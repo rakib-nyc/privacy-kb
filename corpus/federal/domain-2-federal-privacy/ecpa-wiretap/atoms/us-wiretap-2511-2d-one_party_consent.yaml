@@ -1,0 +1,120 @@
+id: us.wiretap.2511.2d.one_party_consent
+schema_version: 1
+record_type: obligation
+source:
+  citation: 18 U.S.C. § 2511(2)(d)
+  instrument_id: us.ecpa_wiretap
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2511.xml
+  raw_sha256: ec7314f1868f20a98a0bcffff899cb099c3b86cf13b4c0c31a76464678744c9f
+  text_file: corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2511.txt
+  text_sha256: 73d0db0c6a8ce64a6c2910043e2cf46502e099dc377b1033032d1f02a7807ffb
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2511.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 551e160c199b8b962e82e4701f0ec71dc371b3868025b08a35505166370be414
+verbatim_span: >-
+  It shall not be unlawful under this chapter for a person not acting under color of law to
+  intercept a wire, oral, or electronic communication where such person is a party to the
+  communication or where one of the parties to the communication has given prior consent to such
+  interception unless such communication is intercepted for the purpose of committing any criminal
+  or tortious act in violation of the Constitution or laws of the United States or of any State.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - '2'
+    - d
+  anchor: /us/usc/t18/s2511/2/d
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: >-
+  The subsection states the exception, its colour-of-law limit and its criminal-or-tortious proviso
+  in one sentence; no chapeau above it conditions the text.
+subject:
+  domain: IV.B.3
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - doj
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '1968-06-19'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - practice.intercepts_communications == true
+    - entity.acting_under_color_of_law == false
+applies_to_role: controller
+obligation_type: obtain_consent
+summary: >-
+  It is not unlawful under the Wiretap Act for a person not acting under colour of law to intercept
+  a communication where that person is a party, or where one party has given prior consent, unless
+  the interception is for the purpose of committing a criminal or tortious act.
+requirement_detail: >-
+  THE WORKPLACE-MONITORING HINGE. Federally, one-party consent is a complete defence: an employer
+  that is itself a party to the call, or that holds prior consent from any one party, is outside the
+  Wiretap Act altogether rather than excused within it. Two limits sit inside the text and both are
+  missed routinely. The exception is available only to a person NOT ACTING UNDER COLOUR OF LAW — a
+  state actor must come within § 2511(2)(c) instead — and the closing proviso withdraws the defence
+  where the interception is made for the purpose of committing a criminal or tortious act. Most
+  importantly, the federal answer does not end the question: roughly a dozen states require the
+  consent of ALL parties to record, and because this chapter sets a floor rather than a ceiling the
+  stricter state rule governs the same recording. Note also that the text requires consent GIVEN
+  PRIOR to the interception, which is why monitoring programmes are built on
+  notice-and-acknowledgement at or before the point of collection.
+deadline: null
+exemptions: []
+related:
+  - us.wiretap.2511.1a.interception_prohibition
+  - us.wiretap.2510.4.intercept_definition
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Reading the federal one-party rule as the operative rule. § 2511 is a floor; an
+    all-party-consent state statute reaches the same recording and is stricter, and a multi-state
+    call is generally analysed under the most demanding state involved.
+  - >-
+    Ignoring the colour-of-law limit. This subsection is available only to a person NOT acting under
+    colour of law; interception by or at the direction of law enforcement runs through § 2511(2)(c)
+    and its own conditions.
+  - >-
+    Treating consent as curing everything. The proviso removes the defence entirely where the
+    interception is for the purpose of committing a criminal or tortious act.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2511(2)(d)
+  note: >-
+    Recorded as floor: nothing in the extracted section displaces state law, and § 2511(2)(d) is the
+    standing proof of it — the federal one-party-consent rule coexists with the all-party consent
+    statutes of roughly a dozen states, and the stricter rule governs the same recording.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: true
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

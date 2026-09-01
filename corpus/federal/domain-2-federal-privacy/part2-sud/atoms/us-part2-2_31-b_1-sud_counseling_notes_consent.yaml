@@ -1,0 +1,203 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+related:
+  - us.part2.2_31.a.written_consent_required_elements
+federal_relationship: null
+interpreted_by: []
+confidence: high
+id: us.part2.2_31.b_1.sud_counseling_notes_consent
+source:
+  citation: 42 C.F.R. § 2.31(b)(1)
+  instrument_id: us.part2_sud
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-42.xml?part=2
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  raw_sha256: 5310842763c7e36481877d66979171643bfb80db54bceca2013014691623c216
+  text_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.txt
+  text_sha256: 8aa03df58a46112b21fc7b4d0972fe49d4ed8dc28481d2e409f7a8fa881e8b74
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, full XML for the part, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: 585b126a23508c53d6f4fc3b79db44dafbd97783a72aac28cfa11edec7543b01
+verbatim_span: >-
+  Notwithstanding any provision of this subpart, a part 2 program must obtain consent for any use or
+  disclosure of SUD counseling notes, except:
+paragraph_path:
+  path:
+    - b
+    - '1'
+  anchor: '2.31'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+    exactly one provision
+exemptions:
+  - id: cfr.42.2.12.e.2.not_a_part_2_program
+    type: entity_level
+    reach: instrument
+    scope: >-
+      If the diagnosis, treatment or referral was not provided by a part 2 program, the patient's
+      record is outside part 2 altogether. CONSEQUENCE TEST: there is no part 2 compliance programme
+      to build — no consent form, no redisclosure notice, no § 2.16 policies — because the
+      instrument does not reach the entity at all, which is why reach is instrument and not
+      obligation. The trap is the second sentence: federal money reaching the PATIENT is not federal
+      assistance to the PROGRAM, so a court-placed patient whose care a federal agency pays for is
+      still outside part 2 unless the program itself is federally assisted under § 2.12(b). Note
+      what the relief does NOT do — the same records remain PHI in the hands of a covered entity, so
+      exiting part 2 routes the analysis back to the Privacy Rule rather than out of regulation.
+    source_citation: 42 C.F.R. § 2.12(e)(2)
+    verbatim_span: >-
+      If a patient's substance use disorder diagnosis, treatment, or referral for treatment is not
+      provided by a part 2 program, that patient's record is not covered by the regulations in this
+      part. Thus, it is possible for an individual patient to benefit from federal support and not
+      be covered by the confidentiality regulations because the program in which the patient is
+      enrolled is not federally assisted as defined in paragraph (b) of this section. For example,
+      if a federal court placed an individual in a private for-profit program and made a payment to
+      the program on behalf of that individual, that patient's record would not be covered by the
+      regulations in this part unless the program itself received federal assistance as defined by
+      paragraph (b) of this section.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.is_part2_program == false
+common_errors:
+  - >-
+    Assuming the durable treatment, payment and operations consent covers counseling notes.
+    Paragraph (b)(1) overrides the rest of the subpart and demands a separate consent.
+  - >-
+    Combining the counseling notes consent with the general part 2 consent to reduce paperwork.
+    Paragraph (2) permits combination only with another counseling notes consent.
+  - >-
+    Making the consent a condition of admission or of continued treatment. Paragraph (3) prohibits
+    conditioning treatment, payment, plan enrolment or benefits eligibility on it.
+open_questions:
+  - >-
+    effective_from is the effective date of the 2024 CARES Act alignment rule and is not stated in
+    the fetched part text; the source is the eCFR snapshot for 2026-08-17.
+operative_context:
+  - position: follows
+    relation: excepts
+    verbatim_span: >-
+      A use or disclosure that is required by § 2.2(b) or permitted by § 2.15(b); § 2.53 with
+      respect to the oversight of the originator of the SUD counseling notes; § 2.63(a); § 2.64.
+    citation: 42 C.F.R. § 2.31(b)(1)(ii)
+    path:
+      path:
+        - b
+        - '1'
+        - ii
+      anchor: '2.31'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      A written consent for a use or disclosure of SUD counseling notes may only be combined with
+      another written consent for a use or disclosure of SUD counseling notes.
+    citation: 42 C.F.R. § 2.31(b)(2)
+    path:
+      path:
+        - b
+        - '2'
+      anchor: '2.31'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      A part 2 program may not condition the provision to a patient of treatment, payment,
+      enrollment in a health plan, or eligibility for benefits on the provision of a written consent
+      for a use or disclosure of SUD counseling notes.
+    citation: 42 C.F.R. § 2.31(b)(3)
+    path:
+      path:
+        - b
+        - '3'
+      anchor: '2.31'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+regulator:
+  - hhs_ocr
+  - hhs_samhsa
+sector:
+  - health
+data_types:
+  - health
+effective_from: '2024-04-16'
+subject:
+  domain: II.B.3
+  lifecycle:
+    - VI
+applies_if:
+  all:
+    - data.is_sud_counseling_note == true
+    - entity.is_part2_program == true
+obligation_type: obtain_consent
+summary: >-
+  A part 2 program must obtain consent for any use or disclosure of SUD counseling notes,
+  notwithstanding any other provision of the consent subpart, subject only to enumerated exceptions.
+requirement_detail: >-
+  SUD counseling notes are part 2's answer to psychotherapy notes and they are the exception to the
+  exception. The opening words matter: the consent duty applies notwithstanding any provision of
+  this subpart, so the single durable treatment, payment and operations consent that paragraph
+  (a)(5)(ii) permits does NOT reach counseling notes — they need their own consent, obtained
+  separately. The carve-outs are narrow and closed: use by the originator for treatment, use in the
+  programme's own supervised training, defence of a legal action brought BY the patient, and the
+  specific provisions listed in (b)(1)(ii). Paragraph (2) then blocks the usual workaround — a
+  consent for counseling notes "may only be combined with another written consent for a use or
+  disclosure of SUD counseling notes" — so the notes consent cannot ride on a general form.
+  Paragraph (3) forbids conditioning treatment, payment, health plan enrolment or benefits
+  eligibility on giving it, which makes a refusal costless to the patient and is the design point
+  most often lost when consent flows are built for throughput.
+preemption:
+  posture: floor
+  authority: 42 C.F.R. § 2.20
+  note: >-
+    Section 2.20 states that 42 U.S.C. 290dd-2 does not preempt the field: a State law PROHIBITING a
+    use or disclosure that part 2 permits still governs, while no State law may authorize or compel
+    a use or disclosure that part 2 forbids. So the ratchet runs one way — part 2 is a floor against
+    State permission and a ceiling on nothing.
+enforcement:
+  enforcers:
+    - hhs_ocr
+    - doj
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Section 2.3(a) applies the HIPAA penalties — sections 1176 and 1177 of the Social Security
+      Act, 42 U.S.C. 1320d-5 and 1320d-6 — to violations of 42 U.S.C. 290dd-2(a)-(d), and § 2.3(c)
+      applies 45 C.F.R. part 160 subparts C, D and E to noncompliance with part 2 in the same manner
+      as to covered entities.
+    range: null
+    note: >-
+      Enforcement was formerly criminal fines under 42 U.S.C. 290dd-2(f) alone. The current text
+      routes part 2 through the HIPAA enforcement machinery, which means OCR investigation, civil
+      money penalties and the § 2.4 complaint process — a materially larger exposure than the
+      pre-alignment position.
+  statute_of_limitations: null

@@ -1,0 +1,107 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+id: ny.education.2d.3.parents_bill_of_rights
+source:
+  citation: N.Y. Education Law § 2-d(3)
+  instrument_id: ny.education.2-d
+  url: https://legislation.nysenate.gov/api/3/laws/EDN/2-D
+  fetched: '2026-08-19'
+  raw_file: corpus/state/ny/edn-2d/raw/ny-edn-2-d.json
+  raw_sha256: 7bd3e93b1cdc44a600ed20dbe90b01e7b9dcf92caa6edc37bde7cede80c37413
+  text_file: corpus/state/ny/edn-2d/raw/ny-edn-2-d.txt
+  text_sha256: 3edf25eb4284866dbd4428909bdfeccf319516914032b8176d48b5f4065aa479
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/edn-2d/raw/ny-edn-2-d.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, ny-edn-2-d
+    result: structured_source_used
+    note: null
+  segment_sha256: d58e104bd2b28b9be5b005222f51f93a17228f6447b2d004218bdafd5aab2228
+verbatim_span: >-
+  Parents bill of rights for data privacy and security. a. A parents bill of rights for data privacy
+  and security shall be published on the website of each educational agency and shall be included
+  with every contract an educational agency enters into with a third party contractor where the
+  third party contractor receives student data or teacher or principal data. b. The parents bill of
+  rights for data privacy and security shall state in clear and plain English terms that:
+paragraph_path:
+  path:
+    - '3'
+  anchor: 2-D
+  derivation: reconstructed
+  confidence: high
+  evidence: subdivision designators reconstructed from the flat text field; resolves to exactly one leaf
+context_not_required: The provision states the rule in full.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - III
+regulator:
+  - state_ag
+sector:
+  - education
+data_types:
+  - education_record
+effective_from: '2020-01-29'
+federal_relationship: exceeds_floor
+applies_if:
+  all:
+    - entity.is_ny_educational_agency == true
+applies_to_role: controller
+obligation_type: notify
+deadline: null
+exemptions: []
+related: []
+summary: >-
+  Each educational agency must publish a parents bill of rights for data privacy and security on its
+  website and include it with every contract under which a third-party contractor receives student
+  data.
+requirement_detail: >-
+  NEW YORK EXCEEDS THE FERPA FLOOR HERE, and the mechanism is worth noting because it is unusual:
+  FERPA is a funding condition on institutions with no private enforcement, while § 2-d imposes a
+  direct publication duty AND reaches THIRD-PARTY CONTRACTORS through the contract-inclusion
+  requirement. An edtech vendor that is outside FERPA — it is not an educational agency — is reached
+  in New York through the contract its customer must give it. That is the practical answer to why
+  FERPA analysis alone under-serves a New York school district.
+common_errors:
+  - Treating FERPA as the whole analysis for a New York district. § 2-d adds duties FERPA does not.
+  - >-
+    Assuming a vendor is outside it because it is not an educational agency. The contract-inclusion
+    requirement reaches contractors.
+open_questions: []
+preemption:
+  posture: none
+  authority: N.Y. Education Law § 2-d
+  note: >-
+    FERPA is a funding condition rather than a preemptive scheme, so state student-privacy law
+    coexists with it; § 2-d is recorded as exceeds_floor for that reason.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Enforcement by the department and the chief privacy officer; civil penalties against
+      third-party contractors under subdivision 6.
+    range: null
+    note: >-
+      Penalty detail is in subdivision 6, which is not yet extracted — treat exposure as UNASSESSED
+      rather than absent.
+  statute_of_limitations: null
+no_deadline_stated: >-
+  Subdivision 3 fixes CONTENT and PLACEMENT, not a period: the bill of rights must be published on
+  the website and included with every contract under which a third-party contractor receives student
+  data. Checked subdivision 3 in full; the only timing language is the publication trigger itself,
+  which is continuous rather than an interval.

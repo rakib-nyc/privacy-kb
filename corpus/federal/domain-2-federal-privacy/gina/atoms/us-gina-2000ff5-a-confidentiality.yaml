@@ -1,0 +1,104 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - eeoc
+sector:
+  - employment
+data_types:
+  - genetic
+status: in_force
+effective_from: '2009-11-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+preemption:
+  posture: floor
+  authority: 42 U.S.C. § 2000ff-1(b)
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the section extracted.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null
+applies_if:
+  all:
+    - entity.is_employer == true
+    - data.is_genetic_information == true
+applies_to_role: controller
+exemptions: []
+id: us.gina.2000ff5.a.confidentiality
+source:
+  citation: 42 U.S.C. § 2000ff-5(a)
+  instrument_id: us.gina
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/gina/raw/42-u-s-c-2000ff-5.xml
+  raw_sha256: b1102ddc3bfb88487708067e336624a9a7c95b0298bce170d654b58b0b25e468
+  text_file: corpus/federal/domain-2-federal-privacy/gina/raw/42-u-s-c-2000ff-5.txt
+  text_sha256: 037979321edac58a4061b8032b741f25a7c3f0678ef9940cce3744a58faac5dd
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/gina/raw/42-u-s-c-2000ff-5.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 42-u-s-c-2000ff-5 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: ea425dea5bdc10bcc44db97d83c0133dbd241d6da134e6f69d42be5b975e9df0
+verbatim_span: >-
+  If an employer, employment agency, labor organization, or joint labor-management committee
+  possesses genetic information about an employee or member, such information shall be maintained on
+  separate forms and in separate medical files and be treated as a confidential medical record of
+  the employee or member. An employer, employment agency, labor organization, or joint
+  labor-management committee shall be considered to be in compliance with the maintenance of
+  information requirements of this subsection with respect to genetic information subject to this
+  subsection that is maintained with and treated as a confidential medical record under section
+  12112(d)(3)(B) of this title .
+paragraph_path:
+  path:
+    - a
+  anchor: /us/usc/t42/s2000ff–5/a
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the duty in full.
+subject:
+  domain: IV.A.2
+  lifecycle:
+    - IV
+obligation_type: secure
+deadline: null
+summary: >-
+  An employer possessing genetic information about an employee must maintain it on separate forms
+  and in separate medical files, and treat it as a confidential medical record.
+requirement_detail: >-
+  THE THIRD SEPARATE-FILES DUTY IN THIS CORPUS, and reading the three together is the point. ADA §
+  12112(d)(3)(B) requires it of medical information, GINA § 2000ff-5(a) of genetic information, and
+  HIPAA excludes employment records from PHI entirely. An employer holding a wellness questionnaire
+  that asks about relatives has genetic information under GINA, medical information under the ADA,
+  and nothing under HIPAA — one file, three regimes, and the one people reach for first is the one
+  that does not apply.
+common_errors:
+  - >-
+    Storing genetic information with the ADA medical file. Both require separation, and GINA treats
+    the ADA file as compliant only if it also meets this section.
+  - Assuming HIPAA governs it because it is health data. Employment records are excluded from PHI.
+open_questions: []

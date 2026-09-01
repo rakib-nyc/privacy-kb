@@ -1,0 +1,142 @@
+id: us.common_rule.46_116.b5.confidentiality_statement
+schema_version: 1
+record_type: obligation
+source:
+  citation: 45 C.F.R. § 46.116(b)(5)
+  instrument_id: us.common_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=46
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  raw_sha256: cfe25d02a8ade401b1350f591c4654b85ab03c47f66297047feb0a6e1f0e543d
+  text_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+  text_sha256: 2e9f64e48744208a67bbad88f993394ee3ae928f07e1396d552d5a6c8d574fa1
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 45 part 46, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: 7b10a7e8f3d18d8b622ba6d4e93c80876eff47f482213aa8f9bb85c30bd6109b
+verbatim_span: >-
+  A statement describing the extent, if any, to which confidentiality of records identifying the
+  subject will be maintained;
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+    - '5'
+  anchor: '46.116'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from flat <P> siblings by tools/extract.py; resolves to exactly one
+    leaf inside the section
+subject:
+  domain: II.B.3
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ohrp
+  - federal_agencies
+sector:
+  - health
+data_types:
+  - personal_information
+  - health
+status: in_force
+effective_from: '2019-01-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.conducts_human_subjects_research == true
+    - law.research_subject_to_common_rule == true
+applies_to_role: controller
+obligation_type: disclose
+summary: >-
+  Informed consent must include a statement describing the extent, if any, to which confidentiality
+  of records identifying the subject will be maintained.
+requirement_detail: >-
+  THIS IS THE PRIVACY NOTICE INSIDE THE CONSENT FORM, and its drafting is more honest than most
+  privacy notices because of two words. The element is a statement describing the extent "to which
+  confidentiality of records identifying the subject" will be kept — and the phrase if any is in the
+  regulation, which contemplates research where confidentiality is NOT maintained and requires that
+  to be said rather than glossed. A form promising confidentiality without qualification is
+  therefore the defect to look for, since federal audit rights, mandatory reporting duties and
+  sponsor access almost always qualify it in fact. The element is drafted at the level of records
+  identifying the subject, so de-identification plans, retention periods and who may re-identify
+  belong here. Because § 46.116(f)(2) lets an IRB omit or alter elements in paragraph (b) but never
+  the general requirements in paragraph (a), this element is waivable in a way the consent
+  requirement itself is not — a distinction worth holding onto when reviewing an IRB determination.
+deadline: null
+exemptions: []
+related:
+  - us.common_rule.46_116.a1.informed_consent
+  - us.common_rule.46_111.a7.privacy_and_confidentiality
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Promising confidentiality without limits. The element asks for the extent, if any, to which it
+    will be maintained, and audit, reporting and sponsor access usually limit it.
+  - >-
+    Treating this element as unwaivable. Section 46.116(f)(2) allows an IRB to omit or alter
+    elements in paragraph (b); it may not alter the paragraph (a) requirements.
+  - >-
+    Substituting the HIPAA authorization's confidentiality language. The two documents have
+    different required contents and one does not satisfy the other.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 45 C.F.R. § 46.101(f)
+  note: >-
+    Section 46.101(f) states that the policy does not affect state or local laws or regulations,
+    including tribal law, that provide additional protections for human subjects, and 46.101(e)
+    requires compliance with more protective federal law. The Common Rule is therefore a floor in
+    both directions, which is why a HIPAA authorisation and an IRB-approved consent are cumulative
+    rather than alternative.
+enforcement:
+  enforcers:
+    - hhs_ohrp
+    - federal_agencies
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Administrative, through the funding relationship. The federal department or agency conducting
+      or supporting the research enforces against the institution's assurance; for HHS-supported
+      research this is the Office for Human Research Protections, whose sanctions run from a
+      determination letter and corrective action plan to restriction or withdrawal of the assurance,
+      which stops federally supported research at the institution.
+    range: null
+    note: >-
+      NO PRIVATE RIGHT OF ACTION under the Common Rule. A subject's own remedy is a state-law claim
+      in negligence or battery, or a state research-consent statute preserved by § 46.101(f); the
+      regulation supplies the standard of care rather than the cause of action.
+  statute_of_limitations: null
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Except as provided in paragraph (d), (e), or (f) of this section, in seeking informed consent
+      the following information shall be provided to each subject or the legally authorized
+      representative:
+    citation: 45 C.F.R. § 46.116(b)
+    path:
+      path:
+        - b
+      anchor: '46.116'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designators reconstructed from flat <P> siblings by tools/extract.py; resolves to exactly
+        one leaf inside the section

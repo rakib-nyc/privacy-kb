@@ -1,0 +1,127 @@
+id: us.cable.551.f1.private_action
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 U.S.C. § 551(f)(1)
+  instrument_id: us.cable_act
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.xml
+  raw_sha256: 3b7792e5ec31fc28ddaeeb563fc631678a31eafcaf87e6bcc83c7605f93e015b
+  text_file: corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.txt
+  text_sha256: fb926fae4fc7b9f67be65456b0ef3f00522d0824c1eb5057383af817f036e3dc
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1 (47-u-s-c-551)
+    result: structured_source_used
+    note: null
+  segment_sha256: 103a2fe0656e210b02a72404bc6419ef7ed6cd530df1e9ddcf959aa63b1a3f39
+verbatim_span: >-
+  Any person aggrieved by any act of a cable operator in violation of this section may bring a civil
+  action in a United States district court.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - f
+    - '1'
+  anchor: /us/usc/t47/s551/f/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: >-
+  The paragraph is a single complete sentence; § 551(f) has no chapeau above (1), and the remedies
+  it opens are set out separately in § 551(f)(2).
+subject:
+  domain: II.E.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - private_litigants
+sector:
+  - telecom
+data_types:
+  - any
+status: in_force
+effective_from: '1984-10-30'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_cable_operator == true
+    - data.is_subscriber_pii == true
+applies_to_role: any
+obligation_type: prohibit
+summary: >-
+  Any person aggrieved by any act of a cable operator in violation of § 551 may bring a civil action
+  in a United States district court.
+requirement_detail: >-
+  THE ENFORCEMENT ENGINE FOR THE WHOLE SECTION, and it is what makes the notice, consent and
+  destruction duties in § 551(a), (c) and (e) matter commercially rather than only regulatorily.
+  Three features of the drafting do the work. The action lies for a violation of "this section", so
+  every duty in § 551 is privately enforceable, not merely the disclosure prohibition. The plaintiff
+  class is "any person aggrieved by any act of a cable operator" rather than "any subscriber", which
+  is broader than the contractual relationship the rest of the section presupposes. And the forum is
+  fixed as a United States district court. Read with § 551(f)(3), which preserves "any other lawful
+  remedy available to a cable subscriber", the remedy is cumulative rather than exclusive — the
+  exact opposite of RFPA's § 3410(e), where the statutory challenge procedure is declared the sole
+  judicial remedy. The Cable Act and the VPPA are worth reading as a pair: near-identical
+  private-action architecture four years apart, with materially different retention clocks and
+  damages formulas.
+deadline: null
+exemptions: []
+related:
+  - us.cable.551.c1.disclosure_prohibition
+  - us.cable.551.a1.privacy_notice
+  - us.cable.551.e.destruction
+  - us.cable.551.f2a.liquidated_damages
+  - us.vppa.2710.c1.private_action
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Assuming only the § 551(c) disclosure prohibition is privately enforceable. The action lies for
+    a violation of the whole section, including the annual notice in (a) and the destruction duty in
+    (e).
+  - >-
+    Reading the remedy as exclusive. § 551(f)(3) expressly preserves any other lawful remedy
+    available to a cable subscriber.
+  - >-
+    Importing the VPPA's $2,500 liquidated figure. § 551(f)(2)(A) uses a different formula — $100 a
+    day or $1,000, whichever is higher.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 551(f)(3)
+  note: >-
+    Recorded as floor. § 551(f)(3) states that the remedy provided by the section "shall be in
+    addition to any other lawful remedy available to a cable subscriber", which is an express
+    savings of other remedies rather than a displacement of them. No express ceiling clause was
+    found in the section extracted.
+enforcement:
+  enforcers:
+    - private_litigants
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Civil action in a United States district court under § 551(f)(1); the court may award actual
+      damages subject to a liquidated-damages floor, punitive damages, and reasonable attorneys'
+      fees and litigation costs under § 551(f)(2)(A)–(C).
+    range:
+      min: 1000
+      unit: usd_liquidated_floor_per_action
+    note: >-
+      The liquidated floor is the HIGHER of $100 for each day of violation or $1,000, so the
+      recorded minimum is the fixed limb; a violation continuing more than ten days is worth more on
+      the per-day limb. Punitive damages and fees are separate awards under (B) and (C).
+  statute_of_limitations: null

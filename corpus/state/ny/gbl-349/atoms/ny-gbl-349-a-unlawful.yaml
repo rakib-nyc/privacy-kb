@@ -1,0 +1,151 @@
+id: ny.gbl.349.a.unlawful
+schema_version: 1
+record_type: obligation
+source:
+  citation: N.Y. Gen. Bus. Law § 349(a)
+  instrument_id: ny.gbl.349
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/349
+  fetched: '2026-08-19'
+  raw_file: corpus/state/ny/gbl-349/raw/ny-gbs-349.json
+  raw_sha256: 2833369a40955663990347addf5f426bf6c81acc3ed827bb91045c5c5432963b
+  text_file: corpus/state/ny/gbl-349/raw/ny-gbs-349.txt
+  text_sha256: 4d8c06a7e1c66eaf96f46f04cd580956f50e508c5ed60596812d84470342be3f
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/gbl-349/raw/ny-gbs-349.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 908a769b11f69732b11d1a14dd71867dba3c954fccd39d9e897d12c8aa95ee68
+verbatim_span: >-
+  Unfair, deceptive, or abusive acts or practices in the conduct of any business, trade or commerce
+  or in the furnishing of any service in this state are hereby declared unlawful. For the purposes
+  of this section:
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+  anchor: '349'
+  derivation: reconstructed
+  confidence: high
+  evidence: designator parsed from flat <P> siblings; sequence-tracked
+jurisdiction: US-NY
+jurisdiction_level: state
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions:
+  - id: ny.gbl.349.d.ftc_compliance_defense
+    type: activity_level
+    scope: >-
+      A complete defence for a PARTICULAR act or practice that is subject to and complies with FTC
+      rules, regulations or statutes as interpreted by the FTC or the federal courts. CONSEQUENCE
+      TEST: if the entity does something adjacent — a different practice not covered by the FTC rule
+      it complies with — it REMAINS fully covered by § 349 for that practice. The defence attaches
+      to the act, never to the actor, which is why it is activity_level and not entity_level.
+    source_citation: N.Y. Gen. Bus. Law § 349(d)
+    verbatim_span: >-
+      In any action or proceeding brought pursuant to this section it shall be a complete defense
+      that the act or practice is, or if in interstate commerce would be, subject to and complies
+      with the rules and regulations of, and the statutes administered by, the federal trade
+      commission or any official department, division, commission or agency of the United States as
+      such rules, regulations or statutes are interpreted by the federal trade commission or such
+      department, division, commission or agency or the federal courts.
+    burden_of_proof: defendant
+    applies_if:
+      all:
+        - practice.complies_with_ftc_rule == true
+  - id: ny.gbl.349.e.media_carrier
+    type: activity_level
+    scope: >-
+      Broadcasters, publishers and printers are outside § 349 FOR THE ACT OF broadcasting,
+      publishing or printing someone else's advertisement. CONSEQUENCE TEST: if a broadcaster does
+      something adjacent — deceptive billing for its own subscriptions, say — it is FULLY COVERED.
+      The trailing clause 'who broadcasts, publishes, or prints the advertisement' is what makes
+      this activity_level rather than entity_level; typing it entity_level would wrongly exempt a
+      media company's entire consumer-facing business.
+    source_citation: N.Y. Gen. Bus. Law § 349(e)
+    verbatim_span: >-
+      Nothing in this section shall apply to any television or radio broadcasting station or to any
+      publisher or printer of a newspaper, magazine or other form of printed advertising, who
+      broadcasts, publishes, or prints the advertisement.
+    burden_of_proof: defendant
+    applies_if:
+      all:
+        - entity.is_media_carrier == true
+        - practice.is_carrying_third_party_advertisement == true
+related: []
+federal_relationship: independent
+interpreted_by: []
+common_errors:
+  - >-
+    TREATING § 349 AS DECEPTION-ONLY. That was true until Chapter 708 of the Laws of 2025. It now
+    has three prongs — unfair, deceptive, abusive — matching CFPB UDAAP's structure rather than the
+    FTC's two.
+  - >-
+    Assuming the private right of action expanded with the statute. It did not: § 349(h) still
+    reaches only DECEPTIVE acts and practices.
+  - >-
+    Reading it as a consumer-protection statute limited to consumer transactions. The text says 'any
+    business, trade or commerce'.
+open_questions:
+  - >-
+    Chapter 708 of the Laws of 2025 (S8416/S8416A, sponsor Comrie), signed 2025-12-19, amended the
+    Article 22-A heading and § 349 and added § 348. A further amendment took effect 2026-04-03.
+    Verified against the OpenLegislation bill record and the law updates feed.
+confidence: high
+context_not_required: No ancestor contributes governing text; this provision's operative meaning is complete on its own.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - I
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2026-04-03'
+applies_if:
+  all:
+    - entity.nexus in ['US-NY']
+applies_to_role: any
+obligation_type: prohibit
+summary: >-
+  Unfair, deceptive, or abusive acts or practices in the conduct of any business, trade or commerce,
+  or in the furnishing of any service in New York, are unlawful.
+requirement_detail: >-
+  THE NY UDAP BACKSTOP, and it is no longer a deception-only statute. Chapter 708 of the Laws of
+  2025 added UNFAIR and ABUSIVE prongs and retitled Article 22-A to match. The reach is 'any
+  business, trade or commerce or ... any service in this state' — it is not sector-limited and not
+  data-limited, which is why invariant I6 pairs it with FTC Act § 5 as the constraint that never
+  switches off.
+preemption:
+  posture: none
+  authority: N.Y. Gen. Bus. Law § 349(g)
+  note: >-
+    State UDAP. No federal statute preempts it; § 349(g) is itself a non-supersession clause
+    preserving other NY law. The FTC-compliance defence at § 349(d) is NOT preemption — it is an
+    activity-level complete defence that the defendant must establish.
+enforcement:
+  enforcers:
+    - state_ag
+    - private_litigants
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      AG: injunction and restitution. Private: actual damages or $50, whichever is greater; treble
+      up to $1,000 for wilful or knowing violation; discretionary attorney's fees.
+    range:
+      min: 50
+      unit: usd_statutory_minimum
+    note: >-
+      The private right is NARROWER than the AG's — see the deception-only asymmetry on the
+      private-action atom.
+  statute_of_limitations: null

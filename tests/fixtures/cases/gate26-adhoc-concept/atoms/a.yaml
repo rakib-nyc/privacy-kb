@@ -1,0 +1,101 @@
+schema_version: 1
+record_type: definition
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: high
+term: personal information
+differs_from: []
+related: []
+open_questions: []
+id: us.def.test.gate26_adhoc_concept
+source:
+  citation: 16 C.F.R. § 313.3(n)(1)
+  instrument_id: us.cfr.16.313
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=313
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+  raw_sha256: d15f22051009593a5210d7d3bf1f8e8af542214d78f12fc333b9f0a2e852a67a
+  text_file: corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.txt
+  text_sha256: e82d7dc8e83a38f83ca95113eb64d54dc94556c0b0786b595bc452473d05ba1f
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - 16 CFR 313 structured source
+    result: structured_source_used
+    note: null
+instrument_id: us.cfr.16.313
+term_as_defined: nonpublic personal information
+verbatim_span: 'means:'
+paragraph_path:
+  path:
+  - n
+  - '1'
+  anchor: '313.3'
+  derivation: reconstructed
+  confidence: high
+  evidence: designators reconstructed from flat <P> siblings; resolves to exactly one leaf (gate 23)
+context_not_required: The definition is complete across its own enumerated paragraphs.
+subject:
+  domain: II.C.1
+  lifecycle:
+  - III
+regulator:
+- ftc
+sector:
+- financial
+data_types:
+- financial
+effective_from: '2000-11-13'
+elements:
+- id: glba.e1
+  kind: includes
+  concept: vibes_about_money
+  verbatim_span: Personally identifiable financial information; and
+  gloss: The core inclusion is personally identifiable FINANCIAL information.
+  condition: null
+- id: glba.e2
+  kind: requires
+  concept: source_customer_relationship
+  verbatim_span: 'means any information:'
+  gloss: Information counts because it was obtained in connection with providing a financial product or
+    service, not because of what it says.
+  condition: null
+- id: glba.e3
+  kind: includes
+  concept: derived_list_inclusion
+  verbatim_span: Any list, description, or other grouping of consumers (and publicly available information
+    pertaining to them) that is derived using any personally identifiable financial information that is
+    not publicly available.
+  gloss: A derived list is covered even though its contents are public — the derivation is what makes
+    it revealing.
+  condition: null
+- id: glba.e4
+  kind: excludes
+  concept: carveout_publicly_available
+  verbatim_span: Publicly available information, except as included on a list described in paragraph (n)(1)(ii)
+    of this section; or
+  gloss: null
+  condition: except as included on a derived list under (n)(1)(ii)
+- id: glba.e5
+  kind: excludes
+  concept: carveout_business_purpose
+  verbatim_span: This part does not apply to information about companies or about individuals who obtain
+    financial products or services for business, commercial, or agricultural purposes.
+  gloss: Scope provision rather than the definition proper, but it decides the same question.
+  condition: null
+- id: glba.e6
+  kind: requires
+  concept: natural_person_only
+  verbatim_span: This part applies only to nonpublic personal information about individuals who obtain
+    financial products or services primarily for personal, family or household purposes
+  gloss: null
+  condition: null

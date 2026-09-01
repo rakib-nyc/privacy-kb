@@ -1,0 +1,137 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: local
+regulator:
+  - nyc_dcwp
+sector:
+  - employment
+status: in_force
+effective_from: '2023-04-05'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+id: ny.nyc_rcny.5_302.a.historical_data
+source:
+  citation: 6 RCNY § 5-302(a)
+  instrument_id: nyc.local_law_144
+  url: >-
+    urn:owner-supplied:nyc-dcwp-notice-of-adoption-aedt-2023-04-05.pdf
+  fetched: '2026-08-24'
+  raw_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  raw_sha256: 4ecc4463b29440f9b876b0b7319faf2d4c4710b8ad28db9cfa8ae15a123ece2c
+  text_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.txt
+  text_sha256: 21b43190233735cdab074166a3fc9cc2c26aa24c4b5a80596656cda690abee44
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  format: pdf_single_col
+  risk_tier: medium
+  render: null
+  structured_source_check:
+    checked:
+      - amlegal.com (403 to automated requests)
+      - rules.cityofnewyork.us (carries proposal notices)
+      - owner-supplied DCWP Notice of Adoption of Final Rule
+    result: no_structured_source_exists
+    note: >-
+      No structured source serves the Rules of the City of New York. This is the ADOPTED text — a
+      Notice of Adoption carries the final rule in clean form, unlike a proposal notice — so it is
+      the right document, in the wrong format.
+  segment_sha256: 7f1cd1378ee8d1ec1a09456771ef398a86b0f92cace5dc41b8be782d2c6cdcd0
+verbatim_span: >-
+  Historical Data. A bias audit conducted pursuant to section 5-301 of this Chapter must use
+  historical data of the AEDT. The historical data used to conduct a bias audit may be from one or
+  more employers or employment agencies that use the AEDT. However, an individual employer or
+  employment agency may rely on a bias audit of an AEDT that uses the historical data of other
+  employers or employment agencies only in the following circumstances: if such employer or
+  employment agency provided historical data from its own use of the AEDT to the independent auditor
+  conducting the bias audit or if such employer or employment agency has never used the AEDT.
+paragraph_path:
+  path:
+    - a
+  anchor: 5-302
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from a pdftotext -layout rendering; indentation is NOT used as
+    evidence because the PDF resets its left margin per page. Resolves to exactly one leaf.
+subject:
+  domain: IV.A.2
+  lifecycle:
+    - III
+data_types:
+  - any
+federal_relationship: gap_fills
+applies_if:
+  all:
+    - entity.uses_automated_employment_decision_tool == true
+    - entity.nexus in ["US-NY-NYC"]
+applies_to_role: controller
+obligation_type: assess
+deadline: null
+exemptions: []
+summary: >-
+  A bias audit must use historical data OF THE AEDT, which may come from one or more employers using
+  it — but an employer may rely on such a multi-employer audit only if it contributed its own data
+  or has never used the tool.
+requirement_detail: >-
+  CORRECTED ON VISUAL CHECK. An earlier draft of this record read the subdivision as requiring the
+  employer's OWN data. It does not, and the difference decides whether a vendor audit is usable at
+  all. The requirement is historical data "of the AEDT", and the second sentence says in terms that
+  it "may be from one or more employers or employment agencies that use the AEDT". Pooled,
+  multi-employer data is the norm the rule contemplates, not an exception to it.
+
+
+  THE RESTRICTION IS ON RELIANCE, NOT ON THE AUDIT. An individual employer may rely on an audit
+  built from other employers' data in exactly two circumstances: it gave its own historical data
+  from its use of the AEDT to the independent auditor, or it has NEVER used the AEDT. That second
+  limb is what lets a first-time adopter rely on a vendor audit, and it closes the moment the tool
+  goes into service — after which the employer must be contributing its own data to keep relying on
+  the pooled audit.
+
+
+  Read with subdivision (b), which permits TEST data only where insufficient historical data exists
+  to conduct a statistically significant audit, and then requires the summary of results to explain
+  why historical data was not used and how the test data was generated.
+common_errors:
+  - >-
+    Reading it as requiring the employer's own data. It requires historical data of the AEDT, which
+    may be pooled across employers.
+  - >-
+    Assuming a first-time adopter cannot use a vendor audit. The never-used limb exists for
+    precisely that case.
+  - >-
+    Continuing to rely on a pooled audit after deployment without contributing data. Once the
+    employer has used the tool, the never-used limb no longer applies.
+open_questions:
+  - >-
+    THE DOCUMENT STATES NO EFFECTIVE DATE. effective_from is taken from the PDF's own CreationDate
+    metadata (5 April 2023), which is evidence about the FILE rather than a statement in the rule.
+    New York City rules generally take effect after publication in the City Record, which this
+    corpus does not hold. Confirm the operative date against the City Record before relying on any
+    as-of query in 2023.
+preemption:
+  posture: none
+  authority: 6 RCNY Subchapter T
+  note: >-
+    City rule implementing N.Y.C. Admin. Code § 20-870 et seq. No federal statute regulates
+    automated employment decision tools as such; Title VII reaches discriminatory OUTCOMES and says
+    nothing about auditing a tool in advance.
+enforcement:
+  enforcers:
+    - nyc_dcwp
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil penalties under N.Y.C. Admin. Code § 20-872, per violation and per day of continuing
+      violation.
+    range: null
+    note: >-
+      The penalty structure is in the Administrative Code, not this rule; see
+      nyc.ll144.20_872.b.daily_penalty.
+  statute_of_limitations: null
+context_not_required: The subdivision states the rule in full; no ancestor contributes governing text.

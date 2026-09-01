@@ -1,0 +1,145 @@
+id: us.ferpa.99_31.a1ia.school_official_exception
+schema_version: 1
+record_type: obligation
+source:
+  citation: 34 C.F.R. § 99.31(a)(1)(i)(A)
+  instrument_id: us.ferpa
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-34.xml?part=99
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml
+  raw_sha256: 5215a3f303ea41cb5bb4c5afb481da1f4623e64307eadc30ef2ad27a2238ffa0
+  text_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.txt
+  text_sha256: e0eee9622724e33bc4d5677717fd06987529754f8ce13dc1b0ed913c9efb542e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 624ae2aed592d276de937dfcc1540977f83da2fab0e22989bda36da4ef528c5b
+verbatim_span: >-
+  The disclosure is to other school officials, including teachers, within the agency or institution
+  whom the agency or institution has determined to have legitimate educational interests.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '1'
+    - i
+    - A
+  anchor: '99.31'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked, and resolves to exactly one leaf
+    within the section (gate 23)
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      An educational agency or institution may disclose personally identifiable information from an
+      education record of a student without the consent required by § 99.30 if the disclosure meets
+      one or more of the following conditions:
+    citation: null
+    relation_note: null
+    path:
+      path:
+        - a
+      anchor: '99.31'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings; sequence-tracked, and resolves to exactly one leaf
+        within the section (gate 23)
+subject:
+  domain: II.D.1
+  lifecycle:
+    - IV
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ed
+sector:
+  - education
+data_types:
+  - education_record
+status: in_force
+effective_from: '2011-12-02'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_educational_agency_or_institution == true
+    - data.is_education_record == true
+applies_to_role: controller
+obligation_type: restrict_use
+summary: >-
+  An educational agency or institution may disclose personally identifiable information from
+  education records without consent where the disclosure is to other school officials, including
+  teachers, within the agency or institution whom it has determined to have legitimate educational
+  interests.
+requirement_detail: >-
+  THIS IS WHERE EVERY EDTECH VENDOR ACTUALLY SITS, AND THE STATUTE ALONE WILL NOT GET YOU THERE. 20
+  U.S.C. § 1232g(b)(1)(A) permits disclosure to school officials with legitimate educational
+  interests; it is the regulation — § 99.31(a)(1)(i)(B) — that lets a contractor, consultant or
+  volunteer BE one, and only where the outside party performs an institutional service the school
+  would otherwise use employees for, is under the school's direct control as to maintenance and use
+  of the records, and is bound by the redisclosure limits in § 99.33(a). Two conditions do the real
+  work and are routinely missed: the school must have specified its criteria for "school official"
+  and "legitimate educational interest" in the annual notification under § 99.7, so an undisclosed
+  criterion cannot be relied on after the fact; and § 99.31(a)(1)(ii) requires reasonable methods
+  limiting each official to the records in which they have such an interest, which is an
+  access-control obligation districts fail on shared student-information-system accounts. The
+  exception permits disclosure — it does not make the vendor a regulated party. FERPA binds the
+  funded institution; the vendor's exposure is the contract, plus the five-year exclusion from
+  access under § 99.33(e) if it rediscloses improperly. Note also that this is a permission, not an
+  authorisation to use the data for the vendor's own purposes: product improvement or advertising
+  falls outside "legitimate educational interests" and is the term state student-privacy statutes
+  were written to reach.
+deadline: null
+exemptions: []
+related:
+  - us.ferpa.1232g.b1.disclosure_prohibition
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Reading "school official" as a status a vendor either has or lacks. It is a determination the
+    school must make against criteria published in its § 99.7 annual notification, for a disclosure
+    tied to a legitimate educational interest.
+  - >-
+    Assuming FERPA regulates the vendor. FERPA binds the institution; the vendor is reached through
+    contract and through the § 99.33(e) five-year exclusion after improper redisclosure.
+  - >-
+    Treating acceptance of click-through terms as direct control. § 99.31(a)(1)(i)(B) requires the
+    school to have direct control over the outside party's maintenance and use of the records.
+open_questions:
+  - >-
+    effective_from records 2 December 2011, the latest date in the section's own source credit (76
+    FR 75641). That is the Federal Register publication date; the rule's effective date was not in
+    the fetched text.
+confidence: high
+preemption:
+  posture: floor
+  authority: 20 U.S.C. § 1232g
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis; no express ceiling clause was
+    found in the sections extracted. State student-privacy statutes that bind edtech vendors
+    directly — which FERPA does not — coexist with it.
+enforcement:
+  enforcers:
+    - ed
+  private_right_of_action: false
+  penalty:
+    structure: Withdrawal of Department of Education funding. No civil penalty regime.
+    range: null
+    note: >-
+      Gonzaga University v. Doe (2002) foreclosed § 1983 enforcement, so there is no private action.
+      Enforcement is administrative, through the Department's Student Privacy Policy Office, and in
+      practice runs to voluntary compliance rather than defunding.
+  statute_of_limitations: null

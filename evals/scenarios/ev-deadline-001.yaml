@@ -1,0 +1,25 @@
+id: ev.deadline.001
+question: We discovered a HIPAA breach on 1 August. We plan to notify individuals on day 58. Are we compliant?
+trap: Reading 60 days as an allowance. The rule is 'without unreasonable delay AND in no case later than'
+  — day 58 with no reason can still violate it.
+trap_category: null
+rubric:
+- name: the timeliness atom exists
+  record_exists: us.hipaa.breach.164_404.timeliness
+- name: the deadline records the governing language, not just a number
+  record: us.hipaa.breach.164_404.timeliness
+  path: deadline.computation
+  contains: without unreasonable delay
+- name: the trigger is discovery, not the breach
+  record: us.hipaa.breach.164_404.timeliness
+  path: deadline.trigger_event
+  equals: discovery_of_breach
+- name: the common errors call out the ceiling misreading
+  record: us.hipaa.breach.164_404.timeliness
+  path: common_errors
+  contains: promptness standard
+- name: law-enforcement tolling is recorded
+  record: us.hipaa.breach.164_404.timeliness
+  path: deadline.tolling
+  non_empty: true
+all_pass: true

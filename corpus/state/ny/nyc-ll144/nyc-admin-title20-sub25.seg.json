@@ -1,0 +1,212 @@
+{
+ "label": "NYC Admin Code \u00a7\u00a7 20-870 to 20-874 (Local Law 144 of 2021)",
+ "url": "urn:owner-supplied:nyc-law-department-xml-export-0-0-0-234799.xml",
+ "format": "nyc_xml",
+ "raw_file": "corpus/state/ny/nyc-ll144/raw/nyc-admin-title20-sub25.xml",
+ "raw_sha256": "f1e6b5ea19d6082309a041668a527a776f832bea39e5f3504b4e2ad6361b3832",
+ "leaves": [
+  {
+   "path": [],
+   "anchor": "20-870",
+   "section": "20-870",
+   "confidence": "high",
+   "heading": "",
+   "text": "For the purposes of this subchapter, the following terms have the following meanings:",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [
+    "Automated employment decision tool"
+   ],
+   "anchor": "20-870",
+   "section": "20-870",
+   "confidence": "high",
+   "heading": "",
+   "text": "Automated employment decision tool. The term \"automated employment decision tool\" means any computational process, derived from machine learning, statistical modeling, data analytics, or artificial intelligence, that issues simplified output, including a score, classification, or recommendation, that is used to substantially assist or replace discretionary decision making for making employment decisions that impact natural persons. The term \"automated employment decision tool\" does not include a tool that does not automate, support, substantially assist or replace discretionary decision-making processes and that does not materially impact natural persons, including, but not limited to, a junk email filter, firewall, antivirus software, calculator, spreadsheet, database, data set, or other compilation of data.",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [
+    "Bias audit"
+   ],
+   "anchor": "20-870",
+   "section": "20-870",
+   "confidence": "high",
+   "heading": "",
+   "text": "Bias audit. The term \"bias audit\" means an impartial evaluation by an independent auditor. Such bias audit shall include but not be limited to the testing of an automated employment decision tool to assess the tool's disparate impact on persons of any component 1 category required to be reported by employers pursuant to subsection (c) of section 2000e-8 of title 42 of the United States code as specified in part 1602.7 of title 29 of the code of federal regulations.",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [
+    "Employment decision"
+   ],
+   "anchor": "20-870",
+   "section": "20-870",
+   "confidence": "high",
+   "heading": "",
+   "text": "Employment decision. The term \"employment decision\" means to screen candidates for employment or employees for promotion within the city.",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "20-871",
+   "section": "20-871",
+   "confidence": "high",
+   "heading": "",
+   "text": "In the city, it shall be unlawful for an employer or an employment agency to use an automated employment decision tool to screen a candidate or employee for an employment decision unless:",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": "20-871",
+   "section": "20-871",
+   "confidence": "high",
+   "heading": "",
+   "text": "Such tool has been the subject of a bias audit conducted no more than one year prior to the use of such tool; and",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": "20-871",
+   "section": "20-871",
+   "confidence": "high",
+   "heading": "",
+   "text": "A summary of the results of the most recent bias audit of such tool as well as the distribution date of the tool to which such audit applies has been made publicly available on the website of the employer or employment agency prior to the use of such tool.",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "20-871",
+   "section": "20-871",
+   "confidence": "high",
+   "heading": "",
+   "text": "Notices required. In the city, any employer or employment agency that uses an automated employment decision tool to screen an employee or a candidate who has applied for a position for an employment decision shall notify each such employee or candidate who resides in the city of the following:",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": "20-871",
+   "section": "20-871",
+   "confidence": "high",
+   "heading": "",
+   "text": "That an automated employment decision tool will be used in connection with the assessment or evaluation of such employee or candidate that resides in the city. Such notice shall be made no less than ten business days before such use and allow a candidate to request an alternative selection process or accommodation;",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": "20-871",
+   "section": "20-871",
+   "confidence": "high",
+   "heading": "",
+   "text": "The job qualifications and characteristics that such automated employment decision tool will use in the assessment of such candidate or employee. Such notice shall be made no less than 10 business days before such use; and",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": "20-871",
+   "section": "20-871",
+   "confidence": "high",
+   "heading": "",
+   "text": "If not disclosed on the employer or employment agency's website, information about the type of data collected for the automated employment decision tool, the source of such data and the employer or employment agency's data retention policy shall be available upon written request by a candidate or employee. Such information shall be provided within 30 days of the written request. Information pursuant to this section shall not be disclosed where such disclosure would violate local, state, or federal law, or interfere with a law enforcement investigation.",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "20-872",
+   "section": "20-872",
+   "confidence": "high",
+   "heading": "",
+   "text": "Any person that violates any provision of this subchapter or any rule promulgated pursuant to this subchapter is liable for a civil penalty of not more than $500 for a first violation and each additional violation occurring on the same day as the first violation, and not less than $500 nor more than $1,500 for each subsequent violation.",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "20-872",
+   "section": "20-872",
+   "confidence": "high",
+   "heading": "",
+   "text": "Each day on which an automated employment decision tool is used in violation of this section shall give rise to a separate violation of subdivision a of section 20-871 .",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "20-872",
+   "section": "20-872",
+   "confidence": "high",
+   "heading": "",
+   "text": "Failure to provide any notice to a candidate or an employee in violation of paragraphs 1, 2 or 3 of subdivision b of section 20-871 shall constitute a separate violation.",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": "20-872",
+   "section": "20-872",
+   "confidence": "high",
+   "heading": "",
+   "text": "A proceeding to recover any civil penalty authorized by this subchapter is returnable to any tribunal established within the office of administrative trials and hearings or within any agency of the city designated to conduct such proceedings.",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [],
+   "anchor": "20-873",
+   "section": "20-873",
+   "confidence": "high",
+   "heading": "",
+   "text": "The corporation counsel or such other persons designated by the corporation counsel on behalf of the department may initiate in any court of competent jurisdiction any action or proceeding that may be appropriate or necessary for correction of any violation issued pursuant this subchapter, including mandating compliance with the provisions of this chapter or such other relief as may be appropriate.",
+   "context": [],
+   "derivation": "structural"
+  },
+  {
+   "path": [],
+   "anchor": "20-874",
+   "section": "20-874",
+   "confidence": "high",
+   "heading": "",
+   "text": "The provisions of this subchapter shall not be construed to limit any right of any candidate or employee for an employment decision to bring a civil action in any court of competent jurisdiction, or to limit the authority of the commission on human rights to enforce the provisions of title 8 , in accordance with law.",
+   "context": [],
+   "derivation": "structural"
+  }
+ ]
+}

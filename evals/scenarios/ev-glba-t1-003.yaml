@@ -1,0 +1,118 @@
+id: ev.glba.t1.003
+question: >-
+  We are a covered dealership. We send customer contact and payment data to an outside marketing firm
+  that runs our service-reminder campaigns, under a contract that forbids them using it for anything
+  else, and we gave every customer the initial privacy notice. Someone told us that once we are inside
+  the §§ 313.13–313.15 exceptions we can stop sending privacy notices. Is that right?
+trap: >-
+  T1 against a moving target: these exceptions carve out a DISCLOSURE, not a duty set, and they name
+  the paragraphs they suspend. § 313.14 and § 313.15 suspend the initial notice at § 313.4(a)(2) by
+  its paragraph number — and say nothing about § 313.4(a)(1), the customer notice. The naive answer
+  collapses "the initial notice" into one obligation and switches off a duty that is still owed to
+  every customer on the lot. The second trap is that § 313.13 is EARNED, not held: strip the contract
+  and the disclosure is not partially exempt, it is a bare violation of § 313.10(a)(1). The third is
+  § 313.5(e), which does relieve the annual notice for this dealer, but is contingent on continuing
+  conduct and is lost by a single out-of-exception disclosure.
+rubric:
+- name: the service-provider exception is typed activity_level, not entity_level
+  record: us.cfr.16.313.10.a1.disclosure_limit
+  path: exemptions.3.type
+  equals: activity_level
+- name: it records that the carve-out is earned rather than held
+  record: us.cfr.16.313.10.a1.disclosure_limit
+  path: exemptions.3.scope
+  contains: EARNED, not held
+- name: its predicate requires the contract, not merely the disclosure
+  record: us.cfr.16.313.10.a1.disclosure_limit
+  path: exemptions.3.applies_if.all.2
+  equals: practice.contract_limits_reuse == true
+- name: the customer-notice atom's exemption list ENDS at the three Part-wide carve-outs
+  record: us.cfr.16.313.4.a1.initial_notice_customer
+  path: exemptions.2.id
+  equals: cfr.16.313.3.n2i.publicly_available
+- name: ENGINE — under § 313.14 facts the CONSUMER notice carves out at activity level
+  engine: &txn
+    entity: {is_financial_institution: true, predominantly_motor_vehicle_sales_or_leasing: true,
+             is_motor_vehicle_dealer: true, routinely_assigns_contracts: true, nexus: US}
+    data: {is_nonpublic_personal_information: true, subject_is_company: false, is_publicly_available: false}
+    context: {as_of: '2026-08-19',
+              practice: {disclosure_necessary_for_requested_transaction: true}}
+  atom: us.cfr.16.313.4.a2.initial_notice_consumer
+  in: applicable
+  path: partial_carve_out.level
+  equals: activity_level
+- name: ENGINE — on the SAME facts the CUSTOMER notice carves out not at all
+  engine: *txn
+  atom: us.cfr.16.313.4.a1.initial_notice_customer
+  in: applicable
+  path: partial_carve_out
+  equals: null
+- name: and it says so, naming the paragraph those exceptions actually reach
+  record: us.cfr.16.313.4.a1.initial_notice_customer
+  path: common_errors
+  contains: They name § 313.4(a)(2) and only § 313.4(a)(2)
+- name: ENGINE — with notice and contract, the disclosure limit carves out at activity level
+  engine: &compliant
+    entity: {is_financial_institution: true, predominantly_motor_vehicle_sales_or_leasing: true,
+             is_motor_vehicle_dealer: true, routinely_assigns_contracts: true, nexus: US}
+    data: {is_nonpublic_personal_information: true, subject_is_company: false, is_publicly_available: false}
+    context: {as_of: '2026-08-19',
+              practice: {disclosure_to_service_provider: true, initial_notice_provided: true,
+                         contract_limits_reuse: true}}
+  atom: us.cfr.16.313.10.a1.disclosure_limit
+  in: applicable
+  path: partial_carve_out.level
+  equals: activity_level
+- name: ENGINE — the CUSTOMER notice survives it, with no carve-out whatsoever
+  engine: *compliant
+  atom: us.cfr.16.313.4.a1.initial_notice_customer
+  in: applicable
+  path: partial_carve_out
+  equals: null
+- name: ENGINE — drop the contract and the carve-out disappears entirely
+  engine:
+    entity: {is_financial_institution: true, predominantly_motor_vehicle_sales_or_leasing: true,
+             is_motor_vehicle_dealer: true, routinely_assigns_contracts: true, nexus: US}
+    data: {is_nonpublic_personal_information: true, subject_is_company: false, is_publicly_available: false}
+    context: {as_of: '2026-08-19',
+              practice: {disclosure_to_service_provider: true, initial_notice_provided: true,
+                         contract_limits_reuse: false}}
+  atom: us.cfr.16.313.10.a1.disclosure_limit
+  in: applicable
+  path: partial_carve_out
+  equals: null
+- name: ENGINE — the § 313.5(e) annual-notice relief is available on the right facts
+  engine:
+    entity: {is_financial_institution: true, predominantly_motor_vehicle_sales_or_leasing: true,
+             is_motor_vehicle_dealer: true, routinely_assigns_contracts: true, nexus: US}
+    data: {is_nonpublic_personal_information: true, subject_is_company: false, is_publicly_available: false}
+    context: {as_of: '2026-08-19',
+              practice: {discloses_only_under_exceptions: true, policies_unchanged_since_last_notice: true}}
+  atom: us.cfr.16.313.5.a1.annual_notice
+  in: exempt
+- name: ENGINE — but change one policy and the annual notice is owed again
+  engine:
+    entity: {is_financial_institution: true, predominantly_motor_vehicle_sales_or_leasing: true,
+             is_motor_vehicle_dealer: true, routinely_assigns_contracts: true, nexus: US}
+    data: {is_nonpublic_personal_information: true, subject_is_company: false, is_publicly_available: false}
+    context: {as_of: '2026-08-19',
+              practice: {discloses_only_under_exceptions: true, policies_unchanged_since_last_notice: false}}
+  atom: us.cfr.16.313.5.a1.annual_notice
+  in: applicable
+- name: the annual-notice atom records that the § 313.5(e) relief is contingent
+  record: us.cfr.16.313.5.a1.annual_notice
+  path: common_errors
+  contains: lost by a single out-of-exception disclosure
+correct_answer: >-
+  No. §§ 313.13–313.15 suspend named paragraphs, and the paragraph they name for the initial notice
+  is § 313.4(a)(2) — the CONSUMER notice, owed before a disclosure to a nonaffiliated third party.
+  They do not touch § 313.4(a)(1), the customer notice, which is owed on the relationship alone and
+  is still owed to every customer. What you do get is narrower and conditional. The marketing
+  disclosure fits § 313.13 only because you have both the initial notice and a contract limiting
+  reuse; without the contract there is no exception at all and the disclosure violates
+  § 313.10(a)(1). Separately, if the § 313.13 route is the only way you disclose and your policies
+  have not changed since your last notice, § 313.5(e)(1) does relieve the annual notice — but that
+  relief is contingent on continuing conduct, and one out-of-exception disclosure or one policy
+  change restores the duty, with § 313.5(e)(2) then measuring the deadline from the change rather
+  than from your anniversary date.
+all_pass: true

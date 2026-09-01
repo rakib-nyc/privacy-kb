@@ -1,0 +1,1299 @@
+{
+ "label": "NY GBS 899-BB",
+ "url": "https://legislation.nysenate.gov/api/3/laws/GBS/899-BB",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/shield-act/raw/ny-gbs-899-bb.json",
+ "raw_sha256": "9520cf42bbee2479a6222f20788cda30b8ec4f294796aae141446efb9601a4dc",
+ "leaves": [
+  {
+   "path": [
+    "1"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "\u00a7 899-bb. Data security protections.",
+   "text": "Definitions. (a) \"Compliant regulated entity\" shall mean any person or business that is subject to, and in compliance with, any of the following data security requirements:",
+   "context": [],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "1",
+    "i"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "regulations promulgated pursuant to Title V of the federal Gramm-Leach-Bliley Act (15 U.S.C. 6801 to 6809), as amended from time to time;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Definitions. (a) \"Compliant regulated entity\" shall mean any person or business that is subject to, and in compliance with, any of the following data security requirements:",
+     "path": [
+      "1"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "1",
+    "ii"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "regulations implementing the Health Insurance Portability and Accountability Act of 1996 (45 C.F.R. parts 160 and 164), as amended from time to time, and the Health Information Technology for Economic and Clinical Health Act, as amended from time to time;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Definitions. (a) \"Compliant regulated entity\" shall mean any person or business that is subject to, and in compliance with, any of the following data security requirements:",
+     "path": [
+      "1"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "1",
+    "iii"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "part five hundred of title twenty-three of the official compilation of codes, rules and regulations of the state of New York, as amended from time to time; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Definitions. (a) \"Compliant regulated entity\" shall mean any person or business that is subject to, and in compliance with, any of the following data security requirements:",
+     "path": [
+      "1"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "1",
+    "iv"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "any other data security rules and regulations of, and the statutes administered by, any official department, division, commission or agency of the federal or New York state government as such rules, regulations or statutes are interpreted by such department, division, commission or agency or by the federal or New York state courts.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Definitions. (a) \"Compliant regulated entity\" shall mean any person or business that is subject to, and in compliance with, any of the following data security requirements:",
+     "path": [
+      "1"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "1",
+    "iv",
+    "b"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "\"Private information\" shall have the same meaning as defined in section eight hundred ninety-nine-aa of this article.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Definitions. (a) \"Compliant regulated entity\" shall mean any person or business that is subject to, and in compliance with, any of the following data security requirements:",
+     "path": [
+      "1"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "any other data security rules and regulations of, and the statutes administered by, any official department, division, commission or agency of the federal or New York state government as such rules, regulations or statutes are interpreted by such department, division, commission or agency or by the federal or New York state courts.",
+     "path": [
+      "1",
+      "iv"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "1",
+    "iv",
+    "c"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "\"Small business\" shall mean any person or business with (i) fewer than fifty employees; (ii) less than three million dollars in gross annual revenue in each of the last three fiscal years; or (iii) less than five million dollars in year-end total assets, calculated in accordance with generally accepted accounting principles.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Definitions. (a) \"Compliant regulated entity\" shall mean any person or business that is subject to, and in compliance with, any of the following data security requirements:",
+     "path": [
+      "1"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "any other data security rules and regulations of, and the statutes administered by, any official department, division, commission or agency of the federal or New York state government as such rules, regulations or statutes are interpreted by such department, division, commission or agency or by the federal or New York state courts.",
+     "path": [
+      "1",
+      "iv"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "\u00a7 899-bb. Data security protections.",
+   "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+   "context": [],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "i"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "is a compliant regulated entity as defined in subdivision one of this section; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "implements a data security program that includes the following:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "A"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "reasonable administrative safeguards such as the following, in which the person or business:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "A",
+    "1"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "designates one or more employees to coordinate the security program;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "reasonable administrative safeguards such as the following, in which the person or business:",
+     "path": [
+      "2",
+      "b",
+      "ii",
+      "A"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "A",
+    "2"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "identifies reasonably foreseeable internal and external risks;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "reasonable administrative safeguards such as the following, in which the person or business:",
+     "path": [
+      "2",
+      "b",
+      "ii",
+      "A"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "A",
+    "3"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "assesses the sufficiency of safeguards in place to control the identified risks;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "reasonable administrative safeguards such as the following, in which the person or business:",
+     "path": [
+      "2",
+      "b",
+      "ii",
+      "A"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "A",
+    "4"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "trains and manages employees in the security program practices and procedures;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "reasonable administrative safeguards such as the following, in which the person or business:",
+     "path": [
+      "2",
+      "b",
+      "ii",
+      "A"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "A",
+    "5"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "selects service providers capable of maintaining appropriate safeguards, and requires those safeguards by contract; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "reasonable administrative safeguards such as the following, in which the person or business:",
+     "path": [
+      "2",
+      "b",
+      "ii",
+      "A"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "A",
+    "6"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "adjusts the security program in light of business changes or new circumstances; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "reasonable administrative safeguards such as the following, in which the person or business:",
+     "path": [
+      "2",
+      "b",
+      "ii",
+      "A"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "B"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "reasonable technical safeguards such as the following, in which the person or business:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "B",
+    "1"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "assesses risks in network and software design;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "reasonable technical safeguards such as the following, in which the person or business:",
+     "path": [
+      "2",
+      "b",
+      "ii",
+      "B"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "B",
+    "2"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "assesses risks in information processing, transmission and storage;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "reasonable technical safeguards such as the following, in which the person or business:",
+     "path": [
+      "2",
+      "b",
+      "ii",
+      "B"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "B",
+    "3"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "detects, prevents and responds to attacks or system failures; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "reasonable technical safeguards such as the following, in which the person or business:",
+     "path": [
+      "2",
+      "b",
+      "ii",
+      "B"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "B",
+    "4"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "regularly tests and monitors the effectiveness of key controls, systems and procedures; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "reasonable technical safeguards such as the following, in which the person or business:",
+     "path": [
+      "2",
+      "b",
+      "ii",
+      "B"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "C"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "reasonable physical safeguards such as the following, in which the person or business:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "C",
+    "1"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "assesses risks of information storage and disposal;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "reasonable physical safeguards such as the following, in which the person or business:",
+     "path": [
+      "2",
+      "b",
+      "ii",
+      "C"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "C",
+    "2"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "detects, prevents and responds to intrusions;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "reasonable physical safeguards such as the following, in which the person or business:",
+     "path": [
+      "2",
+      "b",
+      "ii",
+      "C"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "C",
+    "3"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "protects against unauthorized access to or use of private information during or after the collection, transportation and destruction or disposal of the information; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "reasonable physical safeguards such as the following, in which the person or business:",
+     "path": [
+      "2",
+      "b",
+      "ii",
+      "C"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "b",
+    "ii",
+    "C",
+    "4"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "disposes of private information within a reasonable amount of time after it is no longer needed for business purposes by erasing electronic media so that the information cannot be read or reconstructed.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "A person or business shall be deemed to be in compliance with paragraph (a) of this subdivision if it either:",
+     "path": [
+      "2",
+      "b"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "implements a data security program that includes the following:",
+     "path": [
+      "2",
+      "b",
+      "ii"
+     ],
+     "anchor": "899-BB"
+    },
+    {
+     "position": "precedes",
+     "text": "reasonable physical safeguards such as the following, in which the person or business:",
+     "path": [
+      "2",
+      "b",
+      "ii",
+      "C"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "c"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "A small business as defined in paragraph (c) of subdivision one of this section complies with subparagraph (ii) of paragraph (b) of subdivision two of this section if the small business's security program contains reasonable administrative, technical and physical safeguards that are appropriate for the size and complexity of the small business, the nature and scope of the small business's activities, and the sensitivity of the personal information the small business collects from or about consumers.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "d"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "Any person or business that fails to comply with this subdivision shall be deemed to have violated section three hundred forty-nine of this chapter, and the attorney general may bring an action in the name and on behalf of the people of the state of New York to enjoin such violations and to obtain civil penalties under section three hundred fifty-d of this chapter.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  },
+  {
+   "path": [
+    "2",
+    "e"
+   ],
+   "anchor": "899-BB",
+   "section": "899-BB",
+   "confidence": "high",
+   "heading": "Data security protections",
+   "text": "Nothing in this section shall create a private right of action.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Reasonable security requirement. (a) Any person or business that owns or licenses computerized data which includes private information of a resident of New York shall develop, implement and maintain reasonable safeguards to protect the security, confidentiality and integrity of the private information including, but not limited to, disposal of data.",
+     "path": [
+      "2"
+     ],
+     "anchor": "899-BB"
+    }
+   ],
+   "section_heading": "\u00a7 899-bb. Data security protections.",
+   "nb_note": null,
+   "active_date": "2020-03-27"
+  }
+ ]
+}

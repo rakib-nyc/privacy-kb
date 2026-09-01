@@ -1,0 +1,120 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2025-03-28'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+interpreted_by: []
+confidence: high
+related: []
+preemption:
+  posture: ceiling
+  authority: N.Y. Gen. Bus. Law § 899-aa(10)
+  note: >-
+    CEILING as to LOCAL law only. Subdivision 10 makes § 899-aa exclusive and preempts local
+    ordinances, forbidding a locality from imposing anything more restrictive. It says nothing about
+    federal law and does not displace it — federal breach regimes run alongside, which is what
+    subdivision 2(b) is about.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      AG injunction, plus damages for actual costs or losses including consequential financial
+      losses. For a knowing or reckless violation, a civil penalty of the greater of $5,000 or up to
+      $20 per instance of failed notification, capped at $250,000.
+    range:
+      min: 5000
+      unit: usd_civil_penalty_floor_knowing
+    note: >-
+      NO PRIVATE RIGHT OF ACTION. § 899-aa(6)(a) gives the action to the attorney general. Private
+      plaintiffs reach breach conduct through GBL § 349 and common-law theories instead, which is
+      why the two NY instruments are read together.
+  statute_of_limitations: >-
+    Three years from the earlier of the AG becoming aware of the violation or the date notice was
+    sent under § 899-aa(8)(a); never more than six years from discovery of the breach by the
+    company, unless the company took steps to hide it.
+id: ny.gbl.899_aa.9.hipaa_ag_notice
+source:
+  citation: N.Y. Gen. Bus. Law § 899-aa(9)
+  instrument_id: ny.gbl.899_aa
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/899-AA
+  fetched: '2026-08-19'
+  raw_file: corpus/state/ny/shield-act/raw/ny-gbs-899-aa.json
+  raw_sha256: cb912ca3a2a1da483cfbc51c28abeb69b8a93b39fb31ae73a355ce1f5003f4c0
+  text_file: corpus/state/ny/shield-act/raw/ny-gbs-899-aa.txt
+  text_sha256: 9995a916100685826810e2bc5e3b1fac4ef3fe7dfc3750f223663bb9b3abfb47
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/shield-act/raw/ny-gbs-899-aa.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, laws/GBS/899-AA, full=true
+    result: structured_source_used
+    note: null
+  segment_sha256: 3a3dbe1b33100141c4010bfa4be2637b408ef7f04b82733ce825033f38e9b1a9
+verbatim_span: >-
+  Any covered entity required to provide notification of a breach, including breach of information
+  that is not "private information" as defined in paragraph (b) of subdivision one of this section,
+  to the secretary of health and human services pursuant to the Health Insurance Portability and
+  Accountability Act of 1996 or the Health Information Technology for Economic and Clinical Health
+  Act, as amended from time to time, shall provide such notification to the state attorney general
+  within five business days of notifying the secretary.
+paragraph_path:
+  path:
+    - '9'
+  anchor: 899-AA
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    subdivision and paragraph designators reconstructed from the flat text field — OpenLegislation
+    exposes no structure below section level. Resolves to exactly one leaf (gate 23).
+context_not_required: Subdivision 9 states the duty, the trigger and the clock in full.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - VI
+federal_relationship: exceeds_floor
+applies_if:
+  all:
+    - entity.is_hipaa_covered_entity == true
+    - practice.notified_hhs_secretary_of_breach == true
+obligation_type: notify
+deadline:
+  trigger_event: notification to the Secretary of Health and Human Services
+  duration:
+    value: 5
+    unit: business_days
+  computation: Five BUSINESS days after notifying the Secretary — not calendar days, and not from discovery.
+summary: >-
+  A HIPAA covered entity that notifies the Secretary of HHS of a breach must also notify the New
+  York attorney general within five business days.
+requirement_detail: >-
+  THE CLEAREST PROOF THAT HIPAA IS A FLOOR. This duty is triggered BY federal compliance: notifying
+  the Secretary starts a five-business-day New York clock that has no federal counterpart. It also
+  expressly reaches breaches of information that is NOT "private information" under subdivision 1(b)
+  — so a HIPAA breach of clinical data with no covered data element still triggers the Albany
+  filing. An entity that concludes "we are HIPAA-regulated, HIPAA preempts, we are done" fails this
+  obligation precisely because it did the federal thing correctly.
+exemptions: []
+common_errors:
+  - Reading it as calendar days. It is five BUSINESS days.
+  - >-
+    Assuming it only covers "private information". The subdivision says the opposite — it expressly
+    includes breaches of information that is not private information as defined in subdivision 1(b).
+  - Treating HIPAA compliance as discharging it. Federal compliance is the TRIGGER, not a defence.
+open_questions: []

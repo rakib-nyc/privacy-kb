@@ -1,0 +1,25 @@
+id: ev.trap.t8.002
+question: We comply with HIPAA's 60-day breach notification. Does that discharge our state obligations?
+trap: 'T8/T3: HIPAA is a FLOOR. Complying with it does not discharge parallel state duties, and state
+  clocks are often shorter.'
+trap_category: T8
+rubric:
+- name: HIPAA breach timeliness is in the corpus
+  record_exists: us.hipaa.breach.164_404.timeliness
+- name: its posture is floor
+  record: us.hipaa.breach.164_404.timeliness
+  path: preemption.posture
+  equals: floor
+- name: the note says state law runs in parallel
+  record: us.hipaa.breach.164_404.timeliness
+  path: preemption.note
+  contains: parallel
+- name: the note warns state clocks may be shorter
+  record: us.hipaa.breach.164_404.timeliness
+  path: preemption.note
+  contains: shorter
+- name: the individual-notice atom repeats the warning as a common error
+  record: us.hipaa.breach.164_404.individual_notice
+  path: common_errors
+  contains: floor
+all_pass: true

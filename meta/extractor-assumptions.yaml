@@ -1,0 +1,180 @@
+# EXTRACTOR ASSUMPTIONS — what every walker must handle, written down once
+# =======================================================================
+# 16 C.F.R. § 314.6, the Safeguards Rule's SIZE-THRESHOLD EXEMPTION, was silently absent
+# from a corpus whose headline invariant is typed exemptions. Part 314 extracted §§ 314.1
+# through 314.4 and stopped; the raw has six sections. §§ 314.5 and 314.6 are each a single
+# undesignated paragraph and walk_ecfr required a designator to emit anything. The part
+# extracted, every gate passed, and two sections were not there.
+#
+# The same assumption — "a paragraph needs a designator" — had already been found and fixed
+# in walk_openleg two days earlier, for N.Y. GBL § 350. Fixing one did not fix the other,
+# because the assumption was never written down anywhere. Two independent implementations
+# invented the same wrong premise from the same unstated one.
+#
+# So: the premises are declared here, and tools/test-extractors.py asserts every walker
+# against every one of them. A new walker is not finished until it passes this file.
+version: 1
+
+assumptions:
+
+- id: undesignated-section-is-still-a-provision
+  premise_violated: A paragraph needs a designator to be a provision.
+  reality: Whole sections are published as one undesignated sentence.
+  witnesses:
+  - '16 C.F.R. § 314.6 — "Section 314.4(b)(1), (d)(2), (h), and (i) do not apply to financial
+    institutions that maintain customer information concerning fewer than five thousand consumers."'
+  - 'N.Y. Gen. Bus. Law § 350 — "False advertising in the conduct of any business, trade or
+    commerce or in the furnishing of any service in this state is hereby declared unlawful."' 
+  required_behaviour: Emit one leaf at the section root with path []. Never drop the section.
+  cost_of_getting_it_wrong: Silent absence. The section does not appear as wrong, it does not
+    appear at all, and no gate can see a provision that was never emitted.
+
+- id: designators-are-not-always-hierarchical
+  premise_violated: Markup that encodes indentation encodes depth.
+  reality: 'Indent classes are typographic. In 15 U.S.C. § 1681g the "(a)" heading carries
+    indent2 while its own body carries indent0.' 
+  witnesses: ['15 U.S.C. § 1681g (USLM large-and-complex, flat <p class="indentN">)']
+  required_behaviour: REFUSE rather than reconstruct depth from typographic markup. A path
+    that is unique and wrong passes gate 23, which is the one defect shape with no gate.
+  cost_of_getting_it_wrong: A confident citation to the wrong provision. Worse than absence,
+    because absence is at least reported by instrument-coverage.
+
+- id: roman-and-letter-designators-collide
+  premise_violated: A designator's depth can be read from the designator.
+  reality: '"(i)" is both letter-nine and roman-one, and the source carries nothing to break
+    the tie.' 
+  witnesses: ['16 C.F.R. § 314.2', '45 C.F.R. § 164.514']
+  required_behaviour: Continuation before descent — an ambiguous designator continues an open
+    level only if it is the literal successor of that level's last designator. Where it stays
+    ambiguous, set confidence low so gate 16 refuses the atom.
+  cost_of_getting_it_wrong: An ancestor silently replaced by its own grandchild.
+
+- id: run-in-headings-hide-designators
+  premise_violated: A paragraph's designator is at the start of its text.
+  reality: 'eCFR italicises a heading and runs it in — "<I>Exception to annual privacy notice
+    requirement</I> —(1) When exception available" — so anchoring the scan at ^ misses the (1).' 
+  witnesses: ['16 C.F.R. § 313.5(e)', '16 C.F.R. § 313.6(c)']
+  required_behaviour: Scan designators and headings together, reading the italic runs off the
+    ELEMENT rather than the flattened string.
+  cost_of_getting_it_wrong: Two provisions on one path. 124 colliding paths repo-wide.
+
+- id: definition-entries-carry-no-designator
+  premise_violated: Every provision in a section is designated.
+  reality: 'A definition entry is keyed by its italicised TERM. 45 C.F.R. § 160.103 had twenty
+    provisions sharing the path ("1"), one per defined term.' 
+  witnesses: ['45 C.F.R. § 160.103', '45 C.F.R. § 164.504']
+  required_behaviour: Open a term-keyed root, which is how the CFR cites itself — "paragraphs
+    (1)(i) or (1)(ii) of the definition of protected health information". Close it at the next
+    lettered subsection.
+  cost_of_getting_it_wrong: Provisions concatenated into their predecessors' text. 133 in
+    45 C.F.R. part 164 alone.
+
+- id: bare-numbered-subdivisions
+  premise_violated: Designators are parenthesised.
+  reality: 'New York numbers its SUBDIVISIONS bare — "2. Any person or business which owns..." —
+    and only its paragraphs parenthetically.' 
+  witnesses: ['N.Y. Gen. Bus. Law § 899-aa']
+  required_behaviour: Recognise bare "N." at the outermost level, and give subdivisions their
+    own kind so a parenthesised (2) cannot pop the stack and replace subdivision 2.
+  cost_of_getting_it_wrong: The list of private-information data elements overwrote the
+    notification duty itself.
+
+- id: hard-wrapped-text-fakes-designators
+  premise_violated: 'A line beginning with "(b)" begins paragraph (b).' 
+  reality: 'The source is hard-wrapped, so a mid-sentence cross-reference lands at column 0 —
+    "...pursuant to paragraph / (b) of subdivision eight of this section".' 
+  witnesses: ['N.Y. Gen. Bus. Law § 899-aa(2)(b)']
+  required_behaviour: A designator cannot follow itself. If the only designator repeats the one
+    already open at its level, treat the chunk as a continuation.
+  cost_of_getting_it_wrong: A second leaf on an existing path, carrying half a sentence.
+
+- id: real-provisions-can-be-very-short
+  premise_violated: A short render means a collapsed render.
+  reality: N.Y. GBL § 350 is 152 characters and complete.
+  witnesses: ['N.Y. Gen. Bus. Law § 350', '16 C.F.R. § 314.6']
+  required_behaviour: Vacuity checks judge by PROPORTION to the raw source, never by an
+    absolute floor.
+  cost_of_getting_it_wrong: A minimum-length bias — refusing exactly the short, punchy
+    provisions that tend to matter most.
+
+- id: zero-leaves-is-never-a-pass
+  premise_violated: An empty result means an empty section.
+  reality: 15 U.S.C. § 1681g produced a valid, hashed, dual-parse-agreeing segmentation
+    containing nothing.
+  witnesses: ['15 U.S.C. § 1681g']
+  required_behaviour: Exit non-zero. Never write an empty segmentation.
+  cost_of_getting_it_wrong: An empty segmentation is indistinguishable from a section with no
+    provisions.
+
+- id: undesignated-stem-precedes-designated-paragraphs
+  premise_violated: 'Undesignated text is always a continuation of something already open.'
+  reality: 'A section can OPEN with an undesignated operative sentence and then define terms or
+    enumerate conditions at (a), (b), (c). With the designator stack empty there is nothing to
+    continue, and the stem goes nowhere.'
+  witnesses:
+  - '49 C.F.R. § 40.321 — "Except as otherwise provided in this subpart, as a service agent or
+    employer participating in the DOT drug or alcohol testing process, you are prohibited from
+    releasing individual test results..." followed by (a) and (b) definitions. The prohibition was
+    lost; the definitions extracted fine.'
+  required_behaviour: Emit the stem as a leaf at path [] for that section. Distinct from the
+    whole-section-undesignated case, which fires only when a section has NO designators anywhere.
+  cost_of_getting_it_wrong: '180 leaves silently absent across 16 eCFR parts, disproportionately
+    the operative sentence of each section — a section keeps its definitions and loses its duty.'
+
+- id: bare-roman-designators
+  premise_violated: A bare designator followed by a period is always a single letter, and always
+    sits near the left margin.
+  reality: 'The NYC rules enumerate with bare ROMAN numerals — "i.", "ii.", "iii." — which the
+    bare-letter normaliser cannot see: it matches ONE character and anchors to columns 0-3. The
+    romans are also indented differently on either side of a page break, because the PDF resets
+    its left margin per page, so indentation is not usable as evidence either.'
+  witnesses:
+  - '6 RCNY § 5-301(b)(3) — "i. Sex categories ... ii. Race/Ethnicity categories ... iii.
+    intersectional categories of sex, ethnicity, and race". All three were absorbed into
+    paragraph (3), so the requirement to compute INTERSECTIONAL impact ratios had no citable
+    path of its own.'
+  required_behaviour: Rewrite a run of two or more bare romans in strict succession to the
+    parenthesised form, at any indentation, and let the existing ORDERS/SEQ logic decide whether
+    (i) continues a letter run or opens a roman one. A LONE "i." is left alone.
+  cost_of_getting_it_wrong: Silent flattening rather than collision. Gate 23 cannot see it —
+    nothing cites the leaf, because the leaf does not exist.
+
+- id: list-items-are-not-always-semicolon-delimited
+  premise_violated: A paragraph that has ENDED can be recognised from its final punctuation.
+  reality: 'That test was tuned on New York consolidated law, which delimits enumerations with
+    semicolons. Other drafting houses use COMMAS, and a comma is indistinguishable from a
+    hard-wrapped clause by punctuation alone.'
+  witnesses:
+  - '6 RCNY § 5-301(b)(3)(i) ends "...vs female candidates," so (ii) was absorbed into (i) —
+    while (iii) survived only because (ii) happened to end "...candidates), and" and tripped the
+    or/and joint rule. A list of three segmented as (i) and (iii).'
+  - 'N.Y. Penal Law § 250.00 — subdivision 2, "Mechanical overhearing of a conversation", was
+    absorbed into subdivision 1, "Wiretapping". Two distinct definitions, and the one carrying
+    NY''s one-party-consent posture for recording conversations was the one lost.'
+  required_behaviour: Open on SEQUENCE as well as on punctuation. A designator that is the
+    immediate successor of the one that opened the previous chunk is a sibling in an open
+    enumeration whatever the preceding line trails off with. A designator that is not a successor
+    of anything open stays absorbed, which keeps the wrapped-cross-reference rule intact.
+  cost_of_getting_it_wrong: Two provisions welded into one leaf, verbatim and substantively
+    wrong, with no collision for any gate to catch.
+
+- id: first-parenthetical-is-not-always-the-first-paragraph
+  premise_violated: The text between a section number and its first parenthetical is a heading,
+    and may be discarded.
+  reality: 'The heading stripper''s lookahead runs to the first parenthetical ANYWHERE in the
+    section. When a section''s first parenthetical is a mid-sentence cross-reference rather than
+    a paragraph designator, everything before it is consumed and deleted, and the cross-reference
+    is then promoted to be the section''s opening paragraph.'
+  witnesses:
+  - '6 RCNY § 5-300 — the first parenthetical is "(c)" inside "...required to be reported by
+    employers pursuant to subsection (c) of section 2000e-8 of title 42 of the United States
+    Code". 1,360 characters were consumed, including THREE COMPLETE DEFINITIONS, and a citation
+    to the U.S. Code became the first paragraph. Mid-sentence references to the U.S. Code are
+    ordinary in state regulations.'
+  required_behaviour: 'Refuse. Test DIRECTLY rather than by volume: strip the section number and
+    the heading up to its own terminating period, and refuse if a sentence terminator followed by
+    further text remains. A legitimate CHAPEAU ("For purposes of this article, the following terms
+    shall have the following meanings:") is one unterminated clause and must still pass — a length
+    threshold refuses it, which is why length is the wrong test.'
+  cost_of_getting_it_wrong: Enacted text deleted before any gate sees it. Gate 3 checks the spans
+    that exist; nothing checks for spans that were destroyed during segmentation.

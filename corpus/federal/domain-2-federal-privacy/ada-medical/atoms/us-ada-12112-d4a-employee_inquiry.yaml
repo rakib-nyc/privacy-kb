@@ -1,0 +1,102 @@
+id: us.ada.12112.d4a.employee_inquiry
+schema_version: 1
+record_type: obligation
+source:
+  citation: 42 U.S.C. § 12112(d)(4)(A)
+  instrument_id: us.ada
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ada-medical/raw/42-u-s-c-12112.xml
+  raw_sha256: 29a98620bb2f5e4e87fc2d6cdbbd4929e4a0a702c0a84c39392da991183b8f73
+  text_file: corpus/federal/domain-2-federal-privacy/ada-medical/raw/42-u-s-c-12112.txt
+  text_sha256: 31c839f229bd0f6a50ef8d405e4a2831be5e8d247f3ab0d7c2bddc9e142a3ca8
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ada-medical/raw/42-u-s-c-12112.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 73c27dfeb851afa373535e84250f6ccd42c201bf3fd14c6fad095e56fda9c48c
+verbatim_span: >-
+  A covered entity shall not require a medical examination and shall not make inquiries of an
+  employee as to whether such employee is an individual with a disability or as to the nature or
+  severity of the disability, unless such examination or inquiry is shown to be job-related and
+  consistent with business necessity.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - d
+    - '4'
+    - A
+  anchor: /us/usc/t42/s12112/d/4/A
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the prohibition and its exception clause in full.
+subject:
+  domain: IV.A.2
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - eeoc
+sector:
+  - employment
+data_types:
+  - health
+status: in_force
+effective_from: '1992-07-26'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_employer == true
+    - event.type == "employee_medical_inquiry"
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  A covered entity shall not require a medical examination or make inquiries as to whether an
+  employee has a disability, or its nature or severity, unless job-related and consistent with
+  business necessity.
+requirement_detail: >-
+  THE ADA REGULATES MEDICAL INFORMATION AS AN EMPLOYMENT PRACTICE, and it fills exactly the gap the
+  HIPAA employment-records exclusion opens. A hospital's HR file on its own nurse is not PHI under
+  45 C.F.R. § 160.103, and it IS governed here: § 12112(d)(3)(B) requires it be kept on separate
+  forms in separate files and treated as a confidential medical record. Reading "not PHI" as "not
+  regulated" misses this, and the two provisions should be read as a pair.
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - Concluding that non-PHI employee health data is unregulated. § 12112(d) governs it.
+  - >-
+    Applying the pre-offer standard to employees. The stages differ: (d)(2) pre-offer, (d)(3)
+    post-offer, (d)(4) employees.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 42 U.S.C. § 12112(d)(4)(A)
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the section extracted.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

@@ -1,0 +1,47 @@
+{
+  "success" : true,
+  "message" : "Law document for location 50 in CVR law.",
+  "responseType" : "law-doc-info-detail",
+  "result" : {
+    "lawId" : "CVR",
+    "lawName" : "Civil Rights",
+    "locationId" : "50",
+    "title" : "Right of privacy",
+    "docType" : "SECTION",
+    "publishedDates" : [ "2014-09-22", "2024-05-03" ],
+    "docLevelId" : "50",
+    "activeDate" : "2024-05-03",
+    "text" : "  § 50. Right of privacy. A person, firm or corporation that uses for\\nadvertising purposes, or for the purposes of trade, the name, portrait,\\npicture, likeness, or voice of any living person without having first\\nobtained the written consent of such person, or if a minor of such\\nminor's parent or guardian, is guilty of a misdemeanor.\\n",
+    "parentLocationIds" : [ "-CH6", "A5" ],
+    "parents" : [ {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "-CH6",
+      "title" : "Civil Rights",
+      "docType" : "CHAPTER",
+      "publishedDates" : [ "2014-09-22", "2017-08-25", "2019-07-26", "2019-09-20", "2020-06-19", "2020-12-04", "2021-07-02", "2022-04-22", "2023-01-06", "2026-05-29" ],
+      "docLevelId" : "6",
+      "activeDate" : "2026-05-29"
+    }, {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "A5",
+      "title" : "Right of Privacy",
+      "docType" : "ARTICLE",
+      "publishedDates" : [ "2014-09-22", "2017-08-25", "2019-07-26", "2020-06-19", "2020-12-04", "2021-11-12", "2023-01-06", "2023-11-17" ],
+      "docLevelId" : "5",
+      "activeDate" : "2023-11-17"
+    } ],
+    "prevSibling" : null,
+    "nextSibling" : {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "50-B",
+      "title" : "Right of privacy; victims of sex offenses or offenses involving the transmission of the human immunodeficiency virus",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2014-09-22", "2022-01-07", "2022-03-25" ],
+      "docLevelId" : "50-B",
+      "activeDate" : "2022-03-25"
+    }
+  }
+}

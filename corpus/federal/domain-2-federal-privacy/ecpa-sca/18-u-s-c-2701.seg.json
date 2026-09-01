@@ -1,0 +1,237 @@
+{
+ "label": "18 U.S.C. \u00a7 2701",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": true,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2701.xml",
+ "raw_sha256": "2116456719a3a3adf1cb2fe7473c1f639f51a8ec1eb25bbf3dd65954afd2b0fa",
+ "leaves": [
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": "/us/usc/t18/s2701/a/1",
+   "heading": "",
+   "text": "intentionally accesses without authorization a facility through which an electronic communication service is provided; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsection (c) of this section whoever\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2701/a"
+    },
+    {
+     "position": "follows",
+     "text": "and thereby obtains, alters, or prevents authorized access to a wire or electronic communication while it is in electronic storage in such system shall be punished as provided in subsection (b) of this section.",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2701/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": "/us/usc/t18/s2701/a/2",
+   "heading": "",
+   "text": "intentionally exceeds an authorization to access that facility;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in subsection (c) of this section whoever\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2701/a"
+    },
+    {
+     "position": "follows",
+     "text": "and thereby obtains, alters, or prevents authorized access to a wire or electronic communication while it is in electronic storage in such system shall be punished as provided in subsection (b) of this section.",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s2701/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s2701/b/1/A",
+   "heading": "",
+   "text": "a fine under this title or imprisonment for not more than 5 years, or both, in the case of a first offense under this subparagraph; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The punishment for an offense under subsection (a) of this section is\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2701/b"
+    },
+    {
+     "position": "precedes",
+     "text": "if the offense is committed for purposes of commercial advantage, malicious destruction or damage, or private commercial gain, or in furtherance of any criminal or tortious act in violation of the Constitution or laws of the United States or any State\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2701/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s2701/b/1/B",
+   "heading": "",
+   "text": "a fine under this title or imprisonment for not more than 10 years, or both, for any subsequent offense under this subparagraph; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The punishment for an offense under subsection (a) of this section is\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2701/b"
+    },
+    {
+     "position": "precedes",
+     "text": "if the offense is committed for purposes of commercial advantage, malicious destruction or damage, or private commercial gain, or in furtherance of any criminal or tortious act in violation of the Constitution or laws of the United States or any State\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s2701/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s2701/b/2/A",
+   "heading": "",
+   "text": "a fine under this title or imprisonment for not more than 1 year or both, in the case of a first offense under this paragraph; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The punishment for an offense under subsection (a) of this section is\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2701/b"
+    },
+    {
+     "position": "precedes",
+     "text": "in any other case\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2701/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s2701/b/2/B",
+   "heading": "",
+   "text": "a fine under this title or imprisonment for not more than 5 years, or both, in the case of an offense under this subparagraph that occurs after a conviction of another offense under this section.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The punishment for an offense under subsection (a) of this section is\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t18/s2701/b"
+    },
+    {
+     "position": "precedes",
+     "text": "in any other case\u2014",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s2701/b/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": "/us/usc/t18/s2701/c/1",
+   "heading": "",
+   "text": "by the person or entity providing a wire or electronic communications service;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Subsection (a) of this section does not apply with respect to conduct authorized\u2014",
+     "path": [
+      "c"
+     ],
+     "anchor": "/us/usc/t18/s2701/c"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": "/us/usc/t18/s2701/c/2",
+   "heading": "",
+   "text": "by a user of that service with respect to a communication of or intended for that user; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Subsection (a) of this section does not apply with respect to conduct authorized\u2014",
+     "path": [
+      "c"
+     ],
+     "anchor": "/us/usc/t18/s2701/c"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": "/us/usc/t18/s2701/c/3",
+   "heading": "",
+   "text": "in section 2703, 2704 or 2518 of this title.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Subsection (a) of this section does not apply with respect to conduct authorized\u2014",
+     "path": [
+      "c"
+     ],
+     "anchor": "/us/usc/t18/s2701/c"
+    }
+   ]
+  }
+ ]
+}

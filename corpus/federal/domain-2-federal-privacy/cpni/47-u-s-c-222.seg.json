@@ -1,0 +1,487 @@
+{
+ "label": "47 U.S.C. \u00a7 222",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/cpni/raw/47-u-s-c-222.xml",
+ "raw_sha256": "9d301f80fe41a4a75775e6cd1fa72fc7402917d64245168190697be032dbddbb",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "/us/usc/t47/s222/a",
+   "heading": "In general",
+   "text": "Every telecommunications carrier has a duty to protect the confidentiality of proprietary information of, and relating to, other telecommunication carriers, equipment manufacturers, and customers, including telecommunication carriers reselling telecommunications services provided by a telecommunications carrier.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "/us/usc/t47/s222/b",
+   "heading": "Confidentiality of carrier information",
+   "text": "A telecommunications carrier that receives or obtains proprietary information from another carrier for purposes of providing any telecommunications service shall use such information only for such purpose, and shall not use such information for its own marketing efforts.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": "/us/usc/t47/s222/c/1",
+   "heading": "Privacy requirements for telecommunications carriers",
+   "text": "Except as required by law or with the approval of the customer, a telecommunications carrier that receives or obtains customer proprietary network information by virtue of its provision of a telecommunications service shall only use, disclose, or permit access to individually identifiable customer proprietary network information in its provision of (A) the telecommunications service from which such information is derived, or (B) services necessary to, or used in, the provision of such telecommunications service, including the publishing of directories.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": "/us/usc/t47/s222/c/2",
+   "heading": "Disclosure on request by customers",
+   "text": "A telecommunications carrier shall disclose customer proprietary network information, upon affirmative written request by the customer, to any person designated by the customer.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": "/us/usc/t47/s222/c/3",
+   "heading": "Aggregate customer information",
+   "text": "A telecommunications carrier that receives or obtains customer proprietary network information by virtue of its provision of a telecommunications service may use, disclose, or permit access to aggregate customer information other than for the purposes described in paragraph (1). A local exchange carrier may use, disclose, or permit access to aggregate customer information other than for purposes described in paragraph (1) only if it provides such aggregate information to other carriers or persons on reasonable and nondiscriminatory terms and conditions upon reasonable request therefor.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": "/us/usc/t47/s222/d/1",
+   "heading": "",
+   "text": "to initiate, render, bill, and collect for telecommunications services;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Nothing in this section prohibits a telecommunications carrier from using, disclosing, or permitting access to customer proprietary network information obtained from its customers, either directly or indirectly through its agents\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t47/s222/d"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2"
+   ],
+   "anchor": "/us/usc/t47/s222/d/2",
+   "heading": "",
+   "text": "to protect the rights or property of the carrier, or to protect users of those services and other carriers from fraudulent, abusive, or unlawful use of, or subscription to, such services;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Nothing in this section prohibits a telecommunications carrier from using, disclosing, or permitting access to customer proprietary network information obtained from its customers, either directly or indirectly through its agents\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t47/s222/d"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3"
+   ],
+   "anchor": "/us/usc/t47/s222/d/3",
+   "heading": "",
+   "text": "to provide any inbound telemarketing, referral, or administrative services to the customer for the duration of the call, if such call was initiated by the customer and the customer approves of the use of such information to provide such service; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Nothing in this section prohibits a telecommunications carrier from using, disclosing, or permitting access to customer proprietary network information obtained from its customers, either directly or indirectly through its agents\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t47/s222/d"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "4",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s222/d/4/A",
+   "heading": "",
+   "text": "to a public safety answering point, emergency medical service provider or emergency dispatch provider, public safety, fire service, or law enforcement official, or hospital emergency or trauma care facility, in order to respond to the user\u2019s call for emergency services;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Nothing in this section prohibits a telecommunications carrier from using, disclosing, or permitting access to customer proprietary network information obtained from its customers, either directly or indirectly through its agents\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t47/s222/d"
+    },
+    {
+     "position": "precedes",
+     "text": "to provide call location information concerning the user of a commercial mobile service (as such term is defined in section 332(d) of this title ) or the user of an IP-enabled voice service (as such term is defined in section 615b of this title )\u2014",
+     "path": [
+      "d",
+      "4"
+     ],
+     "anchor": "/us/usc/t47/s222/d/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "4",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s222/d/4/B",
+   "heading": "",
+   "text": "to inform the user\u2019s legal guardian or members of the user\u2019s immediate family of the user\u2019s location in an emergency situation that involves the risk of death or serious physical harm; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Nothing in this section prohibits a telecommunications carrier from using, disclosing, or permitting access to customer proprietary network information obtained from its customers, either directly or indirectly through its agents\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t47/s222/d"
+    },
+    {
+     "position": "precedes",
+     "text": "to provide call location information concerning the user of a commercial mobile service (as such term is defined in section 332(d) of this title ) or the user of an IP-enabled voice service (as such term is defined in section 615b of this title )\u2014",
+     "path": [
+      "d",
+      "4"
+     ],
+     "anchor": "/us/usc/t47/s222/d/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "4",
+    "C"
+   ],
+   "anchor": "/us/usc/t47/s222/d/4/C",
+   "heading": "",
+   "text": "to providers of information or database management services solely for purposes of assisting in the delivery of emergency services in response to an emergency.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Nothing in this section prohibits a telecommunications carrier from using, disclosing, or permitting access to customer proprietary network information obtained from its customers, either directly or indirectly through its agents\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t47/s222/d"
+    },
+    {
+     "position": "precedes",
+     "text": "to provide call location information concerning the user of a commercial mobile service (as such term is defined in section 332(d) of this title ) or the user of an IP-enabled voice service (as such term is defined in section 615b of this title )\u2014",
+     "path": [
+      "d",
+      "4"
+     ],
+     "anchor": "/us/usc/t47/s222/d/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": "/us/usc/t47/s222/e",
+   "heading": "Subscriber list information",
+   "text": "Notwithstanding subsections (b), (c), and (d), a telecommunications carrier that provides telephone exchange service shall provide subscriber list information gathered in its capacity as a provider of such service on a timely and unbundled basis, under nondiscriminatory and reasonable rates, terms, and conditions, to any person upon request for the purpose of publishing directories in any format.",
+   "context": []
+  },
+  {
+   "path": [
+    "f",
+    "1"
+   ],
+   "anchor": "/us/usc/t47/s222/f/1",
+   "heading": "",
+   "text": "call location information concerning the user of a commercial mobile service (as such term is defined in section 332(d) of this title ) or the user of an IP-enabled voice service (as such term is defined in section 615b of this title ), other than in accordance with subsection (d)(4); or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of subsection (c)(1), without the express prior authorization of the customer, a customer shall not be considered to have approved the use or disclosure of or access to\u2014",
+     "path": [
+      "f"
+     ],
+     "anchor": "/us/usc/t47/s222/f"
+    }
+   ]
+  },
+  {
+   "path": [
+    "f",
+    "2"
+   ],
+   "anchor": "/us/usc/t47/s222/f/2",
+   "heading": "",
+   "text": "automatic crash notification information to any person other than for use in the operation of an automatic crash notification system.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For purposes of subsection (c)(1), without the express prior authorization of the customer, a customer shall not be considered to have approved the use or disclosure of or access to\u2014",
+     "path": [
+      "f"
+     ],
+     "anchor": "/us/usc/t47/s222/f"
+    }
+   ]
+  },
+  {
+   "path": [
+    "g"
+   ],
+   "anchor": "/us/usc/t47/s222/g",
+   "heading": "Subscriber listed and unlisted information for emergency services",
+   "text": "Notwithstanding subsections (b), (c), and (d), a telecommunications carrier that provides telephone exchange service or a provider of IP-enabled voice service (as such term is defined in section 615b of this title ) shall provide information described in subsection (i)(3)(A) (including information pertaining to subscribers whose information is unlisted or unpublished) that is in its possession or control (including information pertaining to subscribers of other carriers) on a timely and unbundled basis, under nondiscriminatory and reasonable rates, terms, and conditions to providers of emergency services, and providers of emergency support services, solely for purposes of delivering or assisting in the delivery of emergency services.",
+   "context": []
+  },
+  {
+   "path": [
+    "h",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s222/h/1/A",
+   "heading": "",
+   "text": "information that relates to the quantity, technical configuration, type, destination, location, and amount of use of a telecommunications service subscribed to by any customer of a telecommunications carrier, and that is made available to the carrier by the customer solely by virtue of the carrier-customer relationship; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section:",
+     "path": [
+      "h"
+     ],
+     "anchor": "/us/usc/t47/s222/h"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201ccustomer proprietary network information\u201d means\u2014",
+     "path": [
+      "h",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s222/h/1"
+    },
+    {
+     "position": "follows",
+     "text": "except that such term does not include subscriber list information.",
+     "path": [
+      "h",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s222/h/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s222/h/1/B",
+   "heading": "",
+   "text": "information contained in the bills pertaining to telephone exchange service or telephone toll service received by a customer of a carrier;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section:",
+     "path": [
+      "h"
+     ],
+     "anchor": "/us/usc/t47/s222/h"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201ccustomer proprietary network information\u201d means\u2014",
+     "path": [
+      "h",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s222/h/1"
+    },
+    {
+     "position": "follows",
+     "text": "except that such term does not include subscriber list information.",
+     "path": [
+      "h",
+      "1"
+     ],
+     "anchor": "/us/usc/t47/s222/h/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "2"
+   ],
+   "anchor": "/us/usc/t47/s222/h/2",
+   "heading": "Aggregate information",
+   "text": "The term \u201caggregate customer information\u201d means collective data that relates to a group or category of services or customers, from which individual customer identities and characteristics have been removed.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section:",
+     "path": [
+      "h"
+     ],
+     "anchor": "/us/usc/t47/s222/h"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t47/s222/h/3/A",
+   "heading": "",
+   "text": "identifying the listed names of subscribers of a carrier and such subscribers\u2019 telephone numbers, addresses, or primary advertising classifications (as such classifications are assigned at the time of the establishment of such service), or any combination of such listed names, numbers, addresses, or classifications; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section:",
+     "path": [
+      "h"
+     ],
+     "anchor": "/us/usc/t47/s222/h"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201csubscriber list information\u201d means any information\u2014",
+     "path": [
+      "h",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s222/h/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "3",
+    "B"
+   ],
+   "anchor": "/us/usc/t47/s222/h/3/B",
+   "heading": "",
+   "text": "that the carrier or an affiliate has published, caused to be published, or accepted for publication in any directory format.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section:",
+     "path": [
+      "h"
+     ],
+     "anchor": "/us/usc/t47/s222/h"
+    },
+    {
+     "position": "precedes",
+     "text": "The term \u201csubscriber list information\u201d means any information\u2014",
+     "path": [
+      "h",
+      "3"
+     ],
+     "anchor": "/us/usc/t47/s222/h/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "4"
+   ],
+   "anchor": "/us/usc/t47/s222/h/4",
+   "heading": "Public safety answering point",
+   "text": "The term \u201cpublic safety answering point\u201d means a facility that has been designated to receive emergency calls and route them to emergency service personnel.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section:",
+     "path": [
+      "h"
+     ],
+     "anchor": "/us/usc/t47/s222/h"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "5"
+   ],
+   "anchor": "/us/usc/t47/s222/h/5",
+   "heading": "Emergency services",
+   "text": "The term \u201cemergency services\u201d means 9\u20131\u20131 emergency services and emergency notification services.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section:",
+     "path": [
+      "h"
+     ],
+     "anchor": "/us/usc/t47/s222/h"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "6"
+   ],
+   "anchor": "/us/usc/t47/s222/h/6",
+   "heading": "Emergency notification services",
+   "text": "The term \u201cemergency notification services\u201d means services that notify the public of an emergency.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section:",
+     "path": [
+      "h"
+     ],
+     "anchor": "/us/usc/t47/s222/h"
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "7"
+   ],
+   "anchor": "/us/usc/t47/s222/h/7",
+   "heading": "Emergency support services",
+   "text": "The term \u201cemergency support services\u201d means information or data base management services used in support of emergency services.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "As used in this section:",
+     "path": [
+      "h"
+     ],
+     "anchor": "/us/usc/t47/s222/h"
+    }
+   ]
+  }
+ ]
+}

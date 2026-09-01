@@ -1,0 +1,98 @@
+id: us.authority.dol
+schema_version: 1
+record_type: authority
+source:
+  citation: 29 U.S.C. § 2005(a)(1)
+  instrument_id: us.usc.t29
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc29@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/authorities/raw/29-u-s-c-2005.xml
+  raw_sha256: fba49933ad3073f6ef2e42b427fb8772f17d547fcab9e5dec9a088ee3dbae35f
+  text_file: corpus/federal/authorities/raw/29-u-s-c-2005.txt
+  text_sha256: 47f8287609cce82018ac6cf48da8a0a59450e1daed4eb1238c665b0b9fea3d7f
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/authorities/raw/29-u-s-c-2005.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: Title 29. Positive-law status from the title's own <property role="is-positive-law"> element.
+  segment_sha256: 76ce2ffbe4f0e1a5fae8ac1d49bcb2d7975a9af778883bd6daa174e564c29a77
+verbatim_span: >-
+  Subject to paragraph (2), any employer who violates any provision of this chapter may be assessed
+  a civil penalty of not more than $10,000.
+verification_status: verbatim_confirmed
+subject:
+  domain: IV.A.2
+  lifecycle:
+    - I
+paragraph_path:
+  path:
+    - a
+    - '1'
+  anchor: /us/usc/t29/s2005/a/1
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element
+jurisdiction: US-FED
+jurisdiction_level: federal
+status: in_force
+effective_from: null
+effective_to: null
+amendment_history: []
+summary: >-
+  Any employer who violates any provision of the Employee Polygraph Protection Act may be assessed a
+  civil money penalty by the Secretary.
+authority:
+  id: us.authority.dol
+  name: U.S. Department of Labor
+  short_name: DOL
+  kind: federal_agency
+  statutory_source:
+    - 29 U.S.C. § 2005 — Employee Polygraph Protection Act enforcement
+    - 29 U.S.C. § 2002 — EPPA prohibitions
+  jurisdiction: US-FED
+  sector_reach:
+    - employers subject to EPPA
+    - polygraph and lie-detector testing in employment
+    - wage-hour records
+  enforcement_powers:
+    - civil money penalties assessed by the Secretary
+    - actions to restrain violations
+  rulemaking_authority:
+    has: true
+    basis: 29 U.S.C. § 2004
+    procedure: APA § 553 notice-and-comment
+    note: null
+  penalty_authority:
+    structure: civil money penalty per violation, assessed by the Secretary
+    range: null
+    inflation_adjusted: true
+    note: § 2005(a)(1) states $10,000; inflation-adjusted by rule.
+  private_right_of_action:
+    exists: true
+    basis: 29 U.S.C. § 2005(c)
+    note: >-
+      EPPA carries an express private right of action for legal and equitable relief, including
+      reinstatement and back pay — running ALONGSIDE the Secretary's penalty authority, not instead
+      of it.
+    drives_litigation_risk: true
+  own_enforcement_power: true
+  operates_through: null
+derived_obligations: []
+differs_from: []
+related: []
+source_defects: []
+common_errors:
+  - >-
+    Assuming DOL enforcement displaces private suit. § 2005(c) gives employees an independent
+    action; both run.
+  - Quoting the $10,000 figure as current. It is inflation-adjusted by rule.
+  - >-
+    Treating DOL as the general workplace-privacy regulator. Its privacy-specific hook is narrow —
+    EPPA — while monitoring, background checks and AI screening sit with the FTC, EEOC and NLRB.
+open_questions: []
+confidence: high
+context_not_required: 'No ancestor contributes governing text: this element''s operative meaning is complete on its own.'

@@ -1,0 +1,141 @@
+id: us.eppa.2002.1.lie_detector_prohibition
+schema_version: 1
+record_type: obligation
+source:
+  citation: 29 U.S.C. § 2002(1)
+  instrument_id: us.eppa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc29@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/eppa/raw/29-u-s-c-2002.xml
+  raw_sha256: 31aa3acba5e4953cd8fcd929e4bf2ca1e95568897a70d98ea4ebeb0527758a39
+  text_file: corpus/federal/domain-2-federal-privacy/eppa/raw/29-u-s-c-2002.txt
+  text_sha256: 832395daa4f11d80169370b656d51b2dc8bf7c901603fd29e0716633cbaf7108
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/eppa/raw/29-u-s-c-2002.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 0cde92e0c1b121e3f0adce08142b27cd3d2e7b697c3eed11202621e422f7c1aa
+verbatim_span: >-
+  directly or indirectly, to require, request, suggest, or cause any employee or prospective
+  employee to take or submit to any lie detector test;
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - '1'
+  anchor: /us/usc/t29/s2002/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Except as provided in sections 2006 and 2007 of this title, it shall be unlawful for any
+      employer engaged in or affecting commerce or in the production of goods for commerce—
+    citation: 29 U.S.C. § 2002
+    path:
+      path: []
+      anchor: /us/usc/t29/s2002
+      derivation: structural
+      confidence: high
+      evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: IV.B.1
+  lifecycle:
+    - III
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - dol
+sector:
+  - employment
+data_types:
+  - personal_information
+status: in_force
+effective_from: '1988-12-27'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history:
+  - date: '1988-12-27'
+    note: >-
+      The effective-date note carried with the section in the fetched source records: "Section
+      effective 6 months after June 27, 1988, except that rules and regulations shall be issued not
+      later than 90 days after June 27, 1988, see section 11 of Pub. L. 100–347". Six months after
+      27 June 1988 is 27 December 1988, which is the date recorded here.
+    source_url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc29@119-1.zip
+applies_if:
+  all:
+    - entity.is_employer == true
+    - event.type == 'lie_detector_test_proposed'
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  It is unlawful for a covered employer, directly or indirectly, to require, request, suggest or
+  cause any employee or prospective employee to take or submit to any lie detector test.
+requirement_detail: >-
+  EPPA BANS A COLLECTION METHOD OUTRIGHT, which makes it structurally unlike almost everything else
+  in this corpus: the sectoral statutes around it regulate what may be done with data lawfully
+  obtained, while this paragraph forbids the obtaining. The verbs are what practitioners
+  underestimate — "require, request, suggest, or cause" — so a manager who floats a polygraph in an
+  interview as a way for the employee to clear their name has already violated it, and the words
+  directly or indirectly reach a request routed through a staffing agency or a security consultant
+  rather than made in the employer's own name. The exceptions are not in this paragraph: the chapeau
+  carries them by cross-reference to sections 2006 and 2007 of this title, neither of which is held
+  in this corpus, so an ongoing-investigation or security-services claim cannot be resolved from
+  this atom. Note also that the defined term is lie detector and not polygraph; the definition sits
+  at 29 U.S.C. § 2001 and is likewise not extracted, so do not assume the paragraph is limited to a
+  polygraph machine.
+deadline: null
+exemptions: []
+related:
+  - us.eppa.2002.2.results_use_prohibition
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating a suggestion as lawful because nothing was required. The prohibited verbs are "require,
+    request, suggest, or cause".
+  - >-
+    Relying on an exception without reading it. The exceptions live in 29 U.S.C. §§ 2006 and 2007,
+    which this corpus does not hold; nothing in this paragraph establishes one.
+  - >-
+    Assuming EPPA settles the question. Its relationship to stricter state polygraph statutes turns
+    on 29 U.S.C. § 2009, which is not extracted.
+open_questions:
+  - >-
+    29 U.S.C. §§ 2001, 2006 and 2007 — the definitions and the exemptions — are not extracted. Scope
+    and exemption questions cannot be closed from this atom.
+confidence: high
+preemption:
+  posture: floor
+  authority: null
+  note: >-
+    EPPA's savings clause is 29 U.S.C. § 2009, which has not been extracted. Nothing in the section
+    quoted here displaces state law, and the exceptions cross-referenced in the chapeau are federal
+    permissions rather than a bar on stricter state rules — several states prohibit employer
+    polygraph testing more broadly than EPPA does. Recorded as floor on that basis, pending
+    extraction of § 2009.
+enforcement:
+  enforcers:
+    - dol
+    - private_litigants
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Civil money penalties assessed by the Secretary of Labor, plus a private civil action by the
+      employee or prospective employee for legal and equitable relief including employment,
+      reinstatement, promotion and lost wages and benefits.
+    range: null
+    note: >-
+      The enforcement section, 29 U.S.C. § 2005, has NOT been extracted; the penalty ceiling and the
+      terms of the private action cannot be quoted from this atom. Treat the quantum as UNASSESSED
+      rather than absent.
+  statute_of_limitations: >-
+    The three-year period for the private action is in 29 U.S.C. § 2005(c)(2), which is not
+    extracted; do not compute it here.

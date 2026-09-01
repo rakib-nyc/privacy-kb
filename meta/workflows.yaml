@@ -1,0 +1,495 @@
+# lifecycle WORKFLOW CATALOGUE
+# =======================
+# Keyed to the lifecycle taxonomy, v4.2.0, approved 16 Jan. 2025,
+# effective 1 Sept. 2025. Coordinates are the taxonomy's; the wording is NOT reproduced --
+# fetch it from the source taxonomy. See meta/decisions.yaml DEC-008.
+#
+# legal-domain is the legal taxonomy (what the law IS)  -> meta/coverage.yaml
+subject:
+  designation: lifecycle
+  version: 4.2.0
+  effective_date: 2025-09-01
+  transcribed: 2026-08-18
+domains:
+- domain: I
+  title: 'Privacy Program: Developing a Framework'
+  blueprint_q:
+    min: 14
+    max: 18
+  description: null
+  competencies:
+  - coordinate: I.A
+    title: null
+    blueprint_q:
+      min: 4
+      max: 6
+    performance_indicators:
+    - coordinate: I.A.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: I.A.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: I.A.3
+      title: Choose applicable governance model.
+      workflows: []
+      status: not_started
+    - coordinate: I.A.4
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: I.A.5
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: I.B
+    title: null
+    blueprint_q:
+      min: 4
+      max: 6
+    performance_indicators:
+    - coordinate: I.B.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: I.B.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: I.B.3
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: I.C
+    title: null
+    blueprint_q:
+      min: 5
+      max: 7
+    performance_indicators:
+    - coordinate: I.C.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: I.C.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: I.C.3
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: I.C.4
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: I.C.5
+      title: null
+      workflows: []
+      status: not_started
+- domain: II
+  title: null
+  blueprint_q:
+    min: 12
+    max: 16
+  description: null
+  competencies:
+  - coordinate: II.A
+    title: null
+    blueprint_q:
+      min: 6
+      max: 8
+    performance_indicators:
+    - coordinate: II.A.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: II.A.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: II.A.3
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: II.A.4
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: II.A.5
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: II.A.6
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: II.B
+    title: Clarify roles and responsibilities.
+    blueprint_q:
+      min: 1
+      max: 3
+    performance_indicators:
+    - coordinate: II.B.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: II.B.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: II.B.3
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: II.C
+    title: null
+    blueprint_q:
+      min: 2
+      max: 4
+    performance_indicators:
+    - coordinate: II.C.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: II.C.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: II.C.3
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: II.D
+    title: null
+    blueprint_q:
+      min: 1
+      max: 3
+    performance_indicators:
+    - coordinate: II.D.1
+      title: null
+      workflows: []
+      status: not_started
+- domain: III
+  title: null
+  blueprint_q:
+    min: 12
+    max: 16
+  description: null
+  competencies:
+  - coordinate: III.A
+    title: Document data governance systems.
+    blueprint_q:
+      min: 3
+      max: 5
+    performance_indicators:
+    - coordinate: III.A.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: III.A.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: III.A.3
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: III.B
+    title: null
+    blueprint_q:
+      min: 1
+      max: 3
+    performance_indicators:
+    - coordinate: III.B.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: III.B.2
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: III.C
+    title: null
+    blueprint_q:
+      min: 0
+      max: 2
+    performance_indicators:
+    - coordinate: III.C.1
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: III.D
+    title: Evaluate technical controls.
+    blueprint_q:
+      min: 3
+      max: 5
+    performance_indicators:
+    - coordinate: III.D.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: III.D.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: III.D.3
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: III.E
+    title: null
+    blueprint_q:
+      min: 2
+      max: 4
+    performance_indicators:
+    - coordinate: III.E.1
+      title: Complete due diligence procedures.
+      workflows: []
+      status: not_started
+    - coordinate: III.E.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: III.E.3
+      title: Conduct risk and control alignment.
+      workflows: []
+      status: not_started
+- domain: IV
+  title: null
+  blueprint_q:
+    min: 9
+    max: 13
+  description: null
+  competencies:
+  - coordinate: IV.A
+    title: null
+    blueprint_q:
+      min: 4
+      max: 6
+    performance_indicators:
+    - coordinate: IV.A.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: IV.A.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: IV.A.3
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: IV.A.4
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: IV.B
+    title: null
+    blueprint_q:
+      min: 1
+      max: 3
+    performance_indicators:
+    - coordinate: IV.B.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: IV.B.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: IV.B.3
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: IV.C
+    title: null
+    blueprint_q:
+      min: 3
+      max: 5
+    performance_indicators:
+    - coordinate: IV.C.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: IV.C.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: IV.C.3
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: IV.C.4
+      title: null
+      workflows: []
+      status: not_started
+- domain: V
+  title: null
+  blueprint_q:
+    min: 7
+    max: 9
+  description: null
+  competencies:
+  - coordinate: V.A
+    title: null
+    blueprint_q:
+      min: 1
+      max: 3
+    performance_indicators:
+    - coordinate: V.A.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: V.A.2
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: V.B
+    title: Audit the privacy program.
+    blueprint_q:
+      min: 1
+      max: 3
+    performance_indicators:
+    - coordinate: V.B.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: V.B.2
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: V.C
+    title: null
+    blueprint_q:
+      min: 3
+      max: 5
+    performance_indicators:
+    - coordinate: V.C.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: V.C.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: V.C.3
+      title: null
+      workflows: []
+      status: not_started
+- domain: VI
+  title: null
+  blueprint_q:
+    min: 10
+    max: 14
+  description: null
+  competencies:
+  - coordinate: VI.A
+    title: null
+    blueprint_q:
+      min: 5
+      max: 7
+    performance_indicators:
+    - coordinate: VI.A.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: VI.A.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: VI.A.3
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: VI.B
+    title: null
+    blueprint_q:
+      min: 3
+      max: 5
+    performance_indicators:
+    - coordinate: VI.B.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: VI.B.2
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: VI.B.3
+      title: null
+      workflows: []
+      status: not_started
+  - coordinate: VI.C
+    title: null
+    blueprint_q:
+      min: 1
+      max: 3
+    performance_indicators:
+    - coordinate: VI.C.1
+      title: null
+      workflows: []
+      status: not_started
+    - coordinate: VI.C.2
+      title: null
+      workflows: []
+      status: not_started
+planned_workflows:
+- id: wf.pia
+  name: Privacy impact assessment
+  lifecycle_primary: III
+  discharges:
+  - III.A.1
+  - III.A.3
+  - III.B.1
+  - III.D.2
+  - III.D.3
+  - V.C.1
+  - V.C.2
+  inputs:
+  - system_description
+  - data_flows
+  output: PIA with per-obligation findings, cited
+  status: not_started
+- id: wf.notice_gap
+  name: Privacy notice gap analysis
+  lifecycle_primary: IV
+  discharges:
+  - IV.C.1
+  - IV.C.2
+  - VI.A.1
+  inputs:
+  - current_notice
+  - engine_result
+  output: redline + missing-disclosure list, cited
+  status: not_started
+- id: wf.rights_request
+  name: Rights request handling
+  lifecycle_primary: VI
+  discharges:
+  - VI.A.1
+  - VI.A.2
+  - VI.A.3
+  - II.A.5
+  inputs:
+  - request_type
+  - requester
+  - entity_facts
+  output: obligation set, deadline, exemption analysis
+  status: not_started
+- id: wf.breach_timeline
+  name: Multi-regime breach notification timeline
+  lifecycle_primary: VI
+  discharges:
+  - VI.B.1
+  - VI.B.2
+  - VI.B.3
+  - II.A.4
+  - II.B.3
+  inputs:
+  - incident_facts
+  - data_types
+  - jurisdictions
+  output: every applicable regime, deadline, recipient, content requirement
+  status: not_started

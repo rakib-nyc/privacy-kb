@@ -1,0 +1,88 @@
+id: us.rfpa.3402.access_prohibition
+schema_version: 1
+record_type: obligation
+source:
+  citation: 12 U.S.C. § 3402
+  instrument_id: us.rfpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3402.xml
+  raw_sha256: 8aed31d70f0b943ed4c5d17061c3d80e7bdd627f1472617907fb0c992e4ac41d
+  text_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3402.txt
+  text_sha256: ab27de4d5a7bf57e873eaf8394c28ec5704bfba3917e90c6bd8a9f1996f7d816
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3402.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: Except as provided by section 3403(c) or (d), 3413, or 3414 of this title, no Government
+  authority may have access to or obtain copies of, or the information contained in the financial records
+  of any customer from a financial institution unless the financial records are reasonably described and—
+verification_status: verbatim_confirmed
+paragraph_path:
+  path: []
+  anchor: /us/usc/t12/s3402
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the prohibition and its exception clause in full.
+subject:
+  domain: III.A.1
+  lifecycle:
+  - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &id001
+- federal_agencies
+sector:
+- financial
+data_types:
+- financial
+status: in_force
+effective_from: '1979-03-10'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+  - entity.is_government_authority == true
+  - data.is_financial_record == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: No Government authority may access or obtain a customer's financial records from a financial
+  institution except under one of the enumerated procedures.
+requirement_detail: 'THE STATUTORY ANSWER TO UNITED STATES v. MILLER, which held there is no Fourth Amendment
+  expectation of privacy in bank records held by a third party. Congress supplied by statute what the
+  Constitution did not, and the shape of that answer matters: RFPA binds the GOVERNMENT, not the bank,
+  and it is procedural rather than prohibitory — the records are obtainable, but only through a listed
+  route with customer notice. It is the clearest case in the corpus of a privacy interest that exists
+  only because a statute created it.'
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+- Expecting it to restrain the bank. RFPA binds Government authorities.
+- Treating it as a prohibition. It is a procedure requirement with notice, not a bar on access.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 12 U.S.C. § 3402
+  note: Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the section extracted.
+enforcement:
+  enforcers: *id001
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

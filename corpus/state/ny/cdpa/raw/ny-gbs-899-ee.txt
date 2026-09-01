@@ -1,0 +1,60 @@
+§ 899-ee. Definitions. For purposes of this article, the following
+terms shall have the following meanings:
+  1. "Covered user" shall mean a user of a website, online service,
+online application, mobile application, or connected device, or portion
+thereof, in the state of New York who is:
+  (a) actually known by the operator of such website, online service,
+online application, mobile application, or connected device to be a
+minor; or
+  (b) using a website, online service, online application, mobile
+application, or connected device primarily directed to minors.
+  2. "Minor" shall mean a natural person under the age of eighteen.
+  3. "Operator" shall mean any person who operates or provides a website
+on the internet, online service, online application, mobile application,
+or connected device, and who, alone or jointly with others, controls the
+purposes and means of processing personal data. A person that acts as
+both an operator and processor shall comply with the applicable
+obligations of an operator and the obligations of a processor, depending
+on its role with respect to each specific processing of personal data.
+  4. "Personal data" shall mean any data that identifies or could
+reasonably be linked, directly or indirectly, with a specific natural
+person or device.
+  5. "Process" or "processing" shall mean an operation or set of
+operations performed on personal data, including but not limited to the
+collection, use, access, sharing, sale, monetization, analysis,
+retention, creation, generation, derivation, recording, organization,
+structuring, storage, disclosure, transmission, disposal, licensing,
+destruction, deletion, modification, or deidentification of personal
+data.
+  6. "Primarily directed to minors" shall mean a website, online
+service, online application, mobile application, or connected device, or
+a portion thereof, that is targeted to minors. A website, online
+service, online application, mobile application, or connected device, or
+portion thereof, shall not be deemed directed primarily to minors solely
+because such website, online service, online application, mobile
+application, or connected device, or portion thereof refers or links to
+any other website, online service, online application, mobile
+application, or connected device directed to minors by using information
+location tools, including a directory, index, reference, pointer, or
+hypertext link. A website, online service, online application, mobile
+application, or connected device, or portion thereof, shall be deemed
+directed to minors when it has actual knowledge that it is collecting
+personal data of users directly from users of another website, online
+service, online application, mobile application, or connected device
+primarily directed to minors.
+  7. "Sell" shall mean to share personal data for monetary or other
+valuable consideration. "Selling" shall not include the sharing of
+personal data for monetary or other valuable consideration to another
+person as an asset that is part of a merger, acquisition, bankruptcy, or
+other transaction in which that person assumes control of all or part of
+the operator's assets or the sharing of personal data with a processor.
+  8. "Processor" shall mean any person who processes data on behalf of
+the operator. A person that acts as both an operator and processor shall
+comply with the applicable obligations of an operator and the
+obligations of a processor, depending on its role with respect to each
+specific processing of personal data.
+  9. "Third-party operator" shall mean an operator who is not the
+operator:
+  (a) with whom the user intentionally and directly interacts; or
+  (b) that collects personal data from the direct and current
+interactions with the user.

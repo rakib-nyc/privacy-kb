@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.DS_Store
+spike/
+.uslm-cache/
+.ny-cache/
+__pycache__/

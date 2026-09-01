@@ -1,0 +1,149 @@
+id: us.dot_drug_testing.40_323.d.employee_notification
+schema_version: 1
+record_type: obligation
+source:
+  citation: 49 C.F.R. § 40.323(d)
+  instrument_id: us.dot_drug_testing
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-49.xml?part=40
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+  raw_sha256: 37446484793816750245fc98a2b73a94e655895dcfb889d18ddc00c23339e0df
+  text_file: corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.txt
+  text_sha256: 1d4fa6885696bfab98499a9a5b506aa6b85460b41a65d945739fb236b747bdc5
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 49 part 40, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: 850c6ab4669207bfd815261969212924e855bc550406e0ebe7509f6dfe20fb3f
+verbatim_span: >-
+  As an employer or service agent, you must immediately notify the employee in writing of any
+  information you release under this section.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - d
+  anchor: '40.323'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from flat <P> siblings by tools/extract.py; resolves to exactly one
+    leaf inside the section
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      As an employer, you may release information pertaining to an employee's drug or alcohol test
+      without the employee's consent in certain legal proceedings.
+    citation: 49 C.F.R. § 40.323(a)
+    path:
+      path:
+        - a
+      anchor: '40.323'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designators reconstructed from flat <P> siblings by tools/extract.py; resolves to exactly
+        one leaf inside the section
+subject:
+  domain: IV.B.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - dot
+sector:
+  - employment
+  - transportation
+data_types:
+  - health
+  - personal_information
+status: in_force
+effective_from: '2000-12-19'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history:
+  - date: '2000-12-19'
+    note: >-
+      Part 40 carries a part-level source note in the fetched source: "Source: 65 FR 79526, Dec. 19,
+      2000, unless otherwise noted." Neither § 40.321 nor § 40.323 carries its own citation note, so
+      19 December 2000 is the earliest date the fetched source itself asserts for this text.
+    source_url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-49.xml?part=40
+applies_if:
+  all:
+    - entity.is_employer == true
+    - data.is_dot_test_result == true
+    - event.type == 'legal_proceeding_disclosure'
+applies_to_role: controller
+obligation_type: notify
+summary: >-
+  An employer or service agent that releases test information under § 40.323 must immediately notify
+  the employee in writing of any information it released.
+requirement_detail: >-
+  A DISCLOSURE MADE WITHOUT CONSENT STILL HAS TO BE TOLD TO THE DATA SUBJECT, which is the
+  transparency half of subpart P and the half most often missed. The paragraph addresses the
+  employer and the service agent alike, so the laboratory or C/TPA that produced the data package
+  owes the notice independently of the employer, and both can be in breach over a single release.
+  The notice must be in writing and immediate, and it attaches to any information released under the
+  section — including the releases paragraph (a) permits without consent, which is exactly when an
+  employer assumes no notice is due because the employee has no say. Practitioners also read it as
+  satisfied by the litigation itself: service of a pleading on the employee is not a notification by
+  the employer of what it released, and the obligation is to state the information released rather
+  than the fact that a proceeding is on foot.
+deadline: null
+no_deadline_stated: >-
+  The paragraph requires notification immediately and fixes no period. Nothing in § 40.323 or in the
+  rest of subpart P as fetched converts that into a number of days or hours, and no citation note
+  attaches a rulemaking gloss to the section. Inventing a figure would be fabrication, so the
+  trigger is recorded here and the clock is left uncomputed.
+exemptions: []
+related:
+  - us.dot_drug_testing.40_321.b.specific_written_consent
+  - us.dot_drug_testing.40_323.b.legal_proceeding_release
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Assuming no notice is owed because the release did not need consent. The duty attaches to any
+    information released under the section, consent or not.
+  - >-
+    Placing the duty on the employer alone. It is written to the employer or service agent, so a
+    laboratory or C/TPA that releases the information owes it too.
+  - >-
+    Treating service of court papers as the notification. The employee must be told in writing what
+    was released.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: null
+  note: >-
+    No preemption clause appears anywhere in part 40 as fetched. Whether a DOT testing rule
+    displaces a contrary state requirement is governed by the operating administrations' authorizing
+    statutes and rules — 49 U.S.C. § 31306 and the DOT agency regulations — none of which is held in
+    this corpus. Recorded as floor because the part contains no express ceiling, NOT as a finding
+    that stricter state law survives. Do not answer a state-conflict question from this atom.
+enforcement:
+  enforcers:
+    - dot
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Administrative, through the DOT operating administration that regulates the employer, and for
+      service agents through the public interest exclusion procedures of subpart R of this part,
+      which can bar a service agent from providing services in the DOT testing programme.
+    range: null
+    note: >-
+      Subpart R and the operating administrations' penalty rules have NOT been extracted. Part 40
+      confers no private right of action in terms; an employee's own remedy for an unauthorised
+      release is ordinarily a state-law claim, which this corpus does not model. Treat exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

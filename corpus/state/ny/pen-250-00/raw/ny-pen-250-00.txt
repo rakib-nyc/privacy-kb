@@ -1,0 +1,51 @@
+§ 250.00 Eavesdropping; definitions of terms.
+  The following definitions are applicable to this article:
+  1. "Wiretapping" means the intentional overhearing or recording of a
+telephonic or telegraphic communication by a person other than a sender
+or receiver thereof, without the consent of either the sender or
+receiver, by means of any instrument, device or equipment. The normal
+operation of a telephone or telegraph corporation and the normal use of
+the services and facilities furnished by such corporation pursuant to
+its tariffs or necessary to protect the rights or property of said
+corporation shall not be deemed "wiretapping."
+  2. "Mechanical overhearing of a conversation" means the intentional
+overhearing or recording of a conversation or discussion, without the
+consent of at least one party thereto, by a person not present thereat,
+by means of any instrument, device or equipment.
+  3. "Telephonic communication" means any aural transfer made in whole
+or in part through the use of facilities for the transmission of
+communications by the aid of wire, cable or other like connection
+between the point of origin and the point of reception (including the
+use of such connection in a switching station) furnished or operated by
+any person engaged in providing or operating such facilities for the
+transmission of communications and such term includes any electronic
+storage of such communications.
+  4. "Aural transfer" means a transfer containing the human voice at any
+point between and including the point of origin and the point of
+reception.
+  5. "Electronic communication" means any transfer of signs, signals,
+writing, images, sounds, data, or intelligence of any nature transmitted
+in whole or in part by a wire, radio, electromagnetic, photoelectronic
+or photo-optical system, but does not include:
+  (a) any telephonic or telegraphic communication; or
+  (b) any communication made through a tone only paging device; or
+  (c) any communication made through a tracking device consisting of an
+electronic or mechanical device which permits the tracking of the
+movement of a person or object; or
+  (d) any communication that is disseminated by the sender through a
+method of transmission that is configured so that such communication is
+readily accessible to the general public.
+  6. "Intercepting or accessing of an electronic communication" and
+"intentionally intercepted or accessed" mean the intentional acquiring,
+receiving, collecting, overhearing, or recording of an electronic
+communication, without the consent of the sender or intended receiver
+thereof, by means of any instrument, device or equipment, except when
+used by a telephone company in the ordinary course of its business or
+when necessary to protect the rights or property of such company.
+  7. "Electronic communication service" means any service which provides
+to users thereof the ability to send or receive wire or electronic
+communications.
+  8. "Unlawfully" means not specifically authorized pursuant to article
+seven hundred or seven hundred five of the criminal procedure law for
+the purposes of this section and sections 250.05, 250.10, 250.15,
+250.20, 250.25, 250.30 and 250.35 of this article.

@@ -1,0 +1,258 @@
+id: us.tsr.310_4.b1iii_b.dnc_registry
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 310.4(b)(1)(iii)(B)
+  instrument_id: us.tsr
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=310
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  raw_sha256: 0374ac69f516b67c40fb05bf7a8482af5e2be0d258616f8faee7615bfc966917
+  text_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.txt
+  text_sha256: 7e1270d836ac4d86c1831b2f61d398afff5a07cca625841ea5334e93a3e6d314
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: ba877c8ab668df47f05cc213abc28de28ebe4a905dd90f15144bf695f1116ffd
+verbatim_span: >-
+  That person's telephone number is on the “do-not-call” registry, maintained by the Commission, of
+  persons who do not wish to receive outbound telephone calls to induce the purchase of goods or
+  services unless the seller or telemarketer:
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+    - '1'
+    - iii
+    - B
+  anchor: '310.4'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      It is an abusive telemarketing act or practice and a violation of this part for a telemarketer
+      to engage in, or for a seller to cause a telemarketer to engage in, the following conduct:
+    citation: 16 C.F.R. § 310.4(b)(1)
+    path:
+      path:
+        - b
+        - '1'
+      anchor: '310.4'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number
+        so the path is scoped to its own section — without it a path like ["a"] matches every
+        section in the part.
+  - position: precedes
+    relation: conditions
+    verbatim_span: 'Initiating any outbound telephone call to a person when:'
+    citation: 16 C.F.R. § 310.4(b)(1)(iii)
+    path:
+      path:
+        - b
+        - '1'
+        - iii
+      anchor: '310.4'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number
+        so the path is scoped to its own section — without it a path like ["a"] matches every
+        section in the part.
+jurisdiction: US
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions:
+  - id: cfr.16.310.4.b1iiiB.2.established_business_relationship
+    type: activity_level
+    scope: >-
+      The seller may call a registered number where it can demonstrate an established business
+      relationship with the person AND that person has not stated, under § 310.4(b)(1)(iii)(A), that
+      he or she does not wish to receive calls. Two consequences follow from the text: the burden of
+      demonstrating the relationship is on the seller, and an entity-specific do-not-call request
+      defeats the exception even though the relationship itself survives. The relationship is
+      defined at § 310.2(q) and is TIME-LIMITED: 540 days from the person's purchase, rental, lease
+      or financial transaction, or 90 days from the person's inquiry or application, each measured
+      back from the date of the call. § 310.5(a)(5) requires a record of the person, the last known
+      number and the basis for each asserted relationship.
+    source_citation: 16 C.F.R. § 310.4(b)(1)(iii)(B)(2)
+    verbatim_span: >-
+      Can demonstrate that the seller has an established business relationship with such person, and
+      that person has not stated that he or she does not wish to receive outbound telephone calls
+      under paragraph (b)(1)(iii)(A) of this section
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.has_established_business_relationship_with_person == true
+        - event.person_stated_entity_specific_do_not_call == false
+  - id: cfr.16.310.4.b1iiiB.1.express_written_agreement
+    type: activity_level
+    scope: >-
+      The seller may call a registered number where it can demonstrate that the person gave express
+      agreement IN WRITING to be called. The following sentence of the source requires that the
+      writing evidence authorisation for calls by or on behalf of a specific party and include the
+      number to be called and the person's signature, which the part elsewhere allows to be
+      electronic. A general terms-of-service acceptance that names no party and no number does not
+      meet it.
+    source_citation: 16 C.F.R. § 310.4(b)(1)(iii)(B)(1)
+    verbatim_span: >-
+      Can demonstrate that the seller has obtained the express agreement, in writing, of such person
+      to place calls to that person.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.has_express_written_agreement_to_call == true
+  - id: cfr.16.310.6.a.charitable_solicitation
+    type: activity_level
+    scope: >-
+      An outbound call soliciting a charitable contribution is not reached by the National Do Not
+      Call Registry prohibition at all. The registry provision is written around calls "to induce
+      the purchase of goods or services", and § 310.6(a) says so expressly. This is relief from the
+      REGISTRY only: the entity-specific do-not-call duty in § 310.4(b)(1)(iii)(A) and the
+      charitable-solicitation disclosures in § 310.4(e) still bind, and a for-profit telefunder
+      calling on behalf of a charity is still a telemarketer under this part.
+    source_citation: 16 C.F.R. § 310.6(a)
+    verbatim_span: >-
+      Solicitations to induce charitable contributions via outbound telephone calls are not covered
+      by § 310.4(b)(1)(iii)(B) of this part.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - purpose.induce_charitable_contribution == true
+  - id: cfr.16.310.6.b7.business_to_business
+    type: activity_level
+    scope: >-
+      A call between a telemarketer and a BUSINESS to induce that business to buy goods or services,
+      or to give a charitable contribution, is exempt from the part — with two carve-backs stated in
+      the same paragraph: the misrepresentation prohibitions of § 310.3(a)(2) and (4) still apply,
+      and calls inducing the retail sale of nondurable office or cleaning supplies are not exempt
+      (for those, § 310.6(b)(7) instead disapplies § 310.4(b)(1)(iii)(B) and § 310.5). The exemption
+      turns on WHO IS CALLED and for what, not on the caller's own status, which is why it is
+      activity-level and not entity-level.
+    source_citation: 16 C.F.R. § 310.6(b)(7)
+    verbatim_span: >-
+      Telephone calls between a telemarketer and any business to induce the purchase of goods or
+      services or a charitable contribution by the business, provided, however that this exemption
+      does not apply to:
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.call_recipient_is_business == true
+        - purpose.induce_business_purchase == true
+related:
+  - us.tcpa.227.b1a.autodialer_prohibition
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating an established business relationship as a permanent licence to call. It runs on the §
+    310.2(q) clock — 540 days from a transaction, 90 days from an inquiry — and the text also
+    conditions it on the person NOT having made an entity-specific request under §
+    310.4(b)(1)(iii)(A), so one such request ends it while the relationship continues.
+  - >-
+    Assuming registry compliance is the whole do-not-call duty. § 310.4(b)(1)(iii)(A) is a separate
+    prohibition with no EBR exception, and § 310.4(b)(1)(ii) makes obstructing a request its own
+    violation.
+  - >-
+    Reading this as binding the call centre alone. The chapeau makes it a violation for a SELLER to
+    cause a telemarketer to place the call, so the seller is liable for its vendor's campaign.
+open_questions:
+  - >-
+    effective_from is the publication date in the part-level source note the eCFR carries for 16
+    C.F.R. part 310 ("75 FR 48516, Aug. 10, 2010, unless otherwise noted"), which is also the first
+    date in this section's own source note. That is a Federal Register PUBLICATION date, not
+    necessarily an effective date, and the do-not-call provisions are older than this codification —
+    the source does not state when they first took effect. A query as of a date before 2010-08-10
+    will not reach this atom even though the rule existed.
+  - >-
+    The two items that complete the "unless" clause of § 310.4(b)(1)(iii)(B) — the
+    express-written-agreement route at (B)(1) and the established-business-relationship route at
+    (B)(2) — are NOT emitted as leaves by the segmentation, because the renderer puts their
+    "(1)"/"(2)" designators on their own lines and the extractor does not recover them. No atom can
+    anchor a paragraph_path there today. They are carried here as typed exemptions whose
+    verbatim_span was copied by exact match out of the rendered text file, so CI still verifies them
+    character-for-character against the source.
+confidence: high
+subject:
+  domain: II.E.2
+  lifecycle:
+    - IV
+regulator:
+  - ftc
+sector:
+  - telemarketing
+  - any
+data_types:
+  - telephone_number
+status: in_force
+effective_from: '2010-08-10'
+applies_if:
+  all:
+    - entity.is_seller_or_telemarketer == true
+    - practice.initiates_outbound_telephone_calls == true
+    - purpose.induce_purchase_of_goods_or_services == true
+    - data.telephone_number_on_dnc_registry == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  Initiating an outbound telephone call to a number on the Commission's National Do Not Call
+  Registry, to induce the purchase of goods or services, is an abusive telemarketing practice unless
+  the seller can demonstrate an express written agreement or an established business relationship.
+requirement_detail: >-
+  THE REGISTRY PROHIBITION, and the sentence is conditional on its face: it ends "unless the seller
+  or telemarketer:", and the two routes out are (B)(1) an express agreement in writing of the person
+  called, and (B)(2) an established business relationship with that person where the person has not
+  separately asked not to be called. Both are modelled as exemptions on this atom. The EBR route is
+  the one practitioners misstate: it is not a standing permission, the text conditions it on the
+  person not having made a request under paragraph (b)(1)(iii)(A), so a single entity-specific
+  do-not-call request extinguishes it while the business relationship continues. Read with the
+  chapeau, liability runs both ways — it is a violation for a telemarketer to make the call and for
+  a SELLER to cause a telemarketer to make it, so outsourcing the campaign does not move the
+  exposure. § 310.4(b)(3) supplies a safe harbour for an isolated error made despite written
+  procedures, training, registry scrubbing no more than 31 days old and monitoring; it is an
+  affirmative demonstration by the seller, not a presumption. This provision is FTC-side only: the
+  TCPA and the FCC rules under it impose a parallel registry regime reaching callers this part does
+  not, and an entity can be clear of one and exposed under the other.
+preemption:
+  posture: floor
+  authority: 16 C.F.R. § 310.7(b)
+  note: >-
+    § 310.7(b) states that nothing in that section prohibits a state official from proceeding in
+    state court on an alleged violation of any civil or criminal statute of that state, and the part
+    contains no express preemption clause. Recorded as floor on that basis. The enabling Act (15
+    U.S.C. 6101–6108) is not in this corpus, so any preemptive effect it carries is unresolved here.
+    The TCPA and its FCC rules run in parallel and are a separate instrument.
+enforcement:
+  enforcers:
+    - ftc
+    - state_ag
+    - private_person
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      FTC Act civil penalties for rule violations; state and private actions under the Telemarketing
+      and Consumer Fraud and Abuse Prevention Act
+    range: null
+    note: >-
+      The part states no penalty figure. § 310.7(a) requires a State or private plaintiff suing
+      under the Act to serve written notice on the Commission before filing, which is where the
+      private route is visible in the rule text itself; the Act (15 U.S.C. 6101–6108) is not in this
+      corpus, so the damages threshold is not recorded here.
+  statute_of_limitations: null

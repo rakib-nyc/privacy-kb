@@ -1,0 +1,165 @@
+id: us.tcpa.64_1200.d3.internal_dnc_honor
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 C.F.R. § 64.1200(d)(3)
+  instrument_id: us.tcpa
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: 2ae7c32f6a162f5a88e1b72eb04193dc6a357ff69a481a12f47fe8e7db473dd0
+verbatim_span: >-
+  If a person or entity making an artificial or prerecorded-voice telephone call pursuant to an
+  exemption under paragraphs (a)(3)(ii) through (v) of this section or any call for telemarketing
+  purposes (or on whose behalf such a call is made) receives a request from a residential telephone
+  subscriber not to receive calls from that person or entity, the person or entity must record the
+  request and place the subscriber's name, if provided, and telephone number on the do-not-call list
+  at the time the request is made. Persons or entities making such calls (or on whose behalf such
+  calls are made) must honor a residential subscriber's do-not-call request within a reasonable time
+  from the date such request is made. This period may not exceed ten (10) business days from the
+  receipt of such request. If such requests are recorded or maintained by a party other than the
+  person or entity on whose behalf the call is made, the person or entity on whose behalf the call
+  is made will be liable for any failures to honor the do-not-call request. A person or entity
+  making an artificial or prerecorded-voice telephone call pursuant to an exemption under paragraphs
+  (a)(3)(ii) through (v) or any call for telemarketing purposes must obtain a consumer's prior
+  express permission to share or forward the consumer's request not to be called to a party other
+  than the person or entity on whose behalf a call is made or an affiliated entity.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - d
+    - '3'
+  anchor: '64.1200'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator run reconstructed from flat <P> siblings; resolves to exactly one leaf within the
+    section (gate 23)
+operative_context:
+  - position: precedes
+    relation: conditions
+    verbatim_span: >-
+      No person or entity shall initiate any artificial or prerecorded-voice telephone call pursuant
+      to an exemption under paragraphs (a)(3)(ii) through (v) of this section or any call for
+      telemarketing purposes to a residential telephone subscriber unless such person or entity has
+      instituted procedures for maintaining a list of persons who request not to receive such calls
+      made by or on behalf of that person or entity. The procedures instituted must meet the
+      following minimum standards:
+    citation: null
+    path:
+      path:
+        - d
+      anchor: null
+      derivation: reconstructed
+      confidence: high
+      evidence: designator sequence reconstructed from flat <P> siblings
+subject:
+  domain: II.E.2
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+  - state_ag
+sector:
+  - telemarketing
+  - telecom
+data_types:
+  - contact_data
+status: in_force
+effective_from: '2003-07-25'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history:
+  - date: '2003-07-25'
+    note: >-
+      Source note printed with the section: "[68 FR 44177, July 25, 2003, as amended ...]", running
+      through 90 FR 42138, Aug. 29, 2025. July 25, 2003 is the earliest date the fetched source
+      itself asserts for 47 C.F.R. § 64.1200 as codified.
+    source_url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+applies_if:
+  all:
+    - practice.makes_telephone_solicitations == true
+applies_to_role: controller
+obligation_type: restrict_use
+summary: >-
+  On receiving a do-not-call request from a residential subscriber, the caller must record it and
+  add the name and number to its internal do-not-call list at the time of the request, and must
+  honour the request within a reasonable time not exceeding ten business days.
+requirement_detail: >-
+  THE INTERNAL, COMPANY-SPECIFIC DO-NOT-CALL LIST IS A SEPARATE REGIME FROM THE NATIONAL REGISTRY
+  AND IS BREACHED FAR MORE OFTEN, because it is the only one that runs against callers who are
+  otherwise fully exempt: paragraph (d) reaches calls made under the (a)(3)(ii)–(v)
+  prerecorded-voice exemptions and any telemarketing call, so a nonprofit or an EBR caller with a
+  clean registry scrub still owes it. Two clocks sit in this paragraph and they are different:
+  recording is immediate ("at the time the request is made"), while suppression is "within a
+  reasonable time" capped at ten business days — the ten days is an outer limit, not a grace period,
+  and a caller with automated suppression cannot argue that ten days was reasonable for it. The
+  vendor sentence is the operational trap: where the request is recorded or maintained by a third
+  party, liability for a failure to honour it stays with the entity on whose behalf the call was
+  made, so outsourcing the list does not outsource the exposure. The final sentence adds a rarely
+  noticed consent duty — sharing or forwarding a consumer's do-not-call request outside the seller
+  and its affiliates requires the consumer's prior express permission. Retention is governed
+  separately by § 64.1200(d)(6): the request must be honoured for five years.
+deadline:
+  trigger_event: Receipt of a do-not-call request from a residential telephone subscriber
+  duration:
+    value: 10
+    unit: business_days
+  computation: >-
+    Outer limit only. The paragraph requires the request to be recorded and listed at the time it is
+    made, and honoured "within a reasonable time from the date such request is made"; ten business
+    days from receipt is the ceiling on what can be reasonable, not the period allowed.
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating ten business days as the compliance period. The rule requires a reasonable time and
+    caps it at ten business days; recording and listing are due immediately.
+  - >-
+    Assuming an exempt caller owes nothing. Paragraph (d) applies to callers relying on the
+    (a)(3)(ii)–(v) exemptions and to any telemarketing call, independent of the national registry.
+  - >-
+    Believing a telemarketing vendor absorbs the risk. The rule assigns liability for a failure to
+    honour the request to the entity on whose behalf the call was made.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 227(f)(1)
+  note: >-
+    § 227(f)(1)(D) preserves more restrictive intrastate State law on telephone solicitations. The §
+    227(f)(2) national-database carve-out does not reach the internal list, because the internal
+    list is not the national database.
+enforcement:
+  enforcers:
+    - fcc
+    - state_ag
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Private action under 47 U.S.C. § 227(c)(5); FCC forfeiture under § 503(b); State AG action
+      under § 227(g).
+    range: >-
+      Actual monetary loss or up to $500 per violation, whichever is greater, trebled for a wilful
+      or knowing violation.
+    note: >-
+      Internal-list claims are the most common surviving theory after a registry defence succeeds,
+      because the two regimes have different exemptions.
+  statute_of_limitations: null

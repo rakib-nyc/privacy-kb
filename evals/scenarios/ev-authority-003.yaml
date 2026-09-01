@@ -1,0 +1,30 @@
+id: ev.authority.003
+question: A telecom carrier mishandled customer network information and also sent unsolicited marketing
+  texts. Where is the real exposure?
+trap: Treating one regulator as one exposure profile. CPNI under s222 has no private right of action;
+  the TCPA under s227 has one with statutory damages per message. The litigation risk is overwhelmingly
+  the texts, not the CPNI.
+rubric:
+- name: FCC is in the corpus
+  record_exists: us.authority.fcc
+- name: the FCC has a private right of action running alongside
+  record: us.authority.fcc
+  path: authority.private_right_of_action.exists
+  equals: true
+- name: that private right is flagged as driving litigation risk
+  record: us.authority.fcc
+  path: authority.private_right_of_action.drives_litigation_risk
+  equals: true
+- name: its basis is the TCPA, not CPNI
+  record: us.authority.fcc
+  path: authority.private_right_of_action.basis
+  contains: '227'
+- name: the note distinguishes CPNI from the TCPA
+  record: us.authority.fcc
+  path: authority.private_right_of_action.note
+  contains: '222'
+- name: the FTC cannot take this instead — common carriers are carved out
+  record: us.authority.ftc
+  path: authority.excluded_from_reach
+  contains: common carriers
+all_pass: true

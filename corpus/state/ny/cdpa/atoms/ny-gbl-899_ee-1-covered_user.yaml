@@ -1,0 +1,124 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+- state_ag
+sector:
+- any
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by:
+- id: ny.oag.cdpa_guidance_2025.flexibility
+  citation: NY OAG, New York Child Data Protection Act Implementation Guidance (19 May 2025)
+  authority_tier: agency_guidance
+  issuer: Office of the New York State Attorney General
+  issued: '2025-05-19'
+  verbatim_span: the “primarily directed” standard set forth by NYCDPA provides some additional flexibility
+    to operators as compared to the standard under COPPA for younger children.
+  effect: narrows
+  effect_note: 'Reads the § 899-ee(6) "primarily directed to minors" test as LOOSER than COPPA''s "directed
+    to children" for the 13-to-17 cohort: a service of general interest that merely has minors in its
+    audience is not automatically covered. This narrows the practical reach of the covered-user definition
+    without altering its words.'
+  binding: false
+  source_ref:
+    raw_file: corpus/state/ny/cdpa/raw/ny-oag-cdpa-guidance-2025.pdf
+    raw_sha256: 9850ecd0273aea01702cbf7b7ded90c2626a9b2f8c6dae5a258b5e26f7600531
+    instrument_id: ny.oag.cdpa_guidance_2025
+- id: ny.oag.cdpa_guidance_2025.discretion
+  citation: NY OAG, New York Child Data Protection Act Implementation Guidance (19 May 2025)
+  authority_tier: agency_guidance
+  issuer: Office of the New York State Attorney General
+  issued: '2025-05-19'
+  verbatim_span: OAG advises that it will exercise discretion in pursuing enforcement actions, and will
+    take into account an operator’s good-faith efforts to comply with NYCDPA consistent with the plain
+    language of the statute and this guidance.
+  effect: enforcement_posture
+  effect_note: AN ANNOUNCED EXERCISE OF DISCRETION IS NOT A SAFE HARBOUR AND NOT A DEFENCE. It does not
+    change the duty, does not move the effective date, and binds no successor Attorney General — it describes
+    how this OAG says it will prioritise while its rules are pending. Advice that treats it as permission
+    is wrong on the law even where it is right about the near-term risk.
+  binding: false
+  source_ref:
+    raw_file: corpus/state/ny/cdpa/raw/ny-oag-cdpa-guidance-2025.pdf
+    raw_sha256: 9850ecd0273aea01702cbf7b7ded90c2626a9b2f8c6dae5a258b5e26f7600531
+    instrument_id: ny.oag.cdpa_guidance_2025
+confidence: high
+related: []
+id: ny.gbl.899_ee.1.covered_user
+source:
+  citation: N.Y. Gen. Bus. Law § 899-ee(1)
+  instrument_id: ny.gbl.899-ee
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/899-EE
+  fetched: '2026-08-20'
+  raw_file: corpus/state/ny/cdpa/raw/ny-gbs-899-ee.json
+  raw_sha256: d8ea0c1e4456c24686eaa1b78ecc3dc786fc4102cded60a11615c4121a49c52e
+  text_file: corpus/state/ny/cdpa/raw/ny-gbs-899-ee.txt
+  text_sha256: bf5c7f746f5ba5b2512a9dc7363b5c8e34f8c5ef7f69f1ee69440c688baf6566
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/cdpa/raw/ny-gbs-899-ee.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - NY Senate OpenLegislation API v3, laws/GBS/899-EE
+    result: structured_source_used
+    note: null
+  segment_sha256: 92f208cf1cae27f3a4400f172b64691e16c6163497e432bd6d365590234ffad3
+verbatim_span: '"Covered user" shall mean a user of a website, online service, online application, mobile
+  application, or connected device, or portion thereof, in the state of New York who is:'
+paragraph_path:
+  path:
+  - '1'
+  anchor: 899-EE
+  derivation: reconstructed
+  confidence: high
+  evidence: subdivision designators reconstructed from the flat text field; resolves to exactly one leaf
+context_not_required: The subdivision states the duty in full.
+subject:
+  domain: V.A.1
+  lifecycle:
+  - I
+data_types:
+- minor
+effective_from: '2025-06-20'
+federal_relationship: exceeds_floor
+applies_if:
+  all:
+  - entity.is_ny_cdpa_operator == true
+applies_to_role: controller
+obligation_type: prohibit
+deadline: null
+exemptions: []
+summary: '"Covered user" means a user known by the operator to be a minor, or using a device or service
+  in a manner that signals the user is a minor.'
+requirement_detail: THE TRIGGER IS THE WHOLE STATUTE. A service not directed to minors is still reached
+  the moment it has actual knowledge OR receives a signal that the user is a minor — so the CDPA cannot
+  be avoided by declining to build a child-directed product, which is the standard COPPA posture. That
+  makes minor-detection an operational obligation rather than a market-segment decision, and it is why
+  § 899-ff(6) starts a thirty-day clock on being INFORMED as well as on determining.
+common_errors:
+- Treating the CDPA as applying only to child-directed services. Actual knowledge or a signal is enough.
+- Assuming COPPA's under-13 line. A covered user extends to minors under 18.
+open_questions: []
+preemption:
+  posture: none
+  authority: N.Y. Gen. Bus. Law § 899-ff
+  note: COPPA does not preempt state law that is consistent with its treatment of the same conduct, and
+    the CDPA reaches an older cohort than COPPA does, so the two run together rather than one displacing
+    the other.
+enforcement:
+  enforcers:
+  - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: Attorney General enforcement under GBL § 899-jj.
+    range: null
+    note: Penalty detail is in § 899-jj, which is not extracted — treat exposure as UNASSESSED rather
+      than absent.
+  statute_of_limitations: null

@@ -1,0 +1,121 @@
+id: us.authority.ed
+schema_version: 1
+record_type: authority
+source:
+  citation: 20 U.S.C. § 1232g(a)(1)(A)
+  instrument_id: us.usc.t20
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc20@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/authorities/raw/20-u-s-c-1232g.xml
+  raw_sha256: d9eb0b65a1acac5602e55cef5941f4e79a13824f23e8f78b141be5f1d1624e7b
+  text_file: corpus/federal/authorities/raw/20-u-s-c-1232g.txt
+  text_sha256: 6a51713f2648ca5674640dc9e871fdc9304de0055007e798298d216e99630681
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/authorities/raw/20-u-s-c-1232g.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: Title 20. Positive-law status from the title's own <property role="is-positive-law"> element.
+  segment_sha256: 0f45e44e24a0ee4c4291f249e1591892e6c2de05f2fca61b2e959dd1a59aaa29
+verbatim_span: >-
+  No funds shall be made available under any applicable program to any educational agency or
+  institution which has a policy of denying, or which effectively prevents, the parents of students
+  who are or have been in attendance at a school of such agency or at such institution, as the case
+  may be, the right to inspect and review the education records of their children. If any material
+  or document in the education record of a student includes information on more than one student,
+  the parents of one of such students shall have the right to inspect and review only such part of
+  such material or document as relates to such student or to be informed of the specific information
+  contained in such part of such material. Each educational agency or institution shall establish
+  appropriate procedures for the granting of a request by parents for access to the education
+  records of their children within a reasonable period of time, but in no case more than forty-five
+  days after the request has been made.
+verification_status: verbatim_confirmed
+subject:
+  domain: II.D.1
+  lifecycle:
+    - I
+paragraph_path:
+  path:
+    - a
+    - '1'
+    - A
+  anchor: /us/usc/t20/s1232g/a/1/A
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element
+jurisdiction: US-FED
+jurisdiction_level: federal
+status: in_force
+effective_from: null
+effective_to: null
+amendment_history: []
+summary: >-
+  No funds shall be made available under any applicable program to any educational agency or
+  institution which has a policy of denying, or which effectively prevents, parents the right to
+  inspect and review their children's education records.
+authority:
+  id: us.authority.ed
+  name: U.S. Department of Education, Student Privacy Policy Office
+  short_name: ED SPPO
+  kind: federal_agency
+  statutory_source:
+    - 20 U.S.C. § 1232g — FERPA
+    - 20 U.S.C. § 1232h — PPRA
+  jurisdiction: US-FED
+  sector_reach:
+    - educational agencies and institutions receiving applicable federal funds
+    - education records
+    - edtech vendors acting as school officials
+  excluded_from_reach:
+    - >-
+      institutions receiving no applicable federal funding — FERPA operates as a funding condition,
+      not a general data-protection statute
+  enforcement_powers:
+    - withdrawal of federal funding
+    - complaint investigation
+    - negotiated compliance
+  rulemaking_authority:
+    has: true
+    basis: 20 U.S.C. § 1232g(g)
+    procedure: APA § 553 notice-and-comment
+    note: 34 C.F.R. Part 99.
+  penalty_authority:
+    structure: funding withdrawal — there is no monetary penalty regime
+    range: null
+    inflation_adjusted: false
+    note: >-
+      This is the single most misunderstood enforcement posture in US privacy law. The remedy is the
+      funding condition, and it has essentially never been exercised.
+  private_right_of_action:
+    exists: false
+    basis: null
+    note: >-
+      FERPA confers no private right of action — the Supreme Court so held in Gonzaga University v.
+      Doe. Students and parents reach the same conduct through state law and contract. Recorded here
+      as a legal conclusion whose primary source (the opinion) is NOT yet in the corpus.
+    drives_litigation_risk: false
+  own_enforcement_power: true
+  operates_through: null
+derived_obligations: []
+differs_from: []
+related: []
+source_defects: []
+common_errors:
+  - >-
+    Treating FERPA as a data-protection statute with penalties. It is a funding condition; the
+    sanction is loss of federal funds, which has essentially never been imposed.
+  - Assuming students or parents can sue under FERPA. They cannot — Gonzaga v. Doe.
+  - >-
+    Applying FERPA to an institution that receives no applicable federal funding. The obligation
+    attaches to the funding, not to the data.
+open_questions:
+  - >-
+    Gonzaga University v. Doe is cited here for the no-private-right-of-action conclusion but is NOT
+    in the corpus as a case_law record. Under I1 that conclusion rests on an unfetched source and
+    should be treated as unverified until the opinion is extracted. Flagged rather than silently
+    relied on.
+confidence: high
+context_not_required: 'No ancestor contributes governing text: this element''s operative meaning is complete on its own.'

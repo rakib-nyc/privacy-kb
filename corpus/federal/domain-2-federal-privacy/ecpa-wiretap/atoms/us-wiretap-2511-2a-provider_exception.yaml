@@ -1,0 +1,128 @@
+id: us.wiretap.2511.2a.provider_exception
+schema_version: 1
+record_type: obligation
+source:
+  citation: 18 U.S.C. § 2511(2)(a)
+  instrument_id: us.ecpa_wiretap
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2511.xml
+  raw_sha256: ec7314f1868f20a98a0bcffff899cb099c3b86cf13b4c0c31a76464678744c9f
+  text_file: corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2511.txt
+  text_sha256: 73d0db0c6a8ce64a6c2910043e2cf46502e099dc377b1033032d1f02a7807ffb
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2511.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: b38c3d02a6e97243cb11bb4de2553b9121597956352321a99802dbb65bbb2ed5
+verbatim_span: >-
+  (i) It shall not be unlawful under this chapter for an operator of a switchboard, or an officer,
+  employee, or agent of a provider of wire or electronic communication service, whose facilities are
+  used in the transmission of a wire or electronic communication, to intercept, disclose, or use
+  that communication in the normal course of his employment while engaged in any activity which is a
+  necessary incident to the rendition of his service or to the protection of the rights or property
+  of the provider of that service, except that a provider of wire communication service to the
+  public shall not utilize service observing or random monitoring except for mechanical or service
+  quality control checks.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - '2'
+    - a
+  anchor: /us/usc/t18/s2511/2/a
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: >-
+  The subparagraph states the exception, its two cumulative conditions and its closing prohibition
+  in one sentence; no chapeau above it conditions the text.
+subject:
+  domain: IV.B.3
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - doj
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '1968-06-19'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - practice.intercepts_communications == true
+    - entity.provides_electronic_communication_service == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  It is not unlawful for an operator of a switchboard, or an officer, employee or agent of a
+  provider whose facilities are used in the transmission, to intercept, disclose or use that
+  communication in the normal course of employment while engaged in an activity that is a necessary
+  incident to the rendition of service or to the protection of the provider's rights or property —
+  but a provider of wire communication service to the public may not use service observing or random
+  monitoring except for mechanical or service quality control checks.
+requirement_detail: >-
+  THE PROVIDER EXCEPTION, and the second thing an employer reaches for after consent. Its two
+  conditions are cumulative and both are narrow: the actor must be an operator, officer, employee or
+  agent of a PROVIDER whose facilities are used in the transmission, and the interception must occur
+  in the normal course of employment while engaged in an activity that is a NECESSARY INCIDENT to
+  rendering the service or to protecting the provider's rights or property. "Necessary incident"
+  does the limiting work — monitoring for productivity or general policy compliance is not service
+  rendition, and the rights-or-property branch has been read to reach protection of the system
+  against fraud, theft and misuse rather than supervision at large. The final clause is a
+  PROHIBITION rather than an exception: a provider of wire communication service to the public shall
+  not use service observing or random monitoring except for mechanical or service quality control
+  checks. An employer running its own internal mail or telephone system is a provider for this
+  purpose but is usually not a provider to the public, which is the same distinction that puts it
+  outside § 2702. The parallel and often better route is § 2510(5)(a), which removes ordinary-course
+  extension equipment from the definition of "device" so that no interception occurs at all.
+deadline: null
+exemptions: []
+related:
+  - us.wiretap.2511.1a.interception_prohibition
+  - us.wiretap.2510.5a.device_exclusion
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Importing "ordinary course of business" into this subparagraph. That phrase belongs to §
+    2510(5)(a)'s device exclusion; what this text requires is a NECESSARY INCIDENT to the rendition
+    of service or to the protection of the provider's rights or property.
+  - >-
+    Using it to justify listening beyond the incident. The exception covers the activity that is a
+    necessary incident, not the remainder of the communication once that purpose is served.
+  - >-
+    Overlooking the closing clause, which affirmatively bars service observing and random monitoring
+    by a provider of wire communication service to the public.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2511(2)(a)
+  note: >-
+    Recorded as floor: nothing in the extracted section displaces state law, and § 2511(2)(d) is the
+    standing proof of it — the federal one-party-consent rule coexists with the all-party consent
+    statutes of roughly a dozen states, and the stricter rule governs the same recording.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: true
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

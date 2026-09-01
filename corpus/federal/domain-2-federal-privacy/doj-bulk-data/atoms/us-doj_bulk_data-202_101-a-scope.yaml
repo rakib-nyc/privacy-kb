@@ -1,0 +1,195 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - doj
+sector:
+  - any
+data_types:
+  - personal_information
+  - biometric
+  - genetic
+  - health
+  - financial
+  - precise_geolocation
+status: in_force
+effective_from: '2025-04-08'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+federal_relationship: null
+interpreted_by: []
+confidence: high
+preemption:
+  posture: none
+  authority: 28 C.F.R. § 202.1301
+  note: >-
+    Part 202 displaces nothing. It is an IEEPA prohibition that runs ALONGSIDE every privacy duty in
+    this corpus and every state privacy statute: complying with it satisfies no notice, consent or
+    security obligation, and complying with those satisfies nothing here. The practical effect is
+    additive exposure rather than a preemption question, and § 202.1301(e) says as much — violations
+    may also be subject to other applicable laws.
+enforcement:
+  enforcers:
+    - doj
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      § 202.1301 applies section 206 of IEEPA, 50 U.S.C. 1705. Civil penalty up to the greater of
+      the IEEPA maximum stated in § 202.1301(a)(2) or twice the amount of the transaction,
+      inflation-adjusted; willful violation carries a criminal fine and, for a natural person,
+      imprisonment. False statements in submissions are separately reachable under 18 U.S.C. 1001
+      per § 202.1301(d).
+    range: >-
+      Civil: greater of the adjusted IEEPA maximum or twice the transaction amount. Criminal
+      (willful): fine and, for a natural person, imprisonment.
+    note: >-
+      NO PRIVATE RIGHT OF ACTION and no data-subject remedy of any kind. This is a national security
+      enforcement regime, so the exposure is to the Department of Justice, not to the individuals
+      whose data moved. Criminal exposure for a data transfer is unique in this corpus.
+  statute_of_limitations: null
+id: us.doj_bulk_data.202_101.a.scope
+source:
+  citation: 28 C.F.R. § 202.101(a)
+  instrument_id: us.doj_bulk_data
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-28.xml?part=202
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+  raw_sha256: f029a81bfc5a7a33418fd0bd757b0c8c0e431cd570a5c46ec7a3085964796418
+  text_file: corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.txt
+  text_sha256: c8ef3eab97ed7c77065c998a739c0f32aab75ee4a9b78daf920198b02172ac66
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 88fbdb940e8287bd804aedc9b7ecbce04f021172390948ec4e106be141fe5e28
+verbatim_span: >-
+  Executive Order 14117 of February 28, 2024 (Preventing Access to Americans' Bulk Sensitive
+  Personal Data and United States Government-Related Data by Countries of Concern) (“the Order”),
+  directs the Attorney General to issue regulations that prohibit or otherwise restrict United
+  States persons from engaging in any acquisition, holding, use, transfer, transportation, or
+  exportation of, or dealing in, any property in which a foreign country or national thereof has any
+  interest (“transaction”), where the transaction: involves United States Government-related data
+  (“government-related data”) or bulk U.S. sensitive personal data, as defined by final rules
+  implementing the Order; falls within a class of transactions that has been determined by the
+  Attorney General to pose an unacceptable risk to the national security of the United States
+  because the transactions may enable access by countries of concern or covered persons to
+  government-related data or bulk U.S. sensitive personal data; and meets other criteria specified
+  by the Order.
+paragraph_path:
+  path:
+    - a
+  anchor: '202.101'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+context_not_required: >-
+  The paragraph states the scope of the part in full; no ancestor contributes governing text. §
+  202.101(b) is a sibling that names the further executive orders this part addresses.
+subject:
+  domain: I.C.6
+  lifecycle:
+    - III
+applies_if:
+  all:
+    - entity.is_us_person == true
+    - any:
+        - data.is_bulk_us_sensitive_personal_data == true
+        - data.is_government_related_data == true
+obligation_type: prohibit
+summary: >-
+  Part 202 implements Executive Order 14117 by prohibiting or restricting U.S. persons from
+  transactions involving government-related data or bulk U.S. sensitive personal data that fall
+  within a class the Attorney General has determined poses an unacceptable national security risk.
+requirement_detail: >-
+  WHAT PART 202 REACHES, AND WHY IT IS UNLIKE EVERYTHING ELSE IN THIS CORPUS. Scope follows the
+  Order it implements: the Attorney General is directed to regulate transactions defined to cover
+  "any acquisition, holding, use, transfer, transportation, or exportation of, or dealing in, any
+  property in which a foreign country or national thereof has any interest", where the transaction
+  "involves United States Government-related data" or bulk U.S. sensitive personal data, and where
+  it falls in a class determined to "pose an unacceptable risk to the national security of the
+  United States". Two consequences follow. First, coverage turns on the CLASS and DESTINATION of a
+  transaction rather than on a relationship with a data subject — there is no consumer in this part,
+  no notice duty, no consent gate, no access right and no private remedy, so an entity can be
+  squarely inside it while holding nothing any sectoral statute here regulates. Second, because the
+  reach is by data category rather than by sector, the entity most exposed is frequently the one
+  carrying the fewest other privacy obligations: brokers, adtech intermediaries and analytics
+  vendors outside HIPAA, GLBA and FCRA. Scope alone decides nothing operationally — the prohibitions
+  are in the sections that follow, and the definitions that fix coverage are in subpart B.
+exemptions:
+  - id: cfr.28.202.219.exempt_transaction
+    type: activity_level
+    scope: >-
+      Subpart E exempts whole classes of data transaction from the prohibitions of this part, and §
+      202.219 is the definitional hook: an exempt transaction is one subject to one or more of those
+      exemptions. THIS IS THE FIRST THING TO CHECK, because the subpart E classes (personal
+      communications, financial services, corporate group transactions, federal government activity
+      and others) cover a large share of ordinary cross-border business. The exemption is
+      ACTIVITY-scoped, not entity-scoped: it relieves the transaction, so the same U.S. person can
+      be exempt on one data flow and prohibited on the next.
+    source_citation: 28 C.F.R. § 202.219
+    verbatim_span: >-
+      The term exempt transaction means a data transaction that is subject to one or more exemptions
+      described in subpart E of this part.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - practice.is_exempt_transaction_under_subpart_e == true
+  - id: cfr.28.202.249.b2.public_data
+    type: data_level
+    scope: >-
+      Data lawfully available to the public from a Federal, State or local government record, or in
+      widely distributed media, is excluded from sensitive personal data at the time of the
+      transaction. DATA-LEVEL, NOT ENTITY-LEVEL: it removes the data from the definition, so a
+      broker dealing in public-record data is outside the prohibition for that data and fully inside
+      it for anything else it moves. The timing qualifier matters — the test is applied at the time
+      of the transaction, so data that was public when acquired but is not public now does not
+      qualify.
+    source_citation: 28 C.F.R. § 202.249(b)(2)
+    verbatim_span: >-
+      Data that is, at the time of the transaction, lawfully available to the public from a Federal,
+      State, or local government record (such as court records) or in widely distributed media (such
+      as sources that are generally available to the public through unrestricted and open-access
+      repositories);
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - data.lawfully_available_to_the_public == true
+related:
+  - us.doj_bulk_data.202_301.a.data_brokerage_prohibition
+common_errors:
+  - >-
+    Reading part 202 as a privacy law with data-subject rights. It has none — no notice, no consent,
+    no access, no deletion, no private right of action. It is an IEEPA prohibition addressed to U.S.
+    persons and enforced by the Department of Justice.
+  - >-
+    Concluding that an entity with no HIPAA, GLBA or FCRA duty is unregulated. Part 202 reaches by
+    data category and counterparty, so the entity with the fewest sectoral duties is often the one
+    most exposed here.
+  - >-
+    Citing § 202.101 as the operative prohibition. It states scope and recites the Order's
+    direction; the prohibitions themselves are separate sections, for example § 202.301.
+open_questions:
+  - >-
+    The two data categories that define the part — government-related data and bulk U.S. sensitive
+    personal data — are defined in subpart B (§ 202.222 and § 202.206) and are not extracted as
+    atoms yet, so this atom states what the part reaches without letting the engine compute it.
+  - >-
+    effective_from records 8 April 2025, taken from the definition of effective date at § 202.216 in
+    the same source. Compliance dates for particular obligations elsewhere in the part may differ
+    and are not recorded here.

@@ -1,0 +1,552 @@
+{
+ "label": "NY CVR 52-C",
+ "url": "https://legislation.nysenate.gov/api/3/laws/CVR/52-C",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/cvr-52c/raw/ny-cvr-52-c.json",
+ "raw_sha256": "ac1dc5664963115614ff425a8de4881ed773708b385a311a56d847d5c436c5b3",
+ "leaves": [
+  {
+   "path": [
+    "1"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "text": "For the purposes of this section:",
+   "context": [],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "1",
+    "a"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "\"depicted individual\" means an individual who appears, as a result of digitization, to be giving a performance they did not actually perform or to be performing in a performance that was actually performed by the depicted individual but was subsequently altered to be in violation of this section.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For the purposes of this section:",
+     "path": [
+      "1"
+     ],
+     "anchor": "52-C"
+    }
+   ],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "1",
+    "b"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "\"digitization\" means to realistically depict the nude body parts of another human being as the nude body parts of the depicted individual, computer-generated nude body parts as the nude body parts of the depicted individual or the depicted individual engaging in sexual conduct, as defined in subdivision ten of section 130.00 of the penal law, in which the depicted individual did not engage. \"Digitization\" may also mean the use of software, machine learning, artificial intelligence, or any other computer-generated or technological means, including adapting, modifying, manipulating, or altering a realistic depiction.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For the purposes of this section:",
+     "path": [
+      "1"
+     ],
+     "anchor": "52-C"
+    }
+   ],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "1",
+    "c"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "\"individual\" means a natural person.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For the purposes of this section:",
+     "path": [
+      "1"
+     ],
+     "anchor": "52-C"
+    }
+   ],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "1",
+    "d"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "\"person\" means a human being or legal entity.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For the purposes of this section:",
+     "path": [
+      "1"
+     ],
+     "anchor": "52-C"
+    }
+   ],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "1",
+    "e"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "\"sexually explicit material\" means any portion of an audio visual work that shows the depicted individual:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For the purposes of this section:",
+     "path": [
+      "1"
+     ],
+     "anchor": "52-C"
+    }
+   ],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "1",
+    "e",
+    "i"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "performing in the nude, meaning with an unclothed or exposed intimate part, as defined in section 245.15 of the penal law;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For the purposes of this section:",
+     "path": [
+      "1"
+     ],
+     "anchor": "52-C"
+    },
+    {
+     "position": "precedes",
+     "text": "\"sexually explicit material\" means any portion of an audio visual work that shows the depicted individual:",
+     "path": [
+      "1",
+      "e"
+     ],
+     "anchor": "52-C"
+    }
+   ],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "1",
+    "e",
+    "ii"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "appearing to engage in, or being subjected to, sexual conduct, as defined in subdivision ten of section 130.00 of the penal law; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For the purposes of this section:",
+     "path": [
+      "1"
+     ],
+     "anchor": "52-C"
+    },
+    {
+     "position": "precedes",
+     "text": "\"sexually explicit material\" means any portion of an audio visual work that shows the depicted individual:",
+     "path": [
+      "1",
+      "e"
+     ],
+     "anchor": "52-C"
+    }
+   ],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "1",
+    "e",
+    "iii"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "posed in a manner intended to elicit sexual arousal or gratification and where a person would have a reasonable expectation of privacy.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For the purposes of this section:",
+     "path": [
+      "1"
+     ],
+     "anchor": "52-C"
+    },
+    {
+     "position": "precedes",
+     "text": "\"sexually explicit material\" means any portion of an audio visual work that shows the depicted individual:",
+     "path": [
+      "1",
+      "e"
+     ],
+     "anchor": "52-C"
+    }
+   ],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "2",
+    "a"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "text": "A depicted individual shall have a cause of action against a person who, discloses, disseminates or publishes sexually explicit material related to the depicted individual, and the person knows or reasonably should have known the depicted individual in that material did not consent to its creation, disclosure, dissemination, or publication.",
+   "context": [],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "2",
+    "b"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "It shall not be a defense to an action under this section that there is a disclaimer in the sexually explicit material that communicates that the inclusion of the depicted individual in the sexually explicit material was unauthorized or that the depicted individual did not participate in the creation or development of the material.",
+   "context": [],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "3",
+    "a"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "text": "A depicted individual may only consent to the creation, disclosure, dissemination, or publication of sexually explicit material by knowingly and voluntarily signing an agreement written in plain language that includes a general description of the sexually explicit material and the audiovisual work in which it will be incorporated.",
+   "context": [],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "3",
+    "b"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "A depicted individual may rescind consent by delivering written notice within three business days from the date consent was given to the person in whose favor consent was made, unless one of the following requirements is satisfied:",
+   "context": [],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "3",
+    "b",
+    "i"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "the depicted individual is given at least three business days to review the terms of the agreement before signing it; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A depicted individual may rescind consent by delivering written notice within three business days from the date consent was given to the person in whose favor consent was made, unless one of the following requirements is satisfied:",
+     "path": [
+      "3",
+      "b"
+     ],
+     "anchor": "52-C"
+    }
+   ],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "3",
+    "b",
+    "ii"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "if the depicted individual is represented, the attorney, talent agent, or personal manager authorized to represent the depicted individual provides additional written approval of the signed agreement.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A depicted individual may rescind consent by delivering written notice within three business days from the date consent was given to the person in whose favor consent was made, unless one of the following requirements is satisfied:",
+     "path": [
+      "3",
+      "b"
+     ],
+     "anchor": "52-C"
+    }
+   ],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "4"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "text": "a. A person is not liable under this section if:",
+   "context": [],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "4",
+    "i"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "the person discloses, disseminates or publishes the sexually explicit material in the course of reporting unlawful activity, exercising the person's law enforcement duties, or hearings, trials or other legal proceedings; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "a. A person is not liable under this section if:",
+     "path": [
+      "4"
+     ],
+     "anchor": "52-C"
+    }
+   ],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "4",
+    "ii"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "the sexually explicit material is a matter of legitimate public concern, a work of political or newsworthy value or similar work, or commentary, criticism or disclosure that is otherwise protected by the constitution of this state or the United States; provided that sexually explicit material shall not be considered of newsworthy value solely because the depicted individual is a public figure.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "a. A person is not liable under this section if:",
+     "path": [
+      "4"
+     ],
+     "anchor": "52-C"
+    }
+   ],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "5"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "text": "In any action commenced pursuant to this section, the finder of fact, in its discretion, may award injunctive relief, punitive damages, compensatory damages, and reasonable court costs and attorney's fees.",
+   "context": [],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "6"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "text": "A cause of action or special proceeding under this section shall be commenced the later of either:",
+   "context": [],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "6",
+    "a"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "three years after the dissemination or publication of sexually explicit material; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A cause of action or special proceeding under this section shall be commenced the later of either:",
+     "path": [
+      "6"
+     ],
+     "anchor": "52-C"
+    }
+   ],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "6",
+    "b"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "Private right of action for unlawful dissemination or publication of a sexually explicit depiction of an individual",
+   "text": "one year from the date a person discovers, or reasonably should have discovered, the dissemination or publication of such sexually explicit material.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A cause of action or special proceeding under this section shall be commenced the later of either:",
+     "path": [
+      "6"
+     ],
+     "anchor": "52-C"
+    }
+   ],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "7"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "text": "Nothing in this section shall be read to require a prior criminal complaint, prosecution or conviction to establish the elements of the cause of action provided for in this section.",
+   "context": [],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "8"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "text": "The provisions of this section including the remedies are in addition to, and shall not supersede, any other rights or remedies available in law or equity.",
+   "context": [],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "9"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "text": "If any provision of this section or its application to any person or circumstance is held invalid, the invalidity shall not affect other provisions or applications of this section which can be given effect without the invalid provision or application, and to this end the provisions of this section are severable.",
+   "context": [],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  },
+  {
+   "path": [
+    "10"
+   ],
+   "anchor": "52-C",
+   "section": "52-C",
+   "confidence": "high",
+   "heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "text": "Nothing in this section shall be construed to limit, or to enlarge, the protections that 47 U.S.C. \u00a7 230 confers on an interactive computer service for content provided by another information content provider, as such terms are defined in 47 U.S.C. \u00a7 230.",
+   "context": [],
+   "section_heading": "* \u00a7 52-c. Private right of action for unlawful dissemination or\npublication of a sexually explicit depiction of an individual.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2024-05-03"
+  }
+ ]
+}

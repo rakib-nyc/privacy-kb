@@ -1,0 +1,23 @@
+§ 1320d–6.
+Wrongful disclosure of individually identifiable health information
+(a)
+Offense
+A person who knowingly and in violation of this part—
+(1)
+uses or causes to be used a unique health identifier;
+(2)
+obtains individually identifiable health information relating to an individual; or
+(3)
+discloses individually identifiable health information to another person,
+shall be punished as provided in subsection (b). For purposes of the previous sentence, a person (including an employee or other individual) shall be considered to have obtained or disclosed individually identifiable health information in violation of this part if the information is maintained by a covered entity (as defined in the HIPAA privacy regulation described in
+section 1320d–9(b)(3) of this title
+) and the individual obtained or disclosed such information without authorization.
+(b)
+Penalties
+A person described in subsection (a) shall—
+(1)
+be fined not more than $50,000, imprisoned not more than 1 year, or both;
+(2)
+if the offense is committed under false pretenses, be fined not more than $100,000, imprisoned not more than 5 years, or both; and
+(3)
+if the offense is committed with intent to sell, transfer, or use individually identifiable health information for commercial advantage, personal gain, or malicious harm, be fined not more than $250,000, imprisoned not more than 10 years, or both.

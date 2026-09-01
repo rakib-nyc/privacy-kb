@@ -1,0 +1,132 @@
+id: us.authority.ftc
+schema_version: 1
+record_type: authority
+source:
+  citation: 15 U.S.C. § 45(a)(2)
+  instrument_id: us.usc.t15
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/authorities/raw/15-u-s-c-45.xml
+  raw_sha256: d29a4cc1ef8b8b6e297d95e258214598047635c113920ef95407e76c2c6b7df8
+  text_file: corpus/federal/authorities/raw/15-u-s-c-45.txt
+  text_sha256: 4a5fdadfe59afce881b810666145730d387792e38a40f6a42454e9aaff5e8df4
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/authorities/raw/15-u-s-c-45.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: Title 15. Positive-law status from the title's own <property role="is-positive-law"> element.
+  segment_sha256: aab3875ef8cc686b2923afad3e76ff6b6dc290d9cba162ab90e6ab05c7ba8dbd
+verbatim_span: >-
+  The Commission is hereby empowered and directed to prevent persons, partnerships, or corporations,
+  except banks, savings and loan institutions described in section 57a(f)(3) of this title , Federal
+  credit unions described in section 57a(f)(4) of this title , common carriers subject to the Acts
+  to regulate commerce, air carriers and foreign air carriers subject to part A of subtitle VII of
+  title 49, and persons, partnerships, or corporations insofar as they are subject to the Packers
+  and Stockyards Act, 1921, as amended [ 7 U.S.C. 181 et seq.], except as provided in section 406(b)
+  of said Act [ 7 U.S.C. 227(b) ], from using unfair methods of competition in or affecting commerce
+  and unfair or deceptive acts or practices in or affecting commerce.
+verification_status: verbatim_confirmed
+subject:
+  domain: I.A.4
+  lifecycle:
+    - I
+paragraph_path:
+  path:
+    - a
+    - '2'
+  anchor: /us/usc/t15/s45/a/2
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element
+jurisdiction: US-FED
+jurisdiction_level: federal
+status: in_force
+effective_from: null
+effective_to: null
+amendment_history: []
+summary: >-
+  The FTC is empowered to prevent unfair or deceptive acts or practices in or affecting commerce,
+  for every person, partnership or corporation except the enumerated carve-outs.
+authority:
+  id: us.authority.ftc
+  name: Federal Trade Commission
+  short_name: FTC
+  kind: federal_agency
+  statutory_source:
+    - 15 U.S.C. § 45 (FTC Act § 5) — unfair or deceptive acts or practices
+    - 15 U.S.C. § 45(n) — the statutory unfairness test
+    - 15 U.S.C. § 46 — investigative powers
+    - 15 U.S.C. § 57a — Magnuson-Moss rulemaking
+  jurisdiction: US-FED
+  sector_reach:
+    - all commerce not otherwise carved out
+    - consumer protection generally
+    - data brokers
+    - advertising and marketing
+    - children's online services (COPPA)
+    - consumer reporting (FCRA)
+    - non-bank financial (GLBA Safeguards)
+  excluded_from_reach:
+    - banks
+    - savings and loan institutions described in 15 U.S.C. § 57a(f)(3)
+    - Federal credit unions described in 15 U.S.C. § 57a(f)(4)
+    - common carriers subject to the Acts to regulate commerce
+    - air carriers and foreign air carriers subject to part A of subtitle VII of title 49
+    - persons subject to the Packers and Stockyards Act, 1921, except as provided in § 406(b)
+  enforcement_powers:
+    - administrative cease-and-desist proceedings
+    - civil actions for penalties for violating a final order (15 U.S.C. § 45(l))
+    - civil penalties for knowing violation of a trade regulation rule (15 U.S.C. § 45(m)(1)(A))
+    - consent orders and settlements
+    - compulsory process and investigative subpoenas (§ 46)
+  rulemaking_authority:
+    has: true
+    basis: 15 U.S.C. § 57a
+    procedure: Magnuson-Moss rulemaking — materially more burdensome than APA § 553 notice-and-comment
+    note: >-
+      The procedural burden is why the FTC has historically built privacy doctrine through
+      enforcement orders rather than rules. That is a fact about the statute, not a preference.
+  penalty_authority:
+    structure: civil penalty per violation
+    range: null
+    inflation_adjusted: true
+    note: >-
+      § 45(l) and § 45(m)(1)(A) both state $10,000 on their face. The operative figure is far
+      higher: it is adjusted annually for inflation under the Federal Civil Penalties Inflation
+      Adjustment Act and published by rule. NEVER quote the statutory figure as the current one.
+  private_right_of_action:
+    exists: false
+    basis: null
+    note: >-
+      FTC Act § 5 confers no private right of action. Consumers reach the same conduct through state
+      UDAP statutes, which is why invariant I6 pairs § 5 with state UDAP rather than treating § 5 as
+      sufficient.
+    drives_litigation_risk: false
+  own_enforcement_power: true
+  operates_through: null
+derived_obligations: []
+differs_from: []
+related: []
+source_defects: []
+common_errors:
+  - >-
+    Assuming the FTC reaches banks and common carriers. § 45(a)(2) carves them out expressly, which
+    is why HIPAA, GLBA banking and FCC-regulated carriers have different enforcers.
+  - >-
+    Quoting the $10,000 figure from § 45(l) or § 45(m) as the current penalty. It is
+    inflation-adjusted by rule and the operative number is much higher.
+  - >-
+    Treating § 5 as creating a private right of action. It does not; the state UDAP statute is the
+    private vehicle.
+open_questions:
+  - >-
+    The carve-out list is entity-level, not activity-level: a carved-out entity is outside § 5 for
+    the carved-out capacity, and the FTC has asserted authority over non-carrier activities of
+    carrier-affiliated entities. Resolve against primary authority before relying on it in either
+    direction.
+confidence: high
+context_not_required: 'No ancestor contributes governing text: this element''s operative meaning is complete on its own.'

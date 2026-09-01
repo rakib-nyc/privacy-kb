@@ -1,0 +1,24 @@
+id: ev.coppa.001
+question: We obtained verifiable parental consent. Can we now require children to give us their full address
+  to enter a contest?
+trap: Assuming consent cures over-collection. s312.3(d) is a separate prohibition that consent does not
+  satisfy.
+trap_category: null
+rubric:
+- name: the conditioning prohibition exists
+  record_exists: us.coppa.312_3.no_conditioning
+- name: it is typed as a prohibition, not a consent obligation
+  record: us.coppa.312_3.no_conditioning
+  path: obligation_type
+  equals: prohibit
+- name: the detail says consent does not satisfy it
+  record: us.coppa.312_3.no_conditioning
+  path: requirement_detail
+  contains: even WITH verifiable parental consent
+- name: common_errors names the trap
+  record: us.coppa.312_3.no_conditioning
+  path: common_errors
+  contains: parental consent cures over-collection
+- name: the consent obligation is a separate atom
+  record_exists: us.coppa.312_3.verifiable_parental_consent
+all_pass: true

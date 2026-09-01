@@ -1,0 +1,101 @@
+id: us.wiretap.2511.1a.interception_prohibition
+schema_version: 1
+record_type: obligation
+source:
+  citation: 18 U.S.C. § 2511(1)(a)
+  instrument_id: us.ecpa_wiretap
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2511.xml
+  raw_sha256: ec7314f1868f20a98a0bcffff899cb099c3b86cf13b4c0c31a76464678744c9f
+  text_file: corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2511.txt
+  text_sha256: 73d0db0c6a8ce64a6c2910043e2cf46502e099dc377b1033032d1f02a7807ffb
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2511.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 446827ae5ca5a4b1a0306b789ddc2a2e1a394debd9bf60e0b1ac7ea0129c85b3
+verbatim_span: >-
+  intentionally intercepts, endeavors to intercept, or procures any other person to intercept or
+  endeavor to intercept, any wire, oral, or electronic communication;
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - '1'
+    - a
+  anchor: /us/usc/t18/s2511/1/a
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the prohibition and its exception clause in full.
+subject:
+  domain: III.A.1
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &ref_0
+  - doj
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '1968-06-19'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - practice.intercepts_communications == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  Any person who intentionally intercepts, endeavors to intercept, or procures another to intercept
+  any wire, oral or electronic communication violates the Wiretap Act.
+requirement_detail: >-
+  THE CORE OF ECPA, and everything practical about it lives in the exceptions rather than here. §
+  2511(2)(d) makes one-party consent a complete defence federally, so an employer that is a party to
+  the communication, or has consent from one party, is generally outside the statute — but roughly a
+  dozen states require ALL-party consent, and the stricter law governs. The business-extension and
+  provider exceptions at § 2511(2)(a) do the rest of the work in workplace monitoring. Note the word
+  INTERCEPT: acquisition must be contemporaneous with transmission, which is why stored messages are
+  the Stored Communications Act's territory and not this one.
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Assuming one-party consent settles it. Around a dozen states require all-party consent and the
+    stricter rule governs.
+  - >-
+    Applying it to stored messages. Interception must be contemporaneous with transmission; stored
+    data is 18 U.S.C. § 2701 et seq.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2511(1)(a)
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis; no express ceiling clause was
+    found in the section extracted.
+enforcement:
+  enforcers: *ref_0
+  private_right_of_action: true
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      The enforcement section has not been extracted; treat penalty exposure as UNASSESSED rather
+      than absent.
+  statute_of_limitations: null

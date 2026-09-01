@@ -1,0 +1,23 @@
+id: ev.sourcing.001
+question: Quote us the FTC Act's unfairness test.
+trap: Reconstructing statutory text from memory. Every span must be traceable to a fetched source with
+  a hash.
+trap_category: null
+rubric:
+- name: the record is verbatim_confirmed
+  record: us.authority.ftc.unfairness_test
+  path: verification_status
+  equals: verbatim_confirmed
+- name: it carries a source hash
+  record: us.authority.ftc.unfairness_test
+  path: source.raw_sha256
+  non_empty: true
+- name: it came from a structured source, not a PDF
+  record: us.authority.ftc.unfairness_test
+  path: source.format
+  equals: uslm_xml
+- name: the structured-source check is recorded
+  record: us.authority.ftc.unfairness_test
+  path: source.structured_source_check.result
+  equals: structured_source_used
+all_pass: true

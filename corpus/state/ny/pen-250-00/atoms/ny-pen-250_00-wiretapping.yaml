@@ -1,0 +1,115 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+id: ny.penal.250_00.wiretapping_definition
+source:
+  citation: N.Y. Penal Law § 250.00(1)
+  instrument_id: ny.penal.250.05
+  url: https://legislation.nysenate.gov/api/3/laws/PEN/250.00
+  fetched: '2026-08-19'
+  raw_file: corpus/state/ny/pen-250-00/raw/ny-pen-250-00.json
+  raw_sha256: 4b3b7668a96af0d9e61bba015e2c8ea8e2c0cb30d5abab58650ec985d0107154
+  text_file: corpus/state/ny/pen-250-00/raw/ny-pen-250-00.txt
+  text_sha256: fdd6af7004eb50d677ceaf6b1897e53b8441825c3cae4925a084ecfabb22d189
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/pen-250-00/raw/ny-pen-250-00.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, ny-pen-250-00
+    result: structured_source_used
+    note: null
+  segment_sha256: 724e2b5ca899a3189f7265a5c109645f21b812401777f6fec25077666bb71fe8
+verbatim_span: >-
+  "Wiretapping" means the intentional overhearing or recording of a telephonic or telegraphic
+  communication by a person other than a sender or receiver thereof, without the consent of either
+  the sender or receiver, by means of any instrument, device or equipment. The normal operation of a
+  telephone or telegraph corporation and the normal use of the services and facilities furnished by
+  such corporation pursuant to its tariffs or necessary to protect the rights or property of said
+  corporation shall not be deemed "wiretapping."
+paragraph_path:
+  path:
+    - '1'
+  anchor: '250.00'
+  derivation: reconstructed
+  confidence: high
+  evidence: subdivision designators reconstructed from the flat text field; resolves to exactly one leaf
+context_not_required: The provision states the rule in full.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - I
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - any
+effective_from: '2021-05-29'
+federal_relationship: independent
+applies_if:
+  all:
+    - entity.nexus in ["US-NY"]
+    - practice.intercepts_communications == true
+applies_to_role: controller
+obligation_type: prohibit
+deadline: null
+exemptions: []
+related:
+  - ny.penal.250_00.mechanical_overhearing_definition
+  - ny.penal.250_05.eavesdropping
+summary: >-
+  "Wiretapping" means the intentional overhearing or recording of a telephonic or telegraphic
+  communication by a person other than a sender or receiver, without the consent of a sender or
+  receiver.
+requirement_detail: >-
+  THIS IS WHERE NEW YORK'S ONE-PARTY CONSENT RULE ACTUALLY LIVES, FOR TELEPHONIC COMMUNICATION. §
+  250.05 makes eavesdropping a felony by reference to "unlawfully", and the content comes from here:
+  the definition excludes a person who IS a sender or receiver, and requires absence of consent from
+  a sender or receiver — either one. So a party to the call cannot commit the offence by recording
+  it, and neither can a third party with one party's consent. Reading § 250.05 alone leaves the
+  consent question unanswered, which is exactly the gap that produces California-style
+  session-replay theories in New York.
+
+
+  READ IT WITH § 250.00(2), NOT INSTEAD OF IT. This subdivision reaches TELEPHONIC OR TELEGRAPHIC
+  communication only. An in-person conversation is governed by the separate definition of mechanical
+  overhearing at subdivision 2, which carries its own consent test and an extra limb this one has no
+  analogue for — the actor must not have been present at the conversation. The two were welded into
+  a single segmentation leaf until 2026-08-20, and this atom's span carried both; the citation said
+  § 250.00(1) while the words included § 250.00(2). See meta/validation-events.yaml VE-007.
+common_errors:
+  - Looking for the consent rule in § 250.05. It is here, in the definitions.
+  - >-
+    Assuming all-party consent because the statute is criminal. The definition requires consent of A
+    sender or receiver, not both.
+  - >-
+    Applying this subdivision to an in-person conversation. It reaches telephonic or telegraphic
+    communication; the conversation limb is § 250.00(2).
+open_questions: []
+preemption:
+  posture: none
+  authority: N.Y. Penal Law § 250.00
+  note: >-
+    State criminal definitions. 18 U.S.C. § 2510 supplies the federal analogues and § 2511(2)(d) the
+    federal one-party rule; where a state requires all-party consent the stricter governs, but New
+    York does not.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: Definitional; penalties attach through § 250.05.
+    range: null
+    note: No independent penalty. Civil exposure runs through GBL § 349 and common-law theories.
+  statute_of_limitations: null

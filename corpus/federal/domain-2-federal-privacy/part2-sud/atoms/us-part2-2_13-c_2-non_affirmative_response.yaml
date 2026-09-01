@@ -1,0 +1,187 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+related:
+  - us.cures.171_202.b.privacy_precondition_exception
+federal_relationship: null
+interpreted_by: []
+confidence: high
+id: us.part2.2_13.c_2.non_affirmative_response
+source:
+  citation: 42 C.F.R. § 2.13(c)(2)
+  instrument_id: us.part2_sud
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-42.xml?part=2
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  raw_sha256: 5310842763c7e36481877d66979171643bfb80db54bceca2013014691623c216
+  text_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.txt
+  text_sha256: 8aa03df58a46112b21fc7b4d0972fe49d4ed8dc28481d2e409f7a8fa881e8b74
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, full XML for the part, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: 770bc6cad92fa918b4e18cdf5f169624a7e59212be03b3a02db409a34f5bf0ef
+verbatim_span: >-
+  Any answer to a request for a disclosure of patient records which is not permissible under the
+  regulations in this part must be made in a way that will not affirmatively reveal that an
+  identified individual has been, or is being, diagnosed or treated for a substance use disorder. An
+  inquiring party may be provided a copy of the regulations in this part and advised that they
+  restrict the disclosure of substance use disorder patient records, but may not be told
+  affirmatively that the regulations restrict the disclosure of the records of an identified
+  patient.
+paragraph_path:
+  path:
+    - c
+    - '2'
+  anchor: '2.13'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+    exactly one provision
+exemptions:
+  - id: cfr.42.2.12.e.2.not_a_part_2_program
+    type: entity_level
+    reach: instrument
+    scope: >-
+      If the diagnosis, treatment or referral was not provided by a part 2 program, the patient's
+      record is outside part 2 altogether. CONSEQUENCE TEST: there is no part 2 compliance programme
+      to build — no consent form, no redisclosure notice, no § 2.16 policies — because the
+      instrument does not reach the entity at all, which is why reach is instrument and not
+      obligation. The trap is the second sentence: federal money reaching the PATIENT is not federal
+      assistance to the PROGRAM, so a court-placed patient whose care a federal agency pays for is
+      still outside part 2 unless the program itself is federally assisted under § 2.12(b). Note
+      what the relief does NOT do — the same records remain PHI in the hands of a covered entity, so
+      exiting part 2 routes the analysis back to the Privacy Rule rather than out of regulation.
+    source_citation: 42 C.F.R. § 2.12(e)(2)
+    verbatim_span: >-
+      If a patient's substance use disorder diagnosis, treatment, or referral for treatment is not
+      provided by a part 2 program, that patient's record is not covered by the regulations in this
+      part. Thus, it is possible for an individual patient to benefit from federal support and not
+      be covered by the confidentiality regulations because the program in which the patient is
+      enrolled is not federally assisted as defined in paragraph (b) of this section. For example,
+      if a federal court placed an individual in a private for-profit program and made a payment to
+      the program on behalf of that individual, that patient's record would not be covered by the
+      regulations in this part unless the program itself received federal assistance as defined by
+      paragraph (b) of this section.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - entity.is_part2_program == false
+common_errors:
+  - >-
+    Answering a records request by saying that a part 2 consent would be needed. That confirms the
+    patient is a part 2 patient and is exactly what the second sentence forbids.
+  - >-
+    Treating paragraph (c)(1) and paragraph (c)(2) as the same rule. Paragraph (c)(1) governs
+    acknowledging a patient's PRESENCE in a facility publicly identified as SUD-only; paragraph
+    (c)(2) governs the wording of any answer to any impermissible request, whatever the setting.
+  - >-
+    Assuming a neutral refusal satisfies the information blocking rule. Silence is not an exception
+    under 45 C.F.R. part 171; § 171.202(b)(2) requires the actor to help the individual satisfy the
+    precondition instead.
+open_questions:
+  - >-
+    effective_from is the effective date of the 2024 CARES Act alignment rule and is not stated in
+    the fetched part text; the source is the eCFR snapshot for 2026-08-17.
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      The presence of an identified patient in a health care facility or component of a health care
+      facility that is publicly identified as a place where only substance use disorder diagnosis,
+      treatment, or referral for treatment is provided may be acknowledged only if the patient's
+      written consent is obtained in accordance with subpart C of this part or if an authorizing
+      court order is entered in accordance with subpart E of this part. The regulations permit
+      acknowledgment of the presence of an identified patient in a health care facility or part of a
+      health care facility if the health care facility is not publicly identified as only a
+      substance use disorder diagnosis, treatment, or referral for treatment facility, and if the
+      acknowledgment does not reveal that the patient has a substance use disorder.
+    citation: 42 C.F.R. § 2.13(c)(1)
+    path:
+      path:
+        - c
+        - '1'
+      anchor: '2.13'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings, sequence-tracked within the section; resolves to
+        exactly one provision
+regulator:
+  - hhs_ocr
+  - hhs_samhsa
+sector:
+  - health
+data_types:
+  - health
+effective_from: '2024-04-16'
+subject:
+  domain: II.B.3
+  lifecycle:
+    - VI
+applies_if:
+  all:
+    - data.is_sud_patient_record == true
+    - any:
+        - entity.is_part2_program == true
+        - entity.is_part2_lawful_holder == true
+    - event.type == 'third_party_record_request'
+obligation_type: prohibit
+summary: >-
+  An answer to a request that part 2 does not permit must not affirmatively reveal that an
+  identified individual has been or is being diagnosed or treated for a substance use disorder.
+requirement_detail: >-
+  The refusal itself is a disclosure, and this is where part 2 diverges most visibly from ordinary
+  practice. A HIPAA covered entity may tell a requester that it holds records and needs an
+  authorization; a part 2 programme may not, because confirming the file exists confirms the
+  diagnosis. The permitted response is the one the text specifies: the inquirer may be given a copy
+  of the regulations and told that they restrict disclosure of substance use disorder records in
+  general, but "may not be told affirmatively that the regulations restrict the disclosure of the
+  records of an identified patient". The consequence is operational rather than rhetorical — a
+  programme has to answer the same way about a patient it has never seen, or the distinction between
+  the two answers becomes the disclosure. This is also the provision that collides with the
+  information blocking rule: a flat refusal to confirm looks from the outside like interference
+  under 45 C.F.R. § 171.103(a), which is why the actor has to reach the § 171.202(b) privacy
+  exception and use reasonable efforts to obtain a conforming consent rather than simply going
+  quiet.
+preemption:
+  posture: floor
+  authority: 42 C.F.R. § 2.20
+  note: >-
+    Section 2.20 states that 42 U.S.C. 290dd-2 does not preempt the field: a State law PROHIBITING a
+    use or disclosure that part 2 permits still governs, while no State law may authorize or compel
+    a use or disclosure that part 2 forbids. So the ratchet runs one way — part 2 is a floor against
+    State permission and a ceiling on nothing.
+enforcement:
+  enforcers:
+    - hhs_ocr
+    - doj
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Section 2.3(a) applies the HIPAA penalties — sections 1176 and 1177 of the Social Security
+      Act, 42 U.S.C. 1320d-5 and 1320d-6 — to violations of 42 U.S.C. 290dd-2(a)-(d), and § 2.3(c)
+      applies 45 C.F.R. part 160 subparts C, D and E to noncompliance with part 2 in the same manner
+      as to covered entities.
+    range: null
+    note: >-
+      Enforcement was formerly criminal fines under 42 U.S.C. 290dd-2(f) alone. The current text
+      routes part 2 through the HIPAA enforcement machinery, which means OCR investigation, civil
+      money penalties and the § 2.4 complaint process — a materially larger exposure than the
+      pre-alignment position.
+  statute_of_limitations: null

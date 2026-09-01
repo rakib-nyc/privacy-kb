@@ -1,0 +1,144 @@
+id: us.privacy_act.552a.d1.access_right
+schema_version: 1
+record_type: obligation
+source:
+  citation: 5 U.S.C. § 552a(d)(1)
+  instrument_id: us.privacy_act
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc05@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.xml
+  raw_sha256: 1b646d09621fc527d59702dd5fcd1ef271aca65f6c6271fb9b4d3c2915d6b1e3
+  text_file: corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.txt
+  text_sha256: 763c0ae3764d6bc5d665947896ea22e53e375a47ef41c10a0667cad066e6ded7
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 278d238d93f8dc327985d2cd40ec2c6efc95616b561d09919c43e43918f32676
+verbatim_span: >-
+  upon request by any individual to gain access to his record or to any information pertaining to
+  him which is contained in the system, permit him and upon his request, a person of his own
+  choosing to accompany him, to review the record and have a copy made of all or any portion thereof
+  in a form comprehensible to him, except that the agency may require the individual to furnish a
+  written statement authorizing discussion of that individual’s record in the accompanying person’s
+  presence;
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - d
+    - '1'
+  anchor: /us/usc/t5/s552a/d/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: III.A.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - federal_agencies
+  - doj
+  - private_litigants
+sector:
+  - government
+data_types:
+  - personally_identifiable_information
+status: in_force
+effective_from: '1975-09-27'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_federal_agency == true
+    - data.in_system_of_records == true
+applies_to_role: controller
+obligation_type: disclose
+summary: >-
+  On request, an agency must let an individual review his own record and have a copy made of any
+  part of it, in a form he can understand, and may let a person of his choosing accompany him.
+requirement_detail: >-
+  THIS IS THE ACCESS RIGHT THE US GENERALLY LACKS, and it exists only against federal agencies. The
+  duty is to permit review and copying "in a form comprehensible to him", which is a usability
+  standard rather than a format standard — producing a raw system extract nobody can read does not
+  discharge it. Three features separate it from a consumer access request under a state
+  comprehensive law: it reaches only the requester's own record in a system of records, it can be
+  conditioned on a written statement authorising discussion of the record in front of an
+  accompanying person, and it is enforceable by the individual in federal court under (g)(1)(B) with
+  de novo review. The usual practitioner error is to treat it as a FOIA request; the two run on
+  different tracks, and an agency's exemptions under subsections (j) and (k) are what actually
+  determine how much of a record an individual gets.
+deadline: null
+exemptions: []
+related:
+  - us.privacy_act.552a.d2a.amendment_acknowledgment
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating this as a FOIA request. FOIA and this subsection are separate routes with different
+    exemptions, and agencies process a request under both.
+  - >-
+    Assuming the right reaches any agency information about the person. It reaches a record in a
+    system of records, which is the retrieval-by-identifier test.
+  - >-
+    Overlooking subsections (j) and (k). An agency may by regulation exempt named systems from this
+    subsection, so the access right is not uniform across an agency's holdings.
+open_questions:
+  - >-
+    legal-domain v2.6.1 has no performance indicator naming the Privacy Act of 1974. subject.domain III.A.1
+    is the nearest fit and matches where this repo already files government-records disclosure
+    statutes (DPPA, RFPA); it is a placement decision, not a claim that the taxonomy leaf names this
+    statute.
+confidence: high
+preemption:
+  posture: none
+  authority: 5 U.S.C. § 552a
+  note: >-
+    The Act regulates federal agencies, not private entities, so it displaces nothing at state level
+    and the section carries no preemption clause. A state privacy statute and this section do not
+    compete for the same conduct; where a state actor is involved it is the state's own records law
+    that governs, not this one.
+enforcement:
+  enforcers:
+    - private_litigants
+    - doj
+    - federal_agencies
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Civil action in federal district court under 5 U.S.C. § 552a(g)(1). For the
+      intentional-or-wilful violations in (g)(1)(C) and (g)(1)(D) the court awards actual damages
+      with a $1,000 statutory floor, plus costs and reasonable attorney fees under (g)(4). Access
+      and amendment suits under (g)(1)(A)-(B) are reviewed de novo and yield injunctive relief and
+      fees rather than damages. Wilful disclosure by an officer or employee is a misdemeanour under
+      (i)(1), fined not more than $5,000.
+    range: null
+    note: >-
+      A PRIVATE RIGHT OF ACTION EXISTS, which is unusual for a federal privacy statute and is the
+      reason Privacy Act claims are litigated at all. Damages require intentional or wilful conduct,
+      and the Supreme Court in FAA v. Cooper (2012) held that actual damages do not cover mental or
+      emotional distress.
+  statute_of_limitations: Two years from the date on which the cause of action arises, under 5 U.S.C. § 552a(g)(5).
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: Each agency that maintains a system of rec­ords shall—
+    citation: 5 U.S.C. § 552a(d)
+    path:
+      path:
+        - d
+      anchor: /us/usc/t5/s552a/d
+      derivation: structural
+      confidence: high
+      evidence: USLM element nesting; identifier read from the source

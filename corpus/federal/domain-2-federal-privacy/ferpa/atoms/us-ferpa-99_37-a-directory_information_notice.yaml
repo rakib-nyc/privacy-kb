@@ -1,0 +1,182 @@
+id: us.ferpa.99_37.a.directory_information_notice
+schema_version: 1
+record_type: obligation
+source:
+  citation: 34 C.F.R. § 99.37(a)
+  instrument_id: us.ferpa
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-34.xml?part=99
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml
+  raw_sha256: 5215a3f303ea41cb5bb4c5afb481da1f4623e64307eadc30ef2ad27a2238ffa0
+  text_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.txt
+  text_sha256: e0eee9622724e33bc4d5677717fd06987529754f8ce13dc1b0ed913c9efb542e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: d6e9bd53c4b19d611f22ce0495feefec11aaea9722de112b3e8e0a94a514e5e5
+verbatim_span: >-
+  An educational agency or institution may disclose directory information if it has given public
+  notice to parents of students in attendance and eligible students in attendance at the agency or
+  institution of:
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+  anchor: '99.37'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked, and resolves to exactly one leaf
+    within the section (gate 23)
+operative_context:
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      The types of personally identifiable information that the agency or institution has designated
+      as directory information;
+    citation: null
+    relation_note: null
+    path:
+      path:
+        - a
+        - '1'
+      anchor: '99.37'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings; sequence-tracked, and resolves to exactly one leaf
+        within the section (gate 23)
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      A parent's or eligible student's right to refuse to let the agency or institution designate
+      any or all of those types of information about the student as directory information; and
+    citation: null
+    relation_note: null
+    path:
+      path:
+        - a
+        - '2'
+      anchor: '99.37'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings; sequence-tracked, and resolves to exactly one leaf
+        within the section (gate 23)
+  - position: follows
+    relation: conditions
+    verbatim_span: >-
+      The period of time within which a parent or eligible student has to notify the agency or
+      institution in writing that he or she does not want any or all of those types of information
+      about the student designated as directory information.
+    citation: null
+    relation_note: null
+    path:
+      path:
+        - a
+        - '3'
+      anchor: '99.37'
+      derivation: reconstructed
+      confidence: high
+      evidence: >-
+        designator parsed from flat <P> siblings; sequence-tracked, and resolves to exactly one leaf
+        within the section (gate 23)
+subject:
+  domain: II.D.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ed
+sector:
+  - education
+data_types:
+  - education_record
+status: in_force
+effective_from: '2011-12-02'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_educational_agency_or_institution == true
+    - data.is_education_record == true
+applies_to_role: controller
+obligation_type: notify
+summary: >-
+  An educational agency or institution may disclose directory information only if it has first given
+  public notice to parents and eligible students in attendance of the types of information
+  designated as directory information, of the right to refuse the designation, and of the period
+  within which to refuse.
+requirement_detail: >-
+  DIRECTORY INFORMATION IS THE ONLY CATEGORY A SCHOOL MAY PUBLISH WITHOUT CONSENT, AND THE
+  PERMISSION IS CONDITIONAL ON THE NOTICE HAVING BEEN GIVEN FIRST. A designation without the §
+  99.37(a) public notice does not produce lawful directory information; it produces an unconsented
+  disclosure under § 99.30, which is the sequencing error behind most district incidents involving
+  yearbooks, athletic programmes and honour rolls. The statutory list sits at 20 U.S.C. §
+  1232g(a)(5)(A) and the regulatory definition at § 99.3, and a school may designate less than the
+  list but never an item that identifies the student in the way § 99.37(e) forbids — an SSN or other
+  non-directory element used alone or in combination to identify the student pulls the disclosure
+  back under the § 99.30 written-consent requirement. Paragraph (b) allows continued disclosure
+  about FORMER students without repeating the notice, but an opt-out made while the student was in
+  attendance keeps binding until the student rescinds it, so opt-out flags must survive the
+  student-record archival process. Paragraph (d) is the underused lever: the school may state in the
+  notice that directory-information disclosure is limited to specific parties or purposes, which is
+  how a district keeps a lawful yearbook designation from becoming a commercial mailing list.
+  Directory information is where the operational FERPA questions actually arise, and none of it is
+  visible from the statute alone.
+deadline: null
+no_deadline_stated: >-
+  The rule fixes no period for the notice itself. § 99.37(a)(3) requires the notice to state the
+  period within which a parent or eligible student may refuse the designation, but sets no length
+  for that period and no deadline for issuing the notice; the only timing requirement is sequential
+  — notice before disclosure. Checked § 99.37(a) to (e), the annual-notification rule in § 99.7, and
+  20 U.S.C. § 1232g(a)(5)(B), which requires only "a reasonable period of time" after notice.
+exemptions: []
+related:
+  - us.ferpa.1232g.b1.disclosure_prohibition
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating designated directory information as publishable by default. The disclosure is lawful
+    only after the § 99.37(a) public notice, including the refusal right and the refusal period.
+  - >-
+    Letting an opt-out lapse when the student leaves. Under § 99.37(b) an opt-out made while in
+    attendance continues to bind until the former student rescinds it.
+  - >-
+    Designating an identifier such as a student SSN or an ID number that unlocks records. § 99.37(e)
+    returns that disclosure to the § 99.30 consent requirement.
+open_questions:
+  - >-
+    effective_from records 2 December 2011, the latest date in the section's own source credit (76
+    FR 75642). That is the Federal Register publication date; the rule's effective date was not in
+    the fetched text.
+confidence: high
+preemption:
+  posture: floor
+  authority: 20 U.S.C. § 1232g
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis; no express ceiling clause was
+    found in the sections extracted. State student-privacy statutes that bind edtech vendors
+    directly — which FERPA does not — coexist with it.
+enforcement:
+  enforcers:
+    - ed
+  private_right_of_action: false
+  penalty:
+    structure: Withdrawal of Department of Education funding. No civil penalty regime.
+    range: null
+    note: >-
+      Gonzaga University v. Doe (2002) foreclosed § 1983 enforcement, so there is no private action.
+      Enforcement is administrative, through the Department's Student Privacy Policy Office, and in
+      practice runs to voluntary compliance rather than defunding.
+  statute_of_limitations: null

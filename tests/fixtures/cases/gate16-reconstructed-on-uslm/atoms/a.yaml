@@ -1,0 +1,69 @@
+id: us.fixture.reconstructed_on_uslm
+schema_version: 1
+record_type: obligation
+source:
+  citation: 15 U.S.C. § 1681c(f)
+  instrument_id: test.fixture.fcra_1681c
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: tests/fixtures/raw/uslm-1681c-f.xml
+  raw_sha256: 7d29c66be1abc473af56a659e58803ffbfbfd1f3431ea409fffffb21dbd1f27c
+  text_file: tests/fixtures/raw/uslm-1681c-f.txt
+  text_sha256: a42776ecc2e583ec014f03d375b62857bb8603487265e2a7cbcef9b9dc73d3da
+  text_extraction_cmd: python3 tools/render-text.py tests/fixtures/raw/uslm-1681c-f.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - eCFR versioner XML API
+    result: structured_source_used
+    note: fixture
+verbatim_span: If a consumer reporting agency is notified pursuant to section 1681s–2(a)(3) of this title that information regarding a consumer who was furnished to the agency is disputed by the consumer,
+  the agency shall indicate that fact in each consumer report that includes the disputed information.
+verification_status: verbatim_confirmed
+subject:
+  domain: II.C.1
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+- ftc
+sector:
+- consumer_reporting
+data_types:
+- consumer_report
+status: in_force
+effective_from: '2005-06-01'
+effective_to: null
+supersedes: null
+superseded_by: null
+applies_if:
+  all:
+  - entity.maintains_consumer_information == true
+applies_to_role: any
+obligation_type: secure
+summary: Fixture summary, long enough to satisfy the schema minimum length.
+requirement_detail: Fixture detail, long enough to satisfy the schema minimum length.
+deadline: null
+exemptions: []
+preemption:
+  posture: none
+  authority: null
+  note: fixture
+enforcement:
+  enforcers:
+  - ftc
+  private_right_of_action: false
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors: []
+open_questions: []
+confidence: high
+paragraph_path:
+  path:
+  - f
+  anchor: /us/usc/t15/s1681c/f
+  derivation: reconstructed
+  confidence: high
+  evidence: Parsed the designator (f) out of the rendered text.

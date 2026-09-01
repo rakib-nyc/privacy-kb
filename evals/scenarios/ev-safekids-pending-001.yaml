@@ -1,0 +1,101 @@
+id: ev.safekids.pending.001
+question: >-
+  We run a social media app with a personalised feed. We have New York users, some of them
+  teenagers. New York passed the SAFE for Kids Act. What do we have to do, and by when?
+trap: >-
+  THE PENDING-LAW TRAP, and it is the one BRIEF.md § 7 names second because training data is dense
+  with coverage of this Act from the year it was signed. Every duty in it is real, final and
+  quotable — and none of it binds anyone on the date of this query. The article takes effect
+  25 January 2027, and § 1508(1) then bars the attorney general from bringing any action for a
+  further 180 days, so there are TWO future dates and confusing them is the second error. The
+  naive answer states the § 1501 prohibition as a present obligation; the over-corrected answer
+  reads the 180 days as a compliance grace period, which it is not — the duties bind on the
+  effective date and only the remedy is deferred. Invariant I3 exists for exactly this.
+rubric:
+- name: the core prohibition exists as a real atom
+  record_exists: ny.gbl.1501.1.addictive_feed_prohibition
+- name: it is NOT in force — status is enacted_pending
+  record: ny.gbl.1501.1.addictive_feed_prohibition
+  path: status
+  equals: enacted_pending
+- name: and its effective date is in the future
+  record: ny.gbl.1501.1.addictive_feed_prohibition
+  path: effective_from
+  equals: '2027-01-25'
+- name: the record names the exact wrong answer
+  record: ny.gbl.1501.1.addictive_feed_prohibition
+  path: common_errors
+  contains: Treating this as in force. It is not.
+- name: ENGINE — with include_pending, it reaches the WATCH FEED and only the watch feed
+  engine: &feedop
+    entity: {is_ny_addictive_platform_operator: true, nexus: US-NY}
+    data: {}
+    context:
+      as_of: '2026-08-20'
+      include_pending: true
+      practice: {provides_addictive_feed: true, conduct_occurs_in_new_york: true}
+  atom: ny.gbl.1501.1.addictive_feed_prohibition
+  in: pending_watch
+- name: ENGINE — and the watch entry says in terms that it is not law
+  engine: *feedop
+  atom: ny.gbl.1501.1.addictive_feed_prohibition
+  in: pending_watch
+  path: note
+  contains: PENDING — not law
+- name: ENGINE — without include_pending it is NOT_APPLICABLE, not applicable
+  engine:
+    entity: {is_ny_addictive_platform_operator: true, nexus: US-NY}
+    data: {}
+    context:
+      as_of: '2026-08-20'
+      practice: {provides_addictive_feed: true, conduct_occurs_in_new_york: true}
+  atom: ny.gbl.1501.1.addictive_feed_prohibition
+  in: not_applicable
+- name: ENGINE — and it is STILL not applicable on the effective date itself
+  engine:
+    entity: {is_ny_addictive_platform_operator: true, nexus: US-NY}
+    data: {}
+    context:
+      as_of: '2027-01-25'
+      practice: {provides_addictive_feed: true, conduct_occurs_in_new_york: true}
+  atom: ny.gbl.1501.1.addictive_feed_prohibition
+  in: not_applicable
+- name: the enforcement atom records the SECOND date, not just the first
+  record: ny.gbl.1508.1.ag_enforcement
+  path: requirement_detail
+  contains: TWO DATES, NOT ONE
+- name: and refuses the grace-period reading
+  record: ny.gbl.1508.1.ag_enforcement
+  path: common_errors
+  contains: The duties bind on the effective date; only the Attorney General's remedy is deferred.
+- name: it is also not a cure period
+  record: ny.gbl.1508.1.ag_enforcement
+  path: common_errors
+  contains: Nothing in the section conditions it on remediation.
+- name: enforcement is exclusively public — no private right of action
+  record: ny.gbl.1508.1.ag_enforcement
+  path: enforcement.private_right_of_action
+  equals: false
+- name: the instrument declares that the operative regulations are NOT in the corpus
+  record: ny.gbl.1501.1.addictive_feed_prohibition
+  path: requirement_detail
+  contains: THE REGULATIONS ARE THE OPERATIVE DETAIL AND THE CORPUS DOES NOT HOLD THEM
+correct_answer: >-
+  Nothing yet, and that is the whole answer as of today. The SAFE for Kids Act is enacted but not in
+  force: it sits at N.Y. Gen. Bus. Law article 44-D, §§ 1500–1508, and takes effect 25 January 2027.
+  Until then it imposes no obligation, and any tool that returns it as a present duty is wrong.
+  What it will require: § 1501(1) makes it unlawful to provide an addictive feed to a covered user
+  unless you have used commercially reasonable and technically feasible methods to determine the
+  user is not a covered minor, or obtained verifiable parental consent. § 1502 closes a 12 AM–6 AM
+  Eastern window on feed notifications to covered minors absent separate consent for nighttime
+  notifications. § 1504 forbids degrading or repricing the service because you cannot give that
+  user a feed. §§ 1501(3) and (5) confine age-determination and consent data to their purpose and
+  require immediate deletion. Two dates matter, not one: § 1508(1) bars the attorney general from
+  suing until 180 days after the effective date, which is not a grace period and not a cure period
+  — a violation on day one is actionable once the bar lifts. Penalties run to $5,000 per violation
+  with disgorgement expressly including destruction of unlawfully obtained data, and there is no
+  private right of action, so private plaintiffs go to GBL § 349. Note finally what this corpus
+  cannot tell you: §§ 1501(2) and 1501(4) delegate what "commercially reasonable" and "verifiable
+  parental consent" actually require to attorney-general regulations at 13 N.Y.C.R.R. Part 700,
+  which no structured source serves and which are not held here.
+all_pass: true

@@ -1,0 +1,137 @@
+id: us.ferpa.1232g.a1a.inspect_and_review
+schema_version: 1
+record_type: obligation
+source:
+  citation: 20 U.S.C. § 1232g(a)(1)(A)
+  instrument_id: us.ferpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc20@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  raw_sha256: d9eb0b65a1acac5602e55cef5941f4e79a13824f23e8f78b141be5f1d1624e7b
+  text_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.txt
+  text_sha256: 6a51713f2648ca5674640dc9e871fdc9304de0055007e798298d216e99630681
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 0f45e44e24a0ee4c4291f249e1591892e6c2de05f2fca61b2e959dd1a59aaa29
+verbatim_span: >-
+  No funds shall be made available under any applicable program to any educational agency or
+  institution which has a policy of denying, or which effectively prevents, the parents of students
+  who are or have been in attendance at a school of such agency or at such institution, as the case
+  may be, the right to inspect and review the education records of their children. If any material
+  or document in the education record of a student includes information on more than one student,
+  the parents of one of such students shall have the right to inspect and review only such part of
+  such material or document as relates to such student or to be informed of the specific information
+  contained in such part of such material. Each educational agency or institution shall establish
+  appropriate procedures for the granting of a request by parents for access to the education
+  records of their children within a reasonable period of time, but in no case more than forty-five
+  days after the request has been made.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '1'
+    - A
+  anchor: /us/usc/t20/s1232g/a/1/A
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute on the USLM element
+context_not_required: >-
+  The subparagraph states the funding condition, the shared-record limit and the forty-five-day
+  period in full; subparagraph (C) is an exception recorded separately rather than a governing stem.
+subject:
+  domain: II.D.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ed
+sector:
+  - education
+data_types:
+  - education_record
+status: in_force
+effective_from: '1974-11-19'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_educational_agency_or_institution == true
+    - data.is_education_record == true
+applies_to_role: controller
+obligation_type: disclose
+summary: >-
+  Federal funds are conditioned on the institution not denying, or effectively preventing, parents
+  the right to inspect and review their children's education records, and on its granting access
+  within a reasonable time and in no case more than forty-five days after the request.
+requirement_detail: >-
+  THE ACCESS RIGHT IS A CONDITION ON THE INSTITUTION'S POLICY, WHICH IS WHY THE REMEDY IS NEVER A
+  SUIT. The statute forbids a policy of denying or effectively preventing inspection — an
+  "effectively prevents" claim is how a fee schedule or an appointment-only rule becomes a violation
+  without any outright refusal — and Gonzaga University v. Doe (2002) closed § 1983, so the only
+  route is a complaint to the Department. The forty-five-day period is in the statute itself and is
+  repeated at 34 C.F.R. § 99.10(b): calendar days from the request, an outer limit rather than a
+  service standard, and not tolled by a school holiday. The right belongs to parents until the
+  student turns 18 or enrols in a postsecondary institution, at which point it transfers to the
+  student under 34 C.F.R. § 99.5(a)(1) — a university that gives parents routine access to an adult
+  student's records is the recurring institutional error, and paying tuition does not change it.
+  Access is not amendment: where the parent disputes what the record says, the route is the §
+  1232g(a)(2) hearing, and the second sentence here limits inspection of a shared document to the
+  part relating to that student.
+deadline:
+  trigger_event: the parent's request to inspect and review the student's education records
+  duration:
+    value: 45
+    unit: calendar_days
+  computation: >-
+    Calendar days from the date the request was made. The statute fixes "a reasonable period of
+    time, but in no case more than forty-five days after the request has been made", so forty-five
+    days is the ceiling and a longer routine turnaround is a violation regardless of the reason; 34
+    C.F.R. § 99.10(b) restates the same period.
+exemptions: []
+related:
+  - us.ferpa.1232g.a2.hearing_to_challenge
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Treating forty-five days as the service standard. It is the statutory ceiling, and the duty is
+    to act within a reasonable period that in no case exceeds it.
+  - >-
+    Giving parents of an enrolled college student routine access. The rights transferred to the
+    eligible student under 34 C.F.R. § 99.5(a)(1); tuition payment does not restore them.
+  - >-
+    Reading access as a right to have the record changed. Amendment runs through the (a)(2) hearing,
+    and a refusal leaves only the right to insert a written statement.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 20 U.S.C. § 1232g
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis; no express ceiling clause was
+    found in the sections extracted. State student-privacy statutes that bind edtech vendors
+    directly — which FERPA does not — coexist with it.
+enforcement:
+  enforcers:
+    - ed
+  private_right_of_action: false
+  penalty:
+    structure: Withdrawal of Department of Education funding. No civil penalty regime.
+    range: null
+    note: >-
+      Gonzaga University v. Doe (2002) foreclosed § 1983 enforcement, so there is no private action.
+      Enforcement is administrative, through the Department's Student Privacy Policy Office, and in
+      practice runs to voluntary compliance rather than defunding.
+  statute_of_limitations: null

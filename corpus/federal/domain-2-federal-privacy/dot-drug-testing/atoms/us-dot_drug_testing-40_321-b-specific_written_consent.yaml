@@ -1,0 +1,150 @@
+id: us.dot_drug_testing.40_321.b.specific_written_consent
+schema_version: 1
+record_type: obligation
+source:
+  citation: 49 C.F.R. § 40.321(b)
+  instrument_id: us.dot_drug_testing
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-49.xml?part=40
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+  raw_sha256: 37446484793816750245fc98a2b73a94e655895dcfb889d18ddc00c23339e0df
+  text_file: corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.txt
+  text_sha256: 1d4fa6885696bfab98499a9a5b506aa6b85460b41a65d945739fb236b747bdc5
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 49 part 40, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: fa49d725ea92dab56d5346e49947ec8c8414f6fb94eebc3f68e6fd11a889835f
+verbatim_span: >-
+  “Specific written consent” means a statement signed by the employee that he or she agrees to the
+  release of a particular piece of information to a particular, explicitly identified, person or
+  organization at a particular time. “Blanket releases,” in which an employee agrees to a release of
+  a category of information ( e.g., all test results) or to release information to a category of
+  parties ( e.g., other employers who are members of a C/TPA, companies to which the employee may
+  apply for employment), are prohibited under this part.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - b
+  anchor: '40.321'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from flat <P> siblings by tools/extract.py; resolves to exactly one
+    leaf inside the section
+context_not_required: >-
+  Paragraph (b) defines the consent standard and states its own prohibition in full, ending in the
+  words that blanket releases are prohibited under this part, so its meaning does not depend on a
+  chapeau. The general confidentiality rule it supplies a term for is the undesignated opening
+  sentence of § 40.321, which the dual-parse segmentation does not carry as a leaf and which
+  therefore could not be quoted here without typing legal text; it is described in
+  requirement_detail and is not relied on for the meaning of (b).
+subject:
+  domain: IV.B.1
+  lifecycle:
+    - IV
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - dot
+sector:
+  - employment
+  - transportation
+data_types:
+  - health
+  - personal_information
+status: in_force
+effective_from: '2000-12-19'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history:
+  - date: '2000-12-19'
+    note: >-
+      Part 40 carries a part-level source note in the fetched source: "Source: 65 FR 79526, Dec. 19,
+      2000, unless otherwise noted." Neither § 40.321 nor § 40.323 carries its own citation note, so
+      19 December 2000 is the earliest date the fetched source itself asserts for this text.
+    source_url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-49.xml?part=40
+applies_if:
+  all:
+    - entity.is_employer == true
+    - data.is_dot_test_result == true
+    - practice.releases_to_third_party == true
+applies_to_role: controller
+obligation_type: obtain_consent
+summary: >-
+  Release of an employee's drug or alcohol test information to a third party requires specific
+  written consent: a statement signed by the employee agreeing to release a particular piece of
+  information to a particular, explicitly identified person or organization at a particular time.
+  Blanket releases are prohibited.
+requirement_detail: >-
+  THIS IS A STRICTER CONSENT STANDARD THAN THE EMPLOYER WOULD OTHERWISE OWE, and it is why part 40
+  belongs in a privacy corpus at all. The definition demands "a statement signed by the employee"
+  covering "a particular piece of information to a particular, explicitly identified, person or
+  organization at a particular time" — three particulars and a signature, which together defeat the
+  consent architecture most HR and consortium/third-party-administrator systems actually run. A
+  C/TPA membership agreement authorising release to member employers, or an onboarding form
+  consenting to release of all test results, is precisely the blanket release the paragraph names,
+  and it says such releases "are prohibited under this part" rather than merely ineffective — so the
+  defect is not curable by arguing the employee understood what they signed. The general rule this
+  paragraph defines a term for is the undesignated opening sentence of § 40.321, which bars a
+  service agent or employer in the DOT testing process from releasing individual test results or
+  medical information about an employee to third parties without that consent. Practitioners import
+  HIPAA habits here and get it wrong twice over: the employment record is outside protected health
+  information, so HIPAA is not the governing regime, and a HIPAA authorization is not drafted to
+  name a single item, a single recipient and a single time.
+deadline: null
+exemptions: []
+related:
+  - us.dot_drug_testing.40_323.b.legal_proceeding_release
+  - us.dot_drug_testing.40_323.d.employee_notification
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Relying on an onboarding or C/TPA blanket consent. A release covering a category of information,
+    or a category of recipients, is what this paragraph prohibits.
+  - >-
+    Substituting a HIPAA authorization. Employment records sit outside protected health information,
+    and the authorization form is not built to the three particulars this definition requires.
+  - >-
+    Treating a blanket release as merely voidable. The paragraph prohibits it outright, so acting on
+    one is a violation and not a defect in the consent.
+open_questions:
+  - >-
+    The undesignated opening sentence of § 40.321, which states the general confidentiality rule, is
+    not carried as a leaf by the dual-parse segmentation and so has no atom. That gap should be
+    closed when the extractor handles undesignated section-opening text.
+confidence: high
+preemption:
+  posture: floor
+  authority: null
+  note: >-
+    No preemption clause appears anywhere in part 40 as fetched. Whether a DOT testing rule
+    displaces a contrary state requirement is governed by the operating administrations' authorizing
+    statutes and rules — 49 U.S.C. § 31306 and the DOT agency regulations — none of which is held in
+    this corpus. Recorded as floor because the part contains no express ceiling, NOT as a finding
+    that stricter state law survives. Do not answer a state-conflict question from this atom.
+enforcement:
+  enforcers:
+    - dot
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Administrative, through the DOT operating administration that regulates the employer, and for
+      service agents through the public interest exclusion procedures of subpart R of this part,
+      which can bar a service agent from providing services in the DOT testing programme.
+    range: null
+    note: >-
+      Subpart R and the operating administrations' penalty rules have NOT been extracted. Part 40
+      confers no private right of action in terms; an employee's own remedy for an unauthorised
+      release is ordinarily a state-law claim, which this corpus does not model. Treat exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

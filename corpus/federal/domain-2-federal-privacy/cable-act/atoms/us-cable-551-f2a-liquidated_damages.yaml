@@ -1,0 +1,137 @@
+id: us.cable.551.f2a.liquidated_damages
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 U.S.C. § 551(f)(2)(A)
+  instrument_id: us.cable_act
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.xml
+  raw_sha256: 3b7792e5ec31fc28ddaeeb563fc631678a31eafcaf87e6bcc83c7605f93e015b
+  text_file: corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.txt
+  text_sha256: fb926fae4fc7b9f67be65456b0ef3f00522d0824c1eb5057383af817f036e3dc
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1 (47-u-s-c-551)
+    result: structured_source_used
+    note: null
+  segment_sha256: 50d65e01ce14acab6a87442cad897bfb0860576e9e8de381eaf6d056a62daafd
+verbatim_span: >-
+  actual damages but not less than liquidated damages computed at the rate of $100 a day for each
+  day of violation or $1,000, whichever is higher;
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - f
+    - '2'
+    - A
+  anchor: /us/usc/t47/s551/f/2/A
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: The court may award—
+    citation: 47 U.S.C. § 551(f)(2)
+    relation_note: null
+    path:
+      path:
+        - f
+        - '2'
+      anchor: /us/usc/t47/s551/f/2
+      derivation: structural
+      confidence: high
+      evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: II.E.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - private_litigants
+sector:
+  - telecom
+data_types:
+  - any
+status: in_force
+effective_from: '1984-10-30'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_cable_operator == true
+    - data.is_subscriber_pii == true
+applies_to_role: any
+obligation_type: prohibit
+summary: >-
+  On a § 551(f)(1) action the court may award actual damages subject to a liquidated floor of $100
+  for each day of violation or $1,000, whichever is higher, alongside punitive damages and
+  reasonable attorneys' fees and litigation costs.
+requirement_detail: >-
+  THE DAMAGES FORMULA IS A PER-DAY CLOCK, WHICH IS WHY IT BEHAVES DIFFERENTLY FROM THE VPPA'S. The
+  award is actual damages "but not less than" liquidated damages, and the liquidated figure is
+  itself the higher of $100 for each day of violation or $1,000 — so $1,000 is a floor for a short
+  violation and the per-day limb overtakes it after ten days. That structure suits a CONTINUING
+  breach: an operator that keeps subscriber information past the point where § 551(e) required
+  destruction is in violation every day it holds the data, and the exposure accrues rather than
+  being capped at a per-person figure. Contrast 18 U.S.C. § 2710(c)(2)(A), where the VPPA fixes
+  liquidated damages "in an amount of $2,500" with no time dimension at all, so its arithmetic runs
+  on the number of plaintiffs rather than the duration of the breach. Paragraphs (B) and (C) add
+  punitive damages and reasonable attorneys' fees and litigation costs, and both are separate awards
+  the court "may" make rather than components of the liquidated figure — a plaintiff does not have
+  to prove actual loss to reach the floor, but punitive damages and fees remain discretionary.
+deadline: null
+exemptions: []
+related:
+  - us.cable.551.f1.private_action
+  - us.cable.551.e.destruction
+  - us.vppa.2710.c1.private_action
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Reading $1,000 as the cap. It is the lower limb of a whichever-is-higher test; $100 a day for
+    each day of violation governs any violation lasting more than ten days.
+  - >-
+    Treating the liquidated figure as per subscriber by analogy to the VPPA. § 551(f)(2)(A) is
+    written around days of violation, not around the number of persons affected.
+  - >-
+    Assuming actual damages must be proven to recover. The award is actual damages "but not less
+    than" the liquidated floor.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 551(f)(3)
+  note: >-
+    Recorded as floor. § 551(f)(3) states that the remedy provided by the section "shall be in
+    addition to any other lawful remedy available to a cable subscriber", which is an express
+    savings of other remedies rather than a displacement of them. No express ceiling clause was
+    found in the section extracted.
+enforcement:
+  enforcers:
+    - private_litigants
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Civil action in a United States district court under § 551(f)(1); the court may award actual
+      damages subject to a liquidated-damages floor, punitive damages, and reasonable attorneys'
+      fees and litigation costs under § 551(f)(2)(A)–(C).
+    range:
+      min: 1000
+      unit: usd_liquidated_floor_per_action
+    note: >-
+      The liquidated floor is the HIGHER of $100 for each day of violation or $1,000, so the
+      recorded minimum is the fixed limb; a violation continuing more than ten days is worth more on
+      the per-day limb. Punitive damages and fees are separate awards under (B) and (C).
+  statute_of_limitations: null

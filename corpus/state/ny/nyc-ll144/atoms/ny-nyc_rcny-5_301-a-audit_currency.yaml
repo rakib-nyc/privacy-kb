@@ -1,0 +1,121 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: local
+regulator:
+  - nyc_dcwp
+sector:
+  - employment
+status: in_force
+effective_from: '2023-04-05'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: medium
+related:
+  - ny.nyc_ll144.20_871.a.bias_audit
+id: ny.nyc_rcny.5_301.a.audit_currency
+source:
+  citation: 6 RCNY § 5-301(a)
+  instrument_id: nyc.local_law_144
+  url: >-
+    urn:owner-supplied:nyc-dcwp-notice-of-adoption-aedt-2023-04-05.pdf
+  fetched: '2026-08-24'
+  raw_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  raw_sha256: 4ecc4463b29440f9b876b0b7319faf2d4c4710b8ad28db9cfa8ae15a123ece2c
+  text_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.txt
+  text_sha256: 21b43190233735cdab074166a3fc9cc2c26aa24c4b5a80596656cda690abee44
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  format: pdf_single_col
+  risk_tier: medium
+  render: null
+  structured_source_check:
+    checked:
+      - amlegal.com (403 to automated requests)
+      - rules.cityofnewyork.us (carries proposal notices)
+      - owner-supplied DCWP Notice of Adoption of Final Rule
+    result: no_structured_source_exists
+    note: >-
+      No structured source serves the Rules of the City of New York. This is the ADOPTED text — a
+      Notice of Adoption carries the final rule in clean form, unlike a proposal notice — so it is
+      the right document, in the wrong format.
+  segment_sha256: 9b32dd6981711d5ed21d060da5f316af29873773074fcbce034093f823e9b492
+verbatim_span: >-
+  An employer or employment agency may not use or continue to use an AEDT if more than one year has
+  passed since the most recent bias audit of the AEDT.
+paragraph_path:
+  path:
+    - a
+  anchor: 5-301
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designators reconstructed from a pdftotext -layout rendering; indentation is NOT used as
+    evidence because the PDF resets its left margin per page. Resolves to exactly one leaf.
+subject:
+  domain: IV.A.2
+  lifecycle:
+    - III
+data_types:
+  - any
+federal_relationship: gap_fills
+applies_if:
+  all:
+    - entity.uses_automated_employment_decision_tool == true
+    - entity.nexus in ["US-NY-NYC"]
+applies_to_role: controller
+obligation_type: assess
+deadline:
+  trigger_event: the most recent bias audit of the AEDT
+  duration:
+    value: 1
+    unit: years
+  computation: >-
+    The audit must be no more than one year old AT THE TIME OF USE, and the clock runs from the
+    audit, not from deployment. It is a standing condition on continued use rather than a one-off
+    precondition — an audit that lapses makes ongoing use unlawful without anything else changing.
+exemptions: []
+summary: >-
+  An employer or employment agency may not use or continue to use an AEDT if more than one year has
+  passed since its most recent bias audit.
+requirement_detail: >-
+  THE WORD THAT DOES THE WORK IS "CONTINUE". § 20-871(a) of the Code makes a bias audit a
+  precondition on use; this subdivision makes currency a CONTINUING condition, so the obligation
+  does not discharge on first deployment. A tool audited once and left in service becomes unlawful
+  on the anniversary, with no act by the employer in between.
+common_errors:
+  - >-
+    Reading the audit as a one-time gate. It expires, and continued use after expiry is itself the
+    violation.
+  - Assuming the year runs from deployment. It runs from the audit.
+open_questions:
+  - >-
+    THE DOCUMENT STATES NO EFFECTIVE DATE. effective_from is taken from the PDF's own CreationDate
+    metadata (5 April 2023), which is evidence about the FILE rather than a statement in the rule.
+    New York City rules generally take effect after publication in the City Record, which this
+    corpus does not hold. Confirm the operative date against the City Record before relying on any
+    as-of query in 2023.
+preemption:
+  posture: none
+  authority: 6 RCNY Subchapter T
+  note: >-
+    City rule implementing N.Y.C. Admin. Code § 20-870 et seq. No federal statute regulates
+    automated employment decision tools as such; Title VII reaches discriminatory OUTCOMES and says
+    nothing about auditing a tool in advance.
+enforcement:
+  enforcers:
+    - nyc_dcwp
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil penalties under N.Y.C. Admin. Code § 20-872, per violation and per day of continuing
+      violation.
+    range: null
+    note: >-
+      The penalty structure is in the Administrative Code, not this rule; see
+      nyc.ll144.20_872.b.daily_penalty.
+  statute_of_limitations: null
+context_not_required: The subdivision states the rule in full; no ancestor contributes governing text.

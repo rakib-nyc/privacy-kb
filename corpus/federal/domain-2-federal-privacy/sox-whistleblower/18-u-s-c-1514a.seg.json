@@ -1,0 +1,315 @@
+{
+ "label": "18 U.S.C. \u00a7 1514A",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": true,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/sox-whistleblower/raw/18-u-s-c-1514a.xml",
+ "raw_sha256": "8eddb8a50a6d62efbdff864bc7fc3358051f0759c63631a16ed5e0319ade1544",
+ "leaves": [
+  {
+   "path": [
+    "a",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s1514A/a/1/A",
+   "heading": "",
+   "text": "a Federal regulatory or law enforcement agency;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No company with a class of securities registered under section 12 of the Securities Exchange Act of 1934 ( 15 U.S.C. 78 l ), or that is required to file reports under section 15(d) of the Securities Exchange Act of 1934 ( 15 U.S.C. 78 o (d)) including any subsidiary or affiliate whose financial information is included in the consolidated financial statements of such company, or nationally recognized statistical rating organization (as defined in section 3(a) of the Securities Exchange Act of 1934 ( 15 U.S.C. 78c ), or any officer, employee, contractor, subcontractor, or agent of such company or nationally recognized statistical rating organization, may discharge, demote, suspend, threaten, harass, or in any other manner discriminate against an employee in the terms and conditions of employment because of any lawful act done by the employee\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s1514A/a"
+    },
+    {
+     "position": "precedes",
+     "text": "to provide information, cause information to be provided, or otherwise assist in an investigation regarding any conduct which the employee reasonably believes constitutes a violation of section 1341, 1343, 1344, or 1348, any rule or regulation of the Securities and Exchange Commission, or any provision of Federal law relating to fraud against shareholders, when the information or assistance is provided to or the investigation is conducted by\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s1514A/a/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s1514A/a/1/B",
+   "heading": "",
+   "text": "any Member of Congress or any committee of Congress; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No company with a class of securities registered under section 12 of the Securities Exchange Act of 1934 ( 15 U.S.C. 78 l ), or that is required to file reports under section 15(d) of the Securities Exchange Act of 1934 ( 15 U.S.C. 78 o (d)) including any subsidiary or affiliate whose financial information is included in the consolidated financial statements of such company, or nationally recognized statistical rating organization (as defined in section 3(a) of the Securities Exchange Act of 1934 ( 15 U.S.C. 78c ), or any officer, employee, contractor, subcontractor, or agent of such company or nationally recognized statistical rating organization, may discharge, demote, suspend, threaten, harass, or in any other manner discriminate against an employee in the terms and conditions of employment because of any lawful act done by the employee\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s1514A/a"
+    },
+    {
+     "position": "precedes",
+     "text": "to provide information, cause information to be provided, or otherwise assist in an investigation regarding any conduct which the employee reasonably believes constitutes a violation of section 1341, 1343, 1344, or 1348, any rule or regulation of the Securities and Exchange Commission, or any provision of Federal law relating to fraud against shareholders, when the information or assistance is provided to or the investigation is conducted by\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s1514A/a/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "C"
+   ],
+   "anchor": "/us/usc/t18/s1514A/a/1/C",
+   "heading": "",
+   "text": "a person with supervisory authority over the employee (or such other person working for the employer who has the authority to investigate, discover, or terminate misconduct); or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No company with a class of securities registered under section 12 of the Securities Exchange Act of 1934 ( 15 U.S.C. 78 l ), or that is required to file reports under section 15(d) of the Securities Exchange Act of 1934 ( 15 U.S.C. 78 o (d)) including any subsidiary or affiliate whose financial information is included in the consolidated financial statements of such company, or nationally recognized statistical rating organization (as defined in section 3(a) of the Securities Exchange Act of 1934 ( 15 U.S.C. 78c ), or any officer, employee, contractor, subcontractor, or agent of such company or nationally recognized statistical rating organization, may discharge, demote, suspend, threaten, harass, or in any other manner discriminate against an employee in the terms and conditions of employment because of any lawful act done by the employee\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s1514A/a"
+    },
+    {
+     "position": "precedes",
+     "text": "to provide information, cause information to be provided, or otherwise assist in an investigation regarding any conduct which the employee reasonably believes constitutes a violation of section 1341, 1343, 1344, or 1348, any rule or regulation of the Securities and Exchange Commission, or any provision of Federal law relating to fraud against shareholders, when the information or assistance is provided to or the investigation is conducted by\u2014",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s1514A/a/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": "/us/usc/t18/s1514A/a/2",
+   "heading": "",
+   "text": "to file, cause to be filed, testify, participate in, or otherwise assist in a proceeding filed or about to be filed (with any knowledge of the employer) relating to an alleged violation of section 1341, 1343, 1344, or 1348, any rule or regulation of the Securities and Exchange Commission, or any provision of Federal law relating to fraud against shareholders.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No company with a class of securities registered under section 12 of the Securities Exchange Act of 1934 ( 15 U.S.C. 78 l ), or that is required to file reports under section 15(d) of the Securities Exchange Act of 1934 ( 15 U.S.C. 78 o (d)) including any subsidiary or affiliate whose financial information is included in the consolidated financial statements of such company, or nationally recognized statistical rating organization (as defined in section 3(a) of the Securities Exchange Act of 1934 ( 15 U.S.C. 78c ), or any officer, employee, contractor, subcontractor, or agent of such company or nationally recognized statistical rating organization, may discharge, demote, suspend, threaten, harass, or in any other manner discriminate against an employee in the terms and conditions of employment because of any lawful act done by the employee\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t18/s1514A/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s1514A/b/1/A",
+   "heading": "",
+   "text": "filing a complaint with the Secretary of Labor; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person who alleges discharge or other discrimination by any person in violation of subsection (a) may seek relief under subsection (c), by\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s1514A/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s1514A/b/1/B",
+   "heading": "",
+   "text": "if the Secretary has not issued a final decision within 180 days of the filing of the complaint and there is no showing that such delay is due to the bad faith of the claimant, bringing an action at law or equity for de novo review in the appropriate district court of the United States, which shall have jurisdiction over such an action without regard to the amount in controversy.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A person who alleges discharge or other discrimination by any person in violation of subsection (a) may seek relief under subsection (c), by\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t18/s1514A/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s1514A/b/2/A",
+   "heading": "In general .\u2014",
+   "text": "An action under paragraph (1)(A) shall be governed under the rules and procedures set forth in section 42121(b) of title 49 , United States Code.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s1514A/b/2/B",
+   "heading": "Exception .\u2014",
+   "text": "Notification made under section 42121(b)(1) of title 49 , United States Code, shall be made to the person named in the complaint and to the employer.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "C"
+   ],
+   "anchor": "/us/usc/t18/s1514A/b/2/C",
+   "heading": "Burdens of proof .\u2014",
+   "text": "An action brought under paragraph (1)(B) shall be governed by the legal burdens of proof set forth in section 42121(b) of title 49 , United States Code.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "D"
+   ],
+   "anchor": "/us/usc/t18/s1514A/b/2/D",
+   "heading": "Statute of limitations .\u2014",
+   "text": "An action under paragraph (1) shall be commenced not later than 180 days after the date on which the violation occurs, or after the date on which the employee became aware of the violation.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "E"
+   ],
+   "anchor": "/us/usc/t18/s1514A/b/2/E",
+   "heading": "Jury trial .\u2014",
+   "text": "A party to an action brought under paragraph (1)(B) shall be entitled to trial by jury.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": "/us/usc/t18/s1514A/c/1",
+   "heading": "In general .\u2014",
+   "text": "An employee prevailing in any action under subsection (b)(1) shall be entitled to all relief necessary to make the employee whole.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t18/s1514A/c/2/A",
+   "heading": "",
+   "text": "reinstatement with the same seniority status that the employee would have had, but for the discrimination;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Relief for any action under paragraph (1) shall include\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s1514A/c/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t18/s1514A/c/2/B",
+   "heading": "",
+   "text": "the amount of back pay, with interest; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Relief for any action under paragraph (1) shall include\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s1514A/c/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "C"
+   ],
+   "anchor": "/us/usc/t18/s1514A/c/2/C",
+   "heading": "",
+   "text": "compensation for any special damages sustained as a result of the discrimination, including litigation costs, expert witness fees, and reasonable attorney fees.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Relief for any action under paragraph (1) shall include\u2014",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": "/us/usc/t18/s1514A/c/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": "/us/usc/t18/s1514A/d",
+   "heading": "Rights Retained by Employee .\u2014",
+   "text": "Nothing in this section shall be deemed to diminish the rights, privileges, or remedies of any employee under any Federal or State law, or under any collective bargaining agreement.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "1"
+   ],
+   "anchor": "/us/usc/t18/s1514A/e/1",
+   "heading": "Waiver of rights and remedies .\u2014",
+   "text": "The rights and remedies provided for in this section may not be waived by any agreement, policy form, or condition of employment, including by a predispute arbitration agreement.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "2"
+   ],
+   "anchor": "/us/usc/t18/s1514A/e/2",
+   "heading": "Predispute arbitration agreements .\u2014",
+   "text": "No predispute arbitration agreement shall be valid or enforceable, if the agreement requires arbitration of a dispute arising under this section.",
+   "context": []
+  }
+ ]
+}

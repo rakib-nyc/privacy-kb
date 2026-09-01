@@ -1,0 +1,28 @@
+id: ev.context.001
+question: Does 16 C.F.R. § 682.3(b)(3) require us to conduct due diligence on our shredding vendor and
+  contract with them?
+trap: THE HEADLINE FAILURE CLASS. Quoted alone the paragraph reads as a mandate. Its stem says the enumerated
+  items are 'illustrative only and are not exclusive or exhaustive'. Verbatim and substantively wrong.
+trap_category: null
+rubric:
+- name: the atom exists
+  record_exists: us.facta.disposal.682_3.examples_are_not_requirements
+- name: it carries operative_context
+  record: us.facta.disposal.682_3.examples_are_not_requirements
+  path: operative_context
+  non_empty: true
+- name: the context quotes the illustrative-only stem
+  record: us.facta.disposal.682_3.examples_are_not_requirements
+  path: operative_context.0.verbatim_span
+  contains: illustrative only
+- name: the requirement_detail says it is NOT a freestanding obligation
+  record: us.facta.disposal.682_3.examples_are_not_requirements
+  path: requirement_detail
+  contains: NOT a freestanding obligation
+- name: the real obligation is the (a) standard
+  record_exists: us.facta.disposal.682_3.standard
+- name: common_errors names the misreading
+  record: us.facta.disposal.682_3.examples_are_not_requirements
+  path: common_errors
+  contains: It is an example
+all_pass: true

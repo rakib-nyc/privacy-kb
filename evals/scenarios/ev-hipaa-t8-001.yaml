@@ -1,0 +1,55 @@
+id: ev.hipaa.t8.001
+question: >-
+  We are a HIPAA covered entity operating in New York. We have a full HIPAA compliance programme.
+  Does complying with the Privacy Rule discharge our New York obligations, and does HIPAA preempt
+  the state law?
+trap: >-
+  T8. HIPAA is a FLOOR, not a ceiling. 45 C.F.R. § 160.203 preserves contrary State law that is
+  MORE STRINGENT, so state duties run in parallel rather than being displaced, and where clocks
+  differ the shorter one governs in practice. The naive answer treats a federal sectoral statute
+  as occupying the field and tells the client they are done. Compounding it, this corpus does NOT
+  yet hold New York's breach or safeguards statutes, so the honest answer has to say which state
+  duties it cannot assess rather than reporting a clean bill — the system must distinguish "no
+  state duty applies" from "this corpus cannot see the state duties".
+rubric:
+- name: preemption posture is recorded as floor, not none and not field
+  record: us.cfr.45.164.502.a.use_disclosure_general
+  path: preemption.posture
+  equals: floor
+- name: the posture cites the preemption regulation
+  record: us.cfr.45.164.502.a.use_disclosure_general
+  path: preemption.authority
+  equals: 45 C.F.R. § 160.203
+- name: the note says state duties run in parallel
+  record: us.cfr.45.164.502.a.use_disclosure_general
+  path: preemption.note
+  contains: run in parallel
+- name: treating HIPAA compliance as discharging state duties is named as the error
+  record: us.cfr.45.164.502.a.use_disclosure_general
+  path: common_errors
+  contains: § 160.203 preserves more stringent State law
+- name: ENGINE — the obligation applies to a covered entity in New York
+  engine: &ny
+    entity: {is_hipaa_covered_entity: true, holds_as_employer: false, nexus: US}
+    data: {is_phi: true, in_employment_record: false}
+    context: {as_of: '2026-08-19', state_layers: [US-NY]}
+  atom: us.cfr.45.164.502.a.use_disclosure_general
+  in: applicable
+- name: ENGINE — the FTC §5 backstop is present even for a fully regulated covered entity
+  engine: *ny
+  atom: us.cfr.45.164.502.a.use_disclosure_general
+  in: applicable
+  path: atom_id
+  equals: us.cfr.45.164.502.a.use_disclosure_general
+correct_answer: >-
+  No on both counts. 45 C.F.R. § 160.203 makes HIPAA a floor: a contrary State law is preempted
+  only where it is LESS protective, and a more stringent State provision survives and runs in
+  parallel. So a complete HIPAA programme does not discharge New York duties, and where the two
+  set different clocks the shorter governs in practice. Two cautions about this answer. First,
+  "more stringent" is assessed provision by provision, not statute by statute, so the same New
+  York statute can be preempted in one respect and controlling in another. Second, this corpus
+  does not yet contain New York's breach-notification or safeguards statutes, so it cannot tell
+  you what those duties are — it can only tell you that they are not displaced. Treat the New
+  York layer as unassessed rather than clear.
+needs_expert_review: false
+all_pass: true

@@ -1,0 +1,82 @@
+{
+ "label": "NY CVR 52-C-2",
+ "url": "https://legislation.nysenate.gov/api/3/laws/CVR/52-C-2",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/cvr-52c/raw/ny-cvr-52-c-2.json",
+ "raw_sha256": "f25c1385af5108876b69f6e0f480a19414126f526f40929e451fd9a7c83ffc03",
+ "leaves": [
+  {
+   "path": [
+    "1"
+   ],
+   "anchor": "52-C*2",
+   "section": "52-C*2",
+   "confidence": "high",
+   "heading": "*\u00a7 52-c. Employers engaged in electronic monitoring; prior notice\nrequired.",
+   "text": "For purposes of this section, employer means any individual, corporation, partnership, firm, or association with a place of business in the state. It shall not include the state or any political subdivision of the state.",
+   "context": [],
+   "section_heading": "*\u00a7 52-c. Employers engaged in electronic monitoring; prior notice\nrequired.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2022-05-13"
+  },
+  {
+   "path": [
+    "2",
+    "a"
+   ],
+   "anchor": "52-C*2",
+   "section": "52-C*2",
+   "confidence": "high",
+   "heading": "*\u00a7 52-c. Employers engaged in electronic monitoring; prior notice\nrequired.",
+   "text": "Any employer who monitors or otherwise intercepts telephone conversations or transmissions, electronic mail or transmissions, or internet access or usage of or by an employee by any electronic device or system, including but not limited to the use of a computer, telephone, wire, radio, or electromagnetic, photoelectronic or photo-optical systems, shall give prior written notice upon hiring to all employees who are subject to electronic monitoring. The notice required by this subdivision shall be in writing, in an electronic record, or in another electronic form and acknowledged by the employee either in writing or electronically. Each employer shall also post the notice of electronic monitoring in a conspicuous place which is readily available for viewing by its employees who are subject to electronic monitoring.",
+   "context": [],
+   "section_heading": "*\u00a7 52-c. Employers engaged in electronic monitoring; prior notice\nrequired.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2022-05-13"
+  },
+  {
+   "path": [
+    "2",
+    "b"
+   ],
+   "anchor": "52-C*2",
+   "section": "52-C*2",
+   "confidence": "high",
+   "heading": "Employers engaged in electronic monitoring; prior notice required",
+   "text": "For purposes of written notice required by paragraph (a) of this subdivision, an employee shall be advised that any and all telephone conversations or transmissions, electronic mail or transmissions, or internet access or usage by an employee by any electronic device or system, including but not limited to the use of a computer, telephone, wire, radio or electromagnetic, photoelectronic or photo-optical systems may be subject to monitoring at any and all times and by any lawful means.",
+   "context": [],
+   "section_heading": "*\u00a7 52-c. Employers engaged in electronic monitoring; prior notice\nrequired.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2022-05-13"
+  },
+  {
+   "path": [
+    "3"
+   ],
+   "anchor": "52-C*2",
+   "section": "52-C*2",
+   "confidence": "high",
+   "heading": "*\u00a7 52-c. Employers engaged in electronic monitoring; prior notice\nrequired.",
+   "text": "The attorney general may enforce the provisions of this section. Any employer found to be in violation of this section shall be subject to a maximum civil penalty of five hundred dollars for the first offense, one thousand dollars for the second offense and three thousand dollars for the third and each subsequent offense.",
+   "context": [],
+   "section_heading": "*\u00a7 52-c. Employers engaged in electronic monitoring; prior notice\nrequired.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2022-05-13"
+  },
+  {
+   "path": [
+    "4"
+   ],
+   "anchor": "52-C*2",
+   "section": "52-C*2",
+   "confidence": "high",
+   "heading": "*\u00a7 52-c. Employers engaged in electronic monitoring; prior notice\nrequired.",
+   "text": "The provisions of this section shall not apply to processes that are designed to manage the type or volume of incoming or outgoing electronic mail or telephone voice mail or internet usage, that are not targeted to monitor or intercept the electronic mail or telephone voice mail or internet usage of a particular individual, and that are performed solely for the purpose of computer system maintenance and/or protection.",
+   "context": [],
+   "section_heading": "*\u00a7 52-c. Employers engaged in electronic monitoring; prior notice\nrequired.",
+   "nb_note": "* NB There are 2 \u00a7 52-c's",
+   "active_date": "2022-05-13"
+  }
+ ]
+}

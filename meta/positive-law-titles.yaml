@@ -1,0 +1,49 @@
+# POSITIVE-LAW TITLE TABLE
+# ========================
+purpose: Which US Code titles have been enacted into positive law. Under 1 U.S.C. § 204(a) the Code
+  establishes the laws 'prima facie'; only where a title has been enacted into positive law is the Code
+  text 'legal evidence' of the law. This table is what makes that computable.
+source: 'Generated from the publisher''s own machine-readable assertion: the USLM <meta><property role="is-positive-law">
+  element at the head of each title''s XML. NOT a hand-maintained list and NOT read off a prose page.'
+source_url_pattern: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc{TT}@119-1.zip
+release_point: 119-1
+generated: '2026-08-19'
+generator: tools/scan-positive-law.py
+coverage_policy: Partial by design. It covers the titles the manifest actually reaches. An atom citing
+  a title NOT listed here must FAIL rather than default — guessing positive-law status is guessing whether
+  the text quoted is the law or evidence of it.
+currency_check: Release point 119-1. Positive-law codification is rare but real (Title 41 in 2011, Title
+  54 in 2014). Re-run the generator on any release-point bump.
+titles:
+  1:
+    is_positive_law: true
+    release: Online@119-1
+    why_needed: 1 U.S.C. § 204 — the evidentiary rule itself
+  5:
+    is_positive_law: true
+    release: Online@119-1
+    why_needed: Privacy Act of 1974, FOIA (Priority 5)
+  12:
+    is_positive_law: false
+    release: Online@119-1
+    why_needed: Right to Financial Privacy Act, Dodd-Frank/CFPB UDAAP (Priority 1 II.C)
+  15:
+    is_positive_law: false
+    release: Online@119-1
+    why_needed: FTC Act § 5, FCRA, FACTA, GLBA, COPPA, CAN-SPAM (the spine of Priority 1)
+  18:
+    is_positive_law: true
+    release: Online@119-1
+    why_needed: VPPA, DPPA, ECPA/Wiretap/SCA (Priority 1 II.E, Priority 5)
+  20:
+    is_positive_law: false
+    release: Online@119-1
+    why_needed: FERPA, PPRA (Priority 1 II.D)
+  42:
+    is_positive_law: false
+    release: Online@119-1
+    why_needed: HIPAA, HITECH, Common Rule (Priority 1 II.B)
+  47:
+    is_positive_law: false
+    release: Online@119-1
+    why_needed: TCPA, CPNI, Cable Communications Policy Act (Priority 1 II.E)

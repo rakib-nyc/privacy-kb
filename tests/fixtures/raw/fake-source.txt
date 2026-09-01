@@ -1,0 +1,8 @@
+§ 1. A covered entity shall, following the discovery of a breach of unsecured
+protected health information, notify each individual whose unsecured protected
+health information has been, or is reasonably believed by the covered entity to
+have been, accessed, acquired, used, or disclosed as a result of such breach.
+
+§ 2. Except as provided in § 164.412, a covered entity shall provide the
+notification required by paragraph (a) of this section without unreasonable
+delay and in no case later than 60 calendar days after discovery of a breach.

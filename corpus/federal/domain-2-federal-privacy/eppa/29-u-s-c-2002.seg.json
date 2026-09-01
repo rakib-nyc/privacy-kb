@@ -1,0 +1,167 @@
+{
+ "label": "29 U.S.C. \u00a7 2002",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc29@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/eppa/raw/29-u-s-c-2002.xml",
+ "raw_sha256": "31aa3acba5e4953cd8fcd929e4bf2ca1e95568897a70d98ea4ebeb0527758a39",
+ "leaves": [
+  {
+   "path": [
+    "1"
+   ],
+   "anchor": "/us/usc/t29/s2002/1",
+   "heading": "",
+   "text": "directly or indirectly, to require, request, suggest, or cause any employee or prospective employee to take or submit to any lie detector test;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in sections 2006 and 2007 of this title, it shall be unlawful for any employer engaged in or affecting commerce or in the production of goods for commerce\u2014",
+     "path": [],
+     "anchor": "/us/usc/t29/s2002"
+    }
+   ]
+  },
+  {
+   "path": [
+    "2"
+   ],
+   "anchor": "/us/usc/t29/s2002/2",
+   "heading": "",
+   "text": "to use, accept, refer to, or inquire concerning the results of any lie detector test of any employee or prospective employee;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in sections 2006 and 2007 of this title, it shall be unlawful for any employer engaged in or affecting commerce or in the production of goods for commerce\u2014",
+     "path": [],
+     "anchor": "/us/usc/t29/s2002"
+    }
+   ]
+  },
+  {
+   "path": [
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t29/s2002/3/A",
+   "heading": "",
+   "text": "any employee or prospective employee who refuses, declines, or fails to take or submit to any lie detector test, or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in sections 2006 and 2007 of this title, it shall be unlawful for any employer engaged in or affecting commerce or in the production of goods for commerce\u2014",
+     "path": [],
+     "anchor": "/us/usc/t29/s2002"
+    },
+    {
+     "position": "precedes",
+     "text": "to discharge, discipline, discriminate against in any manner, or deny employment or promotion to, or threaten to take any such action against\u2014",
+     "path": [
+      "3"
+     ],
+     "anchor": "/us/usc/t29/s2002/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "3",
+    "B"
+   ],
+   "anchor": "/us/usc/t29/s2002/3/B",
+   "heading": "",
+   "text": "any employee or prospective employee on the basis of the results of any lie detector test; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in sections 2006 and 2007 of this title, it shall be unlawful for any employer engaged in or affecting commerce or in the production of goods for commerce\u2014",
+     "path": [],
+     "anchor": "/us/usc/t29/s2002"
+    },
+    {
+     "position": "precedes",
+     "text": "to discharge, discipline, discriminate against in any manner, or deny employment or promotion to, or threaten to take any such action against\u2014",
+     "path": [
+      "3"
+     ],
+     "anchor": "/us/usc/t29/s2002/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "4",
+    "A"
+   ],
+   "anchor": "/us/usc/t29/s2002/4/A",
+   "heading": "",
+   "text": "such employee or prospective employee has filed any complaint or instituted or caused to be instituted any proceeding under or related to this chapter,",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in sections 2006 and 2007 of this title, it shall be unlawful for any employer engaged in or affecting commerce or in the production of goods for commerce\u2014",
+     "path": [],
+     "anchor": "/us/usc/t29/s2002"
+    },
+    {
+     "position": "precedes",
+     "text": "to discharge, discipline, discriminate against in any manner, or deny employment or promotion to, or threaten to take any such action against, any employee or prospective employee because\u2014",
+     "path": [
+      "4"
+     ],
+     "anchor": "/us/usc/t29/s2002/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "4",
+    "B"
+   ],
+   "anchor": "/us/usc/t29/s2002/4/B",
+   "heading": "",
+   "text": "such employee or prospective employee has testified or is about to testify in any such proceeding, or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in sections 2006 and 2007 of this title, it shall be unlawful for any employer engaged in or affecting commerce or in the production of goods for commerce\u2014",
+     "path": [],
+     "anchor": "/us/usc/t29/s2002"
+    },
+    {
+     "position": "precedes",
+     "text": "to discharge, discipline, discriminate against in any manner, or deny employment or promotion to, or threaten to take any such action against, any employee or prospective employee because\u2014",
+     "path": [
+      "4"
+     ],
+     "anchor": "/us/usc/t29/s2002/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "4",
+    "C"
+   ],
+   "anchor": "/us/usc/t29/s2002/4/C",
+   "heading": "",
+   "text": "of the exercise by such employee or prospective employee, on behalf of such employee or another person, of any right afforded by this chapter.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as provided in sections 2006 and 2007 of this title, it shall be unlawful for any employer engaged in or affecting commerce or in the production of goods for commerce\u2014",
+     "path": [],
+     "anchor": "/us/usc/t29/s2002"
+    },
+    {
+     "position": "precedes",
+     "text": "to discharge, discipline, discriminate against in any manner, or deny employment or promotion to, or threaten to take any such action against, any employee or prospective employee because\u2014",
+     "path": [
+      "4"
+     ],
+     "anchor": "/us/usc/t29/s2002/4"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+{
+ "label": "12 U.S.C. \u00a7 3404",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3404.xml",
+ "raw_sha256": "7c707de8e99ad4f0802619066c3b14ca7014deb9bbb7e7e04e530597d5f2f17a",
+ "leaves": [
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": "/us/usc/t12/s3404/a/1",
+   "heading": "",
+   "text": "authorizes such disclosure for a period not in excess of three months;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A customer may authorize disclosure under section 3402(1) of this title if he furnishes to the financial institution and to the Government authority seeking to obtain such disclosure a signed and dated statement which\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t12/s3404/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": "/us/usc/t12/s3404/a/2",
+   "heading": "",
+   "text": "states that the customer may revoke such authorization at any time before the financial records are disclosed;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A customer may authorize disclosure under section 3402(1) of this title if he furnishes to the financial institution and to the Government authority seeking to obtain such disclosure a signed and dated statement which\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t12/s3404/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3"
+   ],
+   "anchor": "/us/usc/t12/s3404/a/3",
+   "heading": "",
+   "text": "identifies the financial records which are authorized to be disclosed;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A customer may authorize disclosure under section 3402(1) of this title if he furnishes to the financial institution and to the Government authority seeking to obtain such disclosure a signed and dated statement which\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t12/s3404/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "4"
+   ],
+   "anchor": "/us/usc/t12/s3404/a/4",
+   "heading": "",
+   "text": "specifies the purposes for which, and the Government authority to which, such records may be disclosed; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A customer may authorize disclosure under section 3402(1) of this title if he furnishes to the financial institution and to the Government authority seeking to obtain such disclosure a signed and dated statement which\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t12/s3404/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "5"
+   ],
+   "anchor": "/us/usc/t12/s3404/a/5",
+   "heading": "",
+   "text": "states the customer\u2019s rights under this chapter.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A customer may authorize disclosure under section 3402(1) of this title if he furnishes to the financial institution and to the Government authority seeking to obtain such disclosure a signed and dated statement which\u2014",
+     "path": [
+      "a"
+     ],
+     "anchor": "/us/usc/t12/s3404/a"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "/us/usc/t12/s3404/b",
+   "heading": "Authorization as condition of doing business prohibited",
+   "text": "No such authorization shall be required as a condition of doing business with any financial institution.",
+   "context": []
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "/us/usc/t12/s3404/c",
+   "heading": "Right of customer to access to financial institution\u2019s record of disclosures",
+   "text": "The customer has the right, unless the Government authority obtains a court order as provided in section 3409 of this title , to obtain a copy of the record which the financial institution shall keep of all instances in which the customer\u2019s record is disclosed to a Government authority pursuant to this section, including the identity of the Government authority to which such disclosure is made.",
+   "context": []
+  }
+ ]
+}

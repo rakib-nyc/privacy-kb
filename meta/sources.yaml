@@ -1,0 +1,773 @@
+sources:
+- raw_file: corpus/federal/authorities/raw/12-u-s-c-5531.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  sha256: c00d0c0594aa4472ac0339520dca0c2e09445dd7c23604f2cba9fb04192d8bf6
+  format: uslm_xml
+  label: 12 U.S.C. § 5531
+- raw_file: corpus/federal/authorities/raw/15-u-s-c-45.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  sha256: d29a4cc1ef8b8b6e297d95e258214598047635c113920ef95407e76c2c6b7df8
+  format: uslm_xml
+  label: 15 U.S.C. § 45
+- raw_file: corpus/federal/authorities/raw/15-u-s-c-78u.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 98b77d95ce872310de1fa32dc65e3b778caf7e4c24c71ae017ac77292aace7fa
+  format: uslm_xml
+  label: 15 U.S.C. § 78u
+- raw_file: corpus/federal/authorities/raw/20-u-s-c-1232g.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc20@119-1.zip
+  fetched: '2026-08-19'
+  sha256: d9eb0b65a1acac5602e55cef5941f4e79a13824f23e8f78b141be5f1d1624e7b
+  format: uslm_xml
+  label: 20 U.S.C. § 1232g
+- raw_file: corpus/federal/authorities/raw/29-u-s-c-2005.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc29@119-1.zip
+  fetched: '2026-08-19'
+  sha256: fba49933ad3073f6ef2e42b427fb8772f17d547fcab9e5dec9a088ee3dbae35f
+  format: uslm_xml
+  label: 29 U.S.C. § 2005
+- raw_file: corpus/federal/authorities/raw/42-u-s-c-1320d-5.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-19'
+  sha256: c274a010be4669bfb71f440a0fbad5a81df1b6f753acf61a4b978b3fc5ff552b
+  format: uslm_xml
+  label: 42 U.S.C. § 1320d-5
+- raw_file: corpus/federal/authorities/raw/42-u-s-c-2000e-5.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 09873af2196d183331fd98b4a60c2908e10a9f71d822588822f5ed30e2aa0d44
+  format: uslm_xml
+  label: 42 U.S.C. § 2000e-5
+- raw_file: corpus/federal/authorities/raw/47-u-s-c-222.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 9d301f80fe41a4a75775e6cd1fa72fc7402917d64245168190697be032dbddbb
+  format: uslm_xml
+  label: 47 U.S.C. § 222
+- url: https://digitaladvertisingalliance.org/sites/aboutads/files/DAA_files/seven-principles-07-01-09.pdf
+  final_url: null
+  host_kind: self_regulatory
+  instrument_id: selfreg.daa.principles
+  raw_file: corpus/federal/authorities/raw/daa-seven-principles-2009.pdf
+  raw_sha256: 31da8ad7baf08a25c1e3023139d3be218c62f4ffb202310b7d80a1026c16db8b
+  bytes: 1893766
+  content_type: application/pdf
+  fetched: '2026-08-19'
+  note: DAA Self-Regulatory Principles for Online Behavioral Advertising (2009)
+- url: https://www.thenai.org/wp-content/uploads/2025/03/NAI-Framework_March-2025.pdf
+  final_url: null
+  host_kind: self_regulatory
+  instrument_id: selfreg.nai.framework
+  raw_file: corpus/federal/authorities/raw/nai-framework-2025-03.pdf
+  raw_sha256: 9f48e36ed8f8e39232d6b8c14b5b21b48ed1311a4b9136ef3518ec9423a94fe2
+  bytes: 1117864
+  content_type: application/pdf
+  fetched: '2026-08-19'
+  note: NAI Principles & Self-Regulatory Framework, March 2025; supersedes the 2020 NAI Code of Conduct
+    as of 1 Feb 2025
+- raw_file: corpus/federal/domain-2-federal-privacy/ada-medical/raw/42-u-s-c-12112.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 29a98620bb2f5e4e87fc2d6cdbbd4929e4a0a702c0a84c39392da991183b8f73
+  format: uslm_xml
+  label: 42 U.S.C. § 12112
+- raw_file: corpus/federal/domain-2-federal-privacy/bsa-aml/raw/31-u-s-c-5318.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc31@119-1.zip
+  fetched: '2026-08-19'
+  sha256: a320d0d41eaa99edb45a25939fb506e6a595646bc84e13ab056a6588b3027562
+  format: uslm_xml
+  label: 31 U.S.C. § 5318
+- raw_file: corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 3b7792e5ec31fc28ddaeeb563fc631678a31eafcaf87e6bcc83c7605f93e015b
+  format: uslm_xml
+  label: 47 U.S.C. § 551
+- raw_file: corpus/federal/domain-2-federal-privacy/calea/raw/47-u-s-c-1002.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-20'
+  sha256: 0458d2ca9cc250c59a8b70f482357e56125db94072dd484a50ca4cebd6a4985c
+  format: uslm_xml
+  label: 47 U.S.C. § 1002
+- raw_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7704.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  sha256: cc5b9acbbbd7b838a5526ed4fe4b736558bb9d98d7192bce2b54c46729afddfc
+  format: uslm_xml
+  label: 15 U.S.C. § 7704
+- raw_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7707.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 015b217014ffa5435d4348ed853d0e910ba675a4e8336bfef8dc22a76a4dfa2a
+  format: uslm_xml
+  label: 15 U.S.C. § 7707
+- raw_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/16-cfr-316.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=316
+  fetched: '2026-08-20'
+  sha256: 45bf26b68a06dc81f55388a06eb4e376ceb061a490e3858fb6105143d1d583b0
+  format: ecfr_xml
+  label: 16 CFR 316
+- raw_file: corpus/federal/domain-2-federal-privacy/cfpb-udaap/raw/12-u-s-c-5531.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  sha256: c00d0c0594aa4472ac0339520dca0c2e09445dd7c23604f2cba9fb04192d8bf6
+  format: uslm_xml
+  label: 12 U.S.C. § 5531
+- raw_file: corpus/federal/domain-2-federal-privacy/cloud-act/raw/18-u-s-c-2713.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-20'
+  sha256: 0eddc0a0ad69a71541aaa3465ddcf4c43c6e5364ecdbc6df6d213ca1a959c023
+  format: uslm_xml
+  label: 18 U.S.C. § 2713
+- raw_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=46
+  fetched: '2026-08-20'
+  sha256: cfe25d02a8ade401b1350f591c4654b85ab03c47f66297047feb0a6e1f0e543d
+  format: ecfr_xml
+  label: 45 CFR 46
+- raw_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=312
+  fetched: '2026-08-20'
+  sha256: 5a29d13e4512092a2d064a62a581031dc75aa99998540e6c2ef24f0dbfc66df9
+  format: ecfr_xml
+  label: 16 CFR 312
+- raw_file: corpus/federal/domain-2-federal-privacy/cpni/raw/47-u-s-c-222.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 9d301f80fe41a4a75775e6cd1fa72fc7402917d64245168190697be032dbddbb
+  format: uslm_xml
+  label: 47 U.S.C. § 222
+- raw_file: corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=171
+  fetched: '2026-08-20'
+  sha256: 881f03c2034c1a6b4d49e9cde4adf70a84182f5890eb1be66f4026f4c601e023
+  format: ecfr_xml
+  label: 45 CFR 171
+- raw_file: corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-28.xml?part=202
+  fetched: '2026-08-20'
+  sha256: f029a81bfc5a7a33418fd0bd757b0c8c0e431cd570a5c46ec7a3085964796418
+  format: ecfr_xml
+  label: 28 CFR 202
+- raw_file: corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-49.xml?part=40
+  fetched: '2026-08-20'
+  sha256: 37446484793816750245fc98a2b73a94e655895dcfb889d18ddc00c23339e0df
+  format: ecfr_xml
+  label: 49 CFR 40
+- raw_file: corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 6fdc322897cf479e3c6caaef69b90aedcef608b7f1b91769c502097670b17a21
+  format: uslm_xml
+  label: 18 U.S.C. § 2721
+- raw_file: corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2722.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  sha256: efc28d268a28a98931b41f513a8b387d3c57d221e4f6348ae537d9dd2e8a30ac
+  format: uslm_xml
+  label: 18 U.S.C. § 2722
+- raw_file: corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2701.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 2116456719a3a3adf1cb2fe7473c1f639f51a8ec1eb25bbf3dd65954afd2b0fa
+  format: uslm_xml
+  label: 18 U.S.C. § 2701
+- raw_file: corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2702.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 46f1490abbc475f035109ed9f548d435aebe5695803fd5b2f36101ea16bfbf4e
+  format: uslm_xml
+  label: 18 U.S.C. § 2702
+- raw_file: corpus/federal/domain-2-federal-privacy/ecpa-sca/raw/18-u-s-c-2703.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 063a2a456b9871a736c0af5cc30ec5d5a2d262753c91cffa17d0fdeee53cd88b
+  format: uslm_xml
+  label: 18 U.S.C. § 2703
+- raw_file: corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2510.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 5dc845cda38743b58fa8224e2b6939398a1ade8b9b229820070f1b3906e89abb
+  format: uslm_xml
+  label: 18 U.S.C. § 2510
+- raw_file: corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2511.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  sha256: ec7314f1868f20a98a0bcffff899cb099c3b86cf13b4c0c31a76464678744c9f
+  format: uslm_xml
+  label: 18 U.S.C. § 2511
+- raw_file: corpus/federal/domain-2-federal-privacy/eppa/raw/29-u-s-c-2002.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc29@119-1.zip
+  fetched: '2026-08-20'
+  sha256: 31aa3acba5e4953cd8fcd929e4bf2ca1e95568897a70d98ea4ebeb0527758a39
+  format: uslm_xml
+  label: 29 U.S.C. § 2002
+- raw_file: corpus/federal/domain-2-federal-privacy/facta-disposal-rule/raw/16-cfr-682.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=682
+  fetched: '2026-08-20'
+  sha256: 921ba44717404d57c5b20d3c6e93e2c502e0e2ea94b87ed39639eef5961e2348
+  format: ecfr_xml
+  label: 16 CFR 682
+- raw_file: corpus/federal/domain-2-federal-privacy/fcra-preemption/raw/15-u-s-c-1681t.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 5c20b842e91b5d0aa63b2564c2bedd47f11f7b7973e1e764ff34c1de861f99f8
+  format: uslm_xml
+  label: 15 U.S.C. § 1681t
+- raw_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681a.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  sha256: ccb87a373752c5cb2024879c40932b66fb305b1bfa5ff1ef211d4eb985d1eed1
+  format: uslm_xml
+  label: 15 U.S.C. § 1681a
+- raw_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681b.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  sha256: d01fd2d69b7a57e375ccf4956548a7f493f0f4ddebc4a6b7b1d41e487f5daad4
+  format: uslm_xml
+  label: 15 U.S.C. § 1681b
+- raw_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681e.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 160bef20935c9559927e43e9964399c2bb2ed5af086885a01f1f75ff46f92927
+  format: uslm_xml
+  label: 15 U.S.C. § 1681e
+- raw_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681g.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-20'
+  sha256: c2c73f3436015086c2fc1ed6a3ec649eb288f6c6924131da48cfe1a7fc97fc2e
+  format: uslm_xml
+  label: 15 U.S.C. § 1681g
+- raw_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681i.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 13c0889ce6df93054277967f563124c77ce7cea82dc04c47b3647f23ce8d6075
+  format: uslm_xml
+  label: 15 U.S.C. § 1681i
+- raw_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681m.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 418f0596437cd54fa4856037dc7319981a3bcebc032fca3749e4ec6cac9041c8
+  format: uslm_xml
+  label: 15 U.S.C. § 1681m
+- raw_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681s-2.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 608a8beb6e3836abb5a0d4fd5651ab8a1986cad7e848ba8ab29ba63ebde5c052
+  format: uslm_xml
+  label: 15 U.S.C. § 1681s-2
+- raw_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc20@119-1.zip
+  fetched: '2026-08-19'
+  sha256: d9eb0b65a1acac5602e55cef5941f4e79a13824f23e8f78b141be5f1d1624e7b
+  format: uslm_xml
+  label: 20 U.S.C. § 1232g
+- raw_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-34.xml?part=99
+  fetched: '2026-08-20'
+  sha256: 5215a3f303ea41cb5bb4c5afb481da1f4623e64307eadc30ef2ad27a2238ffa0
+  format: ecfr_xml
+  label: 34 CFR 99
+- raw_file: corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc50@119-1.zip
+  fetched: '2026-08-20'
+  sha256: 1bfe41f81a21edbdfd6526a1b83b1a91eb2dc65da9dc925059b5e7fc6369b9d7
+  format: uslm_xml
+  label: 50 U.S.C. § 1881a
+- raw_file: corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc05@119-1.zip
+  fetched: '2026-08-20'
+  sha256: d4c06f60a9741b07b3eccca530f8b5e361ca4a4f4cd2cd9a82b2d9b65767e093
+  format: uslm_xml
+  label: 5 U.S.C. § 552
+- raw_file: corpus/federal/domain-2-federal-privacy/ftc-act-5/raw/15-u-s-c-45.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  sha256: d29a4cc1ef8b8b6e297d95e258214598047635c113920ef95407e76c2c6b7df8
+  format: uslm_xml
+  label: 15 U.S.C. § 45
+- raw_file: corpus/federal/domain-2-federal-privacy/gina/raw/42-u-s-c-2000ff-1.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 8707a8165d5eda02d36221d2ee297b50ff5cce92b6b52e4c978deab75613c508
+  format: uslm_xml
+  label: 42 U.S.C. § 2000ff-1
+- raw_file: corpus/federal/domain-2-federal-privacy/gina/raw/42-u-s-c-2000ff-5.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-19'
+  sha256: b1102ddc3bfb88487708067e336624a9a7c95b0298bce170d654b58b0b25e468
+  format: uslm_xml
+  label: 42 U.S.C. § 2000ff-5
+- raw_file: corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/15-u-s-c-6805.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 99aac3becd6e504aa7655c1b61b3591b27eba4d4370d6d09b086ef1cd4679bcb
+  format: uslm_xml
+  label: 15 U.S.C. § 6805
+- raw_file: corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=313
+  fetched: '2026-08-20'
+  sha256: d15f22051009593a5210d7d3bf1f8e8af542214d78f12fc333b9f0a2e852a67a
+  format: ecfr_xml
+  label: 16 CFR 313
+- raw_file: corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=314
+  fetched: '2026-08-20'
+  sha256: 3ba7ecc3463953a1db1ccf38f4b0ade4182e36c7e24e111eb8869910e271d41a
+  format: ecfr_xml
+  label: 16 CFR 314
+- raw_file: corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=318
+  fetched: '2026-08-20'
+  sha256: 6266f7150e4734e83f9669e7d3d29429aba5885c6bb4cf72b170e48d6cde7bcb
+  format: ecfr_xml
+  label: 16 CFR 318
+- raw_file: corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-20'
+  sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  format: ecfr_xml
+  label: 45 CFR 164
+- raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=160
+  fetched: '2026-08-20'
+  sha256: 9916d549267c2f3f629b2157d6e0887b73570f9eddace67b626c40f51a6c9c72
+  format: ecfr_xml
+  label: 45 CFR 160
+- raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-20'
+  sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  format: ecfr_xml
+  label: 45 CFR 164
+- raw_file: corpus/federal/domain-2-federal-privacy/hipaa-security/raw/45-cfr-164.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-20'
+  sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  format: ecfr_xml
+  label: 45 CFR 164
+- raw_file: corpus/federal/domain-2-federal-privacy/hitech/raw/42-u-s-c-17935.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-19'
+  sha256: caa08c0f4fbf122b33462a7c1b12f67f9747d58063a501882f369ba285f072a7
+  format: uslm_xml
+  label: 42 U.S.C. § 17935
+- raw_file: corpus/federal/domain-2-federal-privacy/nlra/raw/29-u-s-c-157.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc29@119-1.zip
+  fetched: '2026-08-20'
+  sha256: 23469142521594fd9c7a0ac415401eaf512849a3b332b5ba14374b7e5b6a761e
+  format: uslm_xml
+  label: 29 U.S.C. § 157
+- raw_file: corpus/federal/domain-2-federal-privacy/open-banking/raw/12-u-s-c-5533.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  sha256: d309caacc695dd92a91c5fdbbb6e1140b56efad042f289a5473d042e0411c98a
+  format: uslm_xml
+  label: 12 U.S.C. § 5533
+- raw_file: corpus/federal/domain-2-federal-privacy/padfa/raw/15-u-s-c-9901.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-20'
+  sha256: 5b116f1265fa1ed32680d52d98c2cddb85c2cef34090db1f4b8a27e9df5d9f6e
+  format: uslm_xml
+  label: 15 U.S.C. § 9901
+- raw_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-42.xml?part=2
+  fetched: '2026-08-20'
+  sha256: 5310842763c7e36481877d66979171643bfb80db54bceca2013014691623c216
+  format: ecfr_xml
+  label: 42 CFR 2
+- raw_file: corpus/federal/domain-2-federal-privacy/ppra/raw/20-u-s-c-1232h.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc20@119-1.zip
+  fetched: '2026-08-19'
+  sha256: eb42d939529b064174f294c66050424507909fa3644becd81e90102800dd62f4
+  format: uslm_xml
+  label: 20 U.S.C. § 1232h
+- raw_file: corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc05@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 1b646d09621fc527d59702dd5fcd1ef271aca65f6c6271fb9b4d3c2915d6b1e3
+  format: uslm_xml
+  label: 5 U.S.C. § 552a
+- raw_file: corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=681
+  fetched: '2026-08-20'
+  sha256: 7fe86c7084a6fad1ad05bad984e729c15375a3b6261f7ae11298256bb2536c36
+  format: ecfr_xml
+  label: 16 CFR 681
+- raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3402.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 8aed31d70f0b943ed4c5d17061c3d80e7bdd627f1472617907fb0c992e4ac41d
+  format: uslm_xml
+  label: 12 U.S.C. § 3402
+- raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3404.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 7c707de8e99ad4f0802619066c3b14ca7014deb9bbb7e7e04e530597d5f2f17a
+  format: uslm_xml
+  label: 12 U.S.C. § 3404
+- raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3405.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 601e142db72b13eef887eddb5357db38427ab094e8d6bd89140a9232be55987d
+  format: uslm_xml
+  label: 12 U.S.C. § 3405
+- raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3406.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  sha256: b2f2da6d9a0217992aa311c40b31aeb73c6ca09f7d3181c6e035e2c8c409a251
+  format: uslm_xml
+  label: 12 U.S.C. § 3406
+- raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3407.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 4b7416546a0e533564dfde08b964d1f049cba5f31dcd2881d39abd49b8c12b56
+  format: uslm_xml
+  label: 12 U.S.C. § 3407
+- raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3410.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 5f92abf0c014a909b13b60decfb863eecb6d2db0a014a77aa9f44a94097a0bac
+  format: uslm_xml
+  label: 12 U.S.C. § 3410
+- raw_file: corpus/federal/domain-2-federal-privacy/sox-whistleblower/raw/18-u-s-c-1514a.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-20'
+  sha256: 8eddb8a50a6d62efbdff864bc7fc3358051f0759c63631a16ed5e0319ade1544
+  format: uslm_xml
+  label: 18 U.S.C. § 1514A
+- raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-20'
+  sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  format: ecfr_xml
+  label: 47 CFR 64
+- raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  sha256: bc0202f0682c43acd483fb4bf598db62d4157704024776425acfebf27c63e018
+  format: uslm_xml
+  label: 47 U.S.C. § 227
+- raw_file: corpus/federal/domain-2-federal-privacy/title-vii/raw/42-u-s-c-2000e-2.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-20'
+  sha256: 2b073971f72865a8696fff2c8175b7413170db515e34adb2166aba4f0165f5fb
+  format: uslm_xml
+  label: 42 U.S.C. § 2000e-2
+- raw_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=310
+  fetched: '2026-08-20'
+  sha256: 0374ac69f516b67c40fb05bf7a8482af5e2be0d258616f8faee7615bfc966917
+  format: ecfr_xml
+  label: 16 CFR 310
+- raw_file: corpus/federal/domain-2-federal-privacy/vppa/raw/18-u-s-c-2710.xml
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  sha256: 3dd90781077d08d0621dbaefb5b60a0cf25ba158d64855af6847559dec36d7ff
+  format: uslm_xml
+  label: 18 U.S.C. § 2710
+- url: https://www.apec.org/apecapi/publication/getfile?publicationId=42d9fa81-f683-46a8-858b-1cde61fdb8f8
+  final_url: https://www.apec.org/docs/default-source/publications/2017/8/apec-privacy-framework-(2015)/217_ecsg_2015-apec-privacy-framework.pdf?sfvrsn=1fe93b6b_1
+  host_kind: international
+  instrument_id: intl.apec.privacy_framework
+  raw_file: corpus/principles/fipps/raw/apec-privacy-framework-2015-20260818.pdf
+  raw_sha256: f64602b81a7d562b9f64e51ae48d54b7a38476c71ab50d57eea9f7cef5c8e3b7
+  bytes: 252632
+  content_type: application/pdf
+  fetched: '2026-08-19'
+  note: APEC Privacy Framework (2015), publication Aug 2017
+- url: https://www.globalcbpr.org/wp-content/uploads/Global-CBPR-Framework-2023.pdf
+  final_url: null
+  host_kind: international
+  instrument_id: intl.cbpr.framework
+  raw_file: corpus/principles/fipps/raw/global-cbpr-framework-2023-20260818.pdf
+  raw_sha256: ee6e7ac1fddf0502caa27f49f627d639503413b78b9b2529570eed39fd310789
+  bytes: 329419
+  content_type: application/pdf
+  fetched: '2026-08-19'
+  note: Global CBPR Framework (2023), Global CBPR Forum
+- url: https://aspe.hhs.gov/reports/records-computers-rights-citizens
+  final_url: null
+  host_kind: agency
+  instrument_id: us.hew.1973_report
+  raw_file: corpus/principles/fipps/raw/hew-1973-records-computers-20260818.html
+  raw_sha256: 150726efcc84de5047c979b5cafc97ae2b923fed37bc7a067ca2959953decb2d
+  bytes: 571599
+  content_type: text/html; charset=UTF-8
+  fetched: '2026-08-19'
+  note: Records, Computers and the Rights of Citizens (1973), Secretary's Advisory Committee on Automated
+    Personal Data Systems
+- url: https://legalinstruments.oecd.org/public/doc/114/114.en.pdf
+  final_url: null
+  host_kind: international
+  instrument_id: intl.oecd.privacy_guidelines
+  raw_file: corpus/principles/fipps/raw/oecd-legal-0188-20260818.pdf
+  raw_sha256: b2cb81b7a03eadbab16d7475dd310d4e77c64dcdb8eebd6123c7a62afa470f5d
+  bytes: 596276
+  content_type: application/pdf
+  fetched: '2026-08-19'
+  note: OECD/LEGAL/0188 Recommendation concerning Guidelines Governing the Protection of Privacy and Transborder
+    Flows of Personal Data
+- url: https://legalinstruments.oecd.org/public/doc/114/1046c161-3403-404f-a674-1ad0f737cc3b.html
+  final_url: null
+  host_kind: international
+  instrument_id: intl.oecd.privacy_guidelines
+  raw_file: corpus/principles/fipps/raw/oecd-legal-0188-20260819.html
+  raw_sha256: c0d3cadc21ea590a1a17889e9f92e3a64e73227d1187633ee103e5f12235722f
+  bytes: 28798
+  content_type: text/html; charset=UTF-8
+  fetched: '2026-08-19'
+  note: OECD/LEGAL/0188 official HTML rendering, located via legalinstruments.oecd.org/api/instruments/OECD-LEGAL-0188
+    bodyText.ref
+- url: https://www.apec.org/docs/default-source/Groups/ECSG/CBPR/CBPR-PoliciesRulesGuidelines.pdf
+  final_url: null
+  host_kind: international
+  instrument_id: intl.apec.cbpr_system
+  raw_file: corpus/schemes/cbpr/raw/apec-cbpr-prg-20260819.pdf
+  raw_sha256: d4e0fff6e1ea0981179b08591351f01aac2138709854e15aecd18e2caaaf389d
+  bytes: 89132
+  content_type: application/pdf
+  fetched: '2026-08-19'
+  note: APEC Cross-Border Privacy Rules System Policies, Rules and Guidelines
+- url: https://www.globalcbpr.org/wp-content/uploads/Global-CBPR-Policies-Rules-and-Guidelines_Final-as-of-April-11-2024.pdf
+  final_url: null
+  host_kind: international
+  instrument_id: intl.cbpr.global_system
+  raw_file: corpus/schemes/cbpr/raw/global-cbpr-prg-20260819.pdf
+  raw_sha256: b6b6d4aa13375402eb954798f99df68eab0add158be28e1a717d79a33cad0156
+  bytes: 264528
+  content_type: application/pdf
+  fetched: '2026-08-19'
+  note: Global CBPR System Policies, Rules and Guidelines, final as of 11 April 2024
+- raw_file: corpus/state/ny/cdpa/raw/ny-gbs-899-ee.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/899-EE
+  fetched: '2026-08-20'
+  sha256: d8ea0c1e4456c24686eaa1b78ecc3dc786fc4102cded60a11615c4121a49c52e
+  format: openleg_json
+  label: NY GBS 899-EE
+- raw_file: corpus/state/ny/cdpa/raw/ny-gbs-899-ff.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/899-FF
+  fetched: '2026-08-20'
+  sha256: 91a0a02424b6af8c374133d2917d4af7be24a6efd757a6a758b59671936ca3dc
+  format: openleg_json
+  label: NY GBS 899-FF
+- raw_file: corpus/state/ny/cdpa/raw/ny-oag-cdpa-guidance-2025.pdf
+  url: urn:owner-supplied:ny-oag-cdpa-implementation-guidance-2025-05-19.pdf
+  fetched: '2026-08-24'
+  sha256: 9850ecd0273aea01702cbf7b7ded90c2626a9b2f8c6dae5a258b5e26f7600531
+  format: pdf_single_col
+  label: NY OAG Child Data Protection Act Implementation Guidance (19 May 2025)
+  note: 'Owner-supplied PDF. AGENCY GUIDANCE, NOT LAW — invariant I7. It is not an obligation record and
+    creates no duty; it is attached to the four CDPA atoms through interpreted_by, which carries the quoted
+    passage and is verified by gates 2, 3 and 33 like any other span. The passage most likely to be misused
+    is the enforcement-discretion statement: OAG says it will exercise discretion while its rules are
+    pending, which is not a safe harbour, not a defence, and binds no successor Attorney General. RESOLVES
+    the ny.oag.cdpa_guidance_2025 entry that meta/jurisdiction-coverage.yaml carried as UNRESOLVED — OAG
+    publishes as PDF with no OpenLegislation identifier, so no structured resolver reaches it.'
+- raw_file: corpus/state/ny/cvr-50/raw/ny-cvr-50.json
+  url: https://legislation.nysenate.gov/api/3/laws/CVR/50
+  fetched: '2026-08-20'
+  sha256: 1dc4125bd76c3cc0869a35f142efb2d40e42d8c83e83519b2f57ebf86ce0f9d0
+  format: openleg_json
+  label: NY CVR 50
+- raw_file: corpus/state/ny/cvr-51/raw/ny-cvr-51.json
+  url: https://legislation.nysenate.gov/api/3/laws/CVR/51
+  fetched: '2026-08-20'
+  sha256: fb95ea300f35de2b612e087a147f47fd92f75ca944d311ddda4615e25ac8d5be
+  format: openleg_json
+  label: NY CVR 51
+- raw_file: corpus/state/ny/cvr-52c/raw/ny-cvr-52-c-2.json
+  url: https://legislation.nysenate.gov/api/3/laws/CVR/52-C-2
+  fetched: '2026-08-20'
+  sha256: f25c1385af5108876b69f6e0f480a19414126f526f40929e451fd9a7c83ffc03
+  format: openleg_json
+  label: NY CVR 52-C-2
+- raw_file: corpus/state/ny/cvr-52c/raw/ny-cvr-52-c.json
+  url: https://legislation.nysenate.gov/api/3/laws/CVR/52-C
+  fetched: '2026-08-20'
+  sha256: ac1dc5664963115614ff425a8de4881ed773708b385a311a56d847d5c436c5b3
+  format: openleg_json
+  label: NY CVR 52-C
+- raw_file: corpus/state/ny/edn-2d/raw/ny-edn-2-d.json
+  url: https://legislation.nysenate.gov/api/3/laws/EDN/2-D
+  fetched: '2026-08-20'
+  sha256: 7bd3e93b1cdc44a600ed20dbe90b01e7b9dcf92caa6edc37bde7cede80c37413
+  format: openleg_json
+  label: NY EDN 2-D
+- raw_file: corpus/state/ny/gbl-349/raw/ny-gbs-349.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/349
+  fetched: '2026-08-20'
+  sha256: 2833369a40955663990347addf5f426bf6c81acc3ed827bb91045c5c5432963b
+  format: openleg_json
+  label: NY GBS 349
+- raw_file: corpus/state/ny/gbl-350/raw/ny-gbs-350.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/350
+  fetched: '2026-08-20'
+  sha256: 0a37e6fb3a3e6b7e17ee076430da5b0cb3681218d8b95bd63a045053e5dad801
+  format: openleg_json
+  label: NY GBS 350
+- raw_file: corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
+  url: urn:owner-supplied:nyc-dcwp-notice-of-adoption-aedt-2023-04-05.pdf
+  fetched: '2026-08-20'
+  sha256: 4ecc4463b29440f9b876b0b7319faf2d4c4710b8ad28db9cfa8ae15a123ece2c
+  format: pdf_single_col
+  label: NYC 6 RCNY Subchapter T
+  note: 'Owner-supplied PDF of the DCWP Notice of Adoption of Final Rule (5 Apr 2023), which adds Subchapter
+    T to Chapter 5 of Title 6 RCNY. This is the ADOPTED text, not the proposed rule that rules.cityofnewyork.us
+    carries, and amlegal returns 403 to automated requests — see meta/blocked-sources.yaml. SEGMENTED
+    SECTIONS: §§ 5-301 to 5-304 only. TWO DELIBERATE EXCLUSIONS, both declared rather than silent. (1)
+    § 5-300 is TERM-LED — ten definitions named rather than numbered, with no enacted designator anywhere
+    — so it carries no paragraph_path and belongs in definition records; the extractor REFUSES to walk
+    it, because walked as a hierarchy its two independent roman runs collide at one path. (2) The worked
+    EXAMPLE in § 5-301 and its three impact-ratio data tables are not segmented: they carry no designator,
+    and pdftotext renders the tables as whitespace-aligned columns that do not linearise into a provision.
+    That is 44% of § 5-301 by character count, and it is the part demonstrating impact-ratio METHODOLOGY
+    — so the instrument holds the rule''s operative text but not its worked computation.'
+- raw_file: corpus/state/ny/nyc-ll144/raw/nyc-admin-title20-sub25.xml
+  url: urn:owner-supplied:nyc-law-department-xml-export-0-0-0-234799.xml
+  fetched: '2026-08-20'
+  sha256: f1e6b5ea19d6082309a041668a527a776f832bea39e5f3504b4e2ad6361b3832
+  format: nyc_xml
+  label: NYC Admin Code Title 20 Subchapter 25
+  note: Acquired from an owner-supplied official XML export rather than fetched — amlegal returns 403
+    to automated requests and rules.cityofnewyork.us carries only the PROPOSED rule. This is the ENACTED
+    Administrative Code text, which is better than the RCNY implementing rules for the core duties.
+- raw_file: corpus/state/ny/pen-250-00/raw/ny-pen-250-00.json
+  url: https://legislation.nysenate.gov/api/3/laws/PEN/250.00
+  fetched: '2026-08-20'
+  sha256: 4b3b7668a96af0d9e61bba015e2c8ea8e2c0cb30d5abab58650ec985d0107154
+  format: openleg_json
+  label: NY PEN 250.00
+- raw_file: corpus/state/ny/pen-250-05/raw/ny-pen-250-05.json
+  url: https://legislation.nysenate.gov/api/3/laws/PEN/250.05
+  fetched: '2026-08-20'
+  sha256: 113f2524c4344b52d5300142b89cfb9ec2c9a37b266d95ed00bd0eaecb3af74f
+  format: openleg_json
+  label: NY PEN 250.05
+- raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1500.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/1500
+  fetched: '2026-08-20'
+  sha256: 272e895ac96b798d6db5c8e61f9864168f14420033b1181e338873c80393675e
+  format: openleg_json
+  label: NY GBS 1500
+- raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1501.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/1501
+  fetched: '2026-08-20'
+  sha256: d83a82154840f03752e38951f172dd3f2fdd80cfb6f8bd81bbc05bc4a59d354a
+  format: openleg_json
+  label: NY GBS 1501
+- raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1502.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/1502
+  fetched: '2026-08-20'
+  sha256: 90bdda60b0ebdf649b8374c5651b4323856a8ada4a8b6dd6729d05ffaa479296
+  format: openleg_json
+  label: NY GBS 1502
+- raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1503.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/1503
+  fetched: '2026-08-20'
+  sha256: a1b500bf747e1821a752912de737677e10ba8e7ff33eebeb650efad261b5677d
+  format: openleg_json
+  label: NY GBS 1503
+- raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1504.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/1504
+  fetched: '2026-08-20'
+  sha256: 65b9a3bb069b667eddc4c9c871af9867961919f8a9109d484d96314dff967b26
+  format: openleg_json
+  label: NY GBS 1504
+- raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1505.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/1505
+  fetched: '2026-08-20'
+  sha256: 75492eca5792a8036776ccb4542f1a3fe824d165e877b70ec330f3eaf71c8c44
+  format: openleg_json
+  label: NY GBS 1505
+- raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1506.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/1506
+  fetched: '2026-08-20'
+  sha256: e8c83f582acc2d620da69c7af057f65ba042529cdde8582136bbbe48dc3e178f
+  format: openleg_json
+  label: NY GBS 1506
+- raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1507.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/1507
+  fetched: '2026-08-20'
+  sha256: eef6cb32213ba1fde3acefdedc4b9633ab4b17059d373aa0e6d9f6ff11df800f
+  format: openleg_json
+  label: NY GBS 1507
+- raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1508.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/1508
+  fetched: '2026-08-20'
+  sha256: e3ce2f85ee4fde3b551e574fd483194094e28108c27edb95c15f1c26984a10e7
+  format: openleg_json
+  label: NY GBS 1508
+- raw_file: corpus/state/ny/shield-act/raw/ny-gbs-899-aa.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/899-AA
+  fetched: '2026-08-20'
+  sha256: cb912ca3a2a1da483cfbc51c28abeb69b8a93b39fb31ae73a355ce1f5003f4c0
+  format: openleg_json
+  label: NY GBS 899-AA
+- raw_file: corpus/state/ny/shield-act/raw/ny-gbs-899-bb.json
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/899-BB
+  fetched: '2026-08-20'
+  sha256: 9520cf42bbee2479a6222f20788cda30b8ec4f294796aae141446efb9601a4dc
+  format: openleg_json
+  label: NY GBS 899-BB
+- url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc01@119-1.zip
+  final_url: null
+  host_kind: statute
+  instrument_id: us.code.evidentiary_status
+  raw_file: corpus/taxonomy/sources-of-us-law/raw/usc01-119-1.zip
+  raw_sha256: 7e64ac144293c3e9e148c4083b9dfcc773496d0e312dee1b88ef3c6c2be51a32
+  bytes: 41703
+  content_type: null
+  fetched: '2026-08-19'
+  note: USLM title 1 release point 119-1; 1 U.S.C. 204 extracted from it
+- url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc05@119-1.zip
+  final_url: null
+  host_kind: statute
+  instrument_id: us.apa.rulemaking
+  raw_file: corpus/taxonomy/sources-of-us-law/raw/usc05-119-1.zip
+  raw_sha256: 3fd99b8e4a18222bd7e17158a62208b854d38d3a569d106dd8bcdaf982fca6ee
+  bytes: 2913006
+  content_type: null
+  fetched: '2026-08-19'
+  note: USLM title 5 release point 119-1; 5 U.S.C. 553 extracted from it
+- raw_file: corpus/taxonomy/sources-of-us-law/raw/uslm-1usc204-20260819.xml
+  url: (segmented from the stored raw file)
+  fetched: '2026-08-19'
+  sha256: 39465295d110a5e80c55e7e667113022daa125f6918826c820cb00d32baf682a
+  format: uslm_xml
+  label: uslm-1usc204-20260819
+- raw_file: corpus/taxonomy/sources-of-us-law/raw/uslm-5usc553-20260819.xml
+  url: (segmented from the stored raw file)
+  fetched: '2026-08-19'
+  sha256: 1fc6e90ed6062f5aaeec8eef163ffc157db57ee2e3e2eed6c3894c050c13c6dc
+  format: uslm_xml
+  label: uslm-5usc553-20260819
+structured_source_negatives:
+- instrument_id: intl.apec.privacy_framework
+  checked:
+  - apec.org publication record for APEC Privacy Framework (2015)
+  - the apecapi/publication/getfile endpoint that record exposes
+  result: no_structured_source_exists
+  note: PDF only. No HTML, DOCX or XML rendering is offered. Two-column layout, so risk_tier high.
+  checked_on: '2026-08-19'
+- instrument_id: intl.cbpr.framework
+  checked:
+  - globalcbpr.org/documents/ — every document listed, with its published format
+  result: no_structured_source_exists
+  note: Every Global CBPR Forum document is published as PDF only. Two-column layout, so risk_tier high.
+  checked_on: '2026-08-19'
+- instrument_id: us.dhs.ppgm_2008_01
+  checked:
+  - dhs.gov publication page and four direct PDF paths
+  result: no_structured_source_exists
+  note: PDF only, and the host blocks automated fetch. See meta/blocked-sources.yaml.
+  checked_on: '2026-08-18'
+note: Every primary source fetched, with its URL, fetch date and hash. BRIEF.md Phase 0 item 4. This
+  ledger went stale when tools/extract.py replaced tools/fetch-source.mjs as the acquisition path and
+  did not log here — 13 entries against 78 stored raw files, with nothing failing, because gate 2 hashes
+  each atom OWN raw_file rather than checking this list. Gate 33 now asserts the correspondence and extract.py
+  refuses to finish a fetch it cannot log.

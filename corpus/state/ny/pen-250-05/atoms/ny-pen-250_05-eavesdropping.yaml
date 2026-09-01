@@ -1,0 +1,98 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+id: ny.penal.250_05.eavesdropping
+source:
+  citation: N.Y. Penal Law § 250.05
+  instrument_id: ny.penal.250.05
+  url: https://legislation.nysenate.gov/api/3/laws/PEN/250.05
+  fetched: '2026-08-19'
+  raw_file: corpus/state/ny/pen-250-05/raw/ny-pen-250-05.json
+  raw_sha256: 113f2524c4344b52d5300142b89cfb9ec2c9a37b266d95ed00bd0eaecb3af74f
+  text_file: corpus/state/ny/pen-250-05/raw/ny-pen-250-05.txt
+  text_sha256: 3ab5d1ee702644e8c1b938147fc25d446e27dac958a778733cb10603da4dfa89
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/pen-250-05/raw/ny-pen-250-05.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, ny-pen-250-05
+    result: structured_source_used
+    note: null
+  segment_sha256: ee062614adaad619f51e47215246980fb459c8766c67ebdb40ce001854122c8d
+verbatim_span: >-
+  § 250.05 Eavesdropping. A person is guilty of eavesdropping when he unlawfully engages in
+  wiretapping, mechanical overhearing of a conversation, or intercepting or accessing of an
+  electronic communication. Eavesdropping is a class E felony.
+paragraph_path:
+  path: []
+  anchor: '250.05'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    the section has no subdivisions; the empty path cites the section itself and is unique by
+    construction
+context_not_required: The provision states the rule in full.
+subject:
+  domain: V.A.1
+  lifecycle:
+    - I
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - any
+effective_from: '2014-09-22'
+federal_relationship: independent
+applies_if:
+  all:
+    - entity.nexus in ["US-NY"]
+    - practice.intercepts_communications == true
+applies_to_role: controller
+obligation_type: prohibit
+deadline: null
+exemptions: []
+related: []
+summary: >-
+  A person is guilty of eavesdropping when he unlawfully engages in wiretapping, mechanical
+  overhearing of a conversation, or intercepting or accessing an electronic communication.
+requirement_detail: >-
+  NEW YORK IS A ONE-PARTY CONSENT STATE, and this section is why — but the consent rule is not in
+  this text. § 250.05 makes eavesdropping a class E felony and defines it by reference to
+  "unlawfully", with the one-party consent limit supplied by the definitions at § 250.00 and the
+  requirement that the actor not be a party to the conversation. That matters for session-replay and
+  chat-interception claims: plaintiffs have tried to import the California CIPA pattern into New
+  York, and the one-party posture is the reason those theories fare differently here. Do not assume
+  the CIPA case law transfers.
+common_errors:
+  - Assuming the California all-party rule applies. New York is one-party consent.
+  - Reading § 250.05 alone. The consent limit comes from the § 250.00 definitions, not this section.
+open_questions: []
+preemption:
+  posture: none
+  authority: N.Y. Penal Law § 250.05
+  note: >-
+    State criminal law. The federal Wiretap Act, 18 U.S.C. § 2511, sets a floor and the stricter of
+    the two governs; New York is not stricter on the consent question.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: Class E felony.
+    range: null
+    note: >-
+      A criminal statute. Civil exposure for the same conduct runs through GBL § 349 and common-law
+      theories rather than through this section.
+  statute_of_limitations: null

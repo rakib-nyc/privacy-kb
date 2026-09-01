@@ -1,0 +1,89 @@
+{
+ "label": "uslm-1usc204-20260819",
+ "url": "(segmented from the stored raw file)",
+ "format": "uslm_xml",
+ "raw_file": "corpus/taxonomy/sources-of-us-law/raw/uslm-1usc204-20260819.xml",
+ "raw_sha256": "39465295d110a5e80c55e7e667113022daa125f6918826c820cb00d32baf682a",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "/us/usc/t1/s204/a",
+   "heading": "United States Code.\u2014",
+   "text": "The matter set forth in the edition of the Code of Laws of the United States current at any time shall, together with the then current supplement, if any, establish prima facie the laws of the United States, general and permanent in their nature, in force on the day preceding the commencement of the session following the last session the legislation of which is included: Provided, however , That whenever titles of such Code shall have been enacted into positive law the text thereof shall be legal evidence of the laws therein contained, in all the courts of the United States, the several States, and the Territories and insular possessions of the United States.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In all courts, tribunals, and public offices of the United States, at home or abroad, of the District of Columbia, and of each State, Territory, or insular possession of the United States\u2014",
+     "path": [],
+     "anchor": "/us/usc/t1/s204"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "/us/usc/t1/s204/b",
+   "heading": "District of Columbia Code.\u2014",
+   "text": "The matter set forth in the edition of the Code of the District of Columbia current at any time shall, together with the then current supplement, if any, establish prima facie the laws, general and permanent in their nature, relating to or in force in the District of Columbia on the day preceding the commencement of the session following the last session the legislation of which is included, except such laws as are of application in the District of Columbia by reason of being laws of the United States general and permanent in their nature.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In all courts, tribunals, and public offices of the United States, at home or abroad, of the District of Columbia, and of each State, Territory, or insular possession of the United States\u2014",
+     "path": [],
+     "anchor": "/us/usc/t1/s204"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "/us/usc/t1/s204/c",
+   "heading": "District of Columbia Code; citation.\u2014",
+   "text": "The Code of the District of Columbia may be cited as \u201cD.C. Code\u201d.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In all courts, tribunals, and public offices of the United States, at home or abroad, of the District of Columbia, and of each State, Territory, or insular possession of the United States\u2014",
+     "path": [],
+     "anchor": "/us/usc/t1/s204"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": "/us/usc/t1/s204/d",
+   "heading": "Supplements to Codes; citation.\u2014",
+   "text": "Supplements to the Code of Laws of the United States and to the Code of the District of Columbia may be cited, respectively, as \u201cU.S.C., Sup. \u201d, and \u201cD.C. Code, Sup. \u201d, the blank in each case being filled with Roman figures denoting the number of the supplement.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In all courts, tribunals, and public offices of the United States, at home or abroad, of the District of Columbia, and of each State, Territory, or insular possession of the United States\u2014",
+     "path": [],
+     "anchor": "/us/usc/t1/s204"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": "/us/usc/t1/s204/e",
+   "heading": "New edition of Codes; citation.\u2014",
+   "text": "New editions of each of such codes may be cited, respectively, as \u201cU.S.C., ed.\u201d, and \u201cD.C. Code, ed.\u201d, the blank in each case being filled with figures denoting the last year the legislation of which is included in whole or in part.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In all courts, tribunals, and public offices of the United States, at home or abroad, of the District of Columbia, and of each State, Territory, or insular possession of the United States\u2014",
+     "path": [],
+     "anchor": "/us/usc/t1/s204"
+    }
+   ]
+  }
+ ]
+}

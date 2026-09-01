@@ -1,0 +1,130 @@
+id: ny.gbl.349.a1.unfairness
+schema_version: 1
+record_type: obligation
+source:
+  citation: N.Y. Gen. Bus. Law § 349(a)(1)
+  instrument_id: ny.gbl.349
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/349
+  fetched: '2026-08-19'
+  raw_file: corpus/state/ny/gbl-349/raw/ny-gbs-349.json
+  raw_sha256: 2833369a40955663990347addf5f426bf6c81acc3ed827bb91045c5c5432963b
+  text_file: corpus/state/ny/gbl-349/raw/ny-gbs-349.txt
+  text_sha256: 4d8c06a7e1c66eaf96f46f04cd580956f50e508c5ed60596812d84470342be3f
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/gbl-349/raw/ny-gbs-349.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 9ccdbbb9e367c69f6cf0e356be61facd731c4a830283b0e9c14158d0ad4a28ad
+verbatim_span: >-
+  An act or practice is unfair when it causes or is likely to cause substantial injury which is not
+  reasonably avoidable and is not outweighed by countervailing benefits to consumers or to
+  competition. The term "substantial injury" as used in this subdivision shall have the same meaning
+  as the term "substantial injury" in the federal trade commission act, 15 U.S.C. Section 41 et seq.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '1'
+  anchor: '349'
+  derivation: reconstructed
+  confidence: high
+  evidence: designator parsed from flat <P> siblings; sequence-tracked
+jurisdiction: US-NY
+jurisdiction_level: state
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions: []
+related: []
+federal_relationship: independent
+interpreted_by: []
+common_errors:
+  - >-
+    Analysing NY unfairness without the federal test. The statute expressly imports the FTC Act
+    meaning of 'substantial injury'.
+  - >-
+    Assuming NY unfairness mirrors NY deception doctrine. It does not — it is a three-part balancing
+    test, not a materially-misleading standard.
+open_questions:
+  - >-
+    The statute imports the FTC Act meaning of 'substantial injury' but not expressly the other two
+    limbs. Whether the whole § 45(n) test travels, or only that term, is not resolved by this text.
+    Recorded as an ambiguity rather than assumed.
+  - >-
+    Chapter 708 of the Laws of 2025 (S8416/S8416A, sponsor Comrie), signed 2025-12-19, amended the
+    Article 22-A heading and § 349 and added § 348. A further amendment took effect 2026-04-03.
+    Verified against the OpenLegislation bill record and the law updates feed.
+confidence: high
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Unfair, deceptive, or abusive acts or practices in the conduct of any business, trade or
+      commerce or in the furnishing of any service in this state are hereby declared unlawful. For
+      the purposes of this section:
+    citation: null
+    relation_note: null
+    path:
+      path:
+        - a
+      anchor: '349'
+      derivation: reconstructed
+      confidence: high
+      evidence: designator sequence over flat <P> siblings
+subject:
+  domain: V.A.1
+  lifecycle:
+    - I
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2026-04-03'
+applies_if:
+  all:
+    - entity.nexus in ['US-NY']
+applies_to_role: any
+obligation_type: prohibit
+summary: >-
+  An act or practice is unfair when it causes or is likely to cause substantial injury that is not
+  reasonably avoidable and is not outweighed by countervailing benefits to consumers or to
+  competition.
+requirement_detail: >-
+  NY's unfairness test is the FTC Act § 45(n) three-part test, and the statute says so: 'substantial
+  injury' 'shall have the same meaning as the term "substantial injury" in the federal trade
+  commission act, 15 U.S.C. Section 41 et seq.' That cross-reference is LOAD-BEARING — NY unfairness
+  cannot be construed without the federal standard, so the two atoms are linked and a change in
+  federal § 45(n) doctrine moves NY law with it.
+preemption:
+  posture: none
+  authority: N.Y. Gen. Bus. Law § 349(g)
+  note: >-
+    State UDAP. No federal statute preempts it; § 349(g) is itself a non-supersession clause
+    preserving other NY law. The FTC-compliance defence at § 349(d) is NOT preemption — it is an
+    activity-level complete defence that the defendant must establish.
+enforcement:
+  enforcers:
+    - state_ag
+    - private_litigants
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      AG: injunction and restitution. Private: actual damages or $50, whichever is greater; treble
+      up to $1,000 for wilful or knowing violation; discretionary attorney's fees.
+    range:
+      min: 50
+      unit: usd_statutory_minimum
+    note: >-
+      The private right is NARROWER than the AG's — see the deception-only asymmetry on the
+      private-action atom.
+  statute_of_limitations: null

@@ -1,0 +1,189 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+- cfpb
+sector:
+- financial
+data_types:
+- any
+status: in_force
+effective_from: '2010-07-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: any
+deadline: null
+federal_relationship: null
+interpreted_by: []
+confidence: high
+preemption:
+  posture: floor
+  authority: null
+  note: 'Title X of Dodd-Frank operates as a floor: it does not displace state consumer-protection law
+    that gives greater protection, and state attorneys general may enforce Title X itself. The savings
+    provision that establishes this sits outside § 5531 and is NOT extracted in this corpus, so the posture
+    is recorded here and its text is not quoted. New York GBL § 349 is the live example — it reaches the
+    same conduct, adds a private right of action the Bureau statute does not have, and since 2025 carries
+    its own abusive prong.'
+enforcement:
+  enforcers:
+  - cfpb
+  - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: Cease-and-desist and civil actions under Title X, with restitution, disgorgement, rescission,
+      damages and injunctive relief, plus tiered daily civil money penalties that escalate for reckless
+      and for knowing violations. The remedial and penalty sections sit outside § 5531 and are not extracted
+      in this corpus.
+    range: null
+    note: NO PRIVATE RIGHT OF ACTION under § 5531. A consumer reaches the same conduct through the state
+      UDAP statute — which is invariant I6's other half, and in New York that statute now carries an abusive
+      prong of its own.
+  statute_of_limitations: null
+id: us.cfpb.5531.d.abusive_standard
+source:
+  citation: 12 U.S.C. § 5531(d)
+  instrument_id: us.cfpb_udaap
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/cfpb-udaap/raw/12-u-s-c-5531.xml
+  raw_sha256: c00d0c0594aa4472ac0339520dca0c2e09445dd7c23604f2cba9fb04192d8bf6
+  text_file: corpus/federal/domain-2-federal-privacy/cfpb-udaap/raw/12-u-s-c-5531.txt
+  text_sha256: 136a006a5ddd6c16944b75f956ab1a3d2f8057dc32562bb844ec0b1b47b248d9
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/cfpb-udaap/raw/12-u-s-c-5531.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: The Bureau shall have no authority under this section to declare an act or practice abusive
+  in connection with the provision of a consumer financial product or service, unless the act or practice—
+paragraph_path:
+  path:
+  - d
+  anchor: /us/usc/t12/s5531/d
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+- position: follows
+  relation: conditions
+  verbatim_span: materially interferes with the ability of a consumer to understand a term or condition
+    of a consumer financial product or service; or
+  citation: 12 U.S.C. § 5531(d)(1)
+  path:
+    path:
+    - d
+    - '1'
+    anchor: /us/usc/t12/s5531/d/1
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+- position: follows
+  relation: conditions
+  verbatim_span: takes unreasonable advantage of—
+  citation: 12 U.S.C. § 5531(d)(2)
+  path:
+    path:
+    - d
+    - '2'
+    anchor: /us/usc/t12/s5531/d/2
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+- position: follows
+  relation: conditions
+  verbatim_span: a lack of understanding on the part of the consumer of the material risks, costs, or
+    conditions of the product or service;
+  citation: 12 U.S.C. § 5531(d)(2)(A)
+  path:
+    path:
+    - d
+    - '2'
+    - A
+    anchor: /us/usc/t12/s5531/d/2/A
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+- position: follows
+  relation: conditions
+  verbatim_span: the inability of the consumer to protect the interests of the consumer in selecting or
+    using a consumer financial product or service; or
+  citation: 12 U.S.C. § 5531(d)(2)(B)
+  path:
+    path:
+    - d
+    - '2'
+    - B
+    anchor: /us/usc/t12/s5531/d/2/B
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+- position: follows
+  relation: conditions
+  verbatim_span: the reasonable reliance by the consumer on a covered person to act in the interests of
+    the consumer.
+  citation: 12 U.S.C. § 5531(d)(2)(C)
+  path:
+    path:
+    - d
+    - '2'
+    - C
+    anchor: /us/usc/t12/s5531/d/2/C
+    derivation: structural
+    confidence: high
+    evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: II.C.5
+  lifecycle:
+  - I
+applies_if:
+  all:
+  - any:
+    - entity.is_cfpb_covered_person == true
+    - entity.is_cfpb_service_provider == true
+  - practice.offers_consumer_financial_product_or_service == true
+obligation_type: prohibit
+summary: 'The abusive standard: the Bureau may declare an act abusive where it materially interferes with
+  a consumer''s ability to understand a term or condition, or takes unreasonable advantage of a consumer''s
+  lack of understanding, inability to protect their interests, or reasonable reliance on the covered person.'
+requirement_detail: 'THE THIRD PRONG, AND THE ONE THE FTC ACT DOES NOT HAVE. Read against § 5531(c), the
+  abusive standard is defined by what it omits: no injury element, no substantiality requirement and no
+  balance against countervailing benefits appears anywhere in (d), and its limbs are disjunctive where
+  the (c)(1) limbs are cumulative. (d)(1) reaches conduct that "materially interferes with the ability
+  of a consumer to understand a term or condition" of the product, so no misrepresentation is needed and
+  design or presentation can be the whole of the claim. (d)(2) reaches conduct that "takes unreasonable
+  advantage of" one of three vulnerabilities, and the third — "the reasonable reliance by the consumer
+  on a covered person to act in the interests of the consumer" — makes a relationship of trust an independent
+  trigger in a statute that imposes no fiduciary duty. Two further textual differences from (c): (d) carries
+  no counterpart to the requirement that the Bureau have a reasonable basis to conclude the limbs are
+  met, and it is scoped to acts "in connection with the provision of a consumer financial product or service"
+  rather than to a transaction with a consumer or the offering of one. New York copied this structure
+  into GBL § 349 in 2025 and broadened it, swapping the Bureau statute''s consumer and covered person
+  for any person — so the state version reaches entities the Bureau cannot, and unlike § 5531 it is privately
+  enforceable.'
+exemptions: []
+related:
+- us.usc.15.45.n.unfairness_test
+- ny.gbl.349.a.unlawful
+common_errors:
+- Importing the unfairness injury test into abusive. Nothing in § 5531(d) requires substantial injury
+  or a cost-benefit balance; the (d)(2) limbs rest on "takes unreasonable advantage of" alone.
+- Assuming the FTC can plead the same theory. § 45(a)(1) declares only unfair and deceptive acts unlawful
+  and § 45(n) defines only unfairness, so the FTC Act has no abusive prong — the 'abusive telemarketing
+  acts or practices' category in the Telemarketing Sales Rule is a separate, rule-specific standard, not
+  this one.
+- Reading (d)(2)(C) as rhetorical. It makes "the reasonable reliance by the consumer on a covered person
+  to act in the interests of the consumer" a standalone trigger, so a relationship of trust can carry
+  a claim with no misstatement and no quantified injury behind it.
+open_questions:
+- What "unreasonable advantage" requires beyond the listed vulnerabilities is not defined in the section.
+  The Bureau's interpretive statements on the abusive standard are agency_guidance under invariant I7
+  and are not extracted here; do not blend them into this citation.

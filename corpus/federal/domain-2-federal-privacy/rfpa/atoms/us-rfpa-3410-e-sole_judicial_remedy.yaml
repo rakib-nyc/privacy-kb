@@ -1,0 +1,115 @@
+id: us.rfpa.3410.e.sole_judicial_remedy
+schema_version: 1
+record_type: obligation
+source:
+  citation: 12 U.S.C. § 3410(e)
+  instrument_id: us.rfpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3410.xml
+  raw_sha256: 5f92abf0c014a909b13b60decfb863eecb6d2db0a014a77aa9f44a94097a0bac
+  text_file: corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3410.txt
+  text_sha256: e09ef56e73640f811b0150f9f6f25f6dd13b77c70976d023c8b006b57fed123e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3410.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1 (12-u-s-c-3410)
+    result: structured_source_used
+    note: null
+  segment_sha256: d698fd267cd851eb90965be5d8f4916f4d5de5b2ba0d2d7a0c4e027cf30b3455
+verbatim_span: >-
+  The challenge procedures of this chapter constitute the sole judicial remedy available to a
+  customer to oppose disclosure of financial rec­ords pursuant to this chapter.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - e
+  anchor: /us/usc/t12/s3410/e
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: >-
+  The subsection is a single complete sentence stating the exclusivity rule; nothing above it in §
+  3410 qualifies it.
+subject:
+  domain: III.A.1
+  lifecycle:
+    - VI
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - federal_agencies
+sector:
+  - financial
+data_types:
+  - financial
+status: in_force
+effective_from: '1979-03-10'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_government_authority == true
+    - data.is_financial_record == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  The chapter's challenge procedures are the sole judicial remedy available to a customer who wishes
+  to oppose disclosure of financial records under the chapter.
+requirement_detail: >-
+  AN EXCLUSIVITY CLAUSE, AND THE OPPOSITE OF THE CABLE ACT'S. Where 47 U.S.C. § 551(f)(3) says the
+  remedy it creates "shall be in addition to any other lawful remedy", § 3410(e) forecloses the
+  alternatives: if a customer wants to STOP a disclosure, the § 3410 motion is the only judicial
+  route, and a freestanding injunction suit or a collateral constitutional challenge is not
+  available. The clause is carefully bounded in two ways that are easy to miss. It speaks to
+  opposing DISCLOSURE, which is prospective relief, and it reaches disclosure "pursuant to this
+  chapter", so a demand that does not travel one of the chapter's routes is not within it. Combined
+  with the ten and fourteen day window in § 3410(a) and the appeal bar in § 3410(d), the practical
+  effect is that a customer who misses the window has no pre-production remedy at all.
+deadline: null
+exemptions: []
+related:
+  - us.rfpa.3410.a.customer_challenge
+  - us.cable.551.f1.private_action
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Planning a freestanding injunction or constitutional suit to block a bank subpoena. § 3410(e)
+    makes the chapter's challenge procedure the sole judicial remedy for opposing disclosure.
+  - >-
+    Reading it as a bar on all remedies. It addresses opposing disclosure under the chapter; it does
+    not on its face reach a demand made outside the chapter's routes.
+open_questions:
+  - >-
+    12 U.S.C. § 3417 (civil penalties and liability) has not been extracted into this corpus, so the
+    interaction between § 3410(e) exclusivity and any post-disclosure damages remedy is UNASSESSED
+    rather than absent. The span is limited to opposing disclosure and does not on its face speak to
+    remedies sought after the records have changed hands.
+confidence: high
+preemption:
+  posture: floor
+  authority: 12 U.S.C. § 3402
+  note: >-
+    Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the sections extracted. RFPA binds federal Government authorities,
+    so the ordinary state-law displacement question does not arise in the usual form: a state
+    statute restricting state investigators is not in conflict with it.
+enforcement:
+  enforcers:
+    - federal_agencies
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: >-
+      12 U.S.C. § 3417 (civil penalties and liability) has not been extracted into this corpus, so
+      penalty exposure and any customer damages action are UNASSESSED rather than absent.
+      private_right_of_action is recorded false because nothing extracted establishes one, not
+      because the statute was read to withhold one.
+  statute_of_limitations: null

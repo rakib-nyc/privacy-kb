@@ -1,0 +1,141 @@
+id: us.title_vii.2000e2.a1.discrimination
+schema_version: 1
+record_type: obligation
+source:
+  citation: 42 U.S.C. § 2000e-2(a)(1)
+  instrument_id: us.title_vii
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/title-vii/raw/42-u-s-c-2000e-2.xml
+  raw_sha256: 2b073971f72865a8696fff2c8175b7413170db515e34adb2166aba4f0165f5fb
+  text_file: corpus/federal/domain-2-federal-privacy/title-vii/raw/42-u-s-c-2000e-2.txt
+  text_sha256: e6b8b91739365fe9e0677ff9392ddba8348bf5c40ebe7bd307a109e9ab552664
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/title-vii/raw/42-u-s-c-2000e-2.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 9b5fbdb142a8b062a122b48fc8d3003592dcebce73f6161c0cf5e65604075608
+verbatim_span: >-
+  to fail or refuse to hire or to discharge any individual, or otherwise to discriminate against any
+  individual with respect to his compensation, terms, conditions, or privileges of employment,
+  because of such individual’s race, color, religion, sex, or national origin; or
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - a
+    - '1'
+  anchor: /us/usc/t42/s2000e–2/a/1
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: It shall be an unlawful employment practice for an employer—
+    citation: 42 U.S.C. § 2000e-2(a)
+    path:
+      path:
+        - a
+      anchor: /us/usc/t42/s2000e–2/a
+      derivation: structural
+      confidence: high
+      evidence: USLM element nesting; identifier read from the source
+subject:
+  domain: IV.A.1
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - eeoc
+  - doj
+sector:
+  - employment
+data_types:
+  - personal_information
+status: in_force
+effective_from: '1965-07-02'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - entity.is_employer == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  It is an unlawful employment practice for an employer to fail or refuse to hire, to discharge, or
+  otherwise to discriminate against any individual with respect to compensation, terms, conditions
+  or privileges of employment because of that individual's race, color, religion, sex or national
+  origin.
+requirement_detail: >-
+  THIS IS THE STATUTE AN AI HIRING TOOL IS JUDGED UNDER, and at federal level there is no other one.
+  Nothing in the paragraph mentions software, a model or a score: the operative words are "to fail
+  or refuse to hire" and the five protected bases, so a vendor's ranking engine that filters
+  applicants is measured by what it does and not by whether anyone intended a protected
+  characteristic to matter. The first error practitioners make is waiting for an AI-specific federal
+  statute before running the analysis — the EEOC's guidance on automated employment decision tools
+  is agency guidance that interprets this text and adds nothing to it, and it must be cited as
+  guidance rather than blended into the statute. The second is treating the vendor as the regulated
+  party: the prohibition runs to the employer, and buying a screen from a third party does not move
+  the duty. Note the reach beyond hiring — "compensation, terms, conditions, or privileges of
+  employment" is where productivity scoring, shift allocation and monitoring of incumbent employees
+  land, in the same sentence. The 15-employee coverage threshold is in the definition of employer at
+  42 U.S.C. § 2000e(b), which this corpus does not hold, so this atom does not encode it.
+deadline: null
+exemptions: []
+related:
+  - us.title_vii.2000e2.a2.limit_segregate_classify
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Waiting for an AI statute before analysing an algorithmic screen. A tool that refuses to hire on
+    a protected basis is already an unlawful employment practice under this paragraph.
+  - >-
+    Reading the prohibition as addressed to the tool vendor. It is addressed to the employer;
+    procurement does not transfer it.
+  - >-
+    Confining the paragraph to hiring. It also reaches compensation, terms, conditions, or
+    privileges of employment, which is where employee monitoring and scoring sit.
+open_questions:
+  - >-
+    The 15-employee threshold and the definition of employer at 42 U.S.C. § 2000e(b) are not
+    extracted, so applicability here is stated for employers generally.
+confidence: high
+preemption:
+  posture: floor
+  authority: null
+  note: >-
+    Title VII's savings clause is 42 U.S.C. § 2000e-7, which has not been extracted; nothing in the
+    section quoted here displaces state law, and state fair-employment statutes with lower employee
+    thresholds or additional protected classes are the ordinary case. Recorded as floor on that
+    basis, pending extraction of § 2000e-7.
+enforcement:
+  enforcers:
+    - eeoc
+    - doj
+    - private_litigants
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Administrative charge first, then private suit. A charge is filed with the EEOC, which
+      investigates, may conciliate and may sue; for state and local government respondents the
+      litigating authority is the Department of Justice. An individual sues after receiving a notice
+      of right to sue.
+    range: null
+    note: >-
+      The remedial provisions — 42 U.S.C. § 2000e-5(g) and the compensatory and punitive damages
+      caps at 42 U.S.C. § 1981a — have NOT been extracted. Treat the quantum of exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: >-
+    Charge-filing periods run from 42 U.S.C. § 2000e-5(e), which has not been extracted; do not
+    compute a deadline from this atom.

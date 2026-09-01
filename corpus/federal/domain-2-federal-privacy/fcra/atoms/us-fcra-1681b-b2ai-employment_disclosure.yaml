@@ -1,0 +1,111 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+  - cfpb
+sector:
+  - financial
+data_types:
+  - consumer_report
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related: []
+federal_relationship: null
+id: us.fcra.1681b.b2ai.standalone_disclosure
+source:
+  citation: 15 U.S.C. § 1681b(b)(2)(A)(i)
+  instrument_id: us.fcra.preemption
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681b.xml
+  raw_sha256: d01fd2d69b7a57e375ccf4956548a7f493f0f4ddebc4a6b7b1d41e487f5daad4
+  text_file: corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681b.txt
+  text_sha256: c5647e933fd970661332d7cc957cf76863826a514897c9fd07cc51b85d82f92d
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681b.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 15-u-s-c-1681b
+    result: structured_source_used
+    note: null
+  segment_sha256: 275f2c997304b4b2e4025cd60d2047ef7a2d30b660b86cc20b8eec20e9ef1d99
+verbatim_span: >-
+  a clear and conspicuous disclosure has been made in writing to the consumer at any time before the
+  report is procured or caused to be procured, in a document that consists solely of the disclosure,
+  that a consumer report may be obtained for employment purposes; and
+paragraph_path:
+  path:
+    - b
+    - '2'
+    - A
+    - i
+  anchor: /us/usc/t15/s1681b/b/2/A/i
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the rule in full.
+subject:
+  domain: IV.A.1
+  lifecycle:
+    - III
+effective_from: '1997-09-30'
+applies_if:
+  all:
+    - entity.uses_consumer_reports == true
+    - purpose.employment_screening == true
+applies_to_role: controller
+obligation_type: disclose
+deadline: null
+exemptions: []
+summary: >-
+  Before procuring a consumer report for employment purposes, a clear and conspicuous written
+  disclosure must be made to the consumer in a document consisting SOLELY of the disclosure.
+requirement_detail: >-
+  THE STANDALONE REQUIREMENT IS THE MOST LITIGATED PROVISION IN EMPLOYMENT SCREENING, and the
+  operative words are "in a document that consists solely of the disclosure". Burying it in an
+  application form, or adding a liability waiver to it, defeats the provision even where the
+  disclosure itself is perfectly clear — and that is the usual FCRA class action against employers
+  rather than against agencies. § 1681b(b)(2)(A)(ii) then requires separate written authorisation,
+  which MAY sit on the same document. So the rule is: nothing else on the disclosure, except the
+  authorisation.
+common_errors:
+  - >-
+    Combining the disclosure with an application or a waiver. The document must consist SOLELY of
+    the disclosure.
+  - >-
+    Assuming § 1681m adverse-action notice is the whole employment duty. The pre-adverse-action step
+    at § 1681b(b)(3) comes first and is separate.
+open_questions: []
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 1681t
+  note: >-
+    FCRA preempts by enumerated subject. State background-check statutes commonly add duties here,
+    and whether they survive is a subject-by-subject question under § 1681t(b).
+enforcement:
+  enforcers:
+    - ftc
+    - cfpb
+    - state_ag
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Willful noncompliance under § 1681n: statutory damages of $100 to $1,000 per violation plus
+      punitive damages and fees.
+    range:
+      min: 100
+      unit: usd_statutory_per_violation
+    note: >-
+      The per-violation structure over an applicant class is what makes this provision expensive;
+      the harm is often purely procedural.
+  statute_of_limitations: null

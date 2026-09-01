@@ -1,0 +1,95 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+related:
+- us.sca.2701.c1.provider_authorization
+- us.sca.2702.a1.divulgence_prohibition
+- us.wiretap.2510.17a.electronic_storage
+federal_relationship: null
+id: us.fisa_702.1881a.b.limitations
+source:
+  citation: 50 U.S.C. § 1881a(b)
+  instrument_id: us.fisa_702
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc50@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.xml
+  raw_sha256: 1bfe41f81a21edbdfd6526a1b83b1a91eb2dc65da9dc925059b5e7fc6369b9d7
+  text_file: corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.txt
+  text_sha256: 4ff532541ae3383c392b99fdfec998206e2c7385e4e614c1256904677f31daa8
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: An acquisition authorized under subsection (a)—
+paragraph_path:
+  path:
+  - b
+  anchor: /us/usc/t50/s1881a/b
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the rule in full.
+subject:
+  domain: III.A.1
+  lifecycle:
+  - I
+regulator: &id001
+- doj
+sector:
+- any
+data_types:
+- any
+effective_from: '2008-07-10'
+applies_if:
+  all:
+  - entity.is_us_government == true
+  - event.type == "section_702_acquisition"
+applies_to_role: processor
+obligation_type: restrict_use
+deadline: null
+exemptions: []
+summary: An acquisition authorized under § 1881a(a) is subject to the limitations enumerated in subsection
+  (b).
+requirement_detail: 'THE LIMITS MATTER MORE THAN THE GRANT FOR THIS CORPUS. § 702 authorises targeting
+  of non-US persons reasonably believed to be outside the United States, and subsection (b) is where the
+  boundaries sit — including that an acquisition may not intentionally target a person known at the time
+  to be located in the United States. This is the provision European regulators actually analyse: the
+  Schrems litigation turned on whether these limitations plus the available redress amount to protection
+  essentially equivalent to EU law, and that is a DOCTRINAL conclusion about the statute rather than anything
+  the statute says.'
+common_errors:
+- Citing § 702 as authority to target US persons. Subsection (b)(1) forecloses intentional targeting of
+  a person known to be in the United States.
+- Reading adequacy conclusions into the text. Schrems II is case law about this statute, not a provision
+  of it.
+open_questions:
+- Subsection (b) enumerates further limitations that are not separately extracted, and the querying and
+  minimisation procedures live elsewhere in the section. An adequacy-style analysis needs both and this
+  atom carries neither.
+preemption:
+  posture: none
+  authority: 50 U.S.C. § 1881a(b)
+  note: Federal national-security authority. No state law interacts with it; the operative external constraint
+    is foreign adequacy assessment, not preemption.
+enforcement:
+  enforcers: *id001
+  private_right_of_action: false
+  penalty:
+    structure: Not extracted for this instrument.
+    range: null
+    note: The enforcement provisions are not extracted; treat exposure as UNASSESSED rather than absent.
+  statute_of_limitations: null

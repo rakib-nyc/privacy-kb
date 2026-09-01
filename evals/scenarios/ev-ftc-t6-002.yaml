@@ -1,0 +1,87 @@
+id: ev.ftc.t6.002
+question: We are CBPR-certified and we say so on our website. Our counsel says CBPR is a voluntary framework
+  with no force of law in the United States, so certification creates no binding obligation. Is that right?
+trap: 'T6, and it is the trap that produces a confidently wrong "you''re fine". The premise is correct
+  and the conclusion does not follow. The framework binds nobody by itself — every principle record in
+  this corpus carries enforceability_pathway: none, because those documents are addressed to states and
+  member economies and offer an organisation nothing to join. But an organisation CAN claim adherence,
+  and a public claim of adherence is a representation about privacy practices. Materially departing from
+  it is deception under FTC Act § 5. The obligation is not in the scheme; it is in § 5, triggered by the
+  claim. A system that answers "no binding obligation" and stops has found the right fact and given the
+  wrong advice. SCOPE NARROWED 2026-08-31: criteria asserting over the APEC and Global CBPR scheme records
+  were removed with those records, which were sourced from documents this repository no longer redistributes.
+  The § 5 backstop this scenario exists to pin is untouched.'
+rubric:
+- name: the public-commitment deception atom exists
+  record_exists: us.usc.15.45.a1.public_commitment_deception
+- name: it is anchored to the § 5 text, not to the framework
+  record: us.usc.15.45.a1.public_commitment_deception
+  path: source.citation
+  equals: 15 U.S.C. § 45(a)(1)
+- name: its trigger is the public commitment, not membership in anything
+  record: us.usc.15.45.a1.public_commitment_deception
+  path: applies_if.all.1
+  equals: practice.makes_public_privacy_commitment == true
+- name: it states that the exposure comes from the claim
+  record: us.usc.15.45.a1.public_commitment_deception
+  path: requirement_detail
+  contains: THE EXPOSURE COMES FROM THE CLAIM, NOT FROM THE FRAMEWORK
+- name: and names the wrong answer it exists to prevent
+  record: us.usc.15.45.a1.public_commitment_deception
+  path: requirement_detail
+  contains: does not have "no binding obligation"
+- name: ENGINE — an entity making a public privacy commitment is reached
+  engine: &id001
+    entity:
+      in_or_affecting_commerce: true
+      nexus: US
+    data: {}
+    context:
+      as_of: '2026-08-19'
+      practice:
+        makes_public_privacy_commitment: true
+  atom: us.usc.15.45.a1.public_commitment_deception
+  in: applicable
+- name: ENGINE — with no carve-out, since it is not a bank or carrier
+  engine: *id001
+  atom: us.usc.15.45.a1.public_commitment_deception
+  in: applicable
+  path: partial_carve_out
+  equals: null
+- name: ENGINE — a bank is OUT of § 5 entirely, and that is entity-level instrument-wide relief
+  engine: &id002
+    entity:
+      in_or_affecting_commerce: true
+      is_bank: true
+      nexus: US
+    data: {}
+    context:
+      as_of: '2026-08-19'
+      practice:
+        makes_public_privacy_commitment: true
+  atom: us.usc.15.45.a1.public_commitment_deception
+  in: exempt
+  path: reach
+  equals: instrument
+- name: ENGINE — and the engine warns that this is not relief from the conduct standard
+  engine: *id002
+  atom: us.usc.15.45.a1.public_commitment_deception
+  in: exempt
+  path: reasoning
+  contains: not necessarily relief from the underlying LAW
+- name: § 5 has no private right of action, so the state UDAP half of I6 matters
+  record: us.usc.15.45.a1.public_commitment_deception
+  path: enforcement.private_right_of_action
+  equals: false
+correct_answer: The premise is right and the conclusion is wrong. CBPR is voluntary and creates no freestanding
+  legal duty in the United States. But you have published a claim that you adhere to it, and that claim
+  is a representation about your privacy practices. If your actual practices depart from it materially,
+  that is a deceptive act or practice under FTC Act § 5(a)(1), and the FTC has brought exactly this case
+  repeatedly against companies whose certification lapsed or whose conduct diverged from what they advertised.
+  The exposure comes from the claim, not from the framework — which also means the cheapest mitigation
+  is not leaving CBPR but making the claim accurate and keeping it current. Two riders. There is no private
+  right of action under the FTC Act, so the private-plaintiff vehicle is the state UDAP statute and its
+  elements differ. And if you are a bank, a Federal credit union, a common carrier or an air carrier,
+  § 45(a)(2) puts you outside the Commission's reach entirely — which is not relief from the conduct standard,
+  only a change in who enforces it.
+all_pass: true

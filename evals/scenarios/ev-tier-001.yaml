@@ -1,0 +1,29 @@
+id: ev.tier.001
+question: An agency published guidance in the CFR. Is it a regulation?
+trap: Publication location does not confer force of law -- notice-and-comment does. 5 USC 553(b)(A) exempts
+  interpretative rules and policy statements.
+trap_category: null
+rubric:
+- name: the sources-of-law taxonomy exists
+  record_exists: us.taxonomy.sources_of_us_law
+- name: it quotes the s553(b)(A) exemption
+  record: us.taxonomy.sources_of_us_law
+  path: verbatim_span
+  contains: interpretative rules
+- name: the decision procedure is executable, not prose
+  record: us.taxonomy.sources_of_us_law
+  path: decision_procedure.tool
+  contains: authority-tier
+- name: it refuses rather than guessing
+  record: us.taxonomy.sources_of_us_law
+  path: decision_procedure.refuses_rather_than_guesses
+  equals: true
+- name: unknown notice-and-comment status is a named refusal case
+  record: us.taxonomy.sources_of_us_law
+  path: decision_procedure.refusal_cases
+  contains: notice_and_comment unknown
+- name: common_errors names the publication-location trap
+  record: us.taxonomy.sources_of_us_law
+  path: common_errors
+  contains: Publication location does not confer force of law
+all_pass: true

@@ -1,0 +1,108 @@
+id: us.test.gate3_exemption_cross_source
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 682.3(b)(3)
+  instrument_id: test.fixture.facta_disposal
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=682
+  fetched: '2026-08-19'
+  raw_file: tests/fixtures/raw/ecfr-682-3.xml
+  raw_sha256: 1a3f2da965faa7935921e01f4282796fdbb7cd43680dfbd394e992b74fb51663
+  text_file: tests/fixtures/raw/ecfr-682-3.txt
+  text_sha256: 425627213c6f1922cc03f72910e40686131e88cf1bf549a9a2739f46acd7eff0
+  text_extraction_cmd: python3 tools/render-text.py tests/fixtures/raw/ecfr-682-3.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - eCFR versioner XML API
+    result: structured_source_used
+    note: fixture
+verbatim_span: (3) After due diligence, entering into and monitoring compliance with a contract with another
+  party engaged in the business of record destruction to dispose of material, specifically identified
+  as consumer information, in a manner consistent with this rule. In this context, due diligence could
+  include reviewing an independent audit of the disposal company's operations and/or its compliance with
+  this rule, obtaining information about the disposal company from several references or other reliable
+  sources, requiring that the disposal company be certified by a recognized trade association or similar
+  third party, reviewing and evaluating the disposal company's information security policies or procedures,
+  or taking other appropriate measures to determine the competency and integrity of the potential disposal
+  company.
+verification_status: verbatim_confirmed
+subject:
+  domain: II.C.1
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+- ftc
+sector:
+- consumer_reporting
+data_types:
+- consumer_report
+status: in_force
+effective_from: '2005-06-01'
+effective_to: null
+supersedes: null
+superseded_by: null
+applies_if:
+  all:
+  - entity.maintains_consumer_information == true
+applies_to_role: any
+obligation_type: secure
+summary: Fixture summary, long enough to satisfy the schema minimum length.
+requirement_detail: Fixture detail, long enough to satisfy the schema minimum length.
+deadline: null
+exemptions:
+- id: us.fixture.ex.gate3_exemption_cross_source
+  type: data_level
+  scope: 'NON-VACUITY: the same span, resolved against the document that DOES contain it. Gate 3 must
+    stay silent, or source_ref would just be a way to fail every cross-part exemption.'
+  source_citation: 16 C.F.R. § 682.3(b) [FIXTURE]
+  verbatim_span: 'You are not required to deliver an annual privacy notice if you:'
+  burden_of_proof: defendant
+  applies_if:
+    all:
+    - data.types in ['consumer_report']
+  source_ref:
+    raw_file: tests/fixtures/raw/gate23-source.txt
+    raw_sha256: 3a4cc663a31311e00c64d20d7afe2846dffdc0f30adcf92c8f121aafb808f753
+    instrument_id: us.test.other
+preemption:
+  posture: none
+  authority: null
+  note: fixture
+enforcement:
+  enforcers:
+  - ftc
+  private_right_of_action: false
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors: []
+open_questions: []
+confidence: high
+paragraph_path:
+  path:
+  - b
+  - '3'
+  anchor: null
+  derivation: reconstructed
+  confidence: high
+  evidence: Designators parsed from flat <P> siblings under DIV8 N=682.3; (b) then (3) in sequence with
+    no intervening level change.
+operative_context:
+- position: precedes
+  relation: scopes
+  verbatim_span: (b) Examples. Reasonable measures to protect against unauthorized access to or use of
+    consumer information in connection with its disposal include the following examples. These examples
+    are illustrative only and are not exclusive or exhaustive methods for complying with the rule in this
+    part.
+  citation: 16 C.F.R. § 682.3(b)
+  relation_note: null
+  path:
+    path:
+    - b
+    anchor: null
+    derivation: reconstructed
+    confidence: high
+    evidence: Designator (b) parsed from the flat <P> sibling immediately preceding the (1)..(5) run.

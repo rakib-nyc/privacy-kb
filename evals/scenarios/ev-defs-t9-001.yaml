@@ -1,0 +1,75 @@
+id: ev.defs.t9.001
+question: >-
+  Our platform holds what our engineers call "personal information" in one warehouse: account
+  balances, payment history, some health-plan data from our benefits product, and a scoring model
+  we sell to landlords. Counsel keeps asking whether "personal information" is regulated. Is that
+  one question?
+trap: >-
+  T9. It is three questions wearing one phrase, and the phrase is not a legal term in any of the
+  three regimes. FCRA defines "consumer report", GLBA defines "nonpublic personal information",
+  HIPAA defines "protected health information", and they do not overlap the way a data map
+  suggests. The trap is answering at the level of the column name. Two divergences do the most
+  damage in practice. FCRA is defined by PURPOSE — the landlord-scoring product can make the very
+  same rows a consumer report while the identical rows used for the firm's own servicing are not.
+  And GLBA and HIPAA share NO structural element at all: one is keyed to a customer relationship,
+  the other to who holds the record, and a control designed against one satisfies nothing in the
+  other.
+rubric:
+- name: all three definitions exist as records
+  record_exists: us.def.personal_information.glba.npi
+- name: HIPAA's definition record exists
+  record_exists: us.def.personal_information.hipaa.phi
+- name: FCRA's definition record exists
+  record_exists: us.def.personal_information.fcra.consumer_report
+- name: they are filed under one normalised term so they are comparable at all
+  record: us.def.personal_information.fcra.consumer_report
+  path: term
+  equals: personal information
+- name: but the drafter's actual term is preserved, never normalised away
+  record: us.def.personal_information.fcra.consumer_report
+  path: term_as_defined
+  equals: consumer report
+- name: FCRA is the one defined by purpose of use
+  record: us.def.personal_information.fcra.consumer_report
+  path: elements.2.concept
+  equals: purpose_eligibility_use
+- name: GLBA is keyed to the customer relationship, not to content
+  record: us.def.personal_information.glba.npi
+  path: elements.1.concept
+  equals: source_customer_relationship
+- name: HIPAA is keyed to who holds the record
+  record: us.def.personal_information.hipaa.phi
+  path: elements.2.concept
+  equals: source_covered_actor
+- name: GLBA vs HIPAA share NOTHING — computed, not asserted
+  record: us.def.personal_information.glba.npi
+  path: differs_from.1.computed.shared
+  equals: []
+- name: and the generated sentence says so in terms
+  record: us.def.personal_information.glba.npi
+  path: differs_from.1.difference
+  contains: NOTHING is shared between them
+- name: the HIPAA-only elements are the three PHI exclusions plus its two source tests
+  record: us.def.personal_information.glba.npi
+  path: differs_from.1.computed.only_there
+  contains: excludes:carveout_employment_record
+- name: the record refuses to overclaim about HIPAA and natural persons
+  record: us.def.personal_information.hipaa.phi
+  path: open_questions
+  contains: it records that HIPAA does not SAY this, not that HIPAA covers companies
+correct_answer: >-
+  No — it is three questions, and "personal information" is not the operative term in any of them.
+  GLBA § 313.3(n) defines "nonpublic personal information", which is keyed to information obtained
+  through a financial product or service relationship; the account balances and payment history
+  are in scope for the consumer-purpose customers and out for anyone who took the product for a
+  business purpose. HIPAA § 160.103 defines "protected health information", which is keyed to who
+  holds the record — the benefits data is PHI only if you hold it as, or for, a covered entity,
+  and is not PHI at all in your role as employer. FCRA § 1681a(d) defines "consumer report", and
+  it is the only one of the three defined by the PURPOSE the information serves: selling a scoring
+  model to landlords for tenant-eligibility decisions can make you a consumer reporting agency and
+  make those rows consumer reports, while the identical rows used for your own servicing are not.
+  The comparison is computed from the tagged elements, and the sharpest result is that GLBA and
+  HIPAA share no structural element whatsoever — so a control built to satisfy one satisfies
+  nothing in the other, and a single "personal information" policy will under-serve at least two
+  of the three regimes.
+all_pass: true

@@ -1,0 +1,6486 @@
+{
+ "label": "16 CFR 313",
+ "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=313",
+ "format": "ecfr_xml",
+ "positive_law": null,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml",
+ "raw_sha256": "d15f22051009593a5210d7d3bf1f8e8af542214d78f12fc333b9f0a2e852a67a",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "313.1",
+   "confidence": "high",
+   "heading": "&#xA7; 313.1 Purpose and scope.",
+   "text": "This part governs the treatment of nonpublic personal information about consumers by the financial institutions listed in paragraph (b) of this section. This part:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.1",
+   "confidence": "high",
+   "heading": "&#xA7; 313.1 Purpose and scope.",
+   "text": "Requires a financial institution in specified circumstances to provide notice to customers about its privacy policies and practices;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "This part governs the treatment of nonpublic personal information about consumers by the financial institutions listed in paragraph (b) of this section. This part:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.1",
+   "confidence": "high",
+   "heading": "&#xA7; 313.1 Purpose and scope.",
+   "text": "Describes the conditions under which a financial institution may disclose nonpublic personal information about consumers to nonaffiliated third parties; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "This part governs the treatment of nonpublic personal information about consumers by the financial institutions listed in paragraph (b) of this section. This part:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3"
+   ],
+   "anchor": null,
+   "section": "313.1",
+   "confidence": "high",
+   "heading": "&#xA7; 313.1 Purpose and scope.",
+   "text": "Provides a method for consumers to prevent a financial institution from disclosing that information to most nonaffiliated third parties by \u201copting out\u201d of that disclosure, subject to the exceptions in \u00a7\u00a7 313.13, 313.14, and 313.15.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "This part governs the treatment of nonpublic personal information about consumers by the financial institutions listed in paragraph (b) of this section. This part:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "313.1",
+   "confidence": "high",
+   "heading": "&#xA7; 313.1 Purpose and scope.",
+   "text": "This part applies only to nonpublic personal information about individuals who obtain financial products or services primarily for personal, family or household purposes from the institutions listed below. This part does not apply to information about companies or about individuals who obtain financial products or services for business, commercial, or agricultural purposes. This part applies to those \u201cfinancial institutions\u201d over which the Federal Trade Commission (\u201cCommission\u201d) has rulemaking authority pursuant to section 504(a)(1)(C) of the Gramm-Leach-Bliley Act. An entity is a \u201cfinancial institution\u201d if its business is engaging in an activity that is financial in nature or incidental to such financial activities as described in section 4(k) of the Bank Holding Company Act of 1956, 12 U.S.C. 1843(k), which incorporates activities enumerated by the Federal Reserve Board in 12 CFR 225.28 and 225.86. The \u201cfinancial institutions\u201d subject to the Commission's rulemaking authority are any persons described in 12 U.S.C. 5519 that are predominantly engaged in the sale and servicing of motor vehicles, the leasing and servicing of motor vehicles, or both. They are referred to in this part as \u201cYou.\u201d Excluded from the coverage of this part are motor vehicle dealers described in 12 U.S.C. 5519(b) that directly extend to consumers retail credit or retail leases involving motor vehicles in which the contract governing such extension of retail credit or retail leases is not routinely assigned to an unaffiliated third party finance or leasing source.",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "313.2",
+   "confidence": "high",
+   "heading": "&#xA7; 313.2 Model privacy form and examples.",
+   "text": "Use of the model privacy form in appendix A of this part, consistent with the instructions in appendix A, constitutes compliance with the notice content requirements of \u00a7\u00a7 313.6 and 313.7 of this part, although use of the model privacy form is not required.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "313.2",
+   "confidence": "high",
+   "heading": "&#xA7; 313.2 Model privacy form and examples.",
+   "text": "The examples in this part are not exclusive. Compliance with an example, to the extent applicable, constitutes compliance with this part.",
+   "context": []
+  },
+  {
+   "path": [],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "As used in this part, unless the context requires otherwise:",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "means any company that controls, is controlled by, or is under common control with another company.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "means that a notice is reasonably understandable and designed to call attention to the nature and significance of the information in the notice.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "You make your notice reasonably understandable if you:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "i",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Present the information in the notice in clear, concise sentences, paragraphs, and sections;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You make your notice reasonably understandable if you:",
+     "path": [
+      "b",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "i",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Use short explanatory sentences or bullet lists whenever possible;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You make your notice reasonably understandable if you:",
+     "path": [
+      "b",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "i",
+    "C"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Use definite, concrete, everyday words and active voice whenever possible;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You make your notice reasonably understandable if you:",
+     "path": [
+      "b",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "i",
+    "D"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Avoid multiple negatives;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You make your notice reasonably understandable if you:",
+     "path": [
+      "b",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "i",
+    "E"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Avoid legal and highly technical business terminology whenever possible; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You make your notice reasonably understandable if you:",
+     "path": [
+      "b",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "i",
+    "F"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Avoid explanations that are imprecise and readily subject to different interpretations.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You make your notice reasonably understandable if you:",
+     "path": [
+      "b",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "You design your notice to call attention to the nature and significance of the information in it if you:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "ii",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Use a plain-language heading to call attention to the notice;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You design your notice to call attention to the nature and significance of the information in it if you:",
+     "path": [
+      "b",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "ii",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Use a typeface and type size that are easy to read;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You design your notice to call attention to the nature and significance of the information in it if you:",
+     "path": [
+      "b",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "ii",
+    "C"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Provide wide margins and ample line spacing;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You design your notice to call attention to the nature and significance of the information in it if you:",
+     "path": [
+      "b",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "ii",
+    "D"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Use boldface or italics for key words; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You design your notice to call attention to the nature and significance of the information in it if you:",
+     "path": [
+      "b",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "ii",
+    "E"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "In a form that combines your notice with other information, use distinctive type size, style, and graphic devices, such as shading or sidebars, when you combine your notice with other information.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You design your notice to call attention to the nature and significance of the information in it if you:",
+     "path": [
+      "b",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "If you provide a notice on a web page, you design your notice to call attention to the nature and significance of the information in it if you use text or visual cues to encourage scrolling down the page if necessary to view the entire notice and ensure that other elements on the web site (such as text, graphics, hyperlinks, or sound) do not distract attention from the notice, and you either:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "iii",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Place the notice on a screen that consumers frequently access, such as a page on which transactions are conducted; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you provide a notice on a web page, you design your notice to call attention to the nature and significance of the information in it if you use text or visual cues to encourage scrolling down the page if necessary to view the entire notice and ensure that other elements on the web site (such as text, graphics, hyperlinks, or sound) do not distract attention from the notice, and you either:",
+     "path": [
+      "b",
+      "2",
+      "iii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "iii",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Place a link on a screen that consumers frequently access, such as a page on which transactions are conducted, that connects directly to the notice and is labeled appropriately to convey the importance, nature and relevance of the notice.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you provide a notice on a web page, you design your notice to call attention to the nature and significance of the information in it if you use text or visual cues to encourage scrolling down the page if necessary to view the entire notice and ensure that other elements on the web site (such as text, graphics, hyperlinks, or sound) do not distract attention from the notice, and you either:",
+     "path": [
+      "b",
+      "2",
+      "iii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "means to obtain information that you organize or can retrieve by the name of an individual or by identifying number, symbol, or other identifying particular assigned to the individual, irrespective of the source of the underlying information.",
+   "context": []
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "means any corporation, limited liability company, business trust, general or limited partnership, association, or similar organization.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "means an individual who obtains or has obtained a financial product or service from you that is to be used primarily for personal, family, or household purposes, or that individual's legal representative.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "For example:",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "An individual who applies to you for credit for personal, family, or household purposes is a consumer of a financial service, regardless of whether the credit is extended.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "An individual who provides nonpublic personal information to you in order to obtain a determination about whether he or she may qualify for a loan to be used primarily for personal, family, or household purposes is a consumer of a financial service, regardless of whether the loan is extended.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "If you hold ownership or servicing rights to an individual's loan that is used primarily for personal, family, or household purposes, the individual is your consumer, even if you hold those rights in conjunction with one or more other institutions. (The individual is also a consumer with respect to the other financial institutions involved.) An individual who has a loan in which you have ownership or servicing rights is your consumer, even if you, or another institution with those rights, hire an agent to collect on the loan.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "An individual who is a consumer of another financial institution is not your consumer solely because you act as agent for, or provide processing or other services to, that financial institution.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "v"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "An individual is not your consumer solely because he or she is a participant or a beneficiary of an employee benefit plan that you sponsor or for which you act as a trustee or fiduciary.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "has the same meaning as in section 603(f) of the Fair Credit Reporting Act (15 U.S.C. 1681a(f)).",
+   "context": []
+  },
+  {
+   "path": [
+    "g"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "of a company means:",
+   "context": []
+  },
+  {
+   "path": [
+    "g",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Ownership, control, or power to vote 25 percent or more of the outstanding shares of any class of voting security of the company, directly or indirectly, or acting through one or more other persons;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "of a company means:",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "g",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Control in any manner over the election of a majority of the directors, trustees, or general partners (or individuals exercising similar functions) of the company; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "of a company means:",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "g",
+    "3"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "The power to exercise, directly or indirectly, a controlling influence over the management or policies of the company.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "of a company means:",
+     "path": [
+      "g"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "h"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "means a consumer who has a customer relationship with you.",
+   "context": []
+  },
+  {
+   "path": [
+    "i",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "means a continuing relationship between a consumer and you under which you provide one or more financial products or services to the consumer that are to be used primarily for personal, family, or household purposes.",
+   "context": []
+  },
+  {
+   "path": [
+    "i",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "For example:",
+   "context": []
+  },
+  {
+   "path": [
+    "i",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "A consumer has a continuing relationship with you if the consumer:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "i",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "2",
+    "i",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Has a credit or investment account with you;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "i",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "i",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "2",
+    "i",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Obtains a loan from you;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "i",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "i",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "2",
+    "i",
+    "C"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Purchases an insurance product from you;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "i",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "i",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "2",
+    "i",
+    "D"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Enters into an agreement or understanding with you whereby you undertake to arrange or broker a home mortgage loan, or credit to purchase a vehicle, for the consumer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "i",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "i",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "2",
+    "i",
+    "E"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Enters into a lease of personal property on a non-operating basis with you; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "i",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "i",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "2",
+    "i",
+    "F"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Has a loan for which you own the servicing rights.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "i",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "i",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "A consumer does not, however, have a continuing relationship with you if:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "i",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "2",
+    "ii",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "The consumer obtains a financial product or service from you only in isolated transactions, such as cashing a check with you or making a wire transfer through you;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "i",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer does not, however, have a continuing relationship with you if:",
+     "path": [
+      "i",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "2",
+    "ii",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "You sell the consumer's loan and do not retain the rights to service that loan; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "i",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer does not, however, have a continuing relationship with you if:",
+     "path": [
+      "i",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "2",
+    "ii",
+    "C"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "The consumer obtains one-time personal appraisal services from you.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "i",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer does not, however, have a continuing relationship with you if:",
+     "path": [
+      "i",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "j"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "means:",
+   "context": []
+  },
+  {
+   "path": [
+    "j",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "The Board of Governors of the Federal Reserve System;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means:",
+     "path": [
+      "j"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "The Office of the Comptroller of the Currency;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means:",
+     "path": [
+      "j"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "3"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "The Board of Directors of the Federal Deposit Insurance Corporation;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means:",
+     "path": [
+      "j"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "4"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "The National Credit Union Administration Board; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means:",
+     "path": [
+      "j"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "5"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "The Securities and Exchange Commission.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means:",
+     "path": [
+      "j"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "k",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "means any institution the business of which is engaging in an activity that is financial in nature or incidental to such financial activities as described in section 4(k) of the Bank Holding Company Act of 1956, 12 U.S.C. 1843(k). An institution that is significantly engaged in financial activities, or significantly engaged in activities incidental to such financial activities, is a financial institution.",
+   "context": []
+  },
+  {
+   "path": [
+    "k",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "An example of a financial institution is an automobile dealership that, as a usual part of its business, leases automobiles on a nonoperating basis for longer than 90 days is a financial institution with respect to its leasing business because leasing personal property on a nonoperating basis where the initial term of the lease is at least 90 days is a financial activity listed in 12 CFR 225.28(b)(3) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act.",
+   "context": []
+  },
+  {
+   "path": [
+    "k",
+    "3"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "does not include entities that engage in financial activities but that are not significantly engaged in those financial activities.",
+   "context": []
+  },
+  {
+   "path": [
+    "k",
+    "4"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "An example of entities that are not significantly engaged in financial activities is a motor vehicle dealer is not a financial institution merely because it accepts payment in the form of cash, checks, or credit cards that it did not issue.",
+   "context": []
+  },
+  {
+   "path": [
+    "l",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "means any product or service that a financial holding company could offer by engaging in a financial activity under section 4(k) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)).",
+   "context": []
+  },
+  {
+   "path": [
+    "l",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "includes your evaluation or brokerage of information that you collect in connection with a request or an application from a consumer for a financial product or service.",
+   "context": []
+  },
+  {
+   "path": [
+    "m",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "means any person except:",
+   "context": []
+  },
+  {
+   "path": [
+    "m",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Your affiliate; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means any person except:",
+     "path": [
+      "m",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "m",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "A person employed jointly by you and any company that is not your affiliate (but nonaffiliated third party includes the other company that jointly employs the person).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means any person except:",
+     "path": [
+      "m",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "m",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "includes any company that is an affiliate by virtue of your or your affiliate's direct or indirect ownership or control of the company in conducting merchant banking or investment banking activities of the type described in section 4(k)(4)(H) or insurance company investment activities of the type described in section 4(k)(4)(I) of the Bank Holding Company Act (12 U.S.C. 1843(k)(4)(H) and (I)).",
+   "context": []
+  },
+  {
+   "path": [
+    "n",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "means:",
+   "context": []
+  },
+  {
+   "path": [
+    "n",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Personally identifiable financial information; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means:",
+     "path": [
+      "n",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "n",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Any list, description, or other grouping of consumers (and publicly available information pertaining to them) that is derived using any personally identifiable financial information that is not publicly available.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means:",
+     "path": [
+      "n",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "n",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "does not include:",
+   "context": []
+  },
+  {
+   "path": [
+    "n",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Publicly available information, except as included on a list described in paragraph (n)(1)(ii) of this section; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "does not include:",
+     "path": [
+      "n",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "n",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Any list, description, or other grouping of consumers (and publicly available information pertaining to them) that is derived without using any personally identifiable financial information that is not publicly available.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "does not include:",
+     "path": [
+      "n",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "n",
+    "3",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Nonpublic personal information includes any list of individuals' names and street addresses that is derived in whole or in part using personally identifiable financial information (that is not publicly available), such as account numbers.",
+   "context": []
+  },
+  {
+   "path": [
+    "n",
+    "3",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Nonpublic personal information does not include any list of individuals' names and addresses that contains only publicly available information, is not derived, in whole or in part, using personally identifiable financial information that is not publicly available, and is not disclosed in a manner that indicates that any of the individuals on the list is a consumer of a financial institution.",
+   "context": []
+  },
+  {
+   "path": [
+    "o",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "means any information:",
+   "context": []
+  },
+  {
+   "path": [
+    "o",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "A consumer provides to you to obtain a financial product or service from you;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means any information:",
+     "path": [
+      "o",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "About a consumer resulting from any transaction involving a financial product or service between you and a consumer; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means any information:",
+     "path": [
+      "o",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "You otherwise obtain about a consumer in connection with providing a financial product or service to that consumer.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means any information:",
+     "path": [
+      "o",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Personally identifiable financial information includes:",
+   "context": []
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Information a consumer provides to you on an application to obtain a loan, credit card, or other financial product or service;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information includes:",
+     "path": [
+      "o",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Account balance information, payment history, overdraft history, and credit or debit card purchase information;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information includes:",
+     "path": [
+      "o",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i",
+    "C"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "The fact that an individual is or has been one of your customers or has obtained a financial product or service from you;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information includes:",
+     "path": [
+      "o",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i",
+    "D"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Any information about your consumer if it is disclosed in a manner that indicates that the individual is or has been your consumer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information includes:",
+     "path": [
+      "o",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i",
+    "E"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Any information that a consumer provides to you or that you or your agent otherwise obtain in connection with collecting on, or servicing, a credit account;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information includes:",
+     "path": [
+      "o",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i",
+    "F"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Any information you collect through an Internet \u201ccookie\u201d (an information collecting device from a web server); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information includes:",
+     "path": [
+      "o",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i",
+    "G"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Information from a consumer report.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information includes:",
+     "path": [
+      "o",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Personally identifiable financial information does not include:",
+   "context": []
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "ii",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "A list of names and addresses of customers of an entity that is not a financial institution; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information does not include:",
+     "path": [
+      "o",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "ii",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Information that does not identify a consumer, such as aggregate information or blind data that does not contain personal identifiers such as account numbers, names, or addresses.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information does not include:",
+     "path": [
+      "o",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "means any information that you have a reasonable basis to believe is lawfully made available to the general public from:",
+   "context": []
+  },
+  {
+   "path": [
+    "p",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Federal, State, or local government records;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means any information that you have a reasonable basis to believe is lawfully made available to the general public from:",
+     "path": [
+      "p",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Widely distributed media; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means any information that you have a reasonable basis to believe is lawfully made available to the general public from:",
+     "path": [
+      "p",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Disclosures to the general public that are required to be made by Federal, State, or local law.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means any information that you have a reasonable basis to believe is lawfully made available to the general public from:",
+     "path": [
+      "p",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "You have a reasonable basis to believe that information is lawfully made available to the general public if you have taken steps to determine:",
+   "context": []
+  },
+  {
+   "path": [
+    "p",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "That the information is of the type that is available to the general public; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You have a reasonable basis to believe that information is lawfully made available to the general public if you have taken steps to determine:",
+     "path": [
+      "p",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Whether an individual can direct that the information not be made available to the general public and, if so, that your consumer has not done so.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You have a reasonable basis to believe that information is lawfully made available to the general public if you have taken steps to determine:",
+     "path": [
+      "p",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "3",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Publicly available information in government records includes information in government real estate records and security interest filings.",
+   "context": []
+  },
+  {
+   "path": [
+    "p",
+    "3",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "Publicly available information from widely distributed media includes information from a telephone book, a television or radio program, a newspaper, or a web site that is available to the general public on an unrestricted basis. A web site is not restricted merely because an Internet service provider or a site operator requires a fee or a password, so long as access is available to the general public.",
+   "context": []
+  },
+  {
+   "path": [
+    "p",
+    "3",
+    "iii",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "You have a reasonable basis to believe that mortgage information is lawfully made available to the general public if you have determined that the information is of the type included on the public record in the jurisdiction where the mortgage would be recorded.",
+   "context": []
+  },
+  {
+   "path": [
+    "p",
+    "3",
+    "iii",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "You have a reasonable basis to believe that an individual's telephone number is lawfully made available to the general public if you have located the telephone number in the telephone book or the consumer has informed you that the telephone number is not unlisted.",
+   "context": []
+  },
+  {
+   "path": [
+    "q"
+   ],
+   "anchor": null,
+   "section": "313.3",
+   "confidence": "high",
+   "heading": "&#xA7; 313.3 Definitions.",
+   "text": "includes each \u201cfinancial institution\u201d over which the Commission has rulemaking authority pursuant to section 504(a)(1)(C) of the Gramm-Leach-Bliley Act (15 U.S.C. 6804(a)(1)(C)).",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "You must provide a clear and conspicuous notice that accurately reflects your privacy policies and practices to:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "An individual who becomes your customer, not later than when you establish a customer relationship, except as provided in paragraph (e) of this section; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You must provide a clear and conspicuous notice that accurately reflects your privacy policies and practices to:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "A consumer, before you disclose any nonpublic personal information about the consumer to any nonaffiliated third party, if you make such a disclosure other than as authorized by \u00a7\u00a7 313.14 and 313.15.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You must provide a clear and conspicuous notice that accurately reflects your privacy policies and practices to:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "You are not required to provide an initial notice to a consumer under paragraph (a) of this section if:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "You do not disclose any nonpublic personal information about the consumer to any nonaffiliated third party, other than as authorized by \u00a7\u00a7 313.14 and 313.15; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You are not required to provide an initial notice to a consumer under paragraph (a) of this section if:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "You do not have a customer relationship with the consumer.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You are not required to provide an initial notice to a consumer under paragraph (a) of this section if:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "You establish a customer relationship when you and the consumer enter into a continuing relationship.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "You establish a customer relationship with a consumer when you originate a loan to the consumer for personal, family, or household purposes. If you subsequently transfer the servicing rights to that loan to another financial institution, the customer relationship transfers with the servicing rights.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "of establishing a customer relationship. You establish a customer relationship when the consumer:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "i",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "Executes the contract to obtain credit from you or purchase insurance from you; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "of establishing a customer relationship. You establish a customer relationship when the consumer:",
+     "path": [
+      "c",
+      "3",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "i",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "Executes the lease for personal property with you.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "of establishing a customer relationship. You establish a customer relationship when the consumer:",
+     "path": [
+      "c",
+      "3",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "You establish a customer relationship with a consumer who obtains a loan for personal, family, or household purposes when you:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "ii",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "Originate the loan to the consumer and retain the servicing rights; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You establish a customer relationship with a consumer who obtains a loan for personal, family, or household purposes when you:",
+     "path": [
+      "c",
+      "3",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "ii",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "Purchase the servicing rights to the consumer's loan.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You establish a customer relationship with a consumer who obtains a loan for personal, family, or household purposes when you:",
+     "path": [
+      "c",
+      "3",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "When an existing customer obtains a new financial product or service from you that is to be used primarily for personal, family, or household purposes, you satisfy the initial notice requirements of paragraph (a) of this section as follows:",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "You may provide a revised privacy notice, under \u00a7 313.8, that covers the customer's new financial product or service; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "When an existing customer obtains a new financial product or service from you that is to be used primarily for personal, family, or household purposes, you satisfy the initial notice requirements of paragraph (a) of this section as follows:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "If the initial, revised, or annual notice that you most recently provided to that customer was accurate with respect to the new financial product or service, you do not need to provide a new privacy notice under paragraph (a) of this section.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "When an existing customer obtains a new financial product or service from you that is to be used primarily for personal, family, or household purposes, you satisfy the initial notice requirements of paragraph (a) of this section as follows:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "You may provide the initial notice required by paragraph (a)(1) of this section within a reasonable time after you establish a customer relationship if:",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "Establishing the customer relationship is not at the customer's election; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You may provide the initial notice required by paragraph (a)(1) of this section within a reasonable time after you establish a customer relationship if:",
+     "path": [
+      "e",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "Providing notice not later than when you establish a customer relationship would substantially delay the customer's transaction and customer agrees to receive the notice at a later time.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You may provide the initial notice required by paragraph (a)(1) of this section within a reasonable time after you establish a customer relationship if:",
+     "path": [
+      "e",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "Providing notice not later than when you establish a customer relationship would substantially delay the customer's transaction when you and the individual agree over the telephone to enter into a customer relationship involving prompt delivery of the financial product or service.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "Providing notice not later than when you establish a customer relationship would not substantially delay the customer's transaction when the relationship is initiated in person at your office or through other means by which the customer may view the notice, such as through a website.",
+   "context": []
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": null,
+   "section": "313.4",
+   "confidence": "high",
+   "heading": "&#xA7; 313.4 Initial privacy notice to consumers required.",
+   "text": "When you are required to deliver an initial privacy notice by this section, you must deliver it according to \u00a7 313.9. If you use a short-form initial notice for non-customers according to \u00a7 313.6(d), you may deliver your privacy notice according to \u00a7 313.6(d)(3).",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "Except as provided by paragraph (e) of this section, you must provide a clear and conspicuous notice to customers that accurately reflects your privacy policies and practices not less than annually during the continuation of the customer relationship. Annually means at least once in any period of 12 consecutive months during which that relationship exists. You may define the 12-consecutive-month period, but you must apply it to the customer on a consistent basis.",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "You provide a notice annually if you define the 12-consecutive-month period as a calendar year and provide the annual notice to the customer once in each calendar year following the calendar year in which you provided the initial notice. For example, if a customer opens an account on any day of year 1, you must provide an annual notice to that customer by December 31 of year 2.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "You are not required to provide an annual notice to a former customer.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "Your customer becomes a former customer when:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "In the case of a closed-end loan, the customer pays the loan in full, you charge off the loan, or you sell the loan without retaining servicing rights.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Your customer becomes a former customer when:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "In the case of mortgage or vehicle loan brokering services, your customer has obtained a loan through you (and you no longer provide any statements or notices to the customer concerning that relationship), or has ceased using your services for such purposes.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Your customer becomes a former customer when:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "In cases where there is no definitive time at which the customer relationship has terminated, you have not communicated with the customer about the relationship for a period of 12 consecutive months, other than to provide annual privacy notices or promotional material.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Your customer becomes a former customer when:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "If you do not have a customer relationship with a consumer under the special rule for loans in \u00a7 313.4(c)(2), then you need not provide an annual notice to that consumer under this section.",
+   "context": []
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "When you are required to deliver an annual privacy notice by this section, you must deliver it according to \u00a7 313.9.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "You are not required to deliver an annual privacy notice if you:",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "Provide nonpublic personal information to nonaffiliated third parties only in accordance with the provisions of \u00a7 313.13, \u00a7 313.14, or \u00a7 313.15; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You are not required to deliver an annual privacy notice if you:",
+     "path": [
+      "e",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "Have not changed your policies and practices with regard to disclosing nonpublic personal information from the policies and practices that were disclosed to the customer under \u00a7 313.6(a)(2) through (5) and (9) in the most recent privacy notice provided pursuant to this part.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You are not required to deliver an annual privacy notice if you:",
+     "path": [
+      "e",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "If you have been excepted from delivering an annual privacy notice pursuant to paragraph (e)(1) of this section and change your policies or practices in such a way that you no longer meet the requirements for that exception, you must comply with paragraph (e)(2)(i) or (ii) of this section, as applicable.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "If you no longer meet the requirements of paragraph (e)(1) of this section because you change your policies or practices in such a way that \u00a7 313.8 requires you to provide a revised privacy notice, you must provide an annual privacy notice in accordance with the timing requirement in paragraph (a) of this section, treating the revised privacy notice as an initial privacy notice.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you have been excepted from delivering an annual privacy notice pursuant to paragraph (e)(1) of this section and change your policies or practices in such a way that you no longer meet the requirements for that exception, you must comply with paragraph (e)(2)(i) or (ii) of this section, as applicable.",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "If you no longer meet the requirements of paragraph (e)(1) of this section because you change your policies or practices in such a way that \u00a7 313.8 does not require you to provide a revised privacy notice, you must provide an annual privacy notice within 100 days of the change in your policies or practices that causes you to no longer meet the requirement of paragraph (e)(1).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you have been excepted from delivering an annual privacy notice pursuant to paragraph (e)(1) of this section and change your policies or practices in such a way that you no longer meet the requirements for that exception, you must comply with paragraph (e)(2)(i) or (ii) of this section, as applicable.",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "iii",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "You change your policies and practices in such a way that you no longer meet the requirements of paragraph (e)(1) of this section effective April 1 of year 1. Assuming you define the 12-consecutive-month period pursuant to paragraph (a) of this section as a calendar year, if you were required to provide a revised privacy notice under \u00a7 313.8 and you provided that notice on March 1 of year 1, you must provide an annual privacy notice by December 31 of year 2. If you were not required to provide a revised privacy notice under \u00a7 313.8, you must provide an annual privacy notice by July 9 of year 1.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you have been excepted from delivering an annual privacy notice pursuant to paragraph (e)(1) of this section and change your policies or practices in such a way that you no longer meet the requirements for that exception, you must comply with paragraph (e)(2)(i) or (ii) of this section, as applicable.",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "iii",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.5",
+   "confidence": "high",
+   "heading": "&#xA7; 313.5 Annual privacy notice to customers required.",
+   "text": "You change your policies and practices in such a way that you no longer meet the requirements of paragraph (e)(1) of this section, and so provide an annual notice to your customers. After providing the annual notice to your customers, you once again meet the requirements of paragraph (e)(1) of this section for an exception to the annual notice requirement. You do not need to provide additional annual notice to your customers until such time as you no longer meet the requirements of paragraph (e)(1) of this section.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you have been excepted from delivering an annual privacy notice pursuant to paragraph (e)(1) of this section and change your policies or practices in such a way that you no longer meet the requirements for that exception, you must comply with paragraph (e)(2)(i) or (ii) of this section, as applicable.",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "The initial, annual, and revised privacy notices that you provide under \u00a7\u00a7 313.4, 313.5, and 313.8 must include each of the following items of information that applies to you or to the consumers to whom you send your privacy notice, in addition to any other information you wish to provide:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "The categories of nonpublic personal information that you collect;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The initial, annual, and revised privacy notices that you provide under \u00a7\u00a7 313.4, 313.5, and 313.8 must include each of the following items of information that applies to you or to the consumers to whom you send your privacy notice, in addition to any other information you wish to provide:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "The categories of nonpublic personal information that you disclose;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The initial, annual, and revised privacy notices that you provide under \u00a7\u00a7 313.4, 313.5, and 313.8 must include each of the following items of information that applies to you or to the consumers to whom you send your privacy notice, in addition to any other information you wish to provide:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "The categories of affiliates and nonaffiliated third parties to whom you disclose nonpublic personal information, other than those parties to whom you disclose information under \u00a7\u00a7 313.14 and 313.15;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The initial, annual, and revised privacy notices that you provide under \u00a7\u00a7 313.4, 313.5, and 313.8 must include each of the following items of information that applies to you or to the consumers to whom you send your privacy notice, in addition to any other information you wish to provide:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "4"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "The categories of nonpublic personal information about your former customers that you disclose and the categories of affiliates and nonaffiliated third parties to whom you disclose nonpublic personal information about your former customers, other than those parties to whom you disclose information under \u00a7\u00a7 313.14 and 313.15;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The initial, annual, and revised privacy notices that you provide under \u00a7\u00a7 313.4, 313.5, and 313.8 must include each of the following items of information that applies to you or to the consumers to whom you send your privacy notice, in addition to any other information you wish to provide:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "5"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "If you disclose nonpublic personal information to a nonaffiliated third party under \u00a7 313.13 (and no exception under \u00a7 313.14 or \u00a7 313.15 applies to that disclosure), a separate statement of the categories of information you disclose and the categories of third parties with whom you have contracted;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The initial, annual, and revised privacy notices that you provide under \u00a7\u00a7 313.4, 313.5, and 313.8 must include each of the following items of information that applies to you or to the consumers to whom you send your privacy notice, in addition to any other information you wish to provide:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "6"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "An explanation of the consumer's right under \u00a7 313.10(a) to opt out of the disclosure of nonpublic personal information to nonaffiliated third parties, including the method(s) by which the consumer may exercise that right at that time;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The initial, annual, and revised privacy notices that you provide under \u00a7\u00a7 313.4, 313.5, and 313.8 must include each of the following items of information that applies to you or to the consumers to whom you send your privacy notice, in addition to any other information you wish to provide:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "7"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Any disclosures that you make under section 603(d)(2)(A)(iii) of the Fair Credit Reporting Act (15 U.S.C. 1681a(d)(2)(A)(iii)) (that is, notices regarding the ability to opt out of disclosures of information among affiliates);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The initial, annual, and revised privacy notices that you provide under \u00a7\u00a7 313.4, 313.5, and 313.8 must include each of the following items of information that applies to you or to the consumers to whom you send your privacy notice, in addition to any other information you wish to provide:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "8"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Your policies and practices with respect to protecting the confidentiality and security of nonpublic personal information; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The initial, annual, and revised privacy notices that you provide under \u00a7\u00a7 313.4, 313.5, and 313.8 must include each of the following items of information that applies to you or to the consumers to whom you send your privacy notice, in addition to any other information you wish to provide:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "9"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Any disclosure that you make under paragraph (b) of this section.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The initial, annual, and revised privacy notices that you provide under \u00a7\u00a7 313.4, 313.5, and 313.8 must include each of the following items of information that applies to you or to the consumers to whom you send your privacy notice, in addition to any other information you wish to provide:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "If you disclose nonpublic personal information to third parties as authorized under \u00a7\u00a7 313.14 and 313.15, you are not required to list those exceptions in the initial or annual privacy notices required by \u00a7\u00a7 313.4 and 313.5. When describing the categories with respect to those parties, it is sufficient to state that you make disclosures to other nonaffiliated companies for your everyday business purposes, such as to process transactions, maintain account(s), respond to court orders and legal investigations, or report to credit bureaus.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "You satisfy the requirement to categorize the nonpublic personal information that you collect if you list the following categories, as applicable:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Information from the consumer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You satisfy the requirement to categorize the nonpublic personal information that you collect if you list the following categories, as applicable:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Information about the consumer's transactions with you or your affiliates;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You satisfy the requirement to categorize the nonpublic personal information that you collect if you list the following categories, as applicable:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Information about the consumer's transactions with nonaffiliated third parties; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You satisfy the requirement to categorize the nonpublic personal information that you collect if you list the following categories, as applicable:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Information from a consumer reporting agency.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You satisfy the requirement to categorize the nonpublic personal information that you collect if you list the following categories, as applicable:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "You satisfy the requirement to categorize the nonpublic personal information that you disclose if you list the categories described in paragraph (e)(1) of this section, as applicable, and a few examples to illustrate the types of information in each category.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "If you reserve the right to disclose all of the nonpublic personal information about consumers that you collect, you may simply state that fact without describing the categories or examples of the nonpublic personal information you disclose.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "You satisfy the requirement to categorize the affiliates and nonaffiliated third parties to whom you disclose nonpublic personal information if you list them using the following categories, as applicable, and a few applicable examples to illustrate the significant types of third parties covered in each category.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Financial service providers, followed by illustrative examples such as mortgage bankers, securities broker-dealers, and insurance agents.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You satisfy the requirement to categorize the affiliates and nonaffiliated third parties to whom you disclose nonpublic personal information if you list them using the following categories, as applicable, and a few applicable examples to illustrate the significant types of third parties covered in each category.",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Non-financial companies, followed by illustrative examples such as retailers, magazine publishers, airlines, and direct marketers; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You satisfy the requirement to categorize the affiliates and nonaffiliated third parties to whom you disclose nonpublic personal information if you list them using the following categories, as applicable, and a few applicable examples to illustrate the significant types of third parties covered in each category.",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Others, followed by examples such as nonprofit organizations.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You satisfy the requirement to categorize the affiliates and nonaffiliated third parties to whom you disclose nonpublic personal information if you list them using the following categories, as applicable, and a few applicable examples to illustrate the significant types of third parties covered in each category.",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "If you disclose nonpublic personal information under the exception in \u00a7 313.13 to a nonaffiliated third party to market products or services that you offer alone or jointly with another financial institution, you satisfy the disclosure requirement of paragraph (a)(5) of this section if you:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "List the categories of nonpublic personal information you disclose, using the same categories and examples you used to meet the requirements of paragraph (a)(2) of this section, as applicable; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you disclose nonpublic personal information under the exception in \u00a7 313.13 to a nonaffiliated third party to market products or services that you offer alone or jointly with another financial institution, you satisfy the disclosure requirement of paragraph (a)(5) of this section if you:",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "State whether the third party is:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you disclose nonpublic personal information under the exception in \u00a7 313.13 to a nonaffiliated third party to market products or services that you offer alone or jointly with another financial institution, you satisfy the disclosure requirement of paragraph (a)(5) of this section if you:",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "ii",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "A service provider that performs marketing services on your behalf or on behalf of you and another financial institution; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you disclose nonpublic personal information under the exception in \u00a7 313.13 to a nonaffiliated third party to market products or services that you offer alone or jointly with another financial institution, you satisfy the disclosure requirement of paragraph (a)(5) of this section if you:",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "State whether the third party is:",
+     "path": [
+      "c",
+      "4",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "ii",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "A financial institution with whom you have a joint marketing agreement.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you disclose nonpublic personal information under the exception in \u00a7 313.13 to a nonaffiliated third party to market products or services that you offer alone or jointly with another financial institution, you satisfy the disclosure requirement of paragraph (a)(5) of this section if you:",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "State whether the third party is:",
+     "path": [
+      "c",
+      "4",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "5"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "If you do not disclose, and do not wish to reserve the right to disclose, nonpublic personal information about customers or former customers to affiliates or nonaffiliated third parties except as authorized under \u00a7\u00a7 313.14 and 313.15, you may simply state that fact, in addition to the information you must provide under paragraphs (a)(1), (a)(8), (a)(9), and (b) of this section.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "6"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "You describe your policies and practices with respect to protecting the confidentiality and security of nonpublic personal information if you do both of the following:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Describe in general terms who is authorized to have access to the information; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You describe your policies and practices with respect to protecting the confidentiality and security of nonpublic personal information if you do both of the following:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "State whether you have security practices and procedures in place to ensure the confidentiality of the information in accordance with your policy. You are not required to describe technical information about the safeguards you use.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You describe your policies and practices with respect to protecting the confidentiality and security of nonpublic personal information if you do both of the following:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "You may satisfy the initial notice requirements in \u00a7\u00a7 313.4(a)(2), 313.7(b), and 313.7(c) for a consumer who is not a customer by providing a short-form initial notice at the same time as you deliver an opt out notice as required in \u00a7 313.7.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "A short-form initial notice must:",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Be clear and conspicuous;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A short-form initial notice must:",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "State that your privacy notice is available upon request; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A short-form initial notice must:",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Explain a reasonable means by which the consumer may obtain that notice.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A short-form initial notice must:",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "You must deliver your short-form initial notice according to \u00a7 313.9. You are not required to deliver your privacy notice with your short-form initial notice. You instead may simply provide the consumer a reasonable means to obtain your privacy notice. If a consumer who receives your short-form notice requests your privacy notice, you must deliver your privacy notice according to \u00a7 313.9.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "4"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "You provide a reasonable means by which a consumer may obtain a copy of your privacy notice if you:",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "4",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Provide a toll-free telephone number that the consumer may call to request the notice; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You provide a reasonable means by which a consumer may obtain a copy of your privacy notice if you:",
+     "path": [
+      "d",
+      "4"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "4",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "For a consumer who conducts business in person at your office, maintain copies of the notice on hand that you provide to the consumer immediately upon request.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You provide a reasonable means by which a consumer may obtain a copy of your privacy notice if you:",
+     "path": [
+      "d",
+      "4"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Your notice may include:",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Categories of nonpublic personal information that you reserve the right to disclose in the future, but do not currently disclose; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Your notice may include:",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Categories of affiliates or nonaffiliated third parties to whom you reserve the right in the future to disclose, but to whom you do not currently disclose, nonpublic personal information.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Your notice may include:",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": null,
+   "section": "313.6",
+   "confidence": "high",
+   "heading": "&#xA7; 313.6 Information to be included in privacy notices.",
+   "text": "Pursuant to \u00a7 313.2(a) of this part, a model privacy form that meets the notice content requirements of this section is included in appendix A of this part.",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "If you are required to provide an opt out notice under \u00a7 313.10(a), you must provide a clear and conspicuous notice to each of your consumers that accurately explains the right to opt out under that section. The notice must state:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "That you disclose or reserve the right to disclose nonpublic personal information about your consumer to a nonaffiliated third party;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you are required to provide an opt out notice under \u00a7 313.10(a), you must provide a clear and conspicuous notice to each of your consumers that accurately explains the right to opt out under that section. The notice must state:",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "That the consumer has the right to opt out of that disclosure; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you are required to provide an opt out notice under \u00a7 313.10(a), you must provide a clear and conspicuous notice to each of your consumers that accurately explains the right to opt out under that section. The notice must state:",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "A reasonable means by which the consumer may exercise the opt out right.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you are required to provide an opt out notice under \u00a7 313.10(a), you must provide a clear and conspicuous notice to each of your consumers that accurately explains the right to opt out under that section. The notice must state:",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "You provide adequate notice that the consumer can opt out of the disclosure of nonpublic personal information to a nonaffiliated third party if you:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "i",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "Identify all of the categories of nonpublic personal information that you disclose or reserve the right to disclose, and all of the categories of nonaffiliated third parties to which you disclose the information, as described in \u00a7 313.6(a) (2) and (3) and state that the consumer can opt out of the disclosure of that information; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You provide adequate notice that the consumer can opt out of the disclosure of nonpublic personal information to a nonaffiliated third party if you:",
+     "path": [
+      "a",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "i",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "Identify the financial products or services that the consumer obtains from you, either singly or jointly, to which the opt out direction would apply.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You provide adequate notice that the consumer can opt out of the disclosure of nonpublic personal information to a nonaffiliated third party if you:",
+     "path": [
+      "a",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "You provide a reasonable means to exercise an opt out right if you:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "ii",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "Designate check-off boxes in a prominent position on the relevant forms with the opt out notice;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You provide a reasonable means to exercise an opt out right if you:",
+     "path": [
+      "a",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "ii",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "Include a reply form that includes the address to which the form should be mailed; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You provide a reasonable means to exercise an opt out right if you:",
+     "path": [
+      "a",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "ii",
+    "C"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "Provide an electronic means to opt out, such as a form that can be sent via electronic mail or a process at your web site, if the consumer agrees to the electronic delivery of information; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You provide a reasonable means to exercise an opt out right if you:",
+     "path": [
+      "a",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "ii",
+    "D"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "Provide a toll-free telephone number that consumers may call to opt out.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You provide a reasonable means to exercise an opt out right if you:",
+     "path": [
+      "a",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "You do not provide a reasonable means of opting out if:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "iii",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "The only means of opting out is for the consumer to write his or her own letter to exercise that opt out right; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You do not provide a reasonable means of opting out if:",
+     "path": [
+      "a",
+      "2",
+      "iii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "iii",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "The only means of opting out as described in any notice subsequent to the initial notice is to use a check-off box that you provided with the initial notice but did not include with the subsequent notice.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You do not provide a reasonable means of opting out if:",
+     "path": [
+      "a",
+      "2",
+      "iii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "You may require each consumer to opt out through a specific means, as long as that means is reasonable for that consumer.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "You may provide the opt out notice together with or on the same written or electronic form as the initial notice you provide in accordance with \u00a7 313.4.",
+   "context": []
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "If you provide the opt out notice later than required for the initial notice in accordance with \u00a7 313.4, you must also include a copy of the initial notice with the opt out notice in writing or, if the consumer agrees, electronically.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "If two or more consumers jointly obtain a financial product or service from you, you may provide a single opt out notice, unless one or more of those consumers requests a separate opt out notice. Your opt out notice must explain how you will treat an opt out direction by a joint consumer (as explained in paragraph (d)(5)(ii)of this section).",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "Any of the joint consumers may exercise the right to opt out. You may either:",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "Treat an opt out direction by a joint consumer as applying to all of the associated joint consumers; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Any of the joint consumers may exercise the right to opt out. You may either:",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "Permit each joint consumer to opt out separately.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Any of the joint consumers may exercise the right to opt out. You may either:",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "If you permit each joint consumer to opt out separately, you must permit one of the joint consumers to opt out on behalf of all of the joint consumers.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "4"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "You may not require all joint consumers to opt out before you implement any opt out direction.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "5"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "If John and Mary have a joint credit card account with you and arrange for you to send statements to John's address, you may do any of the following, but you must explain in your opt out notice which opt out policy you will follow:",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "5",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "Send a single opt out notice to John's address, but you must accept an opt out direction from either John or Mary.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If John and Mary have a joint credit card account with you and arrange for you to send statements to John's address, you may do any of the following, but you must explain in your opt out notice which opt out policy you will follow:",
+     "path": [
+      "d",
+      "5"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "5",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "Treat an opt out direction by either John or Mary as applying to the entire account. If you do so, and John opts out, you may not require Mary to opt out as well before implementing John's opt out direction.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If John and Mary have a joint credit card account with you and arrange for you to send statements to John's address, you may do any of the following, but you must explain in your opt out notice which opt out policy you will follow:",
+     "path": [
+      "d",
+      "5"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "5",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "Permit John and Mary to make different opt out directions. If you do so,",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If John and Mary have a joint credit card account with you and arrange for you to send statements to John's address, you may do any of the following, but you must explain in your opt out notice which opt out policy you will follow:",
+     "path": [
+      "d",
+      "5"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "5",
+    "iii",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "You must permit John and Mary to opt out for each other;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If John and Mary have a joint credit card account with you and arrange for you to send statements to John's address, you may do any of the following, but you must explain in your opt out notice which opt out policy you will follow:",
+     "path": [
+      "d",
+      "5"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Permit John and Mary to make different opt out directions. If you do so,",
+     "path": [
+      "d",
+      "5",
+      "iii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "5",
+    "iii",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "If both opt out, you must permit both to notify you in a single response (such as on a form or through a telephone call); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If John and Mary have a joint credit card account with you and arrange for you to send statements to John's address, you may do any of the following, but you must explain in your opt out notice which opt out policy you will follow:",
+     "path": [
+      "d",
+      "5"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Permit John and Mary to make different opt out directions. If you do so,",
+     "path": [
+      "d",
+      "5",
+      "iii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "5",
+    "iii",
+    "C"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "If John opts out and Mary does not, you may only disclose nonpublic personal information about Mary, but not about John and not about John and Mary jointly.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If John and Mary have a joint credit card account with you and arrange for you to send statements to John's address, you may do any of the following, but you must explain in your opt out notice which opt out policy you will follow:",
+     "path": [
+      "d",
+      "5"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Permit John and Mary to make different opt out directions. If you do so,",
+     "path": [
+      "d",
+      "5",
+      "iii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "You must comply with a consumer's opt out direction as soon as reasonably practicable after you receive it.",
+   "context": []
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "A consumer may exercise the right to opt out at any time.",
+   "context": []
+  },
+  {
+   "path": [
+    "g",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "A consumer's direction to opt out under this section is effective until the consumer revokes it in writing or, if the consumer agrees, electronically.",
+   "context": []
+  },
+  {
+   "path": [
+    "g",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "When a customer relationship terminates, the customer's opt out direction continues to apply to the nonpublic personal information that you collected during or related to that relationship. If the individual subsequently establishes a new customer relationship with you, the opt out direction that applied to the former relationship does not apply to the new relationship.",
+   "context": []
+  },
+  {
+   "path": [
+    "h"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "When you are required to deliver an opt out notice by this section, you must deliver it according to \u00a7 313.9.",
+   "context": []
+  },
+  {
+   "path": [
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.7",
+   "confidence": "high",
+   "heading": "&#xA7; 313.7 Form of opt out notice to consumers; opt out methods.",
+   "text": "Pursuant to \u00a7 313.2(a) of this part, a model privacy form that meets the notice content requirements of this section is included in appendix A of this part.",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "313.8",
+   "confidence": "high",
+   "heading": "&#xA7; 313.8 Revised privacy notices.",
+   "text": "Except as otherwise authorized in this part, you must not, directly or through any affiliate, disclose any nonpublic personal information about a consumer to a nonaffiliated third party other than as described in the initial notice that you provided to that consumer under \u00a7 313.4, unless:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.8",
+   "confidence": "high",
+   "heading": "&#xA7; 313.8 Revised privacy notices.",
+   "text": "You have provided to the consumer a clear and conspicuous revised notice that accurately describes your policies and practices;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise authorized in this part, you must not, directly or through any affiliate, disclose any nonpublic personal information about a consumer to a nonaffiliated third party other than as described in the initial notice that you provided to that consumer under \u00a7 313.4, unless:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.8",
+   "confidence": "high",
+   "heading": "&#xA7; 313.8 Revised privacy notices.",
+   "text": "You have provided to the consumer a new opt out notice;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise authorized in this part, you must not, directly or through any affiliate, disclose any nonpublic personal information about a consumer to a nonaffiliated third party other than as described in the initial notice that you provided to that consumer under \u00a7 313.4, unless:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3"
+   ],
+   "anchor": null,
+   "section": "313.8",
+   "confidence": "high",
+   "heading": "&#xA7; 313.8 Revised privacy notices.",
+   "text": "You have given the consumer a reasonable opportunity, before you disclose the information to the nonaffiliated third party, to opt out of the disclosure; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise authorized in this part, you must not, directly or through any affiliate, disclose any nonpublic personal information about a consumer to a nonaffiliated third party other than as described in the initial notice that you provided to that consumer under \u00a7 313.4, unless:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "4"
+   ],
+   "anchor": null,
+   "section": "313.8",
+   "confidence": "high",
+   "heading": "&#xA7; 313.8 Revised privacy notices.",
+   "text": "the consumer does not opt out.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise authorized in this part, you must not, directly or through any affiliate, disclose any nonpublic personal information about a consumer to a nonaffiliated third party other than as described in the initial notice that you provided to that consumer under \u00a7 313.4, unless:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.8",
+   "confidence": "high",
+   "heading": "&#xA7; 313.8 Revised privacy notices.",
+   "text": "Except as otherwise permitted by \u00a7\u00a7 313.13, 313.14, and 313.15, you must provide a revised notice before you:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.8",
+   "confidence": "high",
+   "heading": "&#xA7; 313.8 Revised privacy notices.",
+   "text": "Disclose a new category of nonpublic personal information to any nonaffiliated third party;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise permitted by \u00a7\u00a7 313.13, 313.14, and 313.15, you must provide a revised notice before you:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.8",
+   "confidence": "high",
+   "heading": "&#xA7; 313.8 Revised privacy notices.",
+   "text": "Disclose nonpublic personal information to a new category of nonaffiliated third party; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise permitted by \u00a7\u00a7 313.13, 313.14, and 313.15, you must provide a revised notice before you:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.8",
+   "confidence": "high",
+   "heading": "&#xA7; 313.8 Revised privacy notices.",
+   "text": "Disclose nonpublic personal information about a former customer to a nonaffiliated third party if that former customer has not had the opportunity to exercise an opt out right regarding that disclosure.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise permitted by \u00a7\u00a7 313.13, 313.14, and 313.15, you must provide a revised notice before you:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.8",
+   "confidence": "high",
+   "heading": "&#xA7; 313.8 Revised privacy notices.",
+   "text": "A revised notice is not required if you disclose nonpublic personal information to a new nonaffiliated third party that you adequately described in your prior notice.",
+   "context": []
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "313.8",
+   "confidence": "high",
+   "heading": "&#xA7; 313.8 Revised privacy notices.",
+   "text": "When you are required to deliver a revised privacy notice by this section, you must deliver it according to \u00a7 313.9.",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "You must provide any privacy notices and opt out notices, including short-form initial notices, that this part requires so that each consumer can reasonably be expected to receive actual notice in writing or, if the consumer agrees, electronically.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "You may reasonably expect that a consumer will receive actual notice if you:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "Hand-deliver a printed copy of the notice to the consumer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You may reasonably expect that a consumer will receive actual notice if you:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "Mail a printed copy of the notice to the last known address of the consumer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You may reasonably expect that a consumer will receive actual notice if you:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "For the consumer who conducts transactions electronically, clearly and conspicuously post the notice on the electronic site and require the consumer to acknowledge receipt of the notice as a necessary step to obtaining a particular financial product or service;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You may reasonably expect that a consumer will receive actual notice if you:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "For an isolated transaction with the consumer, such as an ATM transaction, post the notice on the ATM screen and require the consumer to acknowledge receipt of the notice as a necessary step to obtaining the particular financial product or service.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You may reasonably expect that a consumer will receive actual notice if you:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "You may not, however, reasonably expect that a consumer will receive actual notice of your privacy policies and practices if you:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "Only post a sign in your branch or office or generally publish advertisements of your privacy policies and practices;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You may not, however, reasonably expect that a consumer will receive actual notice of your privacy policies and practices if you:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "Send the notice via electronic mail to a consumer who does not obtain a financial product or service from you electronically.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You may not, however, reasonably expect that a consumer will receive actual notice of your privacy policies and practices if you:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "You may reasonably expect that a customer will receive actual notice of your annual privacy notice if:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "The customer uses your web site to access financial products and services electronically and agrees to receive notices at the web site and you post your current privacy notice continuously in a clear and conspicuous manner on the web site; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You may reasonably expect that a customer will receive actual notice of your annual privacy notice if:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "The customer has requested that you refrain from sending any information regarding the customer relationship, and your current privacy notice remains available to the customer upon request.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You may reasonably expect that a customer will receive actual notice of your annual privacy notice if:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "You may not provide any notice required by this part solely by orally explaining the notice, either in person or over the telephone.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "For customers only, you must provide the initial notice required by \u00a7 313.4(a)(1), the annual notice required by \u00a7 313.5(a), and the revised notice required by \u00a7 313.8 so that the customer can retain them or obtain them later in writing or, if the customer agrees, electronically.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "You provide a privacy notice to the customer so that the customer can retain it or obtain it later if you:",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "Hand-deliver a printed copy of the notice to the customer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You provide a privacy notice to the customer so that the customer can retain it or obtain it later if you:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "Mail a printed copy of the notice to the last known address of the customer; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You provide a privacy notice to the customer so that the customer can retain it or obtain it later if you:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "Make your current privacy notice available on a web site (or a link to another web site) for the customer who obtains a financial product or service electronically and agrees to receive the notice at the web site.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You provide a privacy notice to the customer so that the customer can retain it or obtain it later if you:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "You may provide a joint notice from you and one or more of your affiliates or other financial institutions, as identified in the notice, as long as the notice is accurate with respect to you and the other institutions.",
+   "context": []
+  },
+  {
+   "path": [
+    "g"
+   ],
+   "anchor": null,
+   "section": "313.9",
+   "confidence": "high",
+   "heading": "&#xA7; 313.9 Delivering privacy and opt out notices.",
+   "text": "If two or more consumers jointly obtain a financial product or service from you, you may satisfy the initial, annual, and revised notice requirements of \u00a7\u00a7 313.4(a), 313.5(a), and 313.8(a) by providing one notice to those consumers jointly, unless one or more of those consumers requests separate notices.",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.10",
+   "confidence": "high",
+   "heading": "&#xA7; 313.10 Limits on disclosure of non-public personal information to nonaffiliated third parties.",
+   "text": "Except as otherwise authorized in this part, you may not, directly or through any affiliate, disclose any nonpublic personal information about a consumer to a nonaffiliated third party unless:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.10",
+   "confidence": "high",
+   "heading": "&#xA7; 313.10 Limits on disclosure of non-public personal information to nonaffiliated third parties.",
+   "text": "You have provided to the consumer an initial notice as required under \u00a7 313.4;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise authorized in this part, you may not, directly or through any affiliate, disclose any nonpublic personal information about a consumer to a nonaffiliated third party unless:",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.10",
+   "confidence": "high",
+   "heading": "&#xA7; 313.10 Limits on disclosure of non-public personal information to nonaffiliated third parties.",
+   "text": "You have provided to the consumer an opt out notice as required in \u00a7 313.7;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise authorized in this part, you may not, directly or through any affiliate, disclose any nonpublic personal information about a consumer to a nonaffiliated third party unless:",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.10",
+   "confidence": "high",
+   "heading": "&#xA7; 313.10 Limits on disclosure of non-public personal information to nonaffiliated third parties.",
+   "text": "You have given the consumer a reasonable opportunity, before you disclose the information to the nonaffiliated third party, to opt out of the disclosure; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise authorized in this part, you may not, directly or through any affiliate, disclose any nonpublic personal information about a consumer to a nonaffiliated third party unless:",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "313.10",
+   "confidence": "high",
+   "heading": "&#xA7; 313.10 Limits on disclosure of non-public personal information to nonaffiliated third parties.",
+   "text": "The consumer does not opt out.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Except as otherwise authorized in this part, you may not, directly or through any affiliate, disclose any nonpublic personal information about a consumer to a nonaffiliated third party unless:",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.10",
+   "confidence": "high",
+   "heading": "&#xA7; 313.10 Limits on disclosure of non-public personal information to nonaffiliated third parties.",
+   "text": "Opt out means a direction by the consumer that you not disclose nonpublic personal information about that consumer to a nonaffiliated third party, other than as permitted by \u00a7\u00a7 313.13, 313.14, and 313.15.",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "3"
+   ],
+   "anchor": null,
+   "section": "313.10",
+   "confidence": "high",
+   "heading": "&#xA7; 313.10 Limits on disclosure of non-public personal information to nonaffiliated third parties.",
+   "text": "You provide a consumer with a reasonable opportunity to opt out if:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.10",
+   "confidence": "high",
+   "heading": "&#xA7; 313.10 Limits on disclosure of non-public personal information to nonaffiliated third parties.",
+   "text": "You mail the notices required in paragraph (a)(1) of this section to the consumer and allow the consumer to opt out by mailing a form, calling a toll-free telephone number, or any other reasonable means within 30 days from the date you mailed the notices.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You provide a consumer with a reasonable opportunity to opt out if:",
+     "path": [
+      "a",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.10",
+   "confidence": "high",
+   "heading": "&#xA7; 313.10 Limits on disclosure of non-public personal information to nonaffiliated third parties.",
+   "text": "A customer opens an on-line account with you and agrees to receive the notices required in paragraph (a)(1) of this section electronically, and you allow the customer to opt out by any reasonable means within 30 days after the date that the customer acknowledges receipt of the notices in conjunction with opening the account.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You provide a consumer with a reasonable opportunity to opt out if:",
+     "path": [
+      "a",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.10",
+   "confidence": "high",
+   "heading": "&#xA7; 313.10 Limits on disclosure of non-public personal information to nonaffiliated third parties.",
+   "text": "For an isolated transaction, such as the purchase of a money order by a consumer, you provide the consumer with a reasonable opportunity to opt out if you provide the notices required in paragraph (a)(1) of this section at the time of the transaction and request that the consumer decide, as a necessary part of the transaction, whether to opt out before completing the transaction.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You provide a consumer with a reasonable opportunity to opt out if:",
+     "path": [
+      "a",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.10",
+   "confidence": "high",
+   "heading": "&#xA7; 313.10 Limits on disclosure of non-public personal information to nonaffiliated third parties.",
+   "text": "You must comply with this section, regardless of whether you and the consumer have established a customer relationship",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.10",
+   "confidence": "high",
+   "heading": "&#xA7; 313.10 Limits on disclosure of non-public personal information to nonaffiliated third parties.",
+   "text": "Unless you comply with this section, you may not, directly or through any affiliate, disclose any nonpublic personal information about a consumer that you have collected, regardless of whether you collected it before or after receiving the direction to opt out from the consumer.",
+   "context": []
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "313.10",
+   "confidence": "high",
+   "heading": "&#xA7; 313.10 Limits on disclosure of non-public personal information to nonaffiliated third parties.",
+   "text": "You may allow a consumer to select certain nonpublic personal information or certain nonaffiliated third parties with respect to which the consumer wishes to opt out.",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "If you receive nonpublic personal information from a nonaffiliated financial institution under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, your disclosure and use of that information is limited as follows:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "You may disclose the information to the affiliates of the financial institution from which you received the information;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you receive nonpublic personal information from a nonaffiliated financial institution under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, your disclosure and use of that information is limited as follows:",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "You may disclose the information to your affiliates, but your affiliates may, in turn, disclose and use the information only to the extent that you may disclose and use the information; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you receive nonpublic personal information from a nonaffiliated financial institution under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, your disclosure and use of that information is limited as follows:",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "You may disclose and use the information pursuant to an exception in \u00a7 313.14 or \u00a7 313.15 in the ordinary course of business to carry out the activity covered by the exception under which you received the information.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you receive nonpublic personal information from a nonaffiliated financial institution under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, your disclosure and use of that information is limited as follows:",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "If you receive a customer list from a nonaffiliated financial institution in order to provide account processing services under the exception in \u00a7 313.14(a), you may disclose that information under any exception in \u00a7 313.14 or \u00a7 313.15 in the ordinary course of business in order to provide those services. You could also disclose that information in response to a properly authorized subpoena. You could not disclose that information to a third party for marketing purposes or use that information for your own marketing purposes.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "If you receive nonpublic personal information from a nonaffiliated financial institution other than under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, you may disclose the information only:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "To the affiliates of the financial institution from which you received the information;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you receive nonpublic personal information from a nonaffiliated financial institution other than under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, you may disclose the information only:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "To your affiliates, but your affiliates may, in turn, disclose the information only to the extent that you can disclose the information; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you receive nonpublic personal information from a nonaffiliated financial institution other than under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, you may disclose the information only:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "To any other person, if the disclosure would be lawful if made directly to that person by the financial institution from which you received the information.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you receive nonpublic personal information from a nonaffiliated financial institution other than under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, you may disclose the information only:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "If you obtain a customer list from a nonaffiliated financial institution outside of the exceptions in \u00a7\u00a7 313.14 and 313.15:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "You may use that list for your own purposes; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you obtain a customer list from a nonaffiliated financial institution outside of the exceptions in \u00a7\u00a7 313.14 and 313.15:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "You may disclose that list to another nonaffiliated third party only if the financial institution from which you purchased the list could have lawfully disclosed the list to that third party. That is, you may disclose the list in accordance with the privacy policy of the financial institution from which you received the list, as limited by the opt out direction of each consumer whose nonpublic personal information you intend to disclose, and you may disclose the list in accordance with an exception in \u00a7 313.14 or \u00a7 313.15, such as to your attorneys or accountants.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you obtain a customer list from a nonaffiliated financial institution outside of the exceptions in \u00a7\u00a7 313.14 and 313.15:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "If you disclose nonpublic personal information to a nonaffiliated third party under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, the third party may disclose and use that information only as follows:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "The third party may disclose the information to your affiliates;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you disclose nonpublic personal information to a nonaffiliated third party under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, the third party may disclose and use that information only as follows:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "The third party may disclose the information to its affiliates, but its affiliates may, in turn, disclose and use the information only to the extent that the third party may disclose and use the information; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you disclose nonpublic personal information to a nonaffiliated third party under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, the third party may disclose and use that information only as follows:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "The third party may disclose and use the information pursuant to an exception in \u00a7 313.14 or \u00a7 313.15 in the ordinary course of business to carry out the activity covered by the exception under which it received the information.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you disclose nonpublic personal information to a nonaffiliated third party under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, the third party may disclose and use that information only as follows:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "If you disclose nonpublic personal information to a nonaffiliated third party other than under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, the third party may disclose the information only:",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "To your affiliates;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you disclose nonpublic personal information to a nonaffiliated third party other than under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, the third party may disclose the information only:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "To its affiliates, but its affiliates, in turn, may disclose the information only to the extent the third party can disclose the information; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you disclose nonpublic personal information to a nonaffiliated third party other than under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, the third party may disclose the information only:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3"
+   ],
+   "anchor": null,
+   "section": "313.11",
+   "confidence": "high",
+   "heading": "&#xA7; 313.11 Limits on redisclosure and reuse of information.",
+   "text": "To any other person, if the disclosure would be lawful if you made it directly to that person.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "If you disclose nonpublic personal information to a nonaffiliated third party other than under an exception in \u00a7 313.14 or \u00a7 313.15 of this part, the third party may disclose the information only:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "313.12",
+   "confidence": "high",
+   "heading": "&#xA7; 313.12 Limits on sharing account number information for marketing purposes.",
+   "text": "You must not, directly or through an affiliate, disclose, other than to a consumer reporting agency, an account number or similar form of access number or access code for a consumer's credit card account, deposit account, or transaction account to any nonaffiliated third party for use in telemarketing, direct mail marketing, or other marketing through electronic mail to the consumer.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "313.12",
+   "confidence": "high",
+   "heading": "&#xA7; 313.12 Limits on sharing account number information for marketing purposes.",
+   "text": "Paragraph (a) of this section does not apply if you disclose an account number or similar form of access number or access code:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.12",
+   "confidence": "high",
+   "heading": "&#xA7; 313.12 Limits on sharing account number information for marketing purposes.",
+   "text": "To your agent or service provider solely in order to perform marketing for your own products or services, as long as the agent or service provider is not authorized to directly initiate charges to the account; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Paragraph (a) of this section does not apply if you disclose an account number or similar form of access number or access code:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.12",
+   "confidence": "high",
+   "heading": "&#xA7; 313.12 Limits on sharing account number information for marketing purposes.",
+   "text": "To a participant in a private label credit card program or an affinity or similar program where the participants in the program are identified to the customer when the customer enters into the program.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Paragraph (a) of this section does not apply if you disclose an account number or similar form of access number or access code:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.12",
+   "confidence": "high",
+   "heading": "&#xA7; 313.12 Limits on sharing account number information for marketing purposes.",
+   "text": "An account number, or similar form of access number or access code, does not include a number or code in an encrypted form, as long as you do not provide the recipient with a means to decode the number or code.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.12",
+   "confidence": "high",
+   "heading": "&#xA7; 313.12 Limits on sharing account number information for marketing purposes.",
+   "text": "A transaction account is an account other than a deposit account or a credit card account. A transaction account does not include an account to which third parties cannot initiate charges.",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.13",
+   "confidence": "high",
+   "heading": "&#xA7; 313.13 Exception to opt out requirements for service providers and joint marketing.",
+   "text": "The opt out requirements in \u00a7\u00a7 313.7 and 313.10 do not apply when you provide nonpublic personal information to a nonaffiliated third party to perform services for you or functions on your behalf, if you:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.13",
+   "confidence": "high",
+   "heading": "&#xA7; 313.13 Exception to opt out requirements for service providers and joint marketing.",
+   "text": "Provide the initial notice in accordance with \u00a7 313.4; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The opt out requirements in \u00a7\u00a7 313.7 and 313.10 do not apply when you provide nonpublic personal information to a nonaffiliated third party to perform services for you or functions on your behalf, if you:",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.13",
+   "confidence": "high",
+   "heading": "&#xA7; 313.13 Exception to opt out requirements for service providers and joint marketing.",
+   "text": "Enter into a contractual agreement with the third party that prohibits the third party from disclosing or using the information other than to carry out the purposes for which you disclosed the information, including use under an exception in \u00a7 313.14 or \u00a7 313.15 in the ordinary course of business to carry out those purposes.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The opt out requirements in \u00a7\u00a7 313.7 and 313.10 do not apply when you provide nonpublic personal information to a nonaffiliated third party to perform services for you or functions on your behalf, if you:",
+     "path": [
+      "a",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.13",
+   "confidence": "high",
+   "heading": "&#xA7; 313.13 Exception to opt out requirements for service providers and joint marketing.",
+   "text": "If you disclose nonpublic personal information under this section to a financial institution with which you perform joint marketing, your contractual agreement with that institution meets the requirements of paragraph (a)(1)(ii) of this section if it prohibits the institution from disclosing or using the nonpublic personal information except as necessary to carry out the joint marketing or under an exception in \u00a7 313.14 or \u00a7 313.15 in the ordinary course of business to carry out that joint marketing.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "313.13",
+   "confidence": "high",
+   "heading": "&#xA7; 313.13 Exception to opt out requirements for service providers and joint marketing.",
+   "text": "The services a nonaffiliated third party performs for you under paragraph (a) of this section may include marketing of your own products or services or marketing of financial products or services offered pursuant to joint agreements between you and one or more financial institutions.",
+   "context": []
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "313.13",
+   "confidence": "high",
+   "heading": "&#xA7; 313.13 Exception to opt out requirements for service providers and joint marketing.",
+   "text": "For purposes of this section, joint agreement means a written contract pursuant to which you and one or more financial institutions jointly offer, endorse, or sponsor a financial product or service.",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply if you disclose nonpublic personal information as necessary to effect, administer, or enforce a transaction that a consumer requests or authorizes, or in connection with:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "Servicing or processing a financial product or service that a consumer requests or authorizes;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply if you disclose nonpublic personal information as necessary to effect, administer, or enforce a transaction that a consumer requests or authorizes, or in connection with:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "Maintaining or servicing the consumer's account with you, or with another entity as part of a private label credit card program or other extension of credit on behalf of such entity; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply if you disclose nonpublic personal information as necessary to effect, administer, or enforce a transaction that a consumer requests or authorizes, or in connection with:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "A proposed or actual securitization, secondary market sale (including sales of servicing rights), or similar transaction related to a transaction of the consumer.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply if you disclose nonpublic personal information as necessary to effect, administer, or enforce a transaction that a consumer requests or authorizes, or in connection with:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "means that the disclosure is:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "Required, or is one of the lawful or appropriate methods, to enforce your rights or the rights of other persons engaged in carrying out the financial transaction or providing the product or service; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means that the disclosure is:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "Required, or is a usual, appropriate or acceptable method:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means that the disclosure is:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "To carry out the transaction or the product or service business of which the transaction is a part, and record, service, or maintain the consumer's account in the ordinary course of providing the financial service or financial product;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means that the disclosure is:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Required, or is a usual, appropriate or acceptable method:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "To administer or service benefits or claims relating to the transaction or the product or service business of which it is a part;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means that the disclosure is:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Required, or is a usual, appropriate or acceptable method:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "To provide a confirmation, statement, or other record of the transaction, or information on the status or value of the financial service or financial product to the consumer or the consumer's agent or broker;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means that the disclosure is:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Required, or is a usual, appropriate or acceptable method:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "To accrue or recognize incentives or bonuses associated with the transaction that are provided by you or any other party;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means that the disclosure is:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Required, or is a usual, appropriate or acceptable method:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "v"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "To underwrite insurance at the consumer's request or for reinsurance purposes, or for any of the following purposes as they relate to a consumer's insurance: account administration, reporting, investigating, or preventing fraud or material misrepresentation, processing premium payments, processing insurance claims, administering insurance benefits (including utilization review activities), participating in research projects, or as otherwise required or specifically permitted by Federal or State law;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means that the disclosure is:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Required, or is a usual, appropriate or acceptable method:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "vi"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "In connection with:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means that the disclosure is:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Required, or is a usual, appropriate or acceptable method:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "vi",
+    "A"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "The authorization, settlement, billing, processing, clearing, transferring, reconciling or collection of amounts charged, debited, or otherwise paid using a debit, credit, or other payment card, check, or account number, or by other payment means;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means that the disclosure is:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Required, or is a usual, appropriate or acceptable method:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In connection with:",
+     "path": [
+      "b",
+      "2",
+      "vi"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "vi",
+    "B"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "The transfer of receivables, accounts, or interests therein; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means that the disclosure is:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Required, or is a usual, appropriate or acceptable method:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In connection with:",
+     "path": [
+      "b",
+      "2",
+      "vi"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "vi",
+    "C"
+   ],
+   "anchor": null,
+   "section": "313.14",
+   "confidence": "high",
+   "heading": "&#xA7; 313.14 Exceptions to notice and opt out requirements for processing and servicing transactions.",
+   "text": "The audit of debit, credit, or other payment information.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means that the disclosure is:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Required, or is a usual, appropriate or acceptable method:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "In connection with:",
+     "path": [
+      "b",
+      "2",
+      "vi"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "With the consent or at the direction of the consumer, provided that the consumer has not revoked the consent or direction;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "To protect the confidentiality or security of your records pertaining to the consumer, service, product, or transaction;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "To protect against or prevent actual or potential fraud, unauthorized transactions, claims, or other liability;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "For required institutional risk control or for resolving consumer disputes or inquiries;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "To persons holding a legal or beneficial interest relating to the consumer; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2",
+    "v"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "To persons acting in a fiduciary or representative capacity on behalf of the consumer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "To provide information to insurance rate advisory organizations, guaranty funds or agencies, agencies that are rating you, persons that are assessing your compliance with industry standards, and your attorneys, accountants, and auditors;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "4"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "To the extent specifically permitted or required under other provisions of law and in accordance with the Right to Financial Privacy Act of 1978 (12 U.S.C. 3401 et seq. ), to law enforcement agencies (including the Consumer Financial Protection Bureau, a federal functional regulator, the Secretary of the Treasury, with respect to 31 U.S.C. Chapter 53, Subchapter II (Records and Reports on Monetary Instruments and Transactions) and 12 U.S.C. Chapter 21 (Financial Recordkeeping), a State insurance authority, with respect to any person domiciled in that insurance authority's State that is engaged in providing insurance, and the Federal Trade Commission), self-regulatory organizations, or for an investigation on a matter related to public safety;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "5",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "To a consumer reporting agency in accordance with the Fair Credit Reporting Act (15 U.S.C. 1681 et seq. ), or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "5",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "From a consumer report reported by a consumer reporting agency;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "6"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "In connection with a proposed or actual sale, merger, transfer, or exchange of all or a portion of a business or operating unit if the disclosure of nonpublic personal information concerns solely consumers of such business or unit; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "7",
+    "i"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "To comply with Federal, State, or local laws, rules and other applicable legal requirements;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "7",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "To comply with a properly authorized civil, criminal, or regulatory investigation, or subpoena or summons by Federal, State, or local authorities; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "7",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "To respond to judicial process or government regulatory authorities having jurisdiction over you for examination, compliance, or other purposes as authorized by law.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The requirements for initial notice in \u00a7 313.4(a)(2), for the opt out in \u00a7\u00a7 313.7 and 313.10, and for service providers and joint marketing in \u00a7 313.13 do not apply when you disclose nonpublic personal information:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "A consumer may specifically consent to your disclosure to a nonaffiliated insurance company of the fact that the consumer has applied to you for a mortgage so that the insurance company can offer homeowner's insurance to the consumer.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "313.15",
+   "confidence": "high",
+   "heading": "&#xA7; 313.15 Other exceptions to notice and opt out requirements.",
+   "text": "A consumer may revoke consent by subsequently exercising the right to opt out of future disclosures of nonpublic personal information as permitted under \u00a7 313.7(f).",
+   "context": []
+  },
+  {
+   "path": [],
+   "anchor": null,
+   "section": "313.16",
+   "confidence": "high",
+   "heading": "&#xA7; 313.16 Protection of Fair Credit Reporting Act.",
+   "text": "Nothing in this part shall be construed to modify, limit, or supersede the operation of the Fair Credit Reporting Act (15 U.S.C. 1681 et seq. ), and no inference shall be drawn on the basis of the provisions of this part regarding whether information is transaction or experience information under section 603 of that Act.",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "313.17",
+   "confidence": "high",
+   "heading": "&#xA7; 313.17 Relation to State laws.",
+   "text": "This part shall not be construed as superseding, altering, or affecting any statute, regulation, order, or interpretation in effect in any State, except to the extent that such State statute, regulation, order, or interpretation is inconsistent with the provisions of this part, and then only to the extent of the inconsistency.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "313.17",
+   "confidence": "high",
+   "heading": "&#xA7; 313.17 Relation to State laws.",
+   "text": "For purposes of this section, a State statute, regulation, order, or interpretation is not inconsistent with the provisions of this part if the protection such statute, regulation, order, or interpretation affords any consumer is greater than the protection provided under this part, as determined by the Commission on its own motion or upon the petition of any interested party, after consultation with the applicable federal functional regulator or other authority.",
+   "context": []
+  }
+ ]
+}

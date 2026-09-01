@@ -1,0 +1,95 @@
+id: us.tcpa.227.b1a.autodialer_prohibition
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 U.S.C. § 227(b)(1)(A)
+  instrument_id: us.tcpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  raw_sha256: bc0202f0682c43acd483fb4bf598db62d4157704024776425acfebf27c63e018
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.txt
+  text_sha256: 0aeb8fd90520ec4506ed3e1138f1c4e9b7331ed7e27e727734afa93b39f279e4
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: to make any call (other than a call made for emergency purposes or made with the prior
+  express consent of the called party) using any automatic telephone dialing system or an artificial or
+  prerecorded voice—
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+  - b
+  - '1'
+  - A
+  anchor: /us/usc/t47/s227/b/1/A
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the prohibition and its exception clause in full.
+subject:
+  domain: II.E.1
+  lifecycle:
+  - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &id001
+- fcc
+sector:
+- telecom
+data_types:
+- any
+status: in_force
+effective_from: '1991-12-20'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+  - practice.makes_automated_calls == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: It is unlawful to make any call using an automatic telephone dialing system or an artificial
+  or prerecorded voice, other than for emergency purposes or with the prior express consent of the called
+  party, to the numbers listed in § 227(b)(1)(A).
+requirement_detail: 'THE MOST LITIGATED PRIVACY STATUTE IN THE UNITED STATES, and the reason is in the
+  remedy rather than the prohibition: § 227(b)(3) gives a private action for $500 per call, trebled for
+  wilful violation, with no cap — so an ordinary marketing campaign produces class exposure measured in
+  call counts. Consent is the whole battleground, and it is not one standard: the FCC requires prior express
+  WRITTEN consent for marketing calls while § 227(b)(1)(A) itself says only prior express consent. Facebook
+  v. Duguid (2021) narrowed "automatic telephone dialing system" to equipment using a random or sequential
+  number generator, which moved much litigation to the artificial-or-prerecorded-voice prong.'
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+- Reading "prior express consent" as one standard. Marketing calls require prior express WRITTEN consent
+  under the FCC rules.
+- Assuming Facebook v. Duguid ended TCPA exposure. It narrowed the autodialer prong; the prerecorded-voice
+  prong and the Do Not Call rules are untouched.
+- Treating $500 as the ceiling. It is per call, trebled for wilfulness, and uncapped.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 227(b)(1)(A)
+  note: Recorded as floor pending a provision-level preemption analysis; no express ceiling clause was
+    found in the section extracted.
+enforcement:
+  enforcers: *id001
+  private_right_of_action: true
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: The enforcement section has not been extracted; treat penalty exposure as UNASSESSED rather
+      than absent.
+  statute_of_limitations: null

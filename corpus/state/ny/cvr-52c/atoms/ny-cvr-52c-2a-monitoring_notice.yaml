@@ -1,0 +1,129 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+status: in_force
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+interpreted_by: []
+confidence: high
+id: ny.civil_rights.52c.2a.monitoring_notice
+source:
+  citation: N.Y. Civil Rights Law § 52-c(2)(a)
+  instrument_id: ny.civil_rights.52-c
+  url: https://legislation.nysenate.gov/api/3/laws/CVR/52-C-2
+  fetched: '2026-08-20'
+  raw_file: corpus/state/ny/cvr-52c/raw/ny-cvr-52-c-2.json
+  raw_sha256: f25c1385af5108876b69f6e0f480a19414126f526f40929e451fd9a7c83ffc03
+  text_file: corpus/state/ny/cvr-52c/raw/ny-cvr-52-c-2.txt
+  text_sha256: 64d9c56ec4d4ffdecf464fbca2ffe2a265fa72f614599320fc835b2f955b4371
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/cvr-52c/raw/ny-cvr-52-c-2.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, laws/CVR/52-C-2
+    result: structured_source_used
+    note: >-
+      TWO SPELLINGS OF ONE SECTION, and the URL is the one that was actually fetched. The document's
+      locationId is 52-C*2 — the asterisk marks a MULTIPLE-VERSION section, and it is what
+      paragraph_path.anchor carries — but an asterisk is not a legal path segment, and the API
+      accepts 52-C-2 and returns this document. The other § 52-c, without the suffix, is a different
+      provision entirely: a private right of action for sexually explicit digitizations. It is
+      segmented alongside this one at corpus/state/ny/cvr-52c/ny-cvr-52-c.seg.json so that the
+      disambiguation is evidenced rather than asserted.
+  segment_sha256: 3a2d822a27d2beba74e877d4f86fd13d2271dbe8bd39ee5514307dc0b6dab097
+verbatim_span: >-
+  Any employer who monitors or otherwise intercepts telephone conversations or transmissions,
+  electronic mail or transmissions, or internet access or usage of or by an employee by any
+  electronic device or system, including but not limited to the use of a computer, telephone, wire,
+  radio, or electromagnetic, photoelectronic or photo-optical systems, shall give prior written
+  notice upon hiring to all employees who are subject to electronic monitoring. The notice required
+  by this subdivision shall be in writing, in an electronic record, or in another electronic form
+  and acknowledged by the employee either in writing or electronically. Each employer shall also
+  post the notice of electronic monitoring in a conspicuous place which is readily available for
+  viewing by its employees who are subject to electronic monitoring.
+paragraph_path:
+  path:
+    - '2'
+    - a
+  anchor: 52-C*2
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    subdivision designators reconstructed from the flat text field; resolves to exactly one leaf.
+    The anchor carries the *2 suffix because § 52-c is a MULTIPLE-VERSION section — two distinct
+    provisions share the number and only the suffix distinguishes them.
+context_not_required: The provision states the rule in full.
+subject:
+  domain: IV.A.2
+  lifecycle:
+    - III
+regulator:
+  - state_ag
+sector:
+  - employment
+data_types:
+  - any
+effective_from: '2022-05-07'
+federal_relationship: gap_fills
+applies_if:
+  all:
+    - entity.is_ny_employer == true
+    - practice.monitors_employee_communications == true
+applies_to_role: controller
+obligation_type: notify
+deadline:
+  trigger_event: hiring an employee
+  duration:
+    value: 0
+    unit: calendar_days
+  computation: >-
+    Notice is due upon hiring, in writing or electronically, with written or electronic
+    acknowledgement — a zero-elapsed-time obligation at the start of employment, plus a standing
+    posting requirement in a conspicuous place.
+exemptions: []
+related: []
+summary: >-
+  An employer that monitors or intercepts employee telephone, email or internet use by any
+  electronic device must give prior written notice upon hiring and post notice conspicuously.
+requirement_detail: >-
+  THE PROVISION THE PROJECT MANIFEST POINTED AT THE WRONG SECTION FOR. New York requires NOTICE of
+  electronic monitoring, not consent — an employer may monitor, but not silently. It pairs with
+  Penal Law § 250.00/250.05 in the corpus: New York is a one-party consent state so an employer
+  party to a communication may record it, and this section supplies the transparency obligation that
+  the criminal statute does not. Note the scope of "employer": any entity with a place of business
+  in the state, expressly EXCLUDING the state and its political subdivisions, so public-sector
+  employees get nothing from this section.
+common_errors:
+  - >-
+    Reading it as a consent requirement. It requires notice and acknowledgement, not permission —
+    the employer may monitor either way.
+  - >-
+    Assuming public employees are covered. Subdivision 1 excludes the state and its political
+    subdivisions.
+  - >-
+    Citing N.Y. Labor Law § 203-f for this duty. That section is "Inventions made by employees" and
+    has nothing to do with monitoring — see meta/debt.yaml DEBT-016.
+open_questions: []
+preemption:
+  posture: none
+  authority: N.Y. Civil Rights Law § 52-c
+  note: >-
+    State notice duty. The federal Wiretap Act, 18 U.S.C. § 2511, governs interception and supplies
+    no notice requirement, so this fills a gap rather than exceeding a floor.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: Attorney General enforcement; civil penalties escalating per offence under subdivision 3.
+    range: null
+    note: >-
+      Subdivision 3 is extracted as a leaf but not yet carried as its own atom; the schedule of
+      penalties lives there.
+  statute_of_limitations: null

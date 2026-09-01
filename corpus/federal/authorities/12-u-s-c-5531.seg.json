@@ -1,0 +1,204 @@
+{
+ "label": "12 U.S.C. \u00a7 5531",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/authorities/raw/12-u-s-c-5531.xml",
+ "raw_sha256": "c00d0c0594aa4472ac0339520dca0c2e09445dd7c23604f2cba9fb04192d8bf6",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "/us/usc/t12/s5531/a",
+   "heading": "In general",
+   "text": "The Bureau may take any action authorized under part E to prevent a covered person or service provider from committing or engaging in an unfair, deceptive, or abusive act or practice under Federal law in connection with any transaction with a consumer for a consumer financial product or service, or the offering of a consumer financial product or service.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": "/us/usc/t12/s5531/b",
+   "heading": "Rulemaking",
+   "text": "The Bureau may prescribe rules applicable to a covered person or service provider identifying as unlawful unfair, deceptive, or abusive acts or practices in connection with any transaction with a consumer for a consumer financial product or service, or the offering of a consumer financial product or service. Rules under this section may include requirements for the purpose of preventing such acts or practices.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t12/s5531/c/1/A",
+   "heading": "",
+   "text": "the act or practice causes or is likely to cause substantial injury to consumers which is not reasonably avoidable by consumers; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Bureau shall have no authority under this section to declare an act or practice in connection with a transaction with a consumer for a consumer financial product or service, or the offering of a consumer financial product or service, to be unlawful on the grounds that such act or practice is unfair, unless the Bureau has a reasonable basis to conclude that\u2014",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t12/s5531/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t12/s5531/c/1/B",
+   "heading": "",
+   "text": "such substantial injury is not outweighed by countervailing benefits to consumers or to competition.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Bureau shall have no authority under this section to declare an act or practice in connection with a transaction with a consumer for a consumer financial product or service, or the offering of a consumer financial product or service, to be unlawful on the grounds that such act or practice is unfair, unless the Bureau has a reasonable basis to conclude that\u2014",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": "/us/usc/t12/s5531/c/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": "/us/usc/t12/s5531/c/2",
+   "heading": "Consideration of public policies",
+   "text": "In determining whether an act or practice is unfair, the Bureau may consider established public policies as evidence to be considered with all other evidence. Such public policy considerations may not serve as a primary basis for such determination.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": "/us/usc/t12/s5531/d/1",
+   "heading": "",
+   "text": "materially interferes with the ability of a consumer to understand a term or condition of a consumer financial product or service; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Bureau shall have no authority under this section to declare an act or practice abusive in connection with the provision of a consumer financial product or service, unless the act or practice\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t12/s5531/d"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "A"
+   ],
+   "anchor": "/us/usc/t12/s5531/d/2/A",
+   "heading": "",
+   "text": "a lack of understanding on the part of the consumer of the material risks, costs, or conditions of the product or service;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Bureau shall have no authority under this section to declare an act or practice abusive in connection with the provision of a consumer financial product or service, unless the act or practice\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t12/s5531/d"
+    },
+    {
+     "position": "precedes",
+     "text": "takes unreasonable advantage of\u2014",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": "/us/usc/t12/s5531/d/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "B"
+   ],
+   "anchor": "/us/usc/t12/s5531/d/2/B",
+   "heading": "",
+   "text": "the inability of the consumer to protect the interests of the consumer in selecting or using a consumer financial product or service; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Bureau shall have no authority under this section to declare an act or practice abusive in connection with the provision of a consumer financial product or service, unless the act or practice\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t12/s5531/d"
+    },
+    {
+     "position": "precedes",
+     "text": "takes unreasonable advantage of\u2014",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": "/us/usc/t12/s5531/d/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "C"
+   ],
+   "anchor": "/us/usc/t12/s5531/d/2/C",
+   "heading": "",
+   "text": "the reasonable reliance by the consumer on a covered person to act in the interests of the consumer.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The Bureau shall have no authority under this section to declare an act or practice abusive in connection with the provision of a consumer financial product or service, unless the act or practice\u2014",
+     "path": [
+      "d"
+     ],
+     "anchor": "/us/usc/t12/s5531/d"
+    },
+    {
+     "position": "precedes",
+     "text": "takes unreasonable advantage of\u2014",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": "/us/usc/t12/s5531/d/2"
+    }
+   ]
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": "/us/usc/t12/s5531/e",
+   "heading": "Consultation",
+   "text": "In prescribing rules under this section, the Bureau shall consult with the Federal banking agencies, or other Federal agencies, as appropriate, concerning the consistency of the proposed rule with prudential, market, or systemic objectives administered by such agencies.",
+   "context": []
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": "/us/usc/t12/s5531/f",
+   "heading": "Consideration of seasonal income",
+   "text": "The rules of the Bureau under this section shall provide, with respect to an extension of credit secured by residential real estate or a dwelling, if documented income of the borrower, including income from a small business, is a repayment source for an extension of credit secured by residential real estate or a dwelling, the creditor may consider the seasonality and irregularity of such income in the underwriting of and scheduling of payments for such credit.",
+   "context": []
+  }
+ ]
+}

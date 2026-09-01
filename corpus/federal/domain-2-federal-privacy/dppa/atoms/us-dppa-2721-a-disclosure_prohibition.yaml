@@ -1,0 +1,88 @@
+id: us.dppa.2721.a.disclosure_prohibition
+schema_version: 1
+record_type: obligation
+source:
+  citation: 18 U.S.C. § 2721(a)
+  instrument_id: us.dppa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.xml
+  raw_sha256: 6fdc322897cf479e3c6caaef69b90aedcef608b7f1b91769c502097670b17a21
+  text_file: corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.txt
+  text_sha256: 21041cee8cd7cc31df512db82226e25b537644bc9e56b74d990bb7bb4e562d92
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+    - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+verbatim_span: 'A State department of motor vehicles, and any officer, employee, or contractor thereof,
+  shall not knowingly disclose or otherwise make available to any person or entity:'
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+  - a
+  anchor: /us/usc/t18/s2721/a
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: The provision states the prohibition and its exception clause in full.
+subject:
+  domain: III.A.1
+  lifecycle:
+  - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator: &id001
+- doj
+sector:
+- government
+data_types:
+- any
+status: in_force
+effective_from: '1994-09-13'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+  - entity.is_state_dmv == true
+  - data.from_motor_vehicle_record == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: A State department of motor vehicles, and any officer, employee or contractor, shall not knowingly
+  disclose personal information obtained in connection with a motor vehicle record.
+requirement_detail: A PROHIBITION ON A GOVERNMENT BODY THAT REACHES PRIVATE RECIPIENTS DOWNSTREAM. § 2721(a)
+  binds the DMV, but § 2722 makes it unlawful for ANY person to obtain or disclose the information for
+  a purpose not permitted, so a data broker that resurfaces DMV data is reached even though it is not
+  a DMV. The permitted-purpose list in § 2721(b) is closed, and the statute was upheld against a Tenth
+  Amendment challenge in Reno v. Condon.
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+- Assuming it binds only the DMV. § 2722 reaches any person who obtains or discloses for an impermissible
+  purpose.
+- Treating the permitted purposes as illustrative. § 2721(b) is a closed list.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 18 U.S.C. § 2721(a)
+  note: Recorded as floor pending a provision-level preemption analysis for this instrument; no express
+    ceiling clause was found in the section extracted.
+enforcement:
+  enforcers: *id001
+  private_right_of_action: false
+  penalty:
+    structure: Not yet extracted for this instrument.
+    range: null
+    note: The enforcement section of this instrument has not been extracted; treat penalty exposure as
+      UNASSESSED rather than absent.
+  statute_of_limitations: null

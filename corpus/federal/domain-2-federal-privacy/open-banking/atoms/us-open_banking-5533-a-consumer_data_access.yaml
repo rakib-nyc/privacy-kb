@@ -1,0 +1,206 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - cfpb
+sector:
+  - financial
+data_types:
+  - financial
+  - account_information
+status: in_force
+effective_from: '2010-07-21'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+deadline: null
+federal_relationship: null
+interpreted_by: []
+confidence: high
+preemption:
+  posture: floor
+  authority: null
+  note: >-
+    Title X operates as a floor: it does not displace state law that gives the consumer greater
+    protection. The savings provision sits outside § 5533 and is not extracted in this corpus, so
+    the posture is recorded and its text is not quoted. Note the direction of travel here — a state
+    financial-data access right that goes further than this section is not displaced by it, but the
+    Bureau's rules under this section may themselves speak to preemption and are not recorded in
+    this atom.
+enforcement:
+  enforcers:
+    - cfpb
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Enforced through Title X's general enforcement and remedial provisions, which sit outside §
+      5533 and are not extracted in this corpus. A failure to make information available is also
+      reachable as a UDAAP violation under 12 U.S.C. § 5531 where the covered person has told
+      consumers otherwise.
+    range: null
+    note: >-
+      § 5533 creates no private right of action. A consumer denied access reaches the conduct
+      through the state UDAP statute or, where a public commitment was made, through the deception
+      theory in FTC Act § 5 and its state analogues.
+  statute_of_limitations: null
+id: us.open_banking.5533.a.consumer_data_access
+source:
+  citation: 12 U.S.C. § 5533(a)
+  instrument_id: us.open_banking
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc12@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/open-banking/raw/12-u-s-c-5533.xml
+  raw_sha256: d309caacc695dd92a91c5fdbbb6e1140b56efad042f289a5473d042e0411c98a
+  text_file: corpus/federal/domain-2-federal-privacy/open-banking/raw/12-u-s-c-5533.txt
+  text_sha256: cc7f0d7bc38d26c079e623b506be2f2675086a81eb660b4507e3e6f12ff3a1ce
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/open-banking/raw/12-u-s-c-5533.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 3740544a8760411adeb4344b7c78f79319cda67696e841cc063f2316fa85e668
+verbatim_span: >-
+  Subject to rules prescribed by the Bureau, a covered person shall make available to a consumer,
+  upon request, information in the control or possession of the covered person concerning the
+  consumer financial product or service that the consumer obtained from such covered person,
+  including information relating to any transaction, series of transactions, or to the account
+  including costs, charges and usage data. The information shall be made available in an electronic
+  form usable by consumers.
+paragraph_path:
+  path:
+    - a
+  anchor: /us/usc/t12/s5533/a
+  derivation: structural
+  confidence: high
+  evidence: USLM element nesting; identifier read from the source
+context_not_required: >-
+  Subsection (a) states the duty in full. No ancestor contributes governing text; the conditions on
+  it are in sibling subsections (b) through (e), and (b) is recorded as typed exemptions.
+subject:
+  domain: II.C.6
+  lifecycle:
+    - VI
+applies_if:
+  all:
+    - entity.is_cfpb_covered_person == true
+    - event.type == 'consumer_data_access_request'
+obligation_type: disclose
+summary: >-
+  Subject to Bureau rules, a covered person must make available to a consumer on request, in an
+  electronic form usable by consumers, the information it holds concerning the consumer financial
+  product or service that consumer obtained from it.
+requirement_detail: >-
+  THE STATUTORY BASIS FOR US OPEN BANKING, AND IT IS NARROWER THAN THE LABEL. The section never uses
+  the phrase: what it grants is a right, running only against the covered person the consumer
+  actually dealt with, to be given "information in the control or possession of the covered person
+  concerning the consumer financial product or service that the consumer obtained from such covered
+  person", on request and "in an electronic form usable by consumers". The right is expressly
+  Subject to rules prescribed by the Bureau, so the text alone does not tell a covered person what
+  to build; (d) separately directs the Bureau to prescribe standards promoting standardized,
+  machine-readable formats. Four carve-outs in (b) narrow it, and (c) is the structural limit that
+  matters most — the section imposes no duty to maintain or keep any information about a consumer,
+  so the right reaches only what the covered person happens to hold. That makes this an ACCESS
+  right, not a retention, portability or third-party-sharing mandate: any duty to transmit data to
+  an aggregator or a competitor on the consumer's instruction rests on the Bureau's rules under this
+  section, not on this text.
+exemptions:
+  - id: usc.12.5533.b1.confidential_commercial_information
+    type: data_level
+    scope: >-
+      A covered person may not be required to make available any confidential commercial
+      information, and the text names the paradigm case: an algorithm used to derive credit scores
+      or other risk scores or predictors. This is the carve-out that defeats the most common request
+      in practice — a consumer asking why a decision went against them gets the inputs the covered
+      person holds, never the model.
+    source_citation: 12 U.S.C. § 5533(b)(1)
+    verbatim_span: >-
+      any confidential commercial information, including an algorithm used to derive credit scores
+      or other risk scores or predictors;
+    burden_of_proof: entity
+    applies_if:
+      any:
+        - data.is_confidential_commercial_information == true
+        - data.is_scoring_algorithm == true
+  - id: usc.12.5533.b2.fraud_and_aml_information
+    type: data_level
+    scope: >-
+      Information collected to prevent fraud or money laundering, or to detect or report unlawful or
+      potentially unlawful conduct, is outside the right. This is where § 5533 and 31 U.S.C. §
+      5318(g) meet: the BSA bars telling the customer a suspicious activity report exists, and this
+      paragraph makes sure the access right cannot be used to extract the same fact by another
+      route.
+    source_citation: 12 U.S.C. § 5533(b)(2)
+    verbatim_span: >-
+      any information collected by the covered person for the purpose of preventing fraud or money
+      laundering, or detecting, or making any report regarding other unlawful or potentially
+      unlawful conduct;
+    burden_of_proof: entity
+    applies_if:
+      any:
+        - data.collected_for_fraud_prevention == true
+        - data.collected_for_aml_purpose == true
+  - id: usc.12.5533.b3.confidential_under_other_law
+    type: data_level
+    scope: >-
+      Information any other provision of law requires to be kept confidential is outside the right.
+      This is a conflict-resolution rule rather than a policy choice: it makes the access right
+      yield to every confidentiality regime elsewhere in this corpus rather than forcing the covered
+      person to choose which statute to break.
+    source_citation: 12 U.S.C. § 5533(b)(3)
+    verbatim_span: any information required to be kept confidential by any other provision of law; or
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - data.confidential_under_other_law == true
+  - id: usc.12.5533.b4.not_retrievable_in_ordinary_course
+    type: data_level
+    scope: >-
+      Information the covered person cannot retrieve in the ordinary course of its business with
+      respect to that information is outside the right. Read with (c), which imposes no duty to
+      maintain records, this sets the ceiling on the whole section: the consumer gets what the
+      covered person can already reach, and neither building new retrieval capability nor retaining
+      data longer is required by the text.
+    source_citation: 12 U.S.C. § 5533(b)(4)
+    verbatim_span: >-
+      any information that the covered person cannot retrieve in the ordinary course of its business
+      with respect to that information.
+    burden_of_proof: entity
+    applies_if:
+      all:
+        - data.retrievable_in_ordinary_course == false
+related:
+  - us.bsa.5318.g2ai.sar_confidentiality
+common_errors:
+  - >-
+    Saying that § 5533 requires a covered person to share data with third-party aggregators. The
+    text gives the CONSUMER a right to be given information; whether a consumer-authorised third
+    party stands in the consumer's shoes is set by the Bureau's rules under this section, not by the
+    statute.
+  - >-
+    Treating it as a retention or record-keeping duty. Subsection (c) says the opposite — nothing in
+    the section imposes a duty to maintain or keep information about a consumer.
+  - >-
+    Assuming fraud and AML records are in scope. (b)(2) removes "any information collected by the
+    covered person for the purpose of preventing fraud or money laundering", which is often exactly
+    the material a consumer wants when contesting a closed or frozen account.
+open_questions:
+  - >-
+    THE IMPLEMENTING RULE IS NOT RECORDED HERE. This atom models the STATUTE only. The Bureau's rule
+    under this section has been in flux, and its content, its legal status and its compliance dates
+    were not fetched, hashed or verified in this pass. Any question about what a covered person must
+    actually build, or about third-party access, must be treated as UNANSWERED rather than answered
+    from this atom — and nothing here should be read as a statement about that rule's status.
+  - >-
+    Whether "covered person" here carries the same reach as in 12 U.S.C. § 5531 is not established
+    by this section's own text; the definition sits elsewhere in Title X and is not extracted.

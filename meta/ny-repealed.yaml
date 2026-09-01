@@ -1,0 +1,88 @@
+# NY REPEALED DOCUMENTS
+# =====================
+# Generated from the OpenLegislation LAW TREE, which is the only place the
+# `repealed` flag appears — the per-document endpoint returns null for it.
+# Gate 20 checks every openleg_json atom's anchor against this table.
+
+laws:
+  GBS:
+    scanned: '2026-08-19'
+    documents_seen: 1592
+    repealed:
+    - law_id: GBS
+      location_id: A39-H
+      doc_type: ARTICLE
+      repealed_date: '2026-06-19'
+      title: Third Party Litigation Financing
+    - law_id: GBS
+      location_id: 899-CCC
+      doc_type: SECTION
+      repealed_date: '2026-06-19'
+      title: Definitions
+    - law_id: GBS
+      location_id: 899-DDD
+      doc_type: SECTION
+      repealed_date: '2026-06-19'
+      title: Contract requirements; right of rescission
+    - law_id: GBS
+      location_id: 899-EEE
+      doc_type: SECTION
+      repealed_date: '2026-06-19'
+      title: Prohibitions and charge limitations
+    - law_id: GBS
+      location_id: 899-FFF
+      doc_type: SECTION
+      repealed_date: '2026-06-19'
+      title: Repayment
+    - law_id: GBS
+      location_id: 899-GGG
+      doc_type: SECTION
+      repealed_date: '2026-06-19'
+      title: Disclosures
+    - law_id: GBS
+      location_id: 899-HHH
+      doc_type: SECTION
+      repealed_date: '2026-06-19'
+      title: Violations
+    - law_id: GBS
+      location_id: 899-III
+      doc_type: SECTION
+      repealed_date: '2026-06-19'
+      title: Assignability; liens
+    - law_id: GBS
+      location_id: 899-JJJ
+      doc_type: SECTION
+      repealed_date: '2026-06-19'
+      title: Effect of communication on privileges
+    - law_id: GBS
+      location_id: 899-KKK
+      doc_type: SECTION
+      repealed_date: '2026-06-19'
+      title: Registration
+    - law_id: GBS
+      location_id: 899-LLL
+      doc_type: SECTION
+      repealed_date: '2026-06-19'
+      title: Reporting
+    - law_id: GBS
+      location_id: 899-MMM
+      doc_type: SECTION
+      repealed_date: '2026-06-19'
+      title: Severability
+  PEN:
+    scanned: '2026-08-19'
+    documents_seen: 999
+    repealed: []
+  CVR:
+    scanned: '2026-08-19'
+    documents_seen: 156
+    repealed: []
+  EDN:
+    scanned: '2026-08-19'
+    documents_seen: 2120
+    repealed:
+    - law_id: EDN
+      location_id: 3602-EE
+      doc_type: SECTION
+      repealed_date: '2026-07-03'
+      title: Statewide universal full-day pre-kindergarten program

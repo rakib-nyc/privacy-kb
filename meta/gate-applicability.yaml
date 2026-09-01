@@ -1,0 +1,312 @@
+formats:
+- uslm_xml
+- ecfr_xml
+- openleg_json
+- html
+- pdf_single_col
+- pdf_multi_col
+- manual
+- nyc_xml
+format_independent:
+- 1
+- 2
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+- 10
+- 13
+- 14
+- 18
+- 19
+- 21
+- 22
+- 38
+record_type_scoped:
+  5:
+  - obligation
+  7:
+  - obligation
+  21:
+  - obligation
+  3:
+  - obligation
+  - definition
+  - principle
+  - authority
+  - certification_scheme
+  - taxonomy
+  - enforcement_action
+  36:
+  - workflow_constraint
+  37:
+  - doctrine
+gates:
+  3:
+    name: verbatim span is an exact substring of the source
+    all: APPLIES
+    note: 'Applies everywhere, but what it checks against differs: raw bytes for plain text, a rendering
+      for everything else. Where there is a rendering there is a transformation, and gate 11 is what guards
+      the transformation. Read the two rows together — gate 3 alone is only as trustworthy as the renderer
+      beneath it.'
+  11_openleg_note:
+    name: (context for the openleg_json rows below)
+    all: APPLIES
+    note: 'The API returns one JSON object per law document. Above SECTION level the hierarchy is genuinely
+      structural: the law-level response carries a recursive `documents.items` tree (chapter -> article
+      -> section), with `repealed` and `repealedDate` flags. BELOW section level there is no structure
+      at all — `text` is a single flat string with designators inline, which is weaker than eCFR, since
+      eCFR at least has <P> element boundaries.'
+  11:
+    name: independent second parse agrees
+    pdf_single_col:
+      status: APPLIES
+    pdf_multi_col:
+      status: APPLIES
+    uslm_xml:
+      status: ANALOGUE-REQUIRED
+      analogue: tools/dual-parse.py — regex serializer vs ElementTree walk, comparing serialized text
+        AND an identifier inventory
+      why: 'No layout heuristics to disagree about, but the serializer is a transformation and therefore
+        the same class of risk. Text comparison alone is insufficient: attributes are not text, and identifier
+        attributes are what paragraph_path rests on.'
+    ecfr_xml:
+      status: ANALOGUE-REQUIRED
+      analogue: tools/dual-parse.py — same two engines
+      why: Same reasoning. eCFR carries fewer attributes but the serializer risk is identical.
+    html:
+      status: ANALOGUE-REQUIRED
+      analogue: tools/dual-parse.py — regex tag-strip vs html.parser
+      why: 'HTML is rendered by render-text.py''s tag-stripping path, which is a transformation nothing
+        was guarding. Surfaced by writing this file: 13 existing records (8 OECD, 5 HEW 1973) depend on
+        it.'
+    openleg_json:
+      status: ANALOGUE-REQUIRED
+      analogue: tools/dual-parse.py --format openleg_json — two independent unescape+normalise implementations
+        over result.text
+      why: 'The transformation is small but real and unavoidable: `result.text` contains LITERAL backslash-n
+        two-character sequences, not newlines, so every span requires an unescape step before gate 3 can
+        check it. A span taken from the un-unescaped string would carry "\n" inside quoted statutory text.
+        Only one escape type appears in the sampled section (82 occurrences of \n, no \t, no \", no bracketed
+        matter, no asterisks), so the transformation is well bounded — but "small" is exactly what min_height
+        looked like.'
+    manual:
+      status: INAPPLICABLE-BY-DESIGN
+      why: 'The acceptance here expired by its own terms when the first manual-format record was committed,
+        which is the mechanism working: a licence granted on the basis that something does not exist has
+        to lapse when it starts existing.
+
+        What replaced it is narrower. Every manual-format record in this corpus is a DOCTRINE record,
+        and the doctrine schema carries no verbatim_span — there is no transcription to double-parse and
+        no apparatus to strip, because the record quotes nothing. That is not a reduction in defence depth;
+        there is nothing here to defend.
+
+        The exemption is CONTINGENT on that. If a manual-format record ever carries a verbatim_span, this
+        gate must apply to it and this block must be rewritten — at that point there IS hand-transcribed
+        text, and hand-transcribed text is the case these gates exist for.'
+    nyc_xml:
+      status: ANALOGUE-REQUIRED
+      analogue: tools/dual-parse.py — regex serializer vs ElementTree walk, comparing serialized text
+        AND an identifier inventory
+      why: 'No layout heuristics to disagree about, but the serializer is a transformation and therefore
+        the same class of risk. Text comparison alone is insufficient: attributes are not text, and identifier
+        attributes are what paragraph_path rests on.'
+  12:
+    name: sampled visual spot-check
+    pdf_single_col:
+      status: APPLIES
+    pdf_multi_col:
+      status: APPLIES
+    uslm_xml:
+      status: INAPPLICABLE-BY-DESIGN
+      why: 'There is no fixed visual form to read. What is LOST is real and should not be glossed: gate
+        12 was the only check that inspected the document rather than a transformation of it. For XML
+        the remaining defences are gate 2 (bytes) and gate 11 (transformation), with nothing standing
+        outside both. Accepted as a genuine reduction in defence depth.'
+    ecfr_xml:
+      status: INAPPLICABLE-BY-DESIGN
+      why: as uslm_xml
+    openleg_json:
+      status: INAPPLICABLE-BY-DESIGN
+      why: 'JSON has no fixed visual form. Same loss of defence depth as the XML formats: gate 12 was
+        the only check standing outside every transformation, and for this format nothing replaces it.'
+    html:
+      status: INAPPLICABLE-BY-DESIGN
+      why: as uslm_xml; an HTML page has no canonical rendering either
+    manual:
+      status: INAPPLICABLE-BY-DESIGN
+      why: 'The acceptance here previously read "no manual source exists", and it VOIDED ITSELF the moment
+        one was committed — which is the acceptance working exactly as intended: a licence conditioned
+        on absence expires when the absence does.
+
+        The reality that replaced it is narrower and cleaner. The only manual-format records are doctrine
+        records, and the doctrine schema carries NO verbatim_span at all. There is no quoted text to spot-check,
+        so nothing is lost by gate 12 not running — unlike the uslm_xml case above, where a real defence
+        is given up.
+
+        This exemption is therefore contingent on doctrine remaining span-free. If a manual-format record
+        ever carries a verbatim_span, gate 12 must apply to it and this block must be rewritten, because
+        then there IS a transcription to check by eye and no other gate stands outside the transformation.'
+    nyc_xml:
+      status: INAPPLICABLE-BY-DESIGN
+      why: 'No fixed visual form to read; it is an XML export. Same loss as uslm_xml and ecfr_xml: gate
+        12 was the only check that inspected a document rather than a transformation of it, and for XML
+        the remaining defences are gate 2 (bytes) and gate 11 (transformation). Accepted as a genuine
+        reduction in defence depth, not glossed.'
+  15:
+    name: no apparatus inside a verbatim span
+    pdf_single_col:
+      status: APPLIES
+    pdf_multi_col:
+      status: APPLIES
+    uslm_xml:
+      status: ANALOGUE-REQUIRED
+      analogue: 'element-type detection: <note>, <sourceCredit>, <notes>, ref[@class=footnoteRef]'
+      why: 'Apparatus is tagged rather than glyph-shaped, so glyph-height evidence does not apply. This
+        is weaker than the PDF check: it TRUSTS the publisher''s tagging instead of measuring the document.
+        A mis-tag is undetected. Recorded as a known trust assumption, not a solved problem.'
+    ecfr_xml:
+      status: ANALOGUE-REQUIRED
+      analogue: 'element-type detection: <AUTH>, <SOURCE>, <CITA>'
+      why: as uslm_xml — same trust assumption
+    openleg_json:
+      status: ANALOGUE-REQUIRED
+      analogue: regex patterns only, plus the literal-\n check
+      why: 'The sampled section carries NO apparatus: zero bracketed matter, zero asterisks, and the only
+        non-ASCII character is the section sign. NY consolidated law text appears to arrive clean, unlike
+        NY BILL text which uses brackets and italics to mark amendments. That is a finding about ONE section
+        and must not be generalised — a later section with bracketed matter would need this row revisited.
+        The one apparatus-like artefact is the literal \n, handled as a rendering step rather than as
+        apparatus.'
+    html:
+      status: ANALOGUE-REQUIRED
+      analogue: regex patterns only (page furniture, superscript glyphs)
+      why: No structural apparatus markers in the HTML sources held; regex patterns are the whole check.
+    manual:
+      status: INAPPLICABLE-BY-DESIGN
+      why: 'The acceptance here expired by its own terms when the first manual-format record was committed,
+        which is the mechanism working: a licence granted on the basis that something does not exist has
+        to lapse when it starts existing.
+
+        What replaced it is narrower. Every manual-format record in this corpus is a DOCTRINE record,
+        and the doctrine schema carries no verbatim_span — there is no transcription to double-parse and
+        no apparatus to strip, because the record quotes nothing. That is not a reduction in defence depth;
+        there is nothing here to defend.
+
+        The exemption is CONTINGENT on that. If a manual-format record ever carries a verbatim_span, this
+        gate must apply to it and this block must be rewritten — at that point there IS hand-transcribed
+        text, and hand-transcribed text is the case these gates exist for.'
+    nyc_xml:
+      status: ANALOGUE-REQUIRED
+      analogue: 'element-type detection: <note>, <sourceCredit>, <notes>, ref[@class=footnoteRef]'
+      why: 'Apparatus is tagged rather than glyph-shaped, so glyph-height evidence does not apply. This
+        is weaker than the PDF check: it TRUSTS the publisher''s tagging instead of measuring the document.
+        A mis-tag is undetected. Recorded as a known trust assumption, not a solved problem.'
+  16:
+    name: paragraph_path confidence — low confidence refuses the atom
+    uslm_xml:
+      status: APPLIES
+    ecfr_xml:
+      status: APPLIES
+    openleg_json:
+      status: APPLIES
+      why: 'NY sections DO have an enacted paragraph hierarchy — (a)(1)(i)(A) appears in the sampled text
+        — but the API exposes none of it, so paragraph_path must be RECONSTRUCTED, exactly as for eCFR.
+        derivation must be `reconstructed` and confidence must fall to `low` on any ambiguous designator.
+        The (i) letter-vs-roman collision occurs here too: the sample contains both (i)/(ii) as romans
+        under (1) and a top-level (b)...(e) letter run.'
+    html:
+      status: INAPPLICABLE-BY-DESIGN
+      why: paragraph_path is not required; these sources have no enacted paragraph hierarchy
+    pdf_single_col:
+      status: INAPPLICABLE-BY-DESIGN
+      why: as html
+    pdf_multi_col:
+      status: INAPPLICABLE-BY-DESIGN
+      why: as html
+    manual:
+      status: INAPPLICABLE-BY-DESIGN
+      why: resolves to the underlying real format
+    nyc_xml:
+      status: APPLIES
+      why: nyc_xml has REAL ELEMENT NESTING — <LEVEL style-name="Section"> contains its RECORDs — so depth
+        is read from the markup rather than reconstructed, the same posture as uslm_xml and the opposite
+        of ecfr_xml. This gate applies unchanged.
+  17:
+    name: an operative atom may not anchor inside <notes>
+    uslm_xml:
+      status: APPLIES
+      why: 11 of 47 operative-level elements in 15 U.S.C. § 1681c carry no identifier because they sit
+        inside <notes> — quoted historical text reproducing prior versions of the statute. Anchoring there
+        quotes repealed law as current.
+    ecfr_xml:
+      status: APPLIES
+      why: <CITA>/<AUTH>/<SOURCE> are the analogous non-operative regions
+    openleg_json:
+      status: APPLIES
+      why: 'The analogue of a <notes> region is a REPEALED document. The law-level tree carries `repealed:
+        true` and `repealedDate` — 12 of 1592 documents in General Business are repealed. An atom anchored
+        to one quotes repealed law as current, which is precisely the failure gate 17 exists to prevent.
+        paragraph_path.anchor must carry the locationId and be checked against the repealed set.'
+    html:
+      status: INAPPLICABLE-BY-DESIGN
+      why: no structural notes region
+    pdf_single_col:
+      status: INAPPLICABLE-BY-DESIGN
+      why: no structural notes region
+    pdf_multi_col:
+      status: INAPPLICABLE-BY-DESIGN
+      why: no structural notes region
+    manual:
+      status: INAPPLICABLE-BY-DESIGN
+      why: resolves to the underlying real format
+    nyc_xml:
+      status: ANALOGUE-REQUIRED
+      analogue: 'walk_nycxml excludes non-operative content at EXTRACTION rather than the gate excluding
+        it at validation: [ALP S-###] publisher markers are stripped as apparatus, and (L.L. 2021/144,
+        12/11/2021, eff. 1/1/2023) session-law credit lines are dropped as non-provisions.'
+      why: 'The NYC export has no <notes> element to detect. Operative text and publisher apparatus share
+        one <PARA> stream and are distinguished by pattern, so there is no region for gate 17 to find.
+
+        WHAT IS LOST, stated rather than glossed: the exclusion now happens in the walker, where a bug
+        is a silent omission, instead of at the gate, where it would be a loud failure. That is a real
+        reduction — it is the same trade as trusting an extractor over a checker. The conformance suite
+        is the compensating control: tools/test-extractors.py asserts the apparatus stripping, so the
+        analogue is itself tested rather than assumed.'
+  20:
+    name: no operative atom anchors to a repealed document
+    openleg_json:
+      status: APPLIES
+      why: 'The OpenLegislation law tree flags repealed documents — 12 of 1592 in General Business. An
+        atom anchored to one quotes repealed law as current. Separate from gate 17 because the mechanism
+        differs: a flag on a tree node, not a containing region. It also checks the record''s fetch date
+        against the API''s own activeDate, so a record cannot silently lag a later enacted version.'
+    uslm_xml:
+      status: INAPPLICABLE-BY-DESIGN
+      why: USLM does not expose a repealed flag; repeal shows as the section's absence, which gate 3 already
+        catches
+    ecfr_xml:
+      status: INAPPLICABLE-BY-DESIGN
+      why: eCFR serves only current text; a removed part is absent, not flagged
+    html:
+      status: INAPPLICABLE-BY-DESIGN
+      why: no repeal metadata
+    pdf_single_col:
+      status: INAPPLICABLE-BY-DESIGN
+      why: no repeal metadata
+    pdf_multi_col:
+      status: INAPPLICABLE-BY-DESIGN
+      why: no repeal metadata
+    manual:
+      status: INAPPLICABLE-BY-DESIGN
+      why: resolves to the underlying real format
+    nyc_xml:
+      status: INAPPLICABLE-BY-DESIGN
+      why: USLM does not expose a repealed flag; repeal shows as the section's absence, which gate 3 already
+        catches
+migration_006_note: 'workflow_constraint and doctrine quote nothing of their own, so gate 3 is INAPPLICABLE-BY-DESIGN
+  for them — declared here rather than silently skipped, per the lesson of gate 32. What is lost: nothing,
+  because neither type asserts source text. A workflow_constraint points at records whose spans WERE verified,
+  and gate 36 resolves those pointers.'

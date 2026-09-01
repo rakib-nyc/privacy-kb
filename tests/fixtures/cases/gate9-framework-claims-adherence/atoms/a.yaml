@@ -1,0 +1,56 @@
+id: us.fixture.framework_claims_adherence
+schema_version: 1
+record_type: principle
+source:
+  citation: Records, Computers and the Rights of Citizens (1973), Summary and Recommendations
+  instrument_id: us.hew.1973_advisory_committee_report
+  url: https://aspe.hhs.gov/reports/records-computers-rights-citizens
+  fetched: '2026-08-18'
+  raw_file: corpus/principles/fipps/raw/hew-1973-records-computers-20260818.html
+  raw_sha256: 150726efcc84de5047c979b5cafc97ae2b923fed37bc7a067ca2959953decb2d
+  text_file: corpus/principles/fipps/raw/hew-1973-records-computers-20260818.txt
+  text_sha256: bcb6ee7daae2cee3da163b45a70d1d4ad15c7401b09b761396421476f2afbeaa
+  text_extraction_cmd: python3 tools/render-text.py corpus/principles/fipps/raw/hew-1973-records-computers-20260818.html
+  format: html
+  structured_source_check:
+    checked:
+    - fixture — no acquisition performed
+    result: not_applicable
+    note: Test fixture. Exists to trip one gate, not to model a real source.
+  render: null
+  risk_tier: low
+verbatim_span: There must be no personal data record keeping systems whose very existence is secret.
+verification_status: verbatim_confirmed
+subject:
+  domain: I.C
+  lifecycle:
+  - I
+framework:
+  id: us.hew.1973_code_of_fair_information_practice
+  title: Code of Fair Information Practice, proposed in "Records, Computers and the Rights of Citizens"
+  issuer: U.S. Department of Health, Education & Welfare, Secretary's Advisory Committee on Automated Personal Data Systems
+  binding: false
+  binding_note: A 1973 advisory committee recommendation. It was never enacted as a general Code. Its five principles were carried in part into the Privacy Act of 1974, which binds federal agencies — not
+    the private sector. Citing this report as though it imposed a duty on a private entity is a category error.
+  authority_tier: advisory_report
+principle_name: Safeguard requirement 1
+principle_ref: Summary and Recommendations, Code of Fair Information Practice
+ordinal: 1
+jurisdiction: US
+jurisdiction_level: federal
+status: in_force
+effective_from: '1973-07-01'
+effective_to: null
+amendment_history: []
+summary: The existence of a personal-data record-keeping system must not itself be secret.
+derived_obligations: []
+differs_from: []
+related: []
+common_errors:
+- Citing the 1973 Code as binding law. It was an advisory committee recommendation for a Federal Code that was never enacted as such.
+- Treating it as a private-sector standard. The Privacy Act of 1974 carried parts of it into law for federal agencies only.
+open_questions: []
+confidence: high
+enforceability_pathway: none
+scope_justification: Test fixture. Anchored above leaf level deliberately so this case isolates the gate it targets rather than also tripping gate 13.
+adherence_mechanism: certification

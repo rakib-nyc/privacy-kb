@@ -1,0 +1,151 @@
+id: us.tcpa.227.c5b.dnc_private_action
+schema_version: 1
+record_type: obligation
+source:
+  citation: 47 U.S.C. § 227(c)(5)(B)
+  instrument_id: us.tcpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  raw_sha256: bc0202f0682c43acd483fb4bf598db62d4157704024776425acfebf27c63e018
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.txt
+  text_sha256: 0aeb8fd90520ec4506ed3e1138f1c4e9b7331ed7e27e727734afa93b39f279e4
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: c835f96dbb9f0c4ddfd7c8fc1a1217eafbbadc88ddce0e6c39d2c931fe30f295
+verbatim_span: >-
+  an action to recover for actual monetary loss from such a violation, or to receive up to $500 in
+  damages for each such violation, whichever is greater, or
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - c
+    - '5'
+    - B
+  anchor: /us/usc/t47/s227/c/5/B
+  derivation: structural
+  confidence: high
+  evidence: identifier attribute read from the USLM element
+operative_context:
+  - position: precedes
+    relation: conditions
+    verbatim_span: >-
+      A person who has received more than one telephone call within any 12-month period by or on
+      behalf of the same entity in violation of the regulations prescribed under this subsection
+      may, if otherwise permitted by the laws or rules of court of a State bring in an appropriate
+      court of that State—
+    citation: null
+    path:
+      path:
+        - c
+        - '5'
+      anchor: /us/usc/t47/s227/c/5
+      derivation: structural
+      confidence: high
+      evidence: identifier attribute on the enclosing USLM element
+  - position: follows
+    relation: excepts
+    verbatim_span: >-
+      It shall be an affirmative defense in any action brought under this paragraph that the
+      defendant has established and implemented, with due care, reasonable practices and procedures
+      to effectively prevent telephone solicitations in violation of the regulations prescribed
+      under this subsection. If the court finds that the defendant willfully or knowingly violated
+      the regulations prescribed under this subsection, the court may, in its discretion, increase
+      the amount of the award to an amount equal to not more than 3 times the amount available under
+      subparagraph (B) of this paragraph.
+    citation: null
+    path:
+      path:
+        - c
+        - '5'
+      anchor: /us/usc/t47/s227/c/5
+      derivation: structural
+      confidence: high
+      evidence: identifier attribute on the enclosing USLM element
+subject:
+  domain: II.E.2
+  lifecycle:
+    - I
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telemarketing
+  - telecom
+data_types:
+  - contact_data
+status: in_force
+effective_from: '1991-12-20'
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_if:
+  all:
+    - practice.makes_telephone_solicitations == true
+applies_to_role: controller
+obligation_type: prohibit
+summary: >-
+  A person who received more than one call within a 12-month period from or on behalf of the same
+  entity in violation of the subsection (c) regulations may sue to recover actual monetary loss or
+  up to $500 per violation, whichever is greater.
+requirement_detail: >-
+  THE TWO TCPA PRIVATE ACTIONS ARE NOT THE SAME ACTION, AND CONFLATING THEM IS THE MOST COMMON
+  DEFENCE-SIDE ERROR IN A DO-NOT-CALL CASE. The § 227(b)(3) action lies for a single violating call
+  and has no compliance defence. This one, § 227(c)(5), requires MORE THAN ONE call within any
+  12-month period by or on behalf of the same entity, and the continuation to paragraph (5) gives
+  the defendant an affirmative defence where it has established and implemented, with due care,
+  reasonable practices and procedures to prevent violating solicitations. That defence is why the
+  written procedures, personnel training and registry-scrubbing process in 47 C.F.R. §
+  64.1200(c)(2)(i) are worth real money rather than being paperwork. Note the predicate is a
+  violation "of the regulations prescribed under this subsection" — the claim is regulatory, so an
+  FCC exemption is an element rather than a defence. Plaintiffs routinely plead both § 227(b) and §
+  227(c) over the same call series precisely because the elements, the defences and the trebling
+  triggers differ.
+deadline: null
+exemptions: []
+related: []
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Pleading a single do-not-call call under § 227(c)(5). The subsection requires more than one call
+    within a 12-month period from or on behalf of the same entity.
+  - >-
+    Overlooking the due-care affirmative defence. It exists for § 227(c)(5) and has no counterpart
+    in the § 227(b)(3) action.
+  - >-
+    Reading $500 as a cap. It is a floor set against actual monetary loss — "whichever is greater" —
+    and the paragraph (5) continuation permits trebling for a wilful or knowing violation.
+open_questions: []
+confidence: high
+preemption:
+  posture: floor
+  authority: 47 U.S.C. § 227(f)(1)
+  note: >-
+    The private action itself is not a preemption provision. § 227(f)(1) preserves more restrictive
+    intrastate State law, so State mini-TCPA claims routinely accompany a § 227(c)(5) claim; §
+    227(f)(2) is the one carve-out, barring a separate State database.
+enforcement:
+  enforcers:
+    - fcc
+  private_right_of_action: true
+  penalty:
+    structure: >-
+      Private action in State court where permitted by that State's laws or rules of court:
+      injunction, actual monetary loss or statutory damages, or both.
+    range: >-
+      Actual monetary loss or up to $500 per violation, whichever is greater; trebled for a wilful
+      or knowing violation.
+    note: >-
+      Unlike § 227(b)(3), this action carries a statutory due-care affirmative defence and requires
+      more than one call in a 12-month period.
+  statute_of_limitations: null

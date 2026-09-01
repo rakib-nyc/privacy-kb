@@ -1,0 +1,139 @@
+id: us.red_flags.681_1.d1.written_program
+schema_version: 1
+record_type: obligation
+source:
+  citation: 16 C.F.R. § 681.1(d)(1)
+  instrument_id: us.red_flags
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=681
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.xml
+  raw_sha256: 7fe86c7084a6fad1ad05bad984e729c15375a3b6261f7ae11298256bb2536c36
+  text_file: corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.txt
+  text_sha256: 5b797c2f9419d08777165b7536b847eeb72d7c4b5d4c56a4322ee15f5f86f3e4
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 26eefc8af611c390d78d109268da6a2a734388b1c49eb9eea0b3d6f074dbd82d
+verbatim_span: >-
+  Each financial institution or creditor that offers or maintains one or more covered accounts must
+  develop and implement a written Identity Theft Prevention Program (Program) that is designed to
+  detect, prevent, and mitigate identity theft in connection with the opening of a covered account
+  or any existing covered account. The Program must be appropriate to the size and complexity of the
+  financial institution or creditor and the nature and scope of its activities.
+verification_status: verbatim_confirmed
+paragraph_path:
+  path:
+    - d
+    - '1'
+  anchor: '681.1'
+  derivation: reconstructed
+  confidence: high
+  evidence: >-
+    designator parsed from flat <P> siblings; sequence-tracked. Anchor set to the section number so
+    the path is scoped to its own section — without it a path like ["a"] matches every section in
+    the part.
+context_not_required: >-
+  The paragraph states the duty, its object and its calibration standard in full; § 681.1(d)(2) adds
+  contents and does not qualify the duty itself.
+jurisdiction: US
+jurisdiction_level: federal
+effective_to: null
+supersedes: null
+superseded_by: null
+amendment_history: []
+deadline: null
+exemptions: []
+related:
+  - us.red_flags.681_1.a.scope
+  - us.red_flags.681_1.c.covered_account_determination
+federal_relationship: null
+interpreted_by: []
+common_errors:
+  - >-
+    Assuming every in-scope creditor owes a programme. The duty attaches only to one that offers or
+    maintains covered accounts; without them, only the § 681.1(c) determination is owed.
+  - >-
+    Treating appendix A as mandatory content. § 681.1(f) requires the guidelines to be CONSIDERED
+    and the appropriate ones included, so wholesale adoption and wholesale omission are both
+    unreasoned.
+  - >-
+    Stopping at adoption. The paragraph requires the programme to be developed and implemented, and
+    § 681.1(e) adds board or senior-management approval, training and service-provider oversight as
+    continuing administration.
+open_questions:
+  - >-
+    effective_from is the publication date in § 681.1's own eCFR source note ("[74 FR 22645, May 14,
+    2009, as amended at 77 FR 72715, Dec. 6, 2012]"), which is when the section as quoted was
+    published in its current place. The part-level source note is earlier — "72 FR 63771, Nov. 9,
+    2007" — so an identity-theft programme duty existed before this date in a differently numbered
+    provision, and a query as of a date in 2008 will not reach this atom. Both are Federal Register
+    PUBLICATION dates, not stated effective or mandatory-compliance dates; the source does not give
+    those.
+confidence: high
+subject:
+  domain: II.C.3
+  lifecycle:
+    - I
+regulator:
+  - ftc
+sector:
+  - financial
+  - any creditor
+data_types:
+  - account_information
+  - consumer_information
+status: in_force
+effective_from: '2009-05-14'
+applies_if:
+  all:
+    - entity.is_financial_institution_or_creditor == true
+    - entity.subject_to_ftc_fcra_enforcement == true
+    - entity.offers_or_maintains_covered_accounts == true
+applies_to_role: controller
+obligation_type: secure
+summary: >-
+  A financial institution or creditor that offers or maintains one or more covered accounts must
+  develop and implement a written Identity Theft Prevention Program designed to detect, prevent and
+  mitigate identity theft in connection with the opening of a covered account or any existing
+  covered account.
+requirement_detail: >-
+  THE PROGRAMME DUTY, and its trigger is the covered account rather than the entity type: an
+  in-scope creditor with no covered account owes the § 681.1(c) determination and no programme.
+  Three features of the text carry the analysis. It must be WRITTEN, so an undocumented practice
+  does not comply. It must be both developed AND IMPLEMENTED, which is where enforcement lands — a
+  binder adopted and never run is the characteristic failure. And it is expressly calibrated:
+  appropriate to the size and complexity of the institution and the nature and scope of its
+  activities, which is what makes a one-page programme adequate for a small creditor and inadequate
+  for a large one. The programme's contents are set out in (d)(2), its governance — board approval,
+  senior-management involvement, staff training and oversight of service providers — in (e), and (f)
+  requires the entity to consider the appendix A guidelines and include those that are appropriate,
+  which makes the appendix an input to be reasoned about rather than a checklist to be adopted.
+preemption:
+  posture: express_partial
+  authority: 15 U.S.C. § 1681t
+  note: >-
+    This part implements FCRA § 615(e) (15 U.S.C. 1681m(e)) and sits inside the FCRA framework, so
+    the express and partial preemption map of § 1681t governs whether a given state identity-theft
+    requirement survives. Not resolved on this atom — see the FCRA preemption instrument.
+enforcement:
+  enforcers:
+    - ftc
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: FCRA administrative enforcement (15 U.S.C. 1681s) by the FTC
+    range: null
+    note: >-
+      The part states no penalty figure. § 681.1(a) fixes the enforcement channel by defining the
+      covered population as those subject to FTC administrative enforcement of the FCRA under 15
+      U.S.C. 1681s(a)(1); banks, credit unions and other institutions answer to their own
+      regulators' parallel rules instead.
+  statute_of_limitations: null

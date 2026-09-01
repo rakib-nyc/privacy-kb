@@ -1,0 +1,928 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://privacy-kb/schemas/atom.schema.json",
+ "title": "Obligation atom",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "id",
+  "schema_version",
+  "record_type",
+  "source",
+  "verbatim_span",
+  "verification_status",
+  "subject",
+  "jurisdiction",
+  "jurisdiction_level",
+  "status",
+  "effective_from",
+  "effective_to",
+  "applies_if",
+  "obligation_type",
+  "summary",
+  "requirement_detail",
+  "exemptions",
+  "preemption",
+  "enforcement",
+  "confidence"
+ ],
+ "properties": {
+  "id": {
+   "type": "string",
+   "pattern": "^[a-z]{2}(\\.[a-z0-9_]+)+$"
+  },
+  "schema_version": {
+   "type": "integer",
+   "const": 1
+  },
+  "record_type": {
+   "const": "obligation"
+  },
+  "source": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "citation",
+    "instrument_id",
+    "url",
+    "fetched",
+    "raw_file",
+    "raw_sha256",
+    "format",
+    "risk_tier",
+    "structured_source_check"
+   ],
+   "properties": {
+    "citation": {
+     "type": "string",
+     "minLength": 3
+    },
+    "instrument_id": {
+     "type": "string"
+    },
+    "url": {
+     "type": "string",
+     "format": "uri"
+    },
+    "fetched": {
+     "type": "string",
+     "format": "date"
+    },
+    "raw_file": {
+     "type": "string"
+    },
+    "raw_sha256": {
+     "type": "string",
+     "pattern": "^[0-9a-f]{64}$"
+    },
+    "text_file": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Deterministic text rendering of raw_file, for binary sources (PDF). Gate 3 checks verbatim_span against this when present."
+    },
+    "text_sha256": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "pattern": "^[0-9a-f]{64}$"
+    },
+    "text_extraction_cmd": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "format": {
+     "enum": [
+      "uslm_xml",
+      "ecfr_xml",
+      "openleg_json",
+      "html",
+      "pdf_single_col",
+      "pdf_multi_col",
+      "nyc_xml",
+      "manual"
+     ],
+     "description": "How the primary text was obtained. Structured formats are a HARD preference: a PDF is a rendering of a document, and every transformation of a rendering is a place a quotation can silently drift. See risk_tier."
+    },
+    "risk_tier": {
+     "enum": [
+      "low",
+      "medium",
+      "high"
+     ],
+     "description": "Derived from format: xml/json/html low, pdf_single_col medium, pdf_multi_col high, manual high. CI recomputes it; a mismatch is a gate-1 failure. High tier triggers gate 12 sampling."
+    },
+    "structured_source_check": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "checked",
+      "result"
+     ],
+     "description": "Recorded result of looking for a structured source BEFORE falling back to PDF. A negative result is a finding worth keeping \u2014 it stops the next session repeating the search.",
+     "properties": {
+      "checked": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       },
+       "minItems": 1
+      },
+      "result": {
+       "enum": [
+        "structured_source_used",
+        "no_structured_source_exists",
+        "structured_source_incomplete",
+        "not_applicable"
+       ]
+      },
+      "note": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     }
+    },
+    "render": {
+     "type": [
+      "object",
+      "null"
+     ],
+     "additionalProperties": false,
+     "description": "Structured render parameters. Present for pdf_* sources so gate 11 can drive an INDEPENDENT renderer with identical parameters. Kept structured rather than parsed back out of text_extraction_cmd, which would be fragile.",
+     "properties": {
+      "column": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "pages": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "min_height": {
+       "type": [
+        "number",
+        "null"
+       ]
+      },
+      "drop_re": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "segment_sha256": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "pattern": "^([0-9a-f]{64})$",
+     "description": "sha256 of the SEGMENTATION LEAF this record is anchored to, normalised for whitespace. Not the raw file \u2014 raw_sha256 already covers that, and it does not move when a WALKER changes. This does. A walker fix re-cuts the leaves under every atom over that source, and an atom whose leaf was re-cut is no longer verified against the thing it quotes: N.Y. Penal Law s 250.00 welded subdivisions 1 and 2 into one leaf, and the atom quoting it cited s 250.00(1) while carrying the words of s 250.00(2). Gate 38 compares this against the current segmentation. null means not yet baselined and is skipped with a declared reason."
+    }
+   }
+  },
+  "verbatim_span": {
+   "type": "string",
+   "minLength": 1
+  },
+  "verification_status": {
+   "enum": [
+    "verbatim_confirmed",
+    "secondary_only",
+    "unverified"
+   ]
+  },
+  "jurisdiction": {
+   "type": "string"
+  },
+  "jurisdiction_level": {
+   "enum": [
+    "federal",
+    "state",
+    "local"
+   ]
+  },
+  "regulator": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "sector": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "data_types": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "status": {
+   "enum": [
+    "in_force",
+    "enacted_pending",
+    "proposed",
+    "vetoed",
+    "superseded",
+    "enjoined"
+   ]
+  },
+  "effective_from": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "format": "date"
+  },
+  "effective_to": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "format": "date"
+  },
+  "supersedes": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "superseded_by": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "amendment_history": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "date",
+     "note",
+     "source_url"
+    ],
+    "properties": {
+     "date": {
+      "type": "string",
+      "format": "date"
+     },
+     "note": {
+      "type": "string"
+     },
+     "source_url": {
+      "type": "string",
+      "format": "uri"
+     }
+    }
+   }
+  },
+  "applies_if": {
+   "type": "object",
+   "minProperties": 1
+  },
+  "applies_to_role": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "obligation_type": {
+   "enum": [
+    "notify",
+    "disclose",
+    "obtain_consent",
+    "restrict_use",
+    "secure",
+    "retain",
+    "delete",
+    "contract",
+    "assess",
+    "register",
+    "train",
+    "prohibit"
+   ]
+  },
+  "summary": {
+   "type": "string",
+   "minLength": 10
+  },
+  "requirement_detail": {
+   "type": "string",
+   "minLength": 10
+  },
+  "deadline": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "additionalProperties": false,
+   "required": [
+    "trigger_event",
+    "duration",
+    "computation"
+   ],
+   "properties": {
+    "trigger_event": {
+     "type": "string"
+    },
+    "duration": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "value",
+      "unit"
+     ],
+     "properties": {
+      "value": {
+       "type": "number"
+      },
+      "unit": {
+       "enum": [
+        "calendar_days",
+        "business_days",
+        "months",
+        "years",
+        "hours"
+       ]
+      }
+     }
+    },
+    "computation": {
+     "type": "string"
+    },
+    "tolling": {
+     "type": "array"
+    }
+   }
+  },
+  "exemptions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "id",
+     "type",
+     "scope",
+     "source_citation",
+     "verbatim_span",
+     "applies_if"
+    ],
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "type": {
+      "enum": [
+       "entity_level",
+       "data_level",
+       "activity_level",
+       "size_threshold",
+       "temporal"
+      ]
+     },
+     "scope": {
+      "type": "string",
+      "minLength": 10
+     },
+     "source_citation": {
+      "type": "string"
+     },
+     "verbatim_span": {
+      "type": "string",
+      "minLength": 1
+     },
+     "burden_of_proof": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "applies_if": {
+      "type": "object",
+      "minProperties": 1,
+      "description": "Boolean expression over EntityFacts/DataFacts, same grammar as the atom's own applies_if. WITHOUT THIS THE EXEMPTION IS INERT: engine/exemptions.mjs evaluates it, and an exemption with no predicate returns UNKNOWN and is never applied. Gate 21 flags any exemption lacking one."
+     },
+     "source_ref": {
+      "type": [
+       "object",
+       "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+       "raw_file",
+       "raw_sha256",
+       "instrument_id"
+      ],
+      "description": "The document this exemption's verbatim_span was quoted from, when it is NOT the atom's own source. Absent means the atom's source. Gate 3 verifies the span against this file and gate 2 hashes it. Exists because an exemption is routinely DEFINED somewhere other than the provision it qualifies: 45 C.F.R. 164.502(a) is obligated in part 164 and excepted by the definition of 'protected health information' in part 160. Without it the canonical entity-level/data-level case cannot be recorded at all.",
+      "properties": {
+       "raw_file": {
+        "type": "string"
+       },
+       "raw_sha256": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+       },
+       "instrument_id": {
+        "type": "string"
+       }
+      }
+     },
+     "reach": {
+      "enum": [
+       "instrument",
+       "obligation"
+      ],
+      "description": "How far entity-level relief extends, and it is the difference between two pieces of advice a lawyer acts on differently. 'instrument' means the entity is outside this instrument altogether and has no compliance programme to build (16 C.F.R. 313.1(b)). 'obligation' means the entity is FULLY COVERED and merely does not owe THIS duty -- it still has every other notice, opt out and restriction in the instrument (16 C.F.R. 313.5(e)(1)). Both are entity_level and the type alone cannot tell them apart, which made the engine's explanation false for the second. data_level and activity_level take no reach: they carve out records or conduct, never a duty."
+     }
+    },
+    "allOf": [
+     {
+      "if": {
+       "properties": {
+        "type": {
+         "enum": [
+          "entity_level",
+          "size_threshold"
+         ]
+        }
+       },
+       "required": [
+        "type"
+       ]
+      },
+      "then": {
+       "required": [
+        "reach"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "preemption": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "posture"
+   ],
+   "properties": {
+    "posture": {
+     "enum": [
+      "floor",
+      "ceiling",
+      "field",
+      "express_partial",
+      "none"
+     ]
+    },
+    "authority": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "note": {
+     "type": [
+      "string",
+      "null"
+     ]
+    }
+   }
+  },
+  "enforcement": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "enforcers",
+    "private_right_of_action"
+   ],
+   "properties": {
+    "enforcers": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    },
+    "private_right_of_action": {
+     "type": "boolean"
+    },
+    "penalty": {
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "statute_of_limitations": {
+     "type": [
+      "string",
+      "null"
+     ]
+    }
+   }
+  },
+  "related": {
+   "type": "array"
+  },
+  "federal_relationship": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "enum": [
+    "gap_fills",
+    "exceeds_floor",
+    "mirrors",
+    "independent",
+    null
+   ]
+  },
+  "interpreted_by": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "id",
+     "citation",
+     "authority_tier",
+     "issuer",
+     "issued",
+     "verbatim_span",
+     "effect",
+     "effect_note",
+     "binding",
+     "source_ref"
+    ],
+    "description": "Guidance, an enforcement action, or a case that INTERPRETS this obligation without being it. Invariant I7: agency guidance materially changes advice and must be surfaced separately, never blended into a statutory citation. The field was an unconstrained array and unused across the whole corpus -- a slot that reads as analysis while holding nothing checkable, which is the DEBT-009 shape. It now carries a source_ref of the same shape gates 2 and 3 already verify, so an interpretation must quote a document the corpus actually holds.",
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "citation": {
+      "type": "string"
+     },
+     "authority_tier": {
+      "enum": [
+       "agency_guidance",
+       "enforcement_action",
+       "case_law"
+      ],
+      "description": "Never 'statute' or 'regulation'. If it were either, it would be an atom."
+     },
+     "issuer": {
+      "type": "string"
+     },
+     "issued": {
+      "type": "string",
+      "format": "date"
+     },
+     "verbatim_span": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Quoted from the interpreting document and checked by gate 3 in its own right."
+     },
+     "effect": {
+      "enum": [
+       "narrows",
+       "broadens",
+       "clarifies",
+       "enforcement_posture",
+       "compliance_pathway"
+      ],
+      "description": "What it DOES to the obligation. 'enforcement_posture' is the one that most changes advice and least changes law: an announced exercise of discretion is not a safe harbour and does not alter the duty."
+     },
+     "effect_note": {
+      "type": "string",
+      "minLength": 10
+     },
+     "binding": {
+      "const": false,
+      "description": "Always false. A binding instrument is an atom, not an interpretation of one."
+     },
+     "source_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "raw_file",
+       "raw_sha256",
+       "instrument_id"
+      ],
+      "properties": {
+       "raw_file": {
+        "type": "string"
+       },
+       "raw_sha256": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+       },
+       "instrument_id": {
+        "type": "string"
+       }
+      }
+     }
+    }
+   },
+   "description": "Guidance, an enforcement action, or a case that INTERPRETS this obligation without being it. Invariant I7: agency guidance materially changes advice and must be surfaced separately, never blended into a statutory citation. The field was an unconstrained array and unused across the whole corpus -- a slot that reads as analysis while holding nothing checkable, which is the DEBT-009 shape. It now carries a source_ref of the same shape gates 2 and 3 already verify, so an interpretation must quote a document the corpus actually holds."
+  },
+  "common_errors": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "open_questions": {
+   "type": "array"
+  },
+  "confidence": {
+   "enum": [
+    "high",
+    "medium",
+    "low"
+   ]
+  },
+  "source_defects": {
+   "type": "array",
+   "description": "Errors in the source AS PUBLISHED. as_published and apparent_intent are separate keys on purpose: it is structurally impossible for a correction to leak into verbatim_span.",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "type",
+     "as_published",
+     "evidence"
+    ],
+    "properties": {
+     "type": {
+      "enum": [
+       "cross_reference",
+       "numbering",
+       "typo",
+       "internal_inconsistency"
+      ]
+     },
+     "as_published": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Verbatim. Never corrected."
+     },
+     "apparent_intent": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "INFERENCE. Labelled as such. Never authoritative, never substituted for the text."
+     },
+     "evidence": {
+      "type": "string",
+      "minLength": 10
+     }
+    }
+   }
+  },
+  "derived_from": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "additionalProperties": false,
+   "required": [
+    "record_id",
+    "relationship"
+   ],
+   "description": "The record this one descends from textually. Drives tools/ancestry-diff.mjs, which flags differences too small to be real legal change \u2014 punctuation-only, marker-position-only, whitespace-only, or inside a subparagraph label. Those are extraction artefacts, not amendments.",
+   "properties": {
+    "record_id": {
+     "type": "string"
+    },
+    "relationship": {
+     "enum": [
+      "restatement",
+      "amendment",
+      "adaptation",
+      "model_act_adoption",
+      "implementation"
+     ]
+    },
+    "note": {
+     "type": [
+      "string",
+      "null"
+     ]
+    }
+   }
+  },
+  "scope_justification": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "minLength": 20,
+   "description": "Required (gate 13) when subject.domain is competency-level or absent. Without it the taxonomy-as-coverage-checklist discipline erodes one reasonable exception at a time."
+  },
+  "span_interruptions": {
+   "type": "array",
+   "description": "Apparatus that interrupts the operative text mid-span, recorded rather than silently deleted. Each entry is an offset into verbatim_span, the exact excluded characters, and what kind of apparatus it is. CI gate 3 REBUILDS the raw substring by re-inserting every entry at its offset and requires the result to appear in the source. That makes the removal mechanically reversible: the operative words cannot be edited without breaking reconstruction. Prefer choosing span boundaries that avoid apparatus. Use this only where operative text is unavoidably interrupted, because splitting the span would lose the fact that it is one sentence.",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "offset",
+     "excluded_text",
+     "kind"
+    ],
+    "properties": {
+     "offset": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Character index into verbatim_span at which the excluded text sat."
+     },
+     "excluded_text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Exact characters removed. Verbatim. Never normalised."
+     },
+     "kind": {
+      "enum": [
+       "footnote_ref",
+       "footnote_text",
+       "page_number",
+       "running_head",
+       "running_foot",
+       "line_number",
+       "column_rule",
+       "revision_bar",
+       "watermark",
+       "editorial_bracket"
+      ]
+     },
+     "note": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    }
+   }
+  },
+  "paragraph_path": {
+   "$ref": "#/$defs/paragraph_path"
+  },
+  "operative_context": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/operative_context_entry"
+   },
+   "description": "Ordered, outermost first. Order is not cosmetic: 15 U.S.C. s 1681c(a)(6)(A) needs three levels, and dropping the (a) chapeau turns an exception-to-a-prohibition into a freestanding requirement. Deliberately NOT called a stem \u2014 context can follow as well as precede."
+  },
+  "context_not_required": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "minLength": 20,
+   "description": "Escape hatch for gate 18: a stated reason why a nested atom needs no context. A reason, never a boolean, so the judgement is on the record."
+  },
+  "no_deadline_stated": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Required by gate 7 when obligation_type is notify and the source fixes NO period. A notice duty without a statutory clock is real \u2014 15 U.S.C. 1681m(a) is one \u2014 and inventing a deadline to satisfy a gate would be fabrication one field over from verbatim_span. State where you looked, so the absence is a finding rather than an omission."
+  },
+  "subject": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "domain"
+   ],
+   "properties": {
+    "domain": {
+     "type": "string",
+     "pattern": "^(I|II|III|IV|V)\\.[A-E]\\.[0-9]+$"
+    },
+    "lifecycle": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ },
+ "$defs": {
+  "paragraph_path": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "path",
+    "derivation",
+    "confidence",
+    "evidence"
+   ],
+   "description": "Where this text sits in the enacted hierarchy. In USLM the path is READ from identifier attributes; in eCFR it is RECONSTRUCTED from designators parsed out of flat <P> siblings, because eCFR carries no element nesting below the section. Same field, incomparable reliability \u2014 which is why derivation is recorded rather than assumed.",
+   "properties": {
+    "path": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 0,
+     "description": "Designators outermost-first, relative to the section: subsection (a) is [\"a\"], (a)(6)(A) is [\"a\",\"6\",\"A\"]. An EMPTY array is the section root itself, which is what a section-level chapeau has \u2014 see DEBT-005. minItems is 0 for exactly that reason."
+    },
+    "anchor": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "The source's own element identifier, where it has one (USLM identifier=, eCFR N=). Gate 17 checks this against the non-operative regions of the source."
+    },
+    "derivation": {
+     "enum": [
+      "structural",
+      "reconstructed"
+     ],
+     "description": "structural = transcribed from a publisher assertion. reconstructed = inferred by this repo from designator text; eCFR only."
+    },
+    "confidence": {
+     "enum": [
+      "high",
+      "low"
+     ],
+     "description": "structural is always high. reconstructed is low wherever a designator's level is ambiguous in context \u2014 the eCFR (i) case, where (i) is both letter-nine and roman-one. Low REFUSES the atom (gate 16)."
+    },
+    "evidence": {
+     "type": "string",
+     "minLength": 10,
+     "description": "How the path was determined. For structural, the attribute and element type. For reconstructed, the sequence reasoning."
+    }
+   }
+  },
+  "operative_context_entry": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "position",
+    "relation",
+    "verbatim_span",
+    "path"
+   ],
+   "properties": {
+    "position": {
+     "enum": [
+      "precedes",
+      "follows"
+     ],
+     "description": "Context is bidirectional. USLM <continuation> puts the operative consequence AFTER the enumerated list \u2014 the chapeau is the 'if' and the continuation is the 'then'. 468 instances in title 15 alone."
+    },
+    "relation": {
+     "enum": [
+      "scopes",
+      "excepts",
+      "concludes",
+      "conditions",
+      "other"
+     ]
+    },
+    "relation_note": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Required when relation is 'other'. A missing enum value should be a recorded gap, not a silent mis-fit."
+    },
+    "verbatim_span": {
+     "type": "string",
+     "minLength": 1,
+     "description": "Context is quoted law, not annotation. Gate 3 verifies it in its own right."
+    },
+    "citation": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "path": {
+     "$ref": "#/$defs/paragraph_path"
+    }
+   }
+  }
+ }
+}

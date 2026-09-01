@@ -1,0 +1,977 @@
+{
+ "label": "15 U.S.C. \u00a7 1681t",
+ "url": "https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip",
+ "format": "uslm_xml",
+ "positive_law": false,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/fcra-preemption/raw/15-u-s-c-1681t.xml",
+ "raw_sha256": "5c20b842e91b5d0aa63b2564c2bedd47f11f7b7973e1e764ff34c1de861f99f8",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": "/us/usc/t15/s1681t/a",
+   "heading": "In general",
+   "text": "Except as provided in subsections (b) and (c), this subchapter does not annul, alter, affect, or exempt any person subject to the provisions of this subchapter from complying with the laws of any State with respect to the collection, distribution, or use of any information on consumers, or for the prevention or mitigation of identity theft, except to the extent that those laws are inconsistent with any provision of this subchapter, and then only to the extent of the inconsistency.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/1/A",
+   "heading": "",
+   "text": "subsection (c) or (e) of section 1681b of this title , relating to the prescreening of consumer reports;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to any subject matter regulated under\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/1/B",
+   "heading": "",
+   "text": "section 1681i of this title , relating to the time by which a consumer reporting agency must take any action, including the provision of notification to a consumer or other person, in any procedure related to the disputed accuracy of information in a consumer\u2019s file, except that this subparagraph shall not apply to any State law in effect on September 30, 1996 ;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to any subject matter regulated under\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/1/C",
+   "heading": "",
+   "text": "subsections (a) and (b) of section 1681m of this title , relating to the duties of a person who takes any adverse action with respect to a consumer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to any subject matter regulated under\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "D"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/1/D",
+   "heading": "",
+   "text": "section 1681m(d) of this title , relating to the duties of persons who use a consumer report of a consumer in connection with any credit or insurance transaction that is not initiated by the consumer and that consists of a firm offer of credit or insurance;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to any subject matter regulated under\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "E"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/1/E",
+   "heading": "",
+   "text": "section 1681c of this title , relating to information contained in consumer reports, except that this subparagraph shall not apply to any State law in effect on September 30, 1996 ;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to any subject matter regulated under\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "F",
+    "i"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/1/F/i",
+   "heading": "",
+   "text": "with respect to section 54A(a) of chapter 93 of the Massachusetts Annotated Laws (as in effect on September 30, 1996 ); or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to any subject matter regulated under\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/1"
+    },
+    {
+     "position": "precedes",
+     "text": "section 1681s\u20132 of this title , relating to the responsibilities of persons who furnish information to consumer reporting agencies, except that this paragraph shall not apply\u2014",
+     "path": [
+      "b",
+      "1",
+      "F"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/1/F"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "F",
+    "ii"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/1/F/ii",
+   "heading": "",
+   "text": "with respect to section 1785.25(a) of the California Civil Code (as in effect on September 30, 1996 );",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to any subject matter regulated under\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/1"
+    },
+    {
+     "position": "precedes",
+     "text": "section 1681s\u20132 of this title , relating to the responsibilities of persons who furnish information to consumer reporting agencies, except that this paragraph shall not apply\u2014",
+     "path": [
+      "b",
+      "1",
+      "F"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/1/F"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "G"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/1/G",
+   "heading": "",
+   "text": "section 1681g(e) of this title , relating to information available to victims under section 1681g(e) of this title ;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to any subject matter regulated under\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "H"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/1/H",
+   "heading": "",
+   "text": "section 1681s\u20133 of this title , relating to the exchange and use of information to make a solicitation for marketing purposes;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to any subject matter regulated under\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "I"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/1/I",
+   "heading": "",
+   "text": "section 1681m(h) of this title , relating to the duties of users of consumer reports to provide notice with respect to terms in certain credit transactions;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to any subject matter regulated under\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "J"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/1/J",
+   "heading": "",
+   "text": "subsections (i) and (j) of section 1681c\u20131 of this title relating to security freezes; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to any subject matter regulated under\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "K"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/1/K",
+   "heading": "",
+   "text": "subsection (k) of section 1681c\u20131 of this title , relating to credit monitoring for active duty military consumers, as defined in that subsection;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to any subject matter regulated under\u2014",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/1"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/2",
+   "heading": "",
+   "text": "with respect to the exchange of information among persons affiliated by common ownership or common corporate control, except that this paragraph shall not apply with respect to subsection (a) or (c)(1) of section 2480e of title 9 , Vermont Statutes Annotated (as in effect on September 30, 1996 );",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/3/A",
+   "heading": "",
+   "text": "shall not apply with respect to sections 1785.10, 1785.16, and 1785.20.2 of the California Civil Code (as in effect on December 4, 2003 ) and section 1785.15 through section 1785.15.2 of such Code (as in effect on such date);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the disclosures required to be made under subsection (c), (d), (e), or (g) of section 1681g of this title , or subsection (f) of section 1681g of this title relating to the disclosure of credit scores for credit granting purposes, except that this paragraph\u2014",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/3/B",
+   "heading": "",
+   "text": "shall not apply with respect to sections 5\u20133\u2013106(2) and 212\u201314.3\u2013104.3 of the Colorado Revised Statutes (as in effect on December 4, 2003 ); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the disclosures required to be made under subsection (c), (d), (e), or (g) of section 1681g of this title , or subsection (f) of section 1681g of this title relating to the disclosure of credit scores for credit granting purposes, except that this paragraph\u2014",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/3/C",
+   "heading": "",
+   "text": "shall not be construed as limiting, annulling, affecting, or superseding any provision of the laws of any State regulating the use in an insurance activity, or regulating disclosures concerning such use, of a credit-based insurance score of a consumer by any person engaged in the business of insurance;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the disclosures required to be made under subsection (c), (d), (e), or (g) of section 1681g of this title , or subsection (f) of section 1681g of this title relating to the disclosure of credit scores for credit granting purposes, except that this paragraph\u2014",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/3"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/4/A",
+   "heading": "",
+   "text": "with respect to section 12\u201314.3\u2013105(1)(d) of the Colorado Revised Statutes (as in effect on December 4, 2003 );",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the frequency of any disclosure under section 1681j(a) of this title , except that this paragraph shall not apply\u2014",
+     "path": [
+      "b",
+      "4"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/4/B",
+   "heading": "",
+   "text": "with respect to section 10\u20131\u2013393(29)(C) of the Georgia Code (as in effect on December 4, 2003 );",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the frequency of any disclosure under section 1681j(a) of this title , except that this paragraph shall not apply\u2014",
+     "path": [
+      "b",
+      "4"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/4/C",
+   "heading": "",
+   "text": "with respect to section 1316.2 of title 10 of the Maine Revised Statutes (as in effect on December 4, 2003 );",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the frequency of any disclosure under section 1681j(a) of this title , except that this paragraph shall not apply\u2014",
+     "path": [
+      "b",
+      "4"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4",
+    "D"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/4/D",
+   "heading": "",
+   "text": "with respect to sections 14\u20131209(a)(1) and 14\u20131209(b)(1)(i) of the Commercial Law Article of the Code of Maryland (as in effect on December 4, 2003 );",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the frequency of any disclosure under section 1681j(a) of this title , except that this paragraph shall not apply\u2014",
+     "path": [
+      "b",
+      "4"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4",
+    "E"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/4/E",
+   "heading": "",
+   "text": "with respect to section 59(d) and section 59(e) of chapter 93 of the General Laws of Massachusetts (as in effect on December 4, 2003 );",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the frequency of any disclosure under section 1681j(a) of this title , except that this paragraph shall not apply\u2014",
+     "path": [
+      "b",
+      "4"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4",
+    "F"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/4/F",
+   "heading": "",
+   "text": "with respect to section 56:11\u201337.10(a)(1) of the New Jersey Revised Statutes (as in effect on December 4, 2003 ); or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the frequency of any disclosure under section 1681j(a) of this title , except that this paragraph shall not apply\u2014",
+     "path": [
+      "b",
+      "4"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4",
+    "G"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/4/G",
+   "heading": "",
+   "text": "with respect to section 2480c(a)(1) of title 9 of the Vermont Statutes Annotated (as in effect on December 4, 2003 ); or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the frequency of any disclosure under section 1681j(a) of this title , except that this paragraph shall not apply\u2014",
+     "path": [
+      "b",
+      "4"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/4"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "A"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/5/A",
+   "heading": "",
+   "text": "section 1681c(g) of this title ;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the conduct required by the specific provisions of\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "B"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/5/B",
+   "heading": "",
+   "text": "section 1681c\u20131 of this title ;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the conduct required by the specific provisions of\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "C"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/5/C",
+   "heading": "",
+   "text": "section 1681c\u20132 of this title ;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the conduct required by the specific provisions of\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "D"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/5/D",
+   "heading": "",
+   "text": "section 1681g(a)(1)(A) of this title ;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the conduct required by the specific provisions of\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "E"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/5/E",
+   "heading": "",
+   "text": "section 1681j(a) of this title ;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the conduct required by the specific provisions of\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "F"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/5/F",
+   "heading": "",
+   "text": "subsections (e), (f), and (g) of section 1681m of this title ;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the conduct required by the specific provisions of\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "G"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/5/G",
+   "heading": "",
+   "text": "section 1681s(f) of this title ;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the conduct required by the specific provisions of\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "H"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/5/H",
+   "heading": "",
+   "text": "section 1681s\u20132(a)(6) of this title ; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the conduct required by the specific provisions of\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5",
+    "I"
+   ],
+   "anchor": "/us/usc/t15/s1681t/b/5/I",
+   "heading": "",
+   "text": "section 1681w of this title .",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "No requirement or prohibition may be imposed under the laws of any State\u2014",
+     "path": [
+      "b"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b"
+    },
+    {
+     "position": "precedes",
+     "text": "with respect to the conduct required by the specific provisions of\u2014",
+     "path": [
+      "b",
+      "5"
+     ],
+     "anchor": "/us/usc/t15/s1681t/b/5"
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": "/us/usc/t15/s1681t/c",
+   "heading": "\u201cFirm offer of credit or insurance\u201d defined",
+   "text": "Notwithstanding any definition of the term \u201cfirm offer of credit or insurance\u201d (or any equivalent term) under the laws of any State, the definition of that term contained in section 1681a( l ) of this title shall be construed to apply in the enforcement and interpretation of the laws of any State governing consumer reports.",
+   "context": []
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": "/us/usc/t15/s1681t/d",
+   "heading": "Limitations",
+   "text": "Subsections (b) and (c) do not affect any settlement, agreement, or consent judgment between any State Attorney General and any consumer reporting agency in effect on September 30, 1996 .",
+   "context": []
+  }
+ ]
+}
