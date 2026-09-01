@@ -1,0 +1,41 @@
+# RATCHETS, AND WHAT IT COSTS TO MOVE ONE
+# ======================================
+# Three gates carry a threshold rather than a rule: gate 8 (eval scenario count and pass rate),
+# gate 34 (taxonomy leaves neither covered nor ruled out of scope), gate 35 (quoted phrases in
+# analysis prose that do not appear in the text they cite). Each is a RATCHET — it is supposed to
+# move in one direction only.
+#
+# Red-teaming 0.1 found the weakness: all three thresholds live in editable places (a key in
+# coverage.yaml, a literal in validate.mjs, a regenerable baseline.json) and NOTHING required a
+# reason when one moved the wrong way. The gates caught silent regression; they did not catch a
+# deliberate, undocumented relaxation, which is the easier mistake to make under deadline.
+#
+# So the declared value lives here, gate 42 asserts the live value matches it, and moving a
+# ratchet the wrong way now means editing this file — a diff with a reason in it.
+version: 1
+ratchets:
+  gate_34_unaccounted_taxonomy_leaves:
+    value: 38
+    direction: down
+    source: meta/coverage.yaml unaccounted_allowance
+    last_moved: '2026-08-31'
+    last_move_direction: up
+    reason: >-
+      Removing the third-party framework records under DEC-008 left two leaves (I.B.4, I.C.7) with
+      no atoms, so the count rose 36 -> 38. Raised once, deliberately. It resumes falling.
+  gate_35_unmatched_quoted_phrases:
+    value: 24
+    direction: down
+    source: tools/validate.mjs const ALLOW
+    last_moved: '2026-08-20'
+    last_move_direction: down
+    reason: Ratcheted 25 -> 24 as the health-tension trio landed clean.
+  gate_8_eval_scenarios:
+    value: 30
+    direction: up
+    source: evals/baseline.json scenarios
+    last_moved: '2026-08-31'
+    last_move_direction: down
+    reason: >-
+      Three scenarios asserted over records removed under DEC-008 and a fourth was narrowed;
+      31 -> 30. Rebaselined deliberately, recorded in DEC-008.

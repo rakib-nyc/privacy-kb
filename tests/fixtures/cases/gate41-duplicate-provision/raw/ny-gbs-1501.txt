@@ -1,0 +1,62 @@
+* § 1501. Prohibition of addictive feeds. 1. It shall be unlawful for
+a covered operator to provide an addictive feed to a covered user
+unless:
+  (a) the covered operator has used commercially reasonable and
+technically feasible methods to determine that the covered user is not a
+covered minor; or
+  (b) the covered operator has obtained verifiable parental consent to
+provide an addictive feed to a covered minor.
+  2. (a) The attorney general shall promulgate regulations identifying
+commercially reasonable and technically feasible methods for covered
+operators to determine if a covered user is a covered minor required
+pursuant to subdivision one of this section, and any exceptions thereto.
+  (b) In promulgating such regulations, the attorney general shall
+consider the size, financial resources, and technical capabilities of
+the addictive social media platform, the costs and effectiveness of
+available age determination techniques for users of the addictive social
+media platform, the audience of the addictive social media platform,
+prevalent practices of the industry of the covered operator, and the
+impact of the age determination techniques on the covered users' safety,
+utility, and experience.
+  (c) Such regulations shall also identify the appropriate levels of
+accuracy that would be commercially reasonable and technically feasible
+for covered operators to achieve in determining whether a covered user
+is a covered minor. Such regulations shall set forth multiple
+commercially reasonable and technically feasible methods for a covered
+operator to determine if a covered user is a covered minor, including at
+least one method that either does not rely solely on government issued
+identification or that allows a covered user to maintain anonymity as to
+the covered operator of the addictive social media platform.
+  (d) Where a covered operator has used commercially reasonable and
+technically feasible age determination methods in compliance with such
+regulations and has not determined that a covered user is a covered
+minor, the covered operator shall operate under the presumption that the
+covered user is not a covered minor for the purposes of this article,
+unless it obtains actual knowledge that the covered user is a covered
+minor.
+  3. Information collected for the purpose of determining a covered
+user's age under paragraph (a) of subdivision one of this section shall
+not be used for any purpose other than age determination and shall be
+deleted immediately after an attempt to determine a covered user's age,
+except where necessary for compliance with any applicable provisions of
+New York state or federal law or regulation.
+  4. The attorney general shall promulgate regulations identifying
+methods of obtaining verifiable parental consent pursuant to paragraph
+(b) of subdivision one of this section and section fifteen hundred two
+of this article.
+  5. Information collected for the purpose of obtaining such verifiable
+parental consent shall not be used for any purpose other than obtaining
+verifiable parental consent and shall be deleted immediately after an
+attempt to obtain verifiable parental consent, except where necessary
+for compliance with any applicable provisions of New York state or
+federal law or regulation.
+  6. Nothing in this section shall be construed as requiring any
+operator to give a parent who grants verifiable parental consent any
+additional or special access to or control over the data or accounts of
+their child.
+  7. Nothing in this section shall be construed as preventing any action
+taken in good faith to restrict access to or availability of media that
+the covered operator considers to be obscene, lewd, lascivious, filthy,
+excessively violent, harassing, or otherwise objectionable, whether or
+not such material is constitutionally protected.
+  * NB Effective January 25, 2027

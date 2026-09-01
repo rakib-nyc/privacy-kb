@@ -234,7 +234,11 @@
    "format": "date"
   },
   "amendment_history": {
-   "type": "array"
+   "type": "array",
+   "items": {
+    "type": "object"
+   },
+   "description": "Item shape constrained: an unconstrained array accepted arbitrary objects that every gate then silently ignored, so a cross-reference could point at nothing and read as recorded."
   },
   "summary": {
    "type": "string",
@@ -267,7 +271,32 @@
    }
   },
   "related": {
-   "type": "array"
+   "type": "array",
+   "items": {
+    "anyOf": [
+     {
+      "type": "string",
+      "minLength": 3
+     },
+     {
+      "type": "object",
+      "required": [
+       "id"
+      ],
+      "properties": {
+       "id": {
+        "type": "string",
+        "minLength": 3
+       },
+       "relation": {
+        "type": "string"
+       }
+      },
+      "additionalProperties": false
+     }
+    ],
+    "description": "A record id, or {id, relation} when the nature of the link matters. Constrained because an unconstrained array accepted arbitrary objects that gate 10 then silently skipped \u2014 a cross-reference pointing at nothing while reading as recorded."
+   }
   },
   "common_errors": {
    "type": "array",
@@ -276,7 +305,12 @@
    }
   },
   "open_questions": {
-   "type": "array"
+   "type": "array",
+   "items": {
+    "type": "string",
+    "minLength": 10
+   },
+   "description": "Item shape constrained: an unconstrained array accepted arbitrary objects that every gate then silently ignored, so a cross-reference could point at nothing and read as recorded."
   },
   "confidence": {
    "enum": [
@@ -633,6 +667,14 @@
      }
     }
    }
+  },
+  "span_truncation_note": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "minLength": 20,
+   "description": "Why this span stops short of a qualifying clause in its own provision. Required by gate 40 when it does. A deliberate truncation is a decision; a silent one reverses the rule."
   }
  },
  "$defs": {

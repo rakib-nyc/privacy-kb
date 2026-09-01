@@ -45,6 +45,7 @@ gate23-phantom-path:
 gate23-unique-path: []
 gate24-instrument-reach-gap:
 - 24
+- 41
 gate25-undeclared-jurisdiction:
 - 25
 gate26-adhoc-concept:
@@ -104,3 +105,11 @@ nonvacuity3-collapsed-haystack:
 - 3
 - 14
 pass: []
+gate39-span-cites-other-provision:
+- 39
+gate40-truncated-before-qualifier:
+- 40
+gate38-stale-segment-anchor:
+- 38
+gate41-duplicate-provision:
+- 41

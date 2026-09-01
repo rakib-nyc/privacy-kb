@@ -25,9 +25,9 @@ is the honest remaining work.
 | Verified | 244 `verbatim_confirmed` · 4 suppressed by invariant I1 and unreachable from any output |
 | Instruments | 54 declared · **53 complete** against their declared duty categories |
 | taxonomy leaves covered | 31 / 69 · 38 neither covered nor ruled out of scope, and gate 34 ratchets that number |
-| CI gates | **38**, all named, 51 fixtures — one fixture per gate, each tripping exactly the gate it names |
+| CI gates | **42**, all named · 55 fixtures · 31 gates fixture-exercised, 11 declared unexercisable in `tests/fixtures/no-fixture.yaml` and why |
 | Walker assumptions | 13 declared, 13 with an executable test |
-| Engine | 7 modules, property tests including both halves of invariant I6 |
+| Engine | 7 modules · 7 property tests, including both halves of invariant I6, as-of validation, and totality of every entry point |
 | MCP server | 9 tools, 22 tests including a live stdio handshake |
 | Workflows | 4 lifecycle-indexed, 26 tests |
 | Eval scenarios | 30, all-pass baseline enforced by gate 8 |
@@ -53,6 +53,23 @@ than kept as unverifiable shells — see `meta/decisions.yaml` DEC-008.
 
 Everything the corpus quotes is US, New York or New York City legal text: government edicts,
 which carry no copyright.
+
+### What was found by attacking it
+
+0.2 is 0.1 after a red-team pass. Sixteen findings, and the ones that mattered were not crashes —
+they were records that were **verbatim, uniquely cited, internally consistent and wrong**:
+
+- A span could quote § 1501(5) while citing § 1501(1). Every one of the 38 gates passed it,
+  because each checked the span against the *document*, the path against the *segmentation*, and
+  the path against the *citation* — and none checked the span against **its own path**. Now gate 39.
+- A span cut one word before `unless` is genuinely verbatim and states the opposite rule. Now gate 40.
+- `as_of` was required but never validated. Comparisons are string comparisons, so `'not-a-date'`
+  sorted above every ISO date and *widened* the answer: 5 obligations for a real date, 7 for
+  garbage — the extra two being law that does not bind until 2027.
+- **Gate 22 did not exist.** It sat in the gate list with no implementation, reporting
+  examined-nothing on every run. It is now the check that no gate can be listed and unimplemented.
+
+Each finding has a gate, a fixture or a property test, and the attacks are replayable.
 
 ## Architecture
 
@@ -508,7 +525,7 @@ mode. The OECD records moved from PDF to the official HTML rendering for exactly
 ```
 meta/           taxonomy transcriptions, source ledger, drift register, raw taxonomy PDFs
 schemas/        JSON Schema for the atom
-tools/          fetch harness, CI gates, gate self-tests, taxonomy geometry verifier
+tools/          fetch harness, CI gates, gate self-tests, fact-key vocabulary
 tests/fixtures/ one atom per gate, each built to fail
 corpus/         obligation atoms — empty, Phase 1
 engine/         deterministic solver — empty, Phase 2

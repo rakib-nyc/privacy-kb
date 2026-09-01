@@ -13,10 +13,29 @@ import { coverageFor, instrumentCoverage } from './coverage.mjs';
 
 export function analyze(entity = {}, data = {}, context = {}) {
   const as_of = context.as_of;
-  if (!as_of) {
-    // Invariant I2: as_of is required and has NO default. Defaulting to today would make
-    // the same query return different law on different days with no record of why.
-    return { error: 'context.as_of is required. There is no "current law" — only law as of a date.',
+  // Invariant I2: as_of is required and has NO default. Defaulting to today would make
+  // the same query return different law on different days with no record of why.
+  //
+  // IT MUST ALSO BE A REAL DATE, AND THAT IS NOT THE SAME CHECK. Every date comparison in this
+  // engine is a STRING comparison — `a.effective_from > as_of` — which is correct and fast for
+  // well-formed ISO dates and silently wrong for anything else. 'not-a-date' sorts above every
+  // date beginning with a digit, so EVERY record reads as in force: the same facts returned 5
+  // obligations for '2026-01-01' and 7 for 'not-a-date', the extra two being law that does not
+  // bind until 2027. A typo widened the answer instead of failing it, which is the confident-
+  // wrong direction this whole system is built to refuse.
+  const shaped = typeof as_of === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(as_of);
+  const real = shaped && (() => {
+    const [y, m, d] = as_of.split('-').map(Number);
+    const dt = new Date(Date.UTC(y, m - 1, d));
+    return dt.getUTCFullYear() === y && dt.getUTCMonth() === m - 1 && dt.getUTCDate() === d;
+  })();
+  if (!as_of || !real) {
+    const why = !as_of
+      ? 'context.as_of is required. There is no "current law" — only law as of a date.'
+      : `context.as_of must be a real calendar date as YYYY-MM-DD. Received ${JSON.stringify(as_of)}. ` +
+        `Date comparisons here are string comparisons, so a malformed value does not fail — it ` +
+        `sorts above every real date and reports not-yet-effective law as in force.`;
+    return { error: why,
              as_of: null, applicable: [], exempt: [], not_applicable: [], preemption_notes: [],
              backstops: [], obligations: [], deadlines: [], enforcement_summary: [],
              pending_watch: [], coverage_gaps: [], unverified_excluded: [], unknown_facts: [] };

@@ -1,0 +1,165 @@
+amendment_history: []
+applies_if:
+  all:
+  - entity.is_ny_addictive_platform_operator == true
+  - practice.provides_addictive_feed == true
+applies_to_role: controller
+common_errors:
+- Treating this as in force. It is not. The article takes effect 25 January 2027 and the Attorney General
+  may not sue until 180 days after that.
+- Reading paragraph (b) as an alternative an operator may simply choose. It is the route for a user the
+  operator knows to be a covered minor; paragraph (a) is the route for everyone else.
+- Assuming "covered minor" means any minor. Under § 1500(3) it means a minor the operator has ACTUAL KNOWLEDGE
+  is a minor — which is why subdivision 2(d) gives a compliant operator a presumption rather than a safe
+  harbour.
+- Confusing this instrument's "covered operator" with the Child Data Protection Act's term of the same
+  name. They are different definitions in the same chapter of the same law — see ny.def.covered_operator.safe_for_kids.
+confidence: high
+data_types:
+- minor
+deadline: null
+effective_from: '2027-01-25'
+effective_to: null
+enforcement:
+  enforcers:
+  - state_ag
+  penalty:
+    note: § 1508(1) bars the Attorney General from bringing any action until 180 days after the effective
+      date, so the first day enforcement is available is later than the first day the duties bind.
+    range: Up to $5,000 per violation.
+    structure: 'Attorney General action or special proceeding under § 1508(1): injunction, restitution,
+      disgorgement (expressly including destruction of unlawfully obtained data), damages, and civil penalties.'
+  private_right_of_action: false
+  statute_of_limitations: null
+exemptions:
+- applies_if:
+    all:
+    - practice.conduct_occurs_in_new_york == false
+  burden_of_proof: 'The operator, which is why the age-determination record in § 1501 matters twice: it
+    is the compliance route and it is the evidence of location.'
+  id: sfk.territorial
+  reach: instrument
+  scope: Conduct occurring wholly outside New York, which § 1507(1) defines as access by a user physically
+    located outside the state.
+  source_citation: N.Y. Gen. Bus. Law § 1507(1)
+  source_ref:
+    instrument_id: ny.safe_for_kids
+    raw_file: corpus/state/ny/safe-for-kids/raw/ny-gbs-1507.json
+    raw_sha256: eef6cb32213ba1fde3acefdedc4b9633ab4b17059d373aa0e6d9f6ff11df800f
+  type: activity_level
+  verbatim_span: This article shall apply to conduct that occurs in whole or in part in New York. For
+    purposes of this article, conduct takes place wholly outside of New York if the addictive social media
+    platform is accessed by a user who is physically located outside of New York.
+federal_relationship: gap_fills
+id: ny.fixture.gate41_duplicate_provision_twin
+interpreted_by: []
+jurisdiction: US-NY
+jurisdiction_level: state
+obligation_type: prohibit
+open_questions:
+- 'Whether the Attorney General''s Part 700 regulations, adopted after the article was enacted, narrow
+  or widen "commercially reasonable and technically feasible". The corpus cannot answer this: no structured
+  source serves NYCRR.'
+operative_context:
+- citation: N.Y. Gen. Bus. Law § 1501(1)(a)
+  path:
+    anchor: '1501'
+    confidence: high
+    derivation: reconstructed
+    evidence: subdivision designators reconstructed from the flat text field; resolves to exactly one
+      leaf
+    path:
+    - '1'
+    - a
+  position: follows
+  relation: conditions
+  relation_note: The age-determination route. It is a condition on the prohibition, not a duty in its
+    own right — an operator that never provides an addictive feed owes it nothing.
+  verbatim_span: the covered operator has used commercially reasonable and technically feasible methods
+    to determine that the covered user is not a covered minor; or
+- citation: N.Y. Gen. Bus. Law § 1501(1)(b)
+  path:
+    anchor: '1501'
+    confidence: high
+    derivation: reconstructed
+    evidence: subdivision designators reconstructed from the flat text field; resolves to exactly one
+      leaf
+    path:
+    - '1'
+    - b
+  position: follows
+  relation: conditions
+  relation_note: The verifiable-parental-consent route, and the ONLY route that permits an addictive feed
+    to a user known to be a covered minor.
+  verbatim_span: the covered operator has obtained verifiable parental consent to provide an addictive
+    feed to a covered minor.
+paragraph_path:
+  anchor: '1501'
+  confidence: high
+  derivation: reconstructed
+  evidence: subdivision designators reconstructed from the flat text field; resolves to exactly one leaf
+  path:
+  - '1'
+preemption:
+  authority: N.Y. Gen. Bus. Law § 1507(2)
+  note: COPPA reaches children under 13 and governs the collection of personal information; this article
+    reaches minors under 18 and governs how a feed is ORDERED, which COPPA does not address at all. Subdivision
+    2 of § 1507 is a savings construction rather than a preemption clause — it disclaims liability inconsistent
+    with 15 U.S.C. § 6502 for operators subject to 15 U.S.C. § 6501, and says nothing about anyone else.
+    Same posture the corpus records for the CDPA, for the same reason.
+  posture: none
+record_type: obligation
+regulator:
+- state_ag
+related: []
+requirement_detail: 'THE CENTRAL DUTY OF THE ARTICLE, AND IT IS A DEFAULT-OFF RULE. The chapeau prohibits
+  the conduct and the two lettered paragraphs are the only ways out, so the operator carries the burden:
+  absent one of them, providing the feed is unlawful. Read the two routes carefully, because they are
+  not symmetrical. Paragraph (a) is satisfied by a PROCESS — commercially reasonable and technically feasible
+  methods, as the Attorney General defines them by regulation under subdivision 2 — and subdivision 2(d)
+  then supplies a presumption that a user the process did not flag is not a covered minor, defeasible
+  only by actual knowledge. Paragraph (b) is satisfied by an OUTCOME, verifiable parental consent, and
+  it is what an operator needs once it does have actual knowledge. Note what the article does NOT prohibit:
+  it does not prohibit minors from using the service, and it does not prohibit personalisation as such.
+  It prohibits ONE ranking input — media recommended on the basis of information associated with the user
+  — and § 1500(1)(a) through (h) carve out eight ways of ordering a feed that stay lawful, including a
+  pre-existing sequence from one source, express subscription, search results and direct private communications.
+  THE REGULATIONS ARE THE OPERATIVE DETAIL AND THE CORPUS DOES NOT HOLD THEM. Subdivisions 2 and 4 delegate
+  both routes to Attorney General rulemaking at 13 N.Y.C.R.R. Part 700, which is not machine-readable
+  anywhere — see meta/blocked-sources.yaml. What "commercially reasonable" means in practice is decided
+  there, not here.'
+schema_version: 1
+sector:
+- any
+source:
+  citation: N.Y. Gen. Bus. Law § 1501(1)
+  fetched: '2026-08-20'
+  format: openleg_json
+  instrument_id: ny.safe_for_kids
+  raw_file: tests/fixtures/cases/gate41-duplicate-provision/raw/ny-gbs-1501.json
+  raw_sha256: d83a82154840f03752e38951f172dd3f2fdd80cfb6f8bd81bbc05bc4a59d354a
+  render: null
+  risk_tier: low
+  segment_sha256: 53485ddc7b59669f31542b0b4912152753e969e9edb966e8cee739783af342aa
+  structured_source_check:
+    checked:
+    - NY Senate OpenLegislation API v3, laws/GBS/1501
+    note: null
+    result: structured_source_used
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/safe-for-kids/raw/ny-gbs-1501.json
+  text_file: tests/fixtures/cases/gate41-duplicate-provision/raw/ny-gbs-1501.txt
+  text_sha256: 2a0947807e6da0beb8950fd164e380afafe50c791ee81e084006ce1e10fa4f79
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/1501
+status: enacted_pending
+subject:
+  domain: V.B.1
+  lifecycle:
+  - I
+summary: An operator of an addictive social media platform may not provide an addictive feed to a covered
+  user unless it has either used commercially reasonable and technically feasible methods to determine
+  the user is not a covered minor, or obtained verifiable parental consent.
+superseded_by: null
+supersedes: null
+verbatim_span: 'It shall be unlawful for a covered operator to provide an addictive feed to a covered
+  user unless:'
+verification_status: verbatim_confirmed

@@ -21,9 +21,20 @@ function addDuration(from, { value, unit }) {
 }
 
 export function computeDeadline(atom, triggerDateISO) {
+  // TOTAL, LIKE analyze(). This threw a TypeError on any atom without source.citation, which is
+  // fine for corpus records and wrong for a function the MCP layer calls with caller-shaped
+  // input. The engine's stated property is that it never throws; one entry point was exempt from
+  // it only because nothing had tested that entry point.
+  if (!atom || typeof atom !== 'object')
+    return { atom_id: null, computed: null, error: 'computeDeadline requires a record object' };
   const d = atom.deadline;
   if (!d) return null;
   if (!triggerDateISO) {
+  // BUSINESS DAYS HERE MEAN WEEKDAYS. Public holidays are NOT excluded, so a clock crossing
+  // Christmas or New Year lands EARLIER than the true statutory deadline. That direction is the
+  // safe one, but an undeclared approximation in a deadline engine is still a wrong answer
+  // wearing a precise face — so it is stated in the result rather than left in the code.
+
     return { atom_id: atom.id, computed: null, trigger_event: d.trigger_event,
              governing_language: d.computation,
              note: `no date supplied for trigger "${d.trigger_event}" — deadline not computed` };
@@ -33,7 +44,16 @@ export function computeDeadline(atom, triggerDateISO) {
     return { atom_id: atom.id, computed: null, error: `unparseable trigger date ${triggerDateISO}` };
 
   let end = new Date(start);
+  // A deadline block with no duration is malformed, not a zero-length clock. Destructuring it
+  // threw, which the totality property test caught after the first fix only covered a missing
+  // `source`. Partial fixes to a totality claim are how the claim stays false.
+  if (!d.duration || typeof d.duration !== 'object')
+    return { atom_id: atom.id ?? null, computed: null,
+             error: 'deadline.duration is missing or not an object' };
   const { value, unit } = d.duration;
+  if (typeof value !== 'number' || !Number.isFinite(value) || typeof unit !== 'string')
+    return { atom_id: atom.id ?? null, computed: null,
+             error: `deadline.duration must be {value:number, unit:string}; got ${JSON.stringify(d.duration)}` };
   if (unit === 'calendar_days') end = new Date(start.getTime() + value * DAY);
   else if (unit === 'hours') end = new Date(start.getTime() + value * 3600000);
   else if (unit === 'months') end.setUTCMonth(end.getUTCMonth() + value);
@@ -46,10 +66,20 @@ export function computeDeadline(atom, triggerDateISO) {
   const ceilingOnly = /no case later than|no later than/i.test(d.computation);
   const promptness  = /without unreasonable delay|as soon as (possible|practicable)/i.test(d.computation);
   return {
-    atom_id: atom.id, citation: atom.source.citation,
+    atom_id: atom.id, citation: atom.source?.citation ?? null,
     trigger_event: d.trigger_event, trigger_date: triggerDateISO,
     computed: end.toISOString().slice(0, 10),
     duration: `${value} ${unit}`,
+    // THE APPROXIMATION IS STATED IN THE RESULT, NOT LEFT IN THE CODE. Business days here are
+    // WEEKDAYS: public holidays are not excluded, so a clock crossing Christmas or New Year lands
+    // EARLIER than the true statutory deadline. Earlier is the safe direction, but a deadline
+    // engine returning a bare date implies a precision it does not have, and a caller cannot see
+    // a comment. Only set where it bites.
+    business_day_basis: unit === 'business_days'
+      ? 'Weekdays only. Public holidays are NOT excluded, so this date may fall EARLIER than the '
+        + 'true deadline. Treat it as conservative, and confirm against the applicable holiday '
+        + 'calendar before relying on the last available day.'
+      : null,
     governing_language: d.computation,
     is_outer_limit: ceilingOnly,
     also_requires_promptness: promptness,

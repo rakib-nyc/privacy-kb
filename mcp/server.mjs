@@ -85,7 +85,7 @@ const TOOLS = [
   { name: 'privacy_coverage',
     description: 'Corpus completeness at a taxonomy coordinate: which atoms exist, and what is missing. Use it to ' +
       'find out whether silence means "no obligation" or "not yet modelled" — they are different answers.',
-    inputSchema: { type: 'object', properties: { bok_coordinate: { type: 'string' } } } },
+    inputSchema: { type: 'object', properties: { domain_coordinate: { type: 'string' } } } },
 ];
 
 const ANNOT = { readOnlyHint: true, openWorldHint: false, destructiveHint: false, idempotentHint: true };
@@ -158,11 +158,18 @@ function call(name, args = {}) {
       return resolvePreemption(f, args.state_id ? corpus.byId.get(args.state_id) : null, args.as_of ?? null);
     }
     case 'privacy_coverage': {
-      const coord = args.bok_coordinate;
-      const hits = corpus.all.filter(r => !coord || r.subject?.domain === coord || r.subject?.domain?.startsWith(coord + '.'));
+      const coord = args.domain_coordinate ?? args.bok_coordinate;   // old name still accepted
+      // INVARIANT I1 APPLIES TO COVERAGE TOO. This filtered corpus.all with no surfaceable()
+      // check, so four records suppressed by I1 — three doctrines and an enforcement action that
+      // quote nothing — were reported as coverage. No unverified TEXT escaped, because this tool
+      // returns ids and counts; what escaped was the claim that the corpus covers them.
+      const visible = corpus.all.filter(surfaceable);
+      const hidden = corpus.all.length - visible.length;
+      const hits = visible.filter(r => !coord || r.subject?.domain === coord || r.subject?.domain?.startsWith(coord + '.'));
       const byType = {};
       for (const h of hits) byType[h.record_type] = (byType[h.record_type] ?? 0) + 1;
-      return { bok_coordinate: coord ?? '(all)', total: hits.length, by_record_type: byType,
+      return { domain_coordinate: coord ?? '(all)', total: hits.length, by_record_type: byType,
+        suppressed_by_i1: hidden,
         ids: hits.map(h => h.id),
         note: hits.length ? null
           : `Nothing in the corpus at ${coord}. Silence here means NOT YET MODELLED, not "no obligation exists".` };
@@ -177,7 +184,12 @@ const send = m => process.stdout.write(JSON.stringify(m) + '\n');
 
 export function serve() {
   createInterface({ input: process.stdin }).on('line', line => {
-    let msg; try { msg = JSON.parse(line); } catch { return; }
+    // JSON-RPC 2.0 requires -32700 on unparseable input. Returning nothing left a client waiting
+    // for a reply that was never coming, which is the worst of the three possible behaviours:
+    // worse than an error, and worse than a crash, because it is indistinguishable from slowness.
+    let msg;
+    try { msg = JSON.parse(line); }
+    catch { send({ jsonrpc: '2.0', id: null, error: { code: -32700, message: 'Parse error' } }); return; }
   const { id, method, params } = msg;
   if (method === 'initialize')
     return send({ jsonrpc: '2.0', id, result: { protocolVersion: '2024-11-05',
