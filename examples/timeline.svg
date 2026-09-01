@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 300" role="img" aria-label="Breach notification deadlines">
+  <style>
+    text { font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .ttl { font-size: 15px; font-weight: 700; fill: #111827; }
+    .sub { font-size: 11.5px; fill: #6b7280; }
+    .lbl { font-size: 12px; fill: #111827; }
+    .dt  { font-size: 11.5px; font-weight: 700; fill: #111827; }
+    .ax  { stroke: #d1d5db; stroke-width: 1.5; }
+    .tick{ stroke: #d1d5db; stroke-width: 1; }
+    @media (prefers-color-scheme: dark) {
+      .ttl,.lbl,.dt { fill: #f3f4f6; } .sub { fill: #9ca3af; }
+      .ax,.tick { stroke: #4b5563; }
+    }
+  </style>
+  <text x="16" y="26" class="ttl">Breach discovered 2 Sept 2026 — every clock the engine computed</text>
+  <text x="16" y="45" class="sub">Meridian Health · HIPAA covered entity · no NY presence · one NY patient</text>
+
+  <line x1="70" y1="250" x2="820" y2="250" class="ax"/>
+  <line x1="70" y1="244" x2="70" y2="256" class="tick"/>
+  <text x="70" y="272" class="sub" text-anchor="middle">Sep 2</text>
+  <line x1="270" y1="244" x2="270" y2="256" class="tick"/>
+  <text x="270" y="272" class="sub" text-anchor="middle">Oct 2</text>
+  <line x1="470" y1="244" x2="470" y2="256" class="tick"/>
+  <text x="470" y="272" class="sub" text-anchor="middle">Nov 1</text>
+  <line x1="820" y1="244" x2="820" y2="256" class="tick"/>
+  <text x="820" y="272" class="sub" text-anchor="middle">Sep 2027</text>
+
+  <!-- 899-aa(9): the earliest, and the surprising one -->
+  <rect x="70" y="74" width="47" height="22" rx="4" fill="#dc2626"/>
+  <text x="125" y="90" class="lbl"><tspan font-weight="700">Sep 9</tspan> — GBL § 899-aa(9) · 5 business days</text>
+  <text x="125" y="106" class="sub">Triggered BY notifying HHS. Federal compliance started this clock.</text>
+
+  <rect x="70" y="122" width="93" height="20" rx="4" fill="#ea580c"/>
+  <text x="171" y="137" class="lbl"><tspan font-weight="700">Sep 16</tspan> — 6 RCNY § 5-304(b) · LL144 candidate notice · 10 business days</text>
+
+  <rect x="70" y="160" width="200" height="20" rx="4" fill="#0891b2"/>
+  <text x="278" y="175" class="lbl"><tspan font-weight="700">Oct 2</tspan> — GBL § 899-aa(2) · notify NY residents · 30 days</text>
+
+  <rect x="70" y="196" width="400" height="20" rx="4" fill="#4f46e5"/>
+  <text x="478" y="211" class="lbl"><tspan font-weight="700">Nov 1</tspan> — 45 C.F.R. § 164.526 · amendment request · 60 days</text>
+</svg>

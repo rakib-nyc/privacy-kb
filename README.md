@@ -10,6 +10,27 @@ work queue. `PROMPTS.md` is the session playbook.
 
 [![gates](https://github.com/rakib-nyc/privacy-kb/actions/workflows/ci.yml/badge.svg)](https://github.com/rakib-nyc/privacy-kb/actions/workflows/ci.yml)
 
+> ## ⚠️ Experimental research project — not legal advice
+>
+> **This is a research prototype. It is not a legal product and it is not legal advice.** No
+> warranty or guarantee of any kind is made as to accuracy, completeness, currency or fitness for
+> any purpose. See the disclaimer of warranty and limitation of liability in [`LICENSE`](LICENSE)
+> (Apache 2.0, §§ 7–8), which govern.
+>
+> **Parts of this corpus were assembled with AI assistance, and AI makes mistakes.** So do people.
+> The verification apparatus in this repository — 42 CI gates, hash-anchored spans, adversarial
+> red-teaming — exists because that is true, not because it has been solved. It reduces certain
+> classes of error; it does not eliminate them, and it cannot catch a misreading that is
+> internally consistent. Several such errors were found *after* shipping and are documented in
+> [`meta/red-team-0.1.md`](meta/red-team-0.1.md) and [`meta/validation-events.yaml`](meta/validation-events.yaml).
+>
+> **Every output must be checked by a qualified human against the primary source before it is
+> relied on.** Every record carries its source URL, fetch date and content hash precisely so that
+> checking is possible — that is the point of the design. Do not skip it.
+>
+> Law changes. A record is accurate as of its stated `effective_from`/`effective_to` and the date
+> its source was fetched, and not otherwise. Nothing here creates an attorney–client relationship.
+
 > **Licensing:** [Apache 2.0](LICENSE) for the original work. Quoted legal text is government
 > edict and carries no copyright. See [`NOTICE`](NOTICE) and [`PROVENANCE.md`](PROVENANCE.md).
 
@@ -53,6 +74,18 @@ than kept as unverifiable shells — see `meta/decisions.yaml` DEC-008.
 
 Everything the corpus quotes is US, New York or New York City legal text: government edicts,
 which carry no copyright.
+
+### See it work
+
+[**examples/README.md**](examples/README.md) is a worked example against a real company profile —
+a telehealth startup with no New York presence, New York patients, NYC hiring, and minors on the
+platform. Every figure on that page is live engine output (`node examples/run-scenario.mjs`).
+
+The headline result: after a breach, **the earliest deadline is one that doing the federal thing
+correctly created.** Notifying HHS starts a five-business-day clock to the New York Attorney
+General under GBL § 899-aa(9) — earlier than the 30-day state notice and the 60-day federal one.
+The page also shows the system refusing to answer: pending law routed to a watch feed at every
+as-of date, and instruments declaring which duty categories they cannot reach.
 
 ### What was found by attacking it
 

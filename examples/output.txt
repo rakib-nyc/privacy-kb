@@ -1,0 +1,110 @@
+
+==============================================================================
+SCENARIO 1 — A breach. Who must be told, and by when?
+==============================================================================
+
+as_of 2026-09-02 · 27 obligations engaged in total.
+Showing the BREACH-RELEVANT ones; the rest (HIPAA use/disclosure, Title VII, LL144) are
+engaged by the same entity facts and are correct — breadth is the point, not noise.
+
+  N.Y. Gen. Bus. Law § 899-aa(2)
+    A person or business that owns or licenses computerized data including the private information o
+  N.Y. Gen. Bus. Law § 899-aa(7)
+    Regardless of the method used, the breach notice must include the notifier's contact information
+  N.Y. Gen. Bus. Law § 899-aa(9)
+    A HIPAA covered entity that notifies the Secretary of HHS of a breach must also notify the New Y
+  N.Y. Gen. Bus. Law § 899-bb(1)
+    "Compliant regulated entity" means a person or business subject to and in compliance with GLBA r
+  N.Y. Gen. Bus. Law § 899-bb(2)
+    A person or business that owns or licenses computerized data including the private information o
+
+DEADLINES, earliest first (the engine returns them unsorted; the workflow layer sorts):
+  2026-09-09  5 business_days    N.Y. Gen. Bus. Law § 899-aa(9)
+             trigger: notification to the Secretary of Health and Human Services
+             ⚠ business days = weekdays; holidays not excluded
+  2026-09-16  10 business_days   6 RCNY § 5-304(b)
+             trigger: use of an AEDT on a candidate for employment
+             ⚠ business days = weekdays; holidays not excluded
+  2026-09-16  10 business_days   N.Y.C. Admin. Code § 20-871(b)
+             trigger: use of the tool to assess a candidate or employee residing in the city
+             ⚠ business days = weekdays; holidays not excluded
+  2026-10-02  30 calendar_days   45 C.F.R. § 164.524(b)(2)(i)
+             trigger: receipt of the access request
+  2026-10-02  30 calendar_days   N.Y. Gen. Bus. Law § 899-aa(2)
+             trigger: discovery of the breach
+  2026-11-01  60 calendar_days   45 C.F.R. § 164.526(a)(1)
+             trigger: receipt of the amendment request
+  2027-09-02  1 years            6 RCNY § 5-301(a)
+             trigger: the most recent bias audit of the AEDT
+
+BACKSTOPS (invariant I6 — these never switch off):
+  15 U.S.C. § 45(a)(2) — FTC Act § 5 reaches unfair or deceptive acts or practices in or affecting commerce. 
+  N.Y. Gen. Bus. Law § 349(a) — N.Y. Gen. Bus. Law § 349 — Deceptive, unfair and abusive acts and practices. Require
+  N.Y. Gen. Bus. Law § 350 — N.Y. Gen. Bus. Law § 350 — False advertising. Required by invariant I6 and present i
+  published_notice_commitments — The entity's own published privacy notice is an operative constraint independent of 
+
+==============================================================================
+SCENARIO 2 — Hiring in NYC with an automated tool
+==============================================================================
+  6 RCNY § 5-301(a)
+    An employer or employment agency may not use or continue to use an AEDT if more than one year has pa
+  6 RCNY § 5-301(b)(3)
+    The calculations must separately compute impact on sex categories, race/ethnicity categories, and in
+  6 RCNY § 5-301(b)
+    For an AEDT that selects or classifies candidates, the independent auditor must calculate selection 
+  6 RCNY § 5-302(a)
+    A bias audit must use historical data OF THE AEDT, which may come from one or more employers using i
+  6 RCNY § 5-303(a)
+    Before using an AEDT, an employer or employment agency in the city must publish the date and a summa
+  6 RCNY § 5-304(b)
+    Notice to candidates may be given on the employment section of the website, in the job posting, or b
+  N.Y.C. Admin. Code § 20-871(a)
+    It is unlawful to use an automated employment decision tool unless it has been the subject of a bias
+  N.Y.C. Admin. Code § 20-871(b)
+    An employer or employment agency using an automated employment decision tool must notify each candid
+  N.Y.C. Admin. Code § 20-872(b)
+    Each day on which an automated employment decision tool is used in violation of the subchapter gives
+
+==============================================================================
+SCENARIO 3 — Minors on the platform, and a law that is NOT yet in force
+==============================================================================
+
+IN FORCE today (2026-09-02):
+  N.Y. Gen. Bus. Law § 899-ee(1)
+  N.Y. Gen. Bus. Law § 899-ff(1)
+  N.Y. Gen. Bus. Law § 899-ff(5)
+  N.Y. Gen. Bus. Law § 899-bb(1)
+  N.Y. Gen. Bus. Law § 899-bb(2)
+
+PENDING — NOT LAW. Watch feed only:
+  N.Y. Gen. Bus. Law § 1501(1)       status=enacted_pending  binds from 2027-01-25
+  N.Y. Gen. Bus. Law § 1501(3)       status=enacted_pending  binds from 2027-01-25
+  N.Y. Gen. Bus. Law § 1501(5)       status=enacted_pending  binds from 2027-01-25
+  N.Y. Gen. Bus. Law § 1502          status=enacted_pending  binds from 2027-01-25
+  N.Y. Gen. Bus. Law § 1504          status=enacted_pending  binds from 2027-01-25
+  N.Y. Gen. Bus. Law § 1506(1)       status=enacted_pending  binds from 2027-01-25
+  N.Y. Gen. Bus. Law § 1508(1)       status=enacted_pending  binds from 2027-01-25
+
+  → PENDING — not law. Present in the watch feed only; it can never appear in obligations.
+
+==============================================================================
+SCENARIO 4 — What the corpus says it CANNOT tell you
+==============================================================================
+
+Declared instruments that are NOT complete — the gap is stated, not silent:
+  ny.safe_for_kids
+    missing: age_determination_methods (13 N.Y.C.R.R. § 700)
+    would supply: WHAT "commercially reasonable and technically feasible" ACTUALLY REQUIRES, and what verifiable parental consent looks li
+  ny.safe_for_kids
+    missing: language_list (N.Y. Exec. Law § 202-a)
+    would supply: WHICH twelve languages § 1506 means. NOT IN THE CORPUS — the Executive Law section has not been fetched.
+
+Records the corpus HOLDS but refuses to surface (invariant I1 — unverified):
+  us.doctrine.dormant_commerce_clause  (unverified)
+  us.doctrine.first_amendment.commercial_data  (unverified)
+  us.doctrine.fourth_amendment.third_party  (unverified)
+  us.enforcement.ftc.public_commitment_pattern  (unverified)
+
+And the standing limit on all of it:
+  Every output above is machine-derived. Check each citation against the primary source
+  before relying on it — every record carries the URL, fetch date and hash to make that possible.
