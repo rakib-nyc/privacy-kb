@@ -76,6 +76,46 @@ ok('P4 include_pending routes pending to the watch feed ONLY', FACTS.every(f => 
      'status gates before effective_from — reaching the date does not flip the status');
 }
 
+
+// --- PROPERTY 6: as_of must be a REAL DATE, not merely present (invariant I2).
+// Red-teaming 0.1 found the engine accepted any non-empty string. Every date comparison here is a
+// STRING comparison, so 'not-a-date' sorts above every ISO date and EVERY record reads as in
+// force: the same facts returned 5 obligations for '2026-01-01' and 7 for 'not-a-date', the extra
+// two being law that does not bind until 2027. A typo WIDENED the answer instead of failing it.
+{
+  const bad = ['not-a-date', 'zzz', '', '2026-13-45', '2026-02-30', '2026-1-1', '20260101',
+               20260101, null, undefined, {}, [], '2026-01-01T00:00:00Z'];
+  ok('P6 every malformed as_of is refused',
+     bad.every(d => analyze({}, {}, { as_of: d }).error != null),
+     bad.filter(d => analyze({}, {}, { as_of: d }).error == null).map(String).join(', ') || 'none accepted');
+  ok('P6 ...and a well-formed one still works',
+     analyze({}, {}, { as_of: '2026-01-01' }).error == null);
+  ok('P6 ...and a refusal returns the full shape rather than a bare error',
+     Array.isArray(analyze({}, {}, { as_of: 'zzz' }).backstops));
+  // The specific regression: a garbage date must never return MORE than a real one.
+  const facts = [{ owns_or_licenses_computerized_data: true, nexus: 'US-NY' },
+                 { includes_ny_private_information: true }];
+  const ctx = d => ({ as_of: d, event: { type: 'breach_of_security_of_the_system' }, state_layers: ['US-NY'] });
+  ok('P6 ...and garbage can no longer out-return a real date',
+     analyze(facts[0], facts[1], ctx('zzz')).obligations.length === 0
+     && analyze(facts[0], facts[1], ctx('2026-01-01')).obligations.length > 0);
+}
+
+// --- PROPERTY 7: computeDeadline is total, like analyze().
+// It threw a TypeError on any record without source.citation. The engine's stated property is
+// that it never throws; one entry point was exempt only because nothing tested that entry point.
+{
+  const hostile = [null, undefined, {}, { deadline: null }, { deadline: {} }, [],
+                   { deadline: { duration: { value: 1, unit: 'fortnights' }, trigger_event: 'x', computation: '' } }];
+  let threw = null;
+  for (const h of hostile) { try { computeDeadline(h, '2026-01-01'); } catch (e) { threw ??= String(e); } }
+  ok('P7 computeDeadline never throws on hostile input', threw === null, threw ?? '');
+  ok('P7 ...and a business-day result declares the holiday approximation', (() => {
+    const a = load().obligations.find(x => x.deadline?.duration?.unit === 'business_days');
+    return !a || typeof computeDeadline(a, '2026-12-24').business_day_basis === 'string';
+  })());
+}
+
 // --- as_of is required and has no default (invariant I2)
 ok('as_of is required — no default', analyze({}, {}, {}).error != null);
 ok('a missing as_of still returns a shaped result rather than throwing',

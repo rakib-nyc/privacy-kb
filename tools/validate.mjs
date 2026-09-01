@@ -870,6 +870,228 @@ for (const { a } of atoms) {
       `came to cite one subdivision and quote two. Then run: node tools/anchor-segments.mjs --write`);
 }
 
+
+// ---- gate 39: a span must not belong to a DIFFERENT provision than the one it cites.
+// THE HOLE THIS CLOSES WAS WIDE OPEN AND INVISIBLE. Gate 3 proves the span is somewhere in the
+// source. Gate 23 proves the path resolves to exactly one leaf. Gate 30 proves the path and the
+// citation agree. Gate 38 proves the leaf has not been re-cut since. Every one of those passed
+// while an atom cited N.Y. Gen. Bus. Law s 1501(1) at path ["1"] and quoted the words of
+// s 1501(5) — verbatim, uniquely cited, internally consistent, and attributing one subdivision's
+// words to another. Penal Law s 250.00 reached the corpus with that defect and a human found it.
+//
+// THE CHECK IS NEGATIVE, NOT POSITIVE, AND THAT IS THE WHOLE DESIGN. The obvious version — "the
+// span must be a substring of its own leaf" — was written first and produced eight false
+// positives, every one of them teaching the same thing: A SEGMENTATION LEAF IS NOT RAW SOURCE.
+// The walker strips run-in headings ("Scope. This rule applies..." is quoted whole by the atom
+// and headless in the leaf), rewrites bare designators ("a." becomes "(a)"), and drops footnote
+// markers. A span that legitimately quotes the heading plus its paragraph is contained in NO
+// leaf, and demanding containment punishes the most complete quotations.
+//
+// So this asks the question that has only one honest answer: does the span sit wholly inside
+// some OTHER leaf, and not inside the one it cites? That is mis-anchoring and nothing else is.
+for (const { a } of atoms) {
+  const rf = a?.source?.raw_file;
+  const pp = a?.paragraph_path;
+  if (a?.verification_status !== 'verbatim_confirmed') { skip(39, a?.id ?? '(unknown)', 'record-not-verbatim-confirmed'); continue; }
+  if (!rf || !pp?.path) { skip(39, a?.id ?? '(unknown)', 'record-carries-no-paragraph-path'); continue; }
+  const base = rf.split('/').pop().replace(/\.[^.]+$/, '');
+  const seg = R(rf.split('/').slice(0, -2).concat(`${base}.seg.json`).join('/'));
+  if (!existsSync(seg)) { skip(39, a.id, 'no-segmentation-beside-source'); continue; }
+  let leaves;
+  try { leaves = JSON.parse(readFileSync(seg, 'utf8')).leaves ?? []; }
+  catch { skip(39, a.id, 'segmentation-unreadable'); continue; }
+  const span = norm(a.verbatim_span ?? '');
+  if (!span) { skip(39, a.id, 'record-has-no-span'); continue; }
+  const want = JSON.stringify(pp.path);
+  const inSection = l => pp.anchor == null || l.section == null || String(l.section) === String(pp.anchor);
+  const scope = leaves.filter(inSection);
+  if (!scope.some(l => JSON.stringify(l.path) === want)) { skip(39, a.id, 'path-does-not-resolve-to-one-leaf'); continue; }
+  bump(39);
+  // Which leaves could this span have come from? A leaf whose own text contains it.
+  const holders = scope.filter(l => norm(String(l.text ?? '')).includes(span));
+  if (!holders.length) continue;              // spans a heading or several leaves — gate 3's job
+  if (holders.some(l => JSON.stringify(l.path) === want)) continue;   // cited correctly
+  const got = holders.map(l => '.'.join ? (l.path || []).join('.') : String(l.path)).filter(Boolean);
+  fail(39, a.id, `verbatim_span belongs to a DIFFERENT provision than the one cited. The span sits ` +
+    `wholly inside ${holders.length === 1 ? 'leaf' : 'leaves'} [${got.join('] [') || '(root)'}], and ` +
+    `not inside ${want}, which is what this record cites. Gates 3, 23, 30 and 38 all pass on this: ` +
+    `they check the span against the whole document, the path against the segmentation, and the ` +
+    `path against the citation — none of them checks the span against ITS OWN path.\n` +
+    `      cites: ${a.source.citation}\n      span:  ${span.slice(0, 90)}…`);
+}
+
+
+// ---- gate 40: a span cut short of a qualifier states the opposite rule.
+// THE MOST DANGEROUS SPAN IS A GENUINELY VERBATIM ONE. Gate 3 accepts any substring, and a
+// substring can reverse a provision: stop quoting "It shall be unlawful ... to send notifications
+// to a covered minor" one word before "unless the operator has obtained verifiable parental
+// consent" and the record states a flat prohibition where the law states a conditional one.
+// Nothing structural sees it — the words are real, in order, from the right provision.
+//
+// Proven against the shipped corpus during red-teaming: truncating ny.gbl.1502 at "unless"
+// passed every gate except, by coincidence, gate 35 — and only because that atom's own prose
+// happened to quote the removed clause. Remove the coincidence and it ships.
+//
+// So: if a span is a strict PREFIX of its own leaf, look at what comes next. A qualifier there
+// is a limb the record dropped, and the record must either include it or say why not.
+const QUALIFIER = /^(unless|except|provided that|provided,|but not|other than|subject to|if the|only if|and only|nothing in)\b/i;
+for (const { a } of atoms) {
+  const rf = a?.source?.raw_file, pp = a?.paragraph_path;
+  if (a?.verification_status !== 'verbatim_confirmed') { skip(40, a?.id ?? '(unknown)', 'record-not-verbatim-confirmed'); continue; }
+  if (!rf || !pp?.path) { skip(40, a?.id ?? '(unknown)', 'record-carries-no-paragraph-path'); continue; }
+  const base = rf.split('/').pop().replace(/\.[^.]+$/, '');
+  const seg = R(rf.split('/').slice(0, -2).concat(`${base}.seg.json`).join('/'));
+  if (!existsSync(seg)) { skip(40, a.id, 'no-segmentation-beside-source'); continue; }
+  let leaves;
+  try { leaves = JSON.parse(readFileSync(seg, 'utf8')).leaves ?? []; }
+  catch { skip(40, a.id, 'segmentation-unreadable'); continue; }
+  const want = JSON.stringify(pp.path);
+  const inSection = l => pp.anchor == null || l.section == null || String(l.section) === String(pp.anchor);
+  const hit = leaves.filter(l => JSON.stringify(l.path) === want && inSection(l))[0];
+  if (!hit) { skip(40, a.id, 'path-does-not-resolve-to-one-leaf'); continue; }
+  const leaf = norm(String(hit.text ?? '')), span = norm(a.verbatim_span ?? '');
+  // LOCATE the span rather than requiring it to be a PREFIX. The first version demanded
+  // leaf.startsWith(span) and therefore missed every leaf carrying a run-in heading — including
+  // GBL s 1502, the very record the truncation attack was demonstrated on, whose leaf opens
+  // "* s 1502. Overnight notifications." before the operative sentence begins.
+  const at = span ? leaf.indexOf(span) : -1;
+  if (at < 0 || at + span.length >= leaf.length) { bump(40); continue; }
+  bump(40);
+  const rest = leaf.slice(at + span.length).trim();
+  const m = rest.match(QUALIFIER);
+  if (!m) continue;
+  // An explicit, recorded truncation is a decision; a silent one is a defect.
+  const declared = a.span_truncation_note || (a.open_questions ?? []).some(q => /truncat|omit|qualif/i.test(String(q)));
+  if (!declared)
+    fail(40, a.id, `verbatim_span stops immediately before a qualifying clause, so the record ` +
+      `states the rule WITHOUT the limb that conditions it. The span is verbatim and gate 3 is ` +
+      `satisfied; the meaning is not the provision's.\n      cites:   ${a.source.citation}\n` +
+      `      dropped: "${rest.slice(0, 90)}…"\n      Include the limb, or record span_truncation_note ` +
+      `saying why the record stops where it does.`);
+}
+
+
+// ---- gate 41: one provision, one record; and the ledger must match the disk.
+// TWO DIFFERENT WAYS THE CORPUS CAN LIE ABOUT WHAT IT HOLDS, both found by red-teaming 0.1.
+//
+// (a) DUPLICATE PROVISION COVERAGE. us.usc.15.45.a1.deception and
+// us.usc.15.45.a1.public_commitment_deception carry the same citation, the same paragraph_path
+// and a BYTE-IDENTICAL span. The second predicate is a strict superset of the first, so whenever
+// a public privacy commitment exists both fire and a reader is shown 15 U.S.C. s 45(a)(1) quoted
+// twice as two separate duties. Nothing counted provisions.
+//
+// (b) A LEDGER THAT DOES NOT MATCH THE DISK, in both directions. Gate 33 checks that every raw
+// file an atom CITES is logged. It never checks that a logged file exists (8 rows survived the
+// documents they described) nor that a file on disk is logged (5 fetched sources were tracked
+// nowhere). A ledger is a provenance claim; an unchecked one is decoration.
+{
+  const byProvision = new Map();
+  for (const { a } of atoms) {
+    if (a?.record_type !== 'obligation') continue;
+    const pp = a.paragraph_path, rf = a.source?.raw_file;
+    if (!pp?.path || !rf) continue;
+    const k = `${rf}::${JSON.stringify(pp.path)}::${pp.anchor ?? ''}::${norm(a.verbatim_span ?? '')}`;
+    if (!byProvision.has(k)) byProvision.set(k, []);
+    byProvision.get(k).push(a.id);
+  }
+  for (const [, ids] of byProvision) {
+    bump(41);
+    if (ids.length > 1)
+      fail(41, ids[0], `${ids.length} records quote the SAME provision with the same path and a ` +
+        `byte-identical span: ${ids.join(', ')}. If both predicates can be true at once the reader ` +
+        `is shown one provision twice as two duties. Merge them, or narrow one so they are ` +
+        `mutually exclusive.`);
+  }
+  const led = existsSync(R('meta/sources.yaml'))
+    ? (yaml.load(readFileSync(R('meta/sources.yaml'), 'utf8'))?.sources ?? []) : [];
+  for (const row of led) {
+    bump(41);
+    if (row.raw_file && !existsSync(R(row.raw_file)))
+      fail(41, 'meta/sources.yaml', `logs ${row.raw_file}, which is not on disk. A ledger row for ` +
+        `a file the repository does not hold overstates its provenance — remove the row with the file.`);
+  }
+  const logged = new Set(led.map(r => r.raw_file));
+  const onDisk = [];
+  const walkRaw = dir => {
+    if (!existsSync(dir)) return;
+    for (const e of readdirSync(dir)) {
+      const full = join(dir, e);
+      if (statSync(full).isDirectory()) walkRaw(full);
+      else if (relative(ROOT, full).includes('/raw/') && !/\.(txt|seg\.json)$/.test(e))
+        onDisk.push(relative(ROOT, full));
+    }
+  };
+  walkRaw(R('corpus'));
+  for (const f of onDisk) {
+    bump(41);
+    if (!logged.has(f))
+      fail(41, 'meta/sources.yaml', `${f} is a stored source with no ledger row. Gate 33 only ` +
+        `examines files an atom CITES, so a fetched-but-uncited source is untracked provenance.`);
+  }
+}
+
+
+// ---- gate 22: no gate may be listed and unimplemented.
+// FOUND BY RED-TEAMING 0.1, AND IT WAS GATE 22 ITSELF. Slot 22 sat in ALL_GATES, was declared
+// format_independent, and had no bump() and no fail() anywhere. It printed `g22:0(examined)` on
+// every run for its whole life and the advertised gate count included it.
+//
+// That is precisely the defect gate 32 exists to catch — a check that examines nothing looks
+// exactly like a check that passes — occurring on gate 32's own list, one level above where gate
+// 32 was looking. So this gate reads the source of the file it lives in and asserts that every
+// number in ALL_GATES is actually reachable.
+{
+  const src = readFileSync(R('tools/validate.mjs'), 'utf8');
+  // Read the list out of the SOURCE rather than the binding: ALL_GATES is declared far below this
+  // point, and depending on declaration order would make the self-check a hostage to where it sits.
+  const listed = (src.match(/ALL_GATES = \[([^\]]*)\]/)?.[1] ?? '')
+    .split(',').map(x => Number(x.trim())).filter(Number.isFinite);
+  for (const g of listed) {
+    bump(22);
+    const implemented = new RegExp(`(?:fail|bump|skip)\\(\\s*${g}\\s*[,)]`).test(src);
+    if (!implemented)
+      fail(22, `gate ${g}`, `is listed in ALL_GATES but has no fail(), bump() or skip() anywhere ` +
+        `in validate.mjs. It reports as examined-nothing on every run, which reads identically to ` +
+        `passing. Implement it or remove the number — an advertised gate that does not exist ` +
+        `overstates the guarantee the corpus rests on.`);
+  }
+}
+
+// ---- gate 42: a ratchet may not move without a recorded reason.
+// Gates 8, 34 and 35 carry thresholds rather than rules, and every one lives somewhere editable:
+// a key in meta/coverage.yaml, a literal in this file, a baseline.json that a flag regenerates.
+// Each catches SILENT regression and none catches a deliberate relaxation — the easier mistake,
+// because it looks like maintenance. meta/ratchets.yaml is the declaration; this asserts the live
+// values still match it, so loosening one takes a diff carrying a reason, not a changed number.
+{
+  const rf = R('meta/ratchets.yaml');
+  if (!existsSync(rf)) {
+    bump(42);
+    fail(42, 'meta/ratchets.yaml', 'is missing, so no threshold in this file is accountable to anything.');
+  } else {
+    const dec = yaml.load(readFileSync(rf, 'utf8'))?.ratchets ?? {};
+    const live = {
+      gate_34_unaccounted_taxonomy_leaves:
+        yaml.load(readFileSync(R('meta/coverage.yaml'), 'utf8'))?.unaccounted_allowance,
+      gate_35_unmatched_quoted_phrases:
+        Number(readFileSync(R('tools/validate.mjs'), 'utf8').match(/const ALLOW = (\d+)/)?.[1]),
+      gate_8_eval_scenarios: existsSync(R('evals/baseline.json'))
+        ? JSON.parse(readFileSync(R('evals/baseline.json'), 'utf8')).scenarios : null,
+    };
+    for (const [name, actual] of Object.entries(live)) {
+      bump(42);
+      const want = dec[name]?.value;
+      if (want === undefined)
+        fail(42, name, `has a live threshold of ${actual} and no entry in meta/ratchets.yaml. ` +
+          `An undeclared ratchet is a number nobody has to justify.`);
+      else if (Number(want) !== Number(actual))
+        fail(42, name, `is ${actual} in ${dec[name].source} but meta/ratchets.yaml declares ` +
+          `${want}. Moving a ratchet means editing the declaration and saying why — that is the ` +
+          `whole point of it being written down.`);
+    }
+  }
+}
+
 // ---- gate 24: instrument-wide relief must apply instrument-wide.
 // MIGRATION 005. An exemption whose reach is "instrument" says the entity is outside the
 // instrument ALTOGETHER. If it sits on four of an instrument's five obligations, one of two
@@ -1535,7 +1757,7 @@ console.log(`suppressed by I1     ${unverified.length}`);
 for (const n of notes) console.log(`note: ${n}`);
 // B-4: a zero must be attributable to a declaration, never inferred from absence.
 const fmtsPresent = [...new Set(atoms.map(x => x.a?.source?.format).filter(Boolean))];
-const ALL_GATES = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38];
+const ALL_GATES = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42];
 const cov = ALL_GATES.map(g => {
   const n = examined[g];
   if (n) return `g${g}:${n}`;

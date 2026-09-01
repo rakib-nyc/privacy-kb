@@ -398,7 +398,32 @@
    ]
   },
   "related": {
-   "type": "array"
+   "type": "array",
+   "items": {
+    "anyOf": [
+     {
+      "type": "string",
+      "minLength": 3
+     },
+     {
+      "type": "object",
+      "required": [
+       "id"
+      ],
+      "properties": {
+       "id": {
+        "type": "string",
+        "minLength": 3
+       },
+       "relation": {
+        "type": "string"
+       }
+      },
+      "additionalProperties": false
+     }
+    ],
+    "description": "A record id, or {id, relation} when the nature of the link matters. Constrained because an unconstrained array accepted arbitrary objects that gate 10 then silently skipped \u2014 a cross-reference pointing at nothing while reading as recorded."
+   }
   },
   "common_errors": {
    "type": "array",
@@ -407,7 +432,12 @@
    }
   },
   "open_questions": {
-   "type": "array"
+   "type": "array",
+   "items": {
+    "type": "string",
+    "minLength": 10
+   },
+   "description": "Item shape constrained: an unconstrained array accepted arbitrary objects that every gate then silently ignored, so a cross-reference could point at nothing and read as recorded."
   },
   "scope_justification": {
    "type": [

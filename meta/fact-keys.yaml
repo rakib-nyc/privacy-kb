@@ -1,0 +1,978 @@
+version: 1
+generated_by: node tools/fact-keys.mjs
+what_this_is: >-
+  Every fact key any record or scenario predicates on, by namespace. This is the input vocabulary of
+  engine/applicability.mjs — what a caller may put in entity/data/event/purpose/practice/law. A key
+  with discoverable:false appears ONLY inside an exemption predicate, which means nothing else in
+  the repository demonstrates it and a caller would have to read the corpus to find it. That is the
+  condition this file exists to make visible.
+totals:
+  keys: 192
+  exemption_only: 64
+namespaces:
+  data:
+    collected_for_aml_purpose:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    collected_for_fraud_prevention:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    confidential_under_other_law:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    from_motor_vehicle_record:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    in_employment_record:
+      used_by_obligation: 0
+      used_by_exemption: 16
+      used_by_eval: 0
+      discoverable: false
+    in_system_of_records:
+      used_by_obligation: 7
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    includes_ny_private_information:
+      used_by_obligation: 5
+      used_by_exemption: 0
+      used_by_eval: 1
+      discoverable: true
+    is_bulk_us_sensitive_personal_data:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_confidential_commercial_information:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    is_cpni:
+      used_by_obligation: 5
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_dot_test_result:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_education_record:
+      used_by_obligation: 5
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_electronic_health_information:
+      used_by_obligation: 4
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_ephi:
+      used_by_obligation: 8
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_ferpa_education_record:
+      used_by_obligation: 0
+      used_by_exemption: 8
+      used_by_eval: 0
+      discoverable: false
+    is_financial_record:
+      used_by_obligation: 13
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_genetic_information:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_government_related_data:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_lie_detector_result:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_nonpublic_personal_information:
+      used_by_obligation: 6
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_phi:
+      used_by_obligation: 11
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_publicly_available:
+      used_by_obligation: 0
+      used_by_exemption: 6
+      used_by_eval: 0
+      discoverable: false
+    is_scoring_algorithm:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    is_subscriber_pii:
+      used_by_obligation: 5
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_sud_counseling_note:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_sud_patient_record:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_va_title_38_record:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    lawfully_available_to_the_public:
+      used_by_obligation: 0
+      used_by_exemption: 2
+      used_by_eval: 0
+      discoverable: false
+    on_derived_list:
+      used_by_obligation: 0
+      used_by_exemption: 6
+      used_by_eval: 0
+      discoverable: false
+    purpose_of_product:
+      used_by_obligation: 0
+      used_by_exemption: 6
+      used_by_eval: 0
+      discoverable: false
+    retrievable_in_ordinary_course:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    reveals_ppra_protected_category:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    service_directed_to_children:
+      used_by_obligation: 7
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    subject_deceased_more_than_50_years:
+      used_by_obligation: 0
+      used_by_exemption: 8
+      used_by_eval: 0
+      discoverable: false
+    subject_is_cdpa_covered_user:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    subject_is_child_under_13:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    subject_is_company:
+      used_by_obligation: 0
+      used_by_exemption: 6
+      used_by_eval: 0
+      discoverable: false
+    subject_is_former_customer:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    telephone_number_on_dnc_registry:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    types:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    types_include_phr_identifiable_health_information:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    unsecured_phr_identifiable_health_information:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+  entity:
+    acting_under_color_of_law:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    actual_knowledge_of_child_data:
+      used_by_obligation: 7
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    call_recipient_is_business:
+      used_by_obligation: 0
+      used_by_exemption: 3
+      used_by_eval: 0
+      discoverable: false
+    conducts_human_subjects_research:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    consumers_with_information_maintained:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    counterparty_is_country_of_concern_or_covered_person:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    extends_retail_credit_directly:
+      used_by_obligation: 0
+      used_by_exemption: 6
+      used_by_eval: 0
+      discoverable: false
+    glba_financial_institution:
+      used_by_obligation: 5
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    has_established_business_relationship_with_person:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    has_express_written_agreement_to_call:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    has_information_systems:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    hipaa_role:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    holds_as_employer:
+      used_by_obligation: 0
+      used_by_exemption: 16
+      used_by_eval: 0
+      discoverable: false
+    in_or_affecting_commerce:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_air_carrier:
+      used_by_obligation: 0
+      used_by_exemption: 3
+      used_by_eval: 0
+      discoverable: false
+    is_bank:
+      used_by_obligation: 0
+      used_by_exemption: 3
+      used_by_eval: 0
+      discoverable: false
+    is_cable_operator:
+      used_by_obligation: 5
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_cfpb_covered_person:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_cfpb_service_provider:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_common_carrier:
+      used_by_obligation: 0
+      used_by_exemption: 3
+      used_by_eval: 0
+      discoverable: false
+    is_compliant_regulated_entity:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    is_consumer_reporting_agency:
+      used_by_obligation: 5
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_coppa_operator:
+      used_by_obligation: 10
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_educational_agency_or_institution:
+      used_by_obligation: 5
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_employer:
+      used_by_obligation: 13
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_federal_agency:
+      used_by_obligation: 8
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_federal_credit_union:
+      used_by_obligation: 0
+      used_by_exemption: 3
+      used_by_eval: 0
+      discoverable: false
+    is_financial_institution:
+      used_by_obligation: 10
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_financial_institution_or_creditor:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_furnisher:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_government_authority:
+      used_by_obligation: 11
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_health_care_provider:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_hipaa_business_associate:
+      used_by_obligation: 9
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_hipaa_covered_entity:
+      used_by_obligation: 22
+      used_by_exemption: 3
+      used_by_eval: 0
+      discoverable: true
+    is_information_blocking_actor:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_irb:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_local_educational_agency:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_media_carrier:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    is_motor_vehicle_dealer:
+      used_by_obligation: 0
+      used_by_exemption: 6
+      used_by_eval: 0
+      discoverable: false
+    is_ny_addictive_platform_operator:
+      used_by_obligation: 7
+      used_by_exemption: 0
+      used_by_eval: 1
+      discoverable: true
+    is_ny_cdpa_operator:
+      used_by_obligation: 4
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_ny_educational_agency:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_ny_employer:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_ny_small_business:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    is_packers_and_stockyards_entity:
+      used_by_obligation: 0
+      used_by_exemption: 3
+      used_by_eval: 0
+      discoverable: false
+    is_part2_lawful_holder:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_part2_program:
+      used_by_obligation: 4
+      used_by_exemption: 4
+      used_by_eval: 0
+      discoverable: true
+    is_phr_vendor_or_phr_related_entity:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_private_sector:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_public_company:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_savings_and_loan:
+      used_by_obligation: 0
+      used_by_exemption: 3
+      used_by_eval: 0
+      discoverable: false
+    is_seller_or_telemarketer:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_state_dmv:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_telecommunications_carrier:
+      used_by_obligation: 7
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_us_government:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_us_person:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_video_tape_service_provider:
+      used_by_obligation: 4
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    maintains_data_it_does_not_own:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    maintains_or_possesses_consumer_information:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    nexus:
+      used_by_obligation: 18
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    offers_or_maintains_covered_accounts:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    offers_or_maintains_personal_health_records:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    owns_or_licenses_computerized_data:
+      used_by_obligation: 4
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    predominantly_motor_vehicle_sales_or_leasing:
+      used_by_obligation: 6
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    provides_electronic_communication_service:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    provides_electronic_communication_service_to_public:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    receives_federal_education_funds:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    routinely_assigns_contracts:
+      used_by_obligation: 0
+      used_by_exemption: 6
+      used_by_eval: 0
+      discoverable: false
+    subject_to_ftc_fcra_enforcement:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    uses_automated_employment_decision_tool:
+      used_by_obligation: 9
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    uses_consumer_reports:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    uses_or_maintains_electronic_health_record:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    within_ftc_jurisdiction:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+  event:
+    authorized_persons_only:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    consumers_affected:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    disclosure_was_inadvertent:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    government_compels_disclosure:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    irb_waived_informed_consent:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    is_security_breach:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    knowing:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    person_stated_entity_specific_do_not_call:
+      used_by_obligation: 1
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: true
+    residents_of_one_state_affected:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    type:
+      used_by_obligation: 37
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    written_request_from_agency_head_received:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+  law:
+    disclosure_required_by_other_law:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    federal_instrument:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    foia_disclosure_required:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    privacy_precondition_unsatisfied:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    research_subject_to_common_rule:
+      used_by_obligation: 4
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    state_instrument:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    state_requirement_subject:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+  practice:
+    accesses_stored_communications:
+      used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    administers_student_survey:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    collects_age_determination_data:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    collects_parental_consent_data:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    complies_with_ftc_rule:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    conduct_occurs_in_new_york:
+      used_by_obligation: 0
+      used_by_exemption: 7
+      used_by_eval: 0
+      discoverable: false
+    conducts_ppra_notifiable_activity:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    conducts_telemarketing:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    consent_revoked:
+      used_by_obligation: 0
+      used_by_exemption: 3
+      used_by_eval: 0
+      discoverable: false
+    consumer_consented:
+      used_by_obligation: 0
+      used_by_exemption: 3
+      used_by_eval: 0
+      discoverable: false
+    contract_limits_reuse:
+      used_by_obligation: 0
+      used_by_exemption: 2
+      used_by_eval: 1
+      discoverable: true
+    discloses_only_under_exceptions:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    disclosure_necessary_for_requested_transaction:
+      used_by_obligation: 0
+      used_by_exemption: 3
+      used_by_eval: 0
+      discoverable: false
+    disclosure_to_agency_employee_with_need_for_record:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    disclosure_to_service_provider:
+      used_by_obligation: 0
+      used_by_exemption: 2
+      used_by_eval: 0
+      discoverable: false
+    disposal_method:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    engages_in_data_brokerage:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    furnishes_to_consumer_reporting_agency:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    has_signed_written_solicitation_permission:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    initial_notice_provided:
+      used_by_obligation: 0
+      used_by_exemption: 2
+      used_by_eval: 0
+      discoverable: false
+    initiates_outbound_telephone_calls:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    intercepts_communications:
+      used_by_obligation: 8
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    interferes_with_access_exchange_or_use:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_carrying_third_party_advertisement:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    is_exempt_transaction_under_subpart_e:
+      used_by_obligation: 0
+      used_by_exemption: 2
+      used_by_eval: 0
+      discoverable: false
+    is_internal_part2_program_communication:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    is_qualified_service_organization_communication:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    is_state_child_abuse_report:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    makes_automated_calls:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    makes_public_privacy_commitment:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 1
+      discoverable: true
+    makes_telephone_solicitations:
+      used_by_obligation: 4
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    monitors_employee_communications:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    notified_hhs_secretary_of_breach:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    notified_under_other_breach_regime:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    offers_consumer_financial_product_or_service:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    policies_unchanged_since_last_notice:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    prepares_consumer_report:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    provides_addictive_feed:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    provides_written_employment_reference:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    provides_written_termination_notice:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    releases_to_third_party:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    research_is_46_104_exempt_category:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    retention_required_by_other_law:
+      used_by_obligation: 0
+      used_by_exemption: 2
+      used_by_eval: 0
+      discoverable: false
+    risk_determination_documented:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    seeks_verifiable_parental_consent:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    sends_commercial_email:
+      used_by_obligation: 4
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    sends_fax_advertisements:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    sends_feed_notifications:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    uses_likeness_for_advertising:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    withholds_to_prevent_harm:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+  purpose:
+    business_purpose:
+      used_by_obligation: 2
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    employment_screening:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    induce_business_purchase:
+      used_by_obligation: 0
+      used_by_exemption: 3
+      used_by_eval: 0
+      discoverable: false
+    induce_charitable_contribution:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    induce_purchase_of_goods_or_services:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_civil_or_criminal_law_enforcement_activity:
+      used_by_obligation: 0
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: false
+    is_marketing:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    is_published_routine_use:
+      used_by_obligation: 1
+      used_by_exemption: 1
+      used_by_eval: 0
+      discoverable: true
+    requires_part2_consent:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true

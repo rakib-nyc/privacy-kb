@@ -4,11 +4,11 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - ftc
+- ftc
 sector:
-  - any
+- any
 data_types:
-  - any
+- any
 status: in_force
 effective_from: '1938-03-21'
 effective_to: null
@@ -23,23 +23,20 @@ confidence: high
 preemption:
   posture: none
   authority: 15 U.S.C. § 45
-  note: >-
-    § 5 displaces nothing. It is the floor beneath the sectoral statutes and it runs alongside every
+  note: § 5 displaces nothing. It is the floor beneath the sectoral statutes and it runs alongside every
     state UDAP statute — which is why invariant I6 pairs the two and why neither ever switches off.
 enforcement:
   enforcers:
-    - ftc
+  - ftc
   private_right_of_action: false
   penalty:
-    structure: >-
-      Administrative cease-and-desist and injunctive relief. Civil penalties under 15 U.S.C. § 45(l)
-      for violating a final order, and under § 45(m) for knowingly violating a rule. AMG Capital
-      Management v. FTC (2021) held § 13(b) does NOT authorise equitable monetary relief, so redress
-      now runs through § 19 and § 45(m) rather than § 13(b).
+    structure: Administrative cease-and-desist and injunctive relief. Civil penalties under 15 U.S.C.
+      § 45(l) for violating a final order, and under § 45(m) for knowingly violating a rule. AMG Capital
+      Management v. FTC (2021) held § 13(b) does NOT authorise equitable monetary relief, so redress now
+      runs through § 19 and § 45(m) rather than § 13(b).
     range: null
-    note: >-
-      NO PRIVATE RIGHT OF ACTION under the FTC Act. Private plaintiffs reach the same conduct
-      through state UDAP statutes, which is the other half of invariant I6.
+    note: NO PRIVATE RIGHT OF ACTION under the FTC Act. Private plaintiffs reach the same conduct through
+      state UDAP statutes, which is the other half of invariant I6.
   statute_of_limitations: null
 id: us.usc.15.45.a1.public_commitment_deception
 source:
@@ -51,25 +48,21 @@ source:
   raw_sha256: d29a4cc1ef8b8b6e297d95e258214598047635c113920ef95407e76c2c6b7df8
   text_file: corpus/federal/domain-2-federal-privacy/ftc-act-5/raw/15-u-s-c-45.txt
   text_sha256: 4a5fdadfe59afce881b810666145730d387792e38a40f6a42454e9aaff5e8df4
-  text_extraction_cmd: >-
-    python3 tools/render-text.py
-    corpus/federal/domain-2-federal-privacy/ftc-act-5/raw/15-u-s-c-45.xml
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/ftc-act-5/raw/15-u-s-c-45.xml
   format: uslm_xml
   risk_tier: low
   render: null
   structured_source_check:
     checked:
-      - uscode.house.gov USLM XML release point 119-1
+    - uscode.house.gov USLM XML release point 119-1
     result: structured_source_used
     note: null
   segment_sha256: 1718dca49adf0a2d76b75bbc99d9090ab400584486e0d8e654768307562ee7bd
-verbatim_span: >-
-  Unfair methods of competition in or affecting commerce, and unfair or deceptive acts or practices
-  in or affecting commerce, are hereby declared unlawful.
+verbatim_span: unfair or deceptive acts or practices in or affecting commerce, are hereby declared unlawful.
 paragraph_path:
   path:
-    - a
-    - '1'
+  - a
+  - '1'
   anchor: /us/usc/t15/s45/a/1
   derivation: structural
   confidence: high
@@ -78,65 +71,62 @@ context_not_required: The paragraph is a freestanding declaration; no ancestor c
 subject:
   domain: II.A.1
   lifecycle:
-    - II
+  - II
 applies_if:
   all:
-    - entity.in_or_affecting_commerce == true
-    - practice.makes_public_privacy_commitment == true
+  - entity.in_or_affecting_commerce == true
+  - practice.makes_public_privacy_commitment == true
 obligation_type: prohibit
-summary: >-
-  A public claim of adherence to a privacy framework, code or certification scheme is a
-  representation, and departing from it materially is deception under § 5.
-requirement_detail: >-
-  THE EXPOSURE COMES FROM THE CLAIM, NOT FROM THE FRAMEWORK. A voluntary framework binds nobody by
-  itself — the 39 principle records in this corpus carry enforceability_pathway: none, because those
-  documents are addressed to states and member economies and offer an organisation nothing to join.
-  What an organisation CAN do is say publicly that it adheres, and that statement is a
-  representation about its privacy practices. Materially departing from it is deception. This is why
-  a CBPR-certified organisation does not have "no binding obligation": the obligation is not in the
-  scheme, it is here, triggered by the certification claim. Modelled once, on § 5, rather than
-  copied onto every framework record where the copies would drift.
+summary: A public claim of adherence to a privacy framework, code or certification scheme is a representation,
+  and departing from it materially is deception under § 5.
+requirement_detail: 'THE EXPOSURE COMES FROM THE CLAIM, NOT FROM THE FRAMEWORK. A voluntary framework
+  binds nobody by itself — a voluntary framework document is addressed to states and member economies
+  and offers an organisation nothing to join, so it carries no enforceability pathway of its own. What
+  an organisation CAN do is say publicly that it adheres, and that statement is a representation about
+  its privacy practices. Materially departing from it is deception. This is why a CBPR-certified organisation
+  does not have "no binding obligation": the obligation is not in the scheme, it is here, triggered by
+  the certification claim. Modelled once, on § 5, rather than copied onto every framework record where
+  the copies would drift.'
 exemptions:
-  - id: usc.15.45.a2.jurisdictional_carveouts
-    type: entity_level
-    reach: instrument
-    scope: >-
-      § 45(a)(2) removes whole classes of actor from the Commissions reach: banks, savings and loan
-      institutions, Federal credit unions, common carriers subject to the Acts to regulate commerce,
-      air carriers, and packers and stockyards entities. CONSEQUENCE TEST: this is the ONLY way an
-      entity escapes invariant I6s federal half, and it is decisive rather than partial — if the
-      entity is inside a carve-out, § 5 does not reach it and its prudential or sectoral regulator
-      does instead. It is NOT relief from the conduct standard: a banks deceptive privacy claim is
-      still actionable, by the OCC or the CFPB rather than the FTC. The common-carrier carve-out is
-      ACTIVITY-SENSITIVE in practice and the hardest of the set — it has been litigated over whether
-      it follows the entity or the common-carriage activity, so an entity that is a carrier for some
-      services and not others must be assessed on the specific conduct, not the corporate label.
-    source_citation: 15 U.S.C. § 45(a)(2)
-    verbatim_span: >-
-      The Commission is hereby empowered and directed to prevent persons, partnerships, or
-      corporations, except banks, savings and loan institutions described in section 57a(f)(3) of
-      this title , Federal credit unions described in section 57a(f)(4) of this title , common
-      carriers subject to the Acts to regulate commerce, air carriers and foreign air carriers
-      subject to part A of subtitle VII of title 49, and persons, partnerships, or corporations
-      insofar as they are subject to the Packers and Stockyards Act, 1921, as amended [ 7 U.S.C. 181
-      et seq.], except as provided in section 406(b) of said Act [ 7 U.S.C. 227(b) ], from using
-      unfair methods of competition in or affecting commerce and unfair or deceptive acts or
-      practices in or affecting commerce.
-    burden_of_proof: entity
-    applies_if:
-      any:
-        - entity.is_bank == true
-        - entity.is_savings_and_loan == true
-        - entity.is_federal_credit_union == true
-        - entity.is_common_carrier == true
-        - entity.is_air_carrier == true
-        - entity.is_packers_and_stockyards_entity == true
+- id: usc.15.45.a2.jurisdictional_carveouts
+  type: entity_level
+  reach: instrument
+  scope: '§ 45(a)(2) removes whole classes of actor from the Commissions reach: banks, savings and loan
+    institutions, Federal credit unions, common carriers subject to the Acts to regulate commerce, air
+    carriers, and packers and stockyards entities. CONSEQUENCE TEST: this is the ONLY way an entity escapes
+    invariant I6s federal half, and it is decisive rather than partial — if the entity is inside a carve-out,
+    § 5 does not reach it and its prudential or sectoral regulator does instead. It is NOT relief from
+    the conduct standard: a banks deceptive privacy claim is still actionable, by the OCC or the CFPB
+    rather than the FTC. The common-carrier carve-out is ACTIVITY-SENSITIVE in practice and the hardest
+    of the set — it has been litigated over whether it follows the entity or the common-carriage activity,
+    so an entity that is a carrier for some services and not others must be assessed on the specific conduct,
+    not the corporate label.'
+  source_citation: 15 U.S.C. § 45(a)(2)
+  verbatim_span: The Commission is hereby empowered and directed to prevent persons, partnerships, or
+    corporations, except banks, savings and loan institutions described in section 57a(f)(3) of this title
+    , Federal credit unions described in section 57a(f)(4) of this title , common carriers subject to
+    the Acts to regulate commerce, air carriers and foreign air carriers subject to part A of subtitle
+    VII of title 49, and persons, partnerships, or corporations insofar as they are subject to the Packers
+    and Stockyards Act, 1921, as amended [ 7 U.S.C. 181 et seq.], except as provided in section 406(b)
+    of said Act [ 7 U.S.C. 227(b) ], from using unfair methods of competition in or affecting commerce
+    and unfair or deceptive acts or practices in or affecting commerce.
+  burden_of_proof: entity
+  applies_if:
+    any:
+    - entity.is_bank == true
+    - entity.is_savings_and_loan == true
+    - entity.is_federal_credit_union == true
+    - entity.is_common_carrier == true
+    - entity.is_air_carrier == true
+    - entity.is_packers_and_stockyards_entity == true
 related: []
 common_errors:
-  - >-
-    Reporting that a voluntary framework creates no obligation and stopping. The claim of adherence
-    creates the obligation, through § 5.
-  - >-
-    Attaching the enforceability to the framework record. It belongs to § 5; duplicating it would
-    state one proposition N times and let the copies diverge.
+- Reporting that a voluntary framework creates no obligation and stopping. The claim of adherence creates
+  the obligation, through § 5.
+- Attaching the enforceability to the framework record. It belongs to § 5; duplicating it would state
+  one proposition N times and let the copies diverge.
 open_questions: []
+span_truncation_note: Quotes only the DECEPTIVE-PRACTICES limb of § 5(a)(1). The unfair-methods-of-competition
+  limb is in the same sentence and is not what a public-commitment theory rests on; us.usc.15.45.a1.deception
+  carries the provision whole. Two records applying one sentence must not quote it identically — see gate
+  41.

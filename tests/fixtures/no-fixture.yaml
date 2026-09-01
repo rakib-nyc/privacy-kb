@@ -1,0 +1,31 @@
+# GATES THAT CANNOT BE TESTED BY A SINGLE-CASE FIXTURE, AND WHY
+# =============================================================
+# Red-teaming 0.1 found that 11 of 38 gates had no fixture while README.md claimed "one fixture
+# per gate". Most of that gap was real and is now closed. What remains is gates whose SUBJECT is
+# the corpus as a whole or the harness itself — a fixture corpus of one or two records cannot
+# express the condition they check.
+#
+# This file exists so the gap is declared rather than discovered. tools/test-gates.mjs asserts
+# that every gate is either exercised by a fixture or listed here, so a NEW gate cannot quietly
+# join the untested set.
+version: 1
+no_fixture:
+  8:  Reads evals/baseline.json and the whole scenario suite. A per-case corpus has no evals.
+  19: Reads meta/gate-applicability.yaml against the formats PRESENT in the corpus. A fixture
+      corpus has one format, so the declaration it checks is not the one that ships.
+  22: Reads validate.mjs's own source to prove every listed gate is implemented. Its subject is
+      the file, not any corpus. Proven instead by adding a phantom gate 99 and watching it fire.
+  31: Compares meta/jurisdiction-coverage.yaml declarations against resolution status across the
+      whole corpus.
+  32: Its input is the skip list PRODUCED by the other gates over the full corpus.
+  33: Deliberately skips tests/fixtures/ paths, because fixtures cite synthetic raw files that
+      were never fetched. A fixture could only test it by defeating that exemption.
+  34: Counts uncovered taxonomy leaves across the whole corpus against a ratchet.
+  35: A corpus-wide COUNT of unmatched quoted phrases against an allowance. One record cannot
+      exceed a threshold of 24.
+  36: Needs a workflow_constraint record composed from several others; the composition, not any
+      single record, is what it checks.
+  37: Same shape as 36, for doctrine records.
+  42: Compares the LIVE thresholds of gates 8, 34 and 35 against meta/ratchets.yaml. All three
+      live outside any single record, so a one-record fixture has no threshold to move. Proven
+      instead by raising unaccounted_allowance 38 -> 45 and watching it fire.

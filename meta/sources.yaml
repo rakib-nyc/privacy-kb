@@ -5,12 +5,36 @@ sources:
   sha256: c00d0c0594aa4472ac0339520dca0c2e09445dd7c23604f2cba9fb04192d8bf6
   format: uslm_xml
   label: 12 U.S.C. § 5531
+- raw_file: corpus/federal/authorities/raw/12-u-s-c-5564.xml
+  url: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title12-section5564
+  fetched: '2026-08-19'
+  sha256: da0b3e07baf0fa162980d1e36be604b54e7673aa5e34a990793d3f4eff3b012f
+  format: uslm_xml
+  label: 12-u-s-c-5564.xml
+  note: Fetched as the enforcement-authority source for an authority record. It was on disk and in no
+    ledger row until gate 41 asked the question in the other direction.
 - raw_file: corpus/federal/authorities/raw/15-u-s-c-45.xml
   url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
   fetched: '2026-08-19'
   sha256: d29a4cc1ef8b8b6e297d95e258214598047635c113920ef95407e76c2c6b7df8
   format: uslm_xml
   label: 15 U.S.C. § 45
+- raw_file: corpus/federal/authorities/raw/15-u-s-c-46.xml
+  url: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section46
+  fetched: '2026-08-19'
+  sha256: 2f11a348a59a1e6bdc9979aeb0678a3b3aa82f7d09a9522dfbb543a650b2f7a7
+  format: uslm_xml
+  label: 15-u-s-c-46.xml
+  note: Fetched as the enforcement-authority source for an authority record. It was on disk and in no
+    ledger row until gate 41 asked the question in the other direction.
+- raw_file: corpus/federal/authorities/raw/15-u-s-c-57a.xml
+  url: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section57a
+  fetched: '2026-08-19'
+  sha256: 6e36f94294a9d189d83b7f5b01120be557c651dfe4698231b84ff4a86961c677
+  format: uslm_xml
+  label: 15-u-s-c-57a.xml
+  note: Fetched as the enforcement-authority source for an authority record. It was on disk and in no
+    ledger row until gate 41 asked the question in the other direction.
 - raw_file: corpus/federal/authorities/raw/15-u-s-c-78u.xml
   url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc15@119-1.zip
   fetched: '2026-08-19'
@@ -35,6 +59,14 @@ sources:
   sha256: c274a010be4669bfb71f440a0fbad5a81df1b6f753acf61a4b978b3fc5ff552b
   format: uslm_xml
   label: 42 U.S.C. § 1320d-5
+- raw_file: corpus/federal/authorities/raw/42-u-s-c-1320d-6.xml
+  url: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section1320d6
+  fetched: '2026-08-19'
+  sha256: 17b38003b6581a934e1a90529b72688b89e605f58de64c2fa1c3b801e87a0f2d
+  format: uslm_xml
+  label: 42-u-s-c-1320d-6.xml
+  note: Fetched as the enforcement-authority source for an authority record. It was on disk and in no
+    ledger row until gate 41 asked the question in the other direction.
 - raw_file: corpus/federal/authorities/raw/42-u-s-c-2000e-5.xml
   url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
   fetched: '2026-08-19'
@@ -47,27 +79,14 @@ sources:
   sha256: 9d301f80fe41a4a75775e6cd1fa72fc7402917d64245168190697be032dbddbb
   format: uslm_xml
   label: 47 U.S.C. § 222
-- url: https://digitaladvertisingalliance.org/sites/aboutads/files/DAA_files/seven-principles-07-01-09.pdf
-  final_url: null
-  host_kind: self_regulatory
-  instrument_id: selfreg.daa.principles
-  raw_file: corpus/federal/authorities/raw/daa-seven-principles-2009.pdf
-  raw_sha256: 31da8ad7baf08a25c1e3023139d3be218c62f4ffb202310b7d80a1026c16db8b
-  bytes: 1893766
-  content_type: application/pdf
+- raw_file: corpus/federal/authorities/raw/47-u-s-c-503.xml
+  url: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title47-section503
   fetched: '2026-08-19'
-  note: DAA Self-Regulatory Principles for Online Behavioral Advertising (2009)
-- url: https://www.thenai.org/wp-content/uploads/2025/03/NAI-Framework_March-2025.pdf
-  final_url: null
-  host_kind: self_regulatory
-  instrument_id: selfreg.nai.framework
-  raw_file: corpus/federal/authorities/raw/nai-framework-2025-03.pdf
-  raw_sha256: 9f48e36ed8f8e39232d6b8c14b5b21b48ed1311a4b9136ef3518ec9423a94fe2
-  bytes: 1117864
-  content_type: application/pdf
-  fetched: '2026-08-19'
-  note: NAI Principles & Self-Regulatory Framework, March 2025; supersedes the 2020 NAI Code of Conduct
-    as of 1 Feb 2025
+  sha256: 612335c6657271baf5c79db455259b7eb378e51d1e65b255c35a4accf6e86082
+  format: uslm_xml
+  label: 47-u-s-c-503.xml
+  note: Fetched as the enforcement-authority source for an authority record. It was on disk and in no
+    ledger row until gate 41 asked the question in the other direction.
 - raw_file: corpus/federal/domain-2-federal-privacy/ada-medical/raw/42-u-s-c-12112.xml
   url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc42@119-1.zip
   fetched: '2026-08-19'
@@ -470,26 +489,6 @@ sources:
   sha256: 3dd90781077d08d0621dbaefb5b60a0cf25ba158d64855af6847559dec36d7ff
   format: uslm_xml
   label: 18 U.S.C. § 2710
-- url: https://www.apec.org/apecapi/publication/getfile?publicationId=42d9fa81-f683-46a8-858b-1cde61fdb8f8
-  final_url: https://www.apec.org/docs/default-source/publications/2017/8/apec-privacy-framework-(2015)/217_ecsg_2015-apec-privacy-framework.pdf?sfvrsn=1fe93b6b_1
-  host_kind: international
-  instrument_id: intl.apec.privacy_framework
-  raw_file: corpus/principles/fipps/raw/apec-privacy-framework-2015-20260818.pdf
-  raw_sha256: f64602b81a7d562b9f64e51ae48d54b7a38476c71ab50d57eea9f7cef5c8e3b7
-  bytes: 252632
-  content_type: application/pdf
-  fetched: '2026-08-19'
-  note: APEC Privacy Framework (2015), publication Aug 2017
-- url: https://www.globalcbpr.org/wp-content/uploads/Global-CBPR-Framework-2023.pdf
-  final_url: null
-  host_kind: international
-  instrument_id: intl.cbpr.framework
-  raw_file: corpus/principles/fipps/raw/global-cbpr-framework-2023-20260818.pdf
-  raw_sha256: ee6e7ac1fddf0502caa27f49f627d639503413b78b9b2529570eed39fd310789
-  bytes: 329419
-  content_type: application/pdf
-  fetched: '2026-08-19'
-  note: Global CBPR Framework (2023), Global CBPR Forum
 - url: https://aspe.hhs.gov/reports/records-computers-rights-citizens
   final_url: null
   host_kind: agency
@@ -501,48 +500,6 @@ sources:
   fetched: '2026-08-19'
   note: Records, Computers and the Rights of Citizens (1973), Secretary's Advisory Committee on Automated
     Personal Data Systems
-- url: https://legalinstruments.oecd.org/public/doc/114/114.en.pdf
-  final_url: null
-  host_kind: international
-  instrument_id: intl.oecd.privacy_guidelines
-  raw_file: corpus/principles/fipps/raw/oecd-legal-0188-20260818.pdf
-  raw_sha256: b2cb81b7a03eadbab16d7475dd310d4e77c64dcdb8eebd6123c7a62afa470f5d
-  bytes: 596276
-  content_type: application/pdf
-  fetched: '2026-08-19'
-  note: OECD/LEGAL/0188 Recommendation concerning Guidelines Governing the Protection of Privacy and Transborder
-    Flows of Personal Data
-- url: https://legalinstruments.oecd.org/public/doc/114/1046c161-3403-404f-a674-1ad0f737cc3b.html
-  final_url: null
-  host_kind: international
-  instrument_id: intl.oecd.privacy_guidelines
-  raw_file: corpus/principles/fipps/raw/oecd-legal-0188-20260819.html
-  raw_sha256: c0d3cadc21ea590a1a17889e9f92e3a64e73227d1187633ee103e5f12235722f
-  bytes: 28798
-  content_type: text/html; charset=UTF-8
-  fetched: '2026-08-19'
-  note: OECD/LEGAL/0188 official HTML rendering, located via legalinstruments.oecd.org/api/instruments/OECD-LEGAL-0188
-    bodyText.ref
-- url: https://www.apec.org/docs/default-source/Groups/ECSG/CBPR/CBPR-PoliciesRulesGuidelines.pdf
-  final_url: null
-  host_kind: international
-  instrument_id: intl.apec.cbpr_system
-  raw_file: corpus/schemes/cbpr/raw/apec-cbpr-prg-20260819.pdf
-  raw_sha256: d4e0fff6e1ea0981179b08591351f01aac2138709854e15aecd18e2caaaf389d
-  bytes: 89132
-  content_type: application/pdf
-  fetched: '2026-08-19'
-  note: APEC Cross-Border Privacy Rules System Policies, Rules and Guidelines
-- url: https://www.globalcbpr.org/wp-content/uploads/Global-CBPR-Policies-Rules-and-Guidelines_Final-as-of-April-11-2024.pdf
-  final_url: null
-  host_kind: international
-  instrument_id: intl.cbpr.global_system
-  raw_file: corpus/schemes/cbpr/raw/global-cbpr-prg-20260819.pdf
-  raw_sha256: b6b6d4aa13375402eb954798f99df68eab0add158be28e1a717d79a33cad0156
-  bytes: 264528
-  content_type: application/pdf
-  fetched: '2026-08-19'
-  note: Global CBPR System Policies, Rules and Guidelines, final as of 11 April 2024
 - raw_file: corpus/state/ny/cdpa/raw/ny-gbs-899-ee.json
   url: https://legislation.nysenate.gov/api/3/laws/GBS/899-EE
   fetched: '2026-08-20'
@@ -766,8 +723,8 @@ structured_source_negatives:
   result: no_structured_source_exists
   note: PDF only, and the host blocks automated fetch. See meta/blocked-sources.yaml.
   checked_on: '2026-08-18'
-note: Every primary source fetched, with its URL, fetch date and hash. BRIEF.md Phase 0 item 4. This
-  ledger went stale when tools/extract.py replaced tools/fetch-source.mjs as the acquisition path and
-  did not log here — 13 entries against 78 stored raw files, with nothing failing, because gate 2 hashes
-  each atom OWN raw_file rather than checking this list. Gate 33 now asserts the correspondence and extract.py
+note: Every primary source fetched, with its URL, fetch date and hash. BRIEF.md Phase 0 item 4. This ledger
+  went stale when tools/extract.py replaced tools/fetch-source.mjs as the acquisition path and did not
+  log here — 13 entries against 78 stored raw files, with nothing failing, because gate 2 hashes each
+  atom OWN raw_file rather than checking this list. Gate 33 now asserts the correspondence and extract.py
   refuses to finish a fetch it cannot log.
