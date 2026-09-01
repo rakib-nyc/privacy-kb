@@ -741,13 +741,27 @@ for (const { a } of atoms) {
 // or a shape outside the grammar. The engine REFUSES those rather than guessing, which
 // means the exemption silently never fires. That is DEBT-009 in miniature, and it is
 // exactly what three green signals hid the first time.
+//
+// SCOPE WIDENED. This probed only EXEMPTION predicates, so the same defect in a record's OWN
+// applies_if was invisible: `entity.x == true || nonsense(` passed all 42 gates while comparing
+// entity.x against the literal text "true || nonsense(". Grammatical, evaluable, satisfiable,
+// and permanently false. The predicate parser now refuses an unrecognised right-hand side, and
+// this asks the question of every predicate a record carries rather than only half of them.
 for (const { a } of atoms) {
+  const probes = [
+    ...(a.applies_if ? [['applies_if', a.applies_if]] : []),
+    ...(a.exemptions ?? []).map((ex, i) => [`exemptions[${i}] (${ex.id})`, ex.applies_if]),
+  ];
   for (const [i, ex] of (a.exemptions ?? []).entries()) {
     bump(21);
-    if (!ex.applies_if) { fail(21, a.id, `exemptions[${i}] has no applies_if — it is inert`); continue; }
-    const probe = evalExpr(ex.applies_if);
+    if (!ex.applies_if) fail(21, a.id, `exemptions[${i}] has no applies_if — it is inert`);
+  }
+  for (const [where, expr] of probes) {
+    if (!expr) continue;
+    bump(21);
+    const probe = evalExpr(expr);
     if (probe.refused)
-      fail(21, a.id, `exemptions[${i}] (${ex.id}) carries a predicate the engine REFUSES: ${probe.refused}. ` +
+      fail(21, a.id, `${where} carries a predicate the engine REFUSES: ${probe.refused}. ` +
         `It would never fire, and nothing downstream would say so.`);
   }
 }

@@ -1,29 +1,4 @@
-# Red-team findings against 0.1, and what closed each
-=====================================================
-Sixteen findings from an adversarial pass over the shipped 0.1. Every one is now closed by a
-gate, a fixture, a property test or a corpus fix, and the attacks are replayable.
-
-| # | Severity | Closed by |
-|---|---|---|
-| QA-01 | CRITICAL | gate 39 + fixture |
-| QA-02 | CRITICAL | gate 40 + fixture + schema field span_truncation_note |
-| QA-03 | MAJOR | surfaceable() filter on privacy_coverage, suppressed_by_i1 in the payload |
-| QA-04 | MINOR | domain_coordinate replaces bok_coordinate (old name still accepted) |
-| QA-05 | CRITICAL | strict as_of validation + engine property P6 |
-| QA-06 | MODERATE | meta/ratchets.yaml + gate 42 |
-| QA-07 | MINOR | related[] item schema (string or {id, relation}) |
-| QA-08 | MAJOR | narrowed the duplicate span + gate 41 + fixture |
-| QA-09 | MAJOR | meta/fact-keys.yaml, generated and CI-checked |
-| QA-10 | MINOR | computeDeadline made total + engine property P7 |
-| QA-11 | MODERATE | business_day_basis stated in the result |
-| QA-12 | MODERATE | gate 41 ledger-vs-disk, 8 dangling rows removed |
-| QA-13 | MODERATE | gate 41 other direction, 5 sources logged |
-| QA-14 | MAJOR | 5 new fixtures + tests/fixtures/no-fixture.yaml + closure assertion |
-| QA-15 | MINOR | JSON-RPC -32700 on unparseable input |
-| QA-16 | MAJOR | gate 22 implemented as the no-phantom-gates self-check |
-
-## Findings as first written
-
+# QA / red-team findings — 0.1
 
 ## QA-01  CRITICAL — verbatim_span is never correlated with its own paragraph_path
 Gate 3 checks the span is a substring of THE WHOLE SOURCE. Gate 23 checks the path resolves to
@@ -123,3 +98,29 @@ introduced and nothing flagged it. The advertised gate count of 38 includes one 
 implementation behind it. A gate that examines nothing is indistinguishable from a gate that
 passes — which is the exact failure gate 32 was built to prevent, occurring one level up on
 gate 32's own list.
+
+# ROUND 3 — surfaces not reached in round 1
+
+## QA-17  CRITICAL — a malformed predicate passed all 42 gates and could never be true
+The literal parser ended `return t`, so an unrecognised right-hand side became a bare STRING to
+compare against. `entity.x == true || nonsense(` compared entity.x to the literal text
+"true || nonsense(": grammatical, evaluable, satisfiable, and permanently false. Gate 21 probed
+only EXEMPTION predicates, so a record's own applies_if was never asked. Closed three ways: the
+parser refuses an unrecognised RHS; the shape is now checked BEFORE the fact lookup (an UNKNOWN
+left-hand side used to return first, so gate 21's empty-facts probe never reached the RHS); and
+gate 21 now probes applies_if as well as exemptions. Fixture gate21-malformed-predicate.
+
+## QA-18  MODERATE — preemption resolve() was not total
+Threw on a null record, the same class as QA-10. Now returns an unresolved verdict.
+
+## QA-19  MAJOR — an unrecognised preemption posture resolved to "no displacement"
+`case 'none': default:` shared a branch, so a typo, or a posture added to the schema and not to
+the switch, returned the MOST PERMISSIVE answer available: state law survives, nothing is
+displaced. That is the one direction a preemption engine must never guess in. Unknown postures
+now return outcome:'unresolved' and say they are not a finding of no preemption.
+
+## QA-20  MODERATE — all four workflows threw on a null argument
+They destructure their options object in the parameter list, and a default covers undefined
+only. The outermost surface a caller touches was the only layer with no totality test. All four
+now normalise the argument and return an INCOMPLETE artifact, which is what they already did for
+an empty one. Pinned by 40 assertions in workflows/test-workflows.mjs.

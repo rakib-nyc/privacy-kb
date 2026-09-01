@@ -81,5 +81,23 @@ for (const [name, fn] of Object.entries(WORKFLOWS)) {
      r.checklist.find(c => /governing language/.test(c.criterion)).passed);
 }
 
+
+// TOTALITY AT THE OUTERMOST SURFACE. All four destructured their options object in the parameter
+// list, so every one threw a TypeError on null — the layer a caller touches first was the only
+// layer with no totality test. Same class as computeDeadline and preemption.resolve(); found by
+// red-teaming, fixed, and pinned here so it cannot come back.
+for (const [name, fn] of Object.entries({ privacyImpactAssessment, noticeGapAnalysis,
+                                          rightsRequestHandling, breachNotificationTimeline })) {
+  for (const [label, a] of [['null', null], ['undefined', undefined], ['array', []],
+                            ['string', 'x'], ['number', 7]]) {
+    let threw = null, out = null;
+    try { out = fn(a); } catch (e) { threw = String(e); }
+    ok(`${name} is total on ${label}`, threw === null, threw ?? '');
+    ok(`${name} on ${label} reports INCOMPLETE rather than a confident artifact`,
+       threw !== null || out?.complete === false);
+  }
+}
+
+
 console.log(`\n${fail} failure(s)`);
 process.exit(fail ? 1 : 0);

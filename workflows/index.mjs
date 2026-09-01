@@ -50,7 +50,15 @@ function finish(id, lifecycle, title, sections, checklist, result) {
 }
 
 /** lifecycle III — Assessing Data. Privacy impact assessment. */
-export function privacyImpactAssessment({ system_description, data_flows = [], entity = {}, data = {}, context = {} }) {
+// TOTALITY AT THE OUTERMOST SURFACE. These four take a single options object and destructured
+// it in the parameter list, which throws on null — a default covers undefined only. They are
+// the layer a caller touches first, and a null argument is a caller mistake that should
+// produce an INCOMPLETE artifact saying so, exactly as an empty one already does, rather than
+// a stack trace. Same non-totality found in computeDeadline and preemption.resolve().
+const arg = a => (a && typeof a === 'object' && !Array.isArray(a)) ? a : {};
+
+export function privacyImpactAssessment(_input) {
+  const { system_description, data_flows = [], entity = {}, data = {}, context = {} } = arg(_input);
   const r = analyze(entity, data, context);
   const sections = [
     { heading: 'System under assessment', body: system_description ?? null },
@@ -76,7 +84,8 @@ export function privacyImpactAssessment({ system_description, data_flows = [], e
 }
 
 /** lifecycle IV — Protecting. Privacy notice gap analysis. */
-export function noticeGapAnalysis({ current_notice = '', entity = {}, data = {}, context = {} }) {
+export function noticeGapAnalysis(_input) {
+  const { current_notice = '', entity = {}, data = {}, context = {} } = arg(_input);
   const r = analyze(entity, data, context);
   const disclosureAtoms = r.obligations.filter(o => ['disclose', 'notify'].includes(o.obligation_type));
   const missing = disclosureAtoms.filter(o => {
@@ -103,7 +112,8 @@ export function noticeGapAnalysis({ current_notice = '', entity = {}, data = {},
 }
 
 /** lifecycle VI — Responding to requests. */
-export function rightsRequestHandling({ request_type, requester = {}, entity = {}, data = {}, context = {} }) {
+export function rightsRequestHandling(_input) {
+  const { request_type, requester = {}, entity = {}, data = {}, context = {} } = arg(_input);
   const r = analyze(entity, data, context);
   const rights = r.obligations.filter(o => ['disclose', 'delete', 'obtain_consent'].includes(o.obligation_type));
   const sections = [
@@ -127,7 +137,8 @@ export function rightsRequestHandling({ request_type, requester = {}, entity = {
 }
 
 /** lifecycle VI — Responding to incidents. Multi-regime breach notification timeline. */
-export function breachNotificationTimeline({ incident = {}, entity = {}, data = {}, context = {} }) {
+export function breachNotificationTimeline(_input) {
+  const { incident = {}, entity = {}, data = {}, context = {} } = arg(_input);
   const ctx = { ...context, event: { ...(context.event ?? {}), ...incident } };
   const r = analyze(entity, data, ctx);
   const notifyAtoms = r.obligations.filter(o => o.obligation_type === 'notify');
