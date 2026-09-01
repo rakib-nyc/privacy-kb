@@ -1,6 +1,6 @@
 {
   "name": "privacy-kb",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "description": "US federal privacy law obligation knowledge base, engine and MCP server",
   "license": "Apache-2.0",

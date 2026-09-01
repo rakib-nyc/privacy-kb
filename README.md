@@ -25,7 +25,7 @@ is the honest remaining work.
 | Verified | 244 `verbatim_confirmed` · 4 suppressed by invariant I1 and unreachable from any output |
 | Instruments | 54 declared · **53 complete** against their declared duty categories |
 | taxonomy leaves covered | 31 / 69 · 38 neither covered nor ruled out of scope, and gate 34 ratchets that number |
-| CI gates | **42**, all named · 55 fixtures · 31 gates fixture-exercised, 11 declared unexercisable in `tests/fixtures/no-fixture.yaml` and why |
+| CI gates | **42**, all named · 56 fixtures · 31 gates fixture-exercised, 11 declared unexercisable in `tests/fixtures/no-fixture.yaml` and why |
 | Walker assumptions | 13 declared, 13 with an executable test |
 | Engine | 7 modules · 7 property tests, including both halves of invariant I6, as-of validation, and totality of every entry point |
 | MCP server | 9 tools, 22 tests including a live stdio handshake |
@@ -68,8 +68,14 @@ they were records that were **verbatim, uniquely cited, internally consistent an
   garbage — the extra two being law that does not bind until 2027.
 - **Gate 22 did not exist.** It sat in the gate list with no implementation, reporting
   examined-nothing on every run. It is now the check that no gate can be listed and unimplemented.
+- A **malformed predicate** — `entity.x == true || nonsense(` — passed all 42 gates while
+  comparing against the literal text `"true || nonsense("`. Grammatical, evaluable, satisfiable,
+  and permanently false: an obligation that could never apply and nothing saying so.
+- An **unrecognised preemption posture** resolved to `no_displacement` — the most permissive
+  answer available — because it shared a `default:` branch with `none`.
 
-Each finding has a gate, a fixture or a property test, and the attacks are replayable.
+Twenty findings across three passes. Each has a gate, a fixture or a property test, and every
+attack is replayable: `bash tests/red-team-replay.sh`. Full account in `meta/red-team-0.1.md`.
 
 ## Architecture
 

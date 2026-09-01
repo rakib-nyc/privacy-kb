@@ -57,6 +57,7 @@ gate26-lone-definition: []
 gate27-undeclared-instrument:
 - 27
 gate28-unfilled-namespace:
+- 21
 - 28
 - 29
 gate29-satisfiable-predicate: []
@@ -113,3 +114,6 @@ gate38-stale-segment-anchor:
 - 38
 gate41-duplicate-provision:
 - 41
+gate21-malformed-predicate:
+- 21
+- 29

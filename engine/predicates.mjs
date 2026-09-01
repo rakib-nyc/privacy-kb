@@ -37,6 +37,8 @@ function lookup(path, facts) {
   return { value: v };
 }
 
+const MALFORMED = Symbol('malformed-literal');
+
 function literal(tok) {
   const t = tok.trim();
   if (/^'.*'$/.test(t) || /^".*"$/.test(t)) return t.slice(1, -1);
@@ -44,8 +46,26 @@ function literal(tok) {
   if (t === 'false') return false;
   if (t === 'null') return null;
   if (/^-?\d+(\.\d+)?$/.test(t)) return Number(t);
-  if (/^\[.*\]$/.test(t)) return t.slice(1, -1).split(',').map(x => literal(x)).filter(x => x !== '');
-  return t;
+  // INSIDE A LIST a bare token is an enum value, not garbage: `entity.hipaa_role in
+  // [covered_entity]` is how the corpus writes it and quoting is not required there. A plain
+  // identifier is accepted; anything carrying syntax characters is still malformed, so the
+  // distinction stays between "unquoted value" and "unparsed expression".
+  if (/^\[.*\]$/.test(t))
+    return t.slice(1, -1).split(',')
+      .map(x => x.trim()).filter(Boolean)
+      .map(x => (/^[A-Za-z0-9_.:-]+$/.test(x) && !/^-?\d+(\.\d+)?$/.test(x)) ? x : literal(x))
+      .filter(x => x !== MALFORMED);
+  // ANYTHING ELSE IS MALFORMED, NOT A BARE STRING. This used to `return t`, so a right-hand side
+  // the grammar did not recognise became a string literal to compare against — and a predicate
+  // like `entity.x == true || nonsense(` passed every one of the 42 gates while comparing
+  // entity.x to the literal text "true || nonsense(". Grammatical, evaluable, satisfiable, and
+  // dead: the obligation could never apply, and nothing said so. Gate 21 checks the engine does
+  // not refuse; gate 28 that the namespace is filled; gate 29 that a witness exists. All three
+  // are satisfied by a comparison against garbage.
+  //
+  // Zero predicates in the corpus rely on a bare right-hand side — checked before changing this —
+  // so refusing is free, and refusing is what an unrecognised token deserves.
+  return MALFORMED;
 }
 
 const OPS = {
@@ -86,10 +106,20 @@ export function evalPredicate(src, facts) {
   if (!m) return { value: UNKNOWN, refused: `predicate not in the grammar: ${s}`,
                    why: `REFUSED — unparseable predicate, treated as unknown rather than true` };
   const [, path, op, rhsRaw] = m;
+  // SHAPE BEFORE FACTS. A malformed right-hand side is malformed whatever the caller supplied,
+  // and checking it after the lookup meant an UNKNOWN left-hand side returned first — so a probe
+  // against EMPTY facts, which is exactly how gate 21 tests a predicate, never reached the RHS at
+  // all. The check existed and the gate could not see it.
+  const rhs = literal(rhsRaw);
+  if (rhs === MALFORMED)
+    return { value: UNKNOWN,
+             refused: `right-hand side is not a literal the grammar recognises: ${JSON.stringify(rhsRaw)}`,
+             why: `REFUSED — "${rhsRaw}" is not true/false/null, a number, a quoted string or a ` +
+                  `bracketed list. Comparing against it as text would make this predicate ` +
+                  `permanently false while every structural check passed.` };
   const { value: lhs, err } = lookup(path, facts);
   if (err) return { value: UNKNOWN, refused: err, why: `REFUSED — ${err}` };
   if (lhs === UNKNOWN) return { value: UNKNOWN, why: `${path} is not among the supplied facts` };
-  const rhs = literal(rhsRaw);
   const out = OPS[op](lhs, rhs);
   return { value: out, why: `${path} (${JSON.stringify(lhs)}) ${op} ${JSON.stringify(rhs)} -> ${out}` };
 }
