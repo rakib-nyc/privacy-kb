@@ -1,6 +1,6 @@
 {
   "name": "privacy-kb",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "private": true,
   "description": "US federal privacy law obligation knowledge base, engine and MCP server",
   "license": "Apache-2.0",
@@ -11,7 +11,7 @@
     "validate": "node tools/validate.mjs",
     "test-gates": "node tools/test-gates.mjs",
     "recheck": "node tools/fetch-source.mjs --recheck",
-    "test": "node tools/test-gates.mjs && python3 tools/test-extractors.py && python3 tools/test-dual-parse.py && node tools/authority-tier.mjs --self-test && node tools/authority-tier.mjs --validate-corpus && python3 tools/scan-features.py --check && node tools/check-engine-schema.mjs && node tools/validate.mjs && node tools/ancestry-diff.mjs --check && node tools/update-coverage.mjs --check && node tools/fact-keys.mjs --check && node engine/test-engine.mjs && node mcp/test-mcp.mjs && node workflows/test-workflows.mjs",
+    "test": "node tools/test-gates.mjs && python3 tools/test-extractors.py && python3 tools/test-dual-parse.py && node tools/authority-tier.mjs --self-test && node tools/authority-tier.mjs --validate-corpus && python3 tools/scan-features.py --check && node tools/check-engine-schema.mjs && node tools/validate.mjs && node tools/ancestry-diff.mjs --check && node tools/update-coverage.mjs --check && node tools/fact-keys.mjs --check && node engine/test-engine.mjs && node mcp/test-mcp.mjs && node workflows/test-workflows.mjs && node tests/test-cli.mjs",
     "coverage": "node tools/update-coverage.mjs",
     "ancestry": "node tools/ancestry-diff.mjs",
     "visual": "python3 tools/visual-sample.py",
@@ -30,7 +30,8 @@
     "fact-keys": "node tools/fact-keys.mjs",
     "doctor": "node bin/privacy-kb.mjs doctor",
     "setup": "node bin/privacy-kb.mjs setup",
-    "ask": "node bin/privacy-kb.mjs ask"
+    "ask": "node bin/privacy-kb.mjs ask",
+    "test-cli": "node tests/test-cli.mjs"
   },
   "dependencies": {
     "ajv": "^8.17.1",

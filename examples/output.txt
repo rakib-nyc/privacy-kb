@@ -3,7 +3,7 @@
 SCENARIO 1 — A breach. Who must be told, and by when?
 ==============================================================================
 
-as_of 2026-09-02 · 27 obligations engaged in total.
+as_of 2026-09-08 · 27 obligations engaged in total.
 Showing the BREACH-RELEVANT ones; the rest (HIPAA use/disclosure, Title VII, LL144) are
 engaged by the same entity facts and are correct — breadth is the point, not noise.
 
@@ -19,22 +19,22 @@ engaged by the same entity facts and are correct — breadth is the point, not n
     A person or business that owns or licenses computerized data including the private information o
 
 DEADLINES, earliest first (the engine returns them unsorted; the workflow layer sorts):
-  2026-09-09  5 business_days    N.Y. Gen. Bus. Law § 899-aa(9)
+  2026-09-15  5 business_days    N.Y. Gen. Bus. Law § 899-aa(9)
              trigger: notification to the Secretary of Health and Human Services
              ⚠ business days = weekdays; holidays not excluded
-  2026-09-16  10 business_days   6 RCNY § 5-304(b)
+  2026-09-22  10 business_days   6 RCNY § 5-304(b)
              trigger: use of an AEDT on a candidate for employment
              ⚠ business days = weekdays; holidays not excluded
-  2026-09-16  10 business_days   N.Y.C. Admin. Code § 20-871(b)
+  2026-09-22  10 business_days   N.Y.C. Admin. Code § 20-871(b)
              trigger: use of the tool to assess a candidate or employee residing in the city
              ⚠ business days = weekdays; holidays not excluded
-  2026-10-02  30 calendar_days   45 C.F.R. § 164.524(b)(2)(i)
+  2026-10-08  30 calendar_days   45 C.F.R. § 164.524(b)(2)(i)
              trigger: receipt of the access request
-  2026-10-02  30 calendar_days   N.Y. Gen. Bus. Law § 899-aa(2)
+  2026-10-08  30 calendar_days   N.Y. Gen. Bus. Law § 899-aa(2)
              trigger: discovery of the breach
-  2026-11-01  60 calendar_days   45 C.F.R. § 164.526(a)(1)
+  2026-11-07  60 calendar_days   45 C.F.R. § 164.526(a)(1)
              trigger: receipt of the amendment request
-  2027-09-02  1 years            6 RCNY § 5-301(a)
+  2027-09-08  1 years            6 RCNY § 5-301(a)
              trigger: the most recent bias audit of the AEDT
 
 BACKSTOPS (invariant I6 — these never switch off):
@@ -42,6 +42,15 @@ BACKSTOPS (invariant I6 — these never switch off):
   N.Y. Gen. Bus. Law § 349(a) — N.Y. Gen. Bus. Law § 349 — Deceptive, unfair and abusive acts and practices. Require
   N.Y. Gen. Bus. Law § 350 — N.Y. Gen. Bus. Law § 350 — False advertising. Required by invariant I6 and present i
   published_notice_commitments — The entity's own published privacy notice is an operative constraint independent of 
+
+==============================================================================
+PREEMPTION — is the New York duty displaced by HIPAA?
+==============================================================================
+
+  federal: 45 C.F.R. § 164.502(a)   posture: floor   authority: 45 C.F.R. § 160.203
+  state:   N.Y. Gen. Bus. Law § 899-aa(2)
+  outcome: both_apply
+  Federal law is a floor. More stringent state law is not displaced and runs in parallel; where deadlines differ the shorter governs in practice. HIPAA 
 
 ==============================================================================
 SCENARIO 2 — Hiring in NYC with an automated tool
@@ -69,7 +78,7 @@ SCENARIO 2 — Hiring in NYC with an automated tool
 SCENARIO 3 — Minors on the platform, and a law that is NOT yet in force
 ==============================================================================
 
-IN FORCE today (2026-09-02):
+IN FORCE today (2026-09-08):
   N.Y. Gen. Bus. Law § 899-ee(1)
   N.Y. Gen. Bus. Law § 899-ff(1)
   N.Y. Gen. Bus. Law § 899-ff(5)

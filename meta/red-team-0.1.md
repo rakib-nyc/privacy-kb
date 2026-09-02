@@ -136,3 +136,25 @@ reproduce through the server a user would actually run. DEBT-009's shape at the 
 Closed by a single ctx() builder used by every handler, schema declarations for the three
 namespaces, and 7 assertions in mcp/test-mcp.mjs — six that each namespace is forwarded, one
 end-to-end proving a practice.* predicate can be satisfied through the tool boundary.
+
+## QA-22  MAJOR — `privacy-kb cite` was broken and exited 0 while broken
+It passed record_id/id to a tool whose parameter is atom_id, so every invocation printed
+'no record with id "undefined"' — and still exited 0, so a smoke test checking exit codes
+reported it green. It also mapped the response as source.url/source.fetched when the shape is
+flat (source_url/fetched/raw_sha256), which printed "source: n/a" — removing the one field that
+makes the standing instruction "check it against the primary source" possible to follow.
+Closed by tests/test-cli.mjs, 17 assertions, every one on OUTPUT rather than exit status.
+
+## QA-23  MODERATE — the front-page headline date crossed a federal holiday
+The example used a 2 September 2026 breach, so the five-business-day clock ran across Labor Day
+(7 September 2026). The engine counts business days as WEEKDAYS and declares that in
+business_day_basis, but the README and the diagram showed a bare "Sep 9" — a figure that needed
+an asterisk. Moved the scenario to 8 September, where no clock crosses a holiday and every
+published figure is exactly correct, and stated the limitation explicitly rather than relying on
+the caveat field.
+
+## QA-24  MINOR — documentation asserted things not checked
+A fabricated Node version in sample output; macOS menu paths that vary by OS version; a Claude
+Desktop icon described by shape. Replaced with version-robust instructions and checks the reader
+can actually run. All published numeric claims (248 records, 42 gates, 56 fixtures, 31 exercised,
+11 declared, 30 evals) re-verified against the live repository; all six matched.

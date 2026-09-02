@@ -178,8 +178,25 @@ switch (cmd) {
   case 'ask': ask(rest); break;
   case 'deadlines': deadlines(rest); break;
   case 'cite': {
-    const r = call('privacy_cite', { record_id: rest[0], id: rest[0] });
-    console.log(JSON.stringify(r, null, 2)); break;
+    // the tool's argument is atom_id. Passing record_id/id silently produced
+    // 'no record with id "undefined"' while the process still exited 0 — which is how a broken
+    // command survives a smoke test that only checks exit codes.
+    if (!rest[0]) { console.log('\n  usage: privacy-kb cite <record-id>\n  e.g.   privacy-kb cite ny.gbl.899_aa.9.hipaa_ag_notice\n'); break; }
+    const r = call('privacy_cite', { atom_id: rest[0] });
+    if (r.error) { console.log(`\n  ${r.error}\n`); process.exitCode = 1; break; }
+    console.log(`\n${b(r.citation ?? rest[0])}\n`);
+    console.log(`  ${(r.verbatim_span ?? '').replace(/(.{88}\s)/g, '$1\n  ')}\n`);
+    // keys are source_url / fetched / raw_sha256 — flat, not nested under source.
+    // Guessing the shape printed "source: n/a", which quietly removes the one thing that makes
+    // the instruction "check it against the source" possible to follow.
+    const a = load().byId.get(rest[0]);
+    console.log(dim(`  source:   ${r.source_url ?? 'n/a'}`));
+    console.log(dim(`  fetched:  ${r.fetched ?? 'n/a'}`));
+    console.log(dim(`  sha256:   ${String(r.raw_sha256 ?? '').slice(0, 32)}…`));
+    console.log(dim(`  in force: ${a?.effective_from ?? '?'} → ${a?.effective_to ?? 'present'}  (status: ${a?.status ?? '?'})`));
+    if (r.context_warning) console.log(dim(`  note:     ${r.context_warning.slice(0, 88)}`));
+    console.log(`\n${DISCLAIMER}\n`);
+    break;
   }
   case 'coverage': {
     const r = call('privacy_coverage', {});
