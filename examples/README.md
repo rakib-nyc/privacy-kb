@@ -22,20 +22,23 @@ presence has no New York exposure. It has a great deal.
 
 ![How a query is answered](pipeline.svg)
 
-## Scenario 1 — a breach on 2 September 2026
+## Scenario 1 — a breach on 8 September 2026
 
 Facts in: covered entity, owns computerised data including a New York resident's private
-information, has notified the Secretary of HHS, `as_of: 2026-09-02`.
+information, has notified the Secretary of HHS, `as_of: 2026-09-08`.
 
 ### The result that justifies the project
 
 ```
 DEADLINES, earliest first
-  2026-09-09   5 business_days    N.Y. Gen. Bus. Law § 899-aa(9)
-               trigger: notification to the Secretary of Health and Human Services
-  2026-09-16  10 business_days    6 RCNY § 5-304(b)
-  2026-10-02  30 calendar_days    N.Y. Gen. Bus. Law § 899-aa(2)
-  2026-11-01  60 calendar_days    45 C.F.R. § 164.526(a)(1)
+  2026-09-15  5 business_days    N.Y. Gen. Bus. Law § 899-aa(9)
+             trigger: notification to the Secretary of Health and Human Services
+             ⚠ business days = weekdays; holidays not excluded
+  2026-09-22  10 business_days   6 RCNY § 5-304(b)
+             trigger: use of an AEDT on a candidate for employment
+             ⚠ business days = weekdays; holidays not excluded
+  2026-09-22  10 business_days   N.Y.C. Admin. Code § 20-871(b)
+             trigger: use of the tool to assess a candidate or employee residing in the city
 ```
 
 ![Breach notification deadlines](timeline.svg)
@@ -90,7 +93,7 @@ red-teaming.
 ## Scenario 3 — the law that is not law yet
 
 ```
-IN FORCE today (2026-09-02)
+IN FORCE today (2026-09-08)
   N.Y. Gen. Bus. Law § 899-ee(1), § 899-ff(1), § 899-ff(5)     Child Data Protection Act
   N.Y. Gen. Bus. Law § 899-bb(1), § 899-bb(2)                  SHIELD safeguards
 
@@ -140,6 +143,15 @@ An answer that did not say so would be more confident and less true.
   citation resolves to exactly one provision — but a correct quotation can still be read wrongly,
   and several such errors have been found in this corpus after shipping. See
   [`meta/validation-events.yaml`](../meta/validation-events.yaml).
-- **Business-day precision.** Public holidays are not excluded, so the 2026-09-09 date above may
-  fall a day early. The result says so in `business_day_basis`.
+- **Business-day precision.** The engine counts business days as **weekdays** and does not exclude
+  public holidays, so a clock crossing one lands a day early. Every business-day result says so in
+  `business_day_basis`. This example deliberately uses a trigger date of 8 September — a breach on
+  the 2nd would have put the five-day clock across Labor Day and made the headline figure wrong by
+  a day. Check any date that crosses a holiday against a real calendar.
+
+- **Pending law does not promote itself.** The SAFE for Kids records stay `enacted_pending` at
+  *every* as-of date, including dates after 25 January 2027 — status is a recorded field, not
+  something derived from the calendar. That is deliberate: nothing silently becomes law. It also
+  means **the corpus goes stale on that date unless a person updates it.** The refusal to guess
+  cuts both ways.
 - **Anything outside the manifest.** No state but New York, no GDPR, no case law.

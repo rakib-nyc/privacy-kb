@@ -46,13 +46,13 @@ npm run doctor               # checks the install
 That puts it inside **Claude Desktop as an MCP server**, so the way you use it is to ask:
 
 > *We're a telehealth company in Texas with one patient in New York. We had a breach on
-> 2 September and notified HHS the same day. What are our deadlines?*
+> 8 September and notified HHS the same day. What are our deadlines?*
 
 and get back cited answers with computed dates. There is also a terminal command if you prefer:
 
 ```bash
 node bin/privacy-kb.mjs ask --hipaa --ny-data --breach --told-hhs
-node bin/privacy-kb.mjs deadlines --hipaa --ny-data --told-hhs --from 2026-09-02
+node bin/privacy-kb.mjs deadlines --hipaa --ny-data --told-hhs --from 2026-09-08
 ```
 
 ## What it does, on a real company
@@ -62,7 +62,7 @@ York office and no New York employees.** It has New York patients, hires in New 
 automated screening tool, and has minors on its platform.
 
 On a naive reading, a Texas company with no New York presence has no New York exposure. Ask this
-system what happens after a breach on 2 September 2026 and it computes every clock at once:
+system what happens after a breach on 8 September 2026 and it computes every clock at once:
 
 ![Breach notification deadlines — five business days to the New York Attorney General is the earliest, and notifying HHS is what started it](examples/timeline.svg)
 

@@ -24,13 +24,18 @@ const ENTITY = {
   nexus: 'US-NY-NYC',
 };
 const DATA = { is_phi: true, includes_ny_private_information: true, types: ['phi'] };
-const AS_OF = '2026-09-02';
+// 8 September deliberately. A breach on the 2nd would put the five-business-day clock across
+// Labor Day (7 Sept 2026), and this engine counts business days as WEEKDAYS without excluding
+// federal holidays — so the computed date would be a day early. The approximation is declared in
+// every result, but a headline figure should not need an asterisk, so the example uses a window
+// where the approximation cannot bite. The limitation is real and is stated below regardless.
+const AS_OF = '2026-09-08';
 
 rule('SCENARIO 1 — A breach. Who must be told, and by when?');
 const breach = analyze(ENTITY, DATA, {
   as_of: AS_OF,
   state_layers: ['US-NY'],
-  event: { type: 'breach_of_security_of_the_system', discovered_on: '2026-09-02' },
+  event: { type: 'breach_of_security_of_the_system', discovered_on: '2026-09-08' },
   practice: { notified_hhs_secretary_of_breach: true },
 });
 say(`\nas_of ${breach.as_of} · ${breach.obligations.length} obligations engaged in total.`);
@@ -45,7 +50,7 @@ for (const o of breach.applicable.filter(x => BREACH.test(x.citation))) {
 }
 say('\nDEADLINES, earliest first (the engine returns them unsorted; the workflow layer sorts):');
 const computed = breach.deadlines
-  .map(d => computeDeadline(corpus.byId.get(d.atom_id), '2026-09-02'))
+  .map(d => computeDeadline(corpus.byId.get(d.atom_id), AS_OF))
   .filter(c => c?.computed)
   .sort((a, b) => a.computed.localeCompare(b.computed));
 for (const c of computed) {
@@ -56,6 +61,18 @@ for (const c of computed) {
 }
 say('\nBACKSTOPS (invariant I6 — these never switch off):');
 for (const b of breach.backstops) say(`  ${b.citation ?? b.kind} — ${(b.why ?? b.note ?? '').slice(0, 84)}`);
+
+rule('PREEMPTION — is the New York duty displaced by HIPAA?');
+import { resolve as resolvePreemption } from '../engine/preemption.mjs';
+{
+  const fed = corpus.byId.get('us.cfr.45.164.502.a.use_disclosure_general');
+  const ny  = corpus.byId.get('ny.gbl.899_aa.2.notify_residents');
+  const r = resolvePreemption(fed, ny, AS_OF);
+  say(`\n  federal: ${fed.source.citation}   posture: ${r.posture}   authority: ${r.authority}`);
+  say(`  state:   ${ny.source.citation}`);
+  say(`  outcome: ${r.outcome}`);
+  say(`  ${r.note.slice(0, 150)}`);
+}
 
 rule('SCENARIO 2 — Hiring in NYC with an automated tool');
 const hiring = analyze(ENTITY, { types: ['any'] }, { as_of: AS_OF, state_layers: ['US-NY'] });
