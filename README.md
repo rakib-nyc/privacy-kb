@@ -30,6 +30,19 @@ verified against, and resolves as of a date.
 > **Licensing:** [Apache 2.0](LICENSE) for the original work. Quoted legal text is government
 > edict and carries no copyright. See [`NOTICE`](NOTICE) and [`PROVENANCE.md`](PROVENANCE.md).
 
+## The site
+
+`index.html` at the repository root is a self-contained landing page for non-technical readers.
+No build step: open it locally, or serve it with `python3 -m http.server` and visit
+`http://localhost:8000`.
+
+**To publish it at `rakib-nyc.github.io/privacy-kb`:** Settings, then Pages, then set Source to
+*Deploy from a branch*, branch `main`, folder `/ (root)`.
+
+GitHub Pages does **not** serve private repositories on the Free plan. Enabling it currently
+returns `Your current plan does not support GitHub Pages for this repository`. Two ways forward:
+make the repository public, or move to GitHub Pro. Nothing in the page needs to change either way.
+
 ## Getting it running
 
 **Not a developer? [Follow INSTALL.md](INSTALL.md)** — it assumes no terminal experience and takes
