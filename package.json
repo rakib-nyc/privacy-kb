@@ -1,6 +1,6 @@
 {
   "name": "privacy-kb",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": true,
   "description": "US federal privacy law obligation knowledge base, engine and MCP server",
   "license": "Apache-2.0",
@@ -27,11 +27,34 @@
     "workflows": "node workflows/test-workflows.mjs",
     "correspondence": "node tools/check-engine-schema.mjs",
     "test-extractors": "python3 tools/test-extractors.py",
-    "fact-keys": "node tools/fact-keys.mjs"
+    "fact-keys": "node tools/fact-keys.mjs",
+    "doctor": "node bin/privacy-kb.mjs doctor",
+    "setup": "node bin/privacy-kb.mjs setup",
+    "ask": "node bin/privacy-kb.mjs ask"
   },
   "dependencies": {
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "js-yaml": "^5.3.0"
-  }
+  },
+  "bin": {
+    "privacy-kb": "./bin/privacy-kb.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "bin/",
+    "engine/",
+    "mcp/",
+    "workflows/",
+    "corpus/",
+    "meta/",
+    "schemas/",
+    "evals/",
+    "tools/",
+    "LICENSE",
+    "NOTICE",
+    "README.md"
+  ]
 }

@@ -3,6 +3,7 @@
 // tool. privacy_cite gets the most attention — it is the anti-hallucination primitive, so
 // its failure mode matters more than its success mode.
 import { spawn } from 'node:child_process';
+import { readFileSync } from 'node:fs';
 import { TOOLS, call } from './server.mjs';
 import { resolve } from 'node:path';
 
@@ -70,6 +71,31 @@ ok('every tool is annotated readOnly and closed-world',
    byId[2]?.result?.tools?.every(t => t.annotations?.readOnlyHint === true && t.annotations?.openWorldHint === false));
 ok('tools/call returns structuredContent', !!byId[3]?.result?.structuredContent?.verbatim_span);
 ok('a failed cite is flagged isError over the wire', byId[4]?.result?.isError === true);
+
+
+// EVERY NAMESPACE THE ENGINE FILLS MUST CROSS THE TOOL BOUNDARY. privacy_analyze forwarded
+// entity, data and event and dropped practice, purpose and law, so 74 of 248 records carried a
+// predicate that could never be true through the product surface — including the trigger for the
+// earliest deadline in the worked example. Nothing noticed, because a dropped namespace looks
+// exactly like facts the caller did not supply.
+{
+  const NS = ['entity', 'data', 'event', 'practice', 'purpose', 'law'];
+  const src = readFileSync(new URL('./server.mjs', import.meta.url), 'utf8');
+  for (const n of NS)
+    ok(`privacy_analyze forwards the ${n} namespace`, new RegExp(`${n}:\\s*toolArgs\\.${n}|${n}:\\s*args\\.${n}|args\\.${n} \\?\\?`).test(src));
+
+  // and prove it end to end on the case that was broken
+  const r = call('privacy_analyze', {
+    entity: { owns_or_licenses_computerized_data: true, is_hipaa_covered_entity: true, nexus: 'US' },
+    data: { includes_ny_private_information: true },
+    as_of: '2026-09-02', state_layers: ['US-NY'],
+    event: { type: 'breach_of_security_of_the_system' },
+    practice: { notified_hhs_secretary_of_breach: true },
+  });
+  const hit = r.obligations.some(o => o.id === 'ny.gbl.899_aa.9.hipaa_ag_notice');
+  ok('a practice.* predicate can actually be satisfied through the tool surface', hit,
+     hit ? '' : 'ny.gbl.899_aa.9.hipaa_ag_notice did not fire — practice is being dropped again');
+}
 
 console.log(`\n${fail} failure(s)`);
 process.exit(fail ? 1 : 0);
