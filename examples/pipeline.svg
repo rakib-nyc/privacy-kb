@@ -1,51 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 250" role="img" aria-label="How a query is answered">
-  <style>
-    text { font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
-    .ttl { font-size: 15px; font-weight: 700; fill: #111827; }
-    .bx  { font-size: 12.5px; font-weight: 600; fill: #111827; }
-    .sm  { font-size: 10.5px; fill: #6b7280; }
-    .box { fill: #f9fafb; stroke: #d1d5db; stroke-width: 1.5; }
-    .det { fill: #eef2ff; stroke: #6366f1; stroke-width: 1.5; }
-    .llm { fill: #fef3c7; stroke: #d97706; stroke-width: 1.5; }
-    .ar  { stroke: #9ca3af; stroke-width: 1.5; fill: none; marker-end: url(#a); }
-    @media (prefers-color-scheme: dark) {
-      .ttl,.bx { fill: #f3f4f6; } .sm { fill: #9ca3af; }
-      .box { fill: #1f2937; stroke: #4b5563; }
-      .det { fill: #312e81; stroke: #818cf8; }
-      .llm { fill: #78350f; stroke: #fbbf24; }
-    }
-  </style>
-  <defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto">
-    <path d="M0,0 L0,6 L8,3 z" fill="#9ca3af"/></marker></defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 244" width="880" height="244" role="img" aria-label="How a query is answered: steps one to six are code, the model only writes prose over a computed result">
+  <rect x="0" y="0" width="880" height="244" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="24" y="34" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#1f2328">The model never computes. It writes prose over a result the code produced.</text>
 
-  <text x="16" y="26" class="ttl">Steps 1–6 are code. The model never computes — it writes over a computed result.</text>
+  <rect x="24" y="54" width="150" height="66" rx="7" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="38" y="76" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#1f2328">Facts in</text>
+  <text x="38" y="95" font-family="Helvetica,Arial,sans-serif" font-size="11.5" fill="#656d76">entity · data · event</text>
+  <text x="38" y="111" font-family="Helvetica,Arial,sans-serif" font-size="11.5" fill="#656d76">+ as_of (required)</text>
 
-  <rect x="16"  y="52" width="132" height="62" rx="6" class="box"/>
-  <text x="30" y="76" class="bx">Facts in</text>
-  <text x="30" y="94" class="sm">entity · data · event</text>
-  <text x="30" y="108" class="sm">+ as_of (required)</text>
+  <rect x="198" y="54" width="268" height="66" rx="7" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="212" y="76" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#1f2328">Deterministic solver</text>
+  <text x="212" y="95" font-family="Helvetica,Arial,sans-serif" font-size="11.5" fill="#57606a">applicability → preemption → exemptions</text>
+  <text x="212" y="111" font-family="Helvetica,Arial,sans-serif" font-size="11.5" fill="#57606a">42 gates guarantee every span is real</text>
 
-  <rect x="176" y="52" width="270" height="62" rx="6" class="det"/>
-  <text x="190" y="74" class="bx">Deterministic solver</text>
-  <text x="190" y="91" class="sm">applicability → preemption → exemptions</text>
-  <text x="190" y="105" class="sm">42 gates guarantee every span is real</text>
+  <rect x="490" y="54" width="182" height="66" rx="7" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="504" y="76" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#1f2328">Verified result</text>
+  <text x="504" y="95" font-family="Helvetica,Arial,sans-serif" font-size="11.5" fill="#656d76">obligations · deadlines</text>
+  <text x="504" y="111" font-family="Helvetica,Arial,sans-serif" font-size="11.5" fill="#656d76">backstops · stated gaps</text>
 
-  <rect x="474" y="52" width="184" height="62" rx="6" class="box"/>
-  <text x="488" y="74" class="bx">Verified result</text>
-  <text x="488" y="91" class="sm">obligations · deadlines</text>
-  <text x="488" y="105" class="sm">backstops · stated gaps</text>
+  <rect x="696" y="54" width="160" height="66" rx="7" fill="#fff8c5" stroke="#bf8700"/>
+  <text x="710" y="76" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#1f2328">Prose (optional)</text>
+  <text x="710" y="95" font-family="Helvetica,Arial,sans-serif" font-size="11.5" fill="#57606a">a model may narrate it</text>
+  <text x="710" y="111" font-family="Helvetica,Arial,sans-serif" font-size="11.5" fill="#57606a">it may not change it</text>
 
-  <rect x="686" y="52" width="178" height="62" rx="6" class="llm"/>
-  <text x="700" y="74" class="bx">Prose (optional)</text>
-  <text x="700" y="91" class="sm">a model may narrate it</text>
-  <text x="700" y="105" class="sm">it may not change it</text>
+  <path d="M174,87 L194,87" stroke="#8c959f" stroke-width="1.6" fill="none"/>
+  <path d="M188,83 L196,87 L188,91 z" fill="#8c959f"/>
+  <path d="M466,87 L486,87" stroke="#8c959f" stroke-width="1.6" fill="none"/>
+  <path d="M480,83 L488,87 L480,91 z" fill="#8c959f"/>
+  <path d="M672,87 L692,87" stroke="#8c959f" stroke-width="1.6" fill="none"/>
+  <path d="M686,83 L694,87 L686,91 z" fill="#8c959f"/>
 
-  <path d="M148,83 L172,83" class="ar"/>
-  <path d="M446,83 L470,83" class="ar"/>
-  <path d="M658,83 L682,83" class="ar"/>
-
-  <rect x="16" y="148" width="848" height="76" rx="6" class="box"/>
-  <text x="30" y="171" class="bx">What the solver refuses to do</text>
-  <text x="30" y="191" class="sm">• Answer without a date — there is no "current law", only law as of a date (invariant I2)</text>
-  <text x="30" y="207" class="sm">• Return pending law as an obligation at any date · surface an unverified record · report silence when no statute applies</text>
+  <rect x="24" y="140" width="832" height="82" rx="7" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="164" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#1f2328">What it refuses to do</text>
+  <text x="40" y="185" font-family="Helvetica,Arial,sans-serif" font-size="11.5" fill="#57606a">• Answer without a date — there is no “current law”, only law as of a date</text>
+  <text x="40" y="203" font-family="Helvetica,Arial,sans-serif" font-size="11.5" fill="#57606a">• Return pending law as an obligation, at any date · surface an unverified record</text>
+  <text x="40" y="215" font-family="Helvetica,Arial,sans-serif" font-size="11.5" fill="#57606a">• Report silence when no sectoral statute applies — the § 5 and state UDAP backstops always stand</text>
 </svg>
