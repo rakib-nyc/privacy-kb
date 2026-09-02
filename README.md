@@ -4,10 +4,6 @@ A citation-anchored, time-indexed model of US federal privacy law, with a New Yo
 Every obligation is quoted verbatim from primary source, carries the hash of the bytes it was
 verified against, and resolves as of a date.
 
-Read `BRIEF.md` first — it is the standing brief and the invariants in §3 are correctness
-properties, not preferences. `SCHEMA.md` freezes the atom shape. `CORPUS-MANIFEST.md` is the
-work queue. `PROMPTS.md` is the session playbook.
-
 [![gates](https://github.com/rakib-nyc/privacy-kb/actions/workflows/ci.yml/badge.svg)](https://github.com/rakib-nyc/privacy-kb/actions/workflows/ci.yml)
 
 > ## ⚠️ Experimental research project — not legal advice
@@ -33,6 +29,50 @@ work queue. `PROMPTS.md` is the session playbook.
 
 > **Licensing:** [Apache 2.0](LICENSE) for the original work. Quoted legal text is government
 > edict and carries no copyright. See [`NOTICE`](NOTICE) and [`PROVENANCE.md`](PROVENANCE.md).
+
+## What it does, on a real company
+
+**Meridian Health** — a telehealth startup. Delaware incorporated, offices in Austin. **No New
+York office and no New York employees.** It has New York patients, hires in New York City with an
+automated screening tool, and has minors on its platform.
+
+On a naive reading, a Texas company with no New York presence has no New York exposure. Ask this
+system what happens after a breach on 2 September 2026 and it computes every clock at once:
+
+![Breach notification deadlines — five business days to the New York Attorney General is the earliest, and notifying HHS is what started it](examples/timeline.svg)
+
+**The earliest deadline is one that doing the federal thing correctly created.** N.Y. Gen. Bus.
+Law § 899-aa(9) gives a HIPAA covered entity five business days *from notifying the Secretary of
+HHS* to notify the New York Attorney General. The clock does not start on discovery. A company
+that files federally and then works through its 30-day and 60-day obligations has, by day six,
+already missed the first one on the list.
+
+Three things a naive answer gets wrong here, and this one does not:
+
+- **There is no nexus threshold.** § 899-aa attaches to *holding a New York resident's private
+  information*. No office, no employees, no revenue floor — one patient is enough.
+- **HIPAA does not preempt it.** 45 C.F.R. § 160.203 makes HIPAA a **floor**, so more stringent
+  state law survives. The posture is resolved, not assumed.
+- **The compliance-deemed pathway does not rescue it.** § 899-aa(2)(b) is typed `activity_level`,
+  not `entity_level`: it removes notice to people already notified federally and expressly
+  preserves notice to the Attorney General.
+
+It is equally willing to refuse. The SAFE for Kids Act is enacted, final, and binds nobody until
+2027 — it routes to a watch feed that cannot become an obligation *at any as-of date*. And the
+§ 1501 answer comes back honest but incomplete, because what "commercially reasonable and
+technically feasible" actually requires lives in a regulation this corpus does not hold, and it
+says so rather than guessing.
+
+![How a query is answered — steps one to six are deterministic code; a model may narrate the result but never compute it](examples/pipeline.svg)
+
+**[→ Full worked example](examples/README.md)** — four scenarios, every figure live engine output,
+reproducible with `node examples/run-scenario.mjs`.
+
+### Working on it
+
+Read `BRIEF.md` first — it is the standing brief, and the invariants in §3 are correctness
+properties rather than preferences. `SCHEMA.md` freezes the record shape. `CORPUS-MANIFEST.md` is
+the work queue. `PROMPTS.md` is the session playbook.
 
 ## State of the build
 
@@ -74,18 +114,6 @@ than kept as unverifiable shells — see `meta/decisions.yaml` DEC-008.
 
 Everything the corpus quotes is US, New York or New York City legal text: government edicts,
 which carry no copyright.
-
-### See it work
-
-[**examples/README.md**](examples/README.md) is a worked example against a real company profile —
-a telehealth startup with no New York presence, New York patients, NYC hiring, and minors on the
-platform. Every figure on that page is live engine output (`node examples/run-scenario.mjs`).
-
-The headline result: after a breach, **the earliest deadline is one that doing the federal thing
-correctly created.** Notifying HHS starts a five-business-day clock to the New York Attorney
-General under GBL § 899-aa(9) — earlier than the 30-day state notice and the 60-day federal one.
-The page also shows the system refusing to answer: pending law routed to a watch feed at every
-as-of date, and instruments declaring which duty categories they cannot reach.
 
 ### What was found by attacking it
 
