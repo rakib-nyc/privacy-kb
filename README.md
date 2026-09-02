@@ -30,6 +30,31 @@ verified against, and resolves as of a date.
 > **Licensing:** [Apache 2.0](LICENSE) for the original work. Quoted legal text is government
 > edict and carries no copyright. See [`NOTICE`](NOTICE) and [`PROVENANCE.md`](PROVENANCE.md).
 
+## Getting it running
+
+**Not a developer? [Follow INSTALL.md](INSTALL.md)** — it assumes no terminal experience and takes
+about five minutes.
+
+The short version, for people who have used a terminal before:
+
+```bash
+npm install
+npm run setup -- --write     # adds it to Claude Desktop, then quit and reopen Claude
+npm run doctor               # checks the install
+```
+
+That puts it inside **Claude Desktop as an MCP server**, so the way you use it is to ask:
+
+> *We're a telehealth company in Texas with one patient in New York. We had a breach on
+> 2 September and notified HHS the same day. What are our deadlines?*
+
+and get back cited answers with computed dates. There is also a terminal command if you prefer:
+
+```bash
+node bin/privacy-kb.mjs ask --hipaa --ny-data --breach --told-hhs
+node bin/privacy-kb.mjs deadlines --hipaa --ny-data --told-hhs --from 2026-09-02
+```
+
 ## What it does, on a real company
 
 **Meridian Health** — a telehealth startup. Delaware incorporated, offices in Austin. **No New

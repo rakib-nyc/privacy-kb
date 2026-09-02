@@ -34,6 +34,9 @@ const TOOLS = [
       `state UDAP and the entity's own published notice are the operative constraints — the answer is never ` +
       `"no law applies". ${CITE_RULE} ${PENDING_RULE}`,
     inputSchema: { type: 'object', required: ['as_of'], properties: {
+      practice: { type: 'object', description: 'PracticeFacts: what the entity DOES — monitors_employee_communications, notified_hhs_secretary_of_breach, provides_addictive_feed, …' },
+      purpose: { type: 'object', description: 'PurposeFacts: why data is used.' },
+      law: { type: 'object', description: 'LawFacts: federal_instrument, state_requirement_subject — for preemption predicates.' },
       entity: { type: 'object', description: 'EntityFacts: sectors, hipaa_role, glba_financial_institution, is_cra, employee_count, nexus, data_subject_jurisdictions, …' },
       data: { type: 'object', description: 'DataFacts: types, minors_involved, collected_via, sold_or_shared, cross_border, …' },
       as_of: { type: 'string', description: 'REQUIRED ISO date. There is no "current law" — only law as of a date.' },
@@ -44,6 +47,9 @@ const TOOLS = [
   { name: 'privacy_applicable',
     description: `Cheap variant of privacy_analyze: which instruments apply, and nothing else. ${PENDING_RULE}`,
     inputSchema: { type: 'object', required: ['as_of'], properties: {
+      practice: { type: 'object', description: 'PracticeFacts: what the entity DOES — monitors_employee_communications, notified_hhs_secretary_of_breach, provides_addictive_feed, …' },
+      purpose: { type: 'object', description: 'PurposeFacts: why data is used.' },
+      law: { type: 'object', description: 'LawFacts: federal_instrument, state_requirement_subject — for preemption predicates.' },
       entity: { type: 'object' }, data: { type: 'object' }, as_of: { type: 'string' } } } },
 
   { name: 'privacy_obligations',
@@ -90,15 +96,35 @@ const TOOLS = [
 
 const ANNOT = { readOnlyHint: true, openWorldHint: false, destructiveHint: false, idempotentHint: true };
 
+// ONE PLACE that turns tool arguments into an engine context. A function rather than repeated
+// inline, so a namespace cannot be added to the engine and forgotten in one handler out of three
+// — which is exactly how practice, purpose and law went missing.
+// NOTE the parameter name: `toolArgs`, never `a`. tools/check-engine-schema.mjs reads `a.law` as
+// a RECORD field access and would report this as the engine depending on a field no record
+// carries — the same ambiguity engine/coverage.mjs documents for gate 22. Rename the variable,
+// never the check.
+const ctx = toolArgs => ({
+  as_of: toolArgs.as_of,
+  state_layers: toolArgs.state_layers ?? [],
+  include_pending: !!toolArgs.include_pending,
+  event: toolArgs.event ?? {},
+  practice: toolArgs.practice ?? {},
+  purpose: toolArgs.purpose ?? {},
+  law: toolArgs.law ?? {},
+});
+
 function call(name, args = {}) {
   const corpus = load();
   switch (name) {
+    // EVERY NAMESPACE THE ENGINE FILLS MUST CROSS THIS BOUNDARY. This forwarded entity, data and
+    // event and silently dropped practice, purpose and law, so 74 of 248 records carried at least
+    // one predicate that could NEVER be true through the product surface — including
+    // practice.notified_hhs_secretary_of_breach, the trigger for the earliest deadline in the
+    // worked example. The engine populated the namespace; the layer above never passed it.
     case 'privacy_analyze':
-      return analyze(args.entity ?? {}, args.data ?? {}, {
-        as_of: args.as_of, state_layers: args.state_layers ?? [],
-        include_pending: !!args.include_pending, event: args.event ?? {} });
+      return analyze(args.entity ?? {}, args.data ?? {}, ctx(args));
     case 'privacy_applicable': {
-      const r = analyze(args.entity ?? {}, args.data ?? {}, { as_of: args.as_of });
+      const r = analyze(args.entity ?? {}, args.data ?? {}, ctx(args));
       return { as_of: r.as_of, applicable: r.applicable, unknown_facts: r.unknown_facts,
                coverage_gaps: r.coverage_gaps, error: r.error };
     }

@@ -124,3 +124,15 @@ They destructure their options object in the parameter list, and a default cover
 only. The outermost surface a caller touches was the only layer with no totality test. All four
 now normalise the argument and return an INCOMPLETE artifact, which is what they already did for
 an empty one. Pinned by 40 assertions in workflows/test-workflows.mjs.
+
+## QA-21  CRITICAL — the MCP layer dropped three of six fact namespaces
+privacy_analyze forwarded entity, data and event and silently dropped practice, purpose and law.
+74 of 248 records carry at least one predicate on a dropped namespace, so through the PRODUCT
+SURFACE those predicates could never be true — including
+practice.notified_hhs_secretary_of_breach, the trigger for the earliest deadline in the worked
+example on the front page. privacy_applicable was worse: it dropped state_layers, include_pending
+and event as well. Found while building the CLI, because the demo's headline result would not
+reproduce through the server a user would actually run. DEBT-009's shape at the outermost layer.
+Closed by a single ctx() builder used by every handler, schema declarations for the three
+namespaces, and 7 assertions in mcp/test-mcp.mjs — six that each namespace is forwarded, one
+end-to-end proving a practice.* predicate can be satisfied through the tool boundary.
