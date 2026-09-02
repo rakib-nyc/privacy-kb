@@ -106,6 +106,13 @@ says so rather than guessing.
 **[→ Full worked example](examples/README.md)** — four scenarios, every figure live engine output,
 reproducible with `node examples/run-scenario.mjs`.
 
+### Full reference
+
+[`Markdowns/PRIVACY-KB-REFERENCE.md`](Markdowns/PRIVACY-KB-REFERENCE.md) is a single
+self-contained document covering the whole project: the eight invariants, the data model, all 42
+gates, coverage, worked examples with real output, installation, and the known defects. Written
+to be read cold by a person or handed to another AI system as context.
+
 ### Working on it
 
 Read `BRIEF.md` first — it is the standing brief, and the invariants in §3 are correctness
