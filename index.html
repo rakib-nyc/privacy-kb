@@ -85,8 +85,7 @@ a{color:inherit}
 .hero .lede{margin-top:19px}
 .hero-cta{display:flex;gap:11px;margin-top:28px;flex-wrap:wrap}
 .hero-fig{margin:0}
-.hero-fig img{width:100%;height:auto;border:1px solid var(--line);border-radius:var(--r);
-  box-shadow:var(--shadow);display:block}
+.hero-fig .tl{border-radius:var(--r);box-shadow:var(--shadow)}
 .hero-fig figcaption{margin-top:11px;font-size:12.8px;color:var(--grey-2);font-family:var(--m)}
 @media (max-width:920px){.hero-grid{grid-template-columns:1fr;gap:34px}}
 
@@ -98,6 +97,159 @@ a{color:inherit}
 .warn p{font-size:14.6px;max-width:92ch;color:var(--ink)}
 .warn a{color:var(--red)}
 @media (max-width:720px){.warn .wrap{grid-template-columns:1fr}}
+/* Hero timeline. Inline rather than an <img> so it takes the page palette and dark mode,
+   and so the citations are real selectable text. Red intensity encodes urgency: the
+   earliest clock is the deepest red, later ones recede to grey. */
+.tl{border:1px solid var(--line);background:var(--white);padding:20px 22px 18px;border-radius:var(--r)}
+.tl-head{padding-bottom:13px;border-bottom:1px solid var(--line);margin-bottom:15px}
+.tl-head b{display:block;font-size:15px;letter-spacing:-.01em}
+.tl-head span{display:block;margin-top:3px;font:400 12.5px/1.45 var(--f);color:var(--grey-2)}
+.tl-rows{display:flex;flex-direction:column;gap:13px}
+.tl-row{display:grid;grid-template-columns:52px minmax(0,1fr);gap:4px 12px;align-items:baseline}
+.tl-date{font:600 11px/1 var(--m);letter-spacing:.04em;color:var(--grey-2);white-space:nowrap}
+.tl-bar{grid-column:2;height:5px;width:var(--w);min-width:14px;background:var(--red-line);align-self:center}
+.tl-first .tl-bar{background:var(--red)}
+.tl-what{grid-column:2;font-size:13px;line-height:1.5;color:var(--ink)}
+.tl-what em{display:block;margin-top:3px;font-style:normal;font-size:12.5px;color:var(--red);line-height:1.45}
+.tl-first .tl-date{color:var(--red)}
+.tl-foot{margin:16px 0 0;padding-top:14px;border-top:1px solid var(--line);
+  font-size:12.5px;line-height:1.55;color:var(--grey)}
+@media (max-width:900px){.tl{padding:17px 18px 15px}}
+/* Grid items default to min-width:auto, which resolves to min-content. A minmax(0,1fr)
+   TRACK can shrink but the ITEM inside it still refuses to go below its longest
+   unbreakable string, so the git clone URL in step 1 pushed the page 151px wider than
+   a 390px phone and the whole document scrolled sideways. This lets the item shrink;
+   .cmd then scrolls inside its own box, which is where the overflow belongs. */
+.hero-grid>*,.tl-row>*,.beat>*,.wrong-grid>*,.verify-top>*,.row>*,.stats>*,
+.cov-cols>*,.step>*,.lim-grid>*,.foot-grid>*,.warn .wrap>*{min-width:0}
+
+/* the first hour: a narrative rail, red marks the correction */
+.hour{padding:clamp(58px,8vw,100px) 0}
+.hour-head{max-width:60ch;margin-bottom:46px}
+.rail{border-left:2px solid var(--line);padding-left:0}
+.beat{display:grid;grid-template-columns:72px minmax(0,1fr);gap:clamp(16px,2vw,30px);
+  padding:0 0 38px 26px;position:relative}
+.beat::before{content:"";position:absolute;left:-6px;top:7px;width:10px;height:10px;
+  background:var(--white);border:2px solid var(--line-2)}
+.beat.turn::before{background:var(--red);border-color:var(--red)}
+.beat-time{font-family:var(--m);font-size:12.5px;color:var(--grey-2);letter-spacing:.02em;padding-top:2px}
+.beat h3{margin-bottom:7px}
+.beat p{color:var(--grey);font-size:15.4px;max-width:70ch}
+.beat .said{margin-top:12px;border-left:2px solid var(--line-2);padding:2px 0 2px 14px;
+  color:var(--grey);font-size:15px}
+.beat .fix{margin-top:12px;border-left:2px solid var(--red);padding:2px 0 2px 14px;font-size:15px}
+.beat .fix strong{color:var(--red)}
+@media (max-width:760px){.beat{grid-template-columns:1fr;gap:6px}.beat-time{margin-bottom:2px}}
+
+/* the four ways it goes wrong */
+.wrong{background:var(--paper);border-block:1px solid var(--line);padding:clamp(58px,8vw,100px) 0}
+.wrong-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:40px;
+  border-top:1px solid var(--line-2)}
+.wrong-cell{padding:26px 30px 26px 0;border-bottom:1px solid var(--line)}
+.wrong-cell:nth-child(even){padding-left:30px;border-left:1px solid var(--line)}
+.wrong-cell h4{margin-bottom:8px}
+.wrong-cell .bad{font-family:var(--m);font-size:12.4px;color:var(--red);margin-bottom:9px;display:block}
+.wrong-cell p{font-size:14.8px;color:var(--grey)}
+@media (max-width:760px){
+  .wrong-grid{grid-template-columns:1fr}
+  .wrong-cell:nth-child(even){padding-left:0;border-left:0}
+}
+
+/* verify: the citation card, the trust moment */
+.verify{padding:clamp(58px,8vw,100px) 0}
+.verify-top{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+  gap:clamp(24px,4vw,60px);align-items:end;margin-bottom:38px}
+.card{border:1px solid var(--line-2);border-radius:var(--r);background:var(--white);
+  box-shadow:var(--shadow);overflow:hidden}
+.card-top{display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:12px 18px;background:var(--paper);border-bottom:1px solid var(--line);
+  font-family:var(--m);font-size:12.2px;color:var(--grey)}
+.card-top .ok{color:var(--red);font-weight:500}
+.card-body{padding:22px 20px}
+.card-cite{font-weight:600;font-size:1.05rem;margin-bottom:12px}
+.card-quote{font-size:15.2px;line-height:1.72;border-left:2px solid var(--red);padding-left:16px;color:var(--ink)}
+.card-meta{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;
+  display:grid;grid-template-columns:110px minmax(0,1fr);gap:7px 18px;
+  font-family:var(--m);font-size:12.4px}
+.card-meta dt{color:var(--grey-2)}
+.card-meta dd{margin:0;color:var(--ink);word-break:break-all}
+.verify-note{margin-top:26px;font-size:15px;color:var(--grey);max-width:74ch}
+@media (max-width:840px){.verify-top{grid-template-columns:1fr;gap:14px}
+  .card-meta{grid-template-columns:1fr;gap:2px 0}
+  .card-meta dt{margin-top:8px}}
+
+/* refusals: ledger */
+.refuse{background:var(--paper);border-block:1px solid var(--line);padding:clamp(58px,8vw,100px) 0}
+.refuse-head{max-width:62ch;margin-bottom:38px}
+.rows{border-top:1px solid var(--line-2)}
+.row{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(18px,3.6vw,52px);
+  padding:24px 0;border-bottom:1px solid var(--line)}
+.row p{color:var(--grey);font-size:15px}
+.row .out{display:block;font-family:var(--m);font-size:12.5px;color:var(--red);margin-top:10px}
+@media (max-width:760px){.row{grid-template-columns:1fr;gap:8px}}
+
+/* coverage: a real table, the detail counsel wants */
+.cov{padding:clamp(58px,8vw,100px) 0}
+.cov-top{max-width:64ch;margin-bottom:14px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:34px 0 44px;
+  border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+.stat{padding:20px 20px 20px 0}
+.stat+.stat{padding-left:24px;border-left:1px solid var(--line)}
+.stat b{display:block;font-size:1.85rem;font-weight:700;letter-spacing:-.03em;line-height:1.1}
+.stat span{font-size:13px;color:var(--grey-2);font-family:var(--m)}
+@media (max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(odd){padding-left:0;border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}}
+table{width:100%;border-collapse:collapse;font-size:14.8px}
+caption{text-align:left;font-weight:600;font-size:1.02rem;padding-bottom:12px}
+th{text-align:left;font-family:var(--m);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--grey-2);font-weight:400;padding:0 14px 10px 0;border-bottom:1px solid var(--line-2)}
+td{padding:11px 14px 11px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--grey)}
+td:first-child{color:var(--ink)}
+td.n{font-family:var(--m);font-size:13px;width:56px}
+.tick{color:var(--red);font-family:var(--m);font-size:12px}
+.cov-cols{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(28px,4.4vw,58px);margin-top:16px}
+.fed p{font-size:15px;color:var(--grey)}
+.fed .group{padding:14px 0;border-bottom:1px solid var(--line)}
+.fed .group b{display:block;font-size:14px;margin-bottom:3px;color:var(--ink)}
+@media (max-width:880px){.cov-cols{grid-template-columns:1fr}}
+
+/* install */
+.inst{background:var(--paper);border-block:1px solid var(--line);padding:clamp(58px,8vw,100px) 0}
+.inst-head{max-width:58ch;margin-bottom:36px}
+.steps{counter-reset:s;border-top:1px solid var(--line-2)}
+.step{counter-increment:s;display:grid;grid-template-columns:38px minmax(0,1fr);gap:20px;
+  padding:24px 0;border-bottom:1px solid var(--line)}
+.step::before{content:counter(s);font-family:var(--m);font-size:12.5px;color:var(--red);
+  border:1px solid var(--red-line);width:30px;height:30px;display:grid;place-items:center}
+.step h3{margin-bottom:6px}
+.step p{color:var(--grey);font-size:15px;max-width:70ch}
+.cmd{margin-top:13px;background:var(--white);border:1px solid var(--line-2);border-radius:var(--r);
+  padding:13px 15px;font-family:var(--m);font-size:13.2px;overflow-x:auto;white-space:pre;color:var(--ink)}
+.cmd .c{color:var(--grey-2)}
+.quote-ask{margin-top:13px;border-left:2px solid var(--red);padding:3px 0 3px 15px;font-size:15.4px}
+@media (max-width:620px){.step{grid-template-columns:1fr}.step::before{display:none}}
+
+/* limits */
+.lim{padding:clamp(58px,8vw,100px) 0}
+.lim-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:34px;
+  border-top:1px solid var(--line-2)}
+.lim-cell{padding:22px 28px 22px 0;border-bottom:1px solid var(--line)}
+.lim-cell:nth-child(even){padding-left:28px;border-left:1px solid var(--line)}
+.lim-cell h4{margin-bottom:7px}
+.lim-cell p{font-size:14.6px;color:var(--grey)}
+@media (max-width:760px){.lim-grid{grid-template-columns:1fr}
+  .lim-cell:nth-child(even){padding-left:0;border-left:0}}
+
+/* footer */
+.foot{border-top:1px solid var(--line);padding:42px 0 54px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:30px}
+.foot p{font-size:13.8px;color:var(--grey);max-width:72ch}
+.foot a{color:var(--red)}
+.foot-links{display:flex;flex-direction:column;gap:8px;font-size:14.4px}
+.foot-links a{color:var(--grey);text-decoration:none}
+.foot-links a:hover{color:var(--ink)}
+@media (max-width:760px){.foot-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -130,8 +282,38 @@ a{color:inherit}
       </div>
     </div>
     <figure class="hero-fig">
-      <img src="examples/timeline.svg" alt="Deadline timeline for a breach discovered 8 September 2026. Five business days to the New York Attorney General on 15 September is the earliest clock, triggered by notifying HHS. Then 22 September, 8 October and 7 November.">
-      <figcaption>Real output. Not a mock-up.</figcaption>
+      <div class="tl" role="img" aria-label="Deadline timeline for a breach discovered 8 September 2026. The earliest clock is five business days to the New York Attorney General on 15 September, triggered by notifying HHS, not by discovery. Then a Local Law 144 candidate notice on 22 September, notice to New York residents on 8 October, and the HIPAA sixty day amendment request on 7 November.">
+        <div class="tl-head">
+          <b>Breach discovered 8 Sept 2026</b>
+          <span>Every clock the engine computed, in the order they fall due</span>
+        </div>
+        <div class="tl-rows">
+          <div class="tl-row tl-first">
+            <span class="tl-date">Sep 15</span>
+            <span class="tl-bar" style="--w:9%"></span>
+            <span class="tl-what">GBL &#167; 899-aa(9) &middot; 5 business days to the NY Attorney General
+              <em>Triggered by notifying HHS. Doing the federal thing correctly started this clock.</em></span>
+          </div>
+          <div class="tl-row">
+            <span class="tl-date">Sep 22</span>
+            <span class="tl-bar" style="--w:22%"></span>
+            <span class="tl-what">6 RCNY &#167; 5-304(b) &middot; LL144 candidate notice, 10 business days</span>
+          </div>
+          <div class="tl-row">
+            <span class="tl-date">Oct 8</span>
+            <span class="tl-bar" style="--w:50%"></span>
+            <span class="tl-what">GBL &#167; 899-aa(2) &middot; notify New York residents, 30 days</span>
+          </div>
+          <div class="tl-row">
+            <span class="tl-date">Nov 7</span>
+            <span class="tl-bar" style="--w:100%"></span>
+            <span class="tl-what">45 C.F.R. &#167; 164.526 &middot; amendment request, 60 days</span>
+          </div>
+        </div>
+        <p class="tl-foot">A company that files with HHS promptly, then works its 30 and 60 day
+        obligations in order, has already missed the earliest deadline on the list.</p>
+      </div>
+      <figcaption>Real output from <code>privacy-kb deadlines</code>. Not a mock-up.</figcaption>
     </figure>
   </div>
 </header>
@@ -148,39 +330,6 @@ a{color:inherit}
   </div>
 </section>
 
-<style>
-/* the first hour: a narrative rail, red marks the correction */
-.hour{padding:clamp(58px,8vw,100px) 0}
-.hour-head{max-width:60ch;margin-bottom:46px}
-.rail{border-left:2px solid var(--line);padding-left:0}
-.beat{display:grid;grid-template-columns:150px minmax(0,1fr);gap:clamp(18px,3vw,44px);
-  padding:0 0 38px 26px;position:relative}
-.beat::before{content:"";position:absolute;left:-6px;top:7px;width:10px;height:10px;
-  background:var(--white);border:2px solid var(--line-2)}
-.beat.mark::before{background:var(--red);border-color:var(--red)}
-.beat-time{font-family:var(--m);font-size:12.5px;color:var(--grey-2);letter-spacing:.02em;padding-top:2px}
-.beat h3{margin-bottom:7px}
-.beat p{color:var(--grey);font-size:15.4px;max-width:70ch}
-.beat .said{margin-top:12px;border-left:2px solid var(--line-2);padding:2px 0 2px 14px;
-  color:var(--grey);font-size:15px}
-.beat .fix{margin-top:12px;border-left:2px solid var(--red);padding:2px 0 2px 14px;font-size:15px}
-.beat .fix strong{color:var(--red)}
-@media (max-width:760px){.beat{grid-template-columns:1fr;gap:6px}.beat-time{margin-bottom:2px}}
-
-/* the four ways it goes wrong */
-.wrong{background:var(--paper);border-block:1px solid var(--line);padding:clamp(58px,8vw,100px) 0}
-.wrong-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:40px;
-  border-top:1px solid var(--line-2)}
-.wrong-cell{padding:26px 30px 26px 0;border-bottom:1px solid var(--line)}
-.wrong-cell:nth-child(even){padding-left:30px;border-left:1px solid var(--line)}
-.wrong-cell h4{margin-bottom:8px}
-.wrong-cell .bad{font-family:var(--m);font-size:12.4px;color:var(--red);margin-bottom:9px;display:block}
-.wrong-cell p{font-size:14.8px;color:var(--grey)}
-@media (max-width:760px){
-  .wrong-grid{grid-template-columns:1fr}
-  .wrong-cell:nth-child(even){padding-left:0;border-left:0}
-}
-</style>
 
 <section class="hour wrap" id="hour">
   <span class="eyebrow">A worked hour</span>
@@ -197,7 +346,7 @@ a{color:inherit}
       </div>
     </div>
 
-    <div class="beat mark">
+    <div class="beat turn">
       <div class="beat-time">09:11</div>
       <div>
         <h3>Nexus</h3>
@@ -210,7 +359,7 @@ a{color:inherit}
       </div>
     </div>
 
-    <div class="beat">
+    <div class="beat turn">
       <div class="beat-time">09:19</div>
       <div>
         <h3>Preemption</h3>
@@ -221,7 +370,7 @@ a{color:inherit}
       </div>
     </div>
 
-    <div class="beat mark">
+    <div class="beat turn">
       <div class="beat-time">09:26</div>
       <div>
         <h3>The clock nobody starts</h3>
@@ -235,7 +384,7 @@ a{color:inherit}
       </div>
     </div>
 
-    <div class="beat">
+    <div class="beat turn">
       <div class="beat-time">09:34</div>
       <div>
         <h3>The pathway that does not rescue it</h3>
@@ -247,7 +396,7 @@ a{color:inherit}
       </div>
     </div>
 
-    <div class="beat">
+    <div class="beat turn">
       <div class="beat-time">09:41</div>
       <div>
         <h3>Exposure</h3>
@@ -300,40 +449,6 @@ a{color:inherit}
   </div>
 </section>
 
-<style>
-/* verify: the citation card, the trust moment */
-.verify{padding:clamp(58px,8vw,100px) 0}
-.verify-top{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
-  gap:clamp(24px,4vw,60px);align-items:end;margin-bottom:38px}
-.card{border:1px solid var(--line-2);border-radius:var(--r);background:var(--white);
-  box-shadow:var(--shadow);overflow:hidden}
-.card-top{display:flex;align-items:center;justify-content:space-between;gap:14px;
-  padding:12px 18px;background:var(--paper);border-bottom:1px solid var(--line);
-  font-family:var(--m);font-size:12.2px;color:var(--grey)}
-.card-top .ok{color:var(--red);font-weight:500}
-.card-body{padding:22px 20px}
-.card-cite{font-weight:600;font-size:1.05rem;margin-bottom:12px}
-.card-quote{font-size:15.2px;line-height:1.72;border-left:2px solid var(--red);padding-left:16px;color:var(--ink)}
-.card-meta{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;
-  display:grid;grid-template-columns:110px minmax(0,1fr);gap:7px 18px;
-  font-family:var(--m);font-size:12.4px}
-.card-meta dt{color:var(--grey-2)}
-.card-meta dd{margin:0;color:var(--ink);word-break:break-all}
-.verify-note{margin-top:26px;font-size:15px;color:var(--grey);max-width:74ch}
-@media (max-width:840px){.verify-top{grid-template-columns:1fr;gap:14px}
-  .card-meta{grid-template-columns:1fr;gap:2px 0}
-  .card-meta dt{margin-top:8px}}
-
-/* refusals: ledger */
-.refuse{background:var(--paper);border-block:1px solid var(--line);padding:clamp(58px,8vw,100px) 0}
-.refuse-head{max-width:62ch;margin-bottom:38px}
-.rows{border-top:1px solid var(--line-2)}
-.row{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(18px,3.6vw,52px);
-  padding:24px 0;border-bottom:1px solid var(--line)}
-.row p{color:var(--grey);font-size:15px}
-.row .out{display:block;font-family:var(--m);font-size:12.5px;color:var(--red);margin-top:10px}
-@media (max-width:760px){.row{grid-template-columns:1fr;gap:8px}}
-</style>
 
 <section class="verify wrap" id="verify">
   <div class="verify-top">
@@ -415,76 +530,6 @@ a{color:inherit}
   </div>
 </section>
 
-<style>
-/* coverage: a real table, the detail counsel wants */
-.cov{padding:clamp(58px,8vw,100px) 0}
-.cov-top{max-width:64ch;margin-bottom:14px}
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:34px 0 44px;
-  border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
-.stat{padding:20px 20px 20px 0}
-.stat+.stat{padding-left:24px;border-left:1px solid var(--line)}
-.stat b{display:block;font-size:1.85rem;font-weight:700;letter-spacing:-.03em;line-height:1.1}
-.stat span{font-size:13px;color:var(--grey-2);font-family:var(--m)}
-@media (max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}
-  .stat:nth-child(odd){padding-left:0;border-left:0}
-  .stat:nth-child(n+3){border-top:1px solid var(--line)}}
-table{width:100%;border-collapse:collapse;font-size:14.8px}
-caption{text-align:left;font-weight:600;font-size:1.02rem;padding-bottom:12px}
-th{text-align:left;font-family:var(--m);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--grey-2);font-weight:400;padding:0 14px 10px 0;border-bottom:1px solid var(--line-2)}
-td{padding:11px 14px 11px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--grey)}
-td:first-child{color:var(--ink)}
-td.n{font-family:var(--m);font-size:13px;width:56px}
-.tick{color:var(--red);font-family:var(--m);font-size:12px}
-.cov-cols{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(28px,4.4vw,58px);margin-top:16px}
-.fed p{font-size:15px;color:var(--grey)}
-.fed .group{padding:14px 0;border-bottom:1px solid var(--line)}
-.fed .group b{display:block;font-size:14px;margin-bottom:3px;color:var(--ink)}
-@media (max-width:880px){.cov-cols{grid-template-columns:1fr}}
-
-/* install */
-.inst{background:var(--paper);border-block:1px solid var(--line);padding:clamp(58px,8vw,100px) 0}
-.inst-head{max-width:58ch;margin-bottom:36px}
-.steps{counter-reset:s;border-top:1px solid var(--line-2)}
-.step{counter-increment:s;display:grid;grid-template-columns:38px minmax(0,1fr);gap:20px;
-  padding:24px 0;border-bottom:1px solid var(--line)}
-.step::before{content:counter(s);font-family:var(--m);font-size:12.5px;color:var(--red);
-  border:1px solid var(--red-line);width:30px;height:30px;display:grid;place-items:center}
-.step h3{margin-bottom:6px}
-.step p{color:var(--grey);font-size:15px;max-width:70ch}
-.cmd{margin-top:13px;background:var(--white);border:1px solid var(--line-2);border-radius:var(--r);
-  padding:13px 15px;font-family:var(--m);font-size:13.2px;overflow-x:auto;white-space:pre;color:var(--ink)}
-.cmd .c{color:var(--grey-2)}
-.quote-ask{margin-top:13px;border-left:2px solid var(--red);padding:3px 0 3px 15px;font-size:15.4px}
-@media (max-width:620px){.step{grid-template-columns:1fr}.step::before{display:none}}
-
-/* limits */
-.lim{padding:clamp(58px,8vw,100px) 0}
-.lim-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:34px;
-  border-top:1px solid var(--line-2)}
-.lim-cell{padding:22px 28px 22px 0;border-bottom:1px solid var(--line)}
-.lim-cell:nth-child(even){padding-left:28px;border-left:1px solid var(--line)}
-.lim-cell h4{margin-bottom:7px}
-.lim-cell p{font-size:14.6px;color:var(--grey)}
-@media (max-width:760px){.lim-grid{grid-template-columns:1fr}
-  .lim-cell:nth-child(even){padding-left:0;border-left:0}}
-
-/* footer */
-.foot{border-top:1px solid var(--line);padding:42px 0 54px}
-.foot-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:30px}
-.foot p{font-size:13.8px;color:var(--grey);max-width:72ch}
-.foot a{color:var(--red)}
-.foot-links{display:flex;flex-direction:column;gap:8px;font-size:14.4px}
-.foot-links a{color:var(--grey);text-decoration:none}
-.foot-links a:hover{color:var(--ink)}
-@media (max-width:760px){.foot-grid{grid-template-columns:1fr}}
-
-@media (prefers-reduced-motion:no-preference){
-  .rv{opacity:0;transform:translateY(12px);
-    transition:opacity .55s cubic-bezier(.16,1,.3,1),transform .55s cubic-bezier(.16,1,.3,1)}
-  .rv.in{opacity:1;transform:none}
-}
-</style>
 
 <section class="cov wrap" id="coverage">
   <h2 class="cov-top">What is actually in it</h2>
@@ -627,19 +672,5 @@ npm run setup -- --write   <span class="c"># drop --write to print it instead</s
   </div>
 </footer>
 
-<script>
-/* Entry reveal only. IntersectionObserver, no scroll listener, no library.
-   Justification: sequences the narrative rail so beats land in order. */
-(function(){
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var t = document.querySelectorAll('.beat, .wrong-cell, .card, .row, .stat, .step, .lim-cell');
-  t.forEach(function(el){ el.classList.add('rv'); });
-  var io = new IntersectionObserver(function(es){
-    es.forEach(function(e){ if(!e.isIntersecting) return;
-      e.target.classList.add('in'); io.unobserve(e.target); });
-  }, { rootMargin:'0px 0px -6% 0px', threshold:0.06 });
-  t.forEach(function(el){ io.observe(el); });
-})();
-</script>
 </body>
 </html>
