@@ -1,9 +1,12 @@
 {
   "name": "privacy-kb",
-  "version": "0.4.0",
+  "version": "0.1.0",
   "private": true,
   "description": "US federal privacy law obligation knowledge base, engine and MCP server",
   "license": "Apache-2.0",
+  "repository": { "type": "git", "url": "git+https://github.com/rakib-nyc/privacy-kb.git" },
+  "homepage": "https://rakib-nyc.github.io/privacy-kb/",
+  "bugs": { "url": "https://github.com/rakib-nyc/privacy-kb/issues" },
   "author": "Muhammad Rakibul Islam <rakib.islam@rutgers.edu>",
   "type": "module",
   "scripts": {

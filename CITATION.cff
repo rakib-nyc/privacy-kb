@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+title: "Privacy-KB: a citation-anchored, date-aware model of US federal and New York privacy law"
+message: "If you use this software or corpus, please cite it as below."
+type: software
+authors:
+  - family-names: Islam
+    given-names: Muhammad Rakibul
+    email: rakib.islam@rutgers.edu
+    affiliation: Rutgers University
+version: 0.1.0
+date-released: 2026-09-10
+license: Apache-2.0
+repository-code: "https://github.com/rakib-nyc/privacy-kb"
+url: "https://rakib-nyc.github.io/privacy-kb/"
+keywords:
+  - privacy law
+  - legal informatics
+  - computable law
+  - breach notification
+  - HIPAA
+  - provenance
+  - Model Context Protocol
+abstract: >-
+  Privacy-KB models United States federal, New York State and New York City privacy law as
+  248 provenance-anchored records over 54 instruments, and answers applicability questions
+  deterministically as of a given date. Every provision is quoted verbatim from a primary
+  source and anchored to the sha256 of the bytes it was cut from, so any quotation can be
+  re-verified without trusting the tool. Forty-five CI gates enforce the properties the
+  corpus claims: that a span appears in its source, that an effective date is derived from
+  evidence rather than asserted, that a version chain has no gaps, and that a record may
+  not claim a date earlier than the text it quotes.
+
+  The engine is deterministic and contains no language model. It reports what it cannot
+  determine as prominently as what it finds — coverage gaps, unverified records suppressed
+  from every answer, facts never supplied, and legal characterisations the user has not
+  made. A single incident may satisfy several statutory definitions at once, so an
+  unasserted characterisation is returned as a decision awaiting the reader rather than
+  silently excluded.
+
+  This is a research prototype. It is not legal advice and carries no warranty. Parts of
+  the corpus were assembled with AI assistance; the verification apparatus exists because
+  that is true, and the limitations are published alongside the work.
