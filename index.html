@@ -230,6 +230,34 @@ td.n{font-family:var(--m);font-size:13px;width:56px}
 .quote-ask{margin-top:13px;border-left:2px solid var(--red);padding:3px 0 3px 15px;font-size:15.4px}
 @media (max-width:620px){.step{grid-template-columns:1fr}.step::before{display:none}}
 
+/* one incident, many laws */
+.many{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:clamp(58px,8vw,100px) 0}
+.many-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:32px;
+  border:1px solid var(--line-2);border-radius:var(--r);overflow:hidden}
+.many-col{padding:22px 24px}
+.many-col+.many-col{border-left:1px solid var(--line-2)}
+.many-col h3{margin:0 0 4px;font-size:15px;letter-spacing:-.01em}
+.many-col .sub{color:var(--grey);font-size:13.4px;margin:0 0 14px}
+.many-col.was{background:var(--red-wash)}
+.many-col.was h3{color:var(--red-deep)}
+.clk{display:flex;gap:10px;align-items:baseline;padding:7px 0;border-bottom:1px dotted var(--line-2);
+  font-size:14px}
+.clk:last-child{border-bottom:0}
+.clk b{font-family:var(--m);font-size:13px;min-width:72px}
+.clk .miss{color:var(--red-deep);font-weight:600}
+.many-note{margin-top:26px;font-size:15px;color:var(--grey);max-width:74ch}
+.many-note strong{color:var(--ink)}
+.ask{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:30px;
+  border-top:1px solid var(--line-2)}
+.ask-cell{padding:20px 24px 20px 0;border-bottom:1px solid var(--line)}
+.ask-cell:nth-child(3n){padding-right:0}
+.ask-cell b{display:block;font-size:14.4px;margin-bottom:5px}
+.ask-cell p{margin:0;font-size:13.8px;color:var(--grey)}
+@media (max-width:760px){.many-grid{grid-template-columns:1fr}
+  .many-col+.many-col{border-left:0;border-top:1px solid var(--line-2)}
+  .ask{grid-template-columns:1fr}}
+
 /* limits */
 .lim{padding:clamp(58px,8vw,100px) 0}
 .lim-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:34px;
@@ -259,8 +287,9 @@ td.n{font-family:var(--m);font-size:13px;width:56px}
     <a class="brand" href="#top"><span class="mark"></span> Privacy-KB</a>
     <div class="nav-links">
       <a href="#hour">The first hour</a>
+      <a href="#many">One incident, many laws</a>
       <a href="#verify">Verify a citation</a>
-      <a href="#coverage">Coverage</a>
+      <a href="corpus.html">What is in it</a>
       <a href="#limits">Limits</a>
       <a href="#install">Install</a>
       <a class="btn btn-ghost" href="https://github.com/rakib-nyc/privacy-kb">Repository</a>
@@ -282,7 +311,7 @@ td.n{font-family:var(--m);font-size:13px;width:56px}
       </div>
     </div>
     <figure class="hero-fig">
-      <div class="tl" role="img" aria-label="Deadline timeline for a breach discovered 8 September 2026. The earliest clock is five business days to the New York Attorney General on 15 September, triggered by notifying HHS, not by discovery. Then a Local Law 144 candidate notice on 22 September, notice to New York residents on 8 October, and the HIPAA sixty day amendment request on 7 November.">
+      <div class="tl" role="img" aria-label="Deadline timeline for a breach discovered 8 September 2026 at a telehealth company that is a HIPAA covered entity holding one New York patient record. The earliest clock is five business days to the New York Attorney General on 15 September, triggered by notifying HHS rather than by discovery. Then a Local Law 144 candidate notice on 22 September, notice to New York residents on 8 October, and four HIPAA breach notification clocks on 7 November.">
         <div class="tl-head">
           <b>Breach discovered 8 Sept 2026</b>
           <span>Every clock the engine computed, in the order they fall due</span>
@@ -307,13 +336,14 @@ td.n{font-family:var(--m);font-size:13px;width:56px}
           <div class="tl-row">
             <span class="tl-date">Nov 7</span>
             <span class="tl-bar" style="--w:100%"></span>
-            <span class="tl-what">45 C.F.R. &#167; 164.526 &middot; amendment request, 60 days</span>
+            <span class="tl-what">45 C.F.R. &#167;&#167; 164.404(a), 164.404(b), 164.406(a), 164.408(a) &middot; four HIPAA clocks, 60 days
+              <em>The same laptop is a HIPAA breach and a New York breach. Both sets run.</em></span>
           </div>
         </div>
         <p class="tl-foot">A company that files with HHS promptly, then works its 30 and 60 day
         obligations in order, has already missed the earliest deadline on the list.</p>
       </div>
-      <figcaption>Real output from <code>privacy-kb deadlines</code>. Not a mock-up.</figcaption>
+      <figcaption>Real output from <code>privacy-kb breach</code>. Not a mock-up.</figcaption>
     </figure>
   </div>
 </header>
@@ -450,6 +480,78 @@ td.n{font-family:var(--m);font-size:13px;width:56px}
 </section>
 
 
+<section class="many" id="many">
+  <div class="wrap">
+    <span class="eyebrow">What changed in 0.4</span>
+    <h2>One laptop. Four statutes. They are not alternatives.</h2>
+    <p class="lede">A New York hospital loses a laptop of patient records. That single set of facts is
+    a breach of unsecured PHI under 45 C.F.R. &#167; 164.402 <em>and</em> a breach of the security of
+    the system under N.Y. GBL &#167; 899-aa(1)(c). Two definitions, two clocks, both running. Until
+    this release the model could hold only one of them at a time.</p>
+
+    <div class="many-grid">
+      <div class="many-col was">
+        <h3>What it used to return</h3>
+        <p class="sub">Characterised as a HIPAA breach. Reported <code>complete</code>, no warning.</p>
+        <div class="clk"><b>Nov 7</b><span>45 C.F.R. &#167; 164.404(a)(1)</span></div>
+        <div class="clk"><b>Nov 7</b><span>45 C.F.R. &#167; 164.404(b)</span></div>
+        <div class="clk"><b>Nov 7</b><span>45 C.F.R. &#167; 164.406(a)</span></div>
+        <div class="clk"><b>Nov 7</b><span>45 C.F.R. &#167; 164.408(a)</span></div>
+        <div class="clk"><b class="miss">&mdash;</b><span class="miss">GBL &#167; 899-aa(2) &mdash; omitted, and due 8 October</span></div>
+      </div>
+      <div class="many-col">
+        <h3>What it returns now</h3>
+        <p class="sub">Same facts, same command. The state clock leads.</p>
+        <div class="clk"><b>Oct 8</b><span>GBL &#167; 899-aa(2) &middot; 30 days</span></div>
+        <div class="clk"><b>Nov 7</b><span>45 C.F.R. &#167; 164.404(a)(1)</span></div>
+        <div class="clk"><b>Nov 7</b><span>45 C.F.R. &#167; 164.404(b)</span></div>
+        <div class="clk"><b>Nov 7</b><span>45 C.F.R. &#167; 164.406(a)</span></div>
+        <div class="clk"><b>Nov 7</b><span>45 C.F.R. &#167; 164.408(a)</span></div>
+      </div>
+    </div>
+
+    <p class="many-note">The omitted deadline fell <strong>a month before</strong> everything the old
+    answer printed. A lawyer working that artifact in order misses the first deadline and holds a
+    document asserting they were on time. The completeness check above it was written to prevent
+    exactly this &mdash; it asked whether the <em>corpus</em> held New York&rsquo;s notification duty,
+    which it did, while the event model kept that duty out of the <em>answer</em>.
+    <strong>Corpus coverage is not answer coverage</strong>, and only a check on the answer can see
+    the difference.</p>
+
+    <p class="many-note">It still will not decide the characterisation for you. Whether an incident is
+    a breach of unsecured PHI is the output of the four-factor risk assessment &#167; 164.402 requires
+    you to document. So when you narrow the incident, the duties you dropped come back as a decision
+    you have not made, with the clock each one would start and the test that governs it:</p>
+
+    <div class="cmd">privacy-kb breach --hipaa --ny-data --breach --as breach_of_unsecured_phi --from 2026-09-08
+
+<span class="c">Not yet characterised &mdash; each of these would add a duty
+  N.Y. Gen. Bus. Law &#167; 899-aa(2)
+      needs: breach_of_security_of_the_system
+
+THIS TIMELINE IS INCOMPLETE
+  &#10007; no unmade characterisation is hiding a clock</span></div>
+
+    <div class="ask">
+      <div class="ask-cell">
+        <b>privacy-kb breach</b>
+        <p>The multi-regime notification timeline, earliest clock first, with every unmade
+        characterisation named.</p>
+      </div>
+      <div class="ask-cell">
+        <b>privacy-kb memo</b>
+        <p>A citable record: every provision with its URL, hash and vintage, what the analysis could
+        not determine, and a verification table.</p>
+      </div>
+      <div class="ask-cell">
+        <b>privacy-kb facts</b>
+        <p>The input vocabulary. 192 keys, what values each takes, and which terms mean different
+        things under different Acts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="verify wrap" id="verify">
   <div class="verify-top">
     <h2>Do not trust it. Check it.</h2>
@@ -533,32 +635,31 @@ td.n{font-family:var(--m);font-size:13px;width:56px}
 
 <section class="cov wrap" id="coverage">
   <h2 class="cov-top">What is actually in it</h2>
-  <p class="lede">Coverage is declared instrument by instrument before it is measured, so the corpus
-  knows what it is missing. These figures are generated from the repository, not written by hand.</p>
+  <p class="lede">Coverage is declared instrument by instrument <em>before</em> it is measured, so the
+  corpus knows what it is missing. Every figure here is generated from the repository. So is the full
+  contents list &mdash; a hand-typed one drifts, and this site carried a stale gate count for three
+  releases before anyone noticed.</p>
 
   <div class="stats">
-    <div class="stat"><b>248</b><span>records</span></div>
-    <div class="stat"><b>218</b><span>obligations</span></div>
-    <div class="stat"><b>53 / 54</b><span>instruments complete</span></div>
+    <div class="stat"><b>54</b><span>instruments</span></div>
+    <div class="stat"><b>248</b><span>provisions</span></div>
+    <div class="stat"><b>35</b><span>carry a clock</span></div>
     <div class="stat"><b>45</b><span>CI gates</span></div>
   </div>
 
   <div class="cov-cols">
     <div>
       <table>
-        <caption>New York and New York City</caption>
+        <caption>New York and New York City &mdash; 11 instruments, 40 provisions</caption>
         <thead><tr><th>Instrument</th><th class="n">Recs</th><th>Status</th></tr></thead>
         <tbody>
-          <tr><td>SHIELD Act breach notice, GBL § 899-aa</td><td class="n">4</td><td><span class="tick">complete</span></td></tr>
-          <tr><td>SHIELD Act safeguards, GBL § 899-bb</td><td class="n">2</td><td><span class="tick">complete</span></td></tr>
-          <tr><td>Child Data Protection Act, GBL §§ 899-ee, 899-ff</td><td class="n">4</td><td><span class="tick">complete</span>, with OAG guidance attached</td></tr>
+          <tr><td>SHIELD Act breach notice, GBL &#167; 899-aa</td><td class="n">4</td><td><span class="tick">complete</span></td></tr>
+          <tr><td>SHIELD Act safeguards, GBL &#167; 899-bb</td><td class="n">2</td><td><span class="tick">complete</span></td></tr>
+          <tr><td>Child Data Protection Act, GBL &#167;&#167; 899-ee, 899-ff</td><td class="n">4</td><td><span class="tick">complete</span>, with OAG guidance attached</td></tr>
           <tr><td>SAFE for Kids Act, GBL art. 44-D</td><td class="n">7</td><td>partial, two categories declared missing</td></tr>
-          <tr><td>GBL § 349, deceptive acts and practices</td><td class="n">3</td><td><span class="tick">complete</span></td></tr>
-          <tr><td>GBL § 350, false advertising</td><td class="n">1</td><td><span class="tick">complete</span></td></tr>
-          <tr><td>Education Law § 2-d, student data</td><td class="n">3</td><td><span class="tick">complete</span></td></tr>
-          <tr><td>Civil Rights Law §§ 50 and 51, publicity</td><td class="n">2</td><td><span class="tick">complete</span></td></tr>
-          <tr><td>Civil Rights Law § 52-c, employee monitoring</td><td class="n">2</td><td><span class="tick">complete</span></td></tr>
-          <tr><td>Penal Law §§ 250.00 and 250.05, eavesdropping</td><td class="n">3</td><td><span class="tick">complete</span></td></tr>
+          <tr><td>GBL &#167; 349, deceptive acts and practices</td><td class="n">3</td><td><span class="tick">complete</span></td></tr>
+          <tr><td>Education Law &#167; 2-d, student data</td><td class="n">3</td><td><span class="tick">complete</span></td></tr>
+          <tr><td>Civil Rights Law &#167; 52-c, employee monitoring</td><td class="n">2</td><td><span class="tick">complete</span></td></tr>
           <tr><td>NYC Local Law 144 with 6 RCNY Subchapter T</td><td class="n">9</td><td><span class="tick">complete</span></td></tr>
         </tbody>
       </table>
@@ -573,6 +674,14 @@ td.n{font-family:var(--m);font-size:13px;width:56px}
       <div class="group" style="border-bottom:0"><b>Government access</b>ECPA Wiretap and Stored Communications. FISA 702. CLOUD Act. CALEA. Privacy Act of 1974. FOIA.</div>
     </div>
   </div>
+
+  <p class="verify-note" style="margin-top:26px"><b>Every instrument, every provision, and what kind
+  of date each one carries</b> &mdash; searchable, grouped by jurisdiction or by the five CIPP/US
+  domains, generated from the corpus at build time:
+  <a href="corpus.html">the full contents list</a>. It shows, for each provision, whether its
+  in-force date rests on the instrument&rsquo;s own words, on point-in-time evidence from the
+  source&rsquo;s version history, or merely on the date the file was fetched. Nine records still rest
+  on the last of those, and the page says so.</p>
 </section>
 
 <section class="inst" id="install">
@@ -610,6 +719,17 @@ npm run setup -- --write   <span class="c"># drop --write to print it instead</s
         a breach on 8 September and notified HHS the same day. What are our deadlines?</p>
         <p style="margin-top:12px">You should get five business days to the New York Attorney General
         under § 899-aa(9), and an explanation that notifying HHS is what started it.</p>
+      </div></div>
+      <div class="step"><div>
+        <h3>Or type it, if you prefer a terminal</h3>
+        <p>The same engine. <code>breach</code> gives you the timeline, <code>memo</code> gives you
+        something you can attach to an email, and <code>facts</code> tells you what the model will
+        accept &mdash; which used to be the hardest thing to find out.</p>
+        <div class="cmd">privacy-kb breach --hipaa --ny-data --breach --from 2026-09-08
+privacy-kb memo  --hipaa --ny-data --breach --from 2026-09-08 --out incident.md
+privacy-kb facts hipaa          <span class="c"># what can I assert?</span>
+privacy-kb incidents            <span class="c"># one event, several legal descriptions</span>
+privacy-kb cite ny.gbl.899_aa.9.hipaa_ag_notice</div>
       </div></div>
       <div class="step"><div>
         <h3>If anything is off, ask it to check itself</h3>
