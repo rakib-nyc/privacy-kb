@@ -17,6 +17,10 @@ data_types:
 status: in_force
 effective_from: '2025-04-08'
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 8, 2025" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.txt
 supersedes: null
 superseded_by: null
 amendment_history: []

@@ -52,6 +52,11 @@ data_types:
 status: in_force
 effective_from: '1996-02-08'
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Feb. 8, 1996" appears in a <date> element of
+  corpus/federal/domain-2-federal-privacy/cpni/raw/47-u-s-c-222.xml — citation apparatus, not
+  operative text
 supersedes: null
 superseded_by: null
 amendment_history: []

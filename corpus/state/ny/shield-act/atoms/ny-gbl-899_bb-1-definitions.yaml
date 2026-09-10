@@ -12,6 +12,8 @@ data_types:
 status: in_force
 effective_from: '2020-03-21'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/state/ny/shield-act/raw/ny-gbs-899-bb.json
 supersedes: null
 superseded_by: null
 amendment_history: []

@@ -5,6 +5,10 @@ jurisdiction: US
 jurisdiction_level: federal
 status: in_force
 effective_to: null
+effective_from_basis: versioner_evidence
+effective_from_evidence: >-
+  this exact span is absent from 42 C.F.R. § 2.31(a) at 2024-02-16 and first appears at
+  2024-04-16, per the source's point-in-time record (window 2017-03-21..2024-04-16).
 supersedes: null
 superseded_by: null
 amendment_history: []

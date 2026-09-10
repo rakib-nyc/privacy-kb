@@ -57,6 +57,8 @@ jurisdiction_level: federal
 status: in_force
 effective_from: null
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: no effective_from on this record
 amendment_history: []
 summary: >-
   The Commission may make such investigations as it deems necessary to determine whether any person

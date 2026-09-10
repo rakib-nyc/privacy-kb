@@ -5,6 +5,10 @@ jurisdiction: US
 jurisdiction_level: federal
 status: in_force
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
 supersedes: null
 superseded_by: null
 amendment_history: []

@@ -20,6 +20,10 @@ data_types:
 deadline: null
 effective_from: '2027-01-25'
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "January 25, 2027" appears in the rendered text of
+  tests/fixtures/cases/gate41-duplicate-provision/raw/ny-gbs-1501.txt
 enforcement:
   enforcers:
   - state_ag

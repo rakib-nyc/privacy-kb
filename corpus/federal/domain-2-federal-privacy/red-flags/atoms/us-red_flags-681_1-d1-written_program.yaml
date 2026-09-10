@@ -46,6 +46,11 @@ context_not_required: >-
 jurisdiction: US
 jurisdiction_level: federal
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "May 14, 2009" appears in a <CITA> element of
+  corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.xml — citation apparatus, not
+  operative text
 supersedes: null
 superseded_by: null
 amendment_history: []

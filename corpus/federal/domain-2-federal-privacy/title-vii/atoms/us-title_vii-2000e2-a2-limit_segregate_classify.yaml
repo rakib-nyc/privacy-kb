@@ -64,6 +64,11 @@ data_types:
 status: in_force
 effective_from: '1972-03-24'
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Mar. 24, 1972" appears in a <date> element of
+  corpus/federal/domain-2-federal-privacy/title-vii/raw/42-u-s-c-2000e-2.xml — citation
+  apparatus, not operative text
 supersedes: null
 superseded_by: null
 amendment_history:

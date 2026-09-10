@@ -63,6 +63,11 @@ operative_context:
 jurisdiction: US
 jurisdiction_level: federal
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Aug. 10, 2010" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml — citation apparatus, not
+  operative text
 supersedes: null
 superseded_by: null
 amendment_history: []

@@ -117,3 +117,11 @@ gate41-duplicate-provision:
 gate21-malformed-predicate:
 - 21
 - 29
+gate43-unsupported-basis:
+- 43
+gate44-dangling-supersedes:
+- 44
+gate44-chain-gap:
+- 44
+gate45-text-younger-than-claim:
+- 45

@@ -12,6 +12,10 @@ data_types:
 status: in_force
 effective_from: '2000-11-13'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
 supersedes: null
 superseded_by: null
 amendment_history: []

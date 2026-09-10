@@ -5,6 +5,10 @@ jurisdiction: US
 jurisdiction_level: federal
 status: in_force
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "January 1, 2011" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hitech/raw/42-u-s-c-17935.txt
 supersedes: null
 superseded_by: null
 amendment_history: []

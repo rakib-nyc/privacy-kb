@@ -47,6 +47,8 @@ jurisdiction_level: federal
 status: in_force
 effective_from: null
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: no effective_from on this record
 amendment_history: []
 summary: >-
   The FTC is empowered to prevent unfair or deceptive acts or practices in or affecting commerce,

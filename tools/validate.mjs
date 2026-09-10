@@ -12,6 +12,8 @@ import { resolve, join, relative } from 'node:path';
 import * as yaml from 'js-yaml';
 import { evaluate as engineEvaluate, UNKNOWN as ENGINE_UNKNOWN } from '../engine/predicates.mjs';
 import { diff as computeDiff, narrate as narrateDiff } from './compute-differs.mjs';
+import { deriveBasis, WEAK_BASES, vintagesAvailable } from './date-basis.mjs';
+import { provisionKey, byProvision, isVersionChain, chainProblems } from '../engine/provisions.mjs';
 import Ajv from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 
@@ -1471,6 +1473,12 @@ for (const { a } of atoms) {
     // report, not gate 38's -- anchoring to an ambiguous leaf would be meaningless, and letting
     // both gates fail on one defect makes the real one harder to see.
     'path-does-not-resolve-to-one-leaf',
+    // GATE 45 needs a network-produced report (tools/ecfr-vintages.mjs). CI may run offline, and
+    // a gate that quietly passes because its evidence is absent is the failure mode gate 32
+    // exists to catch -- so it declines out loud instead.
+    'ecfr-vintage-report-not-generated',
+    'point-in-time-report-not-generated',
+    'ecfr-vintage-report-has-no-finding-for-record',
     // The baseline ratchet. A record with no stored anchor cannot have DRIFTED from one, so it
     // is skipped rather than failed -- but the count is printed on every run, so the number of
     // unanchored records is visible and can only be allowed to fall.
@@ -1757,6 +1765,198 @@ const unverified = atoms.filter(x => x.a?.verification_status !== 'verbatim_conf
   }
 }
 
+// ---- gate 43: `effective_from` must declare WHAT KIND OF DATE IT IS, and the evidence must
+// support the declaration.
+//
+// Invariant I2 rests on one comparison — `effective_from > as_of`. That comparison is only
+// sound if the left side is an effective date. Across 248 records it was not: 73 dates are
+// stated in the instrument's own text, 64 are read off citation apparatus (a Federal Register
+// publication date, a public-law date) standing in for effectiveness, and NINE are the source
+// API's snapshot date, which is a property of the fetch and not of the law. All four
+// N.Y. GBL § 899-aa records sat in that last group, which is why the engine reported that New
+// York imposed no breach-notification duty on 1 February 2025 — a statute in force since 2019
+// vanished because a fetch timestamp was standing in for an effective date.
+//
+// THE BASIS IS DERIVED FROM THE SOURCE BYTES, NOT DECLARED. This is gate 3's discipline applied
+// to dates: an atom may not promote its own effective_from by editing a field, any more than it
+// may claim words its source does not contain. tools/date-basis.mjs re-derives every basis and
+// this gate fails on disagreement.
+(() => {
+  for (const { a, f } of atoms) {
+    if (!a?.id) continue;
+    bump(43);
+    const { basis, evidence } = deriveBasis(a);
+    // A record whose basis is versioner_evidence can only be re-derived while the point-in-time
+    // report exists. Without it the derivation legitimately falls back to a weaker basis, and
+    // failing the record for that would report a missing artifact as eleven corrupt records.
+    if (a.effective_from_basis === 'versioner_evidence' && !vintagesAvailable()) {
+      skip(43, a.id, 'point-in-time-report-not-generated');
+      continue;
+    }
+    if (!a.effective_from_basis) {
+      fail(43, a.id, `has no effective_from_basis. The evidence supports "${basis}" — run ` +
+        `node tools/date-basis.mjs --write. An undated KIND makes "effective_from ${a.effective_from}" ` +
+        `an assertion the corpus cannot support.`);
+      continue;
+    }
+    if (a.effective_from_basis !== basis)
+      fail(43, a.id, `declares effective_from_basis "${a.effective_from_basis}", but the source bytes ` +
+        `support "${basis}".\n      ${evidence}\n      A basis is DERIVED, never declared. ` +
+        `Re-run tools/date-basis.mjs --write, or fix the date.`);
+  }
+  // THE RATCHET. api_snapshot and undetermined dates cannot carry an as-of comparison, so their
+  // population is the real measure of how far invariant I2 is actually backed. It goes down.
+  // WITHOUT THE POINT-IN-TIME REPORT THE COUNT IS NOT COMPUTABLE. Ten records derive
+  // versioner_evidence only while it exists; without it they fall back to weaker bases and the
+  // population appears to have grown by ten overnight. Reporting a missing artifact as a
+  // ratchet regression would be a false alarm on the one number that is supposed to be
+  // trustworthy, so the check declines out loud instead.
+  if (!vintagesAvailable()) {
+    notes.push('gate 43: ratchet NOT CHECKED — meta/ecfr-vintages.yaml is absent, so ' +
+      'versioner_evidence cannot be re-derived and the weak-basis count would be overstated. ' +
+      'Run npm run vintages.');
+    return;
+  }
+  const weak = atoms.filter(({ a }) => a?.id && WEAK_BASES.includes(deriveBasis(a).basis)).length;
+  const rf43 = R('meta/ratchets.yaml');
+  const declared = existsSync(rf43)
+    ? yaml.load(readFileSync(rf43, 'utf8'))?.ratchets?.gate_43_weak_effective_from_basis?.value
+    : undefined;
+  if (declared === undefined)
+    fail(43, 'meta/ratchets.yaml', 'declares no gate_43_weak_effective_from_basis, so the count of ' +
+      'dates that cannot support an as-of comparison is accountable to nothing.');
+  else if (weak > declared)
+    fail(43, 'meta/ratchets.yaml', `${weak} records carry an effective_from that cannot support an ` +
+      `as-of comparison (api_snapshot or undetermined); meta/ratchets.yaml declares ${declared}. ` +
+      `This ratchet moves DOWN. Raising it means editing that file with a reason.`);
+  else if (weak < declared)
+    notes.push(`gate 43: weak effective_from bases are ${weak}, below the declared ${declared}. ` +
+      `Ratchet it down in meta/ratchets.yaml.`);
+})();
+
+// ---- gate 44: a version chain must be walkable, adjacent and closed.
+//
+// THE STATE THIS GUARDS. supersedes = 0, superseded_by = 0, effective_to = 0 across all 248
+// records; 238 distinct provisions, none of which exists at more than one vintage. So invariant
+// I2 is enforced against data that can only describe one moment, and every version field the
+// schema has carried since v1 is empty. This gate is the rail built before the traffic: it is
+// mostly vacuous today by construction, and it is what makes adding a vintage safe.
+//
+// The hard part is that two records over one provision are ambiguous on their face — two
+// VINTAGES of an amended provision, or two CO-LOCATED duties drawn from the same words (15
+// U.S.C. § 45(a)(1) supports both a deception duty and a public-commitment duty). The
+// discriminator is the date: co-located records share an effective_from, vintages differ
+// because the text changed. Chain rules apply only where the dates disagree; same-date
+// duplicates are gate 41's question and are left to it.
+{
+  const recs = atoms.map(x => x.a).filter(r => r?.id);
+  const byId44 = new Map(recs.map(r => [r.id, r]));
+
+  // (a) A version pointer must name a record that exists and is the same provision. This part
+  // bites today: a typo in supersedes is otherwise a silent dead end, and a pointer across
+  // provisions is a claim that two different texts are one lineage.
+  for (const r of recs) {
+    // Bump per RECORD SCANNED, not per pointer found. Counting only the pointers would report
+    // "g44:0" over a corpus where every version field is null — which is this corpus — and a
+    // gate reporting zero is indistinguishable from a gate that did not run.
+    bump(44);
+    for (const field of ['supersedes', 'superseded_by']) {
+      const target = r[field];
+      if (!target) continue;
+      const t = byId44.get(target);
+      if (!t) {
+        fail(44, r.id, `${field} points at "${target}", which is not a record in the corpus. ` +
+          `A version chain that cannot be walked is not a version chain.`);
+        continue;
+      }
+      if (provisionKey(t) !== provisionKey(r))
+        fail(44, r.id, `${field} points at ${target}, but they are different provisions ` +
+          `(${provisionKey(r)} vs ${provisionKey(t)}). Two texts are one lineage only if they ` +
+          `are the same provision; if this IS a renumbering, say so with an explicit ` +
+          `provision_key on both records.`);
+    }
+    // A superseded record with no end date never stops governing.
+    if (r.status === 'superseded' && !r.effective_to) {
+      fail(44, r.id, `has status "superseded" and effective_to: null, so it is superseded and ` +
+        `in force at the same time. A superseded vintage must say when it stopped.`);
+    }
+    // An end date with nothing after it is an obligation that silently expires.
+    if (r.effective_to && r.status === 'in_force' && !r.superseded_by) {
+      fail(44, r.id, `is in_force with effective_to ${r.effective_to} and no superseded_by. ` +
+        `Either it was replaced — name the replacement — or it lapsed, which is status ` +
+        `"superseded" with a reason, not an in_force record that quietly stops.`);
+    }
+  }
+
+  // (b) Where a provision's records disagree about when they began, they are claiming to be a
+  // chain, and the chain must hold end to end.
+  for (const [key, group] of byProvision(recs)) {
+    if (group.length < 2 || !isVersionChain(group)) continue;
+    bump(44);
+    for (const problem of chainProblems(group)) fail(44, key, problem);
+  }
+}
+
+// ---- gate 45: a record may not claim an effective_from earlier than the text it quotes.
+//
+// THE DEFECT, MEASURED. Every eCFR-sourced record was cut from a CURRENT snapshot and stamped
+// with a much older effective_from. `45-cfr-164.xml` was fetched 2026-08-19 and carries 16
+// mentions of "reproductive health" and 23 of "attestation" — text the 2024 amendments put
+// there — while the atoms cut from it claim effective_from 2003-04-14. Usually harmless,
+// because most spans have not changed. That is exactly the problem: nothing distinguished
+// "unchanged since 2003" from "rewritten in 2024", so every record made the same claim and only
+// some were entitled to it.
+//
+// 45 C.F.R. § 164.520(a)(1) is the one that was not. Before 25 June 2024 it read "Except as
+// provided by paragraph (a)(2) or (3)"; the reproductive-health rule (89 FR 33064) inserted a
+// paragraph and it now reads "(a)(3) or (4)". The corpus held the post-amendment wording under
+// a 2003 effective date, so asking what the notice provision required in 2010 returned a
+// cross-reference that did not exist for another fourteen years.
+//
+// The evidence comes from eCFR's point-in-time versioner (tools/ecfr-vintages.mjs), which is
+// keyless and reaches back to about 2017. This gate does not re-fetch; it reads that tool's
+// report. A record whose quoted span is known to post-date its own effective_from must either
+// be corrected or given the prior vintage the corpus is missing.
+{
+  // A FIXTURE MUST BE ABLE TO SUPPLY ITS OWN EVIDENCE. This gate's input is a generated report,
+  // so without this hook the only way to exercise it would be against the live corpus — and a
+  // gate that can only be tested by breaking production is not tested. A fixture tree may ship
+  // its own ecfr-vintages.yaml beside its atoms.
+  const local = R(join(CORPUS, 'ecfr-vintages.yaml'));
+  const vf = existsSync(local) ? local : R('meta/ecfr-vintages.yaml');
+  if (!existsSync(vf)) {
+    // The report needs network access to produce, and CI may have none. Declining is honest;
+    // pretending to have checked is not.
+    for (const { a } of atoms.filter(x => x.a?.source?.format === 'ecfr_xml'))
+      skip(45, a.id, 'ecfr-vintage-report-not-generated');
+  } else {
+    const rep = yaml.load(readFileSync(vf, 'utf8')) ?? {};
+    const byAtom = new Map((rep.findings ?? []).map(f => [f.atom_id, f]));
+    // NOT SCOPED TO ecfr_xml. The rule is "where point-in-time evidence exists, the record must
+    // honour it", and that is a property of having evidence, not of which API produced it. When
+    // the NY OpenLegislation pass lands — its publishedDates already enumerate six vintages of
+    // GBL § 899-aa in bytes this repository holds — its findings drop into the same report and
+    // this gate covers them without being rewritten.
+    for (const { a } of atoms) {
+      if (!a?.id) continue;
+      const f = byAtom.get(a.id);
+      if (!f) {
+        if (a.source?.format === 'ecfr_xml') skip(45, a.id, 'ecfr-vintage-report-has-no-finding-for-record');
+        continue;
+      }
+      bump(45);
+      if (f.verdict !== 'changed') continue;
+      if (a.effective_from && f.span_first_seen && a.effective_from >= f.span_first_seen) continue;
+      fail(45, a.id, `claims effective_from ${a.effective_from}, but the span it quotes was ABSENT ` +
+        `from ${a.source.citation} at ${f.span_absent_at} and first appears at ${f.span_first_seen}. ` +
+        `The record answers for ${f.span_first_seen ? `dates before ${f.span_first_seen}` : 'earlier dates'} ` +
+        `with text that did not exist then.\n      Either set effective_from to ${f.span_first_seen}, ` +
+        `or add the prior vintage and chain them (gate 44 will hold the chain to adjacency).\n      ` +
+        `Evidence: tools/ecfr-vintages.mjs, window ${f.window}.`);
+    }
+  }
+}
+
 // ------------------------------------------------------------------- report
 if (QUIET) {
   console.log(JSON.stringify({ atoms: atoms.length, failures: failures.map(f => ({ gate: f.gate, id: f.atomId })) }));
@@ -1771,7 +1971,7 @@ console.log(`suppressed by I1     ${unverified.length}`);
 for (const n of notes) console.log(`note: ${n}`);
 // B-4: a zero must be attributable to a declaration, never inferred from absence.
 const fmtsPresent = [...new Set(atoms.map(x => x.a?.source?.format).filter(Boolean))];
-const ALL_GATES = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42];
+const ALL_GATES = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45];
 const cov = ALL_GATES.map(g => {
   const n = examined[g];
   if (n) return `g${g}:${n}`;

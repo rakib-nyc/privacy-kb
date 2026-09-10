@@ -80,8 +80,12 @@ sector:
 data_types:
   - contact_data
 status: in_force
-effective_from: '2003-07-25'
+effective_from: '2025-04-11'
 effective_to: null
+effective_from_basis: versioner_evidence
+effective_from_evidence: >-
+  this exact span is absent from 47 C.F.R. § 64.1200(d)(3) at 2025-03-26 and first appears at
+  2025-04-11, per the source's point-in-time record (window 2017-01-01..2026-03-25).
 supersedes: null
 superseded_by: null
 amendment_history:
@@ -116,7 +120,7 @@ requirement_detail: >-
   and its affiliates requires the consumer's prior express permission. Retention is governed
   separately by § 64.1200(d)(6): the request must be honoured for five years.
 deadline:
-  trigger_event: Receipt of a do-not-call request from a residential telephone subscriber
+  trigger_event: receipt_of_do_not_call_request
   duration:
     value: 10
     unit: business_days

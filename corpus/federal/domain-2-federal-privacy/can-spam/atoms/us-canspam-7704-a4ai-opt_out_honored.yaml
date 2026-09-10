@@ -69,6 +69,11 @@ data_types:
 status: in_force
 effective_from: '2004-01-01'
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Jan. 1, 2004" appears in a <date> element of
+  corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7704.xml — citation apparatus,
+  not operative text
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -95,7 +100,7 @@ requirement_detail: >-
   the opt-out request, so a pre-existing consent record does not revive the relationship. What the
   sender may require of the recipient to make the request stick is capped by 16 C.F.R. § 316.5(b).
 deadline:
-  trigger_event: receipt of the recipient's request not to receive further commercial email
+  trigger_event: receipt_of_opt_out_request
   duration:
     value: 10
     unit: business_days

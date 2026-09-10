@@ -12,6 +12,10 @@ data_types:
 status: in_force
 effective_from: '2003-04-14'
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 14, 2003" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -150,7 +154,7 @@ subject:
 applies_to_role: controller
 obligation_type: disclose
 deadline:
-  trigger_event: receipt of the access request
+  trigger_event: receipt_of_access_request
   duration:
     value: 30
     unit: calendar_days

@@ -5,6 +5,10 @@ import { analyze } from './applicability.mjs';
 import { load } from './corpus.mjs';
 import { computeDeadline } from './timeline.mjs';
 import { evaluate, UNKNOWN } from './predicates.mjs';
+import { canonicalTrigger, resolveTriggerDate, triggerMeta, TRIGGERS, TRIGGER_KEYS, FAMILIES } from './triggers.mjs';
+import { inForceOn, EVER_LAW } from './corpus.mjs';
+import { isRealDate } from './dates.mjs';
+import { provisionKey, byProvision, isVersionChain, chainProblems } from './provisions.mjs';
 
 let fail = 0;
 const ok = (name, cond, detail = '') => {
@@ -334,6 +338,225 @@ ok('analyze never throws on hostile input', (() => {
   ok('§ 1681i: a deadline with no tolling reports an empty extension list, never a phantom one',
      (r.deadlines.find(x => x.atom_id === 'us.fcra.1681i.a3b.frivolous_notice')
        ?.conditional_extensions ?? []).length === 0);
+}
+
+
+// ---------------------------------------------------------------- trigger vocabulary
+// THE DEFECT: `deadline.trigger_event` was free text, the engine indexed caller facts with it
+// verbatim, and a `?? context.event.date` fallback applied ONE date to every trigger in the
+// corpus. `deadlines --hipaa --ny-data --from D` therefore printed a HIPAA access-request
+// clock, an amendment-request clock and a SHIELD breach clock all running from D. These tests
+// pin the three properties that stop it recurring: every corpus trigger is in the vocabulary,
+// a date only starts the clock it was asserted for, and how it was resolved is reported.
+{
+  const corpus = load();
+  const withDeadlines = corpus.obligations.filter(a => a.deadline?.trigger_event);
+  const unknown = withDeadlines.filter(a => !canonicalTrigger(a.deadline.trigger_event));
+  ok('every corpus trigger_event is in the controlled vocabulary', unknown.length === 0,
+     unknown.map(a => `${a.id}: ${a.deadline.trigger_event}`).join('; '));
+  const nonCanonical = withDeadlines.filter(a => a.deadline.trigger_event !== canonicalTrigger(a.deadline.trigger_event));
+  ok('...and every record stores the CANONICAL key, not an alias', nonCanonical.length === 0,
+     nonCanonical.map(a => a.id).join('; '));
+  ok('every trigger declares a family that exists',
+     TRIGGER_KEYS.every(k => Object.hasOwn(FAMILIES, TRIGGERS[k].family)));
+
+  // Resolution routes, each reported rather than silently taken.
+  const ev = { discovery_of_breach: '2026-08-01' };
+  ok('an exactly-named trigger resolves as "exact"',
+     resolveTriggerDate('discovery_of_breach', ev).via === 'exact');
+  ok('a legacy prose spelling still resolves, and is marked an alias', (() => {
+    const r = resolveTriggerDate('discovery_of_breach', { 'discovery of the breach': '2026-08-01' });
+    return r.date === '2026-08-01' && r.via === 'alias';
+  })());
+  ok('a family key dates a member trigger, and says it was the family', (() => {
+    const r = resolveTriggerDate('discovery_of_breach_of_security', { breach_discovery: '2026-08-01' });
+    return r.date === '2026-08-01' && r.via === 'family' && r.supplied_as === 'breach_discovery';
+  })());
+  ok('a family key does NOT reach across families', (() => {
+    const r = resolveTriggerDate('receipt_of_access_request', { breach_discovery: '2026-08-01' });
+    return r.date === null && r.via === null;
+  })());
+  // THE FALLBACK IS GONE. This is the assertion that keeps it gone.
+  ok('there is NO generic event.date fallback',
+     resolveTriggerDate('discovery_of_breach', { date: '2026-08-01' }).date === null);
+  ok('a malformed date does not start a clock',
+     resolveTriggerDate('discovery_of_breach', { discovery_of_breach: 'August 1st' }).date === null);
+  ok('an unrecognised trigger resolves to nothing rather than throwing',
+     resolveTriggerDate('no_such_trigger', { no_such_trigger: '2026-08-01' }).date === null);
+
+  // End to end: one date must not start an unrelated clock.
+  const r = analyze({ is_hipaa_covered_entity: true, owns_or_licenses_computerized_data: true },
+                    { is_phi: true, types: ['phi'], includes_ny_private_information: true },
+                    { as_of: '2026-09-09', state_layers: ['US-NY'],
+                      event: { type: 'breach_of_security_of_the_system', breach_discovery: '2026-08-01' } });
+  const shield = r.deadlines.find(d => d.atom_id === 'ny.gbl.899_aa.2.notify_residents');
+  const access = r.deadlines.find(d => d.atom_id === 'us.cfr.45.164_524.b_2_i');
+  ok('a breach date starts the breach clock', shield?.computed === '2026-08-31', shield?.computed);
+  ok('...and does NOT start an access-request clock', access && access.computed === null,
+     JSON.stringify(access?.computed));
+  ok('an unstarted clock says so explicitly', access?.clock_started === false);
+  ok('...and names the key that would start it', /--?event|event\./.test(access?.note ?? '')
+     && (access?.note ?? '').includes('receipt_of_access_request'), access?.note?.slice(0, 90));
+  ok('...and is RETURNED rather than dropped from the answer',
+     r.deadlines.length > r.deadlines.filter(d => d.computed).length);
+  ok('a family-dated clock records the inference', shield?.trigger_via === 'family'
+     && /family key/.test(shield?.trigger_inference_note ?? ''));
+
+  // computeDeadline stays total under the new signature.
+  ok('computeDeadline is total on a null resolution',
+     computeDeadline({ id: 'x', deadline: { trigger_event: 'discovery_of_breach',
+       duration: { value: 5, unit: 'calendar_days' }, computation: '' } }, null, null)?.computed === null);
+}
+
+
+// ---------------------------------------------------------------- the time axis
+// THE STATE THESE GUARD. supersedes = 0, superseded_by = 0 and effective_to = 0 across all 248
+// records; 238 distinct provisions, none at more than one vintage. Invariant I2 was therefore
+// enforced at the query boundary over data that could only describe one moment. These tests pin
+// the semantics a version chain needs BEFORE one exists, because the two ways to get it wrong —
+// excluding superseded text from the window it governs, and letting two vintages both govern
+// the day an amendment lands — are silent.
+{
+  const vintage = (id, from, to, status, extra = {}) => ({
+    id, status, effective_from: from, effective_to: to,
+    verification_status: 'verbatim_confirmed',
+    source: { instrument_id: 'us.test', citation: 'test' },
+    paragraph_path: { path: ['a'], anchor: 'T1' },
+    supersedes: null, superseded_by: null, ...extra });
+
+  // A superseded vintage IS the answer inside its own window. If it were not, holding the
+  // February text and answering a February question with nothing is the best the corpus could do.
+  const old = vintage('v1', '2019-10-23', '2024-12-27', 'superseded');
+  const now = vintage('v2', '2024-12-27', null, 'in_force');
+  ok('a superseded vintage governs inside its own window', inForceOn(old, '2020-06-01'));
+  ok('...and not after it', !inForceOn(old, '2025-06-01'));
+  ok('...and not before it', !inForceOn(old, '2019-01-01'));
+  ok('the current vintage governs after the changeover', inForceOn(now, '2025-06-01'));
+  ok('...and not before it', !inForceOn(now, '2024-12-26'));
+
+  // THE HANDOVER DAY. Half-open [from, to): exactly one vintage governs the day the amendment
+  // lands. The old `effective_to < asOf` test kept BOTH in force on that date.
+  ok('exactly one vintage governs the changeover date itself',
+     [old, now].filter(v => inForceOn(v, '2024-12-27')).length === 1);
+  ok('...and it is the NEW one', inForceOn(now, '2024-12-27') && !inForceOn(old, '2024-12-27'));
+
+  // Statuses that were never law stay out regardless of date.
+  for (const st of ['proposed', 'vetoed', 'enjoined', 'enacted_pending'])
+    ok(`status "${st}" never satisfies inForceOn`,
+       !inForceOn(vintage('x', '2000-01-01', null, st), '2026-01-01'));
+  ok('EVER_LAW is exactly in_force + superseded',
+     EVER_LAW.has('in_force') && EVER_LAW.has('superseded') && EVER_LAW.size === 2);
+
+  // Provision identity: vintages group, co-located duties are not mistaken for a chain.
+  ok('two vintages of one provision share a provision key',
+     provisionKey(old) === provisionKey(now));
+  ok('an explicit provision_key overrides derivation, for renumbering',
+     provisionKey({ ...old, provision_key: 'renamed' }) === 'renamed');
+  ok('records differing only by path are different provisions',
+     provisionKey(old) !== provisionKey({ ...old, paragraph_path: { path: ['b'], anchor: 'T1' } }));
+  ok('differing dates over one provision read as a version chain', isVersionChain([old, now]));
+  ok('SAME-date records over one provision do NOT — they are co-located duties, gate 41\'s question',
+     !isVersionChain([old, { ...now, effective_from: old.effective_from }]));
+
+  // A sound chain has no complaints; each way of breaking it is caught.
+  const linked = [ { ...old, superseded_by: 'v2' }, { ...now, supersedes: 'v1' } ];
+  ok('a correctly linked, adjacent chain reports no problems',
+     chainProblems(linked).length === 0, JSON.stringify(chainProblems(linked)));
+  ok('a GAP is caught', chainProblems([
+     { ...old, effective_to: '2024-01-01', superseded_by: 'v2' }, { ...now, supersedes: 'v1' }])
+     .some(p => p.startsWith('GAP')));
+  ok('an OVERLAP is caught', chainProblems([
+     { ...old, effective_to: '2025-06-01', superseded_by: 'v2' }, { ...now, supersedes: 'v1' }])
+     .some(p => p.startsWith('OVERLAP')));
+  ok('a missing forward link is caught',
+     chainProblems([old, { ...now, supersedes: 'v1' }]).some(p => /superseded_by/.test(p)));
+  ok('a missing back link is caught',
+     chainProblems([{ ...old, superseded_by: 'v2' }, now]).some(p => /supersedes/.test(p)));
+  ok('an unclosed earlier vintage is caught', chainProblems([
+     { ...old, effective_to: null, superseded_by: 'v2' }, { ...now, supersedes: 'v1' }])
+     .some(p => /never stops governing|effective_to: null/.test(p)));
+  ok('two open-ended vintages are caught', chainProblems([
+     { ...old, effective_to: null, status: 'in_force' }, now])
+     .some(p => /two current texts|Exactly one version/.test(p)));
+
+  // The live corpus still holds no chain. This is the measurement, asserted rather than assumed:
+  // when it changes, it should change because someone added a vintage on purpose.
+  const chains = [...byProvision(load().all)].filter(([, g]) => g.length > 1 && isVersionChain(g));
+  ok('every version chain in the live corpus is sound',
+     chains.every(([, g]) => chainProblems(g).length === 0),
+     chains.map(([k, g]) => `${k}: ${chainProblems(g).join(' ')}`).filter(x => /: ./.test(x)).join(' | '));
+}
+
+
+// ---------------------------------------------------------------- hostile input
+// Found by fuzzing the new entry points rather than by reading them. Each of these was a real
+// defect, and each is the same shape: a lookup that walks the prototype chain, or a date that
+// is checked for presence rather than validity. Both turn caller-controlled input into an
+// answer the engine cannot defend.
+{
+  // `ALIASES[q]` walked the prototype chain, so the event key "constructor" resolved to
+  // Object.prototype.constructor — a truthy "canonical trigger" that is a function. It
+  // satisfied the alias branch (returning a date for a trigger that does not exist) and made
+  // computeDeadline throw on TRIGGERS[canon].family, breaking the engine's totality guarantee.
+  // Only all-lowercase prototype names could reach it, because the lookup lowercases first.
+  for (const k of ['constructor', '__proto__', 'valueof', 'tostring', 'hasownproperty'])
+    ok(`prototype name "${k}" is not a trigger`, canonicalTrigger(k) === null,
+       String(canonicalTrigger(k)).slice(0, 40));
+  ok('...and does not resolve a date either',
+     resolveTriggerDate('constructor', { constructor: '2026-01-01' }).date === null);
+  ok('...and triggerMeta returns null rather than a prototype member',
+     triggerMeta('constructor') === null);
+  ok('computeDeadline stays TOTAL on a prototype-named trigger', (() => {
+    try {
+      return computeDeadline({ id: 'x', deadline: { trigger_event: 'constructor',
+        duration: { value: 1, unit: 'calendar_days' }, computation: '' } }, null)?.computed === null;
+    } catch { return false; }
+  })());
+  // An event object carrying a poisoned __proto__ must not leak a date either.
+  ok('a poisoned event object resolves normally', (() => {
+    const ev = JSON.parse('{"__proto__":{"discovery_of_breach":"1999-01-01"},"discovery_of_breach":"2026-01-01"}');
+    return resolveTriggerDate('discovery_of_breach', ev).date === '2026-01-01';
+  })());
+  ok('...and an inherited-only key supplies nothing', (() => {
+    const ev = Object.create({ discovery_of_breach: '1999-01-01' });
+    return resolveTriggerDate('discovery_of_breach', ev).date === null;
+  })());
+
+  // Date validity, not date presence.
+  for (const bad of ['not-a-date', '2026-13-01', '2026-02-30', '26-01-01', '2026-1-1', '', null, 5, {}])
+    ok(`isRealDate rejects ${JSON.stringify(bad)}`, !isRealDate(bad));
+  for (const good of ['2026-01-01', '2024-02-29', '1970-01-01'])
+    ok(`isRealDate accepts ${good}`, isRealDate(good));
+  ok('analyze refuses a well-shaped but impossible date',
+     !!analyze({}, {}, { as_of: '2026-02-30' }).error);
+}
+
+
+// A WELL-SHAPED IMPOSSIBLE DATE IS THE ONE THAT GETS THROUGH. '2026-02-30' passes any regex and
+// `new Date('2026-02-30T00:00:00Z')` is not NaN — JavaScript rolls it to 2 March. computeDeadline's
+// NaN test therefore passed it and returned a deadline a MONTH ADRIFT with no error. In a clock
+// engine that is the worst version of this bug, because the wrong date looks exactly like a right
+// one. Found by fuzzing, not by reading.
+{
+  const atom = { id: 'x', source: { citation: 'c' },
+    deadline: { trigger_event: 'discovery_of_breach',
+                duration: { value: 30, unit: 'calendar_days' }, computation: '' } };
+  ok('a real trigger date still computes', computeDeadline(atom, '2026-08-01').computed === '2026-08-31');
+  for (const bad of ['2026-02-30', '2026-13-01', '2026-00-10', '2026-04-31']) {
+    const r = computeDeadline(atom, bad);
+    ok(`computeDeadline REFUSES ${bad}`, r.computed === null && !!r.error, JSON.stringify(r.computed));
+  }
+  ok('...and the refusal says the clock did not start',
+     computeDeadline(atom, '2026-02-30').clock_started === false);
+  ok('2024-02-29 is real and still computes', computeDeadline(atom, '2024-02-29').computed === '2024-03-30');
+
+  // The same date must not slip in through the trigger vocabulary either.
+  ok('an impossible date does not start a clock via resolveTriggerDate',
+     resolveTriggerDate('discovery_of_breach', { discovery_of_breach: '2026-02-30' }).date === null);
+  ok('...nor through a family key',
+     resolveTriggerDate('discovery_of_breach', { breach_discovery: '2026-13-01' }).date === null);
+  ok('...while a real one still does',
+     resolveTriggerDate('discovery_of_breach', { breach_discovery: '2024-02-29' }).date === '2024-02-29');
 }
 
 console.log(`\n${fail} failure(s)`);

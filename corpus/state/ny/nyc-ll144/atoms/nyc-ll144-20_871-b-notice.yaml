@@ -5,6 +5,10 @@ jurisdiction: US-NY
 jurisdiction_level: local
 status: in_force
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "1/1/2023" appears in the rendered text of
+  corpus/state/ny/nyc-ll144/raw/nyc-admin-title20-sub25.txt
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -69,7 +73,7 @@ applies_if:
 applies_to_role: controller
 obligation_type: notify
 deadline:
-  trigger_event: use of the tool to assess a candidate or employee residing in the city
+  trigger_event: use_of_aedt_on_city_resident
   duration:
     value: 10
     unit: business_days

@@ -59,6 +59,8 @@ data_types:
 status: in_force
 effective_from: '1988-12-27'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/eppa/raw/29-u-s-c-2002.xml
 supersedes: null
 superseded_by: null
 amendment_history: []

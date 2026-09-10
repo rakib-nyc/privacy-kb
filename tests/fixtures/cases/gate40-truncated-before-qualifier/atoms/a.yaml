@@ -10,6 +10,10 @@ sector:
 status: enacted_pending
 effective_from: '2027-01-25'
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "January 25, 2027" appears in the rendered text of
+  tests/fixtures/cases/gate40-truncated-before-qualifier/raw/ny-gbs-1501.txt
 supersedes: null
 superseded_by: null
 amendment_history: []

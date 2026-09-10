@@ -13,6 +13,8 @@ data_types:
 status: in_force
 effective_from: '1971-04-25'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681i.xml
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -102,7 +104,7 @@ applies_if:
     - event.type == "consumer_dispute_received"
 obligation_type: assess
 deadline:
-  trigger_event: receipt of the consumer dispute
+  trigger_event: receipt_of_consumer_dispute
   duration:
     value: 30
     unit: calendar_days

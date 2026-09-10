@@ -29,6 +29,8 @@ jurisdiction_level: federal
 status: in_force
 effective_from: '2026-08-20'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: this record stores no raw source to check against
 confidence: high
 scenario: A US entity subject to both US law and a non-US regime, typically the GDPR. The constraint is
   that US instruments create obligations a transfer analysis must contend with rather than rights that

@@ -45,6 +45,10 @@ data_types:
 status: in_force
 effective_from: '2002-01-08'
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "January 8, 2002" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/ppra/raw/20-u-s-c-1232h.txt
 supersedes: null
 superseded_by: null
 amendment_history: []

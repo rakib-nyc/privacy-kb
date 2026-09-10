@@ -53,6 +53,8 @@ data_types:
 status: in_force
 effective_from: '1979-03-10'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3406.xml
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -76,7 +78,7 @@ requirement_detail: >-
   are already in the Government's hands, so it supports a post hoc remedy rather than the
   pre-production challenge that §§ 3405 and 3407 preserve.
 deadline:
-  trigger_event: service of the search warrant by the Government authority
+  trigger_event: service_of_search_warrant
   duration:
     value: 90
     unit: calendar_days

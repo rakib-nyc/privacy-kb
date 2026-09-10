@@ -12,6 +12,10 @@ data_types:
 status: in_force
 effective_from: '1992-07-26'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/ada-medical/raw/42-u-s-c-12112.xml
 supersedes: null
 superseded_by: null
 amendment_history: []

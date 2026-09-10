@@ -63,6 +63,10 @@ operative_context:
 jurisdiction: US
 jurisdiction_level: federal
 effective_to: null
+effective_from_basis: versioner_evidence
+effective_from_evidence: >-
+  this exact span is absent from 16 C.F.R. § 318.3(a)(3) at 2016-12-22 and first appears at
+  2024-07-29, per the source's point-in-time record (window 2016-12-22..2024-07-29).
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -144,7 +148,7 @@ data_types:
   - phr_identifiable_health_information
   - health_information
 status: in_force
-effective_from: '2009-09-24'
+effective_from: '2024-07-29'
 applies_if:
   all:
     - entity.is_phr_vendor_or_phr_related_entity == true

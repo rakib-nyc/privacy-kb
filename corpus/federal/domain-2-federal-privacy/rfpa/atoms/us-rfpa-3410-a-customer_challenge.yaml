@@ -94,6 +94,8 @@ data_types:
 status: in_force
 effective_from: '1979-03-10'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3410.xml
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -119,7 +121,7 @@ requirement_detail: 'THIS IS THE PROVISION THAT ANSWERS UNITED STATES v. MILLER.
   nothing on file, so the effect of the provision on the Government is a temporary bar on obtaining them. It is
   what makes RFPA a privacy statute rather than a filing requirement.'
 deadline:
-  trigger_event: service or mailing of the subpoena, summons, or formal written request on the customer
+  trigger_event: service_of_subpoena_on_customer
   duration:
     value: 10
     unit: calendar_days

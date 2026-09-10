@@ -30,6 +30,29 @@ ratchets:
     last_moved: '2026-08-20'
     last_move_direction: down
     reason: Ratcheted 25 -> 24 as the health-tension trio landed clean.
+  gate_43_weak_effective_from_basis:
+    value: 106
+    direction: down
+    source: tools/date-basis.mjs --check (api_snapshot + undetermined)
+    last_moved: '2026-09-09'
+    last_move_direction: down
+    reason: >-
+      First declaration. 248 records carried an effective_from with no statement of what kind of
+      date it was, and the three kinds present are not interchangeable: 73 are stated in the
+      instrument's own text, 64 are read off citation apparatus standing in for effectiveness,
+      9 are the source API's snapshot date, and 102 are not traceable to anything the repository
+      holds. Only the first kind can carry invariant I2's `effective_from > as_of` comparison.
+      111 is the population that cannot. It falls as sources are re-walked for a stated date,
+      and the nine api_snapshot records — all four N.Y. GBL § 899-aa among them — fall first,
+      because a fetch timestamp standing in for an effective date is what made the SHIELD Act
+      disappear from a February 2025 query.
+
+      111 -> 106 in the same change. The eCFR point-in-time pass (tools/ecfr-vintages.mjs)
+      established a fifth and strongest basis, versioner_evidence: the source's own version
+      history showing when THIS SPAN first appeared. Ten records now carry it. Every other basis
+      is evidence about the instrument, and a span can be far younger than the rule containing
+      it — 47 C.F.R. s 64.1200(d)(3) dates from 2003 and the words this corpus quotes replaced
+      "30 days" with "ten (10) business days" in April 2025.
   gate_8_eval_scenarios:
     value: 30
     direction: up

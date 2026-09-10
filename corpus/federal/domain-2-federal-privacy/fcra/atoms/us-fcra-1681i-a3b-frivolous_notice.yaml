@@ -13,6 +13,8 @@ data_types:
 status: in_force
 effective_from: '1971-04-25'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681i.xml
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -98,7 +100,7 @@ applies_if:
     - event.type == "frivolous_dispute_determination"
 obligation_type: notify
 deadline:
-  trigger_event: determination that the dispute is frivolous or irrelevant
+  trigger_event: determination_dispute_frivolous
   duration:
     value: 5
     unit: business_days

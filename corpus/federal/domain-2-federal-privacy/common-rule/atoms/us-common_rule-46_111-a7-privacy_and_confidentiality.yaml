@@ -53,6 +53,10 @@ data_types:
 status: in_force
 effective_from: '2019-01-21'
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "January 21, 2019" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
 supersedes: null
 superseded_by: null
 amendment_history: []

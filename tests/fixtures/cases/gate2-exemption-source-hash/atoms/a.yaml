@@ -42,6 +42,8 @@ data_types:
 status: in_force
 effective_from: '2005-06-01'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in tests/fixtures/raw/ecfr-682-3.xml
 supersedes: null
 superseded_by: null
 applies_if:

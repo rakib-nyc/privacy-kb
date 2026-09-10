@@ -40,6 +40,10 @@ paragraph_path:
 jurisdiction: US-NY
 jurisdiction_level: state
 effective_to: null
+effective_from_basis: api_snapshot
+effective_from_evidence: >-
+  equals the source payload's activeDate (2026-04-03). This is the date the API's snapshot was
+  taken, not a date the law states.
 supersedes: null
 superseded_by: null
 amendment_history: []

@@ -12,6 +12,8 @@ data_types:
 status: in_force
 effective_from: '2009-11-21'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/gina/raw/42-u-s-c-2000ff-5.xml
 supersedes: null
 superseded_by: null
 amendment_history: []

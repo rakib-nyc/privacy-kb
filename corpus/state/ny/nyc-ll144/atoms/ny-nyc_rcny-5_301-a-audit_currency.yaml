@@ -10,6 +10,8 @@ sector:
 status: in_force
 effective_from: '2023-04-05'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/state/ny/nyc-ll144/raw/nyc-6-rcny-subchapter-t.pdf
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -69,7 +71,7 @@ applies_if:
 applies_to_role: controller
 obligation_type: assess
 deadline:
-  trigger_event: the most recent bias audit of the AEDT
+  trigger_event: most_recent_bias_audit
   duration:
     value: 1
     unit: years

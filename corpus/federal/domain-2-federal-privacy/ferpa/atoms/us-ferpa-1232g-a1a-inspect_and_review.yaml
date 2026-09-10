@@ -62,6 +62,10 @@ data_types:
 status: in_force
 effective_from: '1974-11-19'
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "November 19, 1974" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.txt
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -90,7 +94,7 @@ requirement_detail: >-
   1232g(a)(2) hearing, and the second sentence here limits inspection of a shared document to the
   part relating to that student.
 deadline:
-  trigger_event: the parent's request to inspect and review the student's education records
+  trigger_event: receipt_of_parental_inspection_request
   duration:
     value: 45
     unit: calendar_days

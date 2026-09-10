@@ -12,6 +12,11 @@ data_types:
 status: in_force
 effective_from: '1984-10-30'
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Oct. 30, 1984" appears in a <date> element of
+  corpus/federal/domain-2-federal-privacy/cable-act/raw/47-u-s-c-551.xml — citation apparatus,
+  not operative text
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -83,7 +88,7 @@ subject:
   - III
 obligation_type: notify
 deadline:
-  trigger_event: entering into an agreement to provide cable or other service
+  trigger_event: entering_cable_service_agreement
   duration:
     value: 12
     unit: months

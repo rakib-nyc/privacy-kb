@@ -14,6 +14,8 @@ data_types:
 status: in_force
 effective_from: '2000-04-21'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
 supersedes: null
 superseded_by: null
 amendment_history: []

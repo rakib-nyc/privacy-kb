@@ -553,3 +553,80 @@ debt:
     Comprehensive state privacy laws will do this constantly.
   risk_if_forgotten: Medium and quiet. The failure is a correct-looking answer about the wrong population.
   status: open_mitigated
+- id: DEBT-023
+  title: The time axis is real for eCFR only; USC, OpenLegislation and NYC are still single-vintage
+  registered: '2026-09-09'
+  raised_by: v0.2 time-model work (gates 43-45)
+  the_rule: >-
+    Invariant I2 says there is no current law, only law as of a date. That now holds WITH EVIDENCE
+    for the 79 eCFR-sourced records the point-in-time versioner can see. It does not hold for the
+    rest of the corpus, and a reader has no way to tell the two populations apart from a record
+    alone.
+  why_not_now: >-
+    Each remaining source needs a different acquisition path, and one of them needs a credential
+    this repository does not hold.
+  currently_affects:
+    - >-
+      108 uslm_xml records (uscode.house.gov). Release points exist per public law back to the 113th
+      Congress, so a version axis is reachable, but the payload is per-title ZIPs and statutes
+      change far less often than regulations. Lower yield per unit of work than the eCFR pass, which
+      is why it was deferred rather than attempted.
+    - >-
+      33 openleg_json records (legislation.nysenate.gov). THE VERSION LIST IS ALREADY ON DISK - the
+      fetched payloads carry publishedDates, and N.Y. GBL 899-AA enumerates six vintages
+      (2014-09-22, 2019-08-02, 2019-11-01, 2024-12-27, 2025-02-21, 2025-03-28). Fetching any of them
+      needs NYSENATE_API_KEY, which returns 401 without it. Highest-value remaining work: all nine
+      api_snapshot records are here, including the four 899-aa records whose effective_from is a
+      fetch timestamp.
+    - >-
+      5 ecfr_xml records in 49 CFR 40 and 34 CFR 99, for which the versioner returned no retrievable
+      snapshots. Unchecked, not cleared.
+    - >-
+      3 nyc_xml, 6 pdf_single_col, 9 manual and 5 html records, which have no point-in-time source
+      at all.
+  trigger: NYSENATE_API_KEY becoming available, or a decision to walk USC release points.
+  on_trigger:
+    - >-
+      Run the same span-diff method the eCFR pass uses. Most spans will be unchanged, so the pass
+      mostly produces EVIDENCE for existing dates rather than new records.
+    - >-
+      Feed findings into the format meta/ecfr-vintages.yaml already uses. Gate 45 is deliberately
+      NOT scoped to ecfr_xml and will cover them without being rewritten.
+    - Close entries in meta/missing-vintages.yaml by adding prior vintages and chaining them.
+  risk_if_forgotten: >-
+    The corpus reads as though the whole time axis is backed by evidence when about a third of it
+    is. A reader who checks 45 C.F.R. 164.520 and finds it correctly dated has no reason to suspect
+    that N.Y. GBL 899-aa is dated by a fetch timestamp.
+  status: open
+- id: DEBT-024
+  title: Seven provisions are narrowed to their current text with no prior vintage held
+  registered: '2026-09-09'
+  raised_by: v0.2 eCFR point-in-time pass
+  the_rule: >-
+    A record must not claim an effective_from earlier than the text it quotes (gate 45). Seven did,
+    and were narrowed to the window their text actually covers.
+  why_not_now: >-
+    Writing a prior-vintage record is not mechanical. It needs its own verbatim span from a
+    point-in-time source, its own hash and ledger row, and its own requirement_detail, exemptions
+    and enforcement analysis. Generating that prose by reasoning backwards from the amended text
+    would be exactly the confident reconstruction this repository exists to refuse.
+  currently_affects:
+    - Every entry in meta/missing-vintages.yaml.
+    - >-
+      47 C.F.R. 64.1200(d)(3) is the sharpest case. The do-not-call honouring period was 30 days
+      until 11 April 2025 and is ten business days after it; the corpus holds only the second. It is
+      a deadline record, so the gap reaches the clock engine rather than only the prose.
+  trigger: Any question about a listed provision at a date before its effective_from.
+  on_trigger:
+    - Fetch the prior text from the point-in-time snapshot already cached under .cache/ecfr.
+    - >-
+      Store it as its own raw file with a ledger row in meta/sources.yaml, and write the vintage
+      record against it.
+    - >-
+      Chain the two. Gate 44 will hold the chain to adjacency, linkage in both directions, and a
+      single open end.
+  risk_if_forgotten: >-
+    The fix traded a WRONG VINTAGE for a FALSE NEGATIVE. A wrong vintage reads exactly like a right
+    one, so the trade is worth making; but silence is still a wrong answer to "what did this require
+    in 2010", and it is quieter than the bug it replaced.
+  status: open

@@ -3,6 +3,7 @@
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import * as yaml from 'js-yaml';
+import { isRealDate as _isRealDate } from './dates.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 
@@ -32,11 +33,31 @@ export function load() {
   return CACHE;
 }
 
-/** In force as of a date. Invariant I2: there is no "current law", only law as of a date. */
+/** Re-exported so existing importers keep working; the implementation lives in dates.mjs
+ *  where timeline.mjs can reach it without pulling in the filesystem. */
+export { isRealDate } from './dates.mjs';
+
+
+/** Statuses under which a record WAS or IS law, so a date can decide whether it governs.
+ *  `superseded` belongs here: a superseded vintage is not law today and IS law for any date
+ *  inside its own window, which is the entire point of keeping it. Excluding it — as the old
+ *  `status !== 'in_force'` test did — makes a version chain unreachable: the corpus could hold
+ *  the February 2025 text of a provision and still answer a February 2025 question with
+ *  nothing, because the record that governs is by definition no longer in force. */
+export const EVER_LAW = new Set(['in_force', 'superseded']);
+
+/** In force as of a date. Invariant I2: there is no "current law", only law as of a date.
+ *
+ *  THE WINDOW IS HALF-OPEN: [effective_from, effective_to). The old test used
+ *  `effective_to < asOf`, which keeps a record in force ON its own end date — harmless while
+ *  every effective_to in the corpus was null, and wrong the moment a chain exists, because
+ *  vintage N's effective_to equals vintage N+1's effective_from and BOTH would answer for that
+ *  day. Two versions of one provision in force simultaneously is not a near-miss; it is the
+ *  corpus contradicting itself on the one day the amendment landed. */
 export function inForceOn(a, asOf) {
-  if (a.status !== 'in_force') return false;
+  if (!EVER_LAW.has(a.status)) return false;
   if (a.effective_from && a.effective_from > asOf) return false;
-  if (a.effective_to && a.effective_to < asOf) return false;
+  if (a.effective_to && a.effective_to <= asOf) return false;
   return true;
 }
 

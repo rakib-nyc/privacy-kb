@@ -10,8 +10,12 @@ sector:
 data_types:
   - health
 status: in_force
-effective_from: '2003-04-14'
+effective_from: '2024-06-25'
 effective_to: null
+effective_from_basis: versioner_evidence
+effective_from_evidence: >-
+  this exact span is absent from 45 C.F.R. § 164.520(a)(1) at 2024-04-26 and first appears at
+  2024-06-25, per the source's point-in-time record (window 2016-12-30..2024-06-25).
 supersedes: null
 superseded_by: null
 amendment_history: []

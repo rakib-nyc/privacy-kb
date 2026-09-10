@@ -5,6 +5,10 @@ jurisdiction: US
 jurisdiction_level: federal
 status: in_force
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 5, 2021" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.txt
 supersedes: null
 superseded_by: null
 amendment_history: []

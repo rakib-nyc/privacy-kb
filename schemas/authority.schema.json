@@ -233,6 +233,23 @@
    ],
    "format": "date"
   },
+  "effective_from_basis": {
+   "description": "What KIND of date effective_from is. DERIVED from the source bytes by tools/date-basis.mjs and re-derived by gate 43 \u2014 a record cannot promote its own date by editing this field. Only stated_in_text is an effective date on the instrument's own authority; api_snapshot is not an effective date at all.",
+   "enum": [
+    "versioner_evidence",
+    "stated_in_text",
+    "citation_apparatus",
+    "api_snapshot",
+    "undetermined"
+   ]
+  },
+  "effective_from_evidence": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Where the date was found, or why it could not be. Written by tools/date-basis.mjs."
+  },
   "amendment_history": {
    "type": "array",
    "items": {
@@ -675,6 +692,13 @@
    ],
    "minLength": 20,
    "description": "Why this span stops short of a qualifying clause in its own provision. Required by gate 40 when it does. A deliberate truncation is a decision; a silent one reverses the rule."
+  },
+  "provision_key": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "OVERRIDE for provision identity. Normally derived from instrument_id + paragraph_path (engine/provisions.mjs), which is stable and cannot drift. Set it only where derivation cannot see the truth \u2014 a RENUMBERING, where the same provision moves to a new subsection and two records that are one lineage would otherwise be keyed apart. Setting it asserts that two texts are the same provision, and gate 44 will hold the resulting chain to adjacency and linkage."
   }
  },
  "$defs": {

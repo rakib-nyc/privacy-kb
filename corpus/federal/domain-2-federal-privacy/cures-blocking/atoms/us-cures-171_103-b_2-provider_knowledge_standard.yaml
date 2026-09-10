@@ -5,6 +5,10 @@ jurisdiction: US
 jurisdiction_level: federal
 status: in_force
 effective_to: null
+effective_from_basis: versioner_evidence
+effective_from_evidence: >-
+  this exact span is absent from 45 C.F.R. § 171.103(b)(2) at 2024-02-08 and first appears at
+  2024-03-11, per the source's point-in-time record (window 2020-06-30..2024-12-17).
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -121,7 +125,7 @@ sector:
   - health
 data_types:
   - health
-effective_from: '2021-04-05'
+effective_from: '2024-03-11'
 subject:
   domain: II.B.3
   lifecycle:

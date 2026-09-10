@@ -9,6 +9,8 @@ sector:
 - any
 status: in_force
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/state/ny/cdpa/raw/ny-gbs-899-ff.json
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -79,7 +81,7 @@ applies_if:
 applies_to_role: controller
 obligation_type: assess
 deadline:
-  trigger_event: determining or being informed that a user is a covered user
+  trigger_event: covered_user_determination
   duration:
     value: 30
     unit: calendar_days

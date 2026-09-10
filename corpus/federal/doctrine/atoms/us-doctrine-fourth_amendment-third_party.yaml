@@ -27,6 +27,8 @@ jurisdiction_level: federal
 status: in_force
 effective_from: '2018-06-22'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: this record stores no raw source to check against
 confidence: medium
 common_errors:
 - Citing Carpenter as though it abolished the third-party doctrine. It declined to extend it to historical

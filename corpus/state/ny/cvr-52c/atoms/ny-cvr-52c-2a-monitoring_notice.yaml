@@ -5,6 +5,8 @@ jurisdiction: US-NY
 jurisdiction_level: state
 status: in_force
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/state/ny/cvr-52c/raw/ny-cvr-52-c-2.json
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -78,7 +80,7 @@ applies_if:
 applies_to_role: controller
 obligation_type: notify
 deadline:
-  trigger_event: hiring an employee
+  trigger_event: hiring_an_employee
   duration:
     value: 0
     unit: calendar_days

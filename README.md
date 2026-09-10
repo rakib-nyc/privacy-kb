@@ -14,7 +14,7 @@ verified against, and resolves as of a date.
 > (Apache 2.0, §§ 7–8), which govern.
 >
 > **Parts of this corpus were assembled with AI assistance, and AI makes mistakes.** So do people.
-> The verification apparatus in this repository — 42 CI gates, hash-anchored spans, adversarial
+> The verification apparatus in this repository — 45 CI gates, hash-anchored spans, adversarial
 > red-teaming — exists because that is true, not because it has been solved. It reduces certain
 > classes of error; it does not eliminate them, and it cannot catch a misreading that is
 > internally consistent. Several such errors were found *after* shipping and are documented in
@@ -131,12 +131,14 @@ is the honest remaining work.
 | Verified | 244 `verbatim_confirmed` · 4 suppressed by invariant I1 and unreachable from any output |
 | Instruments | 54 declared · **53 complete** against their declared duty categories |
 | taxonomy leaves covered | 31 / 69 · 38 neither covered nor ruled out of scope, and gate 34 ratchets that number |
-| CI gates | **42**, all named · 56 fixtures · 31 gates fixture-exercised, 11 declared unexercisable in `tests/fixtures/no-fixture.yaml` and why |
+| CI gates | **45**, all named · 60 fixtures · 34 gates fixture-exercised, 11 declared unexercisable in `tests/fixtures/no-fixture.yaml` and why |
 | Walker assumptions | 13 declared, 13 with an executable test |
-| Engine | 7 modules · 7 property tests, including both halves of invariant I6, as-of validation, and totality of every entry point |
-| MCP server | 9 tools, 22 tests including a live stdio handshake |
+| Engine | 9 modules · property tests covering both halves of invariant I6, as-of validation, the trigger vocabulary, version-chain semantics, and totality of every entry point |
+| MCP server | 10 tools, 22 tests including a live stdio handshake |
 | Workflows | 4 lifecycle-indexed, 26 tests |
 | Eval scenarios | 30, all-pass baseline enforced by gate 8 |
+| `effective_from` provenance | every record declares what KIND of date it is, derived from the source bytes and re-derived by gate 43 · 10 carry point-in-time evidence · 106 cannot yet support an as-of comparison, and gate 43 ratchets that number down |
+| Prior vintages not held | **7**, each named in `meta/missing-vintages.yaml` — provisions whose stored text was proved younger than the date the record used to claim |
 
 **New York is built, not blocked.** SHIELD, the Child Data Protection Act and its OAG guidance,
 the SAFE for Kids Act, GBL §§ 349/350, Education Law § 2-d, Civil Rights Law §§ 50/51 and § 52-c,
@@ -174,7 +176,7 @@ they were records that were **verbatim, uniquely cited, internally consistent an
   garbage — the extra two being law that does not bind until 2027.
 - **Gate 22 did not exist.** It sat in the gate list with no implementation, reporting
   examined-nothing on every run. It is now the check that no gate can be listed and unimplemented.
-- A **malformed predicate** — `entity.x == true || nonsense(` — passed all 42 gates while
+- A **malformed predicate** — `entity.x == true || nonsense(` — passed every gate then in place while
   comparing against the literal text `"true || nonsense("`. Grammatical, evaluable, satisfiable,
   and permanently false: an obligation that could never apply and nothing saying so.
 - An **unrecognised preemption posture** resolved to `no_displacement` — the most permissive

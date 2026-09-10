@@ -12,12 +12,16 @@ data_types:
 status: in_force
 effective_from: '2000-11-13'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
 supersedes: null
 superseded_by: null
 amendment_history: []
 applies_to_role: controller
 deadline:
-  trigger_event: establishment of the customer relationship
+  trigger_event: establishment_of_customer_relationship
   duration:
     value: 0
     unit: calendar_days

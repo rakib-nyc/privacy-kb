@@ -12,6 +12,10 @@ data_types:
 status: in_force
 effective_from: '2009-09-23'
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "September 23, 2009" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.txt
 supersedes: null
 superseded_by: null
 amendment_history: []

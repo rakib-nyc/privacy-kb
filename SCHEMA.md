@@ -225,12 +225,21 @@ Read-only. Every tool takes `as_of`.
 | `privacy_obligations(instrument_id, as_of)` | atoms in force on that date |
 | `privacy_cite(atom_id)` | verbatim span + source URL + fetch date |
 | `privacy_definition(term, instrument_id?)` | definition record(s) + `differs_from` |
-| `privacy_deadline(trigger, date, instrument_id)` | computed date + tolling notes |
+| `privacy_deadline(atom_id, trigger_date)` | computed date + tolling notes |
+| `privacy_triggers()` | the controlled trigger vocabulary: every key that can start a clock |
 | `privacy_diff(from_date, to_date, filter?)` | what changed, what is coming |
 | `privacy_preemption(federal_id, state_id)` | posture + resolution |
 | `privacy_coverage(bok_coordinate)` | KB completeness at that node |
 
 Annotate all as `readOnlyHint: true`, `openWorldHint: false`.
+
+`deadline.trigger_event` is a CONTROLLED VOCABULARY, not free text (`engine/triggers.mjs`).
+A trigger date is supplied as `event.<trigger_key>`, and `privacy_triggers` enumerates the
+keys — a caller never has to guess a spelling. Each key declares a FAMILY, and supplying the
+family key dates every member trigger at once, with `trigger_via: "family"` on each result so
+the inference is visible rather than assumed. There is deliberately no generic `event.date`
+fallback: a date supplied under an unrecognised key starts no clock, and an obligation whose
+trigger has not been dated is returned with `clock_started: false` rather than omitted.
 
 `privacy_cite` is the anti-hallucination primitive: any model can be instructed to call it
 before asserting any citation, and the call either returns verbatim text or fails loudly.
@@ -271,6 +280,33 @@ A commit fails if any of these trip:
 
 Gate 3 is the important one. It is a mechanical check that makes fabricated quotation
 structurally impossible to commit.
+
+### The time-axis gates (43-45)
+
+Invariant I2 rests on one comparison, `effective_from > as_of`, and that comparison is only
+sound if `effective_from` means what the invariant assumes. It did not. Three gates make the
+date accountable the way gate 3 makes the quotation accountable.
+
+43. **`effective_from` must declare what kind of date it is, and the evidence must support the
+    declaration.** `effective_from_basis` is one of `versioner_evidence`, `stated_in_text`,
+    `citation_apparatus`, `api_snapshot`, `undetermined`. It is DERIVED from the source bytes by
+    `tools/date-basis.mjs` and re-derived on every CI run: a record cannot promote its own date
+    by editing a field. Only the first two are dates the instrument states; `api_snapshot` is the
+    fetch timestamp and is not a property of the law at all. A ratchet holds the population that
+    cannot carry an as-of comparison, and it moves down.
+
+44. **A version chain must be walkable, adjacent and closed.** Where a provision's records
+    disagree about `effective_from`, they are claiming to be vintages, and the chain must have
+    no gaps (a date with text held but none returned), no overlaps (two texts governing one
+    day), links in both directions, and exactly one open end. Records sharing a provision at the
+    SAME date are co-located duties, not vintages, and are gate 41's question. The window is
+    half-open, `[effective_from, effective_to)`, so exactly one vintage governs a changeover day.
+
+45. **A record may not claim an `effective_from` earlier than the text it quotes.** Evidence
+    comes from the source's own point-in-time record (`tools/ecfr-vintages.mjs`, keyless, back to
+    about 2017). 47 C.F.R. § 64.1200(d)(3) is why: the section dates from 2003, and the words
+    this corpus quotes replaced "30 days" with "ten (10) business days" in April 2025. A deadline
+    record was answering twenty-two years of questions with a number that did not yet exist.
 
 ## 6a. Apparatus
 

@@ -38,6 +38,10 @@ paragraph_path:
 jurisdiction: US-FED
 jurisdiction_level: federal
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "September 30, 1996" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/fcra-preemption/raw/15-u-s-c-1681t.txt
 supersedes: null
 superseded_by: null
 amendment_history: []

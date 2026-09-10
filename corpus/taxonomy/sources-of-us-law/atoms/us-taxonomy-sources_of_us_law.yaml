@@ -57,6 +57,10 @@ jurisdiction_level: federal
 status: in_force
 effective_from: '1946-06-11'
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  appears in corpus/taxonomy/sources-of-us-law/raw/uslm-5usc553-20260819.xml outside the
+  operative text; the enclosing element could not be identified
 amendment_history: []
 summary: >-
   The provision that makes the legislative-rule/guidance distinction mechanical: notice-and-comment

@@ -30,6 +30,8 @@ jurisdiction_level: federal
 status: in_force
 effective_from: '2026-08-20'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: this record stores no raw source to check against
 confidence: high
 scenario: Employee-owned device used for work, and employer monitoring of it. No single statute; the constraint
   is the intersection of interception law, workplace notice duties and the sectoral obligations attaching

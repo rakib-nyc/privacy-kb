@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // MCP server over the corpus and the engine. SCHEMA.md §5.
 //
-// Nine read-only tools. The corpus supplies the truth; whatever model is calling supplies
+// Ten read-only tools. The corpus supplies the truth; whatever model is calling supplies
 // the prose. That split is the whole point — the server never asks a model anything, and
 // the model never computes applicability.
 //
@@ -14,7 +14,9 @@
 import { createInterface } from 'node:readline';
 import { analyze } from '../engine/applicability.mjs';
 import { load, inForceOn, surfaceable } from '../engine/corpus.mjs';
+import { isRealDate, badDateReason } from '../engine/dates.mjs';
 import { computeDeadline } from '../engine/timeline.mjs';
+import { TRIGGERS, FAMILIES, TRIGGER_KEYS } from '../engine/triggers.mjs';
 import { resolve as resolvePreemption } from '../engine/preemption.mjs';
 
 const VERSION = '0.1.0';
@@ -42,7 +44,12 @@ const TOOLS = [
       as_of: { type: 'string', description: 'REQUIRED ISO date. There is no "current law" — only law as of a date.' },
       state_layers: { type: 'array', items: { type: 'string' }, description: "e.g. ['US-NY']" },
       include_pending: { type: 'boolean', description: 'Routes pending law to pending_watch ONLY. It never enters obligations.' },
-      event: { type: 'object', description: 'Event facts, e.g. {type, consumers_affected, discovery_of_breach: "2026-08-01"}' } } } },
+      event: { type: 'object', description: 'Event facts. Non-date facts (type, consumers_affected) plus '
+        + 'TRIGGER DATES keyed by the controlled vocabulary — call privacy_triggers for the list. '
+        + 'e.g. {type: "breach_of_security_of_the_system", consumers_affected: 900, discovery_of_breach: "2026-08-01"}. '
+        + 'A family key dates every trigger in that family at once: {breach_discovery: "2026-08-01"} starts the '
+        + 'HIPAA, SHIELD Act, Health Breach and GLBA Safeguards clocks together, and each result says it was '
+        + 'dated by family. There is NO generic event.date — a date under an unrecognised key starts no clock.' } } } },
 
   { name: 'privacy_applicable',
     description: `Cheap variant of privacy_analyze: which instruments apply, and nothing else. ${PENDING_RULE}`,
@@ -76,6 +83,13 @@ const TOOLS = [
       `60 days" is a promptness obligation with a ceiling, not a 60-day allowance.`,
     inputSchema: { type: 'object', required: ['atom_id', 'trigger_date'], properties: {
       atom_id: { type: 'string' }, trigger_date: { type: 'string' } } } },
+
+  { name: 'privacy_triggers',
+    description: 'The controlled vocabulary of deadline triggers: every key that can start a clock, its ' +
+      'human label, its family, and which records use it. Call this BEFORE guessing an event key — a date ' +
+      'supplied under an unrecognised key starts no clock and there is no generic fallback. Family keys ' +
+      'date every member trigger at once, which is how one incident starts many statutes\' clocks.',
+    inputSchema: { type: 'object', properties: {} } },
 
   { name: 'privacy_diff',
     description: 'What changed between two dates: atoms that came into force, ceased, or are pending. ' + PENDING_RULE,
@@ -130,6 +144,12 @@ function call(name, args = {}) {
     }
     case 'privacy_obligations': {
       if (!args.as_of) return { error: 'as_of is required' };
+      // PRESENCE IS NOT VALIDITY. Date comparisons here are string comparisons, so as_of
+      // 'not-a-date' sorted above every real date, inForceOn returned true for everything and
+      // this tool answered with the entire instrument — including law not yet in force —
+      // reporting a typo as a wider answer instead of an error. Same defect analyze() documents
+      // fixing at its own entry point; this one was never given the check.
+      if (!isRealDate(args.as_of)) return { error: badDateReason('as_of', args.as_of) };
       const atoms = corpus.obligations.filter(a => a.source.instrument_id === args.instrument_id
         && inForceOn(a, args.as_of) && surfaceable(a));
       return { instrument_id: args.instrument_id, as_of: args.as_of, count: atoms.length,
@@ -165,10 +185,34 @@ function call(name, args = {}) {
     case 'privacy_deadline': {
       const a = corpus.byId.get(args.atom_id);
       if (!a) return { error: `no record with id "${args.atom_id}"` };
-      const d = computeDeadline(a, args.trigger_date);
+      // An explicit per-atom call IS a direct assertion about this atom's own trigger, so it is
+      // recorded as such — that is what distinguishes it from a date inherited from a family key.
+      const d = computeDeadline(a, args.trigger_date,
+        args.trigger_date ? { via: 'explicit', supplied_as: null } : null);
       return d ?? { atom_id: a.id, error: 'this atom carries no deadline' };
     }
+    // WITHOUT THIS, A CALLER STILL HAS TO GUESS. The whole defect being fixed here was an
+    // interface whose keys were invisible: the corpus knew the trigger names, the docstring
+    // guessed at one of them, and a caller had no way to enumerate the rest. Now it can ask.
+    case 'privacy_triggers':
+      return { count: TRIGGER_KEYS.length,
+        families: Object.entries(FAMILIES).map(([key, meaning]) => ({ key, meaning,
+          members: TRIGGER_KEYS.filter(t => TRIGGERS[t].family === key) })),
+        triggers: TRIGGER_KEYS.map(key => ({ key, label: TRIGGERS[key].label,
+          family: TRIGGERS[key].family, standard: TRIGGERS[key].standard ?? null,
+          used_by: corpus.obligations
+            .filter(a => a.deadline?.trigger_event === key)
+            .map(a => ({ atom_id: a.id, citation: a.source.citation })) })),
+        note: 'Supply any of these as event.<key> = "YYYY-MM-DD". A family key dates every member '
+            + 'at once and each result reports trigger_via: "family". A date under a key not in '
+            + 'this list starts no clock — there is no generic fallback.' };
     case 'privacy_diff': {
+      // BOTH ENDS, BEFORE EITHER IS COMPARED. This tool brackets the corpus with
+      // `effective_from > from_date && effective_from <= to_date`, and a malformed to_date sorts
+      // ABOVE every real date — so `to_date: 'not-a-date'` reported 30 provisions coming into
+      // force where the true answer was 20. The typo did not fail; it quietly added ten.
+      for (const [k, v] of [['from_date', args.from_date], ['to_date', args.to_date]])
+        if (!isRealDate(v)) return { error: badDateReason(k, v) };
       const came = corpus.obligations.filter(a => a.effective_from && a.effective_from > args.from_date && a.effective_from <= args.to_date);
       const went = corpus.obligations.filter(a => a.effective_to && a.effective_to > args.from_date && a.effective_to <= args.to_date);
       const pend = corpus.obligations.filter(a => ['enacted_pending', 'proposed'].includes(a.status));
@@ -181,6 +225,11 @@ function call(name, args = {}) {
     case 'privacy_preemption': {
       const f = corpus.byId.get(args.federal_id);
       if (!f) return { error: `no record with id "${args.federal_id}"` };
+      // as_of is not compared here — it is ECHOED into the answer, which is worse in one narrow
+      // way: a malformed date is reported back as the date the resolution was made as of, and
+      // gets quoted. Optional, so absence is fine; present-and-malformed is not.
+      if (args.as_of !== undefined && args.as_of !== null && !isRealDate(args.as_of))
+        return { error: badDateReason('as_of', args.as_of) };
       return resolvePreemption(f, args.state_id ? corpus.byId.get(args.state_id) : null, args.as_of ?? null);
     }
     case 'privacy_coverage': {

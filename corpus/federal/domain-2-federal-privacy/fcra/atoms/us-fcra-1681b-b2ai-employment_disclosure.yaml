@@ -12,6 +12,8 @@ data_types:
   - consumer_report
 status: in_force
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/fcra/raw/15-u-s-c-1681b.xml
 supersedes: null
 superseded_by: null
 amendment_history: []

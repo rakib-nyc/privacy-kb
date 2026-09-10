@@ -56,6 +56,11 @@ data_types:
 status: in_force
 effective_from: '2017-09-21'
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Sept. 21, 2017" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
+  operative text
 supersedes: null
 superseded_by: null
 amendment_history:
@@ -92,7 +97,7 @@ requirement_detail: >-
   inside most state statutes. Paragraphs (b)(2) and (b)(3) are the two release valves — urgent
   customer notice to avoid immediate irreparable harm, and law-enforcement-directed delay.
 deadline:
-  trigger_event: Reasonable determination by the carrier that a breach of customers' CPNI has occurred
+  trigger_event: carrier_determination_of_cpni_breach
   duration:
     value: 7
     unit: business_days

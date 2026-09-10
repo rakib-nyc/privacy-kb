@@ -36,6 +36,10 @@ data_types:
 status: in_force
 effective_from: '2026-04-03'
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  appears in tests/fixtures/raw/ny-gbs-899ccc-repealed.json outside the operative text; the
+  enclosing element could not be identified
 supersedes: null
 superseded_by: null
 applies_if:

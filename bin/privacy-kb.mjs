@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { homedir, platform } from 'node:os';
 import { call } from '../mcp/server.mjs';
 import { load } from '../engine/corpus.mjs';
+import { isRealDate } from '../engine/dates.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const VERSION = JSON.parse(readFileSync(join(ROOT, 'package.json'), 'utf8')).version;
@@ -27,8 +28,9 @@ ${b('privacy-kb')} ${dim(VERSION)}  —  US federal + New York privacy law, as o
   ${b('privacy-kb setup')}                     print the Claude Desktop config to paste
   ${b('privacy-kb coverage')}                  what the corpus holds, and what it does not
   ${b('privacy-kb cite')} <record-id>          the verbatim text and where it came from
-  ${b('privacy-kb deadlines')} --from <date>   every clock a breach starts, earliest first
+  ${b('privacy-kb deadlines')} [flags]         which clocks have started, and which have not
   ${b('privacy-kb ask')} [flags]               which obligations apply
+  ${b('privacy-kb triggers')}                  every event key that can start a clock
 
   ${b('Flags for ask/deadlines')}
     --hipaa            a HIPAA covered entity
@@ -41,11 +43,26 @@ ${b('privacy-kb')} ${dim(VERSION)}  —  US federal + New York privacy law, as o
     --as-of <date>     the date to answer as of (default: today)
     --json             machine-readable output
 
+  ${b('Dating the clocks')}
+    --from <date>      dates the one event your flags assert (--breach or --told-hhs)
+    --event <k>=<date> any trigger by name, repeatable — see ${b('privacy-kb triggers')}
+
+  ${dim('A clock starts only when its own trigger is dated. An obligation whose trigger has')}
+  ${dim('no date is reported as NOT STARTED, never given a borrowed date.')}
+
   ${b('Example')}
     privacy-kb ask --hipaa --ny-data --breach --told-hhs
+    privacy-kb deadlines --hipaa --ny-data --breach --from 2026-08-01
 ${DISCLAIMER}
 `);
 }
+
+// An event flag asserts that a moment occurred; this says WHICH trigger key that moment dates,
+// so `--from` has exactly one meaning per flag rather than a guess.
+const EVENT_FLAGS = {
+  '--breach': 'breach_discovery',
+  '--told-hhs': 'notification_to_hhs_secretary',
+};
 
 function factsFrom(args) {
   const has = f => args.includes(f);
@@ -60,14 +77,73 @@ function factsFrom(args) {
   entity.within_ftc_jurisdiction = true;
   entity.in_or_affecting_commerce = true;
   entity.nexus ??= 'US-NY';
+
+  // EVENT DATES. `--event key=YYYY-MM-DD`, repeatable, keyed by the controlled vocabulary in
+  // engine/triggers.mjs. `--from` is shorthand for the event the flags already assert: with
+  // --breach it dates the breach_discovery FAMILY, so one assertion starts every breach clock
+  // (HIPAA, SHIELD, HBNR, GLBA Safeguards) and each result says it was dated by family rather
+  // than by that statute's own trigger. Without --breach, --from asserts nothing — because
+  // there is no event to attach it to, and attaching it to all of them is precisely the bug
+  // this replaced.
+  // A DATE THE USER TYPED IS WHERE A TYPO ACTUALLY ORIGINATES, so it is refused here rather
+  // than absorbed. `--from 2026-02-30` used to print "asserted: breach_discovery = 2026-02-30"
+  // and then "no clock has started", which reads as "this obligation does not apply" — the
+  // engine correctly declined an impossible date and the CLI reported that as an answer.
+  const bad_dates = [];
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] !== '--event') continue;
+    const raw = String(args[i + 1] ?? '');
+    const eq = raw.indexOf('=');
+    const k = eq >= 0 ? raw.slice(0, eq) : raw;
+    const v = eq >= 0 ? raw.slice(eq + 1) : '';
+    if (!k || !v) { bad_dates.push([`--event ${raw}`, 'expected key=YYYY-MM-DD']); continue; }
+    if (!isRealDate(v)) { bad_dates.push([`--event ${k}`, v]); continue; }
+    event[k] = v;
+  }
+  const fi = args.indexOf('--from');
+  const from = fi >= 0 ? args[fi + 1] : null;
+  if (from !== null && !isRealDate(from)) bad_dates.push(['--from', from]);
+
+  // WHICH EVENT DOES `--from` DATE? Each event flag asserts a different moment, so the answer
+  // is only unambiguous when exactly one such flag is present. --breach dates the breach
+  // discovery family; --told-hhs dates the HHS notification, which is a LATER and separate act
+  // — § 899-aa(9)'s five-day AG clock runs from it, not from discovery, and that gap is the
+  // trap two eval scenarios exist to catch. Given both flags and one date, the honest move is
+  // to refuse: silently picking either one would answer a question the user did not ask.
+  const present = Object.keys(EVENT_FLAGS).filter(has);
+  let from_ambiguous = null;
+  if (from && isRealDate(from)) {
+    if (present.length === 1) event[EVENT_FLAGS[present[0]]] ??= from;
+    else if (present.length > 1) from_ambiguous = present;
+  }
+
   const i = args.indexOf('--as-of');
   const as_of = i >= 0 ? args[i + 1] : today();
-  return { entity, data, context: { as_of, event, practice, state_layers: ['US-NY'], include_pending: true } };
+  return { entity, data, from_ambiguous, bad_dates,
+           context: { as_of, event, practice, state_layers: ['US-NY'], include_pending: true } };
+}
+
+/** Print the refusal and return true if any date the user typed is not a real calendar date. */
+function refuseBadDates(bad) {
+  if (!bad?.length) return false;
+  console.log(`\n  ${b('That is not a date.')}\n`);
+  for (const [flag, value] of bad) console.log(`    ${flag} ${dim(JSON.stringify(value))}`);
+  console.log(`\n  Dates are YYYY-MM-DD and must be real: 2026-02-30 and 2026-13-01 are neither.`);
+  console.log(`  Every date comparison here is a string comparison, so a malformed value does not`);
+  console.log(`  fail on its own — it sorts above every real date and widens the answer.\n`);
+  process.exitCode = 1;
+  return true;
 }
 
 function ask(args) {
-  const { entity, data, context } = factsFrom(args);
+  const { entity, data, context, bad_dates } = factsFrom(args);
+  if (refuseBadDates(bad_dates)) return;
   const r = call('privacy_analyze', { entity, data, ...context });
+  // AN ERROR MUST REACH THE EXIT CODE, in JSON mode too. This printed the refusal and exited 0,
+  // which is precisely the failure tests/test-cli.mjs was written about: `cite` once reported
+  // 'no record with id "undefined"' and still exited 0, so a smoke test that checked only the
+  // status called a broken command green. The same hole was sitting one function away.
+  if (r.error) process.exitCode = 1;
   if (args.includes('--json')) return console.log(JSON.stringify(r, null, 2));
   if (r.error) return console.log(`\n  ${r.error}\n`);
   const corpus = load();
@@ -99,27 +175,62 @@ function ask(args) {
 }
 
 function deadlines(args) {
-  const i = args.indexOf('--from');
-  const from = i >= 0 ? args[i + 1] : today();
-  // privacy_deadline computes ONE record's clock. Which records are engaged is
-  // privacy_analyze's question, so ask that first and compute each one it returns — the same
-  // two-step a caller would do, rather than a third code path that could disagree with both.
-  const { entity, data, context } = factsFrom([...args, '--breach']);
+  // THIS USED TO FORCE-INJECT `--breach` AND THEN DATE EVERY ENGAGED CLOCK FROM `--from`.
+  // Two wrongs compounding: it asserted a breach the user had not, then applied that one date
+  // to triggers that had nothing to do with a breach, so `deadlines --hipaa --ny-data --from D`
+  // printed a § 899-aa(2) breach clock for a user who never said a breach occurred, alongside
+  // HIPAA access- and amendment-request clocks all starting the same day. Now the flags mean
+  // what they say, dates are resolved per trigger, and a clock with no asserted trigger is
+  // REPORTED AS NOT STARTED rather than filtered out of the answer.
+  const { entity, data, context, from_ambiguous, bad_dates } = factsFrom(args);
+  if (refuseBadDates(bad_dates)) return;
+  if (from_ambiguous) {
+    console.log(`\n  ${b('--from is ambiguous here.')} You asserted ${from_ambiguous.join(' and ')}, which are`);
+    console.log(`  DIFFERENT moments — a breach discovery and an HHS notification do not happen on`);
+    console.log(`  the same day, and § 899-aa(9)'s clock runs from the second, not the first.\n`);
+    console.log(`  Date them separately:`);
+    for (const f of from_ambiguous) console.log(`    --event ${EVENT_FLAGS[f]}=<date>   ${dim('(for ' + f + ')')}`);
+    console.log('');
+    process.exitCode = 1;
+    return;
+  }
   const engaged = call('privacy_analyze', { entity, data, ...context });
   if (engaged.error) return console.log(`\n  ${engaged.error}\n`);
-  const rows = engaged.deadlines
-    .map(d => call('privacy_deadline', { atom_id: d.atom_id, trigger_date: from }))
-    .filter(d => d && d.computed)
-    .sort((a, c) => a.computed.localeCompare(c.computed));
-  if (args.includes('--json')) return console.log(JSON.stringify(rows, null, 2));
-  console.log(`\n${b('Clocks running from ' + from)}  —  earliest first\n`);
-  for (const d of rows) {
+  const all = engaged.deadlines ?? [];
+  const started = all.filter(d => d.computed).sort((a, c) => a.computed.localeCompare(c.computed));
+  const waiting = all.filter(d => !d.computed)
+    .sort((a, c) => String(a.citation ?? a.atom_id).localeCompare(String(c.citation ?? c.atom_id)));
+  if (args.includes('--json')) return console.log(JSON.stringify(all, null, 2));
+
+  const asserted = Object.entries(context.event).filter(([, v]) => /^\d{4}-\d{2}-\d{2}$/.test(v));
+  console.log(`\n${b('Clocks as of ' + context.as_of)}  —  earliest first\n`);
+  if (asserted.length)
+    for (const [k, v] of asserted) console.log(dim(`  asserted: ${k} = ${v}`));
+  else
+    console.log(dim('  no event dates asserted — nothing can start a clock'));
+  console.log('');
+
+  for (const d of started) {
     console.log(`  ${b(d.computed)}  ${String(d.duration).padEnd(18)} ${d.citation ?? d.atom_id}`);
-    console.log(dim(`              from: ${d.trigger_event}`));
+    console.log(dim(`              from: ${d.trigger_label ?? d.trigger_event}`));
+    if (d.trigger_via === 'family')
+      console.log(dim(`              dated via the "${d.trigger_supplied_as}" family key, not this statute's own trigger`));
     if (d.business_day_basis) console.log(dim(`              business days = weekdays; public holidays NOT excluded`));
     if (d.caution) console.log(dim(`              ${d.caution.slice(0, 88)}`));
   }
-  if (!rows.length) console.log('  (no deadlines engaged by those facts)');
+  if (!started.length) console.log('  (no clock has started)');
+
+  // THE UNSTARTED CLOCKS ARE THE POINT. An obligation that applies but whose trigger has not
+  // been asserted is a duty waiting on a fact — silently dropping it, as this command did, is
+  // how a lawyer reads "three deadlines" and never learns there were seven.
+  if (waiting.length) {
+    console.log(`\n${b('Not started')} — these apply, but no date was given for their trigger\n`);
+    for (const d of waiting) {
+      console.log(`  ${d.citation ?? d.atom_id}`);
+      console.log(dim(`      needs: --event ${d.trigger_key ?? '?'}=<date>`
+        + (d.trigger_family ? `   (or --event ${d.trigger_family}=<date>)` : '')));
+    }
+  }
   console.log(`\n${DISCLAIMER}\n`);
 }
 
@@ -181,7 +292,10 @@ switch (cmd) {
     // the tool's argument is atom_id. Passing record_id/id silently produced
     // 'no record with id "undefined"' while the process still exited 0 — which is how a broken
     // command survives a smoke test that only checks exit codes.
-    if (!rest[0]) { console.log('\n  usage: privacy-kb cite <record-id>\n  e.g.   privacy-kb cite ny.gbl.899_aa.9.hipaa_ag_notice\n'); break; }
+    if (!rest[0]) {
+      console.log('\n  usage: privacy-kb cite <record-id>\n  e.g.   privacy-kb cite ny.gbl.899_aa.9.hipaa_ag_notice\n');
+      process.exitCode = 1; break;   // a missing required argument is a failure, not a hint
+    }
     const r = call('privacy_cite', { atom_id: rest[0] });
     if (r.error) { console.log(`\n  ${r.error}\n`); process.exitCode = 1; break; }
     console.log(`\n${b(r.citation ?? rest[0])}\n`);
@@ -195,6 +309,23 @@ switch (cmd) {
     console.log(dim(`  sha256:   ${String(r.raw_sha256 ?? '').slice(0, 32)}…`));
     console.log(dim(`  in force: ${a?.effective_from ?? '?'} → ${a?.effective_to ?? 'present'}  (status: ${a?.status ?? '?'})`));
     if (r.context_warning) console.log(dim(`  note:     ${r.context_warning.slice(0, 88)}`));
+    console.log(`\n${DISCLAIMER}\n`);
+    break;
+  }
+  case 'triggers': {
+    const r = call('privacy_triggers', {});
+    console.log(`\n  ${b(r.count + ' trigger keys')} · ${r.families.length} families\n`);
+    for (const f of r.families) {
+      console.log(`  ${b(f.key)}  ${dim('— ' + f.meaning)}`);
+      for (const m of f.members) {
+        const t = r.triggers.find(x => x.key === m);
+        console.log(`      ${String(m).padEnd(42)} ${dim(String(t.used_by.length) + ' record' + (t.used_by.length === 1 ? '' : 's'))}`);
+        console.log(dim(`        ${t.label.slice(0, 84)}`));
+      }
+      console.log('');
+    }
+    console.log(dim('  Supply any key as --event <key>=<date>. A FAMILY key dates every member at'));
+    console.log(dim('  once — one breach discovery starts the HIPAA, SHIELD, HBNR and GLBA clocks.'));
     console.log(`\n${DISCLAIMER}\n`);
     break;
   }

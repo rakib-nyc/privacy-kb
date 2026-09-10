@@ -5,6 +5,8 @@ jurisdiction: US-NY
 jurisdiction_level: state
 status: in_force
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/state/ny/pen-250-00/raw/ny-pen-250-00.json
 supersedes: null
 superseded_by: null
 amendment_history: []

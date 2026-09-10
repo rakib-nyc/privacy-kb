@@ -43,7 +43,7 @@ rubric:
 - name: it is triggered BY notifying HHS, not by discovery
   record: ny.gbl.899_aa.9.hipaa_ag_notice
   path: deadline.trigger_event
-  equals: notification to the Secretary of Health and Human Services
+  equals: notification_to_hhs_secretary
 - name: and the clock is five BUSINESS days
   record: ny.gbl.899_aa.9.hipaa_ag_notice
   path: deadline.duration.unit

@@ -43,6 +43,10 @@ paragraph_path:
 jurisdiction: US-FED
 jurisdiction_level: federal
 effective_to: null
+effective_from_basis: versioner_evidence
+effective_from_evidence: >-
+  this exact span is absent from 16 C.F.R. § 314.4(j)(1) at 2023-11-13 and first appears at
+  2024-05-13, per the source's point-in-time record (window 2016-12-22..2024-05-13).
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -100,7 +104,7 @@ data_types:
   - npi
   - customer_information
 status: in_force
-effective_from: '2023-06-09'
+effective_from: '2024-05-13'
 applies_if:
   all:
     - entity.glba_financial_institution == true

@@ -12,6 +12,11 @@ data_types:
 status: in_force
 effective_from: '1938-03-21'
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Mar. 21, 1938" appears in a <ref> element of
+  corpus/federal/domain-2-federal-privacy/ftc-act-5/raw/15-u-s-c-45.xml — citation apparatus,
+  not operative text
 supersedes: null
 superseded_by: null
 amendment_history: []

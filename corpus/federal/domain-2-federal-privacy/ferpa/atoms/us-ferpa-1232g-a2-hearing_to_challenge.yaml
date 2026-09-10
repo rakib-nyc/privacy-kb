@@ -59,6 +59,10 @@ data_types:
 status: in_force
 effective_from: '1974-11-19'
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "November 19, 1974" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.txt
 supersedes: null
 superseded_by: null
 amendment_history: []

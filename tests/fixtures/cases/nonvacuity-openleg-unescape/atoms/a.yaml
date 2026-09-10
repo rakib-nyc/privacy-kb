@@ -35,6 +35,10 @@ data_types:
 status: in_force
 effective_from: '2026-04-03'
 effective_to: null
+effective_from_basis: api_snapshot
+effective_from_evidence: >-
+  equals the source payload's activeDate (2026-04-03). This is the date the API's snapshot was
+  taken, not a date the law states.
 supersedes: null
 superseded_by: null
 applies_if:

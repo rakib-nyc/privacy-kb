@@ -5,3 +5,4 @@ spike/
 .uslm-cache/
 .ny-cache/
 __pycache__/
+.cache/

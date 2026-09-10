@@ -29,6 +29,8 @@ jurisdiction_level: federal
 status: in_force
 effective_from: '2026-08-20'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: this record stores no raw source to check against
 confidence: high
 scenario: Responding to a civil subpoena or discovery request for personal data. The producing party is
   caught between a discovery obligation and the sectoral regimes governing the data.

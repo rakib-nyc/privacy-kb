@@ -3,10 +3,11 @@
 // Total: every input produces a result. Never throws, never returns empty, and every
 // decision carries the atom id and the predicate that produced it — an applicability
 // answer the engine cannot explain is not usable in a memo.
-import { load, inForceOn, surfaceable } from './corpus.mjs';
+import { load, inForceOn, surfaceable, EVER_LAW, isRealDate } from './corpus.mjs';
 import { evaluate, UNKNOWN } from './predicates.mjs';
 import { applyExemptions } from './exemptions.mjs';
 import { computeDeadline } from './timeline.mjs';
+import { resolveTriggerDate } from './triggers.mjs';
 import { resolve as resolvePreemption } from './preemption.mjs';
 import { backstops } from './backstops.mjs';
 import { coverageFor, instrumentCoverage } from './coverage.mjs';
@@ -23,12 +24,10 @@ export function analyze(entity = {}, data = {}, context = {}) {
   // obligations for '2026-01-01' and 7 for 'not-a-date', the extra two being law that does not
   // bind until 2027. A typo widened the answer instead of failing it, which is the confident-
   // wrong direction this whole system is built to refuse.
-  const shaped = typeof as_of === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(as_of);
-  const real = shaped && (() => {
-    const [y, m, d] = as_of.split('-').map(Number);
-    const dt = new Date(Date.UTC(y, m - 1, d));
-    return dt.getUTCFullYear() === y && dt.getUTCMonth() === m - 1 && dt.getUTCDate() === d;
-  })();
+  // The check itself now lives in corpus.mjs as isRealDate, because privacy_obligations had the
+  // same entry point and only ever checked that as_of was PRESENT — so a typo widened its answer
+  // to the whole instrument. A second copy of this logic is how one of them stays unguarded.
+  const real = isRealDate(as_of);
   if (!as_of || !real) {
     const why = !as_of
       ? 'context.as_of is required. There is no "current law" — only law as of a date.'
@@ -55,14 +54,23 @@ export function analyze(entity = {}, data = {}, context = {}) {
 
   for (const a of corpus.obligations) {
     // Pending law NEVER enters obligations. It routes to the watch feed only (I3).
-    if (a.status !== 'in_force') {
-      if (context.include_pending && ['enacted_pending', 'proposed'].includes(a.status))
+    if (['enacted_pending', 'proposed'].includes(a.status)) {
+      if (context.include_pending)
         pending_watch.push({ atom_id: a.id, status: a.status, citation: a.source.citation,
           effective_from: a.effective_from,
           note: 'PENDING — not law. Present in the watch feed only; it can never appear in obligations.' });
       else
         not_applicable.push({ instrument_id: a.source.instrument_id, atom_id: a.id,
           failed_predicate: `status is "${a.status}", not in_force` });
+      continue;
+    }
+    // A SUPERSEDED VINTAGE IS STILL THE ANSWER FOR A DATE INSIDE ITS OWN WINDOW. Filtering on
+    // status alone would make a version chain unreachable — the corpus could hold the text that
+    // governed on the date asked and still return nothing, because that text is not the current
+    // text. inForceOn decides by date; status only rules out what was never law.
+    if (!EVER_LAW.has(a.status)) {
+      not_applicable.push({ instrument_id: a.source.instrument_id, atom_id: a.id,
+        failed_predicate: `status is "${a.status}", which was never law` });
       continue;
     }
     if (!inForceOn(a, as_of)) {
@@ -122,7 +130,15 @@ export function analyze(entity = {}, data = {}, context = {}) {
       partial_carve_out: ex.residual_scope ? { level: ex.level, scope: ex.residual_scope,
         note: 'DATA/ACTIVITY-LEVEL carve-out only. The entity remains in scope for everything else under this instrument.' } : null });
     obligations.push(a);
-    const dl = computeDeadline(a, context.event?.[a.deadline?.trigger_event] ?? context.event?.date ?? null);
+    // THE `?? context.event?.date` FALLBACK THAT USED TO SIT HERE APPLIED ONE DATE TO EVERY
+    // TRIGGER IN THE CORPUS. `privacy-kb deadlines --from D` therefore printed a HIPAA
+    // access-request clock, a HIPAA amendment-request clock and a SHIELD Act breach clock all
+    // running from D — three unrelated events collapsed into one date, each rendered as a
+    // confident deadline. Resolution now goes through the controlled vocabulary, which reports
+    // the route it took and returns no date at all rather than borrowing one. See
+    // engine/triggers.mjs.
+    const t = resolveTriggerDate(a.deadline?.trigger_event, facts.event);
+    const dl = computeDeadline(a, t.date, t);
     if (dl) deadlines.push(dl);
   }
 

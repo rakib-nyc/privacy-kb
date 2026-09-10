@@ -55,6 +55,10 @@ data_types:
 status: in_force
 effective_from: '1975-09-27'
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "September 27, 1975" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.txt
 supersedes: null
 superseded_by: null
 amendment_history: []

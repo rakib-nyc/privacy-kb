@@ -5,6 +5,11 @@ jurisdiction: US
 jurisdiction_level: federal
 status: in_force
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "July 10, 2008" appears in a <date> element of
+  corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.xml — citation apparatus,
+  not operative text
 supersedes: null
 superseded_by: null
 amendment_history: []

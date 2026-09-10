@@ -40,6 +40,10 @@ paragraph_path:
 jurisdiction: US-FED
 jurisdiction_level: federal
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "June 1, 2005" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/facta-disposal-rule/raw/16-cfr-682.txt
 supersedes: null
 superseded_by: null
 amendment_history: []

@@ -63,6 +63,11 @@ data_types:
 status: in_force
 effective_from: '2000-12-19'
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Dec. 19, 2000" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml — citation
+  apparatus, not operative text
 supersedes: null
 superseded_by: null
 amendment_history:

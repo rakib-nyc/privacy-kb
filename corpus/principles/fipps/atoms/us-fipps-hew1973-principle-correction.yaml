@@ -46,6 +46,10 @@ jurisdiction_level: federal
 status: in_force
 effective_from: '1973-07-01'
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "July 1, 1973" appears in the rendered text of
+  corpus/principles/fipps/raw/hew-1973-records-computers-20260818.txt
 amendment_history: []
 summary: An individual must have a means of correcting or amending a record of identifiable information
   about them.

@@ -49,6 +49,10 @@ data_types:
 status: in_force
 effective_from: '2002-01-08'
 effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "January 8, 2002" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/ppra/raw/20-u-s-c-1232h.txt
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -75,9 +79,7 @@ requirement_detail: >-
   activities are scheduled is a different notice with its own annual clock, and satisfying one does
   not satisfy the other.
 deadline:
-  trigger_event: >-
-    the beginning of each school year, and any substantive change in the policies adopted under 20
-    U.S.C. § 1232h(c)(1)
+  trigger_event: school_year_start_or_policy_change
   duration:
     value: 1
     unit: years

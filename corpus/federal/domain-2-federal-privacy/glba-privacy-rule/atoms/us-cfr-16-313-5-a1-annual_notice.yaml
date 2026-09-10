@@ -10,14 +10,18 @@ sector:
 data_types:
   - financial
 status: in_force
-effective_from: '2000-11-13'
+effective_from: '2022-01-07'
 effective_to: null
+effective_from_basis: versioner_evidence
+effective_from_evidence: >-
+  this exact span is absent from 16 C.F.R. § 313.5(a)(1) at 2021-12-09 and first appears at
+  2022-01-07, per the source's point-in-time record (window 2016-12-22..2022-01-07).
 supersedes: null
 superseded_by: null
 amendment_history: []
 applies_to_role: controller
 deadline:
-  trigger_event: continuation of the customer relationship
+  trigger_event: continuation_of_customer_relationship
   duration:
     value: 12
     unit: months

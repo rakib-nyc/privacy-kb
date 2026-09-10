@@ -9,6 +9,8 @@ sector:
 - any
 status: in_force
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/state/ny/cdpa/raw/ny-gbs-899-ee.json
 supersedes: null
 superseded_by: null
 amendment_history: []

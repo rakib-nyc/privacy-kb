@@ -61,6 +61,8 @@ data_types:
 status: in_force
 effective_from: '1979-03-10'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/rfpa/raw/12-u-s-c-3410.xml
 supersedes: null
 superseded_by: null
 amendment_history: []

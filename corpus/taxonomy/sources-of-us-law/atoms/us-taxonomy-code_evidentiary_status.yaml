@@ -51,6 +51,11 @@ jurisdiction_level: federal
 status: in_force
 effective_from: '1947-07-30'
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "July 30, 1947" appears in a <ref> element of
+  corpus/taxonomy/sources-of-us-law/raw/uslm-1usc204-20260819.xml — citation apparatus, not
+  operative text
 amendment_history: []
 summary: >-
   The US Code establishes the laws prima facie; only where a title has been enacted into positive

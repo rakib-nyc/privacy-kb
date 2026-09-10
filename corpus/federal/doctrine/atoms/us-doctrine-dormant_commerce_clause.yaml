@@ -28,6 +28,8 @@ jurisdiction_level: federal
 status: in_force
 effective_from: '2023-05-11'
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: this record stores no raw source to check against
 confidence: medium
 doctrine_statement: A state law that discriminates against or unduly burdens interstate commerce may be
   invalid even absent federal legislation. For state privacy statutes the live question is extraterritorial

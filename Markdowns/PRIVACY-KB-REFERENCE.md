@@ -5,7 +5,7 @@ refuses to do, and where it is weak. Written to be read cold by a person or by a
 with no prior context.
 
 **Repository:** https://github.com/rakib-nyc/privacy-kb (private)
-**Version:** 0.2.3 · **Licence:** Apache 2.0 · **Author:** Muhammad Rakibul Islam
+**Version:** 0.3.0 · **Licence:** Apache 2.0 · **Author:** Muhammad Rakibul Islam
 
 ---
 
@@ -261,9 +261,9 @@ throwing.
 
 ## 6. The verification apparatus
 
-### 6.1 42 CI gates
+### 6.1 45 CI gates
 
-A commit fails if any gate trips. They fall into five families.
+A commit fails if any gate trips. They fall into six families.
 
 **Provenance and quotation**
 - **1** schema validity, and `risk_tier` matches `format`
@@ -308,6 +308,18 @@ A commit fails if any gate trips. They fall into five families.
 - **31** a declared citation must have been resolved against the source
 - **34** the completeness argument must be true or its shortfall declared
 
+**The time axis** — invariant I2 rests on `effective_from > as_of`, and that comparison is only
+sound if the left side means what the invariant assumes. It did not.
+- **43** `effective_from` must declare what KIND of date it is, and the evidence must support the
+  declaration. The basis is DERIVED from the source bytes and re-derived on every run, so a record
+  cannot promote its own date by editing a field. A ratchet holds the population of dates that
+  cannot carry an as-of comparison, and it moves down.
+- **44** a version chain must be walkable, adjacent and closed: no gaps, no overlaps, links in both
+  directions, exactly one open end. Records sharing a provision at the SAME date are co-located
+  duties rather than vintages, and stay gate 41's question.
+- **45** a record may not claim an `effective_from` earlier than the text it quotes, judged against
+  the source's own point-in-time record.
+
 **Meta: the gates watching the gates**
 - **8** eval all-pass rate must not regress
 - **10** referential integrity on every cross-reference
@@ -318,8 +330,8 @@ A commit fails if any gate trips. They fall into five families.
 
 ### 6.2 Fixtures
 
-**56 fixture cases**, each a miniature corpus built to trip exactly the gates named for it in
-`tests/fixtures/expected.yaml`. **31 of 42 gates** are exercised this way. The other **11 are
+**60 fixture cases**, each a miniature corpus built to trip exactly the gates named for it in
+`tests/fixtures/expected.yaml`. **34 of 45 gates** are exercised this way. The other **11 are
 declared unexercisable** in `tests/fixtures/no-fixture.yaml` with a written reason, because
 their subject is the corpus as a whole or the harness itself. `tools/test-gates.mjs` asserts
 that every gate is either exercised or declared, so a new gate cannot quietly join the untested
@@ -327,7 +339,7 @@ set.
 
 ### 6.3 Test suite
 
-`npm test` runs fifteen steps: gate fixtures, extractor conformance, dual-parse, authority
+`npm test` runs sixteen steps: gate fixtures, extractor conformance, dual-parse, authority
 tiering, feature scan, engine/schema correspondence, the gates, ancestry diff, coverage
 freshness, fact-key freshness, engine properties, MCP, workflows, and the CLI. `node
 evals/runner.mjs` runs 30 scenario files with all-pass rubrics. Both run in GitHub Actions on

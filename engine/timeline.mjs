@@ -1,6 +1,9 @@
 // Deadline computation. Returns the computed date AND the governing language, because a
 // date without its standard is misleading: "without unreasonable delay and in no case
 // later than 60 days" is a promptness obligation with a ceiling, not a 60-day allowance.
+import { canonicalTrigger, triggerLabel, triggerMeta } from './triggers.mjs';
+import { isRealDate, badDateReason } from './dates.mjs';
+
 const DAY = 86400000;
 
 /** Advance a date by a schema duration. Shared so a conditional extension cannot drift from
@@ -20,7 +23,17 @@ function addDuration(from, { value, unit }) {
   return null;
 }
 
-export function computeDeadline(atom, triggerDateISO) {
+/**
+ * @param atom            the record whose clock to compute
+ * @param triggerDateISO  the date the trigger occurred, or null if it has not been asserted
+ * @param resolution      how that date was found — the {via, supplied_as} object from
+ *                        engine/triggers.mjs#resolveTriggerDate. Carried into the result rather
+ *                        than dropped, because "this clock started from a date you asserted as a
+ *                        generic breach discovery" and "this clock started from a date you
+ *                        asserted under § 899-aa's own standard" are different claims, and a memo
+ *                        that cannot tell them apart is overstating what it was told.
+ */
+export function computeDeadline(atom, triggerDateISO, resolution = null) {
   // TOTAL, LIKE analyze(). This threw a TypeError on any atom without source.citation, which is
   // fine for corpus records and wrong for a function the MCP layer calls with caller-shaped
   // input. The engine's stated property is that it never throws; one entry point was exempt from
@@ -35,13 +48,33 @@ export function computeDeadline(atom, triggerDateISO) {
   // safe one, but an undeclared approximation in a deadline engine is still a wrong answer
   // wearing a precise face — so it is stated in the result rather than left in the code.
 
-    return { atom_id: atom.id, computed: null, trigger_event: d.trigger_event,
+    // CLOCK NOT STARTED IS AN ANSWER, AND IT MUST NAME THE KEY THAT WOULD START IT. The old note
+    // quoted the raw trigger string back at the caller, which was the one thing a caller could
+    // not act on when the corpus spelled it "discovery of the breach" and the documented
+    // interface said `discovery_of_breach`. It now names the canonical key and its family.
+    const canon = canonicalTrigger(d.trigger_event);
+    const fam = triggerMeta(d.trigger_event)?.family ?? null;
+    return { atom_id: atom.id, citation: atom.source?.citation ?? null,
+             computed: null, trigger_event: d.trigger_event,
+             trigger_label: triggerLabel(d.trigger_event),
+             trigger_key: canon, trigger_family: fam,
              governing_language: d.computation,
-             note: `no date supplied for trigger "${d.trigger_event}" — deadline not computed` };
+             clock_started: false,
+             note: `CLOCK NOT STARTED — no date supplied for "${triggerLabel(d.trigger_event)}". `
+                 + (canon
+                     ? `Supply event.${canon} = "YYYY-MM-DD"`
+                       + (fam ? `, or event.${fam} to date every ${fam} clock at once.` : '.')
+                     : `This record's trigger is not in the controlled vocabulary, so no key can `
+                       + `start it. That is a corpus defect, not a missing fact.`) };
   }
+  // `new Date('2026-02-30T00:00:00Z')` is NOT NaN — JavaScript rolls it to 2 March. So the old
+  // NaN test passed an impossible date straight through and this function returned a confident
+  // deadline a month adrift, with no error and nothing to notice. In a clock engine that is the
+  // worst form of this bug: the wrong date looks exactly like a right one.
+  if (!isRealDate(triggerDateISO))
+    return { atom_id: atom.id, citation: atom.source?.citation ?? null, computed: null,
+             clock_started: false, error: badDateReason('trigger date', triggerDateISO) };
   const start = new Date(triggerDateISO + 'T00:00:00Z');
-  if (Number.isNaN(start.getTime()))
-    return { atom_id: atom.id, computed: null, error: `unparseable trigger date ${triggerDateISO}` };
 
   let end = new Date(start);
   // A deadline block with no duration is malformed, not a zero-length clock. Destructuring it
@@ -68,6 +101,20 @@ export function computeDeadline(atom, triggerDateISO) {
   return {
     atom_id: atom.id, citation: atom.source?.citation ?? null,
     trigger_event: d.trigger_event, trigger_date: triggerDateISO,
+    trigger_label: triggerLabel(d.trigger_event),
+    trigger_key: canonicalTrigger(d.trigger_event),
+    trigger_family: triggerMeta(d.trigger_event)?.family ?? null,
+    clock_started: true,
+    // HOW THE DATE WAS OBTAINED TRAVELS WITH THE DATE. 'exact' means the caller asserted this
+    // trigger by name. 'family' means they asserted one moment (a breach discovery) and it was
+    // applied to this statute's own differently-defined trigger — defensible, and the reader is
+    // entitled to see that it happened rather than read a computed date as a direct assertion.
+    trigger_via: resolution?.via ?? null,
+    trigger_supplied_as: resolution?.supplied_as ?? null,
+    trigger_inference_note: resolution?.via === 'family'
+      ? `Dated from the "${resolution.supplied_as}" family key, not from an assertion about this `
+        + `statute's own trigger. Confirm the two moments coincide before relying on the date.`
+      : null,
     computed: end.toISOString().slice(0, 10),
     duration: `${value} ${unit}`,
     // THE APPROXIMATION IS STATED IN THE RESULT, NOT LEFT IN THE CODE. Business days here are

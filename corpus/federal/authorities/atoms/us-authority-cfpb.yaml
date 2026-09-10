@@ -42,6 +42,8 @@ jurisdiction_level: federal
 status: in_force
 effective_from: null
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: no effective_from on this record
 amendment_history: []
 summary: >-
   The Bureau may act to prevent a covered person or service provider from committing or engaging in

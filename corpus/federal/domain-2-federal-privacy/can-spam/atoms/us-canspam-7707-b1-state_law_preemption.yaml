@@ -54,6 +54,11 @@ data_types:
 status: in_force
 effective_from: '2004-01-01'
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Jan. 1, 2004" appears in a <date> element of
+  corpus/federal/domain-2-federal-privacy/can-spam/raw/15-u-s-c-7707.xml — citation apparatus,
+  not operative text
 supersedes: null
 superseded_by: null
 amendment_history: []

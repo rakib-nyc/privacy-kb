@@ -67,6 +67,8 @@ jurisdiction_level: international
 status: in_force
 effective_from: null
 effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: no effective_from on this record
 amendment_history: []
 summary: A voluntary certification system under which an APEC-recognized Accountability Agent evaluates
   an organization's privacy policies and practices against the CBPR program requirements; on certification

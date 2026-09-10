@@ -55,6 +55,11 @@ data_types:
 status: in_force
 effective_from: '1968-06-19'
 effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "June 19, 1968" appears in a <date> element of
+  corpus/federal/domain-2-federal-privacy/ecpa-wiretap/raw/18-u-s-c-2511.xml — citation
+  apparatus, not operative text
 supersedes: null
 superseded_by: null
 amendment_history: []
