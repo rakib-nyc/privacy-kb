@@ -232,6 +232,11 @@ namespaces:
       used_by_exemption: 0
       used_by_eval: 0
       discoverable: true
+    bsa_financial_institution:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
     call_recipient_is_business:
       used_by_obligation: 0
       used_by_exemption: 3
@@ -258,7 +263,7 @@ namespaces:
       used_by_eval: 0
       discoverable: false
     glba_financial_institution:
-      used_by_obligation: 5
+      used_by_obligation: 12
       used_by_exemption: 0
       used_by_eval: 0
       discoverable: true
@@ -274,11 +279,6 @@ namespaces:
       discoverable: false
     has_information_systems:
       used_by_obligation: 1
-      used_by_exemption: 0
-      used_by_eval: 0
-      discoverable: true
-    hipaa_role:
-      used_by_obligation: 3
       used_by_exemption: 0
       used_by_eval: 0
       discoverable: true
@@ -357,11 +357,6 @@ namespaces:
       used_by_exemption: 3
       used_by_eval: 0
       discoverable: false
-    is_financial_institution:
-      used_by_obligation: 10
-      used_by_exemption: 0
-      used_by_eval: 0
-      discoverable: true
     is_financial_institution_or_creditor:
       used_by_obligation: 3
       used_by_exemption: 0
@@ -388,7 +383,7 @@ namespaces:
       used_by_eval: 0
       discoverable: true
     is_hipaa_covered_entity:
-      used_by_obligation: 22
+      used_by_obligation: 25
       used_by_exemption: 3
       used_by_eval: 0
       discoverable: true
@@ -554,6 +549,11 @@ namespaces:
       discoverable: true
     receives_federal_education_funds:
       used_by_obligation: 3
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
+    rfpa_financial_institution:
+      used_by_obligation: 2
       used_by_exemption: 0
       used_by_eval: 0
       discoverable: true

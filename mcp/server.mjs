@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // MCP server over the corpus and the engine. SCHEMA.md §5.
 //
-// Ten read-only tools. The corpus supplies the truth; whatever model is calling supplies
+// Fourteen read-only tools. The corpus supplies the truth; whatever model is calling supplies
 // the prose. That split is the whole point — the server never asks a model anything, and
 // the model never computes applicability.
 //
@@ -17,6 +17,10 @@ import { load, inForceOn, surfaceable } from '../engine/corpus.mjs';
 import { isRealDate, badDateReason } from '../engine/dates.mjs';
 import { computeDeadline } from '../engine/timeline.mjs';
 import { TRIGGERS, FAMILIES, TRIGGER_KEYS } from '../engine/triggers.mjs';
+import { factInventory, NAMESPACES, AMBIGUOUS_TERMS } from '../engine/facts.mjs';
+import { INCIDENTS, INCIDENT_FAMILIES, INCIDENT_KEYS } from '../engine/incidents.mjs';
+import { WORKFLOWS } from '../workflows/index.mjs';
+import { buildMemo } from '../engine/memo.mjs';
 import { resolve as resolvePreemption } from '../engine/preemption.mjs';
 
 const VERSION = '0.1.0';
@@ -90,6 +94,51 @@ const TOOLS = [
       'supplied under an unrecognised key starts no clock and there is no generic fallback. Family keys ' +
       'date every member trigger at once, which is how one incident starts many statutes\' clocks.',
     inputSchema: { type: 'object', properties: {} } },
+
+  { name: 'privacy_facts',
+    description: 'THE INPUT VOCABULARY. Every fact key the corpus predicates on, what values it takes, ' +
+      'which instruments it gates, and which keys are reachable ONLY through an exemption. Call this ' +
+      'before guessing a key: 127 keys gated the corpus with no way to discover them, and two concepts ' +
+      'were spelled two ways each, so "we are a HIPAA covered entity" returned 10, 3 or 13 obligations ' +
+      'depending on the spelling guessed. Also reports AMBIGUOUS TERMS whose ordinary meaning spans ' +
+      'several statutory definitions — "financial institution" is three different populations.',
+    inputSchema: { type: 'object', properties: {
+      namespace: { type: 'string', description: 'entity | data | event | practice | purpose | law' },
+      instrument_id: { type: 'string', description: 'only keys gating this instrument' },
+      q: { type: 'string', description: 'substring match on the key name' } } } },
+
+  { name: 'privacy_incidents',
+    description: 'The controlled vocabulary of INCIDENT CHARACTERISATIONS, grouped into families. One set ' +
+      'of facts can satisfy several at once — a lost laptop of patient records is a breach of unsecured ' +
+      'PHI under 45 C.F.R. 164.402 AND a breach of the security of the system under N.Y. GBL 899-aa(1)(c), ' +
+      'with different definitions and different clocks. event.type takes a LIST. Each entry names the test ' +
+      'that decides it, because these are legal determinations the engine will not make for you.',
+    inputSchema: { type: 'object', properties: {} } },
+
+  { name: 'privacy_workflow',
+    description: 'Run a lifecycle deliverable workflow and return the artifact WITH ITS CHECKLIST. An ' +
+      'artifact that fails its own checklist is returned with the failures marked, never as though it ' +
+      'passed. Names: privacyImpactAssessment, noticeGapAnalysis, rightsRequestHandling, ' +
+      'breachNotificationTimeline.',
+    inputSchema: { type: 'object', required: ['workflow'], properties: {
+      workflow: { type: 'string' }, entity: { type: 'object' }, data: { type: 'object' },
+      incident: { type: 'object' }, request: { type: 'object' }, notice: { type: 'object' },
+      processing: { type: 'object' }, context: { type: 'object' } } } },
+
+  { name: 'privacy_memo',
+    description: 'THE DEFENSIBILITY RECORD. Runs the analysis and returns a citable document: the facts ' +
+      'asserted, every applicable provision with its verbatim text, source URL, sha256, vintage and the ' +
+      'KIND of date that vintage rests on, the deadline table, the characterisations not yet made, what ' +
+      'the corpus could not determine, and a verification table. Ask for this when the answer has to be ' +
+      'handed to someone. It reports what it does NOT know as prominently as what it does, which is the ' +
+      'property that makes it defensible — citing real authorities does not absolve counsel who cannot ' +
+      'show what was checked.',
+    inputSchema: { type: 'object', required: ['as_of'], properties: {
+      entity: { type: 'object' }, data: { type: 'object' }, event: { type: 'object' },
+      practice: { type: 'object' }, purpose: { type: 'object' }, law: { type: 'object' },
+      as_of: { type: 'string' }, state_layers: { type: 'array', items: { type: 'string' } },
+      matter: { type: 'string', description: 'free-text matter reference, carried into the record' },
+      format: { type: 'string', description: 'markdown (default) | json' } } } },
 
   { name: 'privacy_diff',
     description: 'What changed between two dates: atoms that came into force, ceased, or are pending. ' + PENDING_RULE,
@@ -206,6 +255,43 @@ function call(name, args = {}) {
         note: 'Supply any of these as event.<key> = "YYYY-MM-DD". A family key dates every member '
             + 'at once and each result reports trigger_via: "family". A date under a key not in '
             + 'this list starts no clock — there is no generic fallback.' };
+    case 'privacy_facts': {
+      let inv = factInventory(corpus);
+      if (args.namespace) inv = inv.filter(k => k.namespace === args.namespace);
+      if (args.instrument_id) inv = inv.filter(k => k.instruments.includes(args.instrument_id));
+      if (args.q) inv = inv.filter(k => k.key.includes(String(args.q)));
+      return { count: inv.length, namespaces: NAMESPACES, keys: inv,
+        ambiguous_terms: AMBIGUOUS_TERMS,
+        note: 'Supply these under the matching namespace, e.g. {entity: {is_hipaa_covered_entity: true}}. '
+            + 'A key with exemption_only: true is reachable ONLY through an exemption predicate, so '
+            + 'nothing else in the corpus demonstrates it — those carve-outs stay dormant unless you '
+            + 'supply the key deliberately.' };
+    }
+    case 'privacy_incidents':
+      return { count: INCIDENT_KEYS.length,
+        families: Object.entries(INCIDENT_FAMILIES).map(([key, meaning]) => ({ key, meaning,
+          members: INCIDENT_KEYS.filter(k => INCIDENTS[k].family === key) })),
+        characterisations: INCIDENT_KEYS.map(key => ({ key, ...INCIDENTS[key],
+          used_by: corpus.obligations
+            .filter(a => JSON.stringify(a.applies_if ?? {}).includes(key))
+            .map(a => ({ atom_id: a.id, citation: a.source.citation })) })),
+        note: 'event.type accepts a LIST. Characterisations within one family are alternative legal '
+            + 'descriptions of the SAME facts and are routinely all true at once; across families they '
+            + 'are different events. Any you do not assert are reported back in '
+            + 'characterisation_required rather than silently excluded.' };
+    case 'privacy_workflow': {
+      const fn = Object.hasOwn(WORKFLOWS, String(args.workflow)) ? WORKFLOWS[args.workflow] : null;
+      if (!fn) return { error: `no workflow named "${args.workflow}". Available: ` +
+        Object.keys(WORKFLOWS).join(', ') };
+      return fn(args);
+    }
+    case 'privacy_memo': {
+      const m = buildMemo(args.entity ?? {}, args.data ?? {}, ctx(args), { matter: args.matter ?? null });
+      if (m.error) return { error: m.error };
+      return args.format === 'json'
+        ? { record: m.record }
+        : { markdown: m.markdown, record: m.record };
+    }
     case 'privacy_diff': {
       // BOTH ENDS, BEFORE EITHER IS COMPARED. This tool brackets the corpus with
       // `effective_from > from_date && effective_from <= to_date`, and a malformed to_date sorts

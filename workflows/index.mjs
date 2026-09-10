@@ -12,6 +12,8 @@
 import { analyze } from '../engine/applicability.mjs';
 import { load } from '../engine/corpus.mjs';
 import { suppliesDuty } from '../engine/coverage.mjs';
+import { triggerFamily } from '../engine/triggers.mjs';
+import { incidentLabel } from '../engine/incidents.mjs';
 
 const enforcementSection = (result) => ({
   heading: 'Enforcement exposure',
@@ -142,21 +144,56 @@ export function breachNotificationTimeline(_input) {
   const ctx = { ...context, event: { ...(context.event ?? {}), ...incident } };
   const r = analyze(entity, data, ctx);
   const notifyAtoms = r.obligations.filter(o => o.obligation_type === 'notify');
-  const timeline = r.deadlines.slice().sort((a, b) => String(a.computed).localeCompare(String(b.computed)));
+  // ONLY THE CLOCKS THIS INCIDENT STARTS. r.deadlines carries every engaged obligation's clock,
+  // so a HIPAA breach timeline was listing the § 164.524 access-request and § 164.526
+  // amendment-request clocks — both with `computed: null`, because no one had made an access
+  // request. Two uncomputable rows in a deliverable about a breach, which is how a reader learns
+  // to stop reading the timeline. Trigger family is the right filter: breach_discovery starts
+  // the clocks, breach_response holds the ones a notification itself starts (§ 899-aa(9)).
+  const INCIDENT_FAMILIES = new Set(['breach_discovery', 'breach_response']);
+  const timeline = r.deadlines
+    .filter(d => INCIDENT_FAMILIES.has(d.trigger_family ?? triggerFamily(d.trigger_event)))
+    .sort((a, b) => String(a.computed ?? '9999').localeCompare(String(b.computed ?? '9999')));
+  // The decisions that are not made yet, and would add clocks if they were.
+  const openCharacterisations = (r.characterisation_required ?? []).filter(c => c.alternative_description);
   const sections = [
     { heading: 'Incident facts', body: incident },
     { heading: 'Notification regimes engaged', body: notifyAtoms },
     { heading: 'Timeline, earliest deadline first', body: timeline },
+    { heading: 'Characterisations not yet made — each would add a clock', body: openCharacterisations },
     { heading: 'Preemption — do state duties run in parallel?', body: r.preemption_notes },
   ];
   const c = load();
   const stateLayers = context.state_layers ?? [];
   const checklist = [
     check('as_of was supplied', !!r.as_of),
-    check('a discovery date was supplied', !!(incident.discovery_of_breach || incident.discovery_of_notification_event || incident.date),
-      'Every breach clock in the corpus runs from DISCOVERY, not from the breach.'),
+    // ASK THE ENGINE, DO NOT RE-DERIVE. This listed the trigger keys it knew about and went
+    // stale the moment the controlled vocabulary added the `breach_discovery` FAMILY key: a
+    // caller dating the incident correctly was told they had supplied no discovery date. A
+    // checklist that reimplements what the engine already computed will drift from it.
+    check('a discovery date was supplied', timeline.some(d => d.clock_started),
+      'Every breach clock in the corpus runs from DISCOVERY, not from the breach. Supply '
+      + 'event.breach_discovery, or a specific trigger key — see privacy_triggers.'),
     check('at least one notification regime was identified', notifyAtoms.length > 0),
     check('every deadline carries its governing language', timeline.every(d => !!d.governing_language)),
+    // THE CHECK THAT WAS MISSING, AND THE REASON THIS FILE NEEDED REWRITING. The old completeness
+    // test asked whether the CORPUS carried a jurisdiction's notify duty. It did — and the duty
+    // was still absent from the ANSWER, because the incident had been characterised one way and
+    // § 899-aa demands another. So the artifact reported `complete: true` while omitting a New
+    // York clock that fell a month before every date it printed. Corpus coverage is not answer
+    // coverage, and only a check on the answer can see the difference.
+    check('no unmade characterisation is hiding a clock', openCharacterisations.length === 0,
+      openCharacterisations.length
+        ? 'THE TIMELINE IS INCOMPLETE. On these same facts, ' + openCharacterisations.length +
+          ' further obligation(s) attach if the incident is also characterised as ' +
+          [...new Set(openCharacterisations.flatMap(c => c.requires_characterisation))]
+            .map(incidentLabel).join('; ') + '. ' +
+          (openCharacterisations.some(c => c.deadline_if_engaged)
+            ? 'At least one carries its own clock. '
+            : '') +
+          'That characterisation is a legal determination with its own test — assert it, or ' +
+          'record why it does not hold. It must not be left unanswered in a deliverable.'
+        : null),
     check('the earliest deadline is identified', timeline.length > 0 && !!timeline[0]?.computed),
     check('floor-preemption regimes are flagged as running in parallel',
       r.preemption_notes.filter(p => p.posture === 'floor').every(p => /parallel/.test(p.note ?? ''))),

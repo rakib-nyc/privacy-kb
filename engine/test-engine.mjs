@@ -9,6 +9,11 @@ import { canonicalTrigger, resolveTriggerDate, triggerMeta, TRIGGERS, TRIGGER_KE
 import { inForceOn, EVER_LAW } from './corpus.mjs';
 import { isRealDate } from './dates.mjs';
 import { provisionKey, byProvision, isVersionChain, chainProblems } from './provisions.mjs';
+import { requiredCharacterisations, incidentAsserted, asSet } from './characterisation.mjs';
+import { buildMemo } from './memo.mjs';
+import { normaliseFacts } from './facts.mjs';
+import { assertedFamilies } from './incidents.mjs';
+import { INCIDENTS, INCIDENT_FAMILIES, incidentFamily, isAlternativeCharacterisation } from './incidents.mjs';
 
 let fail = 0;
 const ok = (name, cond, detail = '') => {
@@ -557,6 +562,112 @@ ok('analyze never throws on hostile input', (() => {
      resolveTriggerDate('discovery_of_breach', { breach_discovery: '2026-13-01' }).date === null);
   ok('...while a real one still does',
      resolveTriggerDate('discovery_of_breach', { breach_discovery: '2024-02-29' }).date === '2024-02-29');
+}
+
+
+// ---------------------------------------------------------------- incident characterisation
+// THE DEFECT: `event.type` was a single scalar and each regime's atom demanded its own literal,
+// so ONE incident could satisfy HIPAA or the SHIELD Act but never both. A New York hospital that
+// lost PHI got the federal clocks or the state clock, and `breachNotificationTimeline` reported
+// `complete: true` while omitting a New York deadline that fell a MONTH EARLIER than anything it
+// printed. Four statutes, four definitions, one laptop.
+{
+  const CE = { is_hipaa_covered_entity: true, hipaa_role: 'covered_entity',
+    owns_or_licenses_computerized_data: true, within_ftc_jurisdiction: true,
+    in_or_affecting_commerce: true, nexus: 'US-NY' };
+  const D = { is_phi: true, types: ['phi'], includes_ny_private_information: true };
+  const run = ev => analyze(CE, D, { as_of: '2026-09-10', state_layers: ['US-NY'], event: ev });
+  const cites = r => r.applicable.map(o => o.citation);
+
+  const both = run({ type: ['breach_of_unsecured_phi', 'breach_of_security_of_the_system'],
+                     breach_discovery: '2026-08-01' });
+  ok('one incident can be characterised under BOTH regimes at once',
+     cites(both).some(c => /164\.404/.test(c)) && cites(both).some(c => /899-aa\(2\)/.test(c)));
+  const started = both.deadlines.filter(d => d.computed).sort((a, b) => a.computed.localeCompare(b.computed));
+  ok('...and the EARLIEST clock is the state one', /899-aa\(2\)/.test(started[0]?.citation ?? ''),
+     `${started[0]?.computed} ${started[0]?.citation}`);
+  ok('...which falls a month before the federal ones', started[0]?.computed === '2026-08-31');
+
+  // A scalar must keep working — an MCP client written against the old shape cannot be broken.
+  const scalar = run({ type: 'breach_of_unsecured_phi', breach_discovery: '2026-08-01' });
+  ok('a scalar event.type still engages its own regime', cites(scalar).some(c => /164\.404/.test(c)));
+
+  // ...but the regime it does NOT assert must be reported, never dropped.
+  const gaps = scalar.characterisation_required ?? [];
+  const ny = gaps.find(g => /899-aa\(2\)/.test(g.citation));
+  ok('the unasserted regime is REPORTED, not silently dropped', !!ny);
+  ok('...marked as an alternative description of the SAME facts', ny?.alternative_description === true);
+  ok('...naming the characterisation that would engage it',
+     (ny?.requires_characterisation ?? []).includes('breach_of_security_of_the_system'));
+  ok('...and the clock it would start', ny?.deadline_if_engaged?.duration?.value === 30);
+  ok('...and the test that decides it, so the engine is not making the call',
+     (ny?.determined_by ?? []).some(x => /899-aa\(1\)\(c\)|acquisition/i.test(x)));
+  ok('an unrelated event is NOT dressed up as the same incident',
+     gaps.filter(g => /349\(h\)/.test(g.citation)).every(g => g.alternative_description === false));
+  ok('alternatives sort ahead of unrelated events',
+     gaps.findIndex(g => g.alternative_description) < gaps.findIndex(g => !g.alternative_description));
+
+  // No incident asserted at all -> no prompting. Otherwise every routine query drowns.
+  const none = analyze(CE, D, { as_of: '2026-09-10', state_layers: ['US-NY'], event: {} });
+  ok('with no incident asserted, nothing is reported as an unmade characterisation',
+     (none.characterisation_required ?? []).length === 0);
+
+  // Vocabulary integrity: every characterisation the corpus demands must be described.
+  const used = new Set();
+  for (const a of load().obligations)
+    for (const c of requiredCharacterisations(a.applies_if)) used.add(c);
+  const undescribed = [...used].filter(c => !Object.hasOwn(INCIDENTS, c));
+  ok('every characterisation the corpus demands is in the vocabulary', undescribed.length === 0,
+     undescribed.join(', '));
+  ok('...and every one declares a family that exists',
+     [...used].every(c => Object.hasOwn(INCIDENT_FAMILIES, incidentFamily(c))));
+  ok('the four security-incident regimes share a family',
+     ['breach_of_unsecured_phi', 'breach_of_security_of_the_system', 'breach_of_security',
+      'notification_event'].every(k => incidentFamily(k) === 'security_incident'));
+  ok('...and a telemarketing offer is NOT one of them',
+     !isAlternativeCharacterisation('telemarketing_sales_offer', ['breach_of_unsecured_phi']));
+
+  // Helpers stay total on junk.
+  for (const j of [null, undefined, 0, '', [], {}, 'x'])
+    ok(`requiredCharacterisations is total on ${JSON.stringify(j)}`,
+       Array.isArray(requiredCharacterisations(j)));
+  ok('incidentAsserted is false for an empty event', !incidentAsserted({}));
+  ok('incidentAsserted is true for event.occurred', incidentAsserted({ occurred: true }));
+  ok('asSet normalises scalar and array alike',
+     asSet('a').length === 1 && asSet(['a', 'b']).length === 2 && asSet(null).length === 0);
+}
+
+
+// TOTALITY AT THE NEW OUTERMOST SURFACES. A parameter default covers `undefined` ONLY, so a null
+// argument threw — the same non-totality already found in computeDeadline, preemption.resolve()
+// and all four workflows, reappearing in each new layer as it was written. Found by fuzzing.
+{
+  const junk = [null, undefined, 0, 1, '', ' ', 'x', [], {}, NaN, true, false, [1, 2]];
+  const totals = [
+    ['buildMemo', v => buildMemo(v, v, v, v)],
+    ['normaliseFacts', v => normaliseFacts(v)],
+    ['assertedFamilies', v => assertedFamilies(v)],
+    ['isAlternativeCharacterisation', v => isAlternativeCharacterisation(v, v)],
+    ['incidentAsserted', v => incidentAsserted(v)],
+    ['requiredCharacterisations', v => requiredCharacterisations(v)],
+  ];
+  for (const [name, fn] of totals)
+    ok(`${name} is total on every junk argument`, junk.every(v => {
+      try { fn(v); return true; } catch { return false; }
+    }));
+  ok('buildMemo on junk returns a refusal rather than a document',
+     !!buildMemo(null, null, null, null).error);
+  ok('...and refuses because as_of is missing, naming the invariant',
+     /as of a date|as_of is required/i.test(buildMemo(null, null, null, null).error ?? ''));
+  ok('a poisoned entity object does not pollute the prototype', (() => {
+    normaliseFacts(JSON.parse('{"entity":{"__proto__":{"pwned":1},"hipaa_role":"covered_entity"}}'));
+    return ({}).pwned === undefined;
+  })());
+  ok('an enormous event.type does not hang the memo', (() => {
+    const t0 = Date.now();
+    buildMemo({}, {}, { as_of: '2026-01-01', event: { type: Array(5000).fill('x') } });
+    return Date.now() - t0 < 20000;
+  })());
 }
 
 console.log(`\n${fail} failure(s)`);

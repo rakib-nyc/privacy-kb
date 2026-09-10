@@ -135,7 +135,7 @@ applies_if:
   all:
     - entity.is_seller_or_telemarketer == true
     - practice.conducts_telemarketing == true
-    - event.type == 'telemarketing_sales_offer'
+    - event.type in ['telemarketing_sales_offer']
 applies_to_role: controller
 obligation_type: disclose
 summary: >-

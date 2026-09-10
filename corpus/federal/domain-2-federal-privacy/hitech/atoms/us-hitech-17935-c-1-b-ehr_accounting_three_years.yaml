@@ -154,7 +154,7 @@ applies_if:
     - entity.is_hipaa_covered_entity == true
     - data.is_phi == true
     - entity.uses_or_maintains_electronic_health_record == true
-    - event.type == 'individual_accounting_request'
+    - event.type in ['individual_accounting_request']
 obligation_type: disclose
 summary: >-
   Where a covered entity uses or maintains an electronic health record, treatment, payment and

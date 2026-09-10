@@ -99,7 +99,7 @@ subject:
 applies_if:
   all:
     - entity.is_cfpb_covered_person == true
-    - event.type == 'consumer_data_access_request'
+    - event.type in ['consumer_data_access_request']
 obligation_type: disclose
 summary: >-
   Subject to Bureau rules, a covered person must make available to a consumer on request, in an

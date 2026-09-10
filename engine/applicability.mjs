@@ -8,6 +8,9 @@ import { evaluate, UNKNOWN } from './predicates.mjs';
 import { applyExemptions } from './exemptions.mjs';
 import { computeDeadline } from './timeline.mjs';
 import { resolveTriggerDate } from './triggers.mjs';
+import { characterisationGap, asSet } from './characterisation.mjs';
+import { isAlternativeCharacterisation, incidentLabel, incidentMeta } from './incidents.mjs';
+import { normaliseFacts } from './facts.mjs';
 import { resolve as resolvePreemption } from './preemption.mjs';
 import { backstops } from './backstops.mjs';
 import { coverageFor, instrumentCoverage } from './coverage.mjs';
@@ -37,20 +40,32 @@ export function analyze(entity = {}, data = {}, context = {}) {
     return { error: why,
              as_of: null, applicable: [], exempt: [], not_applicable: [], preemption_notes: [],
              backstops: [], obligations: [], deadlines: [], enforcement_summary: [],
-             pending_watch: [], coverage_gaps: [], unverified_excluded: [], unknown_facts: [] };
+             pending_watch: [], coverage_gaps: [], unverified_excluded: [], unknown_facts: [],
+             characterisation_required: [], fact_warnings: [] };
   }
   const corpus = load();
-  const facts = { entity, data, event: context.event ?? {}, purpose: context.purpose ?? {},
-                  practice: context.practice ?? {},
+  // ALIASES AND AMBIGUOUS TERMS ARE RESOLVED BEFORE ANYTHING IS EVALUATED, and every expansion
+  // is reported. A caller saying "we are a covered entity" the old way must not silently get
+  // three obligations where the new spelling gives thirteen; a caller saying "financial
+  // institution" must be told that term covers three different statutory populations and that
+  // all three were assumed. An expansion the caller cannot see is the engine guessing.
+  const { facts: normalised, warnings: fact_warnings } = normaliseFacts({
+    entity, data, event: context.event ?? {}, purpose: context.purpose ?? {},
+    practice: context.practice ?? {}, law: context.law ?? {} });
+  const facts = { ...normalised,
+                  entity: normalised.entity, data: normalised.data,
+                  event: normalised.event, purpose: normalised.purpose,
+                  practice: normalised.practice,
                   // law was hardcoded to {} while two FCRA preemption atoms predicate on
                   // law.federal_instrument and law.state_requirement_subject. Their predicates
                   // are grammatical and evaluable, so gate 21 passed them; they simply could
                   // never be TRUE, because nothing ever filled the namespace. DEBT-009's shape
                   // once more — an atom written against a field the engine does not supply.
-                  law: context.law ?? {} };
+                  law: normalised.law };
 
   const applicable = [], exempt = [], not_applicable = [], pending_watch = [],
-        unverified_excluded = [], unknown_facts = [], obligations = [], deadlines = [];
+        unverified_excluded = [], unknown_facts = [], obligations = [], deadlines = [],
+        characterisation_required = [];
 
   for (const a of corpus.obligations) {
     // Pending law NEVER enters obligations. It routes to the watch feed only (I3).
@@ -99,6 +114,39 @@ export function analyze(entity = {}, data = {}, context = {}) {
       continue;
     }
     if (r.value === false) {
+      // AN UNASSERTED CHARACTERISATION IS NOT "DOES NOT APPLY". If this duty would attach on the
+      // very facts supplied, and the ONLY thing standing between it and the answer is a legal
+      // characterisation of the incident the caller has not made, that is a decision waiting to
+      // be taken — not a finding of inapplicability. Reporting it as the latter is how the NY
+      // 30-day clock disappeared from a HIPAA breach timeline that called itself complete.
+      const gap = characterisationGap(a, facts, evaluate);
+      if (gap) {
+        // ALTERNATIVE DESCRIPTION OF THESE FACTS, OR A DIFFERENT EVENT? Only the first is a
+        // decision the caller has to make. Reporting all 26 characterisations would bury the
+        // three that matter under a list nobody reads — which is the same failure as omitting
+        // them, arrived at from the other direction.
+        const alternative = gap.missing.some(mm => isAlternativeCharacterisation(mm, asSet(facts.event.type)));
+        characterisation_required.push({
+          alternative_description: alternative,
+          atom_id: a.id, citation: a.source.citation,
+          instrument_id: a.source.instrument_id,
+          obligation: a.summary,
+          obligation_type: a.obligation_type,
+          requires_characterisation: gap.missing,
+          asserted_characterisations: asSet(facts.event.type),
+          deadline_if_engaged: a.deadline
+            ? { duration: a.deadline.duration, trigger_event: a.deadline.trigger_event }
+            : null,
+          requires_label: gap.missing.map(incidentLabel),
+          determined_by: gap.missing.map(mm => incidentMeta(mm)?.definition ?? null).filter(Boolean),
+          note: 'NOT a finding that this does not apply. On the facts supplied, this duty attaches '
+              + `if the incident is also characterised as ${gap.missing.map(x => `"${x}"`).join(' or ')}. `
+              + 'That characterisation is a legal determination with its own test — HIPAA makes it '
+              + 'the output of a documented four-factor risk assessment — so the engine surfaces it '
+              + 'rather than deciding it. Assert it, or record why it does not hold.',
+        });
+        continue;
+      }
       not_applicable.push({ instrument_id: a.source.instrument_id, atom_id: a.id, failed_predicate: r.why });
       continue;
     }
@@ -161,7 +209,13 @@ export function analyze(entity = {}, data = {}, context = {}) {
              obligation_type: o.obligation_type, summary: o.summary,
              verbatim_span: o.verbatim_span,
              operative_context: (o.operative_context ?? []).map(x => ({ position: x.position, relation: x.relation, verbatim_span: x.verbatim_span })) })),
-           deadlines, enforcement_summary, pending_watch, coverage_gaps, unverified_excluded, unknown_facts };
+           deadlines, enforcement_summary, pending_watch, coverage_gaps, unverified_excluded,
+           unknown_facts, fact_warnings,
+           // Alternatives first, and among them the ones with a running clock first: a missed
+           // deadline is the failure this whole bucket exists to prevent.
+           characterisation_required: characterisation_required.sort((x, y) =>
+             (Number(y.alternative_description) - Number(x.alternative_description))
+             || (Number(!!y.deadline_if_engaged) - Number(!!x.deadline_if_engaged))) };
 }
 
 function summariseEnforcement(obligations, corpus) {

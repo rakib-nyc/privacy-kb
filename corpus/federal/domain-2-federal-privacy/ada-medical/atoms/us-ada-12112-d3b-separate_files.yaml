@@ -40,7 +40,7 @@ enforcement:
 applies_if:
   all:
   - entity.is_employer == true
-  - event.type == "employee_medical_inquiry"
+  - event.type in ["employee_medical_inquiry"]
 applies_to_role: controller
 exemptions: []
 id: us.ada.12112.d3b.separate_files

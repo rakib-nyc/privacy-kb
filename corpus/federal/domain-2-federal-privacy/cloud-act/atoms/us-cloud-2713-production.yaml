@@ -69,7 +69,7 @@ effective_from: '2018-03-23'
 applies_if:
   all:
     - entity.provides_electronic_communication_service_to_public == true
-    - event.type == "lawful_process_received"
+    - event.type in ["lawful_process_received"]
 applies_to_role: controller
 obligation_type: disclose
 deadline: null

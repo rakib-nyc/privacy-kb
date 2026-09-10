@@ -74,7 +74,7 @@ amendment_history:
 applies_if:
   all:
     - entity.is_employer == true
-    - event.type == 'lie_detector_test_proposed'
+    - event.type in ['lie_detector_test_proposed']
 applies_to_role: controller
 obligation_type: prohibit
 summary: >-

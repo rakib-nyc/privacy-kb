@@ -100,7 +100,7 @@ applies_to_role: processor
 applies_if:
   all:
     - entity.is_consumer_reporting_agency == true
-    - event.type == "consumer_file_disclosure_request"
+    - event.type in ["consumer_file_disclosure_request"]
 obligation_type: disclose
 summary: >-
   On request and proper identification, a consumer reporting agency must clearly and accurately

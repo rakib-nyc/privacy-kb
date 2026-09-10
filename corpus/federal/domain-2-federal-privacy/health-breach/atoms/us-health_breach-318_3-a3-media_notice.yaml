@@ -152,7 +152,7 @@ effective_from: '2024-07-29'
 applies_if:
   all:
     - entity.is_phr_vendor_or_phr_related_entity == true
-    - event.type == 'breach_of_security'
+    - event.type in ['breach_of_security']
     - data.unsecured_phr_identifiable_health_information == true
     - event.residents_of_one_state_affected >= 500
 applies_to_role: controller

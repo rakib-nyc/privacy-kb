@@ -85,7 +85,7 @@ effective_from: '2026-04-03'
 applies_if:
   all:
     - entity.nexus in ['US-NY']
-    - event.type == 'deceptive_act_or_practice'
+    - event.type in ['deceptive_act_or_practice']
 applies_to_role: any
 obligation_type: prohibit
 summary: >-

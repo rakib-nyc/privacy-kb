@@ -5,7 +5,7 @@ refuses to do, and where it is weak. Written to be read cold by a person or by a
 with no prior context.
 
 **Repository:** https://github.com/rakib-nyc/privacy-kb (private)
-**Version:** 0.3.0 · **Licence:** Apache 2.0 · **Author:** Muhammad Rakibul Islam
+**Version:** 0.4.0 · **Licence:** Apache 2.0 · **Author:** Muhammad Rakibul Islam
 
 ---
 

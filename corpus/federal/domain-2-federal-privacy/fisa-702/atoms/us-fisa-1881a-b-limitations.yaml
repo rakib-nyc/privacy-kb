@@ -62,7 +62,7 @@ effective_from: '2008-07-10'
 applies_if:
   all:
   - entity.is_us_government == true
-  - event.type == "section_702_acquisition"
+  - event.type in ["section_702_acquisition"]
 applies_to_role: processor
 obligation_type: restrict_use
 deadline: null

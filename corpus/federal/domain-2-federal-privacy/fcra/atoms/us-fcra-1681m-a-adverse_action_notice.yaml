@@ -104,7 +104,7 @@ applies_to_role: controller
 applies_if:
   all:
     - entity.uses_consumer_reports == true
-    - event.type == "adverse_action_taken"
+    - event.type in ["adverse_action_taken"]
 obligation_type: notify
 deadline: null
 summary: >-

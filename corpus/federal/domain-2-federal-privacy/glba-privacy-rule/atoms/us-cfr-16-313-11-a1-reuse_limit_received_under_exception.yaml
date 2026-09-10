@@ -24,7 +24,7 @@ deadline: null
 related: []
 applies_if:
   all:
-    - entity.is_financial_institution == true
+    - entity.glba_financial_institution == true
     - entity.predominantly_motor_vehicle_sales_or_leasing == true
     - data.is_nonpublic_personal_information == true
 federal_relationship: null

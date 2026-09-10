@@ -101,7 +101,7 @@ applies_to_role: processor
 applies_if:
   all:
     - entity.is_consumer_reporting_agency == true
-    - event.type == "consumer_dispute_received"
+    - event.type in ["consumer_dispute_received"]
 obligation_type: assess
 deadline:
   trigger_event: receipt_of_consumer_dispute

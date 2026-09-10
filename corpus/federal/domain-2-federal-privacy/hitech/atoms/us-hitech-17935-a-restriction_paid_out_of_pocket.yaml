@@ -121,7 +121,7 @@ applies_if:
   all:
   - entity.is_hipaa_covered_entity == true
   - data.is_phi == true
-  - event.type == 'individual_restriction_request'
+  - event.type in ['individual_restriction_request']
 obligation_type: restrict_use
 summary: A covered entity must comply with an individual's requested restriction on disclosing protected
   health information to a health plan for payment or health care operations where the item or service

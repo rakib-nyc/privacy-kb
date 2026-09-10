@@ -227,11 +227,25 @@ Read-only. Every tool takes `as_of`.
 | `privacy_definition(term, instrument_id?)` | definition record(s) + `differs_from` |
 | `privacy_deadline(atom_id, trigger_date)` | computed date + tolling notes |
 | `privacy_triggers()` | the controlled trigger vocabulary: every key that can start a clock |
+| `privacy_facts(namespace?, instrument_id?, q?)` | the INPUT vocabulary: every fact key, its values, what it gates |
+| `privacy_incidents()` | incident characterisations and their families — one event, several legal descriptions |
+| `privacy_workflow(workflow, …)` | run a lifecycle deliverable and return the artifact with its checklist |
+| `privacy_memo(entity, data, as_of, …)` | the defensibility record: findings, boundary, and a verification table |
 | `privacy_diff(from_date, to_date, filter?)` | what changed, what is coming |
 | `privacy_preemption(federal_id, state_id)` | posture + resolution |
 | `privacy_coverage(bok_coordinate)` | KB completeness at that node |
 
 Annotate all as `readOnlyHint: true`, `openWorldHint: false`.
+
+`event.type` is a SET, not a scalar. One set of facts routinely satisfies several statutory
+characterisations at once — a lost laptop of patient records is a breach of unsecured PHI under
+45 C.F.R. § 164.402 AND a breach of the security of the system under N.Y. GBL § 899-aa(1)(c),
+with different definitions and different clocks. Modelling that as an enum made them mutually
+exclusive, so a multi-regime breach timeline was structurally impossible. Characterisations the
+caller does NOT assert are returned in `characterisation_required` — flagged as alternative
+descriptions of the same facts where they are — never silently excluded. The engine does not
+decide a characterisation: § 164.402 makes it the output of a documented four-factor risk
+assessment, and deriving it would be the engine performing the analysis it exists to support.
 
 `deadline.trigger_event` is a CONTROLLED VOCABULARY, not free text (`engine/triggers.mjs`).
 A trigger date is supplied as `event.<trigger_key>`, and `privacy_triggers` enumerates the

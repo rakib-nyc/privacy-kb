@@ -133,10 +133,12 @@ is the honest remaining work.
 | taxonomy leaves covered | 31 / 69 · 38 neither covered nor ruled out of scope, and gate 34 ratchets that number |
 | CI gates | **45**, all named · 60 fixtures · 34 gates fixture-exercised, 11 declared unexercisable in `tests/fixtures/no-fixture.yaml` and why |
 | Walker assumptions | 13 declared, 13 with an executable test |
-| Engine | 9 modules · property tests covering both halves of invariant I6, as-of validation, the trigger vocabulary, version-chain semantics, and totality of every entry point |
-| MCP server | 10 tools, 22 tests including a live stdio handshake |
-| Workflows | 4 lifecycle-indexed, 26 tests |
+| Engine | 13 modules · property tests covering both halves of invariant I6, as-of validation, the trigger and incident vocabularies, version-chain semantics, and totality of every entry point |
+| MCP server | **14 tools**, incl. `privacy_memo` (the defensibility record), `privacy_facts` (the input vocabulary), `privacy_incidents`, `privacy_workflow` |
+| Workflows | 4 lifecycle-indexed, reachable from the CLI and MCP, 26 tests |
 | Eval scenarios | 30, all-pass baseline enforced by gate 8 |
+| Incident model | `event.type` is a SET — one laptop is a breach of unsecured PHI *and* a breach of the security of the system, four statutes, four clocks. Characterisations you do not assert come back in `characterisation_required`, never silently dropped |
+| Deliverable | `privacy-kb memo` — every provision with its URL, sha256, vintage and vintage basis, plus what the analysis could NOT determine, plus a verification table |
 | `effective_from` provenance | every record declares what KIND of date it is, derived from the source bytes and re-derived by gate 43 · 10 carry point-in-time evidence · 106 cannot yet support an as-of comparison, and gate 43 ratchets that number down |
 | Prior vintages not held | **7**, each named in `meta/missing-vintages.yaml` — provisions whose stored text was proved younger than the date the record used to claim |
 

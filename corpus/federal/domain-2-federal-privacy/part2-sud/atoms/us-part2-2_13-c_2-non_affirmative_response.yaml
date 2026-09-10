@@ -142,7 +142,7 @@ applies_if:
     - any:
         - entity.is_part2_program == true
         - entity.is_part2_lawful_holder == true
-    - event.type == 'third_party_record_request'
+    - event.type in ['third_party_record_request']
 obligation_type: prohibit
 summary: >-
   An answer to a request that part 2 does not permit must not affirmatively reveal that an

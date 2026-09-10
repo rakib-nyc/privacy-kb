@@ -108,7 +108,7 @@ effective_from: '2024-05-13'
 applies_if:
   all:
     - entity.glba_financial_institution == true
-    - event.type == 'notification_event'
+    - event.type in ['notification_event']
     - event.consumers_affected >= 500
 applies_to_role: any
 obligation_type: notify

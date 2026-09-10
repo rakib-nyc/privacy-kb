@@ -111,7 +111,7 @@ applies_to_role: controller
 applies_if:
   all:
     - entity.is_furnisher == true
-    - event.type == "cra_dispute_notice_received"
+    - event.type in ["cra_dispute_notice_received"]
 obligation_type: assess
 summary: >-
   On receiving notice of a dispute from a consumer reporting agency under § 1681i(a)(2), a furnisher

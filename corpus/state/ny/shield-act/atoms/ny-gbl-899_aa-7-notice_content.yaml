@@ -55,7 +55,7 @@ applies_if:
   all:
     - entity.owns_or_licenses_computerized_data == true
     - data.includes_ny_private_information == true
-    - event.type == "breach_of_security_of_the_system"
+    - event.type in ["breach_of_security_of_the_system"]
 applies_to_role: controller
 exemptions: []
 id: ny.gbl.899_aa.7.notice_content

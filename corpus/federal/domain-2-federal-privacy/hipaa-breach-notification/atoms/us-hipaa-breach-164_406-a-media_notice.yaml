@@ -105,4 +105,4 @@ open_questions: []
 applies_if:
   all:
     - entity.is_hipaa_covered_entity == true
-    - event.type == "breach_of_unsecured_phi"
+    - event.type in ["breach_of_unsecured_phi"]

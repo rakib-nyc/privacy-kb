@@ -42,8 +42,8 @@ enforcement:
   statute_of_limitations: null
 applies_if:
   all:
-    - entity.hipaa_role in ['covered_entity']
-    - event.type == 'breach_of_unsecured_phi'
+    - entity.is_hipaa_covered_entity == true
+    - event.type in ['breach_of_unsecured_phi']
 applies_to_role: covered_entity
 exemptions: []
 id: us.hipaa.breach.164_402.breach_definition

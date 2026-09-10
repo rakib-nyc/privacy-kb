@@ -47,7 +47,7 @@ enforcement:
 applies_if:
   all:
     - entity.is_video_tape_service_provider == true
-    - event.type == 'disclosure_of_pii'
+    - event.type in ['disclosure_of_pii']
     - event.knowing == true
 applies_to_role: any
 exemptions: []

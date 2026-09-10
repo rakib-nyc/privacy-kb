@@ -82,8 +82,8 @@ status: in_force
 effective_from: '2009-09-23'
 applies_if:
   all:
-    - entity.hipaa_role in ['covered_entity']
-    - event.type == 'breach_of_unsecured_phi'
+    - entity.is_hipaa_covered_entity == true
+    - event.type in ['breach_of_unsecured_phi']
 applies_to_role: covered_entity
 obligation_type: notify
 summary: >-

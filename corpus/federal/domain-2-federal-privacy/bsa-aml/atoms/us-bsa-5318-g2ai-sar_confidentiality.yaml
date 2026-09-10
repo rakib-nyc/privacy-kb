@@ -115,8 +115,8 @@ subject:
     - VI
 applies_if:
   all:
-    - entity.is_financial_institution == true
-    - event.type == 'suspicious_transaction_reported'
+    - entity.bsa_financial_institution == true
+    - event.type in ['suspicious_transaction_reported']
 obligation_type: prohibit
 summary: >-
   Once a suspicious transaction has been reported, the institution and its people may not notify

@@ -65,7 +65,7 @@ effective_from: '1967-07-04'
 applies_if:
   all:
     - entity.is_federal_agency == true
-    - event.type == "foia_request_received"
+    - event.type in ["foia_request_received"]
 applies_to_role: controller
 obligation_type: prohibit
 deadline: null

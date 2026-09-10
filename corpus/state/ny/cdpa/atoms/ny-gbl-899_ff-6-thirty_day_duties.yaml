@@ -77,7 +77,7 @@ federal_relationship: exceeds_floor
 applies_if:
   all:
   - entity.is_ny_cdpa_operator == true
-  - event.type == "user_determined_to_be_covered_user"
+  - event.type in ["user_determined_to_be_covered_user"]
 applies_to_role: controller
 obligation_type: assess
 deadline:

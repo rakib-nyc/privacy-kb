@@ -102,7 +102,7 @@ obligation_type: secure
 deadline: null
 applies_if:
   all:
-    - entity.is_financial_institution == true
+    - entity.glba_financial_institution == true
     - entity.within_ftc_jurisdiction == true
 exemptions:
   - id: cfr.16.314.6.under_5000_consumers

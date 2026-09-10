@@ -57,8 +57,15 @@ const plain = s => s.replace(/\x1b\[[0-9;]*m/g, '');
 { const o = plain(run('deadlines', '--hipaa', '--ny-data', '--breach', '--told-hhs',
     '--event', 'breach_discovery=2026-08-01', '--event', 'notification_to_hhs_secretary=2026-09-08'));
   const d = [...o.matchAll(/(\d{4}-\d{2}-\d{2})\s+\d+\s+(?:business|calendar)/g)].map(m => m[1]);
-  ok('two asserted events start two clocks', d.length === 2, `(${d.join(', ')})`);
+  // `--breach` asserts the whole security-incident family, so a HIPAA covered entity holding New
+  // York private information gets BOTH regimes' clocks — which is the point. Asserting an exact
+  // count here would pin the test to the defect: it used to be 2 because one characterisation
+  // silently excluded the other.
+  ok('two asserted events start more than one clock', d.length > 1, `(${d.join(', ')})`);
   ok('deadlines are sorted earliest first', d.every((x, i) => i === 0 || d[i - 1] <= x));
+  ok('the state breach clock is present', o.includes('899-aa(2)'));
+  ok('...and the federal ones alongside it', /164\.40[468]/.test(o));
+  ok('...and the separately-dated HHS clock', o.includes('899-aa(9)'));
   ok('a family-dated clock says so', o.includes('dated via the "breach_discovery" family key')); }
 
 // THE REGRESSION THIS WHOLE CHANGE EXISTS TO PREVENT. `--from` with no event flag used to

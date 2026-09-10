@@ -69,7 +69,7 @@ superseded_by: null
 amendment_history: []
 applies_if:
   all:
-    - entity.is_financial_institution == true
+    - entity.rfpa_financial_institution == true
     - data.is_financial_record == true
 applies_to_role: processor
 obligation_type: prohibit

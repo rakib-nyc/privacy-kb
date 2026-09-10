@@ -99,5 +99,52 @@ for (const [name, fn] of Object.entries({ privacyImpactAssessment, noticeGapAnal
 }
 
 
+
+// THE REGRESSION THIS SUITE EXISTED TO CATCH AND DID NOT.
+//
+// A New York hospital loses PHI. Characterised only as a HIPAA breach, the artifact used to
+// report `complete: true`, no warning, and omit N.Y. GBL 899-aa(2) -- whose 30-day clock fell a
+// MONTH EARLIER than every HIPAA date it printed. The completeness check asked whether the
+// CORPUS carried New York's notify duty (it did, so it passed) while the event model kept that
+// duty out of the ANSWER. Corpus coverage is not answer coverage.
+{
+  const base = {
+    entity: { is_hipaa_covered_entity: true, hipaa_role: 'covered_entity',
+      owns_or_licenses_computerized_data: true, within_ftc_jurisdiction: true,
+      in_or_affecting_commerce: true, nexus: 'US-NY' },
+    data: { is_phi: true, types: ['phi'], includes_ny_private_information: true },
+    context: { as_of: '2026-09-10', state_layers: ['US-NY'] },
+  };
+  const one = WORKFLOWS.breachNotificationTimeline(
+    { ...base, incident: { type: 'breach_of_unsecured_phi', breach_discovery: '2026-08-01' } });
+  ok('a singly-characterised breach is NOT reported complete', one.complete === false);
+  ok('...and says an unmade characterisation is hiding a clock',
+     one.failed_criteria.some(c => /characterisation/i.test(c.criterion)));
+  ok('...and carries the incomplete warning', /INCOMPLETE/.test(one.warning ?? ''));
+  ok('...and shows the open characterisations as their own section',
+     (one.sections.find(s => /Characterisations not yet made/.test(s.heading))?.body ?? []).length > 0);
+
+  const both = WORKFLOWS.breachNotificationTimeline({ ...base,
+    incident: { type: ['breach_of_unsecured_phi', 'breach_of_security_of_the_system'],
+                breach_discovery: '2026-08-01' } });
+  ok('characterised under both regimes, the artifact IS complete', both.complete === true,
+     JSON.stringify(both.failed_criteria.map(c => c.criterion)));
+  const tl = both.sections.find(s => /Timeline/.test(s.heading)).body;
+  ok('...and the New York clock is present', tl.some(d => /899-aa\(2\)/.test(d.citation ?? '')));
+  ok('...as the EARLIEST deadline', /899-aa\(2\)/.test(tl[0]?.citation ?? ''),
+     `${tl[0]?.computed} ${tl[0]?.citation}`);
+  ok('...and every row in a breach timeline actually has a clock',
+     tl.every(d => !!d.computed),
+     'rights-request clocks with computed:null used to be listed in a breach deliverable');
+
+  // The discovery-date check must ask the ENGINE, not re-derive trigger keys it will go stale on.
+  ok('a family-key discovery date satisfies the discovery check',
+     !both.failed_criteria.some(c => /discovery date/.test(c.criterion)));
+  const undated = WORKFLOWS.breachNotificationTimeline({ ...base,
+    incident: { type: ['breach_of_unsecured_phi', 'breach_of_security_of_the_system'] } });
+  ok('...and an undated incident still fails it',
+     undated.failed_criteria.some(c => /discovery date/.test(c.criterion)));
+}
+
 console.log(`\n${fail} failure(s)`);
 process.exit(fail ? 1 : 0);

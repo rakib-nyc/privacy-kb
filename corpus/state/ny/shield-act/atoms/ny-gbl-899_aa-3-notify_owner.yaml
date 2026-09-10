@@ -96,7 +96,7 @@ applies_if:
   all:
     - entity.maintains_data_it_does_not_own == true
     - data.includes_ny_private_information == true
-    - event.type == "breach_of_security_of_the_system"
+    - event.type in ["breach_of_security_of_the_system"]
 obligation_type: notify
 deadline:
   trigger_event: discovery_of_breach

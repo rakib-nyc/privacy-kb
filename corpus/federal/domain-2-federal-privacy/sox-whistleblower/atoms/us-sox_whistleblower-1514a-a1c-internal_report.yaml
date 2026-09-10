@@ -111,7 +111,7 @@ amendment_history:
 applies_if:
   all:
     - entity.is_public_company == true
-    - event.type == 'internal_misconduct_report'
+    - event.type in ['internal_misconduct_report']
 applies_to_role: controller
 obligation_type: prohibit
 summary: >-

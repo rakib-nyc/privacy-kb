@@ -87,7 +87,7 @@ applies_if:
   all:
     - entity.maintains_or_possesses_consumer_information == true
     - purpose.business_purpose == true
-    - event.type == 'disposal_of_consumer_information'
+    - event.type in ['disposal_of_consumer_information']
 applies_to_role: any
 obligation_type: secure
 summary: >-

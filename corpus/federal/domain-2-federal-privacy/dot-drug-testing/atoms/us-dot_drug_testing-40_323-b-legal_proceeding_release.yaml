@@ -88,7 +88,7 @@ applies_if:
   all:
     - entity.is_employer == true
     - data.is_dot_test_result == true
-    - event.type == 'legal_proceeding_disclosure'
+    - event.type in ['legal_proceeding_disclosure']
 applies_to_role: controller
 obligation_type: restrict_use
 summary: >-

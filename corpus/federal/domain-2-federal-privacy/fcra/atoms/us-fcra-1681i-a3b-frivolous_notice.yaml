@@ -97,7 +97,7 @@ applies_to_role: processor
 applies_if:
   all:
     - entity.is_consumer_reporting_agency == true
-    - event.type == "frivolous_dispute_determination"
+    - event.type in ["frivolous_dispute_determination"]
 obligation_type: notify
 deadline:
   trigger_event: determination_dispute_frivolous

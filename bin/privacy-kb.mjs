@@ -8,6 +8,7 @@ import { homedir, platform } from 'node:os';
 import { call } from '../mcp/server.mjs';
 import { load } from '../engine/corpus.mjs';
 import { isRealDate } from '../engine/dates.mjs';
+import { buildMemo } from '../engine/memo.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const VERSION = JSON.parse(readFileSync(join(ROOT, 'package.json'), 'utf8')).version;
@@ -31,6 +32,10 @@ ${b('privacy-kb')} ${dim(VERSION)}  —  US federal + New York privacy law, as o
   ${b('privacy-kb deadlines')} [flags]         which clocks have started, and which have not
   ${b('privacy-kb ask')} [flags]               which obligations apply
   ${b('privacy-kb triggers')}                  every event key that can start a clock
+  ${b('privacy-kb facts')} [ns|search]        every fact key you can assert, and its values
+  ${b('privacy-kb incidents')}                 how one incident can be several things at once
+  ${b('privacy-kb breach')} [flags]            a multi-regime breach notification timeline
+  ${b('privacy-kb memo')} [flags]              a citable, verifiable record of the whole analysis
 
   ${b('Flags for ask/deadlines')}
     --hipaa            a HIPAA covered entity
@@ -38,7 +43,8 @@ ${b('privacy-kb')} ${dim(VERSION)}  —  US federal + New York privacy law, as o
     --ny-employer      has employees in New York
     --nyc-hiring       uses an automated hiring tool in New York City
     --minors           has users under 18
-    --breach           a security breach has occurred
+    --breach           a security breach has occurred (all characterisations)
+    --as <kind>        narrow the breach to one characterisation — see incidents
     --told-hhs         has notified the Secretary of HHS
     --as-of <date>     the date to answer as of (default: today)
     --json             machine-readable output
@@ -72,7 +78,20 @@ function factsFrom(args) {
   if (has('--ny-employer')) { entity.is_ny_employer = true; entity.is_employer = true; }
   if (has('--nyc-hiring')) { entity.uses_automated_employment_decision_tool = true; entity.nexus = 'US-NY-NYC'; }
   if (has('--minors')) { entity.is_ny_cdpa_operator = true; data.subject_is_cdpa_covered_user = true; data.types = [...(data.types ?? []), 'minor']; }
-  if (has('--breach')) event.type = 'breach_of_security_of_the_system';
+  // A BREACH IS NOT ONE LEGAL THING. The same laptop is a breach of unsecured PHI under
+  // 45 C.F.R. § 164.402 and a breach of the security of the system under N.Y. GBL § 899-aa(1)(c)
+  // — different definitions, different clocks, both live. This flag used to assert ONE of them,
+  // so `--hipaa --ny-data --breach` returned the New York duties and silently dropped every
+  // HIPAA breach duty. Asserting the whole security-incident family is safe because the ENTITY
+  // predicates do the real filtering: a hospital does not pick up the FTC Health Breach Rule
+  // just because the characterisation was offered. Narrow with --as <characterisation>.
+  if (has('--breach')) {
+    const ai = args.indexOf('--as');
+    event.type = ai >= 0 && args[ai + 1]
+      ? [args[ai + 1]]
+      : ['breach_of_unsecured_phi', 'breach_of_security_of_the_system',
+         'breach_of_security', 'notification_event'];
+  }
   if (has('--told-hhs')) practice.notified_hhs_secretary_of_breach = true;
   entity.within_ftc_jurisdiction = true;
   entity.in_or_affecting_commerce = true;
@@ -309,6 +328,103 @@ switch (cmd) {
     console.log(dim(`  sha256:   ${String(r.raw_sha256 ?? '').slice(0, 32)}…`));
     console.log(dim(`  in force: ${a?.effective_from ?? '?'} → ${a?.effective_to ?? 'present'}  (status: ${a?.status ?? '?'})`));
     if (r.context_warning) console.log(dim(`  note:     ${r.context_warning.slice(0, 88)}`));
+    console.log(`\n${DISCLAIMER}\n`);
+    break;
+  }
+  case 'memo': {
+    // THE WORK PRODUCT. Everything else here prints to a terminal; a lawyer hands people
+    // documents. What makes this one worth handing over is not the prose — it is that sections
+    // 5 and 6 state what the analysis could NOT determine, and section 7 lets a reader
+    // re-verify every quotation without trusting the tool at all.
+    const { entity, data, context, bad_dates, from_ambiguous } = factsFrom(rest);
+    if (refuseBadDates(bad_dates)) break;
+    if (from_ambiguous) { console.log(`\n  --from is ambiguous with ${from_ambiguous.join(' and ')}; use --event.\n`); process.exitCode = 1; break; }
+    const mi = rest.indexOf('--matter');
+    const m = buildMemo(entity, data, context,
+      { matter: mi >= 0 ? rest[mi + 1] : null, version: VERSION });
+    if (m.error) { console.log(`\n  ${m.error}\n`); process.exitCode = 1; break; }
+    if (rest.includes('--json')) { console.log(JSON.stringify(m.record, null, 2)); break; }
+    const oi = rest.indexOf('--out');
+    if (oi >= 0 && rest[oi + 1]) {
+      writeFileSync(rest[oi + 1], m.markdown);
+      console.log(`\n  ${b('Written')} ${rest[oi + 1]}  ${dim(m.markdown.split('\n').length + ' lines')}\n`);
+    } else {
+      console.log(m.markdown);
+    }
+    break;
+  }
+  case 'facts': {
+    // THE INPUT VOCABULARY, WHICH USED TO BE UNDISCOVERABLE. 127 keys gated the corpus and
+    // nothing told a caller any of them existed, so "we are a HIPAA covered entity" returned
+    // 10, 3 or 13 obligations depending on which spelling was guessed.
+    const arg0 = rest[0];
+    const NSL = ['entity', 'data', 'event', 'practice', 'purpose', 'law'];
+    const q = NSL.includes(arg0) ? { namespace: arg0 } : (arg0 ? { q: arg0 } : {});
+    const r = call('privacy_facts', q);
+    console.log(`\n  ${b(r.count + ' fact keys')}${arg0 ? dim('  matching "' + arg0 + '"') : ''}\n`);
+    if (!arg0) {
+      for (const [ns, meaning] of Object.entries(r.namespaces)) console.log(`  ${b(ns.padEnd(9))} ${dim(meaning)}`);
+      console.log(`\n  ${dim('privacy-kb facts <namespace>   or   privacy-kb facts <search>')}\n`);
+    }
+    for (const k of r.keys.slice(0, arg0 ? 60 : 14)) {
+      const vals = k.accepted_values.length ? ' = ' + k.accepted_values.slice(0, 4).join(' | ') : '';
+      console.log(`  ${k.key}${dim(vals)}`);
+      console.log(dim(`      gates ${k.gates_obligations} obligation(s)`
+        + (k.gates_exemptions ? `, ${k.gates_exemptions} exemption(s)` : '')
+        + (k.exemption_only ? '  — EXEMPTION-ONLY: nothing else demonstrates this key' : '')
+        + (k.instruments.length ? `  · ${k.instruments.slice(0, 3).join(', ')}` : '')));
+      if (k.aliases.length) console.log(dim(`      also accepted: ${k.aliases.join(', ')}`));
+      if (k.ambiguous_term) console.log(dim(`      AMBIGUOUS: ${k.ambiguous_term.caution.slice(0, 96)}`));
+    }
+    if (!arg0 && r.count > 14) console.log(dim(`\n  …and ${r.count - 14} more. Narrow with a namespace or a search term.`));
+    console.log(`\n${DISCLAIMER}\n`);
+    break;
+  }
+  case 'incidents': {
+    const r = call('privacy_incidents', {});
+    console.log(`\n  ${b(r.count + ' incident characterisations')} · ${r.families.length} families\n`);
+    console.log(dim('  One set of facts can satisfy several at once. A lost laptop of patient records is'));
+    console.log(dim('  a breach of unsecured PHI AND a breach of the security of the system — different'));
+    console.log(dim('  statutes, different definitions, different clocks. event.type takes a LIST.\n'));
+    for (const f of r.families) {
+      console.log(`  ${b(f.key)}  ${dim('— ' + f.meaning.slice(0, 84))}`);
+      for (const mkey of f.members) {
+        const c = r.characterisations.find(x => x.key === mkey);
+        console.log(`      ${mkey.padEnd(38)} ${dim(String(c.used_by.length) + ' record(s)')}`);
+        if (c.definition) console.log(dim(`        decided by: ${c.definition.slice(0, 88)}`));
+      }
+      console.log('');
+    }
+    console.log(`${DISCLAIMER}\n`);
+    break;
+  }
+  case 'breach': {
+    // THE WORKFLOW A LAWYER ACTUALLY REACHES FOR, and until now it was reachable from nowhere.
+    const { entity, data, context, bad_dates, from_ambiguous } = factsFrom(rest);
+    if (refuseBadDates(bad_dates)) break;
+    if (from_ambiguous) { console.log(`\n  --from is ambiguous with ${from_ambiguous.join(' and ')}; use --event.\n`); process.exitCode = 1; break; }
+    // A breach is BOTH characterisations unless the caller narrows it. Asserting one and
+    // silently losing the other is the defect this command exists to make impossible.
+    const r = call('privacy_workflow', { workflow: 'breachNotificationTimeline',
+      entity, data, incident: context.event, context });
+    if (rest.includes('--json')) { console.log(JSON.stringify(r, null, 2)); break; }
+    console.log(`\n${b('Breach notification timeline')}  ${dim('as of ' + (r.as_of ?? '?'))}\n`);
+    const tl = r.sections.find(x => /Timeline/.test(x.heading))?.body ?? [];
+    if (!tl.length) console.log('  (no clock has started — supply --breach --from <date>)');
+    for (const d of tl)
+      console.log(`  ${b(d.computed ?? 'not started')}  ${String(d.duration ?? '').padEnd(18)} ${d.citation ?? d.atom_id}`);
+    const open = r.sections.find(x => /Characterisations not yet made/.test(x.heading))?.body ?? [];
+    if (open.length) {
+      console.log(`\n${b('Not yet characterised')} — each of these would add a duty\n`);
+      for (const c of open) console.log(`  ${c.citation}\n${dim('      needs: ' + c.requires_characterisation.join(', '))}`);
+    }
+    if (!r.complete) {
+      console.log(`\n${b('THIS TIMELINE IS INCOMPLETE')}\n`);
+      for (const c of r.failed_criteria) console.log(`  ✗ ${c.criterion}${c.detail ? dim('\n      ' + c.detail.slice(0, 150)) : ''}`);
+      process.exitCode = 1;
+    } else {
+      console.log(`\n  ${b('Checklist passed')} — ${r.checklist.length} criteria`);
+    }
     console.log(`\n${DISCLAIMER}\n`);
     break;
   }
