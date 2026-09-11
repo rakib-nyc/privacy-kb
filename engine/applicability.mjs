@@ -173,7 +173,15 @@ export function analyze(entity = {}, data = {}, context = {}) {
       instrument_completeness: icov.complete ? null : {
         declared: icov.declared,
         present: icov.present.map(x => x.id),
-        absent: icov.absent.map(x => ({ id: x.id, citations: x.citation_prefix ?? [], supplies: x.supplies })),
+        // PARTIAL categories are the dangerous ones and used to be invisible here: a category
+        // declaring several provisions reported present on the strength of one, so the caller saw
+        // no gap at all. They are reported alongside fully-absent categories, with the specific
+        // provisions that are missing.
+        partial: (icov.partial ?? []).map(x => ({ id: x.id, missing: x.missing_provisions ?? [],
+          supplies: x.supplies })),
+        absent: (icov.absent ?? []).map(x => ({ id: x.id, citations: x.citation_prefix ?? [],
+          supplies: x.supplies })),
+        missing_provisions: icov.missing_provisions ?? [],
         note: icov.summary },
       partial_carve_out: ex.residual_scope ? { level: ex.level, scope: ex.residual_scope,
         note: 'DATA/ACTIVITY-LEVEL carve-out only. The entity remains in scope for everything else under this instrument.' } : null });

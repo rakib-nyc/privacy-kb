@@ -129,7 +129,7 @@ is the honest remaining work.
 |---|---|
 | Records | **248** — 218 obligation, 9 authority, 5 definition, 5 principle, 3 doctrine, 5 workflow_constraint, 2 taxonomy, 1 enforcement_action |
 | Verified | 244 `verbatim_confirmed` · 4 suppressed by invariant I1 and unreachable from any output |
-| Instruments | 54 declared · **53 complete** against their declared duty categories |
+| Instruments | 54 declared · **40 fully present** against their declared duty categories · 14 partial, with the missing provisions named in every answer that touches them |
 | taxonomy leaves covered | 31 / 69 · 38 neither covered nor ruled out of scope, and gate 34 ratchets that number |
 | CI gates | **45**, all named · 60 fixtures · 34 gates fixture-exercised, 11 declared unexercisable in `tests/fixtures/no-fixture.yaml` and why |
 | Walker assumptions | 13 declared, 13 with an executable test |

@@ -79,10 +79,14 @@ const instruments = [...byInstrument.entries()].map(([id, recs]) => {
   const declared = instMeta[id] ?? null;
   const withCite = recs.filter(rec => rec.source?.citation);
   const src = recs.find(rec => rec.source?.url)?.source ?? {};
+  // A category counts as present only when EVERY declared provision is held. Asking whether ANY
+  // prefix matched reported a category as covered on the strength of one of several provisions —
+  // which is how 45 C.F.R. 164.512 and N.Y. GBL 899-aa(8) sat missing behind a green bar.
   const cats = (declared?.categories ?? []).map(cat => {
     const prefixes = cat.citation_prefix ?? [];
-    const present = recs.some(rec => prefixes.some(p => String(rec.source?.citation ?? '').startsWith(p)));
-    return { id: cat.id, supplies: cat.supplies ?? null, present };
+    const missing = prefixes.filter(pre =>
+      !recs.some(rec => String(rec.source?.citation ?? '').startsWith(pre)));
+    return { id: cat.id, supplies: cat.supplies ?? null, present: missing.length === 0, missing };
   });
   return {
     id,
@@ -174,8 +178,9 @@ const card = inst => {
         ${inst.format ? ` · ${esc(inst.format)}` : ''}
         ${inst.fetched ? ` · fetched ${esc(inst.fetched)}` : ''}</p>
       ${inst.note ? `<p class="ic-note">${esc(inst.note)}</p>` : ''}
-      ${inst.complete === false ? `<p class="ic-gap"><b>Declared but not supplied:</b> ${
-        inst.categories.filter(c => !c.present).map(c => `<span>${esc(c.id)}</span>${c.supplies ? ' — ' + esc(c.supplies) : ''}`).join('; ')
+      ${inst.complete === false ? `<p class="ic-gap"><b>Declared but not held:</b> ${
+        inst.categories.filter(c => !c.present).map(c =>
+          `<span>${esc((c.missing ?? []).join(', ') || c.id)}</span>${c.supplies ? ' — ' + esc(c.supplies) : ''}`).join('; ')
       }</p>` : ''}
       <table class="pv">
         <thead><tr><th>Provision</th><th>What it requires</th><th>In force</th><th>Clock</th></tr></thead>

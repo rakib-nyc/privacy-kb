@@ -670,5 +670,35 @@ ok('analyze never throws on hostile input', (() => {
   })());
 }
 
+
+// A PRECONDITION IS NOT A DEADLINE. 16 C.F.R. 313.4(a)(2) requires notice BEFORE any disclosure
+// and is modelled as zero elapsed time, so the computed due date equals the trigger date. The
+// table row therefore read "due 1 August" for a duty that had to be discharged by then, and an
+// entity delivering notice that day after the disclosure would have read the row as satisfied.
+{
+  const corpus = load();
+  const pre = corpus.byId.get('us.cfr.16.313.4.a2.initial_notice_consumer');
+  const d = computeDeadline(pre, '2026-08-01', { via: 'explicit' });
+  ok('a zero-elapsed duty computes to the trigger date', d.computed === '2026-08-01');
+  ok('...and is flagged as a precondition', d.is_precondition === true);
+  ok('...with a caution saying due BY, not ON', /PRECONDITION/.test(d.caution ?? ''));
+
+  const normal = corpus.byId.get('ny.gbl.899_aa.2.notify_residents');
+  const nd = computeDeadline(normal, '2026-08-01', { via: 'explicit' });
+  ok('a real 30-day clock is NOT flagged a precondition', nd.is_precondition === false);
+  // The SHIELD clock reads "without unreasonable delay, provided that such notification shall be
+  // made within thirty days" — a promptness duty with a hard ceiling. The ceiling test only
+  // matched "no later than", so the one provision the documentation leads with was the one whose
+  // dual nature never reached the reader.
+  ok('...and keeps its own dual-standard caution', /outer limit/i.test(nd.caution ?? ''));
+  ok('...because a ceiling phrased "shall be made within" is still a ceiling',
+     nd.is_outer_limit === true);
+  // Guard against the broadened pattern firing where there is no promptness duty.
+  const flat = computeDeadline(corpus.byId.get('ny.gbl.899_aa.9.hipaa_ag_notice'), '2026-08-01',
+    { via: 'explicit' });
+  ok('a flat clock with no promptness duty carries no dual-standard caution',
+     !/DUAL standard/.test(flat.caution ?? ''));
+}
+
 console.log(`\n${fail} failure(s)`);
 process.exit(fail ? 1 : 0);

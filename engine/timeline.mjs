@@ -96,8 +96,24 @@ export function computeDeadline(atom, triggerDateISO, resolution = null) {
     while (n > 0) { end = new Date(end.getTime() + DAY); const w = end.getUTCDay(); if (w !== 0 && w !== 6) n--; }
   } else return { atom_id: atom.id, computed: null, error: `unsupported unit ${unit}` };
 
-  const ceilingOnly = /no case later than|no later than/i.test(d.computation);
+  // A CEILING IS NOT ALWAYS SPELLED "no later than". N.Y. GBL § 899-aa(2) reads "in the most
+  // expedient time possible and without unreasonable delay, provided that such notification
+  // shall be made within thirty days" — a promptness duty with a hard outer bound, which is the
+  // textbook dual standard. The narrower pattern missed it, so the one provision whose dual
+  // nature the documentation leads with was the one that never carried the caution.
+  const ceilingOnly = /no case later than|no later than|in any event within|shall be made within/i
+    .test(d.computation);
   const promptness  = /without unreasonable delay|as soon as (possible|practicable)/i.test(d.computation);
+  // A PRECONDITION IS NOT A DEADLINE. 16 C.F.R. § 313.4(a)(2) requires notice BEFORE any
+  // disclosure; § 313.4(a)(1) requires it not later than the moment the relationship is
+  // established. Both are modelled as zero elapsed time, which computes a due date equal to the
+  // trigger date — so the table row read "due 1 August" for a duty that must already have been
+  // performed by then. An entity that delivers notice that day, after the disclosure, has
+  // violated the rule and would have read the row as satisfied. The nuance was in `computation`,
+  // which is not what a reader scans.
+  const zero = value === 0;
+  const precondition = zero && /\bbefore\b|prior to|must precede|not later than (the moment|when)|upon hiring|immediately after/i
+    .test(`${d.computation} ${atom.verbatim_span ?? ''}`);
   return {
     atom_id: atom.id, citation: atom.source?.citation ?? null,
     trigger_event: d.trigger_event, trigger_date: triggerDateISO,
@@ -130,9 +146,16 @@ export function computeDeadline(atom, triggerDateISO, resolution = null) {
     governing_language: d.computation,
     is_outer_limit: ceilingOnly,
     also_requires_promptness: promptness,
+    // Zero elapsed time means the duty is due BY the trigger, not ON it. Stated on the row.
+    is_precondition: precondition,
     caution: promptness && ceilingOnly
       ? 'This is a DUAL standard. The computed date is an outer limit, not an allowance — delay short of it can still breach the promptness obligation.'
-      : null,
+      : precondition
+        ? 'NOT A DEADLINE — A PRECONDITION. This duty must already be satisfied by the date shown, '
+          + 'not performed on it. Doing it later the same day is a violation.'
+        : zero
+          ? 'Zero elapsed time: the duty falls due with the trigger itself, not after it.'
+          : null,
     tolling: d.tolling ?? [],
     // A CONDITIONAL EXTENSION is not tolling and must not be shown as one date. FCRA
     // § 1681i(a)(1)(B) lets the 30 days become 45 IF the consumer supplies relevant information

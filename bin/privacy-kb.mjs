@@ -234,6 +234,7 @@ function deadlines(args) {
     console.log(dim(`              from: ${d.trigger_label ?? d.trigger_event}`));
     if (d.trigger_via === 'family')
       console.log(dim(`              dated via the "${d.trigger_supplied_as}" family key, not this statute's own trigger`));
+    if (d.is_precondition) console.log(dim(`              PRECONDITION — due BY this date, not on it`));
     if (d.business_day_basis) console.log(dim(`              business days = weekdays; public holidays NOT excluded`));
     if (d.caution) console.log(dim(`              ${d.caution.slice(0, 88)}`));
   }

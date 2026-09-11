@@ -149,6 +149,13 @@ export function buildMemo(entity, data, context, opts) {
       L.push('> OUTER LIMIT, not an allowance. Delay short of it can still breach the promptness obligation.');
       L.push('');
     }
+    const pre = started.filter(d => d.is_precondition);
+    if (pre.length) {
+      L.push(`> **Preconditions, not deadlines.** ${pre.map(d => esc(d.citation)).join(', ')} — each`);
+      L.push('> must ALREADY be satisfied by the date shown, not performed on it. Doing it later the');
+      L.push('> same day is a violation.');
+      L.push('');
+    }
     const bd = started.filter(d => d.business_day_basis);
     if (bd.length) {
       L.push(`> **Business days.** ${bd.map(d => esc(d.citation)).join(', ')} — weekdays only; public`);

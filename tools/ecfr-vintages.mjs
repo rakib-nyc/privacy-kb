@@ -62,7 +62,17 @@ function walk(dir, out = []) {
 /** Whitespace-insensitive containment. The stored span is wrapped by the YAML writer and the
  *  API's XML wraps differently; comparing raw would report every span as missing. */
 const norm = s => String(s).replace(/\s+/g, ' ').trim();
-const stripTags = s => norm(String(s).replace(/<[^>]+>/g, ' '));
+// DECODE ENTITIES BEFORE COMPARING. The versioner returns XML with `&#x2014;` where the stored
+// source carries a literal em dash, so a byte comparison reported 24 spans as absent from every
+// snapshot that are in fact present and character-identical. Those became false "inconclusive"
+// verdicts; the same defect could have produced a false "changed" verdict and moved an
+// effective_from on evidence that was an encoding artifact.
+const decodeEntities = s => String(s)
+  .replace(/&#x([0-9a-fA-F]+);/g, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+  .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+  .replace(/&nbsp;/g, ' ').replace(/&quot;/g, '"').replace(/&apos;/g, "'")
+  .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+const stripTags = s => norm(decodeEntities(String(s).replace(/<[^>]+>/g, ' ')));
 
 /** title, part and section from a record's citation. "45 C.F.R. § 164.502(a)" -> 45/164/164.502 */
 export function cfrCoords(rec) {

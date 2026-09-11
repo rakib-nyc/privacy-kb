@@ -61,15 +61,40 @@ export function instrumentCoverage(instrumentId, corpus) {
         `obligation(s) present do not establish otherwise.` };
   }
   const cats = d.categories ?? [];
-  const hit = cat => (cat.citation_prefix ?? []).some(pre => cites.some(x => x.startsWith(pre)));
-  const present = cats.filter(hit), absent = cats.filter(cat => !hit(cat));
-  return { instrument_id: instrumentId, declared: true, complete: absent.length === 0,
-    title: d.title ?? instrumentId, present, absent, obligations: cites.length,
-    summary: absent.length === 0
+  // A CATEGORY IS PARTIAL WHEN ANY OF ITS DECLARED PROVISIONS IS ABSENT. This used to ask
+  // whether ANY prefix was present, so a category listing several provisions reported "present"
+  // on the strength of one of them.
+  //
+  // 45 C.F.R. § 164.512 is the case that matters. The HIPAA Privacy Rule's
+  // permitted_uses_and_disclosures category declares § 164.506 and § 164.512; only § 164.506 is
+  // held. Asked whether PHI may be disclosed to law enforcement, the engine returned § 164.502(a)
+  // ("may not use or disclose ... except as permitted") and § 164.508(a)(1) (authorisation
+  // required) and reported NO coverage gap — so the answer read as "you need an authorisation"
+  // when § 164.512(f) permits the disclosure without one. A confident answer in the wrong
+  // direction, over a hole the completeness check could not see.
+  //
+  // Seventeen declared provisions across the corpus sat behind this, including
+  // N.Y. GBL § 899-aa(8) — the Attorney General, Department of State and State Police notice
+  // that every SHIELD Act breach requires.
+  const missingOf = cat => (cat.citation_prefix ?? [])
+    .filter(pre => !cites.some(x => x.startsWith(pre)));
+  const enriched = cats.map(cat => ({ ...cat, missing_provisions: missingOf(cat) }));
+  const present = enriched.filter(cat => cat.missing_provisions.length === 0);
+  const partial = enriched.filter(cat =>
+    cat.missing_provisions.length > 0 && cat.missing_provisions.length < (cat.citation_prefix ?? []).length);
+  const absent = enriched.filter(cat =>
+    cat.missing_provisions.length === (cat.citation_prefix ?? []).length && (cat.citation_prefix ?? []).length > 0);
+  const short = [...partial, ...absent];
+  const gaps = short.flatMap(cat => cat.missing_provisions);
+  return { instrument_id: instrumentId, declared: true, complete: short.length === 0,
+    title: d.title ?? instrumentId, present, partial, absent, missing_provisions: gaps,
+    obligations: cites.length,
+    summary: short.length === 0
       ? `${d.title ?? instrumentId}: all ${cats.length} declared duty categories are present.`
       : `${d.title ?? instrumentId} is PARTIALLY EXTRACTED — ${present.length} of ${cats.length} duty ` +
-        `categories present. This analysis is correct as far as it goes and CANNOT reach: ` +
-        absent.map(cat => `${cat.id} (${(cat.citation_prefix ?? []).join(', ')}) — ${cat.supplies}`).join('; ') +
+        `categories fully present. This analysis is correct as far as it goes and CANNOT reach: ` +
+        short.map(cat => `${cat.id} (missing ${cat.missing_provisions.join(', ')})` +
+          (cat.supplies ? ` — ${cat.supplies}` : '')).join('; ') +
         '. Treat those questions as unanswered rather than as answered in the negative.' };
 }
 

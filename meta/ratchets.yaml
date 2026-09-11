@@ -31,7 +31,7 @@ ratchets:
     last_move_direction: down
     reason: Ratcheted 25 -> 24 as the health-tension trio landed clean.
   gate_43_weak_effective_from_basis:
-    value: 106
+    value: 105
     direction: down
     source: tools/date-basis.mjs --check (api_snapshot + undetermined)
     last_moved: '2026-09-09'
@@ -53,6 +53,13 @@ ratchets:
       is evidence about the instrument, and a span can be far younger than the rule containing
       it — 47 C.F.R. s 64.1200(d)(3) dates from 2003 and the words this corpus quotes replaced
       "30 days" with "ten (10) business days" in April 2025.
+
+      106 -> 105. The eCFR comparison did not decode XML entities, so spans carrying an em dash
+      were reported absent from every point-in-time snapshot. That produced 24 false
+      inconclusive verdicts and hid two real ones: 16 C.F.R. 312.3(a), whose text begins at the
+      2025 COPPA amendments while the record claimed 2000, and 16 C.F.R. 318.1(a), which begins
+      at the 2024 Health Breach Rule amendments while the record claimed 2009. Both are now
+      dated from point-in-time evidence.
   gate_8_eval_scenarios:
     value: 30
     direction: up

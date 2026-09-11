@@ -47,10 +47,10 @@ context_not_required: >-
 jurisdiction: US
 jurisdiction_level: federal
 effective_to: null
-effective_from_basis: stated_in_text
+effective_from_basis: versioner_evidence
 effective_from_evidence: >-
-  "September 24, 2009" appears in the rendered text of
-  corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.txt
+  this exact span is absent from 16 C.F.R. § 318.1(a) at 2016-12-22 and first appears at
+  2024-07-29, per the source's point-in-time record (window 2016-12-22..2024-07-29).
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -129,7 +129,7 @@ data_types:
   - phr_identifiable_health_information
   - health_information
 status: in_force
-effective_from: '2009-09-24'
+effective_from: '2024-07-29'
 applies_if:
   all:
     - entity.offers_or_maintains_personal_health_records == true
