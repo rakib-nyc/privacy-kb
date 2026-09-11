@@ -7,7 +7,7 @@ what_this_is: >-
   the repository demonstrates it and a caller would have to read the corpus to find it. That is the
   condition this file exists to make visible.
 totals:
-  keys: 192
+  keys: 193
   exemption_only: 64
 namespaces:
   data:
@@ -42,7 +42,7 @@ namespaces:
       used_by_eval: 0
       discoverable: true
     includes_ny_private_information:
-      used_by_obligation: 5
+      used_by_obligation: 7
       used_by_exemption: 0
       used_by_eval: 1
       discoverable: true
@@ -112,7 +112,7 @@ namespaces:
       used_by_eval: 0
       discoverable: true
     is_phi:
-      used_by_obligation: 11
+      used_by_obligation: 17
       used_by_exemption: 0
       used_by_eval: 0
       discoverable: true
@@ -383,7 +383,7 @@ namespaces:
       used_by_eval: 0
       discoverable: true
     is_hipaa_covered_entity:
-      used_by_obligation: 25
+      used_by_obligation: 31
       used_by_exemption: 3
       used_by_eval: 0
       discoverable: true
@@ -528,7 +528,7 @@ namespaces:
       used_by_eval: 0
       discoverable: true
     owns_or_licenses_computerized_data:
-      used_by_obligation: 4
+      used_by_obligation: 6
       used_by_exemption: 0
       used_by_eval: 0
       discoverable: true
@@ -623,6 +623,11 @@ namespaces:
       used_by_exemption: 0
       used_by_eval: 0
       discoverable: true
+    ny_residents_notified:
+      used_by_obligation: 1
+      used_by_exemption: 0
+      used_by_eval: 0
+      discoverable: true
     person_stated_entity_specific_do_not_call:
       used_by_obligation: 1
       used_by_exemption: 1
@@ -634,7 +639,7 @@ namespaces:
       used_by_eval: 0
       discoverable: true
     type:
-      used_by_obligation: 37
+      used_by_obligation: 39
       used_by_exemption: 0
       used_by_eval: 0
       discoverable: true

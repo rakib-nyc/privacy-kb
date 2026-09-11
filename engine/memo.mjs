@@ -60,8 +60,13 @@ export function buildMemo(entity, data, context, opts) {
     for (const [k, v] of Object.entries(obj ?? {}))
       assertedFacts.push({ key: `${ns}.${k}`, value: v });
 
+  // A permission is not a duty; § 164.512 permits a disclosure and compels nothing. Grouping them
+  // together under "what applies" reads as a list of things the client must do.
+  const isPermit = hit => corpus.byId.get(hit.atom_id)?.obligation_type === 'permit';
+  const duties = r.applicable.filter(hit => !isPermit(hit));
+  const permissions = r.applicable.filter(isPermit);
   const byInstrument = {};
-  for (const hit of r.applicable) (byInstrument[hit.instrument_id] ??= []).push(hit);
+  for (const hit of duties) (byInstrument[hit.instrument_id] ??= []).push(hit);
 
   const started = r.deadlines.filter(d => d.computed)
     .sort((x, y) => x.computed.localeCompare(y.computed));
@@ -123,6 +128,19 @@ export function buildMemo(entity, data, context, opts) {
       if (hit.partial_carve_out) L.push(`- **carve-out applies**: ${esc(hit.partial_carve_out.note)}`);
       L.push('');
     }
+  }
+
+  if (permissions.length) {
+    L.push('### Permissions — what the law ALLOWS, not what it requires');
+    L.push('');
+    L.push('These compel nothing. Each is conditional on its own paragraph, and a permission');
+    L.push('identified here is the beginning of the analysis rather than the end of it.');
+    L.push('');
+    for (const hit of permissions) {
+      const src = corpus.byId.get(hit.atom_id);
+      L.push(`- **${esc(hit.citation)}** — ${esc(src?.summary ?? '')}`);
+    }
+    L.push('');
   }
 
   L.push('## 3. Deadlines');

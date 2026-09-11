@@ -80,6 +80,12 @@ export const TRIGGERS = {
     label: "receipt of an individual's request to amend a record", family: 'rights_request',
     standard: 'Privacy Act, 5 U.S.C. § 552a(d)(2)(A). Acknowledgment clock, distinct from the '
       + 'HIPAA amendment clock.' },
+  receipt_of_accounting_request: {
+    label: 'receipt of the request for an accounting of disclosures', family: 'rights_request',
+    standard: '45 C.F.R. § 164.528(c)(1). Sixty calendar days from receipt, not thirty — the '
+      + 'access clock at § 164.524 is the one that runs in thirty, and the two are routinely '
+      + 'confused. One 30-day extension is available under § 164.528(c)(2) and must be earned '
+      + 'with a written statement of the reason and the expected date.' },
   receipt_of_parental_inspection_request: {
     label: "the parent's request to inspect and review the student's education records",
     family: 'rights_request' },
@@ -165,6 +171,8 @@ export const ALIASES = {
   "the parent's request to inspect and review the student's education records":
     'receipt_of_parental_inspection_request',
   'receipt of the consumer dispute': 'receipt_of_consumer_dispute',
+  'receipt of the request for an accounting of disclosures': 'receipt_of_accounting_request',
+  'receipt of an accounting request': 'receipt_of_accounting_request',
   'determination that the dispute is frivolous or irrelevant': 'determination_dispute_frivolous',
   "receipt of the recipient's request not to receive further commercial email":
     'receipt_of_opt_out_request',

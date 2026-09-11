@@ -31,7 +31,7 @@ ratchets:
     last_move_direction: down
     reason: Ratcheted 25 -> 24 as the health-tension trio landed clean.
   gate_43_weak_effective_from_basis:
-    value: 105
+    value: 107
     direction: down
     source: tools/date-basis.mjs --check (api_snapshot + undetermined)
     last_moved: '2026-09-09'
@@ -60,6 +60,15 @@ ratchets:
       2025 COPPA amendments while the record claimed 2000, and 16 C.F.R. 318.1(a), which begins
       at the 2024 Health Breach Rule amendments while the record claimed 2009. Both are now
       dated from point-in-time evidence.
+
+      105 -> 107, RAISED DELIBERATELY. N.Y. GBL 899-aa(8)(a) and (8)(b) were added to close the
+      regulator-notice gap, and both inherit the api_snapshot basis of every OpenLegislation
+      record in the corpus: the SHIELD Act's effective_from is the date the API snapshot was
+      taken, not a date the law states. The alternative was to leave the Attorney General notice
+      out of the corpus, which is the worse error — a breach timeline that omits a mandatory
+      duty is wrong, while one that carries it on a weak date is incomplete and says so. These
+      two fall the moment NYSENATE_API_KEY is available and the NY publishedDates backfill runs;
+      see DEBT-023.
   gate_8_eval_scenarios:
     value: 30
     direction: up

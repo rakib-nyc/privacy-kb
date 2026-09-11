@@ -1,0 +1,124 @@
+# N.Y. GBL § 899-aa(8) — the regulator and credit-bureau notices.
+#
+# The SHIELD Act declaration names a regulator_notice category and the corpus did not hold it. A
+# New York retailer asking the flagship question — 4,000 residents' data taken, what do we do —
+# was told to notify the residents and given a complete timeline, with no mention of the Attorney
+# General, the Department of State or the State Police. The duty is mandatory for every breach
+# that reaches a New York resident.
+
+segmentation: ny-gbs-899-aa
+like: ny.gbl.899_aa.2.notify_residents
+out_dir: corpus/state/ny/shield-act/atoms
+
+records:
+  - id: ny.gbl.899_aa.8a.regulator_notice
+    context_not_required: >-
+      Subdivision 8(a) states the whole duty: the trigger, the four recipients, exactly what must
+      be reported, the copy requirement, the condition on the Department of Financial Services
+      notice, and the rule that it must not delay notice to residents.
+    citation: N.Y. Gen. Bus. Law § 899-aa(8)(a)
+    section: '899-AA'
+    path: ['8', a]
+    obligation_type: notify
+    confidence: high
+    applies_to_role: controller
+    subject: { domain: V.A.1, lifecycle: [VI] }
+    applies_if:
+      all:
+        - entity.owns_or_licenses_computerized_data == true
+        - data.includes_ny_private_information == true
+        - event.type in ['breach_of_security_of_the_system']
+    no_deadline_stated: >-
+      The statute sets NO period for this notice. It times the duty only by forbidding it to
+      delay the notice to affected residents, so it runs alongside the thirty-day clock in
+      § 899-aa(2) rather than after it. Recording a computed due date would invent a deadline
+      the legislature did not set, and a zero-day clock would head every breach timeline as
+      though it were the most urgent item.
+    summary: >-
+      Where any New York residents are to be notified, the business must also notify the Attorney
+      General, the Department of State and the Division of State Police, and must give them the
+      timing, content and distribution of the notices, the approximate number of affected persons
+      and a copy of the notice template.
+    requirement_detail: >-
+      THIS IS A SEPARATE, MANDATORY DUTY AND IT IS THE ONE MOST OFTEN MISSED. Notifying the
+      affected residents does not discharge it. It is triggered by the fact that residents are to
+      be notified at all, with no headcount threshold anywhere in the paragraph — one New York
+      resident is enough.
+      WHAT MUST BE SENT IS MORE THAN A HEADS-UP. Four things are enumerated: the timing, content
+      and distribution of the notices; the approximate number of affected persons; and a copy of
+      the template actually sent to residents. An entity that emails the Attorney General to say a
+      breach occurred has not complied.
+      THE FOURTH RECIPIENT IS CONDITIONAL. The Department of Financial Services is notified only
+      if the business is a covered entity as defined in 23 NYCRR 500.1, and that notice must be
+      given in compliance with 23 NYCRR 500.17. The other three recipients are unconditional.
+      IT MUST NOT DELAY THE RESIDENT NOTICE. The closing sentence forecloses the sequencing a
+      business might otherwise prefer — regulator first, then residents — and means the two run
+      together rather than in series.
+      The § 899-aa(2) exemption for an inadvertent disclosure removes notice to affected persons
+      only. Where that carve-out is claimed for more than 500 residents, § 899-aa(2)(a) separately
+      requires the written determination to go to the Attorney General within ten days.
+    common_errors:
+      - >-
+        Treating notice to residents as discharging the regulator duty. They are separate, and
+        this one has no threshold.
+      - >-
+        Sending a bare notification. The paragraph enumerates timing, content, distribution,
+        approximate number affected, and a copy of the template.
+      - >-
+        Notifying the Department of Financial Services reflexively. That recipient is conditional
+        on being a covered entity under 23 NYCRR 500.1.
+      - >-
+        Notifying regulators first and residents afterwards. The paragraph forbids the regulator
+        notice from delaying the resident notice.
+    open_questions:
+      - >-
+        23 NYCRR Part 500, which supplies both the covered-entity definition at 500.1 and the
+        notice mechanics at 500.17, is not in the corpus.
+
+  - id: ny.gbl.899_aa.8b.consumer_reporting_agency_notice
+    context_not_required: >-
+      Subdivision 8(b) states the whole duty: the five-thousand-resident threshold, the recipient
+      class, what must be reported, and the rule that it must not delay notice to residents.
+    citation: N.Y. Gen. Bus. Law § 899-aa(8)(b)
+    section: '899-AA'
+    path: ['8', b]
+    obligation_type: notify
+    confidence: high
+    applies_to_role: controller
+    subject: { domain: V.A.1, lifecycle: [VI] }
+    applies_if:
+      all:
+        - entity.owns_or_licenses_computerized_data == true
+        - data.includes_ny_private_information == true
+        - event.type in ['breach_of_security_of_the_system']
+        - event.ny_residents_notified > 5000
+    no_deadline_stated: >-
+      The statute sets NO period for this notice. It times the duty only by forbidding it to
+      delay the notice to affected residents, so it runs alongside the thirty-day clock in
+      § 899-aa(2) rather than after it. Recording a computed due date would invent a deadline
+      the legislature did not set, and a zero-day clock would head every breach timeline as
+      though it were the most urgent item.
+    summary: >-
+      Where more than five thousand New York residents are to be notified at one time, the
+      business must also notify the consumer reporting agencies of the timing, content and
+      distribution of the notices and the approximate number of affected persons.
+    requirement_detail: >-
+      THE THRESHOLD IS ON RESIDENTS NOTIFIED AT ONE TIME, not on the size of the breach. A breach
+      touching more people whose notices go out in separate tranches may fall outside this
+      paragraph; a smaller breach notified in a single run may fall inside it.
+      Note what is NOT required. Unlike subdivision 8(a), this paragraph does not call for a copy
+      of the notice template — only timing, content, distribution and the approximate number.
+      The agencies are not named. The statute says consumer reporting agencies as a class, which
+      in practice means the nationwide agencies, and identifying them is left to the business.
+      As with 8(a), this notice may not delay the notice to affected residents.
+    common_errors:
+      - >-
+        Reading the threshold as the number of people affected. It is the number to be notified
+        at one time.
+      - >-
+        Assuming the same package as the Attorney General notice. The template copy is required by
+        8(a) and not by this paragraph.
+    open_questions:
+      - >-
+        The statute does not name the consumer reporting agencies, and the corpus holds no record
+        identifying which agencies satisfy the duty.

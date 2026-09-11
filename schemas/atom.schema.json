@@ -328,6 +328,7 @@
   },
   "obligation_type": {
    "enum": [
+    "permit",
     "notify",
     "disclose",
     "obtain_consent",
@@ -340,7 +341,8 @@
     "register",
     "train",
     "prohibit"
-   ]
+   ],
+   "description": "What the provision DOES. `permit` is a permission, not a duty: 45 C.F.R. 164.512 allows a disclosure without authorisation and compels nothing. Reporting it among obligations would tell a reader they must do what the rule merely lets them do."
   },
   "summary": {
    "type": "string",

@@ -1,0 +1,133 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US-NY
+jurisdiction_level: state
+regulator:
+  - state_ag
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2025-03-28'
+effective_to: null
+effective_from_basis: api_snapshot
+effective_from_evidence: >-
+  equals the source payload's activeDate (2025-03-28). This is the date the API's snapshot was
+  taken, not a date the law states.
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+interpreted_by: []
+confidence: high
+related: []
+preemption:
+  posture: ceiling
+  authority: N.Y. Gen. Bus. Law § 899-aa(10)
+  note: >-
+    CEILING as to LOCAL law only. Subdivision 10 makes § 899-aa exclusive and preempts local
+    ordinances, forbidding a locality from imposing anything more restrictive. It says nothing about
+    federal law and does not displace it — federal breach regimes run alongside, which is what
+    subdivision 2(b) is about.
+enforcement:
+  enforcers:
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      AG injunction, plus damages for actual costs or losses including consequential financial
+      losses. For a knowing or reckless violation, a civil penalty of the greater of $5,000 or up to
+      $20 per instance of failed notification, capped at $250,000.
+    range:
+      min: 5000
+      unit: usd_civil_penalty_floor_knowing
+    note: >-
+      NO PRIVATE RIGHT OF ACTION. § 899-aa(6)(a) gives the action to the attorney general. Private
+      plaintiffs reach breach conduct through GBL § 349 and common-law theories instead, which is
+      why the two NY instruments are read together.
+  statute_of_limitations: >-
+    Three years from the earlier of the AG becoming aware of the violation or the date notice was
+    sent under § 899-aa(8)(a); never more than six years from discovery of the breach by the
+    company, unless the company took steps to hide it.
+id: ny.gbl.899_aa.8b.consumer_reporting_agency_notice
+source:
+  citation: N.Y. Gen. Bus. Law § 899-aa(8)(b)
+  instrument_id: ny.gbl.899_aa
+  url: https://legislation.nysenate.gov/api/3/laws/GBS/899-AA
+  fetched: '2026-08-19'
+  raw_file: corpus/state/ny/shield-act/raw/ny-gbs-899-aa.json
+  raw_sha256: cb912ca3a2a1da483cfbc51c28abeb69b8a93b39fb31ae73a355ce1f5003f4c0
+  text_file: corpus/state/ny/shield-act/raw/ny-gbs-899-aa.txt
+  text_sha256: 9995a916100685826810e2bc5e3b1fac4ef3fe7dfc3750f223663bb9b3abfb47
+  text_extraction_cmd: python3 tools/render-text.py corpus/state/ny/shield-act/raw/ny-gbs-899-aa.json
+  format: openleg_json
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - NY Senate OpenLegislation API v3, laws/GBS/899-AA, full=true
+    result: structured_source_used
+    note: null
+  segment_sha256: 2868c4f5c0ab3c2196aca647adcd01f99bf2cf9b23cebd898a4c65903cc46b92
+verbatim_span: >-
+  In the event that more than five thousand New York residents are to be notified at one time, the
+  person or business shall also notify consumer reporting agencies as to the timing, content and
+  distribution of the notices and approximate number of affected persons. Such notice shall be made
+  without delaying notice to affected New York residents.
+paragraph_path:
+  path:
+    - '8'
+    - b
+  anchor: 899-AA
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from ny-gbs-899-aa.seg.json, which is the segmentation of
+    corpus/state/ny/shield-act/raw/ny-gbs-899-aa.json at sha256 cb912ca3a2a1da48…
+subject:
+  domain: V.A.1
+  lifecycle:
+    - VI
+federal_relationship: gap_fills
+applies_if:
+  all:
+    - entity.owns_or_licenses_computerized_data == true
+    - data.includes_ny_private_information == true
+    - event.type in ['breach_of_security_of_the_system']
+    - event.ny_residents_notified > 5000
+obligation_type: notify
+summary: >-
+  Where more than five thousand New York residents are to be notified at one time, the business must
+  also notify the consumer reporting agencies of the timing, content and distribution of the notices
+  and the approximate number of affected persons.
+requirement_detail: >-
+  THE THRESHOLD IS ON RESIDENTS NOTIFIED AT ONE TIME, not on the size of the breach. A breach
+  touching more people whose notices go out in separate tranches may fall outside this paragraph; a
+  smaller breach notified in a single run may fall inside it. Note what is NOT required. Unlike
+  subdivision 8(a), this paragraph does not call for a copy of the notice template — only timing,
+  content, distribution and the approximate number. The agencies are not named. The statute says
+  consumer reporting agencies as a class, which in practice means the nationwide agencies, and
+  identifying them is left to the business. As with 8(a), this notice may not delay the notice to
+  affected residents.
+exemptions: []
+common_errors:
+  - >-
+    Reading the threshold as the number of people affected. It is the number to be notified at one
+    time.
+  - >-
+    Assuming the same package as the Attorney General notice. The template copy is required by 8(a)
+    and not by this paragraph.
+open_questions:
+  - >-
+    The statute does not name the consumer reporting agencies, and the corpus holds no record
+    identifying which agencies satisfy the duty.
+no_deadline_stated: >-
+  The statute sets NO period for this notice. It times the duty only by forbidding it to delay the
+  notice to affected residents, so it runs alongside the thirty-day clock in § 899-aa(2) rather than
+  after it. Recording a computed due date would invent a deadline the legislature did not set, and a
+  zero-day clock would head every breach timeline as though it were the most urgent item.
+context_not_required: >-
+  Subdivision 8(b) states the whole duty: the five-thousand-resident threshold, the recipient class,
+  what must be reported, and the rule that it must not delay notice to residents.

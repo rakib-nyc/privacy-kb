@@ -1,0 +1,248 @@
+# 45 C.F.R. §§ 164.512 and 164.528 — the two provisions the HIPAA Privacy Rule declaration names
+# and the corpus did not hold.
+#
+# § 164.512 is the reason this matters. Asked whether PHI may be disclosed to law enforcement, the
+# engine returned § 164.502(a) ("may not use or disclose ... except as permitted") and
+# § 164.508(a)(1) (authorisation required) and reported no coverage gap — an answer that reads as
+# "you need an authorisation" when this section permits the disclosure without one.
+#
+# Only spans that are SUBSTANTIVELY COMPLETE are cut. Most of § 164.512's subsections are chapeaux
+# ending in a colon — "(f)(1) A covered entity may disclose protected health information:" is
+# verbatim and says nothing. Quoting one would be the failure this repository exists to prevent.
+# Paragraph (f) at the top level states the law-enforcement permission in full and points at its
+# own conditions, so that is the one cut.
+
+segmentation: 45-cfr-164
+like: us.cfr.45.164_508.a_1          # supplies preemption, enforcement, regulator, sector, source
+out_dir: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/atoms
+
+records:
+  - id: us.cfr.45.164_512.general_permission
+    citation: 45 C.F.R. § 164.512
+    section: '164.512'
+    path: []
+    obligation_type: permit
+    confidence: high
+    subject: { domain: II.B.1, lifecycle: [IV] }
+    applies_if:
+      all:
+        - entity.is_hipaa_covered_entity == true
+        - data.is_phi == true
+    summary: >-
+      A covered entity may use or disclose protected health information without the individual's
+      written authorization, and without giving the individual an opportunity to agree or object,
+      in the situations this section covers.
+    requirement_detail: >-
+      THIS IS THE PROVISION THAT ANSWERS WHETHER AN AUTHORIZATION IS NEEDED AT ALL. Section 164.502(a) states
+      the prohibition and § 164.508 states the authorization requirement; this section is the
+      exception both are subject to. Reading the first two without this one produces the common
+      and consequential error of telling a covered entity it needs an authorization for a
+      disclosure the Rule permits outright.
+      EACH PERMISSION IS CONDITIONAL. The section permits nothing at large — it opens twelve
+      specific situations, each with its own conditions in its own paragraph, and the span is
+      expressly "subject to the applicable requirements of this section and § 164.509". A
+      permission identified here is the beginning of the analysis, not the end of it.
+      The 2024 reproductive-health rule carved § 164.502(a)(5)(iii) out of the front of it, so a
+      disclosure otherwise permitted here is still prohibited where that paragraph reaches.
+      Note the closing sentence: where this section requires the entity to inform the individual,
+      or permits the individual to agree, both may be done VERBALLY. Written process is not
+      required for these situations.
+    common_errors:
+      - >-
+        Treating § 164.508 as the whole answer on authorization. It is subject to this section.
+      - >-
+        Reading a permission here as unconditional. Each paragraph carries its own conditions, and
+        the chapeau makes the whole section subject to them.
+      - >-
+        Assuming a written record of the individual's agreement is required. The section permits
+        it verbally.
+    open_questions: []
+
+  - id: us.cfr.45.164_512.a1.required_by_law
+    context_not_required: >-
+      The section chapeau at § 164.512 opens the permissions and is quoted in full as its own record. This paragraph states the required-by-law permission completely: the entity, the act, the condition and the limit are all in the span.
+    citation: 45 C.F.R. § 164.512(a)(1)
+    section: '164.512'
+    path: [a, '1']
+    obligation_type: permit
+    confidence: high
+    subject: { domain: II.B.1, lifecycle: [IV] }
+    applies_if:
+      all:
+        - entity.is_hipaa_covered_entity == true
+        - data.is_phi == true
+    summary: >-
+      A covered entity may use or disclose protected health information to the extent the use or
+      disclosure is required by law, limited to the relevant requirements of that law.
+    requirement_detail: >-
+      THE PERMISSION IS BOUNDED BY THE LAW THAT COMPELS IT. "To the extent that" and "limited to
+      the relevant requirements of such law" mean the mandate defines the scope: a subpoena for
+      one record does not permit disclosing a file. Disclosing more than the compelling law
+      requires is not protected by this paragraph.
+      "Required by law" is a defined term at § 164.103 and is narrower than lawful. It means a
+      mandate enforceable in court, not a request an entity is permitted to honour. A voluntary
+      response to a law enforcement request is not "required by law" and must find its permission
+      elsewhere, which is what paragraph (f) is for.
+    common_errors:
+      - >-
+        Treating any lawful request as "required by law". The defined term requires a mandate
+        enforceable in court, not permission to disclose.
+      - >-
+        Disclosing the whole record where the mandate reaches part of it. The permission is
+        limited to what the compelling law requires.
+    open_questions: []
+
+  - id: us.cfr.45.164_512.f.law_enforcement
+    context_not_required: >-
+      Paragraph (f) is the top-level statement of the law-enforcement permission. It names the entity, the recipient, the purpose, and that the conditions are in (f)(1) to (f)(6) — so the span does not overstate the permission by omitting them.
+    citation: 45 C.F.R. § 164.512(f)
+    section: '164.512'
+    path: [f]
+    obligation_type: permit
+    confidence: high
+    subject: { domain: II.B.1, lifecycle: [IV] }
+    applies_if:
+      all:
+        - entity.is_hipaa_covered_entity == true
+        - data.is_phi == true
+    summary: >-
+      A covered entity may disclose protected health information to a law enforcement official for
+      a law enforcement purpose, if the conditions in paragraphs (f)(1) through (f)(6) are met.
+    requirement_detail: >-
+      NO AUTHORIZATION IS REQUIRED FOR A DISCLOSURE THAT MEETS THESE CONDITIONS, which is the
+      answer § 164.502(a) and § 164.508 alone appear to contradict.
+      THE PERMISSION IS CONDITIONAL AND THE CONDITIONS DIFFER BY SITUATION. Paragraphs (f)(1)
+      through (f)(6) each govern a different circumstance — compulsory process, a request to
+      identify or locate a suspect or missing person, information about a victim, a suspected
+      death, evidence of a crime on the premises, and a medical emergency. The right question is never whether police may be given records, but which paragraph
+      governs and whether its conditions are met.
+      IT IS A PERMISSION, NOT A MANDATE. Nothing here obliges a covered entity to disclose. Where
+      another law compels the disclosure, the permission is paragraph (a)(1)'s, and its scope is
+      bounded by that law.
+      The corpus holds this paragraph and not (f)(1) to (f)(6). A determination that a specific
+      disclosure is permitted requires reading the applicable one against the primary source.
+    common_errors:
+      - >-
+        Reading this as permitting disclosure to law enforcement on request. Each paragraph sets
+        conditions, and several require specific process or a specific purpose.
+      - >-
+        Treating the permission as a requirement. It permits; it does not compel.
+      - >-
+        Using this paragraph where another law compels the disclosure. That is paragraph (a)(1),
+        whose scope is limited to what the compelling law requires.
+    open_questions:
+      - >-
+        Paragraphs (f)(1) through (f)(6) are not in the corpus, so the conditions that govern any
+        particular law enforcement disclosure cannot be checked here.
+
+  - id: us.cfr.45.164_512.l.workers_compensation
+    context_not_required: >-
+      Self-contained. The span carries the permission, the authorising source, the extent limit and the no-fault qualifier without reference to any other paragraph.
+    citation: 45 C.F.R. § 164.512(l)
+    section: '164.512'
+    path: [l]
+    obligation_type: permit
+    confidence: high
+    subject: { domain: II.B.1, lifecycle: [IV] }
+    applies_if:
+      all:
+        - entity.is_hipaa_covered_entity == true
+        - data.is_phi == true
+    summary: >-
+      A covered entity may disclose protected health information as authorized by, and to the
+      extent necessary to comply with, workers' compensation and similar no-fault programs.
+    requirement_detail: >-
+      Two limits sit in the words. "As authorized by" ties the permission to the programme's own
+      law, and "to the extent necessary to comply" bounds the volume — this is not a general
+      permission to send a claims administrator a file.
+      The programme must be established by law and must provide benefits for work-related injury
+      or illness WITHOUT REGARD TO FAULT. A disclosure to an employer outside such a programme is
+      not covered by this paragraph; the workforce-member permission at (b)(1)(v) is a different
+      route with different conditions.
+    common_errors:
+      - >-
+        Reading it as a general permission to disclose to an employer. It reaches a no-fault
+        statutory benefits programme, not the employment relationship.
+    open_questions: []
+
+  - id: us.cfr.45.164_528.a1.accounting_right
+    context_not_required: >-
+      The span states the right, its six-year look-back and the fact that exceptions follow. It does not depend on a chapeau; the exceptions it points to are recorded in span_truncation_note and open_questions.
+    citation: 45 C.F.R. § 164.528(a)(1)
+    section: '164.528'
+    path: [a, '1']
+    obligation_type: disclose
+    confidence: high
+    subject: { domain: II.B.1, lifecycle: [VI] }
+    applies_if:
+      all:
+        - entity.is_hipaa_covered_entity == true
+        - data.is_phi == true
+    summary: >-
+      An individual has a right to an accounting of disclosures of their protected health
+      information made in the six years before the request, subject to enumerated exceptions.
+    requirement_detail: >-
+      THE EXCEPTIONS ARE THE SUBSTANCE OF THIS RIGHT. The span ends at "except for disclosures:"
+      and the list that follows removes the categories that account for most disclosures a covered
+      entity makes — among them treatment, payment and health care operations. An accounting is
+      therefore not a log of everything; it is a log of what is left after the carve-outs.
+      The look-back is six years from the DATE OF THE REQUEST, not from the disclosure.
+      The exception list is at § 164.528(a)(1)(i) to (ix) and is not in the corpus. Telling an
+      individual what will and will not appear in their accounting requires reading it.
+    span_truncation_note: >-
+      The span stops at the words "except for disclosures:" because the enumerated exceptions are
+      separate leaves. It is cut there deliberately rather than one clause earlier: stopping at
+      "six years prior to the date on which the accounting is requested" would state an unqualified
+      right, which is the opposite of the rule.
+    common_errors:
+      - >-
+        Treating the accounting as covering all disclosures. Treatment, payment and operations
+        disclosures are excepted, and they are most of them.
+      - >-
+        Running the six years from the disclosure. It runs back from the date of the request.
+    open_questions:
+      - >-
+        The exceptions at § 164.528(a)(1)(i) to (ix) are not in the corpus, so which disclosures
+        fall outside a given accounting cannot be determined here.
+
+  - id: us.cfr.45.164_528.c1.accounting_deadline
+    context_not_required: >-
+      Self-contained. The span carries the duty, the clock and the trigger. The subparagraphs it points to describe what acting consists of and do not alter the 60 days.
+    citation: 45 C.F.R. § 164.528(c)(1)
+    section: '164.528'
+    path: [c, '1']
+    obligation_type: disclose
+    confidence: high
+    subject: { domain: II.B.1, lifecycle: [VI] }
+    applies_if:
+      all:
+        - entity.is_hipaa_covered_entity == true
+        - data.is_phi == true
+    deadline:
+      trigger_event: receipt_of_accounting_request
+      duration: { value: 60, unit: calendar_days }
+      computation: >-
+        No later than 60 days after receipt of the request. The span states the outer limit; the
+        subparagraphs that follow set out what acting on the request consists of, and § 164.528(c)(2)
+        provides a single 30-day extension with written notice of the reason and the expected date.
+      tolling: []
+    summary: >-
+      A covered entity must act on a request for an accounting of disclosures no later than 60
+      days after receiving it.
+    requirement_detail: >-
+      THE CLOCK RUNS FROM RECEIPT, not from the period the accounting covers. Sixty calendar days,
+      not business days.
+      Acting on the request is not the same as delivering the accounting. The subparagraphs that follow define what acting
+      consists of, and § 164.528(c)(2) permits one extension of no more than 30 days if the entity
+      gives the individual a written statement of the reason and the date by which it will provide
+      the accounting. An entity that takes the extension without providing that written statement
+      has not earned it.
+    common_errors:
+      - >-
+        Assuming a 30-day clock by analogy to § 164.524 access requests. Accounting is 60 days.
+      - >-
+        Taking the extension without giving the written statement § 164.528(c)(2) conditions it on.
+    open_questions:
+      - >-
+        § 164.528(c)(2), which sets the conditions on the single 30-day extension, is not in the
+        corpus.

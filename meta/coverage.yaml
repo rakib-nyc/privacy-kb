@@ -234,9 +234,15 @@ domains:
               - us.cfr.45.164_504.e_2
               - us.cfr.45.164_506.c_1
               - us.cfr.45.164_508.a_1
+              - us.cfr.45.164_512.a1.required_by_law
+              - us.cfr.45.164_512.f.law_enforcement
+              - us.cfr.45.164_512.general_permission
+              - us.cfr.45.164_512.l.workers_compensation
               - us.cfr.45.164_520.a_1
               - us.cfr.45.164_524.b_2_i
               - us.cfr.45.164_526.a_1
+              - us.cfr.45.164_528.a1.accounting_right
+              - us.cfr.45.164_528.c1.accounting_deadline
               - us.def.personal_information.hipaa.phi
               - us.hipaa.breach.164_402.breach_definition
               - us.hipaa.breach.164_404.individual_notice
@@ -658,6 +664,8 @@ domains:
               - ny.gbl.899_aa.2.notify_residents
               - ny.gbl.899_aa.3.notify_owner
               - ny.gbl.899_aa.7.notice_content
+              - ny.gbl.899_aa.8a.regulator_notice
+              - ny.gbl.899_aa.8b.consumer_reporting_agency_notice
               - ny.gbl.899_aa.9.hipaa_ag_notice
               - ny.gbl.899_bb.1.compliant_regulated_entity
               - ny.gbl.899_bb.2.reasonable_safeguards

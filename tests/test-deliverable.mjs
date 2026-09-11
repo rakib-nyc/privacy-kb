@@ -165,5 +165,55 @@ const CTX = { as_of: '2026-09-10', state_layers: ['US-NY'],
      cli('memo', '--hipaa', '--ny-data', '--breach', '--from', '2026-08-01')));
 }
 
+
+// THE SHIELD ACT REGULATOR NOTICE. N.Y. GBL 899-aa(8)(a) requires notice to the Attorney General,
+// the Department of State and the Division of State Police for every breach reaching a New York
+// resident, with no headcount threshold. It was declared in the instrument's own coverage
+// declaration and absent from the corpus, so a New York retailer asking the flagship question was
+// handed a timeline that reported itself complete and never mentioned Albany.
+{
+  const r = call('privacy_analyze', {
+    entity: { owns_or_licenses_computerized_data: true, within_ftc_jurisdiction: true,
+              in_or_affecting_commerce: true, nexus: 'US-NY' },
+    data: { includes_ny_private_information: true },
+    as_of: '2026-09-11', state_layers: ['US-NY'],
+    event: { type: ['breach_of_security_of_the_system'], breach_discovery: '2026-08-01' },
+  });
+  const cites = r.applicable.map(hit => hit.citation);
+  ok('a New York breach surfaces the Attorney General notice',
+     cites.some(c => /899-aa\(8\)\(a\)/.test(c)), cites.join(' | '));
+  ok('...and the resident-notice clock alongside it', cites.some(c => /899-aa\(2\)/.test(c)));
+
+  // It sets no period, so it must NOT appear as a dated clock — that would invent a deadline.
+  const dated = r.deadlines.filter(d => /899-aa\(8\)/.test(d.citation ?? ''));
+  ok('...but carries no invented due date', dated.length === 0);
+
+  // And the CLI must print it, or the duty is in the corpus and off the page.
+  const out = cli('breach', '--ny-data', '--breach', '--from', '2026-08-01');
+  ok('privacy-kb breach prints the Attorney General notice', out.includes('899-aa(8)(a)'));
+  ok('...under a heading that says it has no fixed period', /no fixed period/i.test(out));
+}
+
+// 45 C.F.R. 164.512 — the permissions. Asked whether PHI may go to law enforcement, the engine
+// returned only the prohibition and the authorisation requirement, which reads as "you need an
+// authorisation" when the Rule permits the disclosure outright.
+{
+  const r = call('privacy_analyze', {
+    entity: { is_hipaa_covered_entity: true, within_ftc_jurisdiction: true, in_or_affecting_commerce: true },
+    data: { is_phi: true, types: ['phi'] }, as_of: '2026-09-11',
+  });
+  const cites = r.applicable.map(hit => hit.citation);
+  ok('the law-enforcement permission is present', cites.some(c => /164\.512\(f\)/.test(c)));
+  ok('...and the required-by-law permission', cites.some(c => /164\.512\(a\)\(1\)/.test(c)));
+  ok('...and the accounting-of-disclosures right', cites.some(c => /164\.528/.test(c)));
+
+  // A permission must be typed as one, or it reads as a duty to disclose.
+  const corpus = load();
+  const permits = r.applicable.filter(hit => corpus.byId.get(hit.atom_id)?.obligation_type === 'permit');
+  ok('permissions are typed permit, not disclose', permits.length >= 3, `${permits.length}`);
+  const out = cli('ask', '--hipaa');
+  ok('...and the CLI heads them separately from obligations', /Permissions .* MAY do, not must/.test(out));
+}
+
 console.log(`\n${fail} failure(s)`);
 process.exit(fail ? 1 : 0);

@@ -166,18 +166,29 @@ function ask(args) {
   if (args.includes('--json')) return console.log(JSON.stringify(r, null, 2));
   if (r.error) return console.log(`\n  ${r.error}\n`);
   const corpus = load();
-  console.log(`\n${b('Obligations in force as of ' + r.as_of)}  —  ${r.obligations.length} engaged\n`);
-  const byInstrument = {};
-  for (const o of r.applicable) (byInstrument[o.instrument_id] ??= []).push(o);
-  for (const [inst, list] of Object.entries(byInstrument)) {
-    console.log(`  ${b(inst)}`);
-    for (const o of list) {
-      console.log(`    ${o.citation}`);
-      const a = corpus.byId.get(o.atom_id);
-      if (a?.summary) console.log(dim(`      ${a.summary.slice(0, 92)}`));
-      if (o.partial_carve_out) console.log(dim(`      carve-out: entity stays in scope for everything else`));
+  // A PERMISSION IS NOT A DUTY. 45 C.F.R. § 164.512 lets a covered entity disclose without an
+  // authorisation and compels nothing; printing it under "obligations in force" tells a reader
+  // they must do what the rule merely allows. They are counted and headed separately.
+  const isPermit = o => corpus.byId.get(o.atom_id)?.obligation_type === 'permit';
+  const duties = r.applicable.filter(o => !isPermit(o));
+  const permits = r.applicable.filter(isPermit);
+  const show = (list, heading) => {
+    if (!list.length) return;
+    console.log(`\n${b(heading)}\n`);
+    const byInstrument = {};
+    for (const o of list) (byInstrument[o.instrument_id] ??= []).push(o);
+    for (const [inst, items] of Object.entries(byInstrument)) {
+      console.log(`  ${b(inst)}`);
+      for (const o of items) {
+        console.log(`    ${o.citation}`);
+        const a = corpus.byId.get(o.atom_id);
+        if (a?.summary) console.log(dim(`      ${a.summary.slice(0, 92)}`));
+        if (o.partial_carve_out) console.log(dim(`      carve-out: entity stays in scope for everything else`));
+      }
     }
-  }
+  };
+  show(duties, `Obligations in force as of ${r.as_of}  —  ${duties.length} engaged`);
+  show(permits, `Permissions — things you MAY do, not must  —  ${permits.length}`);
   if (r.pending_watch.length) {
     console.log(`\n${b('NOT LAW YET')} — enacted, not in force. Watch only.\n`);
     for (const p of r.pending_watch) console.log(`  ${p.citation.padEnd(32)} binds from ${p.effective_from}`);
@@ -414,6 +425,20 @@ switch (cmd) {
     if (!tl.length) console.log('  (no clock has started — supply --breach --from <date>)');
     for (const d of tl)
       console.log(`  ${b(d.computed ?? 'not started')}  ${String(d.duration ?? '').padEnd(18)} ${d.citation ?? d.atom_id}`);
+    // A DUTY WITH NO CLOCK IS STILL A DUTY. N.Y. GBL § 899-aa(8)(a) — the Attorney General,
+    // Department of State and State Police notice — sets no period; the statute times it only by
+    // forbidding it to delay the resident notice. Printing only the timeline left the single most
+    // commonly missed obligation in a New York breach off the page entirely.
+    const regimes = r.sections.find(x => /Notification regimes/.test(x.heading))?.body ?? [];
+    const dated = new Set(tl.map(d => d.atom_id));
+    const undated = regimes.filter(o => !dated.has(o.id ?? o.atom_id));
+    if (undated.length) {
+      console.log(`\n${b('Also required, with no fixed period')}\n`);
+      for (const o of undated) {
+        console.log(`  ${o.citation ?? o.id}`);
+        if (o.summary) console.log(dim(`      ${String(o.summary).slice(0, 96)}`));
+      }
+    }
     const open = r.sections.find(x => /Characterisations not yet made/.test(x.heading))?.body ?? [];
     if (open.length) {
       console.log(`\n${b('Not yet characterised')} — each of these would add a duty\n`);
