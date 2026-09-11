@@ -1,0 +1,87 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_oig
+  - cms
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2024-03-11'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cures_blocking.p.171_202_b_3
+source:
+  citation: 45 C.F.R. § 171.202(b)(3)
+  instrument_id: us.cures_blocking
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=171
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+  raw_sha256: 881f03c2034c1a6b4d49e9cde4adf70a84182f5890eb1be66f4026f4c601e023
+  text_file: corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.txt
+  text_sha256: ff9534f2201bb086974f3d4fbe95b9d3a5deb972e36d1e6889a93e3d534a088f
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, full XML for the part, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: 82a52b766cd11c5bfb5dfb9334a5ea66a896a26ef88079bc04ecedff1c2939c6
+verbatim_span: >-
+  For purposes of determining whether the actor's privacy policies and procedures and actions
+  satisfy the requirements of paragraphs (b)(1)(i) and (b)(2) above when the actor's operations are
+  subject to multiple laws which have inconsistent preconditions, they shall be deemed to satisfy
+  the requirements of the paragraphs if the actor has adopted uniform privacy policies and
+  procedures to address the more restrictive preconditions.
+paragraph_path:
+  path:
+    - b
+    - '3'
+  anchor: '171.202'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-171.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+subject:
+  domain: II.B.3
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      To qualify for the exception on the basis that State or Federal law requires one or more
+      preconditions for providing access, exchange, or use of electronic health information that
+      have not been satisfied, the following requirements must be met—
+    path:
+      - b
+    citation: 45 C.F.R. § 171.202(b)
+operative_verb: must
+summary: >-
+  For purposes of determining whether the actor's privacy policies and procedures and actions
+  satisfy the requirements of paragraphs (b)(1)(i) and (b)(2) above when the actor's operations are
+  subject to multiple laws which have inconsistent preconditions, they shall be deemed to satisfy
+  the requiremen
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

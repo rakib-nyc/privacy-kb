@@ -1,0 +1,103 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - financial_services
+  - non_bank_financial_institutions
+data_types:
+  - npi
+  - customer_information
+status: in_force
+effective_from: '2023-06-09'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.glba.safeguards_rule.p.314_4_j_1_vi
+source:
+  citation: 16 C.F.R. § 314.4(j)(1)(vi)
+  instrument_id: us.glba.safeguards_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=314
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  raw_sha256: 3ba7ecc3463953a1db1ccf38f4b0ade4182e36c7e24e111eb8869910e271d41a
+  text_file: corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.txt
+  text_sha256: be8a0b1e03c4b14f6ed56fbf365d871a4fe112856a8013ebcf25fbc2f9aefec9
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-16 XML, part 314
+    result: structured_source_used
+    note: null
+  segment_sha256: 677b8706af6fa7b7f0005bc31ae19946d5826280204c5df81f3dd383738443e8
+verbatim_span: >-
+  Whether any law enforcement official has provided you with a written determination that notifying
+  the public of the breach would impede a criminal investigation or cause damage to national
+  security, and a means for the Federal Trade Commission to contact the law enforcement official. A
+  law enforcement official may request an initial delay of up to 30 days following the date when
+  notice was provided to the Federal Trade Commission. The delay may be extended for an additional
+  period of up to 60 days if the law enforcement official seeks such an extension in writing.
+  Additional delay may be permitted only if the Commission staff determines that public disclosure
+  of a security event continues to impede a criminal investigation or cause damage to national
+  security.
+paragraph_path:
+  path:
+    - j
+    - '1'
+    - vi
+  anchor: '314.4'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-314.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+subject:
+  domain: II.C.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Notify the Federal Trade Commission about notification events in accordance with paragraphs
+      (j)(1) and (2) of this section.
+    path:
+      - j
+    citation: 16 C.F.R. § 314.4(j)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Upon discovery of a notification event as described in paragraph (j)(2) of this section, if
+      the notification event involves the information of at least 500 consumers, you must notify the
+      Federal Trade Commission as soon as possible, and no later than 30 days after discovery of the
+      event. The notice shall be made electronically on a form to be located on the FTC's website,
+      https://www.ftc.gov. The notice shall include the following:
+    path:
+      - j
+      - '1'
+    citation: 16 C.F.R. § 314.4(j)(1)
+operative_verb: may
+summary: >-
+  Whether any law enforcement official has provided you with a written determination that notifying
+  the public of the breach would impede a criminal investigation or cause damage to national
+  security, and a means for the Federal Trade Commission to contact the law enforcement official.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

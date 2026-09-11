@@ -231,11 +231,29 @@ Read-only. Every tool takes `as_of`.
 | `privacy_incidents()` | incident characterisations and their families — one event, several legal descriptions |
 | `privacy_workflow(workflow, …)` | run a lifecycle deliverable and return the artifact with its checklist |
 | `privacy_memo(entity, data, as_of, …)` | the defensibility record: findings, boundary, and a verification table |
+| `privacy_search(q, record_type?, …)` | find a provision by citation, phrase or topic, labelled analysed or reference |
 | `privacy_diff(from_date, to_date, filter?)` | what changed, what is coming |
 | `privacy_preemption(federal_id, state_id)` | posture + resolution |
 | `privacy_coverage(bok_coordinate)` | KB completeness at that node |
 
 Annotate all as `readOnlyHint: true`, `openWorldHint: false`.
+
+### Two record types, two different claims
+
+An **`obligation`** record says an applicability predicate has been written and the engine will
+reason with it. A **`provision`** record says only that the corpus holds the exact text, with a
+verified citation, a dated vintage and a hash — no predicate, no claim about who it binds.
+
+The separation exists because the two scale differently. Quoting a provision correctly is
+mechanical and can be done from bytes already on disk; deciding who it binds and when it fires is
+legal analysis and cannot. Collapsing them forced a choice between a corpus that stayed small and
+one whose predicates were guessed at volume, and a guessed predicate is worse than an absent one
+because it FIRES — it makes the engine assert a duty applies to someone.
+
+The boundary is structural, not conventional: `engine/corpus.mjs` exposes `obligations` filtered
+on `record_type === 'obligation'`, and `engine/applicability.mjs` reads only that. A provision
+record cannot enter an applicability answer however it is written. `privacy_search` reaches both
+and labels every result.
 
 `event.type` is a SET, not a scalar. One set of facts routinely satisfies several statutory
 characterisations at once — a lost laptop of patient records is a breach of unsecured PHI under

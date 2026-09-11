@@ -1,0 +1,80 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - dot
+sector:
+  - employment
+  - transportation
+data_types:
+  - health
+  - personal_information
+status: in_force
+effective_from: '2000-12-19'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Dec. 19, 2000" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml — citation
+  apparatus, not operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.dot_drug_testing.p.40_329_b
+source:
+  citation: 49 C.F.R. § 40.329(b)
+  instrument_id: us.dot_drug_testing
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-49.xml?part=40
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+  raw_sha256: 37446484793816750245fc98a2b73a94e655895dcfb889d18ddc00c23339e0df
+  text_file: corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.txt
+  text_sha256: 1d4fa6885696bfab98499a9a5b506aa6b85460b41a65d945739fb236b747bdc5
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 49 part 40, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: f617a8f385e5bdd24873e3e891808090ff98223b086e581692bf793eae7b0aa4
+verbatim_span: >-
+  As a laboratory, you must provide, within 10 business days of receiving a written request from an
+  employee, and made through the MRO, the records relating to the results of the employee's drug
+  test ( i.e., laboratory report and data package). You may charge no more than the cost of
+  preparation and reproduction for copies of these records.
+paragraph_path:
+  path:
+    - b
+  anchor: '40.329'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 49-cfr-40.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+subject:
+  domain: IV.B.1
+  lifecycle:
+    - IV
+operative_context: []
+operative_verb: mixed
+summary: >-
+  As a laboratory, you must provide, within 10 business days of receiving a written request from an
+  employee, and made through the MRO, the records relating to the results of the employee's drug
+  test ( i.e., laboratory report and data package).
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

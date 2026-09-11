@@ -1,0 +1,111 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ed
+sector:
+  - education
+data_types:
+  - education_record
+status: in_force
+effective_from: '1974-11-19'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "November 19, 1974" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.ferpa.p.undefined_b_1_k_ii
+source:
+  citation: 20 U.S.C. § undefined(b)(1)(K)(ii)
+  instrument_id: us.ferpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc20@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  raw_sha256: d9eb0b65a1acac5602e55cef5941f4e79a13824f23e8f78b141be5f1d1624e7b
+  text_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.txt
+  text_sha256: 6a51713f2648ca5674640dc9e871fdc9304de0055007e798298d216e99630681
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 780d6019cb3b3475517deb4e7ebbd42f6c53bd30e6ad0c5a85cc8e9afa6c73ce
+verbatim_span: >-
+  any personally identifiable data shall be destroyed when the data are no longer needed for program
+  monitoring, evaluations, and performance measurements; and
+paragraph_path:
+  path:
+    - b
+    - '1'
+    - K
+    - ii
+  anchor: undefined
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 20-u-s-c-1232g.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+subject:
+  domain: II.D.1
+  lifecycle:
+    - VI
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      No funds shall be made available under any applicable program to any educational agency or
+      institution which has a policy or practice of permitting the release of education records (or
+      personally identifiable information contained therein other than directory information, as
+      defined in paragraph (5) of subsection (a)) of students without the written consent of their
+      parents to any individual, agency, or organization, other than to the following—
+    path:
+      - b
+      - '1'
+    citation: 20 U.S.C. § undefined(b)(1)
+  - position: follows
+    relation: scopes
+    verbatim_span: >-
+      Nothing in subparagraph (E) of this paragraph shall prevent a State from further limiting the
+      number or type of State or local officials who will continue to have access thereunder.
+    path:
+      - b
+      - '1'
+    citation: 20 U.S.C. § undefined(b)(1)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      the Secretary of Agriculture, or authorized representative from the Food and Nutrition Service
+      or contractors acting on behalf of the Food and Nutrition Service, for the purposes of
+      conducting program monitoring, evaluations, and performance measurements of State and local
+      educational and other agencies and institutions receiving funding or providing benefits of 1
+      or more programs authorized under the Richard B. Russell National School Lunch Act ( 42 U.S.C.
+      1751 et seq.) or the Child Nutrition Act of 1966 ( 42 U.S.C. 1771 et seq.) for which the
+      results will be reported in an aggregate form that does not identify any individual, on the
+      conditions that—
+    path:
+      - b
+      - '1'
+      - K
+    citation: 20 U.S.C. § undefined(b)(1)(K)
+operative_verb: must
+summary: >-
+  any personally identifiable data shall be destroyed when the data are no longer needed for program
+  monitoring, evaluations, and performance measurements; and
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

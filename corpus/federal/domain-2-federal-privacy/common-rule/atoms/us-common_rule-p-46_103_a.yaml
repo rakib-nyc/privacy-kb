@@ -1,0 +1,91 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ohrp
+  - federal_agencies
+sector:
+  - health
+data_types:
+  - personal_information
+  - health
+status: in_force
+effective_from: '2019-01-21'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "January 21, 2019" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.common_rule.p.46_103_a
+source:
+  citation: 45 C.F.R. § 46.103(a)
+  instrument_id: us.common_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=46
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  raw_sha256: cfe25d02a8ade401b1350f591c4654b85ab03c47f66297047feb0a6e1f0e543d
+  text_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+  text_sha256: 2e9f64e48744208a67bbad88f993394ee3ae928f07e1396d552d5a6c8d574fa1
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 45 part 46, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: c1c67f7e2adbea5559a5d49f422ca9cf39649aebd6a2c524941b79dabe472568
+verbatim_span: >-
+  Each institution engaged in research that is covered by this policy, with the exception of
+  research eligible for exemption under § 46.104, and that is conducted or supported by a Federal
+  department or agency, shall provide written assurance satisfactory to the department or agency
+  head that it will comply with the requirements of this policy. In lieu of requiring submission of
+  an assurance, individual department or agency heads shall accept the existence of a current
+  assurance, appropriate for the research in question, on file with the Office for Human Research
+  Protections, HHS, or any successor office, and approved for Federal-wide use by that office. When
+  the existence of an HHS-approved assurance is accepted in lieu of requiring submission of an
+  assurance, reports (except certification) required by this policy to be made to department and
+  agency heads shall also be made to the Office for Human Research Protections, HHS, or any
+  successor office. Federal departments and agencies will conduct or support research covered by
+  this policy only if the institution has provided an assurance that it will comply with the
+  requirements of this policy, as provided in this section, and only if the institution has
+  certified to the department or agency head that the research has been reviewed and approved by an
+  IRB (if such certification is required by § 46.103(d)).
+paragraph_path:
+  path:
+    - a
+  anchor: '46.103'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-46.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+subject:
+  domain: II.B.3
+  lifecycle:
+    - III
+operative_context: []
+operative_verb: must
+summary: >-
+  Each institution engaged in research that is covered by this policy, with the exception of
+  research eligible for exemption under § 46.104, and that is conducted or supported by a Federal
+  department or agency, shall provide written assurance satisfactory to the department or agency
+  head that it will 
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

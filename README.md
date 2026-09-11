@@ -127,14 +127,14 @@ is the honest remaining work.
 
 | | |
 |---|---|
-| Records | **256** — 218 obligation, 9 authority, 5 definition, 5 principle, 3 doctrine, 5 workflow_constraint, 2 taxonomy, 1 enforcement_action |
+| Records | **1,656** — 226 analysed obligations the engine reasons with, 1,400 held as verified reference text with no applicability predicate, plus authorities, definitions, doctrine and principles — 218 obligation, 9 authority, 5 definition, 5 principle, 3 doctrine, 5 workflow_constraint, 2 taxonomy, 1 enforcement_action |
 | Verified | 244 `verbatim_confirmed` · 4 suppressed by invariant I1 and unreachable from any output |
-| Instruments | 54 declared · **41 fully present** against their declared duty categories · 13 partial, with the missing provisions named in every answer that touches them |
+| Instruments | 54 declared · **43 fully present** against their declared duty categories · 11 partial, with the missing provisions named in every answer that touches them |
 | taxonomy leaves covered | 31 / 69 · 38 neither covered nor ruled out of scope, and gate 34 ratchets that number |
 | CI gates | **45**, all named · 60 fixtures · 34 gates fixture-exercised, 11 declared unexercisable in `tests/fixtures/no-fixture.yaml` and why |
 | Walker assumptions | 13 declared, 13 with an executable test |
 | Engine | 15 modules · property tests covering both halves of invariant I6, as-of validation, the trigger and incident vocabularies, version-chain semantics, and totality of every entry point |
-| MCP server | **14 tools**, incl. `privacy_memo` (the defensibility record), `privacy_facts` (the input vocabulary), `privacy_incidents`, `privacy_workflow` |
+| MCP server | **15 tools**, incl. `privacy_memo` (the defensibility record), `privacy_facts` (the input vocabulary), `privacy_incidents`, `privacy_workflow` |
 | Workflows | 4 lifecycle-indexed, reachable from the CLI and MCP, 26 tests |
 | Eval scenarios | 30, all-pass baseline enforced by gate 8 |
 | Incident model | `event.type` is a SET — one laptop is a breach of unsecured PHI *and* a breach of the security of the system, four statutes, four clocks. Characterisations you do not assert come back in `characterisation_required`, never silently dropped |

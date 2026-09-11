@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // MCP server over the corpus and the engine. SCHEMA.md §5.
 //
-// Fourteen read-only tools. The corpus supplies the truth; whatever model is calling supplies
+// Fifteen read-only tools. The corpus supplies the truth; whatever model is calling supplies
 // the prose. That split is the whole point — the server never asks a model anything, and
 // the model never computes applicability.
 //
@@ -21,6 +21,7 @@ import { factInventory, NAMESPACES, AMBIGUOUS_TERMS } from '../engine/facts.mjs'
 import { INCIDENTS, INCIDENT_FAMILIES, INCIDENT_KEYS } from '../engine/incidents.mjs';
 import { WORKFLOWS } from '../workflows/index.mjs';
 import { buildMemo } from '../engine/memo.mjs';
+import { search } from '../engine/search.mjs';
 import { resolve as resolvePreemption } from '../engine/preemption.mjs';
 
 const VERSION = '0.1.0';
@@ -139,6 +140,19 @@ const TOOLS = [
       as_of: { type: 'string' }, state_layers: { type: 'array', items: { type: 'string' } },
       matter: { type: 'string', description: 'free-text matter reference, carried into the record' },
       format: { type: 'string', description: 'markdown (default) | json' } } } },
+
+  { name: 'privacy_search',
+    description: 'Find a provision by citation, by a phrase from its text, or by topic, across the WHOLE ' +
+      'corpus. Results are labelled by kind: "analysed" means an applicability predicate has been written ' +
+      'and the engine reasons with the record; "reference text" means the corpus holds a verified quotation ' +
+      'with a verified citation and claims nothing more — no predicate, and the engine will not assert that ' +
+      'it binds anyone. Most of the corpus is reference text. Use this to locate a provision, then ' +
+      'privacy_cite to read it with its source URL and hash.',
+    inputSchema: { type: 'object', required: ['q'], properties: {
+      q: { type: 'string', description: 'a citation like "164.512", a phrase, or a topic' },
+      record_type: { type: 'string', description: 'obligation | provision | definition | …' },
+      instrument_id: { type: 'string' },
+      limit: { type: 'number' } } } },
 
   { name: 'privacy_diff',
     description: 'What changed between two dates: atoms that came into force, ceased, or are pending. ' + PENDING_RULE,
@@ -292,6 +306,8 @@ function call(name, args = {}) {
         ? { record: m.record }
         : { markdown: m.markdown, record: m.record };
     }
+    case 'privacy_search':
+      return search(args.q, args);
     case 'privacy_diff': {
       // BOTH ENDS, BEFORE EITHER IS COMPARED. This tool brackets the corpus with
       // `effective_from > from_date && effective_from <= to_date`, and a malformed to_date sorts

@@ -1,0 +1,90 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 14, 2003" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.45.164.p.164_526_d_1_ii
+source:
+  citation: 45 C.F.R. § 164.526(d)(1)(ii)
+  instrument_id: us.cfr.45.164
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-45 XML, part 164
+    result: structured_source_used
+    note: null
+  segment_sha256: 3abd6bf82ecca516ace5345a5bfd7ddaca90bc4ec26fc96509ad9cc4628ad6b0
+verbatim_span: >-
+  The individual's right to submit a written statement disagreeing with the denial and how the
+  individual may file such a statement;
+paragraph_path:
+  path:
+    - d
+    - '1'
+    - ii
+  anchor: '164.526'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-164.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - I
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      If the covered entity denies the requested amendment, in whole or in part, the covered entity
+      must comply with the following requirements.
+    path:
+      - d
+    citation: 45 C.F.R. § 164.526(d)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      The covered entity must provide the individual with a timely, written denial, in accordance
+      with paragraph (b)(2) of this section. The denial must use plain language and contain:
+    path:
+      - d
+      - '1'
+    citation: 45 C.F.R. § 164.526(d)(1)
+operative_verb: may
+summary: >-
+  The individual's right to submit a written statement disagreeing with the denial and how the
+  individual may file such a statement;
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

@@ -1,0 +1,81 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.45.160.p.160_536_a
+source:
+  citation: 45 C.F.R. § 160.536(a)
+  instrument_id: us.cfr.45.160
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=160
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+  raw_sha256: 9916d549267c2f3f629b2157d6e0887b73570f9eddace67b626c40f51a6c9c72
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.txt
+  text_sha256: f77059505f5a5559b29004fa9b5cd6e88a88556fd94b0a4c673d42cbe4d6d9bb
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 45 CFR 160 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: de03b72b47a9e3423d8a25db6cbac39c15c65e7500d65f1326126d98e6463fd9
+verbatim_span: >-
+  In meeting the burden of proof set forth in § 160.534, the Secretary may introduce the results of
+  a statistical sampling study as evidence of the number of violations under § 160.406 of this part,
+  or the factors considered in determining the amount of the civil money penalty under § 160.408 of
+  this part. Such statistical sampling study, if based upon an appropriate sampling and computed by
+  valid statistical methods, constitutes prima facie evidence of the number of violations and the
+  existence of factors material to the proposed civil money penalty as described in §§ 160.406 and
+  160.408.
+paragraph_path:
+  path:
+    - a
+  anchor: '160.536'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-160.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - III
+operative_context: []
+operative_verb: may
+summary: >-
+  In meeting the burden of proof set forth in § 160.534, the Secretary may introduce the results of
+  a statistical sampling study as evidence of the number of violations under § 160.406 of this part,
+  or the factors considered in determining the amount of the civil money penalty under § 160.408 of
+  this 
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

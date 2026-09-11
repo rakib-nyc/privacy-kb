@@ -1,0 +1,110 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - cpni
+status: in_force
+effective_from: '2017-09-21'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Sept. 21, 2017" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cpni.p.64_1200_a_9_iv_g
+source:
+  citation: 47 C.F.R. § 64.1200(a)(9)(iv)(G)
+  instrument_id: us.cpni
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: b1fc2732c39e6db05d6b1064eccb93727d56e6d8000113da7cad7f19cbcebc89
+verbatim_span: >-
+  A healthcare provider must offer recipients within each message an easy means to opt out of future
+  such messages; voice calls that could be answered by a live person must include an automated,
+  interactive voice- and/or key press-activated opt-out mechanism that enables the call recipient to
+  make an opt-out request prior to terminating the call; voice calls that could be answered by an
+  answering machine or voice mail service must include a toll-free number that the consumer can call
+  to opt out of future healthcare calls; text messages must inform recipients of the ability to opt
+  out by replying “STOP,” which will be the exclusive means by which consumers may opt out of such
+  messages; and,
+paragraph_path:
+  path:
+    - a
+    - '9'
+    - iv
+    - G
+  anchor: '64.1200'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 47-cfr-64.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'No person or entity may:'
+    path:
+      - a
+    citation: 47 C.F.R. § 64.1200(a)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      A person will not be liable for violating the prohibition in paragraph (a)(1)(iii) of this
+      section for making any call exempted in this paragraph (a)(9), provided that the call is not
+      charged to the called person or counted against the called person's plan limits on minutes or
+      texts. As used in this paragraph (a)(9), the term “call” includes a text message, including a
+      short message service (SMS) call.
+    path:
+      - a
+      - '9'
+    citation: 47 C.F.R. § 64.1200(a)(9)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Calls made by, or on behalf of, healthcare providers, which include hospitals, emergency care
+      centers, medical physician or service offices, poison control centers, and other healthcare
+      professionals, provided that all of the following conditions are met:
+    path:
+      - a
+      - '9'
+      - iv
+    citation: 47 C.F.R. § 64.1200(a)(9)(iv)
+operative_verb: mixed
+summary: >-
+  A healthcare provider must offer recipients within each message an easy means to opt out of future
+  such messages; voice calls that could be answered by a live person must include an automated,
+  interactive voice- and/or key press-activated opt-out mechanism that enables the call recipient to
+  make an 
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

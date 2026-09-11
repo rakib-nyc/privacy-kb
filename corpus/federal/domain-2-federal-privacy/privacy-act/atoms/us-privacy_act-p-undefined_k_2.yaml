@@ -1,0 +1,102 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - federal_agencies
+  - doj
+  - private_litigants
+sector:
+  - government
+data_types:
+  - personally_identifiable_information
+status: in_force
+effective_from: '1975-09-27'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "September 27, 1975" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.privacy_act.p.undefined_k_2
+source:
+  citation: 5 U.S.C. § undefined(k)(2)
+  instrument_id: us.privacy_act
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc05@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.xml
+  raw_sha256: 1b646d09621fc527d59702dd5fcd1ef271aca65f6c6271fb9b4d3c2915d6b1e3
+  text_file: corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.txt
+  text_sha256: 763c0ae3764d6bc5d665947896ea22e53e375a47ef41c10a0667cad066e6ded7
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 103265b63160ab13c84d815cd320e7ba7e47a056ebe75b69a621c866de9dcede
+verbatim_span: >-
+  investigatory material compiled for law enforcement purposes, other than material within the scope
+  of subsection (j)(2) of this section: Provided, however , That if any individual is denied any
+  right, privilege, or benefit that he would otherwise be entitled by Federal law, or for which he
+  would otherwise be eligible, as a result of the maintenance of such material, such material shall
+  be provided to such individual, except to the extent that the disclosure of such material would
+  reveal the identity of a source who furnished information to the Government under an express
+  promise that the identity of the source would be held in confidence, or, prior to the effective
+  date of this section, under an implied promise that the identity of the source would be held in
+  confidence;
+paragraph_path:
+  path:
+    - k
+    - '2'
+  anchor: undefined
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 5-u-s-c-552a.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.xml
+subject:
+  domain: III.A.1
+  lifecycle:
+    - III
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      The head of any agency may promulgate rules, in accordance with the requirements (including
+      general notice) of sections 553(b)(1), (2), and (3), (c), and (e) of this title, to exempt any
+      system of records within the agency from subsections (c)(3), (d), (e)(1), (e)(4)(G), (H), and
+      (I) and (f) of this section if the system of rec­ords is—
+    path:
+      - k
+    citation: 5 U.S.C. § undefined(k)
+  - position: follows
+    relation: scopes
+    verbatim_span: >-
+      At the time rules are adopted under this subsection, the agency shall include in the statement
+      required under section 553(c) of this title , the reasons why the system of records is to be
+      exempted from a provision of this section.
+    path:
+      - k
+    citation: 5 U.S.C. § undefined(k)
+operative_verb: must
+summary: >-
+  investigatory material compiled for law enforcement purposes, other than material within the scope
+  of subsection (j)(2) of this section: Provided, however , That if any individual is denied any
+  right, privilege, or benefit that he would otherwise be entitled by Federal law, or for which he
+  would oth
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

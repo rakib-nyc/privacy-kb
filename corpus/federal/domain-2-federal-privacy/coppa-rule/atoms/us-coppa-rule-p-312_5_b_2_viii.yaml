@@ -1,0 +1,88 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - ftc
+  - state_ag
+sector:
+  - childrens_online_services
+data_types:
+  - minor_data
+  - personal_information
+status: in_force
+effective_from: '2025-06-23'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.coppa.rule.p.312_5_b_2_viii
+source:
+  citation: 16 C.F.R. § 312.5(b)(2)(viii)
+  instrument_id: us.coppa.rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=312
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  raw_sha256: 5a29d13e4512092a2d064a62a581031dc75aa99998540e6c2ef24f0dbfc66df9
+  text_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.txt
+  text_sha256: 269dbc8c79e682a08e9686846439239d7f57ec49f501070957ff738370189425
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 3bea326c62c25941fefbedde1d9ae306c025fd39d8d13536f4e947a2f8bc114a
+verbatim_span: >-
+  Provided that, an operator that does not “disclose” (as defined by § 312.2) children's personal
+  information, may use an email coupled with additional steps to provide assurances that the person
+  providing the consent is the parent. Such additional steps include: Sending a confirmatory email
+  to the parent following receipt of consent, or obtaining a postal address or telephone number from
+  the parent and confirming the parent's consent by letter or telephone call. An operator that uses
+  this method must provide notice that the parent can revoke any consent given in response to the
+  earlier email.
+paragraph_path:
+  path:
+    - b
+    - '2'
+    - viii
+  anchor: '312.5'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-312.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+subject:
+  domain: II.A.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Existing methods to obtain verifiable parental consent that satisfy the requirements of this
+      paragraph include:
+    path:
+      - b
+      - '2'
+    citation: 16 C.F.R. § 312.5(b)(2)
+operative_verb: mixed
+summary: >-
+  Provided that, an operator that does not “disclose” (as defined by § 312.2) children's personal
+  information, may use an email coupled with additional steps to provide assurances that the person
+  providing the consent is the parent.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

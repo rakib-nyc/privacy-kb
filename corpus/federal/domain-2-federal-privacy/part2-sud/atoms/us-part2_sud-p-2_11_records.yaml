@@ -1,0 +1,81 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+  - hhs_samhsa
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2024-04-16'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.part2_sud.p.2_11_records
+source:
+  citation: 42 C.F.R. § 2.11(Records)
+  instrument_id: us.part2_sud
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-42.xml?part=2
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  raw_sha256: 5310842763c7e36481877d66979171643bfb80db54bceca2013014691623c216
+  text_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.txt
+  text_sha256: 8aa03df58a46112b21fc7b4d0972fe49d4ed8dc28481d2e409f7a8fa881e8b74
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, full XML for the part, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: a50c3994ebf40d645b49066ac6146358dffb1a4214a600dc978c57f374d625b4
+verbatim_span: >-
+  means any information, whether recorded or not, created by, received, or acquired by a part 2
+  program relating to a patient ( e.g., diagnosis, treatment and referral for treatment information,
+  billing information, emails, voice mails, and texts), and including patient identifying
+  information, provided, however, that information conveyed orally by a part 2 program to a provider
+  who is not subject to this part for treatment purposes with the consent of the patient does not
+  become a record subject to this part in the possession of the provider who is not subject to this
+  part merely because that information is reduced to writing by that provider who is not subject to
+  this part. Records otherwise transmitted by a part 2 program to a provider who is not subject to
+  this part retain their characteristic as records in the hands of the provider who is not subject
+  to this part, but may be segregated by that provider.
+paragraph_path:
+  path:
+    - Records
+  anchor: '2.11'
+  derivation: structural
+  confidence: medium
+  evidence: >-
+    read from 42-cfr-2.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+subject:
+  domain: II.B.3
+  lifecycle:
+    - IV
+operative_context: []
+operative_verb: may
+summary: >-
+  means any information, whether recorded or not, created by, received, or acquired by a part 2
+  program relating to a patient ( e.g., diagnosis, treatment and referral for treatment information,
+  billing information, emails, voice mails, and texts), and including patient identifying
+  information, provid
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

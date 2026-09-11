@@ -1,0 +1,85 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - telemarketing
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2010-08-10'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Aug. 10, 2010" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.tsr.p.310_8_e
+source:
+  citation: 16 C.F.R. § 310.8(e)
+  instrument_id: us.tsr
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=310
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  raw_sha256: 0374ac69f516b67c40fb05bf7a8482af5e2be0d258616f8faee7615bfc966917
+  text_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.txt
+  text_sha256: 7e1270d836ac4d86c1831b2f61d398afff5a07cca625841ea5334e93a3e6d314
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 3dbd83ab8fdb8472278d72c54b243f8d5acfc9ae60068a43249bd0d33dda34a7
+verbatim_span: >-
+  Access to the National Do Not Call Registry is limited to telemarketers, sellers, others engaged
+  in or causing others to engage in telephone calls to consumers, service providers acting on behalf
+  of such persons, and any government agency that has law enforcement authority. Prior to accessing
+  the National Do Not Call Registry, a person must provide the identifying information required by
+  the operator of the registry to collect the fee, and must certify, under penalty of law, that the
+  person is accessing the registry solely to comply with the provisions of this part or to otherwise
+  prevent telephone calls to telephone numbers on the registry. If the person is accessing the
+  registry on behalf of sellers, that person also must identify each of the sellers on whose behalf
+  it is accessing the registry, must provide each seller's unique account number for access to the
+  national registry, and must certify, under penalty of law, that the sellers will be using the
+  information gathered from the registry solely to comply with the provisions of this part or
+  otherwise to prevent telephone calls to telephone numbers on the registry.
+paragraph_path:
+  path:
+    - e
+  anchor: '310.8'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-310.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+operative_context: []
+operative_verb: must
+summary: >-
+  Access to the National Do Not Call Registry is limited to telemarketers, sellers, others engaged
+  in or causing others to engage in telephone calls to consumers, service providers acting on behalf
+  of such persons, and any government agency that has law enforcement authority.
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

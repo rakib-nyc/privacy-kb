@@ -29,6 +29,7 @@ ${b('privacy-kb')} ${dim(VERSION)}  —  US federal + New York privacy law, as o
   ${b('privacy-kb setup')}                     print the Claude Desktop config to paste
   ${b('privacy-kb coverage')}                  what the corpus holds, and what it does not
   ${b('privacy-kb cite')} <record-id>          the verbatim text and where it came from
+  ${b('privacy-kb find')} <query>              search every provision by citation, phrase or topic
   ${b('privacy-kb deadlines')} [flags]         which clocks have started, and which have not
   ${b('privacy-kb ask')} [flags]               which obligations apply
   ${b('privacy-kb triggers')}                  every event key that can start a clock
@@ -363,6 +364,30 @@ switch (cmd) {
     } else {
       console.log(m.markdown);
     }
+    break;
+  }
+  case 'find': {
+    // 1,400 provision records are reference text the engine deliberately does not reason with.
+    // Without a way to find them they are held and unreachable, which is not coverage.
+    // Skip flag VALUES as well as flags: `find foo --limit 4` was searching for "foo 4".
+    const VALUED = new Set(['--limit']);
+    const q = rest.filter((x, i) => !x.startsWith('--') && !VALUED.has(rest[i - 1])).join(' ');
+    if (!q) { console.log('\n  usage: privacy-kb find <citation | phrase | topic>\n'); process.exitCode = 1; break; }
+    const li = rest.indexOf('--limit');
+    const r = call('privacy_search', { q, limit: li >= 0 ? Number(rest[li + 1]) : 15 });
+    if (rest.includes('--json')) { console.log(JSON.stringify(r, null, 2)); break; }
+    console.log(`\n  ${b(r.count + ' match' + (r.count === 1 ? '' : 'es'))} for ${JSON.stringify(q)}` +
+      dim(`   showing ${r.showing}`));
+    console.log(dim(`  ${Object.entries(r.by_record_type).map(([k, v]) => v + ' ' + k).join(' · ')}\n`));
+    for (const hit of r.results) {
+      const tag = hit.kind === 'analysed' ? b('[analysed]') : dim('[reference]');
+      console.log(`  ${tag} ${hit.citation ?? hit.atom_id}`);
+      if (hit.summary) console.log(dim(`      ${String(hit.summary).slice(0, 104)}`));
+      console.log(dim(`      ${hit.atom_id}   in force ${hit.effective_from ?? '?'}`));
+    }
+    console.log(dim('\n  [reference] means a verified quotation with a verified citation and no'));
+    console.log(dim('  applicability analysis — the engine will not reason with it.'));
+    console.log(`\n${DISCLAIMER}\n`);
     break;
   }
   case 'facts': {

@@ -1,0 +1,87 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - any
+status: in_force
+effective_from: '1991-12-20'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "December 20, 1991" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.tcpa.p.undefined_c_3_c
+source:
+  citation: 47 U.S.C. § undefined(c)(3)(C)
+  instrument_id: us.tcpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  raw_sha256: bc0202f0682c43acd483fb4bf598db62d4157704024776425acfebf27c63e018
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.txt
+  text_sha256: 0aeb8fd90520ec4506ed3e1138f1c4e9b7331ed7e27e727734afa93b39f279e4
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 686e9c0561d6b8dd4ea5332896563e090e389b97cce9446843d887a0ff64c278
+verbatim_span: >-
+  specify the methods by which each telephone subscriber shall be informed, by the common carrier
+  that provides local exchange service to that subscriber, of (i) the subscriber’s right to give or
+  revoke a notification of an objection under subparagraph (A), and (ii) the methods by which such
+  right may be exercised by the subscriber;
+paragraph_path:
+  path:
+    - c
+    - '3'
+    - C
+  anchor: undefined
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 47-u-s-c-227.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - I
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      The regulations required by paragraph (2) may require the establishment and operation of a
+      single national database to compile a list of telephone numbers of residential subscribers who
+      object to receiving telephone solicitations, and to make that compiled list and parts thereof
+      available for purchase. If the Commission determines to require such a database, such
+      regulations shall—
+    path:
+      - c
+      - '3'
+    citation: 47 U.S.C. § undefined(c)(3)
+operative_verb: mixed
+summary: >-
+  specify the methods by which each telephone subscriber shall be informed, by the common carrier
+  that provides local exchange service to that subscriber, of (i) the subscriber’s right to give or
+  revoke a notification of an objection under subparagraph (A), and (ii) the methods by which such
+  right may
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

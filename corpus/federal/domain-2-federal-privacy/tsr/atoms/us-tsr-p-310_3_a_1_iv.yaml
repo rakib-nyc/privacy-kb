@@ -1,0 +1,103 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - telemarketing
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2010-08-10'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Aug. 10, 2010" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.tsr.p.310_3_a_1_iv
+source:
+  citation: 16 C.F.R. § 310.3(a)(1)(iv)
+  instrument_id: us.tsr
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=310
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  raw_sha256: 0374ac69f516b67c40fb05bf7a8482af5e2be0d258616f8faee7615bfc966917
+  text_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.txt
+  text_sha256: 7e1270d836ac4d86c1831b2f61d398afff5a07cca625841ea5334e93a3e6d314
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 5e9418f74bf7fa9e643dc6488dfc3d0832f46dc121bd834c1e1a61ee15a79644
+verbatim_span: >-
+  In any prize promotion, the odds of being able to receive the prize, and, if the odds are not
+  calculable in advance, the factors used in calculating the odds; that no purchase or payment is
+  required to win a prize or to participate in a prize promotion and that any purchase or payment
+  will not increase the person's chances of winning; and the no-purchase/no-payment method of
+  participating in the prize promotion with either instructions on how to participate or an address
+  or local or toll-free telephone number to which customers may write or call for information on how
+  to participate;
+paragraph_path:
+  path:
+    - a
+    - '1'
+    - iv
+  anchor: '310.3'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-310.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      It is a deceptive telemarketing act or practice and a violation of this part for any seller or
+      telemarketer to engage in the following conduct:
+    path:
+      - a
+    citation: 16 C.F.R. § 310.3(a)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Before a customer consents to pay 1 for goods or services offered, failing to disclose
+      truthfully, in a clear and conspicuous manner, the following material information: 1 When a
+      seller or telemarketer uses, or directs a customer to use, a courier to transport payment, the
+      seller or telemarketer must make the disclosures required by § 310.3(a)(1) before sending a
+      courier to pick up payment or authorization for payment, or directing a customer to have a
+      courier pick up payment or authorization for payment. In the case of debt relief services, the
+      seller or telemarketer must make the disclosures required by § 310.3(a)(1) before the consumer
+      enrolls in an offered program.
+    path:
+      - a
+      - '1'
+    citation: 16 C.F.R. § 310.3(a)(1)
+operative_verb: mixed
+summary: >-
+  In any prize promotion, the odds of being able to receive the prize, and, if the odds are not
+  calculable in advance, the factors used in calculating the odds; that no purchase or payment is
+  required to win a prize or to participate in a prize promotion and that any purchase or payment
+  will not incre
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

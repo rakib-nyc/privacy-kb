@@ -1,0 +1,108 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ohrp
+  - federal_agencies
+sector:
+  - health
+data_types:
+  - personal_information
+  - health
+status: in_force
+effective_from: '2019-01-21'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "January 21, 2019" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.common_rule.p.46_104_d_5_i
+source:
+  citation: 45 C.F.R. § 46.104(d)(5)(i)
+  instrument_id: us.common_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=46
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  raw_sha256: cfe25d02a8ade401b1350f591c4654b85ab03c47f66297047feb0a6e1f0e543d
+  text_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+  text_sha256: 2e9f64e48744208a67bbad88f993394ee3ae928f07e1396d552d5a6c8d574fa1
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 45 part 46, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: 435cb9a51de6aa3c1855056d1813aa8be356aa3f4fc662bc103fccb7cd1b6b4d
+verbatim_span: >-
+  Each Federal department or agency conducting or supporting the research and demonstration projects
+  must establish, on a publicly accessible Federal Web site or in such other manner as the
+  department or agency head may determine, a list of the research and demonstration projects that
+  the Federal department or agency conducts or supports under this provision. The research or
+  demonstration project must be published on this list prior to commencing the research involving
+  human subjects.
+paragraph_path:
+  path:
+    - d
+    - '5'
+    - i
+  anchor: '46.104'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-46.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+subject:
+  domain: II.B.3
+  lifecycle:
+    - III
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Except as described in paragraph (a) of this section, the following categories of human
+      subjects research are exempt from this policy:
+    path:
+      - d
+    citation: 45 C.F.R. § 46.104(d)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Research and demonstration projects that are conducted or supported by a Federal department or
+      agency, or otherwise subject to the approval of department or agency heads (or the approval of
+      the heads of bureaus or other subordinate agencies that have been delegated authority to
+      conduct the research and demonstration projects), and that are designed to study, evaluate,
+      improve, or otherwise examine public benefit or service programs, including procedures for
+      obtaining benefits or services under those programs, possible changes in or alternatives to
+      those programs or procedures, or possible changes in methods or levels of payment for benefits
+      or services under those programs. Such projects include, but are not limited to, internal
+      studies by Federal employees, and studies under contracts or consulting arrangements,
+      cooperative agreements, or grants. Exempt projects also include waivers of otherwise mandatory
+      requirements using authorities such as sections 1115 and 1115A of the Social Security Act, as
+      amended.
+    path:
+      - d
+      - '5'
+    citation: 45 C.F.R. § 46.104(d)(5)
+operative_verb: mixed
+summary: >-
+  Each Federal department or agency conducting or supporting the research and demonstration projects
+  must establish, on a publicly accessible Federal Web site or in such other manner as the
+  department or agency head may determine, a list of the research and demonstration projects that
+  the Federal depa
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

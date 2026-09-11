@@ -1,0 +1,78 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ed
+sector:
+  - education
+data_types:
+  - education_record
+status: in_force
+effective_from: '2011-12-02'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Dec. 2, 2011" appears in a <CITA> element of
+  corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.ferpa.p.99_33_c
+source:
+  citation: 34 C.F.R. § 99.33(c)
+  instrument_id: us.ferpa
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-34.xml?part=99
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml
+  raw_sha256: 5215a3f303ea41cb5bb4c5afb481da1f4623e64307eadc30ef2ad27a2238ffa0
+  text_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.txt
+  text_sha256: e0eee9622724e33bc4d5677717fd06987529754f8ce13dc1b0ed913c9efb542e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 7febe582cf427a1bbd34ea716a35a65a986f7e392a596c1eb6f7342c317a7204
+verbatim_span: >-
+  Paragraph (a) of this section does not apply to disclosures under §§ 99.31(a)(8), (9), (11), (12),
+  (14), (15), and (16), and to information that postsecondary institutions are required to disclose
+  under the Jeanne Clery Disclosure of Campus Security Policy and Campus Crime Statistics Act, 20
+  U.S.C. 1092(f) (Clery Act), to the accuser and accused regarding the outcome of any campus
+  disciplinary proceeding brought alleging a sexual offense.
+paragraph_path:
+  path:
+    - c
+  anchor: '99.33'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 34-cfr-99.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml
+subject:
+  domain: II.D.1
+  lifecycle:
+    - IV
+operative_context: []
+operative_verb: must
+summary: >-
+  Paragraph (a) of this section does not apply to disclosures under §§ 99.31(a)(8), (9), (11), (12),
+  (14), (15), and (16), and to information that postsecondary institutions are required to disclose
+  under the Jeanne Clery Disclosure of Campus Security Policy and Campus Crime Statistics Act, 20
+  U.S.C.
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

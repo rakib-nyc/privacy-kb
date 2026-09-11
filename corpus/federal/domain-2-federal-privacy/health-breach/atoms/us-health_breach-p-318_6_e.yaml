@@ -1,0 +1,76 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - health
+  - consumer_technology
+data_types:
+  - phr_identifiable_health_information
+  - health_information
+status: in_force
+effective_from: '2024-07-29'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.health_breach.p.318_6_e
+source:
+  citation: 16 C.F.R. § 318.6(e)
+  instrument_id: us.health_breach
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=318
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+  raw_sha256: 6266f7150e4734e83f9669e7d3d29429aba5885c6bb4cf72b170e48d6cde7bcb
+  text_file: corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.txt
+  text_sha256: 85091ca4bd2e2982f94c4cc078b4f55e3f653381d76f8aa6505c0fca0d427085
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 989e2fe7fb5138fb1bff496c656531cfb985db1ca522f468855c94fe89d021a6
+verbatim_span: >-
+  Contact procedures for individuals to ask questions or learn additional information, which must
+  include two or more of the following: toll-free telephone number; email address; website;
+  within-application; or postal address.
+paragraph_path:
+  path:
+    - e
+  anchor: '318.6'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-318.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+subject:
+  domain: II.B.3
+  lifecycle:
+    - I
+operative_context: []
+operative_verb: must
+summary: >-
+  Contact procedures for individuals to ask questions or learn additional information, which must
+  include two or more of the following: toll-free telephone number; email address; website;
+  within-application; or postal address.
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

@@ -1,0 +1,85 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - cpni
+status: in_force
+effective_from: '2017-09-21'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Sept. 21, 2017" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cpni.p.64_2010_h_7
+source:
+  citation: 47 C.F.R. § 64.2010(h)(7)
+  instrument_id: us.cpni
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: ddf15885ee53644fe66c60af71dc6b45ff72adeaabbe653ee1b18f46fba84415
+verbatim_span: >-
+  A CMRS provider shall develop and implement training for employees to specifically address
+  fraudulent SIM change attempts, complaints, and remediation. Training shall include, at a minimum,
+  how to identify potentially fraudulent SIM change requests, how to identify when a customer may be
+  the victim of SIM swap fraud, and how to direct potential victims and individuals making
+  potentially fraudulent requests to employees specifically trained to handle such incidents.
+paragraph_path:
+  path:
+    - h
+    - '7'
+  anchor: '64.2010'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 47-cfr-64.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      A provider of commercial mobile radio service (CMRS), as defined in 47 CFR 20.3, including
+      resellers of wireless service, shall only effectuate SIM change requests in accordance with
+      this section. For purposes of this section, SIM means a physical or virtual card associated
+      with a device that stores unique information that can be identified to a specific mobile
+      network.
+    path:
+      - h
+    citation: 47 C.F.R. § 64.2010(h)
+operative_verb: mixed
+summary: >-
+  A CMRS provider shall develop and implement training for employees to specifically address
+  fraudulent SIM change attempts, complaints, and remediation.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

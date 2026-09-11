@@ -1,0 +1,78 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - ftc
+  - state_ag
+sector:
+  - childrens_online_services
+data_types:
+  - minor_data
+  - personal_information
+status: in_force
+effective_from: '2025-06-23'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.coppa.rule.p.312_11_f
+source:
+  citation: 16 C.F.R. § 312.11(f)
+  instrument_id: us.coppa.rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=312
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  raw_sha256: 5a29d13e4512092a2d064a62a581031dc75aa99998540e6c2ef24f0dbfc66df9
+  text_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.txt
+  text_sha256: 269dbc8c79e682a08e9686846439239d7f57ec49f501070957ff738370189425
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 5e4d47e620c0604043e74477174864a13b27b91663a1444b397bee07cd4f254d
+verbatim_span: >-
+  No later than April 22, 2028, and every three years thereafter, approved safe harbor programs
+  shall submit to the Commission a report detailing the safe harbor program's technological
+  capabilities and mechanisms for assessing subject operators' fitness for membership in the safe
+  harbor program.
+paragraph_path:
+  path:
+    - f
+  anchor: '312.11'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-312.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+subject:
+  domain: II.A.1
+  lifecycle:
+    - IV
+operative_context: []
+operative_verb: must
+summary: >-
+  No later than April 22, 2028, and every three years thereafter, approved safe harbor programs
+  shall submit to the Commission a report detailing the safe harbor program's technological
+  capabilities and mechanisms for assessing subject operators' fitness for membership in the safe
+  harbor program.
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

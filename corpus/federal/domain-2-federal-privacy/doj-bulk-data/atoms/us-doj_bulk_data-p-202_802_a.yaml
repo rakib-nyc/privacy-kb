@@ -1,0 +1,81 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - doj
+sector:
+  - any
+data_types:
+  - personal_information
+  - biometric
+  - genetic
+  - health
+  - financial
+  - precise_geolocation
+status: in_force
+effective_from: '2025-04-08'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 8, 2025" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.doj_bulk_data.p.202_802_a
+source:
+  citation: 28 C.F.R. § 202.802(a)
+  instrument_id: us.doj_bulk_data
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-28.xml?part=202
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+  raw_sha256: f029a81bfc5a7a33418fd0bd757b0c8c0e431cd570a5c46ec7a3085964796418
+  text_file: corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.txt
+  text_sha256: c8ef3eab97ed7c77065c998a739c0f32aab75ee4a9b78daf920198b02172ac66
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: dcfe66b6f912f34dcf830aa510b43e67d07bfafac22250e18a47d087da386e58
+verbatim_span: >-
+  Transactions subject to the prohibitions or restrictions in this part or the Order, and that are
+  not otherwise permitted under this part or a general license, may be permitted only under a
+  specific license, under appropriate terms and conditions.
+paragraph_path:
+  path:
+    - a
+  anchor: '202.802'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 28-cfr-202.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+subject:
+  domain: I.C.6
+  lifecycle:
+    - III
+operative_context: []
+operative_verb: may
+summary: >-
+  Transactions subject to the prohibitions or restrictions in this part or the Order, and that are
+  not otherwise permitted under this part or a general license, may be permitted only under a
+  specific license, under appropriate terms and conditions.
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

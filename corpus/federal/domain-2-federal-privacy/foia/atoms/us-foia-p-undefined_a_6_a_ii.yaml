@@ -1,0 +1,104 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - federal_agencies
+sector:
+  - government
+data_types:
+  - any
+status: in_force
+effective_from: '1967-07-04'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "July 4, 1967" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.foia.p.undefined_a_6_a_ii
+source:
+  citation: 5 U.S.C. § undefined(a)(6)(A)(ii)
+  instrument_id: us.foia
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc05@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.xml
+  raw_sha256: d4c06f60a9741b07b3eccca530f8b5e361ca4a4f4cd2cd9a82b2d9b65767e093
+  text_file: corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.txt
+  text_sha256: ad4133ff673d3a14564fc33c0ab6d32209965d12bac8c15147a923b6f488562e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 736926863f1d27360e81aeaaae87e1e1a753803a77c47df22397a02517a5e98e
+verbatim_span: >-
+  make a determination with respect to any appeal within twenty days (excepting Saturdays, Sundays,
+  and legal public holidays) after the receipt of such appeal. If on appeal the denial of the
+  request for records is in whole or in part upheld, the agency shall notify the person making such
+  request of the provisions for judicial review of that determination under paragraph (4) of this
+  subsection.
+paragraph_path:
+  path:
+    - a
+    - '6'
+    - A
+    - ii
+  anchor: undefined
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 5-u-s-c-552.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.xml
+subject:
+  domain: III.A.1
+  lifecycle:
+    - VI
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'Each agency shall make available to the public information as follows:'
+    path:
+      - a
+    citation: 5 U.S.C. § undefined(a)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Each agency, upon any request for records made under paragraph (1), (2), or (3) of this
+      subsection, shall—
+    path:
+      - a
+      - '6'
+      - A
+    citation: 5 U.S.C. § undefined(a)(6)(A)
+  - position: follows
+    relation: scopes
+    verbatim_span: >-
+      The 20-day period under clause (i) shall commence on the date on which the request is first
+      received by the appropriate component of the agency, but in any event not later than ten days
+      after the request is first received by any component of the agency that is designated in the
+      agency’s regulations under this section to receive requests under this section. The 20-day
+      period shall not be tolled by the agency except—
+    path:
+      - a
+      - '6'
+      - A
+    citation: 5 U.S.C. § undefined(a)(6)(A)
+operative_verb: must_not
+summary: >-
+  make a determination with respect to any appeal within twenty days (excepting Saturdays, Sundays,
+  and legal public holidays) after the receipt of such appeal.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

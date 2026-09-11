@@ -1,0 +1,79 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - doj
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2008-07-10'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "July 10, 2008" appears in a <date> element of
+  corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.xml — citation apparatus,
+  not operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.fisa_702.p.undefined_j_4_d
+source:
+  citation: 50 U.S.C. § undefined(j)(4)(D)
+  instrument_id: us.fisa_702
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc50@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.xml
+  raw_sha256: 1bfe41f81a21edbdfd6526a1b83b1a91eb2dc65da9dc925059b5e7fc6369b9d7
+  text_file: corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.txt
+  text_sha256: 4ff532541ae3383c392b99fdfec998206e2c7385e4e614c1256904677f31daa8
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 80170f82185c4311cc70cff49c76e0dc0a010eca9991ba64d8964a2c8b658f2a
+verbatim_span: >-
+  The Government may file a petition for a writ of certiorari for review of a decision of the Court
+  of Review issued under subparagraph (A). The record for such review shall be transmitted under
+  seal to the Supreme Court of the United States, which shall have jurisdiction to review such
+  decision.
+paragraph_path:
+  path:
+    - j
+    - '4'
+    - D
+  anchor: undefined
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 50-u-s-c-1881a.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.xml
+subject:
+  domain: III.A.1
+  lifecycle:
+    - I
+operative_context: []
+operative_verb: mixed
+summary: >-
+  The Government may file a petition for a writ of certiorari for review of a decision of the Court
+  of Review issued under subparagraph (A).
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

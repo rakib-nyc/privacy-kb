@@ -1,0 +1,83 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - doj
+sector:
+  - any
+data_types:
+  - personal_information
+  - biometric
+  - genetic
+  - health
+  - financial
+  - precise_geolocation
+status: in_force
+effective_from: '2025-04-08'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 8, 2025" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.doj_bulk_data.p.202_1104_c_1
+source:
+  citation: 28 C.F.R. § 202.1104(c)(1)
+  instrument_id: us.doj_bulk_data
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-28.xml?part=202
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+  raw_sha256: f029a81bfc5a7a33418fd0bd757b0c8c0e431cd570a5c46ec7a3085964796418
+  text_file: corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.txt
+  text_sha256: c8ef3eab97ed7c77065c998a739c0f32aab75ee4a9b78daf920198b02172ac66
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 12072b3213b117dbae139ba241adf356207cb531cfb5f6dfdf7448a73320fd86
+verbatim_span: >-
+  The name and address of the U.S. person that rejected the prohibited transaction, and the name,
+  telephone number, and email address of a contact from whom additional information may be obtained;
+paragraph_path:
+  path:
+    - c
+    - '1'
+  anchor: '202.1104'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 28-cfr-202.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+subject:
+  domain: I.C.6
+  lifecycle:
+    - III
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Reports on rejected transactions shall include the following, to the extent known and
+      available to the person filing the report at the time the transaction is rejected:
+    path:
+      - c
+    citation: 28 C.F.R. § 202.1104(c)
+operative_verb: may
+summary: The name and address of the U.S.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

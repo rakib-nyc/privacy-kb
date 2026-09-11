@@ -78,12 +78,20 @@ const corpus = load();
      drift.slice(0, 3).map(r => `${r.id}: declared ${r.effective_from_basis}, ` +
                                 `derived ${deriveBasis(r).basis}`).join(' | '));
 
-  const weak = all.filter(r => WEAK_BASES.includes(r.effective_from_basis));
+  // THE RATCHET COUNTS THE ANSWERING CORPUS, matching gate 43. A `provision` record is reference
+  // text that engine/applicability.mjs never reads, so its date cannot decide what an answer
+  // contains — which is the only thing invariant I2's comparison governs.
+  const answering = all.filter(r => r.record_type !== 'provision');
+  const weak = answering.filter(r => WEAK_BASES.includes(r.effective_from_basis));
   const declared = yaml.load(readFileSync(resolve(ROOT, 'meta/ratchets.yaml'), 'utf8'))
     ?.ratchets?.gate_43_weak_effective_from_basis?.value;
   ok('the weak-basis ratchet is declared', typeof declared === 'number', String(declared));
   ok('...and the live count is at or below it', weak.length <= declared,
      `${weak.length} vs ${declared}`);
+  // Reference records are still stamped and still re-derived; they are simply outside the ratchet.
+  const refs = all.filter(r => r.record_type === 'provision');
+  ok('every provision record also declares a derived basis',
+     refs.every(r => !!r.effective_from_basis), `${refs.length} provisions`);
   // api_snapshot is the kind that cannot be defended at all: it is the date of the fetch.
   const snap = all.filter(r => r.effective_from_basis === 'api_snapshot');
   ok('every api_snapshot date is still flagged as one', snap.length > 0,

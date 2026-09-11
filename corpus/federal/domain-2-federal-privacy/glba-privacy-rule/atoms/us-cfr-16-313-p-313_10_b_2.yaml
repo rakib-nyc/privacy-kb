@@ -1,0 +1,77 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - financial
+data_types:
+  - financial
+status: in_force
+effective_from: '2000-11-13'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.16.313.p.313_10_b_2
+source:
+  citation: 16 C.F.R. § 313.10(b)(2)
+  instrument_id: us.cfr.16.313
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=313
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+  raw_sha256: d15f22051009593a5210d7d3bf1f8e8af542214d78f12fc333b9f0a2e852a67a
+  text_file: corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.txt
+  text_sha256: e82d7dc8e83a38f83ca95113eb64d54dc94556c0b0786b595bc452473d05ba1f
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-16 XML, part 313, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: c674979a497d6958f2e53275ab8a35fa9c556807ec838f711b43b8bd11a55150
+verbatim_span: >-
+  Unless you comply with this section, you may not, directly or through any affiliate, disclose any
+  nonpublic personal information about a consumer that you have collected, regardless of whether you
+  collected it before or after receiving the direction to opt out from the consumer.
+paragraph_path:
+  path:
+    - b
+    - '2'
+  anchor: '313.10'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-313.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+subject:
+  domain: II.C.1
+  lifecycle:
+    - I
+operative_context: []
+operative_verb: must_not
+summary: >-
+  Unless you comply with this section, you may not, directly or through any affiliate, disclose any
+  nonpublic personal information about a consumer that you have collected, regardless of whether you
+  collected it before or after receiving the direction to opt out from the consumer.
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

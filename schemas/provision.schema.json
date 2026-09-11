@@ -1,0 +1,72 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://privacy-kb/schemas/provision.schema.json",
+ "title": "Held provision",
+ "description": "A provision the corpus HOLDS and can quote, with no applicability analysis behind it. This record type exists because two different claims were being made by one: that the repository has the exact text of a provision with a verified citation and date, and that the engine knows who the provision binds and when it fires. The first scales mechanically from bytes already on disk; the second is legal analysis and does not. Collapsing them forced a choice between a corpus that stayed tiny and one whose predicates were guessed at volume — and a guessed predicate is worse than an absent one, because it fires. A provision record is findable, citable and verifiable. It NEVER enters an applicability answer: engine/applicability.mjs reads obligation records only, so nothing here can make the engine assert that a duty applies. Promoting one to an obligation means writing applies_if, obligation_type and requirement_detail, which is a deliberate act.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "id",
+  "schema_version",
+  "record_type",
+  "source",
+  "verbatim_span",
+  "verification_status",
+  "jurisdiction",
+  "jurisdiction_level",
+  "status",
+  "effective_from",
+  "effective_to",
+  "summary",
+  "confidence"
+ ],
+ "properties": {
+  "id": { "type": "string", "pattern": "^[a-z]{2}(\\.[a-z0-9_]+)+$" },
+  "schema_version": { "const": 1 },
+  "record_type": { "const": "provision" },
+  "source": { "type": "object" },
+  "verbatim_span": { "type": "string", "minLength": 20 },
+  "verification_status": { "enum": ["verbatim_confirmed", "unverified", "disputed"] },
+  "jurisdiction": { "type": "string" },
+  "jurisdiction_level": { "enum": ["federal", "state", "local", "international"] },
+  "regulator": { "type": "array", "items": { "type": "string" } },
+  "sector": { "type": "array", "items": { "type": "string" } },
+  "data_types": { "type": "array", "items": { "type": "string" } },
+  "status": { "enum": ["in_force", "enacted_pending", "proposed", "vetoed", "superseded", "enjoined"] },
+  "effective_from": { "type": ["string", "null"], "format": "date" },
+  "effective_to": { "type": ["string", "null"], "format": "date" },
+  "effective_from_basis": {
+   "description": "What KIND of date effective_from is. DERIVED from the source bytes by tools/date-basis.mjs and re-derived by gate 43 — a record cannot promote its own date by editing this field.",
+   "enum": ["versioner_evidence", "stated_in_text", "citation_apparatus", "api_snapshot", "undetermined"]
+  },
+  "effective_from_evidence": { "type": ["string", "null"] },
+  "supersedes": { "type": ["string", "null"] },
+  "superseded_by": { "type": ["string", "null"] },
+  "provision_key": { "type": ["string", "null"] },
+  "amendment_history": { "type": "array" },
+  "paragraph_path": { "type": "object" },
+  "subject": { "type": "object" },
+  "summary": {
+   "type": "string",
+   "minLength": 10,
+   "description": "What the provision is about, in a line. It is a FINDING AID, not an analysis: enough to recognise the provision in a list of several hundred. Anything asserting who is bound, when the duty fires or what compliance requires belongs in an obligation record, where a predicate has to be written and a gate has to pass."
+  },
+  "operative_verb": {
+   "description": "The modal the provision uses, read off its own text. `must` and `shall` mark a duty, `may` a permission, `shall not` a prohibition. Recorded because it is the cheapest honest signal of what kind of provision this is, and because it is the field an analyst promoting this record to an obligation will check first.",
+   "enum": ["must", "may", "must_not", "mixed", "none"]
+  },
+  "confidence": { "enum": ["high", "medium", "low"] },
+  "related": { "type": "array", "items": { "type": "string" } },
+  "common_errors": { "type": "array", "items": { "type": "string" } },
+  "open_questions": { "type": "array", "items": { "type": "string" } },
+  "source_defects": { "type": "array" },
+  "span_interruptions": { "type": "array" },
+  "span_truncation_note": { "type": ["string", "null"] },
+  "context_not_required": { "type": ["string", "null"] },
+  "operative_context": { "type": "array" },
+  "not_yet_analysed": {
+   "type": "string",
+   "description": "Why this is a provision record rather than an obligation. Required in practice by convention: a reader must be able to tell a provision nobody has analysed from one deliberately left as reference material."
+  }
+ }
+}

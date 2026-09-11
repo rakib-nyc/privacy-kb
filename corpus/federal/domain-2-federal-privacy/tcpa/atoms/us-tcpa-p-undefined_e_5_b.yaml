@@ -1,0 +1,79 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - any
+status: in_force
+effective_from: '1991-12-20'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "December 20, 1991" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.tcpa.p.undefined_e_5_b
+source:
+  citation: 47 U.S.C. § undefined(e)(5)(B)
+  instrument_id: us.tcpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  raw_sha256: bc0202f0682c43acd483fb4bf598db62d4157704024776425acfebf27c63e018
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.txt
+  text_sha256: 0aeb8fd90520ec4506ed3e1138f1c4e9b7331ed7e27e727734afa93b39f279e4
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 000725f744ef2bd5f2987220f18d7706c233935c019d7ce25f1c90c34b8e6fd1
+verbatim_span: >-
+  Any person who willfully and knowingly violates this subsection shall upon conviction thereof be
+  fined not more than $10,000 for each violation, or 3 times that amount for each day of a
+  continuing violation, in lieu of the fine provided by section 501 of this title for such a
+  violation. This subparagraph does not supersede the provisions of section 501 of this title
+  relating to imprisonment or the imposition of a penalty of both fine and imprisonment.
+paragraph_path:
+  path:
+    - e
+    - '5'
+    - B
+  anchor: undefined
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 47-u-s-c-227.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - I
+operative_context: []
+operative_verb: must
+summary: >-
+  Any person who willfully and knowingly violates this subsection shall upon conviction thereof be
+  fined not more than $10,000 for each violation, or 3 times that amount for each day of a
+  continuing violation, in lieu of the fine provided by section 501 of this title for such a
+  violation.
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

@@ -11,7 +11,7 @@ let fail = 0;
 const ok = (n, c, d = '') => { console.log(`${c ? 'ok  ' : 'FAIL'}  ${n}${d ? '  ' + d : ''}`); if (!c) fail++; };
 
 // ---------------------------------------------------------------- tool surface
-ok('fourteen tools, per SCHEMA.md §5', TOOLS.length === 14, `(${TOOLS.length})`);
+ok('fifteen tools, per SCHEMA.md §5', TOOLS.length === 15, `(${TOOLS.length})`);
 ok('every tool declares an input schema', TOOLS.every(t => t.inputSchema?.type === 'object'));
 ok('as_of is required wherever a query resolves law', 
    ['privacy_analyze','privacy_applicable','privacy_obligations'].every(n =>
@@ -66,7 +66,7 @@ srv.kill();
 
 const byId = Object.fromEntries(lines.map(l => [l.id, l]));
 ok('initialize handshake returns serverInfo', byId[1]?.result?.serverInfo?.name === 'privacy-kb');
-ok('tools/list returns fourteen tools over the wire', byId[2]?.result?.tools?.length === 14);
+ok('tools/list returns fifteen tools over the wire', byId[2]?.result?.tools?.length === 15);
 ok('every tool is annotated readOnly and closed-world',
    byId[2]?.result?.tools?.every(t => t.annotations?.readOnlyHint === true && t.annotations?.openWorldHint === false));
 ok('tools/call returns structuredContent', !!byId[3]?.result?.structuredContent?.verbatim_span);

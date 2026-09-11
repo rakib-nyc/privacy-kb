@@ -1,0 +1,93 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - cpni
+status: in_force
+effective_from: '2017-09-21'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Sept. 21, 2017" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cpni.p.64_2011_b_3
+source:
+  citation: 47 C.F.R. § 64.2011(b)(3)
+  instrument_id: us.cpni
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: 0dd5eebfaf1d53d2e1b46d96eb4ac25495a1c0df452e1db40e543083cb8337cc
+verbatim_span: >-
+  If the relevant investigating agency determines that public disclosure or notice to customers
+  would impede or compromise an ongoing or potential criminal investigation or national security,
+  such agency may direct the carrier not to so disclose or notify for an initial period of up to 30
+  days. Such period may be extended by the agency as reasonably necessary in the judgment of the
+  agency. If such direction is given, the agency shall notify the carrier when it appears that
+  public disclosure or notice to affected customers will no longer impede or compromise a criminal
+  investigation or national security. The agency shall provide in writing its initial direction to
+  the carrier, any subsequent extension, and any notification that notice will no longer impede or
+  compromise a criminal investigation or national security and such writings shall be
+  contemporaneously logged on the same reporting facility that contains records of notifications
+  filed by carriers.
+paragraph_path:
+  path:
+    - b
+    - '3'
+  anchor: '64.2011'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 47-cfr-64.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      As soon as practicable, and in no event later than seven (7) business days, after reasonable
+      determination of the breach, the telecommunications carrier shall electronically notify the
+      United States Secret Service (USSS) and the Federal Bureau of Investigation (FBI) through a
+      central reporting facility. The Commission will maintain a link to the reporting facility at
+      http://www.fcc.gov/eb/cpni.
+    path:
+      - b
+    citation: 47 C.F.R. § 64.2011(b)
+operative_verb: must_not
+summary: >-
+  If the relevant investigating agency determines that public disclosure or notice to customers
+  would impede or compromise an ongoing or potential criminal investigation or national security,
+  such agency may direct the carrier not to so disclose or notify for an initial period of up to 30
+  days.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

@@ -1,0 +1,85 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+  - hhs_samhsa
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2024-04-16'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.part2_sud.p.2_52_c_1_i
+source:
+  citation: 42 C.F.R. § 2.52(c)(1)(i)
+  instrument_id: us.part2_sud
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-42.xml?part=2
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  raw_sha256: 5310842763c7e36481877d66979171643bfb80db54bceca2013014691623c216
+  text_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.txt
+  text_sha256: 8aa03df58a46112b21fc7b4d0972fe49d4ed8dc28481d2e409f7a8fa881e8b74
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, full XML for the part, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: 7e5cb44f05e004daadf7f58f5d1c6294049938aa07e5b2458f93d956ca2afa40
+verbatim_span: >-
+  Have the request reviewed and approved by an Institutional Review Board (IRB) registered with the
+  Department of Health and Human Services, Office for Human Research Protections in accordance with
+  45 CFR part 46 to ensure that patient privacy is considered and the need for identifiable data is
+  justified. Upon request, the researcher may be required to provide evidence of the IRB approval of
+  the research project that contains the data linkage component.
+paragraph_path:
+  path:
+    - c
+    - '1'
+    - i
+  anchor: '2.52'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 42-cfr-2.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+subject:
+  domain: II.B.3
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Any person conducting scientific research using patient identifying information obtained under
+      paragraph (a) of this section that requests linkages to data sets from a data repository(ies)
+      holding patient identifying information must:
+    path:
+      - c
+      - '1'
+    citation: 42 C.F.R. § 2.52(c)(1)
+operative_verb: may
+summary: >-
+  Have the request reviewed and approved by an Institutional Review Board (IRB) registered with the
+  Department of Health and Human Services, Office for Human Research Protections in accordance with
+  45 CFR part 46 to ensure that patient privacy is considered and the need for identifiable data is
+  justif
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

@@ -1,0 +1,79 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - any
+status: in_force
+effective_from: '1991-12-20'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "December 20, 1991" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.tcpa.p.undefined_e_6_d
+source:
+  citation: 47 U.S.C. § undefined(e)(6)(D)
+  instrument_id: us.tcpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  raw_sha256: bc0202f0682c43acd483fb4bf598db62d4157704024776425acfebf27c63e018
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.txt
+  text_sha256: 0aeb8fd90520ec4506ed3e1138f1c4e9b7331ed7e27e727734afa93b39f279e4
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 1a05b9f1617e954b93196199732105b03da8827fdcfbab3f68c1a267d33175eb
+verbatim_span: >-
+  For purposes of bringing any civil action under subparagraph (A), nothing in this paragraph shall
+  prevent the chief legal officer or other State officer from exercising the powers conferred on
+  that officer by the laws of such State to conduct investigations or to administer oaths or
+  affirmations or to compel the attendance of witnesses or the production of documentary and other
+  evidence.
+paragraph_path:
+  path:
+    - e
+    - '6'
+    - D
+  anchor: undefined
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 47-u-s-c-227.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - I
+operative_context: []
+operative_verb: must
+summary: >-
+  For purposes of bringing any civil action under subparagraph (A), nothing in this paragraph shall
+  prevent the chief legal officer or other State officer from exercising the powers conferred on
+  that officer by the laws of such State to conduct investigations or to administer oaths or
+  affirmations or 
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

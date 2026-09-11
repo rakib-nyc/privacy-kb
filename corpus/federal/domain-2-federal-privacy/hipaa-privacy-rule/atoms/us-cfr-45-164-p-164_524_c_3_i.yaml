@@ -1,0 +1,87 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 14, 2003" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.45.164.p.164_524_c_3_i
+source:
+  citation: 45 C.F.R. § 164.524(c)(3)(i)
+  instrument_id: us.cfr.45.164
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-45 XML, part 164
+    result: structured_source_used
+    note: null
+  segment_sha256: e687647ba9d0f82369038d7ff548e612372fbb9a869afbdf1f4fc7214d56cf78
+verbatim_span: >-
+  The covered entity must provide the access as requested by the individual in a timely manner as
+  required by paragraph (b)(2) of this section, including arranging with the individual for a
+  convenient time and place to inspect or obtain a copy of the protected health information, or
+  mailing the copy of the protected health information at the individual's request. The covered
+  entity may discuss the scope, format, and other aspects of the request for access with the
+  individual as necessary to facilitate the timely provision of access.
+paragraph_path:
+  path:
+    - c
+    - '3'
+    - i
+  anchor: '164.524'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-164.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - I
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      If the covered entity provides an individual with access, in whole or in part, to protected
+      health information, the covered entity must comply with the following requirements.
+    path:
+      - c
+    citation: 45 C.F.R. § 164.524(c)
+operative_verb: mixed
+summary: >-
+  The covered entity must provide the access as requested by the individual in a timely manner as
+  required by paragraph (b)(2) of this section, including arranging with the individual for a
+  convenient time and place to inspect or obtain a copy of the protected health information, or
+  mailing the copy o
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

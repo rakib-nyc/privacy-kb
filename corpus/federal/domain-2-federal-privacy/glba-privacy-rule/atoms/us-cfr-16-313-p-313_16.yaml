@@ -1,0 +1,75 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - financial
+data_types:
+  - financial
+status: in_force
+effective_from: '2000-11-13'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.16.313.p.313_16
+source:
+  citation: 16 C.F.R. § 313.16
+  instrument_id: us.cfr.16.313
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=313
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+  raw_sha256: d15f22051009593a5210d7d3bf1f8e8af542214d78f12fc333b9f0a2e852a67a
+  text_file: corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.txt
+  text_sha256: e82d7dc8e83a38f83ca95113eb64d54dc94556c0b0786b595bc452473d05ba1f
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-16 XML, part 313, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: d54df438f7656d0dcca7a310cd73829027c62ee81d88cd798575aab32559cffc
+verbatim_span: >-
+  Nothing in this part shall be construed to modify, limit, or supersede the operation of the Fair
+  Credit Reporting Act (15 U.S.C. 1681 et seq. ), and no inference shall be drawn on the basis of
+  the provisions of this part regarding whether information is transaction or experience information
+  under section 603 of that Act.
+paragraph_path:
+  path: []
+  anchor: '313.16'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-313.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+subject:
+  domain: II.C.1
+  lifecycle:
+    - I
+operative_context: []
+operative_verb: must_not
+summary: >-
+  Nothing in this part shall be construed to modify, limit, or supersede the operation of the Fair
+  Credit Reporting Act (15 U.S.C.
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

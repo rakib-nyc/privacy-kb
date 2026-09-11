@@ -215,5 +215,48 @@ const CTX = { as_of: '2026-09-10', state_layers: ['US-NY'],
   ok('...and the CLI heads them separately from obligations', /Permissions .* MAY do, not must/.test(out));
 }
 
+
+// SEARCH. 1,400 provision records are reference text the engine deliberately does not reason
+// with. Held text that cannot be found is not coverage, and a result that does not say which
+// kind it is invites a reader to treat raw text as an analysed obligation.
+{
+  const byCite = call('privacy_search', { q: '164.512', limit: 5 });
+  ok('search finds a provision by citation', byCite.count > 0, `${byCite.count}`);
+  ok('...ranking the analysed record first', byCite.results[0]?.kind === 'analysed');
+  const byPhrase = call('privacy_search', { q: 'law enforcement', limit: 5 });
+  ok('search finds provisions by phrase', byPhrase.count > 0, `${byPhrase.count}`);
+  ok('...and every result declares its kind',
+     byPhrase.results.every(hit => hit.kind === 'analysed' || hit.kind === 'reference text'));
+  ok('...and carries a verify command', byPhrase.results.every(hit => /privacy-kb cite /.test(hit.verify)));
+  ok('an empty query returns nothing rather than everything',
+     call('privacy_search', { q: '' }).count === 0);
+  ok('reference text is reachable by search', (call('privacy_search',
+     { q: 'protected health information', record_type: 'provision', limit: 3 }).count) > 0);
+
+  const out = cli('find', 'accounting of disclosures', '--limit', '3');
+  ok('privacy-kb find prints matches', /match(es)? for/.test(out));
+  ok('...and does not swallow the flag value into the query', !/accounting of disclosures 3/.test(out));
+  ok('...and explains what reference means', /the engine will not reason with it/.test(out));
+}
+
+// THE SAFETY PROPERTY OF provision RECORDS, asserted rather than assumed: they must never reach
+// an applicability answer, however many of them there are.
+{
+  const corpus = load();
+  const provisions = corpus.all.filter(r => r.record_type === 'provision');
+  ok('the corpus holds provision records', provisions.length > 500, `${provisions.length}`);
+  ok('...and the engine does not read them',
+     corpus.obligations.every(r => r.record_type === 'obligation'));
+  const r = call('privacy_analyze', {
+    entity: { is_hipaa_covered_entity: true, within_ftc_jurisdiction: true, in_or_affecting_commerce: true },
+    data: { is_phi: true, types: ['phi'] }, as_of: '2026-09-11' });
+  ok('...so none appears in an answer',
+     r.applicable.every(hit => corpus.byId.get(hit.atom_id)?.record_type === 'obligation'));
+  ok('every provision record says why it is not analysed',
+     provisions.every(r => !!r.not_yet_analysed));
+  ok('...and every one is verbatim_confirmed against its source',
+     provisions.every(r => r.verification_status === 'verbatim_confirmed'));
+}
+
 console.log(`\n${fail} failure(s)`);
 process.exit(fail ? 1 : 0);

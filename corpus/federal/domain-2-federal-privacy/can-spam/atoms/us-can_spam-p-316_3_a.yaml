@@ -1,0 +1,69 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2008-07-07'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/can-spam/raw/16-cfr-316.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.can_spam.p.316_3_a
+source:
+  citation: 16 C.F.R. § 316.3(a)
+  instrument_id: us.can_spam
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=316
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/16-cfr-316.xml
+  raw_sha256: 45bf26b68a06dc81f55388a06eb4e376ceb061a490e3858fb6105143d1d583b0
+  text_file: corpus/federal/domain-2-federal-privacy/can-spam/raw/16-cfr-316.txt
+  text_sha256: 0fb06913475d5f82e29a3c611039df9c11747a5b2235b48a9fa6bebf81ff26ce
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/can-spam/raw/16-cfr-316.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: ae18d0247001cd338d8901931a860c0440d80007e61731a48f14cdb59a27ad78
+verbatim_span: >-
+  In applying the term “commercial electronic mail message” defined in the CAN-SPAM Act, 15 U.S.C.
+  7702(2), the “primary purpose” of an electronic mail message shall be deemed to be commercial
+  based on the criteria in paragraphs (a)(1) through (3) and (b) of this section: 1
+paragraph_path:
+  path:
+    - a
+  anchor: '316.3'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-316.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/can-spam/raw/16-cfr-316.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - VI
+operative_context: []
+operative_verb: must
+summary: In applying the term “commercial electronic mail message” defined in the CAN-SPAM Act, 15 U.S.C.
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

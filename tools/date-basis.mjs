@@ -85,22 +85,25 @@ export function dateVariants(iso) {
 
 /** Every activeDate the fetched payload advertises, for the api_snapshot test. */
 function apiSnapshotDates(src) {
+  const key = src.raw_file ?? '';
+  if (SNAPSHOT_CACHE.has(key)) return SNAPSHOT_CACHE.get(key);
   const out = new Set();
   const raw = src.raw_file && R(src.raw_file);
-  if (raw && existsSync(raw)) {
-    const t = readFileSync(raw, 'utf8');
-    for (const m of t.matchAll(/"activeDate"\s*:\s*"(\d{4}-\d{2}-\d{2})"/g)) out.add(m[1]);
+  if (raw) {
+    const t = readCached(raw);
+    if (t) for (const m of t.matchAll(/"activeDate"\s*:\s*"(\d{4}-\d{2}-\d{2})"/g)) out.add(m[1]);
   }
   // The segmentation sits beside the raw file, one directory up, named after it.
   if (src.raw_file) {
     const stem = basename(src.raw_file).replace(/\.\w+$/, '');
     for (const cand of [R(join(dirname(src.raw_file), `${stem}.seg.json`)),
                         R(join(dirname(dirname(src.raw_file)), `${stem}.seg.json`))]) {
-      if (!existsSync(cand)) continue;
-      const t = readFileSync(cand, 'utf8');
+      const t = readCached(cand);
+      if (!t) continue;
       for (const m of t.matchAll(/"active_date"\s*:\s*"(\d{4}-\d{2}-\d{2})"/g)) out.add(m[1]);
     }
   }
+  SNAPSHOT_CACHE.set(key, out);
   return out;
 }
 
@@ -127,6 +130,17 @@ function citationApparatusHit(rawText, variants) {
  * activeDate inside the JSON body, so a text search would otherwise "find" it and report the
  * fetch date as though the statute had stated it.
  */
+// FILE CACHE. deriveBasis reads a record's raw and rendered source to decide where its date came
+// from. At 248 records that cost nothing; at 1,656 it is thousands of reads of multi-megabyte XML,
+// and it made the gate suite — which runs validate once per fixture — take minutes. Sources are
+// immutable within a run, so each is read once.
+const FILE_CACHE = new Map();
+function readCached(p) {
+  if (!FILE_CACHE.has(p)) FILE_CACHE.set(p, existsSync(p) ? readFileSync(p, 'utf8') : null);
+  return FILE_CACHE.get(p);
+}
+const SNAPSHOT_CACHE = new Map();
+
 let VINTAGES = null;
 /** The eCFR point-in-time findings, if tools/ecfr-vintages.mjs has produced them. Lazily read
  *  once: deriveBasis is called 248 times per validate run. */
@@ -179,17 +193,20 @@ export function deriveBasis(rec) {
 
   // The rendered text is the instrument's own words; the raw file also carries apparatus.
   const textPath = src.text_file && R(src.text_file);
-  if (textPath && existsSync(textPath)) {
-    const t = readFileSync(textPath, 'utf8');
+  if (textPath) {
+    const t = readCached(textPath);
+    if (t) {
     const spelling = variants.find(v => t.includes(v));
     if (spelling)
       return { basis: 'stated_in_text',
                evidence: `"${spelling}" appears in the rendered text of ${src.text_file}` };
+    }
   }
 
   const rawPath = src.raw_file && R(src.raw_file);
-  if (rawPath && existsSync(rawPath)) {
-    const t = readFileSync(rawPath, 'utf8');
+  const rawTxt = rawPath ? readCached(rawPath) : null;
+  if (rawTxt) {
+    const t = rawTxt;
     const ca = citationApparatusHit(t, variants);
     if (ca.hit)
       return { basis: 'citation_apparatus',

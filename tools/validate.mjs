@@ -104,6 +104,7 @@ const SCHEMAS = {
   enforcement_action: ajv.compile(JSON.parse(readFileSync(R('schemas/enforcement-action.schema.json'), 'utf8'))),
   workflow_constraint: ajv.compile(JSON.parse(readFileSync(R('schemas/workflow-constraint.schema.json'), 'utf8'))),
   doctrine: ajv.compile(JSON.parse(readFileSync(R('schemas/doctrine.schema.json'), 'utf8'))),
+  provision: ajv.compile(JSON.parse(readFileSync(R('schemas/provision.schema.json'), 'utf8'))),
 };
 
 // verbatim_span vs raw text: whitespace is normalised on BOTH sides, because PDF
@@ -1817,7 +1818,20 @@ const unverified = atoms.filter(x => x.a?.verification_status !== 'verbatim_conf
       'Run npm run vintages.');
     return;
   }
-  const weak = atoms.filter(({ a }) => a?.id && WEAK_BASES.includes(deriveBasis(a).basis)).length;
+  // THE RATCHET MEASURES THE ANSWERING CORPUS. Invariant I2's concern is that
+  // `effective_from > as_of` decides what an answer contains, and a `provision` record never
+  // reaches an answer — engine/applicability.mjs reads obligations only. Counting reference text
+  // here would move the number by a thousand on a change that cannot affect a single result, and
+  // a ratchet that jumps for reasons unrelated to what it measures stops being read.
+  //
+  // The per-record derivation check above still applies to every record, provisions included: a
+  // provision may not claim a basis its bytes do not support either.
+  const answering = atoms.filter(({ a }) => a?.id && a.record_type !== 'provision');
+  const weak = answering.filter(({ a }) => WEAK_BASES.includes(deriveBasis(a).basis)).length;
+  const refWeak = atoms.filter(({ a }) => a?.id && a.record_type === 'provision'
+    && WEAK_BASES.includes(deriveBasis(a).basis)).length;
+  if (refWeak) notes.push(`gate 43: ${refWeak} provision record(s) also carry a weak basis. They ` +
+    `are reference text and never enter an answer, so they sit outside the ratchet.`);
   const rf43 = R('meta/ratchets.yaml');
   const declared = existsSync(rf43)
     ? yaml.load(readFileSync(rf43, 'utf8'))?.ratchets?.gate_43_weak_effective_from_basis?.value
@@ -1826,9 +1840,9 @@ const unverified = atoms.filter(x => x.a?.verification_status !== 'verbatim_conf
     fail(43, 'meta/ratchets.yaml', 'declares no gate_43_weak_effective_from_basis, so the count of ' +
       'dates that cannot support an as-of comparison is accountable to nothing.');
   else if (weak > declared)
-    fail(43, 'meta/ratchets.yaml', `${weak} records carry an effective_from that cannot support an ` +
-      `as-of comparison (api_snapshot or undetermined); meta/ratchets.yaml declares ${declared}. ` +
-      `This ratchet moves DOWN. Raising it means editing that file with a reason.`);
+    fail(43, 'meta/ratchets.yaml', `${weak} ANSWERING records carry an effective_from that cannot ` +
+      `support an as-of comparison (api_snapshot or undetermined); meta/ratchets.yaml declares ` +
+      `${declared}. This ratchet moves DOWN. Raising it means editing that file with a reason.`);
   else if (weak < declared)
     notes.push(`gate 43: weak effective_from bases are ${weak}, below the declared ${declared}. ` +
       `Ratchet it down in meta/ratchets.yaml.`);

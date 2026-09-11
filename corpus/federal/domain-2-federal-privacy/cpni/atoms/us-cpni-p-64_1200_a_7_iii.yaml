@@ -1,0 +1,91 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - cpni
+status: in_force
+effective_from: '2017-09-21'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Sept. 21, 2017" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cpni.p.64_1200_a_7_iii
+source:
+  citation: 47 C.F.R. § 64.1200(a)(7)(iii)
+  instrument_id: us.cpni
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: 857f3dcf74d54b1a11c208a6f0bcd97dcc7f7cd71beedfe941c085405bdde85d
+verbatim_span: >-
+  The seller or telemarketer must maintain records establishing compliance with paragraph (a)(7) of
+  this section.
+paragraph_path:
+  path:
+    - a
+    - '7'
+    - iii
+  anchor: '64.1200'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 47-cfr-64.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'No person or entity may:'
+    path:
+      - a
+    citation: 47 C.F.R. § 64.1200(a)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Abandon more than three percent of all telemarketing calls that are answered live by a person,
+      as measured over a 30-day period for a single calling campaign. If a single calling campaign
+      exceeds a 30-day period, the abandonment rate shall be calculated separately for each
+      successive 30-day period or portion thereof that such calling campaign continues. A call is
+      “abandoned” if it is not connected to a live sales representative within two (2) seconds of
+      the called person's completed greeting.
+    path:
+      - a
+      - '7'
+    citation: 47 C.F.R. § 64.1200(a)(7)
+operative_verb: must
+summary: >-
+  The seller or telemarketer must maintain records establishing compliance with paragraph (a)(7) of
+  this section.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

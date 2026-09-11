@@ -1,0 +1,78 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.45.160.p.160_306_b_4
+source:
+  citation: 45 C.F.R. § 160.306(b)(4)
+  instrument_id: us.cfr.45.160
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=160
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+  raw_sha256: 9916d549267c2f3f629b2157d6e0887b73570f9eddace67b626c40f51a6c9c72
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.txt
+  text_sha256: f77059505f5a5559b29004fa9b5cd6e88a88556fd94b0a4c673d42cbe4d6d9bb
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 45 CFR 160 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: b6a4ab0a5c145680ea3187e2d00cf5f41de5d4b1c9c57adbb7d3acd6c486b381
+verbatim_span: >-
+  The Secretary may prescribe additional procedures for the filing of complaints, as well as the
+  place and manner of filing, by notice in the Federal Register.
+paragraph_path:
+  path:
+    - b
+    - '4'
+  anchor: '160.306'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-160.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - III
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'Complaints under this section must meet the following requirements:'
+    path:
+      - b
+    citation: 45 C.F.R. § 160.306(b)
+operative_verb: may
+summary: >-
+  The Secretary may prescribe additional procedures for the filing of complaints, as well as the
+  place and manner of filing, by notice in the Federal Register.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

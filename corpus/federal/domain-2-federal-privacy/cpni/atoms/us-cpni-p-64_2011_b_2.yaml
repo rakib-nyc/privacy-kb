@@ -1,0 +1,88 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - cpni
+status: in_force
+effective_from: '2017-09-21'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Sept. 21, 2017" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cpni.p.64_2011_b_2
+source:
+  citation: 47 C.F.R. § 64.2011(b)(2)
+  instrument_id: us.cpni
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: 1b43606e6a1b5af6b3507e4e5dc28551d575804e6909624bb918bc8793778c8b
+verbatim_span: >-
+  If the carrier believes that there is an extraordinarily urgent need to notify any class of
+  affected customers sooner than otherwise allowed under paragraph (b)(1) of this section, in order
+  to avoid immediate and irreparable harm, it shall so indicate in its notification and may proceed
+  to immediately notify its affected customers only after consultation with the relevant
+  investigating agency. The carrier shall cooperate with the relevant investigating agency's request
+  to minimize any adverse effects of such customer notification.
+paragraph_path:
+  path:
+    - b
+    - '2'
+  anchor: '64.2011'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 47-cfr-64.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      As soon as practicable, and in no event later than seven (7) business days, after reasonable
+      determination of the breach, the telecommunications carrier shall electronically notify the
+      United States Secret Service (USSS) and the Federal Bureau of Investigation (FBI) through a
+      central reporting facility. The Commission will maintain a link to the reporting facility at
+      http://www.fcc.gov/eb/cpni.
+    path:
+      - b
+    citation: 47 C.F.R. § 64.2011(b)
+operative_verb: mixed
+summary: >-
+  If the carrier believes that there is an extraordinarily urgent need to notify any class of
+  affected customers sooner than otherwise allowed under paragraph (b)(1) of this section, in order
+  to avoid immediate and irreparable harm, it shall so indicate in its notification and may proceed
+  to immediate
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []
