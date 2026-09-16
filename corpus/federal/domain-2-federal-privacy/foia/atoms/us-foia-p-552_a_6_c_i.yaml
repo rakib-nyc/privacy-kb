@@ -1,0 +1,87 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - federal_agencies
+sector:
+  - government
+data_types:
+  - any
+status: in_force
+effective_from: '1967-07-04'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "July 4, 1967" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.foia.p.552_a_6_c_i
+source:
+  citation: 5 U.S.C. § 552(a)(6)(C)(i)
+  instrument_id: us.foia
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc05@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.xml
+  raw_sha256: d4c06f60a9741b07b3eccca530f8b5e361ca4a4f4cd2cd9a82b2d9b65767e093
+  text_file: corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.txt
+  text_sha256: ad4133ff673d3a14564fc33c0ab6d32209965d12bac8c15147a923b6f488562e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 4f913072001bd939ff5609ec3ae40bd088f696bc0ae30364a6d9af080e7eb847
+verbatim_span: >-
+  Any person making a request to any agency for records under paragraph (1), (2), or (3) of this
+  subsection shall be deemed to have exhausted his administrative remedies with respect to such
+  request if the agency fails to comply with the applicable time limit provisions of this paragraph.
+  If the Government can show exceptional circumstances exist and that the agency is exercising due
+  diligence in responding to the request, the court may retain jurisdiction and allow the agency
+  additional time to complete its review of the records. Upon any determination by an agency to
+  comply with a request for records, the records shall be made promptly available to such person
+  making such request. Any notification of denial of any request for records under this subsection
+  shall set forth the names and titles or positions of each person responsible for the denial of
+  such request.
+paragraph_path:
+  path:
+    - a
+    - '6'
+    - C
+    - i
+  anchor: '552'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 5-u-s-c-552.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.xml
+subject:
+  domain: III.A.1
+  lifecycle:
+    - VI
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'Each agency shall make available to the public information as follows:'
+    path:
+      - a
+    citation: 5 U.S.C. § 552(a)
+operative_verb: mixed
+summary: >-
+  Any person making a request to any agency for records under paragraph (1), (2), or (3) of this
+  subsection shall be deemed to have exhausted his administrative remedies with respect to such
+  request if the agency fails to comply with the applicable time limit provisions of this paragraph.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

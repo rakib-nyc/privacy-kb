@@ -1,0 +1,3267 @@
+{
+ "label": "16 CFR 312",
+ "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=312",
+ "format": "ecfr_xml",
+ "positive_law": null,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml",
+ "raw_sha256": "5a29d13e4512092a2d064a62a581031dc75aa99998540e6c2ef24f0dbfc66df9",
+ "leaves": [
+  {
+   "path": [],
+   "anchor": null,
+   "section": "312.1",
+   "confidence": "high",
+   "heading": "&#xA7; 312.1 Scope of regulations in this part.",
+   "text": "This part implements the Children's Online Privacy Protection Act of 1998 (15 U.S.C. 6501, et seq. ), which prohibits unfair or deceptive acts or practices in connection with the collection, use, and/or disclosure of personal information from and about children on the internet.",
+   "context": []
+  },
+  {
+   "path": [
+    "Child"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means an individual under the age of 13.",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Collects or collection"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means the gathering of any personal information from a child by any means, including but not limited to:",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Collects or collection",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Requesting, prompting, or encouraging a child to submit personal information online;",
+   "context": []
+  },
+  {
+   "path": [
+    "Collects or collection",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Enabling a child to make personal information publicly available in identifiable form. An operator shall not be considered to have collected personal information under this paragraph if it takes reasonable measures to delete all or virtually all personal information from a child's postings before they are made public and also to delete such information from its records; or",
+   "context": []
+  },
+  {
+   "path": [
+    "Collects or collection",
+    "3"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Passive tracking of a child online.",
+   "context": []
+  },
+  {
+   "path": [
+    "Commission"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means the Federal Trade Commission.",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Delete"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means to remove personal information such that it is not maintained in retrievable form and cannot be retrieved in the normal course of business.",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Disclose or disclosure"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means, with respect to personal information:",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Disclose or disclosure",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "The release of personal information collected by an operator from a child in identifiable form for any purpose, except where an operator provides such information to a person who provides support for the internal operations of the website or online service; and",
+   "context": []
+  },
+  {
+   "path": [
+    "Disclose or disclosure",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Making personal information collected by an operator from a child publicly available in identifiable form by any means, including but not limited to a public posting through the internet, or through a personal home page or screen posted on a website or online service; a pen pal service; an electronic mail service; a message board; or a chat room.",
+   "context": []
+  },
+  {
+   "path": [
+    "Federal agency"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means an agency, as that term is defined in section 551(1) of title 5, United States Code.",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Internet"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means collectively the myriad of computer and telecommunications facilities, including equipment and operating software, which comprise the interconnected world-wide network of networks that employ the Transmission Control Protocol/Internet Protocol, or any predecessor or successor protocols to such protocol, to communicate information of all kinds by wire, radio, or other methods of transmission.",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Mixed audience website or online service"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means a website or online service that is directed to children under the criteria set forth in paragraph (1) of the definition of website or online service directed to children, but that does not target children as its primary audience, and does not collect personal information from any visitor, other than for the limited purposes set forth in \u00a7 312.5(c), prior to collecting age information or using another means that is reasonably calculated, in light of available technology, to determine whether the visitor is a child. Any collection of age information, or other means of determining whether a visitor is a child, must be done in a neutral manner that does not default to a set age or encourage visitors to falsify age information.",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Obtaining verifiable consent"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means making any reasonable effort (taking into consideration available technology) to ensure that before personal information is collected from a child, a parent of the child:",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Obtaining verifiable consent",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Receives notice of the operator's personal information collection, use, and disclosure practices; and",
+   "context": []
+  },
+  {
+   "path": [
+    "Obtaining verifiable consent",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Authorizes any collection, use, and/or disclosure of the personal information.",
+   "context": []
+  },
+  {
+   "path": [
+    "Online contact information"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means an email address or any other substantially similar identifier that permits direct contact with a person online, including but not limited to, an instant messaging user identifier, a voice over Internet Protocol (VOIP) identifier, a video chat user identifier, or a mobile telephone number provided the operator uses it only to send text messages to a parent in connection with obtaining parental consent.",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Operator"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means any person who operates a website located on the internet or an online service and who collects or maintains personal information from or about the users of or visitors to such website or online service, or on whose behalf such information is collected or maintained, or offers products or services for sale through that website or online service, where such website or online service is operated for commercial purposes involving commerce among the several States or with one or more foreign nations; in any territory of the United States or in the District of Columbia, or between any such territory and another such territory or any State or foreign nation; or between the District of Columbia and any State, territory, or foreign nation. This definition does not include any nonprofit entity that would otherwise be exempt from coverage under Section 5 of the Federal Trade Commission Act (15 U.S.C. 45). Personal information is collected or maintained on behalf of an operator when:",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Operator",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "It is collected or maintained by an agent or service provider of the operator; or",
+   "context": []
+  },
+  {
+   "path": [
+    "Operator",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "The operator benefits by allowing another person to collect personal information directly from users of such website or online service.",
+   "context": []
+  },
+  {
+   "path": [
+    "Parent"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "includes a legal guardian.",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Person"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means any individual, partnership, corporation, trust, estate, cooperative, association, or other entity.",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Personal information"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means individually identifiable information about an individual collected online, including:",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Personal information",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "A first and last name;",
+   "context": []
+  },
+  {
+   "path": [
+    "Personal information",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "A home or other physical address including street name and name of a city or town;",
+   "context": []
+  },
+  {
+   "path": [
+    "Personal information",
+    "3"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Online contact information as defined in this section;",
+   "context": []
+  },
+  {
+   "path": [
+    "Personal information",
+    "4"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "A screen or user name where it functions in the same manner as online contact information, as defined in this section;",
+   "context": []
+  },
+  {
+   "path": [
+    "Personal information",
+    "5"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "A telephone number;",
+   "context": []
+  },
+  {
+   "path": [
+    "Personal information",
+    "6"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "A government-issued identifier, such as a Social Security, State identification card, birth certificate, or passport number;",
+   "context": []
+  },
+  {
+   "path": [
+    "Personal information",
+    "7"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "A persistent identifier that can be used to recognize a user over time and across different websites or online services. Such persistent identifier includes, but is not limited to, a customer number held in a cookie, an Internet Protocol (IP) address, a processor or device serial number, or unique device identifier;",
+   "context": []
+  },
+  {
+   "path": [
+    "Personal information",
+    "8"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "A photograph, video, or audio file where such file contains a child's image or voice;",
+   "context": []
+  },
+  {
+   "path": [
+    "Personal information",
+    "9"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Geolocation information sufficient to identify street name and name of a city or town;",
+   "context": []
+  },
+  {
+   "path": [
+    "Personal information",
+    "10"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "A biometric identifier that can be used for the automated or semi-automated recognition of an individual, such as fingerprints; handprints; retina patterns; iris patterns; genetic data, including a DNA sequence; voiceprints; gait patterns; facial templates; or faceprints; or",
+   "context": []
+  },
+  {
+   "path": [
+    "Personal information",
+    "11"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Information concerning the child or the parents of that child that the operator collects online from the child and combines with an identifier described in this definition.",
+   "context": []
+  },
+  {
+   "path": [
+    "Release of personal information"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means the sharing, selling, renting, or transfer of personal information to any third party.",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Support for the internal operations of the website or online service"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means:",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Support for the internal operations of the website or online service",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Those activities necessary to:",
+   "context": []
+  },
+  {
+   "path": [
+    "Support for the internal operations of the website or online service",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Maintain or analyze the functioning of the website or online service;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Those activities necessary to:",
+     "path": [
+      "Support for the internal operations of the website or online service",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "Support for the internal operations of the website or online service",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Perform network communications;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Those activities necessary to:",
+     "path": [
+      "Support for the internal operations of the website or online service",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "Support for the internal operations of the website or online service",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Authenticate users of, or personalize the content on, the website or online service;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Those activities necessary to:",
+     "path": [
+      "Support for the internal operations of the website or online service",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "Support for the internal operations of the website or online service",
+    "1",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Serve contextual advertising on the website or online service or cap the frequency of advertising;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Those activities necessary to:",
+     "path": [
+      "Support for the internal operations of the website or online service",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "Support for the internal operations of the website or online service",
+    "1",
+    "v"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Protect the security or integrity of the user, website, or online service;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Those activities necessary to:",
+     "path": [
+      "Support for the internal operations of the website or online service",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "Support for the internal operations of the website or online service",
+    "1",
+    "vi"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Ensure legal or regulatory compliance; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Those activities necessary to:",
+     "path": [
+      "Support for the internal operations of the website or online service",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "Support for the internal operations of the website or online service",
+    "1",
+    "vii"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Fulfill a request of a child as permitted by \u00a7 312.5(c)(3) and (4).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Those activities necessary to:",
+     "path": [
+      "Support for the internal operations of the website or online service",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "Support for the internal operations of the website or online service",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "Provided, however, that, except as specifically permitted by paragraphs (1)(i) through (vii) of this definition, the information collected for the activities listed in paragraphs (1)(i) through (vii) of this definition cannot be used or disclosed to contact a specific individual, including through behavioral advertising, to amass a profile on a specific individual, or for any other purpose.",
+   "context": []
+  },
+  {
+   "path": [
+    "Third party"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means any person who is not:",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Third party",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "An operator with respect to the collection or maintenance of personal information on the website or online service; or",
+   "context": []
+  },
+  {
+   "path": [
+    "Third party",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "A person who provides support for the internal operations of the website or online service and who does not use or disclose information protected under this part for any other purpose.",
+   "context": []
+  },
+  {
+   "path": [
+    "Website or online service directed to children"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "medium",
+   "text": "means a commercial website or online service, or portion thereof, that is targeted to children.",
+   "context": [],
+   "heading": "&#xA7; 312.2 Definitions."
+  },
+  {
+   "path": [
+    "Website or online service directed to children",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "In determining whether a website or online service, or a portion thereof, is directed to children, the Commission will consider its subject matter, visual content, use of animated characters or child-oriented activities and incentives, music or other audio content, age of models, presence of child celebrities or celebrities who appeal to children, language or other characteristics of the website or online service, as well as whether advertising promoting or appearing on the website or online service is directed to children. The Commission will also consider competent and reliable empirical evidence regarding audience composition and evidence regarding the intended audience, including marketing or promotional materials or plans, representations to consumers or to third parties, reviews by users or third parties, and the age of users on similar websites or services.",
+   "context": []
+  },
+  {
+   "path": [
+    "Website or online service directed to children",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "A website or online service shall be deemed directed to children when it has actual knowledge that it is collecting personal information directly from users of another website or online service directed to children.",
+   "context": []
+  },
+  {
+   "path": [
+    "Website or online service directed to children",
+    "3"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "A mixed audience website or online service shall not be deemed directed to children with regard to any visitor not identified as under 13.",
+   "context": []
+  },
+  {
+   "path": [
+    "Website or online service directed to children",
+    "4"
+   ],
+   "anchor": null,
+   "section": "312.2",
+   "confidence": "high",
+   "heading": "&#xA7; 312.2 Definitions.",
+   "text": "A website or online service shall not be deemed directed to children solely because it refers or links to a commercial website or online service directed to children by using information location tools, including a directory, index, reference, pointer, or hypertext link.",
+   "context": []
+  },
+  {
+   "path": [],
+   "anchor": null,
+   "section": "312.3",
+   "confidence": "high",
+   "heading": "&#xA7; 312.3 Regulation of unfair or deceptive acts or practices in connection with the collection, use, and/or disclosure of personal information from and about children on the internet.",
+   "text": "It shall be unlawful for any operator of a website or online service directed to children, or any operator that has actual knowledge that it is collecting or maintaining personal information from a child, to collect personal information from a child in a manner that violates the regulations prescribed under this part. Generally, under this part, an operator must:",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "312.3",
+   "confidence": "high",
+   "heading": "&#xA7; 312.3 Regulation of unfair or deceptive acts or practices in connection with the collection, use, and/or disclosure of personal information from and about children on the internet.",
+   "text": "Provide notice on the website or online service of what information it collects from children, how it uses such information, and its disclosure practices for such information (\u00a7 312.4(b));",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "312.3",
+   "confidence": "high",
+   "heading": "&#xA7; 312.3 Regulation of unfair or deceptive acts or practices in connection with the collection, use, and/or disclosure of personal information from and about children on the internet.",
+   "text": "Obtain verifiable parental consent prior to any collection, use, and/or disclosure of personal information from children (\u00a7 312.5);",
+   "context": []
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "312.3",
+   "confidence": "high",
+   "heading": "&#xA7; 312.3 Regulation of unfair or deceptive acts or practices in connection with the collection, use, and/or disclosure of personal information from and about children on the internet.",
+   "text": "Provide a reasonable means for a parent to review the personal information collected from a child and to refuse to permit its further use or maintenance (\u00a7 312.6);",
+   "context": []
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": null,
+   "section": "312.3",
+   "confidence": "high",
+   "heading": "&#xA7; 312.3 Regulation of unfair or deceptive acts or practices in connection with the collection, use, and/or disclosure of personal information from and about children on the internet.",
+   "text": "Not condition a child's participation in a game, the offering of a prize, or another activity on the child disclosing more personal information than is reasonably necessary to participate in such activity (\u00a7 312.7); and",
+   "context": []
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": null,
+   "section": "312.3",
+   "confidence": "high",
+   "heading": "&#xA7; 312.3 Regulation of unfair or deceptive acts or practices in connection with the collection, use, and/or disclosure of personal information from and about children on the internet.",
+   "text": "Establish and maintain reasonable procedures to protect the confidentiality, security, and integrity of personal information collected from children (\u00a7 312.8).",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "It shall be the obligation of the operator to provide notice and obtain verifiable parental consent prior to collecting, using, or disclosing personal information from children. Such notice must be clearly and understandably written, complete, and must contain no unrelated, confusing, or contradictory materials.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "An operator must make reasonable efforts, taking into account available technology, to ensure that a parent of a child receives direct notice of the operator's practices with regard to the collection, use, or disclosure of personal information from children, including notice of any material change in the collection, use, or disclosure practices to which the parent has previously consented.",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "for purposes of obtaining consent. The direct notice to obtain the parent's affirmative consent to the collection, use, or disclosure of a child's personal information (including under \u00a7 312.5(c)(1)) shall set forth:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "If applicable, that the operator has collected the parent's or child's online contact information from the child, and, if such is the case, the name of the child or the parent, in order to obtain the parent's consent;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "for purposes of obtaining consent. The direct notice to obtain the parent's affirmative consent to the collection, use, or disclosure of a child's personal information (including under \u00a7 312.5(c)(1)) shall set forth:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "That the parent's consent is required for the collection, use, or disclosure of personal information, and that the operator will not collect, use, or disclose any personal information from the child if the parent does not provide such consent;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "for purposes of obtaining consent. The direct notice to obtain the parent's affirmative consent to the collection, use, or disclosure of a child's personal information (including under \u00a7 312.5(c)(1)) shall set forth:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "The items of personal information the operator intends to collect from the child, how the operator intends to use such information, and the potential opportunities for the disclosure of personal information, should the parent provide consent;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "for purposes of obtaining consent. The direct notice to obtain the parent's affirmative consent to the collection, use, or disclosure of a child's personal information (including under \u00a7 312.5(c)(1)) shall set forth:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "Where the operator discloses personal information to one or more third parties, the identities or specific categories of such third parties (including the public if making it publicly available) and the purposes for such disclosure, should the parent provide consent, and that the parent can consent to the collection and use of the child's personal information without consenting to the disclosure of such personal information to third parties except to the extent such disclosure is integral to the website or online service;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "for purposes of obtaining consent. The direct notice to obtain the parent's affirmative consent to the collection, use, or disclosure of a child's personal information (including under \u00a7 312.5(c)(1)) shall set forth:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "v"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "A hyperlink to the operator's online notice of its information practices required under paragraph (d) of this section;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "for purposes of obtaining consent. The direct notice to obtain the parent's affirmative consent to the collection, use, or disclosure of a child's personal information (including under \u00a7 312.5(c)(1)) shall set forth:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "vi"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "The means by which the parent can provide verifiable consent to the collection, use, and disclosure of the information; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "for purposes of obtaining consent. The direct notice to obtain the parent's affirmative consent to the collection, use, or disclosure of a child's personal information (including under \u00a7 312.5(c)(1)) shall set forth:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "vii"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "If the operator has collected the name or online contact information of the parent or child to provide notice and obtain parental consent, that if the parent does not provide consent within a reasonable time from the date the direct notice was sent, the operator will delete the parent's or child's online contact information and the parent's or child's name from its records.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "for purposes of obtaining consent. The direct notice to obtain the parent's affirmative consent to the collection, use, or disclosure of a child's personal information (including under \u00a7 312.5(c)(1)) shall set forth:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "Where an operator chooses to notify a parent of a child's participation in a website or online service, and where such site or service does not collect any personal information other than the parent's online contact information, the voluntary direct notice to the parent of a child's online activities not involving the collection, use or disclosure of personal information (required under \u00a7 312.5(c)(2)) shall set forth:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "That the operator has collected the parent's online contact information from the child in order to provide notice to, and subsequently update the parent about, a child's participation in a website or online service that does not otherwise collect, use, or disclose children's personal information;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an operator chooses to notify a parent of a child's participation in a website or online service, and where such site or service does not collect any personal information other than the parent's online contact information, the voluntary direct notice to the parent of a child's online activities not involving the collection, use or disclosure of personal information (required under \u00a7 312.5(c)(2)) shall set forth:",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "That the parent's online contact information will not be used or disclosed for any other purpose;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an operator chooses to notify a parent of a child's participation in a website or online service, and where such site or service does not collect any personal information other than the parent's online contact information, the voluntary direct notice to the parent of a child's online activities not involving the collection, use or disclosure of personal information (required under \u00a7 312.5(c)(2)) shall set forth:",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "That the parent may refuse to permit the child's participation in the website or online service and may require the deletion of the parent's online contact information, and how the parent can do so; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an operator chooses to notify a parent of a child's participation in a website or online service, and where such site or service does not collect any personal information other than the parent's online contact information, the voluntary direct notice to the parent of a child's online activities not involving the collection, use or disclosure of personal information (required under \u00a7 312.5(c)(2)) shall set forth:",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "A hyperlink to the operator's online notice of its information practices required under paragraph (d) of this section.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Where an operator chooses to notify a parent of a child's participation in a website or online service, and where such site or service does not collect any personal information other than the parent's online contact information, the voluntary direct notice to the parent of a child's online activities not involving the collection, use or disclosure of personal information (required under \u00a7 312.5(c)(2)) shall set forth:",
+     "path": [
+      "c",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "The direct notice to the parent of the operator's intent to communicate with the child multiple times (required under \u00a7 312.5(c)(4)) shall set forth:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "i"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "That the operator has collected the child's online contact information from the child in order to provide multiple online communications to the child;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The direct notice to the parent of the operator's intent to communicate with the child multiple times (required under \u00a7 312.5(c)(4)) shall set forth:",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "That the operator has collected the parent's online contact information from the child in order to notify the parent that the child has registered to receive multiple online communications from the operator;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The direct notice to the parent of the operator's intent to communicate with the child multiple times (required under \u00a7 312.5(c)(4)) shall set forth:",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "That the online contact information collected from the child will not be used for any other purpose, disclosed, or combined with any other information collected from the child;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The direct notice to the parent of the operator's intent to communicate with the child multiple times (required under \u00a7 312.5(c)(4)) shall set forth:",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "That the parent may refuse to permit further contact with the child and require the deletion of the parent's and child's online contact information, and how the parent can do so;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The direct notice to the parent of the operator's intent to communicate with the child multiple times (required under \u00a7 312.5(c)(4)) shall set forth:",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "v"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "That if the parent fails to respond to this direct notice, the operator may use the online contact information collected from the child for the purpose stated in the direct notice; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The direct notice to the parent of the operator's intent to communicate with the child multiple times (required under \u00a7 312.5(c)(4)) shall set forth:",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3",
+    "vi"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "A hyperlink to the operator's online notice of its information practices required under paragraph (d) of this section.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The direct notice to the parent of the operator's intent to communicate with the child multiple times (required under \u00a7 312.5(c)(4)) shall set forth:",
+     "path": [
+      "c",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "The direct notice to the parent in order to protect a child's safety (required under \u00a7 312.5(c)(5)) shall set forth:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "i"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "That the operator has collected the name and the online contact information of the child and the parent in order to protect the safety of a child;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The direct notice to the parent in order to protect a child's safety (required under \u00a7 312.5(c)(5)) shall set forth:",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "That the information will not be used or disclosed for any purpose unrelated to the child's safety;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The direct notice to the parent in order to protect a child's safety (required under \u00a7 312.5(c)(5)) shall set forth:",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "That the parent may refuse to permit the use, and require the deletion, of the information collected, and how the parent can do so;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The direct notice to the parent in order to protect a child's safety (required under \u00a7 312.5(c)(5)) shall set forth:",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "That if the parent fails to respond to this direct notice, the operator may use the information for the purpose stated in the direct notice; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The direct notice to the parent in order to protect a child's safety (required under \u00a7 312.5(c)(5)) shall set forth:",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "v"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "A hyperlink to the operator's online notice of its information practices required under paragraph (d) of this section.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The direct notice to the parent in order to protect a child's safety (required under \u00a7 312.5(c)(5)) shall set forth:",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "In addition to the direct notice to the parent, an operator must post a prominent and clearly labeled link to an online notice of its information practices with regard to children on the home or landing page or screen of its website or online service, and, at each area of the website or online service where personal information is collected from children. The link must be in close proximity to the requests for information in each such area. An operator of a general audience website or online service that has a separate children's area must post a link to a notice of its information practices with regard to children on the home or landing page or screen of the children's area. To be complete, the online notice of the website or online service's information practices must state the following:",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "The name, address, telephone number, and email address of all operators collecting or maintaining personal information from children through the website or online service. Provided that: The operators of a website or online service may list the name, address, phone number, and email address of one operator who will respond to all inquiries from parents concerning the operators' privacy policies and use of children's information, as long as the names of all the operators collecting or maintaining personal information from children through the website or online service are also listed in the notice;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In addition to the direct notice to the parent, an operator must post a prominent and clearly labeled link to an online notice of its information practices with regard to children on the home or landing page or screen of its website or online service, and, at each area of the website or online service where personal information is collected from children. The link must be in close proximity to the requests for information in each such area. An operator of a general audience website or online service that has a separate children's area must post a link to a notice of its information practices with regard to children on the home or landing page or screen of the children's area. To be complete, the online notice of the website or online service's information practices must state the following:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "A description of what information the operator collects from children, including whether the website or online service enables a child to make personal information publicly available; how the operator uses such information; the operator's disclosure practices for such information, including the identities and specific categories of any third parties to which the operator discloses personal information and the purposes for such disclosures; and the operator's data retention policy as required under \u00a7 312.10;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In addition to the direct notice to the parent, an operator must post a prominent and clearly labeled link to an online notice of its information practices with regard to children on the home or landing page or screen of its website or online service, and, at each area of the website or online service where personal information is collected from children. The link must be in close proximity to the requests for information in each such area. An operator of a general audience website or online service that has a separate children's area must post a link to a notice of its information practices with regard to children on the home or landing page or screen of the children's area. To be complete, the online notice of the website or online service's information practices must state the following:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "If applicable, the specific internal operations for which the operator has collected a persistent identifier pursuant to \u00a7 312.5(c)(7); and the means the operator uses to ensure that such identifier is not used or disclosed to contact a specific individual, including through behavioral advertising, to amass a profile on a specific individual, or for any other purpose (except as specifically permitted to provide support for the internal operations of the website or online service);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In addition to the direct notice to the parent, an operator must post a prominent and clearly labeled link to an online notice of its information practices with regard to children on the home or landing page or screen of its website or online service, and, at each area of the website or online service where personal information is collected from children. The link must be in close proximity to the requests for information in each such area. An operator of a general audience website or online service that has a separate children's area must post a link to a notice of its information practices with regard to children on the home or landing page or screen of the children's area. To be complete, the online notice of the website or online service's information practices must state the following:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "4"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "Where the operator collects audio files containing a child's voice pursuant to \u00a7 312.5(c)(9), a description of how the operator uses such audio files and that the operator deletes such audio files immediately after responding to the request for which they were collected; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In addition to the direct notice to the parent, an operator must post a prominent and clearly labeled link to an online notice of its information practices with regard to children on the home or landing page or screen of its website or online service, and, at each area of the website or online service where personal information is collected from children. The link must be in close proximity to the requests for information in each such area. An operator of a general audience website or online service that has a separate children's area must post a link to a notice of its information practices with regard to children on the home or landing page or screen of the children's area. To be complete, the online notice of the website or online service's information practices must state the following:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "5"
+   ],
+   "anchor": null,
+   "section": "312.4",
+   "confidence": "high",
+   "heading": "&#xA7; 312.4 Notice.",
+   "text": "If applicable, that the parent can review or have deleted the child's personal information, and refuse to permit further collection or use of the child's information, and state the procedures for doing so.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "In addition to the direct notice to the parent, an operator must post a prominent and clearly labeled link to an online notice of its information practices with regard to children on the home or landing page or screen of its website or online service, and, at each area of the website or online service where personal information is collected from children. The link must be in close proximity to the requests for information in each such area. An operator of a general audience website or online service that has a separate children's area must post a link to a notice of its information practices with regard to children on the home or landing page or screen of the children's area. To be complete, the online notice of the website or online service's information practices must state the following:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "An operator is required to obtain verifiable parental consent before any collection, use, or disclosure of personal information from children, including consent to any material change in the collection, use, or disclosure practices to which the parent has previously consented.",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "An operator must give the parent the option to consent to the collection and use of the child's personal information without consenting to disclosure of his or her personal information to third parties, unless such disclosure is integral to the website or online service. An operator required to give the parent this option must obtain separate verifiable parental consent to such disclosure.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "An operator must make reasonable efforts to obtain verifiable parental consent, taking into consideration available technology. Any method to obtain verifiable parental consent must be reasonably calculated, in light of available technology, to ensure that the person providing consent is the child's parent.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Existing methods to obtain verifiable parental consent that satisfy the requirements of this paragraph include:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Providing a consent form to be signed by the parent and returned to the operator by postal mail, facsimile, or electronic scan;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Existing methods to obtain verifiable parental consent that satisfy the requirements of this paragraph include:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Requiring a parent, in connection with a transaction, to use a credit card, debit card, or other online payment system that provides notification of each discrete transaction to the primary account holder;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Existing methods to obtain verifiable parental consent that satisfy the requirements of this paragraph include:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Having a parent call a toll-free telephone number staffed by trained personnel;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Existing methods to obtain verifiable parental consent that satisfy the requirements of this paragraph include:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Having a parent connect to trained personnel via video-conference;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Existing methods to obtain verifiable parental consent that satisfy the requirements of this paragraph include:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "v"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Verifying a parent's identity by checking a form of government-issued identification against databases of such information, where the parent's identification is deleted by the operator from its records promptly after such verification is complete;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Existing methods to obtain verifiable parental consent that satisfy the requirements of this paragraph include:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "vi"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Verifying a parent's identity using knowledge-based authentication provided:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Existing methods to obtain verifiable parental consent that satisfy the requirements of this paragraph include:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "vi",
+    "A"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "the verification process uses dynamic, multiple-choice questions, where there are a reasonable number of questions with an adequate number of possible answers such that the probability of correctly guessing the answers is low; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Existing methods to obtain verifiable parental consent that satisfy the requirements of this paragraph include:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Verifying a parent's identity using knowledge-based authentication provided:",
+     "path": [
+      "b",
+      "2",
+      "vi"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "vi",
+    "B"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "the questions are of sufficient difficulty that a child age 12 or younger in the parent's household could not reasonably ascertain the answers;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Existing methods to obtain verifiable parental consent that satisfy the requirements of this paragraph include:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Verifying a parent's identity using knowledge-based authentication provided:",
+     "path": [
+      "b",
+      "2",
+      "vi"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "vii"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Having a parent submit a government-issued photographic identification that is verified to be authentic and is compared against an image of the parent's face taken with a phone camera or webcam using facial recognition technology and confirmed by personnel trained to confirm that the photos match; provided that the parent's identification and images are promptly deleted by the operator from its records after the match is confirmed; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Existing methods to obtain verifiable parental consent that satisfy the requirements of this paragraph include:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "viii"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Provided that, an operator that does not \u201cdisclose\u201d (as defined by \u00a7 312.2) children's personal information, may use an email coupled with additional steps to provide assurances that the person providing the consent is the parent. Such additional steps include: Sending a confirmatory email to the parent following receipt of consent, or obtaining a postal address or telephone number from the parent and confirming the parent's consent by letter or telephone call. An operator that uses this method must provide notice that the parent can revoke any consent given in response to the earlier email.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Existing methods to obtain verifiable parental consent that satisfy the requirements of this paragraph include:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "ix"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Provided that, an operator that does not \u201cdisclose\u201d (as defined by \u00a7 312.2) children's personal information, may use a text message coupled with additional steps to provide assurances that the person providing the consent is the parent. Such additional steps include: Sending a confirmatory text message to the parent following receipt of consent, or obtaining a postal address or telephone number from the parent and confirming the parent's consent by letter or telephone call. An operator that uses this method must provide notice that the parent can revoke any consent given in response to the earlier text message.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Existing methods to obtain verifiable parental consent that satisfy the requirements of this paragraph include:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "A safe harbor program approved by the Commission under \u00a7 312.11 may approve its member operators' use of a parental consent method not currently enumerated in paragraph (b)(2) of this section where the safe harbor program determines that such parental consent method meets the requirements of paragraph (b)(1) of this section.",
+   "context": []
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Verifiable parental consent is required prior to any collection, use, or disclosure of personal information from a child except as set forth in this paragraph:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Where the sole purpose of collecting the name or online contact information of the parent or child is to provide notice and obtain parental consent under \u00a7 312.4(c)(1). If the operator has not obtained parental consent after a reasonable time from the date of the information collection, the operator must delete such information from its records;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Verifiable parental consent is required prior to any collection, use, or disclosure of personal information from a child except as set forth in this paragraph:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Where the purpose of collecting a parent's online contact information is to provide voluntary notice to, and subsequently update the parent about, the child's participation in a website or online service that does not otherwise collect, use, or disclose children's personal information. In such cases, the parent's online contact information may not be used or disclosed for any other purpose. In such cases, the operator must make reasonable efforts, taking into consideration available technology, to ensure that the parent receives notice as described in \u00a7 312.4(c)(2);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Verifiable parental consent is required prior to any collection, use, or disclosure of personal information from a child except as set forth in this paragraph:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Where the sole purpose of collecting online contact information from a child is to respond directly on a one-time basis to a specific request from the child, and where such information is not used to re-contact the child or for any other purpose, is not disclosed, and is deleted by the operator from its records promptly after responding to the child's request;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Verifiable parental consent is required prior to any collection, use, or disclosure of personal information from a child except as set forth in this paragraph:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Where the purpose of collecting a child's and a parent's online contact information is to respond directly more than once to the child's specific request, and where such information is not used for any other purpose, disclosed, or combined with any other information collected from the child. In such cases, the operator must make reasonable efforts, taking into consideration available technology, to ensure that the parent receives notice as described in \u00a7 312.4(c)(3). An operator will not be deemed to have made reasonable efforts to ensure that a parent receives notice where the notice to the parent was unable to be delivered;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Verifiable parental consent is required prior to any collection, use, or disclosure of personal information from a child except as set forth in this paragraph:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "5"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Where the purpose of collecting a child's and a parent's name and online contact information, is to protect the safety of a child, and where such information is not used or disclosed for any purpose unrelated to the child's safety. In such cases, the operator must make reasonable efforts, taking into consideration available technology, to provide a parent with notice as described in \u00a7 312.4(c)(4);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Verifiable parental consent is required prior to any collection, use, or disclosure of personal information from a child except as set forth in this paragraph:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Where the purpose of collecting a child's name and online contact information is to:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Verifiable parental consent is required prior to any collection, use, or disclosure of personal information from a child except as set forth in this paragraph:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "i"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Protect the security or integrity of the website or online service;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Verifiable parental consent is required prior to any collection, use, or disclosure of personal information from a child except as set forth in this paragraph:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Where the purpose of collecting a child's name and online contact information is to:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Take precautions against liability;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Verifiable parental consent is required prior to any collection, use, or disclosure of personal information from a child except as set forth in this paragraph:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Where the purpose of collecting a child's name and online contact information is to:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Respond to judicial process; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Verifiable parental consent is required prior to any collection, use, or disclosure of personal information from a child except as set forth in this paragraph:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Where the purpose of collecting a child's name and online contact information is to:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "To the extent permitted under other provisions of law, to provide information to law enforcement agencies or for an investigation on a matter related to public safety; and where such information is not used for any other purpose;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Verifiable parental consent is required prior to any collection, use, or disclosure of personal information from a child except as set forth in this paragraph:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Where the purpose of collecting a child's name and online contact information is to:",
+     "path": [
+      "c",
+      "6"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "7"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Where an operator collects a persistent identifier and no other personal information and such identifier is used for the sole purpose of providing support for the internal operations of the website or online service. In such case, the operator shall provide notice under \u00a7 312.4(d)(3);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Verifiable parental consent is required prior to any collection, use, or disclosure of personal information from a child except as set forth in this paragraph:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "8"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Where an operator covered under paragraph (2) of the definition of website or online service directed to children in \u00a7 312.2 collects a persistent identifier and no other personal information from a user who affirmatively interacts with the operator and whose previous registration with that operator indicates that such user is not a child. In such case, there also shall be no obligation to provide notice under \u00a7 312.4; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Verifiable parental consent is required prior to any collection, use, or disclosure of personal information from a child except as set forth in this paragraph:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "9"
+   ],
+   "anchor": null,
+   "section": "312.5",
+   "confidence": "high",
+   "heading": "&#xA7; 312.5 Parental consent.",
+   "text": "Where an operator collects an audio file containing a child's voice, and no other personal information, for use in responding to a child's specific request and where the operator does not use such information for any other purpose, does not disclose it, and deletes it immediately after responding to the child's request. In such case, there also shall be no obligation to provide a direct notice, but notice shall be required under \u00a7 312.4(d).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Verifiable parental consent is required prior to any collection, use, or disclosure of personal information from a child except as set forth in this paragraph:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "312.6",
+   "confidence": "high",
+   "heading": "&#xA7; 312.6 Right of parent to review personal information provided by a child.",
+   "text": "Upon request of a parent whose child has provided personal information to a website or online service, the operator of that website or online service is required to provide to that parent the following:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.6",
+   "confidence": "high",
+   "heading": "&#xA7; 312.6 Right of parent to review personal information provided by a child.",
+   "text": "A description of the specific types or categories of personal information collected from children by the operator, such as name, address, telephone number, email address, hobbies, and extracurricular activities;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Upon request of a parent whose child has provided personal information to a website or online service, the operator of that website or online service is required to provide to that parent the following:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.6",
+   "confidence": "high",
+   "heading": "&#xA7; 312.6 Right of parent to review personal information provided by a child.",
+   "text": "The opportunity at any time to refuse to permit the operator's further use or future online collection of personal information from that child, and to direct the operator to delete the child's personal information; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Upon request of a parent whose child has provided personal information to a website or online service, the operator of that website or online service is required to provide to that parent the following:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3"
+   ],
+   "anchor": null,
+   "section": "312.6",
+   "confidence": "high",
+   "heading": "&#xA7; 312.6 Right of parent to review personal information provided by a child.",
+   "text": "Notwithstanding any other provision of law, a means of reviewing any personal information collected from the child. The means employed by the operator to carry out this provision must:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Upon request of a parent whose child has provided personal information to a website or online service, the operator of that website or online service is required to provide to that parent the following:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "i"
+   ],
+   "anchor": null,
+   "section": "312.6",
+   "confidence": "high",
+   "heading": "&#xA7; 312.6 Right of parent to review personal information provided by a child.",
+   "text": "Ensure that the requestor is a parent of that child, taking into account available technology; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Upon request of a parent whose child has provided personal information to a website or online service, the operator of that website or online service is required to provide to that parent the following:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Notwithstanding any other provision of law, a means of reviewing any personal information collected from the child. The means employed by the operator to carry out this provision must:",
+     "path": [
+      "a",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "312.6",
+   "confidence": "high",
+   "heading": "&#xA7; 312.6 Right of parent to review personal information provided by a child.",
+   "text": "Not be unduly burdensome to the parent.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Upon request of a parent whose child has provided personal information to a website or online service, the operator of that website or online service is required to provide to that parent the following:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Notwithstanding any other provision of law, a means of reviewing any personal information collected from the child. The means employed by the operator to carry out this provision must:",
+     "path": [
+      "a",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "312.6",
+   "confidence": "high",
+   "heading": "&#xA7; 312.6 Right of parent to review personal information provided by a child.",
+   "text": "Neither an operator nor the operator's agent shall be held liable under any Federal or State law for any disclosure made in good faith and following reasonable procedures in responding to a request for disclosure of personal information under this section.",
+   "context": []
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "312.6",
+   "confidence": "high",
+   "heading": "&#xA7; 312.6 Right of parent to review personal information provided by a child.",
+   "text": "Subject to the limitations set forth in \u00a7 312.7, an operator may terminate any service provided to a child whose parent has refused, under paragraph (a)(2) of this section, to permit the operator's further use or collection of personal information from his or her child or has directed the operator to delete the child's personal information.",
+   "context": []
+  },
+  {
+   "path": [],
+   "anchor": null,
+   "section": "312.7",
+   "confidence": "high",
+   "heading": "&#xA7; 312.7 Prohibition against conditioning a child's participation on collection of personal information.",
+   "text": "An operator is prohibited from conditioning a child's participation in a game, the offering of a prize, or another activity on the child's disclosing more personal information than is reasonably necessary to participate in such activity.",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "312.8",
+   "confidence": "high",
+   "heading": "&#xA7; 312.8 Confidentiality, security, and integrity of personal information collected from children.",
+   "text": "The operator must establish and maintain reasonable procedures to protect the confidentiality, security, and integrity of personal information collected from children.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "312.8",
+   "confidence": "high",
+   "heading": "&#xA7; 312.8 Confidentiality, security, and integrity of personal information collected from children.",
+   "text": "At a minimum, the operator must establish, implement, and maintain a written information security program that contains safeguards that are appropriate to the sensitivity of the personal information collected from children and the operator's size, complexity, and nature and scope of activities. To satisfy this requirement, the operator must:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.8",
+   "confidence": "high",
+   "heading": "&#xA7; 312.8 Confidentiality, security, and integrity of personal information collected from children.",
+   "text": "Designate one or more employees to coordinate the operator's information security program;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "At a minimum, the operator must establish, implement, and maintain a written information security program that contains safeguards that are appropriate to the sensitivity of the personal information collected from children and the operator's size, complexity, and nature and scope of activities. To satisfy this requirement, the operator must:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.8",
+   "confidence": "high",
+   "heading": "&#xA7; 312.8 Confidentiality, security, and integrity of personal information collected from children.",
+   "text": "Identify and, at least annually, perform additional assessments to identify internal and external risks to the confidentiality, security, and integrity of personal information collected from children and the sufficiency of any safeguards in place to control such risks;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "At a minimum, the operator must establish, implement, and maintain a written information security program that contains safeguards that are appropriate to the sensitivity of the personal information collected from children and the operator's size, complexity, and nature and scope of activities. To satisfy this requirement, the operator must:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": null,
+   "section": "312.8",
+   "confidence": "high",
+   "heading": "&#xA7; 312.8 Confidentiality, security, and integrity of personal information collected from children.",
+   "text": "Design, implement, and maintain safeguards to control risks identified through the risk assessments required under paragraph (b)(2) of this section. Each safeguard must be based on the volume and sensitivity of the children's personal information that is at risk, and the likelihood that the risk could result in the unauthorized disclosure, misuse, alteration, destruction or other compromise of such information;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "At a minimum, the operator must establish, implement, and maintain a written information security program that contains safeguards that are appropriate to the sensitivity of the personal information collected from children and the operator's size, complexity, and nature and scope of activities. To satisfy this requirement, the operator must:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "4"
+   ],
+   "anchor": null,
+   "section": "312.8",
+   "confidence": "high",
+   "heading": "&#xA7; 312.8 Confidentiality, security, and integrity of personal information collected from children.",
+   "text": "Regularly test and monitor the effectiveness of the safeguards in place to control risks identified through the risk assessments required under paragraph (b)(2) of this section; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "At a minimum, the operator must establish, implement, and maintain a written information security program that contains safeguards that are appropriate to the sensitivity of the personal information collected from children and the operator's size, complexity, and nature and scope of activities. To satisfy this requirement, the operator must:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "5"
+   ],
+   "anchor": null,
+   "section": "312.8",
+   "confidence": "high",
+   "heading": "&#xA7; 312.8 Confidentiality, security, and integrity of personal information collected from children.",
+   "text": "At least annually, evaluate and modify the information security program to address identified risks, results of required testing and monitoring, new or more efficient technological or operational methods to control for identified risks, or any other circumstances that an operator knows or has reason to know may have a material impact on its information security program or any safeguards in place to protect personal information collected from children.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "At a minimum, the operator must establish, implement, and maintain a written information security program that contains safeguards that are appropriate to the sensitivity of the personal information collected from children and the operator's size, complexity, and nature and scope of activities. To satisfy this requirement, the operator must:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "312.8",
+   "confidence": "high",
+   "heading": "&#xA7; 312.8 Confidentiality, security, and integrity of personal information collected from children.",
+   "text": "Before allowing other operators, service providers, or third parties to collect or maintain personal information from children on the operator's behalf, or before releasing children's personal information to such entities, the operator must take reasonable steps to determine that such entities are capable of maintaining the confidentiality, security, and integrity of the information and must obtain written assurances that such entities will employ reasonable measures to maintain the confidentiality, security, and integrity of the information.",
+   "context": []
+  },
+  {
+   "path": [],
+   "anchor": null,
+   "section": "312.9",
+   "confidence": "high",
+   "heading": "&#xA7; 312.9 Enforcement.",
+   "text": "Subject to sections 6503 and 6505 of the Children's Online Privacy Protection Act of 1998, a violation of a regulation prescribed under section 6502(a) of this Act shall be treated as a violation of a rule defining an unfair or deceptive act or practice prescribed under section 18(a)(1)(B) of the Federal Trade Commission Act (15 U.S.C. 57a(a)(1)(B)).",
+   "context": []
+  },
+  {
+   "path": [],
+   "anchor": null,
+   "section": "312.10",
+   "confidence": "high",
+   "heading": "&#xA7; 312.10 Data retention and deletion requirements.",
+   "text": "An operator of a website or online service shall retain personal information collected online from a child for only as long as is reasonably necessary to fulfill the specific purpose(s) for which the information was collected. When such information is no longer reasonably necessary for the purposes for which it was collected, the operator must delete the information using reasonable measures to protect against unauthorized access to, or use of, the information in connection with its deletion. Personal information collected online from a child may not be retained indefinitely. At a minimum, the operator must establish, implement, and maintain a written data retention policy that sets forth the purposes for which children's personal information is collected, the business need for retaining such information, and a timeframe for deletion of such information. The operator must provide its written data retention policy addressing personal information collected from children in the notice on the website or online service provided in accordance with \u00a7 312.4(d).",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Industry groups or other persons may apply to the Commission for approval of self-regulatory program guidelines (\u201csafe harbor programs\u201d). The application shall be filed with the Commission's Office of the Secretary. The Commission will publish in the Federal Register a document seeking public comment on the application. The Commission shall issue a written determination within 180 days of the filing of the application.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Proposed safe harbor programs must demonstrate that they meet the following performance standards:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Program requirements that ensure operators subject to the self-regulatory program guidelines (\u201csubject operators\u201d) provide substantially the same or greater protections for children as those contained in \u00a7\u00a7 312.2 through 312.8, and 312.10.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Proposed safe harbor programs must demonstrate that they meet the following performance standards:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "An effective, mandatory mechanism for the independent assessment of subject operators' compliance with the self-regulatory program guidelines. At a minimum, this mechanism must include a comprehensive review by the safe harbor program, to be conducted not less than annually, of each subject operator's information privacy and security policies, practices, and representations. The assessment mechanism required under this paragraph can be provided by an independent enforcement program, such as a seal program.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Proposed safe harbor programs must demonstrate that they meet the following performance standards:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Disciplinary actions for subject operators' non-compliance with self-regulatory program guidelines. This performance standard may be satisfied by:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Proposed safe harbor programs must demonstrate that they meet the following performance standards:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "i"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Mandatory, public reporting of any action taken against subject operators by the industry group issuing the self-regulatory guidelines;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Proposed safe harbor programs must demonstrate that they meet the following performance standards:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Disciplinary actions for subject operators' non-compliance with self-regulatory program guidelines. This performance standard may be satisfied by:",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Consumer redress;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Proposed safe harbor programs must demonstrate that they meet the following performance standards:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Disciplinary actions for subject operators' non-compliance with self-regulatory program guidelines. This performance standard may be satisfied by:",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Voluntary payments to the United States Treasury in connection with an industry-directed program for violators of the self-regulatory guidelines;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Proposed safe harbor programs must demonstrate that they meet the following performance standards:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Disciplinary actions for subject operators' non-compliance with self-regulatory program guidelines. This performance standard may be satisfied by:",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Referral to the Commission of operators who engage in a pattern or practice of violating the self-regulatory guidelines; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Proposed safe harbor programs must demonstrate that they meet the following performance standards:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Disciplinary actions for subject operators' non-compliance with self-regulatory program guidelines. This performance standard may be satisfied by:",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3",
+    "v"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Any other equally effective action.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Proposed safe harbor programs must demonstrate that they meet the following performance standards:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Disciplinary actions for subject operators' non-compliance with self-regulatory program guidelines. This performance standard may be satisfied by:",
+     "path": [
+      "b",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "A proposed safe harbor program's request for approval shall be accompanied by the following:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "A detailed explanation of the applicant's business model, and the technological capabilities and mechanisms that will be used for initial and continuing assessment of subject operators' fitness for membership in the safe harbor program;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A proposed safe harbor program's request for approval shall be accompanied by the following:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "A copy of the full text of the guidelines for which approval is sought and any accompanying commentary;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A proposed safe harbor program's request for approval shall be accompanied by the following:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "A comparison of each provision of \u00a7\u00a7 312.2 through 312.8, and 312.10 with the corresponding provisions of the guidelines; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A proposed safe harbor program's request for approval shall be accompanied by the following:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "A statement explaining:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A proposed safe harbor program's request for approval shall be accompanied by the following:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "i"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "How the self-regulatory program guidelines, including the applicable assessment mechanisms, meet the requirements of this part; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A proposed safe harbor program's request for approval shall be accompanied by the following:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A statement explaining:",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "How the assessment mechanisms and compliance consequences required under paragraphs (b)(2) and (b)(3) of this section provide effective enforcement of the requirements of this part.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A proposed safe harbor program's request for approval shall be accompanied by the following:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A statement explaining:",
+     "path": [
+      "c",
+      "4"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Approved safe harbor programs shall:",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "By October 22, 2025, and annually thereafter, submit a report to the Commission that identifies each subject operator and all approved websites or online services, as well as any subject operators that have left the safe harbor program. The report must also contain, at a minimum:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Approved safe harbor programs shall:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "a narrative description of the safe harbor program's business model, including whether it provides additional services such as training to subject operators;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Approved safe harbor programs shall:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "By October 22, 2025, and annually thereafter, submit a report to the Commission that identifies each subject operator and all approved websites or online services, as well as any subject operators that have left the safe harbor program. The report must also contain, at a minimum:",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "copies of each consumer complaint related to each subject operator's violation of a safe harbor program's guidelines;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Approved safe harbor programs shall:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "By October 22, 2025, and annually thereafter, submit a report to the Commission that identifies each subject operator and all approved websites or online services, as well as any subject operators that have left the safe harbor program. The report must also contain, at a minimum:",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "an aggregated summary of the results of the independent assessments conducted under paragraph (b)(2) of this section;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Approved safe harbor programs shall:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "By October 22, 2025, and annually thereafter, submit a report to the Commission that identifies each subject operator and all approved websites or online services, as well as any subject operators that have left the safe harbor program. The report must also contain, at a minimum:",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "a description of each disciplinary action taken against any subject operator under paragraph (b)(3) of this section, as well as a description of the process for determining whether a subject operator is subject to discipline; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Approved safe harbor programs shall:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "By October 22, 2025, and annually thereafter, submit a report to the Commission that identifies each subject operator and all approved websites or online services, as well as any subject operators that have left the safe harbor program. The report must also contain, at a minimum:",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1",
+    "v"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "a description of any approvals of member operators' use of a parental consent mechanism, pursuant to \u00a7 312.5(b)(3);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Approved safe harbor programs shall:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "By October 22, 2025, and annually thereafter, submit a report to the Commission that identifies each subject operator and all approved websites or online services, as well as any subject operators that have left the safe harbor program. The report must also contain, at a minimum:",
+     "path": [
+      "d",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Promptly respond to Commission requests for additional information;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Approved safe harbor programs shall:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Maintain for a period not less than three years, and upon request make available to the Commission for inspection and copying:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Approved safe harbor programs shall:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3",
+    "i"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Consumer complaints alleging violations of the guidelines by subject operators;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Approved safe harbor programs shall:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Maintain for a period not less than three years, and upon request make available to the Commission for inspection and copying:",
+     "path": [
+      "d",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Records of disciplinary actions taken against subject operators; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Approved safe harbor programs shall:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Maintain for a period not less than three years, and upon request make available to the Commission for inspection and copying:",
+     "path": [
+      "d",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "3",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Results of the independent assessments of subject operators' compliance required under paragraph (b)(2) of this section; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Approved safe harbor programs shall:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Maintain for a period not less than three years, and upon request make available to the Commission for inspection and copying:",
+     "path": [
+      "d",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "4"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "No later than July 21, 2025, publicly post on each of the approved safe harbor program's websites and online services a list of all current subject operators and, for each such operator, list each certified website or online service. Approved safe harbor programs shall update this list every six months thereafter to reflect any changes to the approved safe harbor programs' subject operators or their applicable websites and online services.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Approved safe harbor programs shall:",
+     "path": [
+      "d"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "Approved safe harbor programs must submit proposed changes to their guidelines for review and approval by the Commission in the manner required for initial approval of guidelines under paragraph (c)(2) of this section. The statement required under paragraph (c)(4) of this section must describe how the proposed changes affect existing provisions of the guidelines.",
+   "context": []
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "No later than April 22, 2028, and every three years thereafter, approved safe harbor programs shall submit to the Commission a report detailing the safe harbor program's technological capabilities and mechanisms for assessing subject operators' fitness for membership in the safe harbor program.",
+   "context": []
+  },
+  {
+   "path": [
+    "g"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "The Commission reserves the right to revoke any approval granted under this section if at any time it determines that the approved self-regulatory program guidelines or their implementation do not meet the requirements of this part. Safe harbor programs shall, by October 22, 2025, submit proposed modifications to their guidelines.",
+   "context": []
+  },
+  {
+   "path": [
+    "h"
+   ],
+   "anchor": null,
+   "section": "312.11",
+   "confidence": "high",
+   "heading": "&#xA7; 312.11 Safe harbor programs.",
+   "text": "An operator will be deemed to be in compliance with the requirements of \u00a7\u00a7 312.2 through 312.8, and 312.10 if that operator complies with Commission-approved safe harbor program guidelines. In considering whether to initiate an investigation or bring an enforcement action against a subject operator for violations of this part, the Commission will take into account the history of the subject operator's participation in the safe harbor program, whether the subject operator has taken action to remedy such non-compliance, and whether the operator's non-compliance resulted in any one of the disciplinary actions set forth in paragraph (b)(3) of this section.",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "312.12",
+   "confidence": "high",
+   "heading": "&#xA7; 312.12 Voluntary Commission approval processes.",
+   "text": "An interested party may file a written request for Commission approval of parental consent methods not currently enumerated in \u00a7 312.5(b). To be considered for approval, a party must provide a detailed description of the proposed parental consent methods, together with an analysis of how the methods meet \u00a7 312.5(b)(1). The request shall be filed with the Commission's Office of the Secretary. The Commission will publish in the Federal Register a document seeking public comment on the request. The Commission shall issue a written determination within 120 days of the filing of the request.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "312.12",
+   "confidence": "high",
+   "heading": "&#xA7; 312.12 Voluntary Commission approval processes.",
+   "text": "An interested party may file a written request for Commission approval of additional activities to be included within the definition of support for the internal operations of the website or online service. To be considered for approval, a party must provide a detailed justification why such activities should be deemed support for the internal operations of the website or online service, and an analysis of their potential effects on children's online privacy. The request shall be filed with the Commission's Office of the Secretary. The Commission will publish in the Federal Register a document seeking public comment on the request. The Commission shall issue a written determination within 120 days of the filing of the request.",
+   "context": []
+  },
+  {
+   "path": [],
+   "anchor": null,
+   "section": "312.13",
+   "confidence": "high",
+   "heading": "&#xA7; 312.13 Severability.",
+   "text": "The provisions of this part are separate and severable from one another. If any provision is stayed or determined to be invalid, it is the Commission's intention that the remaining provisions shall continue in effect.",
+   "context": []
+  }
+ ]
+}

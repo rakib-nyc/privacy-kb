@@ -1,0 +1,80 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ed
+sector:
+  - education
+data_types:
+  - education_record
+status: in_force
+effective_from: '2011-12-02'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Dec. 2, 2011" appears in a <CITA> element of
+  corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.ferpa.p.99_32_a_3_i
+source:
+  citation: 34 C.F.R. § 99.32(a)(3)(i)
+  instrument_id: us.ferpa
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-34.xml?part=99
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml
+  raw_sha256: 5215a3f303ea41cb5bb4c5afb481da1f4623e64307eadc30ef2ad27a2238ffa0
+  text_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.txt
+  text_sha256: e0eee9622724e33bc4d5677717fd06987529754f8ce13dc1b0ed913c9efb542e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: ef3fb3af1f2215e32ca6babd908b71f06c45c73ba731106e392aa162fda86c69
+verbatim_span: >-
+  The parties who have requested or received personally identifiable information from the education
+  records; and
+paragraph_path:
+  path:
+    - a
+    - '3'
+    - i
+  anchor: '99.32'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 34-cfr-99.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml
+subject:
+  domain: II.D.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'For each request or disclosure the record must include:'
+    path:
+      - a
+      - '3'
+    citation: 34 C.F.R. § 99.32(a)(3)
+operative_verb: must
+operative_verb_source: operative_context
+summary: >-
+  The parties who have requested or received personally identifiable information from the education
+  records; and
+not_yet_analysed: >-
+  Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision: its own
+  words carry no modal, and the duty is supplied by the chapeau recorded in operative_context. Do
+  not quote it without that chapeau. No applicability predicate has been written, so the engine
+  never asserts that it binds anyone.
+open_questions: []

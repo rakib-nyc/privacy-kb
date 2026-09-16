@@ -1,0 +1,102 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - cpni
+status: in_force
+effective_from: '2017-09-21'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Sept. 21, 2017" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cpni.p.64_1200_f_9_i_b
+source:
+  citation: 47 C.F.R. § 64.1200(f)(9)(i)(B)
+  instrument_id: us.cpni
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: 9b4f029b1fbd66d6143acb6b8de25290a473034abf111b70f9e25efb67084c48
+verbatim_span: >-
+  The person is not required to sign the agreement (directly or indirectly), or agree to enter into
+  such an agreement as a condition of purchasing any property, goods, or services.
+paragraph_path:
+  path:
+    - f
+    - '9'
+    - i
+    - B
+  anchor: '64.1200'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 47-cfr-64.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      The written agreement shall include a clear and conspicuous disclosure informing the person
+      signing that:
+    path:
+      - f
+      - '9'
+      - i
+    citation: 47 C.F.R. § 64.1200(f)(9)(i)
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'As used in this section:'
+    path:
+      - f
+    citation: 47 C.F.R. § 64.1200(f)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      The term prior express written consent means an agreement, in writing, bearing the signature
+      of the person called that clearly authorizes the seller to deliver or cause to be delivered to
+      the person called advertisements or telemarketing messages using an automatic telephone
+      dialing system or an artificial or prerecorded voice, and the telephone number to which the
+      signatory authorizes such advertisements or telemarketing messages to be delivered.
+    path:
+      - f
+      - '9'
+    citation: 47 C.F.R. § 64.1200(f)(9)
+operative_verb: must
+operative_verb_source: operative_context
+summary: >-
+  The person is not required to sign the agreement (directly or indirectly), or agree to enter into
+  such an agreement as a condition of purchasing any property, goods, or services.
+not_yet_analysed: >-
+  Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision: its own
+  words carry no modal, and the duty is supplied by the chapeau recorded in operative_context. Do
+  not quote it without that chapeau. No applicability predicate has been written, so the engine
+  never asserts that it binds anyone.
+open_questions: []

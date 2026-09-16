@@ -1,0 +1,84 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - private_litigants
+sector:
+  - video
+  - streaming
+  - any provider of audiovisual materials
+data_types:
+  - personally_identifiable_information
+  - viewing_history
+status: in_force
+effective_from: '1988-11-05'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Nov. 5, 1988" appears in a <date> element of
+  corpus/federal/domain-2-federal-privacy/vppa/raw/18-u-s-c-2710.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.vppa.p.2710_b_3
+source:
+  citation: 18 U.S.C. § 2710(b)(3)
+  instrument_id: us.vppa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/vppa/raw/18-u-s-c-2710.xml
+  raw_sha256: 3dd90781077d08d0621dbaefb5b60a0cf25ba158d64855af6847559dec36d7ff
+  text_file: corpus/federal/domain-2-federal-privacy/vppa/raw/18-u-s-c-2710.txt
+  text_sha256: 42eb0b751762330061d390b87eb3f578c814d599746be928a86d4edc57a403b6
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/vppa/raw/18-u-s-c-2710.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 3e3b167c1965de7bec104910561eeee2bf5e17480dab5c3124d6f236273484fe
+verbatim_span: >-
+  Court orders authorizing disclosure under subparagraph (C) shall issue only with prior notice to
+  the consumer and only if the law enforcement agency shows that there is probable cause to believe
+  that the records or other information sought are relevant to a legitimate law enforcement inquiry.
+  In the case of a State government authority, such a court order shall not issue if prohibited by
+  the law of such State. A court issuing an order pursuant to this section, on a motion made
+  promptly by the video tape service provider, may quash or modify such order if the information or
+  records requested are unreasonably voluminous in nature or if compliance with such order otherwise
+  would cause an unreasonable burden on such provider.
+paragraph_path:
+  path:
+    - b
+    - '3'
+  anchor: '2710'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 18-u-s-c-2710.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/vppa/raw/18-u-s-c-2710.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+operative_context: []
+operative_verb: must_not
+summary: >-
+  Court orders authorizing disclosure under subparagraph (C) shall issue only with prior notice to
+  the consumer and only if the law enforcement agency shows that there is probable cause to believe
+  that the records or other information sought are relevant to a legitimate law enforcement inquiry.
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

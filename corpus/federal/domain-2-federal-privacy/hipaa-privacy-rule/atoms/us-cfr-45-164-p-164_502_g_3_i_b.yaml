@@ -1,0 +1,91 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 14, 2003" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.45.164.p.164_502_g_3_i_b
+source:
+  citation: 45 C.F.R. § 164.502(g)(3)(i)(B)
+  instrument_id: us.cfr.45.164
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-45 XML, part 164
+    result: structured_source_used
+    note: null
+  segment_sha256: 77c1e2aa177f8e1e27a02e6bd92699cda6ce1021735837be0af14d1ca03fe450
+verbatim_span: >-
+  The minor may lawfully obtain such health care service without the consent of a parent, guardian,
+  or other person acting in loco parentis, and the minor, a court, or another person authorized by
+  law consents to such health care service; or
+paragraph_path:
+  path:
+    - g
+    - '3'
+    - i
+    - B
+  anchor: '164.502'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-164.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - I
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      If under applicable law a parent, guardian, or other person acting in loco parentis has
+      authority to act on behalf of an individual who is an unemancipated minor in making decisions
+      related to health care, a covered entity must treat such person as a personal representative
+      under this subchapter, with respect to protected health information relevant to such personal
+      representation, except that such person may not be a personal representative of an
+      unemancipated minor, and the minor has the authority to act as an individual, with respect to
+      protected health information pertaining to a health care service, if:
+    path:
+      - g
+      - '3'
+      - i
+    citation: 45 C.F.R. § 164.502(g)(3)(i)
+operative_verb: may
+summary: >-
+  The minor may lawfully obtain such health care service without the consent of a parent, guardian,
+  or other person acting in loco parentis, and the minor, a court, or another person authorized by
+  law consents to such health care service; or
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

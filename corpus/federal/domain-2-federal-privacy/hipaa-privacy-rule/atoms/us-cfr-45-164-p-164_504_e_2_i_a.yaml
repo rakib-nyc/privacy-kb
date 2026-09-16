@@ -1,0 +1,95 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 14, 2003" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.45.164.p.164_504_e_2_i_a
+source:
+  citation: 45 C.F.R. § 164.504(e)(2)(i)(A)
+  instrument_id: us.cfr.45.164
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-45 XML, part 164
+    result: structured_source_used
+    note: null
+  segment_sha256: bc7aa4bbe78314bf08efc6592226053faf39ac2660f6e8f8d7445b9f97749cdf
+verbatim_span: >-
+  The contract may permit the business associate to use and disclose protected health information
+  for the proper management and administration of the business associate, as provided in paragraph
+  (e)(4) of this section; and
+paragraph_path:
+  path:
+    - e
+    - '2'
+    - i
+    - A
+  anchor: '164.504'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-164.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - I
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'A contract between the covered entity and a business associate must:'
+    path:
+      - e
+      - '2'
+    citation: 45 C.F.R. § 164.504(e)(2)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Establish the permitted and required uses and disclosures of protected health information by
+      the business associate. The contract may not authorize the business associate to use or
+      further disclose the information in a manner that would violate the requirements of this
+      subpart, if done by the covered entity, except that:
+    path:
+      - e
+      - '2'
+      - i
+    citation: 45 C.F.R. § 164.504(e)(2)(i)
+operative_verb: may
+summary: >-
+  The contract may permit the business associate to use and disclose protected health information
+  for the proper management and administration of the business associate, as provided in paragraph
+  (e)(4) of this section; and
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

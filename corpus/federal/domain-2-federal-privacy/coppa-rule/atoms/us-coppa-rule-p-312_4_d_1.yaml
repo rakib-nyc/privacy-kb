@@ -1,0 +1,92 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - ftc
+  - state_ag
+sector:
+  - childrens_online_services
+data_types:
+  - minor_data
+  - personal_information
+status: in_force
+effective_from: '2025-06-23'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.coppa.rule.p.312_4_d_1
+source:
+  citation: 16 C.F.R. § 312.4(d)(1)
+  instrument_id: us.coppa.rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=312
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  raw_sha256: 5a29d13e4512092a2d064a62a581031dc75aa99998540e6c2ef24f0dbfc66df9
+  text_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.txt
+  text_sha256: 269dbc8c79e682a08e9686846439239d7f57ec49f501070957ff738370189425
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: e8a0d53ae71dec2f6c452b9554d591ca0c2515a5c031095a276315baa9e52747
+verbatim_span: >-
+  The name, address, telephone number, and email address of all operators collecting or maintaining
+  personal information from children through the website or online service. Provided that: The
+  operators of a website or online service may list the name, address, phone number, and email
+  address of one operator who will respond to all inquiries from parents concerning the operators'
+  privacy policies and use of children's information, as long as the names of all the operators
+  collecting or maintaining personal information from children through the website or online service
+  are also listed in the notice;
+paragraph_path:
+  path:
+    - d
+    - '1'
+  anchor: '312.4'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-312.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+subject:
+  domain: II.A.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      In addition to the direct notice to the parent, an operator must post a prominent and clearly
+      labeled link to an online notice of its information practices with regard to children on the
+      home or landing page or screen of its website or online service, and, at each area of the
+      website or online service where personal information is collected from children. The link must
+      be in close proximity to the requests for information in each such area. An operator of a
+      general audience website or online service that has a separate children's area must post a
+      link to a notice of its information practices with regard to children on the home or landing
+      page or screen of the children's area. To be complete, the online notice of the website or
+      online service's information practices must state the following:
+    path:
+      - d
+    citation: 16 C.F.R. § 312.4(d)
+operative_verb: may
+summary: >-
+  The name, address, telephone number, and email address of all operators collecting or maintaining
+  personal information from children through the website or online service.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

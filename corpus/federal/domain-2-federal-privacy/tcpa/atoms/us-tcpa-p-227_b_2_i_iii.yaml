@@ -1,0 +1,87 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - any
+status: in_force
+effective_from: '1991-12-20'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "December 20, 1991" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.tcpa.p.227_b_2_i_iii
+source:
+  citation: 47 U.S.C. § 227(b)(2)(I)(iii)
+  instrument_id: us.tcpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  raw_sha256: bc0202f0682c43acd483fb4bf598db62d4157704024776425acfebf27c63e018
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.txt
+  text_sha256: 0aeb8fd90520ec4506ed3e1138f1c4e9b7331ed7e27e727734afa93b39f279e4
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 37e5ec39f025dc1f749aab1a4d5a856c447c48bbd7ad075ff12f483d9758124d
+verbatim_span: the number of such calls that a calling party may make to a particular called party.
+paragraph_path:
+  path:
+    - b
+    - '2'
+    - I
+    - iii
+  anchor: '227'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 47-u-s-c-227.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - I
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      The Commission shall prescribe regulations to implement the requirements of this subsection.
+      In implementing the requirements of this subsection, the Commission—
+    path:
+      - b
+      - '2'
+    citation: 47 U.S.C. § 227(b)(2)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      shall ensure that any exemption under subparagraph (B) or (C) contains requirements for calls
+      made in reliance on the exemption with respect to—
+    path:
+      - b
+      - '2'
+      - I
+    citation: 47 U.S.C. § 227(b)(2)(I)
+operative_verb: may
+summary: the number of such calls that a calling party may make to a particular called party.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

@@ -1,0 +1,26 @@
+id: ev.trap.t8.001
+question: Does FCRA preempt our state's consumer reporting law?
+trap: 'T8: treating FCRA as broadly preemptive. Its default is a SAVINGS clause; preemption is the exception.'
+trap_category: T8
+rubric:
+- name: the general savings clause is in the corpus
+  record_exists: us.fcra.1681t.general_savings
+- name: its posture is floor, not field
+  record: us.fcra.1681t.general_savings
+  path: preemption.posture
+  equals: floor
+- name: the record warns against describing FCRA as preemptive
+  record: us.fcra.1681t.general_savings
+  path: common_errors
+  contains: default is a savings clause
+- name: the express carve-out is a separate atom
+  record_exists: us.fcra.1681t.b1e_report_contents
+- name: that carve-out is express_partial, not field
+  record: us.fcra.1681t.b1e_report_contents
+  path: preemption.posture
+  equals: express_partial
+- name: the date-limited grandfather is recorded
+  record: us.fcra.1681t.b1e_report_contents
+  path: preemption.note
+  contains: date-limited
+all_pass: true

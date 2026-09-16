@@ -1,0 +1,81 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ed
+sector:
+  - education
+data_types:
+  - education_record
+status: in_force
+effective_from: '2011-12-02'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Dec. 2, 2011" appears in a <CITA> element of
+  corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.ferpa.p.99_31_a_14_ii
+source:
+  citation: 34 C.F.R. § 99.31(a)(14)(ii)
+  instrument_id: us.ferpa
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-34.xml?part=99
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml
+  raw_sha256: 5215a3f303ea41cb5bb4c5afb481da1f4623e64307eadc30ef2ad27a2238ffa0
+  text_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.txt
+  text_sha256: e0eee9622724e33bc4d5677717fd06987529754f8ce13dc1b0ed913c9efb542e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 2ec0b5c07c92970ef343583772a22b10dc1607cf514a2c30c1ddac5d765dad6b
+verbatim_span: >-
+  The institution may not disclose the name of any other student, including a victim or witness,
+  without the prior written consent of the other student.
+paragraph_path:
+  path:
+    - a
+    - '14'
+    - ii
+  anchor: '99.31'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 34-cfr-99.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/ferpa/raw/34-cfr-99.xml
+subject:
+  domain: II.D.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      An educational agency or institution may disclose personally identifiable information from an
+      education record of a student without the consent required by § 99.30 if the disclosure meets
+      one or more of the following conditions:
+    path:
+      - a
+    citation: 34 C.F.R. § 99.31(a)
+operative_verb: must_not
+summary: >-
+  The institution may not disclose the name of any other student, including a victim or witness,
+  without the prior written consent of the other student.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

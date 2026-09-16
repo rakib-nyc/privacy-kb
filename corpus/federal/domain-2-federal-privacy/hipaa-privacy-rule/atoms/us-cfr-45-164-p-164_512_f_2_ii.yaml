@@ -1,0 +1,97 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 14, 2003" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.45.164.p.164_512_f_2_ii
+source:
+  citation: 45 C.F.R. § 164.512(f)(2)(ii)
+  instrument_id: us.cfr.45.164
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-45 XML, part 164
+    result: structured_source_used
+    note: null
+  segment_sha256: c6b5986df0c58a61be6715accc9edef7eefd82e18827c38d43a7fa1e87ccb91b
+verbatim_span: >-
+  Except as permitted by paragraph (f)(2)(i) of this section, the covered entity may not disclose
+  for the purposes of identification or location under paragraph (f)(2) of this section any
+  protected health information related to the individual's DNA or DNA analysis, dental records, or
+  typing, samples or analysis of body fluids or tissue.
+paragraph_path:
+  path:
+    - f
+    - '2'
+    - ii
+  anchor: '164.512'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-164.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - I
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      A covered entity may disclose protected health information for a law enforcement purpose to a
+      law enforcement official if the conditions in paragraphs (f)(1) through (f)(6) of this section
+      are met, as applicable.
+    path:
+      - f
+    citation: 45 C.F.R. § 164.512(f)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Except for disclosures required by law as permitted by paragraph (f)(1) of this section, a
+      covered entity may disclose protected health information in response to a law enforcement
+      official's request for such information for the purpose of identifying or locating a suspect,
+      fugitive, material witness, or missing person, provided that:
+    path:
+      - f
+      - '2'
+    citation: 45 C.F.R. § 164.512(f)(2)
+operative_verb: must_not
+summary: >-
+  Except as permitted by paragraph (f)(2)(i) of this section, the covered entity may not disclose
+  for the purposes of identification or location under paragraph (f)(2) of this section any
+  protected health information related to the individual's DNA or DNA analysis, dental records, or
+  typing, samples o
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

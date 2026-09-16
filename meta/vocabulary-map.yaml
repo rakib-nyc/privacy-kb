@@ -1,0 +1,148 @@
+# EXTERNAL VOCABULARIES → THIS CORPUS'S FACT KEYS
+# ==============================================
+# Privacy-KB's input vocabulary (meta/fact-keys.yaml, 193 keys) is derived from what the LAW
+# predicates on. Engineering teams do not describe their systems that way. Ethyca's Fideslang —
+# Apache 2.0, an open description language for declaring data categories, uses and subjects in a
+# tech stack — is how a growing number of them do, and it is a vocabulary about DATA rather than
+# about duties.
+#
+# The two meet, but not cleanly, and the gap is the point of this file.
+#
+# A DATA CATEGORY ALMOST NEVER DETERMINES A LEGAL FACT ON ITS OWN. `user.health_and_medical` does
+# not mean `data.is_phi`: protected health information is defined by WHO HOLDS IT — 45 C.F.R.
+# § 160.103 reaches information created or received by a covered entity or business associate, and
+# the same chart in the hands of an employer is not PHI at all. A mapping that wrote
+# health data → is_phi would hand an ordinary wellness app the whole HIPAA Privacy Rule.
+#
+# So every entry declares a `confidence`:
+#   direct       the category and the fact key mean the same thing; assert it
+#   conditional  the fact follows ONLY if `requires` also holds; never assert alone
+#   partial      the category overlaps the fact key without matching it; surface, never assert
+#
+# and `requires` names the other facts that must be true. Nothing here is inferred from a name.
+# Fideslang keys were read from the published default taxonomy; this is a mapping TO our keys, not
+# a copy of their taxonomy — the identifiers are referenced, their definitions are not reproduced.
+version: 1
+vocabularies:
+
+  fideslang:
+    homepage: https://github.com/ethyca/fideslang
+    licence: Apache-2.0
+    note: >-
+      Data categories are hierarchical and inherit, so a system annotated
+      `user.health_and_medical.genetic` is also `user.health_and_medical`. Match the most specific
+      entry first and fall back to the parent.
+    data_categories:
+
+      - key: user.health_and_medical
+        maps_to: data.includes_ny_private_information
+        confidence: conditional
+        requires: [data.subject_is_ny_resident]
+        note: >-
+          N.Y. GBL § 899-aa(1)(b)(i)(6) makes "medical information" a listed data element, so
+          health data about a New York resident is private information. Added by the 2024
+          amendment — before it, the same data was not.
+
+      - key: user.health_and_medical
+        maps_to: data.is_phi
+        confidence: conditional
+        requires: [entity.is_hipaa_covered_entity]
+        note: >-
+          PHI IS DEFINED BY WHO HOLDS IT, not by what it is about. 45 C.F.R. § 160.103 reaches
+          information created or received by a covered entity or business associate, and excludes
+          employment records held by a covered entity in its role as employer. Health data held by
+          anyone else is not PHI. Assert only with the holder fact.
+
+      - key: user.health_and_medical.genetic
+        maps_to: data.is_genetic_information
+        confidence: direct
+
+      - key: user.health_and_medical.insurance_beneficiary_id
+        maps_to: data.includes_ny_private_information
+        confidence: conditional
+        requires: [data.subject_is_ny_resident]
+        note: >-
+          § 899-aa(1)(b)(i)(7) lists health insurance information — policy or subscriber number,
+          insurer identifier, application and claims history — as its own data element.
+
+      - key: user.biometric
+        maps_to: data.includes_ny_private_information
+        confidence: partial
+        note: >-
+          § 899-aa(1)(b)(i)(5) covers biometric data USED TO AUTHENTICATE OR ASCERTAIN IDENTITY.
+          A biometric measurement kept for another purpose — a fitness heart-rate trace, a voice
+          recording for transcription — may fall outside the element entirely. This corpus has no
+          fact key for the authentication USE, so the condition cannot be expressed as a
+          requirement and the entry must not assert. Typed partial deliberately: the first draft
+          had it conditional on residency alone, which would have asserted the element for any
+          biometric measurement about a New Yorker regardless of what it was for. Surface it and
+          let a person establish the use.
+
+      - key: user.government_id.drivers_license_number
+        maps_to: data.includes_ny_private_information
+        confidence: conditional
+        requires: [data.subject_is_ny_resident]
+        note: § 899-aa(1)(b)(i)(2), driver's licence or non-driver identification card number.
+
+      - key: user.government_id.national_identification_number
+        maps_to: data.includes_ny_private_information
+        confidence: conditional
+        requires: [data.subject_is_ny_resident]
+        note: >-
+          § 899-aa(1)(b)(i)(1) names the social security number specifically. A non-US national
+          identification number is NOT that element, so this mapping is right only where the
+          number is an SSN. Check before asserting.
+
+      - key: user.financial.bank_account
+        maps_to: data.is_financial_record
+        confidence: partial
+        note: >-
+          The Right to Financial Privacy Act's "financial record" is a record OF A FINANCIAL
+          INSTITUTION about a customer, not any account data. A merchant holding a customer's
+          account number does not hold a financial record. Surface for review; do not assert.
+
+      - key: user.financial
+        maps_to: data.is_nonpublic_personal_information
+        confidence: conditional
+        requires: [entity.glba_financial_institution]
+        note: >-
+          NPI under GLBA is defined by the RELATIONSHIP that produced it — information obtained
+          in connection with providing a financial product or service. The holder fact is
+          load-bearing, exactly as it is for PHI.
+
+      - key: user.authorization.credentials
+        maps_to: data.includes_ny_private_information
+        confidence: conditional
+        requires: [data.subject_is_ny_resident]
+        note: >-
+          § 899-aa(1)(b)(ii) reaches a user name or e-mail address together with a password or
+          security question and answer. A credential alone, without the paired secret, is not the
+          element.
+
+      - key: user.childrens
+        maps_to: data.subject_is_child_under_13
+        confidence: partial
+        note: >-
+          COPPA's line is under 13; the New York Child Data Protection Act's is under 18 and the
+          SAFE for Kids Act uses its own definition again. "Children's data" in a system
+          annotation does not say which line it is on. Surface the ambiguity rather than picking.
+
+      - key: user.criminal_history
+        maps_to: null
+        confidence: partial
+        note: >-
+          No fact key. Criminal-history data is regulated principally by FCRA and by state
+          fair-chance hiring law, and this corpus models neither at that granularity. Recorded so
+          the absence is declared rather than silently dropped.
+
+    data_subjects:
+      - key: patient
+        maps_to: entity.is_hipaa_covered_entity
+        confidence: partial
+        note: >-
+          Having patients is evidence of being a health care provider, not of being a COVERED
+          entity: a provider that transmits no HIPAA standard transaction electronically is
+          outside the Rule. Suggest the fact; never set it.
+      - key: employee
+        maps_to: entity.is_employer
+        confidence: direct

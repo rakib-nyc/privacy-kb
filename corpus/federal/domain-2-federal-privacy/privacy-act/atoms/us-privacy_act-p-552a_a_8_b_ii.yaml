@@ -1,0 +1,109 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - federal_agencies
+  - doj
+  - private_litigants
+sector:
+  - government
+data_types:
+  - personally_identifiable_information
+status: in_force
+effective_from: '1975-09-27'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "September 27, 1975" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.privacy_act.p.552a_a_8_b_ii
+source:
+  citation: 5 U.S.C. § 552a(a)(8)(B)(ii)
+  instrument_id: us.privacy_act
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc05@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.xml
+  raw_sha256: 1b646d09621fc527d59702dd5fcd1ef271aca65f6c6271fb9b4d3c2915d6b1e3
+  text_file: corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.txt
+  text_sha256: 763c0ae3764d6bc5d665947896ea22e53e375a47ef41c10a0667cad066e6ded7
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: f1a0075f8be124a89a237da3e024c00d324777ea873f85125320be9220b726eb
+verbatim_span: >-
+  matches performed to support any research or statistical project, the specific data of which may
+  not be used to make decisions concerning the rights, benefits, or privileges of specific
+  individuals;
+paragraph_path:
+  path:
+    - a
+    - '8'
+    - B
+    - ii
+  anchor: '552a'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 5-u-s-c-552a.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.xml
+subject:
+  domain: III.A.1
+  lifecycle:
+    - III
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: For purposes of this section—
+    path:
+      - a
+    citation: 5 U.S.C. § 552a(a)
+  - position: precedes
+    relation: scopes
+    verbatim_span: the term “matching program”—
+    path:
+      - a
+      - '8'
+    citation: 5 U.S.C. § 552a(a)(8)
+  - position: precedes
+    relation: scopes
+    verbatim_span: but does not include—
+    path:
+      - a
+      - '8'
+      - B
+    citation: 5 U.S.C. § 552a(a)(8)(B)
+  - position: follows
+    relation: scopes
+    verbatim_span: >-
+      if the purpose of the match is not to take any adverse financial, personnel, disciplinary, or
+      other adverse action against Federal personnel;
+    path:
+      - a
+      - '8'
+      - B
+    citation: 5 U.S.C. § 552a(a)(8)(B)
+operative_verb: must_not
+summary: >-
+  matches performed to support any research or statistical project, the specific data of which may
+  not be used to make decisions concerning the rights, benefits, or privileges of specific
+  individuals;
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

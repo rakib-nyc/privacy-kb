@@ -1,0 +1,96 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - cpni
+status: in_force
+effective_from: '2017-09-21'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Sept. 21, 2017" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cpni.p.64_4002_c_2
+source:
+  citation: 47 C.F.R. § 64.4002(c)(2)
+  instrument_id: us.cpni
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: 79126612e0f1124927aabc856a245ab0967d48f0926dbb252f682315e25cd485
+verbatim_span: >-
+  The customer has otherwise changed local service providers, the LEC must include in its
+  notification, to the extent that it is available, the identity of the customer's new LEC.
+paragraph_path:
+  path:
+    - c
+    - '2'
+  anchor: '64.4002'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 47-cfr-64.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      When a LEC rejects or otherwise does not act upon a PIC order submitted to it by an IXC, the
+      LEC must notify the IXC and provide the reason(s) why the PIC order could not be processed.
+      The notification provided by the LEC to the IXC must state that it has rejected the
+      IXC-submitted PIC order and specify the reason(s) for the rejection (e.g., due to a lack of
+      information, incorrect information, or a PIC freeze on the customer's account). The
+      notification must contain the identical data elements that were provided to the LEC in the
+      original IXC-submitted PIC order (i.e., mirror image of the original order), unless otherwise
+      specified by this paragraph. If a LEC rejects an IXC-submitted PIC order for a multi-line
+      account (i.e., the customer has selected the IXC as his PIC for two or more lines or terminals
+      associated with his billing telephone number), the notification provided by the LEC rejecting
+      that order must explain the effect of the rejection with respect to each line (working
+      telephone number or terminal) associated with the customer's billing telephone number. A LEC
+      is not required to generate a line-specific or terminal-specific response, however, and may
+      communicate the rejection at the billing telephone level, when the LEC is unable to process an
+      entire order, including all working telephone numbers and terminals associated with a
+      particular billing telephone number. In addition, the notification must indicate the
+      jurisdictional scope of the PIC order rejection (i.e., intraLATA and/or interLATA and/or
+      international). If a LEC rejects a PIC order because:
+    path:
+      - c
+    citation: 47 C.F.R. § 64.4002(c)
+operative_verb: must
+operative_verb_source: operative_context
+summary: >-
+  The customer has otherwise changed local service providers, the LEC must include in its
+  notification, to the extent that it is available, the identity of the customer's new LEC.
+not_yet_analysed: >-
+  Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision: its own
+  words carry no modal, and the duty is supplied by the chapeau recorded in operative_context. Do
+  not quote it without that chapeau. No applicability predicate has been written, so the engine
+  never asserts that it binds anyone.
+open_questions: []

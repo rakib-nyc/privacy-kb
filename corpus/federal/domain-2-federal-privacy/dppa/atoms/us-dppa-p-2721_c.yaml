@@ -1,0 +1,82 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - doj
+sector:
+  - government
+data_types:
+  - any
+status: in_force
+effective_from: '1994-09-13'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Sept. 13, 1994" appears in a <date> element of
+  corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.dppa.p.2721_c
+source:
+  citation: 18 U.S.C. § 2721(c)
+  instrument_id: us.dppa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.xml
+  raw_sha256: 6fdc322897cf479e3c6caaef69b90aedcef608b7f1b91769c502097670b17a21
+  text_file: corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.txt
+  text_sha256: 21041cee8cd7cc31df512db82226e25b537644bc9e56b74d990bb7bb4e562d92
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 06702d76cee8837936dd1b913873372deba62454808e0d1808b823e58f003496
+verbatim_span: >-
+  An authorized recipient of personal information (except a recipient under subsection (b)(11) or
+  (12)) may resell or redisclose the information only for a use permitted under subsection (b) (but
+  not for uses under subsection (b)(11) or (12)). An authorized recipient under subsection (b)(11)
+  may resell or redisclose personal information for any purpose. An authorized recipient under
+  subsection (b)(12) may resell or redisclose personal information pursuant to subsection (b)(12).
+  Any authorized recipient (except a recipient under subsection (b)(11)) that resells or rediscloses
+  personal information covered by this chapter must keep for a period of 5 years records identifying
+  each person or entity that receives information and the permitted purpose for which the
+  information will be used and must make such records available to the motor vehicle department upon
+  request.
+paragraph_path:
+  path:
+    - c
+  anchor: '2721'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 18-u-s-c-2721.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.xml
+subject:
+  domain: III.A.1
+  lifecycle:
+    - I
+operative_context: []
+operative_verb: mixed
+summary: >-
+  An authorized recipient of personal information (except a recipient under subsection (b)(11) or
+  (12)) may resell or redisclose the information only for a use permitted under subsection (b) (but
+  not for uses under subsection (b)(11) or (12)).
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

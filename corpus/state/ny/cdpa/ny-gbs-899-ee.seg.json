@@ -1,0 +1,232 @@
+{
+ "label": "NY GBS 899-EE",
+ "url": "https://legislation.nysenate.gov/api/3/laws/GBS/899-EE",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/cdpa/raw/ny-gbs-899-ee.json",
+ "raw_sha256": "d8ea0c1e4456c24686eaa1b78ecc3dc786fc4102cded60a11615c4121a49c52e",
+ "leaves": [
+  {
+   "path": [
+    "1"
+   ],
+   "anchor": "899-EE",
+   "section": "899-EE",
+   "confidence": "high",
+   "heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Covered user\" shall mean a user of a website, online service, online application, mobile application, or connected device, or portion thereof, in the state of New York who is:",
+   "context": [],
+   "section_heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": null,
+   "active_date": "2025-06-27"
+  },
+  {
+   "path": [
+    "1",
+    "a"
+   ],
+   "anchor": "899-EE",
+   "section": "899-EE",
+   "confidence": "high",
+   "heading": "Definitions",
+   "text": "actually known by the operator of such website, online service, online application, mobile application, or connected device to be a minor; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Covered user\" shall mean a user of a website, online service, online application, mobile application, or connected device, or portion thereof, in the state of New York who is:",
+     "path": [
+      "1"
+     ],
+     "anchor": "899-EE"
+    }
+   ],
+   "section_heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": null,
+   "active_date": "2025-06-27"
+  },
+  {
+   "path": [
+    "1",
+    "b"
+   ],
+   "anchor": "899-EE",
+   "section": "899-EE",
+   "confidence": "high",
+   "heading": "Definitions",
+   "text": "using a website, online service, online application, mobile application, or connected device primarily directed to minors.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Covered user\" shall mean a user of a website, online service, online application, mobile application, or connected device, or portion thereof, in the state of New York who is:",
+     "path": [
+      "1"
+     ],
+     "anchor": "899-EE"
+    }
+   ],
+   "section_heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": null,
+   "active_date": "2025-06-27"
+  },
+  {
+   "path": [
+    "2"
+   ],
+   "anchor": "899-EE",
+   "section": "899-EE",
+   "confidence": "high",
+   "heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Minor\" shall mean a natural person under the age of eighteen.",
+   "context": [],
+   "section_heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": null,
+   "active_date": "2025-06-27"
+  },
+  {
+   "path": [
+    "3"
+   ],
+   "anchor": "899-EE",
+   "section": "899-EE",
+   "confidence": "high",
+   "heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Operator\" shall mean any person who operates or provides a website on the internet, online service, online application, mobile application, or connected device, and who, alone or jointly with others, controls the purposes and means of processing personal data. A person that acts as both an operator and processor shall comply with the applicable obligations of an operator and the obligations of a processor, depending on its role with respect to each specific processing of personal data.",
+   "context": [],
+   "section_heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": null,
+   "active_date": "2025-06-27"
+  },
+  {
+   "path": [
+    "4"
+   ],
+   "anchor": "899-EE",
+   "section": "899-EE",
+   "confidence": "high",
+   "heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Personal data\" shall mean any data that identifies or could reasonably be linked, directly or indirectly, with a specific natural person or device.",
+   "context": [],
+   "section_heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": null,
+   "active_date": "2025-06-27"
+  },
+  {
+   "path": [
+    "5"
+   ],
+   "anchor": "899-EE",
+   "section": "899-EE",
+   "confidence": "high",
+   "heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Process\" or \"processing\" shall mean an operation or set of operations performed on personal data, including but not limited to the collection, use, access, sharing, sale, monetization, analysis, retention, creation, generation, derivation, recording, organization, structuring, storage, disclosure, transmission, disposal, licensing, destruction, deletion, modification, or deidentification of personal data.",
+   "context": [],
+   "section_heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": null,
+   "active_date": "2025-06-27"
+  },
+  {
+   "path": [
+    "6"
+   ],
+   "anchor": "899-EE",
+   "section": "899-EE",
+   "confidence": "high",
+   "heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Primarily directed to minors\" shall mean a website, online service, online application, mobile application, or connected device, or a portion thereof, that is targeted to minors. A website, online service, online application, mobile application, or connected device, or portion thereof, shall not be deemed directed primarily to minors solely because such website, online service, online application, mobile application, or connected device, or portion thereof refers or links to any other website, online service, online application, mobile application, or connected device directed to minors by using information location tools, including a directory, index, reference, pointer, or hypertext link. A website, online service, online application, mobile application, or connected device, or portion thereof, shall be deemed directed to minors when it has actual knowledge that it is collecting personal data of users directly from users of another website, online service, online application, mobile application, or connected device primarily directed to minors.",
+   "context": [],
+   "section_heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": null,
+   "active_date": "2025-06-27"
+  },
+  {
+   "path": [
+    "7"
+   ],
+   "anchor": "899-EE",
+   "section": "899-EE",
+   "confidence": "high",
+   "heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Sell\" shall mean to share personal data for monetary or other valuable consideration. \"Selling\" shall not include the sharing of personal data for monetary or other valuable consideration to another person as an asset that is part of a merger, acquisition, bankruptcy, or other transaction in which that person assumes control of all or part of the operator's assets or the sharing of personal data with a processor.",
+   "context": [],
+   "section_heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": null,
+   "active_date": "2025-06-27"
+  },
+  {
+   "path": [
+    "8"
+   ],
+   "anchor": "899-EE",
+   "section": "899-EE",
+   "confidence": "high",
+   "heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Processor\" shall mean any person who processes data on behalf of the operator. A person that acts as both an operator and processor shall comply with the applicable obligations of an operator and the obligations of a processor, depending on its role with respect to each specific processing of personal data.",
+   "context": [],
+   "section_heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": null,
+   "active_date": "2025-06-27"
+  },
+  {
+   "path": [
+    "9"
+   ],
+   "anchor": "899-EE",
+   "section": "899-EE",
+   "confidence": "high",
+   "heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Third-party operator\" shall mean an operator who is not the operator:",
+   "context": [],
+   "section_heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": null,
+   "active_date": "2025-06-27"
+  },
+  {
+   "path": [
+    "9",
+    "a"
+   ],
+   "anchor": "899-EE",
+   "section": "899-EE",
+   "confidence": "high",
+   "heading": "Definitions",
+   "text": "with whom the user intentionally and directly interacts; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Third-party operator\" shall mean an operator who is not the operator:",
+     "path": [
+      "9"
+     ],
+     "anchor": "899-EE"
+    }
+   ],
+   "section_heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": null,
+   "active_date": "2025-06-27"
+  },
+  {
+   "path": [
+    "9",
+    "b"
+   ],
+   "anchor": "899-EE",
+   "section": "899-EE",
+   "confidence": "high",
+   "heading": "Definitions",
+   "text": "that collects personal data from the direct and current interactions with the user.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Third-party operator\" shall mean an operator who is not the operator:",
+     "path": [
+      "9"
+     ],
+     "anchor": "899-EE"
+    }
+   ],
+   "section_heading": "\u00a7 899-ee. Definitions. For purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": null,
+   "active_date": "2025-06-27"
+  }
+ ]
+}

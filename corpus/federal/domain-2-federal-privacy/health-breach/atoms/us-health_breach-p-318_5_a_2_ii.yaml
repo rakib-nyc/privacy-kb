@@ -1,0 +1,98 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - health
+  - consumer_technology
+data_types:
+  - phr_identifiable_health_information
+  - health_information
+status: in_force
+effective_from: '2024-07-29'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.health_breach.p.318_5_a_2_ii
+source:
+  citation: 16 C.F.R. § 318.5(a)(2)(ii)
+  instrument_id: us.health_breach
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=318
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+  raw_sha256: 6266f7150e4734e83f9669e7d3d29429aba5885c6bb4cf72b170e48d6cde7bcb
+  text_file: corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.txt
+  text_sha256: 85091ca4bd2e2982f94c4cc078b4f55e3f653381d76f8aa6505c0fca0d427085
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: b15a371f5a810aa7237ce45dadc801411f1bcfa21f870f3004b82aecf459b50c
+verbatim_span: >-
+  In major print or broadcast media, including major media in geographic areas where the individuals
+  affected by the breach likely reside. Such a notice in media or web posting shall include a
+  toll-free phone number, which shall remain active for at least 90 days, where an individual can
+  learn if the individual's unsecured PHR identifiable health information may have been included in
+  the breach.
+paragraph_path:
+  path:
+    - a
+    - '2'
+    - ii
+  anchor: '318.5'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-318.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/health-breach/raw/16-cfr-318.xml
+subject:
+  domain: II.B.3
+  lifecycle:
+    - I
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      A vendor of personal health records or PHR related entity that discovers a breach of security
+      shall provide notice of such breach to an individual promptly, as described in § 318.4
+      (regarding timeliness of notification), and in the following form:
+    path:
+      - a
+    citation: 16 C.F.R. § 318.5(a)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      If, after making reasonable efforts to contact all individuals to whom notice is required
+      under § 318.3(a), through the means provided in paragraph (a)(1) of this section, the vendor
+      of personal health records or PHR related entity finds that contact information for ten or
+      more individuals is insufficient or out-of-date, the vendor of personal health records or PHR
+      related entity shall provide substitute notice, which shall be reasonably calculated to reach
+      the individuals affected by the breach, in the following form:
+    path:
+      - a
+      - '2'
+    citation: 16 C.F.R. § 318.5(a)(2)
+operative_verb: mixed
+summary: >-
+  In major print or broadcast media, including major media in geographic areas where the individuals
+  affected by the breach likely reside.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

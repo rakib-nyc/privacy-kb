@@ -1,0 +1,77 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - financial
+  - any creditor
+data_types:
+  - consumer_information
+  - account_information
+status: in_force
+effective_from: '2009-05-14'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "May 14, 2009" appears in a <CITA> element of
+  corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.red_flags.p.681_2_e
+source:
+  citation: 16 C.F.R. § 681.2(e)
+  instrument_id: us.red_flags
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=681
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.xml
+  raw_sha256: 7fe86c7084a6fad1ad05bad984e729c15375a3b6261f7ae11298256bb2536c36
+  text_file: corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.txt
+  text_sha256: 5b797c2f9419d08777165b7536b847eeb72d7c4b5d4c56a4322ee15f5f86f3e4
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 6716b3f49eed9892f0d758897d5789d7fd0d206b530fa14bd3b23e7d618a68bc
+verbatim_span: >-
+  Any written or electronic notice that the card issuer provides under this paragraph must be clear
+  and conspicuous and provided separately from its regular correspondence with the cardholder.
+paragraph_path:
+  path:
+    - e
+  anchor: '681.2'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-681.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/red-flags/raw/16-cfr-681.xml
+subject:
+  domain: II.C.3
+  lifecycle:
+    - I
+operative_context: []
+operative_verb: must
+summary: >-
+  Any written or electronic notice that the card issuer provides under this paragraph must be clear
+  and conspicuous and provided separately from its regular correspondence with the cardholder.
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

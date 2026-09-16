@@ -1,0 +1,82 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 14, 2003" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.45.164.p.164_528_a_2_i
+source:
+  citation: 45 C.F.R. § 164.528(a)(2)(i)
+  instrument_id: us.cfr.45.164
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-45 XML, part 164
+    result: structured_source_used
+    note: null
+  segment_sha256: 5a93b36dd6a3733f0f86871dd1f562d9e698cddd0d023228cae47b0b4cf4ba7c
+verbatim_span: >-
+  The covered entity must temporarily suspend an individual's right to receive an accounting of
+  disclosures to a health oversight agency or law enforcement official, as provided in § 164.512(d)
+  or (f), respectively, for the time specified by such agency or official, if such agency or
+  official provides the covered entity with a written statement that such an accounting to the
+  individual would be reasonably likely to impede the agency's activities and specifying the time
+  for which such a suspension is required.
+paragraph_path:
+  path:
+    - a
+    - '2'
+    - i
+  anchor: '164.528'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-164.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - I
+operative_context: []
+operative_verb: must
+summary: >-
+  The covered entity must temporarily suspend an individual's right to receive an accounting of
+  disclosures to a health oversight agency or law enforcement official, as provided in § 164.512(d)
+  or (f), respectively, for the time specified by such agency or official, if such agency or
+  official provides
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

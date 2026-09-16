@@ -1,0 +1,55 @@
+# DEFINITION CONCEPTS — the controlled vocabulary for comparing definitions
+# ========================================================================
+# "Personal information" means five different things across FCRA, GLBA, HIPAA,
+# COPPA and NY SHIELD, and SCHEMA.md § 2 says the differs_from field is where a
+# lot of the expert value lives. Prose differences are unverifiable, though: a
+# hand-written "differs from HIPAA because..." is an assertion nothing checks,
+# which is the DEBT-009 shape one level up.
+#
+# So each definition is decomposed into ELEMENTS, each tagged with a concept from
+# this list and anchored to a verbatim substring of the definition. differs_from
+# is then COMPUTED as a set difference over (kind, concept) pairs, and gate 26
+# recomputes it and fails if the stored value disagrees.
+#
+# This vocabulary is OURS, not any drafter's. Like the PI ordinals in
+# meta/taxonomy-versions.yaml it is stable for one schema version and is declared here
+# rather than assumed. Adding a concept is a normal change; silently reusing one
+# for a different idea is not.
+version: 1
+concepts:
+  identifies_individual:      Requires that the information identify, or be reasonably capable of identifying, a natural person.
+  natural_person_only:        Reaches individuals only, not companies or other legal persons.
+  subject_credit_character:   Bears on creditworthiness, credit standing, capacity, character, reputation, personal characteristics or mode of living.
+  subject_financial:          Financial information about the individual — accounts, balances, payment history, application data.
+  subject_health:             Relates to physical or mental health, the provision of health care, or payment for it.
+  source_consumer_reporting_agency: Only information communicated BY a consumer reporting agency counts.
+  source_covered_actor:       Only information created or received by an enumerated actor (provider, plan, clearinghouse, employer).
+  source_customer_relationship: Only information obtained through a financial product or service relationship with the individual.
+  purpose_eligibility_use:    Defined by the PURPOSE the information is used or expected to be used for, not by its content alone.
+  media_agnostic:             Reaches the information in any form or medium, including oral.
+  derived_list_inclusion:     A list or grouping derived from covered information is itself covered.
+  carveout_publicly_available: Publicly available information is excluded.
+  carveout_first_party_experience: Transactions or experiences between the consumer and the reporting person are excluded.
+  carveout_affiliate_sharing: Communications among corporately affiliated persons are excluded on stated conditions.
+  carveout_employment_record: Records held by the covered actor in its role as employer are excluded.
+  carveout_education_record:  Records covered by FERPA are excluded.
+  carveout_long_deceased:     Information about a person dead beyond a stated period is excluded.
+  carveout_medical_from_report: Medical information is excluded from the definition on stated conditions.
+  carveout_business_purpose:  Information tied to a business, commercial or agricultural purpose is excluded.
+
+  # ENTITY- AND PERSON-SCOPED CONCEPTS. The vocabulary above was built to compare five
+  # definitions of "personal information", so every concept in it describes DATA. The
+  # machinery is not data-specific, though, and the first collision that needed it in
+  # New York is not about data at all: "covered user" is defined by BOTH the Child Data
+  # Protection Act (GBL § 899-ee(1)) and the SAFE for Kids Act (GBL § 1500(4)), in the
+  # same chapter of the same law, and one of them means a minor while the other means
+  # very nearly everybody. These concepts describe WHO a definition reaches.
+  located_in_new_york:        The person must be in New York, or the service must be used in New York.
+  trigger_actual_knowledge:   Reaches the person only where the operator actually knows the fact that makes them covered.
+  trigger_service_directed_to_minors: Reaches the person by virtue of the service being aimed at minors, without regard to what the operator knows about that user.
+  subject_is_minor:           The person must be a minor for the definition to reach them.
+  carveout_operator_and_affiliates: The operator itself, and its agents and affiliates, are excluded from the term.
+kinds:
+  includes: The element brings something WITHIN the definition.
+  excludes: The element takes something OUT of the definition.
+  requires: The element is a necessary condition for anything to fall within it.

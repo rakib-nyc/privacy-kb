@@ -1,0 +1,81 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - any
+status: in_force
+effective_from: '1991-12-20'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "December 20, 1991" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.tcpa.p.227_c_1_c
+source:
+  citation: 47 U.S.C. § 227(c)(1)(C)
+  instrument_id: us.tcpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc47@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  raw_sha256: bc0202f0682c43acd483fb4bf598db62d4157704024776425acfebf27c63e018
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.txt
+  text_sha256: 0aeb8fd90520ec4506ed3e1138f1c4e9b7331ed7e27e727734afa93b39f279e4
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: d8c31f5a1338a6faa3ff583cfae8267700f5fe031941423c97033e02fba7850f
+verbatim_span: >-
+  consider whether different methods and procedures may apply for local telephone solicitations,
+  such as local telephone solicitations of small businesses or holders of second class mail permits;
+paragraph_path:
+  path:
+    - c
+    - '1'
+    - C
+  anchor: '227'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 47-u-s-c-227.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-u-s-c-227.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - I
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Within 120 days after December 20, 1991 , the Commission shall initiate a rulemaking
+      proceeding concerning the need to protect residential telephone subscribers’ privacy rights to
+      avoid receiving telephone solicitations to which they object. The proceeding shall—
+    path:
+      - c
+      - '1'
+    citation: 47 U.S.C. § 227(c)(1)
+operative_verb: may
+summary: >-
+  consider whether different methods and procedures may apply for local telephone solicitations,
+  such as local telephone solicitations of small businesses or holders of second class mail permits;
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

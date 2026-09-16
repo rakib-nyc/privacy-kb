@@ -1,0 +1,107 @@
+# Prior versions of provisions the corpus does NOT hold. Entries accumulate; see the tool.
+generated: '2026-09-11'
+what_this_is: >-
+  Provisions whose stored text was PROVED younger than the effective_from the record claimed. Each
+  record has been narrowed to the window its text actually covers, so the corpus no longer answers
+  an old question with new words. The cost is a false negative: for any date before
+  corpus_now_answers_from the engine returns nothing for this provision, because the text that
+  governed then is not held. Entries ACCUMULATE and are closed only by adding the prior vintage as
+  its own record and chaining the two — never by fixing the date alone.
+count: 12
+entries:
+  - atom_id: us.coppa.312_3.notice
+    citation: 16 C.F.R. § 312.3(a)
+    corpus_now_answers_from: '2025-06-23'
+    previously_claimed: '2000-04-21'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    note: >-
+      ABSENT at 2016-12-22, present from 2025-06-23. The span this record quotes began at
+      2025-06-23, and a prior vintage exists that the corpus does not hold. effective_from is
+      2000-04-21, which PREDATES the text — the record answers earlier dates with words that did not
+      exist then.
+    status: open — prior vintage not held
+  - atom_id: us.cfr.16.313.5.a1.annual_notice
+    citation: 16 C.F.R. § 313.5(a)(1)
+    corpus_now_answers_from: '2022-01-07'
+    missing_before: '2022-01-07'
+    last_seen_without_this_text: '2021-12-09'
+    evidence_window: 2016-12-22..2022-01-07
+    status: open — prior vintage not held
+  - atom_id: us.glba.safeguards.314_4.ftc_notification
+    citation: 16 C.F.R. § 314.4(j)(1)
+    corpus_now_answers_from: '2024-05-13'
+    missing_before: '2024-05-13'
+    last_seen_without_this_text: '2023-11-13'
+    evidence_window: 2016-12-22..2024-05-13
+    status: open — prior vintage not held
+  - atom_id: us.health_breach.318_1.a.scope
+    citation: 16 C.F.R. § 318.1(a)
+    corpus_now_answers_from: '2024-07-29'
+    previously_claimed: '2009-09-24'
+    missing_before: '2024-07-29'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2024-07-29
+    note: >-
+      ABSENT at 2016-12-22, present from 2024-07-29. The span this record quotes began at
+      2024-07-29, and a prior vintage exists that the corpus does not hold. effective_from is
+      2009-09-24, which PREDATES the text — the record answers earlier dates with words that did not
+      exist then.
+    status: open — prior vintage not held
+  - atom_id: us.health_breach.318_3.a3.media_notice
+    citation: 16 C.F.R. § 318.3(a)(3)
+    corpus_now_answers_from: '2024-07-29'
+    missing_before: '2024-07-29'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2024-07-29
+    status: open — prior vintage not held
+  - atom_id: us.part2.2_13.a.use_disclosure_prohibition
+    citation: 42 C.F.R. § 2.13(a)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2.2_31.a.written_consent_required_elements
+    citation: 42 C.F.R. § 2.31(a)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2.2_31.b_1.sud_counseling_notes_consent
+    citation: 42 C.F.R. § 2.31(b)(1)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164_520.a_1
+    citation: 45 C.F.R. § 164.520(a)(1)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cures.171_103.a.information_blocking_definition
+    citation: 45 C.F.R. § 171.103(a)
+    corpus_now_answers_from: '2024-03-11'
+    missing_before: '2024-03-11'
+    last_seen_without_this_text: '2024-02-08'
+    evidence_window: 2020-06-30..2024-12-17
+    status: open — prior vintage not held
+  - atom_id: us.cures.171_103.b_2.provider_knowledge_standard
+    citation: 45 C.F.R. § 171.103(b)(2)
+    corpus_now_answers_from: '2024-03-11'
+    missing_before: '2024-03-11'
+    last_seen_without_this_text: '2024-02-08'
+    evidence_window: 2020-06-30..2024-12-17
+    status: open — prior vintage not held
+  - atom_id: us.tcpa.64_1200.d3.internal_dnc_honor
+    citation: 47 C.F.R. § 64.1200(d)(3)
+    corpus_now_answers_from: '2025-04-11'
+    missing_before: '2025-04-11'
+    last_seen_without_this_text: '2025-03-26'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held

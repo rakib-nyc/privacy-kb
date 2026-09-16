@@ -1,0 +1,79 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+  - hhs_samhsa
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2024-04-16'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.part2_sud.p.2_31_a_6
+source:
+  citation: 42 C.F.R. § 2.31(a)(6)
+  instrument_id: us.part2_sud
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-42.xml?part=2
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  raw_sha256: 5310842763c7e36481877d66979171643bfb80db54bceca2013014691623c216
+  text_file: corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.txt
+  text_sha256: 8aa03df58a46112b21fc7b4d0972fe49d4ed8dc28481d2e409f7a8fa881e8b74
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, full XML for the part, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: c87dd11857620155bc69a344dfebd6855e6cc3da1e8f7a5299b028b9468f05d4
+verbatim_span: >-
+  The patient's right to revoke the consent in writing, except to the extent that the part 2 program
+  or other lawful holder of patient identifying information that is permitted to make the disclosure
+  has already acted in reliance on it, and how the patient may revoke consent.
+paragraph_path:
+  path:
+    - a
+    - '6'
+  anchor: '2.31'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 42-cfr-2.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/part2-sud/raw/42-cfr-2.xml
+subject:
+  domain: II.B.3
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      A written consent to a use or disclosure under the regulations in this part may be paper or
+      electronic and must include:
+    path:
+      - a
+    citation: 42 C.F.R. § 2.31(a)
+operative_verb: may
+summary: >-
+  The patient's right to revoke the consent in writing, except to the extent that the part 2 program
+  or other lawful holder of patient identifying information that is permitted to make the disclosure
+  has already acted in reliance on it, and how the patient may revoke consent.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

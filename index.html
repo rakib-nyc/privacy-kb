@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy-KB · Privacy law, computed and checkable</title>
+<meta name="description" content="A local engine for US federal and New York privacy law. Answers as of a date, computes what recall cannot, and produces artifacts you can verify, diff and re-run. Research prototype, not legal advice.">
+<meta property="og:title" content="Privacy-KB">
+<meta property="og:description" content="A local engine for US federal and New York privacy law. Answer, compute, prove, audit — every provision hash-anchored to its primary source. Research prototype, not legal advice.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23C8102E'/><rect x='6' y='7' width='20' height='2.6' fill='white'/><rect x='6' y='14.7' width='20' height='2.6' fill='white'/><rect x='6' y='22.4' width='12' height='2.6' fill='white'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ===========================================================================
+   Privacy-KB. Red and white, used the way a redline uses them: white is the
+   document, black is the text, red is the correction. Red never decorates.
+   It marks the thing that is wrong, the thing that is early, or the thing
+   you must check. One accent, one radius (2px, near-square, document-like).
+   ======================================================================== */
+:root{
+  --white:#FFFFFF; --paper:#FAFAF9; --ink:#111214; --grey:#565B62; --grey-2:#6B7178;   /* 4.93:1 on white, 4.72:1 on paper. #7C828A was 3.88:1 and failed AA on table headers, captions and stat labels, all of which are small text. */
+  --line:#E4E6E9; --line-2:#CDD1D6;
+  --red:#C8102E; --red-deep:#8E0B20; --red-wash:#FDF1F3; --red-line:#F3C9D0;
+  --btn:#C8102E; --btn-text:#FFFFFF;
+  --r:2px;
+  --f:"Archivo",ui-sans-serif,system-ui,-apple-system,sans-serif;
+  --m:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --maxw:1160px;
+  --shadow:0 1px 1px rgba(17,18,20,.03),0 10px 30px -14px rgba(17,18,20,.16);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --white:#111214; --paper:#17181B; --ink:#F0EFEE; --grey:#A2A7AE; --grey-2:#868C94;
+    --line:#26282C; --line-2:#383B41;
+    --red:#FF5A6E; --red-deep:#FF8492; --red-wash:#241318; --red-line:#4A2028;
+    --btn:#FF5A6E; --btn-text:#141014;
+    --shadow:0 1px 1px rgba(0,0,0,.4),0 14px 34px -16px rgba(0,0,0,.7);
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--f);
+  font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:26px}
+h1,h2,h3,h4{margin:0;font-weight:600;letter-spacing:-.021em}
+h1{font-size:clamp(2.2rem,5vw,3.55rem);line-height:1.06;font-weight:700}
+h2{font-size:clamp(1.6rem,3.1vw,2.3rem);line-height:1.14}
+h3{font-size:1.08rem}
+h4{font-size:.95rem}
+p{margin:0}
+a{color:inherit}
+.mono{font-family:var(--m)}
+.red{color:var(--red)}
+.eyebrow{font-family:var(--m);font-size:11px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--red);display:block;margin-bottom:14px}
+.lede{color:var(--grey);font-size:1.08rem;max-width:66ch}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;height:62px;display:flex;align-items:center;
+  background:color-mix(in srgb,var(--white) 90%,transparent);backdrop-filter:blur(10px) saturate(150%);
+  border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;font-weight:700;letter-spacing:-.03em}
+.mark{width:20px;height:20px;background:var(--red);position:relative;flex:none}
+.mark::before,.mark::after{content:"";position:absolute;left:3px;right:3px;height:2px;background:var(--white)}
+.mark::before{top:5px}.mark::after{top:12px;right:9px}
+.nav-links{display:flex;align-items:center;gap:24px;font-size:14.5px}
+.nav-links a{color:var(--grey);text-decoration:none}
+.nav-links a:hover{color:var(--ink)}
+@media (max-width:880px){.nav-links a:not(.btn){display:none}}
+.btn{display:inline-flex;align-items:center;padding:9px 17px;border-radius:var(--r);
+  font-size:14.5px;font-weight:600;text-decoration:none;border:1px solid transparent;
+  transition:transform .12s,background .16s,border-color .16s;white-space:nowrap}
+.btn-primary{background:var(--btn);color:var(--btn-text)}
+.btn-primary:hover{filter:brightness(.92)} .btn-primary:active{transform:translateY(1px)}
+.btn-ghost{border-color:var(--line-2);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink)} .btn-ghost:active{transform:translateY(1px)}
+
+/* hero */
+.hero{padding:clamp(46px,6.5vw,86px) 0 clamp(38px,5vw,64px)}
+.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(30px,4.6vw,62px);align-items:center}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero .lede{margin-top:19px}
+.hero-cta{display:flex;gap:11px;margin-top:28px;flex-wrap:wrap}
+.hero-fig{margin:0}
+.hero-fig .tl{border-radius:var(--r);box-shadow:var(--shadow)}
+.hero-fig figcaption{margin-top:11px;font-size:12.8px;color:var(--grey-2);font-family:var(--m)}
+@media (max-width:920px){.hero-grid{grid-template-columns:1fr;gap:34px}}
+
+/* disclaimer */
+.warn{background:var(--red-wash);border-block:1px solid var(--red-line)}
+.warn .wrap{display:grid;grid-template-columns:auto 1fr;gap:16px;padding-block:22px;align-items:start}
+.warn-tag{font-family:var(--m);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--red);border:1px solid currentColor;padding:5px 8px;white-space:nowrap}
+.warn p{font-size:14.6px;max-width:92ch;color:var(--ink)}
+.warn a{color:var(--red)}
+@media (max-width:720px){.warn .wrap{grid-template-columns:1fr}}
+/* Hero timeline. Inline rather than an <img> so it takes the page palette and dark mode,
+   and so the citations are real selectable text. Red intensity encodes urgency: the
+   earliest clock is the deepest red, later ones recede to grey. */
+.tl{border:1px solid var(--line);background:var(--white);padding:20px 22px 18px;border-radius:var(--r)}
+.tl-head{padding-bottom:13px;border-bottom:1px solid var(--line);margin-bottom:15px}
+.tl-head b{display:block;font-size:15px;letter-spacing:-.01em}
+.tl-head span{display:block;margin-top:3px;font:400 12.5px/1.45 var(--f);color:var(--grey-2)}
+.tl-rows{display:flex;flex-direction:column;gap:13px}
+.tl-row{display:grid;grid-template-columns:52px minmax(0,1fr);gap:4px 12px;align-items:baseline}
+.tl-date{font:600 11px/1 var(--m);letter-spacing:.04em;color:var(--grey-2);white-space:nowrap}
+.tl-bar{grid-column:2;height:5px;width:var(--w);min-width:14px;background:var(--red-line);align-self:center}
+.tl-first .tl-bar{background:var(--red)}
+.tl-what{grid-column:2;font-size:13px;line-height:1.5;color:var(--ink)}
+.tl-what em{display:block;margin-top:3px;font-style:normal;font-size:12.5px;color:var(--red);line-height:1.45}
+.tl-first .tl-date{color:var(--red)}
+.tl-foot{margin:16px 0 0;padding-top:14px;border-top:1px solid var(--line);
+  font-size:12.5px;line-height:1.55;color:var(--grey)}
+@media (max-width:900px){.tl{padding:17px 18px 15px}}
+/* Grid items default to min-width:auto, which resolves to min-content. A minmax(0,1fr)
+   TRACK can shrink but the ITEM inside it still refuses to go below its longest
+   unbreakable string, so the git clone URL in step 1 pushed the page 151px wider than
+   a 390px phone and the whole document scrolled sideways. This lets the item shrink;
+   .cmd then scrolls inside its own box, which is where the overflow belongs. */
+.hero-grid>*,.tl-row>*,.beat>*,.wrong-grid>*,.verify-top>*,.row>*,.stats>*,
+.cov-cols>*,.step>*,.lim-grid>*,.foot-grid>*,.warn .wrap>*{min-width:0}
+
+/* the first hour: a narrative rail, red marks the correction */
+.hour{padding:clamp(58px,8vw,100px) 0}
+.hour-head{max-width:60ch;margin-bottom:46px}
+.rail{border-left:2px solid var(--line);padding-left:0}
+.beat{display:grid;grid-template-columns:72px minmax(0,1fr);gap:clamp(16px,2vw,30px);
+  padding:0 0 38px 26px;position:relative}
+.beat::before{content:"";position:absolute;left:-6px;top:7px;width:10px;height:10px;
+  background:var(--white);border:2px solid var(--line-2)}
+.beat.turn::before{background:var(--red);border-color:var(--red)}
+.beat-time{font-family:var(--m);font-size:12.5px;color:var(--grey-2);letter-spacing:.02em;padding-top:2px}
+.beat h3{margin-bottom:7px}
+.beat p{color:var(--grey);font-size:15.4px;max-width:70ch}
+.beat .said{margin-top:12px;border-left:2px solid var(--line-2);padding:2px 0 2px 14px;
+  color:var(--grey);font-size:15px}
+.beat .fix{margin-top:12px;border-left:2px solid var(--red);padding:2px 0 2px 14px;font-size:15px}
+.beat .fix strong{color:var(--red)}
+@media (max-width:760px){.beat{grid-template-columns:1fr;gap:6px}.beat-time{margin-bottom:2px}}
+
+/* the four ways it goes wrong */
+.wrong{background:var(--paper);border-block:1px solid var(--line);padding:clamp(58px,8vw,100px) 0}
+.wrong-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:40px;
+  border-top:1px solid var(--line-2)}
+.wrong-cell{padding:26px 30px 26px 0;border-bottom:1px solid var(--line)}
+.wrong-cell:nth-child(even){padding-left:30px;border-left:1px solid var(--line)}
+.wrong-cell h4{margin-bottom:8px}
+.wrong-cell .bad{font-family:var(--m);font-size:12.4px;color:var(--red);margin-bottom:9px;display:block}
+.wrong-cell p{font-size:14.8px;color:var(--grey)}
+@media (max-width:760px){
+  .wrong-grid{grid-template-columns:1fr}
+  .wrong-cell:nth-child(even){padding-left:0;border-left:0}
+}
+
+/* verify: the citation card, the trust moment */
+.verify{padding:clamp(58px,8vw,100px) 0}
+.verify-top{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+  gap:clamp(24px,4vw,60px);align-items:end;margin-bottom:38px}
+.card{border:1px solid var(--line-2);border-radius:var(--r);background:var(--white);
+  box-shadow:var(--shadow);overflow:hidden}
+.card-top{display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:12px 18px;background:var(--paper);border-bottom:1px solid var(--line);
+  font-family:var(--m);font-size:12.2px;color:var(--grey)}
+.card-top .ok{color:var(--red);font-weight:500}
+.card-body{padding:22px 20px}
+.card-cite{font-weight:600;font-size:1.05rem;margin-bottom:12px}
+.card-quote{font-size:15.2px;line-height:1.72;border-left:2px solid var(--red);padding-left:16px;color:var(--ink)}
+.card-meta{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;
+  display:grid;grid-template-columns:110px minmax(0,1fr);gap:7px 18px;
+  font-family:var(--m);font-size:12.4px}
+.card-meta dt{color:var(--grey-2)}
+.card-meta dd{margin:0;color:var(--ink);word-break:break-all}
+.verify-note{margin-top:26px;font-size:15px;color:var(--grey);max-width:74ch}
+@media (max-width:840px){.verify-top{grid-template-columns:1fr;gap:14px}
+  .card-meta{grid-template-columns:1fr;gap:2px 0}
+  .card-meta dt{margin-top:8px}}
+
+/* refusals: ledger */
+.refuse{background:var(--paper);border-block:1px solid var(--line);padding:clamp(58px,8vw,100px) 0}
+.refuse-head{max-width:62ch;margin-bottom:38px}
+.rows{border-top:1px solid var(--line-2)}
+.row{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(18px,3.6vw,52px);
+  padding:24px 0;border-bottom:1px solid var(--line)}
+.row p{color:var(--grey);font-size:15px}
+.row .out{display:block;font-family:var(--m);font-size:12.5px;color:var(--red);margin-top:10px}
+@media (max-width:760px){.row{grid-template-columns:1fr;gap:8px}}
+
+/* coverage: a real table, the detail counsel wants */
+.cov{padding:clamp(58px,8vw,100px) 0}
+.cov-top{max-width:64ch;margin-bottom:14px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:34px 0 44px;
+  border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+.stat{padding:20px 20px 20px 0}
+.stat+.stat{padding-left:24px;border-left:1px solid var(--line)}
+.stat b{display:block;font-size:1.85rem;font-weight:700;letter-spacing:-.03em;line-height:1.1}
+.stat span{font-size:13px;color:var(--grey-2);font-family:var(--m)}
+@media (max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(odd){padding-left:0;border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}}
+table{width:100%;border-collapse:collapse;font-size:14.8px}
+caption{text-align:left;font-weight:600;font-size:1.02rem;padding-bottom:12px}
+th{text-align:left;font-family:var(--m);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--grey-2);font-weight:400;padding:0 14px 10px 0;border-bottom:1px solid var(--line-2)}
+td{padding:11px 14px 11px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--grey)}
+td:first-child{color:var(--ink)}
+td.n{font-family:var(--m);font-size:13px;width:56px}
+.tick{color:var(--red);font-family:var(--m);font-size:12px}
+.cov-cols{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(28px,4.4vw,58px);margin-top:16px}
+.fed p{font-size:15px;color:var(--grey)}
+.fed .group{padding:14px 0;border-bottom:1px solid var(--line)}
+.fed .group b{display:block;font-size:14px;margin-bottom:3px;color:var(--ink)}
+@media (max-width:880px){.cov-cols{grid-template-columns:1fr}}
+
+/* install */
+.inst{background:var(--paper);border-block:1px solid var(--line);padding:clamp(58px,8vw,100px) 0}
+.inst-head{max-width:58ch;margin-bottom:36px}
+.steps{counter-reset:s;border-top:1px solid var(--line-2)}
+.step{counter-increment:s;display:grid;grid-template-columns:38px minmax(0,1fr);gap:20px;
+  padding:24px 0;border-bottom:1px solid var(--line)}
+.step::before{content:counter(s);font-family:var(--m);font-size:12.5px;color:var(--red);
+  border:1px solid var(--red-line);width:30px;height:30px;display:grid;place-items:center}
+.step h3{margin-bottom:6px}
+.step p{color:var(--grey);font-size:15px;max-width:70ch}
+.cmd{margin-top:13px;background:var(--white);border:1px solid var(--line-2);border-radius:var(--r);
+  padding:13px 15px;font-family:var(--m);font-size:13.2px;overflow-x:auto;white-space:pre;color:var(--ink)}
+.cmd .c{color:var(--grey-2)}
+.quote-ask{margin-top:13px;border-left:2px solid var(--red);padding:3px 0 3px 15px;font-size:15.4px}
+@media (max-width:620px){.step{grid-template-columns:1fr}.step::before{display:none}}
+
+/* one incident, many laws */
+.many{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:clamp(58px,8vw,100px) 0}
+.many-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:32px;
+  border:1px solid var(--line-2);border-radius:var(--r);overflow:hidden}
+.many-col{padding:22px 24px}
+.many-col+.many-col{border-left:1px solid var(--line-2)}
+.many-col h3{margin:0 0 4px;font-size:15px;letter-spacing:-.01em}
+.many-col .sub{color:var(--grey);font-size:13.4px;margin:0 0 14px}
+.many-col.was{background:var(--red-wash)}
+.many-col.was h3{color:var(--red-deep)}
+.clk{display:flex;gap:10px;align-items:baseline;padding:7px 0;border-bottom:1px dotted var(--line-2);
+  font-size:14px}
+.clk:last-child{border-bottom:0}
+.clk b{font-family:var(--m);font-size:13px;min-width:72px}
+.clk .miss{color:var(--red-deep);font-weight:600}
+.many-note{margin-top:26px;font-size:15px;color:var(--grey);max-width:74ch}
+.many-note strong{color:var(--ink)}
+.ask{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:30px;
+  border-top:1px solid var(--line-2)}
+.ask-cell{padding:20px 24px 20px 0;border-bottom:1px solid var(--line)}
+.ask-cell:nth-child(3n){padding-right:0}
+.ask-cell b{display:block;font-size:14.4px;margin-bottom:5px}
+.ask-cell p{margin:0;font-size:13.8px;color:var(--grey)}
+@media (max-width:760px){.many-grid{grid-template-columns:1fr}
+  .many-col+.many-col{border-left:0;border-top:1px solid var(--line-2)}
+  .ask{grid-template-columns:1fr}}
+
+/* limits */
+.lim{padding:clamp(58px,8vw,100px) 0}
+.lim-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:34px;
+  border-top:1px solid var(--line-2)}
+.lim-cell{padding:22px 28px 22px 0;border-bottom:1px solid var(--line)}
+.lim-cell:nth-child(even){padding-left:28px;border-left:1px solid var(--line)}
+.lim-cell h4{margin-bottom:7px}
+.lim-cell p{font-size:14.6px;color:var(--grey)}
+@media (max-width:760px){.lim-grid{grid-template-columns:1fr}
+  .lim-cell:nth-child(even){padding-left:0;border-left:0}}
+
+/* footer */
+.foot{border-top:1px solid var(--line);padding:42px 0 54px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:30px}
+.foot p{font-size:13.8px;color:var(--grey);max-width:72ch}
+.foot a{color:var(--red)}
+.foot-links{display:flex;flex-direction:column;gap:8px;font-size:14.4px}
+.foot-links a{color:var(--grey);text-decoration:none}
+.foot-links a:hover{color:var(--ink)}
+@media (max-width:760px){.foot-grid{grid-template-columns:1fr}}
+
+/* ===========================================================================
+   v0.1 layout — the page is organised around four capabilities, so the main
+   component is a capability block: a label, a claim, and real output beside it.
+   ======================================================================== */
+.cap-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);
+  border-block:1px solid var(--line);margin-top:0}
+.cap-nav a{background:var(--white);padding:20px 22px;text-decoration:none;display:block;
+  transition:background .15s}
+.cap-nav a:hover{background:var(--paper)}
+.cap-nav b{display:block;font-size:15.5px;letter-spacing:-.015em}
+.cap-nav i{display:block;font-style:normal;font-family:var(--m);font-size:11px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--red);margin-bottom:7px}
+.cap-nav span{display:block;margin-top:5px;font-size:13.2px;color:var(--grey);line-height:1.5}
+@media (max-width:900px){.cap-nav{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.cap-nav{grid-template-columns:1fr}}
+
+.cap{padding-block:clamp(44px,5.6vw,78px);border-bottom:1px solid var(--line)}
+.cap-grid{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);
+  gap:clamp(26px,4vw,58px);align-items:start}
+@media (max-width:920px){.cap-grid{grid-template-columns:1fr;gap:26px}}
+.cap h2{margin-bottom:14px}
+.cap .lede{margin-bottom:0}
+.cap-note{margin-top:18px;font-size:14.4px;color:var(--grey);max-width:60ch}
+.cap-note strong{color:var(--ink)}
+
+/* a terminal-ish output panel; real output, never a mock-up */
+.out-panel{border:1px solid var(--line);background:var(--paper);border-radius:var(--r);
+  overflow:hidden;box-shadow:var(--shadow)}
+.out-head{display:flex;align-items:center;gap:9px;padding:11px 16px;border-bottom:1px solid var(--line);
+  background:var(--white)}
+.out-head .dot{width:8px;height:8px;border-radius:50%;background:var(--red);flex:none}
+.out-head code{font-family:var(--m);font-size:12.4px;color:var(--grey);overflow-wrap:anywhere}
+.out-body{margin:0;padding:16px;font-family:var(--m);font-size:12.5px;line-height:1.72;
+  color:var(--ink);overflow-x:auto;white-space:pre;tab-size:2}
+.out-body .g{color:var(--grey-2)}
+.out-body .r{color:var(--red);font-weight:500}
+.out-cap{margin:10px 2px 0;font-family:var(--m);font-size:11.6px;color:var(--grey-2)}
+
+/* refusals */
+.ref-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:34px;
+  border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.ref-cell{padding:22px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ref-cell h4{font-size:14.6px;margin-bottom:7px}
+.ref-cell p{font-size:13.6px;color:var(--grey);line-height:1.6}
+.ref-cell code{font-family:var(--m);font-size:12.2px;color:var(--red)}
+@media (max-width:760px){.ref-grid{grid-template-columns:1fr}}
+
+/* stats */
+.figs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:30px;
+  border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+.fig{padding:20px 22px;border-right:1px solid var(--line)}
+.fig:last-child{border-right:0}
+.fig b{display:block;font-size:1.72rem;letter-spacing:-.03em;line-height:1}
+.fig span{display:block;margin-top:6px;font-family:var(--m);font-size:11.4px;color:var(--grey-2)}
+@media (max-width:820px){.figs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fig:nth-child(2){border-right:0}}
+@media (max-width:460px){.figs{grid-template-columns:1fr}.fig{border-right:0}}
+
+/* install steps */
+.steps{counter-reset:s;margin-top:32px;display:grid;gap:0;border-top:1px solid var(--line)}
+.step{counter-increment:s;display:grid;grid-template-columns:34px minmax(0,1fr);gap:16px;
+  padding:22px 0;border-bottom:1px solid var(--line)}
+.step::before{content:counter(s);font-family:var(--m);font-size:12px;color:var(--red);
+  border:1px solid var(--red-line);width:26px;height:26px;display:grid;place-items:center}
+.step h4{font-size:14.8px;margin-bottom:6px}
+.step p{font-size:13.8px;color:var(--grey);margin-bottom:10px}
+.step pre{margin:0;padding:12px 14px;background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--r);font-family:var(--m);font-size:12.4px;overflow-x:auto;white-space:pre}
+
+/* limits */
+.lim2{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:30px;
+  border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.lim2 div{padding:20px 22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.lim2 h4{font-size:14.2px;margin-bottom:6px}
+.lim2 p{font-size:13.4px;color:var(--grey);line-height:1.58}
+@media (max-width:860px){.lim2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.lim2{grid-template-columns:1fr}}
+
+.sec{padding-block:clamp(44px,5.6vw,78px)}
+.sec-alt{background:var(--paper);border-block:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mark"></span> Privacy-KB</a>
+    <div class="nav-links">
+      <a href="#answer">Answer</a>
+      <a href="#compute">Compute</a>
+      <a href="#prove">Prove</a>
+      <a href="#audit">Audit</a>
+      <a href="#inside">What is in it</a>
+      <a href="#limits">Limits</a>
+      <a class="btn btn-ghost" href="https://github.com/rakib-nyc/privacy-kb">Repository</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero wrap" id="top">
+  <div class="hero-grid">
+    <div>
+      <h1>Privacy law, <em>computed and checkable.</em></h1>
+      <p class="lede">A local engine for US federal and New York privacy law. It answers as of a
+      date, computes what recall cannot, and produces artifacts you can verify, diff and re-run.</p>
+      <p class="lede" style="margin-top:14px">Every provision is quoted verbatim from primary
+      source and carries the SHA&#8209;256 of the bytes it was verified against. Nothing is
+      synthesised at query time, and nothing leaves your machine.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#answer">See what it does</a>
+        <a class="btn btn-ghost" href="#install">Install it</a>
+      </div>
+    </div>
+    <figure class="hero-fig">
+      <div class="out-panel">
+        <div class="out-head"><span class="dot"></span>
+          <code>privacy-kb deadlines --hipaa --ny-data --breach --from 2026-09-08</code></div>
+<pre class="out-body"><span class="r">Sep 15</span>  GBL § 899-aa(9) · 5 business days to the NY Attorney General
+        <span class="r">triggered by notifying HHS — not by discovery</span>
+<span class="g">Sep 22</span>  6 RCNY § 5-301(b) · LL144 candidate notice, 10 business days
+<span class="g">Oct  8</span>  GBL § 899-aa(2) · notify New York residents, 30 days
+<span class="g">Nov  7</span>  45 C.F.R. §§ 164.404(a), 164.406(a), 164.408(a)
+        <span class="g">four HIPAA breach clocks, 60 days</span></pre>
+      </div>
+      <figcaption>A company that files with HHS promptly, then works its 30 and 60 day
+      obligations in order, has already missed the earliest deadline on the list.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section class="warn">
+  <div class="wrap">
+    <span class="warn-tag">Research prototype</span>
+    <p><strong>Not legal advice. No warranty of any kind.</strong> Every output must be checked by a
+    qualified person against the primary source before it is relied on — each record carries its
+    source URL, fetch date and content hash so that checking is possible. See the
+    <a href="https://github.com/rakib-nyc/privacy-kb/blob/main/LICENSE">licence</a>, sections 7
+    and 8, which govern.</p>
+  </div>
+</section>
+
+<div class="cap-nav">
+  <a href="#answer"><i>01</i><b>Answer</b><span>Which obligations apply, as of a date, with
+    exemptions typed and preemption resolved.</span></a>
+  <a href="#compute"><i>02</i><b>Compute</b><span>Things that cannot be recalled, only
+    calculated.</span></a>
+  <a href="#prove"><i>03</i><b>Prove</b><span>Artifacts that re-run identically and can be handed
+    to someone else.</span></a>
+  <a href="#audit"><i>04</i><b>Audit</b><span>Check the citations in any answer, including ones
+    this engine did not write.</span></a>
+</div>
+
+<section class="cap wrap" id="answer">
+  <div class="cap-grid">
+    <div>
+      <span class="eyebrow">01 · Answer</span>
+      <h2>As of a date, or not at all.</h2>
+      <p class="lede">There is no &ldquo;current law&rdquo; here. Every query resolves against a
+      date. Exemptions are typed objects rather than flags, because
+      <strong>entity&#8209;level</strong> and <strong>data&#8209;level</strong> relief are not the
+      same thing. Preemption is resolved, not assumed.</p>
+      <p class="cap-note">A clock starts only when its own trigger is dated. An obligation whose
+      trigger has no date is reported as <strong>not started</strong> — never given a borrowed
+      one, which is how four unrelated clocks come to share a single wrong date.</p>
+    </div>
+    <div>
+      <div class="out-panel">
+        <div class="out-head"><span class="dot"></span>
+          <code>privacy-kb ask --hipaa --ny-data --breach --told-hhs</code></div>
+<pre class="out-body">Obligations in force as of 2026-09-16 — <span class="r">18 engaged</span>
+
+  45 C.F.R. § 164.404(a)   notify each affected individual
+  45 C.F.R. § 164.408(a)   notify the Secretary of HHS
+  GBL § 899-aa(2)          notify New York residents
+  GBL § 899-aa(9)          notify the NY Attorney General
+
+  <span class="g">exemption  § 899-aa(2)(b) is activity_level, not entity_level:
+             it removes notice to people already notified
+             federally and preserves notice to the AG</span>
+  <span class="g">preemption 45 C.F.R. § 160.203 — HIPAA is a FLOOR, so the
+             more stringent state duty survives</span></pre>
+      </div>
+      <p class="out-cap">Real output. Exemption type and preemption posture are fields, not prose.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cap wrap" id="compute">
+  <div class="cap-grid">
+    <div>
+      <span class="eyebrow">02 · Compute</span>
+      <h2>What recall cannot do.</h2>
+      <p class="lede">Four operations that are arithmetic over a model, not recollection of a
+      document.</p>
+      <p class="cap-note"><strong>exposure</strong> sweeps roughly 500 applicability evaluations
+      across 126 fact keys: <em>which facts would change this answer</em>. Enumerated, not
+      sampled.</p>
+      <p class="cap-note"><strong>between</strong> diffs two dates from stored vintages, and
+      separates three things a single &ldquo;changed&rdquo; would collapse: what commenced, what
+      the corpus cannot attribute to a dated legal event, and what it could not be asked about at
+      all.</p>
+      <p class="cap-note"><strong>requirements</strong> enumerates every element a provision
+      imposes against the segmentation of its own source file, so the denominator is declared
+      rather than implied. <strong>conform</strong> lays those elements beside your document —
+      with the verdict column deliberately empty.</p>
+    </div>
+    <div>
+      <div class="out-panel">
+        <div class="out-head"><span class="dot"></span>
+          <code>privacy-kb between 2022-06-01 2023-06-01 --nyc-hiring</code></div>
+<pre class="out-body"><span class="r">Commenced — 3</span>
+  + N.Y.C. Admin. Code § 20-871(a)  (effective 2023-01-01, stated_in_text)
+  + N.Y.C. Admin. Code § 20-871(b)  (effective 2023-01-01, stated_in_text)
+  + N.Y.C. Admin. Code § 20-872(b)  (effective 2023-01-01, stated_in_text)
+
+<span class="g">Differs, cause unattributable — 6
+  ? 6 RCNY § 5-301(a)  appeared; effective_from is a capture
+    date (undetermined), not a commencement
+
+39 obligation(s) could not be asked about this window: the only
+text held for them is younger than 2022-06-01.</span></pre>
+      </div>
+      <p class="out-cap">A difference between two dates is not automatically a change in the law.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cap wrap" id="prove">
+  <div class="cap-grid">
+    <div>
+      <span class="eyebrow">03 · Prove</span>
+      <h2>Artifacts, not prose.</h2>
+      <p class="lede">Prose expires the moment anything moves. These outputs persist, re-run
+      identically, and can be handed to a third party.</p>
+      <p class="cap-note"><strong>receipt</strong> issues a digest anyone can verify — including
+      you, later, without trusting you. <strong>memo</strong> produces a citable record of a whole
+      analysis, every provision with its URL, hash and vintage. Same inputs, byte&#8209;identical
+      output, across separate processes.</p>
+      <p class="cap-note"><strong>profile</strong> keeps a standing fact set and a register. The
+      question in&#8209;house counsel actually has is <em>&ldquo;this says something different than
+      last quarter — did the law change, or did we?&rdquo;</em>, and it is answerable because the
+      four causes are recorded separately.</p>
+    </div>
+    <div>
+      <div class="out-panel">
+        <div class="out-head"><span class="dot"></span>
+          <code>privacy-kb profile show acme</code></div>
+<pre class="out-body">acme · Acme Health, NY
+  state layers: US-NY
+  entity: is_hipaa_covered_entity=true, nexus="US-NY"
+
+<span class="r">Register  3 check(s)</span>
+  2026-09-16  as of 2022-06-01    2 obligation(s)  <span class="g">baseline</span>
+  2026-09-16  as of 2023-06-01   11 obligation(s)  <span class="g">date+result</span>
+  2026-09-16  as of 2026-09-16   11 obligation(s)  <span class="g">date+result</span>
+
+<span class="g">corpus · facts · date · result — recorded separately, so a
+moved answer can be attributed rather than guessed at.</span></pre>
+      </div>
+      <p class="out-cap">Editing the facts preserves the register. It is the evidence that explains
+      the next answer.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cap wrap" id="audit">
+  <div class="cap-grid">
+    <div>
+      <span class="eyebrow">04 · Audit</span>
+      <h2>Check an answer this engine did not write.</h2>
+      <p class="lede">Paste any assistant&rsquo;s answer, a memo, or a letter from the other side.
+      Every authority in it is checked: does the citation resolve, was it in force on that date, is
+      it enacted&#8209;but&#8209;pending or superseded, and — with facts — does it
+      <strong>reach the entity being advised</strong>.</p>
+      <p class="cap-note">That last check is the one a click&#8209;through cannot perform. A
+      fabricated citation fails the first check anybody runs. A <em>real</em> citation attached to a
+      proposition it does not support survives every check anybody runs.</p>
+      <p class="cap-note"><strong>Two things it never says.</strong> It never reports a claim
+      <em>correct</em>: whether the quoted words support the proposition is a reading, and this
+      engine does not make readings. The clean status is <code>NO_PROBLEM_FOUND</code>, never
+      &ldquo;verified&rdquo;. And it never reports a citation <em>fabricated</em>: coverage is
+      federal, New York State and New York City, so a real provision outside that scope resolves to
+      nothing for the same reason an invented one would.</p>
+    </div>
+    <div>
+      <div class="out-panel">
+        <div class="out-head"><span class="dot"></span>
+          <code>privacy-kb ground --text answer.txt --as-of 2026-09-16</code></div>
+<pre class="out-body"><span class="r">✗ N.Y. Gen. Bus. Law § 1501(1)    PENDING_NOT_BINDING</span>
+    <span class="g">enacted but not in force until 2027-01-25; citing it
+    for what is required today asserts a duty that binds
+    nobody yet</span>
+
+<span class="r">✗ 45 C.F.R. § 164.404(b)          DOES_NOT_REACH_THESE_FACTS</span>
+    <span class="g">predicate: entity.is_hipaa_covered_entity (false)
+               == true -> false</span>
+
+<span class="g">? Cal. Civ. Code § 1798.82        CITATION_NOT_HELD
+    not held here — a statement about this corpus, NOT a
+    finding that the citation is fabricated</span></pre>
+      </div>
+      <p class="out-cap">Citations are extracted from prose lexically. What a citation was offered
+      for is left to the reader, who has the paragraph.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-alt" id="refuse">
+  <div class="wrap">
+    <span class="eyebrow">Where most of the work went</span>
+    <h2>What it refuses to tell you.</h2>
+    <p class="lede">A confident answer over a gap is worse than a smaller answer that names the
+    gap. These refusals are enforced in code and exercised in CI, not left to convention.</p>
+    <div class="ref-grid">
+      <div class="ref-cell">
+        <h4>It will not answer without a date</h4>
+        <p>A malformed date is refused too, because date comparisons are string comparisons: a typo
+        would otherwise sort above every real date and quietly report law that is not yet in force.
+        <code>as_of: "not-a-date" &rarr; refused</code></p>
+      </div>
+      <div class="ref-cell">
+        <h4>It will not treat enacted law as binding early</h4>
+        <p>A pending record routes to a watch feed and cannot become an obligation at
+        <em>any</em> as&#8209;of date until a person promotes it. Nothing silently becomes law.</p>
+      </div>
+      <div class="ref-cell">
+        <h4>It will not hide what it cannot reach</h4>
+        <p>Coverage gaps, element shortfall against a source&rsquo;s own segmentation, and date
+        windows it cannot be asked about are returned <em>with</em> the answer, not in a report
+        beside it.</p>
+      </div>
+      <div class="ref-cell">
+        <h4>It will not guess a preemption posture</h4>
+        <p>Where the statute does not speak to the question, the posture is reported as unresolved
+        rather than inferred from the shape of the statute.</p>
+      </div>
+      <div class="ref-cell">
+        <h4>It will not quote what it could not verify</h4>
+        <p>A record that fails verification against its stored source is suppressed from every
+        output — by the loader, rather than by each caller remembering to filter.</p>
+      </div>
+      <div class="ref-cell">
+        <h4>It will not borrow a date for a clock</h4>
+        <p>An obligation whose trigger has no date is reported as not started. One event date
+        applied to every trigger produces four confident, unrelated deadlines.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap" id="inside">
+  <span class="eyebrow">What is actually in it</span>
+  <h2>Coverage is declared before it is measured.</h2>
+  <p class="lede">Instrument by instrument, so the corpus knows what it is missing. Every figure
+  here is generated from the repository — a hand&#8209;typed count drifts.</p>
+
+  <div class="figs">
+    <div class="fig"><b>1,581</b><span>provisions held</span></div>
+    <div class="fig"><b>226</b><span>analysed obligations</span></div>
+    <div class="fig"><b>54</b><span>instruments</span></div>
+    <div class="fig"><b>50</b><span>CI gates</span></div>
+  </div>
+
+  <p class="lede" style="margin-top:26px"><strong>Two different claims, and the difference
+  matters.</strong> <b>1,581 provisions</b> are held as verified text: quoted verbatim from the
+  primary source, hash&#8209;anchored, with a citation and a dated vintage. <b>226 of them are
+  analysed</b> — an applicability predicate has been written, and the engine reasons with those and
+  only those. A provision with no predicate can never make the engine assert that a duty applies to
+  anyone, which is enforced by the loader rather than by convention.</p>
+
+  <p class="lede" style="margin-top:18px"><strong>New York is built, not bolted on.</strong> SHIELD,
+  the Child Data Protection Act and its OAG guidance, the SAFE for Kids Act, GBL §§ 349/350,
+  Education Law § 2&#8209;d, Civil Rights Law §§ 50/51 and § 52&#8209;c, Penal Law §§ 250.00/250.05,
+  and NYC Local Law 144 with its 6 RCNY implementing rules.</p>
+
+  <p class="lede" style="margin-top:18px">The corpus is plain files in git — one record per file,
+  no database — and <strong>50 CI gates</strong> run over it on every change. They check that a
+  quoted span appears in the stored source bytes, that a paragraph path resolves to exactly one
+  leaf and agrees with its own citation, that a version chain has no gaps, and that a date&rsquo;s
+  basis is derived from the source rather than declared. 37 are exercised by fixtures built to trip
+  them; the other 13 are declared unexercisable, with the reason, so a new gate cannot quietly join
+  the untested set.</p>
+</section>
+
+<section class="sec sec-alt" id="install">
+  <div class="wrap">
+    <span class="eyebrow">Getting it running</span>
+    <h2>Two ways to use it.</h2>
+    <p class="lede">A command&#8209;line tool, and an
+    <a href="https://modelcontextprotocol.io" style="color:var(--red)">MCP</a> server exposing 26
+    tools — so an assistant you already use can call the engine instead of recalling the law.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div>
+          <h4>Install Node 20 or newer</h4>
+          <p>From <a href="https://nodejs.org" style="color:var(--red)">nodejs.org</a>. Nothing else
+          is required, and nothing calls out to a network at query time.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h4>Get the project and install</h4>
+<pre>git clone https://github.com/rakib-nyc/privacy-kb.git
+cd privacy-kb
+npm install</pre>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h4>Check the install, then register it</h4>
+          <p>The second command writes the MCP client configuration. Restart the client afterwards.</p>
+<pre>npm run doctor
+npm run setup -- --write</pre>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h4>Ask something you can check</h4>
+          <p>Every answer carries its citations, hashes and dates, so the first thing to do with one
+          is verify it.</p>
+<pre>privacy-kb ask --hipaa --ny-data --breach --told-hhs
+privacy-kb cite us.hipaa.breach.404a.notify_individuals</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec wrap" id="limits">
+  <span class="eyebrow">Read this before relying on it</span>
+  <h2>Where it is weak.</h2>
+  <p class="lede">Published because a tool that hides these is less trustworthy than one that does
+  not.</p>
+  <div class="lim2">
+    <div>
+      <h4>Narrow by design</h4>
+      <p>US federal, New York State, New York City. No other state. No GDPR beyond
+      transfer&#8209;mechanism touchpoints. Almost no case law.</p>
+    </div>
+    <div>
+      <h4>Thin in places, and it says where</h4>
+      <p>It holds 1 of the 129 elements beneath 15 U.S.C. § 1681g. Element shortfall is computed per
+      duty category and travels with the answer — but a gap register describes a hole, it does not
+      fill one.</p>
+    </div>
+    <div>
+      <h4>529 records cannot anchor an as&#8209;of comparison</h4>
+      <p>Their date records when the text was captured, not when the law began. Differences across
+      such a date are reported as unattributable rather than as change.</p>
+    </div>
+    <div>
+      <h4>Business days mean weekdays</h4>
+      <p>Public holidays are not excluded, so a clock crossing one lands a day early. Every affected
+      result says so in the output.</p>
+    </div>
+    <div>
+      <h4>Pending law does not promote itself</h4>
+      <p>That is the point, and it also means the corpus needs maintaining: the SAFE for Kids Act
+      commences 25 January 2027.</p>
+    </div>
+    <div>
+      <h4>Coverage is 31 of 69 subject areas</h4>
+      <p>38 are neither covered nor ruled out of scope. That number is tracked and may only go down.
+      Nine instruments hold a single record each: complete against what they declare, but thin.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand" href="#top" style="margin-bottom:13px"><span class="mark"></span> Privacy-KB</a>
+      <p><strong>Research prototype. Not legal advice. No warranty.</strong> Nothing here creates an
+      attorney-client relationship. A record is accurate as of its stated effective date and the date
+      its source was fetched, and not otherwise. Check every citation against the primary source
+      before relying on it.</p>
+      <p style="margin-top:12px">Apache 2.0. Copyright 2026 Muhammad Rakibul Islam. Quoted legal text
+      is government edict and carries no copyright.</p>
+    </div>
+    <div class="foot-links">
+      <a href="https://github.com/rakib-nyc/privacy-kb">Repository</a>
+      <a href="https://github.com/rakib-nyc/privacy-kb/blob/main/DESIGN.md">Design and invariants</a>
+      <a href="https://github.com/rakib-nyc/privacy-kb/blob/main/INSTALL.md">Installation guide</a>
+      <a href="https://github.com/rakib-nyc/privacy-kb/blob/main/examples/README.md">Worked example</a>
+      <a href="https://github.com/rakib-nyc/privacy-kb/blob/main/meta/debt.yaml">Registered debt</a>
+      <a href="mailto:rakib.islam@rutgers.edu">rakib.islam@rutgers.edu</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

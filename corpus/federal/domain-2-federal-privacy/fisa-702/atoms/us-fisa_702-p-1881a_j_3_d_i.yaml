@@ -1,0 +1,89 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - doj
+sector:
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2008-07-10'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "July 10, 2008" appears in a <date> element of
+  corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.xml — citation apparatus,
+  not operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.fisa_702.p.1881a_j_3_d_i
+source:
+  citation: 50 U.S.C. § 1881a(j)(3)(D)(i)
+  instrument_id: us.fisa_702
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc50@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.xml
+  raw_sha256: 1bfe41f81a21edbdfd6526a1b83b1a91eb2dc65da9dc925059b5e7fc6369b9d7
+  text_file: corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.txt
+  text_sha256: 4ff532541ae3383c392b99fdfec998206e2c7385e4e614c1256904677f31daa8
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: deaff95f1638a4560a0f63ca99555a2aeee986896b8a41c94e5168c3a76b4525
+verbatim_span: >-
+  Except as provided in clause (ii), if the Court orders a correction of a deficiency in a
+  certification or procedures under subparagraph (B), no information obtained or evidence derived
+  pursuant to the part of the certification or procedures that has been identified by the Court as
+  deficient concerning any United States person shall be received in evidence or otherwise disclosed
+  in any trial, hearing, or other proceeding in or before any court, grand jury, department, office,
+  agency, regulatory body, legislative committee, or other authority of the United States, a State,
+  or political subdivision thereof, and no information concerning any United States person acquired
+  pursuant to such part of such certification or procedures shall subsequently be used or disclosed
+  in any other manner by Federal officers or employees without the consent of the United States
+  person, except with the approval of the Attorney General if the information indicates a threat of
+  death or serious bodily harm to any person.
+paragraph_path:
+  path:
+    - j
+    - '3'
+    - D
+    - i
+  anchor: '1881a'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 50-u-s-c-1881a.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/fisa-702/raw/50-u-s-c-1881a.xml
+subject:
+  domain: III.A.1
+  lifecycle:
+    - I
+operative_context: []
+operative_verb: must
+summary: >-
+  Except as provided in clause (ii), if the Court orders a correction of a deficiency in a
+  certification or procedures under subparagraph (B), no information obtained or evidence derived
+  pursuant to the part of the certification or procedures that has been identified by the Court as
+  deficient concerni
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

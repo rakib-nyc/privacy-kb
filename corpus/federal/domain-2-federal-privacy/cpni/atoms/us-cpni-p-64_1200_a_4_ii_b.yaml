@@ -1,0 +1,102 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - cpni
+status: in_force
+effective_from: '2017-09-21'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Sept. 21, 2017" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cpni.p.64_1200_a_4_ii_b
+source:
+  citation: 47 C.F.R. § 64.1200(a)(4)(ii)(B)
+  instrument_id: us.cpni
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: aeebaf1e74b388c2ee52fa21073e3d51379975e568d1b941cdc44c360ad74784
+verbatim_span: >-
+  A directory, advertisement, or site on the Internet to which the recipient voluntarily agreed to
+  make available its facsimile number for public distribution. If a sender obtains the facsimile
+  number from the recipient's own directory, advertisement, or Internet site, it will be presumed
+  that the number was voluntarily made available for public distribution, unless such materials
+  explicitly note that unsolicited advertisements are not accepted at the specified facsimile
+  number. If a sender obtains the facsimile number from other sources, the sender must take
+  reasonable steps to verify that the recipient agreed to make the number available for public
+  distribution.
+paragraph_path:
+  path:
+    - a
+    - '4'
+    - ii
+    - B
+  anchor: '64.1200'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 47-cfr-64.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'No person or entity may:'
+    path:
+      - a
+    citation: 47 C.F.R. § 64.1200(a)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Use a telephone facsimile machine, computer, or other device to send an unsolicited
+      advertisement to a telephone facsimile machine, unless—
+    path:
+      - a
+      - '4'
+    citation: 47 C.F.R. § 64.1200(a)(4)
+  - position: precedes
+    relation: scopes
+    verbatim_span: The sender obtained the number of the telephone facsimile machine through—
+    path:
+      - a
+      - '4'
+      - ii
+    citation: 47 C.F.R. § 64.1200(a)(4)(ii)
+operative_verb: must
+summary: >-
+  A directory, advertisement, or site on the Internet to which the recipient voluntarily agreed to
+  make available its facsimile number for public distribution.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

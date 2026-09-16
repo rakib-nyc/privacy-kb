@@ -1,0 +1,252 @@
+Office of the New York State                                                                                     Letitia James
+Attorney General                                                                                             Attorney General
+
+
+May 19, 2025
+
+
+
+New York Child Data Protection Act
+Implementation Guidance
+The Office of the Attorney General (OAG) issues this guidance in advance of the June 20, 2025, effective date of New York’s
+Child Data Protection Act (NYCDPA or Act), codified at New York General Business Law (N.Y. Gen. Bus. Law) §§ 899-ee et
+seq.
+
+This guidance provides clarification on key questions raised to OAG through the Advanced Notice of Proposed Rulemaking
+and through OAG’s outreach to industry participants. The Act also confers authority on OAG to promulgate rules, and
+OAG intends to issue rules to provide further detail and clarification for some of the terms addressed later based on
+engagement with stakeholders through the initial compliance period. Until such rules are proposed and finalized, OAG
+advises that it will exercise discretion in pursuing enforcement actions, and will take into account an operator’s good-faith
+efforts to comply with NYCDPA consistent with the plain language of the statute and this guidance.
+
+The OAG provides guidance regarding:
+         » the application of the Children’s Online Privacy Protection Act, 15 U.S.C. §§ 6501 et seq, and its implementing
+         regulations and related Federal Trade Commission guidance (collectively, COPPA) to minors under 13 years of age
+         consistent with NYCDPA restrictions on processing (N.Y. Gen. Bus. Law § 899-ff(1)(a)).
+         » operator responsibilities with respect to user-provided age flags under N.Y. Gen. Bus. Law § 899-ii(1).
+         » “primarily directed to minors” under N.Y. Gen. Bus. Law § 899-ee(6).
+         » “strictly necessary . . . permissible purposes” under N.Y. Gen. Bus. Law §§ 899-ff(2).
+         » requirements for schools, school districts, and their third-party contractors under NYCDPA.
+         » parental requests for products and services.
+
+This guidance refers to “website, online service, online application, mobile application, or connected device” as used in
+NYCDPA1 collectively as “online device or service.”
+
+
+
+
+1. E.g., N.Y. Gen. Bus. Law § 899-ff(1).
+
+
+
+                                 The Capitol, Albany NY 12224 | 1-518-776-2000 | Fax 1-518-650-9401 | ag.ny.gov
+Processing under NYCDPA and COPPA
+For children under age 13, N.Y. Gen. Bus. Law § 899-ff(1)(a) permits processing that is permitted by COPPA. In other words,
+NYCDPA adopts COPPA as the applicable standard for data processing for covered users who are actually known by the
+operator to be 12 years of age or younger or are using an online device or service primarily directed to covered users 12
+years of age or younger.2 Thus, under NYCDPA, COPPA governs for these users when data processing can occur without
+parental consent, when it is prohibited without parental consent, and how parental consent can be obtained.
+
+
+Age flags: N.Y. Gen. Bus. § 899-ii(1)
+The OAG recognizes potential nuances related to when and how an operator can rely on a communication or signal from
+a user’s device about a user’s status as a covered user (an “age flag”). In the future, OAG will promulgate rules on relevant
+factors or characteristics that can make an age flag one that an operator must respect under N.Y. Gen. Bus. Law § 899-
+ii(1). Until such rules are finalized and in effect, OAG advises that it will exercise discretion in pursuing enforcement action
+on this provision, so long as operators otherwise exhibit good-faith efforts to comply with all other provisions of NYCDPA
+consistent with this guidance.
+
+Notably, a covered user under NYCDPA is a user who is “actually known by the operator . . . to be a minor”3 and this
+requirement is independent of N.Y. Gen. Bus. Law § 899-ii(1) addressing age flags. For example, an operator may obtain
+or learn a user’s age and associate it with that user’s account. If the user is a minor, the operator has actual knowledge
+that the user is a covered user anywhere the operator can recognize the user’s account, including when the user logs
+into the same service or product using different devices or accesses different services or products using the same log-in
+credentials, and must comply with the law accordingly.
+
+
+Primarily directed to minors
+In N.Y. Gen. Bus. Law § 899-ee(1), a covered user is defined as, inter alia, a user who is “using a website, online service, online
+application, mobile application, or connected device primarily directed to minors.” N.Y. Gen. Bus. Law § 899-ee(6) defines
+“primarily directed to minors” as an online device or service, “or a portion thereof, that is targeted to minors.”
+
+OAG has received inquiries regarding the scope of “primarily directed to minors” under NYCDPA, with some inquiries
+referencing the “directed to children” standard under COPPA.4 For minors aged 12 and under, N.Y. Gen. Bus. Law § 899-ff(1)
+(a) explicitly permits data processing that is permitted by COPPA. Thus, any online devices or services covered by NYCDPA’s
+“primarily directed to minors” also fall within the COPPA “directed to children” standard, and as set forth above, their
+operators may satisfy compliance obligations under NYCDPA by complying with COPPA.
+
+For minors aged 13 to 17, OAG recognizes that many online devices or services of general interest may be visited by minors
+aged 13 to 17 or may consider minors aged 13 to 17 to be a component of—but not primarily—the audience. Accordingly,
+the “primarily directed” standard set forth by NYCDPA provides some additional flexibility to operators as compared to
+the standard under COPPA for younger children. The requirements of NYCDPA apply only to online devices or services, or
+portions of the same, that can be delineated as “primarily directed” or “targeted” to minors.
+
+
+
+
+2. See, infra, at 2 (“Primarily Directed to Minors”) and N.Y. Gen. Bus. Law § 899-ll(3) (“Nothing in this Article shall be construed to impose liability for commercial activities or
+actions by operators subject to 15 U.S.C. § 6501 that is inconsistent with the treatment of such activities or actions under 15 U.S.C. § 6502.”).
+3. N.Y. Gen. Bus. Law § 899-ee(1)(a).
+4. 16 C.F.R. § 312.2
+
+
+
+                               The Capitol, Albany NY 12224 | 1-518-776-2000 | Fax 1-518-650-9401 | ag.ny.gov
+Strictly necessary
+NYCDPA generally requires that a covered user grant valid consent before the covered user’s personal data may be
+processed. When the covered user is aged 13 to 17, processing without the user’s consent is permitted only if the processing
+is “strictly necessary” for an express purpose listed in N.Y. Gen. Bus. Law § 899-ff(2) of NYCDPA.5 To facilitate compliance,
+this guidance responds to inquiries related to some of these express purposes.
+
+Providing or maintaining a specific product or service requested by the covered user
+Under N.Y. Gen. Bus. Law § 899-ff(2)(a), processing “strictly necessary” for the purpose of “providing or maintaining a
+specific product or service requested by the covered user” is permitted without consent. To rely on this exception, the
+processing must be related to a “specific” product or service “requested by the covered user,” which means within the
+expectations of a reasonable covered user for a given product or service. For example, users of most products or services
+would reasonably expect processing of personal data to provide customer support for a product or service to be included.
+Processing a covered user’s personal data for this purpose generally would not require separate consent from the user.
+
+On the other hand, most reasonable users do not expect operators to track more of their online activities than are
+necessary for the specific product or service they are using, or to use the collected personal data for purposes outside of the
+provision of that product or service. Under NYCDPA, operators must obtain user consent to such non-necessary processing.
+If an operator clearly and conspicuously markets its core service as one that tracks specific user activities to provide
+a record of the activities (e.g., a budgeting platform tracking spending activities in order to offer a monthly spending
+statement), then processing that type of user activity data for that specific purpose would be within the expectations of a
+reasonable user of such a service. Thus, the operator is not required to obtain consent for this processing.
+
+An operator may not, however, circumvent N.Y. Gen. Bus. Law § 899-ff(1) simply by marketing its core service as one that
+includes tracking a covered user’s personal data to support personalization such as behavioral advertising or creating a
+profile on a specific individual to display or prioritize certain media. Moreover, any data the operator collects and processes
+under this exception may only be used for the expected purpose (e.g., a budgeting platform collecting personal data
+unrelated to monthly spending, such as a device’s real-time GPS coordinates, cannot rely on this exception to process the
+unrelated personal data) or in a manner otherwise consistent with N.Y. Gen. Bus. Law § 899-ff(2). The personal data may
+not be used by the operator, its processors, or any third-party operator whom the operator allows to collect the personal
+data, for any other purpose.
+
+Conducting internal business operations
+Additionally, N.Y. Gen. Bus. Law § 899-ff(2)(b) allows operators to process personal data “strictly necessary for . . .
+conducting internal business operations.” OAG advises that many of the activities permitted under COPPA for the purpose
+of “support for the internal operations of the Web site or online service” are also permitted under this section.6 OAG also
+advises, however, that unlike COPPA, N.Y. Gen. Bus. Law § 899-ff(2) includes the proviso, “internal business operations shall
+not include any activities related to marketing, advertising, research and development, [or] providing products or services
+to third parties.”
+
+
+
+
+5. As stated above, for users who are 12 and younger, the CDPA applies COPPA’s standards for determining whether data processing is permissible, including under what
+circumstances the processing may be done without the consent of the parent.
+6. 16 C.F.R. § 312.2; see also 16 C.F.R. § 312.5(c)(7)-(8). See, generally, Federal Trade Commission, Complying with COPPA: Frequently Asked Questions – A Guide for Business and
+Parents and Small Entity Compliance Guide, https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions (last visited May 5, 2025), and
+especially, id. at Section J. Exceptions to Prior Parental Consent.
+
+
+
+                               The Capitol, Albany NY 12224 | 1-518-776-2000 | Fax 1-518-650-9401 | ag.ny.gov
+Protecting against malicious, fraudulent, or illegal activity
+N.Y. Gen. Bus. Law § 899-ff(2)(d), addressing “malicious, fraudulent, or illegal activity,” allows the processing of personal
+data to protect against fraud, such as frequency capping of advertising.
+
+Vital interests of a natural person
+Finally, N.Y. Gen. Bus. Law § 899-ff(2)(b), addressing “internal business operations,” together with N.Y. Gen. Bus. Law § 899-
+ff(2)(i), addressing “vital interests of a natural person,” allows personal data processing associated with an online device or
+service’s user trust, health, and safety policies without consent.
+
+Conclusion for permitted purposes
+As discussed earlier, OAG will consider good-faith efforts to comply with the law in exercising its discretion to enforce N.Y.
+Gen. Bus. Law § 899-ff(2), under which an operator may process personal data that is “strictly necessary” for enumerated
+purposes without consent.
+
+
+Requirements for schools, school districts, and their third-party contractors
+NYCDPA does not disrupt the framework in place for personally identifiable information covered by New York Education
+Law (N.Y. Educ. Law) § 2-d and its implementing regulations, or the federal Family Educational Rights Privacy Act
+(FERPA), 20 U.S.C. § 1232g, and its implementing regulations. These laws generally permit schools and school districts
+to collect and use “personally identifiable information” (PII) in “education records,” as defined by N.Y. Educ. Law § 2-d(1)
+(d) and FERPA’s implementing regulation, 34 C.F.R. § 99.3,7 from students for educational purposes.8 Both laws generally
+prohibit commercial use of PII and include other protections as well.9 Third parties with which schools and school districts
+contract to process such PII are subject to the same prohibitions.10 COPPA provides an overlay for these laws, with specific
+protections for children under age 13. Under COPPA, schools can consent to their students’ data collection and processing
+by third parties, if and only if, the collection and processing is for educational purposes.11 However, under COPPA, operators
+must obtain parental consent for data collection and processing, whether in or outside of schools, that is not for
+educational purposes.12
+
+As discussed earlier, for children under 13, NYCDPA, N.Y. Gen. Bus. Law § 899-ff(1)(a), explicitly permits data processing that
+is permitted under COPPA. NYCDPA applies the same standard as COPPA for when data can be collected and processed
+pursuant to school authorization, when data processing is prohibited without parental consent, and how parental
+consent can be obtained. Thus, for children under 13, data processing by schools, school districts, and the third parties
+with which they contract is permitted under NYCDPA to the extent permitted under COPPA in the status quo, including
+
+7. This is generally information linked to a specific student. N.Y. Comp. Codes R. & Regs. tit. 8, § 121.1(f),(m) (referencing provisions of FERPA and its implementing
+regulations).
+8. N.Y. Comp. Codes R. & Regs. tit. 8, § 121.5(c) (the use must “benefit students and the educational agency (e.g., improve academic achievement, empower parents and
+students with information, and/or advance efficient and effective school operations).”); see also N.Y. Educ. Law § 2-d(5)(b)(1); 20 U.S.C. § 1232g(a)(4)(A).
+9. N.Y. Educ. Law § 2-d(3)(b)(1); New York State Education Department, Commercial and Marketing Memorandum, https://www.nysed.gov/sites/default/files/programs/data-
+privacy-security/c-m-june-2023-guidance-final.pdf (last visited May 5, 2025) at 2 (covered data cannot be used “for advertising or to develop, improve or market products
+or services to students”). See 34 C.F.R. § 99.30 (requiring parental or student consent to disclose PII except as expressly permitted by other FERPA provisions) and 20 U.S.C.
+§ 1232g(b) (requiring parental or student consent to disclose PII except as expressly permitted by other FERPA provisions).
+10. N.Y. Educ. Law 2-d § 5(f).
+11. Federal Trade Commission, Complying with COPPA: Frequently Asked Questions – A Guide for Business and Parents and Small Entity Compliance Guide, https://www.ftc.gov/
+business-guidance/resources/complying-coppa-frequently-asked-questions (last visited May 5, 2025).
+12. Federal Trade Commission, Press Release: FTC Says Ed Tech Provider Edmodo Unlawfully Used Children’s Personal Information for Advertising and Outsourced Compliance
+to School Districts, https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-says-ed-tech-provider-edmodo-unlawfully-used-childrens-personal-information-
+advertising (last visited May 5, 2025).
+
+
+
+
+                                 The Capitol, Albany NY 12224 | 1-518-776-2000 | Fax 1-518-650-9401 | ag.ny.gov
+under specific guidance regarding schools.13 Again, in this context, operators must still comply with N.Y. Educ. Law § 2-d,
+and are prohibited from using such information for any commercial purpose, including marketing, advertising, or other
+commercial purposes unrelated to the provision of the school-requested online device or service.
+
+For children aged 13 through 17, NYCDPA’s privacy protection requirements provide an overlay to N.Y. Educ. Law § 2-d
+similar to that provided by COPPA for children under age 13. Student PII may be collected and processed pursuant to
+the requirements set forth in N.Y. Educ. Law § 2-d and its implementing regulations for educational purposes without
+triggering separate informed consent under NYCDPA. On the other hand, for data that falls under NYCDPA’s definition
+of “personal data”[14] but that is not subject to N.Y. Educ. Law § 2-d, either because it is not PII or because it is not being
+collected for an educational purpose, an operator must comply with NYCDPA.
+
+
+Parental requests for products or services for minors aged 13 to 1715
+N.Y. Gen. Bus. Law § 899-ff protects the privacy of covered users aged 13 to 17 by prohibiting any processing of their
+“personal data” without user consent unless such processing is “strictly necessary” for a permissible enumerated purpose.
+This includes processing of personal data strictly necessary “for complying with federal, state, or local laws, rules, or
+regulations.”16
+
+NYCDPA thus does not disturb existing legal frameworks under which parents may legally agree to or enter into
+agreements for particular products or services on behalf of their children. Where parents may lawfully agree to a product
+or service on behalf of or jointly with their child, such as healthcare services or certain financial services, data processing
+strictly necessary for a permitted purpose under N.Y. Gen. Bus. Law § 899-ff(2), including to provide or maintain that
+product or service, is permitted under NYCDPA without additional consent. As stated herein, the extent of permitted
+processing depends in part on the covered user’s expectations regarding the specific product or service in question.
+
+Where the parent agrees to a product or service on behalf of a child, an operator may consider the parent’s expectations
+regarding the processing of personal data strictly necessary for permissible purposes. NYCDPA does not require an
+operator to obtain the child’s consent before processing data strictly necessary to fulfill the parent’s agreement to the
+product or service, including any personal data of the child provided by the parent.17 However, the operator must only
+process the child’s personal data for the purpose of providing the specific product or service agreed-upon with the parent.
+If the operator wishes to process the child’s personal data for purposes not strictly necessary for that specific product or
+service, the operator will first need to obtain the child’s consent pursuant to NYCDPA.
+
+The OAG recognizes that many laws allow parents to exercise rights on behalf of their children and will exercise discretion
+in pursuing enforcement action against operators that make good-faith efforts to comply with all applicable laws.
+However, OAG cautions that operators must comply with NYCDPA, and that the rights NYCDPA grants to minors aged 13 to
+17 to control the processing of their personal data cannot be lightly disregarded.
+
+
+13. See Federal Trade Commission, Complying with COPPA: Frequently Asked Questions – A Guide for Business and Parents and Small Entity Compliance Guide, https://www.ftc.
+gov/business-guidance/resources/complying-coppa-frequently-asked-questions (last visited May 5, 2025); Federal Trade Commission, Policy Statement of the Federal Trade
+Commission on Education Technology and the Children’s Online Privacy Protection Act, https://www.ftc.gov/system/files/ftc_gov/pdf/Policy%20Statement%20of%20the%20
+Federal%20Trade%20Commission%20on%20Education%20Technology.pdf (last visited May 5, 2025).
+14. N.Y. Gen. Bus. Law § 899-ee(4) (defined as “data that identifies or could reasonably be linked, directly or indirectly, with a natural person or device”).
+15. As stated infra, for minors under age 13, the standard outlined in COPPA applies.
+16. N.Y. Gen. Bus. Law § 899-ff(2)(f).
+17. The applicable federal or state law may impose its own requirements on how the operator handles the parent’s request, and such requirements continue to apply.
+NYCDPA compliance is not a defense to violating other laws. For example, OAG expects any third parties contracted to an educational agency within the meaning of N.Y.
+Educ. Law § 2-d to continue to comply with the provisions of N.Y. Educ. Law § 2-d and its implementing regulations regarding parental rights and notices.
+
+
+
+                                The Capitol, Albany NY 12224 | 1-518-776-2000 | Fax 1-518-650-9401 | ag.ny.gov
+

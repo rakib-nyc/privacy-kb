@@ -1,0 +1,29 @@
+id: ev.sourcing.002
+question: Is the US Code the law?
+trap: For a non-positive-law title it is prima facie EVIDENCE of the law, not the law. Title 15 -- FCRA,
+  GLBA, the FTC Act -- is non-positive-law.
+trap_category: null
+rubric:
+- name: the evidentiary-status taxonomy record exists
+  record_exists: us.taxonomy.code_evidentiary_status
+- name: it quotes 1 USC 204(a)
+  record: us.taxonomy.code_evidentiary_status
+  path: verbatim_span
+  contains: prima facie
+- name: the non-positive-law rule is stated
+  record: us.taxonomy.code_evidentiary_status
+  path: taxonomy.rule.non_positive_law_title
+  contains: PRIMA FACIE
+- name: the sourcing policy is a recorded decision, not a default
+  record: us.taxonomy.code_evidentiary_status
+  path: taxonomy.sourcing_policy.decision
+  contains: default primary source
+- name: the scale of the issue is recorded
+  record: us.taxonomy.code_evidentiary_status
+  path: taxonomy.why_it_matters_here
+  contains: not its edge case
+- name: common_errors names the trap
+  record: us.taxonomy.code_evidentiary_status
+  path: common_errors
+  contains: Assuming the US Code is the law
+all_pass: true

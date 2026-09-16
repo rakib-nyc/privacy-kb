@@ -1,0 +1,96 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 14, 2003" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.45.164.p.164_504_f_2_iii_a
+source:
+  citation: 45 C.F.R. § 164.504(f)(2)(iii)(A)
+  instrument_id: us.cfr.45.164
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-45 XML, part 164
+    result: structured_source_used
+    note: null
+  segment_sha256: dc8fe43d6e1e2a563112526770d444b5b58f070f3c979281fee73a8157bd206a
+verbatim_span: >-
+  Describe those employees or classes of employees or other persons under the control of the plan
+  sponsor to be given access to the protected health information to be disclosed, provided that any
+  employee or person who receives protected health information relating to payment under, health
+  care operations of, or other matters pertaining to the group health plan in the ordinary course of
+  business must be included in such description;
+paragraph_path:
+  path:
+    - f
+    - '2'
+    - iii
+    - A
+  anchor: '164.504'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-164.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - I
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'The plan documents of the group health plan must be amended to incorporate provisions to:'
+    path:
+      - f
+      - '2'
+    citation: 45 C.F.R. § 164.504(f)(2)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Provide for adequate separation between the group health plan and the plan sponsor. The plan
+      documents must:
+    path:
+      - f
+      - '2'
+      - iii
+    citation: 45 C.F.R. § 164.504(f)(2)(iii)
+operative_verb: must
+summary: >-
+  Describe those employees or classes of employees or other persons under the control of the plan
+  sponsor to be given access to the protected health information to be disclosed, provided that any
+  employee or person who receives protected health information relating to payment under, health
+  care operat
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

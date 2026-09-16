@@ -1,0 +1,83 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ed
+sector:
+  - education
+data_types:
+  - education_record
+status: in_force
+effective_from: '1974-11-19'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "November 19, 1974" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.ferpa.p.1232g_a_1_d
+source:
+  citation: 20 U.S.C. § 1232g(a)(1)(D)
+  instrument_id: us.ferpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc20@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  raw_sha256: d9eb0b65a1acac5602e55cef5941f4e79a13824f23e8f78b141be5f1d1624e7b
+  text_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.txt
+  text_sha256: 6a51713f2648ca5674640dc9e871fdc9304de0055007e798298d216e99630681
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 2a1754e573f4c648df4a56a9d3821ab697741bcd9eb5577d76a7ee63534a3218
+verbatim_span: >-
+  A student or a person applying for admission may waive his right of access to confidential
+  statements described in clause (iii) of subparagraph (C), except that such waiver shall apply to
+  recommendations only if (i) the student is, upon request, notified of the names of all persons
+  making confidential recommendations and (ii) such recommendations are used solely for the purpose
+  for which they were specifically intended. Such waivers may not be required as a condition for
+  admission to, receipt of financial aid from, or receipt of any other services or benefits from
+  such agency or institution.
+paragraph_path:
+  path:
+    - a
+    - '1'
+    - D
+  anchor: '1232g'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 20-u-s-c-1232g.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+subject:
+  domain: II.D.1
+  lifecycle:
+    - VI
+operative_context: []
+operative_verb: must_not
+summary: >-
+  A student or a person applying for admission may waive his right of access to confidential
+  statements described in clause (iii) of subparagraph (C), except that such waiver shall apply to
+  recommendations only if (i) the student is, upon request, notified of the names of all persons
+  making confidenti
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

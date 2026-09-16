@@ -1,0 +1,56 @@
+{
+  "success" : true,
+  "message" : "Law document for location 51 in CVR law.",
+  "responseType" : "law-doc-info-detail",
+  "result" : {
+    "lawId" : "CVR",
+    "lawName" : "Civil Rights",
+    "locationId" : "51",
+    "title" : "Action for injunction and for damages",
+    "docType" : "SECTION",
+    "publishedDates" : [ "2014-09-22", "2024-05-03" ],
+    "docLevelId" : "51",
+    "activeDate" : "2024-05-03",
+    "text" : "  § 51. Action for injunction and for damages. Any person whose name,\\nportrait, picture, likeness or voice is used within this state for\\nadvertising purposes or for the purposes of trade without the written\\nconsent first obtained as above provided may maintain an equitable\\naction in the supreme court of this state against the person, firm or\\ncorporation so using such person's name, portrait, picture, likeness or\\nvoice, to prevent and restrain the use thereof; and may also sue and\\nrecover damages for any injuries sustained by reason of such use and if\\nthe defendant shall have knowingly used such person's name, portrait,\\npicture, likeness or voice in such manner as is forbidden or declared to\\nbe unlawful by section fifty of this article, the jury, in its\\ndiscretion, may award exemplary damages. But nothing contained in this\\narticle shall be so construed as to prevent any person, firm or\\ncorporation from selling or otherwise transferring any material\\ncontaining such name, portrait, picture, likeness or voice in whatever\\nmedium to any user of such name, portrait, picture, likeness or voice,\\nor to any third party for sale or transfer directly or indirectly to\\nsuch a user, for use in a manner lawful under this article; nothing\\ncontained in this article shall be so construed as to prevent any\\nperson, firm or corporation, practicing the profession of photography,\\nfrom exhibiting in or about their establishment specimens of the work of\\nsuch establishment, unless the same is continued by such person, firm or\\ncorporation after written notice objecting thereto has been given by the\\nperson portrayed; and nothing contained in this article shall be so\\nconstrued as to prevent any person, firm or corporation from using the\\nname, portrait, picture, likeness or voice of any manufacturer or dealer\\nin connection with the goods, wares and merchandise manufactured,\\nproduced or dealt in by such manufacturer or dealer which they have sold\\nor disposed of with such name, portrait, picture, likeness or voice used\\nin connection therewith; or from using the name, portrait, picture,\\nlikeness or voice of any author, composer or artist in connection with\\ntheir literary, musical or artistic productions which they have sold or\\ndisposed of with such name, portrait, picture, likeness or voice used in\\nconnection therewith. Nothing contained in this section shall be\\nconstrued to prohibit the copyright owner of a sound recording from\\ndisposing of, dealing in, licensing or selling that sound recording to\\nany party, if the right to dispose of, deal in, license or sell such\\nsound recording has been conferred by contract or other written document\\nby such living person or the holder of such right. Nothing contained in\\nthe foregoing sentence shall be deemed to abrogate or otherwise limit\\nany rights or remedies otherwise conferred by federal law or state law.\\n",
+    "parentLocationIds" : [ "-CH6", "A5" ],
+    "parents" : [ {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "-CH6",
+      "title" : "Civil Rights",
+      "docType" : "CHAPTER",
+      "publishedDates" : [ "2014-09-22", "2017-08-25", "2019-07-26", "2019-09-20", "2020-06-19", "2020-12-04", "2021-07-02", "2022-04-22", "2023-01-06", "2026-05-29" ],
+      "docLevelId" : "6",
+      "activeDate" : "2026-05-29"
+    }, {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "A5",
+      "title" : "Right of Privacy",
+      "docType" : "ARTICLE",
+      "publishedDates" : [ "2014-09-22", "2017-08-25", "2019-07-26", "2020-06-19", "2020-12-04", "2021-11-12", "2023-01-06", "2023-11-17" ],
+      "docLevelId" : "5",
+      "activeDate" : "2023-11-17"
+    } ],
+    "prevSibling" : {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "50-G",
+      "title" : "Disclosure of convictions sealed pursuant to section 160",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2023-11-17", "2024-11-22" ],
+      "docLevelId" : "50-G",
+      "activeDate" : "2024-11-22"
+    },
+    "nextSibling" : {
+      "lawId" : "CVR",
+      "lawName" : "Civil Rights",
+      "locationId" : "52",
+      "title" : "Televising, broadcasting or taking motion pictures of certain proceedings prohibited",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2014-09-22" ],
+      "docLevelId" : "52",
+      "activeDate" : "2014-09-22"
+    }
+  }
+}

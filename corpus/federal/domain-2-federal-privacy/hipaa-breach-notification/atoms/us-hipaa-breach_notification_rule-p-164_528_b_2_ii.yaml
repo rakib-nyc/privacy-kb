@@ -1,0 +1,91 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - healthcare
+data_types:
+  - phi
+status: in_force
+effective_from: '2009-09-23'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "September 23, 2009" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.hipaa.breach_notification_rule.p.164_528_b_2_ii
+source:
+  citation: 45 C.F.R. § 164.528(b)(2)(ii)
+  instrument_id: us.hipaa.breach_notification_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 45-cfr-164 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: af5b6894ca30f9b8a5ce348b048cdb9cf70b4d0c83d31fd76e6a26681626b73f
+verbatim_span: >-
+  The name of the entity or person who received the protected health information and, if known, the
+  address of such entity or person;
+paragraph_path:
+  path:
+    - b
+    - '2'
+    - ii
+  anchor: '164.528'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-164.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - VI
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Except as otherwise provided by paragraphs (b)(3) or (b)(4) of this section, the accounting
+      must include for each disclosure:
+    path:
+      - b
+      - '2'
+    citation: 45 C.F.R. § 164.528(b)(2)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      The covered entity must provide the individual with a written accounting that meets the
+      following requirements.
+    path:
+      - b
+    citation: 45 C.F.R. § 164.528(b)
+operative_verb: must
+operative_verb_source: operative_context
+summary: >-
+  The name of the entity or person who received the protected health information and, if known, the
+  address of such entity or person;
+not_yet_analysed: >-
+  Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision: its own
+  words carry no modal, and the duty is supplied by the chapeau recorded in operative_context. Do
+  not quote it without that chapeau. No applicability predicate has been written, so the engine
+  never asserts that it binds anyone.
+open_questions: []

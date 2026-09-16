@@ -1,0 +1,94 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ohrp
+  - federal_agencies
+sector:
+  - health
+data_types:
+  - personal_information
+  - health
+status: in_force
+effective_from: '2019-01-21'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "January 21, 2019" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.common_rule.p.46_116_a_6
+source:
+  citation: 45 C.F.R. § 46.116(a)(6)
+  instrument_id: us.common_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=46
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  raw_sha256: cfe25d02a8ade401b1350f591c4654b85ab03c47f66297047feb0a6e1f0e543d
+  text_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+  text_sha256: 2e9f64e48744208a67bbad88f993394ee3ae928f07e1396d552d5a6c8d574fa1
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 45 part 46, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: 98dd86d4d8cd83954b818dc887462393d2c6d803fb7d2493d1560906f10461e0
+verbatim_span: >-
+  No informed consent may include any exculpatory language through which the subject or the legally
+  authorized representative is made to waive or appear to waive any of the subject's legal rights,
+  or releases or appears to release the investigator, the sponsor, the institution, or its agents
+  from liability for negligence.
+paragraph_path:
+  path:
+    - a
+    - '6'
+  anchor: '46.116'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-46.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+subject:
+  domain: II.B.3
+  lifecycle:
+    - III
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      General requirements for informed consent, whether written or oral, are set forth in this
+      paragraph and apply to consent obtained in accordance with the requirements set forth in
+      paragraphs (b) through (d) of this section. Broad consent may be obtained in lieu of informed
+      consent obtained in accordance with paragraphs (b) and (c) of this section only with respect
+      to the storage, maintenance, and secondary research uses of identifiable private information
+      and identifiable biospecimens. Waiver or alteration of consent in research involving public
+      benefit and service programs conducted by or subject to the approval of state or local
+      officials is described in paragraph (e) of this section. General waiver or alteration of
+      informed consent is described in paragraph (f) of this section. Except as provided elsewhere
+      in this policy:
+    path:
+      - a
+    citation: 45 C.F.R. § 46.116(a)
+operative_verb: may
+summary: >-
+  No informed consent may include any exculpatory language through which the subject or the legally
+  authorized representative is made to waive or appear to waive any of the subject's legal rights,
+  or releases or appears to release the investigator, the sponsor, the institution, or its agents
+  from liab
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

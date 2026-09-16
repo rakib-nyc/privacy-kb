@@ -1,0 +1,95 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - healthcare
+data_types:
+  - phi
+status: in_force
+effective_from: '2009-09-23'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "September 23, 2009" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.hipaa.breach_notification_rule.p.164_520_b_1_ii_b
+source:
+  citation: 45 C.F.R. § 164.520(b)(1)(ii)(B)
+  instrument_id: us.hipaa.breach_notification_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 45-cfr-164 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: b37e187bb12e4e7a19a5095b6a223522a1a51bc73f3700e98e4aeee82d7dc8ab
+verbatim_span: >-
+  A description of each of the other purposes for which the covered entity is permitted or required
+  by this subpart to use or disclose protected health information without the individual's written
+  authorization.
+paragraph_path:
+  path:
+    - b
+    - '1'
+    - ii
+    - B
+  anchor: '164.520'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-164.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - VI
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'The notice must contain:'
+    path:
+      - b
+      - '1'
+      - ii
+    citation: 45 C.F.R. § 164.520(b)(1)(ii)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      The covered entity, including any covered entity receiving or maintaining records subject to
+      42 U.S.C. 290dd-2, must provide a notice that is written in plain language and that contains
+      the elements required by this paragraph.
+    path:
+      - b
+      - '1'
+    citation: 45 C.F.R. § 164.520(b)(1)
+operative_verb: must
+operative_verb_source: operative_context
+summary: >-
+  A description of each of the other purposes for which the covered entity is permitted or required
+  by this subpart to use or disclose protected health information without the individual's written
+  authorization.
+not_yet_analysed: >-
+  Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision: its own
+  words carry no modal, and the duty is supplied by the chapeau recorded in operative_context. Do
+  not quote it without that chapeau. No applicability predicate has been written, so the engine
+  never asserts that it binds anyone.
+open_questions: []

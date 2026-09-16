@@ -1,0 +1,84 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - telemarketing
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2010-08-10'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Aug. 10, 2010" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.tsr.p.310_4_a_6
+source:
+  citation: 16 C.F.R. § 310.4(a)(6)
+  instrument_id: us.tsr
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=310
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  raw_sha256: 0374ac69f516b67c40fb05bf7a8482af5e2be0d258616f8faee7615bfc966917
+  text_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.txt
+  text_sha256: 7e1270d836ac4d86c1831b2f61d398afff5a07cca625841ea5334e93a3e6d314
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 78d23629f304b488e2c3b51c5673c9f1eaa920ec1cc32d8cc429704443fb57f6
+verbatim_span: >-
+  Disclosing or receiving, for consideration, unencrypted consumer account numbers for use in
+  telemarketing; provided, however, that this paragraph shall not apply to the disclosure or receipt
+  of a customer's or donor's billing information to process a payment for goods or services or a
+  charitable contribution pursuant to a transaction;
+paragraph_path:
+  path:
+    - a
+    - '6'
+  anchor: '310.4'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-310.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      It is an abusive telemarketing act or practice and a violation of this part for any seller or
+      telemarketer to engage in the following conduct:
+    path:
+      - a
+    citation: 16 C.F.R. § 310.4(a)
+operative_verb: must_not
+summary: >-
+  Disclosing or receiving, for consideration, unencrypted consumer account numbers for use in
+  telemarketing; provided, however, that this paragraph shall not apply to the disclosure or receipt
+  of a customer's or donor's billing information to process a payment for goods or services or a
+  charitable con
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

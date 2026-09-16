@@ -1,0 +1,86 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - telemarketing
+  - any
+data_types:
+  - any
+status: in_force
+effective_from: '2010-08-10'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Aug. 10, 2010" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.tsr.p.310_5_a_2_i
+source:
+  citation: 16 C.F.R. § 310.5(a)(2)(i)
+  instrument_id: us.tsr
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=310
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  raw_sha256: 0374ac69f516b67c40fb05bf7a8482af5e2be0d258616f8faee7615bfc966917
+  text_file: corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.txt
+  text_sha256: 7e1270d836ac4d86c1831b2f61d398afff5a07cca625841ea5334e93a3e6d314
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 8a93e3227d0476b4b899cf2c68bcdb130796662e53e38e4623e9f467aaad7f41
+verbatim_span: The telemarketer that placed or received the call;
+paragraph_path:
+  path:
+    - a
+    - '2'
+    - i
+  anchor: '310.5'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-310.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'A record of each telemarketing call, which must include:'
+    path:
+      - a
+      - '2'
+    citation: 16 C.F.R. § 310.5(a)(2)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Any seller or telemarketer must keep, for a period of 5 years from the date the record is
+      produced unless specified otherwise, the following records relating to its telemarketing
+      activities:
+    path:
+      - a
+    citation: 16 C.F.R. § 310.5(a)
+operative_verb: must
+operative_verb_source: operative_context
+summary: The telemarketer that placed or received the call;
+not_yet_analysed: >-
+  Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision: its own
+  words carry no modal, and the duty is supplied by the chapeau recorded in operative_context. Do
+  not quote it without that chapeau. No applicability predicate has been written, so the engine
+  never asserts that it binds anyone.
+open_questions: []

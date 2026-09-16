@@ -1,0 +1,113 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 14, 2003" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+interpreted_by: []
+confidence: high
+related: []
+preemption:
+  posture: floor
+  authority: 45 C.F.R. § 160.203
+  note: >-
+    HIPAA is a FLOOR, not a ceiling. A contrary State law that is MORE STRINGENT than the Privacy
+    Rule is not preempted, so state duties run in parallel and the shorter clock governs in
+    practice. Treating HIPAA compliance as discharging state obligations is the standard error.
+enforcement:
+  enforcers:
+    - hhs_ocr
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil money penalties under 42 U.S.C. § 1320d-5, tiered by culpability. Criminal liability for
+      knowing wrongful disclosure under 42 U.S.C. § 1320d-6.
+    range: null
+    note: >-
+      No private right of action under HIPAA. Plaintiffs reach the same conduct through state
+      negligence and UDAP theories, which is why the state backstop never switches off.
+  statute_of_limitations: null
+id: us.cfr.45.164_512.l.workers_compensation
+source:
+  citation: 45 C.F.R. § 164.512(l)
+  instrument_id: us.cfr.45.164
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-45 XML, part 164
+    result: structured_source_used
+    note: null
+  segment_sha256: 5b0d53997c1a74685707ed7da2bf9e6be19a0b57dae3185857f340af6335aaa4
+verbatim_span: >-
+  A covered entity may disclose protected health information as authorized by and to the extent
+  necessary to comply with laws relating to workers' compensation or other similar programs,
+  established by law, that provide benefits for work-related injuries or illness without regard to
+  fault.
+paragraph_path:
+  path:
+    - l
+  anchor: '164.512'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-164.seg.json, which is the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml at sha256
+    233fec3ad4a05762…
+subject:
+  domain: II.B.1
+  lifecycle:
+    - IV
+federal_relationship: null
+applies_if:
+  all:
+    - entity.is_hipaa_covered_entity == true
+    - data.is_phi == true
+obligation_type: permit
+summary: >-
+  A covered entity may disclose protected health information as authorized by, and to the extent
+  necessary to comply with, workers' compensation and similar no-fault programs.
+requirement_detail: >-
+  Two limits sit in the words. "As authorized by" ties the permission to the programme's own law,
+  and "to the extent necessary to comply" bounds the volume — this is not a general permission to
+  send a claims administrator a file. The programme must be established by law and must provide
+  benefits for work-related injury or illness WITHOUT REGARD TO FAULT. A disclosure to an employer
+  outside such a programme is not covered by this paragraph; the workforce-member permission at
+  (b)(1)(v) is a different route with different conditions.
+exemptions: []
+common_errors:
+  - >-
+    Reading it as a general permission to disclose to an employer. It reaches a no-fault statutory
+    benefits programme, not the employment relationship.
+open_questions: []
+no_deadline_stated: This provision states a permission or a standard, not a clock.
+context_not_required: >-
+  Self-contained. The span carries the permission, the authorising source, the extent limit and the
+  no-fault qualifier without reference to any other paragraph.

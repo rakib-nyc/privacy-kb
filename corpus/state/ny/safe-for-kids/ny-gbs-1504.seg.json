@@ -1,0 +1,22 @@
+{
+ "label": "NY GBS 1504",
+ "url": "https://legislation.nysenate.gov/api/3/laws/GBS/1504",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/safe-for-kids/raw/ny-gbs-1504.json",
+ "raw_sha256": "65b9a3bb069b667eddc4c9c871af9867961919f8a9109d484d96314dff967b26",
+ "leaves": [
+  {
+   "path": [],
+   "anchor": "1504",
+   "section": "1504",
+   "confidence": "high",
+   "heading": "",
+   "text": "* \u00a7 1504. Nondiscrimination. A covered operator shall not withhold, degrade, lower the quality, or increase the price of any product, service, or feature, other than as necessary for compliance with the provisions of this article or any rules or regulations promulgated pursuant to this article, to a covered user due to the covered operator not being permitted to provide an addictive feed to such covered user under subdivision one of section fifteen hundred one of this article.",
+   "context": [],
+   "section_heading": "",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  }
+ ]
+}

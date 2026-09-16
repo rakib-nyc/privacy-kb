@@ -1,0 +1,22 @@
+{
+ "label": "NY GBS 1505",
+ "url": "https://legislation.nysenate.gov/api/3/laws/GBS/1505",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/safe-for-kids/raw/ny-gbs-1505.json",
+ "raw_sha256": "75492eca5792a8036776ccb4542f1a3fe824d165e877b70ec330f3eaf71c8c44",
+ "leaves": [
+  {
+   "path": [],
+   "anchor": "1505",
+   "section": "1505",
+   "confidence": "high",
+   "heading": "",
+   "text": "* \u00a7 1505. Rulemaking authority. The attorney general shall promulgate such rules and regulations as are necessary to effectuate and enforce the provisions of this article.",
+   "context": [],
+   "section_heading": "",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.45.160.p.160_516_e_1
+source:
+  citation: 45 C.F.R. § 160.516(e)(1)
+  instrument_id: us.cfr.45.160
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=160
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+  raw_sha256: 9916d549267c2f3f629b2157d6e0887b73570f9eddace67b626c40f51a6c9c72
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.txt
+  text_sha256: f77059505f5a5559b29004fa9b5cd6e88a88556fd94b0a4c673d42cbe4d6d9bb
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 45 CFR 160 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: 09aa83008a864bafd8f004eeca5201a33c0c5b2538387af7b5c610cec84a7874
+verbatim_span: >-
+  When a request for production of documents has been received, within 30 days the party receiving
+  that request must either fully respond to the request, or state that the request is being objected
+  to and the reasons for that objection. If objection is made to part of an item or category, the
+  part must be specified. Upon receiving any objections, the party seeking production may then,
+  within 30 days or any other time frame set by the ALJ, file a motion for an order compelling
+  discovery. The party receiving a request for production may also file a motion for protective
+  order any time before the date the production is due.
+paragraph_path:
+  path:
+    - e
+    - '1'
+  anchor: '160.516'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-160.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - III
+operative_context: []
+operative_verb: mixed
+summary: >-
+  When a request for production of documents has been received, within 30 days the party receiving
+  that request must either fully respond to the request, or state that the request is being objected
+  to and the reasons for that objection.
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

@@ -1,0 +1,93 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - ftc
+  - state_ag
+sector:
+  - childrens_online_services
+data_types:
+  - minor_data
+  - personal_information
+status: in_force
+effective_from: '2000-04-21'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.coppa.rule.p.312_11_d_1_iv
+source:
+  citation: 16 C.F.R. § 312.11(d)(1)(iv)
+  instrument_id: us.coppa.rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=312
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  raw_sha256: 5a29d13e4512092a2d064a62a581031dc75aa99998540e6c2ef24f0dbfc66df9
+  text_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.txt
+  text_sha256: 269dbc8c79e682a08e9686846439239d7f57ec49f501070957ff738370189425
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 16-cfr-312 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: 6aeaf6ee6b71bab14db6387dee5852be0db7c3d8e6a0376f96f98633ffbeba31
+verbatim_span: >-
+  a description of each disciplinary action taken against any subject operator under paragraph
+  (b)(3) of this section, as well as a description of the process for determining whether a subject
+  operator is subject to discipline; and
+paragraph_path:
+  path:
+    - d
+    - '1'
+    - iv
+  anchor: '312.11'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-312.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - V
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      By October 22, 2025, and annually thereafter, submit a report to the Commission that
+      identifies each subject operator and all approved websites or online services, as well as any
+      subject operators that have left the safe harbor program. The report must also contain, at a
+      minimum:
+    path:
+      - d
+      - '1'
+    citation: 16 C.F.R. § 312.11(d)(1)
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'Approved safe harbor programs shall:'
+    path:
+      - d
+    citation: 16 C.F.R. § 312.11(d)
+operative_verb: must
+operative_verb_source: operative_context
+summary: >-
+  a description of each disciplinary action taken against any subject operator under paragraph
+  (b)(3) of this section, as well as a description of the process for determining whether a subject
+  operator is subject to discipline; and
+not_yet_analysed: >-
+  Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision: its own
+  words carry no modal, and the duty is supplied by the chapeau recorded in operative_context. Do
+  not quote it without that chapeau. No applicability predicate has been written, so the engine
+  never asserts that it binds anyone.
+open_questions: []

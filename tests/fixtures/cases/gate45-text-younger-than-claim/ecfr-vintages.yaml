@@ -1,0 +1,14 @@
+# FIXTURE EVIDENCE. Stands in for a real tools/ecfr-vintages.mjs report so gate 45 can be
+# exercised without breaking the live corpus.
+generated: '2026-09-09'
+findings:
+  - atom_id: us.test.fixture.text_younger_than_claim
+    citation: 45 C.F.R. § 164.520(a)(1)
+    part: 45/164
+    effective_from: '2003-04-14'
+    verdict: changed
+    span_first_seen: '2024-06-25'
+    span_absent_at: '2024-04-26'
+    snapshots_checked: 4
+    window: 2016-12-30..2024-06-25
+    note: fixture

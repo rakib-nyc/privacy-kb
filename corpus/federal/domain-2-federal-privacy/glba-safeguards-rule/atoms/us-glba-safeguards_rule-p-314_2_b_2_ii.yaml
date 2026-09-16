@@ -1,0 +1,86 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - financial_services
+  - non_bank_financial_institutions
+data_types:
+  - npi
+  - customer_information
+status: in_force
+effective_from: '2023-06-09'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.glba.safeguards_rule.p.314_2_b_2_ii
+source:
+  citation: 16 C.F.R. § 314.2(b)(2)(ii)
+  instrument_id: us.glba.safeguards_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=314
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  raw_sha256: 3ba7ecc3463953a1db1ccf38f4b0ade4182e36c7e24e111eb8869910e271d41a
+  text_file: corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.txt
+  text_sha256: be8a0b1e03c4b14f6ed56fbf365d871a4fe112856a8013ebcf25fbc2f9aefec9
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-16 XML, part 314
+    result: structured_source_used
+    note: null
+  segment_sha256: 9aeff47a056ddb6c3405b5426c745aff893522294b526b680cfab37a415a4c70
+verbatim_span: >-
+  An individual who provides nonpublic personal information to you in order to obtain a
+  determination about whether he or she may qualify for a loan to be used primarily for personal,
+  family, or household purposes is a consumer of a financial service, regardless of whether the loan
+  is extended.
+paragraph_path:
+  path:
+    - b
+    - '2'
+    - ii
+  anchor: '314.2'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-314.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+subject:
+  domain: II.C.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'For example:'
+    path:
+      - b
+      - '2'
+    citation: 16 C.F.R. § 314.2(b)(2)
+operative_verb: may
+summary: >-
+  An individual who provides nonpublic personal information to you in order to obtain a
+  determination about whether he or she may qualify for a loan to be used primarily for personal,
+  family, or household purposes is a consumer of a financial service, regardless of whether the loan
+  is extended.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

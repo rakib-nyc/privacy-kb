@@ -1,0 +1,88 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 14, 2003" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.45.164.p.164_105_a_2_iii_d
+source:
+  citation: 45 C.F.R. § 164.105(a)(2)(iii)(D)
+  instrument_id: us.cfr.45.164
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-45 XML, part 164
+    result: structured_source_used
+    note: null
+  segment_sha256: 94860a8fec81a9670435a384f4a74a5acd4c89f19684e54f2a4d67c119b3e030
+verbatim_span: >-
+  The covered entity is responsible for designating the components that are part of one or more
+  health care components of the covered entity and documenting the designation in accordance with
+  paragraph (c) of this section, provided that, if the covered entity designates one or more health
+  care components, it must include any component that would meet the definition of a covered entity
+  or business associate if it were a separate legal entity. Health care component(s) also may
+  include a component only to the extent that it performs covered functions.
+paragraph_path:
+  path:
+    - a
+    - '2'
+    - iii
+    - D
+  anchor: '164.105'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-164.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - I
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'A covered entity that is a hybrid entity has the following responsibilities:'
+    path:
+      - a
+      - '2'
+      - iii
+    citation: 45 C.F.R. § 164.105(a)(2)(iii)
+operative_verb: mixed
+summary: >-
+  The covered entity is responsible for designating the components that are part of one or more
+  health care components of the covered entity and documenting the designation in accordance with
+  paragraph (c) of this section, provided that, if the covered entity designates one or more health
+  care compone
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

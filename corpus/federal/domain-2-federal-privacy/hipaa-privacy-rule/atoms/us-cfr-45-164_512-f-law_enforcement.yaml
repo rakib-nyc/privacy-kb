@@ -1,0 +1,125 @@
+schema_version: 1
+record_type: obligation
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 14, 2003" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+applies_to_role: controller
+interpreted_by: []
+confidence: high
+related: []
+preemption:
+  posture: floor
+  authority: 45 C.F.R. § 160.203
+  note: >-
+    HIPAA is a FLOOR, not a ceiling. A contrary State law that is MORE STRINGENT than the Privacy
+    Rule is not preempted, so state duties run in parallel and the shorter clock governs in
+    practice. Treating HIPAA compliance as discharging state obligations is the standard error.
+enforcement:
+  enforcers:
+    - hhs_ocr
+    - state_ag
+  private_right_of_action: false
+  penalty:
+    structure: >-
+      Civil money penalties under 42 U.S.C. § 1320d-5, tiered by culpability. Criminal liability for
+      knowing wrongful disclosure under 42 U.S.C. § 1320d-6.
+    range: null
+    note: >-
+      No private right of action under HIPAA. Plaintiffs reach the same conduct through state
+      negligence and UDAP theories, which is why the state backstop never switches off.
+  statute_of_limitations: null
+id: us.cfr.45.164_512.f.law_enforcement
+source:
+  citation: 45 C.F.R. § 164.512(f)
+  instrument_id: us.cfr.45.164
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-45 XML, part 164
+    result: structured_source_used
+    note: null
+  segment_sha256: b8fd5fba1c1d1288c49ff98bc8c351c469a0151c54660e42c4e9fed60c48127c
+verbatim_span: >-
+  A covered entity may disclose protected health information for a law enforcement purpose to a law
+  enforcement official if the conditions in paragraphs (f)(1) through (f)(6) of this section are
+  met, as applicable.
+paragraph_path:
+  path:
+    - f
+  anchor: '164.512'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-164.seg.json, which is the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml at sha256
+    233fec3ad4a05762…
+subject:
+  domain: II.B.1
+  lifecycle:
+    - IV
+federal_relationship: null
+applies_if:
+  all:
+    - entity.is_hipaa_covered_entity == true
+    - data.is_phi == true
+obligation_type: permit
+summary: >-
+  A covered entity may disclose protected health information to a law enforcement official for a law
+  enforcement purpose, if the conditions in paragraphs (f)(1) through (f)(6) are met.
+requirement_detail: >-
+  NO AUTHORIZATION IS REQUIRED FOR A DISCLOSURE THAT MEETS THESE CONDITIONS, which is the answer §
+  164.502(a) and § 164.508 alone appear to contradict. THE PERMISSION IS CONDITIONAL AND THE
+  CONDITIONS DIFFER BY SITUATION. Paragraphs (f)(1) through (f)(6) each govern a different
+  circumstance — compulsory process, a request to identify or locate a suspect or missing person,
+  information about a victim, a suspected death, evidence of a crime on the premises, and a medical
+  emergency. The right question is never whether police may be given records, but which paragraph
+  governs and whether its conditions are met. IT IS A PERMISSION, NOT A MANDATE. Nothing here
+  obliges a covered entity to disclose. Where another law compels the disclosure, the permission is
+  paragraph (a)(1)'s, and its scope is bounded by that law. The corpus holds this paragraph and not
+  (f)(1) to (f)(6). A determination that a specific disclosure is permitted requires reading the
+  applicable one against the primary source.
+exemptions: []
+common_errors:
+  - >-
+    Reading this as permitting disclosure to law enforcement on request. Each paragraph sets
+    conditions, and several require specific process or a specific purpose.
+  - Treating the permission as a requirement. It permits; it does not compel.
+  - >-
+    Using this paragraph where another law compels the disclosure. That is paragraph (a)(1), whose
+    scope is limited to what the compelling law requires.
+open_questions:
+  - >-
+    Paragraphs (f)(1) through (f)(6) are not in the corpus, so the conditions that govern any
+    particular law enforcement disclosure cannot be checked here.
+no_deadline_stated: This provision states a permission or a standard, not a clock.
+context_not_required: >-
+  Paragraph (f) is the top-level statement of the law-enforcement permission. It names the entity,
+  the recipient, the purpose, and that the conditions are in (f)(1) to (f)(6) — so the span does not
+  overstate the permission by omitting them.

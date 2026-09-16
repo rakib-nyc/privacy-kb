@@ -1,0 +1,82 @@
+# CROSSWALKS — DECLARED, NEVER INFERRED
+# =====================================
+# Vanta, Drata and Secureframe all sell "map once, comply many": a control that satisfies
+# several frameworks is shown once instead of repeated. The market clearly wants it. What none
+# of them can do is show you the WORDS — you cannot click a HIPAA control in those products and
+# read the Code of Federal Regulations text it rests on, because the mapping is a human-curated
+# label with no line back to primary source.
+#
+# A crosswalk here is a DECLARATION, exactly like meta/jurisdiction-coverage.yaml. A person
+# asserts that two provisions address the same subject and writes down why. The engine never
+# infers a link — two provisions using similar words is not a legal correspondence, and guessing
+# one would be the engine performing the analysis it exists to support.
+#
+# What the machinery adds is that the declaration CANNOT DRIFT. Gate 47 requires both endpoints
+# to resolve against the corpus, so a crosswalk pointing at a citation that was renamed, narrowed
+# or never held fails the build instead of quietly mapping to nothing. And because both endpoints
+# are hash-anchored records, the rendered crosswalk carries the verbatim text of both sides and
+# the sha256 of the bytes each was cut from. That is a crosswalk a regulator can audit.
+#
+# basis — WHY the link is asserted, and this field is the whole point:
+#   statutory      the statute itself names the other instrument. Strongest; not a judgement.
+#   structural     both instruments use the same enumerated scheme, and the correspondence is in
+#                  the structure rather than in anyone's opinion of it.
+#   analytical     a person's reading. Requires `note` to carry the reasoning. Use sparingly.
+version: 1
+crosswalks:
+
+- id: shield-hipaa.compliant-regulated-entity
+  left: N.Y. Gen. Bus. Law § 899-bb(1)
+  right: 45 C.F.R. § 164.306(a)(1)
+  basis: statutory
+  relation: deemed_compliance
+  note: >-
+    § 899-bb(1) defines "compliant regulated entity" to include a person or business subject to
+    and in compliance with the HIPAA and HITECH security regulations at 45 C.F.R. parts 160 and
+    164. The statute names the federal instrument, so the link is read off the text rather than
+    asserted. What it does NOT establish is element-level equivalence: being deemed compliant
+    with the New York safeguards duty is one obligation satisfied, not a mapping of each
+    safeguard to a federal counterpart.
+
+- id: shield-hipaa.administrative-safeguards
+  left: N.Y. Gen. Bus. Law § 899-bb(2)(b)(ii)(A)
+  right: 45 C.F.R. § 164.308(a)
+  basis: structural
+  relation: same_subject
+  note: >-
+    Both instruments partition security into administrative, physical and technical safeguards,
+    and both enumerate under that partition. § 899-bb(2)(b)(ii)(A) is New York's administrative
+    limb; § 164.308(a) is the federal one. The correspondence is at the level of the CATEGORY,
+    which is where the two texts actually agree. Individual specifications beneath them are NOT
+    claimed to correspond — HIPAA's required/addressable distinction has no New York counterpart,
+    and asserting item-by-item equivalence would be an opinion this file does not hold.
+
+- id: shield-hipaa.technical-safeguards
+  left: N.Y. Gen. Bus. Law § 899-bb(2)(b)(ii)(B)
+  right: 45 C.F.R. § 164.312(a)(1)
+  basis: structural
+  relation: same_subject
+  note: >-
+    New York's technical limb against the federal access-control standard. Category level only,
+    for the reason given above.
+
+- id: shield-hipaa.physical-safeguards
+  left: N.Y. Gen. Bus. Law § 899-bb(2)(b)(ii)(C)
+  right: 45 C.F.R. § 164.310(a)(1)
+  basis: structural
+  relation: same_subject
+  note: >-
+    New York's physical limb against the federal facility-access standard. Category level only.
+
+- id: shield-hipaa.breach-notice-substitution
+  left: N.Y. Gen. Bus. Law § 899-aa(2)
+  right: 45 C.F.R. § 164.404(a)(1)
+  basis: statutory
+  relation: partial_substitution
+  note: >-
+    § 899-aa(2)(b) provides that where notice is made to affected persons under the HIPAA breach
+    notification regulations, nothing in § 899-aa requires ADDITIONAL notice to those persons —
+    and expressly preserves notice to the Attorney General, the Department of State and the
+    Division of State Police. The substitution is of one duty, not of the section. It is typed
+    activity_level in the corpus for exactly that reason, and a crosswalk that presented these
+    two as equivalent would reproduce the most common error in this area.

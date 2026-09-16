@@ -1,0 +1,3794 @@
+{
+ "label": "16 CFR 314",
+ "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=314",
+ "format": "ecfr_xml",
+ "positive_law": null,
+ "raw_file": "corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml",
+ "raw_sha256": "3ba7ecc3463953a1db1ccf38f4b0ade4182e36c7e24e111eb8869910e271d41a",
+ "leaves": [
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "314.1",
+   "confidence": "high",
+   "heading": "&#xA7; 314.1 Purpose and scope.",
+   "text": "This part, which implements sections 501 and 505(b)(2) of the Gramm-Leach-Bliley Act, sets forth standards for developing, implementing, and maintaining reasonable administrative, technical, and physical safeguards to protect the security, confidentiality, and integrity of customer information.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "314.1",
+   "confidence": "high",
+   "heading": "&#xA7; 314.1 Purpose and scope.",
+   "text": "This part applies to the handling of customer information by all financial institutions over which the Federal Trade Commission (\u201cFTC\u201d or \u201cCommission\u201d) has jurisdiction. Namely, this part applies to those \u201cfinancial institutions\u201d over which the Commission has rulemaking authority pursuant to section 501(b) of the Gramm-Leach-Bliley Act. An entity is a \u201cfinancial institution\u201d if its business is engaging in an activity that is financial in nature or incidental to such financial activities as described in section 4(k) of the Bank Holding Company Act of 1956, 12 U.S.C. 1843(k), which incorporates activities enumerated by the Federal Reserve Board in 12 CFR 225.28 and 225.86. The \u201cfinancial institutions\u201d subject to the Commission's enforcement authority are those that are not otherwise subject to the enforcement authority of another regulator under section 505 of the Gramm-Leach-Bliley Act, 15 U.S.C. 6805. More specifically, those entities include, but are not limited to, mortgage lenders, \u201cpay day\u201d lenders, finance companies, mortgage brokers, account servicers, check cashers, wire transferors, travel agencies operated in connection with financial services, collection agencies, credit counselors and other financial advisors, tax preparation firms, non-federally insured credit unions, investment advisors that are not required to register with the Securities and Exchange Commission, and entities acting as finders. They are referred to in this part as \u201cYou.\u201d This part applies to all customer information in your possession, regardless of whether such information pertains to individuals with whom you have a customer relationship, or pertains to the customers of other financial institutions that have provided such information to you.",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means any employee, contractor, agent, customer, or other person that is authorized to access any of your information systems or data.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means an individual who obtains or has obtained a financial product or service from you that is to be used primarily for personal, family, or household purposes, or that individual's legal representative.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "For example:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "An individual who applies to you for credit for personal, family, or household purposes is a consumer of a financial service, regardless of whether the credit is extended.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "An individual who provides nonpublic personal information to you in order to obtain a determination about whether he or she may qualify for a loan to be used primarily for personal, family, or household purposes is a consumer of a financial service, regardless of whether the loan is extended.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "An individual who provides nonpublic personal information to you in connection with obtaining or seeking to obtain financial, investment, or economic advisory services is a consumer, regardless of whether you establish a continuing advisory relationship.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "If you hold ownership or servicing rights to an individual's loan that is used primarily for personal, family, or household purposes, the individual is your consumer, even if you hold those rights in conjunction with one or more other institutions. (The individual is also a consumer with respect to the other financial institutions involved.) An individual who has a loan in which you have ownership or servicing rights is your consumer, even if you, or another institution with those rights, hire an agent to collect on the loan.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "v"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "An individual who is a consumer of another financial institution is not your consumer solely because you act as agent for, or provide processing or other services to, that financial institution.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "vi"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "An individual is not your consumer solely because he or she has designated you as trustee for a trust.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "vii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "An individual is not your consumer solely because he or she is a beneficiary of a trust for which you are a trustee.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2",
+    "viii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "An individual is not your consumer solely because he or she is a participant or a beneficiary of an employee benefit plan that you sponsor or for which you act as a trustee or fiduciary.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "b",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means a consumer who has a customer relationship with you.",
+   "context": []
+  },
+  {
+   "path": [
+    "d"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means any record containing nonpublic personal information about a customer of a financial institution, whether in paper, electronic, or other form, that is handled or maintained by or on behalf of you or your affiliates.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means a continuing relationship between a consumer and you under which you provide one or more financial products or services to the consumer that are to be used primarily for personal, family, or household purposes.",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "For example:",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A consumer has a continuing relationship with you if the consumer:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i",
+    "A"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Has a credit or investment account with you;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "e",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i",
+    "B"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Obtains a loan from you;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "e",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i",
+    "C"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Purchases an insurance product from you;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "e",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i",
+    "D"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Holds an investment product through you, such as when you act as a custodian for securities or for assets in an Individual Retirement Arrangement;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "e",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i",
+    "E"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Enters into an agreement or understanding with you whereby you undertake to arrange or broker a home mortgage loan, or credit to purchase a vehicle, for the consumer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "e",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i",
+    "F"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Enters into a lease of personal property on a non-operating basis with you;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "e",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i",
+    "G"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Obtains financial, investment, or economic advisory services from you for a fee;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "e",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i",
+    "H"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Becomes your client for the purpose of obtaining tax preparation or credit counseling services from you;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "e",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i",
+    "I"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Obtains career counseling while seeking employment with a financial institution or the finance, accounting, or audit department of any company (or while employed by such a financial institution or department of any company);",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "e",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i",
+    "J"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Is obligated on an account that you purchase from another financial institution, regardless of whether the account is in default when purchased, unless you do not locate the consumer or attempt to collect any amount from the consumer on the account;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "e",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i",
+    "K"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Obtains real estate settlement services from you; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "e",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "i",
+    "L"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Has a loan for which you own the servicing rights.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer has a continuing relationship with you if the consumer:",
+     "path": [
+      "e",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A consumer does not, however, have a continuing relationship with you if:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "ii",
+    "A"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "The consumer obtains a financial product or service from you only in isolated transactions, such as using your ATM to withdraw cash from an account at another financial institution; purchasing a money order from you; cashing a check with you; or making a wire transfer through you;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer does not, however, have a continuing relationship with you if:",
+     "path": [
+      "e",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "ii",
+    "B"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "You sell the consumer's loan and do not retain the rights to service that loan;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer does not, however, have a continuing relationship with you if:",
+     "path": [
+      "e",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "ii",
+    "C"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "You sell the consumer airline tickets, travel insurance, or traveler's checks in isolated transactions;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer does not, however, have a continuing relationship with you if:",
+     "path": [
+      "e",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "ii",
+    "D"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "The consumer obtains one-time personal or real property appraisal services from you; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer does not, however, have a continuing relationship with you if:",
+     "path": [
+      "e",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2",
+    "ii",
+    "E"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "The consumer purchases checks for a personal checking account from you.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "e",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A consumer does not, however, have a continuing relationship with you if:",
+     "path": [
+      "e",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means the transformation of data into a form that results in a low probability of assigning meaning without the use of a protective process or key, consistent with current cryptographic standards and accompanied by appropriate safeguards for cryptographic key material.",
+   "context": []
+  },
+  {
+   "path": [
+    "g",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means any product or service that a financial holding company could offer by engaging in a financial activity under section 4(k) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)).",
+   "context": []
+  },
+  {
+   "path": [
+    "g",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "includes your evaluation or brokerage of information that you collect in connection with a request or an application from a consumer for a financial product or service.",
+   "context": []
+  },
+  {
+   "path": [
+    "h",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means any institution the business of which is engaging in an activity that is financial in nature or incidental to such financial activities as described in section 4(k) of the Bank Holding Company Act of 1956, 12 U.S.C. 1843(k). An institution that is significantly engaged in financial activities, or significantly engaged in activities incidental to such financial activities, is a financial institution.",
+   "context": []
+  },
+  {
+   "path": [
+    "h",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Examples of financial institutions are as follows:",
+   "context": []
+  },
+  {
+   "path": [
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+   "context": []
+  },
+  {
+   "path": [
+    "i",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "An automobile dealership that, as a usual part of its business, leases automobiles on a nonoperating basis for longer than 90 days is a financial institution with respect to its leasing business because leasing personal property on a nonoperating basis where the initial term of the lease is at least 90 days is a financial activity listed in 12 CFR 225.28(b)(3) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(F).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A personal property or real estate appraiser is a financial institution because real and personal property appraisal is a financial activity listed in 12 CFR 225.28(b)(2)(i) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(F).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A career counselor that specializes in providing career counseling services to individuals currently employed by or recently displaced from a financial organization, individuals who are seeking employment with a financial organization, or individuals who are currently employed by or seeking placement with the finance, accounting or audit departments of any company is a financial institution because such career counseling activities are financial activities listed in 12 CFR 225.28(b)(9)(iii) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(F).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "v"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A business that prints and sells checks for consumers, either as its sole business or as one of its product lines, is a financial institution because printing and selling checks is a financial activity that is listed in 12 CFR 225.28(b)(10)(ii) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(F).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "vi"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A business that regularly wires money to and from consumers is a financial institution because transferring money is a financial activity referenced in section 4(k)(4)(A) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(A), and regularly providing that service demonstrates that the business is significantly engaged in that activity.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "vii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A check cashing business is a financial institution because cashing a check is exchanging money, which is a financial activity listed in section 4(k)(4)(A) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(A).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "viii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "An accountant or other tax preparation service that is in the business of completing income tax returns is a financial institution because tax preparation services is a financial activity listed in 12 CFR 225.28(b)(6)(vi) and referenced in section 4(k)(4)(G) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(G).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "ix"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A business that operates a travel agency in connection with financial services is a financial institution because operating a travel agency in connection with financial services is a financial activity listed in 12 CFR 225.86(b)(2) and referenced in section 4(k)(4)(G) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(G).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "x"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "An entity that provides real estate settlement services is a financial institution because providing real estate settlement services is a financial activity listed in 12 CFR 225.28(b)(2)(viii) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(F).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "xi"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A mortgage broker is a financial institution because brokering loans is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(F).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "xii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "An investment advisory company and a credit counseling service are each financial institutions because providing financial and investment advisory services are financial activities referenced in section 4(k)(4)(C) of the Bank Holding Company Act, 12 U.S.C. 1843(k)(4)(C).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "xiii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A company acting as a finder in bringing together one or more buyers and sellers of any product or service for transactions that the parties themselves negotiate and consummate is a financial institution because acting as a finder is an activity that is financial in nature or incidental to a financial activity listed in 12 CFR 225.86(d)(1).",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "xiii",
+    "3"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "does not include:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "A company acting as a finder in bringing together one or more buyers and sellers of any product or service for transactions that the parties themselves negotiate and consummate is a financial institution because acting as a finder is an activity that is financial in nature or incidental to a financial activity listed in 12 CFR 225.86(d)(1).",
+     "path": [
+      "i",
+      "xiii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Any person or entity with respect to any financial activity that is subject to the jurisdiction of the Commodity Futures Trading Commission under the Commodity Exchange Act (7 U.S.C. 1 et seq. );",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "The Federal Agricultural Mortgage Corporation or any entity chartered and operating under the Farm Credit Act of 1971 (12 U.S.C. 2001 et seq. );",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Institutions chartered by Congress specifically to engage in securitizations, secondary market sales (including sales of servicing rights) or similar transactions related to a transaction of a consumer, as long as such institutions do not sell or transfer nonpublic personal information to a nonaffiliated third party other than as permitted by \u00a7\u00a7 313.14 and 313.15; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Entities that engage in financial activities but that are not significantly engaged in those financial activities, and entities that engage in activities incidental to financial activities but that are not significantly engaged in activities incidental to financial activities.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "iv",
+    "4"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Examples of entities that are not significantly engaged in financial activities are as follows:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Entities that engage in financial activities but that are not significantly engaged in those financial activities, and entities that engage in activities incidental to financial activities but that are not significantly engaged in activities incidental to financial activities.",
+     "path": [
+      "i",
+      "iv"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A retailer is not a financial institution if its only means of extending credit are occasional \u201clay away\u201d and deferred payment plans or accepting payment by means of credit cards issued by others.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A retailer is not a financial institution merely because it accepts payment in the form of cash, checks, or credit cards that it did not issue.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A merchant is not a financial institution merely because it allows an individual to \u201crun a tab.\u201d",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A grocery store is not a financial institution merely because it allows individuals to whom it sells groceries to cash a check, or write a check for a higher amount than the grocery purchase and obtain cash in return.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means the administrative, technical, or physical safeguards you use to access, collect, distribute, process, protect, store, use, transmit, dispose of, or otherwise handle customer information.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "A retailer that extends credit by issuing its own credit card directly to consumers is a financial institution because extending credit is a financial activity listed in 12 CFR 225.28(b)(1) and referenced in section 4(k)(4)(F) of the Bank Holding Company Act of 1956 (12 U.S.C. 1843(k)(4)(F)), and issuing that extension of credit through a proprietary credit card demonstrates that a retailer is significantly engaged in extending credit.",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "j"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means a discrete set of electronic information resources organized for the collection, processing, maintenance, use, sharing, dissemination or disposition of electronic information containing customer information or connected to a system containing customer information, as well as any specialized system such as industrial/process controls systems, telephone switching and private branch exchange systems, and environmental controls systems that contains customer information or that is connected to a system that contains customer information.",
+   "context": []
+  },
+  {
+   "path": [
+    "k"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means authentication through verification of at least two of the following types of authentication factors:",
+   "context": []
+  },
+  {
+   "path": [
+    "k",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Knowledge factors, such as a password;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means authentication through verification of at least two of the following types of authentication factors:",
+     "path": [
+      "k"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "k",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Possession factors, such as a token; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means authentication through verification of at least two of the following types of authentication factors:",
+     "path": [
+      "k"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "k",
+    "3"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Inherence factors, such as biometric characteristics.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means authentication through verification of at least two of the following types of authentication factors:",
+     "path": [
+      "k"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "l",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means:",
+   "context": []
+  },
+  {
+   "path": [
+    "l",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Personally identifiable financial information; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means:",
+     "path": [
+      "l",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "l",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Any list, description, or other grouping of consumers (and publicly available information pertaining to them) that is derived using any personally identifiable financial information that is not publicly available.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means:",
+     "path": [
+      "l",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "l",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "does not include:",
+   "context": []
+  },
+  {
+   "path": [
+    "l",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Publicly available information, except as included on a list described in paragraph (l)(1)(ii) of this section; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "does not include:",
+     "path": [
+      "l",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "l",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Any list, description, or other grouping of consumers (and publicly available information pertaining to them) that is derived without using any personally identifiable financial information that is not publicly available.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "does not include:",
+     "path": [
+      "l",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "l",
+    "3"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "For example:",
+   "context": []
+  },
+  {
+   "path": [
+    "l",
+    "3",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Nonpublic personal information includes any list of individuals' names and street addresses that is derived in whole or in part using personally identifiable financial information (that is not publicly available), such as account numbers.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "l",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "l",
+    "3",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Nonpublic personal information does not include any list of individuals' names and addresses that contains only publicly available information, is not derived, in whole or in part, using personally identifiable financial information that is not publicly available, and is not disclosed in a manner that indicates that any of the individuals on the list is a consumer of a financial institution.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "l",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "m"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means acquisition of unencrypted customer information without the authorization of the individual to which the information pertains. Customer information is considered unencrypted for this purpose if the encryption key was accessed by an unauthorized person. Unauthorized acquisition will be presumed to include unauthorized access to unencrypted customer information unless you have reliable evidence showing that there has not been, or could not reasonably have been, unauthorized acquisition of such information.",
+   "context": []
+  },
+  {
+   "path": [
+    "n"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means a test methodology in which assessors attempt to circumvent or defeat the security features of an information system by attempting penetration of databases or controls from outside or inside your information systems.",
+   "context": []
+  },
+  {
+   "path": [
+    "o",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means any information:",
+   "context": []
+  },
+  {
+   "path": [
+    "o",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A consumer provides to you to obtain a financial product or service from you;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means any information:",
+     "path": [
+      "o",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "About a consumer resulting from any transaction involving a financial product or service between you and a consumer; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means any information:",
+     "path": [
+      "o",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "You otherwise obtain about a consumer in connection with providing a financial product or service to that consumer.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means any information:",
+     "path": [
+      "o",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "For example:",
+   "context": []
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Personally identifiable financial information includes:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "o",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i",
+    "A"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Information a consumer provides to you on an application to obtain a loan, credit card, or other financial product or service;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "o",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information includes:",
+     "path": [
+      "o",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i",
+    "B"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Account balance information, payment history, overdraft history, and credit or debit card purchase information;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "o",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information includes:",
+     "path": [
+      "o",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i",
+    "C"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "The fact that an individual is or has been one of your customers or has obtained a financial product or service from you;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "o",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information includes:",
+     "path": [
+      "o",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i",
+    "D"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Any information about your consumer if it is disclosed in a manner that indicates that the individual is or has been your consumer;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "o",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information includes:",
+     "path": [
+      "o",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i",
+    "E"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Any information that a consumer provides to you or that you or your agent otherwise obtain in connection with collecting on, or servicing, a credit account;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "o",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information includes:",
+     "path": [
+      "o",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i",
+    "F"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Any information you collect through an internet \u201ccookie\u201d (an information collecting device from a web server); and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "o",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information includes:",
+     "path": [
+      "o",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "i",
+    "G"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Information from a consumer report.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "o",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information includes:",
+     "path": [
+      "o",
+      "2",
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Personally identifiable financial information does not include:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "o",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "ii",
+    "A"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "A list of names and addresses of customers of an entity that is not a financial institution; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "o",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information does not include:",
+     "path": [
+      "o",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "o",
+    "2",
+    "ii",
+    "B"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Information that does not identify a consumer, such as aggregate information or blind data that does not contain personal identifiers such as account numbers, names, or addresses.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "o",
+      "2"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Personally identifiable financial information does not include:",
+     "path": [
+      "o",
+      "2",
+      "ii"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means any information that you have a reasonable basis to believe is lawfully made available to the general public from:",
+   "context": []
+  },
+  {
+   "path": [
+    "p",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Federal, State, or local government records;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means any information that you have a reasonable basis to believe is lawfully made available to the general public from:",
+     "path": [
+      "p",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Widely distributed media; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means any information that you have a reasonable basis to believe is lawfully made available to the general public from:",
+     "path": [
+      "p",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Disclosures to the general public that are required to be made by Federal, State, or local law.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "means any information that you have a reasonable basis to believe is lawfully made available to the general public from:",
+     "path": [
+      "p",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "You have a reasonable basis to believe that information is lawfully made available to the general public if you have taken steps to determine:",
+   "context": []
+  },
+  {
+   "path": [
+    "p",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "That the information is of the type that is available to the general public; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You have a reasonable basis to believe that information is lawfully made available to the general public if you have taken steps to determine:",
+     "path": [
+      "p",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Whether an individual can direct that the information not be made available to the general public and, if so, that your consumer has not done so.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "You have a reasonable basis to believe that information is lawfully made available to the general public if you have taken steps to determine:",
+     "path": [
+      "p",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "3"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "For example:",
+   "context": []
+  },
+  {
+   "path": [
+    "p",
+    "3",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Publicly available information in government records includes information in government real estate records and security interest filings.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "p",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "3",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "Publicly available information from widely distributed media includes information from a telephone book, a television or radio program, a newspaper, or a website that is available to the general public on an unrestricted basis. A website is not restricted merely because an internet service provider or a site operator requires a fee or a password, so long as access is available to the general public.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "p",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "3",
+    "iii",
+    "A"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "You have a reasonable basis to believe that mortgage information is lawfully made available to the general public if you have determined that the information is of the type included on the public record in the jurisdiction where the mortgage would be recorded.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "p",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "p",
+    "3",
+    "iii",
+    "B"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "You have a reasonable basis to believe that an individual's telephone number is lawfully made available to the general public if you have located the telephone number in the telephone book or the consumer has informed you that the telephone number is not unlisted.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For example:",
+     "path": [
+      "p",
+      "3"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "q"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means an event resulting in unauthorized access to, or disruption or misuse of, an information system, information stored on such information system, or customer information held in physical form.",
+   "context": []
+  },
+  {
+   "path": [
+    "r"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "means any person or entity that receives, maintains, processes, or otherwise is permitted access to customer information through its provision of services directly to a financial institution that is subject to this part.",
+   "context": []
+  },
+  {
+   "path": [
+    "s"
+   ],
+   "anchor": null,
+   "section": "314.2",
+   "confidence": "high",
+   "heading": "&#xA7; 314.2 Definitions.",
+   "text": "includes each \u201cfinancial institution\u201d (but excludes any \u201cother person\u201d) over which the Commission has enforcement jurisdiction pursuant to section 505(a)(7) of the Gramm-Leach-Bliley Act.",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "314.3",
+   "confidence": "high",
+   "heading": "&#xA7; 314.3 Standards for safeguarding customer information.",
+   "text": "You shall develop, implement, and maintain a comprehensive information security program that is written in one or more readily accessible parts and contains administrative, technical, and physical safeguards that are appropriate to your size and complexity, the nature and scope of your activities, and the sensitivity of any customer information at issue. The information security program shall include the elements set forth in \u00a7 314.4 and shall be reasonably designed to achieve the objectives of this part, as set forth in paragraph (b) of this section.",
+   "context": []
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "314.3",
+   "confidence": "high",
+   "heading": "&#xA7; 314.3 Standards for safeguarding customer information.",
+   "text": "The objectives of section 501(b) of the Act, and of this part, are to:",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.3",
+   "confidence": "high",
+   "heading": "&#xA7; 314.3 Standards for safeguarding customer information.",
+   "text": "Insure the security and confidentiality of customer information;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The objectives of section 501(b) of the Act, and of this part, are to:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.3",
+   "confidence": "high",
+   "heading": "&#xA7; 314.3 Standards for safeguarding customer information.",
+   "text": "Protect against any anticipated threats or hazards to the security or integrity of such information; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The objectives of section 501(b) of the Act, and of this part, are to:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "3"
+   ],
+   "anchor": null,
+   "section": "314.3",
+   "confidence": "high",
+   "heading": "&#xA7; 314.3 Standards for safeguarding customer information.",
+   "text": "Protect against unauthorized access to or use of such information that could result in substantial harm or inconvenience to any customer.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "The objectives of section 501(b) of the Act, and of this part, are to:",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "In order to develop, implement, and maintain your information security program, you shall:",
+   "context": []
+  },
+  {
+   "path": [
+    "a"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Designate a qualified individual responsible for overseeing and implementing your information security program and enforcing your information security program (for purposes of this part, \u201cQualified Individual\u201d). The Qualified Individual may be employed by you, an affiliate, or a service provider. To the extent the requirement in this paragraph (a) is met using a service provider or an affiliate, you shall:",
+   "context": []
+  },
+  {
+   "path": [
+    "a",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Retain responsibility for compliance with this part;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Designate a qualified individual responsible for overseeing and implementing your information security program and enforcing your information security program (for purposes of this part, \u201cQualified Individual\u201d). The Qualified Individual may be employed by you, an affiliate, or a service provider. To the extent the requirement in this paragraph (a) is met using a service provider or an affiliate, you shall:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Designate a senior member of your personnel responsible for direction and oversight of the Qualified Individual; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Designate a qualified individual responsible for overseeing and implementing your information security program and enforcing your information security program (for purposes of this part, \u201cQualified Individual\u201d). The Qualified Individual may be employed by you, an affiliate, or a service provider. To the extent the requirement in this paragraph (a) is met using a service provider or an affiliate, you shall:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "a",
+    "3"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Require the service provider or affiliate to maintain an information security program that protects you in accordance with the requirements of this part.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Designate a qualified individual responsible for overseeing and implementing your information security program and enforcing your information security program (for purposes of this part, \u201cQualified Individual\u201d). The Qualified Individual may be employed by you, an affiliate, or a service provider. To the extent the requirement in this paragraph (a) is met using a service provider or an affiliate, you shall:",
+     "path": [
+      "a"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Base your information security program on a risk assessment that identifies reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of customer information that could result in the unauthorized disclosure, misuse, alteration, destruction, or other compromise of such information, and assesses the sufficiency of any safeguards in place to control these risks.",
+   "context": []
+  },
+  {
+   "path": [
+    "b",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "The risk assessment shall be written and shall include:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Base your information security program on a risk assessment that identifies reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of customer information that could result in the unauthorized disclosure, misuse, alteration, destruction, or other compromise of such information, and assesses the sufficiency of any safeguards in place to control these risks.",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Criteria for the evaluation and categorization of identified security risks or threats you face;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Base your information security program on a risk assessment that identifies reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of customer information that could result in the unauthorized disclosure, misuse, alteration, destruction, or other compromise of such information, and assesses the sufficiency of any safeguards in place to control these risks.",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "The risk assessment shall be written and shall include:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Criteria for the assessment of the confidentiality, integrity, and availability of your information systems and customer information, including the adequacy of the existing controls in the context of the identified risks or threats you face; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Base your information security program on a risk assessment that identifies reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of customer information that could result in the unauthorized disclosure, misuse, alteration, destruction, or other compromise of such information, and assesses the sufficiency of any safeguards in place to control these risks.",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "The risk assessment shall be written and shall include:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Requirements describing how identified risks will be mitigated or accepted based on the risk assessment and how the information security program will address the risks.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Base your information security program on a risk assessment that identifies reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of customer information that could result in the unauthorized disclosure, misuse, alteration, destruction, or other compromise of such information, and assesses the sufficiency of any safeguards in place to control these risks.",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "The risk assessment shall be written and shall include:",
+     "path": [
+      "b",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "b",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "You shall periodically perform additional risk assessments that reexamine the reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of customer information that could result in the unauthorized disclosure, misuse, alteration, destruction, or other compromise of such information, and reassess the sufficiency of any safeguards in place to control these risks.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Base your information security program on a risk assessment that identifies reasonably foreseeable internal and external risks to the security, confidentiality, and integrity of customer information that could result in the unauthorized disclosure, misuse, alteration, destruction, or other compromise of such information, and assesses the sufficiency of any safeguards in place to control these risks.",
+     "path": [
+      "b"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Design and implement safeguards to control the risks you identify through risk assessment, including by:",
+   "context": []
+  },
+  {
+   "path": [
+    "c",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Implementing and periodically reviewing access controls, including technical and, as appropriate, physical controls to:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Design and implement safeguards to control the risks you identify through risk assessment, including by:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Authenticate and permit access only to authorized users to protect against the unauthorized acquisition of customer information; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Design and implement safeguards to control the risks you identify through risk assessment, including by:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Implementing and periodically reviewing access controls, including technical and, as appropriate, physical controls to:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Limit authorized users' access only to customer information that they need to perform their duties and functions, or, in the case of customers, to access their own information;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Design and implement safeguards to control the risks you identify through risk assessment, including by:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Implementing and periodically reviewing access controls, including technical and, as appropriate, physical controls to:",
+     "path": [
+      "c",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Identify and manage the data, personnel, devices, systems, and facilities that enable you to achieve business purposes in accordance with their relative importance to business objectives and your risk strategy;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Design and implement safeguards to control the risks you identify through risk assessment, including by:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "3"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Protect by encryption all customer information held or transmitted by you both in transit over external networks and at rest. To the extent you determine that encryption of customer information, either in transit over external networks or at rest, is infeasible, you may instead secure such customer information using effective alternative compensating controls reviewed and approved by your Qualified Individual;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Design and implement safeguards to control the risks you identify through risk assessment, including by:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "4"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Adopt secure development practices for in-house developed applications utilized by you for transmitting, accessing, or storing customer information and procedures for evaluating, assessing, or testing the security of externally developed applications you utilize to transmit, access, or store customer information;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Design and implement safeguards to control the risks you identify through risk assessment, including by:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "5"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Implement multi-factor authentication for any individual accessing any information system, unless your Qualified Individual has approved in writing the use of reasonably equivalent or more secure access controls;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Design and implement safeguards to control the risks you identify through risk assessment, including by:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Develop, implement, and maintain procedures for the secure disposal of customer information in any format no later than two years after the last date the information is used in connection with the provision of a product or service to the customer to which it relates, unless such information is necessary for business operations or for other legitimate business purposes, is otherwise required to be retained by law or regulation, or where targeted disposal is not reasonably feasible due to the manner in which the information is maintained; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Design and implement safeguards to control the risks you identify through risk assessment, including by:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "6",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Periodically review your data retention policy to minimize the unnecessary retention of data;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Design and implement safeguards to control the risks you identify through risk assessment, including by:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "7"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Adopt procedures for change management; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Design and implement safeguards to control the risks you identify through risk assessment, including by:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "c",
+    "8"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Implement policies, procedures, and controls designed to monitor and log the activity of authorized users and detect unauthorized access or use of, or tampering with, customer information by such users.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Design and implement safeguards to control the risks you identify through risk assessment, including by:",
+     "path": [
+      "c"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Regularly test or otherwise monitor the effectiveness of the safeguards' key controls, systems, and procedures, including those to detect actual and attempted attacks on, or intrusions into, information systems.",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "For information systems, the monitoring and testing shall include continuous monitoring or periodic penetration testing and vulnerability assessments. Absent effective continuous monitoring or other systems to detect, on an ongoing basis, changes in information systems that may create vulnerabilities, you shall conduct:",
+   "context": []
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Annual penetration testing of your information systems determined each given year based on relevant identified risks in accordance with the risk assessment; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For information systems, the monitoring and testing shall include continuous monitoring or periodic penetration testing and vulnerability assessments. Absent effective continuous monitoring or other systems to detect, on an ongoing basis, changes in information systems that may create vulnerabilities, you shall conduct:",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "d",
+    "2",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Vulnerability assessments, including any systemic scans or reviews of information systems reasonably designed to identify publicly known security vulnerabilities in your information systems based on the risk assessment, at least every six months; and whenever there are material changes to your operations or business arrangements; and whenever there are circumstances you know or have reason to know may have a material impact on your information security program.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "For information systems, the monitoring and testing shall include continuous monitoring or periodic penetration testing and vulnerability assessments. Absent effective continuous monitoring or other systems to detect, on an ongoing basis, changes in information systems that may create vulnerabilities, you shall conduct:",
+     "path": [
+      "d",
+      "2"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Implement policies and procedures to ensure that personnel are able to enact your information security program by:",
+   "context": []
+  },
+  {
+   "path": [
+    "e",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Providing your personnel with security awareness training that is updated as necessary to reflect risks identified by the risk assessment;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Implement policies and procedures to ensure that personnel are able to enact your information security program by:",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Utilizing qualified information security personnel employed by you or an affiliate or service provider sufficient to manage your information security risks and to perform or oversee the information security program;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Implement policies and procedures to ensure that personnel are able to enact your information security program by:",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "3"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Providing information security personnel with security updates and training sufficient to address relevant security risks; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Implement policies and procedures to ensure that personnel are able to enact your information security program by:",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "e",
+    "4"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Verifying that key information security personnel take steps to maintain current knowledge of changing information security threats and countermeasures.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Implement policies and procedures to ensure that personnel are able to enact your information security program by:",
+     "path": [
+      "e"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "f"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Oversee service providers, by:",
+   "context": []
+  },
+  {
+   "path": [
+    "f",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Taking reasonable steps to select and retain service providers that are capable of maintaining appropriate safeguards for the customer information at issue;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Oversee service providers, by:",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "f",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Requiring your service providers by contract to implement and maintain such safeguards; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Oversee service providers, by:",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "f",
+    "3"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Periodically assessing your service providers based on the risk they present and the continued adequacy of their safeguards.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Oversee service providers, by:",
+     "path": [
+      "f"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "g"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Evaluate and adjust your information security program in light of the results of the testing and monitoring required by paragraph (d) of this section; any material changes to your operations or business arrangements; the results of risk assessments performed under paragraph (b)(2) of this section; or any other circumstances that you know or have reason to know may have a material impact on your information security program.",
+   "context": []
+  },
+  {
+   "path": [
+    "h"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Establish a written incident response plan designed to promptly respond to, and recover from, any security event materially affecting the confidentiality, integrity, or availability of customer information in your control. Such incident response plan shall address the following areas:",
+   "context": []
+  },
+  {
+   "path": [
+    "h",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "The goals of the incident response plan;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Establish a written incident response plan designed to promptly respond to, and recover from, any security event materially affecting the confidentiality, integrity, or availability of customer information in your control. Such incident response plan shall address the following areas:",
+     "path": [
+      "h"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "The internal processes for responding to a security event;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Establish a written incident response plan designed to promptly respond to, and recover from, any security event materially affecting the confidentiality, integrity, or availability of customer information in your control. Such incident response plan shall address the following areas:",
+     "path": [
+      "h"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "3"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "The definition of clear roles, responsibilities, and levels of decision-making authority;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Establish a written incident response plan designed to promptly respond to, and recover from, any security event materially affecting the confidentiality, integrity, or availability of customer information in your control. Such incident response plan shall address the following areas:",
+     "path": [
+      "h"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "4"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "External and internal communications and information sharing;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Establish a written incident response plan designed to promptly respond to, and recover from, any security event materially affecting the confidentiality, integrity, or availability of customer information in your control. Such incident response plan shall address the following areas:",
+     "path": [
+      "h"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "5"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Identification of requirements for the remediation of any identified weaknesses in information systems and associated controls;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Establish a written incident response plan designed to promptly respond to, and recover from, any security event materially affecting the confidentiality, integrity, or availability of customer information in your control. Such incident response plan shall address the following areas:",
+     "path": [
+      "h"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "6"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Documentation and reporting regarding security events and related incident response activities; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Establish a written incident response plan designed to promptly respond to, and recover from, any security event materially affecting the confidentiality, integrity, or availability of customer information in your control. Such incident response plan shall address the following areas:",
+     "path": [
+      "h"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "h",
+    "7"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "The evaluation and revision as necessary of the incident response plan following a security event.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Establish a written incident response plan designed to promptly respond to, and recover from, any security event materially affecting the confidentiality, integrity, or availability of customer information in your control. Such incident response plan shall address the following areas:",
+     "path": [
+      "h"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Require your Qualified Individual to report in writing, regularly and at least annually, to your board of directors or equivalent governing body. If no such board of directors or equivalent governing body exists, such report shall be timely presented to a senior officer responsible for your information security program. The report shall include the following information:",
+   "context": []
+  },
+  {
+   "path": [
+    "i",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "The overall status of the information security program and your compliance with this part; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Require your Qualified Individual to report in writing, regularly and at least annually, to your board of directors or equivalent governing body. If no such board of directors or equivalent governing body exists, such report shall be timely presented to a senior officer responsible for your information security program. The report shall include the following information:",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "i",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Material matters related to the information security program, addressing issues such as risk assessment, risk management and control decisions, service provider arrangements, results of testing, security events or violations and management's responses thereto, and recommendations for changes in the information security program.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Require your Qualified Individual to report in writing, regularly and at least annually, to your board of directors or equivalent governing body. If no such board of directors or equivalent governing body exists, such report shall be timely presented to a senior officer responsible for your information security program. The report shall include the following information:",
+     "path": [
+      "i"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "j"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Notify the Federal Trade Commission about notification events in accordance with paragraphs (j)(1) and (2) of this section.",
+   "context": []
+  },
+  {
+   "path": [
+    "j",
+    "1"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Upon discovery of a notification event as described in paragraph (j)(2) of this section, if the notification event involves the information of at least 500 consumers, you must notify the Federal Trade Commission as soon as possible, and no later than 30 days after discovery of the event. The notice shall be made electronically on a form to be located on the FTC's website, https://www.ftc.gov. The notice shall include the following:",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Notify the Federal Trade Commission about notification events in accordance with paragraphs (j)(1) and (2) of this section.",
+     "path": [
+      "j"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "1",
+    "i"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "The name and contact information of the reporting financial institution;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Notify the Federal Trade Commission about notification events in accordance with paragraphs (j)(1) and (2) of this section.",
+     "path": [
+      "j"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Upon discovery of a notification event as described in paragraph (j)(2) of this section, if the notification event involves the information of at least 500 consumers, you must notify the Federal Trade Commission as soon as possible, and no later than 30 days after discovery of the event. The notice shall be made electronically on a form to be located on the FTC's website, https://www.ftc.gov. The notice shall include the following:",
+     "path": [
+      "j",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "1",
+    "ii"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "A description of the types of information that were involved in the notification event;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Notify the Federal Trade Commission about notification events in accordance with paragraphs (j)(1) and (2) of this section.",
+     "path": [
+      "j"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Upon discovery of a notification event as described in paragraph (j)(2) of this section, if the notification event involves the information of at least 500 consumers, you must notify the Federal Trade Commission as soon as possible, and no later than 30 days after discovery of the event. The notice shall be made electronically on a form to be located on the FTC's website, https://www.ftc.gov. The notice shall include the following:",
+     "path": [
+      "j",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "1",
+    "iii"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "If the information is possible to determine, the date or date range of the notification event;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Notify the Federal Trade Commission about notification events in accordance with paragraphs (j)(1) and (2) of this section.",
+     "path": [
+      "j"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Upon discovery of a notification event as described in paragraph (j)(2) of this section, if the notification event involves the information of at least 500 consumers, you must notify the Federal Trade Commission as soon as possible, and no later than 30 days after discovery of the event. The notice shall be made electronically on a form to be located on the FTC's website, https://www.ftc.gov. The notice shall include the following:",
+     "path": [
+      "j",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "1",
+    "iv"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "The number of consumers affected or potentially affected by the notification event;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Notify the Federal Trade Commission about notification events in accordance with paragraphs (j)(1) and (2) of this section.",
+     "path": [
+      "j"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Upon discovery of a notification event as described in paragraph (j)(2) of this section, if the notification event involves the information of at least 500 consumers, you must notify the Federal Trade Commission as soon as possible, and no later than 30 days after discovery of the event. The notice shall be made electronically on a form to be located on the FTC's website, https://www.ftc.gov. The notice shall include the following:",
+     "path": [
+      "j",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "1",
+    "v"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "A general description of the notification event; and",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Notify the Federal Trade Commission about notification events in accordance with paragraphs (j)(1) and (2) of this section.",
+     "path": [
+      "j"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Upon discovery of a notification event as described in paragraph (j)(2) of this section, if the notification event involves the information of at least 500 consumers, you must notify the Federal Trade Commission as soon as possible, and no later than 30 days after discovery of the event. The notice shall be made electronically on a form to be located on the FTC's website, https://www.ftc.gov. The notice shall include the following:",
+     "path": [
+      "j",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "1",
+    "vi"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "Whether any law enforcement official has provided you with a written determination that notifying the public of the breach would impede a criminal investigation or cause damage to national security, and a means for the Federal Trade Commission to contact the law enforcement official. A law enforcement official may request an initial delay of up to 30 days following the date when notice was provided to the Federal Trade Commission. The delay may be extended for an additional period of up to 60 days if the law enforcement official seeks such an extension in writing. Additional delay may be permitted only if the Commission staff determines that public disclosure of a security event continues to impede a criminal investigation or cause damage to national security.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Notify the Federal Trade Commission about notification events in accordance with paragraphs (j)(1) and (2) of this section.",
+     "path": [
+      "j"
+     ],
+     "anchor": null
+    },
+    {
+     "position": "precedes",
+     "text": "Upon discovery of a notification event as described in paragraph (j)(2) of this section, if the notification event involves the information of at least 500 consumers, you must notify the Federal Trade Commission as soon as possible, and no later than 30 days after discovery of the event. The notice shall be made electronically on a form to be located on the FTC's website, https://www.ftc.gov. The notice shall include the following:",
+     "path": [
+      "j",
+      "1"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [
+    "j",
+    "2"
+   ],
+   "anchor": null,
+   "section": "314.4",
+   "confidence": "high",
+   "heading": "&#xA7; 314.4 Elements.",
+   "text": "A notification event shall be treated as discovered as of the first day on which such event is known to you. You shall be deemed to have knowledge of a notification event if such event is known to any person, other than the person committing the breach, who is your employee, officer, or other agent.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "Notify the Federal Trade Commission about notification events in accordance with paragraphs (j)(1) and (2) of this section.",
+     "path": [
+      "j"
+     ],
+     "anchor": null
+    }
+   ]
+  },
+  {
+   "path": [],
+   "anchor": null,
+   "section": "314.5",
+   "confidence": "high",
+   "heading": "&#xA7; 314.5 Effective date.",
+   "text": "Section 314.4(j) is effective as of May 13, 2024.",
+   "context": []
+  },
+  {
+   "path": [],
+   "anchor": null,
+   "section": "314.6",
+   "confidence": "high",
+   "heading": "&#xA7; 314.6 Exceptions.",
+   "text": "Section 314.4(b)(1), (d)(2), (h), and (i) do not apply to financial institutions that maintain customer information concerning fewer than five thousand consumers.",
+   "context": []
+  }
+ ]
+}

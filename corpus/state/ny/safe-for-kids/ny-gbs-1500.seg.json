@@ -1,0 +1,314 @@
+{
+ "label": "NY GBS 1500",
+ "url": "https://legislation.nysenate.gov/api/3/laws/GBS/1500",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/safe-for-kids/raw/ny-gbs-1500.json",
+ "raw_sha256": "272e895ac96b798d6db5c8e61f9864168f14420033b1181e338873c80393675e",
+ "leaves": [
+  {
+   "path": [
+    "1"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Addictive feed\" shall mean a website, online service, online application, or mobile application, or a portion thereof, in which multiple pieces of media generated or shared by users of a website, online service, online application, or mobile application, either concurrently or sequentially, are recommended, selected, or prioritized for display to a user based, in whole or in part, on information associated with the user or the user's device, unless any of the following conditions are met, alone or in combination with one another:",
+   "context": [],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "1",
+    "a"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "Definitions",
+   "text": "the recommendation, prioritization, or selection is based on information that is not persistently associated with the user or user's device, and does not concern the user's previous interactions with media generated or shared by other users;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Addictive feed\" shall mean a website, online service, online application, or mobile application, or a portion thereof, in which multiple pieces of media generated or shared by users of a website, online service, online application, or mobile application, either concurrently or sequentially, are recommended, selected, or prioritized for display to a user based, in whole or in part, on information associated with the user or the user's device, unless any of the following conditions are met, alone or in combination with one another:",
+     "path": [
+      "1"
+     ],
+     "anchor": "1500"
+    }
+   ],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "1",
+    "b"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "Definitions",
+   "text": "the recommendation, prioritization, or selection is based on user-selected privacy or accessibility settings, or technical information concerning the user's device;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Addictive feed\" shall mean a website, online service, online application, or mobile application, or a portion thereof, in which multiple pieces of media generated or shared by users of a website, online service, online application, or mobile application, either concurrently or sequentially, are recommended, selected, or prioritized for display to a user based, in whole or in part, on information associated with the user or the user's device, unless any of the following conditions are met, alone or in combination with one another:",
+     "path": [
+      "1"
+     ],
+     "anchor": "1500"
+    }
+   ],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "1",
+    "c"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "Definitions",
+   "text": "the user expressly and unambiguously requested the specific media, media by the author, creator, or poster of media the user has subscribed to, or media shared by users to a page or group the user has subscribed to, provided that the media is not recommended, selected, or prioritized for display based, in whole or in part, on other information associated with the user or the user's device that is not otherwise permissible under this subdivision;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Addictive feed\" shall mean a website, online service, online application, or mobile application, or a portion thereof, in which multiple pieces of media generated or shared by users of a website, online service, online application, or mobile application, either concurrently or sequentially, are recommended, selected, or prioritized for display to a user based, in whole or in part, on information associated with the user or the user's device, unless any of the following conditions are met, alone or in combination with one another:",
+     "path": [
+      "1"
+     ],
+     "anchor": "1500"
+    }
+   ],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "1",
+    "d"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "Definitions",
+   "text": "the user expressly and unambiguously requested that specific media, media by a specified author, creator, or poster of media the user has subscribed to, or media shared by users to a page or group the user has subscribed to pursuant to paragraph (c) of this subdivision, be blocked, prioritized or deprioritized for display, provided that the media is not recommended, selected, or prioritized for display based, in whole or in part, on other information associated with the user or the user's device that is not otherwise permissible under this subdivision;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Addictive feed\" shall mean a website, online service, online application, or mobile application, or a portion thereof, in which multiple pieces of media generated or shared by users of a website, online service, online application, or mobile application, either concurrently or sequentially, are recommended, selected, or prioritized for display to a user based, in whole or in part, on information associated with the user or the user's device, unless any of the following conditions are met, alone or in combination with one another:",
+     "path": [
+      "1"
+     ],
+     "anchor": "1500"
+    }
+   ],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "1",
+    "e"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "Definitions",
+   "text": "the media are direct and private communications;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Addictive feed\" shall mean a website, online service, online application, or mobile application, or a portion thereof, in which multiple pieces of media generated or shared by users of a website, online service, online application, or mobile application, either concurrently or sequentially, are recommended, selected, or prioritized for display to a user based, in whole or in part, on information associated with the user or the user's device, unless any of the following conditions are met, alone or in combination with one another:",
+     "path": [
+      "1"
+     ],
+     "anchor": "1500"
+    }
+   ],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "1",
+    "f"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "Definitions",
+   "text": "the media are recommended, selected, or prioritized only in response to a specific search inquiry by the user;",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Addictive feed\" shall mean a website, online service, online application, or mobile application, or a portion thereof, in which multiple pieces of media generated or shared by users of a website, online service, online application, or mobile application, either concurrently or sequentially, are recommended, selected, or prioritized for display to a user based, in whole or in part, on information associated with the user or the user's device, unless any of the following conditions are met, alone or in combination with one another:",
+     "path": [
+      "1"
+     ],
+     "anchor": "1500"
+    }
+   ],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "1",
+    "g"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "Definitions",
+   "text": "the media recommended, selected, or prioritized for display is exclusively next in a pre-existing sequence from the same author, creator, poster, or source; or",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Addictive feed\" shall mean a website, online service, online application, or mobile application, or a portion thereof, in which multiple pieces of media generated or shared by users of a website, online service, online application, or mobile application, either concurrently or sequentially, are recommended, selected, or prioritized for display to a user based, in whole or in part, on information associated with the user or the user's device, unless any of the following conditions are met, alone or in combination with one another:",
+     "path": [
+      "1"
+     ],
+     "anchor": "1500"
+    }
+   ],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "1",
+    "h"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "Definitions",
+   "text": "the recommendation, prioritization, or selection is necessary to comply with the provisions of this article and any regulations promulgated pursuant to this article.",
+   "context": [
+    {
+     "position": "precedes",
+     "text": "\"Addictive feed\" shall mean a website, online service, online application, or mobile application, or a portion thereof, in which multiple pieces of media generated or shared by users of a website, online service, online application, or mobile application, either concurrently or sequentially, are recommended, selected, or prioritized for display to a user based, in whole or in part, on information associated with the user or the user's device, unless any of the following conditions are met, alone or in combination with one another:",
+     "path": [
+      "1"
+     ],
+     "anchor": "1500"
+    }
+   ],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "2"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Addictive social media platform\" shall mean a website, online service, online application, or mobile application, that offers or provides users an addictive feed as a significant part of the services provided by such website, online service, online application, or mobile application.",
+   "context": [],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "3"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Covered minor\" shall mean a user of a website, online service, online application, or mobile application in New York when the operator has actual knowledge the user is a minor.",
+   "context": [],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "4"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Covered user\" shall mean a user of a website, online service, online application, or mobile application in New York, not acting as an operator, or agent or affiliate of the operator, of such website, online service, online application, or mobile application, or any portion thereof.",
+   "context": [],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "5"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Media\" shall mean text, an image, or a video.",
+   "context": [],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "6"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Minor\" shall mean an individual under the age of eighteen.",
+   "context": [],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "7"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Covered operator\" shall mean any person, business, or other legal entity, who operates or provides an addictive social media platform.",
+   "context": [],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "8"
+   ],
+   "anchor": "1500",
+   "section": "1500",
+   "confidence": "high",
+   "heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "text": "\"Parent\" shall mean parent or legal guardian.",
+   "context": [],
+   "section_heading": "* \u00a7 1500. Definitions. For the purposes of this article, the following\nterms shall have the following meanings:",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - federal_agencies
+  - doj
+  - private_litigants
+sector:
+  - government
+data_types:
+  - personally_identifiable_information
+status: in_force
+effective_from: '1975-09-27'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "September 27, 1975" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.privacy_act.p.552a_u_3_c
+source:
+  citation: 5 U.S.C. § 552a(u)(3)(C)
+  instrument_id: us.privacy_act
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc05@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.xml
+  raw_sha256: 1b646d09621fc527d59702dd5fcd1ef271aca65f6c6271fb9b4d3c2915d6b1e3
+  text_file: corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.txt
+  text_sha256: 763c0ae3764d6bc5d665947896ea22e53e375a47ef41c10a0667cad066e6ded7
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 5b72efee240d9577e6db012ba9e0cea0b2040b7912413a36b449aed37b3a488e
+verbatim_span: >-
+  shall review all recurring matching programs in which the agency has participated during the year,
+  either as a source agency or recipient agency, for continued justification for such disclosures;
+paragraph_path:
+  path:
+    - u
+    - '3'
+    - C
+  anchor: '552a'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 5-u-s-c-552a.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/privacy-act/raw/5-u-s-c-552a.xml
+subject:
+  domain: III.A.1
+  lifecycle:
+    - III
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: Each Data Integrity Board—
+    path:
+      - u
+      - '3'
+    citation: 5 U.S.C. § 552a(u)(3)
+operative_verb: must
+summary: >-
+  shall review all recurring matching programs in which the agency has participated during the year,
+  either as a source agency or recipient agency, for continued justification for such disclosures;
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

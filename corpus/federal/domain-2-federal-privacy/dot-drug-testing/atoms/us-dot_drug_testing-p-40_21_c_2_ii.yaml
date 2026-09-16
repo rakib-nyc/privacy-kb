@@ -1,0 +1,96 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - dot
+sector:
+  - employment
+  - transportation
+data_types:
+  - health
+  - personal_information
+status: in_force
+effective_from: '2000-12-19'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Dec. 19, 2000" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml — citation
+  apparatus, not operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.dot_drug_testing.p.40_21_c_2_ii
+source:
+  citation: 49 C.F.R. § 40.21(c)(2)(ii)
+  instrument_id: us.dot_drug_testing
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-49.xml?part=40
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+  raw_sha256: 37446484793816750245fc98a2b73a94e655895dcfb889d18ddc00c23339e0df
+  text_file: corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.txt
+  text_sha256: 1d4fa6885696bfab98499a9a5b506aa6b85460b41a65d945739fb236b747bdc5
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 49 part 40, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: 4a73d4b2bc57d18a92957696b999a96ad34493af272ff42268302ca123e0f6c3
+verbatim_span: >-
+  Your means of ensuring that no information about the confirmed positive, adulterated, or
+  substituted test result or the reason for the employee's temporary removal from performance of
+  safety-sensitive functions becomes available, directly or indirectly, to anyone in your
+  organization (or subsequently to another employer) other than the employee, the MRO and the DER;
+paragraph_path:
+  path:
+    - c
+    - '2'
+    - ii
+  anchor: '40.21'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 49-cfr-40.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+subject:
+  domain: IV.B.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'Your request for a waiver must include, as a minimum, the following elements:'
+    path:
+      - c
+    citation: 49 C.F.R. § 40.21(c)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Your proposed written company policy concerning stand-down, which must include the following
+      elements:
+    path:
+      - c
+      - '2'
+    citation: 49 C.F.R. § 40.21(c)(2)
+operative_verb: must
+operative_verb_source: operative_context
+summary: >-
+  Your means of ensuring that no information about the confirmed positive, adulterated, or
+  substituted test result or the reason for the employee's temporary removal from performance of
+  safety-sensitive functions becomes available, directly or indirectly, to anyone in your
+  organization (or subsequentl
+not_yet_analysed: >-
+  Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision: its own
+  words carry no modal, and the duty is supplied by the chapeau recorded in operative_context. Do
+  not quote it without that chapeau. No applicability predicate has been written, so the engine
+  never asserts that it binds anyone.
+open_questions: []

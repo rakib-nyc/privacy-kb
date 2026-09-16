@@ -1,0 +1,47 @@
+{
+  "success" : true,
+  "message" : "Law document for location 899-CCC in GBS law.",
+  "responseType" : "law-doc-info-detail",
+  "result" : {
+    "lawId" : "GBS",
+    "lawName" : "General Business",
+    "locationId" : "899-CCC",
+    "title" : "Definitions",
+    "docType" : "SECTION",
+    "publishedDates" : [ "2025-12-26", "2026-02-20" ],
+    "docLevelId" : "899-CCC",
+    "activeDate" : "2026-02-20",
+    "text" : "  * § 899-ccc. Definitions. As used in this article, the following terms\\nshall have the following meanings:\\n  1. \"Advertise\" means publishing or disseminating any written, oral,\\nelectronic or printed communication or any communication by means of\\nrecorded telephone messages or transmitted or broadcast on radio,\\ntelevision, the internet or similar communications media, including\\naudio recordings, film strips, motion pictures and videos, published,\\ndisseminated, circulated or placed before the public, directly or\\nindirectly, for the purpose of inducing a consumer to enter into a\\nconsumer litigation funding.\\n  2. \"Charges\" means the amount of money to be paid to the consumer\\nlitigation funding company by or on behalf of the consumer, above the\\nfunded amount provided by or on behalf of the company to a New York\\nconsumer pursuant to this article. Charges include all administrative,\\norigination, underwriting or other fees, including interest, no matter\\nhow denominated.\\n  3. \"Consumer litigation funding\" means a non-recourse transaction in\\nwhich a consumer litigation funding company purchases and a consumer\\nassigns to the company a contingent right to receive an amount of the\\npotential proceeds of a settlement, judgment, award, or verdict obtained\\nin the consumer's legal claim.\\n  4. \"Consumer litigation funding company\" or \"company\" means a person\\nor entity that enters into a consumer litigation funding contract of no\\nmore than five hundred thousand dollars with a consumer. This term shall\\nnot include:\\n  (a) an immediate family member of the consumer;\\n  (b) a bank, lender, financing entity, or other special purpose entity:\\n  (i) that provides financing to a consumer litigation funding company;\\nor\\n  (ii) to which a consumer litigation funding company grants a security\\ninterest or transfers any rights or interest in a consumer litigation\\nfunding; or\\n  (c) an attorney or accountant who provides services to a consumer.\\n  5. \"Consumer\" means a natural person who has a pending legal claim and\\nwho resides or is domiciled in New York.\\n  6. \"Funded amount\" means the amount of monies provided to, or on\\nbehalf of, the consumer in the consumer litigation funding. \"Funded\\namount\" excludes charges.\\n  7. \"Funding date\" means the date on which the funded amount is\\ntransferred to the consumer by the consumer litigation funding company\\neither by personal delivery or via wire, ACH or other electronic means\\nor mailed by insured, certified or registered United States mail.\\n  8. \"Immediate family member\" means a parent; sibling; child by blood,\\nadoption, or marriage; spouse; grandparent; or grandchild.\\n  9. \"Legal claim\" means a bona fide civil claim or cause of action.\\n  10. \"Resolution date\" means the date the funded amount, plus the\\nagreed upon charges, are delivered to the consumer litigation funding\\ncompany by the consumer, the consumer's attorney or otherwise.\\n  * NB Effective and Repealed June 17, 2026\\n",
+    "parentLocationIds" : [ "-CH20", "A39-H" ],
+    "parents" : [ {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "-CH20",
+      "title" : "General Business",
+      "docType" : "CHAPTER",
+      "publishedDates" : [ "2014-09-22", "2014-11-28", "2016-04-15", "2018-04-20", "2018-04-27", "2019-09-20", "2019-12-27", "2020-04-17", "2020-04-24", "2020-10-16", "2020-11-13", "2021-04-23", "2021-07-09", "2021-10-15", "2021-12-17", "2021-12-31", "2022-03-04", "2022-06-10", "2023-10-27", "2024-02-09", "2024-03-08", "2024-06-28", "2024-07-19", "2024-10-11", "2024-11-29", "2024-12-27", "2025-02-21", "2025-05-16", "2025-06-13", "2025-12-19", "2025-12-26", "2026-02-27", "2026-03-20", "2026-04-03", "2026-05-29" ],
+      "docLevelId" : "20",
+      "activeDate" : "2026-05-29"
+    }, {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "A39-H",
+      "title" : "Third Party Litigation Financing",
+      "docType" : "ARTICLE",
+      "publishedDates" : [ "2025-12-26", "2026-01-09", "2026-02-20" ],
+      "docLevelId" : "39-H",
+      "activeDate" : "2026-02-20"
+    } ],
+    "prevSibling" : null,
+    "nextSibling" : {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "899-DDD",
+      "title" : "Contract requirements; right of rescission",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2025-12-26", "2026-02-20" ],
+      "docLevelId" : "899-DDD",
+      "activeDate" : "2026-02-20"
+    }
+  }
+}

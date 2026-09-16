@@ -1,0 +1,82 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - fcc
+sector:
+  - telecom
+data_types:
+  - cpni
+status: in_force
+effective_from: '2017-09-21'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Sept. 21, 2017" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cpni.p.64_1200_b_2
+source:
+  citation: 47 C.F.R. § 64.1200(b)(2)
+  instrument_id: us.cpni
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-47.xml?part=64
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  raw_sha256: 2dc1441d3200e7e4473d1fec9f60c3c56458af4e97b4926975b1bda1dde41241
+  text_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.txt
+  text_sha256: f994f081b13b8a3d0ba7a6c20abb912a414ecfa40ebdf22351e05b12f28f4046
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API (title 47 part 64)
+    result: structured_source_used
+    note: null
+  segment_sha256: 11aacc7aa7f3713d22da25eeb0b1c781fa8cbdf80ff5b4dd29c93fce66606169
+verbatim_span: >-
+  During or after the message, state clearly the telephone number (other than that of the autodialer
+  or prerecorded message player that placed the call) of such business, other entity, or individual.
+  The telephone number provided may not be a 900 number or any other number for which charges exceed
+  local or long distance transmission charges. For telemarketing messages and messages made pursuant
+  to an exemption under paragraphs (a)(3)(ii) through (v) of this section to residential telephone
+  subscribers, such telephone number must permit any individual to make a do-not-call request during
+  regular business hours; and
+paragraph_path:
+  path:
+    - b
+    - '2'
+  anchor: '64.1200'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 47-cfr-64.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+subject:
+  domain: II.E.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'All artificial or prerecorded voice telephone messages shall:'
+    path:
+      - b
+    citation: 47 C.F.R. § 64.1200(b)
+operative_verb: must_not
+summary: >-
+  During or after the message, state clearly the telephone number (other than that of the autodialer
+  or prerecorded message player that placed the call) of such business, other entity, or individual.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

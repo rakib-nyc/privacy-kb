@@ -1,0 +1,21 @@
+node_modules/
+*.log
+.DS_Store
+spike/
+.uslm-cache/
+.ny-cache/
+__pycache__/
+.cache/
+
+# user profiles — facts about an entity, not evidence about the law
+profiles/
+
+# working notes, kept local
+CLAUDE.md
+PROMPTS.md
+BRIEF.md
+Markdowns/
+sources-inbox/
+specs/
+meta/red-team-0.1.md
+tests/red-team-replay.sh

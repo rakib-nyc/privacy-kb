@@ -1,0 +1,81 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - doj
+sector:
+  - government
+data_types:
+  - any
+status: in_force
+effective_from: '1994-09-13'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Sept. 13, 1994" appears in a <date> element of
+  corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.xml — citation apparatus, not
+  operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.dppa.p.2721_a_2
+source:
+  citation: 18 U.S.C. § 2721(a)(2)
+  instrument_id: us.dppa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc18@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.xml
+  raw_sha256: 6fdc322897cf479e3c6caaef69b90aedcef608b7f1b91769c502097670b17a21
+  text_file: corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.txt
+  text_sha256: 21041cee8cd7cc31df512db82226e25b537644bc9e56b74d990bb7bb4e562d92
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: beed0cedb0c49f538288885fadf666a5bb2f8ea16b01dbfdba24345dfad3f493
+verbatim_span: >-
+  highly restricted personal information, as defined in 18 U.S.C. 2725(4) , about any individual
+  obtained by the department in connection with a motor vehicle record, without the express consent
+  of the person to whom such information applies, except uses permitted in subsections (b)(1),
+  (b)(4), (b)(6), and (b)(9): Provided , That subsection (a)(2) shall not in any way affect the use
+  of organ donation information on an individual’s driver’s license or affect the administration of
+  organ donation initiatives in the States.
+paragraph_path:
+  path:
+    - a
+    - '2'
+  anchor: '2721'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 18-u-s-c-2721.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/dppa/raw/18-u-s-c-2721.xml
+subject:
+  domain: III.A.1
+  lifecycle:
+    - I
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      A State department of motor vehicles, and any officer, employee, or contractor thereof, shall
+      not knowingly disclose or otherwise make available to any person or entity:
+    path:
+      - a
+    citation: 18 U.S.C. § 2721(a)
+operative_verb: must_not
+summary: highly restricted personal information, as defined in 18 U.S.C.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

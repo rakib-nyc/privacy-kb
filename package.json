@@ -1,0 +1,89 @@
+{
+  "name": "privacy-kb",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local engine for US federal and New York privacy law: answers as of a date, computes what recall cannot, and produces artifacts you can verify, diff and re-run",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakib-nyc/privacy-kb.git"
+  },
+  "homepage": "https://rakib-nyc.github.io/privacy-kb/",
+  "bugs": {
+    "url": "https://github.com/rakib-nyc/privacy-kb/issues"
+  },
+  "author": "Muhammad Rakibul Islam <rakib.islam@rutgers.edu>",
+  "type": "module",
+  "scripts": {
+    "fetch": "node tools/fetch-source.mjs",
+    "validate": "node tools/validate.mjs",
+    "test-gates": "node tools/test-gates.mjs",
+    "recheck": "node tools/fetch-source.mjs --recheck",
+    "test": "node tools/test-gates.mjs && python3 tools/test-extractors.py && python3 tools/test-dual-parse.py && node tools/authority-tier.mjs --self-test && node tools/authority-tier.mjs --validate-corpus && python3 tools/scan-features.py --check && node tools/check-engine-schema.mjs && node tools/validate.mjs && node tools/ancestry-diff.mjs --check && node tools/update-coverage.mjs --check && node tools/fact-keys.mjs --check && node engine/test-engine.mjs && node mcp/test-mcp.mjs && node workflows/test-workflows.mjs && node tests/test-cli.mjs && node tests/test-time-axis.mjs && node tests/test-deliverable.mjs && node tests/test-exposure.mjs && node tests/test-requirements.mjs && node tests/test-crosswalk.mjs && node tests/test-receipt.mjs && node tests/test-brief.mjs && node tests/test-profiles.mjs && node tests/test-vocabulary.mjs && node tests/test-invariant-i1.mjs && node tests/test-null-totality.mjs && node tools/state-of-build.mjs --check && node tools/build-corpus-page.mjs --check && node tools/missing-vintages.mjs --check",
+    "date-basis": "node tools/date-basis.mjs",
+    "site": "node tools/build-corpus-page.mjs",
+    "vintages": "node tools/ecfr-vintages.mjs",
+    "missing-vintages": "node tools/missing-vintages.mjs",
+    "time-axis": "node tests/test-time-axis.mjs",
+    "deliverable": "node tests/test-deliverable.mjs",
+    "memo": "node bin/privacy-kb.mjs memo",
+    "breach": "node bin/privacy-kb.mjs breach",
+    "vintages:offline": "node tools/ecfr-vintages.mjs --offline",
+    "coverage": "node tools/update-coverage.mjs",
+    "ancestry": "node tools/ancestry-diff.mjs",
+    "visual": "python3 tools/visual-sample.py",
+    "evals": "node evals/runner.mjs",
+    "evals:baseline": "node evals/runner.mjs --baseline",
+    "features": "python3 tools/scan-features.py",
+    "dual-parse": "python3 tools/test-dual-parse.py",
+    "tier": "node tools/authority-tier.mjs --self-test",
+    "tier:corpus": "node tools/authority-tier.mjs --validate-corpus",
+    "engine": "node engine/test-engine.mjs",
+    "mcp": "node mcp/server.mjs",
+    "mcp:test": "node mcp/test-mcp.mjs",
+    "workflows": "node workflows/test-workflows.mjs",
+    "correspondence": "node tools/check-engine-schema.mjs",
+    "test-extractors": "python3 tools/test-extractors.py",
+    "fact-keys": "node tools/fact-keys.mjs",
+    "doctor": "node bin/privacy-kb.mjs doctor",
+    "setup": "node bin/privacy-kb.mjs setup",
+    "ask": "node bin/privacy-kb.mjs ask",
+    "test-cli": "node tests/test-cli.mjs",
+    "null-totality": "node tests/test-null-totality.mjs",
+    "exposure": "node bin/privacy-kb.mjs exposure",
+    "requirements": "node bin/privacy-kb.mjs requirements",
+    "crosswalk": "node bin/privacy-kb.mjs crosswalk",
+    "receipt": "node bin/privacy-kb.mjs receipt",
+    "conform": "node bin/privacy-kb.mjs conform",
+    "between": "node bin/privacy-kb.mjs between",
+    "may-i": "node bin/privacy-kb.mjs may-i",
+    "brief": "node bin/privacy-kb.mjs brief",
+    "profile": "node bin/privacy-kb.mjs profile",
+    "translate": "node bin/privacy-kb.mjs translate"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "js-yaml": "^5.3.0"
+  },
+  "bin": {
+    "privacy-kb": "./bin/privacy-kb.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "bin/",
+    "engine/",
+    "mcp/",
+    "workflows/",
+    "corpus/",
+    "meta/",
+    "schemas/",
+    "evals/",
+    "tools/",
+    "LICENSE",
+    "NOTICE",
+    "README.md"
+  ]
+}

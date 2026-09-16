@@ -1,0 +1,78 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - federal_agencies
+sector:
+  - government
+data_types:
+  - any
+status: in_force
+effective_from: '1967-07-04'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "July 4, 1967" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.foia.p.552_a_4_f_iii
+source:
+  citation: 5 U.S.C. § 552(a)(4)(F)(iii)
+  instrument_id: us.foia
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc05@119-1.zip
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.xml
+  raw_sha256: d4c06f60a9741b07b3eccca530f8b5e361ca4a4f4cd2cd9a82b2d9b65767e093
+  text_file: corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.txt
+  text_sha256: ad4133ff673d3a14564fc33c0ab6d32209965d12bac8c15147a923b6f488562e
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: a721435f38179c4e443ac5a057e9bebe7e8a97fa02bd2fb8daf4f4022fc55062
+verbatim_span: >-
+  The Special Counsel shall annually submit a report to Congress on the actions taken by the Special
+  Counsel under clause (i).
+paragraph_path:
+  path:
+    - a
+    - '4'
+    - F
+    - iii
+  anchor: '552'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 5-u-s-c-552.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/foia/raw/5-u-s-c-552.xml
+subject:
+  domain: III.A.1
+  lifecycle:
+    - VI
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: 'Each agency shall make available to the public information as follows:'
+    path:
+      - a
+    citation: 5 U.S.C. § 552(a)
+operative_verb: must
+summary: >-
+  The Special Counsel shall annually submit a report to Congress on the actions taken by the Special
+  Counsel under clause (i).
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

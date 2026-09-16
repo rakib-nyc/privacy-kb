@@ -1,0 +1,483 @@
+# INSTRUMENT COVERAGE — what each instrument must hold before a query touching it
+# can be reported as substantively answered
+# ==============================================================================
+# meta/jurisdiction-coverage.yaml closed this hole at jurisdiction granularity. It
+# does not close it at INSTRUMENT granularity, and that gap is worse, because it is
+# architecturally invisible rather than a defect a gate could catch: every atom is
+# correct, every gate passes, and the engine behaves exactly as designed.
+#
+# The case is FCRA. The corpus holds 15 U.S.C. § 1681t — preemption — and nothing
+# else. A question about a consumer reporting agency therefore returns a confident
+# preemption answer over a substantive void, and NOTHING IN THE OUTPUT SIGNALS THE
+# VOID. New York's incompleteness is declared and self-reporting; FCRA's was merely
+# true. The corpus did not know that "has preemption atoms" and "can answer
+# questions about this instrument" are different claims.
+#
+# Declared per DUTY CATEGORY rather than as a per-instrument boolean, because
+# "FCRA is incomplete" tells a reader to look elsewhere while "FCRA: preemption
+# present, permissible purposes absent, CRA accuracy absent, dispute duties
+# absent, furnisher duties absent" tells them what to look for.
+#
+# `citation_prefix` is matched against an obligation atom's source.citation, so
+# presence is computed from the corpus rather than hand-asserted. See
+# meta/decisions.yaml DEC-007 for what the engine does with a partial instrument.
+version: 1
+instruments:
+
+  us.fcra.preemption:
+    title: Fair Credit Reporting Act
+    note: THE MOTIVATING CASE. Preemption without duties is the most dangerous partial
+      state in the corpus, because a preemption answer is confident, correct, and
+      silent about everything it cannot reach.
+    categories:
+    - id: preemption
+      citation_prefix: ['15 U.S.C. § 1681t']
+      supplies: What state law FCRA displaces, and where.
+    - id: permissible_purposes
+      citation_prefix: ['15 U.S.C. § 1681b']
+      supplies: When a consumer report may be furnished or obtained at all — the first
+        question in almost every real FCRA matter.
+    - id: cra_accuracy_and_procedures
+      citation_prefix: ['15 U.S.C. § 1681e']
+      supplies: Reasonable procedures to assure maximum possible accuracy; reseller duties.
+    - id: consumer_disclosures
+      citation_prefix: ['15 U.S.C. § 1681g']
+      supplies: What a CRA must disclose to the consumer on request.
+    - id: dispute_and_reinvestigation
+      citation_prefix: ['15 U.S.C. § 1681i']
+      supplies: The 30-day reinvestigation duty — the operational core of FCRA compliance.
+    - id: adverse_action
+      citation_prefix: ['15 U.S.C. § 1681m']
+      supplies: Notice duties on users of consumer reports who take adverse action.
+    - id: furnisher_duties
+      citation_prefix: ['15 U.S.C. § 1681s-2']
+      supplies: Accuracy and investigation duties on entities that report TO a CRA.
+
+  us.usc.15.45:
+    title: FTC Act § 5
+    categories:
+    - id: unfair_or_deceptive
+      citation_prefix: ['15 U.S.C. § 45(a)']
+      supplies: The prohibition itself, and the public-commitment deception pathway.
+    - id: unfairness_test
+      citation_prefix: ['15 U.S.C. § 45(n)']
+      supplies: The three-part statutory limit on unfairness.
+
+  us.cfr.16.313:
+    title: GLBA Privacy Rule (16 C.F.R. part 313)
+    note: Post-Dodd-Frank this Part reaches essentially only motor vehicle dealers.
+      Regulation P (12 C.F.R. part 1016) governs everyone else and is NOT in the corpus —
+      tracked as a separate absent instrument rather than as a hole in this one.
+    categories:
+    - id: initial_notice
+      citation_prefix: ['16 C.F.R. § 313.4']
+      supplies: Initial privacy notice to customers and to consumers.
+    - id: annual_notice
+      citation_prefix: ['16 C.F.R. § 313.5']
+      supplies: The recurring notice duty and its exceptions.
+    - id: opt_out_and_disclosure_limits
+      citation_prefix: ['16 C.F.R. § 313.10']
+      supplies: The substantive limit on disclosure to nonaffiliated third parties.
+    - id: reuse_limits
+      citation_prefix: ['16 C.F.R. § 313.11']
+      supplies: Restrictions travelling with information received under an exception.
+    - id: opt_out_notice_content
+      citation_prefix: ['16 C.F.R. § 313.7']
+      supplies: What an opt out notice must say and how it must be delivered.
+
+  us.cfr.45.164:
+    title: HIPAA Privacy Rule (45 C.F.R. part 164 subpart E)
+    categories:
+    - id: use_and_disclosure_general
+      citation_prefix: ['45 C.F.R. § 164.502']
+      supplies: The default prohibition and minimum necessary.
+    - id: permitted_uses_and_disclosures
+      citation_prefix: ['45 C.F.R. § 164.506', '45 C.F.R. § 164.512']
+      supplies: Treatment, payment and operations, and the public-interest exceptions.
+    - id: authorizations
+      citation_prefix: ['45 C.F.R. § 164.508']
+      supplies: When a written authorization is required and what it must contain.
+    - id: individual_rights
+      citation_prefix: ['45 C.F.R. § 164.524', '45 C.F.R. § 164.526', '45 C.F.R. § 164.528']
+      supplies: Access, amendment and accounting of disclosures.
+    - id: notice_of_privacy_practices
+      citation_prefix: ['45 C.F.R. § 164.520']
+      supplies: The NPP content and distribution duties.
+    - id: business_associate_contracts
+      citation_prefix: ['45 C.F.R. § 164.504']
+      supplies: Required business-associate contract terms and hybrid-entity rules.
+
+  us.hipaa.breach_notification_rule:
+    title: HIPAA Breach Notification Rule
+    categories:
+    - id: individual_notice
+      citation_prefix: ['45 C.F.R. § 164.404']
+      supplies: Notice to affected individuals and its timing.
+    - id: media_notice
+      citation_prefix: ['45 C.F.R. § 164.406']
+      supplies: Media notice above 500 residents of a State or jurisdiction.
+    - id: secretary_notice
+      citation_prefix: ['45 C.F.R. § 164.408']
+      supplies: Notice to the Secretary — the trigger for N.Y. GBL § 899-aa(9).
+    - id: risk_assessment
+      citation_prefix: ['45 C.F.R. § 164.402']
+      supplies: The four-factor assessment deciding whether a breach occurred at all.
+
+  us.glba.safeguards_rule:
+    title: GLBA Safeguards Rule (16 C.F.R. part 314)
+    categories:
+    - id: program_elements
+      citation_prefix: ['16 C.F.R. § 314.4']
+      supplies: The required elements of the information security program.
+    - id: scope_and_definitions
+      citation_prefix: ['16 C.F.R. § 314.2', '16 C.F.R. § 314.1']
+      supplies: Which financial institutions are covered.
+    - id: exemptions
+      citation_prefix: ['16 C.F.R. § 314.6', '16 C.F.R. § 314.1']
+      supplies: Scope, and the under-5,000-consumer partial exemption — which removes four named
+        requirements rather than the rule.
+
+  us.coppa.rule:
+    title: COPPA Rule (16 C.F.R. part 312)
+    categories:
+    - id: notice_and_consent
+      citation_prefix: ['16 C.F.R. § 312.3', '16 C.F.R. § 312.4', '16 C.F.R. § 312.5']
+      supplies: Direct notice, online notice and verifiable parental consent.
+    - id: parental_rights
+      citation_prefix: ['16 C.F.R. § 312.6']
+      supplies: Parental review and deletion rights.
+    - id: retention_and_security
+      citation_prefix: ['16 C.F.R. § 312.8', '16 C.F.R. § 312.10']
+      supplies: Confidentiality, security and retention limits.
+    - id: safe_harbor
+      citation_prefix: ['16 C.F.R. § 312.11']
+      supplies: Approved self-regulatory programs.
+
+  us.facta.disposal_rule:
+    title: FACTA Disposal Rule (16 C.F.R. part 682)
+    categories:
+    - id: disposal_standard
+      citation_prefix: ['16 C.F.R. § 682.3', '16 C.F.R. § 682.2']
+      supplies: Reasonable measures to protect against unauthorized access on disposal.
+
+  us.vppa:
+    title: Video Privacy Protection Act
+    categories:
+    - id: disclosure_prohibition
+      citation_prefix: ['18 U.S.C. § 2710(b)']
+      supplies: The prohibition on knowing disclosure of personally identifiable information.
+    - id: consent_and_exceptions
+      citation_prefix: ['18 U.S.C. § 2710(b)(2)']
+      supplies: The informed-consent route and the enumerated exceptions.
+    - id: destruction_and_remedies
+      citation_prefix: ['18 U.S.C. § 2710(e)', '18 U.S.C. § 2710(c)']
+      supplies: Destruction of stale records and the private right of action.
+
+  ny.gbl.349:
+    title: N.Y. Gen. Bus. Law § 349
+    categories:
+    - id: udap_prohibition
+      citation_prefix: ['N.Y. Gen. Bus. Law § 349(a)']
+      supplies: The unfair, deceptive and abusive prongs.
+    - id: private_right
+      citation_prefix: ['N.Y. Gen. Bus. Law § 349(h)']
+      supplies: The private action and its deception-only limit.
+
+  ny.gbl.899_aa:
+    title: N.Y. Gen. Bus. Law § 899-aa (SHIELD breach notification)
+    categories:
+    - id: resident_notice
+      citation_prefix: ['N.Y. Gen. Bus. Law § 899-aa(2)']
+      supplies: Notice to affected New York residents.
+    - id: owner_notice
+      citation_prefix: ['N.Y. Gen. Bus. Law § 899-aa(3)']
+      supplies: The processor-side duty to notify the owner or licensee.
+    - id: regulator_notice
+      citation_prefix: ['N.Y. Gen. Bus. Law § 899-aa(8)', 'N.Y. Gen. Bus. Law § 899-aa(9)']
+      supplies: Notice to the AG, department of state, state police, DFS and CRAs.
+    - id: notice_content
+      citation_prefix: ['N.Y. Gen. Bus. Law § 899-aa(5)', 'N.Y. Gen. Bus. Law § 899-aa(7)']
+      supplies: Permitted methods of notice and required content.
+
+  ny.gbl.899_bb:
+    title: N.Y. Gen. Bus. Law § 899-bb (SHIELD reasonable safeguards)
+    categories:
+    - id: reasonable_safeguards
+      citation_prefix: ['N.Y. Gen. Bus. Law § 899-bb(2)']
+      supplies: The standing duty to maintain administrative, technical and physical safeguards,
+        with the compliant-regulated-entity and small-business routes.
+    - id: definitions_and_scope
+      citation_prefix: ['N.Y. Gen. Bus. Law § 899-bb(1)']
+      supplies: Who is a compliant regulated entity and what counts as a small business — the
+        facts the safeguards exemptions turn on.
+
+  ny.gbl.350:
+    title: N.Y. Gen. Bus. Law § 350 (false advertising)
+    categories:
+    - id: false_advertising_prohibition
+      citation_prefix: ['N.Y. Gen. Bus. Law § 350']
+      supplies: The prohibition itself.
+
+  us.cpni:
+    title: CPNI — 47 U.S.C. § 222
+    categories:
+    - {id: use_and_disclosure, citation_prefix: ['47 U.S.C. § 222(c)'], supplies: The permission-based limit on carrier use of CPNI.}
+    - {id: duty_of_confidentiality, citation_prefix: ['47 U.S.C. § 222(a)'], supplies: The general carrier duty.}
+    - {id: fcc_rules, citation_prefix: ['47 C.F.R. § 64.20'], supplies: Notice, approval mechanics, safeguards and breach reporting.}
+
+  us.cable_act:
+    title: Cable Communications Policy Act — 47 U.S.C. § 551
+    categories:
+    - {id: disclosure_prohibition, citation_prefix: ['47 U.S.C. § 551(c)'], supplies: The opt-in consent default.}
+    - {id: notice, citation_prefix: ['47 U.S.C. § 551(a)'], supplies: The annual privacy notice to subscribers.}
+    - {id: destruction_and_remedies, citation_prefix: ['47 U.S.C. § 551(e)', '47 U.S.C. § 551(f)'], supplies: Destruction duty and the private right of action.}
+
+  us.dppa:
+    title: Driver's Privacy Protection Act — 18 U.S.C. § 2721 et seq.
+    categories:
+    - {id: disclosure_prohibition, citation_prefix: ['18 U.S.C. § 2721(a)'], supplies: The prohibition on the DMV.}
+    - {id: permitted_purposes, citation_prefix: ['18 U.S.C. § 2721(b)'], supplies: The closed list of permitted uses.}
+    - {id: downstream_liability, citation_prefix: ['18 U.S.C. § 2722', '18 U.S.C. § 2724'], supplies: Liability of any person obtaining for an impermissible purpose, and the private action.}
+
+  us.ecpa_sca:
+    title: Stored Communications Act — 18 U.S.C. §§ 2701–2712
+    categories:
+    - {id: provider_divulgence, citation_prefix: ['18 U.S.C. § 2702'], supplies: What a provider may not disclose voluntarily.}
+    - {id: compelled_disclosure, citation_prefix: ['18 U.S.C. § 2703'], supplies: What the government may compel, and by what process.}
+    - {id: unauthorized_access, citation_prefix: ['18 U.S.C. § 2701'], supplies: The access offence.}
+
+  us.ecpa_wiretap:
+    title: Wiretap Act — 18 U.S.C. §§ 2510–2522
+    categories:
+    - {id: interception_prohibition, citation_prefix: ['18 U.S.C. § 2511(1)'], supplies: The core prohibition.}
+    - {id: consent_and_business_use, citation_prefix: ['18 U.S.C. § 2511(2)'], supplies: One-party consent and the provider/business-extension exceptions — the workplace-monitoring hinge.}
+    - {id: definitions, citation_prefix: ['18 U.S.C. § 2510'], supplies: Interception, oral/wire/electronic communication, electronic storage.}
+
+  us.gina:
+    title: GINA Title II — 42 U.S.C. § 2000ff et seq.
+    categories:
+    - {id: acquisition_prohibition, citation_prefix: ['42 U.S.C. § 2000ff-1(b)'], supplies: The prohibition on requesting or purchasing genetic information.}
+    - {id: discrimination_prohibition, citation_prefix: ['42 U.S.C. § 2000ff-1(a)'], supplies: The use prohibition.}
+    - {id: confidentiality, citation_prefix: ['42 U.S.C. § 2000ff-5'], supplies: The separate-file confidentiality duty.}
+
+  us.ada:
+    title: ADA — 42 U.S.C. § 12112(d)
+    categories:
+    - {id: employee_inquiries, citation_prefix: ['42 U.S.C. § 12112(d)(4)'], supplies: Limits on medical examinations and inquiries of employees.}
+    - {id: applicant_inquiries, citation_prefix: ['42 U.S.C. § 12112(d)(2)', '42 U.S.C. § 12112(d)(3)'], supplies: The pre-offer and post-offer stages, which have different standards.}
+    - {id: confidentiality, citation_prefix: ['42 U.S.C. § 12112(d)(3)(B)'], supplies: Separate-file confidentiality — the provision that governs what HIPAA's employment-records exclusion leaves out.}
+
+  us.rfpa:
+    title: Right to Financial Privacy Act — 12 U.S.C. § 3401 et seq.
+    categories:
+    - {id: access_prohibition, citation_prefix: ['12 U.S.C. § 3402'], supplies: The bar on government access absent a listed procedure.}
+    - {id: procedures, citation_prefix: ['12 U.S.C. § 3405', '12 U.S.C. § 3406', '12 U.S.C. § 3407'], supplies: Subpoena, warrant and formal-request routes.}
+    - {id: notice_and_challenge, citation_prefix: ['12 U.S.C. § 3404', '12 U.S.C. § 3410'], supplies: Customer notice and the challenge procedure.}
+
+  us.tcpa:
+    title: TCPA — 47 U.S.C. § 227
+    categories:
+    - {id: autodialer_and_prerecorded, citation_prefix: ['47 U.S.C. § 227(b)'], supplies: The core prohibition and the private action.}
+    - {id: do_not_call, citation_prefix: ['47 U.S.C. § 227(c)'], supplies: The national and internal do-not-call regimes.}
+    - {id: fcc_rules, citation_prefix: ['47 C.F.R. § 64.1200'], supplies: Prior express WRITTEN consent for marketing, and the exemptions.}
+    - {id: fax, citation_prefix: ['47 U.S.C. § 227(b)(1)(C)'], supplies: Junk fax and the established-business-relationship exception.}
+
+  us.ferpa:
+    title: FERPA — 20 U.S.C. § 1232g
+    categories:
+    - {id: disclosure_prohibition, citation_prefix: ['20 U.S.C. § 1232g(b)'], supplies: The funding condition on releasing education records.}
+    - {id: access_and_amendment, citation_prefix: ['20 U.S.C. § 1232g(a)'], supplies: Parent and eligible-student rights of inspection and challenge.}
+    - {id: implementing_rules, citation_prefix: ['34 C.F.R. § 99'], supplies: Directory information, the school-official exception, and vendor conditions.}
+
+  us.can_spam:
+    title: CAN-SPAM — 15 U.S.C. § 7701 et seq.
+    categories:
+    - {id: header_and_subject, citation_prefix: ['15 U.S.C. § 7704(a)(1)', '15 U.S.C. § 7704(a)(2)'], supplies: The falsity prohibitions.}
+    - {id: opt_out, citation_prefix: ['15 U.S.C. § 7704(a)(3)', '15 U.S.C. § 7704(a)(4)'], supplies: The opt-out mechanism and the duty to honour it.}
+    - {id: preemption, citation_prefix: ['15 U.S.C. § 7707'], supplies: What state email law survives.}
+    - {id: ftc_rule, citation_prefix: ['16 C.F.R. § 316'], supplies: Definitions and the forward-to-a-friend and sender rules.}
+
+  us.hipaa.security_rule:
+    title: HIPAA Security Rule — 45 C.F.R. part 164 subpart C
+    categories:
+    - {id: general_rules, citation_prefix: ['45 C.F.R. § 164.306'], supplies: The flexibility standard and the required-versus-addressable distinction.}
+    - {id: administrative_safeguards, citation_prefix: ['45 C.F.R. § 164.308'], supplies: Risk analysis, workforce security, incident procedures.}
+    - {id: physical_and_technical, citation_prefix: ['45 C.F.R. § 164.310', '45 C.F.R. § 164.312'], supplies: Facility access, device controls, access control, encryption, audit controls.}
+
+  us.tsr:
+    title: Telemarketing Sales Rule — 16 C.F.R. part 310
+    categories:
+    - {id: do_not_call, citation_prefix: ['16 C.F.R. § 310.4'], supplies: The National Do Not Call Registry prohibition and its exceptions.}
+    - {id: disclosures, citation_prefix: ['16 C.F.R. § 310.3'], supplies: Required oral disclosures and the deceptive-practice prohibitions.}
+
+  us.red_flags:
+    title: FACTA Red Flags Rule — 16 C.F.R. part 681
+    categories:
+    - {id: program_requirement, citation_prefix: ['16 C.F.R. § 681.1'], supplies: The identity-theft prevention programme duty and who owes it.}
+
+  us.health_breach:
+    title: FTC Health Breach Notification Rule — 16 C.F.R. part 318
+    categories:
+    - {id: notification_duty, citation_prefix: ['16 C.F.R. § 318.3'], supplies: Who must notify, whom, and when.}
+    - {id: scope, citation_prefix: ['16 C.F.R. § 318.1', '16 C.F.R. § 318.2'], supplies: Vendors of personal health records — the non-HIPAA health-app gap.}
+
+  ny.penal.250.05:
+    title: N.Y. Penal Law § 250.05 (eavesdropping)
+    categories:
+    - {id: eavesdropping_offence, citation_prefix: ['N.Y. Penal Law § 250.05'], supplies: The offence itself.}
+    - {id: definitions_and_consent, citation_prefix: ['N.Y. Penal Law § 250.00'], supplies: 'Wiretapping (§ 250.00(1)), mechanical overhearing of a conversation (§ 250.00(2)), and the one-party consent limit that makes NY differ from California. The two are SEPARATE provisions covering different media — telephonic or telegraphic communication versus in-person conversation — and were welded into one leaf until the walker fix of 2026-08-20.'}
+
+  ny.civil_rights.50_51:
+    title: N.Y. Civil Rights Law §§ 50–51 (right of privacy / publicity)
+    categories:
+    - {id: civil_action, citation_prefix: ['N.Y. Civil Rights Law § 51'], supplies: Injunction, damages and exemplary damages for unconsented commercial use of name, likeness or voice.}
+    - {id: prohibition, citation_prefix: ['N.Y. Civil Rights Law § 50'], supplies: The misdemeanour prohibition the civil action rests on.}
+
+  ny.education.2-d:
+    title: N.Y. Education Law § 2-d (student data privacy)
+    categories:
+    - {id: parents_bill_of_rights, citation_prefix: ['N.Y. Education Law § 2-d(3)'], supplies: Publication and contract-inclusion duty that reaches third-party contractors.}
+    - {id: breach_and_contractors, citation_prefix: ['N.Y. Education Law § 2-d(6)'], supplies: Third-party contractor breach duties and civil penalties.}
+    - {id: standards, citation_prefix: ['N.Y. Education Law § 2-d(5)', '8 N.Y.C.R.R. Part 121'], supplies: The data security and privacy standards and their implementing regulations.}
+
+  us.privacy_act:
+    title: Privacy Act of 1974 — 5 U.S.C. § 552a
+    categories:
+    - {id: disclosure_prohibition, citation_prefix: ['5 U.S.C. § 552a(b)'], supplies: The no-disclosure-without-consent rule and its twelve exceptions, including routine use.}
+    - {id: individual_rights, citation_prefix: ['5 U.S.C. § 552a(d)'], supplies: Access and amendment, and the refusal-and-review procedure.}
+    - {id: agency_requirements, citation_prefix: ['5 U.S.C. § 552a(e)'], supplies: System-of-records notices, accuracy, and the collection limits.}
+
+  us.hitech:
+    title: HITECH Act — 42 U.S.C. § 17935 et seq.
+    categories:
+    - {id: restrictions_and_ehr, citation_prefix: ['42 U.S.C. § 17935'], supplies: Restriction requests, minimum necessary as limited data set, and the EHR accounting duty.}
+
+  us.part2_sud:
+    title: Confidentiality of SUD Patient Records — 42 C.F.R. part 2
+    categories:
+    - {id: disclosure_prohibition, citation_prefix: ['42 C.F.R. § 2.13', '42 C.F.R. § 2.12'], supplies: The stricter-than-HIPAA prohibition on disclosing SUD treatment records.}
+    - {id: consent, citation_prefix: ['42 C.F.R. § 2.31'], supplies: Written consent requirements, which differ from a HIPAA authorization.}
+
+  us.cures_blocking:
+    title: 21st Century Cures Act information blocking — 45 C.F.R. part 171
+    categories:
+    - {id: prohibition, citation_prefix: ['45 C.F.R. § 171.103'], supplies: The information-blocking prohibition — a duty to SHARE, in tension with privacy duties.}
+    - {id: exceptions, citation_prefix: ['45 C.F.R. § 171.202', '45 C.F.R. § 171.201'], supplies: The privacy and preventing-harm exceptions that reconcile the tension.}
+
+  us.common_rule:
+    title: Common Rule — 45 C.F.R. part 46
+    categories:
+    - {id: informed_consent, citation_prefix: ['45 C.F.R. § 46.116'], supplies: General requirements for informed consent in human-subjects research.}
+    - {id: irb_review, citation_prefix: ['45 C.F.R. § 46.109', '45 C.F.R. § 46.111'], supplies: IRB review and approval criteria, including privacy and confidentiality provisions.}
+
+  us.bsa_aml:
+    title: Bank Secrecy Act — 31 U.S.C. § 5318
+    categories:
+    - {id: reporting_and_secrecy, citation_prefix: ['31 U.S.C. § 5318(g)'], supplies: Suspicious activity reporting and the prohibition on notifying the customer — a privacy CONSTRAINT CONFLICT rather than a privacy duty.}
+
+  us.cfpb_udaap:
+    title: CFPB UDAAP — 12 U.S.C. § 5531
+    categories:
+    - {id: abusive_standard, citation_prefix: ['12 U.S.C. § 5531(d)'], supplies: The ABUSIVE prong — a third standard beyond unfair and deceptive.}
+    - {id: unfair_standard, citation_prefix: ['12 U.S.C. § 5531(c)'], supplies: The unfairness test, which differs from FTC Act § 45(n).}
+
+  us.open_banking:
+    title: Consumer financial data rights — 12 U.S.C. § 5533
+    categories:
+    - {id: data_access_right, citation_prefix: ['12 U.S.C. § 5533'], supplies: The consumer right to covered financial data, and the rulemaking behind it.}
+
+  us.ppra:
+    title: Protection of Pupil Rights Amendment — 20 U.S.C. § 1232h
+    categories:
+    - {id: consent_and_notice, citation_prefix: ['20 U.S.C. § 1232h(b)', '20 U.S.C. § 1232h(c)'], supplies: Prior written consent for protected-information surveys, and the notice and opt-out rights.}
+
+  us.doj_bulk_data:
+    title: DOJ Bulk Sensitive Personal Data Rule — 28 C.F.R. part 202
+    categories:
+    - {id: prohibited_transactions, citation_prefix: ['28 C.F.R. § 202.301', '28 C.F.R. § 202.302'], supplies: Prohibited data-brokerage and covered data transactions with countries of concern.}
+    - {id: scope, citation_prefix: ['28 C.F.R. § 202.101', '28 C.F.R. § 202.201'], supplies: What counts as sensitive personal data and who is a covered person.}
+
+  us.title_vii:
+    title: Title VII — 42 U.S.C. § 2000e-2
+    categories:
+    - {id: discrimination_prohibition, citation_prefix: ['42 U.S.C. § 2000e-2(a)'], supplies: The unlawful employment practice — the substrate the EEOC's AI-in-hiring guidance sits on.}
+
+  us.nlra:
+    title: NLRA § 7 — 29 U.S.C. § 157
+    categories:
+    - {id: concerted_activity, citation_prefix: ['29 U.S.C. § 157'], supplies: The protected-activity right that constrains monitoring and social-media policies.}
+
+  us.eppa:
+    title: Employee Polygraph Protection Act — 29 U.S.C. § 2002
+    categories:
+    - {id: polygraph_prohibition, citation_prefix: ['29 U.S.C. § 2002'], supplies: The prohibition on requiring, requesting or using lie detector tests.}
+
+  us.sox_whistleblower:
+    title: SOX whistleblower — 18 U.S.C. § 1514A
+    categories:
+    - {id: retaliation_prohibition, citation_prefix: ['18 U.S.C. § 1514A(a)'], supplies: Protection for reporting employees — the confidentiality constraint on investigations.}
+
+  us.calea:
+    title: CALEA — 47 U.S.C. § 1002
+    categories:
+    - {id: assistance_capability, citation_prefix: ['47 U.S.C. § 1002(a)'], supplies: The carrier duty to build interception capability — surveillance capability as a design mandate.}
+
+  us.cloud_act:
+    title: CLOUD Act — 18 U.S.C. § 2713
+    categories:
+    - {id: extraterritorial_reach, citation_prefix: ['18 U.S.C. § 2713'], supplies: The duty to produce data regardless of where it is stored — the conflict-of-laws provision.}
+
+  us.fisa_702:
+    title: FISA § 702 — 50 U.S.C. § 1881a
+    categories:
+    - {id: targeting_authority, citation_prefix: ['50 U.S.C. § 1881a(a)', '50 U.S.C. § 1881a(b)'], supplies: The authorisation and its limits — the provision that drives EU adequacy analysis.}
+
+  us.foia:
+    title: FOIA — 5 U.S.C. § 552
+    categories:
+    - {id: privacy_exemptions, citation_prefix: ['5 U.S.C. § 552(b)'], supplies: Exemptions 6 and 7(C), the privacy limits on disclosure.}
+
+  us.dot_drug_testing:
+    title: DOT drug and alcohol testing — 49 C.F.R. part 40
+    categories:
+    - {id: confidentiality, citation_prefix: ['49 C.F.R. § 40.321', '49 C.F.R. § 40.323'], supplies: The release restrictions on test results.}
+
+  ny.gbl.899-ee:
+    title: N.Y. Child Data Protection Act — GBL §§ 899-ee et seq.
+    categories:
+    - {id: processing_limits, citation_prefix: ['N.Y. Gen. Bus. Law § 899-ff(1)', 'N.Y. Gen. Bus. Law § 899-ff(2)'], supplies: The prohibition-first default and the strictly-necessary permissible purposes.}
+    - {id: sale_prohibition, citation_prefix: ['N.Y. Gen. Bus. Law § 899-ff(5)'], supplies: The flat ban on purchase or sale, which has no consent route out.}
+    - {id: covered_user_response, citation_prefix: ['N.Y. Gen. Bus. Law § 899-ff(6)'], supplies: The thirty-day duties once an operator determines OR IS INFORMED a user is a minor.}
+    - {id: definitions, citation_prefix: ['N.Y. Gen. Bus. Law § 899-ee'], supplies: Covered user and the actual-knowledge-or-signal trigger.}
+
+  ny.civil_rights.52-c:
+    title: N.Y. Civil Rights Law § 52-c (employee electronic monitoring notice)
+    categories:
+    - {id: monitoring_notice, citation_prefix: ['N.Y. Civil Rights Law § 52-c(2)'], supplies: Prior written notice on hiring and conspicuous posting.}
+    - {id: enforcement, citation_prefix: ['N.Y. Civil Rights Law § 52-c(3)'], supplies: Attorney General enforcement and the escalating penalty schedule.}
+
+  nyc.local_law_144:
+    title: NYC Local Law 144 — automated employment decision tools
+    categories:
+    - {id: bias_audit, citation_prefix: ['N.Y.C. Admin. Code § 20-871(a)'], supplies: The audit precondition on use.}
+    - {id: notice, citation_prefix: ['N.Y.C. Admin. Code § 20-871(b)'], supplies: Ten-business-day advance notice to candidates residing in the city.}
+    - {id: enforcement, citation_prefix: ['N.Y.C. Admin. Code § 20-872'], supplies: Per-day and per-notice violation structure.}
+    - {id: implementing_rules, citation_prefix: ['6 RCNY § 5-301'], supplies: 'HOW a bias audit is computed, and impact-ratio methodology. CITATION CORRECTED 2026-08-20: this pointed at § 5-300, which is the DEFINITIONS section — the same defect recorded for § 899-ee, a citation that resolves without supplying the duty claimed for it. Methodology is § 5-301. The SOURCE is now held (owner-supplied DCWP Notice of Adoption, 40 leaves across §§ 5-301 to 5-304); ATOMS ARE NOT YET WRITTEN, so this category still reports absent and should.'}
+
+  ny.safe_for_kids:
+    title: SAFE for Kids Act — GBL Article 44-D, §§ 1500–1508
+    note: >-
+      NOT YET LAW. Every atom is enacted_pending with effective_from 2027-01-25, and § 1508(1)
+      defers the Attorney General's remedy a further 180 days beyond that. The declaration below
+      describes what the instrument WILL supply; nothing in it may be reported as a present duty.
+      The article is complete in the corpus at section granularity — all nine sections are
+      segmented — but two of its categories are supplied by instruments the corpus cannot reach.
+    categories:
+    - {id: feed_prohibition, citation_prefix: ['N.Y. Gen. Bus. Law § 1501(1)'], supplies: The default-off prohibition on serving an addictive feed, and its two exculpatory routes.}
+    - {id: data_minimization, citation_prefix: ['N.Y. Gen. Bus. Law § 1501(3)', 'N.Y. Gen. Bus. Law § 1501(5)'], supplies: Purpose limitation and immediate deletion for age-determination and parental-consent data.}
+    - {id: overnight_notifications, citation_prefix: ['N.Y. Gen. Bus. Law § 1502'], supplies: The 12 AM–6 AM Eastern notification window and the separate consent that lifts it.}
+    - {id: nondiscrimination, citation_prefix: ['N.Y. Gen. Bus. Law § 1504'], supplies: The anti-retaliation rule that stops the feed prohibition from being priced.}
+    - {id: language_access, citation_prefix: ['N.Y. Gen. Bus. Law § 1506(1)'], supplies: Consent instructions in no fewer than twelve languages.}
+    - {id: enforcement, citation_prefix: ['N.Y. Gen. Bus. Law § 1508(1)'], supplies: Attorney General remedies, disgorgement including destruction of data, $5,000 per violation, and the 180-day bar.}
+    - {id: age_determination_methods, citation_prefix: ['13 N.Y.C.R.R. § 700'], supplies: 'WHAT "commercially reasonable and technically feasible" ACTUALLY REQUIRES, and what verifiable parental consent looks like. §§ 1501(2) and 1501(4) delegate both routes to Attorney General rulemaking, so the operative test lives entirely outside the statute. NOT IN THE CORPUS — no structured source serves NYCRR; see meta/blocked-sources.yaml.'}
+    - {id: language_list, citation_prefix: ['N.Y. Exec. Law § 202-a'], supplies: 'WHICH twelve languages § 1506 means. NOT IN THE CORPUS — the Executive Law section has not been fetched.'}

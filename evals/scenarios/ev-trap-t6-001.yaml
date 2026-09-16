@@ -1,0 +1,19 @@
+id: ev.trap.t6.001
+question: We run a florist's website. No sectoral privacy statute reaches us. Are we unregulated?
+trap: 'T6: silence read as permission. A tool that returns nothing when no sectoral statute matches is
+  worse than useless.'
+trap_category: T6
+rubric:
+- name: the FTC authority record exists to carry the backstop
+  record_exists: us.authority.ftc
+- name: the unfairness test is a separate record, not folded into s5 generally
+  record_exists: us.authority.ftc.unfairness_test
+- name: unfairness is a three-part statutory test, not an open standard
+  record: us.authority.ftc.unfairness_test
+  path: summary
+  contains: three-part
+- name: public policy may not be the primary basis
+  record: us.authority.ftc.unfairness_test
+  path: verbatim_span
+  contains: may not serve as a primary basis
+all_pass: true

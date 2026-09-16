@@ -1,0 +1,38 @@
+{
+ "label": "NY GBS 1507",
+ "url": "https://legislation.nysenate.gov/api/3/laws/GBS/1507",
+ "format": "openleg_json",
+ "positive_law": null,
+ "raw_file": "corpus/state/ny/safe-for-kids/raw/ny-gbs-1507.json",
+ "raw_sha256": "eef6cb32213ba1fde3acefdedc4b9633ab4b17059d373aa0e6d9f6ff11df800f",
+ "leaves": [
+  {
+   "path": [
+    "1"
+   ],
+   "anchor": "1507",
+   "section": "1507",
+   "confidence": "high",
+   "heading": "* \u00a7 1507. Scope.",
+   "text": "This article shall apply to conduct that occurs in whole or in part in New York. For purposes of this article, conduct takes place wholly outside of New York if the addictive social media platform is accessed by a user who is physically located outside of New York.",
+   "context": [],
+   "section_heading": "* \u00a7 1507. Scope.",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  },
+  {
+   "path": [
+    "2"
+   ],
+   "anchor": "1507",
+   "section": "1507",
+   "confidence": "high",
+   "heading": "* \u00a7 1507. Scope.",
+   "text": "Nothing in this article shall be construed to impose liability for commercial activities or actions by operators subject to 15 U.S.C. \u00a7 6501 that is inconsistent with the treatment of such activities or actions under 15 U.S.C. \u00a7 6502.",
+   "context": [],
+   "section_heading": "* \u00a7 1507. Scope.",
+   "nb_note": "* NB Effective January 25, 2027",
+   "active_date": "2026-07-31"
+  }
+ ]
+}

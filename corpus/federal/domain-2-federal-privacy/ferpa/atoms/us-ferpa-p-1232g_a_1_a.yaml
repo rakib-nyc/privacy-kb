@@ -1,0 +1,87 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ed
+sector:
+  - education
+data_types:
+  - education_record
+status: in_force
+effective_from: '1974-11-19'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "November 19, 1974" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.ferpa.p.1232g_a_1_a
+source:
+  citation: 20 U.S.C. § 1232g(a)(1)(A)
+  instrument_id: us.ferpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc20@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  raw_sha256: d9eb0b65a1acac5602e55cef5941f4e79a13824f23e8f78b141be5f1d1624e7b
+  text_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.txt
+  text_sha256: 6a51713f2648ca5674640dc9e871fdc9304de0055007e798298d216e99630681
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: 0f45e44e24a0ee4c4291f249e1591892e6c2de05f2fca61b2e959dd1a59aaa29
+verbatim_span: >-
+  No funds shall be made available under any applicable program to any educational agency or
+  institution which has a policy of denying, or which effectively prevents, the parents of students
+  who are or have been in attendance at a school of such agency or at such institution, as the case
+  may be, the right to inspect and review the education records of their children. If any material
+  or document in the education record of a student includes information on more than one student,
+  the parents of one of such students shall have the right to inspect and review only such part of
+  such material or document as relates to such student or to be informed of the specific information
+  contained in such part of such material. Each educational agency or institution shall establish
+  appropriate procedures for the granting of a request by parents for access to the education
+  records of their children within a reasonable period of time, but in no case more than forty-five
+  days after the request has been made.
+paragraph_path:
+  path:
+    - a
+    - '1'
+    - A
+  anchor: '1232g'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 20-u-s-c-1232g.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+subject:
+  domain: II.D.1
+  lifecycle:
+    - VI
+operative_context: []
+operative_verb: must_not
+summary: >-
+  No funds shall be made available under any applicable program to any educational agency or
+  institution which has a policy of denying, or which effectively prevents, the parents of students
+  who are or have been in attendance at a school of such agency or at such institution, as the case
+  may be, the r
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

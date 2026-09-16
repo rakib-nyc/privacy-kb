@@ -1,0 +1,90 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - ftc
+sector:
+  - financial_services
+  - non_bank_financial_institutions
+data_types:
+  - npi
+  - customer_information
+status: in_force
+effective_from: '2023-06-09'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.glba.safeguards_rule.p.314_4_i_2
+source:
+  citation: 16 C.F.R. § 314.4(i)(2)
+  instrument_id: us.glba.safeguards_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=314
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  raw_sha256: 3ba7ecc3463953a1db1ccf38f4b0ade4182e36c7e24e111eb8869910e271d41a
+  text_file: corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.txt
+  text_sha256: be8a0b1e03c4b14f6ed56fbf365d871a4fe112856a8013ebcf25fbc2f9aefec9
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-16 XML, part 314
+    result: structured_source_used
+    note: null
+  segment_sha256: b8581b9162c74bd3d15b649fdff0c18416d1f8216ec9f2a8fb4fcd074749da80
+verbatim_span: >-
+  Material matters related to the information security program, addressing issues such as risk
+  assessment, risk management and control decisions, service provider arrangements, results of
+  testing, security events or violations and management's responses thereto, and recommendations for
+  changes in the information security program.
+paragraph_path:
+  path:
+    - i
+    - '2'
+  anchor: '314.4'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-314.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+subject:
+  domain: II.C.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Require your Qualified Individual to report in writing, regularly and at least annually, to
+      your board of directors or equivalent governing body. If no such board of directors or
+      equivalent governing body exists, such report shall be timely presented to a senior officer
+      responsible for your information security program. The report shall include the following
+      information:
+    path:
+      - i
+    citation: 16 C.F.R. § 314.4(i)
+operative_verb: must
+operative_verb_source: operative_context
+summary: >-
+  Material matters related to the information security program, addressing issues such as risk
+  assessment, risk management and control decisions, service provider arrangements, results of
+  testing, security events or violations and management's responses thereto, and recommendations for
+  changes in the 
+not_yet_analysed: >-
+  Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision: its own
+  words carry no modal, and the duty is supplied by the chapeau recorded in operative_context. Do
+  not quote it without that chapeau. No applicability predicate has been written, so the engine
+  never asserts that it binds anyone.
+open_questions: []

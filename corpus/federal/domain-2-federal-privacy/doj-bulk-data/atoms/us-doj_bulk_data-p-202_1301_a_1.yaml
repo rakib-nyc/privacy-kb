@@ -1,0 +1,89 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - doj
+sector:
+  - any
+data_types:
+  - personal_information
+  - biometric
+  - genetic
+  - health
+  - financial
+  - precise_geolocation
+status: in_force
+effective_from: '2025-04-08'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 8, 2025" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.doj_bulk_data.p.202_1301_a_1
+source:
+  citation: 28 C.F.R. § 202.1301(a)(1)
+  instrument_id: us.doj_bulk_data
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-28.xml?part=202
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+  raw_sha256: f029a81bfc5a7a33418fd0bd757b0c8c0e431cd570a5c46ec7a3085964796418
+  text_file: corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.txt
+  text_sha256: c8ef3eab97ed7c77065c998a739c0f32aab75ee4a9b78daf920198b02172ac66
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 8baf85b3a21a0c0edbd93c3e1f5690c0c6e4e851a89a5d945e7c25f9ee2f11af
+verbatim_span: >-
+  A civil penalty not to exceed the amount set forth in section 206 of IEEPA may be imposed on any
+  person who violates, attempts to violate, conspires to violate, or causes a violation of any
+  license, order, regulation, or prohibition issued under IEEPA.
+paragraph_path:
+  path:
+    - a
+    - '1'
+  anchor: '202.1301'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 28-cfr-202.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+subject:
+  domain: I.C.6
+  lifecycle:
+    - III
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Section 206 of IEEPA, 50 U.S.C. 1705, is applicable to violations of the provisions of any
+      license, ruling, regulation, order, directive, or instruction issued by or pursuant to the
+      direction or authorization of the Attorney General pursuant to this part or otherwise under
+      IEEPA.
+    path:
+      - a
+    citation: 28 C.F.R. § 202.1301(a)
+operative_verb: may
+summary: >-
+  A civil penalty not to exceed the amount set forth in section 206 of IEEPA may be imposed on any
+  person who violates, attempts to violate, conspires to violate, or causes a violation of any
+  license, order, regulation, or prohibition issued under IEEPA.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

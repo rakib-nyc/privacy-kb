@@ -1,0 +1,86 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_oig
+  - cms
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2024-03-11'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cures_blocking.p.171_204_a_4_ii
+source:
+  citation: 45 C.F.R. § 171.204(a)(4)(ii)
+  instrument_id: us.cures_blocking
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=171
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+  raw_sha256: 881f03c2034c1a6b4d49e9cde4adf70a84182f5890eb1be66f4026f4c601e023
+  text_file: corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.txt
+  text_sha256: ff9534f2201bb086974f3d4fbe95b9d3a5deb972e36d1e6889a93e3d534a088f
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, full XML for the part, date 2026-08-17
+    result: structured_source_used
+    note: null
+  segment_sha256: ada9bb718ab4384cb2440ad5c048e04dcfb00ff8b0522de3c79b053e57c4fd2b
+verbatim_span: >-
+  The actor offered at least two alternative manners in accordance with § 171.301(b), one of which
+  must use either technology certified to standard(s) adopted in part 170 (§ 171.301(b)(1)(i)) or
+  published content and transport standards consistent with § 171.301(b)(1)(ii).
+paragraph_path:
+  path:
+    - a
+    - '4'
+    - ii
+  anchor: '171.204'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-171.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+subject:
+  domain: II.B.3
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      The actor is unable to fulfill a request for access, exchange, or use of electronic health
+      information because paragraphs (a)(4)(i), (ii), and (iii) of this section are all true; and
+      the actor complied with paragraph (a)(4)(iv) of this section.
+    path:
+      - a
+      - '4'
+    citation: 45 C.F.R. § 171.204(a)(4)
+operative_verb: must
+summary: >-
+  The actor offered at least two alternative manners in accordance with § 171.301(b), one of which
+  must use either technology certified to standard(s) adopted in part 170 (§ 171.301(b)(1)(i)) or
+  published content and transport standards consistent with § 171.301(b)(1)(ii).
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

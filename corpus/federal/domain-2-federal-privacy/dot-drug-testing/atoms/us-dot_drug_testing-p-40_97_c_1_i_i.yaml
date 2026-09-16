@@ -1,0 +1,104 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - dot
+sector:
+  - employment
+  - transportation
+data_types:
+  - health
+  - personal_information
+status: in_force
+effective_from: '2000-12-19'
+effective_to: null
+effective_from_basis: citation_apparatus
+effective_from_evidence: >-
+  "Dec. 19, 2000" appears in a <PSPACE> element of
+  corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml — citation
+  apparatus, not operative text
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.dot_drug_testing.p.40_97_c_1_i_i
+source:
+  citation: 49 C.F.R. § 40.97(c)(1)(i)(I)
+  instrument_id: us.dot_drug_testing
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-49.xml?part=40
+  fetched: '2026-08-20'
+  raw_file: corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+  raw_sha256: 37446484793816750245fc98a2b73a94e655895dcfb889d18ddc00c23339e0df
+  text_file: corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.txt
+  text_sha256: 1d4fa6885696bfab98499a9a5b506aa6b85460b41a65d945739fb236b747bdc5
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 49 part 40, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: 18c2317a0c0c2a00b943949a23046b72d26dadb35145d46a01b1f0f0d7a4d66f
+verbatim_span: For oral fluid only, collection device expiration date;
+paragraph_path:
+  path:
+    - c
+    - '1'
+    - i
+    - I
+  anchor: '40.97'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 49-cfr-40.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/dot-drug-testing/raw/49-cfr-40.xml
+subject:
+  domain: IV.B.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      If you elect to provide the laboratory results report, you must include the following
+      elements, as a minimum, in the report format:
+    path:
+      - c
+      - '1'
+      - i
+    citation: 49 C.F.R. § 40.97(c)(1)(i)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      As a laboratory, you must report laboratory results directly, and only, to the MRO at his or
+      her place of business. You must not report results to or through the DER or a service agent (
+      e.g., a C/TPA).
+    path:
+      - c
+    citation: 49 C.F.R. § 40.97(c)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Negative results: You must fax, courier, mail, or electronically transmit a legible image or
+      copy of the fully completed Copy 1 of the CCF which has been signed by the certifying
+      scientist, or you may provide the laboratory results report electronically ( i.e., computer
+      data file).
+    path:
+      - c
+      - '1'
+    citation: 49 C.F.R. § 40.97(c)(1)
+operative_verb: must
+operative_verb_source: operative_context
+summary: For oral fluid only, collection device expiration date;
+not_yet_analysed: >-
+  Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision: its own
+  words carry no modal, and the duty is supplied by the chapeau recorded in operative_context. Do
+  not quote it without that chapeau. No applicability predicate has been written, so the engine
+  never asserts that it binds anyone.
+open_questions: []

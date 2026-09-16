@@ -1,0 +1,80 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - ed
+sector:
+  - education
+data_types:
+  - education_record
+status: in_force
+effective_from: '1974-11-19'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "November 19, 1974" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.ferpa.p.1232g_b_5
+source:
+  citation: 20 U.S.C. § 1232g(b)(5)
+  instrument_id: us.ferpa
+  url: https://uscode.house.gov/download/releasepoints/us/pl/119/1/xml_usc20@119-1.zip
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  raw_sha256: d9eb0b65a1acac5602e55cef5941f4e79a13824f23e8f78b141be5f1d1624e7b
+  text_file: corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.txt
+  text_sha256: 6a51713f2648ca5674640dc9e871fdc9304de0055007e798298d216e99630681
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+  format: uslm_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - uscode.house.gov USLM XML release point 119-1
+    result: structured_source_used
+    note: null
+  segment_sha256: e14f8c77463485d4f792eb8661c2b8e5abf8399eae6d2c9b6e394ceea58bd6e3
+verbatim_span: >-
+  Nothing in this section shall be construed to prohibit State and local educational officials from
+  having access to student or other records which may be necessary in connection with the audit and
+  evaluation of any federally or State supported education program or in connection with the
+  enforcement of the Federal legal requirements which relate to any such program, subject to the
+  conditions specified in the proviso in paragraph (3).
+paragraph_path:
+  path:
+    - b
+    - '5'
+  anchor: '1232g'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 20-u-s-c-1232g.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/ferpa/raw/20-u-s-c-1232g.xml
+subject:
+  domain: II.D.1
+  lifecycle:
+    - VI
+operative_context: []
+operative_verb: mixed
+summary: >-
+  Nothing in this section shall be construed to prohibit State and local educational officials from
+  having access to student or other records which may be necessary in connection with the audit and
+  evaluation of any federally or State supported education program or in connection with the
+  enforcement o
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

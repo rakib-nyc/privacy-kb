@@ -1,0 +1,29 @@
+id: ev.authority.004
+question: A school district's edtech vendor exposed student records. What penalty does the district face
+  under FERPA?
+trap: Expecting a monetary penalty. FERPA is a funding condition with no penalty regime and no private
+  right of action, which is the opposite of what a model primed on GDPR-style fines will say.
+rubric:
+- name: ED is in the corpus
+  record_exists: us.authority.ed
+- name: the remedy is funding withdrawal, not a fine
+  record: us.authority.ed
+  path: authority.penalty_authority.structure
+  contains: funding withdrawal
+- name: the record says so explicitly rather than leaving it implied
+  record: us.authority.ed
+  path: authority.penalty_authority.note
+  contains: never been exercised
+- name: FERPA confers no private right of action
+  record: us.authority.ed
+  path: authority.private_right_of_action.exists
+  equals: false
+- name: the funding-condition limit on reach is recorded
+  record: us.authority.ed
+  path: authority.excluded_from_reach
+  contains: no applicable federal funding
+- name: the Gonzaga basis is flagged as not yet in the corpus
+  record: us.authority.ed
+  path: open_questions
+  contains: NOT in the corpus
+all_pass: true

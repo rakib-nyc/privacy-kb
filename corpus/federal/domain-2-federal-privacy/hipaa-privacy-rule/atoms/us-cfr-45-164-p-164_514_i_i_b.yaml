@@ -1,0 +1,96 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 14, 2003" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.45.164.p.164_514_i_i_b
+source:
+  citation: 45 C.F.R. § 164.514(i)(i)(B)
+  instrument_id: us.cfr.45.164
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=164
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+  text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title-45 XML, part 164
+    result: structured_source_used
+    note: null
+  segment_sha256: baa837487d29fd56b7944fb375969e3abff0684b6e5ced1e0e1e6a5cf71cf7cb
+verbatim_span: >-
+  The documentation required by § 164.512(i)(2) may be satisfied by one or more written statements,
+  provided that each is appropriately dated and signed in accordance with § 164.512(i)(2)(i) and
+  (v).
+paragraph_path:
+  path:
+    - i
+    - i
+    - B
+  anchor: '164.514'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-164.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - I
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Except with respect to disclosures under § 164.510, verify the identity of a person requesting
+      protected health information and the authority of any such person to have access to protected
+      health information under this subpart, if the identity or any such authority of such person is
+      not known to the covered entity; and
+    path:
+      - i
+    citation: 45 C.F.R. § 164.514(i)
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      If a disclosure is conditioned by this subpart on particular documentation, statements, or
+      representations from the person requesting the protected health information, a covered entity
+      may rely, if such reliance is reasonable under the circumstances, on documentation,
+      statements, or representations that, on their face, meet the applicable requirements.
+    path:
+      - i
+      - i
+    citation: 45 C.F.R. § 164.514(i)(i)
+operative_verb: may
+summary: >-
+  The documentation required by § 164.512(i)(2) may be satisfied by one or more written statements,
+  provided that each is appropriately dated and signed in accordance with § 164.512(i)(2)(i) and
+  (v).
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

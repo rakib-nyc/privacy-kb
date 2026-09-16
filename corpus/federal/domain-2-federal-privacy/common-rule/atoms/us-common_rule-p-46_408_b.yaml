@@ -1,0 +1,85 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ohrp
+  - federal_agencies
+sector:
+  - health
+data_types:
+  - personal_information
+  - health
+status: in_force
+effective_from: '2019-01-21'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "January 21, 2019" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.common_rule.p.46_408_b
+source:
+  citation: 45 C.F.R. § 46.408(b)
+  instrument_id: us.common_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=46
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  raw_sha256: cfe25d02a8ade401b1350f591c4654b85ab03c47f66297047feb0a6e1f0e543d
+  text_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+  text_sha256: 2e9f64e48744208a67bbad88f993394ee3ae928f07e1396d552d5a6c8d574fa1
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 45 part 46, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: a2996dcadd65f77e3f5516dc8380bbecbb95f4bc77c4caa34a414d5801f3d758
+verbatim_span: >-
+  In addition to the determinations required under other applicable sections of this subpart, the
+  IRB shall determine, in accordance with and to the extent that consent is required by § 46.116 of
+  the pre-2018 Requirements or the 2018 Requirements, as applicable, that adequate provisions are
+  made for soliciting the permission of each child's parents or guardian. Where parental permission
+  is to be obtained, the IRB may find that the permission of one parent is sufficient for research
+  to be conducted under § 46.404 or § 46.405. Where research is covered by §§ 46.406 and 46.407 and
+  permission is to be obtained from parents, both parents must give their permission unless one
+  parent is deceased, unknown, incompetent, or not reasonably available, or when only one parent has
+  legal responsibility for the care and custody of the child.
+paragraph_path:
+  path:
+    - b
+  anchor: '46.408'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-46.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+subject:
+  domain: II.B.3
+  lifecycle:
+    - III
+operative_context: []
+operative_verb: mixed
+summary: >-
+  In addition to the determinations required under other applicable sections of this subpart, the
+  IRB shall determine, in accordance with and to the extent that consent is required by § 46.116 of
+  the pre-2018 Requirements or the 2018 Requirements, as applicable, that adequate provisions are
+  made for s
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

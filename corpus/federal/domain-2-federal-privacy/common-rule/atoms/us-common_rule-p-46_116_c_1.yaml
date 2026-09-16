@@ -1,0 +1,83 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ohrp
+  - federal_agencies
+sector:
+  - health
+data_types:
+  - personal_information
+  - health
+status: in_force
+effective_from: '2019-01-21'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "January 21, 2019" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.common_rule.p.46_116_c_1
+source:
+  citation: 45 C.F.R. § 46.116(c)(1)
+  instrument_id: us.common_rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=46
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  raw_sha256: cfe25d02a8ade401b1350f591c4654b85ab03c47f66297047feb0a6e1f0e543d
+  text_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+  text_sha256: 2e9f64e48744208a67bbad88f993394ee3ae928f07e1396d552d5a6c8d574fa1
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - ecfr.gov versioner API, title 45 part 46, structured XML
+    result: structured_source_used
+    note: null
+  segment_sha256: 8f031d6269522e2abe2975759193d1dc3d416acd757b8c8006de79431e78fabe
+verbatim_span: >-
+  A statement that the particular treatment or procedure may involve risks to the subject (or to the
+  embryo or fetus, if the subject is or may become pregnant) that are currently unforeseeable;
+paragraph_path:
+  path:
+    - c
+    - '1'
+  anchor: '46.116'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-46.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+subject:
+  domain: II.B.3
+  lifecycle:
+    - III
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Except as provided in paragraph (d), (e), or (f) of this section, one or more of the following
+      elements of information, when appropriate, shall also be provided to each subject or the
+      legally authorized representative:
+    path:
+      - c
+    citation: 45 C.F.R. § 46.116(c)
+operative_verb: may
+summary: >-
+  A statement that the particular treatment or procedure may involve risks to the subject (or to the
+  embryo or fetus, if the subject is or may become pregnant) that are currently unforeseeable;
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: "Privacy-KB: a local engine for US federal and New York privacy law"
+message: "If you use this software or corpus, please cite it as below."
+type: software
+authors:
+  - family-names: Islam
+    given-names: Muhammad Rakibul
+    email: rakib.islam@rutgers.edu
+    affiliation: Rutgers University
+version: 0.1.0
+date-released: 2026-09-16
+license: Apache-2.0
+repository-code: "https://github.com/rakib-nyc/privacy-kb"
+url: "https://rakib-nyc.github.io/privacy-kb/"
+keywords:
+  - privacy law
+  - legal informatics
+  - computable law
+  - breach notification
+  - HIPAA
+  - provenance
+  - Model Context Protocol
+abstract: >-
+  Privacy-KB is a local engine for United States federal, New York State and New York City
+  privacy law. It answers which obligations apply as of a given date, with exemptions typed and
+  preemption resolved; computes counterfactual exposure, date-window differences and element
+  coverage against a source's own segmentation; produces reproducible artifacts including
+  verifiable receipts and standing fact registers; and audits the citations in any answer,
+  including answers it did not produce. Every provision is quoted verbatim from a stored primary
+  source and anchored to the SHA-256 of the bytes it was verified against, so any quotation can be
+  checked. No language model participates in the applicability decision. The design reports the
+  boundary of what it can establish — coverage gaps, element shortfall, and differences it cannot
+  attribute to a dated legal event are returned with the answer rather than omitted from it.

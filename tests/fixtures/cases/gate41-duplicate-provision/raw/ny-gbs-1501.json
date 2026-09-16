@@ -1,0 +1,56 @@
+{
+  "success" : true,
+  "message" : "Law document for location 1501 in GBS law.",
+  "responseType" : "law-doc-info-detail",
+  "result" : {
+    "lawId" : "GBS",
+    "lawName" : "General Business",
+    "locationId" : "1501",
+    "title" : "Prohibition of addictive feeds",
+    "docType" : "SECTION",
+    "publishedDates" : [ "2024-06-28", "2026-07-31" ],
+    "docLevelId" : "1501",
+    "activeDate" : "2026-07-31",
+    "text" : "  * § 1501. Prohibition of addictive feeds. 1. It shall be unlawful for\\na covered operator to provide an addictive feed to a covered user\\nunless:\\n  (a) the covered operator has used commercially reasonable and\\ntechnically feasible methods to determine that the covered user is not a\\ncovered minor; or\\n  (b) the covered operator has obtained verifiable parental consent to\\nprovide an addictive feed to a covered minor.\\n  2. (a) The attorney general shall promulgate regulations identifying\\ncommercially reasonable and technically feasible methods for covered\\noperators to determine if a covered user is a covered minor required\\npursuant to subdivision one of this section, and any exceptions thereto.\\n  (b) In promulgating such regulations, the attorney general shall\\nconsider the size, financial resources, and technical capabilities of\\nthe addictive social media platform, the costs and effectiveness of\\navailable age determination techniques for users of the addictive social\\nmedia platform, the audience of the addictive social media platform,\\nprevalent practices of the industry of the covered operator, and the\\nimpact of the age determination techniques on the covered users' safety,\\nutility, and experience.\\n  (c) Such regulations shall also identify the appropriate levels of\\naccuracy that would be commercially reasonable and technically feasible\\nfor covered operators to achieve in determining whether a covered user\\nis a covered minor. Such regulations shall set forth multiple\\ncommercially reasonable and technically feasible methods for a covered\\noperator to determine if a covered user is a covered minor, including at\\nleast one method that either does not rely solely on government issued\\nidentification or that allows a covered user to maintain anonymity as to\\nthe covered operator of the addictive social media platform.\\n  (d) Where a covered operator has used commercially reasonable and\\ntechnically feasible age determination methods in compliance with such\\nregulations and has not determined that a covered user is a covered\\nminor, the covered operator shall operate under the presumption that the\\ncovered user is not a covered minor for the purposes of this article,\\nunless it obtains actual knowledge that the covered user is a covered\\nminor.\\n  3. Information collected for the purpose of determining a covered\\nuser's age under paragraph (a) of subdivision one of this section shall\\nnot be used for any purpose other than age determination and shall be\\ndeleted immediately after an attempt to determine a covered user's age,\\nexcept where necessary for compliance with any applicable provisions of\\nNew York state or federal law or regulation.\\n  4. The attorney general shall promulgate regulations identifying\\nmethods of obtaining verifiable parental consent pursuant to paragraph\\n(b) of subdivision one of this section and section fifteen hundred two\\nof this article.\\n  5. Information collected for the purpose of obtaining such verifiable\\nparental consent shall not be used for any purpose other than obtaining\\nverifiable parental consent and shall be deleted immediately after an\\nattempt to obtain verifiable parental consent, except where necessary\\nfor compliance with any applicable provisions of New York state or\\nfederal law or regulation.\\n  6. Nothing in this section shall be construed as requiring any\\noperator to give a parent who grants verifiable parental consent any\\nadditional or special access to or control over the data or accounts of\\ntheir child.\\n  7. Nothing in this section shall be construed as preventing any action\\ntaken in good faith to restrict access to or availability of media that\\nthe covered operator considers to be obscene, lewd, lascivious, filthy,\\nexcessively violent, harassing, or otherwise objectionable, whether or\\nnot such material is constitutionally protected.\\n  * NB Effective January 25, 2027\\n",
+    "parentLocationIds" : [ "-CH20", "A45" ],
+    "parents" : [ {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "-CH20",
+      "title" : "General Business",
+      "docType" : "CHAPTER",
+      "publishedDates" : [ "2014-09-22", "2014-11-28", "2016-04-15", "2018-04-20", "2018-04-27", "2019-09-20", "2019-12-27", "2020-04-17", "2020-04-24", "2020-10-16", "2020-11-13", "2021-04-23", "2021-07-09", "2021-10-15", "2021-12-17", "2021-12-31", "2022-03-04", "2022-06-10", "2023-10-27", "2024-02-09", "2024-03-08", "2024-06-28", "2024-07-19", "2024-10-11", "2024-11-29", "2024-12-27", "2025-02-21", "2025-05-16", "2025-06-13", "2025-12-19", "2025-12-26", "2026-02-27", "2026-03-20", "2026-04-03", "2026-05-29" ],
+      "docLevelId" : "20",
+      "activeDate" : "2026-05-29"
+    }, {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "A45",
+      "title" : "Safe For Kids Act",
+      "docType" : "ARTICLE",
+      "publishedDates" : [ "2024-06-28", "2026-07-31" ],
+      "docLevelId" : "45",
+      "activeDate" : "2026-07-31"
+    } ],
+    "prevSibling" : {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "1500",
+      "title" : "Definitions",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2024-06-28", "2026-07-31" ],
+      "docLevelId" : "1500",
+      "activeDate" : "2026-07-31"
+    },
+    "nextSibling" : {
+      "lawId" : "GBS",
+      "lawName" : "General Business",
+      "locationId" : "1502",
+      "title" : "Overnight notifications",
+      "docType" : "SECTION",
+      "publishedDates" : [ "2024-06-28", "2026-07-31" ],
+      "docLevelId" : "1502",
+      "activeDate" : "2026-07-31"
+    }
+  }
+}

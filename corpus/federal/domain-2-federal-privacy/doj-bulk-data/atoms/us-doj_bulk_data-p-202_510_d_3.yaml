@@ -1,0 +1,91 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - doj
+sector:
+  - any
+data_types:
+  - personal_information
+  - biometric
+  - genetic
+  - health
+  - financial
+  - precise_geolocation
+status: in_force
+effective_from: '2025-04-08'
+effective_to: null
+effective_from_basis: stated_in_text
+effective_from_evidence: >-
+  "April 8, 2025" appears in the rendered text of
+  corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.txt
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.doj_bulk_data.p.202_510_d_3
+source:
+  citation: 28 C.F.R. § 202.510(d)(3)
+  instrument_id: us.doj_bulk_data
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-28.xml?part=202
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+  raw_sha256: f029a81bfc5a7a33418fd0bd757b0c8c0e431cd570a5c46ec7a3085964796418
+  text_file: corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.txt
+  text_sha256: c8ef3eab97ed7c77065c998a739c0f32aab75ee4a9b78daf920198b02172ac66
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 61ceea72051f2be9953171559aac624032f862a149c13efb9d3ed744c4d7c9bb
+verbatim_span: >-
+  Same as Example 1, except country of concern law requires foreign pharmaceutical companies to
+  submit regulatory approval data using (1) a registered agent who primarily resides in the country
+  of concern, (2) a country of concern incorporated subsidiary, or (3) an employee located in a
+  country of concern. The U.S. pharmaceutical company enters into a vendor agreement with a
+  registered agent in the country of concern to submit the regulatory approval data to the country
+  of concern regulator. The U.S. pharmaceutical company provides to the registered agent only the
+  regulatory approval data the U.S. pharmaceutical company intends the registered agent to submit to
+  the country of concern regulator. The transaction with the registered agent is exempt, because it
+  is necessary to obtain approval to market the drug in a country of concern. The U.S.
+  pharmaceutical company must comply with the recordkeeping and reporting requirements set forth in
+  §§ 202.1101(a) and 202.1102 with respect to such transaction, however.
+paragraph_path:
+  path:
+    - d
+    - '3'
+  anchor: '202.510'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 28-cfr-202.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/doj-bulk-data/raw/28-cfr-202.xml
+subject:
+  domain: I.C.6
+  lifecycle:
+    - III
+operative_context: []
+operative_verb: must
+summary: >-
+  Same as Example 1, except country of concern law requires foreign pharmaceutical companies to
+  submit regulatory approval data using (1) a registered agent who primarily resides in the country
+  of concern, (2) a country of concern incorporated subsidiary, or (3) an employee located in a
+  country of con
+context_not_required: >-
+  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
+  alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

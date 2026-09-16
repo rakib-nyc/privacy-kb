@@ -1,0 +1,85 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US
+jurisdiction_level: federal
+regulator:
+  - hhs_ocr
+sector:
+  - health
+data_types:
+  - health
+status: in_force
+effective_from: '2003-04-14'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: >-
+  not found anywhere in
+  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.cfr.45.160.p.160_420_a_6
+source:
+  citation: 45 C.F.R. § 160.420(a)(6)
+  instrument_id: us.cfr.45.160
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-45.xml?part=160
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+  raw_sha256: 9916d549267c2f3f629b2157d6e0887b73570f9eddace67b626c40f51a6c9c72
+  text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.txt
+  text_sha256: f77059505f5a5559b29004fa9b5cd6e88a88556fd94b0a4c673d42cbe4d6d9bb
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - 45 CFR 160 structured source
+    result: structured_source_used
+    note: null
+  segment_sha256: 275e6a28df3efdf9a15e53a2fb3adc5787c323a609696d33f963867f5aebdd82
+verbatim_span: >-
+  Instructions for responding to the notice, including a statement of the respondent's right to a
+  hearing, a statement that failure to request a hearing within 90 days permits the imposition of
+  the proposed penalty without the right to a hearing under § 160.504 or a right of appeal under §
+  160.548 of this part, and the address to which the hearing request must be sent.
+paragraph_path:
+  path:
+    - a
+    - '6'
+  anchor: '160.420'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 45-cfr-160.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-160.xml
+subject:
+  domain: II.B.1
+  lifecycle:
+    - III
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      If a penalty is proposed in accordance with this part, the Secretary must deliver, or send by
+      certified mail with return receipt requested, to the respondent, written notice of the
+      Secretary's intent to impose a penalty. This notice of proposed determination must include—
+    path:
+      - a
+    citation: 45 C.F.R. § 160.420(a)
+operative_verb: must
+summary: >-
+  Instructions for responding to the notice, including a statement of the respondent's right to a
+  hearing, a statement that failure to request a hearing within 90 days permits the imposition of
+  the proposed penalty without the right to a hearing under § 160.504 or a right of appeal under §
+  160.548 of 
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []

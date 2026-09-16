@@ -1,0 +1,85 @@
+schema_version: 1
+record_type: provision
+verification_status: verbatim_confirmed
+jurisdiction: US-FED
+jurisdiction_level: federal
+regulator:
+  - ftc
+  - state_ag
+sector:
+  - childrens_online_services
+data_types:
+  - minor_data
+  - personal_information
+status: in_force
+effective_from: '2025-06-23'
+effective_to: null
+effective_from_basis: undetermined
+effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+supersedes: null
+superseded_by: null
+amendment_history: []
+confidence: medium
+id: us.coppa.rule.p.312_5_c_9
+source:
+  citation: 16 C.F.R. § 312.5(c)(9)
+  instrument_id: us.coppa.rule
+  url: https://www.ecfr.gov/api/versioner/v1/full/2026-08-17/title-16.xml?part=312
+  fetched: '2026-08-19'
+  raw_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  raw_sha256: 5a29d13e4512092a2d064a62a581031dc75aa99998540e6c2ef24f0dbfc66df9
+  text_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.txt
+  text_sha256: 269dbc8c79e682a08e9686846439239d7f57ec49f501070957ff738370189425
+  text_extraction_cmd: >-
+    python3 tools/render-text.py
+    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  format: ecfr_xml
+  risk_tier: low
+  render: null
+  structured_source_check:
+    checked:
+      - eCFR versioner XML API
+    result: structured_source_used
+    note: null
+  segment_sha256: 9d0a10d8eeea0fb185840dbc72e99dfb1b88b3f03f6c93082d5e581988880b54
+verbatim_span: >-
+  Where an operator collects an audio file containing a child's voice, and no other personal
+  information, for use in responding to a child's specific request and where the operator does not
+  use such information for any other purpose, does not disclose it, and deletes it immediately after
+  responding to the child's request. In such case, there also shall be no obligation to provide a
+  direct notice, but notice shall be required under § 312.4(d).
+paragraph_path:
+  path:
+    - c
+    - '9'
+  anchor: '312.5'
+  derivation: structural
+  confidence: high
+  evidence: >-
+    read from 16-cfr-312.seg.json, the segmentation of
+    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+subject:
+  domain: II.A.1
+  lifecycle:
+    - IV
+operative_context:
+  - position: precedes
+    relation: scopes
+    verbatim_span: >-
+      Verifiable parental consent is required prior to any collection, use, or disclosure of
+      personal information from a child except as set forth in this paragraph:
+    path:
+      - c
+    citation: 16 C.F.R. § 312.5(c)
+operative_verb: must
+summary: >-
+  Where an operator collects an audio file containing a child's voice, and no other personal
+  information, for use in responding to a child's specific request and where the operator does not
+  use such information for any other purpose, does not disclose it, and deletes it immediately after
+  responding to
+not_yet_analysed: >-
+  Held as reference text. No applicability predicate has been written for it, so the engine does not
+  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
+  and passing the gates that check them.
+open_questions: []
