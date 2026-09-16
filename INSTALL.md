@@ -7,7 +7,10 @@ There are two ways to use this. **Most people want the first one.**
 
 ---
 
-## Option 1 — Ask it questions in plain English (Claude Desktop)
+## Option 1 — Ask it questions in plain English (an MCP client)
+
+This works with any client that speaks [MCP](https://modelcontextprotocol.io). The steps below
+use the desktop client whose configuration file `npm run setup` writes automatically.
 
 You end up typing things like *"We're a HIPAA covered entity, we had a breach, we have one New
 York patient, we notified HHS yesterday — what are our deadlines?"* and getting back cited
@@ -48,18 +51,18 @@ npm install
 npm run setup -- --write
 ```
 
-The second one finds Claude Desktop's settings file and adds this to it for you.
+The second one finds the client's settings file and adds this to it for you.
 
 > **Prefer not to let it edit a file?** Run `npm run setup` without `-- --write`. It prints the
 > exact text and tells you which file to paste it into.
 
-### Step 5 — Restart Claude Desktop
+### Step 5 — Restart the client
 
 **Quit it completely** — on a Mac, ⌘Q, not just closing the window — then open it again.
 
 ### Step 6 — Check it worked
 
-The simplest check is just to ask. Claude Desktop shows connected tools near the message box —
+The simplest check is just to ask. Most clients show connected tools near the message box —
 the exact icon changes between versions, so rather than hunting for it, type this:
 
 > *We are a telehealth company in Texas with one patient in New York. We had a data breach on
@@ -104,7 +107,7 @@ Run `node bin/privacy-kb.mjs` on its own for the full list of flags.
 | What you see | What to do |
 |---|---|
 | `npm: command not found` | Node.js is not installed, or the terminal was open before you installed it. Close the terminal, open a new one, try again. |
-| Claude answers but cites nothing | The server is not connected. Quit Claude Desktop **completely** — on a Mac ⌘Q, not just closing the window — and reopen. |
+| The assistant answers but cites nothing | The server is not connected. Quit the client **completely** — on a Mac ⌘Q, not just closing the window — and reopen. |
 | Still not connected after restarting | Run `npm run setup` (no `--write`). It prints the config file path. Open that file and check the block is really there and the JSON is valid. |
 | You use `nvm` or similar | `npm run setup -- --write` records the *absolute path* of the Node you ran it with. If you later switch Node versions, run it again. |
 | `Node.js v18` and a ✗ | Too old. Install the current LTS from nodejs.org. |

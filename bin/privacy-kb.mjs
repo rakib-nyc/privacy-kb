@@ -26,7 +26,7 @@ function usage() {
 ${b('privacy-kb')} ${dim(VERSION)}  —  US federal + New York privacy law, as of a date
 
   ${b('privacy-kb doctor')}                    check the install is working
-  ${b('privacy-kb setup')}                     print the Claude Desktop config to paste
+  ${b('privacy-kb setup')}                     print the MCP client config to paste
   ${b('privacy-kb coverage')}                  what the corpus holds, and what it does not
   ${b('privacy-kb cite')} <record-id>          the verbatim text and where it came from
   ${b('privacy-kb find')} <query>              search every provision by citation, phrase or topic
@@ -945,7 +945,7 @@ function setup() {
       ? join(process.env.APPDATA ?? homedir(), 'Claude', 'claude_desktop_config.json')
       : join(homedir(), '.config', 'Claude', 'claude_desktop_config.json');
   const block = { mcpServers: { 'privacy-kb': { command: process.execPath, args: [server] } } };
-  console.log(`\n${b('Claude Desktop setup')}\n`);
+  console.log(`\n${b('MCP client setup')}\n`);
   console.log(`  Config file for this computer:\n    ${cfgPath}\n`);
   console.log(`  Paste this into it (merge with anything already there):\n`);
   console.log(JSON.stringify(block, null, 2).split('\n').map(l => '    ' + l).join('\n'));
@@ -955,10 +955,10 @@ function setup() {
     cur.mcpServers = { ...(cur.mcpServers ?? {}), ...block.mcpServers };
     mkdirSync(dirname(cfgPath), { recursive: true });
     writeFileSync(cfgPath, JSON.stringify(cur, null, 2) + '\n');
-    console.log(`\n  ${b('Written.')} Quit Claude Desktop completely and reopen it.\n`);
+    console.log(`\n  ${b('Written.')} Quit the MCP client completely and reopen it.\n`);
   } else {
     console.log(`\n  Or let this do it for you:  ${b('npm run setup -- --write')}`);
-    console.log(`  Then quit Claude Desktop completely and reopen it.\n`);
+    console.log(`  Then quit the MCP client completely and reopen it.\n`);
   }
 }
 
