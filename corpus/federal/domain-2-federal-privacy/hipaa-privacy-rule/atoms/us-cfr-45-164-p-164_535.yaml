@@ -4,18 +4,19 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - hhs_ocr
+- hhs_ocr
 sector:
-  - health
+- health
 data_types:
-  - health
+- health
 status: in_force
-effective_from: '2003-04-14'
+effective_from: '2024-06-25'
 effective_to: null
-effective_from_basis: stated_in_text
-effective_from_evidence: >-
-  "April 14, 2003" appears in the rendered text of
-  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2024-04-26 and first
+  appears at 2024-06-25 (window 2016-12-30..2024-06-25). Narrowed from the 2003-04-14 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-06-25 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -30,50 +31,42 @@ source:
   raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
   text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
   text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
-  text_extraction_cmd: >-
-    python3 tools/render-text.py
-    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
   format: ecfr_xml
   risk_tier: low
   render: null
   structured_source_check:
     checked:
-      - ecfr.gov versioner API, title-45 XML, part 164
+    - ecfr.gov versioner API, title-45 XML, part 164
     result: structured_source_used
     note: null
   segment_sha256: 2ba7f3fc29799b38bcbaee8ee32b70cf646e7ada3df3098a5fe464b3bd73159a
-verbatim_span: >-
-  If any provision of the HIPAA Privacy Rule to Support Reproductive Health Care Privacy is held to
-  be invalid or unenforceable facially, or as applied to any person, plaintiff, or circumstance, it
-  shall be construed to give maximum effect to the provision permitted by law, unless such holding
-  shall be one of utter invalidity or unenforceability, in which case the provision shall be
-  severable from this part and shall not affect the remainder thereof or the application of the
-  provision to other persons not similarly situated or to other dissimilar circumstances.
+verbatim_span: If any provision of the HIPAA Privacy Rule to Support Reproductive Health Care Privacy
+  is held to be invalid or unenforceable facially, or as applied to any person, plaintiff, or circumstance,
+  it shall be construed to give maximum effect to the provision permitted by law, unless such holding
+  shall be one of utter invalidity or unenforceability, in which case the provision shall be severable
+  from this part and shall not affect the remainder thereof or the application of the provision to
+  other persons not similarly situated or to other dissimilar circumstances.
 paragraph_path:
   path: []
   anchor: '164.535'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 45-cfr-164.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  evidence: read from 45-cfr-164.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
 subject:
   domain: II.B.1
   lifecycle:
-    - I
+  - I
 operative_context: []
 operative_verb: must_not
-summary: >-
-  If any provision of the HIPAA Privacy Rule to Support Reproductive Health Care Privacy is held to
-  be invalid or unenforceable facially, or as applied to any person, plaintiff, or circumstance, it
-  shall be construed to give maximum effect to the provision permitted by law, unless such holding
+summary: If any provision of the HIPAA Privacy Rule to Support Reproductive Health Care Privacy is
+  held to be invalid or unenforceable facially, or as applied to any person, plaintiff, or circumstance,
+  it shall be construed to give maximum effect to the provision permitted by law, unless such holding
   shall b
-context_not_required: >-
-  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
-  alone in its own source. It is quoted as the source presents it.
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+context_not_required: The segmentation records no governing chapeau or continuation for this leaf,
+  so the span stands alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

@@ -4,20 +4,20 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - ftc
+- ftc
 sector:
-  - telemarketing
-  - any
+- telemarketing
+- any
 data_types:
-  - any
+- any
 status: in_force
-effective_from: '2010-08-10'
+effective_from: '2024-05-16'
 effective_to: null
-effective_from_basis: citation_apparatus
-effective_from_evidence: >-
-  "Aug. 10, 2010" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml — citation apparatus, not
-  operative text
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2024-04-16 and first
+  appears at 2024-05-16 (window 2016-12-22..2024-05-16). Narrowed from the 2010-08-10 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-05-16 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -38,59 +38,55 @@ source:
   render: null
   structured_source_check:
     checked:
-      - eCFR versioner XML API
+    - eCFR versioner XML API
     result: structured_source_used
     note: null
   segment_sha256: 6b1a7d884698779701a6f016eb11efddca9175e3a526764530a39a9a5a773ea4
-verbatim_span: >-
-  This paragraph (v) shall not apply to any outbound telephone call that delivers a prerecorded
+verbatim_span: This paragraph (v) shall not apply to any outbound telephone call that delivers a prerecorded
   healthcare message made by, or on behalf of, a covered entity or its business associate, as those
   terms are defined in the HIPAA Privacy Rule, 45 CFR 160.103. P>(2) It is an abusive telemarketing
   act or practice and a violation of this part for any person to sell, rent, lease, purchase, or use
-  any list established to comply with § 310.4(b)(1)(iii)(A) or § 310.5, or maintained by the
-  Commission pursuant to § 310.4(b)(1)(iii)(B), for any purpose except compliance with the
-  provisions of this part or otherwise to prevent telephone calls to telephone numbers on such
-  lists.
+  any list established to comply with § 310.4(b)(1)(iii)(A) or § 310.5, or maintained by the Commission
+  pursuant to § 310.4(b)(1)(iii)(B), for any purpose except compliance with the provisions of this
+  part or otherwise to prevent telephone calls to telephone numbers on such lists.
 paragraph_path:
   path:
-    - b
-    - '3'
-    - iii
-    - D
+  - b
+  - '3'
+  - iii
+  - D
   anchor: '310.4'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 16-cfr-310.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  evidence: read from 16-cfr-310.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: Is accessible at any time throughout the duration of the telemarketing campaign; and
-    path:
-      - b
-      - '3'
-    citation: 16 C.F.R. § 310.4(b)(3)
-  - position: precedes
-    relation: scopes
-    verbatim_span: Complies with all other requirements of this part and other applicable federal and state laws.
-    path:
-      - b
-      - '3'
-      - iii
-    citation: 16 C.F.R. § 310.4(b)(3)(iii)
+- position: precedes
+  relation: scopes
+  verbatim_span: Is accessible at any time throughout the duration of the telemarketing campaign;
+    and
+  path:
+  - b
+  - '3'
+  citation: 16 C.F.R. § 310.4(b)(3)
+- position: precedes
+  relation: scopes
+  verbatim_span: Complies with all other requirements of this part and other applicable federal and
+    state laws.
+  path:
+  - b
+  - '3'
+  - iii
+  citation: 16 C.F.R. § 310.4(b)(3)(iii)
 operative_verb: must_not
-summary: >-
-  This paragraph (v) shall not apply to any outbound telephone call that delivers a prerecorded
+summary: This paragraph (v) shall not apply to any outbound telephone call that delivers a prerecorded
   healthcare message made by, or on behalf of, a covered entity or its business associate, as those
   terms are defined in the HIPAA Privacy Rule, 45 CFR 160.103.
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

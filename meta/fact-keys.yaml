@@ -836,7 +836,7 @@ namespaces:
       used_by_eval: 1
       discoverable: true
     makes_telephone_solicitations:
-      used_by_obligation: 4
+      used_by_obligation: 5
       used_by_exemption: 0
       used_by_eval: 0
       discoverable: true

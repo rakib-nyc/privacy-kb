@@ -4,19 +4,19 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - fcc
+- fcc
 sector:
-  - telecom
+- telecom
 data_types:
-  - cpni
+- cpni
 status: in_force
-effective_from: '2017-09-21'
+effective_from: '2024-01-08'
 effective_to: null
-effective_from_basis: citation_apparatus
-effective_from_evidence: >-
-  "Sept. 21, 2017" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
-  operative text
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2023-12-21 and first
+  appears at 2024-01-08 (window 2017-01-01..2026-03-25). Narrowed from the 2017-09-21 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-01-08 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -37,69 +37,63 @@ source:
   render: null
   structured_source_check:
     checked:
-      - eCFR versioner XML API (title 47 part 64)
+    - eCFR versioner XML API (title 47 part 64)
     result: structured_source_used
     note: null
   segment_sha256: c4c48d60b3e647c0b84510e0289578ff9d851b3cfcc91b9973c3e4817b406cae
-verbatim_span: >-
-  If the provider fails to respond to the Notification of Suspected Illegal Traffic, the Enforcement
-  Bureau determines that the response is insufficient, the Enforcement Bureau determines that the
-  provider is continuing to originate substantially similar traffic or allow substantially similar
-  traffic onto the U.S. network after the timeframe specified in the Notification of Suspected
+verbatim_span: If the provider fails to respond to the Notification of Suspected Illegal Traffic,
+  the Enforcement Bureau determines that the response is insufficient, the Enforcement Bureau determines
+  that the provider is continuing to originate substantially similar traffic or allow substantially
+  similar traffic onto the U.S. network after the timeframe specified in the Notification of Suspected
   Illegal Traffic, or the Enforcement Bureau determines based on the evidence that the traffic is
-  illegal despite the provider's assertions, the Enforcement Bureau shall issue an Initial
-  Determination Order to the provider stating the Bureau's initial determination that the provider
-  is not in compliance with this section. The Initial Determination Order shall include the
-  Enforcement Bureau's reasoning for its determination and give the provider a minimum of 14 days to
-  provide a final response prior to the Enforcement Bureau making a final determination on whether
-  the provider is in compliance with this section.
+  illegal despite the provider's assertions, the Enforcement Bureau shall issue an Initial Determination
+  Order to the provider stating the Bureau's initial determination that the provider is not in compliance
+  with this section. The Initial Determination Order shall include the Enforcement Bureau's reasoning
+  for its determination and give the provider a minimum of 14 days to provide a final response prior
+  to the Enforcement Bureau making a final determination on whether the provider is in compliance
+  with this section.
 paragraph_path:
   path:
-    - 'n'
-    - '2'
-    - ii
+  - n
+  - '2'
+  - ii
   anchor: '64.1200'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 47-cfr-64.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  evidence: read from 47-cfr-64.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: 'A voice service provider must:'
-    path:
-      - 'n'
-    citation: 47 C.F.R. § 64.1200(n)
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      Upon receipt of a Notice of Suspected Illegal Traffic from the Commission through its
-      Enforcement Bureau, take the applicable actions with respect to the identified traffic
-      described in paragraphs (n)(2)(i) through (iii) of this section. The provider will not be held
-      liable under the Communications Act or the Commission's rules in this chapter for providers
-      that inadvertently block lawful traffic as part of the requirement to block substantially
-      similar traffic so long as it is blocking consistent with the requirements of paragraphs
-      (n)(2)(i) through (iii). For purposes of this paragraph (n)(2), identified traffic means the
-      illegal traffic identified in the Notification of Suspected Illegal Traffic issued by the
-      Enforcement Bureau. The following procedures shall apply:
-    path:
-      - 'n'
-      - '2'
-    citation: 47 C.F.R. § 64.1200(n)(2)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'A voice service provider must:'
+  path:
+  - n
+  citation: 47 C.F.R. § 64.1200(n)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'Upon receipt of a Notice of Suspected Illegal Traffic from the Commission through
+    its Enforcement Bureau, take the applicable actions with respect to the identified traffic described
+    in paragraphs (n)(2)(i) through (iii) of this section. The provider will not be held liable under
+    the Communications Act or the Commission''s rules in this chapter for providers that inadvertently
+    block lawful traffic as part of the requirement to block substantially similar traffic so long
+    as it is blocking consistent with the requirements of paragraphs (n)(2)(i) through (iii). For
+    purposes of this paragraph (n)(2), identified traffic means the illegal traffic identified in
+    the Notification of Suspected Illegal Traffic issued by the Enforcement Bureau. The following
+    procedures shall apply:'
+  path:
+  - n
+  - '2'
+  citation: 47 C.F.R. § 64.1200(n)(2)
 operative_verb: must
-summary: >-
-  If the provider fails to respond to the Notification of Suspected Illegal Traffic, the Enforcement
+summary: 'If the provider fails to respond to the Notification of Suspected Illegal Traffic, the Enforcement
   Bureau determines that the response is insufficient, the Enforcement Bureau determines that the
   provider is continuing to originate substantially similar traffic or allow substantially similar
-  traffic 
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+  traffic '
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

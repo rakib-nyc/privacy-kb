@@ -14,8 +14,10 @@ data_types:
 status: in_force
 effective_from: '2025-06-23'
 effective_to: null
-effective_from_basis: undetermined
-effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+effective_from_basis: versioner_evidence
+effective_from_evidence: >-
+  this exact span is absent from 16 C.F.R. § 312.11(f) at 2016-12-22 and first appears at
+  2025-06-23, per the source's point-in-time record (window 2016-12-22..2025-06-23).
 supersedes: null
 superseded_by: null
 amendment_history: []

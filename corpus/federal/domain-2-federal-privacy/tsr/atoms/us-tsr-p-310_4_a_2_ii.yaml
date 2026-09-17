@@ -4,20 +4,20 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - ftc
+- ftc
 sector:
-  - telemarketing
-  - any
+- telemarketing
+- any
 data_types:
-  - any
+- any
 status: in_force
-effective_from: '2010-08-10'
+effective_from: '2024-05-16'
 effective_to: null
-effective_from_basis: citation_apparatus
-effective_from_evidence: >-
-  "Aug. 10, 2010" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml — citation apparatus, not
-  operative text
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2024-04-16 and first
+  appears at 2024-05-16 (window 2016-12-22..2024-05-16). Narrowed from the 2010-08-10 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-05-16 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -38,58 +38,51 @@ source:
   render: null
   structured_source_check:
     checked:
-      - eCFR versioner XML API
+    - eCFR versioner XML API
     result: structured_source_used
     note: null
   segment_sha256: 678966f5022efab247c3c68039ffe4cacba0d50d47e9c20313b61db98d59ca9b
-verbatim_span: >-
-  The seller has provided the person with documentation in the form of a consumer report from a
-  consumer reporting agency demonstrating that the promised results have been achieved, such report
-  having been issued more than six months after the results were achieved. Nothing in this part
-  should be construed to affect the requirement in the Fair Credit Reporting Act, 15 U.S.C. 1681,
+verbatim_span: The seller has provided the person with documentation in the form of a consumer report
+  from a consumer reporting agency demonstrating that the promised results have been achieved, such
+  report having been issued more than six months after the results were achieved. Nothing in this
+  part should be construed to affect the requirement in the Fair Credit Reporting Act, 15 U.S.C. 1681,
   that a consumer report may only be obtained for a specified permissible purpose;
 paragraph_path:
   path:
-    - a
-    - '2'
-    - ii
+  - a
+  - '2'
+  - ii
   anchor: '310.4'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 16-cfr-310.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  evidence: read from 16-cfr-310.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      It is an abusive telemarketing act or practice and a violation of this part for any seller or
-      telemarketer to engage in the following conduct:
-    path:
-      - a
-    citation: 16 C.F.R. § 310.4(a)
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      Requesting or receiving payment of any fee or consideration for goods or services represented
-      to remove derogatory information from, or improve, a person's credit history, credit record,
-      or credit rating until:
-    path:
-      - a
-      - '2'
-    citation: 16 C.F.R. § 310.4(a)(2)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'It is an abusive telemarketing act or practice and a violation of this part for
+    any seller or telemarketer to engage in the following conduct:'
+  path:
+  - a
+  citation: 16 C.F.R. § 310.4(a)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'Requesting or receiving payment of any fee or consideration for goods or services
+    represented to remove derogatory information from, or improve, a person''s credit history, credit
+    record, or credit rating until:'
+  path:
+  - a
+  - '2'
+  citation: 16 C.F.R. § 310.4(a)(2)
 operative_verb: may
-summary: >-
-  The seller has provided the person with documentation in the form of a consumer report from a
-  consumer reporting agency demonstrating that the promised results have been achieved, such report
+summary: The seller has provided the person with documentation in the form of a consumer report from
+  a consumer reporting agency demonstrating that the promised results have been achieved, such report
   having been issued more than six months after the results were achieved.
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

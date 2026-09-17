@@ -4,19 +4,19 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - fcc
+- fcc
 sector:
-  - telecom
+- telecom
 data_types:
-  - cpni
+- cpni
 status: in_force
-effective_from: '2017-09-21'
+effective_from: '2026-03-25'
 effective_to: null
-effective_from_basis: citation_apparatus
-effective_from_evidence: >-
-  "Sept. 21, 2017" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
-  operative text
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2025-12-15 and first
+  appears at 2026-03-25 (window 2017-01-01..2026-03-25). Narrowed from the 2017-09-21 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2026-03-25 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -37,53 +37,48 @@ source:
   render: null
   structured_source_check:
     checked:
-      - eCFR versioner XML API (title 47 part 64)
+    - eCFR versioner XML API (title 47 part 64)
     result: structured_source_used
     note: null
   segment_sha256: bf6e11c2b184072dfac62f7a295732bbdd2e2494056973226c48ec84d58c864d
-verbatim_span: >-
-  In the case of a code transmitting from a non-IP network to an IP network, ISUP code 21 must map
-  to SIP code 603 or 603+ where the cause location is “user.”
+verbatim_span: In the case of a code transmitting from a non-IP network to an IP network, ISUP code
+  21 must map to SIP code 603 or 603+ where the cause location is “user.”
 paragraph_path:
   path:
-    - k
-    - '9'
-    - iv
+  - k
+  - '9'
+  - iv
   anchor: '64.1200'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 47-cfr-64.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  evidence: read from 47-cfr-64.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: 'Voice service providers may block calls so that they do not reach a called party as follows:'
-    path:
-      - k
-    citation: 47 C.F.R. § 64.1200(k)
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      Any terminating provider that blocks calls based on any analytics program, either itself or
-      through a third-party blocking service, must immediately return, and all voice service
-      providers in the call path must transmit, an appropriate response code to the origination
-      point of the call. For purposes of this rule, an appropriate response code is:
-    path:
-      - k
-      - '9'
-    citation: 47 C.F.R. § 64.1200(k)(9)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'Voice service providers may block calls so that they do not reach a called party
+    as follows:'
+  path:
+  - k
+  citation: 47 C.F.R. § 64.1200(k)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'Any terminating provider that blocks calls based on any analytics program, either
+    itself or through a third-party blocking service, must immediately return, and all voice service
+    providers in the call path must transmit, an appropriate response code to the origination point
+    of the call. For purposes of this rule, an appropriate response code is:'
+  path:
+  - k
+  - '9'
+  citation: 47 C.F.R. § 64.1200(k)(9)
 operative_verb: must
-summary: >-
-  In the case of a code transmitting from a non-IP network to an IP network, ISUP code 21 must map
-  to SIP code 603 or 603+ where the cause location is “user.”
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+summary: In the case of a code transmitting from a non-IP network to an IP network, ISUP code 21 must
+  map to SIP code 603 or 603+ where the cause location is “user.”
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

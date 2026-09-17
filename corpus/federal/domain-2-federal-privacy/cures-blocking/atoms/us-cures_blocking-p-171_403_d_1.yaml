@@ -13,10 +13,10 @@ data_types:
 status: in_force
 effective_from: '2024-03-11'
 effective_to: null
-effective_from_basis: undetermined
+effective_from_basis: versioner_evidence
 effective_from_evidence: >-
-  not found anywhere in
-  corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+  this exact span is absent from 45 C.F.R. § 171.403(d)(1) at 2024-02-08 and first appears at
+  2024-03-11, per the source's point-in-time record (window 2020-06-30..2024-12-17).
 supersedes: null
 superseded_by: null
 amendment_history: []

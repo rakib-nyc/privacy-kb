@@ -1,5 +1,5 @@
 # Prior versions of provisions the corpus does NOT hold. Entries accumulate; see the tool.
-generated: '2026-09-11'
+generated: '2026-09-17'
 what_this_is: >-
   Provisions whose stored text was PROVED younger than the effective_from the record claimed. Each
   record has been narrowed to the window its text actually covers, so the corpus no longer answers
@@ -7,8 +7,281 @@ what_this_is: >-
   corpus_now_answers_from the engine returns nothing for this provision, because the text that
   governed then is not held. Entries ACCUMULATE and are closed only by adding the prior vintage as
   its own record and chaining the two — never by fixing the date alone.
-count: 12
+count: 280
 entries:
+  - atom_id: us.tsr.p.310_4_a_2_ii
+    citation: 16 C.F.R. § 310.4(a)(2)(ii)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_4_b_3_iii_d
+    citation: 16 C.F.R. § 310.4(b)(3)(iii)(D)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_a_1
+    citation: 16 C.F.R. § 310.5(a)(1)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_a_2_i
+    citation: 16 C.F.R. § 310.5(a)(2)(i)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_a_2_ii
+    citation: 16 C.F.R. § 310.5(a)(2)(ii)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_a_2_iii
+    citation: 16 C.F.R. § 310.5(a)(2)(iii)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_a_2_iv
+    citation: 16 C.F.R. § 310.5(a)(2)(iv)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_a_2_ix
+    citation: 16 C.F.R. § 310.5(a)(2)(ix)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_a_2_v
+    citation: 16 C.F.R. § 310.5(a)(2)(v)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_a_2_vi
+    citation: 16 C.F.R. § 310.5(a)(2)(vi)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_a_2_vii
+    citation: 16 C.F.R. § 310.5(a)(2)(vii)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_a_2_viii
+    citation: 16 C.F.R. § 310.5(a)(2)(viii)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_a_2_x
+    citation: 16 C.F.R. § 310.5(a)(2)(x)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_a_7
+    citation: 16 C.F.R. § 310.5(a)(7)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_a_8_vi
+    citation: 16 C.F.R. § 310.5(a)(8)(vi)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_a_9
+    citation: 16 C.F.R. § 310.5(a)(9)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_b_1
+    citation: 16 C.F.R. § 310.5(b)(1)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_b_2
+    citation: 16 C.F.R. § 310.5(b)(2)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_e
+    citation: 16 C.F.R. § 310.5(e)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_5_f
+    citation: 16 C.F.R. § 310.5(f)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_6_b_7_ii
+    citation: 16 C.F.R. § 310.6(b)(7)(ii)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_7_a
+    citation: 16 C.F.R. § 310.7(a)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_8_e
+    citation: 16 C.F.R. § 310.8(e)
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.tsr.p.310_9
+    citation: 16 C.F.R. § 310.9
+    corpus_now_answers_from: '2024-05-16'
+    missing_before: '2024-05-16'
+    last_seen_without_this_text: '2024-04-16'
+    evidence_window: 2016-12-22..2024-05-16
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_10
+    citation: 16 C.F.R. § 312.10
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_11_b_2
+    citation: 16 C.F.R. § 312.11(b)(2)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_11_d_1_i
+    citation: 16 C.F.R. § 312.11(d)(1)(i)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_11_d_1_ii
+    citation: 16 C.F.R. § 312.11(d)(1)(ii)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_11_d_1_iii
+    citation: 16 C.F.R. § 312.11(d)(1)(iii)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_11_d_1_iv
+    citation: 16 C.F.R. § 312.11(d)(1)(iv)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_11_d_4
+    citation: 16 C.F.R. § 312.11(d)(4)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_11_f
+    citation: 16 C.F.R. § 312.11(f)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_11_g
+    citation: 16 C.F.R. § 312.11(g)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_12_a
+    citation: 16 C.F.R. § 312.12(a)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_12_b
+    citation: 16 C.F.R. § 312.12(b)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_2_mixed_audience_website_or_online_service
+    citation: 16 C.F.R. § 312.2 ("Mixed audience website or online service")
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_2_website_or_online_service_directed_to_children_2
+    citation: 16 C.F.R. § 312.2 ("Website or online service directed to children")(2)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_2_website_or_online_service_directed_to_children_3
+    citation: 16 C.F.R. § 312.2 ("Website or online service directed to children")(3)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_2_website_or_online_service_directed_to_children_4
+    citation: 16 C.F.R. § 312.2 ("Website or online service directed to children")(4)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
   - atom_id: us.coppa.312_3.notice
     citation: 16 C.F.R. § 312.3(a)
     corpus_now_answers_from: '2025-06-23'
@@ -22,6 +295,97 @@ entries:
       2000-04-21, which PREDATES the text — the record answers earlier dates with words that did not
       exist then.
     status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_4_c_2_iii
+    citation: 16 C.F.R. § 312.4(c)(2)(iii)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_4_d_1
+    citation: 16 C.F.R. § 312.4(d)(1)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_4_d_5
+    citation: 16 C.F.R. § 312.4(d)(5)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_5_a_2
+    citation: 16 C.F.R. § 312.5(a)(2)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_5_b_2_ix
+    citation: 16 C.F.R. § 312.5(b)(2)(ix)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_5_c_2
+    citation: 16 C.F.R. § 312.5(c)(2)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_5_c_7
+    citation: 16 C.F.R. § 312.5(c)(7)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_5_c_8
+    citation: 16 C.F.R. § 312.5(c)(8)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_5_c_9
+    citation: 16 C.F.R. § 312.5(c)(9)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_8_b_3
+    citation: 16 C.F.R. § 312.8(b)(3)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_8_b_5
+    citation: 16 C.F.R. § 312.8(b)(5)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.coppa.rule.p.312_8_c
+    citation: 16 C.F.R. § 312.8(c)
+    corpus_now_answers_from: '2025-06-23'
+    missing_before: '2025-06-23'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2025-06-23
+    status: open — prior vintage not held
+  - atom_id: us.cfr.16.313.p.313_4_e_2_ii
+    citation: 16 C.F.R. § 313.4(e)(2)(ii)
+    corpus_now_answers_from: '2022-01-07'
+    missing_before: '2022-01-07'
+    last_seen_without_this_text: '2021-12-09'
+    evidence_window: 2016-12-22..2022-01-07
+    status: open — prior vintage not held
   - atom_id: us.cfr.16.313.5.a1.annual_notice
     citation: 16 C.F.R. § 313.5(a)(1)
     corpus_now_answers_from: '2022-01-07'
@@ -29,8 +393,85 @@ entries:
     last_seen_without_this_text: '2021-12-09'
     evidence_window: 2016-12-22..2022-01-07
     status: open — prior vintage not held
+  - atom_id: us.cfr.16.313.p.313_5_e_2
+    citation: 16 C.F.R. § 313.5(e)(2)
+    corpus_now_answers_from: '2022-01-07'
+    missing_before: '2022-01-07'
+    last_seen_without_this_text: '2021-12-09'
+    evidence_window: 2016-12-22..2022-01-07
+    status: open — prior vintage not held
+  - atom_id: us.cfr.16.313.p.313_5_e_2_i
+    citation: 16 C.F.R. § 313.5(e)(2)(i)
+    corpus_now_answers_from: '2022-01-07'
+    missing_before: '2022-01-07'
+    last_seen_without_this_text: '2021-12-09'
+    evidence_window: 2016-12-22..2022-01-07
+    status: open — prior vintage not held
+  - atom_id: us.cfr.16.313.p.313_5_e_2_ii
+    citation: 16 C.F.R. § 313.5(e)(2)(ii)
+    corpus_now_answers_from: '2022-01-07'
+    missing_before: '2022-01-07'
+    last_seen_without_this_text: '2021-12-09'
+    evidence_window: 2016-12-22..2022-01-07
+    status: open — prior vintage not held
+  - atom_id: us.cfr.16.313.p.313_5_e_2_iii_a
+    citation: 16 C.F.R. § 313.5(e)(2)(iii)(A)
+    corpus_now_answers_from: '2022-01-07'
+    missing_before: '2022-01-07'
+    last_seen_without_this_text: '2021-12-09'
+    evidence_window: 2016-12-22..2022-01-07
+    status: open — prior vintage not held
   - atom_id: us.glba.safeguards.314_4.ftc_notification
     citation: 16 C.F.R. § 314.4(j)(1)
+    corpus_now_answers_from: '2024-05-13'
+    missing_before: '2024-05-13'
+    last_seen_without_this_text: '2023-11-13'
+    evidence_window: 2016-12-22..2024-05-13
+    status: open — prior vintage not held
+  - atom_id: us.glba.safeguards_rule.p.314_4_j_1_i
+    citation: 16 C.F.R. § 314.4(j)(1)(i)
+    corpus_now_answers_from: '2024-05-13'
+    missing_before: '2024-05-13'
+    last_seen_without_this_text: '2023-11-13'
+    evidence_window: 2016-12-22..2024-05-13
+    status: open — prior vintage not held
+  - atom_id: us.glba.safeguards_rule.p.314_4_j_1_ii
+    citation: 16 C.F.R. § 314.4(j)(1)(ii)
+    corpus_now_answers_from: '2024-05-13'
+    missing_before: '2024-05-13'
+    last_seen_without_this_text: '2023-11-13'
+    evidence_window: 2016-12-22..2024-05-13
+    status: open — prior vintage not held
+  - atom_id: us.glba.safeguards_rule.p.314_4_j_1_iii
+    citation: 16 C.F.R. § 314.4(j)(1)(iii)
+    corpus_now_answers_from: '2024-05-13'
+    missing_before: '2024-05-13'
+    last_seen_without_this_text: '2023-11-13'
+    evidence_window: 2016-12-22..2024-05-13
+    status: open — prior vintage not held
+  - atom_id: us.glba.safeguards_rule.p.314_4_j_1_iv
+    citation: 16 C.F.R. § 314.4(j)(1)(iv)
+    corpus_now_answers_from: '2024-05-13'
+    missing_before: '2024-05-13'
+    last_seen_without_this_text: '2023-11-13'
+    evidence_window: 2016-12-22..2024-05-13
+    status: open — prior vintage not held
+  - atom_id: us.glba.safeguards_rule.p.314_4_j_1_v
+    citation: 16 C.F.R. § 314.4(j)(1)(v)
+    corpus_now_answers_from: '2024-05-13'
+    missing_before: '2024-05-13'
+    last_seen_without_this_text: '2023-11-13'
+    evidence_window: 2016-12-22..2024-05-13
+    status: open — prior vintage not held
+  - atom_id: us.glba.safeguards_rule.p.314_4_j_1_vi
+    citation: 16 C.F.R. § 314.4(j)(1)(vi)
+    corpus_now_answers_from: '2024-05-13'
+    missing_before: '2024-05-13'
+    last_seen_without_this_text: '2023-11-13'
+    evidence_window: 2016-12-22..2024-05-13
+    status: open — prior vintage not held
+  - atom_id: us.glba.safeguards_rule.p.314_4_j_2
+    citation: 16 C.F.R. § 314.4(j)(2)
     corpus_now_answers_from: '2024-05-13'
     missing_before: '2024-05-13'
     last_seen_without_this_text: '2023-11-13'
@@ -56,8 +497,344 @@ entries:
     last_seen_without_this_text: '2016-12-22'
     evidence_window: 2016-12-22..2024-07-29
     status: open — prior vintage not held
+  - atom_id: us.health_breach.p.318_3_b
+    citation: 16 C.F.R. § 318.3(b)
+    corpus_now_answers_from: '2024-07-29'
+    missing_before: '2024-07-29'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2024-07-29
+    status: open — prior vintage not held
+  - atom_id: us.health_breach.p.318_4_a
+    citation: 16 C.F.R. § 318.4(a)
+    corpus_now_answers_from: '2024-07-29'
+    missing_before: '2024-07-29'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2024-07-29
+    status: open — prior vintage not held
+  - atom_id: us.health_breach.p.318_4_b
+    citation: 16 C.F.R. § 318.4(b)
+    corpus_now_answers_from: '2024-07-29'
+    missing_before: '2024-07-29'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2024-07-29
+    status: open — prior vintage not held
+  - atom_id: us.health_breach.p.318_4_c
+    citation: 16 C.F.R. § 318.4(c)
+    corpus_now_answers_from: '2024-07-29'
+    missing_before: '2024-07-29'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2024-07-29
+    status: open — prior vintage not held
+  - atom_id: us.health_breach.p.318_4_d
+    citation: 16 C.F.R. § 318.4(d)
+    corpus_now_answers_from: '2024-07-29'
+    missing_before: '2024-07-29'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2024-07-29
+    status: open — prior vintage not held
+  - atom_id: us.health_breach.p.318_5_a_1
+    citation: 16 C.F.R. § 318.5(a)(1)
+    corpus_now_answers_from: '2024-07-29'
+    missing_before: '2024-07-29'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2024-07-29
+    status: open — prior vintage not held
+  - atom_id: us.health_breach.p.318_5_a_2_ii
+    citation: 16 C.F.R. § 318.5(a)(2)(ii)
+    corpus_now_answers_from: '2024-07-29'
+    missing_before: '2024-07-29'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2024-07-29
+    status: open — prior vintage not held
+  - atom_id: us.health_breach.p.318_5_b
+    citation: 16 C.F.R. § 318.5(b)
+    corpus_now_answers_from: '2024-07-29'
+    missing_before: '2024-07-29'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2024-07-29
+    status: open — prior vintage not held
+  - atom_id: us.health_breach.p.318_5_c
+    citation: 16 C.F.R. § 318.5(c)
+    corpus_now_answers_from: '2024-07-29'
+    missing_before: '2024-07-29'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2024-07-29
+    status: open — prior vintage not held
+  - atom_id: us.health_breach.p.318_6_e
+    citation: 16 C.F.R. § 318.6(e)
+    corpus_now_answers_from: '2024-07-29'
+    missing_before: '2024-07-29'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2024-07-29
+    status: open — prior vintage not held
+  - atom_id: us.health_breach.p.318_7
+    citation: 16 C.F.R. § 318.7
+    corpus_now_answers_from: '2024-07-29'
+    missing_before: '2024-07-29'
+    last_seen_without_this_text: '2016-12-22'
+    evidence_window: 2016-12-22..2024-07-29
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_1
+    citation: 42 C.F.R. § 2.1
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_11_records
+    citation: 42 C.F.R. § 2.11 ("Records")
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_12_a_1_ii
+    citation: 42 C.F.R. § 2.12(a)(1)(ii)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_12_a_2
+    citation: 42 C.F.R. § 2.12(a)(2)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_12_c_6
+    citation: 42 C.F.R. § 2.12(c)(6)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_12_d_2_ii
+    citation: 42 C.F.R. § 2.12(d)(2)(ii)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_12_e_3
+    citation: 42 C.F.R. § 2.12(e)(3)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
   - atom_id: us.part2.2_13.a.use_disclosure_prohibition
     citation: 42 C.F.R. § 2.13(a)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_13_c_1
+    citation: 42 C.F.R. § 2.13(c)(1)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_14_a
+    citation: 42 C.F.R. § 2.14(a)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_14_b_1
+    citation: 42 C.F.R. § 2.14(b)(1)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_14_c_2
+    citation: 42 C.F.R. § 2.14(c)(2)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_15_a_1
+    citation: 42 C.F.R. § 2.15(a)(1)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_15_a_2
+    citation: 42 C.F.R. § 2.15(a)(2)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_15_b_2
+    citation: 42 C.F.R. § 2.15(b)(2)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_16_b
+    citation: 42 C.F.R. § 2.16(b)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_17_b
+    citation: 42 C.F.R. § 2.17(b)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_19_b_1_i_a
+    citation: 42 C.F.R. § 2.19(b)(1)(i)(A)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_19_b_2_ii
+    citation: 42 C.F.R. § 2.19(b)(2)(ii)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_19_b_2_iii_b
+    citation: 42 C.F.R. § 2.19(b)(2)(iii)(B)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_19_b_2_iv
+    citation: 42 C.F.R. § 2.19(b)(2)(iv)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_2_a_4
+    citation: 42 C.F.R. § 2.2(a)(4)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_20
+    citation: 42 C.F.R. § 2.20
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_22_a
+    citation: 42 C.F.R. § 2.22(a)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_22_b
+    citation: 42 C.F.R. § 2.22(b)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_22_b_1_i
+    citation: 42 C.F.R. § 2.22(b)(1)(i)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_22_c
+    citation: 42 C.F.R. § 2.22(c)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_22_c_3_i
+    citation: 42 C.F.R. § 2.22(c)(3)(i)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_22_c_3_ii
+    citation: 42 C.F.R. § 2.22(c)(3)(ii)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_22_c_3_iii
+    citation: 42 C.F.R. § 2.22(c)(3)(iii)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_24
+    citation: 42 C.F.R. § 2.24
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_25_a
+    citation: 42 C.F.R. § 2.25(a)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_25_b_1
+    citation: 42 C.F.R. § 2.25(b)(1)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_26_a_1
+    citation: 42 C.F.R. § 2.26(a)(1)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_26_a_3
+    citation: 42 C.F.R. § 2.26(a)(3)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_26_a_4
+    citation: 42 C.F.R. § 2.26(a)(4)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_3_a
+    citation: 42 C.F.R. § 2.3(a)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_3_c
+    citation: 42 C.F.R. § 2.3(c)
     corpus_now_answers_from: '2024-04-16'
     missing_before: '2024-04-16'
     last_seen_without_this_text: '2024-02-16'
@@ -70,6 +847,83 @@ entries:
     last_seen_without_this_text: '2024-02-16'
     evidence_window: 2017-03-21..2024-04-16
     status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_31_a_10_i
+    citation: 42 C.F.R. § 2.31(a)(10)(i)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_31_a_10_ii
+    citation: 42 C.F.R. § 2.31(a)(10)(ii)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_31_a_2
+    citation: 42 C.F.R. § 2.31(a)(2)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_31_a_3
+    citation: 42 C.F.R. § 2.31(a)(3)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_31_a_4_i
+    citation: 42 C.F.R. § 2.31(a)(4)(i)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_31_a_4_ii_a
+    citation: 42 C.F.R. § 2.31(a)(4)(ii)(A)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_31_a_4_ii_b
+    citation: 42 C.F.R. § 2.31(a)(4)(ii)(B)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_31_a_4_iii
+    citation: 42 C.F.R. § 2.31(a)(4)(iii)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_31_a_5
+    citation: 42 C.F.R. § 2.31(a)(5)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_31_a_5_iii
+    citation: 42 C.F.R. § 2.31(a)(5)(iii)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_31_a_6
+    citation: 42 C.F.R. § 2.31(a)(6)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
   - atom_id: us.part2.2_31.b_1.sud_counseling_notes_consent
     citation: 42 C.F.R. § 2.31(b)(1)
     corpus_now_answers_from: '2024-04-16'
@@ -77,12 +931,404 @@ entries:
     last_seen_without_this_text: '2024-02-16'
     evidence_window: 2017-03-21..2024-04-16
     status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_31_b_2
+    citation: 42 C.F.R. § 2.31(b)(2)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_31_b_3
+    citation: 42 C.F.R. § 2.31(b)(3)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_32_b
+    citation: 42 C.F.R. § 2.32(b)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_33_a_1
+    citation: 42 C.F.R. § 2.33(a)(1)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_33_a_2
+    citation: 42 C.F.R. § 2.33(a)(2)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_33_b_1
+    citation: 42 C.F.R. § 2.33(b)(1)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_33_b_2
+    citation: 42 C.F.R. § 2.33(b)(2)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_33_b_3
+    citation: 42 C.F.R. § 2.33(b)(3)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_33_c
+    citation: 42 C.F.R. § 2.33(c)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_34_b
+    citation: 42 C.F.R. § 2.34(b)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_35_d
+    citation: 42 C.F.R. § 2.35(d)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_4_a
+    citation: 42 C.F.R. § 2.4(a)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_4_b
+    citation: 42 C.F.R. § 2.4(b)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_4_c
+    citation: 42 C.F.R. § 2.4(c)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_4_d
+    citation: 42 C.F.R. § 2.4(d)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_52_b_2
+    citation: 42 C.F.R. § 2.52(b)(2)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_52_b_3
+    citation: 42 C.F.R. § 2.52(b)(3)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_53_e_5
+    citation: 42 C.F.R. § 2.53(e)(5)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_53_h
+    citation: 42 C.F.R. § 2.53(h)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_61_a
+    citation: 42 C.F.R. § 2.61(a)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_61_b_1
+    citation: 42 C.F.R. § 2.61(b)(1)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_61_b_2
+    citation: 42 C.F.R. § 2.61(b)(2)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_62
+    citation: 42 C.F.R. § 2.62
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_64_a
+    citation: 42 C.F.R. § 2.64(a)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_65_a
+    citation: 42 C.F.R. § 2.65(a)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_66_a_1
+    citation: 42 C.F.R. § 2.66(a)(1)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_66_a_3_ii
+    citation: 42 C.F.R. § 2.66(a)(3)(ii)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_66_a_3_iii
+    citation: 42 C.F.R. § 2.66(a)(3)(iii)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_66_a_3_iv
+    citation: 42 C.F.R. § 2.66(a)(3)(iv)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_66_a_3_v
+    citation: 42 C.F.R. § 2.66(a)(3)(v)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_66_b
+    citation: 42 C.F.R. § 2.66(b)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_66_d_1
+    citation: 42 C.F.R. § 2.66(d)(1)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_66_d_2
+    citation: 42 C.F.R. § 2.66(d)(2)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_67_a
+    citation: 42 C.F.R. § 2.67(a)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.part2_sud.p.2_67_e
+    citation: 42 C.F.R. § 2.67(e)
+    corpus_now_answers_from: '2024-04-16'
+    missing_before: '2024-04-16'
+    last_seen_without_this_text: '2024-02-16'
+    evidence_window: 2017-03-21..2024-04-16
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.160.p.160_103_reproductive_health_care
+    citation: 45 C.F.R. § 160.103 ("Reproductive health care")
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2026-05-26
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_314_b_2
+    citation: 45 C.F.R. § 164.314(b)(2)
+    corpus_now_answers_from: '2020-11-24'
+    missing_before: '2020-11-24'
+    last_seen_without_this_text: '2016-12-30'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_509_a_1
+    citation: 45 C.F.R. § 164.509(a)(1)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_509_b_1_iii
+    citation: 45 C.F.R. § 164.509(b)(1)(iii)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_509_b_3
+    citation: 45 C.F.R. § 164.509(b)(3)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_509_c_1_v
+    citation: 45 C.F.R. § 164.509(c)(1)(v)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_509_c_1_vi
+    citation: 45 C.F.R. § 164.509(c)(1)(vi)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_509_d
+    citation: 45 C.F.R. § 164.509(d)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164_512.general_permission
+    citation: 45 C.F.R. § 164.512
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_512_c_3
+    citation: 45 C.F.R. § 164.512(c)(3)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
   - atom_id: us.cfr.45.164_520.a_1
     citation: 45 C.F.R. § 164.520(a)(1)
     corpus_now_answers_from: '2024-06-25'
     missing_before: '2024-06-25'
     last_seen_without_this_text: '2024-04-26'
     evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_520_b_1
+    citation: 45 C.F.R. § 164.520(b)(1)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_520_b_1_ii_c
+    citation: 45 C.F.R. § 164.520(b)(1)(ii)(C)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_520_b_1_ii_d
+    citation: 45 C.F.R. § 164.520(b)(1)(ii)(D)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.hipaa.breach_notification_rule.p.164_520_b_1_ii_h
+    citation: 45 C.F.R. § 164.520(b)(1)(ii)(H)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.hipaa.breach_notification_rule.p.164_520_b_1_iii_c
+    citation: 45 C.F.R. § 164.520(b)(1)(iii)(C)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_520_b_1_iii_d
+    citation: 45 C.F.R. § 164.520(b)(1)(iii)(D)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_520_b_1_iii_e
+    citation: 45 C.F.R. § 164.520(b)(1)(iii)(E)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.hipaa.breach_notification_rule.p.164_520_b_1_v_a
+    citation: 45 C.F.R. § 164.520(b)(1)(v)(A)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_520_d_4
+    citation: 45 C.F.R. § 164.520(d)(4)
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cfr.45.164.p.164_535
+    citation: 45 C.F.R. § 164.535
+    corpus_now_answers_from: '2024-06-25'
+    missing_before: '2024-06-25'
+    last_seen_without_this_text: '2024-04-26'
+    evidence_window: 2016-12-30..2024-06-25
+    status: open — prior vintage not held
+  - atom_id: us.cures_blocking.p.171_1000
+    citation: 45 C.F.R. § 171.1000
+    corpus_now_answers_from: '2024-12-17'
+    missing_before: '2024-12-17'
+    last_seen_without_this_text: '2024-03-11'
+    evidence_window: 2020-06-30..2024-12-17
     status: open — prior vintage not held
   - atom_id: us.cures.171_103.a.information_blocking_definition
     citation: 45 C.F.R. § 171.103(a)
@@ -98,10 +1344,640 @@ entries:
     last_seen_without_this_text: '2024-02-08'
     evidence_window: 2020-06-30..2024-12-17
     status: open — prior vintage not held
+  - atom_id: us.cures_blocking.p.171_1101_a_3
+    citation: 45 C.F.R. § 171.1101(a)(3)
+    corpus_now_answers_from: '2024-12-17'
+    missing_before: '2024-12-17'
+    last_seen_without_this_text: '2024-03-11'
+    evidence_window: 2020-06-30..2024-12-17
+    status: open — prior vintage not held
+  - atom_id: us.cures_blocking.p.171_202_e
+    citation: 45 C.F.R. § 171.202(e)
+    corpus_now_answers_from: '2024-12-17'
+    missing_before: '2024-12-17'
+    last_seen_without_this_text: '2024-03-11'
+    evidence_window: 2020-06-30..2024-12-17
+    status: open — prior vintage not held
+  - atom_id: us.cures_blocking.p.171_204_a_2_ii
+    citation: 45 C.F.R. § 171.204(a)(2)(ii)
+    corpus_now_answers_from: '2024-12-17'
+    missing_before: '2024-12-17'
+    last_seen_without_this_text: '2024-03-11'
+    evidence_window: 2020-06-30..2024-12-17
+    status: open — prior vintage not held
+  - atom_id: us.cures_blocking.p.171_204_a_4_ii
+    citation: 45 C.F.R. § 171.204(a)(4)(ii)
+    corpus_now_answers_from: '2024-03-11'
+    missing_before: '2024-03-11'
+    last_seen_without_this_text: '2024-02-08'
+    evidence_window: 2020-06-30..2024-12-17
+    status: open — prior vintage not held
+  - atom_id: us.cures_blocking.p.171_206_a_3_ii_d
+    citation: 45 C.F.R. § 171.206(a)(3)(ii)(D)
+    corpus_now_answers_from: '2024-12-17'
+    missing_before: '2024-12-17'
+    last_seen_without_this_text: '2024-03-11'
+    evidence_window: 2020-06-30..2024-12-17
+    status: open — prior vintage not held
+  - atom_id: us.cures_blocking.p.171_206_a_4
+    citation: 45 C.F.R. § 171.206(a)(4)
+    corpus_now_answers_from: '2024-12-17'
+    missing_before: '2024-12-17'
+    last_seen_without_this_text: '2024-03-11'
+    evidence_window: 2020-06-30..2024-12-17
+    status: open — prior vintage not held
+  - atom_id: us.cures_blocking.p.171_206_c
+    citation: 45 C.F.R. § 171.206(c)
+    corpus_now_answers_from: '2024-12-17'
+    missing_before: '2024-12-17'
+    last_seen_without_this_text: '2024-03-11'
+    evidence_window: 2020-06-30..2024-12-17
+    status: open — prior vintage not held
+  - atom_id: us.cures_blocking.p.171_301_a_1
+    citation: 45 C.F.R. § 171.301(a)(1)
+    corpus_now_answers_from: '2024-03-11'
+    missing_before: '2024-03-11'
+    last_seen_without_this_text: '2024-02-08'
+    evidence_window: 2020-06-30..2024-12-17
+    status: open — prior vintage not held
+  - atom_id: us.cures_blocking.p.171_301_b_1
+    citation: 45 C.F.R. § 171.301(b)(1)
+    corpus_now_answers_from: '2024-03-11'
+    missing_before: '2024-03-11'
+    last_seen_without_this_text: '2024-02-08'
+    evidence_window: 2020-06-30..2024-12-17
+    status: open — prior vintage not held
+  - atom_id: us.cures_blocking.p.171_400
+    citation: 45 C.F.R. § 171.400
+    corpus_now_answers_from: '2024-03-11'
+    missing_before: '2024-03-11'
+    last_seen_without_this_text: '2024-02-08'
+    evidence_window: 2020-06-30..2024-12-17
+    status: open — prior vintage not held
+  - atom_id: us.cures_blocking.p.171_403_d_1
+    citation: 45 C.F.R. § 171.403(d)(1)
+    corpus_now_answers_from: '2024-03-11'
+    missing_before: '2024-03-11'
+    last_seen_without_this_text: '2024-02-08'
+    evidence_window: 2020-06-30..2024-12-17
+    status: open — prior vintage not held
+  - atom_id: us.common_rule.p.46_201_b_2
+    citation: 45 C.F.R. § 46.201(b)(2)
+    corpus_now_answers_from: '2024-10-24'
+    missing_before: '2024-10-24'
+    last_seen_without_this_text: '2019-11-05'
+    evidence_window: 2016-12-30..2024-10-24
+    status: open — prior vintage not held
+  - atom_id: us.common_rule.p.46_202_h
+    citation: 45 C.F.R. § 46.202(h)
+    corpus_now_answers_from: '2024-10-24'
+    missing_before: '2024-10-24'
+    last_seen_without_this_text: '2019-11-05'
+    evidence_window: 2016-12-30..2024-10-24
+    status: open — prior vintage not held
+  - atom_id: us.common_rule.p.46_205_d
+    citation: 45 C.F.R. § 46.205(d)
+    corpus_now_answers_from: '2024-10-24'
+    missing_before: '2024-10-24'
+    last_seen_without_this_text: '2019-11-05'
+    evidence_window: 2016-12-30..2024-10-24
+    status: open — prior vintage not held
+  - atom_id: us.common_rule.p.46_306_b_1
+    citation: 45 C.F.R. § 46.306(b)(1)
+    corpus_now_answers_from: '2024-10-24'
+    missing_before: '2024-10-24'
+    last_seen_without_this_text: '2019-11-05'
+    evidence_window: 2016-12-30..2024-10-24
+    status: open — prior vintage not held
+  - atom_id: us.common_rule.p.46_306_b_2
+    citation: 45 C.F.R. § 46.306(b)(2)
+    corpus_now_answers_from: '2024-10-24'
+    missing_before: '2024-10-24'
+    last_seen_without_this_text: '2019-11-05'
+    evidence_window: 2016-12-30..2024-10-24
+    status: open — prior vintage not held
+  - atom_id: us.common_rule.p.46_401_b_2
+    citation: 45 C.F.R. § 46.401(b)(2)
+    corpus_now_answers_from: '2024-10-24'
+    missing_before: '2024-10-24'
+    last_seen_without_this_text: '2019-11-05'
+    evidence_window: 2016-12-30..2024-10-24
+    status: open — prior vintage not held
+  - atom_id: us.common_rule.p.46_401_c_2
+    citation: 45 C.F.R. § 46.401(c)(2)
+    corpus_now_answers_from: '2024-10-24'
+    missing_before: '2024-10-24'
+    last_seen_without_this_text: '2019-11-05'
+    evidence_window: 2016-12-30..2024-10-24
+    status: open — prior vintage not held
+  - atom_id: us.common_rule.p.46_408_a
+    citation: 45 C.F.R. § 46.408(a)
+    corpus_now_answers_from: '2024-10-24'
+    missing_before: '2024-10-24'
+    last_seen_without_this_text: '2019-11-05'
+    evidence_window: 2016-12-30..2024-10-24
+    status: open — prior vintage not held
+  - atom_id: us.common_rule.p.46_408_b
+    citation: 45 C.F.R. § 46.408(b)
+    corpus_now_answers_from: '2024-10-24'
+    missing_before: '2024-10-24'
+    last_seen_without_this_text: '2019-11-05'
+    evidence_window: 2016-12-30..2024-10-24
+    status: open — prior vintage not held
+  - atom_id: us.common_rule.p.46_408_c
+    citation: 45 C.F.R. § 46.408(c)
+    corpus_now_answers_from: '2024-10-24'
+    missing_before: '2024-10-24'
+    last_seen_without_this_text: '2019-11-05'
+    evidence_window: 2016-12-30..2024-10-24
+    status: open — prior vintage not held
+  - atom_id: us.common_rule.p.46_408_d
+    citation: 45 C.F.R. § 46.408(d)
+    corpus_now_answers_from: '2024-10-24'
+    missing_before: '2024-10-24'
+    last_seen_without_this_text: '2019-11-05'
+    evidence_window: 2016-12-30..2024-10-24
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_10
+    citation: 47 C.F.R. § 64.1200(a)(10)
+    corpus_now_answers_from: '2025-04-11'
+    missing_before: '2025-04-11'
+    last_seen_without_this_text: '2025-03-26'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_12
+    citation: 47 C.F.R. § 64.1200(a)(12)
+    corpus_now_answers_from: '2024-04-04'
+    missing_before: '2024-04-04'
+    last_seen_without_this_text: '2024-03-26'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_i_a
+    citation: 47 C.F.R. § 64.1200(a)(9)(i)(A)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_i_b
+    citation: 47 C.F.R. § 64.1200(a)(9)(i)(B)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_i_c
+    citation: 47 C.F.R. § 64.1200(a)(9)(i)(C)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_i_d
+    citation: 47 C.F.R. § 64.1200(a)(9)(i)(D)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_i_e
+    citation: 47 C.F.R. § 64.1200(a)(9)(i)(E)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_i_f
+    citation: 47 C.F.R. § 64.1200(a)(9)(i)(F)
+    corpus_now_answers_from: '2025-04-11'
+    missing_before: '2025-04-11'
+    last_seen_without_this_text: '2025-03-26'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_i_g
+    citation: 47 C.F.R. § 64.1200(a)(9)(i)(G)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_ii_a
+    citation: 47 C.F.R. § 64.1200(a)(9)(ii)(A)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_ii_b
+    citation: 47 C.F.R. § 64.1200(a)(9)(ii)(B)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_ii_d
+    citation: 47 C.F.R. § 64.1200(a)(9)(ii)(D)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_ii_e
+    citation: 47 C.F.R. § 64.1200(a)(9)(ii)(E)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_ii_f
+    citation: 47 C.F.R. § 64.1200(a)(9)(ii)(F)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_iii_a
+    citation: 47 C.F.R. § 64.1200(a)(9)(iii)(A)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_iii_b
+    citation: 47 C.F.R. § 64.1200(a)(9)(iii)(B)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_iii_d
+    citation: 47 C.F.R. § 64.1200(a)(9)(iii)(D)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_iii_e
+    citation: 47 C.F.R. § 64.1200(a)(9)(iii)(E)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_iii_f
+    citation: 47 C.F.R. § 64.1200(a)(9)(iii)(F)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_iii_g
+    citation: 47 C.F.R. § 64.1200(a)(9)(iii)(G)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_iv_a
+    citation: 47 C.F.R. § 64.1200(a)(9)(iv)(A)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_iv_b
+    citation: 47 C.F.R. § 64.1200(a)(9)(iv)(B)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_iv_d
+    citation: 47 C.F.R. § 64.1200(a)(9)(iv)(D)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_iv_e
+    citation: 47 C.F.R. § 64.1200(a)(9)(iv)(E)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_iv_f
+    citation: 47 C.F.R. § 64.1200(a)(9)(iv)(F)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_a_9_iv_g
+    citation: 47 C.F.R. § 64.1200(a)(9)(iv)(G)
+    corpus_now_answers_from: '2021-03-29'
+    missing_before: '2021-03-29'
+    last_seen_without_this_text: '2021-02-25'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_b_2
+    citation: 47 C.F.R. § 64.1200(b)(2)
+    corpus_now_answers_from: '2023-07-20'
+    missing_before: '2023-07-20'
+    last_seen_without_this_text: '2023-07-10'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_b_3
+    citation: 47 C.F.R. § 64.1200(b)(3)
+    corpus_now_answers_from: '2023-07-20'
+    missing_before: '2023-07-20'
+    last_seen_without_this_text: '2023-07-10'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_d_1
+    citation: 47 C.F.R. § 64.1200(d)(1)
+    corpus_now_answers_from: '2023-07-20'
+    missing_before: '2023-07-20'
+    last_seen_without_this_text: '2023-07-10'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_d_2
+    citation: 47 C.F.R. § 64.1200(d)(2)
+    corpus_now_answers_from: '2023-07-20'
+    missing_before: '2023-07-20'
+    last_seen_without_this_text: '2023-07-10'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
   - atom_id: us.tcpa.64_1200.d3.internal_dnc_honor
     citation: 47 C.F.R. § 64.1200(d)(3)
     corpus_now_answers_from: '2025-04-11'
     missing_before: '2025-04-11'
     last_seen_without_this_text: '2025-03-26'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.tcpa.64_1200.d3.internal_dnc_honor.v2023_07_20
+    citation: 47 C.F.R. § 64.1200(d)(3)
+    corpus_now_answers_from: '2023-07-20'
+    missing_before: '2023-07-20'
+    last_seen_without_this_text: '2023-07-10'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_d_4
+    citation: 47 C.F.R. § 64.1200(d)(4)
+    corpus_now_answers_from: '2023-07-20'
+    missing_before: '2023-07-20'
+    last_seen_without_this_text: '2023-07-10'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_d_5
+    citation: 47 C.F.R. § 64.1200(d)(5)
+    corpus_now_answers_from: '2023-07-20'
+    missing_before: '2023-07-20'
+    last_seen_without_this_text: '2023-07-10'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_d_6
+    citation: 47 C.F.R. § 64.1200(d)(6)
+    corpus_now_answers_from: '2023-07-20'
+    missing_before: '2023-07-20'
+    last_seen_without_this_text: '2023-07-10'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_k_1
+    citation: 47 C.F.R. § 64.1200(k)(1)
+    corpus_now_answers_from: '2018-02-12'
+    missing_before: '2018-02-12'
+    last_seen_without_this_text: '2018-01-12'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_k_10
+    citation: 47 C.F.R. § 64.1200(k)(10)
+    corpus_now_answers_from: '2022-03-10'
+    missing_before: '2022-03-10'
+    last_seen_without_this_text: '2022-02-08'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_k_11_ii
+    citation: 47 C.F.R. § 64.1200(k)(11)(ii)
+    corpus_now_answers_from: '2021-05-06'
+    missing_before: '2021-05-06'
+    last_seen_without_this_text: '2021-04-06'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_k_3_iii
+    citation: 47 C.F.R. § 64.1200(k)(3)(iii)
+    corpus_now_answers_from: '2020-10-14'
+    missing_before: '2020-10-14'
+    last_seen_without_this_text: '2020-10-13'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_k_4
+    citation: 47 C.F.R. § 64.1200(k)(4)
+    corpus_now_answers_from: '2020-10-14'
+    missing_before: '2020-10-14'
+    last_seen_without_this_text: '2020-10-13'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_k_5
+    citation: 47 C.F.R. § 64.1200(k)(5)
+    corpus_now_answers_from: '2024-01-08'
+    missing_before: '2024-01-08'
+    last_seen_without_this_text: '2023-12-21'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_k_6
+    citation: 47 C.F.R. § 64.1200(k)(6)
+    corpus_now_answers_from: '2024-01-08'
+    missing_before: '2024-01-08'
+    last_seen_without_this_text: '2023-12-21'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_k_7
+    citation: 47 C.F.R. § 64.1200(k)(7)
+    corpus_now_answers_from: '2020-10-14'
+    missing_before: '2020-10-14'
+    last_seen_without_this_text: '2020-10-13'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_k_8
+    citation: 47 C.F.R. § 64.1200(k)(8)
+    corpus_now_answers_from: '2021-05-06'
+    missing_before: '2021-05-06'
+    last_seen_without_this_text: '2021-04-06'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_k_9_iii
+    citation: 47 C.F.R. § 64.1200(k)(9)(iii)
+    corpus_now_answers_from: '2026-03-25'
+    missing_before: '2026-03-25'
+    last_seen_without_this_text: '2025-12-15'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_k_9_iv
+    citation: 47 C.F.R. § 64.1200(k)(9)(iv)
+    corpus_now_answers_from: '2026-03-25'
+    missing_before: '2026-03-25'
+    last_seen_without_this_text: '2025-12-15'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_l_4
+    citation: 47 C.F.R. § 64.1200(l)(4)
+    corpus_now_answers_from: '2019-03-26'
+    missing_before: '2019-03-26'
+    last_seen_without_this_text: '2019-03-20'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_n_1
+    citation: 47 C.F.R. § 64.1200(n)(1)
+    corpus_now_answers_from: '2024-01-08'
+    missing_before: '2024-01-08'
+    last_seen_without_this_text: '2023-12-21'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_n_2_i_b
+    citation: 47 C.F.R. § 64.1200(n)(2)(i)(B)
+    corpus_now_answers_from: '2024-01-08'
+    missing_before: '2024-01-08'
+    last_seen_without_this_text: '2023-12-21'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_n_2_ii
+    citation: 47 C.F.R. § 64.1200(n)(2)(ii)
+    corpus_now_answers_from: '2024-01-08'
+    missing_before: '2024-01-08'
+    last_seen_without_this_text: '2023-12-21'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_n_2_iii
+    citation: 47 C.F.R. § 64.1200(n)(2)(iii)
+    corpus_now_answers_from: '2024-01-08'
+    missing_before: '2024-01-08'
+    last_seen_without_this_text: '2023-12-21'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_n_3
+    citation: 47 C.F.R. § 64.1200(n)(3)
+    corpus_now_answers_from: '2024-01-08'
+    missing_before: '2024-01-08'
+    last_seen_without_this_text: '2023-12-21'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_r
+    citation: 47 C.F.R. § 64.1200(r)
+    corpus_now_answers_from: '2023-05-11'
+    missing_before: '2023-05-11'
+    last_seen_without_this_text: '2023-04-11'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_1200_s
+    citation: 47 C.F.R. § 64.1200(s)
+    corpus_now_answers_from: '2024-07-24'
+    missing_before: '2024-07-24'
+    last_seen_without_this_text: '2024-06-04'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_2005_a
+    citation: 47 C.F.R. § 64.2005(a)
+    corpus_now_answers_from: '2017-09-21'
+    missing_before: '2017-09-21'
+    last_seen_without_this_text: '2017-06-19'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_2007_b
+    citation: 47 C.F.R. § 64.2007(b)
+    corpus_now_answers_from: '2017-09-21'
+    missing_before: '2017-09-21'
+    last_seen_without_this_text: '2017-06-19'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_2010_f_1
+    citation: 47 C.F.R. § 64.2010(f)(1)
+    corpus_now_answers_from: '2024-01-14'
+    missing_before: '2024-01-14'
+    last_seen_without_this_text: '2024-01-08'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_2010_h
+    citation: 47 C.F.R. § 64.2010(h)
+    corpus_now_answers_from: '2024-01-08'
+    missing_before: '2024-01-08'
+    last_seen_without_this_text: '2023-12-21'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_2010_h_1
+    citation: 47 C.F.R. § 64.2010(h)(1)
+    corpus_now_answers_from: '2024-01-08'
+    missing_before: '2024-01-08'
+    last_seen_without_this_text: '2023-12-21'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_2010_h_7
+    citation: 47 C.F.R. § 64.2010(h)(7)
+    corpus_now_answers_from: '2024-01-08'
+    missing_before: '2024-01-08'
+    last_seen_without_this_text: '2023-12-21'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_6060_a_1
+    citation: 47 C.F.R. § 64.6060(a)(1)
+    corpus_now_answers_from: '2025-12-15'
+    missing_before: '2025-12-15'
+    last_seen_without_this_text: '2025-09-16'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_6060_a_2
+    citation: 47 C.F.R. § 64.6060(a)(2)
+    corpus_now_answers_from: '2025-12-15'
+    missing_before: '2025-12-15'
+    last_seen_without_this_text: '2025-09-16'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_6060_a_3_iii
+    citation: 47 C.F.R. § 64.6060(a)(3)(iii)
+    corpus_now_answers_from: '2025-12-15'
+    missing_before: '2025-12-15'
+    last_seen_without_this_text: '2025-09-16'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_6060_a_4
+    citation: 47 C.F.R. § 64.6060(a)(4)
+    corpus_now_answers_from: '2025-12-15'
+    missing_before: '2025-12-15'
+    last_seen_without_this_text: '2025-09-16'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_6060_a_5
+    citation: 47 C.F.R. § 64.6060(a)(5)
+    corpus_now_answers_from: '2025-12-15'
+    missing_before: '2025-12-15'
+    last_seen_without_this_text: '2025-09-16'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_6308_c_2_i
+    citation: 47 C.F.R. § 64.6308(c)(2)(i)
+    corpus_now_answers_from: '2021-09-30'
+    missing_before: '2021-09-30'
+    last_seen_without_this_text: '2021-08-31'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_6308_c_2_ii
+    citation: 47 C.F.R. § 64.6308(c)(2)(ii)
+    corpus_now_answers_from: '2021-09-30'
+    missing_before: '2021-09-30'
+    last_seen_without_this_text: '2021-08-31'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_6308_c_2_iii
+    citation: 47 C.F.R. § 64.6308(c)(2)(iii)
+    corpus_now_answers_from: '2021-09-30'
+    missing_before: '2021-09-30'
+    last_seen_without_this_text: '2021-08-31'
+    evidence_window: 2017-01-01..2026-03-25
+    status: open — prior vintage not held
+  - atom_id: us.cpni.p.64_6402_n_1_i
+    citation: 47 C.F.R. § 64.6402(n)(1)(i)
+    corpus_now_answers_from: '2024-01-26'
+    missing_before: '2024-01-26'
+    last_seen_without_this_text: '2024-01-14'
     evidence_window: 2017-01-01..2026-03-25
     status: open — prior vintage not held

@@ -4,19 +4,19 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - fcc
+- fcc
 sector:
-  - telecom
+- telecom
 data_types:
-  - cpni
+- cpni
 status: in_force
-effective_from: '2017-09-21'
+effective_from: '2025-04-11'
 effective_to: null
-effective_from_basis: citation_apparatus
-effective_from_evidence: >-
-  "Sept. 21, 2017" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
-  operative text
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2025-03-26 and first
+  appears at 2025-04-11 (window 2017-01-01..2026-03-25). Narrowed from the 2017-09-21 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2025-04-11 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -37,62 +37,56 @@ source:
   render: null
   structured_source_check:
     checked:
-      - eCFR versioner XML API (title 47 part 64)
+    - eCFR versioner XML API (title 47 part 64)
     result: structured_source_used
     note: null
   segment_sha256: 2cb918acfd971e2ff7391f8ff3436b159225126d1ea0e0f0a151ee7f6d67021f
-verbatim_span: >-
-  A called party may revoke prior express consent, including prior express written consent, to
-  receive calls or text messages made pursuant to paragraphs (a)(1) through (3) and (c)(2) of this
-  section by using any reasonable method to clearly express a desire not to receive further calls or
-  text messages from the caller or sender. Any revocation request made using an automated,
-  interactive voice or key press-activated opt-out mechanism on a call; using the words “stop,”
-  “quit,” “end,” “revoke,” “opt out,” “cancel,” or “unsubscribe” sent in reply to an incoming text
-  message; or pursuant to a website or telephone number designated by the caller to process opt-out
-  requests constitutes a reasonable means per se to revoke consent. If a called party uses any such
-  method to revoke consent, that consent is considered definitively revoked and the caller may not
-  send additional robocalls and robotexts. If a reply to an incoming text message uses words other
-  than “stop,” “quit,” “end,” “revoke,” “opt out,” “cancel,” or “unsubscribe,” the caller must treat
-  that reply text as a valid revocation request if a reasonable person would understand those words
-  to have conveyed a request to revoke consent. Should the text initiator choose to use a texting
-  protocol that does not allow reply texts, it must provide a clear and conspicuous disclosure on
-  each text to the consumer that two-way texting is not available due to technical limitations of
-  the texting protocol, and clearly and conspicuously provide on each text reasonable alternative
-  ways to revoke consent. All requests to revoke prior express consent or prior express written
-  consent made in any reasonable manner must be honored within a reasonable time not to exceed ten
-  business days from receipt of such request. Callers or senders of text messages covered by
-  paragraphs (a)(1) through (3) and (c)(2) of this section may not designate an exclusive means to
-  request revocation of consent.
+verbatim_span: A called party may revoke prior express consent, including prior express written consent,
+  to receive calls or text messages made pursuant to paragraphs (a)(1) through (3) and (c)(2) of this
+  section by using any reasonable method to clearly express a desire not to receive further calls
+  or text messages from the caller or sender. Any revocation request made using an automated, interactive
+  voice or key press-activated opt-out mechanism on a call; using the words “stop,” “quit,” “end,”
+  “revoke,” “opt out,” “cancel,” or “unsubscribe” sent in reply to an incoming text message; or pursuant
+  to a website or telephone number designated by the caller to process opt-out requests constitutes
+  a reasonable means per se to revoke consent. If a called party uses any such method to revoke consent,
+  that consent is considered definitively revoked and the caller may not send additional robocalls
+  and robotexts. If a reply to an incoming text message uses words other than “stop,” “quit,” “end,”
+  “revoke,” “opt out,” “cancel,” or “unsubscribe,” the caller must treat that reply text as a valid
+  revocation request if a reasonable person would understand those words to have conveyed a request
+  to revoke consent. Should the text initiator choose to use a texting protocol that does not allow
+  reply texts, it must provide a clear and conspicuous disclosure on each text to the consumer that
+  two-way texting is not available due to technical limitations of the texting protocol, and clearly
+  and conspicuously provide on each text reasonable alternative ways to revoke consent. All requests
+  to revoke prior express consent or prior express written consent made in any reasonable manner must
+  be honored within a reasonable time not to exceed ten business days from receipt of such request.
+  Callers or senders of text messages covered by paragraphs (a)(1) through (3) and (c)(2) of this
+  section may not designate an exclusive means to request revocation of consent.
 paragraph_path:
   path:
-    - a
-    - '10'
+  - a
+  - '10'
   anchor: '64.1200'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 47-cfr-64.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  evidence: read from 47-cfr-64.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: 'No person or entity may:'
-    path:
-      - a
-    citation: 47 C.F.R. § 64.1200(a)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'No person or entity may:'
+  path:
+  - a
+  citation: 47 C.F.R. § 64.1200(a)
 operative_verb: must_not
-summary: >-
-  A called party may revoke prior express consent, including prior express written consent, to
-  receive calls or text messages made pursuant to paragraphs (a)(1) through (3) and (c)(2) of this
-  section by using any reasonable method to clearly express a desire not to receive further calls or
-  text messag
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+summary: A called party may revoke prior express consent, including prior express written consent,
+  to receive calls or text messages made pursuant to paragraphs (a)(1) through (3) and (c)(2) of this
+  section by using any reasonable method to clearly express a desire not to receive further calls
+  or text messag
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

@@ -12,11 +12,10 @@ data_types:
 status: in_force
 effective_from: '2017-09-21'
 effective_to: null
-effective_from_basis: citation_apparatus
+effective_from_basis: versioner_evidence
 effective_from_evidence: >-
-  "Sept. 21, 2017" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
-  operative text
+  this exact span is absent from 47 C.F.R. § 64.2005(a) at 2017-06-19 and first appears at
+  2017-09-21, per the source's point-in-time record (window 2017-01-01..2026-03-25).
 supersedes: null
 superseded_by: null
 amendment_history: []

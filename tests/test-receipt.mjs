@@ -6,7 +6,7 @@
 import { issueReceipt, verifyReceipt, corpusDigest } from '../engine/receipt.mjs';
 import { betweenDates } from '../engine/exposure.mjs';
 import { conform, conformMarkdown } from '../engine/conform.mjs';
-import { load } from '../engine/corpus.mjs';
+import { load, inForceOn } from '../engine/corpus.mjs';
 
 let fail = 0;
 const ok = (n, c, d = '') => { console.log(`${c ? 'ok  ' : 'FAIL'}  ${n}${d ? '  ' + d : ''}`); if (!c) fail++; };
@@ -130,6 +130,39 @@ for (const [label, args] of [['all null', [null, null, null, null]],
   const md = conformMarkdown(sheet, 'test');
   ok('conform: markdown has an empty Met? column', /\| Met\? \|/.test(md) && /\| \| \|$/m.test(md));
   ok('conform: markdown says the verdict is deliberately empty', /empty on purpose/.test(md));
+}
+
+
+// ---------------------------------------------------------------- a real version chain
+// Until a prior vintage was held, NOTHING in the corpus existed at two vintages, so `commenced`
+// and `ceased` were structurally unreachable and every difference between two dates was either
+// unattributable or invisible. 47 C.F.R. § 64.1200(d)(3) is the first chain: the outer limit on
+// honouring an internal do-not-call request was 30 days from the DATE OF THE REQUEST until
+// 11 April 2025, and is ten business days from RECEIPT after it — a different length measured
+// from a different event, on a record the clock engine reads.
+{
+  const window = betweenDates({ nexus: ['US'] }, {},
+    { practice: { makes_telephone_solicitations: true } }, '2025-03-01', '2025-06-01', kb);
+
+  const arrived = window.commenced.find(row => /64\.1200\(d\)\(3\)/.test(row.citation ?? ''));
+  const left = window.ceased.find(row => /64\.1200\(d\)\(3\)/.test(row.citation ?? ''));
+  ok('an amended provision is reported as BOTH ceased and commenced', !!arrived && !!left,
+     `${window.commenced.length} commenced, ${window.ceased.length} ceased`);
+  ok('...and the change is attributed to a dated legal event, not left unattributable',
+     arrived.effective_from === '2025-04-11' && left.effective_from === '2023-07-20',
+     `${left?.effective_from} -> ${arrived?.effective_from}`);
+  ok('...on point-in-time evidence rather than a capture date',
+     arrived.effective_from_basis === 'versioner_evidence'
+     && left.effective_from_basis === 'versioner_evidence');
+
+  // The chain must resolve to exactly one text on any date, or an as-of query is ambiguous.
+  for (const [date, expect] of [['2025-03-01', 30], ['2025-04-11', 10], ['2026-09-17', 10]]) {
+    const live = (kb.all ?? []).filter(record => /internal_dnc_honor/.test(record.id)
+      && inForceOn(record, date));
+    ok(`exactly one vintage governs on ${date}, and it is the ${expect}-unit one`,
+       live.length === 1 && live[0].deadline?.duration?.value === expect,
+       `${live.length} in force`);
+  }
 }
 
 console.log(`\n${fail} failure(s)`);

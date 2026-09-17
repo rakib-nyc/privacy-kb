@@ -4,20 +4,21 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - hhs_ohrp
-  - federal_agencies
+- hhs_ohrp
+- federal_agencies
 sector:
-  - health
+- health
 data_types:
-  - personal_information
-  - health
+- personal_information
+- health
 status: in_force
-effective_from: '2019-01-21'
+effective_from: '2024-10-24'
 effective_to: null
-effective_from_basis: stated_in_text
-effective_from_evidence: >-
-  "January 21, 2019" appears in the rendered text of
-  corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2019-11-05 and first
+  appears at 2024-10-24 (window 2016-12-30..2024-10-24). Narrowed from the 2019-01-21 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-10-24 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -32,56 +33,47 @@ source:
   raw_sha256: cfe25d02a8ade401b1350f591c4654b85ab03c47f66297047feb0a6e1f0e543d
   text_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
   text_sha256: 2e9f64e48744208a67bbad88f993394ee3ae928f07e1396d552d5a6c8d574fa1
-  text_extraction_cmd: >-
-    python3 tools/render-text.py
-    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
   format: ecfr_xml
   risk_tier: low
   render: null
   structured_source_check:
     checked:
-      - ecfr.gov versioner API, title 45 part 46, structured XML
+    - ecfr.gov versioner API, title 45 part 46, structured XML
     result: structured_source_used
     note: null
   segment_sha256: 56cac6a33d730baf14c2c0de71eacc59cf28ce42d46710d09c322fcbac152431
-verbatim_span: >-
-  In addition to the provisions for waiver contained in § 46.116 of the pre-2018 Requirements or the
-  2018 Requirements, as applicable, if the IRB determines that a research protocol is designed for
-  conditions or for a subject population for which parental or guardian permission is not a
-  reasonable requirement to protect the subjects (for example, neglected or abused children), it may
-  waive the consent requirements in § 46.116 of the pre-2018 Requirements or 2018 Requirements, as
-  applicable, and paragraph (b) of this section, provided an appropriate mechanism for protecting
-  the children who will participate as subjects in the research is substituted, and provided further
-  that the waiver is not inconsistent with Federal, State, or local law. The choice of an
-  appropriate mechanism would depend upon the nature and purpose of the activities described in the
-  protocol, the risk and anticipated benefit to the research subjects, and their age, maturity,
-  status, and condition.
+verbatim_span: In addition to the provisions for waiver contained in § 46.116 of the pre-2018 Requirements
+  or the 2018 Requirements, as applicable, if the IRB determines that a research protocol is designed
+  for conditions or for a subject population for which parental or guardian permission is not a reasonable
+  requirement to protect the subjects (for example, neglected or abused children), it may waive the
+  consent requirements in § 46.116 of the pre-2018 Requirements or 2018 Requirements, as applicable,
+  and paragraph (b) of this section, provided an appropriate mechanism for protecting the children
+  who will participate as subjects in the research is substituted, and provided further that the waiver
+  is not inconsistent with Federal, State, or local law. The choice of an appropriate mechanism would
+  depend upon the nature and purpose of the activities described in the protocol, the risk and anticipated
+  benefit to the research subjects, and their age, maturity, status, and condition.
 paragraph_path:
   path:
-    - c
+  - c
   anchor: '46.408'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 45-cfr-46.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  evidence: read from 45-cfr-46.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
 subject:
   domain: II.B.3
   lifecycle:
-    - III
+  - III
 operative_context: []
 operative_verb: may
-summary: >-
-  In addition to the provisions for waiver contained in § 46.116 of the pre-2018 Requirements or the
-  2018 Requirements, as applicable, if the IRB determines that a research protocol is designed for
-  conditions or for a subject population for which parental or guardian permission is not a
-  reasonable req
-context_not_required: >-
-  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
-  alone in its own source. It is quoted as the source presents it.
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+summary: In addition to the provisions for waiver contained in § 46.116 of the pre-2018 Requirements
+  or the 2018 Requirements, as applicable, if the IRB determines that a research protocol is designed
+  for conditions or for a subject population for which parental or guardian permission is not a reasonable
+  req
+context_not_required: The segmentation records no governing chapeau or continuation for this leaf,
+  so the span stands alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

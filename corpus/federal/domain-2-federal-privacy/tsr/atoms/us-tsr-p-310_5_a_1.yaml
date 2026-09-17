@@ -4,20 +4,20 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - ftc
+- ftc
 sector:
-  - telemarketing
-  - any
+- telemarketing
+- any
 data_types:
-  - any
+- any
 status: in_force
-effective_from: '2010-08-10'
+effective_from: '2024-05-16'
 effective_to: null
-effective_from_basis: citation_apparatus
-effective_from_evidence: >-
-  "Aug. 10, 2010" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml — citation apparatus, not
-  operative text
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2024-04-16 and first
+  appears at 2024-05-16 (window 2016-12-22..2024-05-16). Narrowed from the 2010-08-10 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-05-16 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -38,45 +38,39 @@ source:
   render: null
   structured_source_check:
     checked:
-      - eCFR versioner XML API
+    - eCFR versioner XML API
     result: structured_source_used
     note: null
   segment_sha256: 31cd4def505babc03a507f4cbde6f3f0f8de51f351cb70b7ecfb3de3c21a5d41
-verbatim_span: >-
-  A copy of each substantially different advertising, brochure, telemarketing script, and
-  promotional material, and a copy of each unique prerecorded message. Such records must be kept for
-  a period of 5 years from the date that they are no longer used in telemarketing;
+verbatim_span: A copy of each substantially different advertising, brochure, telemarketing script,
+  and promotional material, and a copy of each unique prerecorded message. Such records must be kept
+  for a period of 5 years from the date that they are no longer used in telemarketing;
 paragraph_path:
   path:
-    - a
-    - '1'
+  - a
+  - '1'
   anchor: '310.5'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 16-cfr-310.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  evidence: read from 16-cfr-310.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      Any seller or telemarketer must keep, for a period of 5 years from the date the record is
-      produced unless specified otherwise, the following records relating to its telemarketing
-      activities:
-    path:
-      - a
-    citation: 16 C.F.R. § 310.5(a)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'Any seller or telemarketer must keep, for a period of 5 years from the date the
+    record is produced unless specified otherwise, the following records relating to its telemarketing
+    activities:'
+  path:
+  - a
+  citation: 16 C.F.R. § 310.5(a)
 operative_verb: must
-summary: >-
-  A copy of each substantially different advertising, brochure, telemarketing script, and
-  promotional material, and a copy of each unique prerecorded message.
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+summary: A copy of each substantially different advertising, brochure, telemarketing script, and promotional
+  material, and a copy of each unique prerecorded message.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

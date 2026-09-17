@@ -4,20 +4,21 @@ verification_status: verbatim_confirmed
 jurisdiction: US-FED
 jurisdiction_level: federal
 regulator:
-  - ftc
+- ftc
 sector:
-  - financial_services
-  - non_bank_financial_institutions
+- financial_services
+- non_bank_financial_institutions
 data_types:
-  - npi
-  - customer_information
+- npi
+- customer_information
 status: in_force
-effective_from: '2023-06-09'
+effective_from: '2024-05-13'
 effective_to: null
-effective_from_basis: undetermined
-effective_from_evidence: >-
-  not found anywhere in
-  corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2023-11-13 and first
+  appears at 2024-05-13 (window 2016-12-22..2024-05-13). Narrowed from the 2023-06-09 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-05-13 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -32,61 +33,55 @@ source:
   raw_sha256: 3ba7ecc3463953a1db1ccf38f4b0ade4182e36c7e24e111eb8869910e271d41a
   text_file: corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.txt
   text_sha256: be8a0b1e03c4b14f6ed56fbf365d871a4fe112856a8013ebcf25fbc2f9aefec9
-  text_extraction_cmd: >-
-    python3 tools/render-text.py
-    corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
   format: ecfr_xml
   risk_tier: low
   render: null
   structured_source_check:
     checked:
-      - ecfr.gov versioner API, title-16 XML, part 314
+    - ecfr.gov versioner API, title-16 XML, part 314
     result: structured_source_used
     note: null
   segment_sha256: a4f136d755b92c10f5c7da84fde5476d2fcd5f0bc27e0351f33e8da027926e63
-verbatim_span: If the information is possible to determine, the date or date range of the notification event;
+verbatim_span: If the information is possible to determine, the date or date range of the notification
+  event;
 paragraph_path:
   path:
-    - j
-    - '1'
-    - iii
+  - j
+  - '1'
+  - iii
   anchor: '314.4'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 16-cfr-314.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
+  evidence: read from 16-cfr-314.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/glba-safeguards-rule/raw/16-cfr-314.xml
 subject:
   domain: II.C.1
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      Upon discovery of a notification event as described in paragraph (j)(2) of this section, if
-      the notification event involves the information of at least 500 consumers, you must notify the
-      Federal Trade Commission as soon as possible, and no later than 30 days after discovery of the
-      event. The notice shall be made electronically on a form to be located on the FTC's website,
-      https://www.ftc.gov. The notice shall include the following:
-    path:
-      - j
-      - '1'
-    citation: 16 C.F.R. § 314.4(j)(1)
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      Notify the Federal Trade Commission about notification events in accordance with paragraphs
-      (j)(1) and (2) of this section.
-    path:
-      - j
-    citation: 16 C.F.R. § 314.4(j)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'Upon discovery of a notification event as described in paragraph (j)(2) of this
+    section, if the notification event involves the information of at least 500 consumers, you must
+    notify the Federal Trade Commission as soon as possible, and no later than 30 days after discovery
+    of the event. The notice shall be made electronically on a form to be located on the FTC''s website,
+    https://www.ftc.gov. The notice shall include the following:'
+  path:
+  - j
+  - '1'
+  citation: 16 C.F.R. § 314.4(j)(1)
+- position: precedes
+  relation: scopes
+  verbatim_span: Notify the Federal Trade Commission about notification events in accordance with
+    paragraphs (j)(1) and (2) of this section.
+  path:
+  - j
+  citation: 16 C.F.R. § 314.4(j)
 operative_verb: must
 operative_verb_source: operative_context
 summary: If the information is possible to determine, the date or date range of the notification event;
-not_yet_analysed: >-
-  Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision: its own
-  words carry no modal, and the duty is supplied by the chapeau recorded in operative_context. Do
-  not quote it without that chapeau. No applicability predicate has been written, so the engine
-  never asserts that it binds anyone.
+not_yet_analysed: 'Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision:
+  its own words carry no modal, and the duty is supplied by the chapeau recorded in operative_context.
+  Do not quote it without that chapeau. No applicability predicate has been written, so the engine
+  never asserts that it binds anyone.'
 open_questions: []

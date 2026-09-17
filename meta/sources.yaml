@@ -703,6 +703,12 @@ sources:
   sha256: 1fc6e90ed6062f5aaeec8eef163ffc157db57ee2e3e2eed6c3894c050c13c6dc
   format: uslm_xml
   label: uslm-5usc553-20260819
+- raw_file: corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64-2025-03-26.xml
+  url: https://www.ecfr.gov/api/versioner/v1/full/2025-03-26/title-47.xml?part=64
+  fetched: '2026-09-17'
+  sha256: b3ec149a166999b8c878ddb98dd9b39467a2f9b1ca1a32e85941560f0c0594e1
+  format: ecfr_xml
+  label: 47 CFR 64 as of 2025-03-26 (prior vintage)
 structured_source_negatives:
 - instrument_id: intl.apec.privacy_framework
   checked:
@@ -723,8 +729,8 @@ structured_source_negatives:
   result: no_structured_source_exists
   note: PDF only, and the host blocks automated fetch. See meta/blocked-sources.yaml.
   checked_on: '2026-08-18'
-note: Every primary source fetched, with its URL, fetch date and hash. DESIGN.md Phase 0 item 4. This ledger
-  went stale when tools/extract.py replaced tools/fetch-source.mjs as the acquisition path and did not
-  log here — 13 entries against 78 stored raw files, with nothing failing, because gate 2 hashes each
-  atom OWN raw_file rather than checking this list. Gate 33 now asserts the correspondence and extract.py
+note: Every primary source fetched, with its URL, fetch date and hash. DESIGN.md Phase 0 item 4. This
+  ledger went stale when tools/extract.py replaced tools/fetch-source.mjs as the acquisition path and
+  did not log here — 13 entries against 78 stored raw files, with nothing failing, because gate 2 hashes
+  each atom OWN raw_file rather than checking this list. Gate 33 now asserts the correspondence and extract.py
   refuses to finish a fetch it cannot log.

@@ -4,19 +4,20 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - hhs_oig
-  - cms
+- hhs_oig
+- cms
 sector:
-  - health
+- health
 data_types:
-  - health
+- health
 status: in_force
-effective_from: '2024-03-11'
+effective_from: '2024-12-17'
 effective_to: null
-effective_from_basis: undetermined
-effective_from_evidence: >-
-  not found anywhere in
-  corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2024-03-11 and first
+  appears at 2024-12-17 (window 2020-06-30..2024-12-17). Narrowed from the 2024-03-11 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-12-17 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -31,50 +32,44 @@ source:
   raw_sha256: 881f03c2034c1a6b4d49e9cde4adf70a84182f5890eb1be66f4026f4c601e023
   text_file: corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.txt
   text_sha256: ff9534f2201bb086974f3d4fbe95b9d3a5deb972e36d1e6889a93e3d534a088f
-  text_extraction_cmd: >-
-    python3 tools/render-text.py
-    corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
   format: ecfr_xml
   risk_tier: low
   render: null
   structured_source_check:
     checked:
-      - ecfr.gov versioner API, full XML for the part, date 2026-08-17
+    - ecfr.gov versioner API, full XML for the part, date 2026-08-17
     result: structured_source_used
     note: null
   segment_sha256: 14e729e927bbf132891fc240aed6dac3d271bf220b9bcc4ce38a260fc52bcfd7
 verbatim_span: May be withheld in accordance with 45 CFR 171.201, 171.202, or 171.206 of this part.
 paragraph_path:
   path:
-    - a
-    - '2'
-    - ii
+  - a
+  - '2'
+  - ii
   anchor: '171.204'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 45-cfr-171.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+  evidence: read from 45-cfr-171.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
 subject:
   domain: II.B.3
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      The actor cannot fulfill the request for access, exchange, or use of electronic health
-      information because the actor cannot unambiguously segment the requested electronic health
-      information from electronic health information that:
-    path:
-      - a
-      - '2'
-    citation: 45 C.F.R. § 171.204(a)(2)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'The actor cannot fulfill the request for access, exchange, or use of electronic
+    health information because the actor cannot unambiguously segment the requested electronic health
+    information from electronic health information that:'
+  path:
+  - a
+  - '2'
+  citation: 45 C.F.R. § 171.204(a)(2)
 operative_verb: may
 summary: May be withheld in accordance with 45 CFR 171.201, 171.202, or 171.206 of this part.
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

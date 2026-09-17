@@ -4,19 +4,19 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - fcc
+- fcc
 sector:
-  - telecom
+- telecom
 data_types:
-  - cpni
+- cpni
 status: in_force
-effective_from: '2017-09-21'
+effective_from: '2023-07-20'
 effective_to: null
-effective_from_basis: citation_apparatus
-effective_from_evidence: >-
-  "Sept. 21, 2017" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
-  operative text
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2023-07-10 and first
+  appears at 2023-07-20 (window 2017-01-01..2026-03-25). Narrowed from the 2017-09-21 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2023-07-20 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -37,46 +37,41 @@ source:
   render: null
   structured_source_check:
     checked:
-      - eCFR versioner XML API (title 47 part 64)
+    - eCFR versioner XML API (title 47 part 64)
     result: structured_source_used
     note: null
   segment_sha256: 11aacc7aa7f3713d22da25eeb0b1c781fa8cbdf80ff5b4dd29c93fce66606169
-verbatim_span: >-
-  During or after the message, state clearly the telephone number (other than that of the autodialer
-  or prerecorded message player that placed the call) of such business, other entity, or individual.
-  The telephone number provided may not be a 900 number or any other number for which charges exceed
-  local or long distance transmission charges. For telemarketing messages and messages made pursuant
-  to an exemption under paragraphs (a)(3)(ii) through (v) of this section to residential telephone
-  subscribers, such telephone number must permit any individual to make a do-not-call request during
-  regular business hours; and
+verbatim_span: During or after the message, state clearly the telephone number (other than that of
+  the autodialer or prerecorded message player that placed the call) of such business, other entity,
+  or individual. The telephone number provided may not be a 900 number or any other number for which
+  charges exceed local or long distance transmission charges. For telemarketing messages and messages
+  made pursuant to an exemption under paragraphs (a)(3)(ii) through (v) of this section to residential
+  telephone subscribers, such telephone number must permit any individual to make a do-not-call request
+  during regular business hours; and
 paragraph_path:
   path:
-    - b
-    - '2'
+  - b
+  - '2'
   anchor: '64.1200'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 47-cfr-64.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  evidence: read from 47-cfr-64.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: 'All artificial or prerecorded voice telephone messages shall:'
-    path:
-      - b
-    citation: 47 C.F.R. § 64.1200(b)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'All artificial or prerecorded voice telephone messages shall:'
+  path:
+  - b
+  citation: 47 C.F.R. § 64.1200(b)
 operative_verb: must_not
-summary: >-
-  During or after the message, state clearly the telephone number (other than that of the autodialer
+summary: During or after the message, state clearly the telephone number (other than that of the autodialer
   or prerecorded message player that placed the call) of such business, other entity, or individual.
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

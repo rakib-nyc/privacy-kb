@@ -242,8 +242,8 @@ reproducible, and the gaps computed rather than glossed.
 
 | | |
 |---|---|
-| Records | **1,837** — 226 analysed obligations the engine reasons with, 1,581 held as verified reference text with no applicability predicate, plus 9 authority, 5 definition, 5 principle, 5 workflow_constraint, 3 doctrine, 2 taxonomy, 1 enforcement_action |
-| Verified | 1,833 `verbatim_confirmed` · 4 suppressed by invariant I1 and unreachable from any output |
+| Records | **1,838** — 227 analysed obligations the engine reasons with, 1,581 held as verified reference text with no applicability predicate, plus 9 authority, 5 definition, 5 principle, 5 workflow_constraint, 3 doctrine, 2 taxonomy, 1 enforcement_action |
+| Verified | 1,834 `verbatim_confirmed` · 4 suppressed by invariant I1 and unreachable from any output |
 | Instruments | 54 declared · **41 fully present** against their declared duty categories · 13 partial, with the missing provisions named in every answer that touches them |
 | taxonomy leaves covered | 31 / 69 · 38 neither covered nor ruled out of scope, and gate 34 ratchets that number |
 | CI gates | **50**, all named · 63 fixtures · 37 gates fixture-exercised, 13 declared unexercisable in `tests/fixtures/no-fixture.yaml` and why |
@@ -252,7 +252,7 @@ reproducible, and the gaps computed rather than glossed.
 | MCP server | **31 tools**, incl. `privacy_memo` (the defensibility record), `privacy_facts` (the input vocabulary), `privacy_incidents`, `privacy_workflow` |
 | Workflows | 4 lifecycle-indexed, reachable from the CLI and MCP |
 | Eval scenarios | 30, all-pass baseline enforced by gate 8 |
-| Prior vintages not held | **12**, each named in `meta/missing-vintages.yaml` — provisions whose stored text is current but whose earlier text this repository does not hold, so an as-of question before that date is refused rather than answered from the wrong vintage |
+| Prior vintages not held | **280**, each named in `meta/missing-vintages.yaml` — provisions whose stored text is current but whose earlier text this repository does not hold, so an as-of question before that date is refused rather than answered from the wrong vintage |
 
 <!-- state-of-build:end -->
 

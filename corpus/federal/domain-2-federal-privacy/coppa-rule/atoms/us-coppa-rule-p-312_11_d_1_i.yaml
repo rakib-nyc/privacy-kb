@@ -4,18 +4,21 @@ verification_status: verbatim_confirmed
 jurisdiction: US-FED
 jurisdiction_level: federal
 regulator:
-  - ftc
-  - state_ag
+- ftc
+- state_ag
 sector:
-  - childrens_online_services
+- childrens_online_services
 data_types:
-  - minor_data
-  - personal_information
+- minor_data
+- personal_information
 status: in_force
-effective_from: '2000-04-21'
+effective_from: '2025-06-23'
 effective_to: null
-effective_from_basis: undetermined
-effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2016-12-22 and first
+  appears at 2025-06-23 (window 2016-12-22..2025-06-23). Narrowed from the 2000-04-21 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2025-06-23 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -30,62 +33,54 @@ source:
   raw_sha256: 5a29d13e4512092a2d064a62a581031dc75aa99998540e6c2ef24f0dbfc66df9
   text_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.txt
   text_sha256: 269dbc8c79e682a08e9686846439239d7f57ec49f501070957ff738370189425
-  text_extraction_cmd: >-
-    python3 tools/render-text.py
-    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
   format: ecfr_xml
   risk_tier: low
   render: null
   structured_source_check:
     checked:
-      - 16-cfr-312 structured source
+    - 16-cfr-312 structured source
     result: structured_source_used
     note: null
   segment_sha256: 58d8867928bd1262a51cd7ce20c23c2671ef4a088577c2688eb4262477d2f136
-verbatim_span: >-
-  a narrative description of the safe harbor program's business model, including whether it provides
-  additional services such as training to subject operators;
+verbatim_span: a narrative description of the safe harbor program's business model, including whether
+  it provides additional services such as training to subject operators;
 paragraph_path:
   path:
-    - d
-    - '1'
-    - i
+  - d
+  - '1'
+  - i
   anchor: '312.11'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 16-cfr-312.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  evidence: read from 16-cfr-312.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - V
+  - V
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      By October 22, 2025, and annually thereafter, submit a report to the Commission that
-      identifies each subject operator and all approved websites or online services, as well as any
-      subject operators that have left the safe harbor program. The report must also contain, at a
-      minimum:
-    path:
-      - d
-      - '1'
-    citation: 16 C.F.R. § 312.11(d)(1)
-  - position: precedes
-    relation: scopes
-    verbatim_span: 'Approved safe harbor programs shall:'
-    path:
-      - d
-    citation: 16 C.F.R. § 312.11(d)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'By October 22, 2025, and annually thereafter, submit a report to the Commission
+    that identifies each subject operator and all approved websites or online services, as well as
+    any subject operators that have left the safe harbor program. The report must also contain, at
+    a minimum:'
+  path:
+  - d
+  - '1'
+  citation: 16 C.F.R. § 312.11(d)(1)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'Approved safe harbor programs shall:'
+  path:
+  - d
+  citation: 16 C.F.R. § 312.11(d)
 operative_verb: must
 operative_verb_source: operative_context
-summary: >-
-  a narrative description of the safe harbor program's business model, including whether it provides
-  additional services such as training to subject operators;
-not_yet_analysed: >-
-  Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision: its own
-  words carry no modal, and the duty is supplied by the chapeau recorded in operative_context. Do
-  not quote it without that chapeau. No applicability predicate has been written, so the engine
-  never asserts that it binds anyone.
+summary: a narrative description of the safe harbor program's business model, including whether it
+  provides additional services such as training to subject operators;
+not_yet_analysed: 'Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision:
+  its own words carry no modal, and the duty is supplied by the chapeau recorded in operative_context.
+  Do not quote it without that chapeau. No applicability predicate has been written, so the engine
+  never asserts that it binds anyone.'
 open_questions: []

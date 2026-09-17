@@ -4,19 +4,19 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - fcc
+- fcc
 sector:
-  - telecom
+- telecom
 data_types:
-  - cpni
+- cpni
 status: in_force
-effective_from: '2017-09-21'
+effective_from: '2024-01-08'
 effective_to: null
-effective_from_basis: citation_apparatus
-effective_from_evidence: >-
-  "Sept. 21, 2017" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
-  operative text
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2023-12-21 and first
+  appears at 2024-01-08 (window 2017-01-01..2026-03-25). Narrowed from the 2017-09-21 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-01-08 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -37,56 +37,48 @@ source:
   render: null
   structured_source_check:
     checked:
-      - eCFR versioner XML API (title 47 part 64)
+    - eCFR versioner XML API (title 47 part 64)
     result: structured_source_used
     note: null
   segment_sha256: 1413d8ec72c62feae5bf9f406f9bf9d6768d192e1d394384c7bd8c8ef8292e60
-verbatim_span: >-
-  A CMRS provider shall use secure methods to authenticate a customer that are reasonably designed
-  to confirm the customer's identity before executing a SIM change request, except to the extent
-  otherwise required by 47 U.S.C. 345 (Safe Connections Act of 2022) or subpart II of this part.
-  Authentication methods shall not rely on readily available biographical information, account
-  information, recent payment information, or call detail information unless otherwise permitted
-  under 47 U.S.C. 345 or subpart II of this part. A CMRS provider shall regularly, but not less than
-  annually, review and, as necessary, update its customer authentication methods to ensure that its
-  authentication methods continue to be secure. A CMRS provider shall establish safeguards and
-  processes so that employees who receive inbound customer communications are unable to access CPNI
-  in the course of that customer interaction until after the customer has been properly
-  authenticated.
+verbatim_span: A CMRS provider shall use secure methods to authenticate a customer that are reasonably
+  designed to confirm the customer's identity before executing a SIM change request, except to the
+  extent otherwise required by 47 U.S.C. 345 (Safe Connections Act of 2022) or subpart II of this
+  part. Authentication methods shall not rely on readily available biographical information, account
+  information, recent payment information, or call detail information unless otherwise permitted under
+  47 U.S.C. 345 or subpart II of this part. A CMRS provider shall regularly, but not less than annually,
+  review and, as necessary, update its customer authentication methods to ensure that its authentication
+  methods continue to be secure. A CMRS provider shall establish safeguards and processes so that
+  employees who receive inbound customer communications are unable to access CPNI in the course of
+  that customer interaction until after the customer has been properly authenticated.
 paragraph_path:
   path:
-    - h
-    - '1'
+  - h
+  - '1'
   anchor: '64.2010'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 47-cfr-64.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  evidence: read from 47-cfr-64.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      A provider of commercial mobile radio service (CMRS), as defined in 47 CFR 20.3, including
-      resellers of wireless service, shall only effectuate SIM change requests in accordance with
-      this section. For purposes of this section, SIM means a physical or virtual card associated
-      with a device that stores unique information that can be identified to a specific mobile
-      network.
-    path:
-      - h
-    citation: 47 C.F.R. § 64.2010(h)
+- position: precedes
+  relation: scopes
+  verbatim_span: A provider of commercial mobile radio service (CMRS), as defined in 47 CFR 20.3,
+    including resellers of wireless service, shall only effectuate SIM change requests in accordance
+    with this section. For purposes of this section, SIM means a physical or virtual card associated
+    with a device that stores unique information that can be identified to a specific mobile network.
+  path:
+  - h
+  citation: 47 C.F.R. § 64.2010(h)
 operative_verb: must_not
-summary: >-
-  A CMRS provider shall use secure methods to authenticate a customer that are reasonably designed
-  to confirm the customer's identity before executing a SIM change request, except to the extent
-  otherwise required by 47 U.S.C.
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+summary: A CMRS provider shall use secure methods to authenticate a customer that are reasonably designed
+  to confirm the customer's identity before executing a SIM change request, except to the extent otherwise
+  required by 47 U.S.C.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

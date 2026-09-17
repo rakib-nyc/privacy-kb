@@ -4,19 +4,19 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - fcc
+- fcc
 sector:
-  - telecom
+- telecom
 data_types:
-  - cpni
+- cpni
 status: in_force
-effective_from: '2017-09-21'
+effective_from: '2023-07-20'
 effective_to: null
-effective_from_basis: citation_apparatus
-effective_from_evidence: >-
-  "Sept. 21, 2017" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
-  operative text
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2023-07-10 and first
+  appears at 2023-07-20 (window 2017-01-01..2026-03-25). Narrowed from the 2017-09-21 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2023-07-20 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -37,49 +37,43 @@ source:
   render: null
   structured_source_check:
     checked:
-      - eCFR versioner XML API (title 47 part 64)
+    - eCFR versioner XML API (title 47 part 64)
     result: structured_source_used
     note: null
   segment_sha256: 2ac39e121010fd9a6e1c420e9449d8cdeff5a76df8c28eed720088280b507a2b
-verbatim_span: >-
-  Persons or entities making artificial or prerecorded-voice telephone calls pursuant to an
-  exemption under paragraphs (a)(3)(ii) through (v) of this section or calls for telemarketing
+verbatim_span: Persons or entities making artificial or prerecorded-voice telephone calls pursuant
+  to an exemption under paragraphs (a)(3)(ii) through (v) of this section or calls for telemarketing
   purposes must have a written policy, available upon demand, for maintaining a do-not-call list.
 paragraph_path:
   path:
-    - d
-    - '1'
+  - d
+  - '1'
   anchor: '64.1200'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 47-cfr-64.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  evidence: read from 47-cfr-64.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      No person or entity shall initiate any artificial or prerecorded-voice telephone call pursuant
-      to an exemption under paragraphs (a)(3)(ii) through (v) of this section or any call for
-      telemarketing purposes to a residential telephone subscriber unless such person or entity has
-      instituted procedures for maintaining a list of persons who request not to receive such calls
-      made by or on behalf of that person or entity. The procedures instituted must meet the
-      following minimum standards:
-    path:
-      - d
-    citation: 47 C.F.R. § 64.1200(d)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'No person or entity shall initiate any artificial or prerecorded-voice telephone
+    call pursuant to an exemption under paragraphs (a)(3)(ii) through (v) of this section or any call
+    for telemarketing purposes to a residential telephone subscriber unless such person or entity
+    has instituted procedures for maintaining a list of persons who request not to receive such calls
+    made by or on behalf of that person or entity. The procedures instituted must meet the following
+    minimum standards:'
+  path:
+  - d
+  citation: 47 C.F.R. § 64.1200(d)
 operative_verb: must
-summary: >-
-  Persons or entities making artificial or prerecorded-voice telephone calls pursuant to an
-  exemption under paragraphs (a)(3)(ii) through (v) of this section or calls for telemarketing
-  purposes must have a written policy, available upon demand, for maintaining a do-not-call list.
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+summary: Persons or entities making artificial or prerecorded-voice telephone calls pursuant to an
+  exemption under paragraphs (a)(3)(ii) through (v) of this section or calls for telemarketing purposes
+  must have a written policy, available upon demand, for maintaining a do-not-call list.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

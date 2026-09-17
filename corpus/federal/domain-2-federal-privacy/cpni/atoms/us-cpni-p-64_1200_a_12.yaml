@@ -4,19 +4,19 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - fcc
+- fcc
 sector:
-  - telecom
+- telecom
 data_types:
-  - cpni
+- cpni
 status: in_force
-effective_from: '2017-09-21'
+effective_from: '2024-04-04'
 effective_to: null
-effective_from_basis: citation_apparatus
-effective_from_evidence: >-
-  "Sept. 21, 2017" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
-  operative text
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2024-03-26 and first
+  appears at 2024-04-04 (window 2017-01-01..2026-03-25). Narrowed from the 2017-09-21 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-04-04 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -37,53 +37,47 @@ source:
   render: null
   structured_source_check:
     checked:
-      - eCFR versioner XML API (title 47 part 64)
+    - eCFR versioner XML API (title 47 part 64)
     result: structured_source_used
     note: null
   segment_sha256: 7913195235b200c579ae720ca88751c29e6ef02b0edb020680cd22e2cf8c46ca
-verbatim_span: >-
-  A one-time text message confirming a request to revoke consent from receiving any further calls or
-  text messages does not violate paragraphs (a)(1) and (2) of this section as long as the
+verbatim_span: A one-time text message confirming a request to revoke consent from receiving any further
+  calls or text messages does not violate paragraphs (a)(1) and (2) of this section as long as the
   confirmation text merely confirms the text recipient's revocation request and does not include any
   marketing or promotional information, and is the only additional message sent to the called party
   after receipt of the revocation request. If the confirmation text is sent within five minutes of
-  receipt, it will be presumed to fall within the consumer's prior express consent. If it takes
-  longer, however, the sender will have to make a showing that such delay was reasonable. To the
-  extent that the text recipient has consented to several categories of text messages from the text
-  sender, the confirmation message may request clarification as to whether the revocation request
-  was meant to encompass all such messages; the sender must cease all further texts for which
-  consent is required absent further clarification that the recipient wishes to continue to receive
-  certain text messages.
+  receipt, it will be presumed to fall within the consumer's prior express consent. If it takes longer,
+  however, the sender will have to make a showing that such delay was reasonable. To the extent that
+  the text recipient has consented to several categories of text messages from the text sender, the
+  confirmation message may request clarification as to whether the revocation request was meant to
+  encompass all such messages; the sender must cease all further texts for which consent is required
+  absent further clarification that the recipient wishes to continue to receive certain text messages.
 paragraph_path:
   path:
-    - a
-    - '12'
+  - a
+  - '12'
   anchor: '64.1200'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 47-cfr-64.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  evidence: read from 47-cfr-64.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: 'No person or entity may:'
-    path:
-      - a
-    citation: 47 C.F.R. § 64.1200(a)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'No person or entity may:'
+  path:
+  - a
+  citation: 47 C.F.R. § 64.1200(a)
 operative_verb: mixed
-summary: >-
-  A one-time text message confirming a request to revoke consent from receiving any further calls or
-  text messages does not violate paragraphs (a)(1) and (2) of this section as long as the
+summary: A one-time text message confirming a request to revoke consent from receiving any further
+  calls or text messages does not violate paragraphs (a)(1) and (2) of this section as long as the
   confirmation text merely confirms the text recipient's revocation request and does not include any
   marketing or p
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

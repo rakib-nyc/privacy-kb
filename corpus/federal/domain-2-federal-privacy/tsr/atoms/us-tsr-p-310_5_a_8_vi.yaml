@@ -4,20 +4,20 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - ftc
+- ftc
 sector:
-  - telemarketing
-  - any
+- telemarketing
+- any
 data_types:
-  - any
+- any
 status: in_force
-effective_from: '2010-08-10'
+effective_from: '2024-05-16'
 effective_to: null
-effective_from_basis: citation_apparatus
-effective_from_evidence: >-
-  "Aug. 10, 2010" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml — citation apparatus, not
-  operative text
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2024-04-16 and first
+  appears at 2024-05-16 (window 2016-12-22..2024-05-16). Narrowed from the 2010-08-10 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-05-16 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -38,57 +38,50 @@ source:
   render: null
   structured_source_check:
     checked:
-      - eCFR versioner XML API
+    - eCFR versioner XML API
     result: structured_source_used
     note: null
   segment_sha256: 6151fc04508bf63cef4db8fc1291a27a445de2e6ba5488977b19977c5eead41a
-verbatim_span: >-
-  For the copy of Consent provided under § 310.3(a)(3), § 310.4(a)(7), § 310.4(b)(1)(iii)(B)( 1 ),
-  or § 310.4(b)(1)(v)(A), a complete record must also include all information specified in those
+verbatim_span: For the copy of Consent provided under § 310.3(a)(3), § 310.4(a)(7), § 310.4(b)(1)(iii)(B)(
+  1 ), or § 310.4(b)(1)(v)(A), a complete record must also include all information specified in those
   respective sections of this part;
 paragraph_path:
   path:
-    - a
-    - '8'
-    - vi
+  - a
+  - '8'
+  - vi
   anchor: '310.5'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 16-cfr-310.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  evidence: read from 16-cfr-310.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      Any seller or telemarketer must keep, for a period of 5 years from the date the record is
-      produced unless specified otherwise, the following records relating to its telemarketing
-      activities:
-    path:
-      - a
-    citation: 16 C.F.R. § 310.5(a)
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      All verifiable authorizations or records of express informed consent or express agreement
-      (collectively, “Consent”) required to be provided or received under this part. A complete
-      record of Consent includes the following:
-    path:
-      - a
-      - '8'
-    citation: 16 C.F.R. § 310.5(a)(8)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'Any seller or telemarketer must keep, for a period of 5 years from the date the
+    record is produced unless specified otherwise, the following records relating to its telemarketing
+    activities:'
+  path:
+  - a
+  citation: 16 C.F.R. § 310.5(a)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'All verifiable authorizations or records of express informed consent or express
+    agreement (collectively, “Consent”) required to be provided or received under this part. A complete
+    record of Consent includes the following:'
+  path:
+  - a
+  - '8'
+  citation: 16 C.F.R. § 310.5(a)(8)
 operative_verb: must
-summary: >-
-  For the copy of Consent provided under § 310.3(a)(3), § 310.4(a)(7), § 310.4(b)(1)(iii)(B)( 1 ),
-  or § 310.4(b)(1)(v)(A), a complete record must also include all information specified in those
+summary: For the copy of Consent provided under § 310.3(a)(3), § 310.4(a)(7), § 310.4(b)(1)(iii)(B)(
+  1 ), or § 310.4(b)(1)(v)(A), a complete record must also include all information specified in those
   respective sections of this part;
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

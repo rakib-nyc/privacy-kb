@@ -1743,6 +1743,7 @@ domains:
               - us.tcpa.227.c5b.dnc_private_action
               - us.tcpa.64_1200.c2.national_dnc_registry
               - us.tcpa.64_1200.d3.internal_dnc_honor
+              - us.tcpa.64_1200.d3.internal_dnc_honor.v2023_07_20
               - us.tsr.310_4.b1iii_a.entity_specific_dnc
               - us.tsr.310_4.b1iii_b.dnc_registry
             status: in_progress

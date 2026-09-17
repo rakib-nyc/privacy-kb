@@ -4,18 +4,19 @@ verification_status: verbatim_confirmed
 jurisdiction: US-FED
 jurisdiction_level: federal
 regulator:
-  - hhs_ocr
+- hhs_ocr
 sector:
-  - healthcare
+- healthcare
 data_types:
-  - phi
+- phi
 status: in_force
-effective_from: '2009-09-23'
+effective_from: '2024-06-25'
 effective_to: null
-effective_from_basis: stated_in_text
-effective_from_evidence: >-
-  "September 23, 2009" appears in the rendered text of
-  corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.txt
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2024-04-26 and first
+  appears at 2024-06-25 (window 2016-12-30..2024-06-25). Narrowed from the 2009-09-23 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-06-25 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -30,66 +31,58 @@ source:
   raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
   text_file: corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.txt
   text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
-  text_extraction_cmd: >-
-    python3 tools/render-text.py
-    corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
   format: ecfr_xml
   risk_tier: low
   render: null
   structured_source_check:
     checked:
-      - 45-cfr-164 structured source
+    - 45-cfr-164 structured source
     result: structured_source_used
     note: null
   segment_sha256: a29ca8a1c49ac2dbe53b2f505c32fda2331fb3be38ce74318806169b17d4fc92
-verbatim_span: >-
-  A statement adequate to put the individual on notice of the potential for information disclosed
-  pursuant to this subpart to be subject to redisclosure by the recipient and no longer protected by
-  this subpart
+verbatim_span: A statement adequate to put the individual on notice of the potential for information
+  disclosed pursuant to this subpart to be subject to redisclosure by the recipient and no longer
+  protected by this subpart
 paragraph_path:
   path:
-    - b
-    - '1'
-    - ii
-    - H
+  - b
+  - '1'
+  - ii
+  - H
   anchor: '164.520'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 45-cfr-164.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
+  evidence: read from 45-cfr-164.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/hipaa-breach-notification/raw/45-cfr-164.xml
 subject:
   domain: II.B.1
   lifecycle:
-    - VI
+  - VI
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: 'The notice must contain:'
-    path:
-      - b
-      - '1'
-      - ii
-    citation: 45 C.F.R. § 164.520(b)(1)(ii)
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      The covered entity, including any covered entity receiving or maintaining records subject to
-      42 U.S.C. 290dd-2, must provide a notice that is written in plain language and that contains
-      the elements required by this paragraph.
-    path:
-      - b
-      - '1'
-    citation: 45 C.F.R. § 164.520(b)(1)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'The notice must contain:'
+  path:
+  - b
+  - '1'
+  - ii
+  citation: 45 C.F.R. § 164.520(b)(1)(ii)
+- position: precedes
+  relation: scopes
+  verbatim_span: The covered entity, including any covered entity receiving or maintaining records
+    subject to 42 U.S.C. 290dd-2, must provide a notice that is written in plain language and that
+    contains the elements required by this paragraph.
+  path:
+  - b
+  - '1'
+  citation: 45 C.F.R. § 164.520(b)(1)
 operative_verb: must
 operative_verb_source: operative_context
-summary: >-
-  A statement adequate to put the individual on notice of the potential for information disclosed
-  pursuant to this subpart to be subject to redisclosure by the recipient and no longer protected by
-  this subpart
-not_yet_analysed: >-
-  Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision: its own
-  words carry no modal, and the duty is supplied by the chapeau recorded in operative_context. Do
-  not quote it without that chapeau. No applicability predicate has been written, so the engine
-  never asserts that it binds anyone.
+summary: A statement adequate to put the individual on notice of the potential for information disclosed
+  pursuant to this subpart to be subject to redisclosure by the recipient and no longer protected
+  by this subpart
+not_yet_analysed: 'Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision:
+  its own words carry no modal, and the duty is supplied by the chapeau recorded in operative_context.
+  Do not quote it without that chapeau. No applicability predicate has been written, so the engine
+  never asserts that it binds anyone.'
 open_questions: []

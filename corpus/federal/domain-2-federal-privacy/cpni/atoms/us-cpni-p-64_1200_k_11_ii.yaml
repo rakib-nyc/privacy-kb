@@ -4,19 +4,19 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - fcc
+- fcc
 sector:
-  - telecom
+- telecom
 data_types:
-  - cpni
+- cpni
 status: in_force
-effective_from: '2017-09-21'
+effective_from: '2021-05-06'
 effective_to: null
-effective_from_basis: citation_apparatus
-effective_from_evidence: >-
-  "Sept. 21, 2017" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
-  operative text
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2021-04-06 and first
+  appears at 2021-05-06 (window 2017-01-01..2026-03-25). Narrowed from the 2017-09-21 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2021-05-06 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -37,56 +37,51 @@ source:
   render: null
   structured_source_check:
     checked:
-      - eCFR versioner XML API (title 47 part 64)
+    - eCFR versioner XML API (title 47 part 64)
     result: structured_source_used
     note: null
   segment_sha256: 97912a4dcb32e300cc667234a597787673d22e0cea7e48fd6f662a26e99175b9
-verbatim_span: >-
-  The provider manages its network-based blocking with human oversight and network monitoring
+verbatim_span: The provider manages its network-based blocking with human oversight and network monitoring
   sufficient to ensure that it blocks only calls that are highly likely to be illegal, which must
   include a process that reasonably determines that the particular call pattern is highly likely to
   be illegal before initiating blocking of calls that are part of that pattern;
 paragraph_path:
   path:
-    - k
-    - '11'
-    - ii
+  - k
+  - '11'
+  - ii
   anchor: '64.1200'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 47-cfr-64.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  evidence: read from 47-cfr-64.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: 'Voice service providers may block calls so that they do not reach a called party as follows:'
-    path:
-      - k
-    citation: 47 C.F.R. § 64.1200(k)
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      A terminating provider may block calls without liability under the Communications Act and the
-      Commission's rules, without giving consumers the opportunity to opt out of such blocking, so
-      long as:
-    path:
-      - k
-      - '11'
-    citation: 47 C.F.R. § 64.1200(k)(11)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'Voice service providers may block calls so that they do not reach a called party
+    as follows:'
+  path:
+  - k
+  citation: 47 C.F.R. § 64.1200(k)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'A terminating provider may block calls without liability under the Communications
+    Act and the Commission''s rules, without giving consumers the opportunity to opt out of such blocking,
+    so long as:'
+  path:
+  - k
+  - '11'
+  citation: 47 C.F.R. § 64.1200(k)(11)
 operative_verb: must
-summary: >-
-  The provider manages its network-based blocking with human oversight and network monitoring
+summary: The provider manages its network-based blocking with human oversight and network monitoring
   sufficient to ensure that it blocks only calls that are highly likely to be illegal, which must
   include a process that reasonably determines that the particular call pattern is highly likely to
   be illegal bef
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

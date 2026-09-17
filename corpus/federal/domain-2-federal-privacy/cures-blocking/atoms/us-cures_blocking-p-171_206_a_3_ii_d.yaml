@@ -4,19 +4,20 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - hhs_oig
-  - cms
+- hhs_oig
+- cms
 sector:
-  - health
+- health
 data_types:
-  - health
+- health
 status: in_force
-effective_from: '2024-03-11'
+effective_from: '2024-12-17'
 effective_to: null
-effective_from_basis: undetermined
-effective_from_evidence: >-
-  not found anywhere in
-  corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2024-03-11 and first
+  appears at 2024-12-17 (window 2020-06-30..2024-12-17). Narrowed from the 2024-03-11 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-12-17 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -31,71 +32,63 @@ source:
   raw_sha256: 881f03c2034c1a6b4d49e9cde4adf70a84182f5890eb1be66f4026f4c601e023
   text_file: corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.txt
   text_sha256: ff9534f2201bb086974f3d4fbe95b9d3a5deb972e36d1e6889a93e3d534a088f
-  text_extraction_cmd: >-
-    python3 tools/render-text.py
-    corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
   format: ecfr_xml
   risk_tier: low
   render: null
   structured_source_check:
     checked:
-      - ecfr.gov versioner API, full XML for the part, date 2026-08-17
+    - ecfr.gov versioner API, full XML for the part, date 2026-08-17
     result: structured_source_used
     note: null
   segment_sha256: c79ea50e43e4b5b048b27fdbf7ac697382a79fbdea4f129e1f48b5f2ba9a18ac
-verbatim_span: >-
-  Is documented either before or contemporaneous with engaging in any practice based on the
-  determination. Documentation of the determination must identify the connection or relationship
+verbatim_span: Is documented either before or contemporaneous with engaging in any practice based
+  on the determination. Documentation of the determination must identify the connection or relationship
   between the interference with particular access, exchange, or use of specific electronic health
   information and the risk of potential exposure to legal action.
 paragraph_path:
   path:
-    - a
-    - '3'
-    - ii
-    - D
+  - a
+  - '3'
+  - ii
+  - D
   anchor: '171.206'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 45-cfr-171.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
+  evidence: read from 45-cfr-171.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/cures-blocking/raw/45-cfr-171.xml
 subject:
   domain: II.B.3
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: 'To satisfy this condition, a practice must meet each of the following requirements:'
-    path:
-      - a
-    citation: 45 C.F.R. § 171.206(a)
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      The practice is implemented either consistent with an organizational policy that meets
-      paragraph (a)(3)(i) of this section or pursuant to a case-by-case determination that meets
-      paragraph (a)(3)(ii) of this section.
-    path:
-      - a
-      - '3'
-    citation: 45 C.F.R. § 171.206(a)(3)
-  - position: precedes
-    relation: scopes
-    verbatim_span: 'A case-by-case determination:'
-    path:
-      - a
-      - '3'
-      - ii
-    citation: 45 C.F.R. § 171.206(a)(3)(ii)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'To satisfy this condition, a practice must meet each of the following requirements:'
+  path:
+  - a
+  citation: 45 C.F.R. § 171.206(a)
+- position: precedes
+  relation: scopes
+  verbatim_span: The practice is implemented either consistent with an organizational policy that
+    meets paragraph (a)(3)(i) of this section or pursuant to a case-by-case determination that meets
+    paragraph (a)(3)(ii) of this section.
+  path:
+  - a
+  - '3'
+  citation: 45 C.F.R. § 171.206(a)(3)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'A case-by-case determination:'
+  path:
+  - a
+  - '3'
+  - ii
+  citation: 45 C.F.R. § 171.206(a)(3)(ii)
 operative_verb: must
-summary: >-
-  Is documented either before or contemporaneous with engaging in any practice based on the
+summary: Is documented either before or contemporaneous with engaging in any practice based on the
   determination.
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

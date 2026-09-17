@@ -4,18 +4,19 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - hhs_ocr
+- hhs_ocr
 sector:
-  - health
+- health
 data_types:
-  - health
+- health
 status: in_force
-effective_from: '2003-04-14'
+effective_from: '2024-06-25'
 effective_to: null
-effective_from_basis: stated_in_text
-effective_from_evidence: >-
-  "April 14, 2003" appears in the rendered text of
-  corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2024-04-26 and first
+  appears at 2024-06-25 (window 2016-12-30..2024-06-25). Narrowed from the 2003-04-14 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-06-25 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -30,73 +31,64 @@ source:
   raw_sha256: 233fec3ad4a05762fd58d636fafc24c51ae60fa48f1be8354ea17a790b364f2e
   text_file: corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.txt
   text_sha256: 71d5896bfc78e51a9e11843dd4ae4808e224a5a42ffd0c72413a9e6b03303331
-  text_extraction_cmd: >-
-    python3 tools/render-text.py
-    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
   format: ecfr_xml
   risk_tier: low
   render: null
   structured_source_check:
     checked:
-      - ecfr.gov versioner API, title-45 XML, part 164
+    - ecfr.gov versioner API, title-45 XML, part 164
     result: structured_source_used
     note: null
   segment_sha256: f905af640b7927b405eec71b6890a6c3aa5e8c81d1f2f682b14f57c08f9addbb
-verbatim_span: >-
-  Substance use disorder treatment records received from programs subject to 42 CFR part 2, or
-  testimony relaying the content of such records, shall not be used or disclosed in civil, criminal,
+verbatim_span: Substance use disorder treatment records received from programs subject to 42 CFR part
+  2, or testimony relaying the content of such records, shall not be used or disclosed in civil, criminal,
   administrative, or legislative proceedings against the individual unless based on written consent,
   or a court order after notice and an opportunity to be heard is provided to the individual or the
   holder of the record, as provided in 42 CFR part 2. A court order authorizing use or disclosure
-  must be accompanied by a subpoena or other legal requirement compelling disclosure before the
-  requested record is used or disclosed; or
+  must be accompanied by a subpoena or other legal requirement compelling disclosure before the requested
+  record is used or disclosed; or
 paragraph_path:
   path:
-    - b
-    - '1'
-    - iii
-    - D
+  - b
+  - '1'
+  - iii
+  - D
   anchor: '164.520'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 45-cfr-164.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
+  evidence: read from 45-cfr-164.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/hipaa-privacy-rule/raw/45-cfr-164.xml
 subject:
   domain: II.B.1
   lifecycle:
-    - I
+  - I
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      The covered entity, including any covered entity receiving or maintaining records subject to
-      42 U.S.C. 290dd-2, must provide a notice that is written in plain language and that contains
-      the elements required by this paragraph.
-    path:
-      - b
-      - '1'
-    citation: 45 C.F.R. § 164.520(b)(1)
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      If the covered entity intends to engage in any of the following activities, the description
-      required by paragraph (b)(1)(ii)(A) or (B) of this section must include a separate statement
-      informing the individual of such activities, as applicable:
-    path:
-      - b
-      - '1'
-      - iii
-    citation: 45 C.F.R. § 164.520(b)(1)(iii)
+- position: precedes
+  relation: scopes
+  verbatim_span: The covered entity, including any covered entity receiving or maintaining records
+    subject to 42 U.S.C. 290dd-2, must provide a notice that is written in plain language and that
+    contains the elements required by this paragraph.
+  path:
+  - b
+  - '1'
+  citation: 45 C.F.R. § 164.520(b)(1)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'If the covered entity intends to engage in any of the following activities, the
+    description required by paragraph (b)(1)(ii)(A) or (B) of this section must include a separate
+    statement informing the individual of such activities, as applicable:'
+  path:
+  - b
+  - '1'
+  - iii
+  citation: 45 C.F.R. § 164.520(b)(1)(iii)
 operative_verb: must_not
-summary: >-
-  Substance use disorder treatment records received from programs subject to 42 CFR part 2, or
-  testimony relaying the content of such records, shall not be used or disclosed in civil, criminal,
+summary: Substance use disorder treatment records received from programs subject to 42 CFR part 2,
+  or testimony relaying the content of such records, shall not be used or disclosed in civil, criminal,
   administrative, or legislative proceedings against the individual unless based on written consent,
   or a cour
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

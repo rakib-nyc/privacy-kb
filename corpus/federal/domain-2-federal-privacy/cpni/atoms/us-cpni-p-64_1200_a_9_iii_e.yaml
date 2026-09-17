@@ -4,19 +4,19 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - fcc
+- fcc
 sector:
-  - telecom
+- telecom
 data_types:
-  - cpni
+- cpni
 status: in_force
-effective_from: '2017-09-21'
+effective_from: '2021-03-29'
 effective_to: null
-effective_from_basis: citation_apparatus
-effective_from_evidence: >-
-  "Sept. 21, 2017" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml — citation apparatus, not
-  operative text
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2021-02-25 and first
+  appears at 2021-03-29 (window 2017-01-01..2026-03-25). Narrowed from the 2017-09-21 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2021-03-29 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -37,67 +37,60 @@ source:
   render: null
   structured_source_check:
     checked:
-      - eCFR versioner XML API (title 47 part 64)
+    - eCFR versioner XML API (title 47 part 64)
     result: structured_source_used
     note: null
   segment_sha256: 4a0965978b1e29e66ec81a32959e9360996abc4ca60de022404e56a1d9a93c7f
-verbatim_span: >-
-  Voice calls and text messages must be concise, generally one minute or less in length for voice
-  calls (unless more time is needed to obtain customer responses or answer customer questions) or
-  160 characters or less in length for text messages;
+verbatim_span: Voice calls and text messages must be concise, generally one minute or less in length
+  for voice calls (unless more time is needed to obtain customer responses or answer customer questions)
+  or 160 characters or less in length for text messages;
 paragraph_path:
   path:
-    - a
-    - '9'
-    - iii
-    - E
+  - a
+  - '9'
+  - iii
+  - E
   anchor: '64.1200'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 47-cfr-64.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
+  evidence: read from 47-cfr-64.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/tcpa/raw/47-cfr-64.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - IV
+  - IV
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: 'No person or entity may:'
-    path:
-      - a
-    citation: 47 C.F.R. § 64.1200(a)
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      A person will not be liable for violating the prohibition in paragraph (a)(1)(iii) of this
-      section for making any call exempted in this paragraph (a)(9), provided that the call is not
-      charged to the called person or counted against the called person's plan limits on minutes or
-      texts. As used in this paragraph (a)(9), the term “call” includes a text message, including a
-      short message service (SMS) call.
-    path:
-      - a
-      - '9'
-    citation: 47 C.F.R. § 64.1200(a)(9)
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      Calls made by any financial institution as defined in section 4(k) of the Bank Holding Company
-      Act of 1956, 15 U.S.C. 6809(3)(A), provided that all of the following conditions are met:
-    path:
-      - a
-      - '9'
-      - iii
-    citation: 47 C.F.R. § 64.1200(a)(9)(iii)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'No person or entity may:'
+  path:
+  - a
+  citation: 47 C.F.R. § 64.1200(a)
+- position: precedes
+  relation: scopes
+  verbatim_span: A person will not be liable for violating the prohibition in paragraph (a)(1)(iii)
+    of this section for making any call exempted in this paragraph (a)(9), provided that the call
+    is not charged to the called person or counted against the called person's plan limits on minutes
+    or texts. As used in this paragraph (a)(9), the term “call” includes a text message, including
+    a short message service (SMS) call.
+  path:
+  - a
+  - '9'
+  citation: 47 C.F.R. § 64.1200(a)(9)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'Calls made by any financial institution as defined in section 4(k) of the Bank Holding
+    Company Act of 1956, 15 U.S.C. 6809(3)(A), provided that all of the following conditions are met:'
+  path:
+  - a
+  - '9'
+  - iii
+  citation: 47 C.F.R. § 64.1200(a)(9)(iii)
 operative_verb: must
-summary: >-
-  Voice calls and text messages must be concise, generally one minute or less in length for voice
-  calls (unless more time is needed to obtain customer responses or answer customer questions) or
-  160 characters or less in length for text messages;
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+summary: Voice calls and text messages must be concise, generally one minute or less in length for
+  voice calls (unless more time is needed to obtain customer responses or answer customer questions)
+  or 160 characters or less in length for text messages;
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

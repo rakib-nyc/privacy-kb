@@ -4,18 +4,19 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - ftc
+- ftc
 sector:
-  - financial
+- financial
 data_types:
-  - financial
+- financial
 status: in_force
-effective_from: '2000-11-13'
+effective_from: '2022-01-07'
 effective_to: null
-effective_from_basis: undetermined
-effective_from_evidence: >-
-  not found anywhere in
-  corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2021-12-09 and first
+  appears at 2022-01-07 (window 2016-12-22..2022-01-07). Narrowed from the 2000-11-13 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2022-01-07 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -30,61 +31,53 @@ source:
   raw_sha256: d15f22051009593a5210d7d3bf1f8e8af542214d78f12fc333b9f0a2e852a67a
   text_file: corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.txt
   text_sha256: e82d7dc8e83a38f83ca95113eb64d54dc94556c0b0786b595bc452473d05ba1f
-  text_extraction_cmd: >-
-    python3 tools/render-text.py
-    corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
   format: ecfr_xml
   risk_tier: low
   render: null
   structured_source_check:
     checked:
-      - ecfr.gov versioner API, title-16 XML, part 313, date 2026-08-17
+    - ecfr.gov versioner API, title-16 XML, part 313, date 2026-08-17
     result: structured_source_used
     note: null
   segment_sha256: d29866adb0f486293ac51e5de20ce7fd5764d60b16414e7c8f4238f11433ad50
-verbatim_span: >-
-  You change your policies and practices in such a way that you no longer meet the requirements of
-  paragraph (e)(1) of this section effective April 1 of year 1. Assuming you define the
-  12-consecutive-month period pursuant to paragraph (a) of this section as a calendar year, if you
-  were required to provide a revised privacy notice under § 313.8 and you provided that notice on
-  March 1 of year 1, you must provide an annual privacy notice by December 31 of year 2. If you were
-  not required to provide a revised privacy notice under § 313.8, you must provide an annual privacy
-  notice by July 9 of year 1.
+verbatim_span: You change your policies and practices in such a way that you no longer meet the requirements
+  of paragraph (e)(1) of this section effective April 1 of year 1. Assuming you define the 12-consecutive-month
+  period pursuant to paragraph (a) of this section as a calendar year, if you were required to provide
+  a revised privacy notice under § 313.8 and you provided that notice on March 1 of year 1, you must
+  provide an annual privacy notice by December 31 of year 2. If you were not required to provide a
+  revised privacy notice under § 313.8, you must provide an annual privacy notice by July 9 of year
+  1.
 paragraph_path:
   path:
-    - e
-    - '2'
-    - iii
-    - A
+  - e
+  - '2'
+  - iii
+  - A
   anchor: '313.5'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 16-cfr-313.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
+  evidence: read from 16-cfr-313.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/glba-privacy-rule/raw/16-cfr-313.xml
 subject:
   domain: II.C.1
   lifecycle:
-    - I
+  - I
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      If you have been excepted from delivering an annual privacy notice pursuant to paragraph
-      (e)(1) of this section and change your policies or practices in such a way that you no longer
-      meet the requirements for that exception, you must comply with paragraph (e)(2)(i) or (ii) of
-      this section, as applicable.
-    path:
-      - e
-      - '2'
-    citation: 16 C.F.R. § 313.5(e)(2)
+- position: precedes
+  relation: scopes
+  verbatim_span: If you have been excepted from delivering an annual privacy notice pursuant to paragraph
+    (e)(1) of this section and change your policies or practices in such a way that you no longer
+    meet the requirements for that exception, you must comply with paragraph (e)(2)(i) or (ii) of
+    this section, as applicable.
+  path:
+  - e
+  - '2'
+  citation: 16 C.F.R. § 313.5(e)(2)
 operative_verb: must
-summary: >-
-  You change your policies and practices in such a way that you no longer meet the requirements of
-  paragraph (e)(1) of this section effective April 1 of year 1.
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+summary: You change your policies and practices in such a way that you no longer meet the requirements
+  of paragraph (e)(1) of this section effective April 1 of year 1.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

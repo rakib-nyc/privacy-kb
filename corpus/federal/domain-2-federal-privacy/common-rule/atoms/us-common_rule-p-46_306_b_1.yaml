@@ -4,20 +4,21 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - hhs_ohrp
-  - federal_agencies
+- hhs_ohrp
+- federal_agencies
 sector:
-  - health
+- health
 data_types:
-  - personal_information
-  - health
+- personal_information
+- health
 status: in_force
-effective_from: '2019-01-21'
+effective_from: '2024-10-24'
 effective_to: null
-effective_from_basis: stated_in_text
-effective_from_evidence: >-
-  "January 21, 2019" appears in the rendered text of
-  corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2019-11-05 and first
+  appears at 2024-10-24 (window 2016-12-30..2024-10-24). Narrowed from the 2019-01-21 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-10-24 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -32,53 +33,45 @@ source:
   raw_sha256: cfe25d02a8ade401b1350f591c4654b85ab03c47f66297047feb0a6e1f0e543d
   text_file: corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.txt
   text_sha256: 2e9f64e48744208a67bbad88f993394ee3ae928f07e1396d552d5a6c8d574fa1
-  text_extraction_cmd: >-
-    python3 tools/render-text.py
-    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
   format: ecfr_xml
   risk_tier: low
   render: null
   structured_source_check:
     checked:
-      - ecfr.gov versioner API, title 45 part 46, structured XML
+    - ecfr.gov versioner API, title 45 part 46, structured XML
     result: structured_source_used
     note: null
   segment_sha256: 21cba2b07d6b899780a540b1b317b0c46801f661b16da36667114fd31c1744ba
-verbatim_span: >-
-  For research subject to the pre-2018 Requirements and this subpart, except as provided in
-  paragraph (a) of this section, biomedical or behavioral research conducted or supported by DHHS
+verbatim_span: For research subject to the pre-2018 Requirements and this subpart, except as provided
+  in paragraph (a) of this section, biomedical or behavioral research conducted or supported by DHHS
   shall not involve prisoners as subjects.
 paragraph_path:
   path:
-    - b
-    - '1'
+  - b
+  - '1'
   anchor: '46.306'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 45-cfr-46.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
+  evidence: read from 45-cfr-46.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/common-rule/raw/45-cfr-46.xml
 subject:
   domain: II.B.3
   lifecycle:
-    - III
+  - III
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      Biomedical or behavioral research conducted or supported by DHHS shall not involve prisoners
-      except as follows:
-    path:
-      - b
-    citation: 45 C.F.R. § 46.306(b)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'Biomedical or behavioral research conducted or supported by DHHS shall not involve
+    prisoners except as follows:'
+  path:
+  - b
+  citation: 45 C.F.R. § 46.306(b)
 operative_verb: must_not
-summary: >-
-  For research subject to the pre-2018 Requirements and this subpart, except as provided in
+summary: For research subject to the pre-2018 Requirements and this subpart, except as provided in
   paragraph (a) of this section, biomedical or behavioral research conducted or supported by DHHS
   shall not involve prisoners as subjects.
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

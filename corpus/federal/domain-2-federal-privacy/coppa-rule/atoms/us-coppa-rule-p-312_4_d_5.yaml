@@ -4,18 +4,21 @@ verification_status: verbatim_confirmed
 jurisdiction: US-FED
 jurisdiction_level: federal
 regulator:
-  - ftc
-  - state_ag
+- ftc
+- state_ag
 sector:
-  - childrens_online_services
+- childrens_online_services
 data_types:
-  - minor_data
-  - personal_information
+- minor_data
+- personal_information
 status: in_force
-effective_from: '2000-04-21'
+effective_from: '2025-06-23'
 effective_to: null
-effective_from_basis: undetermined
-effective_from_evidence: not found anywhere in corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2016-12-22 and first
+  appears at 2025-06-23 (window 2016-12-22..2025-06-23). Narrowed from the 2000-04-21 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2025-06-23 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -30,61 +33,53 @@ source:
   raw_sha256: 5a29d13e4512092a2d064a62a581031dc75aa99998540e6c2ef24f0dbfc66df9
   text_file: corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.txt
   text_sha256: 269dbc8c79e682a08e9686846439239d7f57ec49f501070957ff738370189425
-  text_extraction_cmd: >-
-    python3 tools/render-text.py
-    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  text_extraction_cmd: python3 tools/render-text.py corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
   format: ecfr_xml
   risk_tier: low
   render: null
   structured_source_check:
     checked:
-      - 16-cfr-312 structured source
+    - 16-cfr-312 structured source
     result: structured_source_used
     note: null
   segment_sha256: 48287f4339998f909cafa4439c3a43e041c1e56564ea2106a5cf6c4a0967df10
-verbatim_span: >-
-  If applicable, that the parent can review or have deleted the child's personal information, and
-  refuse to permit further collection or use of the child's information, and state the procedures
+verbatim_span: If applicable, that the parent can review or have deleted the child's personal information,
+  and refuse to permit further collection or use of the child's information, and state the procedures
   for doing so.
 paragraph_path:
   path:
-    - d
-    - '5'
+  - d
+  - '5'
   anchor: '312.4'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 16-cfr-312.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
+  evidence: read from 16-cfr-312.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/coppa-rule/raw/16-cfr-312.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - V
+  - V
 operative_context:
-  - position: precedes
-    relation: scopes
-    verbatim_span: >-
-      In addition to the direct notice to the parent, an operator must post a prominent and clearly
-      labeled link to an online notice of its information practices with regard to children on the
-      home or landing page or screen of its website or online service, and, at each area of the
-      website or online service where personal information is collected from children. The link must
-      be in close proximity to the requests for information in each such area. An operator of a
-      general audience website or online service that has a separate children's area must post a
-      link to a notice of its information practices with regard to children on the home or landing
-      page or screen of the children's area. To be complete, the online notice of the website or
-      online service's information practices must state the following:
-    path:
-      - d
-    citation: 16 C.F.R. § 312.4(d)
+- position: precedes
+  relation: scopes
+  verbatim_span: 'In addition to the direct notice to the parent, an operator must post a prominent
+    and clearly labeled link to an online notice of its information practices with regard to children
+    on the home or landing page or screen of its website or online service, and, at each area of the
+    website or online service where personal information is collected from children. The link must
+    be in close proximity to the requests for information in each such area. An operator of a general
+    audience website or online service that has a separate children''s area must post a link to a
+    notice of its information practices with regard to children on the home or landing page or screen
+    of the children''s area. To be complete, the online notice of the website or online service''s
+    information practices must state the following:'
+  path:
+  - d
+  citation: 16 C.F.R. § 312.4(d)
 operative_verb: must
 operative_verb_source: operative_context
-summary: >-
-  If applicable, that the parent can review or have deleted the child's personal information, and
-  refuse to permit further collection or use of the child's information, and state the procedures
+summary: If applicable, that the parent can review or have deleted the child's personal information,
+  and refuse to permit further collection or use of the child's information, and state the procedures
   for doing so.
-not_yet_analysed: >-
-  Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision: its own
-  words carry no modal, and the duty is supplied by the chapeau recorded in operative_context. Do
-  not quote it without that chapeau. No applicability predicate has been written, so the engine
-  never asserts that it binds anyone.
+not_yet_analysed: 'Held as reference text, and it is an ITEM ON A LIST rather than a standalone provision:
+  its own words carry no modal, and the duty is supplied by the chapeau recorded in operative_context.
+  Do not quote it without that chapeau. No applicability predicate has been written, so the engine
+  never asserts that it binds anyone.'
 open_questions: []

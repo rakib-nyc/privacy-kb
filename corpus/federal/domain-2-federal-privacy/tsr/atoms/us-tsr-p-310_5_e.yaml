@@ -4,20 +4,20 @@ verification_status: verbatim_confirmed
 jurisdiction: US
 jurisdiction_level: federal
 regulator:
-  - ftc
+- ftc
 sector:
-  - telemarketing
-  - any
+- telemarketing
+- any
 data_types:
-  - any
+- any
 status: in_force
-effective_from: '2010-08-10'
+effective_from: '2024-05-16'
 effective_to: null
-effective_from_basis: citation_apparatus
-effective_from_evidence: >-
-  "Aug. 10, 2010" appears in a <PSPACE> element of
-  corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml — citation apparatus, not
-  operative text
+effective_from_basis: versioner_evidence
+effective_from_evidence: 'eCFR point-in-time record: this exact span is absent at 2024-04-16 and first
+  appears at 2024-05-16 (window 2016-12-22..2024-05-16). Narrowed from the 2010-08-10 this record
+  previously claimed; the prior vintage is not held, so the corpus is silent before 2024-05-16 rather
+  than answering with text that did not exist then.'
 supersedes: null
 superseded_by: null
 amendment_history: []
@@ -38,46 +38,40 @@ source:
   render: null
   structured_source_check:
     checked:
-      - eCFR versioner XML API
+    - eCFR versioner XML API
     result: structured_source_used
     note: null
   segment_sha256: e7809ee706f5d8132b986fcb349ed4fa34f9547d52a9e780470b96ae4e865fc9
-verbatim_span: >-
-  The seller and the telemarketer calling on behalf of the seller may, by written agreement,
-  allocate responsibility between themselves for the recordkeeping required by this section. When a
-  seller and telemarketer have entered into such an agreement, the terms of that agreement will
+verbatim_span: The seller and the telemarketer calling on behalf of the seller may, by written agreement,
+  allocate responsibility between themselves for the recordkeeping required by this section. When
+  a seller and telemarketer have entered into such an agreement, the terms of that agreement will
   govern, and the seller or telemarketer, as the case may be, need not keep records that duplicate
-  those of the other. If by written agreement the telemarketer bears the responsibility for the
-  recordkeeping requirements of this section, the seller must establish and implement practices and
-  procedures to ensure the telemarketer is complying with the requirements of this section. These
-  practices and procedures include retaining access to any record the telemarketer creates under
-  this section on the seller's behalf. If the agreement is unclear as to who must maintain any
-  required record(s), or if no such agreement exists, both the telemarketer and the seller are
-  responsible for complying with this section.
+  those of the other. If by written agreement the telemarketer bears the responsibility for the recordkeeping
+  requirements of this section, the seller must establish and implement practices and procedures to
+  ensure the telemarketer is complying with the requirements of this section. These practices and
+  procedures include retaining access to any record the telemarketer creates under this section on
+  the seller's behalf. If the agreement is unclear as to who must maintain any required record(s),
+  or if no such agreement exists, both the telemarketer and the seller are responsible for complying
+  with this section.
 paragraph_path:
   path:
-    - e
+  - e
   anchor: '310.5'
   derivation: structural
   confidence: high
-  evidence: >-
-    read from 16-cfr-310.seg.json, the segmentation of
-    corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
+  evidence: read from 16-cfr-310.seg.json, the segmentation of corpus/federal/domain-2-federal-privacy/tsr/raw/16-cfr-310.xml
 subject:
   domain: II.E.1
   lifecycle:
-    - IV
+  - IV
 operative_context: []
 operative_verb: mixed
-summary: >-
-  The seller and the telemarketer calling on behalf of the seller may, by written agreement,
+summary: The seller and the telemarketer calling on behalf of the seller may, by written agreement,
   allocate responsibility between themselves for the recordkeeping required by this section.
-context_not_required: >-
-  The segmentation records no governing chapeau or continuation for this leaf, so the span stands
-  alone in its own source. It is quoted as the source presents it.
-not_yet_analysed: >-
-  Held as reference text. No applicability predicate has been written for it, so the engine does not
-  assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
+context_not_required: The segmentation records no governing chapeau or continuation for this leaf,
+  so the span stands alone in its own source. It is quoted as the source presents it.
+not_yet_analysed: Held as reference text. No applicability predicate has been written for it, so the
+  engine does not assert that it binds anyone — a provision record is never read by engine/applicability.mjs.
   Promoting it to an obligation means writing applies_if, obligation_type and requirement_detail,
   and passing the gates that check them.
 open_questions: []

@@ -628,7 +628,16 @@ debt:
     The fix traded a WRONG VINTAGE for a FALSE NEGATIVE. A wrong vintage reads exactly like a right
     one, so the trade is worth making; but silence is still a wrong answer to "what did this require
     in 2010", and it is quieter than the bug it replaced.
-  status: open
+  progress: >-
+    47 C.F.R. 64.1200(d)(3) is held at two vintages and chained — the first version chain in the
+    corpus. The internal do-not-call outer limit was 30 days from the DATE OF THE REQUEST until
+    11 April 2025 and is ten business days from RECEIPT after it, so the two vintages differ in
+    length and in starting point, and the record reaches the clock engine. Re-running the
+    point-in-time report over the cached snapshots also raised 121 records from a weak basis to
+    versioner_evidence and expanded gate 45's reach from 79 records to 1,229, which narrowed 144
+    records that had been claiming an effective_from earlier than the text they quote. The ledger
+    grew from 12 entries to 280 as a result: those gaps were always there and are now declared.
+  status: open_mitigated
 
 - id: DEBT-025
   title: Instrument completeness is measured by citation prefix, not by element coverage
