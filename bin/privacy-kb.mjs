@@ -48,6 +48,11 @@ ${b('privacy-kb')} ${dim(VERSION)}  —  US federal + New York privacy law, as o
   ${b('privacy-kb receipt')} [flags]           a reproducible digest of an answer, for an auditor
   ${b('privacy-kb between')} <d1> <d2> [flags] what changed for THESE facts between two dates
   ${b('privacy-kb ground')} <claims.json>     audit someone else's citations against this corpus
+  ${b('privacy-kb premise')} <file|text>       check the assumption inside a question
+  ${b('privacy-kb register')} [flags]          every duty that applies, and what evidence exists
+  ${b('privacy-kb overlaps')} [flags]          which duty binds when several reach one event
+  ${b('privacy-kb interview')} [flags]         what to establish next, ranked
+  ${b('privacy-kb calendar')} [flags]          computed deadlines as an .ics feed
 
   ${b('Flags for ask/deadlines')}
     --hipaa            a HIPAA covered entity
@@ -491,6 +496,145 @@ function betweenCmd(args) {
  * [{proposition, citation, as_of?, facts?}] — which is what you get by asking any assistant to
  * list the citations it relied on — or a single claim given inline.
  */
+function premiseCmd(args) {
+  const flag = name => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : null; };
+  const file = args.filter(a => !a.startsWith('--'))[0];
+  const asOf = flag('--as-of') ?? today();
+  let text = flag('--text');
+  if (file && !text) { try { text = readFileSync(file, 'utf8'); } catch { text = file; } }
+  if (!text) {
+    console.log('\n  Usage:  privacy-kb premise <file|"sentence"> [--as-of <date>]\n');
+    console.log(dim('  Checks the ASSUMPTION inside a question: preemption claims, "since X is law",'));
+    console.log(dim('  "no law applies", "we are exempt from X".\n'));
+    process.exitCode = 1; return;
+  }
+  const { entity, data, context } = factsFrom(args);
+  const r = call('privacy_premise', { text, as_of: asOf,
+    facts: { entity, data, event: context.event, practice: context.practice,
+             purpose: context.purpose, law: context.law } });
+  if (args.includes('--json')) return console.log(JSON.stringify(r, null, 2));
+  if (r.error) { process.exitCode = 1; return console.log(`\n  ${r.error}\n`); }
+  console.log(`\n${b('Premise check')}  —  ${r.summary.premises} found, `
+    + `${r.summary.contradicted} contradicted\n`);
+  for (const row of r.results) {
+    const mark = row.status === 'CONTRADICTED' ? b('✗') : row.status === 'PARTIAL' ? b('~') : dim('·');
+    console.log(`  ${mark} ${row.matched_text ?? row.kind}   ${dim(row.status)}`);
+    for (const finding of row.findings) console.log(dim(`      ${finding.message.slice(0, 200)}`));
+    console.log('');
+  }
+  console.log(dim(`  ${r.caveat}`));
+  console.log('\n' + DISCLAIMER + '\n');
+}
+
+function registerCmd(args) {
+  const flag = name => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : null; };
+  const sub = args.filter(a => !a.startsWith('--'))[0] ?? 'build';
+  const asOf = flag('--as-of') ?? today();
+
+  if (sub === 'bind' || sub === 'unbind') {
+    const atomId = args.filter(a => !a.startsWith('--'))[1];
+    if (!atomId) { console.log('\n  privacy-kb register bind <atom-id> --document <file> [--owner <name>]\n');
+      process.exitCode = 1; return; }
+    const r = call('privacy_register', { action: sub, atom_id: atomId,
+      document: flag('--document'), owner: flag('--owner'), note: flag('--note') });
+    if (r.error) { process.exitCode = 1; return console.log(`\n  ${r.error}\n`); }
+    console.log(`\n  ${sub === 'bind' ? 'bound' : 'unbound'} ${b(atomId)}\n`);
+    if (r.note) console.log(dim(`  ${r.note}\n`));
+    return;
+  }
+
+  const { entity, data, context } = factsFrom(args);
+  const r = call('privacy_register', { action: 'build', entity, data, ...context, as_of: asOf,
+    profile: flag('--profile'), format: args.includes('--csv') ? 'csv' : undefined });
+  if (args.includes('--json')) return console.log(JSON.stringify(r, null, 2));
+  if (r.error) { process.exitCode = 1; return console.log(`\n  ${r.error}\n`); }
+  if (args.includes('--csv')) return console.log(r.csv);
+  if (args.includes('--md')) return console.log(r.markdown);
+
+  const sum = r.summary;
+  console.log(`\n${b('Obligation register')}  as of ${r.as_of}  —  ${sum.obligations} obligation(s)\n`);
+  for (const row of r.rows) {
+    const clock = row.clock_status === 'running' ? b(row.due)
+      : row.clock_status === 'not_started' ? dim('not started') : dim('no fixed period');
+    console.log(`  ${(row.citation ?? row.atom_id).padEnd(34)} ${clock}`);
+    console.log(dim(`      evidence: ${row.evidence?.document ?? b('—')}`));
+  }
+  console.log(`\n  ${b(String(sum.unevidenced))} of ${sum.obligations} have no evidence bound · `
+    + `${sum.clocks_running} clock(s) running`);
+  if (sum.evidence_bound_to_inapplicable)
+    console.log(b(`  ${sum.evidence_bound_to_inapplicable} evidence entr(ies) bound to obligations that no longer apply`));
+  console.log(dim(`\n  ${r.caveat}`));
+  console.log('\n' + DISCLAIMER + '\n');
+}
+
+function overlapsCmd(args) {
+  const flag = name => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : null; };
+  const { entity, data, context } = factsFrom(args);
+  const r = call('privacy_overlaps', { entity, data, ...context, as_of: flag('--as-of') ?? today() });
+  if (args.includes('--json')) return console.log(JSON.stringify(r, null, 2));
+  if (r.error) { process.exitCode = 1; return console.log(`\n  ${r.error}\n`); }
+  if (args.includes('--md')) return console.log(r.markdown);
+  console.log(`\n${b('Overlapping duties')}  as of ${r.as_of}\n`);
+  if (!r.groups.length) { console.log('  No trigger carries more than one obligation here.\n'); return; }
+  for (const group of r.groups) {
+    console.log(`  ${b(group.trigger_label)}${group.spread_days ? dim(`  ${group.spread_days}d spread`) : ''}`);
+    for (const duty of group.duties) {
+      const mark = duty.atom_id === group.binding?.atom_id ? b('BINDS') : '     ';
+      const margin = duty.margin_days === null ? '' : duty.margin_days === 0 ? '' : dim(` +${duty.margin_days}d`);
+      console.log(`    ${mark} ${(duty.citation ?? duty.atom_id).padEnd(32)} ${duty.period}${margin}`
+        + (duty.due ? dim(`  due ${duty.due}`) : ''));
+    }
+    console.log(dim(`    ${group.note}\n`));
+  }
+  console.log(dim(`  ${r.caveat}`));
+  console.log('\n' + DISCLAIMER + '\n');
+}
+
+function interviewCmd(args) {
+  const flag = name => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : null; };
+  const { entity, data, context } = factsFrom(args);
+  const r = call('privacy_interview', { entity, data, ...context,
+    as_of: flag('--as-of') ?? today(), limit: Number(flag('--limit')) || undefined });
+  if (args.includes('--json')) return console.log(JSON.stringify(r, null, 2));
+  if (r.error) { process.exitCode = 1; return console.log(`\n  ${r.error}\n`); }
+  if (args.includes('--md')) return console.log(r.markdown);
+  const sum = r.summary;
+  console.log(`\n${b('What to establish next')}  as of ${r.as_of}\n`);
+  console.log(`  ${sum.facts_supplied} fact(s) supplied · ${b(String(sum.unresolved))} obligation(s) `
+    + `unresolved of ${sum.obligations_considered} · ${sum.resolved_applies} apply\n`);
+  for (const entry of r.questions) {
+    console.log(`  ${b(String(entry.blocks).padStart(3))}  ${entry.question}`);
+    console.log(dim(`       ${entry.fact_key}${entry.values?.length ? '  →  ' + entry.values.slice(0, 4).join(' | ') : ''}`));
+  }
+  if (r.more_questions) console.log(dim(`\n  …and ${r.more_questions} more, blocking fewer each.`));
+  console.log(dim(`\n  ${r.caveat}`));
+  console.log('\n' + DISCLAIMER + '\n');
+}
+
+function calendarCmd(args) {
+  const flag = name => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : null; };
+  const { entity, data, context } = factsFrom(args);
+  const r = call('privacy_calendar', { entity, data, ...context,
+    as_of: flag('--as-of') ?? today(), name: flag('--name'), dtstamp: flag('--dtstamp') });
+  if (args.includes('--json')) return console.log(JSON.stringify(r, null, 2));
+  if (r.error) { process.exitCode = 1; return console.log(`\n  ${r.error}\n`); }
+  const out = flag('--out');
+  if (out) { writeFileSync(out, r.ics, 'utf8');
+    console.log(`\n  wrote ${b(String(r.summary.scheduled))} event(s) to ${out}\n`); }
+  else if (args.includes('--ics')) return console.log(r.ics);
+  else {
+    console.log(`\n${b('Deadline calendar')}  as of ${r.as_of}\n`);
+    for (const row of r.entries)
+      console.log(`  ${b(row.due)}  ${(row.citation ?? row.atom_id)}`
+        + (row.also_requires_promptness ? dim('  outer limit — promptness also required') : ''));
+    console.log(`\n  ${r.summary.scheduled} scheduled · ${b(String(r.summary.not_started))} clock(s) not started`);
+  }
+  for (const row of r.not_started)
+    console.log(dim(`      ${row.citation ?? row.atom_id} — ${row.why}`));
+  console.log(dim(`\n  ${r.caveat}`));
+  console.log('\n' + DISCLAIMER + '\n');
+}
+
 function groundCmd(args) {
   const flag = name => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : null; };
   const file = args.filter(a => !a.startsWith('--'))[0];
@@ -1190,6 +1334,11 @@ switch (cmd) {
   case 'receipt': receiptCmd(rest); break;
   case 'between': betweenCmd(rest); break;
   case 'ground': groundCmd(rest); break;
+  case 'premise': premiseCmd(rest); break;
+  case 'register': registerCmd(rest); break;
+  case 'overlaps': overlapsCmd(rest); break;
+  case 'interview': interviewCmd(rest); break;
+  case 'calendar': calendarCmd(rest); break;
   case 'conform': conformCmd(rest); break;
   case 'crosswalk': crosswalkCmd(rest); break;
   case 'requirements': requirementsCmd(rest); break;

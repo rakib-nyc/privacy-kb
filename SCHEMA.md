@@ -238,6 +238,11 @@ Read-only. Every tool takes `as_of`.
 | `privacy_receipt(entity, data, as_of, verify?)` | a reproducible digest of an answer — inputs, corpus and result — for an auditor |
 | `privacy_between(entity, data, from, to)` | what changed for THESE facts between two dates: gained, lost, clocks moved |
 | `privacy_ground(claims, as_of?)` | per-claim audit: does the citation resolve, was it in force, does it reach the facts |
+| `privacy_premise(text|premises[], facts?, as_of?)` | per-premise verdict: preemption posture, in-force, backstops, exemption type |
+| `privacy_register(action, entity, data, as_of)` | the standing obligation register, with evidence bound per duty |
+| `privacy_overlaps(entity, data, as_of)` | duties grouped by trigger, with the binding period and the margin to each other |
+| `privacy_interview(entity, data, as_of, limit?)` | what to establish next, ranked by obligations unblocked |
+| `privacy_calendar(entity, data, as_of)` | computed deadlines as RFC 5545 iCalendar; unstarted clocks listed, not scheduled |
 | `privacy_conform(document, citations[])` | a worksheet: every requirement beside the document, verdict column deliberately empty |
 | `privacy_may_i(entity, data, as_of, operation)` | what prohibits / permits / conditions on these facts, with `default_deny` where silence is not permission |
 | `privacy_brief(atom_id)` | everything known about one provision: carve-outs, preemption, enforcement, common errors, open questions |

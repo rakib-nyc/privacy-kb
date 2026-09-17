@@ -15,7 +15,7 @@
 // The second pass matters as much as the first. Probing with all-null arguments passed
 // asOfVintageGaps, because `if (!asOf) return []` fired before the corpus read behind it; the
 // false negative was in the probe, not the code. So a plausible first argument is supplied too.
-import { readdirSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const DIR = resolve(import.meta.dirname, '../engine');
@@ -84,6 +84,23 @@ for (const [file, name, args] of behind) {
 }
 ok(`a null corpus behind a real first argument is handled (${behind.length} case(s))`,
    masked.length === 0, masked.slice(0, 6).join(' | '));
+
+
+// ---------------------------------------------------------------- the harness checks itself
+// A TEST FILE THAT IS NOT IN THE CHAIN READS AS COVERAGE AND IS NOT. tests/test-grounding.mjs sat
+// on disk, passing when run by hand, and `npm test` never invoked it — so the citation auditor was
+// unguarded through a repository restructure. This enumerates the directory rather than trusting
+// the script, the same way the corpus checks its generated files instead of trusting a typed count.
+{
+  const root = resolve(import.meta.dirname, '..');
+  const chain = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8')).scripts?.test ?? '';
+  const invoked = new Set([...chain.matchAll(/tests\/(test-[a-z0-9-]+\.mjs)/g)].map(m => m[1]));
+  const present = readdirSync(resolve(root, 'tests'))
+    .filter(name => /^test-[a-z0-9-]+\.mjs$/.test(name));
+  const orphaned = present.filter(name => !invoked.has(name));
+  ok(`every test file in tests/ is invoked by npm test (${present.length} file(s))`,
+     orphaned.length === 0, orphaned.join(', '));
+}
 
 console.log(`\n${fail} failure(s)`);
 process.exit(fail ? 1 : 0);

@@ -28,6 +28,12 @@ import { crosswalks } from '../engine/crosswalk.mjs';
 import { issueReceipt, verifyReceipt } from '../engine/receipt.mjs';
 import { betweenDates } from '../engine/exposure.mjs';
 import { ground, groundText, groundMarkdown } from '../engine/grounding.mjs';
+import { premises } from '../engine/premise.mjs';
+import { register, registerForProfile, registerMarkdown, registerCsv,
+         bindEvidence, unbindEvidence, readEvidence } from '../engine/register.mjs';
+import { overlaps, overlapMarkdown } from '../engine/overlap.mjs';
+import { interview, interviewMarkdown } from '../engine/interview.mjs';
+import { calendar, calendarIcs } from '../engine/calendar.mjs';
 import { conform, conformMarkdown } from '../engine/conform.mjs';
 import { mayI } from '../engine/permissions.mjs';
 import { brief } from '../engine/brief.mjs';
@@ -271,6 +277,85 @@ const TOOLS = [
           description: 'Entity and data facts. Supplying them enables the inapplicable-authority check.' },
         as_of: { type: 'string', description: 'Default as-of date for claims that do not carry one.' },
         title: { type: 'string' } } } },
+  { name: 'privacy_premise',
+    description: `CHECK THE ASSUMPTION INSIDE THE QUESTION, not the answer to it. Asked "since `
+      + `HIPAA preempts state breach law, we only notify HHS — what's the deadline?", answering `
+      + `the deadline AGREES with the preemption claim by not objecting. Give it prose, or typed `
+      + `premises [{kind, ...}], and it checks the ones this corpus models as first-class objects: `
+      + `\`preempts\` against the recorded posture (132 records carry "floor", which says in terms `
+      + `that more stringent state law SURVIVES), \`in_force\` against status and effective window, `
+      + `\`no_law_applies\` against the backstops that never turn off, and \`exempt\` by evaluating `
+      + `the exemption's own predicate and reporting its TYPE — an entity-level exemption removes `
+      + `the instrument, a data-level one removes a slice and leaves you inside for everything `
+      + `else. IT NEVER REPORTS A PREMISE TRUE: "consistent" means this corpus does not contradict `
+      + `it. And a premise of a shape it cannot type is not reported at all, so an empty result is `
+      + `never an all-clear. ` + PENDING_RULE,
+    inputSchema: { type: 'object',
+      properties: { text: { type: 'string', description: 'Prose to scan for premise shapes.' },
+        premises: { type: 'array', items: { type: 'object' },
+          description: 'Typed premises: {kind: preempts|in_force|no_law_applies|exempt, ...}' },
+        facts: { type: 'object' }, as_of: { type: 'string' } } } },
+  { name: 'privacy_register',
+    description: `THE STANDING OBLIGATION REGISTER: every duty that applies to these facts, what `
+      + `it requires, whether its clock is running, and WHAT EVIDENCE EXISTS FOR IT. The column `
+      + `that matters is the empty one — a register listing 34 duties with 3 evidenced and 31 not `
+      + `is a finding, so the unevidenced count is the headline. action: build | bind | unbind | `
+      + `list. Evidence means a document was OFFERED for an obligation, never that it satisfies `
+      + `one; that is a reading, and privacy_conform is the tool for it. Evidence bound to an `
+      + `obligation that no longer applies is reported separately, because it reads as coverage `
+      + `and is not. Coverage gaps and element shortfall travel with the register: a register that `
+      + `is complete against a partial corpus is not complete. ` + PENDING_RULE,
+    inputSchema: { type: 'object',
+      properties: { action: { type: 'string' }, entity: { type: 'object' }, data: { type: 'object' },
+        event: { type: 'object' }, practice: { type: 'object' }, purpose: { type: 'object' },
+        law: { type: 'object' }, state_layers: { type: 'array', items: { type: 'string' } },
+        as_of: { type: 'string' }, profile: { type: 'string' },
+        atom_id: { type: 'string' }, document: { type: 'string' }, owner: { type: 'string' },
+        note: { type: 'string' }, format: { type: 'string', description: 'markdown | csv' } } } },
+  { name: 'privacy_overlaps',
+    description: `WHEN SEVERAL REGIMES REACH THE SAME EVENT, WHICH DUTY ACTUALLY BINDS. Groups the `
+      + `applicable duties by their CONTROLLED trigger key and reports the shortest period as `
+      + `binding, with the margin to every other. THE SHORTEST PERIOD BINDS THE WORK; IT DOES NOT `
+      + `DISCHARGE THE OTHERS — meeting a 30-day notice to a regulator does not satisfy a 60-day `
+      + `notice to individuals, so every overlapping duty is listed rather than collapsed into the `
+      + `earliest date. Business-day periods are reported but never ordered against calendar `
+      + `periods, because the conversion depends on the start date and a wrong guess loses a `
+      + `deadline. ` + PENDING_RULE,
+    inputSchema: { type: 'object',
+      properties: { entity: { type: 'object' }, data: { type: 'object' }, event: { type: 'object' },
+        practice: { type: 'object' }, purpose: { type: 'object' }, law: { type: 'object' },
+        state_layers: { type: 'array', items: { type: 'string' } }, as_of: { type: 'string' } },
+      required: ['as_of'] } },
+  { name: 'privacy_interview',
+    description: `WHAT TO ESTABLISH NEXT. The corpus predicates on 193 fact keys and nobody knows `
+      + `which matter to them; privacy_facts lists the vocabulary but does not say what to answer `
+      + `first. This finds every predicate currently evaluating to UNKNOWN, counts which unsupplied `
+      + `key blocks the most of them, and returns the questions in that order — in words, with the `
+      + `values each takes and the obligations it would resolve. It also reports how many `
+      + `obligations are sitting in UNKNOWN, which is NOT the same as "does not apply" and is `
+      + `invisible in an ordinary analysis. A RANKING, NOT A MINIMUM SET: it is greedy, so re-run `
+      + `after each answer. Nothing is assumed — an unsupplied fact stays UNKNOWN. ` + PENDING_RULE,
+    inputSchema: { type: 'object',
+      properties: { entity: { type: 'object' }, data: { type: 'object' }, event: { type: 'object' },
+        practice: { type: 'object' }, purpose: { type: 'object' }, law: { type: 'object' },
+        state_layers: { type: 'array', items: { type: 'string' } },
+        as_of: { type: 'string' }, limit: { type: 'number' } },
+      required: ['as_of'] } },
+  { name: 'privacy_calendar',
+    description: `COMPUTED DEADLINES AS CALENDAR ENTRIES, in RFC 5545 iCalendar. Every entry `
+      + `carries its governing language, trigger, period and source hash, because a reminder `
+      + `reading only "HIPAA deadline" is how a date gets acted on without anyone re-reading what `
+      + `the provision requires. ONLY CLOCKS THAT HAVE STARTED ARE WRITTEN: an obligation whose `
+      + `trigger has no date is listed separately with no calendar entry, because inventing one `
+      + `would put a confident date on an event that has not happened. Several periods are OUTER `
+      + `LIMITS that also require promptness, and those entries say so — the date is the last `
+      + `lawful day, not the target. ` + PENDING_RULE,
+    inputSchema: { type: 'object',
+      properties: { entity: { type: 'object' }, data: { type: 'object' }, event: { type: 'object' },
+        practice: { type: 'object' }, purpose: { type: 'object' }, law: { type: 'object' },
+        state_layers: { type: 'array', items: { type: 'string' } },
+        as_of: { type: 'string' }, name: { type: 'string' }, dtstamp: { type: 'string' } },
+      required: ['as_of'] } },
   { name: 'privacy_conform',
     description: `A CONFORMANCE WORKSHEET: every requirement a provision imposes, quoted verbatim `
       + `with its hash, laid beside a document for review. THE VERDICT COLUMN IS EMPTY BY DESIGN. `
@@ -517,6 +602,39 @@ function call(name, args = {}) {
         : ground(args.claims, load(), { as_of: args.as_of, facts: args.facts });
       if (audit.error) return { error: audit.error };
       return { ...audit, markdown: groundMarkdown(audit, args.title ?? null) };
+    }
+    case 'privacy_premise':
+      return premises(args.text ?? args.premises, load(),
+                      { as_of: args.as_of, facts: args.facts });
+    case 'privacy_register': {
+      const action = args.action ?? 'build';
+      if (action === 'bind') return bindEvidence(args.atom_id,
+        { document: args.document, owner: args.owner, note: args.note });
+      if (action === 'unbind') return unbindEvidence(args.atom_id);
+      if (action === 'list') return { evidence: readEvidence() };
+      const built = args.profile
+        ? registerForProfile(args.profile, args.as_of, load())
+        : register(args.entity, args.data, ctx(args), load());
+      if (built.error) return { error: built.error };
+      return { ...built, markdown: registerMarkdown(built, args.profile ?? null),
+               ...(args.format === 'csv' ? { csv: registerCsv(built) } : {}) };
+    }
+    case 'privacy_overlaps': {
+      const built = overlaps(args.entity, args.data, ctx(args), load());
+      if (built.error) return { error: built.error };
+      return { ...built, markdown: overlapMarkdown(built, null) };
+    }
+    case 'privacy_interview': {
+      const built = interview({ entity: args.entity, data: args.data, event: args.event,
+        practice: args.practice, purpose: args.purpose, law: args.law },
+        ctx(args), load(), { limit: args.limit });
+      if (built.error) return { error: built.error };
+      return { ...built, markdown: interviewMarkdown(built, null) };
+    }
+    case 'privacy_calendar': {
+      const built = calendar(args.entity, args.data, ctx(args), load());
+      if (built.error) return { error: built.error };
+      return { ...built, ics: calendarIcs(built, { name: args.name, dtstamp: args.dtstamp }) };
     }
     case 'privacy_conform': {
       const sheet = conform(args.document, args.citations ?? args.citation, load(),

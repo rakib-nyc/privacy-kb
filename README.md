@@ -22,10 +22,10 @@ Four capabilities, each answering a question the others cannot.
 
 | | | |
 |---|---|---|
-| **Answer** | Which obligations apply, as of a date, with exemptions typed and preemption resolved | `ask` `deadlines` `breach` `may-i` `cite` `brief` `find` |
-| **Compute** | Things that cannot be recalled, only calculated | `exposure` `between` `requirements` `conform` |
-| **Prove** | Artifacts that re-run identically and can be handed to someone else | `memo` `receipt` `profile` |
-| **Audit** | Check the citations in any answer — including ones this engine did not write | `ground` |
+| **Answer** | Which obligations apply, as of a date, with exemptions typed and preemption resolved | `ask` `deadlines` `breach` `may-i` `cite` `brief` `find` `interview` |
+| **Compute** | Things that cannot be recalled, only calculated | `exposure` `between` `requirements` `conform` `overlaps` |
+| **Prove** | Artifacts that re-run identically and can be handed to someone else | `memo` `receipt` `profile` `register` `calendar` |
+| **Audit** | Check the claims and citations in any answer — including ones this engine did not write | `ground` `premise` |
 
 ```bash
 privacy-kb ask --hipaa --ny-data --breach --told-hhs
@@ -91,6 +91,42 @@ Register  3 check(s)
 *"This says something different than last quarter — did the law change, or did we?"* is answerable
 because the four causes are recorded separately.
 
+### More of each
+
+**`interview`** answers the question that comes *before* an analysis: the corpus predicates on 193
+fact keys and nobody knows which matter to them. It finds every predicate currently evaluating to
+UNKNOWN, ranks the unsupplied facts by how many obligations each is blocking, and asks in words —
+*"Is the organisation a GLBA financial institution?"* — with the values it takes. It also reports
+how many obligations are sitting in UNKNOWN, which is **not** the same as "does not apply" and is
+invisible in an ordinary analysis.
+
+**`overlaps`** answers which duty actually binds when several regimes reach one event. Six
+obligations hang off `discovery_of_breach` at 30 and 60 days:
+
+```
+$ privacy-kb overlaps --hipaa --ny-data --breach --from 2026-09-08
+
+  discovery of the breach  30d spread
+    BINDS N.Y. Gen. Bus. Law § 899-aa(2)   30 calendar days  due 2026-10-08
+          45 C.F.R. § 164.404(a)(1)        60 calendar days +30d  due 2026-11-07
+          …
+    The shortest period binds the work. It does NOT discharge the others.
+```
+
+Business-day periods are reported but never ordered against calendar periods: the conversion
+depends on the start date, and a wrong guess loses a deadline rather than gaining one.
+
+**`register`** is the standing obligation register — every duty that applies, whether its clock is
+running, and **what evidence exists for it**. The headline number is the empty column: a register
+listing 28 duties with 1 evidenced and 27 not is a finding. Evidence bound to an obligation that no
+longer applies is reported separately, because it reads as coverage and is not. Exports to CSV and
+Markdown.
+
+**`calendar`** writes the computed deadlines as an RFC 5545 feed, each entry carrying its governing
+language, trigger and source hash. **Only clocks that have started are written.** An obligation
+whose trigger has no date is listed separately with no entry, because inventing one would put a
+confident date on an event that has not happened.
+
 ### Audit — check an answer this engine did not write
 
 `ground` takes citations, or the raw prose of any answer, and reports per citation whether it
@@ -112,6 +148,18 @@ $ privacy-kb ground --text answer.txt --as-of 2026-09-16
 
 The second finding is the one a click-through cannot produce: a provision that is real, quoted
 correctly, and inapplicable to the entity being advised.
+
+**`premise`** checks the assumption *inside* the question rather than the answer to it. Asked
+*"since HIPAA preempts state breach law, we only notify HHS — what's the deadline?"*, answering the
+deadline agrees with the preemption claim by not objecting. 45 C.F.R. § 160.203 records HIPAA as a
+**floor**, so the premise is contradicted by the corpus rather than by an opinion about it. It
+types four premise shapes — preemption, in-force, "no law applies", and exemption — and reports an
+exemption's **type**, because an entity-level exemption removes the instrument while a data-level
+one removes a slice and leaves you inside for everything else.
+
+It never reports a premise *true*: `CONSISTENT` means the corpus does not contradict it. And a
+premise of a shape it cannot type is not reported at all, so an empty result is never an
+all-clear.
 
 **Two things it never says.** It never reports a claim *correct* — whether quoted words support a
 proposition is a reading, and this engine does not make readings; the clean status is
@@ -181,7 +229,7 @@ npm run setup -- --write       # register it with an MCP client, then restart th
 ```
 
 It runs two ways. As a **command-line tool**, shown throughout this page. And as an
-**[MCP](https://modelcontextprotocol.io) server** exposing 26 tools, so an assistant you already
+**[MCP](https://modelcontextprotocol.io) server** exposing 31 tools, so an assistant you already
 use can call the engine instead of recalling the law — every quotation hash-anchored, every answer
 reproducible, and the gaps computed rather than glossed.
 
@@ -200,8 +248,8 @@ reproducible, and the gaps computed rather than glossed.
 | taxonomy leaves covered | 31 / 69 · 38 neither covered nor ruled out of scope, and gate 34 ratchets that number |
 | CI gates | **50**, all named · 63 fixtures · 37 gates fixture-exercised, 13 declared unexercisable in `tests/fixtures/no-fixture.yaml` and why |
 | Walker assumptions | 13 declared, 13 with an executable test |
-| Engine | 26 modules · property tests covering both halves of invariant I6, as-of validation, the trigger and incident vocabularies, version-chain semantics, and totality of every entry point |
-| MCP server | **26 tools**, incl. `privacy_memo` (the defensibility record), `privacy_facts` (the input vocabulary), `privacy_incidents`, `privacy_workflow` |
+| Engine | 31 modules · property tests covering both halves of invariant I6, as-of validation, the trigger and incident vocabularies, version-chain semantics, and totality of every entry point |
+| MCP server | **31 tools**, incl. `privacy_memo` (the defensibility record), `privacy_facts` (the input vocabulary), `privacy_incidents`, `privacy_workflow` |
 | Workflows | 4 lifecycle-indexed, reachable from the CLI and MCP |
 | Eval scenarios | 30, all-pass baseline enforced by gate 8 |
 | Prior vintages not held | **12**, each named in `meta/missing-vintages.yaml` — provisions whose stored text is current but whose earlier text this repository does not hold, so an as-of question before that date is refused rather than answered from the wrong vintage |
