@@ -244,7 +244,7 @@ reproducible, and the gaps computed rather than glossed.
 |---|---|
 | Records | **1,838** — 227 analysed obligations the engine reasons with, 1,581 held as verified reference text with no applicability predicate, plus 9 authority, 5 definition, 5 principle, 5 workflow_constraint, 3 doctrine, 2 taxonomy, 1 enforcement_action |
 | Verified | 1,834 `verbatim_confirmed` · 4 suppressed by invariant I1 and unreachable from any output |
-| Instruments | 54 declared · **41 fully present** against their declared duty categories · 13 partial, with the missing provisions named in every answer that touches them |
+| Instruments | 54 declared · **4 complete** — every declared duty category present AND no category measuring short against its source · 37 present by category but thin on elements · 13 partial, with the missing provisions named in every answer that touches them |
 | taxonomy leaves covered | 31 / 69 · 38 neither covered nor ruled out of scope, and gate 34 ratchets that number |
 | CI gates | **50**, all named · 63 fixtures · 37 gates fixture-exercised, 13 declared unexercisable in `tests/fixtures/no-fixture.yaml` and why |
 | Walker assumptions | 13 declared, 13 with an executable test |

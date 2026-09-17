@@ -187,7 +187,25 @@ export function instrumentCoverage(instrumentId, corpus) {
       `is a claim about prefixes, not about elements; see element_coverage.thin for each one.`
     : '';
 
-  return { instrument_id: instrumentId, declared: true, complete: short.length === 0,
+  // `complete` MEANS WHAT A READER THINKS IT MEANS.
+  //
+  // It used to mean "every declared duty category matched a citation prefix", and one held record
+  // satisfies a prefix — so FCRA reported complete while holding 1 of the 129 elements beneath
+  // 15 U.S.C. 1681g. 41 instruments read complete on that definition; 4 do on this one. The weaker
+  // claim is still worth having and is still reported, under a name that says what it is.
+  //
+  // An UNASSESSED prefix never counts against completeness. A part-level prefix like
+  // "34 C.F.R. 99" has no single segmentation to measure against, and treating unmeasured as
+  // incomplete would be the same error in the opposite direction.
+  const categoriesPresent = short.length === 0;
+  return { instrument_id: instrumentId, declared: true,
+    complete: categoriesPresent && thin.length === 0,
+    categories_present: categoriesPresent,
+    completeness_basis: thin.length
+      ? 'every declared category matched a citation prefix, but at least one holds fewer elements '
+        + 'than its source contains'
+      : 'every declared category matched a citation prefix, and no prefix measured short against '
+        + 'its segmentation',
     title: d.title ?? instrumentId, present, partial, absent, missing_provisions: gaps,
     obligations: cites.length, element_coverage: { thin, unassessed },
     summary: (short.length === 0

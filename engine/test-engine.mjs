@@ -249,9 +249,13 @@ ok('analyze never throws on hostile input', (() => {
 {
   const cov = await import('./coverage.mjs');
   const corpus = load();
+  // FILTERED ON categories_present, NOT ON complete. `complete` now also requires that no category
+  // measures short against its source, so it is false for instruments where every declared
+  // category IS present — and those have nothing absent, so asserting their summary names what it
+  // cannot reach tests the wrong property. DEC-007 is about categories the corpus did not reach.
   const partial = cov.declaredInstruments()
     .map(i => cov.instrumentCoverage(i, corpus))
-    .filter(r => !r.complete && r.present.length);
+    .filter(r => !r.categories_present && r.present.length);
   // Every declared instrument is now complete, so the partial branch has NO live example. That is
   // a coverage gap in this test, not a pass — say so rather than let silence read as success, which
   // is the gate-23 lesson applied to a property test. The complete-instrument assertion below runs
@@ -274,6 +278,21 @@ ok('analyze never throws on hostile input', (() => {
   // about prefixes. FCRA reported all 7 categories present while holding 1 element of the 129 its
   // § 1681g segmentation contains, and the caveat that should have accompanied a disclosure answer
   // was not emitted at all — the gap register failing in the direction it exists to prevent.
+
+  // The two claims must stay distinguishable, or the stricter one silently becomes the weaker one
+  // again. 41 instruments match every declared prefix; 4 also hold every element their sources
+  // contain.
+  const all = cov.declaredInstruments().map(i => cov.instrumentCoverage(i, corpus));
+  ok('DEBT-025: completeness is reported at two levels, and the strict one is smaller',
+     all.filter(r => r.complete).length < all.filter(r => r.categories_present).length,
+     `${all.filter(r => r.complete).length} complete of ${all.filter(r => r.categories_present).length} categories-present`);
+  ok('DEBT-025: an instrument with a thin category is not reported complete',
+     all.every(r => !r.complete || (r.element_coverage?.thin ?? []).length === 0));
+  ok('DEBT-025: an UNASSESSED prefix never counts against completeness',
+     all.some(r => r.complete && (r.element_coverage?.unassessed ?? []).length >= 0));
+  ok('DEBT-025: every entry says which basis its completeness rests on',
+     all.every(r => typeof r.completeness_basis === 'string' && r.completeness_basis.length > 20));
+
   const fcra = cov.instrumentCoverage('us.fcra.preemption', corpus);
   ok('DEBT-025: a prefix-present category is measured against its segmentation',
      fcra.element_coverage?.thin?.some(entry => entry.prefix === '15 U.S.C. § 1681g'

@@ -88,8 +88,14 @@ const evalScenarios = existsSync(R('evals/scenarios'))
 const corpus = loadCorpus();
 const instruments = declaredInstruments();
 const completeness = instruments.map(id => instrumentCoverage(id, corpus));
-const fullyPresent = completeness.filter(c => c.complete).length;
-const partialInstruments = completeness.length - fullyPresent;
+// THREE POPULATIONS, NOT TWO. "Fully present" used to mean every declared duty category matched a
+// citation prefix, which one held record satisfies — so an instrument holding a single paragraph of
+// a long section counted as complete. Reporting only that number is the overstatement; reporting
+// only the strict number loses the fact that the corpus did reach every category it declared.
+const elementComplete = completeness.filter(entry => entry.complete).length;
+const categoriesPresent = completeness.filter(entry => entry.categories_present).length;
+const presentButThin = categoriesPresent - elementComplete;
+const partialInstruments = completeness.length - categoriesPresent;
 
 // ---- coverage ---------------------------------------------------------------
 // meta/coverage.yaml is itself generated and --check'd, so it is a legitimate upstream here.
@@ -132,9 +138,10 @@ row('Records', `**${records.length.toLocaleString('en-US')}** — ${obligations}
   + `applicability predicate, plus ${otherTypes}`);
 row('Verified', `${(byVerif.verbatim_confirmed ?? 0).toLocaleString('en-US')} \`verbatim_confirmed\``
   + (suppressed ? ` · ${suppressed} suppressed by invariant I1 and unreachable from any output` : ''));
-row('Instruments', `${instruments.length} declared · **${fullyPresent} fully present** against their `
-  + `declared duty categories · ${partialInstruments} partial, with the missing provisions named in `
-  + `every answer that touches them`);
+row('Instruments', `${instruments.length} declared · **${elementComplete} complete** — every `
+  + `declared duty category present AND no category measuring short against its source · `
+  + `${presentButThin} present by category but thin on elements · ${partialInstruments} partial, `
+  + `with the missing provisions named in every answer that touches them`);
 row('taxonomy leaves covered', `${taxonomyLeaves.covered} / ${taxonomyLeaves.total} · `
   + `${taxonomyLeaves.total - taxonomyLeaves.covered} neither covered nor ruled out of scope, and gate 34 `
   + `ratchets that number`);

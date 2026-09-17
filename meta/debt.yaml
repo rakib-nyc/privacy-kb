@@ -687,9 +687,15 @@ debt:
     assessed:false with a reason, never a shortfall of zero, so an unmeasured prefix and a fully
     held one do not read the same. requirementsFor() was refusing every bare section as a parent,
     which is why this could not be measured before.
-  still_open: >-
-    The `complete` field itself is unchanged and still means "every declared category matched a
-    prefix". A caller reading that boolean without the summary still gets the overstatement; only
-    the prose and element_coverage carry the correction. Narrowing the declared prefixes, or
-    redefining `complete` to require element coverage, is the real fix and is not done.
-  status: open_mitigated
+  resolution: >-
+    `complete` now requires that every declared duty category is present AND that no category
+    measures short against its own segmentation, which is what the word means to a reader. The
+    weaker claim is still reported as `categories_present`, because "the corpus reached every
+    category it declared" is real information and collapsing the two would lose it, and every
+    entry carries a `completeness_basis` saying which it rests on. An UNASSESSED prefix never
+    counts against completeness — a part-level prefix like "34 C.F.R. 99" has no single
+    segmentation to measure against, and treating unmeasured as incomplete is the same error in
+    the opposite direction.
+    On this definition 4 of 54 instruments are complete where 41 were; 37 are present by category
+    and thin on elements. The README reports all three populations.
+  status: closed

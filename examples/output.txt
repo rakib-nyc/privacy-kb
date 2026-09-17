@@ -3,7 +3,7 @@
 SCENARIO 1 — A breach. Who must be told, and by when?
 ==============================================================================
 
-as_of 2026-09-08 · 27 obligations engaged in total.
+as_of 2026-09-08 · 34 obligations engaged in total.
 Showing the BREACH-RELEVANT ones; the rest (HIPAA use/disclosure, Title VII, LL144) are
 engaged by the same entity facts and are correct — breadth is the point, not noise.
 
@@ -11,6 +11,8 @@ engaged by the same entity facts and are correct — breadth is the point, not n
     A person or business that owns or licenses computerized data including the private information o
   N.Y. Gen. Bus. Law § 899-aa(7)
     Regardless of the method used, the breach notice must include the notifier's contact information
+  N.Y. Gen. Bus. Law § 899-aa(8)(a)
+    Where any New York residents are to be notified, the business must also notify the Attorney Gene
   N.Y. Gen. Bus. Law § 899-aa(9)
     A HIPAA covered entity that notifies the Secretary of HHS of a breach must also notify the New Y
   N.Y. Gen. Bus. Law § 899-bb(1)
@@ -20,22 +22,25 @@ engaged by the same entity facts and are correct — breadth is the point, not n
 
 DEADLINES, earliest first (the engine returns them unsorted; the workflow layer sorts):
   2026-09-15  5 business_days    N.Y. Gen. Bus. Law § 899-aa(9)
-             trigger: notification to the Secretary of Health and Human Services
+             trigger: notification_to_hhs_secretary
              ⚠ business days = weekdays; holidays not excluded
   2026-09-22  10 business_days   6 RCNY § 5-304(b)
-             trigger: use of an AEDT on a candidate for employment
+             trigger: use_of_aedt_on_candidate
              ⚠ business days = weekdays; holidays not excluded
   2026-09-22  10 business_days   N.Y.C. Admin. Code § 20-871(b)
-             trigger: use of the tool to assess a candidate or employee residing in the city
+             trigger: use_of_aedt_on_city_resident
              ⚠ business days = weekdays; holidays not excluded
   2026-10-08  30 calendar_days   45 C.F.R. § 164.524(b)(2)(i)
-             trigger: receipt of the access request
+             trigger: receipt_of_access_request
   2026-10-08  30 calendar_days   N.Y. Gen. Bus. Law § 899-aa(2)
-             trigger: discovery of the breach
+             trigger: discovery_of_breach
+             ⚠ This is a DUAL standard. The computed date is an outer limit, not an allowance — delay short
   2026-11-07  60 calendar_days   45 C.F.R. § 164.526(a)(1)
-             trigger: receipt of the amendment request
+             trigger: receipt_of_amendment_request
+  2026-11-07  60 calendar_days   45 C.F.R. § 164.528(c)(1)
+             trigger: receipt_of_accounting_request
   2027-09-08  1 years            6 RCNY § 5-301(a)
-             trigger: the most recent bias audit of the AEDT
+             trigger: most_recent_bias_audit
 
 BACKSTOPS (invariant I6 — these never switch off):
   15 U.S.C. § 45(a)(2) — FTC Act § 5 reaches unfair or deceptive acts or practices in or affecting commerce. 
